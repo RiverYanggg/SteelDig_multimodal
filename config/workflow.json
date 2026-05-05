@@ -1,0 +1,19 @@
+{
+  "input_path": "../dataset",
+  "output_root": "../workflow_runs",
+  "recursive": true,
+  "workers": 1,
+  "limit_papers": 0,
+  "skip_post_parse": false,
+  "skip_multimodal": false,
+  "text_model": {
+    "model": "Qwen/Qwen3.5-9B",
+    "base_url": "http://127.0.0.1:8000/v1",
+    "api_key": "EMPTY"
+  },
+  "multimodal_model": {
+    "model": "Qwen/Qwen3.5-9B",
+    "base_url": "http://127.0.0.1:8000/v1",
+    "api_key": "EMPTY"
+  }
+}

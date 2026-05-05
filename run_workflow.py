@@ -1,36 +1,15 @@
 #!/usr/bin/env python3
-import os
 from pathlib import Path
 
-from paper_extractor.config import LocalModelConfig, WorkflowSettings
+from paper_extractor.config import default_workflow_settings, dump_workflow_settings, load_workflow_settings
 from paper_extractor.workflow import run_workflow
 
 
 PROJECT_ROOT = Path(__file__).resolve().parent
-VLLM_MODEL_NAME = os.getenv("VLLM_MODEL_NAME", "./Qwen3.5-9B")
-
-
-# 直接修改这里
-SETTINGS = WorkflowSettings(
-    input_path=str(PROJECT_ROOT / "dataset"),
-    output_root=str(PROJECT_ROOT / "workflow_runs"),
-    recursive=True,
-    workers=1,
-    limit_papers=0,
-    skip_post_parse=False,
-    skip_multimodal=False,
-    text_model=LocalModelConfig(
-        model=VLLM_MODEL_NAME,
-        base_url="http://127.0.0.1:8000/v1",
-        api_key="EMPTY",
-    ),
-    multimodal_model=LocalModelConfig(
-        model=VLLM_MODEL_NAME,
-        base_url="http://127.0.0.1:8000/v1",
-        api_key="EMPTY",
-    ),
-)
+DEFAULT_CONFIG_PATH = PROJECT_ROOT / "config" / "workflow.json"
 
 
 if __name__ == "__main__":
-    run_workflow(SETTINGS)
+    if not DEFAULT_CONFIG_PATH.exists():
+        dump_workflow_settings(default_workflow_settings(PROJECT_ROOT), DEFAULT_CONFIG_PATH)
+    run_workflow(load_workflow_settings(DEFAULT_CONFIG_PATH))

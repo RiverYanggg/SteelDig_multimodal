@@ -5,11 +5,11 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, List
 
-from extract_image_info import parse_markdown
 from paper_extractor.client import create_client
 from paper_extractor.common import clean_text, extract_figure_id, load_text, log_jsonl, truncate_text
 from paper_extractor.config import WorkflowSettings
 from paper_extractor.postprocess import run_post_parse
+from paper_extractor.preprocess import preprocess_paper
 
 
 DEFAULT_TEXT_PROMPT_PATH = Path(__file__).resolve().parent.parent / "prompt" / "text_extractor_prompt.md"
@@ -59,13 +59,16 @@ def image_to_data_url(image_path: Path) -> str:
 
 def make_multimodal_prompt(group: Dict[str, Any], image_type_prompt: str, text_extraction: Dict[str, Any]) -> str:
     return (
-        "你是材料科学论文图像信息提取助手。请基于图像和论文上下文，逐张识别 image_type 并给出简短描述。\n"
-        "严格输出 JSON（不要 markdown、不要代码块、不要额外文字），输出对象或数组均可。\n"
-        "每条记录仅需包含字段：image_type, description, confidence。\n"
-        "如果本次有多张图，请为每张图输出一条记录，记录数量必须与输入图像数量一致。\n"
-        "不要输出 paper_id、image_path、image_url、figure_id，这些字段由后处理程序补齐。\n"
+        "你是材料科学论文组图信息提取助手。你当前处理的是同一张 Figure 下的组图，请把整组图作为一个整体理解。\n"
+        "你需要结合整组图、caption、citation_sentences 与论文上下文，输出一个 Figure 级 JSON 对象。\n"
+        "严格输出 JSON（不要 markdown、不要代码块、不要额外文字）。\n"
+        "输出必须且只能是一个对象，字段仅包含：image_type, description, confidence。\n"
+        "不要逐张子图分别输出，不要输出数组，不要输出 paper_id、figure_id、image_paths、image_count，这些字段由后处理程序补齐。\n"
+        "description 要概括整组图的核心信息、子图之间的关系，以及该 Figure 想说明的主要结论，保持 1-3 句。\n"
+        "如果组图内部有多种图像类型，image_type 选择最能代表整组图主要科学作用的那个类型。\n"
         "image_type 必须且只能从以下分类体系中选择（原样输出，不可自造新值）：\n"
         f"{image_type_prompt}\n\n"
+        f"image_count: {len(group['image_paths'])}\n"
         f"paper_title: {group['paper_title']}\n"
         f"paper_abstract: {group['paper_abstract']}\n"
         f"caption: {group['caption']}\n"
@@ -113,11 +116,16 @@ def run_one_paper(
 ) -> Dict[str, Any]:
     paper_id = md_path.stem
     paper_dir = output_root / paper_id
-    text_dir = paper_dir / "text_extraction"
-    multimodal_dir = paper_dir / "multimodal_extraction"
+    preprocess_dir = paper_dir / "preprocess"
+    intermediate_dir = paper_dir / "intermediate"
+    intermediate_text_dir = intermediate_dir / "text"
+    intermediate_multimodal_dir = intermediate_dir / "multimodal"
+    final_dir = paper_dir / "final"
     logs_dir = paper_dir / "logs"
-    text_dir.mkdir(parents=True, exist_ok=True)
-    multimodal_dir.mkdir(parents=True, exist_ok=True)
+    preprocess_dir.mkdir(parents=True, exist_ok=True)
+    intermediate_text_dir.mkdir(parents=True, exist_ok=True)
+    intermediate_multimodal_dir.mkdir(parents=True, exist_ok=True)
+    final_dir.mkdir(parents=True, exist_ok=True)
     logs_dir.mkdir(parents=True, exist_ok=True)
 
     text_client = create_client(settings.text_model)
@@ -126,7 +134,9 @@ def run_one_paper(
     text_log_file = logs_dir / "text.log.jsonl"
     multimodal_log_file = logs_dir / "multimodal.log.jsonl"
 
-    paper_text = md_path.read_text(encoding="utf-8")
+    preprocess_artifacts = preprocess_paper(md_path, output_dir=preprocess_dir)
+    cleaned_md_path = preprocess_dir / "cleaned_input.md"
+    paper_text = cleaned_md_path.read_text(encoding="utf-8")
     text_user_prompt = build_text_prompt(text_prompt, schema_text, paper_id, paper_text)
     text_messages = [
         {"role": "system", "content": "你是论文文本信息抽取助手。"},
@@ -140,6 +150,7 @@ def run_one_paper(
             "stage": "text_extraction",
             "paper_id": paper_id,
             "paper_md_path": str(md_path),
+            "cleaned_md_path": str(cleaned_md_path),
             "model": settings.text_model.model,
             "messages": [
                 text_messages[0],
@@ -154,7 +165,7 @@ def run_one_paper(
     print(f"[PAPER {paper_index}/{paper_total}] [{paper_id}] text_extraction start")
     text_completion = text_client.chat.completions.create(model=settings.text_model.model, messages=text_messages)
     text_raw = text_completion.choices[0].message.content or ""
-    text_result_path = text_dir / "result.txt"
+    text_result_path = intermediate_text_dir / "text_extraction.txt"
     text_result_path.write_text(text_raw, encoding="utf-8")
     log_jsonl(
         text_log_file,
@@ -170,8 +181,8 @@ def run_one_paper(
     )
     print(f"[PAPER {paper_index}/{paper_total}] [{paper_id}] text_extraction done")
 
-    groups = [clean_group(group) for group in parse_markdown(md_path)]
-    groups_path = multimodal_dir / "groups.json"
+    groups = [clean_group(group) for group in preprocess_artifacts.image_groups]
+    groups_path = intermediate_multimodal_dir / "image_groups.json"
     groups_path.write_text(json.dumps(groups, ensure_ascii=False, indent=2), encoding="utf-8")
 
     groups_with_images = sum(1 for group in groups if group.get("image_paths"))
@@ -199,7 +210,7 @@ def run_one_paper(
         if not image_paths or settings.skip_multimodal:
             continue
 
-        request_id = f"request_{index:03d}"
+        request_id = f"figure_{index:03d}"
         try:
             image_root = md_path.parent
             image_abs_paths = [image_root / path for path in image_paths]
@@ -243,7 +254,7 @@ def run_one_paper(
                 messages=messages,
             )
             raw_text = completion.choices[0].message.content or ""
-            request_path = multimodal_dir / f"{request_id}.txt"
+            request_path = intermediate_multimodal_dir / f"{request_id}.txt"
             request_path.write_text(raw_text, encoding="utf-8")
             log_jsonl(
                 multimodal_log_file,
@@ -294,7 +305,7 @@ def run_one_paper(
         "images_success": images_success,
         "images_fail": images_fail,
         "text_output": str(text_result_path),
-        "multimodal_dir": str(multimodal_dir),
+        "multimodal_dir": str(intermediate_multimodal_dir),
     }
 
 
@@ -371,7 +382,7 @@ def run_workflow(settings: WorkflowSettings) -> None:
     )
 
     if not settings.skip_post_parse:
-        parse_summary = run_post_parse(output_root)
+        parse_summary = run_post_parse(output_root, settings=settings)
         print(
             "Post-parse done. "
             f"papers_scanned={parse_summary['papers_scanned']}, "
