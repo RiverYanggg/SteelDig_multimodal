@@ -1,0 +1,774 @@
+{
+  "papers": [
+    {
+      "paper_id": "10.1002_srin.202200207",
+      "doi": "10.1002/srin.202200207",
+      "title": "Optimization of Process Conditions for Ultralightweight Steel with More Than 13 wt% of Al and 5 wt% of Cr",
+      "authors": [
+        "Kyeong-Won Kim",
+        "Sung-Dae Kim",
+        "Seong-Jun Park",
+        "Hyungkwon Park",
+        "Joonoh Moon",
+        "Hyun-UK Hong",
+        "Chang-Hoon Lee"
+      ],
+      "publication_year": "2022",
+      "journal": "Steel Research International",
+      "keywords": [
+        "ultralightweight steel",
+        "Fe-Mn-Al-C steel",
+        "hot rolling",
+        "heat treatment",
+        "DO3 phase",
+        "kappa carbide",
+        "austenite",
+        "intergranular cracking"
+      ],
+      "research_type": "experimental",
+      "paper_scope": "Development of ultralightweight Fe-Mn-Al-C steel containing more than 13 wt% Al through optimization of hot rolling and homogenization heat treatment conditions to suppress brittle phase formation and achieve excellent tensile properties."
+    }
+  ],
+  "alloys": [
+    {
+      "alloy_id": "alloy_fe30mn132al16c5cr",
+      "paper_id": "10.1002_srin.202200207",
+      "alloy_name": "Fe-30Mn-13.2Al-1.6C-5Cr",
+      "aliases": [],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Al",
+        "C",
+        "Cr"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Mn",
+          "weight_percent": "30",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "13.2",
+          "atomic_percent": "23"
+        },
+        {
+          "element": "C",
+          "weight_percent": "1.6",
+          "atomic_percent": null
+        },
+        {
+          "element": "Cr",
+          "weight_percent": "5",
+          "atomic_percent": null
+        },
+        {
+          "element": "Fe",
+          "weight_percent": "balance",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "Designed to reduce density by 20% compared to conventional steel. Measured density is 6.30 g cm^-3. Cr addition suppresses coarse κ-carbide formation."
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_hot_rolling",
+      "paper_id": "10.1002_srin.202200207",
+      "alloy_id": "alloy_fe30mn132al16c5cr",
+      "description": "Hot rolling after soaking at 1100-1200 °C for 2 h, followed by rolling at temperature higher than 1000 °C and air cooling.",
+      "processes_notes": "Soaking temperature critically affects grain size and DO3 phase formation at grain boundaries. Soaking at 1150 and 1200 °C resulted in intergranular cracking, while 1100 °C allowed successful hot rolling."
+    },
+    {
+      "process_id": "proc_homogenization",
+      "paper_id": "10.1002_srin.202200207",
+      "alloy_id": "alloy_fe30mn132al16c5cr",
+      "description": "Homogenization heat treatment at 1050 °C for 2 h followed by different cooling methods (air cooling vs water quenching).",
+      "processes_notes": "Temperature selected to dissolve κ-carbide and minimize grain coarsening. Cooling rate significantly affects DO3 phase formation and tensile properties."
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_1100hr",
+      "paper_id": "10.1002_srin.202200207",
+      "alloy_id": "alloy_fe30mn132al16c5cr",
+      "process_id": "proc_hot_rolling"
+    },
+    {
+      "sample_id": "sample_1150hr",
+      "paper_id": "10.1002_srin.202200207",
+      "alloy_id": "alloy_fe30mn132al16c5cr",
+      "process_id": "proc_hot_rolling"
+    },
+    {
+      "sample_id": "sample_1200hr",
+      "paper_id": "10.1002_srin.202200207",
+      "alloy_id": "alloy_fe30mn132al16c5cr",
+      "process_id": "proc_hot_rolling"
+    },
+    {
+      "sample_id": "sample_ac",
+      "paper_id": "10.1002_srin.202200207",
+      "alloy_id": "alloy_fe30mn132al16c5cr",
+      "process_id": "proc_homogenization"
+    },
+    {
+      "sample_id": "sample_wq",
+      "paper_id": "10.1002_srin.202200207",
+      "alloy_id": "alloy_fe30mn132al16c5cr",
+      "process_id": "proc_homogenization"
+    }
+  ],
+  "processing_steps": [
+    {
+      "sample_id": "sample_1100hr",
+      "paper_id": "10.1002_srin.202200207",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "soaking",
+      "temperature": "1100",
+      "unit": "°C",
+      "duration": "2 h",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Soaking conducted prior to hot rolling."
+    },
+    {
+      "sample_id": "sample_1100hr",
+      "paper_id": "10.1002_srin.202200207",
+      "sequence": "2",
+      "type": "thermomechanical_processing",
+      "method": "hot rolling",
+      "temperature": ">1000",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": "76.7",
+      "processing_steps_notes": "Rolling from 30 mm thickness to 7 mm thickness."
+    },
+    {
+      "sample_id": "sample_1100hr",
+      "paper_id": "10.1002_srin.202200207",
+      "sequence": "3",
+      "type": "heat_treatment",
+      "method": "air cooling",
+      "temperature": null,
+      "unit": null,
+      "duration": null,
+      "cooling_medium": "air",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Cooling to room temperature after hot rolling."
+    },
+    {
+      "sample_id": "sample_1150hr",
+      "paper_id": "10.1002_srin.202200207",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "soaking",
+      "temperature": "1150",
+      "unit": "°C",
+      "duration": "2 h",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Higher soaking temperature resulted in coarse grains and intergranular cracking after rolling."
+    },
+    {
+      "sample_id": "sample_1150hr",
+      "paper_id": "10.1002_srin.202200207",
+      "sequence": "2",
+      "type": "thermomechanical_processing",
+      "method": "hot rolling",
+      "temperature": ">1000",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": "76.7",
+      "processing_steps_notes": "Specimen intergranularly cracked after hot rolling."
+    },
+    {
+      "sample_id": "sample_1200hr",
+      "paper_id": "10.1002_srin.202200207",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "soaking",
+      "temperature": "1200",
+      "unit": "°C",
+      "duration": "2 h",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Highest soaking temperature evaluated."
+    },
+    {
+      "sample_id": "sample_1200hr",
+      "paper_id": "10.1002_srin.202200207",
+      "sequence": "2",
+      "type": "thermomechanical_processing",
+      "method": "hot rolling",
+      "temperature": ">1000",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": "76.7",
+      "processing_steps_notes": "Specimen intergranularly cracked after hot rolling."
+    },
+    {
+      "sample_id": "sample_ac",
+      "paper_id": "10.1002_srin.202200207",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "homogenization",
+      "temperature": "1050",
+      "unit": "°C",
+      "duration": "2 h",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Conducted on hot-rolled plate soaked at 1100 °C."
+    },
+    {
+      "sample_id": "sample_ac",
+      "paper_id": "10.1002_srin.202200207",
+      "sequence": "2",
+      "type": "heat_treatment",
+      "method": "air cooling",
+      "temperature": null,
+      "unit": null,
+      "duration": null,
+      "cooling_medium": "air",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Slow cooling resulted in formation of brittle DO3 phase at grain boundaries."
+    },
+    {
+      "sample_id": "sample_wq",
+      "paper_id": "10.1002_srin.202200207",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "homogenization",
+      "temperature": "1050",
+      "unit": "°C",
+      "duration": "2 h",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Conducted on hot-rolled plate soaked at 1100 °C."
+    },
+    {
+      "sample_id": "sample_wq",
+      "paper_id": "10.1002_srin.202200207",
+      "sequence": "2",
+      "type": "heat_treatment",
+      "method": "water quenching",
+      "temperature": null,
+      "unit": null,
+      "duration": null,
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Fast cooling suppressed ferrite/DO3 transformation, resulting in uniform microstructure."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_1100hr",
+      "sample_id": "sample_1100hr",
+      "overall_structure": "Austenite matrix with DO3 phase at grain boundaries",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_struct_1100_01",
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "equiaxed grains",
+              "grain_size": "35 μm",
+              "texture": null
+            },
+            {
+              "phase_name": "DO3",
+              "crystal_structure": "ordered BCC",
+              "volume_fraction": "8.1%",
+              "morphology": "at grain boundaries",
+              "grain_size": "2.8 μm thickness",
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "35",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_1150hr",
+      "sample_id": "sample_1150hr",
+      "overall_structure": "Coarse austenite with large fraction of DO3 at grain boundaries and intergranular cracks",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_struct_1150_01",
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "large equiaxed grains",
+              "grain_size": "60 μm",
+              "texture": null
+            },
+            {
+              "phase_name": "DO3",
+              "crystal_structure": "ordered BCC",
+              "volume_fraction": "11.5%",
+              "morphology": "at grain boundaries",
+              "grain_size": "5.5 μm thickness",
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "intergranular cracks",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "60",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_ac",
+      "sample_id": "sample_ac",
+      "overall_structure": "Austenite with coarse DO3 phase at grain boundaries",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_struct_ac_01",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "DO3",
+              "crystal_structure": "ordered BCC",
+              "volume_fraction": "4.2%",
+              "morphology": "at grain boundaries",
+              "grain_size": "2.6 μm thickness",
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_wq",
+      "sample_id": "sample_wq",
+      "overall_structure": "Uniform austenite with fine κ-carbide and very small fraction of DO3 phase",
+      "number_of_phases": "3",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_struct_wq_01",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "DO3",
+              "crystal_structure": "ordered BCC",
+              "volume_fraction": "1.27%",
+              "morphology": "at grain boundaries",
+              "grain_size": "2.4 μm thickness",
+              "texture": null
+            },
+            {
+              "phase_name": "κ-carbide",
+              "crystal_structure": "perovskite (E21)",
+              "volume_fraction": null,
+              "morphology": "fine precipitates inside austenite",
+              "grain_size": "nanosize",
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "prec_kappa_01",
+              "type": "κ-carbide",
+              "size": {
+                "value": "nano",
+                "unit": "nm"
+              },
+              "distribution": "fine dispersion inside austenite matrix",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "int_set_1150",
+      "sample_id": "sample_1150hr",
+      "phases": [
+        {
+          "interface_id": "int_1150_01",
+          "microstructure_uuid": "uuid_struct_1150_01",
+          "phase_1_name": "austenite",
+          "phase_2_name": "DO3",
+          "coherence": "semi-coherent"
+        }
+      ],
+      "defect_interaction": [
+        {
+          "interaction_id": "def_int_1150_01",
+          "microstructure_uuid": "uuid_struct_1150_01",
+          "interaction_type": "crack propagation along interface",
+          "quality_description": "Intergranular fracture occurred along austenite grain boundaries decorated with DO3 phase, resulting in cracks after hot rolling."
+        }
+      ],
+      "interface_notes": [
+        {
+          "stress_strain_distribution": null
+        },
+        {
+          "slippage_situation": null
+        }
+      ],
+      "phase_evolution": "Ferrite formed at grain boundaries during soaking transforms to ordered DO3 phase during cooling."
+    },
+    {
+      "interface_set_id": "int_set_ac",
+      "sample_id": "sample_ac",
+      "phases": [
+        {
+          "interface_id": "int_ac_01",
+          "microstructure_uuid": "uuid_struct_ac_01",
+          "phase_1_name": "austenite",
+          "phase_2_name": "DO3",
+          "coherence": null
+        }
+      ],
+      "defect_interaction": [
+        {
+          "interaction_id": "def_int_ac_01",
+          "microstructure_uuid": "uuid_struct_ac_01",
+          "interaction_type": "crack initiation and propagation",
+          "quality_description": "Cracks initiated and propagated along DO3 phase at grain boundaries during tensile testing, leading to brittle fracture."
+        }
+      ],
+      "interface_notes": [],
+      "phase_evolution": "Transformation of austenite to ferrite/DO3 occurred during slow air cooling."
+    },
+    {
+      "interface_set_id": "int_set_wq",
+      "sample_id": "sample_wq",
+      "phases": [
+        {
+          "interface_id": "int_wq_01",
+          "microstructure_uuid": "uuid_struct_wq_01",
+          "phase_1_name": "austenite",
+          "phase_2_name": "DO3",
+          "coherence": null
+        },
+        {
+          "interface_id": "int_wq_02",
+          "microstructure_uuid": "uuid_struct_wq_01",
+          "phase_1_name": "austenite",
+          "phase_2_name": "κ-carbide",
+          "coherence": "coherent"
+        }
+      ],
+      "defect_interaction": [],
+      "interface_notes": [],
+      "phase_evolution": "Fast cooling suppressed DO3 formation. Fine κ-carbide precipitated within austenite matrix during cooling."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_ac",
+      "sample_id": "sample_ac",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "6.30",
+          "unit": "g cm^-3"
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_wq",
+      "sample_id": "sample_wq",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": null,
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "1048",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "38",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "6.30",
+          "unit": "g cm^-3"
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_wq_tensile",
+      "sample_id": "sample_wq",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": "20",
+          "max": "20",
+          "unit": "°C"
+        },
+        "stress_state": "uniaxial tension",
+        "environment": "room temperature air"
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy": "air-cooled specimen",
+        "benchmark_process_id": "proc_homogenization",
+        "benchmark_sample_id": "sample_ac",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_sem",
+      "sample_id": "sample_1100hr",
+      "microstructure_uuid": null,
+      "technique": "SEM",
+      "purpose": "Microstructure observation and crack analysis",
+      "key_findings": "Observed microstructure and intergranular cracks in hot-rolled specimens."
+    },
+    {
+      "characterization_id": "char_ebsd",
+      "sample_id": "sample_1100hr",
+      "microstructure_uuid": null,
+      "technique": "EBSD",
+      "purpose": "Phase identification and grain size measurement",
+      "key_findings": "Identified FCC austenite and BCC/DO3 phase at grain boundaries; measured grain sizes of 35 μm (1100°C) and 60 μm (1150°C)."
+    },
+    {
+      "characterization_id": "char_xrd",
+      "sample_id": "sample_wq",
+      "microstructure_uuid": "uuid_struct_wq_01",
+      "technique": "XRD",
+      "purpose": "Phase identification",
+      "key_findings": "Confirmed presence of austenite, DO3 phase, and κ-carbide in water-quenched specimen."
+    },
+    {
+      "characterization_id": "char_tem",
+      "sample_id": "sample_wq",
+      "microstructure_uuid": "uuid_struct_wq_01",
+      "technique": "TEM",
+      "purpose": "Detailed microstructural analysis and phase identification",
+      "key_findings": "Identified fine κ-carbide inside austenite matrix and confirmed DO3 phase at grain boundaries."
+    },
+    {
+      "characterization_id": "char_tensile",
+      "sample_id": "sample_ac",
+      "microstructure_uuid": null,
+      "technique": "Tensile testing",
+      "purpose": "Mechanical property evaluation",
+      "key_findings": "Specimen fractured in elastic region due to brittle DO3 phase at grain boundaries."
+    },
+    {
+      "characterization_id": "char_tensile_wq",
+      "sample_id": "sample_wq",
+      "microstructure_uuid": null,
+      "technique": "Tensile testing",
+      "purpose": "Mechanical property evaluation",
+      "key_findings": "UTS of 1048 MPa and total elongation of 38% achieved."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "Figure 4 shows stress-strain curves for air-cooled and water-quenched specimens, but detailed curve data points are not available in the provided text.",
+    "The yield strength of the water-quenched specimen is not explicitly stated in the text, only the ultimate tensile strength (1048 MPa) and total elongation (38%) are provided.",
+    "Density reduction of 20% compared to conventional steel is mentioned, but baseline density value of conventional steel is not specified in the text.",
+    "The addition of 5 wt% Cr is effective in preventing precipitation of coarse κ-carbide at grain boundaries, which is typically observed in high-Al lightweight steels."
+  ]
+}
