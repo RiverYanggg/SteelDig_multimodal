@@ -6,21 +6,33 @@ from paper_extractor.knowledge.chunker import Chunk
 from paper_extractor.knowledge.prompts import build_claim_prompt, build_markdown_prompt, build_paper_map_prompt
 
 
+class ExtractionParseError(ValueError):
+    def __init__(self, message: str, raw_content: str):
+        super().__init__(message)
+        self.raw_content = raw_content
+
+
 def generate_paper_map(client: Any, model: str, paper_id: str, markdown_text: str) -> tuple[Dict[str, Any], str]:
     prompt = build_paper_map_prompt(paper_id=paper_id, markdown_text=markdown_text)
     content = _chat(client, model, "你是论文全局信息规划助手。", prompt)
-    parsed = extract_json_from_text(content)
+    try:
+        parsed = extract_json_from_text(content)
+    except Exception as exc:
+        raise ExtractionParseError(f"Cannot parse paper_map JSON: {exc}", content) from exc
     if not isinstance(parsed, dict):
-        raise ValueError("paper_map output must be a JSON object.")
+        raise ExtractionParseError("paper_map output must be a JSON object.", content)
     return parsed, content
 
 
 def extract_chunk_claims(client: Any, model: str, paper_map: Dict[str, Any], chunk: Chunk) -> tuple[Dict[str, Any], str]:
     prompt = build_claim_prompt(paper_map=paper_map, chunk=chunk)
     content = _chat(client, model, "你是论文局部事实抽取助手。", prompt)
-    parsed = extract_json_from_text(content)
+    try:
+        parsed = extract_json_from_text(content)
+    except Exception as exc:
+        raise ExtractionParseError(f"Cannot parse claim JSON for {chunk.chunk_id}: {exc}", content) from exc
     if not isinstance(parsed, dict):
-        raise ValueError(f"claim output for {chunk.chunk_id} must be a JSON object.")
+        raise ExtractionParseError(f"claim output for {chunk.chunk_id} must be a JSON object.", content)
     claims = parsed.get("claims", [])
     if not isinstance(claims, list):
         claims = []
@@ -54,4 +66,3 @@ def _chat(client: Any, model: str, system: str, user: str) -> str:
         ],
     )
     return completion.choices[0].message.content or ""
-

@@ -1,1 +1,108 @@
-mock
+{"claims": [
+  {
+    "claim_type": "material_composition",
+    "subject": "Ultralightweight steel",
+    "claim": "Fe–30Mn–13.2Al–1.6C–5Cr steel contains more than 13 wt% Al and reduces density by 20%",
+    "values": {
+      "alloy": "Fe–30Mn–13.2Al–1.6C–5Cr (wt%)",
+      "Al_content": ">13 wt%",
+      "density_reduction": "20%"
+    },
+    "evidence_text": "An ultralightweight Fe–30Mn–13.2Al–1.6C–5Cr steel, which contains more than 13 wt% of Al and thereby reduces the density by 20%, is developed.",
+    "figures": [],
+    "tables": [],
+    "confidence": "high"
+  },
+  {
+    "claim_type": "processing_condition",
+    "subject": "Hot rolling soaking",
+    "claim": "Soaking at 1100–1200 °C for 2 h before hot rolling; successful at 1100 °C, intergranular cracking at 1150 and 1200 °C",
+    "values": {
+      "temperature_range": "1100–1200 °C",
+      "soaking_time": "2 h",
+      "successful_soaking_temperature": "1100 °C",
+      "cracking_soaking_temperatures": ["1150 °C", "1200 °C"]
+    },
+    "evidence_text": "Hot rolling is conducted after soaking at the temperature range of 1100–1200 °C for 2 h. The ultralightweight steel is hot-rolled successfully after soaking at 1100 °C, whereas specimens soaked at 1150 and 1200 °C are intergranularly cracked after hot rolling, resulting from coarse grain and a large fraction and size of ferrite, which is transformed to ordered DO3 phase during cooling, at the grain boundaries.",
+    "figures": [],
+    "tables": [],
+    "confidence": "high"
+  },
+  {
+    "claim_type": "failure_mechanism",
+    "subject": "Intergranular cracking after hot rolling",
+    "claim": "Caused by coarse grain and large fraction/size of ferrite at grain boundaries that transforms to ordered DO3 phase during cooling",
+    "values": {
+      "cause": "coarse grain + large ferrite transformed to DO3 at grain boundaries"
+    },
+    "evidence_text": "resulting from coarse grain and a large fraction and size of ferrite, which is transformed to ordered DO3 phase during cooling, at the grain boundaries.",
+    "figures": [],
+    "tables": [],
+    "confidence": "high"
+  },
+  {
+    "claim_type": "processing_condition",
+    "subject": "Homogenization heat treatment",
+    "claim": "Homogenization at 1050 °C for 2 h followed by water quenching or air cooling",
+    "values": {
+      "temperature": "1050 °C",
+      "time": "2 h",
+      "cooling_methods": ["water quenching", "air cooling"]
+    },
+    "evidence_text": "In homogenization heat treatment, water quenching and air cooling are performed, respectively, after holding at 1050 °C for 2 h.",
+    "figures": [],
+    "tables": [],
+    "confidence": "high"
+  },
+  {
+    "claim_type": "mechanical_property",
+    "subject": "Air-cooled steel",
+    "claim": "Inferior tensile property due to formation of brittle ordered DO3 phase at grain boundaries",
+    "values": {
+      "tensile_property": "inferior",
+      "reason": "brittle ordered DO3 at grain boundaries"
+    },
+    "evidence_text": "The air-cooled steel has inferior tensile property due to the formation of brittle ordered DO3 phase at grain boundaries.",
+    "figures": [],
+    "tables": [],
+    "confidence": "high"
+  },
+  {
+    "claim_type": "mechanical_property",
+    "subject": "Water-quenched steel",
+    "claim": "Excellent tensile property, attributed to uniform microstructure of austenite, fine κ-carbide in austenite, and very small fraction of ordered DO3 phase",
+    "values": {
+      "tensile_property": "excellent",
+      "microstructure": "austenite + fine κ-carbide + minimal ordered DO3"
+    },
+    "evidence_text": "Meanwhile, the water-quenched steel shows an excellent tensile property, which is attributed to a uniform microstructure comprising austenite, fine κ-carbide in austenite, and a very small fraction of the ordered DO3 phase.",
+    "figures": [],
+    "tables": [],
+    "confidence": "high"
+  },
+  {
+    "claim_type": "phase_identification",
+    "subject": "Brittle phases in Fe–Mn–Al–C lightweight steels",
+    "claim": "κ-carbide of (Fe, Mn)3AlC type, ferrite, and ordered phases such as B2 or DO3 at grain boundaries are brittle phases that can easily form",
+    "values": {
+      "brittle_phases": ["κ-carbide (Fe, Mn)3AlC", "ferrite", "B2", "DO3"]
+    },
+    "evidence_text": "κ-carbide of (Fe, Mn)3AlC type, ferrite, and ordered phases such as B2 or DO3 at grain boundaries, which are brittle phases, can be easily formed,",
+    "figures": [],
+    "tables": [],
+    "confidence": "medium"
+  },
+  {
+    "claim_type": "research_objective",
+    "subject": "Study approach",
+    "claim": "Manufacture ultralightweight Fe–Mn–Al–C steel with >13 wt% Al by suppressing brittle phases through Cr addition and optimization of hot rolling and heat treatment",
+    "values": {
+      "additions": "Cr",
+      "optimized_processes": ["hot rolling", "heat treatment"]
+    },
+    "evidence_text": "In this study, it was aimed to manufacture ultralightweight Fe–Mn–Al–C steel containing more than 13 wt% of Al which can reduce 20% of density by suppressing the formation of brittle coarse κ-carbide, ferrite, and ordered phases at grain boundaries through the addition of Cr and optimization of hot rolling and heat treatment conditions.",
+    "figures": [],
+    "tables": [],
+    "confidence": "high"
+  }
+]}

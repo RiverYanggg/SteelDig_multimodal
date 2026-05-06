@@ -1,1 +1,172 @@
-mock
+{
+  "claims": [
+    {
+      "claim_type": "process_outcome",
+      "subject": "Fe–30Mn–13.2Al–1.6C–5Cr hot-rolled plates",
+      "claim": "Plates soaked at 1200 and 1150°C developed cracks after hot rolling, whereas the plate soaked at 1100°C was hot-rolled successfully without cracks.",
+      "values": {
+        "soaking_temperatures": [1100, 1150, 1200],
+        "crack_free_rolling": "1100°C only"
+      },
+      "evidence_text": "Both plates soaked at 1200 and 1150 °C had crack after hot rolling, while the plate soaked at 1100 °C was hot-rolled successfully without cracks (Figure 1a).",
+      "figures": ["Figure 1a"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "microstructure",
+      "subject": "1150°C soaked plate",
+      "claim": "Microstructure consisted of austenite with large grain size and BCC ferrite (ordered DO3) at grain boundaries. Austenite grain size ~60 μm, DO3 area fraction 11.5%, thickness 5.5 μm.",
+      "values": {
+        "austenite_grain_size_um": 60,
+        "DO3_area_fraction_pct": 11.5,
+        "DO3_thickness_um": 5.5
+      },
+      "evidence_text": "the microstructure of the 1150 °C plate was austenite (face centered cubic (FCC) phase) with large grain size and ferrite (body centered cubic (BCC) phase) at grain boundaries. The BCC phase is identified as ordered DO3 phase by X-ray diffraction (XRD) and transmission electron microscopy (TEM) analysis, as shown in Figure 3. The austenite grain size was approximately 60 μm and the average area fraction and thickness of DO3 phase were 11.5% and 5.5 μm, respectively.",
+      "figures": ["Figure 1b", "Figure 1d", "Figure 3"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "phase_identification",
+      "subject": "Fe–30Mn–13.2Al–1.6C–5Cr steel",
+      "claim": "No coarse κ-carbide precipitates at grain boundaries despite 13.2 wt% Al, confirming that 5 wt% Cr effectively suppresses coarse κ-carbide.",
+      "values": {
+        "Al_content_wt_pct": 13.2,
+        "Cr_content_wt_pct": 5
+      },
+      "evidence_text": "there is no coarse κ-carbide at grain boundaries in the investigated steel in spite of 13.2 wt% of Al content. It is confirmed that 5 wt% of Cr is effective to prevent precipitation of coarse κ-carbide.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "fracture_mode",
+      "subject": "1150°C soaked plate",
+      "claim": "Cracking occurred by intergranular fracture along austenite grain boundaries.",
+      "values": {},
+      "evidence_text": "The crack of the 1150 °C plate was intergranular fracture along austenite grain boundaries.",
+      "figures": ["Figure 1b"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "microstructure",
+      "subject": "1100°C soaked plate",
+      "claim": "Austenite grain size 35 μm, DO3 area fraction 8.1%, thickness 2.8 μm at grain boundaries.",
+      "values": {
+        "austenite_grain_size_um": 35,
+        "DO3_area_fraction_pct": 8.1,
+        "DO3_thickness_um": 2.8
+      },
+      "evidence_text": "the plate soaked at 1100 °C shows relatively fine austenite grain size and small fraction and size of DO3 at grain boundaries (Figure 1c,e). The austenite grain size was 35 μm, and the average area fraction and thickness of DO3 phase were 8.1% and 2.8 μm, respectively.",
+      "figures": ["Figure 1c", "Figure 1e"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "phase_formation_mechanism",
+      "subject": "Fe–Mn–Al–C steels",
+      "claim": "Between 1100–1200°C, BCC phase fraction increases with temperature; at soaking, austenite + grain-boundary ferrite exists and transforms to ordered DO3 during cooling, leading to large DO3 at higher temperatures and vulnerability to intergranular cracking.",
+      "values": {},
+      "evidence_text": "According to the calculated phase diagram of Fe–Mn–Al–C steels in the previous result reporting that BCC phase exists at the soaking temperature between 1100 and 1200 °C and the fraction of BCC phase increases with increasing the soaking temperature, it is expected that the microstructure at soaking temperature is austenite and some ferrite at grain boundaries, which is transformed to ordered DO3 during cooling. Therefore, the plate soaked at higher temperature has a large size of austenite and relatively large fraction and size of DO3 at grain boundaries, which is vulnerable to intergranular cracking.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "heat_treatment_result",
+      "subject": "1100°C hot-rolled plate after homogenization (1050°C/2h)",
+      "claim": "Air-cooled specimen: austenite + coarse DO3 (4.2% area, 2.6 μm thick). Water-quenched specimen: uniform austenite matrix with fine κ-carbide and minimal DO3 (1.27% area, 2.4 μm thick).",
+      "values": {
+        "air_cool_DO3_area_pct": 4.2,
+        "air_cool_DO3_thickness_um": 2.6,
+        "water_quench_DO3_area_pct": 1.27,
+        "water_quench_DO3_thickness_um": 2.4
+      },
+      "evidence_text": "Austenite and coarse DO3 phase at the grain boundaries were observed in the air-cooled specimen (Figure 2b,d), and the average area fraction and thickness of DO3 phase were 4.2% and 2.6 μm, respectively, whereas uniform microstructure with austenite and small amount of DO3 was observed in the water-quenched specimen (Figure 2c,e), and the average area fraction and thickness of DO3 phase were 1.27% and 2.4 μm, respectively.",
+      "figures": ["Figure 2b", "Figure 2d", "Figure 2c", "Figure 2e"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "cooling_effect",
+      "subject": "Fe–Mn–Al–C steel homogenization",
+      "claim": "Slow cooling promotes transformation of austenite to ferrite/DO3; fast cooling (water quenching) is required for a uniform microstructure.",
+      "values": {},
+      "evidence_text": "It was found that transformation of austenite to ferrite (or DO3 phase) happened at a slow cooling rate, so fast cooling is necessary to have uniform microstructure by preventing ferrite transformation.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "phase_formation_kinetics",
+      "subject": "κ-carbide in ultralightweight steel with 23 at% Al (13.2 wt%)",
+      "claim": "κ-carbide forms rapidly without Al diffusion due to high Al concentration; water quenching cannot suppress κ-carbide formation.",
+      "values": {
+        "Al_content_at_pct": 23,
+        "Al_content_wt_pct": 13.2
+      },
+      "evidence_text": "Because the Al concentration of this ultralightweight steel was 23 at% (13.2 wt%) of Al, κ-carbide may be formed very quickly without diffusion of Al atoms, so it is easily estimated that water quenching cannot suppress κ-carbide formation in this steel.",
+      "figures": [],
+      "tables": [],
+      "confidence": "medium"
+    },
+    {
+      "claim_type": "phase_formation_kinetics",
+      "subject": "BCC (ferrite/DO3) in ultralightweight steel",
+      "claim": "BCC formation requires longer time than κ-carbide because C and Mn must leave BCC and Al must diffuse to BCC; water quenching can sufficiently suppress BCC formation.",
+      "values": {},
+      "evidence_text": "As C and Mn atoms should move from BCC to FCC and Al diffuses to BCC, the formation of BCC requires a longer time compared to that for κ-carbide. Therefore, the formation of BCC can be sufficiently suppressed with water quenching.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "phase_identification",
+      "subject": "water-quenched specimen",
+      "claim": "XRD and TEM reveal austenite matrix containing fine κ-carbide, and BCC grain-boundary phase is ordered DO3.",
+      "values": {},
+      "evidence_text": "In-depth microstructural analysis on water-quenched specimen was conducted using XRD and TEM, as shown in Figure 3, which illustrates that the water-quenched specimen has austenite and fine κ-carbide inside austenite matrix and BCC phase at grain boundaries was identified as ordered DO3 phase.",
+      "figures": ["Figure 3"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "tensile_properties",
+      "subject": "air-cooled specimen",
+      "claim": "Tensile specimen fractured in elastic region, showing no measurable yield or tensile strength, due to brittle DO3 at grain boundaries.",
+      "values": {
+        "yield_strength": "none",
+        "tensile_strength": "none"
+      },
+      "evidence_text": "The air-cooled specimen shows very poor tensile property. Tensile specimen was fractured at elastic region and even failed to have yield and tensile strength, resulting from brittle ordered DO3 at grain boundaries.",
+      "figures": ["Figure 4a"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "tensile_properties",
+      "subject": "water-quenched specimen",
+      "claim": "Tensile strength 1048 MPa and total elongation 38% due to uniform austenite matrix with fine κ-carbide and very small DO3 fraction.",
+      "values": {
+        "tensile_strength_MPa": 1048,
+        "total_elongation_pct": 38
+      },
+      "evidence_text": "the water-quenched specimen shows excellent tensile property with 1048 MPa of tensile strength and 38% of total elongation due to uniform microstructure with austenite and fine κ-carbide inside austenite matrix and very small fraction of DO3 phase.",
+      "figures": ["Figure 4b"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "fracture_analysis",
+      "subject": "post-tensile fracture surfaces",
+      "claim": "Air-cooled specimen: cracks initiate and propagate along DO3 grain boundaries, with no plastic deformation of austenite. Water-quenched specimen: austenite matrix significantly elongated, ductile fracture.",
+      "values": {},
+      "evidence_text": "In the air-cooled specimen, the cracks initiated and propagated along DO3 phase at grain boundary and austenite matrix seems not to be plastically deformed, whereas in the water-quenched specimen, austenite matrix was considerably elongated and fractured ductile",
+      "figures": ["Figure 5a", "Figure 5b"],
+      "tables": [],
+      "confidence": "high"
+    }
+  ]
+}

@@ -2,25 +2,43 @@
   "paper_id": "10.1002_srin.202200207",
   "source_md_path": "/Users/mac/Desktop/LLM_project/SteelDig_multimodal/dataset/10.1002_srin.202200207/hybrid_auto/10.1002_srin.202200207.md",
   "cleaned_md_path": "/Users/mac/Desktop/LLM_project/SteelDig_multimodal/workflow_runs/10.1002_srin.202200207/preprocess/cleaned_input.md",
-  "model": "kimi-k2.5",
-  "created_at": "2026-05-06T15:58:28.292266",
-  "claim_count": 5,
+  "model": "deepseek-v4-pro",
+  "created_at": "2026-05-06T16:28:57.904875",
+  "claim_count": 51,
   "source_type": "text_only",
   "paper_map": {
     "paper_id": "10.1002_srin.202200207",
     "title": "Optimization of Process Conditions for Ultralightweight Steel with More Than 13 wt% of Al and 5 wt% of Cr",
-    "abstract_summary": "Mock paper map for offline workflow validation.",
-    "research_objective": "Validate the knowledge Markdown workflow without remote model calls.",
-    "material_systems": [],
-    "main_process_variables": [],
-    "sample_aliases": [],
-    "expected_information_axis": [
-      "composition",
-      "processing",
-      "microstructure",
-      "properties",
-      "mechanism"
+    "abstract_summary": "An ultralightweight Fe–30Mn–13.2Al–1.6C–5Cr steel with >13 wt% Al, reducing density by 20%, was developed and successfully fabricated by optimizing hot rolling and heat treatment. Soaking at 1100 °C before hot rolling avoided intergranular cracking, while higher soaking temperatures (1150, 1200 °C) caused coarse grains and brittle ordered DO3 phase at grain boundaries leading to cracks. After homogenization at 1050 °C for 2 h, water quenching produced a uniform microstructure (austenite, fine κ-carbide, minimal DO3) and excellent tensile properties (1048 MPa UTS, 38% elongation), whereas air cooling resulted in grain boundary DO3 and premature brittle fracture.",
+    "research_objective": "To develop an ultralightweight Fe–Mn–Al–C steel containing more than 13 wt% Al by suppressing brittle phases (coarse κ-carbide, ferrite, ordered DO3) through Cr addition and optimization of hot rolling and heat treatment conditions to achieve successful fabrication and good tensile properties.",
+    "material_systems": [
+      "Fe–30Mn–13.2Al–1.6C–5Cr (wt%) ultralightweight steel"
     ],
-    "key_sections": []
+    "main_process_variables": [
+      "Hot rolling soaking temperature (1100, 1150, 1200 °C)",
+      "Soaking time (2 h)",
+      "Homogenization temperature (1050 °C)",
+      "Homogenization time (2 h)",
+      "Cooling method after homogenization (air cooling, water quenching)"
+    ],
+    "sample_aliases": [
+      "1100 °C soaked plate",
+      "1150 °C soaked plate",
+      "1200 °C soaked plate",
+      "air-cooled specimen",
+      "water-quenched specimen"
+    ],
+    "expected_information_axis": [
+      "Soaking temperature → microstructure (grain size, DO3 phase fraction and morphology) and hot-rollability",
+      "Cooling method → presence of DO3 phase and tensile properties",
+      "Phase identification (austenite, κ-carbide, ordered DO3)",
+      "Tensile strength and total elongation"
+    ],
+    "key_sections": [
+      "1. Introduction",
+      "2. Results and Discussion",
+      "3. Conclusions",
+      "4. Experimental Section"
+    ]
   }
 }

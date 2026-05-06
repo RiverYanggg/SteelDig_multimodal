@@ -7,7 +7,7 @@ from paper_extractor.client import create_client
 from paper_extractor.common import log_jsonl, truncate_text
 from paper_extractor.config import WorkflowSettings
 from paper_extractor.knowledge.chunker import Chunk, split_markdown_into_chunks, write_chunks
-from paper_extractor.knowledge.extractor import extract_chunk_claims, generate_paper_map, synthesize_markdown
+from paper_extractor.knowledge.extractor import ExtractionParseError, extract_chunk_claims, generate_paper_map, synthesize_markdown
 from paper_extractor.knowledge.markdown_writer import write_knowledge_outputs
 from paper_extractor.knowledge.normalizer import normalize_claims, write_claims_jsonl
 from paper_extractor.preprocess import preprocess_paper
@@ -147,7 +147,27 @@ def _run_from_cleaned_markdown(
             if mock_model:
                 record, raw_content = _mock_chunk_claims(chunk)
             else:
-                record, raw_content = extract_chunk_claims(client, settings.text_model.model, paper_map, chunk)
+                try:
+                    record, raw_content = extract_chunk_claims(client, settings.text_model.model, paper_map, chunk)
+                except ExtractionParseError as exc:
+                    raw_content = exc.raw_content
+                    record = {
+                        "paper_id": paper_id,
+                        "chunk_id": chunk.chunk_id,
+                        "section": chunk.section,
+                        "claims": [],
+                        "error": str(exc),
+                    }
+                    log_jsonl(
+                        log_file,
+                        {
+                            "event": "chunk_claims_parse_error",
+                            "paper_id": paper_id,
+                            "chunk_id": chunk.chunk_id,
+                            "error": str(exc),
+                            "preview": truncate_text(raw_content),
+                        },
+                    )
             raw_records.append(record)
             raw_file.write(json.dumps(record, ensure_ascii=False) + "\n")
             (intermediate_dir / f"{chunk.chunk_id}.raw.txt").write_text(raw_content, encoding="utf-8")
