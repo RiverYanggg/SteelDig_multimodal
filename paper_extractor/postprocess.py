@@ -55,156 +55,188 @@ def run_post_parse(output_root: Path, settings: WorkflowSettings | None = None) 
 
     for paper_dir in sorted(path for path in output_root.iterdir() if path.is_dir()):
         summary["papers_scanned"] += 1
-        paper_id = paper_dir.name
-        logs_dir = paper_dir / "logs"
-        logs_dir.mkdir(parents=True, exist_ok=True)
-        post_parse_log = logs_dir / "post_parse.log.jsonl"
+        paper_summary = run_post_parse_for_paper(paper_dir, settings=settings, fallback_client=fallback_client)
+        for key in (
+            "text_parse_success",
+            "text_parse_fail",
+            "multimodal_parse_success",
+            "multimodal_parse_fail",
+            "fallback_agent_used",
+        ):
+            summary[key] += paper_summary[key]
 
-        intermediate_dir = paper_dir / "intermediate"
-        final_dir = paper_dir / "final"
-        final_dir.mkdir(parents=True, exist_ok=True)
+    return summary
 
-        text_txt = intermediate_dir / "text" / "text_extraction.txt"
-        if text_txt.exists():
+
+def run_post_parse_for_paper(
+    paper_dir: Path,
+    settings: WorkflowSettings | None = None,
+    fallback_client: Any | None = None,
+) -> Dict[str, int]:
+    summary = {
+        "text_parse_success": 0,
+        "text_parse_fail": 0,
+        "multimodal_parse_success": 0,
+        "multimodal_parse_fail": 0,
+        "fallback_agent_used": 0,
+    }
+
+    if fallback_client is None and settings is not None:
+        fallback_client = _create_fallback_client(settings)
+
+    paper_id = paper_dir.name
+    # This function intentionally processes only one paper_dir. The sequential
+    # extraction->post-parse->knowledge orchestrator depends on that isolation
+    # to guarantee fused mode reads the current paper's finalized outputs only.
+    logs_dir = paper_dir / "logs"
+    logs_dir.mkdir(parents=True, exist_ok=True)
+    post_parse_log = logs_dir / "post_parse.log.jsonl"
+
+    intermediate_dir = paper_dir / "intermediate"
+    final_dir = paper_dir / "final"
+    final_dir.mkdir(parents=True, exist_ok=True)
+
+    text_txt = intermediate_dir / "text" / "text_extraction.txt"
+    if text_txt.exists():
+        try:
+            parse_result = parse_text_output(text_txt.read_text(encoding="utf-8"))
+        except Exception as exc:
+            parse_result = None
+            parse_error = exc
+        else:
+            parse_error = None
+
+        if parse_result is None and fallback_client is not None and settings is not None:
             try:
-                parse_result = parse_text_output(text_txt.read_text(encoding="utf-8"))
-            except Exception as exc:
-                parse_result = None
-                parse_error = exc
-            else:
-                parse_error = None
-
-            if parse_result is None and fallback_client is not None:
-                try:
-                    parse_result = fallback_parse_with_agent(
-                        fallback_client,
-                        model=settings.text_model.model,
-                        stage="text_post_parse",
-                        raw_text=text_txt.read_text(encoding="utf-8"),
-                        paper_id=paper_id,
-                    )
-                    summary["fallback_agent_used"] += 1
-                except Exception as exc:
-                    parse_error = exc
-
-            if parse_result is not None:
-                out_json = final_dir / "text_extraction.json"
-                out_json.write_text(json.dumps(parse_result.parsed, ensure_ascii=False, indent=2), encoding="utf-8")
-                summary["text_parse_success"] += 1
-                log_jsonl(
-                    post_parse_log,
-                    {
-                        "ts": datetime.now().isoformat(),
-                        "event": "model_output",
-                        "stage": "text_post_parse",
-                        "paper_id": paper_id,
-                        "output_file": str(out_json),
-                        "status": "success",
-                        "method": parse_result.method,
-                    },
-                )
-            else:
-                summary["text_parse_fail"] += 1
-                log_jsonl(
-                    post_parse_log,
-                    {
-                        "ts": datetime.now().isoformat(),
-                        "event": "model_output",
-                        "stage": "text_post_parse",
-                        "paper_id": paper_id,
-                        "output_file": str(text_txt),
-                        "status": "error",
-                        "error": str(parse_error),
-                    },
-                )
-
-        multimodal_groups_path = intermediate_dir / "multimodal" / "image_groups.json"
-        groups = _load_groups(multimodal_groups_path)
-        final_multimodal_items: List[Dict[str, Any]] = []
-
-        for request_txt in sorted((intermediate_dir / "multimodal").glob("figure_*.txt")):
-            try:
-                request_index = parse_request_index(request_txt.stem)
-                group = groups[request_index - 1] if 0 < request_index <= len(groups) else {}
-                parse_result = parse_multimodal_output(
-                    request_txt.read_text(encoding="utf-8"),
+                parse_result = fallback_parse_with_agent(
+                    fallback_client,
+                    model=settings.text_model.model,
+                    stage="text_post_parse",
+                    raw_text=text_txt.read_text(encoding="utf-8"),
                     paper_id=paper_id,
-                    group=group,
-                    fallback_request_id=request_txt.stem,
                 )
+                summary["fallback_agent_used"] += 1
             except Exception as exc:
-                parse_result = None
                 parse_error = exc
-            else:
-                parse_error = None
 
-            if parse_result is None and fallback_client is not None:
-                try:
-                    parse_result = fallback_parse_with_agent(
-                        fallback_client,
-                        model=settings.text_model.model,
-                        stage="multimodal_post_parse",
-                        raw_text=request_txt.read_text(encoding="utf-8"),
-                        paper_id=paper_id,
-                        extra_context={
-                            "group": group,
-                            "fallback_request_id": request_txt.stem,
-                        },
-                    )
-                    summary["fallback_agent_used"] += 1
-                    if isinstance(parse_result.parsed, dict):
-                        parse_result = ParseResult(
-                            parsed=normalize_figure_result(
-                                parse_result.parsed,
-                                paper_id=paper_id,
-                                group=group,
-                                fallback_request_id=request_txt.stem,
-                            ),
-                            method=parse_result.method,
-                        )
-                except Exception as exc:
-                    parse_error = exc
-
-            if parse_result is not None:
-                request_json = final_dir / f"{request_txt.stem}.json"
-                request_json.write_text(json.dumps(parse_result.parsed, ensure_ascii=False, indent=2), encoding="utf-8")
-                if isinstance(parse_result.parsed, dict):
-                    final_multimodal_items.append(parse_result.parsed)
-                summary["multimodal_parse_success"] += 1
-                log_jsonl(
-                    post_parse_log,
-                    {
-                        "ts": datetime.now().isoformat(),
-                        "event": "model_output",
-                        "stage": "multimodal_post_parse",
-                        "paper_id": paper_id,
-                        "output_file": str(request_json),
-                        "status": "success",
-                        "method": parse_result.method,
-                        "image_count": len(parse_result.parsed.get("image_paths", [])) if isinstance(parse_result.parsed, dict) else None,
-                    },
-                )
-            else:
-                summary["multimodal_parse_fail"] += 1
-                log_jsonl(
-                    post_parse_log,
-                    {
-                        "ts": datetime.now().isoformat(),
-                        "event": "model_output",
-                        "stage": "multimodal_post_parse",
-                        "paper_id": paper_id,
-                        "output_file": str(request_txt),
-                        "status": "error",
-                        "error": str(parse_error),
-                    },
-                )
-
-        if final_multimodal_items:
-            multimodal_summary_path = final_dir / "multimodal_figures.json"
-            multimodal_summary_path.write_text(
-                json.dumps(final_multimodal_items, ensure_ascii=False, indent=2),
-                encoding="utf-8",
+        if parse_result is not None:
+            out_json = final_dir / "text_extraction.json"
+            out_json.write_text(json.dumps(parse_result.parsed, ensure_ascii=False, indent=2), encoding="utf-8")
+            summary["text_parse_success"] += 1
+            log_jsonl(
+                post_parse_log,
+                {
+                    "ts": datetime.now().isoformat(),
+                    "event": "model_output",
+                    "stage": "text_post_parse",
+                    "paper_id": paper_id,
+                    "output_file": str(out_json),
+                    "status": "success",
+                    "method": parse_result.method,
+                },
             )
+        else:
+            summary["text_parse_fail"] += 1
+            log_jsonl(
+                post_parse_log,
+                {
+                    "ts": datetime.now().isoformat(),
+                    "event": "model_output",
+                    "stage": "text_post_parse",
+                    "paper_id": paper_id,
+                    "output_file": str(text_txt),
+                    "status": "error",
+                    "error": str(parse_error),
+                },
+            )
+
+    multimodal_groups_path = intermediate_dir / "multimodal" / "image_groups.json"
+    groups = _load_groups(multimodal_groups_path)
+    final_multimodal_items: List[Dict[str, Any]] = []
+
+    for request_txt in sorted((intermediate_dir / "multimodal").glob("figure_*.txt")):
+        try:
+            request_index = parse_request_index(request_txt.stem)
+            group = groups[request_index - 1] if 0 < request_index <= len(groups) else {}
+            parse_result = parse_multimodal_output(
+                request_txt.read_text(encoding="utf-8"),
+                paper_id=paper_id,
+                group=group,
+                fallback_request_id=request_txt.stem,
+            )
+        except Exception as exc:
+            parse_result = None
+            parse_error = exc
+        else:
+            parse_error = None
+
+        if parse_result is None and fallback_client is not None and settings is not None:
+            try:
+                parse_result = fallback_parse_with_agent(
+                    fallback_client,
+                    model=settings.text_model.model,
+                    stage="multimodal_post_parse",
+                    raw_text=request_txt.read_text(encoding="utf-8"),
+                    paper_id=paper_id,
+                    extra_context={
+                        "group": group,
+                        "fallback_request_id": request_txt.stem,
+                    },
+                )
+                summary["fallback_agent_used"] += 1
+                if isinstance(parse_result.parsed, dict):
+                    parse_result = ParseResult(
+                        parsed=normalize_figure_result(
+                            parse_result.parsed,
+                            paper_id=paper_id,
+                            group=group,
+                            fallback_request_id=request_txt.stem,
+                        ),
+                        method=parse_result.method,
+                    )
+            except Exception as exc:
+                parse_error = exc
+
+        if parse_result is not None:
+            request_json = final_dir / f"{request_txt.stem}.json"
+            request_json.write_text(json.dumps(parse_result.parsed, ensure_ascii=False, indent=2), encoding="utf-8")
+            if isinstance(parse_result.parsed, dict):
+                final_multimodal_items.append(parse_result.parsed)
+            summary["multimodal_parse_success"] += 1
+            log_jsonl(
+                post_parse_log,
+                {
+                    "ts": datetime.now().isoformat(),
+                    "event": "model_output",
+                    "stage": "multimodal_post_parse",
+                    "paper_id": paper_id,
+                    "output_file": str(request_json),
+                    "status": "success",
+                    "method": parse_result.method,
+                    "image_count": len(parse_result.parsed.get("image_paths", [])) if isinstance(parse_result.parsed, dict) else None,
+                },
+            )
+        else:
+            summary["multimodal_parse_fail"] += 1
+            log_jsonl(
+                post_parse_log,
+                {
+                    "ts": datetime.now().isoformat(),
+                    "event": "model_output",
+                    "stage": "multimodal_post_parse",
+                    "paper_id": paper_id,
+                    "output_file": str(request_txt),
+                    "status": "error",
+                    "error": str(parse_error),
+                },
+            )
+
+    if final_multimodal_items:
+        multimodal_summary_path = final_dir / "multimodal_figures.json"
+        multimodal_summary_path.write_text(
+            json.dumps(final_multimodal_items, ensure_ascii=False, indent=2),
+            encoding="utf-8",
+        )
 
     return summary
 

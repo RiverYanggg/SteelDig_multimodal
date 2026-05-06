@@ -18,6 +18,7 @@ class WorkflowSettings:
     recursive: bool = True
     workers: int = 1
     limit_papers: int = 0
+    skip_existing: bool = False
     skip_post_parse: bool = False
     skip_multimodal: bool = True
     text_model: LocalModelConfig = LocalModelConfig(
@@ -61,6 +62,7 @@ def workflow_settings_from_dict(data: Dict[str, Any], base_dir: Path | None = No
         recursive=bool(data.get("recursive", True)),
         workers=int(data.get("workers", 1)),
         limit_papers=int(data.get("limit_papers", 0)),
+        skip_existing=bool(data.get("skip_existing", False)),
         skip_post_parse=bool(data.get("skip_post_parse", False)),
         skip_multimodal=bool(data.get("skip_multimodal", True)),
         text_model=text_model,
@@ -82,6 +84,7 @@ def default_workflow_settings(project_root: Path) -> WorkflowSettings:
         recursive=True,
         workers=1,
         limit_papers=0,
+        skip_existing=False,
         skip_post_parse=False,
         skip_multimodal=False,
         text_model=LocalModelConfig(

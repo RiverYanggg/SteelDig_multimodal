@@ -49,10 +49,14 @@ def synthesize_markdown(
     client: Any,
     model: str,
     paper_map: Dict[str, Any],
-    claims: List[Dict[str, Any]],
+    synthesis_payload: Dict[str, Any],
     visual_evidence: List[Dict[str, Any]] | None = None,
 ) -> tuple[str, str]:
-    prompt = build_markdown_prompt(paper_map=paper_map, claims=claims, visual_evidence=visual_evidence)
+    prompt = build_markdown_prompt(
+        paper_map=paper_map,
+        synthesis_payload=synthesis_payload,
+        visual_evidence=visual_evidence,
+    )
     content = _chat(client, model, "你是材料科学论文知识卡片写作助手。", prompt)
     return content, prompt
 

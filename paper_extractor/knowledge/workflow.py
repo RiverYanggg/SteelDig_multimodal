@@ -10,8 +10,9 @@ from paper_extractor.knowledge.chunker import Chunk, split_markdown_into_chunks,
 from paper_extractor.knowledge.extractor import ExtractionParseError, extract_chunk_claims, generate_paper_map, synthesize_markdown
 from paper_extractor.knowledge.markdown_writer import write_knowledge_outputs
 from paper_extractor.knowledge.normalizer import normalize_claims, write_claims_jsonl
+from paper_extractor.knowledge.synthesis_payload import build_synthesis_payload
 from paper_extractor.preprocess import preprocess_paper
-from paper_extractor.workflow import collect_md_files
+from paper_extractor.workflow import collect_md_files, validate_unique_paper_ids
 
 
 def run_knowledge_workflow(
@@ -41,6 +42,7 @@ def run_knowledge_workflow(
         md_files = md_files[: settings.limit_papers]
     if not md_files:
         raise ValueError("No markdown files found.")
+    validate_unique_paper_ids(md_files)
 
     results = []
     for md_path in md_files:
@@ -189,7 +191,18 @@ def _run_from_cleaned_markdown(
         encoding="utf-8",
     )
 
+    # In fused mode we only read visual evidence from the same paper_dir/final
+    # that this knowledge run belongs to; no cross-paper lookup happens here.
     visual_evidence = _load_visual_evidence(final_dir / "multimodal_figures.json") if mode == "fused" else []
+    synthesis_payload = build_synthesis_payload(
+        paper_map=paper_map,
+        claims=normalized_claims,
+        visual_evidence=visual_evidence,
+    )
+    (intermediate_dir / "synthesis_payload.json").write_text(
+        json.dumps(synthesis_payload, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
     if mock_model:
         markdown, synthesis_prompt = _mock_markdown(paper_map, normalized_claims), "mock"
     else:
@@ -197,7 +210,7 @@ def _run_from_cleaned_markdown(
             client,
             settings.text_model.model,
             paper_map=paper_map,
-            claims=normalized_claims,
+            synthesis_payload=synthesis_payload,
             visual_evidence=visual_evidence,
         )
     (intermediate_dir / "synthesis_prompt.txt").write_text(synthesis_prompt, encoding="utf-8")

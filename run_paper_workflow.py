@@ -20,6 +20,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--recursive", action="store_true", help="Recursively scan markdown files.")
     parser.add_argument("--workers", type=int, default=None, help="Parallel papers count.")
     parser.add_argument("--limit-papers", type=int, default=None, help="0 means no limit.")
+    parser.add_argument("--skip-existing", action="store_true", help="Skip papers with existing final outputs.")
     parser.add_argument("--skip-post-parse", action="store_true", help="Skip txt->json post-processing.")
     parser.add_argument("--skip-multimodal", action="store_true", help="Skip image analysis stage.")
 
@@ -55,6 +56,7 @@ def build_settings(args: argparse.Namespace) -> WorkflowSettings:
         recursive=args.recursive or settings.recursive,
         workers=args.workers if args.workers is not None else settings.workers,
         limit_papers=args.limit_papers if args.limit_papers is not None else settings.limit_papers,
+        skip_existing=args.skip_existing or settings.skip_existing,
         skip_post_parse=args.skip_post_parse or settings.skip_post_parse,
         skip_multimodal=args.skip_multimodal or settings.skip_multimodal,
         text_model=text_model,

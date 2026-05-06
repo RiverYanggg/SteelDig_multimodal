@@ -35,20 +35,25 @@ def build_claim_prompt(paper_map: Dict[str, Any], chunk: Chunk) -> str:
     )
 
 
-def build_markdown_prompt(paper_map: Dict[str, Any], claims: List[Dict[str, Any]], visual_evidence: List[Dict[str, Any]] | None = None) -> str:
+def build_markdown_prompt(
+    paper_map: Dict[str, Any],
+    synthesis_payload: Dict[str, Any],
+    visual_evidence: List[Dict[str, Any]] | None = None,
+) -> str:
     visual_evidence = visual_evidence or []
     return (
-        "你是材料科学论文知识卡片写作助手。请根据 paper_map、normalized_claims 和可选 visual_evidence "
+        "你是材料科学论文知识卡片写作助手。请根据 paper_map、compressed_core_facts 和可选 visual_evidence "
         "生成面向语言模型训练的 Markdown。\n"
         "要求：\n"
         "1. 使用英文 Markdown。\n"
-        "2. 围绕 Material System, Processing-Structure-Property Chain, Mechanism, Key Takeaways, Evidence Map 组织。\n"
-        "3. 不要编造 claims 中没有的数值或结论。\n"
-        "4. Evidence Map 中引用 claim_id、chunk_id、section 和简短证据。\n"
-        "5. 如果 visual_evidence 为空，不要写 Visual Evidence 章节。\n"
-        "6. 只输出 Markdown 正文，不要代码块包裹。\n\n"
+        "2. 重点突出 Processing-Structure-Property Chain，确保工艺变量、组织演化、性能结果和机理之间的因果链清晰可追踪。\n"
+        "3. 优先保留高信息密度、高保真的科学事实，不要罗列低价值方法学细节。\n"
+        "4. 不要编造 core_facts 中没有的数值或结论；如果存在 weak support，只能作为低确定性补充，不能写成确定事实。\n"
+        "5. 使用以下结构组织：Material System, Processing-Structure-Property Chain, Mechanistic Interpretation, Key Quantitative Findings, Optional Visual Evidence。\n"
+        "6. 如果 visual_evidence 为空，不要写 Visual Evidence 章节。\n"
+        "7. 只输出 Markdown 正文，不要代码块包裹。\n\n"
         f"paper_map_json:\n{json.dumps(paper_map, ensure_ascii=False)}\n\n"
-        f"normalized_claims_json:\n{json.dumps(claims, ensure_ascii=False)}\n\n"
+        f"compressed_core_facts_json:\n{json.dumps(synthesis_payload, ensure_ascii=False)}\n\n"
         f"visual_evidence_json:\n{json.dumps(visual_evidence, ensure_ascii=False)}\n"
     )
 
@@ -63,4 +68,3 @@ def _build_paper_map_excerpt(markdown_text: str, max_chars: int) -> str:
     tail = markdown_text[-max_chars // 4:]
     excerpt = f"{front}\n\n--- tail excerpt ---\n\n{tail}"
     return excerpt[:max_chars]
-

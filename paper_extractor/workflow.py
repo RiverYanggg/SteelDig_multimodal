@@ -28,6 +28,33 @@ def collect_md_files(input_path: Path, recursive: bool) -> List[Path]:
     raise FileNotFoundError(f"Input path not found or not supported: {input_path}")
 
 
+def validate_unique_paper_ids(md_files: List[Path]) -> None:
+    duplicates: Dict[str, List[str]] = {}
+    for md_path in md_files:
+        paper_id = md_path.stem
+        duplicates.setdefault(paper_id, []).append(str(md_path))
+
+    conflicts = {paper_id: paths for paper_id, paths in duplicates.items() if len(paths) > 1}
+    if not conflicts:
+        return
+
+    lines = ["Duplicate paper_id detected from Markdown filenames. Rename files to unique stems before running:"]
+    for paper_id, paths in sorted(conflicts.items()):
+        lines.append(f"- paper_id={paper_id}")
+        for path in paths:
+            lines.append(f"  - {path}")
+    raise ValueError("\n".join(lines))
+
+
+def is_paper_extraction_complete(output_root: Path, paper_id: str, skip_multimodal: bool) -> bool:
+    final_dir = output_root / paper_id / "final"
+    if not (final_dir / "text_extraction.json").exists():
+        return False
+    if skip_multimodal:
+        return True
+    return (final_dir / "multimodal_figures.json").exists()
+
+
 def build_text_prompt(base_prompt: str, schema_text: str, paper_id: str, paper_text: str) -> str:
     return (
         f"{base_prompt}\n\n"
@@ -116,6 +143,9 @@ def run_one_paper(
 ) -> Dict[str, Any]:
     paper_id = md_path.stem
     paper_dir = output_root / paper_id
+    # Every artifact for a paper is rooted under one isolated paper_dir.
+    # This directory boundary is the main reason paper-level parallelism does
+    # not mix outputs across different papers.
     preprocess_dir = paper_dir / "preprocess"
     intermediate_dir = paper_dir / "intermediate"
     intermediate_text_dir = intermediate_dir / "text"
@@ -323,6 +353,19 @@ def run_workflow(settings: WorkflowSettings) -> None:
         md_files = md_files[: settings.limit_papers]
     if not md_files:
         raise ValueError("No markdown files found.")
+    validate_unique_paper_ids(md_files)
+    if settings.skip_existing:
+        original_count = len(md_files)
+        md_files = [
+            md_path
+            for md_path in md_files
+            if not is_paper_extraction_complete(output_root, md_path.stem, settings.skip_multimodal)
+        ]
+        skipped = original_count - len(md_files)
+        print(f"Skip-existing enabled. skipped={skipped}, remaining={len(md_files)}")
+        if not md_files:
+            print("Workflow finished. No remaining papers to process.")
+            return
 
     total_ok = 0
     total_fail = 0
@@ -337,6 +380,8 @@ def run_workflow(settings: WorkflowSettings) -> None:
 
     print(f"Workflow started. papers={len(md_files)}, workers={workers}")
     with ThreadPoolExecutor(max_workers=workers) as executor:
+        # Futures are scheduled per paper instead of per figure/chunk, which
+        # keeps resource accounting and output isolation simple.
         futures = [
             executor.submit(
                 run_one_paper,
