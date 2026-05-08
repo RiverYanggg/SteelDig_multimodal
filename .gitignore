@@ -7,6 +7,16 @@ __pycache__/
 .ruff_cache/
 .venv/
 venv/
+.Python
+
+## Local env / secrets
+.env
+.env.*
+*.env
+config/workflow.json
+config/*.local.json
+config/*secret*.json
+config/*private*.json
 
 ## OS / Editor
 .DS_Store
@@ -16,3 +26,10 @@ venv/
 ## Project runtime outputs
 workflow_runs/
 
+## Datasets and extracted artifacts
+dataset/
+data/
+outputs/
+artifacts/
+*.log
+*.jsonl
