@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import argparse
 import json
+import traceback
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
@@ -37,7 +38,10 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--skip-post-parse", action="store_true", help="Skip txt->json post-processing.")
     parser.add_argument("--skip-multimodal", action="store_true", help="Skip image analysis stage.")
     parser.add_argument("--knowledge-mode", choices=["text", "fused"], default="fused", help="Knowledge mode.")
-    parser.add_argument("--knowledge-max-chunk-chars", type=int, default=9000, help="Approximate max chars per chunk.")
+    parser.add_argument("--knowledge-max-chunk-chars", type=int, default=24000, help="Hard max chars per knowledge chunk.")
+    parser.add_argument("--knowledge-target-chunks", type=int, default=5, help="Preferred knowledge chunk count per paper.")
+    parser.add_argument("--knowledge-max-chunks", type=int, default=8, help="Soft max knowledge chunk count per paper.")
+    parser.add_argument("--knowledge-min-chunk-chars", type=int, default=6000, help="Small chunks below this size are merged when possible.")
     parser.add_argument("--knowledge-mock-model", action="store_true", help="Run knowledge workflow with mock model.")
     parser.add_argument(
         "--resume-mode",
@@ -112,6 +116,9 @@ def run_pipeline_for_paper(
     paper_total: int,
     knowledge_mode: str,
     knowledge_max_chunk_chars: int,
+    knowledge_target_chunks: int,
+    knowledge_max_chunks: int,
+    knowledge_min_chunk_chars: int,
     knowledge_mock_model: bool,
     resume_mode: str,
 ) -> dict:
@@ -171,6 +178,9 @@ def run_pipeline_for_paper(
             run_dir=paper_dir,
             mode=knowledge_mode,
             max_chunk_chars=knowledge_max_chunk_chars,
+            target_chunks=knowledge_target_chunks,
+            max_chunks=knowledge_max_chunks,
+            min_chunk_chars=knowledge_min_chunk_chars,
             mock_model=knowledge_mock_model,
         )
         print(f"[PIPELINE {paper_index}/{paper_total}] [{paper_id}] knowledge done")
@@ -231,6 +241,9 @@ def main() -> None:
                 paper_total=total,
                 knowledge_mode=args.knowledge_mode,
                 knowledge_max_chunk_chars=args.knowledge_max_chunk_chars,
+                knowledge_target_chunks=args.knowledge_target_chunks,
+                knowledge_max_chunks=args.knowledge_max_chunks,
+                knowledge_min_chunk_chars=args.knowledge_min_chunk_chars,
                 knowledge_mock_model=args.knowledge_mock_model,
                 resume_mode=args.resume_mode,
             ): (index, md_path)
@@ -247,7 +260,14 @@ def main() -> None:
                 results.append(result)
                 print(f"[PIPELINE OK] [{paper_id}]")
             except Exception as exc:
-                failures.append({"paper_id": paper_id, "error": str(exc), "paper_index": index})
+                failures.append(
+                    {
+                        "paper_id": paper_id,
+                        "error": str(exc),
+                        "paper_index": index,
+                        "traceback": traceback.format_exc(),
+                    }
+                )
                 print(f"[PIPELINE ERR] [{paper_id}] {exc}")
 
     results.sort(key=lambda item: item["paper_id"])

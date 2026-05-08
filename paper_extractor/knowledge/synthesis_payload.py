@@ -39,19 +39,20 @@ NOISE_CLAIM_TYPE_KEYWORDS = (
 
 def build_synthesis_payload(
     paper_map: Dict[str, Any],
-    claims: Iterable[Dict[str, Any]],
+    claims: Iterable[Dict[str, Any]] | None,
     visual_evidence: List[Dict[str, Any]] | None = None,
 ) -> Dict[str, Any]:
-    selected = _select_claims(list(claims))
+    safe_paper_map = paper_map if isinstance(paper_map, dict) else {}
+    selected = _select_claims([claim for claim in (claims or []) if isinstance(claim, dict)])
     grouped = _group_claims(selected)
-    trimmed_visual = _trim_visual_evidence(visual_evidence or [])
+    trimmed_visual = _trim_visual_evidence([item for item in (visual_evidence or []) if isinstance(item, dict)])
     return {
         "paper_focus": {
-            "title": paper_map.get("title"),
-            "research_objective": paper_map.get("research_objective"),
-            "material_systems": paper_map.get("material_systems", []),
-            "main_process_variables": paper_map.get("main_process_variables", []),
-            "expected_information_axis": paper_map.get("expected_information_axis", []),
+            "title": safe_paper_map.get("title"),
+            "research_objective": safe_paper_map.get("research_objective"),
+            "material_systems": _safe_list(safe_paper_map.get("material_systems")),
+            "main_process_variables": _safe_list(safe_paper_map.get("main_process_variables")),
+            "expected_information_axis": _safe_list(safe_paper_map.get("expected_information_axis")),
         },
         "core_facts": grouped,
         "visual_evidence": trimmed_visual,
@@ -61,6 +62,8 @@ def build_synthesis_payload(
 def _select_claims(claims: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     deduped: Dict[Tuple[str, str], Dict[str, Any]] = {}
     for claim in claims:
+        if not isinstance(claim, dict):
+            continue
         compact = _compact_claim(claim)
         if compact is None:
             continue
@@ -97,6 +100,7 @@ def _compact_claim(claim: Dict[str, Any]) -> Dict[str, Any] | None:
     if bucket is None:
         return None
 
+    # 这一部分的用处是什么？Bucket的分类依据是什么？写死的吗？
     if _is_noise_claim(claim_type, subject, claim_text, bucket):
         return None
 
@@ -132,7 +136,9 @@ def _compact_claim(claim: Dict[str, Any]) -> Dict[str, Any] | None:
 def _group_claims(claims: List[Dict[str, Any]]) -> Dict[str, List[Dict[str, Any]]]:
     grouped: Dict[str, List[Dict[str, Any]]] = {bucket: [] for bucket in CORE_BUCKET_ORDER}
     for claim in claims:
-        bucket = claim["topic"]
+        bucket = claim.get("topic")
+        if bucket not in grouped:
+            continue
         grouped[bucket].append(claim)
     return {bucket: grouped[bucket] for bucket in CORE_BUCKET_ORDER if grouped[bucket]}
 
@@ -140,6 +146,8 @@ def _group_claims(claims: List[Dict[str, Any]]) -> Dict[str, List[Dict[str, Any]
 def _trim_visual_evidence(items: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     trimmed = []
     for item in items:
+        if not isinstance(item, dict):
+            continue
         figure_id = _clean_text(str(item.get("figure_id") or ""))
         image_type = _clean_text(str(item.get("image_type") or ""))
         description = _clean_text(str(item.get("description") or ""))
@@ -160,6 +168,7 @@ def _bucket_for_claim(claim_type: str, subject: str, claim_text: str) -> str | N
     for bucket, keywords in CLAIM_TYPE_BUCKET_KEYWORDS.items():
         if any(keyword in text for keyword in keywords):
             return bucket
+    # 这一部分可以结合到CLAIM_TYPE_BUCKET_KEYWORDS?
     if any(token in text for token in ("sem", "tem", "xrd", "ebsd")):
         return "characterization"
     return None
@@ -217,12 +226,12 @@ def _merge_refs(figures: Any, tables: Any) -> List[str]:
 
 def _strip_private_fields(claim: Dict[str, Any]) -> Dict[str, Any]:
     payload = {
-        "id": claim["id"],
-        "section": claim["section"],
-        "type": claim["type"],
-        "subject": claim["subject"],
-        "claim": claim["claim"],
-        "support": claim["support"],
+        "id": str(claim.get("id") or ""),
+        "section": str(claim.get("section") or "Unknown"),
+        "type": str(claim.get("type") or "finding"),
+        "subject": str(claim.get("subject") or ""),
+        "claim": str(claim.get("claim") or ""),
+        "support": str(claim.get("support") or "weak"),
     }
     if claim.get("refs"):
         payload["refs"] = claim["refs"]
@@ -233,6 +242,10 @@ def _strip_private_fields(claim: Dict[str, Any]) -> Dict[str, Any]:
 
 def _clean_text(text: str) -> str:
     return re.sub(r"\s+", " ", text).strip()
+
+
+def _safe_list(value: Any) -> List[Any]:
+    return value if isinstance(value, list) else []
 
 
 def _normalize_text(text: str) -> str:

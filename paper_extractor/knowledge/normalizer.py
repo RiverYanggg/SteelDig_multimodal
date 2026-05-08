@@ -14,10 +14,42 @@ def normalize_claims(raw_records: Iterable[Dict[str, Any]], chunks: List[Chunk])
     seen = set()
 
     for record in raw_records:
+        if not isinstance(record, dict):
+            warnings.append(
+                {
+                    "chunk_id": "",
+                    "claim": "",
+                    "validation_status": "invalid_record",
+                    "evidence_text": "",
+                    "error": f"raw record is {type(record).__name__}, expected dict",
+                }
+            )
+            continue
         chunk_id = str(record.get("chunk_id", ""))
         chunk = chunk_map.get(chunk_id)
-        for raw_claim in record.get("claims", []):
+        claims = record.get("claims", [])
+        if not isinstance(claims, list):
+            warnings.append(
+                {
+                    "chunk_id": chunk_id,
+                    "claim": "",
+                    "validation_status": "invalid_claims",
+                    "evidence_text": "",
+                    "error": f"claims is {type(claims).__name__}, expected list",
+                }
+            )
+            claims = []
+        for raw_claim in claims:
             if not isinstance(raw_claim, dict):
+                warnings.append(
+                    {
+                        "chunk_id": chunk_id,
+                        "claim": "",
+                        "validation_status": "invalid_claim",
+                        "evidence_text": "",
+                        "error": f"claim is {type(raw_claim).__name__}, expected dict",
+                    }
+                )
                 continue
             claim_text = _clean(str(raw_claim.get("claim", "")))
             evidence_text = _clean(str(raw_claim.get("evidence_text", "")))
@@ -138,4 +170,3 @@ def _string_list(value: Any) -> List[str]:
 def _fingerprint(text: str) -> str:
     normalized = re.sub(r"\W+", "", text.lower())
     return hashlib.sha1(normalized.encode("utf-8")).hexdigest()
-
