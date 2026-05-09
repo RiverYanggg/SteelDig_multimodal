@@ -5,7 +5,14 @@ from typing import Dict, List
 
 IMAGE_RE = re.compile(r"!\[[^\]]*\]\(([^)]+)\)")
 HEADING_RE = re.compile(r"^(#{1,6})\s+(.*)$")
-FIGURE_NO_RE = re.compile(r"\bFigure\s+(\d+)\b", re.IGNORECASE)
+FIGURE_CAPTION_RE = re.compile(
+    r"^\s*(?:fig(?:ure)?\.?|figure)\s*\.?\s*(\d+)(?:[a-zA-Z\u0370-\u03FF]+)?(?:[\.\):\-\s]|$)",
+    re.IGNORECASE,
+)
+FIGURE_NO_RE = re.compile(
+    r"\b(?:fig(?:ure)?\.?|figure)\s*\.?\s*(\d+)(?:[a-zA-Z\u0370-\u03FF]+)?\b",
+    re.IGNORECASE,
+)
 FIGURE_REF_RE = re.compile(r"\b(?:Figure|Fig(?:ure)?)\s*\.?\s*(\d+)(?:[a-zA-Z\u0370-\u03FF]+)?", re.IGNORECASE)
 
 
@@ -23,13 +30,20 @@ def get_title(lines: List[str]) -> str:
 
 
 def get_abstract(lines: List[str]) -> str:
-    first_section_idx = len(lines)
+    title_idx = None
     for i, line in enumerate(lines):
-        if re.match(r"^#\s+\d+[\.\s]", line.strip()):
+        if line.strip().startswith("# "):
+            title_idx = i
+            break
+
+    start_idx = (title_idx + 1) if title_idx is not None else 0
+    first_section_idx = len(lines)
+    for i in range(start_idx, len(lines)):
+        if HEADING_RE.match(lines[i].strip()):
             first_section_idx = i
             break
 
-    pre_section = lines[:first_section_idx]
+    pre_section = lines[start_idx:first_section_idx]
     paragraphs: List[str] = []
     current: List[str] = []
     for raw in pre_section:
@@ -41,10 +55,15 @@ def get_abstract(lines: List[str]) -> str:
             continue
         if line.startswith("#"):
             continue
+        if line.lower().startswith(("key words:", "keywords:", "received ", "revised ")):
+            continue
+        if line.startswith("\\*"):
+            continue
         current.append(line)
     if current:
         paragraphs.append(" ".join(current))
 
+    paragraphs = [paragraph for paragraph in paragraphs if len(paragraph) >= 80]
     if not paragraphs:
         return ""
 
@@ -58,7 +77,7 @@ def collect_figure_references(lines: List[str]) -> Dict[str, List[str]]:
         stripped = raw.strip()
         if not stripped:
             continue
-        if stripped.startswith("Figure ") or stripped.startswith("#") or IMAGE_RE.search(stripped):
+        if FIGURE_CAPTION_RE.match(stripped) or stripped.startswith("#") or IMAGE_RE.search(stripped):
             continue
         nums = FIGURE_REF_RE.findall(stripped)
         if not nums:
@@ -81,6 +100,10 @@ def is_probable_noise_between_image_and_caption(line: str) -> bool:
     if len(s) <= 80 and re.search(r"\([a-z]\)", s, re.IGNORECASE):
         return True
     if len(s) <= 80 and re.search(r"\bfor\s+\d+\s*[A-Za-z]+\s+steel\s+strip\b", s, re.IGNORECASE):
+        return True
+    if len(s) <= 80 and re.search(r"\b(?:wt|vol|at)\s*\.?\s*%", s, re.IGNORECASE):
+        return True
+    if len(s) <= 80 and re.search(r"\b[A-Za-z]+\s*\([^)]*%\)", s):
         return True
     if len(s.split()) <= 3 and not any(p in s for p in [".", "?", "!", ":", ";"]):
         return True
@@ -114,7 +137,9 @@ def collect_multiline_caption(lines: List[str], start_idx: int) -> str:
             i += 1
             continue
         blank_run = 0
-        if s.startswith("#") or s.lower().startswith("figure ") or IMAGE_RE.search(s):
+        if s.startswith("#") or FIGURE_CAPTION_RE.match(s) or IMAGE_RE.search(s):
+            break
+        if s.startswith("<details>") or s.startswith("<summary>") or s.startswith("</details>"):
             break
         if s.lower().startswith("this article is protected by copyright"):
             break
@@ -127,6 +152,25 @@ def collect_multiline_caption(lines: List[str], start_idx: int) -> str:
     return " ".join(chunks)
 
 
+def collect_images(lines: List[str], start_idx: int) -> tuple[List[str], int]:
+    chunks = [lines[start_idx].strip()]
+    end_idx = start_idx
+    while end_idx + 1 < len(lines) and ")" not in " ".join(chunks) and len(chunks) < 5:
+        end_idx += 1
+        chunks.append(lines[end_idx].strip())
+    joined = "".join(chunks)
+    return [match.strip() for match in IMAGE_RE.findall(joined)], end_idx
+
+
+def skip_details_block(lines: List[str], start_idx: int) -> int:
+    i = start_idx
+    while i < len(lines):
+        if lines[i].strip().startswith("</details>"):
+            return i
+        i += 1
+    return start_idx
+
+
 def parse_markdown_text(markdown_text: str) -> List[Dict]:
     lines = markdown_text.splitlines()
 
@@ -137,21 +181,30 @@ def parse_markdown_text(markdown_text: str) -> List[Dict]:
     results: List[Dict] = []
     pending_images: List[str] = []
 
-    for idx, raw in enumerate(lines):
+    idx = 0
+    while idx < len(lines):
+        raw = lines[idx]
         line = raw.strip()
         if not line:
+            idx += 1
             continue
 
         h = HEADING_RE.match(line)
         if h:
+            idx += 1
             continue
 
-        img_match = IMAGE_RE.search(line)
-        if img_match:
-            pending_images.append(img_match.group(1).strip())
+        if line.startswith("<details>"):
+            idx = skip_details_block(lines, idx) + 1
             continue
 
-        if pending_images and line.lower().startswith("figure "):
+        if IMAGE_RE.search(line) or line.startswith("![]("):
+            image_paths, end_idx = collect_images(lines, idx)
+            pending_images.extend(image_paths)
+            idx = end_idx + 1
+            continue
+
+        if pending_images and FIGURE_CAPTION_RE.match(line):
             caption = collect_multiline_caption(lines, idx)
             no_match = FIGURE_NO_RE.search(caption)
             fig_no = no_match.group(1) if no_match else None
@@ -167,9 +220,11 @@ def parse_markdown_text(markdown_text: str) -> List[Dict]:
                 }
             )
             pending_images = []
+            idx += 1
             continue
 
         if pending_images and is_probable_noise_between_image_and_caption(line):
+            idx += 1
             continue
 
         if pending_images:
@@ -183,6 +238,7 @@ def parse_markdown_text(markdown_text: str) -> List[Dict]:
                 }
             )
             pending_images = []
+        idx += 1
 
     if pending_images:
         results.append(
@@ -195,7 +251,22 @@ def parse_markdown_text(markdown_text: str) -> List[Dict]:
             }
         )
 
-    return results
+    return backfill_missing_continued_captions(results)
+
+
+def backfill_missing_continued_captions(groups: List[Dict]) -> List[Dict]:
+    last_caption = ""
+    last_citation_sentences: List[str] = []
+    for group in groups:
+        caption = group.get("caption", "")
+        if caption:
+            last_caption = caption
+            last_citation_sentences = group.get("citation_sentences", [])
+            continue
+        if last_caption and re.search(r"\bcontinued\.?$", last_caption, re.IGNORECASE):
+            group["caption"] = last_caption
+            group["citation_sentences"] = list(last_citation_sentences)
+    return groups
 
 
 def parse_markdown_file(md_path: Path) -> List[Dict]:

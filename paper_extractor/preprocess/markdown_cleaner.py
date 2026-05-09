@@ -54,11 +54,14 @@ def clean_markdown_with_content_list(
         if category_key not in drop_categories:
             continue
 
-        updated = _remove_block_text(cleaned, text)
+        updated = _remove_block_text(cleaned, text, category_key)
         if updated != cleaned:
             cleaned = updated
             removed_blocks += 1
             removed_categories[category] = removed_categories.get(category, 0) + 1
+
+    if not references:
+        references, cleaned = _extract_reference_lines(cleaned)
 
     cleaned = _strip_trailing_reference_lines(cleaned)
     cleaned = _strip_common_noise_sections(cleaned)
@@ -74,7 +77,21 @@ def clean_markdown_without_content_list(markdown_text: str) -> Tuple[str, List[D
     return cleaned, references, removed_categories, len(references)
 
 
-def _remove_block_text(markdown_text: str, block_text: str) -> str:
+def _remove_block_text(markdown_text: str, block_text: str, category_key: str = "") -> str:
+    protect_markdown_headings = category_key in {"header", "page_header", "footer", "page_footer", "page_number"}
+    updated = _remove_line_text(markdown_text, block_text, protect_markdown_headings=protect_markdown_headings)
+    if updated != markdown_text:
+        return updated
+
+    if protect_markdown_headings:
+        return markdown_text
+
+    # Short content-list blocks are often page numbers. A substring replace can
+    # corrupt image hashes, tables, or body numbers, so only long blocks are
+    # eligible for fuzzy in-text removal.
+    if len(block_text) < 40:
+        return markdown_text
+
     if block_text in markdown_text:
         return markdown_text.replace(block_text, "\n")
 
@@ -85,26 +102,68 @@ def _remove_block_text(markdown_text: str, block_text: str) -> str:
     return pattern.sub("\n", markdown_text, count=1)
 
 
+def _remove_line_text(markdown_text: str, block_text: str, protect_markdown_headings: bool = False) -> str:
+    stripped = block_text.strip()
+    if not stripped:
+        return markdown_text
+
+    escaped = re.escape(stripped)
+    escaped = escaped.replace(r"\ ", r"\s+")
+    prefix = r"(?![ \t]*#)" if protect_markdown_headings else ""
+    pattern = re.compile(rf"(?m)^{prefix}[ \t]*{escaped}[ \t]*$")
+    return pattern.sub("", markdown_text, count=1)
+
+
 def _extract_reference_lines(markdown_text: str) -> Tuple[List[Dict[str, str]], str]:
     lines = markdown_text.splitlines()
     first_reference_index = None
     for index, line in enumerate(lines):
-        if re.match(r"^\[\d+\]\s+", line.strip()):
+        stripped = line.strip()
+        if re.match(r"^\[\d+\]\s+", stripped) or re.match(r"^\d+\.\s+", stripped):
+            first_reference_index = index
+            break
+        if stripped.strip("# ").lower() in {"references", "reference", "bibliography"}:
             first_reference_index = index
             break
 
     if first_reference_index is None:
         return [], markdown_text
 
-    reference_lines = [line.rstrip() for line in lines[first_reference_index:] if line.strip()]
-    references = [{"category": "ref_text", "text": line} for line in reference_lines]
+    reference_lines = [
+        line.rstrip()
+        for line in lines[first_reference_index:]
+        if line.strip() and line.strip().strip("# ").lower() not in {"references", "reference", "bibliography"}
+    ]
+    references = [{"category": "ref_text", "text": line} for line in _join_reference_lines(reference_lines)]
     cleaned_lines = lines[:first_reference_index]
     return references, "\n".join(cleaned_lines)
 
 
+def _join_reference_lines(lines: List[str]) -> List[str]:
+    refs: List[str] = []
+    current: List[str] = []
+    marker_re = re.compile(r"^(?:\[\d+\]|\d+\.)\s+")
+
+    for line in lines:
+        stripped = line.strip()
+        if marker_re.match(stripped):
+            if current:
+                refs.append(" ".join(current))
+            current = [stripped]
+        elif current:
+            current.append(stripped)
+        else:
+            refs.append(stripped)
+
+    if current:
+        refs.append(" ".join(current))
+
+    return refs
+
+
 def _strip_trailing_reference_lines(markdown_text: str) -> str:
     lines = markdown_text.splitlines()
-    while lines and re.match(r"^\[\d+\]\s+", lines[-1].strip()):
+    while lines and (re.match(r"^\[\d+\]\s+", lines[-1].strip()) or re.match(r"^\d+\.\s+", lines[-1].strip())):
         lines.pop()
     return "\n".join(lines)
 
