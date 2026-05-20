@@ -1,0 +1,751 @@
+{
+  "paper_id": "A19",
+  "truth_path": "/org/caep-xuben/yangzijiang/yzj/datasets/Al_82/Al_82_papers/json_truth/A19.json",
+  "prediction_path": "/org/caep-xuben/yangzijiang/yzj/datasets/Al_82/Al_82_papers/output/A19/final/text_extraction.json",
+  "prediction_empty": false,
+  "section_metrics": {
+    "papers": {
+      "structure_f1": 1.0,
+      "fact_f1": 0.4666666666666667
+    },
+    "alloys": {
+      "structure_f1": 1.0,
+      "fact_f1": 0.8292682926829269
+    },
+    "processes": {
+      "structure_f1": 0.6666666666666666,
+      "fact_f1": 0.6666666666666666
+    },
+    "samples": {
+      "structure_f1": 1.0,
+      "fact_f1": 0.0
+    },
+    "processing_steps": {
+      "structure_f1": 0.8,
+      "fact_f1": 0.4313725490196078
+    },
+    "structures": {
+      "structure_f1": 1.0,
+      "fact_f1": 0.13953488372093026
+    },
+    "interfaces": {
+      "structure_f1": 0.5,
+      "fact_f1": 0.0967741935483871
+    },
+    "properties": {
+      "structure_f1": 1.0,
+      "fact_f1": 0.6153846153846153
+    },
+    "performance": {
+      "structure_f1": 0.2857142857142857,
+      "fact_f1": 0.0
+    },
+    "characterization_methods": {
+      "structure_f1": 0.3571428571428571,
+      "fact_f1": 0.0
+    },
+    "computational_details": {
+      "structure_f1": 0.6666666666666666,
+      "fact_f1": 0.0
+    },
+    "unmapped_findings": {
+      "structure_f1": 0.9090909090909091,
+      "fact_f1": 0.0909090909090909
+    }
+  },
+  "sections": {
+    "papers": {
+      "structure_metrics": {
+        "truth_count": 1,
+        "prediction_count": 1,
+        "matched_count": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "fact_metrics": {
+        "truth_fact_count": 17,
+        "prediction_fact_count": 13,
+        "matched_fact_slots": 13,
+        "correct_fact_count": 7,
+        "precision": 0.5384615384615384,
+        "recall": 0.4117647058823529,
+        "f1": 0.4666666666666667,
+        "avg_bleu": 1.0,
+        "avg_rouge_l_f1": 1.0,
+        "missing_truth_fact_examples": [
+          "papers.A19.doi",
+          "papers.A19.journal",
+          "papers.A19.keywords[4]",
+          "papers.A19.publication_year"
+        ],
+        "extra_prediction_fact_examples": []
+      }
+    },
+    "alloys": {
+      "structure_metrics": {
+        "truth_count": 1,
+        "prediction_count": 1,
+        "matched_count": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "alignment": {
+        "matched_pairs": [
+          {
+            "truth_id": "alloy_a19_base",
+            "prediction_id": "alloy_fe8_9mn4_6al0_29c",
+            "score": 0.5691428571428572,
+            "reason": "composition=1.00, elements=0.60, name=0.29, alias=0.00, id=0.00"
+          }
+        ],
+        "unmatched_truth_ids": [],
+        "unmatched_prediction_ids": [],
+        "llm_candidates": []
+      },
+      "fact_metrics": {
+        "truth_fact_count": 22,
+        "prediction_fact_count": 19,
+        "matched_fact_slots": 19,
+        "correct_fact_count": 17,
+        "precision": 0.8947368421052632,
+        "recall": 0.7727272727272727,
+        "f1": 0.8292682926829269,
+        "avg_bleu": 0.09814997752258252,
+        "avg_rouge_l_f1": 0.2507936507936508,
+        "missing_truth_fact_examples": [
+          "alloys.alloy_a19_base.aliases[1]",
+          "alloys.alloy_a19_base.alloying_elements[3]",
+          "alloys.alloy_a19_base.alloying_elements[4]"
+        ],
+        "extra_prediction_fact_examples": []
+      }
+    },
+    "processes": {
+      "structure_metrics": {
+        "truth_count": 6,
+        "prediction_count": 6,
+        "matched_count": 4,
+        "precision": 0.6666666666666666,
+        "recall": 0.6666666666666666,
+        "f1": 0.6666666666666666
+      },
+      "alignment": {
+        "matched_pairs": [
+          {
+            "truth_id": "proc_a19_qa620",
+            "prediction_id": "proc_qa620",
+            "score": 0.5494393687707642,
+            "reason": "description=0.37, alloy=1.00, numeric=0.38, id=0.57"
+          },
+          {
+            "truth_id": "proc_a19_qa680",
+            "prediction_id": "proc_qa680",
+            "score": 0.5494393687707642,
+            "reason": "description=0.37, alloy=1.00, numeric=0.38, id=0.57"
+          },
+          {
+            "truth_id": "proc_a19_qa740",
+            "prediction_id": "proc_qa740",
+            "score": 0.5494393687707642,
+            "reason": "description=0.37, alloy=1.00, numeric=0.38, id=0.57"
+          },
+          {
+            "truth_id": "proc_a19_qa800",
+            "prediction_id": "proc_qa800",
+            "score": 0.5494393687707642,
+            "reason": "description=0.37, alloy=1.00, numeric=0.38, id=0.57"
+          }
+        ],
+        "unmatched_truth_ids": [
+          "proc_a19_hr",
+          "proc_a19_iq1050"
+        ],
+        "unmatched_prediction_ids": [
+          "proc_hr",
+          "proc_iq1050"
+        ],
+        "llm_candidates": []
+      },
+      "fact_metrics": {
+        "truth_fact_count": 6,
+        "prediction_fact_count": 6,
+        "matched_fact_slots": 4,
+        "correct_fact_count": 4,
+        "precision": 0.6666666666666666,
+        "recall": 0.6666666666666666,
+        "f1": 0.6666666666666666,
+        "avg_bleu": 0.1847686042052219,
+        "avg_rouge_l_f1": 0.5454545454545455,
+        "missing_truth_fact_examples": [
+          "processes.proc_a19_hr.description",
+          "processes.proc_a19_iq1050.description"
+        ],
+        "extra_prediction_fact_examples": [
+          "processes.proc_hr.description",
+          "processes.proc_iq1050.description"
+        ]
+      }
+    },
+    "samples": {
+      "structure_metrics": {
+        "truth_count": 6,
+        "prediction_count": 6,
+        "matched_count": 6,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "alignment": {
+        "matched_pairs": [
+          {
+            "truth_id": "sample_a19_hr",
+            "prediction_id": "sample_hr",
+            "score": 0.95,
+            "reason": "llm_bridge:one_to_one"
+          },
+          {
+            "truth_id": "sample_a19_iq1050",
+            "prediction_id": "sample_iq1050",
+            "score": 0.95,
+            "reason": "llm_bridge:one_to_one"
+          },
+          {
+            "truth_id": "sample_a19_qa620",
+            "prediction_id": "sample_qa620",
+            "score": 0.95,
+            "reason": "llm_bridge:one_to_one"
+          },
+          {
+            "truth_id": "sample_a19_qa680",
+            "prediction_id": "sample_qa680",
+            "score": 0.95,
+            "reason": "llm_bridge:one_to_one"
+          },
+          {
+            "truth_id": "sample_a19_qa740",
+            "prediction_id": "sample_qa740",
+            "score": 0.95,
+            "reason": "llm_bridge:one_to_one"
+          },
+          {
+            "truth_id": "sample_a19_qa800",
+            "prediction_id": "sample_qa800",
+            "score": 0.95,
+            "reason": "llm_bridge:one_to_one"
+          }
+        ],
+        "unmatched_truth_ids": [],
+        "unmatched_prediction_ids": [],
+        "llm_candidates": [
+          {
+            "truth_id": "sample_a19_hr",
+            "prediction_candidates": [
+              {
+                "prediction_id": "sample_hr",
+                "score": 0.4861111111111111,
+                "reason": "alloy=1.00, process=na, context=0.26, id=0.25, process_hint=0.10"
+              }
+            ]
+          },
+          {
+            "truth_id": "sample_a19_iq1050",
+            "prediction_candidates": [
+              {
+                "prediction_id": "sample_iq1050",
+                "score": 0.539647852147852,
+                "reason": "alloy=1.00, process=na, context=0.24, id=0.50, process_hint=0.18"
+              }
+            ]
+          },
+          {
+            "truth_id": "sample_a19_qa620",
+            "prediction_candidates": [
+              {
+                "prediction_id": "sample_qa620",
+                "score": 0.6421212121212121,
+                "reason": "alloy=1.00, process=1.00, context=0.31, id=0.50, process_hint=0.18"
+              },
+              {
+                "prediction_id": "sample_qa680",
+                "score": 0.45416666666666666,
+                "reason": "alloy=1.00, process=na, context=0.20, id=0.12, process_hint=0.08"
+              },
+              {
+                "prediction_id": "sample_qa740",
+                "score": 0.45339347079037795,
+                "reason": "alloy=1.00, process=na, context=0.20, id=0.12, process_hint=0.08"
+              }
+            ]
+          },
+          {
+            "truth_id": "sample_a19_qa680",
+            "prediction_candidates": [
+              {
+                "prediction_id": "sample_qa680",
+                "score": 0.6290994052676295,
+                "reason": "alloy=1.00, process=1.00, context=0.22, id=0.50, process_hint=0.18"
+              },
+              {
+                "prediction_id": "sample_qa620",
+                "score": 0.45120614035087714,
+                "reason": "alloy=1.00, process=na, context=0.18, id=0.12, process_hint=0.08"
+              }
+            ]
+          },
+          {
+            "truth_id": "sample_a19_qa740",
+            "prediction_candidates": [
+              {
+                "prediction_id": "sample_qa740",
+                "score": 0.6315122377622377,
+                "reason": "alloy=1.00, process=1.00, context=0.24, id=0.50, process_hint=0.18"
+              }
+            ]
+          },
+          {
+            "truth_id": "sample_a19_qa800",
+            "prediction_candidates": [
+              {
+                "prediction_id": "sample_qa800",
+                "score": 0.6322966507177034,
+                "reason": "alloy=1.00, process=1.00, context=0.25, id=0.50, process_hint=0.18"
+              }
+            ]
+          }
+        ]
+      },
+      "fact_metrics": {
+        "truth_fact_count": 0,
+        "prediction_fact_count": 0,
+        "matched_fact_slots": 0,
+        "correct_fact_count": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "avg_bleu": 0.0,
+        "avg_rouge_l_f1": 0.0,
+        "missing_truth_fact_examples": [],
+        "extra_prediction_fact_examples": []
+      }
+    },
+    "processing_steps": {
+      "structure_metrics": {
+        "truth_count": 27,
+        "prediction_count": 18,
+        "matched_count": 18,
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1": 0.8
+      },
+      "fact_metrics": {
+        "truth_fact_count": 48,
+        "prediction_fact_count": 54,
+        "matched_fact_slots": 48,
+        "correct_fact_count": 22,
+        "precision": 0.4074074074074074,
+        "recall": 0.4583333333333333,
+        "f1": 0.4313725490196078,
+        "avg_bleu": 0.03694451190543905,
+        "avg_rouge_l_f1": 0.15488215488215487,
+        "missing_truth_fact_examples": [],
+        "extra_prediction_fact_examples": [
+          "processing_steps.sample_a19_hr.reduction_ratio",
+          "processing_steps.sample_a19_iq1050.reduction_ratio",
+          "processing_steps.sample_a19_qa620.reduction_ratio",
+          "processing_steps.sample_a19_qa680.reduction_ratio",
+          "processing_steps.sample_a19_qa740.reduction_ratio",
+          "processing_steps.sample_a19_qa800.reduction_ratio"
+        ]
+      }
+    },
+    "structures": {
+      "structure_metrics": {
+        "truth_count": 6,
+        "prediction_count": 6,
+        "matched_count": 6,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "fact_metrics": {
+        "truth_fact_count": 94,
+        "prediction_fact_count": 121,
+        "matched_fact_slots": 30,
+        "correct_fact_count": 15,
+        "precision": 0.12396694214876033,
+        "recall": 0.1595744680851064,
+        "f1": 0.13953488372093026,
+        "avg_bleu": 0.0,
+        "avg_rouge_l_f1": 0.0,
+        "missing_truth_fact_examples": [
+          "structures.sample_a19_hr.microstructure_counts",
+          "structures.sample_a19_hr.microstructure_list[0].grain_structure.average_grain_size.unit",
+          "structures.sample_a19_hr.microstructure_list[0].phases_present[1].morphology",
+          "structures.sample_a19_hr.microstructure_list[0].phases_present[1].phase_name",
+          "structures.sample_a19_hr.microstructure_list[0].phases_present[2].crystal_structure",
+          "structures.sample_a19_hr.microstructure_list[0].phases_present[2].morphology",
+          "structures.sample_a19_hr.microstructure_list[0].phases_present[2].phase_name",
+          "structures.sample_a19_hr.microstructure_list[0].phases_present[2].volume_fraction",
+          "structures.sample_a19_hr.microstructure_list[0].related_sequence",
+          "structures.sample_a19_iq1050.microstructure_counts",
+          "structures.sample_a19_iq1050.microstructure_list[0].grain_structure.average_grain_size.unit",
+          "structures.sample_a19_iq1050.microstructure_list[0].phases_present[1].morphology",
+          "structures.sample_a19_iq1050.microstructure_list[0].phases_present[1].phase_name",
+          "structures.sample_a19_iq1050.microstructure_list[0].phases_present[2].crystal_structure",
+          "structures.sample_a19_iq1050.microstructure_list[0].phases_present[2].morphology",
+          "structures.sample_a19_iq1050.microstructure_list[0].phases_present[2].phase_name",
+          "structures.sample_a19_iq1050.microstructure_list[0].phases_present[2].volume_fraction",
+          "structures.sample_a19_iq1050.microstructure_list[0].related_sequence",
+          "structures.sample_a19_qa620.microstructure_counts",
+          "structures.sample_a19_qa620.microstructure_list[0].defects[0].lattice_distortion"
+        ],
+        "extra_prediction_fact_examples": [
+          "structures.sample_a19_hr.microstructure_list[0].grain_structure.grain_size_distribution",
+          "structures.sample_a19_hr.microstructure_list[0].phases_present[0].grain_size",
+          "structures.sample_a19_hr.microstructure_list[0].phases_present[0].volume_fraction",
+          "structures.sample_a19_hr.microstructure_list[1].defects[0].dislocation_density",
+          "structures.sample_a19_hr.microstructure_list[1].phases_present[0].crystal_structure",
+          "structures.sample_a19_hr.microstructure_list[1].phases_present[0].morphology",
+          "structures.sample_a19_hr.microstructure_list[1].phases_present[0].phase_name",
+          "structures.sample_a19_hr.microstructure_list[1].phases_present[0].volume_fraction",
+          "structures.sample_a19_hr.microstructure_list[1].phases_present[1].crystal_structure",
+          "structures.sample_a19_hr.microstructure_list[1].phases_present[1].morphology",
+          "structures.sample_a19_hr.microstructure_list[1].phases_present[1].phase_name",
+          "structures.sample_a19_hr.microstructure_list[1].phases_present[1].volume_fraction",
+          "structures.sample_a19_hr.microstructure_list[1].phases_present[2].crystal_structure",
+          "structures.sample_a19_hr.microstructure_list[1].phases_present[2].morphology",
+          "structures.sample_a19_hr.microstructure_list[1].phases_present[2].phase_name",
+          "structures.sample_a19_hr.microstructure_list[1].phases_present[2].volume_fraction",
+          "structures.sample_a19_hr.microstructure_list[1].related_sequence",
+          "structures.sample_a19_iq1050.microstructure_list[0].phases_present[0].grain_size",
+          "structures.sample_a19_iq1050.microstructure_list[0].phases_present[0].volume_fraction",
+          "structures.sample_a19_iq1050.microstructure_list[1].defects[0].dislocation_density"
+        ]
+      }
+    },
+    "interfaces": {
+      "structure_metrics": {
+        "truth_count": 6,
+        "prediction_count": 2,
+        "matched_count": 2,
+        "precision": 1.0,
+        "recall": 0.3333333333333333,
+        "f1": 0.5
+      },
+      "fact_metrics": {
+        "truth_fact_count": 50,
+        "prediction_fact_count": 12,
+        "matched_fact_slots": 10,
+        "correct_fact_count": 3,
+        "precision": 0.25,
+        "recall": 0.06,
+        "f1": 0.0967741935483871,
+        "avg_bleu": 0.07997265547798232,
+        "avg_rouge_l_f1": 0.127072192513369,
+        "missing_truth_fact_examples": [
+          "interfaces.sample_a19_hr.interface_notes[1].slippage_situation",
+          "interfaces.sample_a19_hr.phase_evolution",
+          "interfaces.sample_a19_iq1050.defect_interaction[0].interaction_type",
+          "interfaces.sample_a19_iq1050.defect_interaction[0].quality_description",
+          "interfaces.sample_a19_iq1050.interface_notes[0].stress_strain_distribution",
+          "interfaces.sample_a19_iq1050.interface_notes[1].slippage_situation",
+          "interfaces.sample_a19_iq1050.phase_evolution",
+          "interfaces.sample_a19_iq1050.phases[0].phase_1_name",
+          "interfaces.sample_a19_iq1050.phases[0].phase_2_name",
+          "interfaces.sample_a19_qa620.interface_notes[1].slippage_situation",
+          "interfaces.sample_a19_qa620.phase_evolution",
+          "interfaces.sample_a19_qa620.phases[1].phase_1_name",
+          "interfaces.sample_a19_qa620.phases[1].phase_2_name",
+          "interfaces.sample_a19_qa680.defect_interaction[0].interaction_type",
+          "interfaces.sample_a19_qa680.defect_interaction[0].quality_description",
+          "interfaces.sample_a19_qa680.interface_notes[0].stress_strain_distribution",
+          "interfaces.sample_a19_qa680.interface_notes[1].slippage_situation",
+          "interfaces.sample_a19_qa680.phase_evolution",
+          "interfaces.sample_a19_qa680.phases[0].phase_1_name",
+          "interfaces.sample_a19_qa680.phases[0].phase_2_name"
+        ],
+        "extra_prediction_fact_examples": [
+          "interfaces.sample_a19_hr.phases[0].coherence",
+          "interfaces.sample_a19_qa620.phases[0].coherence"
+        ]
+      }
+    },
+    "properties": {
+      "structure_metrics": {
+        "truth_count": 6,
+        "prediction_count": 6,
+        "matched_count": 6,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "fact_metrics": {
+        "truth_fact_count": 72,
+        "prediction_fact_count": 84,
+        "matched_fact_slots": 66,
+        "correct_fact_count": 48,
+        "precision": 0.5714285714285714,
+        "recall": 0.6666666666666666,
+        "f1": 0.6153846153846153,
+        "avg_bleu": 0.0,
+        "avg_rouge_l_f1": 0.0,
+        "missing_truth_fact_examples": [
+          "properties.sample_a19_hr.mechanical.tensile_properties.stress_strain_curves",
+          "properties.sample_a19_iq1050.mechanical.tensile_properties.stress_strain_curves",
+          "properties.sample_a19_qa620.mechanical.tensile_properties.stress_strain_curves",
+          "properties.sample_a19_qa680.mechanical.tensile_properties.stress_strain_curves",
+          "properties.sample_a19_qa740.mechanical.tensile_properties.stress_strain_curves",
+          "properties.sample_a19_qa800.mechanical.tensile_properties.stress_strain_curves"
+        ],
+        "extra_prediction_fact_examples": [
+          "properties.sample_a19_hr.mechanical.tensile_properties.stress_strain_distribution[0].direction",
+          "properties.sample_a19_hr.mechanical.tensile_properties.ultimate_tensile_strength[0].others.uncertainty",
+          "properties.sample_a19_hr.mechanical.tensile_properties.yield_strength[0].others.uncertainty",
+          "properties.sample_a19_iq1050.mechanical.tensile_properties.stress_strain_distribution[0].direction",
+          "properties.sample_a19_iq1050.mechanical.tensile_properties.ultimate_tensile_strength[0].others.uncertainty",
+          "properties.sample_a19_iq1050.mechanical.tensile_properties.yield_strength[0].others.uncertainty",
+          "properties.sample_a19_qa620.mechanical.tensile_properties.stress_strain_distribution[0].direction",
+          "properties.sample_a19_qa620.mechanical.tensile_properties.ultimate_tensile_strength[0].others.uncertainty",
+          "properties.sample_a19_qa620.mechanical.tensile_properties.yield_strength[0].others.uncertainty",
+          "properties.sample_a19_qa680.mechanical.tensile_properties.stress_strain_distribution[0].direction",
+          "properties.sample_a19_qa680.mechanical.tensile_properties.ultimate_tensile_strength[0].others.uncertainty",
+          "properties.sample_a19_qa680.mechanical.tensile_properties.yield_strength[0].others.uncertainty",
+          "properties.sample_a19_qa740.mechanical.tensile_properties.stress_strain_distribution[0].direction",
+          "properties.sample_a19_qa740.mechanical.tensile_properties.ultimate_tensile_strength[0].others.uncertainty",
+          "properties.sample_a19_qa740.mechanical.tensile_properties.yield_strength[0].others.uncertainty",
+          "properties.sample_a19_qa800.mechanical.tensile_properties.stress_strain_distribution[0].direction",
+          "properties.sample_a19_qa800.mechanical.tensile_properties.ultimate_tensile_strength[0].others.uncertainty",
+          "properties.sample_a19_qa800.mechanical.tensile_properties.yield_strength[0].others.uncertainty"
+        ]
+      }
+    },
+    "performance": {
+      "structure_metrics": {
+        "truth_count": 6,
+        "prediction_count": 1,
+        "matched_count": 1,
+        "precision": 1.0,
+        "recall": 0.16666666666666666,
+        "f1": 0.2857142857142857
+      },
+      "fact_metrics": {
+        "truth_fact_count": 4,
+        "prediction_fact_count": 2,
+        "matched_fact_slots": 1,
+        "correct_fact_count": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "avg_bleu": 0.0,
+        "avg_rouge_l_f1": 0.0,
+        "missing_truth_fact_examples": [
+          "performance.sample_a19_qa740.comparative_performance.benchmark_process_id",
+          "performance.sample_a19_qa740.comparative_performance.benchmark_sample_id",
+          "performance.sample_a19_qa740.comparative_performance.improvement_percentage"
+        ],
+        "extra_prediction_fact_examples": [
+          "performance.sample_a19_qa740.service_conditions.environment"
+        ]
+      }
+    },
+    "characterization_methods": {
+      "structure_metrics": {
+        "truth_count": 5,
+        "prediction_count": 23,
+        "matched_count": 5,
+        "precision": 0.21739130434782608,
+        "recall": 1.0,
+        "f1": 0.3571428571428571
+      },
+      "fact_metrics": {
+        "truth_fact_count": 15,
+        "prediction_fact_count": 18,
+        "matched_fact_slots": 0,
+        "correct_fact_count": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "avg_bleu": 0.0,
+        "avg_rouge_l_f1": 0.0,
+        "missing_truth_fact_examples": [
+          "characterization_methods.idx_0.key_findings",
+          "characterization_methods.idx_0.purpose",
+          "characterization_methods.idx_0.technique",
+          "characterization_methods.idx_1.key_findings",
+          "characterization_methods.idx_1.purpose",
+          "characterization_methods.idx_1.technique",
+          "characterization_methods.idx_2.key_findings",
+          "characterization_methods.idx_2.purpose",
+          "characterization_methods.idx_2.technique",
+          "characterization_methods.idx_3.key_findings",
+          "characterization_methods.idx_3.purpose",
+          "characterization_methods.idx_3.technique",
+          "characterization_methods.idx_4.key_findings",
+          "characterization_methods.idx_4.purpose",
+          "characterization_methods.idx_4.technique"
+        ],
+        "extra_prediction_fact_examples": [
+          "characterization_methods.sample_a19_hr.key_findings",
+          "characterization_methods.sample_a19_hr.purpose",
+          "characterization_methods.sample_a19_hr.technique",
+          "characterization_methods.sample_a19_iq1050.key_findings",
+          "characterization_methods.sample_a19_iq1050.purpose",
+          "characterization_methods.sample_a19_iq1050.technique",
+          "characterization_methods.sample_a19_qa620.key_findings",
+          "characterization_methods.sample_a19_qa620.purpose",
+          "characterization_methods.sample_a19_qa620.technique",
+          "characterization_methods.sample_a19_qa680.key_findings",
+          "characterization_methods.sample_a19_qa680.purpose",
+          "characterization_methods.sample_a19_qa680.technique",
+          "characterization_methods.sample_a19_qa740.key_findings",
+          "characterization_methods.sample_a19_qa740.purpose",
+          "characterization_methods.sample_a19_qa740.technique",
+          "characterization_methods.sample_a19_qa800.key_findings",
+          "characterization_methods.sample_a19_qa800.purpose",
+          "characterization_methods.sample_a19_qa800.technique"
+        ]
+      }
+    },
+    "computational_details": {
+      "structure_metrics": {
+        "truth_count": 2,
+        "prediction_count": 4,
+        "matched_count": 2,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6666666666666666
+      },
+      "fact_metrics": {
+        "truth_fact_count": 15,
+        "prediction_fact_count": 14,
+        "matched_fact_slots": 6,
+        "correct_fact_count": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "avg_bleu": 0.0,
+        "avg_rouge_l_f1": 0.0,
+        "missing_truth_fact_examples": [
+          "computational_details.idx_0.analytical_model[0].equation_role",
+          "computational_details.idx_0.analytical_model[0].model_name",
+          "computational_details.idx_0.analytical_model[0].model_note",
+          "computational_details.idx_0.validation_against_experiment",
+          "computational_details.idx_1.analytical_model[0].parameters.QA-620",
+          "computational_details.idx_1.analytical_model[0].parameters.QA-680",
+          "computational_details.idx_1.analytical_model[0].parameters.QA-740",
+          "computational_details.idx_1.analytical_model[0].parameters.QA-800",
+          "computational_details.idx_1.validation_against_experiment"
+        ],
+        "extra_prediction_fact_examples": [
+          "computational_details.idx_1.analytical_model[0].parameters",
+          "computational_details.idx_1.software_used",
+          "computational_details.sample_a19_qa620.analytical_model[0].equation_role",
+          "computational_details.sample_a19_qa620.analytical_model[0].model_name",
+          "computational_details.sample_a19_qa620.analytical_model[0].model_note",
+          "computational_details.sample_a19_qa620.analytical_model[0].parameters",
+          "computational_details.sample_a19_qa620.simulation_method",
+          "computational_details.sample_a19_qa620.software_used"
+        ]
+      }
+    },
+    "unmapped_findings": {
+      "structure_metrics": {
+        "truth_count": 10,
+        "prediction_count": 12,
+        "matched_count": 10,
+        "precision": 0.8333333333333334,
+        "recall": 1.0,
+        "f1": 0.9090909090909091
+      },
+      "fact_metrics": {
+        "truth_fact_count": 10,
+        "prediction_fact_count": 12,
+        "matched_fact_slots": 10,
+        "correct_fact_count": 1,
+        "precision": 0.08333333333333333,
+        "recall": 0.1,
+        "f1": 0.0909090909090909,
+        "avg_bleu": 0.07161966961099045,
+        "avg_rouge_l_f1": 0.09606853433347347,
+        "missing_truth_fact_examples": [],
+        "extra_prediction_fact_examples": [
+          "unmapped_findings.idx_10.value",
+          "unmapped_findings.idx_11.value"
+        ]
+      }
+    }
+  },
+  "llm_bridge": {
+    "batch_count": 1,
+    "errors": [],
+    "matches": [
+      {
+        "pred_sample_id": "sample_hr",
+        "truth_sample_id": "sample_a19_hr",
+        "relation": "one_to_one",
+        "confidence": 0.95,
+        "reason": "Same hot-rolled condition, alloy, laminated δ-ferrite+martensite microstructure with ~16% RA."
+      },
+      {
+        "pred_sample_id": "sample_iq1050",
+        "truth_sample_id": "sample_a19_iq1050",
+        "relation": "one_to_one",
+        "confidence": 0.95,
+        "reason": "Same intercritical quenching, thinned δ-ferrite, reduced RA to ~7%."
+      },
+      {
+        "pred_sample_id": "sample_qa620",
+        "truth_sample_id": "sample_a19_qa620",
+        "relation": "one_to_one",
+        "confidence": 0.95,
+        "reason": "Same quenching-annealing at 620°C, tempered martensite, carbides, ~33% fine RA."
+      },
+      {
+        "pred_sample_id": "sample_qa680",
+        "truth_sample_id": "sample_a19_qa680",
+        "relation": "one_to_one",
+        "confidence": 0.95,
+        "reason": "Same annealing at 680°C, tempered martensite, fine RA ~37%, no carbides."
+      },
+      {
+        "pred_sample_id": "sample_qa740",
+        "truth_sample_id": "sample_a19_qa740",
+        "relation": "one_to_one",
+        "confidence": 0.95,
+        "reason": "Same annealing at 740°C, highest RA ~51%, best balance."
+      },
+      {
+        "pred_sample_id": "sample_qa800",
+        "truth_sample_id": "sample_a19_qa800",
+        "relation": "one_to_one",
+        "confidence": 0.95,
+        "reason": "Same annealing at 800°C, RA ~48%, some fresh martensite from cooling."
+      }
+    ],
+    "batches": [
+      {
+        "truth_ids": [
+          "sample_a19_hr",
+          "sample_a19_iq1050",
+          "sample_a19_qa620",
+          "sample_a19_qa680",
+          "sample_a19_qa740",
+          "sample_a19_qa800"
+        ],
+        "prediction_ids": [
+          "sample_hr",
+          "sample_iq1050",
+          "sample_qa620",
+          "sample_qa680",
+          "sample_qa740",
+          "sample_qa800"
+        ],
+        "error": null,
+        "raw_response": "{\n  \"paper_id\": \"A19\",\n  \"matches\": [\n    {\n      \"pred_sample_id\": \"sample_hr\",\n      \"truth_sample_id\": \"sample_a19_hr\",\n      \"relation\": \"one_to_one\",\n      \"confidence\": 0.95,\n      \"reason\": \"Same hot-rolled condition, alloy, laminated δ-ferrite+martensite microstructure with ~16% RA.\"\n    },\n    {\n      \"pred_sample_id\": \"sample_iq1050\",\n      \"truth_sample_id\": \"sample_a19_iq1050\",\n      \"relation\": \"one_to_one\",\n      \"confidence\": 0.95,\n      \"reason\": \"Same intercritical quenching, thinned δ-ferrite, reduced RA to ~7%.\"\n    },\n    {\n      \"pred_sample_id\": \"sample_qa620\",\n      \"truth_sample_id\": \"sample_a19_qa620\",\n      \"relation\": \"one_to_one\",\n      \"confidence\": 0.95,\n      \"reason\": \"Same quenching-annealing at 620°C, tempered martensite, carbides, ~33% fine RA.\"\n    },\n    {\n      \"pred_sample_id\": \"sample_qa680\",\n      \"truth_sample_id\": \"sample_a19_qa680\",\n      \"relation\": \"one_to_one\",\n      \"confidence\": 0.95,\n      \"reason\": \"Same annealing at 680°C, tempered martensite, fine RA ~37%, no carbides.\"\n    },\n    {\n      \"pred_sample_id\": \"sample_qa740\",\n      \"truth_sample_id\": \"sample_a19_qa740\",\n      \"relation\": \"one_to_one\",\n      \"confidence\": 0.95,\n      \"reason\": \"Same annealing at 740°C, highest RA ~51%, best balance.\"\n    },\n    {\n      \"pred_sample_id\": \"sample_qa800\",\n      \"truth_sample_id\": \"sample_a19_qa800\",\n      \"relation\": \"one_to_one\",\n      \"confidence\": 0.95,\n      \"reason\": \"Same annealing at 800°C, RA ~48%, some fresh martensite from cooling.\"\n    }\n  ],\n  \"unmatched_pred\": [],\n  \"unmatched_truth\": []\n}",
+        "match_count": 6
+      }
+    ]
+  }
+}

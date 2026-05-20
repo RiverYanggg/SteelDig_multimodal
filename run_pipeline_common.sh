@@ -16,10 +16,12 @@ CONFIG_PATH="config/workflow.json"
 # 输入路径：
 # - 可以是单个 .md 文件
 # - 也可以是包含多个 .md 的目录
-INPUT_PATH="dataset"
+# INPUT_PATH="/home/yangzijiang/workdir_caep-xuben/yangzijiang/yzj/datasets/Al_82/Al_82_papers/mineru_data_82"
+INPUT_PATH="/home/yangzijiang/workdir_caep-xuben/yangzijiang/yzj/datasets/Al_82/Al_82_papers/add"
 
 # 输出根目录。每篇论文会输出到 OUTPUT_ROOT/<paper_id>/ 下。
-OUTPUT_ROOT="workflow_runs"
+# OUTPUT_ROOT="/home/yangzijiang/workdir_caep-xuben/yangzijiang/yzj/datasets/Al_82/Al_82_papers/output"
+OUTPUT_ROOT="/home/yangzijiang/workdir_caep-xuben/yangzijiang/yzj/datasets/Al_82/Al_82_papers/add_output"
 
 # 并行处理的论文数。建议按本地模型服务吞吐能力调整。
 WORKERS=4

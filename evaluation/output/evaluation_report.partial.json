@@ -1,0 +1,439 @@
+{
+  "meta": {
+    "paper_count": 3,
+    "settings": {
+      "truth_dir": "/org/caep-xuben/yangzijiang/yzj/datasets/Al_82/Al_82_papers/json_truth",
+      "prediction_root": "/org/caep-xuben/yangzijiang/yzj/datasets/Al_82/Al_82_papers/output",
+      "output_path": "evaluation/output/evaluation_report.partial.json",
+      "per_paper_output_dir": "evaluation/output/papers_partial",
+      "field_rules_path": "/org/caep-xuben/yangzijiang/yzj/SteelDig_multimodal/evaluation/config/field_rules.json",
+      "paper_ids": [
+        "A0",
+        "A19",
+        "A28"
+      ],
+      "matching": {
+        "alloy_threshold": 0.55,
+        "process_threshold": 0.5,
+        "loose_section_threshold": 0.35,
+        "sample_strong_threshold": 0.72,
+        "sample_soft_threshold": 0.45,
+        "unique_margin": 0.08
+      },
+      "llm_bridge": {
+        "enabled": true,
+        "model": "deepseek-v4-pro",
+        "base_url": "https://api.deepseek.com",
+        "api_key": "***",
+        "temperature": 0.0,
+        "max_component_records": 12,
+        "prompt_path": "/org/caep-xuben/yangzijiang/yzj/SteelDig_multimodal/evaluation/prompts/sample_bridge_prompt.md"
+      }
+    },
+    "llm_bridge_available": true,
+    "llm_bridge_init_error": null
+  },
+  "dataset_summary": {
+    "empty_prediction_count": 0,
+    "section_summary": {
+      "papers": {
+        "section": "papers",
+        "structure": {
+          "truth_count": 3,
+          "prediction_count": 3,
+          "matched_count": 3,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "facts": {
+          "truth_count": 51,
+          "prediction_count": 41,
+          "matched_count": 30,
+          "precision": 0.7317073170731707,
+          "recall": 0.5882352941176471,
+          "f1": 0.6521739130434783
+        }
+      },
+      "alloys": {
+        "section": "alloys",
+        "structure": {
+          "truth_count": 4,
+          "prediction_count": 4,
+          "matched_count": 4,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "facts": {
+          "truth_count": 74,
+          "prediction_count": 66,
+          "matched_count": 50,
+          "precision": 0.7575757575757576,
+          "recall": 0.6756756756756757,
+          "f1": 0.7142857142857142
+        }
+      },
+      "processes": {
+        "section": "processes",
+        "structure": {
+          "truth_count": 13,
+          "prediction_count": 9,
+          "matched_count": 4,
+          "precision": 0.4444444444444444,
+          "recall": 0.3076923076923077,
+          "f1": 0.3636363636363637
+        },
+        "facts": {
+          "truth_count": 18,
+          "prediction_count": 10,
+          "matched_count": 4,
+          "precision": 0.4,
+          "recall": 0.2222222222222222,
+          "f1": 0.2857142857142857
+        }
+      },
+      "samples": {
+        "section": "samples",
+        "structure": {
+          "truth_count": 13,
+          "prediction_count": 15,
+          "matched_count": 11,
+          "precision": 0.7333333333333333,
+          "recall": 0.8461538461538461,
+          "f1": 0.7857142857142856
+        },
+        "facts": {
+          "truth_count": 0,
+          "prediction_count": 0,
+          "matched_count": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "processing_steps": {
+        "section": "processing_steps",
+        "structure": {
+          "truth_count": 44,
+          "prediction_count": 25,
+          "matched_count": 23,
+          "precision": 0.92,
+          "recall": 0.5227272727272727,
+          "f1": 0.6666666666666666
+        },
+        "facts": {
+          "truth_count": 79,
+          "prediction_count": 74,
+          "matched_count": 22,
+          "precision": 0.2972972972972973,
+          "recall": 0.27848101265822783,
+          "f1": 0.2875816993464052
+        }
+      },
+      "structures": {
+        "section": "structures",
+        "structure": {
+          "truth_count": 13,
+          "prediction_count": 15,
+          "matched_count": 11,
+          "precision": 0.7333333333333333,
+          "recall": 0.8461538461538461,
+          "f1": 0.7857142857142856
+        },
+        "facts": {
+          "truth_count": 201,
+          "prediction_count": 237,
+          "matched_count": 31,
+          "precision": 0.1308016877637131,
+          "recall": 0.15422885572139303,
+          "f1": 0.1415525114155251
+        }
+      },
+      "interfaces": {
+        "section": "interfaces",
+        "structure": {
+          "truth_count": 11,
+          "prediction_count": 3,
+          "matched_count": 3,
+          "precision": 1.0,
+          "recall": 0.2727272727272727,
+          "f1": 0.42857142857142855
+        },
+        "facts": {
+          "truth_count": 103,
+          "prediction_count": 26,
+          "matched_count": 8,
+          "precision": 0.3076923076923077,
+          "recall": 0.07766990291262135,
+          "f1": 0.12403100775193798
+        }
+      },
+      "properties": {
+        "section": "properties",
+        "structure": {
+          "truth_count": 13,
+          "prediction_count": 13,
+          "matched_count": 10,
+          "precision": 0.7692307692307693,
+          "recall": 0.7692307692307693,
+          "f1": 0.7692307692307693
+        },
+        "facts": {
+          "truth_count": 116,
+          "prediction_count": 110,
+          "matched_count": 61,
+          "precision": 0.5545454545454546,
+          "recall": 0.5258620689655172,
+          "f1": 0.5398230088495576
+        }
+      },
+      "performance": {
+        "section": "performance",
+        "structure": {
+          "truth_count": 9,
+          "prediction_count": 1,
+          "matched_count": 1,
+          "precision": 1.0,
+          "recall": 0.1111111111111111,
+          "f1": 0.19999999999999998
+        },
+        "facts": {
+          "truth_count": 19,
+          "prediction_count": 2,
+          "matched_count": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "characterization_methods": {
+        "section": "characterization_methods",
+        "structure": {
+          "truth_count": 12,
+          "prediction_count": 46,
+          "matched_count": 12,
+          "precision": 0.2608695652173913,
+          "recall": 1.0,
+          "f1": 0.41379310344827586
+        },
+        "facts": {
+          "truth_count": 36,
+          "prediction_count": 45,
+          "matched_count": 2,
+          "precision": 0.044444444444444446,
+          "recall": 0.05555555555555555,
+          "f1": 0.04938271604938271
+        }
+      },
+      "computational_details": {
+        "section": "computational_details",
+        "structure": {
+          "truth_count": 4,
+          "prediction_count": 6,
+          "matched_count": 4,
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1": 0.8
+        },
+        "facts": {
+          "truth_count": 32,
+          "prediction_count": 23,
+          "matched_count": 2,
+          "precision": 0.08695652173913043,
+          "recall": 0.0625,
+          "f1": 0.07272727272727272
+        }
+      },
+      "unmapped_findings": {
+        "section": "unmapped_findings",
+        "structure": {
+          "truth_count": 19,
+          "prediction_count": 22,
+          "matched_count": 18,
+          "precision": 0.8181818181818182,
+          "recall": 0.9473684210526315,
+          "f1": 0.8780487804878049
+        },
+        "facts": {
+          "truth_count": 19,
+          "prediction_count": 22,
+          "matched_count": 2,
+          "precision": 0.09090909090909091,
+          "recall": 0.10526315789473684,
+          "f1": 0.0975609756097561
+        }
+      }
+    }
+  },
+  "paper_index": [
+    {
+      "paper_id": "A0",
+      "report_path": "/org/caep-xuben/yangzijiang/yzj/SteelDig_multimodal/evaluation/output/papers_partial/A0.evaluation.json",
+      "prediction_empty": false,
+      "section_metrics": {
+        "papers": {
+          "structure_f1": 1.0,
+          "fact_f1": 0.6206896551724138
+        },
+        "alloys": {
+          "structure_f1": 1.0,
+          "fact_f1": 0.84375
+        },
+        "processes": {
+          "structure_f1": 0.0,
+          "fact_f1": 0.0
+        },
+        "samples": {
+          "structure_f1": 0.6666666666666666,
+          "fact_f1": 0.0
+        },
+        "processing_steps": {
+          "structure_f1": 0.6666666666666666,
+          "fact_f1": 0.0
+        },
+        "structures": {
+          "structure_f1": 0.6666666666666666,
+          "fact_f1": 0.15584415584415584
+        },
+        "interfaces": {
+          "structure_f1": 0.6666666666666666,
+          "fact_f1": 0.3225806451612903
+        },
+        "properties": {
+          "structure_f1": 0.4,
+          "fact_f1": 0.0
+        },
+        "performance": {
+          "structure_f1": 0.0,
+          "fact_f1": 0.0
+        },
+        "characterization_methods": {
+          "structure_f1": 0.7499999999999999,
+          "fact_f1": 0.26666666666666666
+        },
+        "computational_details": {
+          "structure_f1": 1.0,
+          "fact_f1": 0.26666666666666666
+        },
+        "unmapped_findings": {
+          "structure_f1": 0.8,
+          "fact_f1": 0.2
+        }
+      },
+      "has_llm_bridge": true
+    },
+    {
+      "paper_id": "A19",
+      "report_path": "/org/caep-xuben/yangzijiang/yzj/SteelDig_multimodal/evaluation/output/papers_partial/A19.evaluation.json",
+      "prediction_empty": false,
+      "section_metrics": {
+        "papers": {
+          "structure_f1": 1.0,
+          "fact_f1": 0.4666666666666667
+        },
+        "alloys": {
+          "structure_f1": 1.0,
+          "fact_f1": 0.8292682926829269
+        },
+        "processes": {
+          "structure_f1": 0.6666666666666666,
+          "fact_f1": 0.6666666666666666
+        },
+        "samples": {
+          "structure_f1": 1.0,
+          "fact_f1": 0.0
+        },
+        "processing_steps": {
+          "structure_f1": 0.8,
+          "fact_f1": 0.4313725490196078
+        },
+        "structures": {
+          "structure_f1": 1.0,
+          "fact_f1": 0.13953488372093026
+        },
+        "interfaces": {
+          "structure_f1": 0.5,
+          "fact_f1": 0.0967741935483871
+        },
+        "properties": {
+          "structure_f1": 1.0,
+          "fact_f1": 0.6153846153846153
+        },
+        "performance": {
+          "structure_f1": 0.2857142857142857,
+          "fact_f1": 0.0
+        },
+        "characterization_methods": {
+          "structure_f1": 0.3571428571428571,
+          "fact_f1": 0.0
+        },
+        "computational_details": {
+          "structure_f1": 0.6666666666666666,
+          "fact_f1": 0.0
+        },
+        "unmapped_findings": {
+          "structure_f1": 0.9090909090909091,
+          "fact_f1": 0.0909090909090909
+        }
+      },
+      "has_llm_bridge": true
+    },
+    {
+      "paper_id": "A28",
+      "report_path": "/org/caep-xuben/yangzijiang/yzj/SteelDig_multimodal/evaluation/output/papers_partial/A28.evaluation.json",
+      "prediction_empty": false,
+      "section_metrics": {
+        "papers": {
+          "structure_f1": 1.0,
+          "fact_f1": 0.8484848484848485
+        },
+        "alloys": {
+          "structure_f1": 1.0,
+          "fact_f1": 0.34285714285714286
+        },
+        "processes": {
+          "structure_f1": 0.0,
+          "fact_f1": 0.0
+        },
+        "samples": {
+          "structure_f1": 0.6,
+          "fact_f1": 0.0
+        },
+        "processing_steps": {
+          "structure_f1": 0.33333333333333337,
+          "fact_f1": 0.0
+        },
+        "structures": {
+          "structure_f1": 0.6,
+          "fact_f1": 0.136986301369863
+        },
+        "interfaces": {
+          "structure_f1": 0.0,
+          "fact_f1": 0.0
+        },
+        "properties": {
+          "structure_f1": 0.6666666666666666,
+          "fact_f1": 0.3823529411764706
+        },
+        "performance": {
+          "structure_f1": 0.0,
+          "fact_f1": 0.0
+        },
+        "characterization_methods": {
+          "structure_f1": 0.3636363636363636,
+          "fact_f1": 0.0
+        },
+        "computational_details": {
+          "structure_f1": 1.0,
+          "fact_f1": 0.0
+        },
+        "unmapped_findings": {
+          "structure_f1": 0.888888888888889,
+          "fact_f1": 0.0
+        }
+      },
+      "has_llm_bridge": true
+    }
+  ]
+}

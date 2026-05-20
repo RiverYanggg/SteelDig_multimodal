@@ -1,0 +1,753 @@
+{
+  "paper_id": "A28",
+  "truth_path": "/org/caep-xuben/yangzijiang/yzj/datasets/Al_82/Al_82_papers/json_truth/A28.json",
+  "prediction_path": "/org/caep-xuben/yangzijiang/yzj/datasets/Al_82/Al_82_papers/output/A28/final/text_extraction.json",
+  "prediction_empty": false,
+  "section_metrics": {
+    "papers": {
+      "structure_f1": 1.0,
+      "fact_f1": 0.8484848484848485
+    },
+    "alloys": {
+      "structure_f1": 1.0,
+      "fact_f1": 0.34285714285714286
+    },
+    "processes": {
+      "structure_f1": 0.0,
+      "fact_f1": 0.0
+    },
+    "samples": {
+      "structure_f1": 0.6,
+      "fact_f1": 0.0
+    },
+    "processing_steps": {
+      "structure_f1": 0.33333333333333337,
+      "fact_f1": 0.0
+    },
+    "structures": {
+      "structure_f1": 0.6,
+      "fact_f1": 0.136986301369863
+    },
+    "interfaces": {
+      "structure_f1": 0.0,
+      "fact_f1": 0.0
+    },
+    "properties": {
+      "structure_f1": 0.6666666666666666,
+      "fact_f1": 0.3823529411764706
+    },
+    "performance": {
+      "structure_f1": 0.0,
+      "fact_f1": 0.0
+    },
+    "characterization_methods": {
+      "structure_f1": 0.3636363636363636,
+      "fact_f1": 0.0
+    },
+    "computational_details": {
+      "structure_f1": 1.0,
+      "fact_f1": 0.0
+    },
+    "unmapped_findings": {
+      "structure_f1": 0.888888888888889,
+      "fact_f1": 0.0
+    }
+  },
+  "sections": {
+    "papers": {
+      "structure_metrics": {
+        "truth_count": 1,
+        "prediction_count": 1,
+        "matched_count": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "fact_metrics": {
+        "truth_fact_count": 18,
+        "prediction_fact_count": 15,
+        "matched_fact_slots": 15,
+        "correct_fact_count": 14,
+        "precision": 0.9333333333333333,
+        "recall": 0.7777777777777778,
+        "f1": 0.8484848484848485,
+        "avg_bleu": 1.0,
+        "avg_rouge_l_f1": 1.0,
+        "missing_truth_fact_examples": [
+          "papers.A28.doi",
+          "papers.A28.journal",
+          "papers.A28.publication_year"
+        ],
+        "extra_prediction_fact_examples": []
+      }
+    },
+    "alloys": {
+      "structure_metrics": {
+        "truth_count": 1,
+        "prediction_count": 1,
+        "matched_count": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "alignment": {
+        "matched_pairs": [
+          {
+            "truth_id": "alloy_a28_fe20mn6al0p6c0p15si",
+            "prediction_id": "alloy_fe20mn6al06c015si",
+            "score": 0.7878431372549018,
+            "reason": "composition=1.00, elements=1.00, name=0.73, alias=0.00, id=0.41"
+          }
+        ],
+        "unmatched_truth_ids": [],
+        "unmatched_prediction_ids": [],
+        "llm_candidates": []
+      },
+      "fact_metrics": {
+        "truth_fact_count": 19,
+        "prediction_fact_count": 16,
+        "matched_fact_slots": 16,
+        "correct_fact_count": 6,
+        "precision": 0.375,
+        "recall": 0.3157894736842105,
+        "f1": 0.34285714285714286,
+        "avg_bleu": 0.6951439283988788,
+        "avg_rouge_l_f1": 0.846153846153846,
+        "missing_truth_fact_examples": [
+          "alloys.alloy_a28_fe20mn6al0p6c0p15si.aliases[0]",
+          "alloys.alloy_a28_fe20mn6al0p6c0p15si.aliases[1]",
+          "alloys.alloy_a28_fe20mn6al0p6c0p15si.alloys_notes"
+        ],
+        "extra_prediction_fact_examples": []
+      }
+    },
+    "processes": {
+      "structure_metrics": {
+        "truth_count": 3,
+        "prediction_count": 1,
+        "matched_count": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "alignment": {
+        "matched_pairs": [],
+        "unmatched_truth_ids": [
+          "proc_a28_m196",
+          "proc_a28_m77",
+          "proc_a28_rt"
+        ],
+        "unmatched_prediction_ids": [
+          "proc_asforged_01"
+        ],
+        "llm_candidates": []
+      },
+      "fact_metrics": {
+        "truth_fact_count": 6,
+        "prediction_fact_count": 2,
+        "matched_fact_slots": 0,
+        "correct_fact_count": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "avg_bleu": 0.0,
+        "avg_rouge_l_f1": 0.0,
+        "missing_truth_fact_examples": [
+          "processes.proc_a28_m196.description",
+          "processes.proc_a28_m196.processes_notes",
+          "processes.proc_a28_m77.description",
+          "processes.proc_a28_m77.processes_notes",
+          "processes.proc_a28_rt.description",
+          "processes.proc_a28_rt.processes_notes"
+        ],
+        "extra_prediction_fact_examples": [
+          "processes.proc_asforged_01.description",
+          "processes.proc_asforged_01.processes_notes"
+        ]
+      }
+    },
+    "samples": {
+      "structure_metrics": {
+        "truth_count": 3,
+        "prediction_count": 7,
+        "matched_count": 3,
+        "precision": 0.42857142857142855,
+        "recall": 1.0,
+        "f1": 0.6
+      },
+      "alignment": {
+        "matched_pairs": [
+          {
+            "truth_id": "sample_a28_m196",
+            "prediction_id": "sample_m196_tensile",
+            "score": 0.95,
+            "reason": "llm_bridge:many_to_one"
+          },
+          {
+            "truth_id": "sample_a28_m77",
+            "prediction_id": "sample_m77_tensile",
+            "score": 0.95,
+            "reason": "llm_bridge:many_to_one"
+          },
+          {
+            "truth_id": "sample_a28_rt",
+            "prediction_id": "sample_rt_tensile",
+            "score": 0.95,
+            "reason": "llm_bridge:many_to_one"
+          }
+        ],
+        "unmatched_truth_ids": [],
+        "unmatched_prediction_ids": [
+          "sample_initial",
+          "sample_rt_impact",
+          "sample_m77_impact",
+          "sample_m196_impact"
+        ],
+        "llm_candidates": [
+          {
+            "truth_id": "sample_a28_m196",
+            "prediction_candidates": [
+              {
+                "prediction_id": "sample_m196_tensile",
+                "score": 0.6173613429016466,
+                "reason": "alloy=1.00, process=na, context=0.24, id=0.43, process_hint=0.46"
+              },
+              {
+                "prediction_id": "sample_m196_impact",
+                "score": 0.6112742794486214,
+                "reason": "alloy=1.00, process=na, context=0.21, id=0.43, process_hint=0.46"
+              },
+              {
+                "prediction_id": "sample_m77_tensile",
+                "score": 0.5391180405783209,
+                "reason": "alloy=1.00, process=na, context=0.22, id=0.11, process_hint=0.35"
+              },
+              {
+                "prediction_id": "sample_m77_impact",
+                "score": 0.527364996114996,
+                "reason": "alloy=1.00, process=na, context=0.16, id=0.11, process_hint=0.35"
+              },
+              {
+                "prediction_id": "sample_rt_tensile",
+                "score": 0.5128440366972477,
+                "reason": "alloy=1.00, process=na, context=0.20, id=0.00, process_hint=0.32"
+              },
+              {
+                "prediction_id": "sample_initial",
+                "score": 0.5038377192982455,
+                "reason": "alloy=1.00, process=na, context=0.13, id=0.00, process_hint=0.33"
+              }
+            ]
+          },
+          {
+            "truth_id": "sample_a28_m77",
+            "prediction_candidates": [
+              {
+                "prediction_id": "sample_m77_tensile",
+                "score": 0.6208660157988428,
+                "reason": "alloy=1.00, process=na, context=0.26, id=0.43, process_hint=0.46"
+              },
+              {
+                "prediction_id": "sample_m77_impact",
+                "score": 0.6167224702380952,
+                "reason": "alloy=1.00, process=na, context=0.24, id=0.43, process_hint=0.46"
+              },
+              {
+                "prediction_id": "sample_m196_tensile",
+                "score": 0.5389146443833943,
+                "reason": "alloy=1.00, process=na, context=0.22, id=0.11, process_hint=0.35"
+              },
+              {
+                "prediction_id": "sample_m196_impact",
+                "score": 0.5261881794041987,
+                "reason": "alloy=1.00, process=na, context=0.16, id=0.11, process_hint=0.35"
+              },
+              {
+                "prediction_id": "sample_rt_tensile",
+                "score": 0.511504424778761,
+                "reason": "alloy=1.00, process=na, context=0.19, id=0.00, process_hint=0.32"
+              },
+              {
+                "prediction_id": "sample_initial",
+                "score": 0.5048076923076922,
+                "reason": "alloy=1.00, process=na, context=0.14, id=0.00, process_hint=0.33"
+              }
+            ]
+          },
+          {
+            "truth_id": "sample_a28_rt",
+            "prediction_candidates": [
+              {
+                "prediction_id": "sample_rt_tensile",
+                "score": 0.56852487135506,
+                "reason": "alloy=1.00, process=na, context=0.22, id=0.20, process_hint=0.41"
+              },
+              {
+                "prediction_id": "sample_rt_impact",
+                "score": 0.5633672248803828,
+                "reason": "alloy=1.00, process=na, context=0.19, id=0.20, process_hint=0.41"
+              },
+              {
+                "prediction_id": "sample_initial",
+                "score": 0.5156633906633906,
+                "reason": "alloy=1.00, process=na, context=0.14, id=0.00, process_hint=0.36"
+              },
+              {
+                "prediction_id": "sample_m77_tensile",
+                "score": 0.5114583333333333,
+                "reason": "alloy=1.00, process=na, context=0.19, id=0.00, process_hint=0.32"
+              },
+              {
+                "prediction_id": "sample_m196_tensile",
+                "score": 0.5107954545454545,
+                "reason": "alloy=1.00, process=na, context=0.19, id=0.00, process_hint=0.32"
+              },
+              {
+                "prediction_id": "sample_m77_impact",
+                "score": 0.5036989795918367,
+                "reason": "alloy=1.00, process=na, context=0.15, id=0.00, process_hint=0.32"
+              }
+            ]
+          }
+        ]
+      },
+      "fact_metrics": {
+        "truth_fact_count": 0,
+        "prediction_fact_count": 0,
+        "matched_fact_slots": 0,
+        "correct_fact_count": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "avg_bleu": 0.0,
+        "avg_rouge_l_f1": 0.0,
+        "missing_truth_fact_examples": [],
+        "extra_prediction_fact_examples": []
+      }
+    },
+    "processing_steps": {
+      "structure_metrics": {
+        "truth_count": 15,
+        "prediction_count": 3,
+        "matched_count": 3,
+        "precision": 1.0,
+        "recall": 0.2,
+        "f1": 0.33333333333333337
+      },
+      "fact_metrics": {
+        "truth_fact_count": 24,
+        "prediction_fact_count": 8,
+        "matched_fact_slots": 0,
+        "correct_fact_count": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "avg_bleu": 0.0,
+        "avg_rouge_l_f1": 0.0,
+        "missing_truth_fact_examples": [
+          "processing_steps.sample_a28_m196.cooling_medium",
+          "processing_steps.sample_a28_m196.duration",
+          "processing_steps.sample_a28_m196.method",
+          "processing_steps.sample_a28_m196.processing_steps_notes",
+          "processing_steps.sample_a28_m196.sequence",
+          "processing_steps.sample_a28_m196.temperature",
+          "processing_steps.sample_a28_m196.type",
+          "processing_steps.sample_a28_m196.unit",
+          "processing_steps.sample_a28_m77.cooling_medium",
+          "processing_steps.sample_a28_m77.duration",
+          "processing_steps.sample_a28_m77.method",
+          "processing_steps.sample_a28_m77.processing_steps_notes",
+          "processing_steps.sample_a28_m77.sequence",
+          "processing_steps.sample_a28_m77.temperature",
+          "processing_steps.sample_a28_m77.type",
+          "processing_steps.sample_a28_m77.unit",
+          "processing_steps.sample_a28_rt.cooling_medium",
+          "processing_steps.sample_a28_rt.duration",
+          "processing_steps.sample_a28_rt.method",
+          "processing_steps.sample_a28_rt.processing_steps_notes"
+        ],
+        "extra_prediction_fact_examples": [
+          "processing_steps.sample_initial.cooling_medium",
+          "processing_steps.sample_initial.duration",
+          "processing_steps.sample_initial.method",
+          "processing_steps.sample_initial.processing_steps_notes",
+          "processing_steps.sample_initial.sequence",
+          "processing_steps.sample_initial.temperature",
+          "processing_steps.sample_initial.type",
+          "processing_steps.sample_initial.unit"
+        ]
+      }
+    },
+    "structures": {
+      "structure_metrics": {
+        "truth_count": 3,
+        "prediction_count": 7,
+        "matched_count": 3,
+        "precision": 0.42857142857142855,
+        "recall": 1.0,
+        "f1": 0.6
+      },
+      "fact_metrics": {
+        "truth_fact_count": 57,
+        "prediction_fact_count": 89,
+        "matched_fact_slots": 27,
+        "correct_fact_count": 10,
+        "precision": 0.11235955056179775,
+        "recall": 0.17543859649122806,
+        "f1": 0.136986301369863,
+        "avg_bleu": 0.0,
+        "avg_rouge_l_f1": 0.0,
+        "missing_truth_fact_examples": [
+          "structures.sample_a28_m196.microstructure_counts",
+          "structures.sample_a28_m196.microstructure_list[0].grain_structure.grain_size_distribution",
+          "structures.sample_a28_m196.microstructure_list[0].grain_structure.texture",
+          "structures.sample_a28_m196.microstructure_list[0].related_sequence",
+          "structures.sample_a28_m196.microstructure_list[1].defects[0].type",
+          "structures.sample_a28_m196.microstructure_list[1].grain_structure.grain_size_distribution",
+          "structures.sample_a28_m196.microstructure_list[1].phases_present[0].crystal_structure",
+          "structures.sample_a28_m196.microstructure_list[1].phases_present[0].morphology",
+          "structures.sample_a28_m196.microstructure_list[1].phases_present[0].phase_name",
+          "structures.sample_a28_m196.microstructure_list[1].related_sequence",
+          "structures.sample_a28_m77.microstructure_counts",
+          "structures.sample_a28_m77.microstructure_list[0].grain_structure.grain_size_distribution",
+          "structures.sample_a28_m77.microstructure_list[0].grain_structure.texture",
+          "structures.sample_a28_m77.microstructure_list[0].related_sequence",
+          "structures.sample_a28_m77.microstructure_list[1].defects[0].type",
+          "structures.sample_a28_m77.microstructure_list[1].grain_structure.grain_size_distribution",
+          "structures.sample_a28_m77.microstructure_list[1].phases_present[0].crystal_structure",
+          "structures.sample_a28_m77.microstructure_list[1].phases_present[0].morphology",
+          "structures.sample_a28_m77.microstructure_list[1].phases_present[0].phase_name",
+          "structures.sample_a28_m77.microstructure_list[1].related_sequence"
+        ],
+        "extra_prediction_fact_examples": [
+          "structures.sample_a28_m196.microstructure_list[0].defects[1].dislocation_density",
+          "structures.sample_a28_m196.microstructure_list[0].defects[1].type",
+          "structures.sample_a28_m196.microstructure_list[0].grain_structure.gnd_distribution",
+          "structures.sample_a28_m196.microstructure_list[0].grain_structure.high_angle_grain_boundary_fraction",
+          "structures.sample_a28_m196.microstructure_list[0].grain_structure.low_angle_grain_boundary_fraction",
+          "structures.sample_a28_m196.microstructure_list[0].phases_present[1].crystal_structure",
+          "structures.sample_a28_m196.microstructure_list[0].phases_present[1].morphology",
+          "structures.sample_a28_m196.microstructure_list[0].phases_present[1].phase_name",
+          "structures.sample_a28_m77.microstructure_list[0].defects[1].dislocation_density",
+          "structures.sample_a28_m77.microstructure_list[0].defects[1].type",
+          "structures.sample_a28_m77.microstructure_list[0].grain_structure.gnd_distribution",
+          "structures.sample_a28_m77.microstructure_list[0].grain_structure.high_angle_grain_boundary_fraction",
+          "structures.sample_a28_m77.microstructure_list[0].grain_structure.low_angle_grain_boundary_fraction",
+          "structures.sample_a28_rt.microstructure_list[0].defects[1].dislocation_density",
+          "structures.sample_a28_rt.microstructure_list[0].defects[1].type",
+          "structures.sample_a28_rt.microstructure_list[0].grain_structure.gnd_distribution",
+          "structures.sample_a28_rt.microstructure_list[0].grain_structure.high_angle_grain_boundary_fraction",
+          "structures.sample_a28_rt.microstructure_list[0].grain_structure.low_angle_grain_boundary_fraction",
+          "structures.sample_initial.microstructure_list[0].phases_present[0].crystal_structure",
+          "structures.sample_initial.microstructure_list[0].phases_present[0].morphology"
+        ]
+      }
+    },
+    "interfaces": {
+      "structure_metrics": {
+        "truth_count": 3,
+        "prediction_count": 0,
+        "matched_count": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "fact_metrics": {
+        "truth_fact_count": 36,
+        "prediction_fact_count": 0,
+        "matched_fact_slots": 0,
+        "correct_fact_count": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "avg_bleu": 0.0,
+        "avg_rouge_l_f1": 0.0,
+        "missing_truth_fact_examples": [
+          "interfaces.sample_a28_m196.defect_interaction[0].interaction_type",
+          "interfaces.sample_a28_m196.defect_interaction[0].quality_description",
+          "interfaces.sample_a28_m196.defect_interaction[1].interaction_type",
+          "interfaces.sample_a28_m196.defect_interaction[1].quality_description",
+          "interfaces.sample_a28_m196.interface_notes[0].deformation_mechanism",
+          "interfaces.sample_a28_m196.interface_notes[0].fracture_behavior",
+          "interfaces.sample_a28_m196.interface_notes[0].mechanism_note",
+          "interfaces.sample_a28_m196.interface_notes[0].microstructure_note",
+          "interfaces.sample_a28_m196.interface_notes[0].slippage_situation",
+          "interfaces.sample_a28_m196.interface_notes[0].stress_strain_distribution",
+          "interfaces.sample_a28_m196.interface_notes[0].transformation_behavior",
+          "interfaces.sample_a28_m196.phase_evolution",
+          "interfaces.sample_a28_m77.defect_interaction[0].interaction_type",
+          "interfaces.sample_a28_m77.defect_interaction[0].quality_description",
+          "interfaces.sample_a28_m77.defect_interaction[1].interaction_type",
+          "interfaces.sample_a28_m77.defect_interaction[1].quality_description",
+          "interfaces.sample_a28_m77.interface_notes[0].deformation_mechanism",
+          "interfaces.sample_a28_m77.interface_notes[0].fracture_behavior",
+          "interfaces.sample_a28_m77.interface_notes[0].mechanism_note",
+          "interfaces.sample_a28_m77.interface_notes[0].microstructure_note"
+        ],
+        "extra_prediction_fact_examples": []
+      }
+    },
+    "properties": {
+      "structure_metrics": {
+        "truth_count": 3,
+        "prediction_count": 6,
+        "matched_count": 3,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6666666666666666
+      },
+      "fact_metrics": {
+        "truth_fact_count": 42,
+        "prediction_fact_count": 26,
+        "matched_fact_slots": 23,
+        "correct_fact_count": 13,
+        "precision": 0.5,
+        "recall": 0.30952380952380953,
+        "f1": 0.3823529411764706,
+        "avg_bleu": 0.0,
+        "avg_rouge_l_f1": 0.0,
+        "missing_truth_fact_examples": [
+          "properties.sample_a28_m196.mechanical.tensile_properties.elongation[0].direction",
+          "properties.sample_a28_m196.mechanical.tensile_properties.elongation[1].direction",
+          "properties.sample_a28_m196.mechanical.tensile_properties.elongation[1].unit",
+          "properties.sample_a28_m196.mechanical.tensile_properties.elongation[1].value",
+          "properties.sample_a28_m196.mechanical.tensile_properties.stress_strain_curves",
+          "properties.sample_a28_m196.physical.density.unit",
+          "properties.sample_a28_m196.physical.density.value",
+          "properties.sample_a28_m77.mechanical.tensile_properties.elongation[0].direction",
+          "properties.sample_a28_m77.mechanical.tensile_properties.elongation[1].direction",
+          "properties.sample_a28_m77.mechanical.tensile_properties.elongation[1].unit",
+          "properties.sample_a28_m77.mechanical.tensile_properties.elongation[1].value",
+          "properties.sample_a28_m77.mechanical.tensile_properties.stress_strain_curves",
+          "properties.sample_a28_m77.physical.density.unit",
+          "properties.sample_a28_m77.physical.density.value",
+          "properties.sample_a28_rt.mechanical.tensile_properties.elongation[0].direction",
+          "properties.sample_a28_rt.mechanical.tensile_properties.elongation[1].direction",
+          "properties.sample_a28_rt.mechanical.tensile_properties.elongation[1].unit",
+          "properties.sample_a28_rt.mechanical.tensile_properties.elongation[1].value",
+          "properties.sample_a28_rt.mechanical.tensile_properties.stress_strain_curves"
+        ],
+        "extra_prediction_fact_examples": [
+          "properties.sample_a28_m196.mechanical.tensile_properties.strain_hardening_rate[1].value",
+          "properties.sample_a28_m77.mechanical.tensile_properties.strain_hardening_rate[1].value",
+          "properties.sample_a28_rt.mechanical.tensile_properties.strain_hardening_rate[1].value"
+        ]
+      }
+    },
+    "performance": {
+      "structure_metrics": {
+        "truth_count": 3,
+        "prediction_count": 0,
+        "matched_count": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "fact_metrics": {
+        "truth_fact_count": 15,
+        "prediction_fact_count": 0,
+        "matched_fact_slots": 0,
+        "correct_fact_count": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "avg_bleu": 0.0,
+        "avg_rouge_l_f1": 0.0,
+        "missing_truth_fact_examples": [
+          "performance.sample_a28_m196.service_conditions.environment",
+          "performance.sample_a28_m196.service_conditions.operating_temperature.max",
+          "performance.sample_a28_m196.service_conditions.operating_temperature.min",
+          "performance.sample_a28_m196.service_conditions.operating_temperature.unit",
+          "performance.sample_a28_m196.service_conditions.stress_state",
+          "performance.sample_a28_m77.service_conditions.environment",
+          "performance.sample_a28_m77.service_conditions.operating_temperature.max",
+          "performance.sample_a28_m77.service_conditions.operating_temperature.min",
+          "performance.sample_a28_m77.service_conditions.operating_temperature.unit",
+          "performance.sample_a28_m77.service_conditions.stress_state",
+          "performance.sample_a28_rt.service_conditions.environment",
+          "performance.sample_a28_rt.service_conditions.operating_temperature.max",
+          "performance.sample_a28_rt.service_conditions.operating_temperature.min",
+          "performance.sample_a28_rt.service_conditions.operating_temperature.unit",
+          "performance.sample_a28_rt.service_conditions.stress_state"
+        ],
+        "extra_prediction_fact_examples": []
+      }
+    },
+    "characterization_methods": {
+      "structure_metrics": {
+        "truth_count": 4,
+        "prediction_count": 18,
+        "matched_count": 4,
+        "precision": 0.2222222222222222,
+        "recall": 1.0,
+        "f1": 0.3636363636363636
+      },
+      "fact_metrics": {
+        "truth_fact_count": 12,
+        "prediction_fact_count": 21,
+        "matched_fact_slots": 0,
+        "correct_fact_count": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "avg_bleu": 0.0,
+        "avg_rouge_l_f1": 0.0,
+        "missing_truth_fact_examples": [
+          "characterization_methods.idx_0.key_findings",
+          "characterization_methods.idx_0.purpose",
+          "characterization_methods.idx_0.technique",
+          "characterization_methods.idx_1.key_findings",
+          "characterization_methods.idx_1.purpose",
+          "characterization_methods.idx_1.technique",
+          "characterization_methods.idx_2.key_findings",
+          "characterization_methods.idx_2.purpose",
+          "characterization_methods.idx_2.technique",
+          "characterization_methods.idx_3.key_findings",
+          "characterization_methods.idx_3.purpose",
+          "characterization_methods.idx_3.technique"
+        ],
+        "extra_prediction_fact_examples": [
+          "characterization_methods.sample_a28_m196.key_findings",
+          "characterization_methods.sample_a28_m196.purpose",
+          "characterization_methods.sample_a28_m196.technique",
+          "characterization_methods.sample_a28_m77.key_findings",
+          "characterization_methods.sample_a28_m77.purpose",
+          "characterization_methods.sample_a28_m77.technique",
+          "characterization_methods.sample_a28_rt.key_findings",
+          "characterization_methods.sample_a28_rt.purpose",
+          "characterization_methods.sample_a28_rt.technique",
+          "characterization_methods.sample_initial.key_findings",
+          "characterization_methods.sample_initial.purpose",
+          "characterization_methods.sample_initial.technique",
+          "characterization_methods.sample_m196_impact.key_findings",
+          "characterization_methods.sample_m196_impact.purpose",
+          "characterization_methods.sample_m196_impact.technique",
+          "characterization_methods.sample_m77_impact.key_findings",
+          "characterization_methods.sample_m77_impact.purpose",
+          "characterization_methods.sample_m77_impact.technique",
+          "characterization_methods.sample_rt_impact.key_findings",
+          "characterization_methods.sample_rt_impact.purpose"
+        ]
+      }
+    },
+    "computational_details": {
+      "structure_metrics": {
+        "truth_count": 1,
+        "prediction_count": 1,
+        "matched_count": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "fact_metrics": {
+        "truth_fact_count": 6,
+        "prediction_fact_count": 5,
+        "matched_fact_slots": 5,
+        "correct_fact_count": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "avg_bleu": 0.0,
+        "avg_rouge_l_f1": 0.0,
+        "missing_truth_fact_examples": [
+          "computational_details.idx_0.validation_against_experiment"
+        ],
+        "extra_prediction_fact_examples": []
+      }
+    },
+    "unmapped_findings": {
+      "structure_metrics": {
+        "truth_count": 5,
+        "prediction_count": 4,
+        "matched_count": 4,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.888888888888889
+      },
+      "fact_metrics": {
+        "truth_fact_count": 5,
+        "prediction_fact_count": 4,
+        "matched_fact_slots": 4,
+        "correct_fact_count": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "avg_bleu": 0.15341454246490363,
+        "avg_rouge_l_f1": 0.2788565082783685,
+        "missing_truth_fact_examples": [
+          "unmapped_findings.idx_4.value"
+        ],
+        "extra_prediction_fact_examples": []
+      }
+    }
+  },
+  "llm_bridge": {
+    "batch_count": 1,
+    "errors": [],
+    "matches": [
+      {
+        "pred_sample_id": "sample_m196_tensile",
+        "truth_sample_id": "sample_a28_m196",
+        "relation": "many_to_one",
+        "confidence": 0.95,
+        "reason": "Same alloy and -196°C condition; tensile deformation response matches truth's tensile description."
+      },
+      {
+        "pred_sample_id": "sample_m196_impact",
+        "truth_sample_id": "sample_a28_m196",
+        "relation": "many_to_one",
+        "confidence": 0.95,
+        "reason": "Same alloy and -196°C condition; impact fracture response matches truth's impact description."
+      },
+      {
+        "pred_sample_id": "sample_m77_tensile",
+        "truth_sample_id": "sample_a28_m77",
+        "relation": "many_to_one",
+        "confidence": 0.95,
+        "reason": "Same alloy and -77°C condition; tensile deformation response matches truth's tensile description."
+      },
+      {
+        "pred_sample_id": "sample_m77_impact",
+        "truth_sample_id": "sample_a28_m77",
+        "relation": "many_to_one",
+        "confidence": 0.95,
+        "reason": "Same alloy and -77°C condition; impact fracture response matches truth's impact description."
+      },
+      {
+        "pred_sample_id": "sample_rt_tensile",
+        "truth_sample_id": "sample_a28_rt",
+        "relation": "many_to_one",
+        "confidence": 0.95,
+        "reason": "Same alloy and room temperature condition; tensile deformation response matches truth's tensile description."
+      },
+      {
+        "pred_sample_id": "sample_rt_impact",
+        "truth_sample_id": "sample_a28_rt",
+        "relation": "many_to_one",
+        "confidence": 0.95,
+        "reason": "Same alloy and room temperature condition; impact fracture response matches truth's impact description."
+      }
+    ],
+    "batches": [
+      {
+        "truth_ids": [
+          "sample_a28_m196",
+          "sample_a28_m77",
+          "sample_a28_rt"
+        ],
+        "prediction_ids": [
+          "sample_m196_tensile",
+          "sample_m196_impact",
+          "sample_m77_tensile",
+          "sample_m77_impact",
+          "sample_rt_tensile",
+          "sample_rt_impact",
+          "sample_initial"
+        ],
+        "error": null,
+        "raw_response": "{\n  \"paper_id\": \"A28\",\n  \"matches\": [\n    {\n      \"pred_sample_id\": \"sample_m196_tensile\",\n      \"truth_sample_id\": \"sample_a28_m196\",\n      \"relation\": \"many_to_one\",\n      \"confidence\": 0.95,\n      \"reason\": \"Same alloy and -196°C condition; tensile deformation response matches truth's tensile description.\"\n    },\n    {\n      \"pred_sample_id\": \"sample_m196_impact\",\n      \"truth_sample_id\": \"sample_a28_m196\",\n      \"relation\": \"many_to_one\",\n      \"confidence\": 0.95,\n      \"reason\": \"Same alloy and -196°C condition; impact fracture response matches truth's impact description.\"\n    },\n    {\n      \"pred_sample_id\": \"sample_m77_tensile\",\n      \"truth_sample_id\": \"sample_a28_m77\",\n      \"relation\": \"many_to_one\",\n      \"confidence\": 0.95,\n      \"reason\": \"Same alloy and -77°C condition; tensile deformation response matches truth's tensile description.\"\n    },\n    {\n      \"pred_sample_id\": \"sample_m77_impact\",\n      \"truth_sample_id\": \"sample_a28_m77\",\n      \"relation\": \"many_to_one\",\n      \"confidence\": 0.95,\n      \"reason\": \"Same alloy and -77°C condition; impact fracture response matches truth's impact description.\"\n    },\n    {\n      \"pred_sample_id\": \"sample_rt_tensile\",\n      \"truth_sample_id\": \"sample_a28_rt\",\n      \"relation\": \"many_to_one\",\n      \"confidence\": 0.95,\n      \"reason\": \"Same alloy and room temperature condition; tensile deformation response matches truth's tensile description.\"\n    },\n    {\n      \"pred_sample_id\": \"sample_rt_impact\",\n      \"truth_sample_id\": \"sample_a28_rt\",\n      \"relation\": \"many_to_one\",\n      \"confidence\": 0.95,\n      \"reason\": \"Same alloy and room temperature condition; impact fracture response matches truth's impact description.\"\n    }\n  ],\n  \"unmatched_pred\": [\"sample_initial\"],\n  \"unmatched_truth\": []\n}",
+        "match_count": 6
+      }
+    ]
+  }
+}

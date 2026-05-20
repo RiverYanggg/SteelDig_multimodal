@@ -1,0 +1,24 @@
+{
+  "truth_dir": "/home/yangzijiang/workdir_caep-xuben/yangzijiang/yzj/datasets/Al_82/Al_82_papers/json_truth",
+  "prediction_root": "/home/yangzijiang/workdir_caep-xuben/yangzijiang/yzj/datasets/Al_82/Al_82_papers/output",
+  "output_path": "/org/caep-xuben/yangzijiang/yzj/SteelDig_multimodal/evaluation/output/evaluation_report.json",
+  "per_paper_output_dir": "/org/caep-xuben/yangzijiang/yzj/SteelDig_multimodal/evaluation/output/papers",
+  "field_rules_path": "/org/caep-xuben/yangzijiang/yzj/SteelDig_multimodal/evaluation/config/field_rules.json",
+  "matching": {
+    "alloy_threshold": 0.55,
+    "process_threshold": 0.5,
+    "loose_section_threshold": 0.35,
+    "sample_strong_threshold": 0.72,
+    "sample_soft_threshold": 0.45,
+    "unique_margin": 0.08
+  },
+  "llm_bridge": {
+    "enabled": true,
+    "model": "deepseek-v4-pro",
+    "base_url": "https://api.deepseek.com",
+    "api_key": "EMPTY",
+    "temperature": 0.0,
+    "max_component_records": 12,
+    "prompt_path": "/org/caep-xuben/yangzijiang/yzj/SteelDig_multimodal/evaluation/prompts/sample_bridge_prompt.md"
+  }
+}
