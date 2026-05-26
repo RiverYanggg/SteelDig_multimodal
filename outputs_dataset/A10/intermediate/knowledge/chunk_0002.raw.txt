@@ -1,0 +1,145 @@
+{"claims": [
+  {
+    "claim_type": "processing",
+    "subject": "Fe-C-Cr-Mn-Si steel dataset",
+    "claim": "The initial dataset consisted of 173 Fe-C-Cr-Mn-Si steel data points with 11 element compositions (C, Si, Mn, Cr, S, Ni, P, Fe, Mo, V, W) and microhardness values.",
+    "values": ["173", "11 elements"],
+    "evidence_text": "173 Fe-C-Cr-Mn-Si steel data points were obtained from the widely recognized material information repository MatWeb [16]. In the dataset, 11 elements were collected, including C, Si, Mn, Cr, S, Ni, P, Fe, Mo, V and W, as well as microhardness of steel.",
+    "figures": [],
+    "tables": [],
+    "confidence": "high"
+  },
+  {
+    "claim_type": "processing",
+    "subject": "Outlier detection workflow",
+    "claim": "Outliers were first identified by Z-score with threshold |z| > 1.50, then further refined by an isolation forest model, classifying data points lower than 0 or higher than 0.15 as outliers and removing them.",
+    "values": ["|z| > 1.50", "lower than 0", "higher than 0.15"],
+    "evidence_text": "The Z-score method was applied to screen each feature in the dataset, and the data points with |z| > 1.50 were defined as the outliers. Subsequently, the isolation forest model was used to further refine the outlier detection process ... The data points lower than 0 or higher than 0.15 were classified as the outliers, and then they were removed from the data set.",
+    "figures": [],
+    "tables": [],
+    "confidence": "high"
+  },
+  {
+    "claim_type": "processing",
+    "subject": "CGAN data augmentation",
+    "claim": "After outlier removal, CGANs with double hidden layers augmented the dataset from 98 to 192 data points.",
+    "values": ["98", "192"],
+    "evidence_text": "CGANs were used to augment the rest of the data set. The double hidden layers were employed ... As a result, the data set was expanded from 98 data points to 192 data points.",
+    "figures": [],
+    "tables": ["Table 1"],
+    "confidence": "high"
+  },
+  {
+    "claim_type": "finding",
+    "subject": "Feature set",
+    "claim": "A total of 41 features were collected and standardized, including weighting parameters (VEC, Tm, e/a, G, E, Ec, w, r, χ, B, ν, E_I-1st, E_I-2nd), thermodynamic parameters (ΔSmix, ΔHmix, Gmix), and mismatch parameters (η_G, η_B, δG, δB, δ_ν, δ_r, δ_Tm, δ_VEC, δ_e/a, δ_Ec, δ_EI-1st, δ_EI-2nd, γ, Δχ) together with local mismatch parameters (D_G, D_B, D_r, D_ν, D_χ, D_Tm, D_VEC, D_e/a, D_Ec, D_EI-1st, D_EI-2nd).",
+    "values": ["41 features"],
+    "evidence_text": "41 features were collected and standardized to ensure equal contribution of each feature and eliminated the bias from the scale differences. The feature calculation formulas are shown in Table 2.",
+    "figures": [],
+    "tables": ["Table 2"],
+    "confidence": "high"
+  },
+  {
+    "claim_type": "processing",
+    "subject": "Feature selection by RFE voting",
+    "claim": "Candidate features were selected by Recursive Feature Elimination (RFE) wrapped with RF, LightGBM, and XGBoost, retaining only the features ranked first by all three models.",
+    "values": [],
+    "evidence_text": "Recursive Feature Elimination (RFE) models wrapped the random forest (RF), light gradient boosting machine (LightGBM) or extreme gradient boosting (XGBoost) algorithm separately were used to rank the features. Only the first features ranked by all the three models were selected as the candidate features.",
+    "figures": [],
+    "tables": [],
+    "confidence": "medium"
+  },
+  {
+    "claim_type": "processing",
+    "subject": "High correlation criterion",
+    "claim": "Features with absolute Pearson Correlation Coefficient (PCC) greater than or equal to 0.95 were judged as highly correlated.",
+    "values": ["≥ 0.95"],
+    "evidence_text": "The two features were judged as high correlation features if the absolute value of their PCC was greater than or equal to 0.95.",
+    "figures": [],
+    "tables": [],
+    "confidence": "high"
+  },
+  {
+    "claim_type": "processing",
+    "subject": "Redundant feature elimination",
+    "claim": "Among highly correlated feature pairs, the feature with the higher average importance score from extra trees (ET), decision tree (DT), RF, and XGBoost was retained.",
+    "values": [],
+    "evidence_text": "One of the high correlation features was remained through the average importance scores of the candidate features using the extra tree (ET), decision tree (DT), RF and XGBoost algorithm, and the features with higher scores were remained.",
+    "figures": [],
+    "tables": [],
+    "confidence": "high"
+  },
+  {
+    "claim_type": "processing",
+    "subject": "Exhaustive feature screening",
+    "claim": "Final feature combination was determined by exhaustive screening, selecting the combination with the lowest score.",
+    "values": [],
+    "evidence_text": "Exhaustive screening was employed to optimize the feature combination. The feature combination with the lowest score was selected as the final feature combination.",
+    "figures": [],
+    "tables": [],
+    "confidence": "medium"
+  },
+  {
+    "claim_type": "processing",
+    "subject": "Firefly algorithm (FA) configuration",
+    "claim": "The Firefly Algorithm was configured with max_iter=500, firefly_num=100, alpha=0.01, betamin=0.2, gamma=1.",
+    "values": ["max_iter=500", "firefly_num=100", "alpha=0.01", "betamin=0.2", "gamma=1"],
+    "evidence_text": "FA max_iter = 500, firefly_num = 100, alpha = 0.01, betamin = 0.2, gamma = 1",
+    "figures": [],
+    "tables": ["Table 3"],
+    "confidence": "high"
+  },
+  {
+    "claim_type": "processing",
+    "subject": "Simulated annealing (SA) configuration",
+    "claim": "Simulated annealing was configured with max_iter=500, initial_temperature=100, cooling_rate=0.95.",
+    "values": ["max_iter=500", "initial_temperature=100", "cooling_rate=0.95"],
+    "evidence_text": "SA max_iter = 500, initial_temperature = 100, cooling_rate = 0.95",
+    "figures": [],
+    "tables": ["Table 3"],
+    "confidence": "high"
+  },
+  {
+    "claim_type": "processing",
+    "subject": "Particle swarm optimization (PSO) configuration",
+    "claim": "Particle swarm optimization was configured with max_iter=500, particle_num=100, c1=0.8, c2=0.5, w=0.5.",
+    "values": ["max_iter=500", "particle_num=100", "c1=0.8", "c2=0.5", "w=0.5"],
+    "evidence_text": "PSO max_iter = 500, particle_num = 100, c1 = 0.8, c2 = 0.5, w = 0.5",
+    "figures": [],
+    "tables": ["Table 3"],
+    "confidence": "high"
+  },
+  {
+    "claim_type": "processing",
+    "subject": "Grey wolf optimization (GWO) configuration",
+    "claim": "Grey wolf optimization was configured with max_iter=500, num_wolves=100, alpha=2, beta=1.5, delta=0.5, a=2.",
+    "values": ["max_iter=500", "num_wolves=100", "alpha=2", "beta=1.5", "delta=0.5", "a=2"],
+    "evidence_text": "GWO max_iter = 500, num_wolves = 100, alpha = 2, beta = 1.5, delta = 0.5, a = 2",
+    "figures": [],
+    "tables": ["Table 3"],
+    "confidence": "high"
+  },
+  {
+    "claim_type": "processing",
+    "subject": "Cladding process parameters",
+    "claim": "Cladding was performed with current 440–600 A, voltage 30–32 V, cladding speed 24 m/h, interlayer temperature 380–410 °C, and wire feed speed 76.8 m/h.",
+    "values": ["440-600 A", "30-32 V", "24 m/h", "380-410 °C", "76.8 m/h"],
+    "evidence_text": "Current (A) 440 ~ 600 Voltage (V) 30 ~ 32 Cladding speed (m/h) 24 Interlayer temperature (°C) 380 ~ 410 Wire feed speed (m/h) 76.8",
+    "figures": [],
+    "tables": ["Table 4"],
+    "confidence": "high"
+  }
+],
+"context_update": {
+  "summary": "This chunk details the data preparation and feature engineering pipeline for the ML model. Starting from 173 Fe-C-Cr-Mn-Si steel data points (11 elements + microhardness), outliers are removed via Z-score (|z|>1.50) and isolation forest (<0 or >0.15), yielding 98 clean points. CGANs augment the data to 192 points. Then 41 features are standardized. Feature selection involves RFE with RF, LightGBM, XGBoost voting; Pearson correlation (threshold ≥0.95) to identify high-correlation pairs; and redundant feature elimination by retaining the feature with higher average importance from ET, DT, RF, XGBoost. Exhaustive screening finalizes the feature combination. Optimization algorithm parameters are provided: FA (500 iter, 100 fireflies, α=0.01, βmin=0.2, γ=1), SA (500 iter, T0=100, cooling 0.95), PSO (500 iter, 100 particles, c1=0.8, c2=0.5, w=0.5), GWO (500 iter, 100 wolves, α=2, β=1.5, δ=0.5, a=2). Cladding parameters are set (current 440-600 A, voltage 30-32 V, speed 24 m/h, interlayer 380-410 °C, wire feed 76.8 m/h). Later chunks will use these data, features, and parameters for model training and inverse design.",
+  "material_systems": ["Fe-C-Cr-Mn-Si alloy steel"],
+  "sample_aliases": [],
+  "processing_route": ["Data from MatWeb", "Z-score and isolation forest outlier removal", "CGAN augmentation (98→192 points)", "Feature standardization (41 features)", "RFE + voting feature selection", "PCC correlation filtering (≥0.95)", "Redundancy elimination by importance scores", "Exhaustive screening for final feature set", "Cladding: current 440-600 A, voltage 30-32 V, speed 24 m/h, interlayer 380-410 °C, wire feed 76.8 m/h"],
+  "key_variables": ["initial data points: 173", "post-cleaning data points: 98", "augmented data points: 192", "Z-score outlier threshold: |z|>1.50", "isolation forest thresholds: <0 or >0.15", "number of features: 41", "PCC high correlation threshold: ≥0.95", "FA max_iter=500, firefly_num=100", "SA max_iter=500, T0=100, cooling=0.95", "PSO max_iter=500, particles=100", "GWO max_iter=500, wolves=100", "cladding parameters as in Table 4"],
+  "microstructure": [],
+  "properties": [],
+  "mechanisms": [],
+  "figures_or_tables": ["Table 2", "Table 3", "Table 4"],
+  "unresolved_terms": []
+}
+}

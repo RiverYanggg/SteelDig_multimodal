@@ -9,6 +9,7 @@ class LocalModelConfig:
     model: str
     base_url: str
     api_key: str = "EMPTY"
+    max_tokens: int | None = None
 
 
 @dataclass(frozen=True)
@@ -49,11 +50,13 @@ def workflow_settings_from_dict(data: Dict[str, Any], base_dir: Path | None = No
         model=str(text_model_data.get("model", "Qwen/Qwen3.5-9B")),
         base_url=str(text_model_data.get("base_url", "http://127.0.0.1:8000/v1")),
         api_key=str(text_model_data.get("api_key", "EMPTY")),
+        max_tokens=_normalize_optional_int(text_model_data.get("max_tokens")),
     )
     multimodal_model = LocalModelConfig(
         model=str(multimodal_model_data.get("model", text_model.model)),
         base_url=str(multimodal_model_data.get("base_url", text_model.base_url)),
         api_key=str(multimodal_model_data.get("api_key", text_model.api_key)),
+        max_tokens=_normalize_optional_int(multimodal_model_data.get("max_tokens", text_model.max_tokens)),
     )
 
     return WorkflowSettings(
@@ -91,11 +94,13 @@ def default_workflow_settings(project_root: Path) -> WorkflowSettings:
             model="Qwen/Qwen3.5-9B",
             base_url="http://127.0.0.1:8000/v1",
             api_key="EMPTY",
+            max_tokens=16384,
         ),
         multimodal_model=LocalModelConfig(
             model="Qwen/Qwen3.5-9B",
             base_url="http://127.0.0.1:8000/v1",
             api_key="EMPTY",
+            max_tokens=8192,
         ),
     )
 
@@ -105,3 +110,10 @@ def _resolve_path(value: str, base_dir: Path) -> str:
     if path.is_absolute():
         return str(path.resolve())
     return str((base_dir / path).resolve())
+
+
+def _normalize_optional_int(value: Any) -> int | None:
+    if value is None or value == "":
+        return None
+    normalized = int(value)
+    return normalized if normalized > 0 else None

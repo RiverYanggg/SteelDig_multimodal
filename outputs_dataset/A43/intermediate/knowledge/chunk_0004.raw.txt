@@ -1,0 +1,130 @@
+{
+  "claims": [
+    {
+      "claim_type": "mechanism",
+      "subject": "evaluation metrics interpretation",
+      "claim": "The closer R² is to 1, the stronger the model’s ability to explain the variability in the data, indicating a better goodness of fit.",
+      "values": [],
+      "evidence_text": "The closer R^2 is to 1, the stronger the model’s ability to explain the variability in the data, indicating a better goodness of fit.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "evaluation metrics interpretation",
+      "claim": "Simultaneous decreases in RMSE and MAPE indicate that the model has achieved error minimization and maximum accuracy in numerical prediction.",
+      "values": [],
+      "evidence_text": "The convergence trends of RMSE and MAPE reflect the degree of reduction in prediction error; simultaneous decreases in both indicate that the model has achieved error minimization and maximum accuracy in numerical prediction.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "comparison",
+      "subject": "machine learning algorithms selected",
+      "claim": "Seven machine learning algorithms were selected for yield strength prediction: Decision Tree, XGBoost, LightGBM, CatBoost, Extra Trees, KNN, and AdaBoost.",
+      "values": [
+        "Decision Tree",
+        "XGBoost",
+        "LightGBM",
+        "CatBoost",
+        "Extra Trees",
+        "KNN",
+        "AdaBoost"
+      ],
+      "evidence_text": "Seven typical machine learning algorithms were selected to construct predictive models, specifically including DT(Decision Tree), XGBoost(eXtreme Gradient Boosting), LightGBM(Light Gradient Boosting Machine), CatBoost(Categorical Boosting), Extra trees(Extremely Randomized Trees), KNN(K-Nearest Neighbors), and AdaBoost(Adaptive Boosting).",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "figure_evidence",
+      "subject": "predictive performance of seven models",
+      "claim": "All seven machine learning models exhibited good predictive performance for yield strength on test data, with data points largely aligning with the x = y diagonal in goodness-of-fit plots (Fig. 4).",
+      "values": [],
+      "evidence_text": "As shown in Fig. 4, the seven selected machine learning models all exhibited good predictive performance for YS, with the test set data points largely aligning with the x = y diagonal.",
+      "figures": [
+        "Fig. 4"
+      ],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "property",
+      "subject": "Extra Trees model performance",
+      "claim": "Among the seven models, Extra Trees achieved the best performance with RMSE = 76.2 MPa, MAPE = 9.8%, and R² = 0.978.",
+      "values": [
+        "RMSE = 76.2 MPa",
+        "MAPE = 9.8%",
+        "R² = 0.978"
+      ],
+      "evidence_text": "As shown in Fig. 5, among the seven machine learning models trained simultaneously, the Extra Trees model demonstrated the best performance, with an RMSE of 76.2 MPa, a MAPE of 9.8 %, and an R2 value of 0.978.",
+      "figures": [
+        "Fig. 5"
+      ],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "Extra Trees model suitability",
+      "claim": "The Extra Trees model can serve as an effective supplement to the new yield strength prediction model for medium-manganese low-density steels.",
+      "values": [],
+      "evidence_text": "Therefore, overall, among the seven different machine learning models, the Extra Trees model can serve as an effective supplement to the new YS prediction model.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "figure_evidence",
+      "subject": "Extra Trees model structure",
+      "claim": "The specific structure of the Extra Trees model is illustrated in Fig. 6.",
+      "values": [],
+      "evidence_text": "The specific structure of the extra trees model is shown in Fig. 6.",
+      "figures": [
+        "Fig. 6"
+      ],
+      "tables": [],
+      "confidence": "high"
+    }
+  ],
+  "context_update": {
+    "summary": "This chunk defines evaluation metrics (R², RMSE, MAPE interpretation) and presents the model selection and comparison process. Seven ML algorithms (DT, XGBoost, LightGBM, CatBoost, Extra Trees, KNN, AdaBoost) were trained using the GMM-augmented dataset with four strengthening mechanisms as input and yield strength as output, following a 70/30 train-test split. Goodness-of-fit plots (Fig. 4) show all models perform well, with test data aligning on the diagonal. Performance comparison via Fig. 5 identifies Extra Trees as the best baseline model, achieving RMSE = 76.2 MPa, MAPE = 9.8%, and R² = 0.978. The Extra Trees structure is depicted in Fig. 6. Future chunks should retain: Extra Trees as the foundation for further optimization (likely GA), these baseline performance metrics, and the fact that model training used the three evaluation metrics for comparison. The overall medium-manganese low-density steel system and the four strengthening inputs remain unchanged.",
+    "material_systems": [
+      "medium-manganese low-density steels"
+    ],
+    "sample_aliases": [],
+    "processing_route": [
+      "GMM data-augmented dataset (177 to 776 instances)",
+      "70:30 train-test split",
+      "four strengthening mechanisms as input features",
+      "yield strength as target output",
+      "seven machine learning models trained and compared"
+    ],
+    "key_variables": [
+      "RMSE",
+      "MAPE",
+      "R²",
+      "yield strength",
+      "Extra Trees model RMSE = 76.2 MPa",
+      "Extra Trees model MAPE = 9.8%",
+      "Extra Trees model R² = 0.978"
+    ],
+    "microstructure": [],
+    "properties": [
+      "yield strength"
+    ],
+    "mechanisms": [
+      "machine learning model performance evaluation",
+      "ensemble learning for yield strength prediction",
+      "Extra Trees as best baseline model"
+    ],
+    "figures_or_tables": [
+      "Fig. 4 (goodness-of-fit plots for 7 models)",
+      "Fig. 5 (comparison of RMSE, MAPE, R² for 7 models)",
+      "Fig. 6 (Extra Trees model structure)"
+    ],
+    "unresolved_terms": []
+  }
+}

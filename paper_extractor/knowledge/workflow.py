@@ -177,7 +177,7 @@ def _run_from_cleaned_markdown(
         paper_map, paper_map_raw = _mock_paper_map(paper_id, markdown_text), "mock"
     else:
         try:
-            paper_map, paper_map_raw = generate_paper_map(client, settings.text_model.model, paper_id, markdown_text)
+            paper_map, paper_map_raw = generate_paper_map(client, settings.text_model, paper_id, markdown_text)
         except Exception as exc:
             paper_map_raw = getattr(exc, "raw_content", "")
             paper_map = _fallback_paper_map(
@@ -211,7 +211,7 @@ def _run_from_cleaned_markdown(
                 try:
                     record, raw_content = extract_chunk_claims(
                         client,
-                        settings.text_model.model,
+                        settings.text_model,
                         paper_map,
                         chunk,
                         previous_context_summary=previous_context_summary,
@@ -311,7 +311,7 @@ def _run_from_cleaned_markdown(
         try:
             markdown, synthesis_prompt = synthesize_markdown(
                 client,
-                settings.text_model.model,
+                settings.text_model,
                 paper_map=paper_map,
                 synthesis_payload=synthesis_payload,
                 visual_evidence=visual_evidence,

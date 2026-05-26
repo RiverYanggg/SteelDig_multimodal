@@ -1,0 +1,706 @@
+[
+  {
+    "chunk_id": "chunk_0001",
+    "section": "Quantification of multi-stage recrystallization in low-alloy steel under varying deformation conditions using inhomogeneous-dislocation-density 3D cellular automaton",
+    "previous_context_summary": "",
+    "context_update": {
+      "summary": "The current chunk includes the paper title, author affiliations, keywords, abstract, and a list of symbols. The research focuses on low-alloy steel and aims to develop a 3D cellular automaton model for predicting dynamic recrystallization (DRX) microstructure and flow stress under varying deformation conditions. The model integrates inhomogeneous dislocation density and grain-boundary sliding, and couples with a new phenomenological constitutive model that accounts for varying 50% DRX time and residual softening from the first recrystallization stage. The abstract reports key simulation findings: an increase in the Zener-Hollomon parameter (ZP) causes matrix and first-stage DRX grain refinement, while a decrease in ZP leads to inhomogeneous dislocation density distribution that accelerates grain growth to sizes similar to constant-condition levels, matching experimental stress-decrease rates. It also describes the delayed nucleation of second-stage DRX grains when ZP increases, resulting in a larger final grain size. No specific numerical values, processing parameters, or figure/table references are provided in this chunk. The symbol list defines all variables used in the model and constitutive equations.",
+      "material_systems": [
+        "low-alloy steel"
+      ],
+      "sample_aliases": [],
+      "processing_route": [
+        "hot compression under varying temperatures and strain rates"
+      ],
+      "key_variables": [
+        "Zener-Hollomon parameter ZP",
+        "dislocation density",
+        "DRX fraction",
+        "grain size",
+        "flow stress",
+        "time for 50% DRX",
+        "residual softening"
+      ],
+      "microstructure": [
+        "matrix",
+        "first-stage DRX grains (DRXGsI)",
+        "second-stage DRX grains (DRXGsII)",
+        "inhomogeneous dislocation density distribution"
+      ],
+      "properties": [
+        "flow stress",
+        "stress-decreasing rate"
+      ],
+      "mechanisms": [
+        "dislocation density gradients",
+        "grain-boundary sliding",
+        "stress softening due to grain refinement",
+        "inhomogeneous dislocation density accelerating grain growth"
+      ],
+      "figures_or_tables": [],
+      "unresolved_terms": []
+    },
+    "rolling_context_summary": "Summary: The current chunk includes the paper title, author affiliations, keywords, abstract, and a list of symbols. The research focuses on low-alloy steel and aims to develop a 3D cellular automaton model for predicting dynamic recrystallization (DRX) microstructure and flow stress under varying deformation conditions. The model integrates inhomogeneous dislocation density and grain-boundary sliding, and couples with a new phenomenological constitutive model that accounts for varying 50% DRX time and residual softening from the first recrystallization stage. The abstract reports key simulation findings: an increase in the Zener-Hollomon parameter (ZP) causes matrix and first-stage DRX grain refinement, while a decrease in ZP leads to inhomogeneous dislocation density distribution that accelerates grain growth to sizes similar to constant-condition levels, matching experimental stress-decrease rates. It also describes the delayed nucleation of second-stage DRX grains when ZP increases, resulting in a larger final grain size. No specific numerical values, processing parameters, or figure/table references are provided in this chunk. The symbol list defines all variables used in the model and constitutive equations.\nMaterial systems: low-alloy steel\nProcessing route: hot compression under varying temperatures and strain rates\nKey variables: Zener-Hollomon parameter ZP; dislocation density; DRX fraction; grain size; flow stress; time for 50% DRX; residual softening\nMicrostructure: matrix; first-stage DRX grains (DRXGsI); second-stage DRX grains (DRXGsII); inhomogeneous dislocation density distribution\nProperties: flow stress; stress-decreasing rate\nMechanisms: dislocation density gradients; grain-boundary sliding; stress softening due to grain refinement; inhomogeneous dislocation density accelerating grain growth"
+  },
+  {
+    "chunk_id": "chunk_0002",
+    "section": "List of symbols",
+    "previous_context_summary": "Summary: The current chunk includes the paper title, author affiliations, keywords, abstract, and a list of symbols. The research focuses on low-alloy steel and aims to develop a 3D cellular automaton model for predicting dynamic recrystallization (DRX) microstructure and flow stress under varying deformation conditions. The model integrates inhomogeneous dislocation density and grain-boundary sliding, and couples with a new phenomenological constitutive model that accounts for varying 50% DRX time and residual softening from the first recrystallization stage. The abstract reports key simulation findings: an increase in the Zener-Hollomon parameter (ZP) causes matrix and first-stage DRX grain refinement, while a decrease in ZP leads to inhomogeneous dislocation density distribution that accelerates grain growth to sizes similar to constant-condition levels, matching experimental stress-decrease rates. It also describes the delayed nucleation of second-stage DRX grains when ZP increases, resulting in a larger final grain size. No specific numerical values, processing parameters, or figure/table references are provided in this chunk. The symbol list defines all variables used in the model and constitutive equations.\nMaterial systems: low-alloy steel\nProcessing route: hot compression under varying temperatures and strain rates\nKey variables: Zener-Hollomon parameter ZP; dislocation density; DRX fraction; grain size; flow stress; time for 50% DRX; residual softening\nMicrostructure: matrix; first-stage DRX grains (DRXGsI); second-stage DRX grains (DRXGsII); inhomogeneous dislocation density distribution\nProperties: flow stress; stress-decreasing rate\nMechanisms: dislocation density gradients; grain-boundary sliding; stress softening due to grain refinement; inhomogeneous dislocation density accelerating grain growth",
+    "context_update": {
+      "summary": "This chunk covers the List of Symbols defining all constants and variables for the CA and constitutive models (e.g., dislocation density, grain size, activation energies, Zener-Hollomon parameter Zp). The Introduction reviews prior DRX modeling approaches, highlighting that phenomenological models lose history-dependent stress prediction and CPFEM-CA suffers from computational limitations. Industrial scenarios causing transient strain-rate and temperature changes are described. The experimental procedure for low-alloy steel hot compression is introduced: constant conditions (850–1150°C, 0.01–10 s⁻¹), varying conditions (950–1050°C, 0.01–0.1 s⁻¹) with transient strain-rate changes at ε=0.2 or 0.4, and continuous temperature variation (1050→950°C) over ε ranges 0.2–0.3 or 0.4–0.5. The sample is held at 1250°C for 180 s, compressed to a true strain of 0.9, held 60 s, and water-quenched; the side section is observed by optical and EBSD microscopy. Key findings from literature show lower peak/steady stresses under varying conditions and accelerated DRX under strain-rate jumps. The objective is to develop a 3D CA model with inhomogeneous dislocation density and GBS to unify flow stress and microstructure prediction.",
+      "material_systems": [
+        "low-alloy steel"
+      ],
+      "sample_aliases": [],
+      "processing_route": [
+        "hot compression",
+        "constant T=850–1150°C, ε̇=0.01–10 s⁻¹",
+        "varying T=950–1050°C, ε̇=0.01–0.1 s⁻¹",
+        "transient strain rate change at ε=0.2,0.4",
+        "continuous T change from 1050 to 950°C over ε 0.2–0.3 or 0.4–0.5",
+        "holding 1250°C 180 s",
+        "holding 60 s after compression",
+        "water quenching",
+        "true strain 0.9",
+        "side section observation by optical and EBSD"
+      ],
+      "key_variables": [
+        "Zener-Hollomon parameter Zp",
+        "dislocation density",
+        "strain rate",
+        "temperature",
+        "true strain",
+        "DRX fraction",
+        "flow stress",
+        "time for 50% DRX t0.5",
+        "softening coefficient ks"
+      ],
+      "microstructure": [
+        "matrix",
+        "first-stage DRX grains",
+        "second-stage DRX grains",
+        "mixed-grain microstructure",
+        "inhomogeneous dislocation density",
+        "grain boundary sliding"
+      ],
+      "properties": [
+        "peak stress",
+        "steady stress",
+        "flow stress"
+      ],
+      "mechanisms": [
+        "dynamic recrystallization (DRX)",
+        "work hardening (WH)",
+        "dynamic recovery (DRV)",
+        "grain-boundary sliding (GBS)",
+        "dislocation density accumulation and annihilation",
+        "nucleation and growth of DRX grains"
+      ],
+      "figures_or_tables": [
+        "Fig. 1 (experimental procedure, deformation conditions tables)"
+      ],
+      "unresolved_terms": []
+    },
+    "rolling_context_summary": "Summary: The symbol list defines all variables used in the model and constitutive equations. This chunk covers the List of Symbols defining all constants and variables for the CA and constitutive models (e.g., dislocation density, grain size, activation energies, Zener-Hollomon parameter Zp). The Introduction reviews prior DRX modeling approaches, highlighting that phenomenological models lose history-dependent stress prediction and CPFEM-CA suffers from computational limitations. Industrial scenarios causing transient strain-rate and temperature changes are described. The experimental procedure for low-alloy steel hot compression is introduced: constant conditions (850–1150°C, 0.01–10 s⁻¹), varying conditions (950–1050°C, 0.01–0.1 s⁻¹) with transient strain-rate changes at ε=0.2 or 0.4, and continuous temperature variation (1050→950°C) over ε ranges 0.2–0.3 or 0.4–0.5. The sample is held at 1250°C for 180 s, compressed to a true strain of 0.9, held 60 s, and water-quenched; the side section is observed by optical and EBSD microscopy. Key findings from literature show lower peak/steady stresses under varying conditions and accelerated DRX under strain-rate jumps. The objective is to develop a 3D CA model with inhomogeneous dislocation density and GBS to unify flow stress and microstructure prediction.\nMaterial systems: low-alloy steel\nProcessing route: hot compression under varying temperatures and strain rates; hot compression; constant T=850–1150°C, ε̇=0.01–10 s⁻¹; varying T=950–1050°C, ε̇=0.01–0.1 s⁻¹; transient strain rate change at ε=0.2,0.4; continuous T change from 1050 to 950°C over ε 0.2–0.3 or 0.4–0.5; holding 1250°C 180 s; holding 60 s after compression\nKey variables: Zener-Hollomon parameter ZP; dislocation density; DRX fraction; grain size; flow stress; time for 50% DRX; residual softening; strain rate\nMicrostructure: matrix; first-stage DRX grains (DRXGsI); second-stage DRX grains (DRXGsII); inhomogeneous dislocation density distribution; first-stage DRX grains; second-stage DRX grains; mixed-grain microstructure; inhomogeneous dislocation density\nProperties: flow stress; stress-decreasing rate; peak stress; steady stress\nMechanisms: dislocation density gradients; grain-boundary sliding; stress softening due to grain refinement; inhomogeneous dislocation density accelerating grain growth; dynamic recrystallization (DRX); work hardening (WH); dynamic recovery (DRV); grain-boundary sliding (GBS)\nFigures or tables: Fig. 1 (experimental procedure, deformation conditions tables)"
+  },
+  {
+    "chunk_id": "chunk_0003",
+    "section": "1. Introduction",
+    "previous_context_summary": "Summary: The symbol list defines all variables used in the model and constitutive equations. This chunk covers the List of Symbols defining all constants and variables for the CA and constitutive models (e.g., dislocation density, grain size, activation energies, Zener-Hollomon parameter Zp). The Introduction reviews prior DRX modeling approaches, highlighting that phenomenological models lose history-dependent stress prediction and CPFEM-CA suffers from computational limitations. Industrial scenarios causing transient strain-rate and temperature changes are described. The experimental procedure for low-alloy steel hot compression is introduced: constant conditions (850–1150°C, 0.01–10 s⁻¹), varying conditions (950–1050°C, 0.01–0.1 s⁻¹) with transient strain-rate changes at ε=0.2 or 0.4, and continuous temperature variation (1050→950°C) over ε ranges 0.2–0.3 or 0.4–0.5. The sample is held at 1250°C for 180 s, compressed to a true strain of 0.9, held 60 s, and water-quenched; the side section is observed by optical and EBSD microscopy. Key findings from literature show lower peak/steady stresses under varying conditions and accelerated DRX under strain-rate jumps. The objective is to develop a 3D CA model with inhomogeneous dislocation density and GBS to unify flow stress and microstructure prediction.\nMaterial systems: low-alloy steel\nProcessing route: hot compression under varying temperatures and strain rates; hot compression; constant T=850–1150°C, ε̇=0.01–10 s⁻¹; varying T=950–1050°C, ε̇=0.01–0.1 s⁻¹; transient strain rate change at ε=0.2,0.4; continuous T change from 1050 to 950°C over ε 0.2–0.3 or 0.4–0.5; holding 1250°C 180 s; holding 60 s after compression\nKey variables: Zener-Hollomon parameter ZP; dislocation density; DRX fraction; grain size; flow stress; time for 50% DRX; residual softening; strain rate\nMicrostructure: matrix; first-stage DRX grains (DRXGsI); second-stage DRX grains (DRXGsII); inhomogeneous dislocation density distribution; first-stage DRX grains; second-stage DRX grains; mixed-grain microstructure; inhomogeneous dislocation density\nProperties: flow stress; stress-decreasing rate; peak stress; steady stress\nMechanisms: dislocation density gradients; grain-boundary sliding; stress softening due to grain refinement; inhomogeneous dislocation density accelerating grain growth; dynamic recrystallization (DRX); work hardening (WH); dynamic recovery (DRV); grain-boundary sliding (GBS)\nFigures or tables: Fig. 1 (experimental procedure, deformation conditions tables)",
+    "context_update": {
+      "summary": "This chunk covers the experimental procedure and the beginning of the constitutive model formulation. The material is a low-alloy steel with 0.398C, 0.87Mn, 0.31Si (wt.%) used for automobile hub bearings. Cylindrical specimens (ϕ6×9 mm) are prepared, heated to 1250°C/180s, cooled to deformation temperature, and hot-compressed under constant (850–1150°C, 0.01–10 s⁻¹) and varying conditions. Varying strain-rate tests have a first stage at 950°C, ε̇_I=0.01 or 0.1 s⁻¹ to ε_I=0.2/0.4, then transient change to ε̇_II=0.1/0.01 s⁻¹ up to ε_total=0.9. Varying temperature tests at 0.01 s⁻¹ change temperature continuously from 1050 to 950°C over strain intervals 0.2–0.3 or 0.4–0.5. After deformation, specimens are water-quenched. Microstructural characterization includes: optical microscopy after grinding/polishing/etching with saturated picric acid; PAG size via Image Pro Plus; EBSD on electrolytically polished samples with 0.65–1.3 μm step size; PAG reconstruction using ARPGE with GT orientation relationship; recrystallized vs. deformed grain separation using GOS>3°; PAG diameter from boundaries >10°. DEFORM 3D with a Fortran-embedded model is used for FEM. The constitutive model section introduces differential WH/DRV equation, STG models for yield, steady-state and saturation stresses, critical stress criterion, t_0.5 definition, modified Z parameter for varying history, differential Avrami DRX kinetics, and the flow stress evolution equations including Δσ₀. These formulas and experimental parameters will be critical for subsequent calibration, validation, and discussion sections.",
+      "material_systems": [
+        "low-alloy steel"
+      ],
+      "sample_aliases": [],
+      "processing_route": [
+        "hot compression under constant T=850-1150°C, ε̇=0.01-10 s⁻¹",
+        "varying strain rate at 950°C: ε_I=0.2/0.4, ε̇_I=0.01/0.1 s⁻¹, ε̇_II=0.1/0.01 s⁻¹, total ε=0.9",
+        "varying temperature at ε̇=0.01 s⁻¹: T change to 1050/950°C over ε 0.2-0.3 or 0.4-0.5",
+        "heating 1250°C 180 s, cooling 10°C/s, holding 60 s, water quench"
+      ],
+      "key_variables": [
+        "Zener-Hollomon Z (Z_0, Z_ss, Z_p, Z)",
+        "stress components σ_0, σ_s, σ_ss, σ_c, σ_v",
+        "t_0.5 (time for 50% DRX)",
+        "DRX fraction φ_d",
+        "Avrami exponent n_Av",
+        "net yield stress change Δσ_0",
+        "GOS threshold 3°",
+        "PAG diameter"
+      ],
+      "microstructure": [
+        "prior austenite grains (PAGs)",
+        "recrystallized vs. deformed grains (GOS>3°)",
+        "as-quenched martensite",
+        "reconstructed austenite EBSD maps"
+      ],
+      "properties": [
+        "flow stress evolution"
+      ],
+      "mechanisms": [
+        "work hardening (WH)",
+        "dynamic recovery (DRV)",
+        "dynamic recrystallization (DRX)",
+        "history-dependent t_0.5 and Z",
+        "stress- and temperature-dependent dislocation density evolution"
+      ],
+      "figures_or_tables": [
+        "Fig. 1",
+        "Fig. 1a",
+        "Fig. 1b",
+        "Fig. 1c"
+      ],
+      "unresolved_terms": []
+    },
+    "rolling_context_summary": "Summary: Cylindrical specimens (ϕ6×9 mm) are prepared, heated to 1250°C/180s, cooled to deformation temperature, and hot-compressed under constant (850–1150°C, 0.01–10 s⁻¹) and varying conditions. Varying strain-rate tests have a first stage at 950°C, ε̇_I=0.01 or 0.1 s⁻¹ to ε_I=0.2/0.4, then transient change to ε̇_II=0.1/0.01 s⁻¹ up to ε_total=0.9. Varying temperature tests at 0.01 s⁻¹ change temperature continuously from 1050 to 950°C over strain intervals 0.2–0.3 or 0.4–0.5. After deformation, specimens are water-quenched. Microstructural characterization includes: optical microscopy after grinding/polishing/etching with saturated picric acid; PAG size via Image Pro Plus; EBSD on electrolytically polished samples with 0.65–1.3 μm step size; PAG reconstruction using ARPGE with GT orientation relationship; recrystallized vs. deformed grain separation using GOS>3°; PAG diameter from boundaries >10°. DEFORM 3D with a Fortran-embedded model is used for FEM. The constitutive model section introduces differential WH/DRV equation, STG models for yield, steady-state and saturation stresses, critical stress criterion, t_0.5 definition, modified Z parameter for varying history, differential Avrami DRX kinetics, and the flow stress evolution equations including Δσ₀. These formulas and experimental parameters will be critical for subsequent calibration, validation, and discussion sections.\nMaterial systems: low-alloy steel\nProcessing route: hot compression under varying temperatures and strain rates; hot compression; constant T=850–1150°C, ε̇=0.01–10 s⁻¹; varying T=950–1050°C, ε̇=0.01–0.1 s⁻¹; transient strain rate change at ε=0.2,0.4; continuous T change from 1050 to 950°C over ε 0.2–0.3 or 0.4–0.5; holding 1250°C 180 s; holding 60 s after compression\nKey variables: Zener-Hollomon parameter ZP; dislocation density; DRX fraction; grain size; flow stress; time for 50% DRX; residual softening; strain rate\nMicrostructure: matrix; first-stage DRX grains (DRXGsI); second-stage DRX grains (DRXGsII); inhomogeneous dislocation density distribution; first-stage DRX grains; second-stage DRX grains; mixed-grain microstructure; inhomogeneous dislocation density\nProperties: flow stress; stress-decreasing rate; peak stress; steady stress; flow stress evolution\nMechanisms: dislocation density gradients; grain-boundary sliding; stress softening due to grain refinement; inhomogeneous dislocation density accelerating grain growth; dynamic recrystallization (DRX); work hardening (WH); dynamic recovery (DRV); grain-boundary sliding (GBS)\nFigures or tables: Fig. 1 (experimental procedure, deformation conditions tables); Fig. 1; Fig. 1a; Fig. 1b; Fig. 1c"
+  },
+  {
+    "chunk_id": "chunk_0004",
+    "section": "3.1.1. Effects of working hardening, dynamic recovery and dynamic recrystallization",
+    "previous_context_summary": "Summary: Cylindrical specimens (ϕ6×9 mm) are prepared, heated to 1250°C/180s, cooled to deformation temperature, and hot-compressed under constant (850–1150°C, 0.01–10 s⁻¹) and varying conditions. Varying strain-rate tests have a first stage at 950°C, ε̇_I=0.01 or 0.1 s⁻¹ to ε_I=0.2/0.4, then transient change to ε̇_II=0.1/0.01 s⁻¹ up to ε_total=0.9. Varying temperature tests at 0.01 s⁻¹ change temperature continuously from 1050 to 950°C over strain intervals 0.2–0.3 or 0.4–0.5. After deformation, specimens are water-quenched. Microstructural characterization includes: optical microscopy after grinding/polishing/etching with saturated picric acid; PAG size via Image Pro Plus; EBSD on electrolytically polished samples with 0.65–1.3 μm step size; PAG reconstruction using ARPGE with GT orientation relationship; recrystallized vs. deformed grain separation using GOS>3°; PAG diameter from boundaries >10°. DEFORM 3D with a Fortran-embedded model is used for FEM. The constitutive model section introduces differential WH/DRV equation, STG models for yield, steady-state and saturation stresses, critical stress criterion, t_0.5 definition, modified Z parameter for varying history, differential Avrami DRX kinetics, and the flow stress evolution equations including Δσ₀. These formulas and experimental parameters will be critical for subsequent calibration, validation, and discussion sections.\nMaterial systems: low-alloy steel\nProcessing route: hot compression under varying temperatures and strain rates; hot compression; constant T=850–1150°C, ε̇=0.01–10 s⁻¹; varying T=950–1050°C, ε̇=0.01–0.1 s⁻¹; transient strain rate change at ε=0.2,0.4; continuous T change from 1050 to 950°C over ε 0.2–0.3 or 0.4–0.5; holding 1250°C 180 s; holding 60 s after compression\nKey variables: Zener-Hollomon parameter ZP; dislocation density; DRX fraction; grain size; flow stress; time for 50% DRX; residual softening; strain rate\nMicrostructure: matrix; first-stage DRX grains (DRXGsI); second-stage DRX grains (DRXGsII); inhomogeneous dislocation density distribution; first-stage DRX grains; second-stage DRX grains; mixed-grain microstructure; inhomogeneous dislocation density\nProperties: flow stress; stress-decreasing rate; peak stress; steady stress; flow stress evolution\nMechanisms: dislocation density gradients; grain-boundary sliding; stress softening due to grain refinement; inhomogeneous dislocation density accelerating grain growth; dynamic recrystallization (DRX); work hardening (WH); dynamic recovery (DRV); grain-boundary sliding (GBS)\nFigures or tables: Fig. 1 (experimental procedure, deformation conditions tables); Fig. 1; Fig. 1a; Fig. 1b; Fig. 1c",
+    "context_update": {
+      "summary": "This chunk details the optimization of constitutive models for varying deformation conditions and the formulation of a 3D cellular automaton model with inhomogeneous dislocation density. A stress softening coefficient k_s (≤1) is introduced to adjust saturation stress based on the Zener-Hollomon parameters of the two stages and the first-stage DRX fraction (Eqs. 17–18); it converges to 1 for constant or non-recrystallized conditions. The CA model assumes an initial uniform dislocation density of 10^11 m^{-2}, grain-boundary nucleation, and a gradient dislocation density distribution. The initial mixed-grain microstructure is characterized with maximum grain size 265.20 µm and minimum 10.22 µm (Fig. 4). The WH contribution to dislocation density scales with (distance to GB)^{-2}, grain size, and a random term (Eq. 28). GBS strain rate is given by Eq. 30 and subtracted from total strain to obtain slip strain increment. Subsequent sections will use these constitutive and CA formulations for FEM implementation and validation.",
+      "material_systems": [
+        "low-alloy steel"
+      ],
+      "sample_aliases": [],
+      "processing_route": [
+        "varying-temperature hot compression",
+        "varying-strain-rate hot compression"
+      ],
+      "key_variables": [
+        "Zener-Hollomon parameter Z_P^(I), Z_P^(II)",
+        "stress softening coefficient k_s",
+        "first-stage DRX fraction φ_d^(I)",
+        "saturation stress σ_s^(v)",
+        "steady-state stress σ_ss^(v)",
+        "yield stress σ_0^(v)",
+        "initial dislocation density 10^11 m^{-2}",
+        "cell dislocation density ρ^r",
+        "GBS strain rate ε̇_GBS",
+        "grain size d_r, d_ave",
+        "material constant n_c, C, A_GB, p_GB, n_GB, H_0, E"
+      ],
+      "microstructure": [
+        "mixed-grain initial microstructure",
+        "grain size distribution (max 265.20 µm, min 10.22 µm)",
+        "dislocation density gradient from grain boundary to interior"
+      ],
+      "properties": [
+        "flow stress under varying conditions",
+        "stress softening due to DRX and GBS"
+      ],
+      "mechanisms": [
+        "work hardening",
+        "dynamic recovery",
+        "dynamic recrystallization",
+        "grain boundary sliding",
+        "inhomogeneous dislocation density evolution"
+      ],
+      "figures_or_tables": [
+        "Fig. 2 (schematic flow stress under varying conditions)",
+        "Fig. 3 (k_s vs. Z_P and DRX fraction)",
+        "Fig. 4a (optical micrograph of initial mixed grains)",
+        "Fig. 4c (experimental vs. simulated grain size distributions)"
+      ],
+      "unresolved_terms": [
+        "material constant n_c in k_s expression",
+        "coefficient C in dρ_WH^r",
+        "GBS material constants A_GB, p_GB, n_GB, H_0, E"
+      ]
+    },
+    "rolling_context_summary": "Summary: These formulas and experimental parameters will be critical for subsequent calibration, validation, and discussion sections. This chunk details the optimization of constitutive models for varying deformation conditions and the formulation of a 3D cellular automaton model with inhomogeneous dislocation density. A stress softening coefficient k_s (≤1) is introduced to adjust saturation stress based on the Zener-Hollomon parameters of the two stages and the first-stage DRX fraction (Eqs. 17–18); it converges to 1 for constant or non-recrystallized conditions. The CA model assumes an initial uniform dislocation density of 10^11 m^{-2}, grain-boundary nucleation, and a gradient dislocation density distribution. The initial mixed-grain microstructure is characterized with maximum grain size 265.20 µm and minimum 10.22 µm (Fig. 4). The WH contribution to dislocation density scales with (distance to GB)^{-2}, grain size, and a random term (Eq. 28). GBS strain rate is given by Eq. 30 and subtracted from total strain to obtain slip strain increment. Subsequent sections will use these constitutive and CA formulations for FEM implementation and validation.\nMaterial systems: low-alloy steel\nProcessing route: hot compression under varying temperatures and strain rates; hot compression; constant T=850–1150°C, ε̇=0.01–10 s⁻¹; varying T=950–1050°C, ε̇=0.01–0.1 s⁻¹; transient strain rate change at ε=0.2,0.4; continuous T change from 1050 to 950°C over ε 0.2–0.3 or 0.4–0.5; holding 1250°C 180 s; holding 60 s after compression\nKey variables: Zener-Hollomon parameter ZP; dislocation density; DRX fraction; grain size; flow stress; time for 50% DRX; residual softening; strain rate\nMicrostructure: matrix; first-stage DRX grains (DRXGsI); second-stage DRX grains (DRXGsII); inhomogeneous dislocation density distribution; first-stage DRX grains; second-stage DRX grains; mixed-grain microstructure; inhomogeneous dislocation density\nProperties: flow stress; stress-decreasing rate; peak stress; steady stress; flow stress evolution; flow stress under varying conditions; stress softening due to DRX and GBS\nMechanisms: dislocation density gradients; grain-boundary sliding; stress softening due to grain refinement; inhomogeneous dislocation density accelerating grain growth; dynamic recrystallization (DRX); work hardening (WH); dynamic recovery (DRV); grain-boundary sliding (GBS)\nFigures or tables: Fig. 1 (experimental procedure, deformation conditions tables); Fig. 1; Fig. 1a; Fig. 1b; Fig. 1c; Fig. 2 (schematic flow stress under varying conditions); Fig. 3 (k_s vs. Z_P and DRX fraction); Fig. 4a (optical micrograph of initial mixed grains)\nUnresolved terms: material constant n_c in k_s expression; coefficient C in dρ_WH^r; GBS material constants A_GB, p_GB, n_GB, H_0, E"
+  },
+  {
+    "chunk_id": "chunk_0005",
+    "section": "3.2.2. Evolution of inhomogeneous dislocation density",
+    "previous_context_summary": "Summary: These formulas and experimental parameters will be critical for subsequent calibration, validation, and discussion sections. This chunk details the optimization of constitutive models for varying deformation conditions and the formulation of a 3D cellular automaton model with inhomogeneous dislocation density. A stress softening coefficient k_s (≤1) is introduced to adjust saturation stress based on the Zener-Hollomon parameters of the two stages and the first-stage DRX fraction (Eqs. 17–18); it converges to 1 for constant or non-recrystallized conditions. The CA model assumes an initial uniform dislocation density of 10^11 m^{-2}, grain-boundary nucleation, and a gradient dislocation density distribution. The initial mixed-grain microstructure is characterized with maximum grain size 265.20 µm and minimum 10.22 µm (Fig. 4). The WH contribution to dislocation density scales with (distance to GB)^{-2}, grain size, and a random term (Eq. 28). GBS strain rate is given by Eq. 30 and subtracted from total strain to obtain slip strain increment. Subsequent sections will use these constitutive and CA formulations for FEM implementation and validation.\nMaterial systems: low-alloy steel\nProcessing route: hot compression under varying temperatures and strain rates; hot compression; constant T=850–1150°C, ε̇=0.01–10 s⁻¹; varying T=950–1050°C, ε̇=0.01–0.1 s⁻¹; transient strain rate change at ε=0.2,0.4; continuous T change from 1050 to 950°C over ε 0.2–0.3 or 0.4–0.5; holding 1250°C 180 s; holding 60 s after compression\nKey variables: Zener-Hollomon parameter ZP; dislocation density; DRX fraction; grain size; flow stress; time for 50% DRX; residual softening; strain rate\nMicrostructure: matrix; first-stage DRX grains (DRXGsI); second-stage DRX grains (DRXGsII); inhomogeneous dislocation density distribution; first-stage DRX grains; second-stage DRX grains; mixed-grain microstructure; inhomogeneous dislocation density\nProperties: flow stress; stress-decreasing rate; peak stress; steady stress; flow stress evolution; flow stress under varying conditions; stress softening due to DRX and GBS\nMechanisms: dislocation density gradients; grain-boundary sliding; stress softening due to grain refinement; inhomogeneous dislocation density accelerating grain growth; dynamic recrystallization (DRX); work hardening (WH); dynamic recovery (DRV); grain-boundary sliding (GBS)\nFigures or tables: Fig. 1 (experimental procedure, deformation conditions tables); Fig. 1; Fig. 1a; Fig. 1b; Fig. 1c; Fig. 2 (schematic flow stress under varying conditions); Fig. 3 (k_s vs. Z_P and DRX fraction); Fig. 4a (optical micrograph of initial mixed grains)\nUnresolved terms: material constant n_c in k_s expression; coefficient C in dρ_WH^r; GBS material constants A_GB, p_GB, n_GB, H_0, E",
+    "context_update": {
+      "summary": "This chunk details the evolution of inhomogeneous dislocation density and the formulation of DRX nucleation and grain growth within the 3D CA model. It explains that newly nucleated DRX grains undergo GBS and stress softening. It presents equations for critical dislocation density, nucleation rate incorporating stored energy to account for inhomogeneous dislocation density, grain boundary migration velocity, driving force, grain boundary energy, grain boundary mobility, and a modified time step that handles local dislocation density exceeding average saturation. The chunk includes Fig. 5 (CA model flowchart), Table 1 (material parameters such as μ0=7.89e10 MPa, Tm=1800 K, Q_drx=326922 J/mol, Q_p=314300 J/mol, n=6.3742, k_d0=4.442, n_c=55.563), and extensive validation data: Fig. 6 comparing experimental and simulated DRX fractions over time for temperatures 850–1150°C and strain rates 0.01–10 s⁻¹, and Fig. 7 showing flow stress-strain curves under constant conditions. The simulation results demonstrate excellent agreement with experiments. This chunk provides the microstructural mechanisms and quantitative evidence that validate the model's predictive capability under constant deformation conditions. Subsequent sections will likely address varying deformation conditions.",
+      "material_systems": [
+        "low-alloy steel"
+      ],
+      "sample_aliases": [],
+      "processing_route": [
+        "hot compression under constant temperature and strain rate",
+        "temperatures 850–1150°C",
+        "strain rates 0.01–10 s⁻¹"
+      ],
+      "key_variables": [
+        "critical dislocation density ρ_c",
+        "nucleation rate \\dot{n}",
+        "stored energy H",
+        "dislocation density ρ^r(i,j,k)",
+        "grain boundary migration velocity v",
+        "driving force f",
+        "grain boundary energy γ",
+        "grain boundary mobility M",
+        "time step Δt",
+        "DRX fraction",
+        "flow stress",
+        "temperature"
+      ],
+      "microstructure": [
+        "newly nucleated DRX grains affected by GBS",
+        "inhomogeneous dislocation density around grain boundaries",
+        "DRX grains",
+        "grain boundary misorientation"
+      ],
+      "properties": [
+        "flow stress evolution",
+        "DRX fraction",
+        "stress softening due to low dislocation accumulation in new DRX grains"
+      ],
+      "mechanisms": [
+        "GBS-induced stress softening in small DRX grains",
+        "inhomogeneous nucleation driven by stored energy from dislocation density",
+        "grain boundary migration governed by dislocation density difference and grain curvature",
+        "time step modification to account for local dislocation density exceeding average saturation"
+      ],
+      "figures_or_tables": [
+        "Fig. 5",
+        "Table 1",
+        "Fig. 6",
+        "Fig. 7",
+        "Table 2"
+      ],
+      "unresolved_terms": [
+        "modified time step equation after Eq. 42 (truncated)",
+        "values of Table 2 not provided"
+      ]
+    },
+    "rolling_context_summary": "Summary: Subsequent sections will use these constitutive and CA formulations for FEM implementation and validation. This chunk details the evolution of inhomogeneous dislocation density and the formulation of DRX nucleation and grain growth within the 3D CA model. It explains that newly nucleated DRX grains undergo GBS and stress softening. It presents equations for critical dislocation density, nucleation rate incorporating stored energy to account for inhomogeneous dislocation density, grain boundary migration velocity, driving force, grain boundary energy, grain boundary mobility, and a modified time step that handles local dislocation density exceeding average saturation. The chunk includes Fig. 5 (CA model flowchart), Table 1 (material parameters such as μ0=7.89e10 MPa, Tm=1800 K, Q_drx=326922 J/mol, Q_p=314300 J/mol, n=6.3742, k_d0=4.442, n_c=55.563), and extensive validation data: Fig. 6 comparing experimental and simulated DRX fractions over time for temperatures 850–1150°C and strain rates 0.01–10 s⁻¹, and Fig. 7 showing flow stress-strain curves under constant conditions. The simulation results demonstrate excellent agreement with experiments. This chunk provides the microstructural mechanisms and quantitative evidence that validate the model's predictive capability under constant deformation conditions. Subsequent sections will likely address varying deformation conditions.\nMaterial systems: low-alloy steel\nProcessing route: hot compression under varying temperatures and strain rates; hot compression; constant T=850–1150°C, ε̇=0.01–10 s⁻¹; varying T=950–1050°C, ε̇=0.01–0.1 s⁻¹; transient strain rate change at ε=0.2,0.4; continuous T change from 1050 to 950°C over ε 0.2–0.3 or 0.4–0.5; holding 1250°C 180 s; holding 60 s after compression\nKey variables: Zener-Hollomon parameter ZP; dislocation density; DRX fraction; grain size; flow stress; time for 50% DRX; residual softening; strain rate\nMicrostructure: matrix; first-stage DRX grains (DRXGsI); second-stage DRX grains (DRXGsII); inhomogeneous dislocation density distribution; first-stage DRX grains; second-stage DRX grains; mixed-grain microstructure; inhomogeneous dislocation density\nProperties: flow stress; stress-decreasing rate; peak stress; steady stress; flow stress evolution; flow stress under varying conditions; stress softening due to DRX and GBS; DRX fraction\nMechanisms: dislocation density gradients; grain-boundary sliding; stress softening due to grain refinement; inhomogeneous dislocation density accelerating grain growth; dynamic recrystallization (DRX); work hardening (WH); dynamic recovery (DRV); grain-boundary sliding (GBS)\nFigures or tables: Fig. 1 (experimental procedure, deformation conditions tables); Fig. 1; Fig. 1a; Fig. 1b; Fig. 1c; Fig. 2 (schematic flow stress under varying conditions); Fig. 3 (k_s vs. Z_P and DRX fraction); Fig. 4a (optical micrograph of initial mixed grains)\nUnresolved terms: material constant n_c in k_s expression; coefficient C in dρ_WH^r; GBS material constants A_GB, p_GB, n_GB, H_0, E; modified time step equation after Eq. 42 (truncated); values of Table 2 not provided"
+  },
+  {
+    "chunk_id": "chunk_0006",
+    "section": "3.2.3. Inhomogeneous DRX nucleation and grain growth",
+    "previous_context_summary": "Summary: Subsequent sections will use these constitutive and CA formulations for FEM implementation and validation. This chunk details the evolution of inhomogeneous dislocation density and the formulation of DRX nucleation and grain growth within the 3D CA model. It explains that newly nucleated DRX grains undergo GBS and stress softening. It presents equations for critical dislocation density, nucleation rate incorporating stored energy to account for inhomogeneous dislocation density, grain boundary migration velocity, driving force, grain boundary energy, grain boundary mobility, and a modified time step that handles local dislocation density exceeding average saturation. The chunk includes Fig. 5 (CA model flowchart), Table 1 (material parameters such as μ0=7.89e10 MPa, Tm=1800 K, Q_drx=326922 J/mol, Q_p=314300 J/mol, n=6.3742, k_d0=4.442, n_c=55.563), and extensive validation data: Fig. 6 comparing experimental and simulated DRX fractions over time for temperatures 850–1150°C and strain rates 0.01–10 s⁻¹, and Fig. 7 showing flow stress-strain curves under constant conditions. The simulation results demonstrate excellent agreement with experiments. This chunk provides the microstructural mechanisms and quantitative evidence that validate the model's predictive capability under constant deformation conditions. Subsequent sections will likely address varying deformation conditions.\nMaterial systems: low-alloy steel\nProcessing route: hot compression under varying temperatures and strain rates; hot compression; constant T=850–1150°C, ε̇=0.01–10 s⁻¹; varying T=950–1050°C, ε̇=0.01–0.1 s⁻¹; transient strain rate change at ε=0.2,0.4; continuous T change from 1050 to 950°C over ε 0.2–0.3 or 0.4–0.5; holding 1250°C 180 s; holding 60 s after compression\nKey variables: Zener-Hollomon parameter ZP; dislocation density; DRX fraction; grain size; flow stress; time for 50% DRX; residual softening; strain rate\nMicrostructure: matrix; first-stage DRX grains (DRXGsI); second-stage DRX grains (DRXGsII); inhomogeneous dislocation density distribution; first-stage DRX grains; second-stage DRX grains; mixed-grain microstructure; inhomogeneous dislocation density\nProperties: flow stress; stress-decreasing rate; peak stress; steady stress; flow stress evolution; flow stress under varying conditions; stress softening due to DRX and GBS; DRX fraction\nMechanisms: dislocation density gradients; grain-boundary sliding; stress softening due to grain refinement; inhomogeneous dislocation density accelerating grain growth; dynamic recrystallization (DRX); work hardening (WH); dynamic recovery (DRV); grain-boundary sliding (GBS)\nFigures or tables: Fig. 1 (experimental procedure, deformation conditions tables); Fig. 1; Fig. 1a; Fig. 1b; Fig. 1c; Fig. 2 (schematic flow stress under varying conditions); Fig. 3 (k_s vs. Z_P and DRX fraction); Fig. 4a (optical micrograph of initial mixed grains)\nUnresolved terms: material constant n_c in k_s expression; coefficient C in dρ_WH^r; GBS material constants A_GB, p_GB, n_GB, H_0, E; modified time step equation after Eq. 42 (truncated); values of Table 2 not provided",
+    "context_update": {
+      "summary": "This chunk presents the accuracy evaluation (Table 2) of the modified constitutive model under constant deformation conditions, reporting RMSE, R², and AARE for flow stress (4.8944 MPa, 0.9909, 3.91%) and load (274.682 N, 0.9918, 6.65%). It also provides the modified time step expression Δt = L0/(ρ_max τ M) (Eq. 43) for the 3D CA model. Additionally, the inhomogeneous DRX nucleation and grain growth rules are detailed: a cell becomes a DRX nucleus when its dislocation density exceeds ρ_c and a random number is ≤ nucleation probability P_nuc = \\dot{n} L0^3 Δt; grain growth initiates when v·Δt exceeds the cell size, causing it to invade a neighbor. These modeling rules and accuracy metrics are essential for subsequent validation and simulation of multi-stage DRX under varying conditions.",
+      "material_systems": [
+        "low-alloy steel"
+      ],
+      "sample_aliases": [],
+      "processing_route": [],
+      "key_variables": [
+        "ρ_c",
+        "\\dot{n}",
+        "L0",
+        "Δt",
+        "v",
+        "ρ_max",
+        "τ",
+        "M",
+        "random number",
+        "RMSE",
+        "R²",
+        "AARE"
+      ],
+      "microstructure": [
+        "DRX nucleus",
+        "grain boundary"
+      ],
+      "properties": [
+        "flow stress prediction accuracy",
+        "load prediction accuracy"
+      ],
+      "mechanisms": [
+        "DRX nucleation criterion",
+        "grain growth triggered by velocity-step product exceeding cell size"
+      ],
+      "figures_or_tables": [
+        "Table 2"
+      ],
+      "unresolved_terms": [
+        "specific values of ρ_c, \\dot{n}, L0, τ, M, ρ_max and cell size not provided",
+        "random number generation details"
+      ]
+    },
+    "rolling_context_summary": "Summary: 6 comparing experimental and simulated DRX fractions over time for temperatures 850–1150°C and strain rates 0.01–10 s⁻¹, and Fig. 7 showing flow stress-strain curves under constant conditions. The simulation results demonstrate excellent agreement with experiments. This chunk provides the microstructural mechanisms and quantitative evidence that validate the model's predictive capability under constant deformation conditions. Subsequent sections will likely address varying deformation conditions. This chunk presents the accuracy evaluation (Table 2) of the modified constitutive model under constant deformation conditions, reporting RMSE, R², and AARE for flow stress (4.8944 MPa, 0.9909, 3.91%) and load (274.682 N, 0.9918, 6.65%). It also provides the modified time step expression Δt = L0/(ρ_max τ M) (Eq. 43) for the 3D CA model. Additionally, the inhomogeneous DRX nucleation and grain growth rules are detailed: a cell becomes a DRX nucleus when its dislocation density exceeds ρ_c and a random number is ≤ nucleation probability P_nuc = \\dot{n} L0^3 Δt; grain growth initiates when v·Δt exceeds the cell size, causing it to invade a neighbor. These modeling rules and accuracy metrics are essential for subsequent validation and simulation of multi-stage DRX under varying conditions.\nMaterial systems: low-alloy steel\nProcessing route: hot compression under varying temperatures and strain rates; hot compression; constant T=850–1150°C, ε̇=0.01–10 s⁻¹; varying T=950–1050°C, ε̇=0.01–0.1 s⁻¹; transient strain rate change at ε=0.2,0.4; continuous T change from 1050 to 950°C over ε 0.2–0.3 or 0.4–0.5; holding 1250°C 180 s; holding 60 s after compression\nKey variables: Zener-Hollomon parameter ZP; dislocation density; DRX fraction; grain size; flow stress; time for 50% DRX; residual softening; strain rate\nMicrostructure: matrix; first-stage DRX grains (DRXGsI); second-stage DRX grains (DRXGsII); inhomogeneous dislocation density distribution; first-stage DRX grains; second-stage DRX grains; mixed-grain microstructure; inhomogeneous dislocation density\nProperties: flow stress; stress-decreasing rate; peak stress; steady stress; flow stress evolution; flow stress under varying conditions; stress softening due to DRX and GBS; DRX fraction\nMechanisms: dislocation density gradients; grain-boundary sliding; stress softening due to grain refinement; inhomogeneous dislocation density accelerating grain growth; dynamic recrystallization (DRX); work hardening (WH); dynamic recovery (DRV); grain-boundary sliding (GBS)\nFigures or tables: Fig. 1 (experimental procedure, deformation conditions tables); Fig. 1; Fig. 1a; Fig. 1b; Fig. 1c; Fig. 2 (schematic flow stress under varying conditions); Fig. 3 (k_s vs. Z_P and DRX fraction); Fig. 4a (optical micrograph of initial mixed grains)\nUnresolved terms: material constant n_c in k_s expression; coefficient C in dρ_WH^r; GBS material constants A_GB, p_GB, n_GB, H_0, E; modified time step equation after Eq. 42 (truncated); values of Table 2 not provided; specific values of ρ_c, \\dot{n}, L0, τ, M, ρ_max and cell size not provided; random number generation details"
+  },
+  {
+    "chunk_id": "chunk_0007",
+    "section": "3.2.3. Inhomogeneous DRX nucleation and grain growth",
+    "previous_context_summary": "Summary: 6 comparing experimental and simulated DRX fractions over time for temperatures 850–1150°C and strain rates 0.01–10 s⁻¹, and Fig. 7 showing flow stress-strain curves under constant conditions. The simulation results demonstrate excellent agreement with experiments. This chunk provides the microstructural mechanisms and quantitative evidence that validate the model's predictive capability under constant deformation conditions. Subsequent sections will likely address varying deformation conditions. This chunk presents the accuracy evaluation (Table 2) of the modified constitutive model under constant deformation conditions, reporting RMSE, R², and AARE for flow stress (4.8944 MPa, 0.9909, 3.91%) and load (274.682 N, 0.9918, 6.65%). It also provides the modified time step expression Δt = L0/(ρ_max τ M) (Eq. 43) for the 3D CA model. Additionally, the inhomogeneous DRX nucleation and grain growth rules are detailed: a cell becomes a DRX nucleus when its dislocation density exceeds ρ_c and a random number is ≤ nucleation probability P_nuc = \\dot{n} L0^3 Δt; grain growth initiates when v·Δt exceeds the cell size, causing it to invade a neighbor. These modeling rules and accuracy metrics are essential for subsequent validation and simulation of multi-stage DRX under varying conditions.\nMaterial systems: low-alloy steel\nProcessing route: hot compression under varying temperatures and strain rates; hot compression; constant T=850–1150°C, ε̇=0.01–10 s⁻¹; varying T=950–1050°C, ε̇=0.01–0.1 s⁻¹; transient strain rate change at ε=0.2,0.4; continuous T change from 1050 to 950°C over ε 0.2–0.3 or 0.4–0.5; holding 1250°C 180 s; holding 60 s after compression\nKey variables: Zener-Hollomon parameter ZP; dislocation density; DRX fraction; grain size; flow stress; time for 50% DRX; residual softening; strain rate\nMicrostructure: matrix; first-stage DRX grains (DRXGsI); second-stage DRX grains (DRXGsII); inhomogeneous dislocation density distribution; first-stage DRX grains; second-stage DRX grains; mixed-grain microstructure; inhomogeneous dislocation density\nProperties: flow stress; stress-decreasing rate; peak stress; steady stress; flow stress evolution; flow stress under varying conditions; stress softening due to DRX and GBS; DRX fraction\nMechanisms: dislocation density gradients; grain-boundary sliding; stress softening due to grain refinement; inhomogeneous dislocation density accelerating grain growth; dynamic recrystallization (DRX); work hardening (WH); dynamic recovery (DRV); grain-boundary sliding (GBS)\nFigures or tables: Fig. 1 (experimental procedure, deformation conditions tables); Fig. 1; Fig. 1a; Fig. 1b; Fig. 1c; Fig. 2 (schematic flow stress under varying conditions); Fig. 3 (k_s vs. Z_P and DRX fraction); Fig. 4a (optical micrograph of initial mixed grains)\nUnresolved terms: material constant n_c in k_s expression; coefficient C in dρ_WH^r; GBS material constants A_GB, p_GB, n_GB, H_0, E; modified time step equation after Eq. 42 (truncated); values of Table 2 not provided; specific values of ρ_c, \\dot{n}, L0, τ, M, ρ_max and cell size not provided; random number generation details",
+    "context_update": {
+      "summary": "This chunk covers: (i) the inhomogeneous DRX nucleation rule requiring dislocation density ≥ ρ_c and random number ≤ P_nuc = ṅ L0³ Δt, and grain growth initiation when v·Δt exceeds a cell size; (ii) the 3D CA framework with an RVE of 550×550×550 µm³ and cell size 2.5 µm, validated against experimental average grain size and standard deviation (Fig. 4b, 4c), demonstrating that the created RVE reflects the initial mixed-grain microstructure; (iii) each cubic cell holds six state variables, starting with grain orientation; (iv) flow stress evolution under transient strain rate (0.01→0.1 and 0.1→0.01 s⁻¹) and varying temperature (1050→950°C and 950→1050°C) conditions with two model variants (Model 1 and Model 2) at two strain-change thresholds (ε₁=0.2 or 0.4), presenting experimental versus simulated curves in Fig. 8 and Fig. 9; (v) accuracy evaluation in Table 3 showing Model 2 (RMSE 3.04 MPa, R² 0.9507, AARE 3.11%) significantly outperforms Model 1 (RMSE 6.46 MPa, R² 0.8239, AARE 7.36%) under varying conditions. Subsequent sections may discuss underlying mechanisms, microstructural evolution, and the superiority of Model 2.",
+      "material_systems": [
+        "low-alloy steel"
+      ],
+      "sample_aliases": [],
+      "processing_route": [
+        "hot compression",
+        "varying temperature 1050→950°C and 950→1050°C",
+        "varying strain rate 0.01↔0.1 s⁻¹",
+        "switch strain ε₁=0.2 or 0.4"
+      ],
+      "key_variables": [
+        "flow stress",
+        "strain",
+        "strain rate",
+        "temperature",
+        "ρ_c",
+        "ṅ",
+        "L0",
+        "Δt",
+        "cell size",
+        "AGS",
+        "SD",
+        "RMSE"
+      ],
+      "microstructure": [
+        "mixed-grain initial microstructure",
+        "average grain size (AGS)",
+        "standard deviation of grain size",
+        "3D RVE 550×550×550 µm³",
+        "cell size 2.5 µm"
+      ],
+      "properties": [
+        "flow stress evolution under varying T and strain rate",
+        "model accuracy (RMSE, R², AARE)"
+      ],
+      "mechanisms": [
+        "DRX nucleation (dislocation density threshold and probability)",
+        "DRX grain growth (velocity condition)"
+      ],
+      "figures_or_tables": [
+        "Fig. 4b",
+        "Fig. 4c",
+        "Fig. 8",
+        "Fig. 9",
+        "Table 3"
+      ],
+      "unresolved_terms": []
+    },
+    "rolling_context_summary": "Summary: These modeling rules and accuracy metrics are essential for subsequent validation and simulation of multi-stage DRX under varying conditions. This chunk covers: (i) the inhomogeneous DRX nucleation rule requiring dislocation density ≥ ρ_c and random number ≤ P_nuc = ṅ L0³ Δt, and grain growth initiation when v·Δt exceeds a cell size; (ii) the 3D CA framework with an RVE of 550×550×550 µm³ and cell size 2.5 µm, validated against experimental average grain size and standard deviation (Fig. 4b, 4c), demonstrating that the created RVE reflects the initial mixed-grain microstructure; (iii) each cubic cell holds six state variables, starting with grain orientation; (iv) flow stress evolution under transient strain rate (0.01→0.1 and 0.1→0.01 s⁻¹) and varying temperature (1050→950°C and 950→1050°C) conditions with two model variants (Model 1 and Model 2) at two strain-change thresholds (ε₁=0.2 or 0.4), presenting experimental versus simulated curves in Fig. 8 and Fig. 9; (v) accuracy evaluation in Table 3 showing Model 2 (RMSE 3.04 MPa, R² 0.9507, AARE 3.11%) significantly outperforms Model 1 (RMSE 6.46 MPa, R² 0.8239, AARE 7.36%) under varying conditions. Subsequent sections may discuss underlying mechanisms, microstructural evolution, and the superiority of Model 2.\nMaterial systems: low-alloy steel\nProcessing route: hot compression under varying temperatures and strain rates; hot compression; constant T=850–1150°C, ε̇=0.01–10 s⁻¹; varying T=950–1050°C, ε̇=0.01–0.1 s⁻¹; transient strain rate change at ε=0.2,0.4; continuous T change from 1050 to 950°C over ε 0.2–0.3 or 0.4–0.5; holding 1250°C 180 s; holding 60 s after compression\nKey variables: Zener-Hollomon parameter ZP; dislocation density; DRX fraction; grain size; flow stress; time for 50% DRX; residual softening; strain rate\nMicrostructure: matrix; first-stage DRX grains (DRXGsI); second-stage DRX grains (DRXGsII); inhomogeneous dislocation density distribution; first-stage DRX grains; second-stage DRX grains; mixed-grain microstructure; inhomogeneous dislocation density\nProperties: flow stress; stress-decreasing rate; peak stress; steady stress; flow stress evolution; flow stress under varying conditions; stress softening due to DRX and GBS; DRX fraction\nMechanisms: dislocation density gradients; grain-boundary sliding; stress softening due to grain refinement; inhomogeneous dislocation density accelerating grain growth; dynamic recrystallization (DRX); work hardening (WH); dynamic recovery (DRV); grain-boundary sliding (GBS)\nFigures or tables: Fig. 1 (experimental procedure, deformation conditions tables); Fig. 1; Fig. 1a; Fig. 1b; Fig. 1c; Fig. 2 (schematic flow stress under varying conditions); Fig. 3 (k_s vs. Z_P and DRX fraction); Fig. 4a (optical micrograph of initial mixed grains)\nUnresolved terms: material constant n_c in k_s expression; coefficient C in dρ_WH^r; GBS material constants A_GB, p_GB, n_GB, H_0, E; modified time step equation after Eq. 42 (truncated); values of Table 2 not provided; specific values of ρ_c, \\dot{n}, L0, τ, M, ρ_max and cell size not provided; random number generation details"
+  },
+  {
+    "chunk_id": "chunk_0008",
+    "section": "3.2.4. Fundamental framework of 3D cellular automaton models",
+    "previous_context_summary": "Summary: These modeling rules and accuracy metrics are essential for subsequent validation and simulation of multi-stage DRX under varying conditions. This chunk covers: (i) the inhomogeneous DRX nucleation rule requiring dislocation density ≥ ρ_c and random number ≤ P_nuc = ṅ L0³ Δt, and grain growth initiation when v·Δt exceeds a cell size; (ii) the 3D CA framework with an RVE of 550×550×550 µm³ and cell size 2.5 µm, validated against experimental average grain size and standard deviation (Fig. 4b, 4c), demonstrating that the created RVE reflects the initial mixed-grain microstructure; (iii) each cubic cell holds six state variables, starting with grain orientation; (iv) flow stress evolution under transient strain rate (0.01→0.1 and 0.1→0.01 s⁻¹) and varying temperature (1050→950°C and 950→1050°C) conditions with two model variants (Model 1 and Model 2) at two strain-change thresholds (ε₁=0.2 or 0.4), presenting experimental versus simulated curves in Fig. 8 and Fig. 9; (v) accuracy evaluation in Table 3 showing Model 2 (RMSE 3.04 MPa, R² 0.9507, AARE 3.11%) significantly outperforms Model 1 (RMSE 6.46 MPa, R² 0.8239, AARE 7.36%) under varying conditions. Subsequent sections may discuss underlying mechanisms, microstructural evolution, and the superiority of Model 2.\nMaterial systems: low-alloy steel\nProcessing route: hot compression under varying temperatures and strain rates; hot compression; constant T=850–1150°C, ε̇=0.01–10 s⁻¹; varying T=950–1050°C, ε̇=0.01–0.1 s⁻¹; transient strain rate change at ε=0.2,0.4; continuous T change from 1050 to 950°C over ε 0.2–0.3 or 0.4–0.5; holding 1250°C 180 s; holding 60 s after compression\nKey variables: Zener-Hollomon parameter ZP; dislocation density; DRX fraction; grain size; flow stress; time for 50% DRX; residual softening; strain rate\nMicrostructure: matrix; first-stage DRX grains (DRXGsI); second-stage DRX grains (DRXGsII); inhomogeneous dislocation density distribution; first-stage DRX grains; second-stage DRX grains; mixed-grain microstructure; inhomogeneous dislocation density\nProperties: flow stress; stress-decreasing rate; peak stress; steady stress; flow stress evolution; flow stress under varying conditions; stress softening due to DRX and GBS; DRX fraction\nMechanisms: dislocation density gradients; grain-boundary sliding; stress softening due to grain refinement; inhomogeneous dislocation density accelerating grain growth; dynamic recrystallization (DRX); work hardening (WH); dynamic recovery (DRV); grain-boundary sliding (GBS)\nFigures or tables: Fig. 1 (experimental procedure, deformation conditions tables); Fig. 1; Fig. 1a; Fig. 1b; Fig. 1c; Fig. 2 (schematic flow stress under varying conditions); Fig. 3 (k_s vs. Z_P and DRX fraction); Fig. 4a (optical micrograph of initial mixed grains)\nUnresolved terms: material constant n_c in k_s expression; coefficient C in dρ_WH^r; GBS material constants A_GB, p_GB, n_GB, H_0, E; modified time step equation after Eq. 42 (truncated); values of Table 2 not provided; specific values of ρ_c, \\dot{n}, L0, τ, M, ρ_max and cell size not provided; random number generation details",
+    "context_update": {
+      "summary": "This chunk details the 3D CA model framework (six cell state variables, CA loop handling transient conditions using k_s) and validates the constitutive models against experiments. Under constant deformation, DRX fraction evolution and flow stress predictions show high accuracy (R²>0.99, AARE 3.91% and 6.65%). Under varying strain rate (0.01↔0.1 s⁻¹) and temperature (1050↔950°C), Model 2 with modified t_0.5 and softening coefficient k_s accurately captures stress softening (peak lowering, faster stress drop), while Model 1 exhibits delays and higher force predictions. Force-stroke FE simulations confirm Model 2's superiority. Table 4 provides assigned material parameters for the 3D CA model. Fig. 11 previews CA simulation outputs. Subsequent chunks should reference these model accuracy data and material constants, and may present detailed CA microstructures of DRX under varying conditions.",
+      "material_systems": [
+        "low-alloy steel"
+      ],
+      "sample_aliases": [],
+      "processing_route": [
+        "hot compression under constant and varying temperature/strain rate",
+        "transient strain rate change at ε_I=0.2 or 0.4 (0.01↔0.1 s⁻¹)",
+        "transient temperature change over 0.1 strain interval (1050↔950°C)",
+        "holding 1250°C 180 s, then 60 s after compression"
+      ],
+      "key_variables": [
+        "strain rate ε̇",
+        "temperature T",
+        "first-stage strain ε_I",
+        "time for 50% DRX t_0.5",
+        "softening coefficient k_s",
+        "saturation stress σ_ss",
+        "peak stress",
+        "steady-state stress",
+        "DRX fraction φ_d",
+        "dislocation density",
+        "force",
+        "RMSE, R², AARE"
+      ],
+      "microstructure": [
+        "DRX grains",
+        "grain boundaries",
+        "dislocation density distributions",
+        "six CA cell state variables (DRX round, boundary index, grain size, dislocation density, migration distance)"
+      ],
+      "properties": [
+        "flow stress under constant and varying conditions",
+        "characteristic stresses (σ0, σss, σs, σc)",
+        "DRX fraction evolution",
+        "force-stroke curves"
+      ],
+      "mechanisms": [
+        "k_s effect on saturation stress under transient conditions",
+        "delay of stress softening due to unmodified t_0.5",
+        "dominance of dislocation multiplication and interfacial friction at high strain rate (10 s⁻¹)"
+      ],
+      "figures_or_tables": [
+        "Fig. 6",
+        "Fig. 7",
+        "Fig. 8a-d",
+        "Fig. 9a-d",
+        "Fig. 10",
+        "Fig. 11",
+        "Table 2",
+        "Table 3",
+        "Table 4"
+      ],
+      "unresolved_terms": [
+        "exact RMSE, R², AARE values for Model 1 and Model 2 under varying conditions in Table 3 not given in this chunk",
+        "specific values of t_0.5 modification not detailed",
+        "details of GA optimization in Table 1 not shown"
+      ]
+    },
+    "rolling_context_summary": "Summary: 8 and Fig. 9; (v) accuracy evaluation in Table 3 showing Model 2 (RMSE 3.04 MPa, R² 0.9507, AARE 3.11%) significantly outperforms Model 1 (RMSE 6.46 MPa, R² 0.8239, AARE 7.36%) under varying conditions. Subsequent sections may discuss underlying mechanisms, microstructural evolution, and the superiority of Model 2. This chunk details the 3D CA model framework (six cell state variables, CA loop handling transient conditions using k_s) and validates the constitutive models against experiments. Under constant deformation, DRX fraction evolution and flow stress predictions show high accuracy (R²>0.99, AARE 3.91% and 6.65%). Under varying strain rate (0.01↔0.1 s⁻¹) and temperature (1050↔950°C), Model 2 with modified t_0.5 and softening coefficient k_s accurately captures stress softening (peak lowering, faster stress drop), while Model 1 exhibits delays and higher force predictions. Force-stroke FE simulations confirm Model 2's superiority. Table 4 provides assigned material parameters for the 3D CA model. Fig. 11 previews CA simulation outputs. Subsequent chunks should reference these model accuracy data and material constants, and may present detailed CA microstructures of DRX under varying conditions.\nMaterial systems: low-alloy steel\nProcessing route: hot compression under varying temperatures and strain rates; hot compression; constant T=850–1150°C, ε̇=0.01–10 s⁻¹; varying T=950–1050°C, ε̇=0.01–0.1 s⁻¹; transient strain rate change at ε=0.2,0.4; continuous T change from 1050 to 950°C over ε 0.2–0.3 or 0.4–0.5; holding 1250°C 180 s; holding 60 s after compression\nKey variables: Zener-Hollomon parameter ZP; dislocation density; DRX fraction; grain size; flow stress; time for 50% DRX; residual softening; strain rate\nMicrostructure: matrix; first-stage DRX grains (DRXGsI); second-stage DRX grains (DRXGsII); inhomogeneous dislocation density distribution; first-stage DRX grains; second-stage DRX grains; mixed-grain microstructure; inhomogeneous dislocation density\nProperties: flow stress; stress-decreasing rate; peak stress; steady stress; flow stress evolution; flow stress under varying conditions; stress softening due to DRX and GBS; DRX fraction\nMechanisms: dislocation density gradients; grain-boundary sliding; stress softening due to grain refinement; inhomogeneous dislocation density accelerating grain growth; dynamic recrystallization (DRX); work hardening (WH); dynamic recovery (DRV); grain-boundary sliding (GBS)\nFigures or tables: Fig. 1 (experimental procedure, deformation conditions tables); Fig. 1; Fig. 1a; Fig. 1b; Fig. 1c; Fig. 2 (schematic flow stress under varying conditions); Fig. 3 (k_s vs. Z_P and DRX fraction); Fig. 4a (optical micrograph of initial mixed grains)\nUnresolved terms: material constant n_c in k_s expression; coefficient C in dρ_WH^r; GBS material constants A_GB, p_GB, n_GB, H_0, E; modified time step equation after Eq. 42 (truncated); values of Table 2 not provided; specific values of ρ_c, \\dot{n}, L0, τ, M, ρ_max and cell size not provided; random number generation details; exact RMSE, R², AARE values for Model 1 and Model 2 under varying conditions in Table 3 not given in this chunk"
+  },
+  {
+    "chunk_id": "chunk_0009",
+    "section": "4.2. Cellular automaton simulation and experimental results",
+    "previous_context_summary": "Summary: 8 and Fig. 9; (v) accuracy evaluation in Table 3 showing Model 2 (RMSE 3.04 MPa, R² 0.9507, AARE 3.11%) significantly outperforms Model 1 (RMSE 6.46 MPa, R² 0.8239, AARE 7.36%) under varying conditions. Subsequent sections may discuss underlying mechanisms, microstructural evolution, and the superiority of Model 2. This chunk details the 3D CA model framework (six cell state variables, CA loop handling transient conditions using k_s) and validates the constitutive models against experiments. Under constant deformation, DRX fraction evolution and flow stress predictions show high accuracy (R²>0.99, AARE 3.91% and 6.65%). Under varying strain rate (0.01↔0.1 s⁻¹) and temperature (1050↔950°C), Model 2 with modified t_0.5 and softening coefficient k_s accurately captures stress softening (peak lowering, faster stress drop), while Model 1 exhibits delays and higher force predictions. Force-stroke FE simulations confirm Model 2's superiority. Table 4 provides assigned material parameters for the 3D CA model. Fig. 11 previews CA simulation outputs. Subsequent chunks should reference these model accuracy data and material constants, and may present detailed CA microstructures of DRX under varying conditions.\nMaterial systems: low-alloy steel\nProcessing route: hot compression under varying temperatures and strain rates; hot compression; constant T=850–1150°C, ε̇=0.01–10 s⁻¹; varying T=950–1050°C, ε̇=0.01–0.1 s⁻¹; transient strain rate change at ε=0.2,0.4; continuous T change from 1050 to 950°C over ε 0.2–0.3 or 0.4–0.5; holding 1250°C 180 s; holding 60 s after compression\nKey variables: Zener-Hollomon parameter ZP; dislocation density; DRX fraction; grain size; flow stress; time for 50% DRX; residual softening; strain rate\nMicrostructure: matrix; first-stage DRX grains (DRXGsI); second-stage DRX grains (DRXGsII); inhomogeneous dislocation density distribution; first-stage DRX grains; second-stage DRX grains; mixed-grain microstructure; inhomogeneous dislocation density\nProperties: flow stress; stress-decreasing rate; peak stress; steady stress; flow stress evolution; flow stress under varying conditions; stress softening due to DRX and GBS; DRX fraction\nMechanisms: dislocation density gradients; grain-boundary sliding; stress softening due to grain refinement; inhomogeneous dislocation density accelerating grain growth; dynamic recrystallization (DRX); work hardening (WH); dynamic recovery (DRV); grain-boundary sliding (GBS)\nFigures or tables: Fig. 1 (experimental procedure, deformation conditions tables); Fig. 1; Fig. 1a; Fig. 1b; Fig. 1c; Fig. 2 (schematic flow stress under varying conditions); Fig. 3 (k_s vs. Z_P and DRX fraction); Fig. 4a (optical micrograph of initial mixed grains)\nUnresolved terms: material constant n_c in k_s expression; coefficient C in dρ_WH^r; GBS material constants A_GB, p_GB, n_GB, H_0, E; modified time step equation after Eq. 42 (truncated); values of Table 2 not provided; specific values of ρ_c, \\dot{n}, L0, τ, M, ρ_max and cell size not provided; random number generation details; exact RMSE, R², AARE values for Model 1 and Model 2 under varying conditions in Table 3 not given in this chunk",
+    "context_update": {
+      "summary": "This chunk presents 3D CA simulation results under constant and varying deformation conditions. It reports model parameter determination via GA optimization, flow stress predictions at 850°C for 0.01 and 1 s^-1, dislocation density evolution leading to DRX, and comparisons of DRX fraction and average grain size (AGS) between simulation and experiment for constant conditions, including quantitative values from Fig.12 and Fig.11 tables. It also covers transient strain rate and temperature change effects on flow stress (Fig.13), DRX fraction (Fig.14, 15), and AGS (Fig.16), highlighting the model's capability to capture multi-stage DRX kinetics and microstructure refinement. Subsequent chunk may discuss mechanisms or model validation for varying ZP.",
+      "material_systems": [
+        "low-alloy steel"
+      ],
+      "sample_aliases": [],
+      "processing_route": [
+        "hot compression at 850°C, 0.01 s^-1",
+        "hot compression at 850°C, 1 s^-1",
+        "varying strain rate 0.01↔0.1 s^-1 at 950°C",
+        "varying temperature 950↔1050°C at 0.01 s^-1",
+        "ε1=0.2 or 0.4"
+      ],
+      "key_variables": [
+        "strain rate",
+        "temperature",
+        "true strain",
+        "average grain size",
+        "DRX fraction",
+        "dislocation density",
+        "critical dislocation density ρ_c",
+        "flow stress",
+        "Zener-Hollomon parameter ZP"
+      ],
+      "microstructure": [
+        "initial mixed-grain microstructure",
+        "DRX grains",
+        "matrix",
+        "elongated matrix",
+        "inhomogeneous dislocation density",
+        "uneven microstructure on XY and side surfaces"
+      ],
+      "properties": [
+        "flow stress evolution",
+        "steady-state stress at ε=0.9",
+        "DRX fraction",
+        "average grain size"
+      ],
+      "mechanisms": [
+        "strain concentration at large grain boundaries promotes DRX nucleation",
+        "lower dislocation density in DRX grains leads to stress softening",
+        "high strain rate reduces DRX nucleation and growth due to increased ρ_c and reduced time",
+        "uneven refinement of mixed-grain microstructure causes differences between 2D section and 3D microstructure"
+      ],
+      "figures_or_tables": [
+        "Fig. 11",
+        "Fig. 12",
+        "Fig. 13",
+        "Fig. 14",
+        "Fig. 15",
+        "Fig. 16",
+        "Table 4",
+        "Appendix B1",
+        "Fig. C1"
+      ],
+      "unresolved_terms": [
+        "specific values of C_drx, E, AGB, H_O, P_GB in Table 4",
+        "GA objective function formulation"
+      ]
+    },
+    "rolling_context_summary": "Summary: Under varying strain rate (0.01↔0.1 s⁻¹) and temperature (1050↔950°C), Model 2 with modified t_0.5 and softening coefficient k_s accurately captures stress softening (peak lowering, faster stress drop), while Model 1 exhibits delays and higher force predictions. Force-stroke FE simulations confirm Model 2's superiority. Table 4 provides assigned material parameters for the 3D CA model. Fig. 11 previews CA simulation outputs. Subsequent chunks should reference these model accuracy data and material constants, and may present detailed CA microstructures of DRX under varying conditions. This chunk presents 3D CA simulation results under constant and varying deformation conditions. It reports model parameter determination via GA optimization, flow stress predictions at 850°C for 0.01 and 1 s^-1, dislocation density evolution leading to DRX, and comparisons of DRX fraction and average grain size (AGS) between simulation and experiment for constant conditions, including quantitative values from Fig.12 and Fig.11 tables. It also covers transient strain rate and temperature change effects on flow stress (Fig.13), DRX fraction (Fig.14, 15), and AGS (Fig.16), highlighting the model's capability to capture multi-stage DRX kinetics and microstructure refinement. Subsequent chunk may discuss mechanisms or model validation for varying ZP.\nMaterial systems: low-alloy steel\nProcessing route: hot compression under varying temperatures and strain rates; hot compression; constant T=850–1150°C, ε̇=0.01–10 s⁻¹; varying T=950–1050°C, ε̇=0.01–0.1 s⁻¹; transient strain rate change at ε=0.2,0.4; continuous T change from 1050 to 950°C over ε 0.2–0.3 or 0.4–0.5; holding 1250°C 180 s; holding 60 s after compression\nKey variables: Zener-Hollomon parameter ZP; dislocation density; DRX fraction; grain size; flow stress; time for 50% DRX; residual softening; strain rate\nMicrostructure: matrix; first-stage DRX grains (DRXGsI); second-stage DRX grains (DRXGsII); inhomogeneous dislocation density distribution; first-stage DRX grains; second-stage DRX grains; mixed-grain microstructure; inhomogeneous dislocation density\nProperties: flow stress; stress-decreasing rate; peak stress; steady stress; flow stress evolution; flow stress under varying conditions; stress softening due to DRX and GBS; DRX fraction\nMechanisms: dislocation density gradients; grain-boundary sliding; stress softening due to grain refinement; inhomogeneous dislocation density accelerating grain growth; dynamic recrystallization (DRX); work hardening (WH); dynamic recovery (DRV); grain-boundary sliding (GBS)\nFigures or tables: Fig. 1 (experimental procedure, deformation conditions tables); Fig. 1; Fig. 1a; Fig. 1b; Fig. 1c; Fig. 2 (schematic flow stress under varying conditions); Fig. 3 (k_s vs. Z_P and DRX fraction); Fig. 4a (optical micrograph of initial mixed grains)"
+  },
+  {
+    "chunk_id": "chunk_0010",
+    "section": "4.2.1. Comparison between simulation and experimental results under constant deformation conditions",
+    "previous_context_summary": "Summary: Under varying strain rate (0.01↔0.1 s⁻¹) and temperature (1050↔950°C), Model 2 with modified t_0.5 and softening coefficient k_s accurately captures stress softening (peak lowering, faster stress drop), while Model 1 exhibits delays and higher force predictions. Force-stroke FE simulations confirm Model 2's superiority. Table 4 provides assigned material parameters for the 3D CA model. Fig. 11 previews CA simulation outputs. Subsequent chunks should reference these model accuracy data and material constants, and may present detailed CA microstructures of DRX under varying conditions. This chunk presents 3D CA simulation results under constant and varying deformation conditions. It reports model parameter determination via GA optimization, flow stress predictions at 850°C for 0.01 and 1 s^-1, dislocation density evolution leading to DRX, and comparisons of DRX fraction and average grain size (AGS) between simulation and experiment for constant conditions, including quantitative values from Fig.12 and Fig.11 tables. It also covers transient strain rate and temperature change effects on flow stress (Fig.13), DRX fraction (Fig.14, 15), and AGS (Fig.16), highlighting the model's capability to capture multi-stage DRX kinetics and microstructure refinement. Subsequent chunk may discuss mechanisms or model validation for varying ZP.\nMaterial systems: low-alloy steel\nProcessing route: hot compression under varying temperatures and strain rates; hot compression; constant T=850–1150°C, ε̇=0.01–10 s⁻¹; varying T=950–1050°C, ε̇=0.01–0.1 s⁻¹; transient strain rate change at ε=0.2,0.4; continuous T change from 1050 to 950°C over ε 0.2–0.3 or 0.4–0.5; holding 1250°C 180 s; holding 60 s after compression\nKey variables: Zener-Hollomon parameter ZP; dislocation density; DRX fraction; grain size; flow stress; time for 50% DRX; residual softening; strain rate\nMicrostructure: matrix; first-stage DRX grains (DRXGsI); second-stage DRX grains (DRXGsII); inhomogeneous dislocation density distribution; first-stage DRX grains; second-stage DRX grains; mixed-grain microstructure; inhomogeneous dislocation density\nProperties: flow stress; stress-decreasing rate; peak stress; steady stress; flow stress evolution; flow stress under varying conditions; stress softening due to DRX and GBS; DRX fraction\nMechanisms: dislocation density gradients; grain-boundary sliding; stress softening due to grain refinement; inhomogeneous dislocation density accelerating grain growth; dynamic recrystallization (DRX); work hardening (WH); dynamic recovery (DRV); grain-boundary sliding (GBS)\nFigures or tables: Fig. 1 (experimental procedure, deformation conditions tables); Fig. 1; Fig. 1a; Fig. 1b; Fig. 1c; Fig. 2 (schematic flow stress under varying conditions); Fig. 3 (k_s vs. Z_P and DRX fraction); Fig. 4a (optical micrograph of initial mixed grains)",
+    "context_update": {
+      "summary": "This chunk presents quantitative validation of the 3D CA model against experimental data under varying deformation conditions. It includes average grain size (AGS) evolution during a continuous temperature decrease from 1050 °C to 950 °C (Fig.16), flow stress predictions for transient Zp changes (Fig.13), and DRX fraction kinetics (Figs.14,15). The model captures multi-stage recrystallization: after a Zp increase, DRX growth rate slows and final DRX fraction drops below constant-condition values; after a Zp decrease, growth rate accelerates, causing faster stress softening. Microstructural comparisons via GOS maps for transient strain rate and temperature changes (Figs.17,19,20) and quantitative DRX fraction tables (Fig.18) confirm accuracy. The chunk further contrasts the CA model with phenomenological Models 1 and 2 in terms of t0.5 behavior and stress drop rates, laying groundwork for deeper mechanistic discussions in Section 5.1.",
+      "material_systems": [
+        "low-alloy steel"
+      ],
+      "sample_aliases": [],
+      "processing_route": [
+        "transient strain rate change at ε1=0.2 or 0.4 (0.01↔0.1 s⁻¹)",
+        "transient temperature decrease from 1050 °C to 950 °C over ε intervals 0.2–0.3 or 0.4–0.5",
+        "hot compression at 950 °C and 1050 °C, strain rates 0.01 and 0.1 s⁻¹"
+      ],
+      "key_variables": [
+        "Zener-Hollomon parameter (Zₚ)",
+        "strain rate",
+        "temperature",
+        "ε1 (transition strain)",
+        "DRX fraction",
+        "average grain size (AGS)",
+        "flow stress",
+        "t0.5 (time for 50% DRX)",
+        "critical dislocation density ρc"
+      ],
+      "microstructure": [
+        "mixed-grain initial microstructure",
+        "first-stage DRX grains",
+        "second-stage DRX grains",
+        "inhomogeneous dislocation density",
+        "recrystallized microstructure (reconstructed and GOS maps)"
+      ],
+      "properties": [
+        "flow stress peak and softening",
+        "DRX fraction evolution",
+        "average grain size"
+      ],
+      "mechanisms": [
+        "growth of first-stage DRX grains sustains DRX fraction after strain rate increase",
+        "limited nucleation reduces DRX growth rate after Zp increase",
+        "accelerated DRX growth after Zp decrease yields faster stress decrease",
+        "t0.5 in Model 1 depends only on current-stage Zp",
+        "CA DRX fraction can exceed constant-condition values after Zp decrease"
+      ],
+      "figures_or_tables": [
+        "Fig. 13 (flow stress under varying conditions)",
+        "Fig. 14 (DRX fraction evolution, model comparison)",
+        "Fig. 15 (Model 1 DRX fraction)",
+        "Fig. 16 (AGS under transient temperature decrease)",
+        "Fig. 17 (microstructure, increasing strain rate)",
+        "Fig. 18 (DRX fraction quantitative comparison tables)",
+        "Fig. 19 (microstructure, decreasing temperature)",
+        "Fig. 20 (microstructure, decreasing strain rate)"
+      ],
+      "unresolved_terms": []
+    },
+    "rolling_context_summary": "Summary: It also covers transient strain rate and temperature change effects on flow stress (Fig.13), DRX fraction (Fig.14, 15), and AGS (Fig.16), highlighting the model's capability to capture multi-stage DRX kinetics and microstructure refinement. Subsequent chunk may discuss mechanisms or model validation for varying ZP. This chunk presents quantitative validation of the 3D CA model against experimental data under varying deformation conditions. It includes average grain size (AGS) evolution during a continuous temperature decrease from 1050 °C to 950 °C (Fig.16), flow stress predictions for transient Zp changes (Fig.13), and DRX fraction kinetics (Figs.14,15). The model captures multi-stage recrystallization: after a Zp increase, DRX growth rate slows and final DRX fraction drops below constant-condition values; after a Zp decrease, growth rate accelerates, causing faster stress softening. Microstructural comparisons via GOS maps for transient strain rate and temperature changes (Figs.17,19,20) and quantitative DRX fraction tables (Fig.18) confirm accuracy. The chunk further contrasts the CA model with phenomenological Models 1 and 2 in terms of t0.5 behavior and stress drop rates, laying groundwork for deeper mechanistic discussions in Section 5.1.\nMaterial systems: low-alloy steel\nProcessing route: hot compression under varying temperatures and strain rates; hot compression; constant T=850–1150°C, ε̇=0.01–10 s⁻¹; varying T=950–1050°C, ε̇=0.01–0.1 s⁻¹; transient strain rate change at ε=0.2,0.4; continuous T change from 1050 to 950°C over ε 0.2–0.3 or 0.4–0.5; holding 1250°C 180 s; holding 60 s after compression\nKey variables: Zener-Hollomon parameter ZP; dislocation density; DRX fraction; grain size; flow stress; time for 50% DRX; residual softening; strain rate\nMicrostructure: matrix; first-stage DRX grains (DRXGsI); second-stage DRX grains (DRXGsII); inhomogeneous dislocation density distribution; first-stage DRX grains; second-stage DRX grains; mixed-grain microstructure; inhomogeneous dislocation density\nProperties: flow stress; stress-decreasing rate; peak stress; steady stress; flow stress evolution; flow stress under varying conditions; stress softening due to DRX and GBS; DRX fraction\nMechanisms: dislocation density gradients; grain-boundary sliding; stress softening due to grain refinement; inhomogeneous dislocation density accelerating grain growth; dynamic recrystallization (DRX); work hardening (WH); dynamic recovery (DRV); grain-boundary sliding (GBS)\nFigures or tables: Fig. 1 (experimental procedure, deformation conditions tables); Fig. 1; Fig. 1a; Fig. 1b; Fig. 1c; Fig. 2 (schematic flow stress under varying conditions); Fig. 3 (k_s vs. Z_P and DRX fraction); Fig. 4a (optical micrograph of initial mixed grains)"
+  },
+  {
+    "chunk_id": "chunk_0011",
+    "section": "4.2.2. Flow stress and DRX kinetics under varying conditions",
+    "previous_context_summary": "Summary: It also covers transient strain rate and temperature change effects on flow stress (Fig.13), DRX fraction (Fig.14, 15), and AGS (Fig.16), highlighting the model's capability to capture multi-stage DRX kinetics and microstructure refinement. Subsequent chunk may discuss mechanisms or model validation for varying ZP. This chunk presents quantitative validation of the 3D CA model against experimental data under varying deformation conditions. It includes average grain size (AGS) evolution during a continuous temperature decrease from 1050 °C to 950 °C (Fig.16), flow stress predictions for transient Zp changes (Fig.13), and DRX fraction kinetics (Figs.14,15). The model captures multi-stage recrystallization: after a Zp increase, DRX growth rate slows and final DRX fraction drops below constant-condition values; after a Zp decrease, growth rate accelerates, causing faster stress softening. Microstructural comparisons via GOS maps for transient strain rate and temperature changes (Figs.17,19,20) and quantitative DRX fraction tables (Fig.18) confirm accuracy. The chunk further contrasts the CA model with phenomenological Models 1 and 2 in terms of t0.5 behavior and stress drop rates, laying groundwork for deeper mechanistic discussions in Section 5.1.\nMaterial systems: low-alloy steel\nProcessing route: hot compression under varying temperatures and strain rates; hot compression; constant T=850–1150°C, ε̇=0.01–10 s⁻¹; varying T=950–1050°C, ε̇=0.01–0.1 s⁻¹; transient strain rate change at ε=0.2,0.4; continuous T change from 1050 to 950°C over ε 0.2–0.3 or 0.4–0.5; holding 1250°C 180 s; holding 60 s after compression\nKey variables: Zener-Hollomon parameter ZP; dislocation density; DRX fraction; grain size; flow stress; time for 50% DRX; residual softening; strain rate\nMicrostructure: matrix; first-stage DRX grains (DRXGsI); second-stage DRX grains (DRXGsII); inhomogeneous dislocation density distribution; first-stage DRX grains; second-stage DRX grains; mixed-grain microstructure; inhomogeneous dislocation density\nProperties: flow stress; stress-decreasing rate; peak stress; steady stress; flow stress evolution; flow stress under varying conditions; stress softening due to DRX and GBS; DRX fraction\nMechanisms: dislocation density gradients; grain-boundary sliding; stress softening due to grain refinement; inhomogeneous dislocation density accelerating grain growth; dynamic recrystallization (DRX); work hardening (WH); dynamic recovery (DRV); grain-boundary sliding (GBS)\nFigures or tables: Fig. 1 (experimental procedure, deformation conditions tables); Fig. 1; Fig. 1a; Fig. 1b; Fig. 1c; Fig. 2 (schematic flow stress under varying conditions); Fig. 3 (k_s vs. Z_P and DRX fraction); Fig. 4a (optical micrograph of initial mixed grains)",
+    "context_update": {
+      "summary": "This chunk covers the validation of phenomenological Model 2 for flow stress, showing superior agreement with experiments compared to Model 1 by optimizing t0.5 for second-stage DRX. It details the DRX fraction from CA simulations exceeding constant-condition values. Section 4.2.3 extensively compares experimental and simulated microstructure evolution under varying deformation conditions: transient strain rate increase/decrease and temperature increase/decrease. Key findings include AGS dependencies on ε1, Zp, and strain intervals; DRX fraction changes (e.g., from 75.7% to 84.6% for strain rate increase, 75.7% to 97.9% for temperature increase); and AGS refinement followed by coarsening under temperature rise. The CA model accurately predicts AGS and DRX fraction trends with RMSE values for flow stress (3.3118 MPa), AGS (4.0169 µm), and DRX fraction (0.0229) as per Table 5. Prior austenite grain reconstructions (Figs. 17,19–21) confirm the model's capability. This chunk provides crucial processing-microstructure-property links for low-alloy steel under non-steady hot compression, setting the stage for mechanistic discussions.",
+      "material_systems": [
+        "low-alloy steel"
+      ],
+      "sample_aliases": [],
+      "processing_route": [
+        "hot compression under varying temperatures and strain rates",
+        "transient strain rate increase from 0.01 to 0.1 s⁻¹ at 950 °C at ε1=0.2 or 0.4",
+        "transient strain rate decrease from 0.1 to 0.01 s⁻¹ at 950 °C at ε1=0.4",
+        "continuous temperature decrease from 1050 to 950 °C in strain ranges 0.2–0.3 or 0.4–0.5",
+        "continuous temperature increase from 950 to 1050 °C in strain range 0.4–0.5"
+      ],
+      "key_variables": [
+        "AGS",
+        "DRX fraction",
+        "flow stress",
+        "t0.5",
+        "ε1 (strain at which deformation changes)",
+        "Zener-Hollomon parameter Zp",
+        "strain rate",
+        "temperature"
+      ],
+      "microstructure": [
+        "first-stage DRX grains (DRXGsI, green)",
+        "second-stage DRX grains (DRXGsII, red)",
+        "prior austenite grains (PAGs)",
+        "incomplete recrystallization",
+        "nearly complete recrystallization",
+        "DRX fraction exceeding 94%",
+        "AGS: 65.33 µm at 0.4 strain decreasing to 62.63 µm after temperature rise"
+      ],
+      "properties": [
+        "flow stress RMSE=3.3118 MPa, R²=0.9589, AARE=4.57%",
+        "AGS RMSE=4.0169 µm, R²=0.9777, AARE=4.11%",
+        "DRX fraction RMSE=0.0229, R²=0.9784, AARE=2.47%"
+      ],
+      "mechanisms": [
+        "recrystallization refinement followed by coarsening under rising temperature",
+        "limited second-stage nucleation after strain rate increase delaying refinement",
+        "rapid DRX grain growth and matrix refinement after strain rate decrease",
+        "nucleation of new DRXGsII at boundaries of DRXGsI under temperature decrease"
+      ],
+      "figures_or_tables": [
+        "Fig. 16",
+        "Fig. 17",
+        "Fig. 18",
+        "Fig. 19",
+        "Fig. 20",
+        "Fig. 21",
+        "Fig. 22",
+        "Fig. 23",
+        "Table 5"
+      ],
+      "unresolved_terms": []
+    },
+    "rolling_context_summary": "Summary: The chunk further contrasts the CA model with phenomenological Models 1 and 2 in terms of t0.5 behavior and stress drop rates, laying groundwork for deeper mechanistic discussions in Section 5.1. This chunk covers the validation of phenomenological Model 2 for flow stress, showing superior agreement with experiments compared to Model 1 by optimizing t0.5 for second-stage DRX. It details the DRX fraction from CA simulations exceeding constant-condition values. Section 4.2.3 extensively compares experimental and simulated microstructure evolution under varying deformation conditions: transient strain rate increase/decrease and temperature increase/decrease. Key findings include AGS dependencies on ε1, Zp, and strain intervals; DRX fraction changes (e.g., from 75.7% to 84.6% for strain rate increase, 75.7% to 97.9% for temperature increase); and AGS refinement followed by coarsening under temperature rise. The CA model accurately predicts AGS and DRX fraction trends with RMSE values for flow stress (3.3118 MPa), AGS (4.0169 µm), and DRX fraction (0.0229) as per Table 5. Prior austenite grain reconstructions (Figs. 17,19–21) confirm the model's capability. This chunk provides crucial processing-microstructure-property links for low-alloy steel under non-steady hot compression, setting the stage for mechanistic discussions.\nMaterial systems: low-alloy steel\nProcessing route: hot compression under varying temperatures and strain rates; hot compression; constant T=850–1150°C, ε̇=0.01–10 s⁻¹; varying T=950–1050°C, ε̇=0.01–0.1 s⁻¹; transient strain rate change at ε=0.2,0.4; continuous T change from 1050 to 950°C over ε 0.2–0.3 or 0.4–0.5; holding 1250°C 180 s; holding 60 s after compression\nKey variables: Zener-Hollomon parameter ZP; dislocation density; DRX fraction; grain size; flow stress; time for 50% DRX; residual softening; strain rate\nMicrostructure: matrix; first-stage DRX grains (DRXGsI); second-stage DRX grains (DRXGsII); inhomogeneous dislocation density distribution; first-stage DRX grains; second-stage DRX grains; mixed-grain microstructure; inhomogeneous dislocation density\nProperties: flow stress; stress-decreasing rate; peak stress; steady stress; flow stress evolution; flow stress under varying conditions; stress softening due to DRX and GBS; DRX fraction\nMechanisms: dislocation density gradients; grain-boundary sliding; stress softening due to grain refinement; inhomogeneous dislocation density accelerating grain growth; dynamic recrystallization (DRX); work hardening (WH); dynamic recovery (DRV); grain-boundary sliding (GBS)\nFigures or tables: Fig. 1 (experimental procedure, deformation conditions tables); Fig. 1; Fig. 1a; Fig. 1b; Fig. 1c; Fig. 2 (schematic flow stress under varying conditions); Fig. 3 (k_s vs. Z_P and DRX fraction); Fig. 4a (optical micrograph of initial mixed grains)"
+  },
+  {
+    "chunk_id": "chunk_0012",
+    "section": "4.2.3. Microstructure evolution under varying conditions",
+    "previous_context_summary": "Summary: The chunk further contrasts the CA model with phenomenological Models 1 and 2 in terms of t0.5 behavior and stress drop rates, laying groundwork for deeper mechanistic discussions in Section 5.1. This chunk covers the validation of phenomenological Model 2 for flow stress, showing superior agreement with experiments compared to Model 1 by optimizing t0.5 for second-stage DRX. It details the DRX fraction from CA simulations exceeding constant-condition values. Section 4.2.3 extensively compares experimental and simulated microstructure evolution under varying deformation conditions: transient strain rate increase/decrease and temperature increase/decrease. Key findings include AGS dependencies on ε1, Zp, and strain intervals; DRX fraction changes (e.g., from 75.7% to 84.6% for strain rate increase, 75.7% to 97.9% for temperature increase); and AGS refinement followed by coarsening under temperature rise. The CA model accurately predicts AGS and DRX fraction trends with RMSE values for flow stress (3.3118 MPa), AGS (4.0169 µm), and DRX fraction (0.0229) as per Table 5. Prior austenite grain reconstructions (Figs. 17,19–21) confirm the model's capability. This chunk provides crucial processing-microstructure-property links for low-alloy steel under non-steady hot compression, setting the stage for mechanistic discussions.\nMaterial systems: low-alloy steel\nProcessing route: hot compression under varying temperatures and strain rates; hot compression; constant T=850–1150°C, ε̇=0.01–10 s⁻¹; varying T=950–1050°C, ε̇=0.01–0.1 s⁻¹; transient strain rate change at ε=0.2,0.4; continuous T change from 1050 to 950°C over ε 0.2–0.3 or 0.4–0.5; holding 1250°C 180 s; holding 60 s after compression\nKey variables: Zener-Hollomon parameter ZP; dislocation density; DRX fraction; grain size; flow stress; time for 50% DRX; residual softening; strain rate\nMicrostructure: matrix; first-stage DRX grains (DRXGsI); second-stage DRX grains (DRXGsII); inhomogeneous dislocation density distribution; first-stage DRX grains; second-stage DRX grains; mixed-grain microstructure; inhomogeneous dislocation density\nProperties: flow stress; stress-decreasing rate; peak stress; steady stress; flow stress evolution; flow stress under varying conditions; stress softening due to DRX and GBS; DRX fraction\nMechanisms: dislocation density gradients; grain-boundary sliding; stress softening due to grain refinement; inhomogeneous dislocation density accelerating grain growth; dynamic recrystallization (DRX); work hardening (WH); dynamic recovery (DRV); grain-boundary sliding (GBS)\nFigures or tables: Fig. 1 (experimental procedure, deformation conditions tables); Fig. 1; Fig. 1a; Fig. 1b; Fig. 1c; Fig. 2 (schematic flow stress under varying conditions); Fig. 3 (k_s vs. Z_P and DRX fraction); Fig. 4a (optical micrograph of initial mixed grains)",
+    "context_update": {
+      "summary": "",
+      "material_systems": [],
+      "sample_aliases": [],
+      "processing_route": [],
+      "key_variables": [],
+      "microstructure": [],
+      "properties": [],
+      "mechanisms": [],
+      "figures_or_tables": [],
+      "unresolved_terms": []
+    },
+    "rolling_context_summary": "Summary: The chunk further contrasts the CA model with phenomenological Models 1 and 2 in terms of t0.5 behavior and stress drop rates, laying groundwork for deeper mechanistic discussions in Section 5.1. This chunk covers the validation of phenomenological Model 2 for flow stress, showing superior agreement with experiments compared to Model 1 by optimizing t0.5 for second-stage DRX. It details the DRX fraction from CA simulations exceeding constant-condition values. Section 4.2.3 extensively compares experimental and simulated microstructure evolution under varying deformation conditions: transient strain rate increase/decrease and temperature increase/decrease. Key findings include AGS dependencies on ε1, Zp, and strain intervals; DRX fraction changes (e.g., from 75.7% to 84.6% for strain rate increase, 75.7% to 97.9% for temperature increase); and AGS refinement followed by coarsening under temperature rise. The CA model accurately predicts AGS and DRX fraction trends with RMSE values for flow stress (3.3118 MPa), AGS (4.0169 µm), and DRX fraction (0.0229) as per Table 5. Prior austenite grain reconstructions (Figs. 17,19–21) confirm the model's capability. This chunk provides crucial processing-microstructure-property links for low-alloy steel under non-steady hot compression, setting the stage for mechanistic discussions.\nMaterial systems: low-alloy steel\nProcessing route: hot compression under varying temperatures and strain rates; hot compression; constant T=850–1150°C, ε̇=0.01–10 s⁻¹; varying T=950–1050°C, ε̇=0.01–0.1 s⁻¹; transient strain rate change at ε=0.2,0.4; continuous T change from 1050 to 950°C over ε 0.2–0.3 or 0.4–0.5; holding 1250°C 180 s; holding 60 s after compression\nKey variables: Zener-Hollomon parameter ZP; dislocation density; DRX fraction; grain size; flow stress; time for 50% DRX; residual softening; strain rate\nMicrostructure: matrix; first-stage DRX grains (DRXGsI); second-stage DRX grains (DRXGsII); inhomogeneous dislocation density distribution; first-stage DRX grains; second-stage DRX grains; mixed-grain microstructure; inhomogeneous dislocation density\nProperties: flow stress; stress-decreasing rate; peak stress; steady stress; flow stress evolution; flow stress under varying conditions; stress softening due to DRX and GBS; DRX fraction\nMechanisms: dislocation density gradients; grain-boundary sliding; stress softening due to grain refinement; inhomogeneous dislocation density accelerating grain growth; dynamic recrystallization (DRX); work hardening (WH); dynamic recovery (DRV); grain-boundary sliding (GBS)\nFigures or tables: Fig. 1 (experimental procedure, deformation conditions tables); Fig. 1; Fig. 1a; Fig. 1b; Fig. 1c; Fig. 2 (schematic flow stress under varying conditions); Fig. 3 (k_s vs. Z_P and DRX fraction); Fig. 4a (optical micrograph of initial mixed grains)"
+  },
+  {
+    "chunk_id": "chunk_0013",
+    "section": "5.2. DRX behavior in multi-stage varying deformation conditions",
+    "previous_context_summary": "Summary: The chunk further contrasts the CA model with phenomenological Models 1 and 2 in terms of t0.5 behavior and stress drop rates, laying groundwork for deeper mechanistic discussions in Section 5.1. This chunk covers the validation of phenomenological Model 2 for flow stress, showing superior agreement with experiments compared to Model 1 by optimizing t0.5 for second-stage DRX. It details the DRX fraction from CA simulations exceeding constant-condition values. Section 4.2.3 extensively compares experimental and simulated microstructure evolution under varying deformation conditions: transient strain rate increase/decrease and temperature increase/decrease. Key findings include AGS dependencies on ε1, Zp, and strain intervals; DRX fraction changes (e.g., from 75.7% to 84.6% for strain rate increase, 75.7% to 97.9% for temperature increase); and AGS refinement followed by coarsening under temperature rise. The CA model accurately predicts AGS and DRX fraction trends with RMSE values for flow stress (3.3118 MPa), AGS (4.0169 µm), and DRX fraction (0.0229) as per Table 5. Prior austenite grain reconstructions (Figs. 17,19–21) confirm the model's capability. This chunk provides crucial processing-microstructure-property links for low-alloy steel under non-steady hot compression, setting the stage for mechanistic discussions.\nMaterial systems: low-alloy steel\nProcessing route: hot compression under varying temperatures and strain rates; hot compression; constant T=850–1150°C, ε̇=0.01–10 s⁻¹; varying T=950–1050°C, ε̇=0.01–0.1 s⁻¹; transient strain rate change at ε=0.2,0.4; continuous T change from 1050 to 950°C over ε 0.2–0.3 or 0.4–0.5; holding 1250°C 180 s; holding 60 s after compression\nKey variables: Zener-Hollomon parameter ZP; dislocation density; DRX fraction; grain size; flow stress; time for 50% DRX; residual softening; strain rate\nMicrostructure: matrix; first-stage DRX grains (DRXGsI); second-stage DRX grains (DRXGsII); inhomogeneous dislocation density distribution; first-stage DRX grains; second-stage DRX grains; mixed-grain microstructure; inhomogeneous dislocation density\nProperties: flow stress; stress-decreasing rate; peak stress; steady stress; flow stress evolution; flow stress under varying conditions; stress softening due to DRX and GBS; DRX fraction\nMechanisms: dislocation density gradients; grain-boundary sliding; stress softening due to grain refinement; inhomogeneous dislocation density accelerating grain growth; dynamic recrystallization (DRX); work hardening (WH); dynamic recovery (DRV); grain-boundary sliding (GBS)\nFigures or tables: Fig. 1 (experimental procedure, deformation conditions tables); Fig. 1; Fig. 1a; Fig. 1b; Fig. 1c; Fig. 2 (schematic flow stress under varying conditions); Fig. 3 (k_s vs. Z_P and DRX fraction); Fig. 4a (optical micrograph of initial mixed grains)",
+    "context_update": {
+      "summary": "Section 5.2 concludes that after a transient decrease in Z_P, DRXGsI can rapidly grow to sizes similar to constant conditions, accelerating refinement. Section 5.3 discusses the applicability of the inhomogeneous-dislocation-density CA model for quantifying multi-stage DDRX in low-alloy steels and Ni-based superalloys, and highlights limitations such as lack of recrystallization texture, isotropic grain boundary properties, 2D initial microstructure, and simplified dislocation distribution, proposing future use of 3D EBSD. The Conclusions (Section 6) present key quantitative improvements of the updated constitutive model (R^2 from 0.82 to 0.95, RMSE from 6.46 to 3.04 MPa, AARE from 7.36% to 3.11%). CA simulation findings include refinement of first-stage DRX grains by second-stage nucleation after Z_P increase, DRX fraction exceeding constant-condition levels after Z_P decrease, and AGS trends explained by incomplete refinement and dislocation-driven growth. Important figures: 14b, 14d, 27c, 27d and Appendix D. Upcoming sections may further discuss the implications of these mechanisms and model extensions.",
+      "material_systems": [
+        "low-alloy steel",
+        "Ni-based superalloys"
+      ],
+      "sample_aliases": [],
+      "processing_route": [
+        "multi-stage hot forging",
+        "varying Z_P transient conditions",
+        "transient increase/decrease of Z_P"
+      ],
+      "key_variables": [
+        "Zener-Hollomon parameter Z_P",
+        "ε1",
+        "DRX fraction",
+        "AGS",
+        "dislocation density",
+        "stress decrease rate",
+        "R^2",
+        "RMSE",
+        "AARE"
+      ],
+      "microstructure": [
+        "DRXGsI",
+        "DRXGsII",
+        "matrix grains",
+        "inhomogeneous dislocation density",
+        "average grain size (AGS)"
+      ],
+      "properties": [
+        "flow stress",
+        "peak stress decrease",
+        "stress decrease rate"
+      ],
+      "mechanisms": [
+        "rapid growth of DRXGsI after transient Z_P decrease",
+        "refinement of DRXGsI by DRXGsII after transient Z_P increase",
+        "promotion of DRX grain growth by remaining high dislocation density after Z_P decrease",
+        "delay of DRXGsII nucleation causing incomplete refinement",
+        "inhomogeneous dislocation density accelerates grain growth"
+      ],
+      "figures_or_tables": [
+        "Fig. 14b",
+        "Fig. 14d",
+        "Fig. 27c",
+        "Fig. 27d",
+        "Appendix D"
+      ],
+      "unresolved_terms": []
+    },
+    "rolling_context_summary": "Summary: Prior austenite grain reconstructions (Figs. 17,19–21) confirm the model's capability. This chunk provides crucial processing-microstructure-property links for low-alloy steel under non-steady hot compression, setting the stage for mechanistic discussions. Section 5.2 concludes that after a transient decrease in Z_P, DRXGsI can rapidly grow to sizes similar to constant conditions, accelerating refinement. Section 5.3 discusses the applicability of the inhomogeneous-dislocation-density CA model for quantifying multi-stage DDRX in low-alloy steels and Ni-based superalloys, and highlights limitations such as lack of recrystallization texture, isotropic grain boundary properties, 2D initial microstructure, and simplified dislocation distribution, proposing future use of 3D EBSD. The Conclusions (Section 6) present key quantitative improvements of the updated constitutive model (R^2 from 0.82 to 0.95, RMSE from 6.46 to 3.04 MPa, AARE from 7.36% to 3.11%). CA simulation findings include refinement of first-stage DRX grains by second-stage nucleation after Z_P increase, DRX fraction exceeding constant-condition levels after Z_P decrease, and AGS trends explained by incomplete refinement and dislocation-driven growth. Important figures: 14b, 14d, 27c, 27d and Appendix D. Upcoming sections may further discuss the implications of these mechanisms and model extensions.\nMaterial systems: low-alloy steel; Ni-based superalloys\nProcessing route: hot compression under varying temperatures and strain rates; hot compression; constant T=850–1150°C, ε̇=0.01–10 s⁻¹; varying T=950–1050°C, ε̇=0.01–0.1 s⁻¹; transient strain rate change at ε=0.2,0.4; continuous T change from 1050 to 950°C over ε 0.2–0.3 or 0.4–0.5; holding 1250°C 180 s; holding 60 s after compression\nKey variables: Zener-Hollomon parameter ZP; dislocation density; DRX fraction; grain size; flow stress; time for 50% DRX; residual softening; strain rate\nMicrostructure: matrix; first-stage DRX grains (DRXGsI); second-stage DRX grains (DRXGsII); inhomogeneous dislocation density distribution; first-stage DRX grains; second-stage DRX grains; mixed-grain microstructure; inhomogeneous dislocation density\nProperties: flow stress; stress-decreasing rate; peak stress; steady stress; flow stress evolution; flow stress under varying conditions; stress softening due to DRX and GBS; DRX fraction\nMechanisms: dislocation density gradients; grain-boundary sliding; stress softening due to grain refinement; inhomogeneous dislocation density accelerating grain growth; dynamic recrystallization (DRX); work hardening (WH); dynamic recovery (DRV); grain-boundary sliding (GBS)\nFigures or tables: Fig. 1 (experimental procedure, deformation conditions tables); Fig. 1; Fig. 1a; Fig. 1b; Fig. 1c; Fig. 2 (schematic flow stress under varying conditions); Fig. 3 (k_s vs. Z_P and DRX fraction); Fig. 4a (optical micrograph of initial mixed grains)"
+  }
+]

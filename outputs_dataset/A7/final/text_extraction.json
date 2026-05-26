@@ -1,0 +1,1050 @@
+{
+  "papers": [
+    {
+      "paper_id": "A7",
+      "doi": null,
+      "title": "Factors influencing austenite stability during Inter-critical annealing and effect on mechanical properties of low-density medium Mn steels",
+      "authors": [
+        "Kishan Bharti",
+        "Nitin Kumar Sharma"
+      ],
+      "publication_year": null,
+      "journal": null,
+      "keywords": [
+        "Advanced high strength steels (AHSS)",
+        "Low density steel (LDS)",
+        "Intercritical annealing (IA)",
+        "Retained austenite (RA)",
+        "Transformation induced plasticity (TRIP)"
+      ],
+      "research_type": "mixed",
+      "paper_scope": "Investigates addition of 3% Al with and without 1% Si to Fe-8Mn-0.2C medium-Mn steel to improve strength-ductility combination and understand austenite stability during intercritical annealing."
+    }
+  ],
+  "alloys": [
+    {
+      "alloy_id": "alloy_fe8mn3al02c",
+      "paper_id": "A7",
+      "alloy_name": "M1",
+      "aliases": [
+        "3Al-0Si",
+        "Si-free steel"
+      ],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Al",
+        "C"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Fe",
+          "weight_percent": "balance",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "8",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "3",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.2",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "Referred to as M1; composition Fe–8Mn–3Al-0.2C (all in wt.%)."
+    },
+    {
+      "alloy_id": "alloy_fe8mn3al1si02c",
+      "paper_id": "A7",
+      "alloy_name": "M2",
+      "aliases": [
+        "3Al-1Si",
+        "Si-containing steel"
+      ],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Al",
+        "Si",
+        "C"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Fe",
+          "weight_percent": "balance",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "8",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "3",
+          "atomic_percent": null
+        },
+        {
+          "element": "Si",
+          "weight_percent": "1",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.2",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "Referred to as M2; composition Fe–8Mn–3Al–1Si-0.2C (all in wt.%)."
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_M1_HR",
+      "paper_id": "A7",
+      "alloy_id": "alloy_fe8mn3al02c",
+      "description": "Homogenization at 1100°C for 2 h followed by water quenching; hot rolling at 1100°C with ~50% thickness reduction, followed by air cooling.",
+      "processes_notes": null
+    },
+    {
+      "process_id": "proc_M2_HR",
+      "paper_id": "A7",
+      "alloy_id": "alloy_fe8mn3al1si02c",
+      "description": "Homogenization at 1100°C for 2 h followed by water quenching; hot rolling at 1100°C with ~50% thickness reduction, followed by air cooling.",
+      "processes_notes": null
+    },
+    {
+      "process_id": "proc_M1_IA",
+      "paper_id": "A7",
+      "alloy_id": "alloy_fe8mn3al02c",
+      "description": "Homogenization at 1100°C for 2 h, water quenching; hot rolling at 1100°C with ~50% reduction, air cooling; intercritical annealing at 700°C for 1 h, water quenching.",
+      "processes_notes": null
+    },
+    {
+      "process_id": "proc_M2_IA",
+      "paper_id": "A7",
+      "alloy_id": "alloy_fe8mn3al1si02c",
+      "description": "Homogenization at 1100°C for 2 h, water quenching; hot rolling at 1100°C with ~50% reduction, air cooling; intercritical annealing at 700°C for 1 h, water quenching.",
+      "processes_notes": null
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_M1_HR",
+      "paper_id": "A7",
+      "alloy_id": "alloy_fe8mn3al02c",
+      "process_id": "proc_M1_HR"
+    },
+    {
+      "sample_id": "sample_M2_HR",
+      "paper_id": "A7",
+      "alloy_id": "alloy_fe8mn3al1si02c",
+      "process_id": "proc_M2_HR"
+    },
+    {
+      "sample_id": "sample_M1_IA",
+      "paper_id": "A7",
+      "alloy_id": "alloy_fe8mn3al02c",
+      "process_id": "proc_M1_IA"
+    },
+    {
+      "sample_id": "sample_M2_IA",
+      "paper_id": "A7",
+      "alloy_id": "alloy_fe8mn3al1si02c",
+      "process_id": "proc_M2_IA"
+    }
+  ],
+  "processing_steps": [
+    {
+      "sample_id": "sample_M1_HR",
+      "paper_id": "A7",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "homogenization",
+      "temperature": "1100",
+      "unit": "°C",
+      "duration": "2 h",
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_M1_HR",
+      "paper_id": "A7",
+      "sequence": "2",
+      "type": "thermomechanical_processing",
+      "method": "hot rolling",
+      "temperature": "1100",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": "air",
+      "reduction_ratio": "50%",
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_M2_HR",
+      "paper_id": "A7",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "homogenization",
+      "temperature": "1100",
+      "unit": "°C",
+      "duration": "2 h",
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_M2_HR",
+      "paper_id": "A7",
+      "sequence": "2",
+      "type": "thermomechanical_processing",
+      "method": "hot rolling",
+      "temperature": "1100",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": "air",
+      "reduction_ratio": "50%",
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_M1_IA",
+      "paper_id": "A7",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "homogenization",
+      "temperature": "1100",
+      "unit": "°C",
+      "duration": "2 h",
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_M1_IA",
+      "paper_id": "A7",
+      "sequence": "2",
+      "type": "thermomechanical_processing",
+      "method": "hot rolling",
+      "temperature": "1100",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": "air",
+      "reduction_ratio": "50%",
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_M1_IA",
+      "paper_id": "A7",
+      "sequence": "3",
+      "type": "heat_treatment",
+      "method": "intercritical annealing",
+      "temperature": "700",
+      "unit": "°C",
+      "duration": "1 h",
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_M2_IA",
+      "paper_id": "A7",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "homogenization",
+      "temperature": "1100",
+      "unit": "°C",
+      "duration": "2 h",
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_M2_IA",
+      "paper_id": "A7",
+      "sequence": "2",
+      "type": "thermomechanical_processing",
+      "method": "hot rolling",
+      "temperature": "1100",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": "air",
+      "reduction_ratio": "50%",
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_M2_IA",
+      "paper_id": "A7",
+      "sequence": "3",
+      "type": "heat_treatment",
+      "method": "intercritical annealing",
+      "temperature": "700",
+      "unit": "°C",
+      "duration": "1 h",
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_M1_HR",
+      "sample_id": "sample_M1_HR",
+      "overall_structure": "Multiple phases: polygonal α-ferrite and lath-type martensitic-austenitic (α'+γ) phase; retained austenite fraction ~5.1%.",
+      "number_of_phases": "3",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "micro_M1_HR_1",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "α-ferrite",
+              "crystal_structure": "bcc",
+              "volume_fraction": null,
+              "morphology": "polygonal",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "fcc",
+              "volume_fraction": "5.1%",
+              "morphology": "retained within martensitic-austenitic constituent",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "martensite (α')",
+              "crystal_structure": "bct",
+              "volume_fraction": null,
+              "morphology": "lath-type",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_M2_HR",
+      "sample_id": "sample_M2_HR",
+      "overall_structure": "Consists of δ-ferrite, α-ferrite, and very fine martensitic-austenitic (α'+γ) phase; retained austenite fraction ~5.7%.",
+      "number_of_phases": "3",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "micro_M2_HR_1",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "δ-ferrite",
+              "crystal_structure": "bcc",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "α-ferrite",
+              "crystal_structure": "bcc",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "fcc",
+              "volume_fraction": "5.7%",
+              "morphology": "very fine, within martensitic-austenitic constituent",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "martensite (α')",
+              "crystal_structure": "bct",
+              "volume_fraction": null,
+              "morphology": "very fine",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_M1_IA",
+      "sample_id": "sample_M1_IA",
+      "overall_structure": "Mainly α-ferrite and austenite with negligible amount of martensite; retained austenite fraction ~45%.",
+      "number_of_phases": "2 (ferrite + austenite, martensite negligible)",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "micro_M1_IA_1",
+          "related_sequence": "3",
+          "phases_present": [
+            {
+              "phase_name": "α-ferrite",
+              "crystal_structure": "bcc",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "fcc",
+              "volume_fraction": "45%",
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": "Contains austenite grains both smaller and larger than 0.5 μm; a high fraction of grains < 0.5 μm contributes to higher austenite stability.",
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_M2_IA",
+      "sample_id": "sample_M2_IA",
+      "overall_structure": "α-ferrite, austenite, and coarse band-type δ-ferrite; retained austenite fraction ~19%.",
+      "number_of_phases": "3 (α-ferrite, austenite, δ-ferrite)",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "micro_M2_IA_1",
+          "related_sequence": "3",
+          "phases_present": [
+            {
+              "phase_name": "α-ferrite",
+              "crystal_structure": "bcc",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "fcc",
+              "volume_fraction": "19%",
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "δ-ferrite",
+              "crystal_structure": "bcc",
+              "volume_fraction": null,
+              "morphology": "coarse band-type",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": "Contains some austenite grains < 0.5 μm, but fraction of fine grains lower than in M1-IA, leading to lower overall austenite stability.",
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interf_M1_IA",
+      "sample_id": "sample_M1_IA",
+      "phases": [
+        {
+          "interface_id": "i1",
+          "microstructure_uuid": "micro_M1_IA_1",
+          "phase_1_name": "α-ferrite",
+          "phase_2_name": "austenite",
+          "coherence": null
+        }
+      ],
+      "defect_interaction": [],
+      "interface_notes": [
+        {
+          "stress_strain_distribution": null,
+          "slippage_situation": null
+        }
+      ],
+      "phase_evolution": "During intercritical annealing, Mn and C partition from ferrite to austenite across the α/γ interface, leading to local enrichment of Mn in austenite near the interface. This partitioning, along with differences in grain size, contributes to higher-than-expected austenite stability."
+    },
+    {
+      "interface_set_id": "interf_M2_IA",
+      "sample_id": "sample_M2_IA",
+      "phases": [
+        {
+          "interface_id": "i2",
+          "microstructure_uuid": "micro_M2_IA_1",
+          "phase_1_name": "α-ferrite",
+          "phase_2_name": "austenite",
+          "coherence": null
+        },
+        {
+          "interface_id": "i3",
+          "microstructure_uuid": "micro_M2_IA_1",
+          "phase_1_name": "δ-ferrite",
+          "phase_2_name": "austenite",
+          "coherence": null
+        }
+      ],
+      "defect_interaction": [],
+      "interface_notes": [
+        {
+          "stress_strain_distribution": null,
+          "slippage_situation": null
+        }
+      ],
+      "phase_evolution": "Mn and C partition from both α-ferrite and δ-ferrite to austenite; Si partitions from austenite to δ-ferrite and α-ferrite. These partitioning effects influence austenite stability and explain the discrepancy between observed and equilibrium-predicted austenite fractions."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_M1_HR",
+      "sample_id": "sample_M1_HR",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "1712",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "±10"
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "14.8 ± 0.5",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_M2_HR",
+      "sample_id": "sample_M2_HR",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "1055",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "±15"
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "15.4 ± 0.8",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_M1_IA",
+      "sample_id": "sample_M1_IA",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "867",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "±10"
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "71.8 ± 0.5",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": [
+            {
+              "property_id": "SHR_stageII_pointA",
+              "direction": null,
+              "value": "1338",
+              "unit": "MPa"
+            }
+          ]
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_M2_IA",
+      "sample_id": "sample_M2_IA",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "698",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "±20"
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "59.4 ± 0.6",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": [
+            {
+              "property_id": "SHR_stageII_pointB",
+              "direction": null,
+              "value": "989",
+              "unit": "MPa"
+            }
+          ]
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_M1_HR_SEM",
+      "sample_id": "sample_M1_HR",
+      "microstructure_uuid": "micro_M1_HR_1",
+      "technique": "SEM (secondary electron mode)",
+      "purpose": "Microstructural observation of hot-rolled condition",
+      "key_findings": "Observed polygonal α-ferrite and lath-type martensitic-austenitic (α'+γ) phase."
+    },
+    {
+      "characterization_id": "char_M1_HR_XRD",
+      "sample_id": "sample_M1_HR",
+      "microstructure_uuid": "micro_M1_HR_1",
+      "technique": "XRD",
+      "purpose": "Phase identification and volume fraction measurement",
+      "key_findings": "Confirmed ferrite/martensite and austenite phases; austenite volume fraction = 5.1%."
+    },
+    {
+      "characterization_id": "char_M2_HR_SEM",
+      "sample_id": "sample_M2_HR",
+      "microstructure_uuid": "micro_M2_HR_1",
+      "technique": "SEM",
+      "purpose": "Microstructural observation of hot-rolled condition",
+      "key_findings": "Observed δ-ferrite, α-ferrite, and very fine martensitic-austenitic phase."
+    },
+    {
+      "characterization_id": "char_M2_HR_XRD",
+      "sample_id": "sample_M2_HR",
+      "microstructure_uuid": "micro_M2_HR_1",
+      "technique": "XRD",
+      "purpose": "Phase identification and volume fraction measurement",
+      "key_findings": "Confirmed ferrite/martensite and austenite phases; austenite volume fraction = 5.7%."
+    },
+    {
+      "characterization_id": "char_M1_IA_SEM",
+      "sample_id": "sample_M1_IA",
+      "microstructure_uuid": "micro_M1_IA_1",
+      "technique": "SEM",
+      "purpose": "Microstructural observation after intercritical annealing",
+      "key_findings": "α-ferrite and austenite with negligible martensite."
+    },
+    {
+      "characterization_id": "char_M1_IA_EBSD",
+      "sample_id": "sample_M1_IA",
+      "microstructure_uuid": "micro_M1_IA_1",
+      "technique": "EBSD",
+      "purpose": "Phase mapping and crystal orientation",
+      "key_findings": "Phase map shows α-ferrite and austenite; no δ-ferrite observed."
+    },
+    {
+      "characterization_id": "char_M1_IA_XRD",
+      "sample_id": "sample_M1_IA",
+      "microstructure_uuid": "micro_M1_IA_1",
+      "technique": "XRD",
+      "purpose": "Quantitative phase analysis",
+      "key_findings": "Austenite volume fraction = 45%."
+    },
+    {
+      "characterization_id": "char_M2_IA_SEM",
+      "sample_id": "sample_M2_IA",
+      "microstructure_uuid": "micro_M2_IA_1",
+      "technique": "SEM",
+      "purpose": "Microstructural observation after intercritical annealing",
+      "key_findings": "α-ferrite, austenite, and coarse band-type δ-ferrite observed; negligible martensite."
+    },
+    {
+      "characterization_id": "char_M2_IA_EBSD",
+      "sample_id": "sample_M2_IA",
+      "microstructure_uuid": "micro_M2_IA_1",
+      "technique": "EBSD",
+      "purpose": "Phase mapping",
+      "key_findings": "Confirmed presence of α-ferrite, austenite, and δ-ferrite."
+    },
+    {
+      "characterization_id": "char_M2_IA_XRD",
+      "sample_id": "sample_M2_IA",
+      "microstructure_uuid": "micro_M2_IA_1",
+      "technique": "XRD",
+      "purpose": "Quantitative phase analysis",
+      "key_findings": "Austenite volume fraction = 19%."
+    },
+    {
+      "characterization_id": "char_Tensile_HR_IA",
+      "sample_id": null,
+      "microstructure_uuid": null,
+      "technique": "Uniaxial tensile testing",
+      "purpose": "Measure tensile properties at room temperature",
+      "key_findings": "Engineering stress-strain curves obtained; UTS, elongation, and PSE reported for M1-HR, M2-HR, M1-IA, M2-IA."
+    },
+    {
+      "characterization_id": "char_EBSD_post_tensile",
+      "sample_id": null,
+      "microstructure_uuid": null,
+      "technique": "EBSD after tensile fracture",
+      "purpose": "Evaluate retained austenite fraction and strain distribution after deformation",
+      "key_findings": "Post-tensile austenite fractions: M1-IA 6.5%, M2-IA 3.2%; KAM maps show increased misorientation and strain partitioning in M2."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_thermo_calc",
+      "sample_id": null,
+      "simulation_method": "Thermodynamic equilibrium phase prediction",
+      "software_used": "Thermo-Calc with TCFE9 database",
+      "potential_model": null,
+      "validation_against_experiment": "Predicted austenite fractions at IA temperature compared with measured retained austenite; discrepancies attributed to martensite formation during cooling and local microstructural heterogeneity.",
+      "analytical_model": []
+    },
+    {
+      "computation_id": "comp_Ms_KM",
+      "sample_id": null,
+      "simulation_method": "Martensite start temperature (Ms) calculation and Koistinen-Marburger model",
+      "software_used": null,
+      "potential_model": null,
+      "validation_against_experiment": "Calculated retained austenite fractions at RT using Ms and K-M model underestimated observed fractions, indicating additional stabilizing factors.",
+      "analytical_model": [
+        {
+          "model_name": "Mahieu et al. Ms equation",
+          "equation_role": "Ms = 539 - 423C - 30.4Mn - 7.5Si + 30Al (wt.%)",
+          "parameters": "Compositions in wt.% of austenite at respective temperatures",
+          "model_note": "Used to compute Ms for hot-rolled and IA conditions."
+        },
+        {
+          "model_name": "Koistinen-Marburger model",
+          "equation_role": "(1 - f) = exp{-0.011[Ms - T]}",
+          "parameters": "Ms from above equation; T = room temperature (taken as ~25°C)",
+          "model_note": "Used to estimate fraction of austenite transformed to martensite upon cooling; critical IAT above which retained austenite is lower than equilibrium predicted."
+        }
+      ]
+    },
+    {
+      "computation_id": "comp_austenite_fraction_XRD",
+      "sample_id": null,
+      "simulation_method": null,
+      "software_used": null,
+      "potential_model": null,
+      "validation_against_experiment": null,
+      "analytical_model": [
+        {
+          "model_name": "Direct comparison method (Jatczak)",
+          "equation_role": "Vγ = (1/A Σ Iγj/Rγj) / [1/B Σ Iαj/Rαj + 1/A Σ Iγj/Rγj]",
+          "parameters": "Integrated intensities of γ and α peaks, theoretical intensities",
+          "model_note": "Used to calculate austenite volume fraction from XRD data."
+        }
+      ]
+    },
+    {
+      "computation_id": "comp_TRIP_kinetics",
+      "sample_id": null,
+      "simulation_method": null,
+      "software_used": null,
+      "potential_model": null,
+      "validation_against_experiment": null,
+      "analytical_model": [
+        {
+          "model_name": "Exponential decay model for austenite fraction during strain",
+          "equation_role": "fγ = A * exp(-B ε)",
+          "parameters": "A = initial austenite fraction, B fitted as 3.6 (M1), 3.8 (M2)",
+          "model_note": "Lower B indicates higher mechanical stability and slower TRIP kinetics."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Si-free steel (M1-IA) achieved PSE of 61 GPa% vs. 41 GPa% for Si-containing steel (M2-IA).",
+    "Stacking fault energy (SFE) of both steels is below 18 mJ/m², favoring TRIP effect during deformation.",
+    "Austenite stability is influenced by local Mn enrichment due to insufficient diffusion during 1 h IA, leading to higher-than-expected Mn in some grains (>12%).",
+    "Grain size heterogeneity: austenite grains < 0.5 µm exhibit higher stability due to finer size and higher carbon concentration.",
+    "In M2, Si partitions from austenite to δ-ferrite and α-ferrite during IA, affecting austenite composition and stability.",
+    "Critical IAT exists above which full retention of equilibrium austenite is not expected; for M1 at 700°C, calculated retained austenite was only ~16%, but observed was 45%, explained by additional stabilizing factors.",
+    "For M2-IA, calculated retained austenite ~11% vs. observed ~19%, also explained by local heterogeneity but to a lesser extent due to lower fraction of fine grains.",
+    "Fractography: HR samples show cleavage fracture (brittle), IA samples show dimple rupture (ductile).",
+    "Strain hardening rate curves show three stages; stage II gradual decline corresponds to TRIP effect, with end values 1338 MPa (M1-IA) and 989 MPa (M2-IA).",
+    "Post-tensile EBSD phase maps show austenite reduction from 45% to 6.5% (M1) and from 19% to 3.2% (M2), confirming TRIP.",
+    "δ-ferrite in M2 introduces additional partitioning of Mn and C into austenite, contributing to stability but also leads to strain partitioning observed in KAM maps."
+  ]
+}

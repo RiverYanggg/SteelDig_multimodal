@@ -1,0 +1,201 @@
+{
+  "claims": [
+    {
+      "claim_type": "property",
+      "subject": "flow stress evolution under varying deformation conditions",
+      "claim": "After transiently decreasing Z_P (increasing temperature or decreasing strain rate) at ε_I, the flow stress rapidly drops below the level observed under constant conditions, while increasing Z_P leads to a gradual increase to a lower peak and a subsequent decline with a lower steady-state stress.",
+      "values": [
+        "transient Z_P decrease",
+        "transient Z_P increase",
+        "flow stress drop",
+        "lower peak stress",
+        "lower steady-state stress"
+      ],
+      "evidence_text": "After transiently decreasing $Z _ { p }$ (increasing T or decreasing ˙ε) at $\\varepsilon _ { I } ,$ the flow stress can rapidly drop to a level lower than that observed under the corresponding constant deformation conditions (Graetz et al., 2014). Besides, after transiently increasing $Z _ { p }$ (decreasing T or increasing $\\dot { \\varepsilon } )$ at $\\varepsilon _ { I } ,$ , the flow stress can gradually grow to a peak lower than that of the constant deformation condition.",
+      "figures": [
+        "Fig. 2"
+      ],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "stress softening relationship under varying conditions",
+      "claim": "The saturation stress and steady-state stress in the second stage are severely influenced by the first-stage DRX state, and the difference σ_s^(v) - σ_ss^(v) is equal to σ_s - σ_ss.",
+      "values": [
+        "σ_s^(v) - σ_ss^(v) = σ_s - σ_ss"
+      ],
+      "evidence_text": "this paper used a similar method to establish the stress relationship between constant and varying deformation conditions as follows: σ_s^(v) - σ_ss^(v) = σ_s - σ_ss (16)",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "processing",
+      "subject": "stress softening coefficient k_s",
+      "claim": "A stress softening coefficient k_s (k_s ≤ 1) is introduced to define the saturation stress under varying deformation conditions; the saturation stress increment is scaled by k_s depending on whether the constant-condition saturation stress increases or decreases.",
+      "values": [
+        "k_s ≤ 1"
+      ],
+      "evidence_text": "a stress softening coefficient $k _ { s }$ $( k _ { s } \\le 1 )$ was used to define the saturation stress under the varying condition as follows: ... (17)",
+      "figures": [
+        "Fig. 3"
+      ],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "expression of k_s",
+      "claim": "The stress softening coefficient k_s is expressed as a function of the first-stage Z_P, second-stage Z_P, first-stage DRX fraction φ_d^(I), and a material constant n_c (Eq. 18).",
+      "values": [
+        "Z_P^(I)",
+        "Z_P^(II)",
+        "φ_d^(I)",
+        "n_c"
+      ],
+      "evidence_text": "the stress softening coefficient $k _ { s }$ was defined as follows: k_s (ε+Δε) = ( (ln Z_P^(I) + ln Z_P^(II)(ε+Δε)) / (2 Max(ln Z_P^(I), ln Z_P^(II)(ε+Δε))) )^{ n_c φ_d^(I) sqrt((ln Z_P^(II)(ε+Δε) - ln Z_P^(I))^2) / ln Z_P^(I) } (18)",
+      "figures": [
+        "Fig. 3"
+      ],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "convergence of k_s",
+      "claim": "k_s converges to 1 when the first-stage DRX fraction approaches zero or when the second-stage Z_P equals the first-stage Z_P, recovering constant-condition behavior.",
+      "values": [
+        "φ_d^(I) → 0",
+        "ln Z_P^(II) → ln Z_P^(I)",
+        "k_s → 1"
+      ],
+      "evidence_text": "lim _ {\\varphi_ {d} ^ {(I)} \\rightarrow 0} k _ {s} \\rightarrow 1 ; lim _ {\\ln Z _ {p} ^ {(I I)} (\\varepsilon + \\Delta \\varepsilon) \\rightarrow \\ln Z _ {p} ^ {(I)}} k _ {s} \\rightarrow 1",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "microstructure",
+      "subject": "initial mixed-grain microstructure",
+      "claim": "The initial microstructure exhibits a mixed-grain distribution with a maximum grain size of 265.20 µm and a minimum of 10.22 µm, shown in optical micrographs and grain size distribution in Fig. 4a and 4c.",
+      "values": [
+        "265.20 µm",
+        "10.22 µm"
+      ],
+      "evidence_text": "Experimental results show that the maximum grain size was 265.20 µm and the minimum size was 10.22 µm, resulting in a mixedgrain distribution in Fig. 4c.",
+      "figures": [
+        "Fig. 4a",
+        "Fig. 4c"
+      ],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "inhomogeneous dislocation density and GBS in CA",
+      "claim": "A rule for inhomogeneous dislocation density distribution accounting for dislocation gradient and grain-boundary sliding (GBS) is introduced into the 3D CA model to simulate DRX evolution of mixed-grain microstructures under varying deformation conditions.",
+      "values": [],
+      "evidence_text": "a rule for the inhomogeneous distribution of dislocation density that accounts for dislocation gradient and GBS is first introduced into a 3D CA model to effectively simulate the DRX evolution of mixed-grain microstructure under varying deformation conditions.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "modeling",
+      "subject": "WH contribution to cell dislocation density",
+      "claim": "The work-hardening contribution to the dislocation density increment of a cell is given by dρ_WH^r = C dρ_WH (d_r/d_ave) [ (1/k_bd^r) Σ (L_p^r/L_0)^{-2} + rand(i,j,k) ] (Eq. 28), where the distance to grain boundaries and a random term control spatial heterogeneity.",
+      "values": [
+        "C",
+        "d_r/d_ave",
+        "L_p^r/L_0",
+        "rand"
+      ],
+      "evidence_text": "dρ_WH^r(i,j,k) = C dρ_WH (d_r/d_ave) [ 1/k_bd^r ∑_{p=1}^{k_bd^r} (L_p^r(i,j,k)/L_0)^{-2} + rand(i,j,k) ] (28)",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "modeling",
+      "subject": "total dislocation density evolution including DRV",
+      "claim": "The net evolution of any cell's dislocation density resulting from WH and dynamic recovery is dρ^r = dρ_WH^r - k_2 ρ^r (Eq. 29), where k_2 is the average DRV coefficient.",
+      "values": [
+        "k_2"
+      ],
+      "evidence_text": "the evolution of any cell’s dislocation density resulting from WH and DRV was written as dρ^r(i,j,k) = dρ_WH^r(i,j,k) - k_2 ρ^r(i,j,k) (29)",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "GBS strain rate formula",
+      "claim": "The grain-boundary sliding strain rate is expressed as ε̇_GBS^r = (A_GB H_GB μ b / KT) (b/d^r)^p_GB (σ_0^(v)/μ)^n_GB, with H_GB = H_0 exp(-E/RT) (Eq. 30), incorporating grain size and diffusion effects.",
+      "values": [
+        "A_GB",
+        "p_GB",
+        "n_GB",
+        "H_0",
+        "E",
+        "b/d^r",
+        "σ_0^(v)/μ"
+      ],
+      "evidence_text": "ε̇_GBS^r(i,j,k) = (A_GB H_GB μ b / K T) (b/d^r)^{p_GB} (σ_0^(v)/μ)^{n_GB} ; H_GB = H_0 exp(-E/RT) (30)",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    }
+  ],
+  "context_update": {
+    "summary": "This chunk details the optimization of constitutive models for varying deformation conditions and the formulation of a 3D cellular automaton model with inhomogeneous dislocation density. A stress softening coefficient k_s (≤1) is introduced to adjust saturation stress based on the Zener-Hollomon parameters of the two stages and the first-stage DRX fraction (Eqs. 17–18); it converges to 1 for constant or non-recrystallized conditions. The CA model assumes an initial uniform dislocation density of 10^11 m^{-2}, grain-boundary nucleation, and a gradient dislocation density distribution. The initial mixed-grain microstructure is characterized with maximum grain size 265.20 µm and minimum 10.22 µm (Fig. 4). The WH contribution to dislocation density scales with (distance to GB)^{-2}, grain size, and a random term (Eq. 28). GBS strain rate is given by Eq. 30 and subtracted from total strain to obtain slip strain increment. Subsequent sections will use these constitutive and CA formulations for FEM implementation and validation.",
+    "material_systems": [
+      "low-alloy steel"
+    ],
+    "sample_aliases": [],
+    "processing_route": [
+      "varying-temperature hot compression",
+      "varying-strain-rate hot compression"
+    ],
+    "key_variables": [
+      "Zener-Hollomon parameter Z_P^(I), Z_P^(II)",
+      "stress softening coefficient k_s",
+      "first-stage DRX fraction φ_d^(I)",
+      "saturation stress σ_s^(v)",
+      "steady-state stress σ_ss^(v)",
+      "yield stress σ_0^(v)",
+      "initial dislocation density 10^11 m^{-2}",
+      "cell dislocation density ρ^r",
+      "GBS strain rate ε̇_GBS",
+      "grain size d_r, d_ave",
+      "material constant n_c, C, A_GB, p_GB, n_GB, H_0, E"
+    ],
+    "microstructure": [
+      "mixed-grain initial microstructure",
+      "grain size distribution (max 265.20 µm, min 10.22 µm)",
+      "dislocation density gradient from grain boundary to interior"
+    ],
+    "properties": [
+      "flow stress under varying conditions",
+      "stress softening due to DRX and GBS"
+    ],
+    "mechanisms": [
+      "work hardening",
+      "dynamic recovery",
+      "dynamic recrystallization",
+      "grain boundary sliding",
+      "inhomogeneous dislocation density evolution"
+    ],
+    "figures_or_tables": [
+      "Fig. 2 (schematic flow stress under varying conditions)",
+      "Fig. 3 (k_s vs. Z_P and DRX fraction)",
+      "Fig. 4a (optical micrograph of initial mixed grains)",
+      "Fig. 4c (experimental vs. simulated grain size distributions)"
+    ],
+    "unresolved_terms": [
+      "material constant n_c in k_s expression",
+      "coefficient C in dρ_WH^r",
+      "GBS material constants A_GB, p_GB, n_GB, H_0, E"
+    ]
+  }
+}

@@ -1,0 +1,528 @@
+{
+  "papers": [
+    {
+      "paper_id": "A49",
+      "doi": null,
+      "title": "Behavior of Fe-Mn-Al-C Steels during Cyclic Tests",
+      "authors": [
+        "I.S.Kalashnikov",
+        "O.Acselrad",
+        "T.Kalichak",
+        "M.S.Khadyyev",
+        "L.C.Pereira"
+      ],
+      "publication_year": "2000",
+      "journal": null,
+      "keywords": [
+        "fatigue",
+        "thermal fatigue",
+        "Fe-Mn-Al-C steels"
+      ],
+      "research_type": "experimental",
+      "paper_scope": "To describe the behavior of Fe-Mn-Al-C alloys under cyclic loading, including elasto-plastic deformation and cyclic temperatures, and to compare with martensitic Cr steels."
+    }
+  ],
+  "alloys": [
+    {
+      "alloy_id": "alloy_fe28mn9al086c",
+      "paper_id": "A49",
+      "alloy_name": "Fe-28Mn-9Al-0.86C-0.7W-0.43Mo-0.49Nb",
+      "aliases": [
+        "Fe-29Mn-9Al-0.9C",
+        "Fe-Mn-Al-C"
+      ],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Al",
+        "C",
+        "W",
+        "Mo",
+        "Nb"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Fe",
+          "weight_percent": null,
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "28",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "9",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.86",
+          "atomic_percent": null
+        },
+        {
+          "element": "W",
+          "weight_percent": "0.7",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mo",
+          "weight_percent": "0.43",
+          "atomic_percent": null
+        },
+        {
+          "element": "Nb",
+          "weight_percent": "0.49",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "Produced by electroslag refining (ESR). The nominal composition is also referred to as Fe-29Mn-9Al-0.9C."
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_fe28mn9al086c_q",
+      "paper_id": "A49",
+      "alloy_id": "alloy_fe28mn9al086c",
+      "description": "Water quenched from 1323 K after electroslag refining.",
+      "processes_notes": "Ingot size 415 mm square cross section, 2200 kg."
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_fe28mn9al086c_1",
+      "paper_id": "A49",
+      "alloy_id": "alloy_fe28mn9al086c",
+      "process_id": "proc_fe28mn9al086c_q"
+    }
+  ],
+  "processing_steps": [
+    {
+      "sample_id": "sample_fe28mn9al086c_1",
+      "paper_id": "A49",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "water quenching",
+      "temperature": "1323 K",
+      "unit": "K",
+      "duration": null,
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_fe28mn9al086c_1",
+      "paper_id": "A49",
+      "sequence": "2",
+      "type": "thermal_cycling",
+      "method": "heating to 673 K and cooling in distilled water to 293 K, repeated",
+      "temperature": "673 K",
+      "unit": "K",
+      "duration": null,
+      "cooling_medium": "distilled water",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Used for thermocycling fatigue tests."
+    },
+    {
+      "sample_id": "sample_fe28mn9al086c_1",
+      "paper_id": "A49",
+      "sequence": "3",
+      "type": "mechanical_testing",
+      "method": "elasto-plastic bending test (cyclic)",
+      "temperature": null,
+      "unit": null,
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Constant deflection 150 mm, specimen diameter 50 mm."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_as_quenched",
+      "sample_id": "sample_fe28mn9al086c_1",
+      "overall_structure": "Austenitic matrix with grain boundary κ-phase precipitates.",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_mic_as_quenched",
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "κ-phase",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "grain boundary precipitates",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "k_phase_as_quenched",
+              "type": "κ-phase",
+              "size": {
+                "value": null,
+                "unit": null
+              },
+              "distribution": "grain boundaries",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_thermal_cycled",
+      "sample_id": "sample_fe28mn9al086c_1",
+      "overall_structure": "Austenitic matrix with coarsened grain boundary κ-phase precipitates due to thermal cycling.",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_mic_thermal_cycled",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "κ-phase",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "thickened grain boundary precipitates",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "k_phase_cycled",
+              "type": "κ-phase",
+              "size": {
+                "value": null,
+                "unit": null
+              },
+              "distribution": "grain boundaries, thickened",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_cold_worked",
+      "sample_id": "sample_fe28mn9al086c_1",
+      "overall_structure": "Austenitic matrix with extensive mechanical twinning and high dislocation density after cyclic bending or tensile deformation.",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_mic_cold_worked",
+          "related_sequence": "3",
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "deformation twins",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            },
+            {
+              "type": "dislocation tangles",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "high",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "props_tensile",
+      "sample_id": "sample_fe28mn9al086c_1",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [
+            {
+              "direction": "tensile",
+              "distribution": "True Strain: 0.0, 0.1, 0.2, 0.3, 0.4; True Stress (MPa): 500, 800, 1000, 1200, 1400; Strain rate 1 mm/min."
+            }
+          ],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "props_fatigue_SN",
+      "sample_id": "sample_fe28mn9al086c_1",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [
+            {
+              "direction": "rotating bending, 293 K",
+              "distribution": "N (10^6): 0.1, 0.5, 1, 2, 5, 10, 50; Stress (MPa): 420, 380, 340, 300, 280, 260, 240 (Series 1)"
+            },
+            {
+              "direction": "rotating bending, 673 K",
+              "distribution": "N (10^6): 0.1, 0.5, 1, 2, 5, 10, 50; Stress: 500, 480, 460, 440, 420, 400, 380 (Series 2)"
+            },
+            {
+              "direction": "rotating bending, 293 K ↔ 673 K",
+              "distribution": "N (10^6): 0.1, 0.5, 1, 2, 5, 10, 50; Stress: 480, 460, 440, 420, 400, 380, 360 (Series 3)"
+            }
+          ],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_thermal_fatigue",
+      "sample_id": "sample_fe28mn9al086c_1",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": "293",
+          "max": "673",
+          "unit": "K"
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": "16000 cycles before failure",
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy": "Fe-12Cr-1.5Ni-0.2V-1.8W-0.5Mo-0.15C (martensitic Cr steel)",
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "improvement_percentage": "~78%"
+      }
+    },
+    {
+      "performance_id": "perf_bending_fatigue",
+      "sample_id": "sample_fe28mn9al086c_1",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": "293",
+          "max": "293",
+          "unit": "K"
+        },
+        "stress_state": "alternating bending",
+        "environment": "air"
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy": "Fe-13Cr-0.2C (martensitic Cr steel)",
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "improvement_percentage": "~300%"
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_om_quenched",
+      "sample_id": "sample_fe28mn9al086c_1",
+      "microstructure_uuid": "uuid_mic_as_quenched",
+      "technique": "Optical microscopy (Neophot-21)",
+      "purpose": "Microstructural examination of as-quenched state",
+      "key_findings": "Austenitic matrix with grain boundary κ-phase precipitates."
+    },
+    {
+      "characterization_id": "char_om_cycled",
+      "sample_id": "sample_fe28mn9al086c_1",
+      "microstructure_uuid": "uuid_mic_thermal_cycled",
+      "technique": "Optical microscopy (Neophot-21)",
+      "purpose": "Examination after thermal cycling",
+      "key_findings": "Coarsening/thickening of grain boundary κ-phase precipitates."
+    },
+    {
+      "characterization_id": "char_tem_cold",
+      "sample_id": "sample_fe28mn9al086c_1",
+      "microstructure_uuid": "uuid_mic_cold_worked",
+      "technique": "TEM (EMV-100L, 100 kV)",
+      "purpose": "Observe dislocation structure and deformation twins after cold working",
+      "key_findings": "High dislocation density, dislocation tangles, mechanical twinning."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "Fig. 1 shows (a) the thermocycling test apparatus with restricted expansion and (b) the elasto-plastic bending test machine ZDM-200PU.",
+    "The fatigue strength of Fe-Mn-Al-C alloys in the temperature range 523–823 K is stated to be higher than at room temperature, with the maximum at 723 K based on 2×10^7 cycles (from Ref. 4).",
+    "Deformation aging in zones of microplastic deformation is mentioned as a time-dependent strengthening mechanism at higher temperatures.",
+    "Fig. 3 presents optical micrographs of the austenitic Fe-Mn-Al-C steel before and after tests, and of martensitic Cr-Ni steel before and after tests, illustrating the thickening of grain boundary κ-phase and the decomposition of martensite.",
+    "Fig. 4 provides force-deflection diagrams for the bending test, showing that the hysteresis loop repeats and absorbed energy remains nearly constant.",
+    "Fig. 5 shows the true stress–true strain curve of Fe-Mn-Al-C austenite at a strain rate of 1 mm/min.",
+    "Fig. 6 shows dislocation structure after 10% and 20% cold working, indicating increased dislocation tangles."
+  ]
+}

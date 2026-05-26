@@ -1,0 +1,94 @@
+{
+  "paper_id": "A26",
+  "source_md_path": "/org/caep-xuben/yangzijiang/yzj/datasets/Al_82/Al_82_papers/mineru_data_82/A26/hybrid_auto/A26.md",
+  "cleaned_md_path": "/org/caep-xuben/yangzijiang/yzj/datasets/Al_82/Al_82_papers/output/A26/preprocess/cleaned_input.md",
+  "model": "deepseek-v4-pro",
+  "created_at": "2026-05-10T04:11:55.007415",
+  "claim_count": 89,
+  "source_type": "text_only",
+  "paper_map": {
+    "paper_id": "A26",
+    "title": "Making low alloy ultrahigh strength steel tough by high-density NiAl clusters",
+    "abstract_summary": "A low alloy ultrahigh strength steel with extremely high-density NiAl clusters (~4.88 × 10^24 m−3) was developed, achieving ~1.9 GPa tensile strength, ~15% elongation, ~80 J U-notch impact energy, and 108 MPa·m1/2 fracture toughness. The precipitation behavior of NiAl clusters and ε-carbides was systematically investigated, revealing independent precipitation and enhanced heterogeneous nucleation sites. NiAl clusters promote uniform dislocation distribution, suppress pile-ups, and delay crack initiation, while multi-scale toughening mechanisms—large dimple growth, uniform deformation, secondary cracks, and crack deflection—collectively improve impact energy by ~23%.",
+    "research_objective": "To develop a low alloy ultrahigh strength steel with dual precipitation of high-density NiAl clusters and ε-carbides, and to elucidate the nucleation mechanisms, dislocation regulation, and multi-scale toughening mechanisms that enable high toughness at ~1.9 GPa tensile strength.",
+    "material_systems": [
+      "0Al reference steel (nominal composition: Fe-0.32C-1.98Si-1.02Mn-1.00Cr-3.41Ni-0.56Mo-0.09V-0.03Al, wt%)",
+      "1.3Al steel (modified with 1.30% Al and higher Ni: Fe-0.31C-2.01Si-1.03Mn-1.00Cr-5.06Ni-0.60Mo-0.11V-1.30Al, wt%)",
+      "B2-NiAl nanoclusters (high number density ~4.88×10^24 m−3, lattice misfit <3% with α-Fe)",
+      "ε-carbides (submicron-sized, precipitate during low-temperature tempering)",
+      "martensitic matrix (lath martensite with retained austenite)"
+    ],
+    "main_process_variables": [
+      "composition: Al content 0.03 wt% vs 1.30 wt%; Ni content 3.41 wt% vs 5.06 wt%",
+      "solution treatment: 970°C for 1 h, water quench",
+      "tempering: 180°C for 2 h, water quench",
+      "tensile test: room temperature, strain rate 0.001 s−1, specimen gauge length 25 mm, diameter 5 mm",
+      "Charpy U-notch impact test (KU2): specimen 10×10×55 mm3",
+      "plane strain fracture toughness (three-point bending): specimen thickness 25 mm, width 50 mm, 3 mm fatigue pre-crack, loading rate 38 kN/min, KQ per ASTM E399"
+    ],
+    "sample_aliases": [
+      "0Al (reference steel without intentional Al addition, Al 0.03 wt%)",
+      "1.3Al (Al-added steel, Al 1.30 wt%)",
+      "0Al,WQ (0Al after solution treatment + water quench, as-quenched)",
+      "0Al,2h (0Al after solution treatment + tempering at 180°C for 2 h)",
+      "1.3Al,WQ (1.3Al as-quenched)",
+      "1.3Al,2h (1.3Al after solution treatment + tempering at 180°C for 2 h)"
+    ],
+    "expected_information_axis": [
+      "composition",
+      "heat treatment",
+      "microstructure (martensite laths, dislocation density/distribution, precipitate size/number density)",
+      "precipitation behavior (NiAl cluster nucleation, ε-carbide formation, Si interaction)",
+      "mechanical properties (tensile strength, elongation, impact energy, fracture toughness)",
+      "fracture analysis (dimple morphology, crack deflection, secondary cracks, void coalescence)",
+      "toughening mechanisms (dislocation homogenization, strain delocalization, energy dissipation)",
+      "figure_evidence"
+    ],
+    "key_sections": [
+      {
+        "section": "Introduction",
+        "purpose": "Background on low alloy ultrahigh strength steels, strength-toughness trade-off, potential of NiAl intermetallic precipitates, and rationale for dual-precipitation design with NiAl clusters and ε-carbides."
+      },
+      {
+        "section": "Experimental (2.1 Materials, treatment, and mechanical properties)",
+        "purpose": "Alloy compositions of 0Al and 1.3Al steels, vacuum melting and forging, heat treatment schedules, and mechanical test conditions (tensile, Charpy impact, fracture toughness)."
+      },
+      {
+        "section": "Experimental (2.2 Microstructural characterization and data analysis)",
+        "purpose": "Techniques for microstructural, precipitate, and dislocation characterization (not detailed in excerpt)."
+      },
+      {
+        "section": "Results (3.1 Mechanical properties)",
+        "purpose": "Presentation of strength (UTS ~1.9 GPa), elongation (~15%), U-notch impact energy (~80 J), and fracture toughness (108 MPa·m1/2) for both steels."
+      },
+      {
+        "section": "Results (3.2 Microstructures)",
+        "purpose": "Characterization of martensitic matrix, grain boundaries, and lath structure after heat treatment."
+      },
+      {
+        "section": "Results (3.3 Precipitate characterization)",
+        "purpose": "Observation of high-density NiAl clusters and submicron ε-carbides; size, number density, distribution, and elemental interactions (Si effect)."
+      },
+      {
+        "section": "Results (3.4 Fracture analysis)",
+        "purpose": "Fractography revealing ductile dimple growth, secondary cracks, and crack deflection features."
+      },
+      {
+        "section": "Discussion (4.1 Precipitation behavior)",
+        "purpose": "Nucleation mechanisms of NiAl clusters and ε-carbides; independent precipitation and role of Si in enhancing heterogeneous nucleation."
+      },
+      {
+        "section": "Discussion (4.2 Dislocation regulation by NiAl cluster)",
+        "purpose": "How NiAl clusters homogenize dislocation distribution, suppress pile-ups, increase energy barrier for crack initiation, and promote uniform plastic deformation."
+      },
+      {
+        "section": "Discussion (4.3 Toughening mechanisms)",
+        "purpose": "Multi-scale toughening mechanisms: void growth/dimples, secondary crack formation, crack deflection; schematic of crack propagation and energy dissipation."
+      },
+      {
+        "section": "Conclusions",
+        "purpose": "Summary of the developed steel’s strength-toughness synergy and the roles of dual precipitation and dislocation-precipitate interactions."
+      }
+    ]
+  }
+}

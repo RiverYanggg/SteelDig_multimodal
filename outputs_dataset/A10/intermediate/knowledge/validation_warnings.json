@@ -1,0 +1,158 @@
+[
+  {
+    "chunk_id": "chunk_0001",
+    "claim": "After introducing the modified solid solution strengthening theory, the coefficient of determination (R²) increased from 0.85 to 0.89 and the root mean square error (RMSE) decreased from 0.39 to 0.31.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "The coefficient of determination (R²) value increased from 0.85 to 0.89 and root mean square error (RMSE) decreased from 0.39 to 0.31 after introducing the modified solid solution strengthening theory."
+  },
+  {
+    "chunk_id": "chunk_0001",
+    "claim": "For Sample 1, the predicted microhardness was 521 HV and the experimental microhardness was 515 HV, with an error of 1.17%; for Sample 2, predicted 490 HV, experimental 500 HV, error 2.00%; for Sample 3, predicted 415 HV, experimental 424 HV, error 2.09%.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "Sample 1 | 521 | 515 | 1.17 Sample 2 | 490 | 500 | 2.00 Sample 3 | 415 | 424 | 2.09"
+  },
+  {
+    "chunk_id": "chunk_0001",
+    "claim": "The modified solid solution strengthening theory is expressed as Δσ_sss = Z · M · G · δ_Ec · D_Ec.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "Δσ_sss = Z · M · G · δ_Ec · D_Ec"
+  },
+  {
+    "chunk_id": "chunk_0001",
+    "claim": "The CGAN generator network uses an input layer with random noise of dimension 100, hidden layers with dense 64 and 128 units, ReLU activation, batch normalization, and L2 regularizer of 0.01, outputting 12 dimensions (11 features + 1 property); the discriminator network has input of 12 dimensions, hidden layers with 128 and 64 units, and a sigmoid output.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "Generator network Input layer Random noise 100 Hidden layer 1 Dense layer 64 Activation Relu Batch normalization Yes Regularizer L2 = 0.01 Hidden layer 2 Dense layer 128 Activation Relu Batch normalization Yes Regularizer L2 = 0.01 Output layer Feature + property 12(11 + 1) Activation Tanh Regularizer L2 = 0.01"
+  },
+  {
+    "chunk_id": "chunk_0002",
+    "claim": "The initial dataset consisted of 173 Fe-C-Cr-Mn-Si steel data points with 11 element compositions (C, Si, Mn, Cr, S, Ni, P, Fe, Mo, V, W) and microhardness values.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "173 Fe-C-Cr-Mn-Si steel data points were obtained from the widely recognized material information repository MatWeb [16]. In the dataset, 11 elements were collected, including C, Si, Mn, Cr, S, Ni, P, Fe, Mo, V and W, as well as microhardness of steel."
+  },
+  {
+    "chunk_id": "chunk_0002",
+    "claim": "Outliers were first identified by Z-score with threshold |z| > 1.50, then further refined by an isolation forest model, classifying data points lower than 0 or higher than 0.15 as outliers and removing them.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "The Z-score method was applied to screen each feature in the dataset, and the data points with |z| > 1.50 were defined as the outliers. Subsequently, the isolation forest model was used to further refine the outlier detection process ... The data points lower than 0 or higher than 0.15 were classified as the outliers, and then they were removed from the data set."
+  },
+  {
+    "chunk_id": "chunk_0002",
+    "claim": "After outlier removal, CGANs with double hidden layers augmented the dataset from 98 to 192 data points.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "CGANs were used to augment the rest of the data set. The double hidden layers were employed ... As a result, the data set was expanded from 98 data points to 192 data points."
+  },
+  {
+    "chunk_id": "chunk_0002",
+    "claim": "Final feature combination was determined by exhaustive screening, selecting the combination with the lowest score.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "Exhaustive screening was employed to optimize the feature combination. The feature combination with the lowest score was selected as the final feature combination."
+  },
+  {
+    "chunk_id": "chunk_0002",
+    "claim": "The Firefly Algorithm was configured with max_iter=500, firefly_num=100, alpha=0.01, betamin=0.2, gamma=1.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "FA max_iter = 500, firefly_num = 100, alpha = 0.01, betamin = 0.2, gamma = 1"
+  },
+  {
+    "chunk_id": "chunk_0002",
+    "claim": "Simulated annealing was configured with max_iter=500, initial_temperature=100, cooling_rate=0.95.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "SA max_iter = 500, initial_temperature = 100, cooling_rate = 0.95"
+  },
+  {
+    "chunk_id": "chunk_0002",
+    "claim": "Particle swarm optimization was configured with max_iter=500, particle_num=100, c1=0.8, c2=0.5, w=0.5.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "PSO max_iter = 500, particle_num = 100, c1 = 0.8, c2 = 0.5, w = 0.5"
+  },
+  {
+    "chunk_id": "chunk_0002",
+    "claim": "Grey wolf optimization was configured with max_iter=500, num_wolves=100, alpha=2, beta=1.5, delta=0.5, a=2.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "GWO max_iter = 500, num_wolves = 100, alpha = 2, beta = 1.5, delta = 0.5, a = 2"
+  },
+  {
+    "chunk_id": "chunk_0002",
+    "claim": "Cladding was performed with current 440–600 A, voltage 30–32 V, cladding speed 24 m/h, interlayer temperature 380–410 °C, and wire feed speed 76.8 m/h.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "Current (A) 440 ~ 600 Voltage (V) 30 ~ 32 Cladding speed (m/h) 24 Interlayer temperature (°C) 380 ~ 410 Wire feed speed (m/h) 76.8"
+  },
+  {
+    "chunk_id": "chunk_0004",
+    "claim": "After removing high-correlation pairs (PCC ≥ 0.95), the final key features for microhardness prediction were e/a, G, E, δ, and D_EC (Fig. 3c).",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "The importance scores of the nine features were employed to remove one of the features with the high correlation in the six pairs, shown in Fig. 3c. It is found that η_B, w, δ_EI-2nd and r were removed in the pairs due to the low importance scores. Finally, e/a, G, E, δ and D_EC were found to be the key features for the microhardness."
+  },
+  {
+    "chunk_id": "chunk_0004",
+    "claim": "e/a ratio affected phase stability: if e/a < 1.65, the alloy tends to form FCC phase; if e/a > 2.05, the alloy tends to form BCC phase.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "The e/a ratio affected the phase stability of alloys during the formation of FCC and BCC phases: if e/a < 1.65, the alloy tended to form the FCC phase; if e/a > 2.05, the alloy tended to form the BCC phase [35]."
+  },
+  {
+    "chunk_id": "chunk_0004",
+    "claim": "The second ionization energy E_I-2nd influences solid solution strengthening through electron cloud interaction and charge redistribution between adjacent atoms.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "The second ionization energy E_I-2nd was also an important factor influencing solid solution strengthening involving in the electron cloud interaction and charge redistribution between adjacent atoms [37]."
+  },
+  {
+    "chunk_id": "chunk_0004",
+    "claim": "Cohesive energy mismatch parameters δ and D_Ec describe bonding states and bonding strength.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "The cohesive energy mismatch parameters, δ and D_Ec, were utilized to describe the bonding states and bonding strength [38]."
+  },
+  {
+    "chunk_id": "chunk_0004",
+    "claim": "Exhaustive search analysis (Fig. 4) showed that the feature combination {δ_Ec, D_Ec, G} yielded the smallest RMSE of 0.257, identifying them as key factors for microhardness prediction.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "Fig. 4 illustrates the result of the exhaustive search analysis, revealing the cross-validation scores as a function of the number of the features. It is found that the minimum RMSE was 0.341, 0.267, 0.257, 0.271, 0.281 for the cross-validation scores with the 1, 2, 3, 4, 5 features, respectively, indicating that 3 features presented the optimal prediction accuracy. Besides, the feature combination {δ_Ec, D_Ec, G} presented the smallest RMSE value (0.257), and was identified as the key factors."
+  },
+  {
+    "chunk_id": "chunk_0005",
+    "claim": "Among nine ML models (SVR, ET, MLP, Ridge, LightGBM, XGBoost, RF, LR, DT) trained with features {G, δ_Ec, D_Ec}, SVR achieved the highest R² of 0.85 and the lowest RMSE of 0.39.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "The SVR model presented the highest R² value (0.85) and the lowest RMSE value (0.39), suggesting the SVR model had the best prediction capability."
+  },
+  {
+    "chunk_id": "chunk_0005",
+    "claim": "The solid solution strengthening equation Δσ_sss = Z·M·G·δ_Ec·D_Ec with Z=0.0056 and M=3.06 was introduced to modify the SVR model, improving R² to 0.89 and RMSE to 0.31, representing a 4.71% increase in R² and an 8.34% decrease in RMSE compared to the unmodified model.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "It is found that the R² and RMSE value was 0.89 and 0.31, respectively. The R² increased by 4.71 %, and the RMSE decreased by 8.34 %, compared to the values without the modified solid solution strengthening theory (Fig. 5a)."
+  },
+  {
+    "chunk_id": "chunk_0005",
+    "claim": "Sample 1 of the Fe-C-Cr-Mn-Si alloy contained C 0.45, Si 0.19, Mn 1.53, Cr 14, S 0.01, Ni 0, P 0.014, Fe 83.806, Mo 0, V 0, W 0 wt% with δr=0.0542 and ΔHmix=-0.914 kJ/mol.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "Sample 1 0.45 0.19 1.53 14 0.01 0 0.014 83.806 0 0 0 0.0542 -0.914"
+  },
+  {
+    "chunk_id": "chunk_0005",
+    "claim": "Sample 2 of the Fe-C-Cr-Mn-Si alloy contained C 0.53, Si 0.4, Mn 1.9, Cr 5.3, S 0.01, Ni 1.13, P 0.013, Fe 89.277, Mo 0, V 0.25, W 1.19 wt% with δr=0.0595 and ΔHmix=-1.213 kJ/mol.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "Sample 2 0.53 0.4 1.9 5.3 0.01 1.13 0.013 89.277 0 0.25 1.19 0.0595 -1.213"
+  },
+  {
+    "chunk_id": "chunk_0005",
+    "claim": "Sample 3 of the Fe-C-Cr-Mn-Si alloy contained C 0.15, Si 0.5, Mn 1.5, Cr 5.2, S 0, Ni 1.2, P 0, Fe 89.7, Mo 1.5, V 0.25, W 0 wt% with δr=0.0335 and ΔHmix=-0.451 kJ/mol.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "Sample 3 0.15 0.5 1.5 5.2 0 1.2 0 89.7 1.5 0.25 0 0.0335 -0.451"
+  },
+  {
+    "chunk_id": "chunk_0005",
+    "claim": "XRD revealed that Sample 1 had a main Fe-Cr phase with peaks (100), (200), (211), while Samples 2 and 3 exhibited a main Fe-Cr-Ni phase with the same diffraction peaks, indicating a phase transition with Ni addition.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "The main phase structure of the sample 1 was Fe-Cr phase with the diffraction peaks of 100, 200 and 211. With the Ni content increased, the main phase structure of the sample transferred to the Fe-Cr-Ni phase with the diffraction peaks of 100, 200 and 211."
+  },
+  {
+    "chunk_id": "chunk_0005",
+    "claim": "The minimum prediction error between predicted and experimental microhardness was 1.17% for Sample 1 (predicted 521 HV vs experimental 515 HV), lower than 2.01% and 2.96% reported for high entropy alloys; Sample 2 gave 2.00% error (490 vs 500 HV) and Sample 3 gave 2.09% (415 vs 424 HV).",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "It is noteworthy that the minimum error between the predicted value and experimental value was 1.17 %, lower than 2.01 % and 2.96 % for predicting the hardness of high entropy alloys reported by Ren et al. and Huang et al.."
+  },
+  {
+    "chunk_id": "chunk_0005",
+    "claim": "Solid solution phases formed when δr < 0.066 and -11.6 < ΔHmix < 3.2 kJ/mol; the three samples had δr from 0.0335 to 0.0595 and ΔHmix from -1.213 to -0.451 kJ/mol, satisfying the criteria.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "It was reported that the solid solution phases were formed when δr < 0.066 and −11.6 < ΔHmix < 3.2 kJ/mol. We can find that the δ values of the samples were in a range of 0.0335 to 0.0595, lower than 0.066, and the ΔHmix values were in a range of −1.213 to −0.451 kJ/mol, belonging to the range of −11.6 to 3.2 kJ/mol."
+  }
+]

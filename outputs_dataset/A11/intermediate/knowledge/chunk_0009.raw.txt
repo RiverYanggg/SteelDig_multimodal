@@ -1,0 +1,212 @@
+{
+  "claims": [
+    {
+      "claim_type": "characterization",
+      "subject": "CA model parameter determination",
+      "claim": "The parameters C_drx, E, A_GB, H_O, and P_GB of the 3D CA model were determined using a genetic algorithm (GA) optimization method, with the optimized values presented in Table 4.",
+      "values": [],
+      "evidence_text": "The values of C_drx, E, AGB, H_O and P_GB were solved by the GA optimization method. ... as shown in Table 4.",
+      "figures": [],
+      "tables": ["Table 4"],
+      "confidence": "medium"
+    },
+    {
+      "claim_type": "property",
+      "subject": "flow stress prediction accuracy",
+      "claim": "At 850°C and 0.01 s^-1, the 3D CA predicted flow stress well matched the experimental results, while at 1 s^-1 the experimental curve showed an upwarp in the last segment due to interfacial friction and increased work hardening, differing somewhat from the simulation.",
+      "values": ["850°C", "0.01 s^-1", "1 s^-1"],
+      "evidence_text": "The predicted flow stress using a modified 3D CA well matched the experimental results at a low strain rate. However, at a high strain rate, the interfacial friction and increased WH caused an evident upwarp in the experimental curve’s last segment (Ye et al., 2020), which differed somewhat from the simulated result.",
+      "figures": ["Fig. 11"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "DRX nucleation and stress softening",
+      "claim": "During 3D CA simulation at 850°C and 0.01 s^-1, higher distortion energy at large grain boundaries caused preferential DRX nucleation, and flow stress began to fall at 0.45 strain; the final steady state was reached at 0.9 strain due to balance between dislocation annihilation and generation.",
+      "values": ["850°C", "0.01 s^-1", "0.45 strain", "0.9 strain"],
+      "evidence_text": "In the initial stage, the higher distortion energy (Eq. (36)) caused by the strain concentration at the grain boundaries of large grains led to the preferential nucleation of DRX grains (Eq. (35)). ... so at 0.45 strain, the flow stress started to fall. ... hence progressively bringing the stress into a steady state at 0.9 strain.",
+      "figures": ["Fig. 11"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "strain rate effect on DRX",
+      "claim": "At a higher strain rate of 1 s^-1 compared to 0.01 s^-1, DRX grains experienced greater difficulty in nucleation and growth due to increasing critical dislocation density ρ_c and decreasing deformation time, causing more matrix to remain on the 3D CA model surfaces.",
+      "values": ["1 s^-1", "0.01 s^-1"],
+      "evidence_text": "the DRX grains experienced greater difficulty in nucleation and growth at 1 s^-1 due to the increasing ρ_c and decreasing deformation time. And the matrix finally remained more on the surfaces of a 3D CA model, as shown in Fig. 11.",
+      "figures": ["Fig. 11"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "microstructure",
+      "subject": "grain size and DRX fraction at 850°C, 0.01 s^-1",
+      "claim": "Under constant deformation at 850°C and 0.01 s^-1, the 3D CA simulation gave an average grain size of 34.53 μm and a DRX fraction of 0.8 at a true strain of 1.0.",
+      "values": ["850°C", "0.01 s^-1", "1.0 strain", "34.53 μm", "0.8"],
+      "evidence_text": "| True strain | Average grain size(3D CA) (μm) | DRX fraction(3D CA) (μm) | ... | 1.0 | 34.53 | 0.8 |",
+      "figures": ["Fig. 11"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "microstructure",
+      "subject": "grain size and DRX fraction at 850°C, 1 s^-1",
+      "claim": "Under constant deformation at 850°C and 1 s^-1, the 3D CA simulation gave an average grain size of 50 μm and a DRX fraction of 0.8 at a true strain of 1.0.",
+      "values": ["850°C", "1 s^-1", "1.0 strain", "50 μm", "0.8"],
+      "evidence_text": "| True strain | ... DRX fraction(3D CA) (μm) | ... | 1.0 | 50 | 0.8 |",
+      "figures": ["Fig. 11"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "microstructure",
+      "subject": "simulated 2D grain size and DRX fraction at 850°C, 0.01 s^-1",
+      "claim": "At 850°C and 0.01 s^-1, the 2D simulated (YZ surface) average grain size was 32.94 μm with a DRX fraction of 76.4%.",
+      "values": ["850°C", "0.01 s^-1", "32.94 μm", "76.4%"],
+      "evidence_text": "2D(YZ surface) 32.94µm\n76.4%\n100 µm",
+      "figures": ["Fig. 12"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "microstructure",
+      "subject": "experimental side section grain size at 850°C, 0.01 s^-1",
+      "claim": "At 850°C and 0.01 s^-1, the experimental reconstructed side section showed an average grain size of 34.01 ± 4.71 μm.",
+      "values": ["850°C", "0.01 s^-1", "34.01 μm", "4.71 μm"],
+      "evidence_text": "Side section: 34.01±4.71µm\n0.9 strain\n100 µm",
+      "figures": ["Fig. 12"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "microstructure",
+      "subject": "simulated 2D grain size and DRX fraction at 850°C, 1 s^-1",
+      "claim": "At 850°C and 1 s^-1, the 2D simulated average grain size was 59.08 μm with a DRX fraction of 38.7%.",
+      "values": ["850°C", "1 s^-1", "59.08 μm", "38.7%"],
+      "evidence_text": "2D(YZ surface): 59.08µm\n38.7%\n100 µm",
+      "figures": ["Fig. 12"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "microstructure",
+      "subject": "experimental side section grain size at 850°C, 1 s^-1",
+      "claim": "At 850°C and 1 s^-1, the experimental side section exhibited an average grain size of 61.38 ± 7.41 μm.",
+      "values": ["850°C", "1 s^-1", "61.38 μm", "7.41 μm"],
+      "evidence_text": "Side section: 61.38±7.41µm\n0.9 strain\n100 µm",
+      "figures": ["Fig. 12"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "gap between 2D section and 3D simulation",
+      "claim": "The simulated section and 3D microstructures showed differences in AGS and DRX fraction because of uneven refinement of the initial mixed-grain microstructure; decreasing strain rate to 0.01 s^-1 reduced this gap.",
+      "values": ["0.01 s^-1"],
+      "evidence_text": "The simulated section and 3D microstructures had some differences in the AGS and DRX fraction due to the uneven refinement of the mixed-grain microstructure under the above deformation conditions. When decreasing the strain rate to 0.01 s^-1, the matrix was refined more, and the gap between section and 3D simulation results became lower.",
+      "figures": ["Fig. 12"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "comparison",
+      "subject": "DRX fraction under varying strain rate at 950°C",
+      "claim": "At 950°C, when strain rate was decreased from 0.1 s^-1 to 0.01 s^-1 at ε1=0.2, the DRX fraction at ε=0.4 was 0.5, compared to 0.4 for ε1=0.4, and constant condition values of 0.8 (0.01 s^-1) and 0.6 (0.1 s^-1).",
+      "values": ["950°C", "0.1 s^-1", "0.01 s^-1", "ε1=0.2", "0.5", "ε1=0.4", "0.4", "0.8", "0.6"],
+      "evidence_text": "| True strain | DRX fraction (0.01s⁻¹(Constant)) | DRX fraction (0.1s⁻¹(Constant)) | DRX fraction (0.1s⁻¹-0.01s⁻¹(0.2 strain)) | DRX fraction (0.1s⁻¹-0.01s⁻¹(0.4 strain)) | ... | 0.4 | ~0.8 | ~0.6 | ~0.5 | ~0.4 |",
+      "figures": ["Fig. 14"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "comparison",
+      "subject": "DRX fraction under varying temperature at 0.01 s^-1",
+      "claim": "At a strain rate of 0.01 s^-1, when temperature was decreased from 1050°C to 950°C at ε1=0.2, the DRX fraction at ε=0.3 was 0.6, at ε=0.4 was 0.8; for ε1=0.4, it was 0.7 at ε=0.3 and 0.9 at ε=0.4, compared to constant 950°C (0.6 and 0.8) and 1050°C (0.8 and 0.9).",
+      "values": ["0.01 s^-1", "1050°C", "950°C", "ε1=0.2", "0.6", "0.8", "ε1=0.4", "0.7", "0.9", "0.6", "0.8", "0.8", "0.9"],
+      "evidence_text": "| True strain | DRX fraction (950°C Constant) | DRX fraction (1050°C Constant) | DRX fraction (950°C-1050°C(0.2 strain)) | DRX fraction (950°C-1050°C(0.4 strain)) | ... | 0.3 | 0.6 | 0.8 | 0.6 | 0.7 | ... | 0.4 | 0.8 | 0.9 | 0.8 | 0.9 |",
+      "figures": ["Fig. 14"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "microstructure",
+      "subject": "average grain size evolution for strain rate decrease",
+      "claim": "For a strain rate decrease from 0.1 to 0.01 s^-1 at ε1=0.2, the experimental average grain size (AGS) at ε=0.5 was 55 μm and 3D CA simulation gave 50 μm; at ε=0.9, both were 50 μm. For ε1=0.4, at ε=0.5, AGS was 50 μm (3D CA) and 55 μm (experiment), at ε=0.9 both were 50 μm.",
+      "values": ["0.1 s^-1", "0.01 s^-1", "ε1=0.2", "55 μm", "50 μm", "50 μm", "ε1=0.4", "50 μm", "55 μm"],
+      "evidence_text": "| True strain | Experiment (μm) | 3D CA (μm) | 0.1s⁻¹-0.01s⁻¹(0.2 strain) (μm) | 0.1s⁻¹-0.01s⁻¹(0.4 strain) (μm) | ... | 0.5 | 55 | 50 | 55 | 50 | ... | 0.9 | 50 | 50 | 50 | 50 |",
+      "figures": ["Fig. 16"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "microstructure",
+      "subject": "average grain size evolution for temperature decrease",
+      "claim": "For a temperature decrease from 1050 to 950°C at 0.01 s^-1 with ε1=0.2, experimental AGS at ε=0.5 was 75 μm, 3D CA gave 78 μm; at ε=0.9, 60 μm and 62 μm. For ε1=0.4, similar values were observed.",
+      "values": ["1050°C", "950°C", "0.01 s^-1", "ε1=0.2", "75 μm", "78 μm", "60 μm", "62 μm"],
+      "evidence_text": "| True strain | Experiment (μm) | 3D CA (μm) | 1050°C-950°C(0.2 strain) (μm) | 1050°C-950°C(0.4 strain) (μm) | ... | 0.5 | 75 | 78 | 75 | 78 | ... | 0.9 | 60 | 62 | 60 | 62 |",
+      "figures": ["Fig. 16"],
+      "tables": [],
+      "confidence": "high"
+    }
+  ],
+  "context_update": {
+    "summary": "This chunk presents 3D CA simulation results under constant and varying deformation conditions. It reports model parameter determination via GA optimization, flow stress predictions at 850°C for 0.01 and 1 s^-1, dislocation density evolution leading to DRX, and comparisons of DRX fraction and average grain size (AGS) between simulation and experiment for constant conditions, including quantitative values from Fig.12 and Fig.11 tables. It also covers transient strain rate and temperature change effects on flow stress (Fig.13), DRX fraction (Fig.14, 15), and AGS (Fig.16), highlighting the model's capability to capture multi-stage DRX kinetics and microstructure refinement. Subsequent chunk may discuss mechanisms or model validation for varying ZP.",
+    "material_systems": ["low-alloy steel"],
+    "sample_aliases": [],
+    "processing_route": [
+      "hot compression at 850°C, 0.01 s^-1",
+      "hot compression at 850°C, 1 s^-1",
+      "varying strain rate 0.01↔0.1 s^-1 at 950°C",
+      "varying temperature 950↔1050°C at 0.01 s^-1",
+      "ε1=0.2 or 0.4"
+    ],
+    "key_variables": [
+      "strain rate",
+      "temperature",
+      "true strain",
+      "average grain size",
+      "DRX fraction",
+      "dislocation density",
+      "critical dislocation density ρ_c",
+      "flow stress",
+      "Zener-Hollomon parameter ZP"
+    ],
+    "microstructure": [
+      "initial mixed-grain microstructure",
+      "DRX grains",
+      "matrix",
+      "elongated matrix",
+      "inhomogeneous dislocation density",
+      "uneven microstructure on XY and side surfaces"
+    ],
+    "properties": [
+      "flow stress evolution",
+      "steady-state stress at ε=0.9",
+      "DRX fraction",
+      "average grain size"
+    ],
+    "mechanisms": [
+      "strain concentration at large grain boundaries promotes DRX nucleation",
+      "lower dislocation density in DRX grains leads to stress softening",
+      "high strain rate reduces DRX nucleation and growth due to increased ρ_c and reduced time",
+      "uneven refinement of mixed-grain microstructure causes differences between 2D section and 3D microstructure"
+    ],
+    "figures_or_tables": [
+      "Fig. 11",
+      "Fig. 12",
+      "Fig. 13",
+      "Fig. 14",
+      "Fig. 15",
+      "Fig. 16",
+      "Table 4",
+      "Appendix B1",
+      "Fig. C1"
+    ],
+    "unresolved_terms": [
+      "specific values of C_drx, E, AGB, H_O, P_GB in Table 4",
+      "GA objective function formulation"
+    ]
+  }
+}

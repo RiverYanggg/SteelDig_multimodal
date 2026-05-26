@@ -1,5 +1,6 @@
 import unittest
 
+from paper_extractor.client import normalize_openai_base_url
 from paper_extractor.preprocess.image_groups import parse_markdown_text
 from paper_extractor.preprocess.markdown_cleaner import clean_markdown_with_content_list
 
@@ -60,6 +61,12 @@ Paper Title
         self.assertEqual(removed_categories, {"header": 1})
         self.assertEqual(removed_blocks, 1)
         self.assertEqual([ref["text"] for ref in references], ["1. First reference.", "2. Second reference."])
+
+    def test_openai_compatible_base_url_normalization_is_provider_aware(self) -> None:
+        self.assertEqual(normalize_openai_base_url("https://api.moonshot.cn"), "https://api.moonshot.cn/v1")
+        self.assertEqual(normalize_openai_base_url("https://api.moonshot.cn/v1"), "https://api.moonshot.cn/v1")
+        self.assertEqual(normalize_openai_base_url("https://api.deepseek.com"), "https://api.deepseek.com")
+        self.assertEqual(normalize_openai_base_url("http://127.0.0.1:8000/v1"), "http://127.0.0.1:8000/v1")
 
 
 if __name__ == "__main__":

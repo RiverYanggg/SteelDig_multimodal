@@ -1,0 +1,84 @@
+{
+  "claims": [
+    {
+      "claim_type": "mechanism",
+      "subject": "TiN inclusion precipitation in Fe-15Mn-xAl-C low-density steel",
+      "claim": "In Fe-15Mn-1Al-C (1#), TiN inclusions precipitate at a solidification fraction z_s of 0.89; in Fe-15Mn-3Al-C (2#) at z_s=0.93; and in Fe-15Mn-5Al-C (3#) at z_s=0.94, indicating that increasing Al content delays TiN precipitation.",
+      "values": ["0.89", "0.93", "0.94", "Al content: 1%, 3%, 5%"],
+      "evidence_text": "From Figure 9, the solidification fractions of TiN inclusions precipitated in 1 # to 3 # samples are 0.89, 0.93, and 0.94, respectively. Obviously, the increasing content of Al leads to a delay in the solidification fraction of TiN inclusions precipitation.",
+      "figures": ["Figure 9"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "MnS inclusion precipitation in Fe-15Mn-xAl-C low-density steel",
+      "claim": "In Fe-15Mn-1Al-C (1#), MnS inclusions precipitate at a solidification fraction z_s of 0.77; in Fe-15Mn-3Al-C (2#) at z_s=0.81; and in Fe-15Mn-5Al-C (3#) at z_s=0.85, demonstrating a delay in MnS precipitation with increasing Al content.",
+      "values": ["0.77", "0.81", "0.85", "Al content: 1%, 3%, 5%"],
+      "evidence_text": "In Figure 10, the solidification fractions of MnS inclusions precipitated in samples 1 # to 3 # are 0.77, 0.81, and 0.85, respectively. It can be seen that the increasing content of Al leads to a delay in the solidification fraction of MnS inclusions precipitation.",
+      "figures": ["Figure 10"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "Heterogeneous nucleation of MnS on oxide/nitride inclusions based on 2D lattice mismatch",
+      "claim": "According to 2D mismatch calculations, the lattice mismatch values are 7.0% for Al2O3/MnS, 8.5% for AlN/MnS, 11.5% for TiN/MnS, and 11.5% for Al2O3/AlN, indicating that both Al2O3 and AlN can act as effective heterogeneous nucleation sites for MnS.",
+      "values": ["7.0%", "8.5%", "11.5%", "11.5%"],
+      "evidence_text": "Figure 11. Calculation results of mismatch degree of composite inclusions.",
+      "figures": ["Figure 11"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "characterization",
+      "subject": "Lattice parameters of inclusion phases",
+      "claim": "The lattice parameters of the main inclusion phases are: AlN (a = b = 3.110 Å, c = 4.980 Å), MnS (a = b = c = 5.224 Å), Al2O3 (a = b = 4.759 Å, c = 12.991 Å), and TiN (a = b = c = 4.242 Å), as listed in Table 6.",
+      "values": ["AlN: a=3.110 Å, c=4.980 Å", "MnS: a=5.224 Å", "Al2O3: a=4.759 Å, c=12.991 Å", "TiN: a=4.242 Å"],
+      "evidence_text": "Table 6. Lattice parameters of different inclusion.",
+      "figures": [],
+      "tables": ["Table 6"],
+      "confidence": "high"
+    }
+  ],
+  "context_update": {
+    "summary": "This chunk presents thermodynamic analysis of TiN and MnS inclusion precipitation during solidification of Fe-15Mn-xAl-C low-density steels with Al contents of 1, 3, 5 wt% (samples 1#, 2#, 3#). Using Clyne-Kurz microsegregation model, the solidification fractions at which TiN and MnS start precipitating are calculated: TiN at z_s = 0.89 (1#), 0.93 (2#), 0.94 (3#); MnS at z_s = 0.77 (1#), 0.81 (2#), 0.85 (3#). Both precipitate later as Al content increases; TiN shows a sharp delay from 1% to 3% Al, while MnS increases monotonically. Reaction free energies and solubility product equations are provided. Lattice parameters for AlN, MnS, Al2O3, and TiN are tabulated (Table 6). 2D lattice mismatch calculations (Figure 11, Table 7) show Al2O3/MnS misfit of 7.0% and AlN/MnS 8.5%, indicating these phases can serve as heterogeneous nucleation substrates for MnS. Subsequent sections will use these precipitation sequences and mismatch data to explain composite inclusion formation observed earlier.",
+    "material_systems": [
+      "Fe-15Mn-xAl-C low-density steel (x = 1, 3, 5 wt% Al)",
+      "Inclusion phases: AlN, MnS, TiN, Al2O3"
+    ],
+    "sample_aliases": [
+      "1#",
+      "2#",
+      "3#"
+    ],
+    "processing_route": [
+      "Laboratory smelting at 1873 K with varying Al additions; Clyne-Kurz segregation model applied"
+    ],
+    "key_variables": [
+      "Al content (1, 3, 5 wt%)",
+      "solidification fraction z_s for TiN (0.89, 0.93, 0.94)",
+      "solidification fraction z_s for MnS (0.77, 0.81, 0.85)",
+      "2D lattice mismatch values"
+    ],
+    "microstructure": [
+      "TiN precipitates",
+      "MnS precipitates",
+      "inclusion precipitate delay with Al"
+    ],
+    "properties": [],
+    "mechanisms": [
+      "TiN precipitation delayed by increased Al: z_s from 0.89 to 0.94",
+      "MnS precipitation delayed by Al: z_s from 0.77 to 0.85",
+      "Heterogeneous nucleation of MnS on Al2O3 (mismatch 7.0%) and AlN (8.5%)"
+    ],
+    "figures_or_tables": [
+      "Figure 9",
+      "Figure 10",
+      "Table 6",
+      "Figure 11",
+      "Table 7"
+    ],
+    "unresolved_terms": []
+  }
+}

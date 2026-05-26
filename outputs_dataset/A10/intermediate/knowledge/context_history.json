@@ -1,0 +1,242 @@
+[
+  {
+    "chunk_id": "chunk_0001",
+    "section": "Extreme high accuracy prediction and design of Fe-C-Cr-Mn-Si steel using machine learning",
+    "previous_context_summary": "",
+    "context_update": {
+      "summary": "This chunk covers the paper title, abstract, introduction, methodology flowchart (Fig. 1), and Table 1 (CGAN parameters). The study proposes a data-driven model combining ML, FA, and CGANs to predict the solid solution strengthening theory of Fe-C-Cr-Mn-Si steel. SVR performed best. After introducing a modified solid solution strengthening theory, the R² improved from 0.85 to 0.89, and RMSE decreased from 0.39 to 0.31. Three alloys (Sample 1, 2, 3) were fabricated by cladding for experimental validation; their predicted versus experimental microhardness values (521/515 HV error 1.17%, 490/500 HV error 2.00%, 415/424 HV error 2.09%) are shown in Fig. 1. The modified theory formula Δσ_sss = Z·M·G·δ_Ec·D_Ec appears in Fig. 1. Table 1 details the CGAN architecture (generator: noise dim 100, hidden layers 64→128, output 12; discriminator: input 12, hidden 128→64, sigmoid output; L2=0.01, ReLU, batch norm). The introduction discusses ML applications in steel and solid solution strengthening background. Subsequent chunks should remember sample aliases, cladding route, microhardness data, the modified SSS formula, and the ML-CGAN framework.",
+      "material_systems": [
+        "Fe-C-Cr-Mn-Si alloy steel"
+      ],
+      "sample_aliases": [
+        "Sample 1",
+        "Sample 2",
+        "Sample 3"
+      ],
+      "processing_route": [
+        "cladding for sample preparation",
+        "CGAN synthetic data generation",
+        "ML model training with SVR",
+        "inverse design using FA",
+        "data collection and pre-processing"
+      ],
+      "key_variables": [
+        "microhardness",
+        "R²",
+        "RMSE",
+        "composition (Fe, C, Cr, Mn, Si, Ni, Mo, V, W)",
+        "Δσ_sss",
+        "Z",
+        "M",
+        "G",
+        "δ_Ec",
+        "D_Ec"
+      ],
+      "microstructure": [],
+      "properties": [
+        "microhardness: Sample 1 predicted 521 HV vs. experimental 515 HV (1.17% error); Sample 2 490 vs. 500 HV (2.00%); Sample 3 415 vs. 424 HV (2.09%)"
+      ],
+      "mechanisms": [
+        "modified solid solution strengthening: Δσ_sss = Z·M·G·δ_Ec·D_Ec"
+      ],
+      "figures_or_tables": [
+        "Fig. 1 (flowchart, element importance, predicted vs. experimental microhardness)",
+        "Table 1 (CGAN parameters)"
+      ],
+      "unresolved_terms": []
+    },
+    "rolling_context_summary": "Summary: This chunk covers the paper title, abstract, introduction, methodology flowchart (Fig. 1), and Table 1 (CGAN parameters). The study proposes a data-driven model combining ML, FA, and CGANs to predict the solid solution strengthening theory of Fe-C-Cr-Mn-Si steel. SVR performed best. After introducing a modified solid solution strengthening theory, the R² improved from 0.85 to 0.89, and RMSE decreased from 0.39 to 0.31. Three alloys (Sample 1, 2, 3) were fabricated by cladding for experimental validation; their predicted versus experimental microhardness values (521/515 HV error 1.17%, 490/500 HV error 2.00%, 415/424 HV error 2.09%) are shown in Fig. 1. The modified theory formula Δσ_sss = Z·M·G·δ_Ec·D_Ec appears in Fig. 1. Table 1 details the CGAN architecture (generator: noise dim 100, hidden layers 64→128, output 12; discriminator: input 12, hidden 128→64, sigmoid output; L2=0.01, ReLU, batch norm). The introduction discusses ML applications in steel and solid solution strengthening background. Subsequent chunks should remember sample aliases, cladding route, microhardness data, the modified SSS formula, and the ML-CGAN framework.\nMaterial systems: Fe-C-Cr-Mn-Si alloy steel\nSample aliases: Sample 1; Sample 2; Sample 3\nProcessing route: cladding for sample preparation; CGAN synthetic data generation; ML model training with SVR; inverse design using FA; data collection and pre-processing\nKey variables: microhardness; R²; RMSE; composition (Fe, C, Cr, Mn, Si, Ni, Mo, V, W); Δσ_sss; Z; M; G\nProperties: microhardness: Sample 1 predicted 521 HV vs. experimental 515 HV (1.17% error); Sample 2 490 vs. 500 HV (2.00%); Sample 3 415 vs. 424 HV (2.09%)\nMechanisms: modified solid solution strengthening: Δσ_sss = Z·M·G·δ_Ec·D_Ec\nFigures or tables: Fig. 1 (flowchart, element importance, predicted vs. experimental microhardness); Table 1 (CGAN parameters)"
+  },
+  {
+    "chunk_id": "chunk_0002",
+    "section": "1. Introduction",
+    "previous_context_summary": "Summary: This chunk covers the paper title, abstract, introduction, methodology flowchart (Fig. 1), and Table 1 (CGAN parameters). The study proposes a data-driven model combining ML, FA, and CGANs to predict the solid solution strengthening theory of Fe-C-Cr-Mn-Si steel. SVR performed best. After introducing a modified solid solution strengthening theory, the R² improved from 0.85 to 0.89, and RMSE decreased from 0.39 to 0.31. Three alloys (Sample 1, 2, 3) were fabricated by cladding for experimental validation; their predicted versus experimental microhardness values (521/515 HV error 1.17%, 490/500 HV error 2.00%, 415/424 HV error 2.09%) are shown in Fig. 1. The modified theory formula Δσ_sss = Z·M·G·δ_Ec·D_Ec appears in Fig. 1. Table 1 details the CGAN architecture (generator: noise dim 100, hidden layers 64→128, output 12; discriminator: input 12, hidden 128→64, sigmoid output; L2=0.01, ReLU, batch norm). The introduction discusses ML applications in steel and solid solution strengthening background. Subsequent chunks should remember sample aliases, cladding route, microhardness data, the modified SSS formula, and the ML-CGAN framework.\nMaterial systems: Fe-C-Cr-Mn-Si alloy steel\nSample aliases: Sample 1; Sample 2; Sample 3\nProcessing route: cladding for sample preparation; CGAN synthetic data generation; ML model training with SVR; inverse design using FA; data collection and pre-processing\nKey variables: microhardness; R²; RMSE; composition (Fe, C, Cr, Mn, Si, Ni, Mo, V, W); Δσ_sss; Z; M; G\nProperties: microhardness: Sample 1 predicted 521 HV vs. experimental 515 HV (1.17% error); Sample 2 490 vs. 500 HV (2.00%); Sample 3 415 vs. 424 HV (2.09%)\nMechanisms: modified solid solution strengthening: Δσ_sss = Z·M·G·δ_Ec·D_Ec\nFigures or tables: Fig. 1 (flowchart, element importance, predicted vs. experimental microhardness); Table 1 (CGAN parameters)",
+    "context_update": {
+      "summary": "This chunk details the data preparation and feature engineering pipeline for the ML model. Starting from 173 Fe-C-Cr-Mn-Si steel data points (11 elements + microhardness), outliers are removed via Z-score (|z|>1.50) and isolation forest (<0 or >0.15), yielding 98 clean points. CGANs augment the data to 192 points. Then 41 features are standardized. Feature selection involves RFE with RF, LightGBM, XGBoost voting; Pearson correlation (threshold ≥0.95) to identify high-correlation pairs; and redundant feature elimination by retaining the feature with higher average importance from ET, DT, RF, XGBoost. Exhaustive screening finalizes the feature combination. Optimization algorithm parameters are provided: FA (500 iter, 100 fireflies, α=0.01, βmin=0.2, γ=1), SA (500 iter, T0=100, cooling 0.95), PSO (500 iter, 100 particles, c1=0.8, c2=0.5, w=0.5), GWO (500 iter, 100 wolves, α=2, β=1.5, δ=0.5, a=2). Cladding parameters are set (current 440-600 A, voltage 30-32 V, speed 24 m/h, interlayer 380-410 °C, wire feed 76.8 m/h). Later chunks will use these data, features, and parameters for model training and inverse design.",
+      "material_systems": [
+        "Fe-C-Cr-Mn-Si alloy steel"
+      ],
+      "sample_aliases": [],
+      "processing_route": [
+        "Data from MatWeb",
+        "Z-score and isolation forest outlier removal",
+        "CGAN augmentation (98→192 points)",
+        "Feature standardization (41 features)",
+        "RFE + voting feature selection",
+        "PCC correlation filtering (≥0.95)",
+        "Redundancy elimination by importance scores",
+        "Exhaustive screening for final feature set",
+        "Cladding: current 440-600 A, voltage 30-32 V, speed 24 m/h, interlayer 380-410 °C, wire feed 76.8 m/h"
+      ],
+      "key_variables": [
+        "initial data points: 173",
+        "post-cleaning data points: 98",
+        "augmented data points: 192",
+        "Z-score outlier threshold: |z|>1.50",
+        "isolation forest thresholds: <0 or >0.15",
+        "number of features: 41",
+        "PCC high correlation threshold: ≥0.95",
+        "FA max_iter=500, firefly_num=100",
+        "SA max_iter=500, T0=100, cooling=0.95",
+        "PSO max_iter=500, particles=100",
+        "GWO max_iter=500, wolves=100",
+        "cladding parameters as in Table 4"
+      ],
+      "microstructure": [],
+      "properties": [],
+      "mechanisms": [],
+      "figures_or_tables": [
+        "Table 2",
+        "Table 3",
+        "Table 4"
+      ],
+      "unresolved_terms": []
+    },
+    "rolling_context_summary": "Summary: The introduction discusses ML applications in steel and solid solution strengthening background. Subsequent chunks should remember sample aliases, cladding route, microhardness data, the modified SSS formula, and the ML-CGAN framework. This chunk details the data preparation and feature engineering pipeline for the ML model. Starting from 173 Fe-C-Cr-Mn-Si steel data points (11 elements + microhardness), outliers are removed via Z-score (|z|>1.50) and isolation forest (<0 or >0.15), yielding 98 clean points. CGANs augment the data to 192 points. Then 41 features are standardized. Feature selection involves RFE with RF, LightGBM, XGBoost voting; Pearson correlation (threshold ≥0.95) to identify high-correlation pairs; and redundant feature elimination by retaining the feature with higher average importance from ET, DT, RF, XGBoost. Exhaustive screening finalizes the feature combination. Optimization algorithm parameters are provided: FA (500 iter, 100 fireflies, α=0.01, βmin=0.2, γ=1), SA (500 iter, T0=100, cooling 0.95), PSO (500 iter, 100 particles, c1=0.8, c2=0.5, w=0.5), GWO (500 iter, 100 wolves, α=2, β=1.5, δ=0.5, a=2). Cladding parameters are set (current 440-600 A, voltage 30-32 V, speed 24 m/h, interlayer 380-410 °C, wire feed 76.8 m/h). Later chunks will use these data, features, and parameters for model training and inverse design.\nMaterial systems: Fe-C-Cr-Mn-Si alloy steel\nSample aliases: Sample 1; Sample 2; Sample 3\nProcessing route: cladding for sample preparation; CGAN synthetic data generation; ML model training with SVR; inverse design using FA; data collection and pre-processing; Data from MatWeb; Z-score and isolation forest outlier removal; CGAN augmentation (98→192 points)\nKey variables: microhardness; R²; RMSE; composition (Fe, C, Cr, Mn, Si, Ni, Mo, V, W); Δσ_sss; Z; M; G\nProperties: microhardness: Sample 1 predicted 521 HV vs. experimental 515 HV (1.17% error); Sample 2 490 vs. 500 HV (2.00%); Sample 3 415 vs. 424 HV (2.09%)\nMechanisms: modified solid solution strengthening: Δσ_sss = Z·M·G·δ_Ec·D_Ec\nFigures or tables: Fig. 1 (flowchart, element importance, predicted vs. experimental microhardness); Table 1 (CGAN parameters); Table 2; Table 3; Table 4"
+  },
+  {
+    "chunk_id": "chunk_0003",
+    "section": "2.1.2. Feature engineering",
+    "previous_context_summary": "Summary: The introduction discusses ML applications in steel and solid solution strengthening background. Subsequent chunks should remember sample aliases, cladding route, microhardness data, the modified SSS formula, and the ML-CGAN framework. This chunk details the data preparation and feature engineering pipeline for the ML model. Starting from 173 Fe-C-Cr-Mn-Si steel data points (11 elements + microhardness), outliers are removed via Z-score (|z|>1.50) and isolation forest (<0 or >0.15), yielding 98 clean points. CGANs augment the data to 192 points. Then 41 features are standardized. Feature selection involves RFE with RF, LightGBM, XGBoost voting; Pearson correlation (threshold ≥0.95) to identify high-correlation pairs; and redundant feature elimination by retaining the feature with higher average importance from ET, DT, RF, XGBoost. Exhaustive screening finalizes the feature combination. Optimization algorithm parameters are provided: FA (500 iter, 100 fireflies, α=0.01, βmin=0.2, γ=1), SA (500 iter, T0=100, cooling 0.95), PSO (500 iter, 100 particles, c1=0.8, c2=0.5, w=0.5), GWO (500 iter, 100 wolves, α=2, β=1.5, δ=0.5, a=2). Cladding parameters are set (current 440-600 A, voltage 30-32 V, speed 24 m/h, interlayer 380-410 °C, wire feed 76.8 m/h). Later chunks will use these data, features, and parameters for model training and inverse design.\nMaterial systems: Fe-C-Cr-Mn-Si alloy steel\nSample aliases: Sample 1; Sample 2; Sample 3\nProcessing route: cladding for sample preparation; CGAN synthetic data generation; ML model training with SVR; inverse design using FA; data collection and pre-processing; Data from MatWeb; Z-score and isolation forest outlier removal; CGAN augmentation (98→192 points)\nKey variables: microhardness; R²; RMSE; composition (Fe, C, Cr, Mn, Si, Ni, Mo, V, W); Δσ_sss; Z; M; G\nProperties: microhardness: Sample 1 predicted 521 HV vs. experimental 515 HV (1.17% error); Sample 2 490 vs. 500 HV (2.00%); Sample 3 415 vs. 424 HV (2.09%)\nMechanisms: modified solid solution strengthening: Δσ_sss = Z·M·G·δ_Ec·D_Ec\nFigures or tables: Fig. 1 (flowchart, element importance, predicted vs. experimental microhardness); Table 1 (CGAN parameters); Table 2; Table 3; Table 4",
+    "context_update": {
+      "summary": "Section 2.1.3 describes algorithm selection and optimization for microhardness prediction. Ten ML models (SVR, ET, XGBoost, Ridge, LightGBM, MLP, RF, LR, DT, KNN) were trained, with R² and RMSE as evaluation metrics. Bayesian optimization was used to minimize RMSE for hyperparameter tuning. The original solid solution strengthening theory was modified using selected features. A validation set of 117 MatWeb data points was used with ten-fold cross-validation. Section 2.2 outlines inverse design: composition ranges were defined for C (0.02–2 wt%), Si (0.1–1 wt%), Mn (0.15–2 wt%), Cr (0.5–25 wt%), S (0–0.035 wt%), Ni (0–2 wt%), P (0–0.045 wt%), Mo (0–3 wt%), V (0–0.5 wt%), W (0–2 wt%). FA, SA, PSO, and GWO algorithms were employed with parameters in Table 3. Section 2.3 details coating preparation: arc cladding on ASTM A36 substrates (300 mm × 120 mm × 40 mm) using optimized wire composition; cladding parameters in Table 4. Characterization: XRD with Cu Kα at 40 kV/40 mA; Vickers microhardness with 1 kg load, 20 s holding time. Figures 2–4 provide correlation, feature selection, and exhaustive screening results. Future chunks need to remember the inverse-designed composition ranges, the ten ML models, the validation approach, substrate material, characterization conditions, and the modified solid solution strengthening theory.",
+      "material_systems": [
+        "Fe-C-Cr-Mn-Si steel"
+      ],
+      "sample_aliases": [],
+      "processing_route": [
+        "arc cladding",
+        "inverse design using FA, SA, PSO, GWO",
+        "ten ML model training",
+        "Bayesian optimization",
+        "ten-fold cross-validation",
+        "MatWeb validation"
+      ],
+      "key_variables": [
+        "composition ranges: C: 0.02-2 wt%, Si: 0.1-1 wt%, Mn: 0.15-2 wt%, Cr: 0.5-25 wt%, S: 0-0.035 wt%, Ni: 0-2 wt%, P: 0-0.045 wt%, Mo: 0-3 wt%, V: 0-0.5 wt%, W: 0-2 wt%",
+        "R²",
+        "RMSE",
+        "XRD conditions: Cu Kα, 40 kV, 40 mA",
+        "Vickers hardness: 1 kg, 20 s"
+      ],
+      "microstructure": [],
+      "properties": [],
+      "mechanisms": [
+        "modified solid solution strengthening theory using selected features"
+      ],
+      "figures_or_tables": [
+        "Fig. 2",
+        "Fig. 3",
+        "Fig. 4",
+        "Table 3",
+        "Table 4"
+      ],
+      "unresolved_terms": []
+    },
+    "rolling_context_summary": "Summary: Section 2.1.3 describes algorithm selection and optimization for microhardness prediction. Ten ML models (SVR, ET, XGBoost, Ridge, LightGBM, MLP, RF, LR, DT, KNN) were trained, with R² and RMSE as evaluation metrics. Bayesian optimization was used to minimize RMSE for hyperparameter tuning. The original solid solution strengthening theory was modified using selected features. A validation set of 117 MatWeb data points was used with ten-fold cross-validation. Section 2.2 outlines inverse design: composition ranges were defined for C (0.02–2 wt%), Si (0.1–1 wt%), Mn (0.15–2 wt%), Cr (0.5–25 wt%), S (0–0.035 wt%), Ni (0–2 wt%), P (0–0.045 wt%), Mo (0–3 wt%), V (0–0.5 wt%), W (0–2 wt%). FA, SA, PSO, and GWO algorithms were employed with parameters in Table 3. Section 2.3 details coating preparation: arc cladding on ASTM A36 substrates (300 mm × 120 mm × 40 mm) using optimized wire composition; cladding parameters in Table 4. Characterization: XRD with Cu Kα at 40 kV/40 mA; Vickers microhardness with 1 kg load, 20 s holding time. Figures 2–4 provide correlation, feature selection, and exhaustive screening results. Future chunks need to remember the inverse-designed composition ranges, the ten ML models, the validation approach, substrate material, characterization conditions, and the modified solid solution strengthening theory.\nMaterial systems: Fe-C-Cr-Mn-Si alloy steel; Fe-C-Cr-Mn-Si steel\nSample aliases: Sample 1; Sample 2; Sample 3\nProcessing route: cladding for sample preparation; CGAN synthetic data generation; ML model training with SVR; inverse design using FA; data collection and pre-processing; Data from MatWeb; Z-score and isolation forest outlier removal; CGAN augmentation (98→192 points)\nKey variables: microhardness; R²; RMSE; composition (Fe, C, Cr, Mn, Si, Ni, Mo, V, W); Δσ_sss; Z; M; G\nProperties: microhardness: Sample 1 predicted 521 HV vs. experimental 515 HV (1.17% error); Sample 2 490 vs. 500 HV (2.00%); Sample 3 415 vs. 424 HV (2.09%)\nMechanisms: modified solid solution strengthening: Δσ_sss = Z·M·G·δ_Ec·D_Ec; modified solid solution strengthening theory using selected features\nFigures or tables: Fig. 1 (flowchart, element importance, predicted vs. experimental microhardness); Table 1 (CGAN parameters); Table 2; Table 3; Table 4; Fig. 2; Fig. 3; Fig. 4"
+  },
+  {
+    "chunk_id": "chunk_0004",
+    "section": "2.3. Coating preparation and characterization",
+    "previous_context_summary": "Summary: Section 2.1.3 describes algorithm selection and optimization for microhardness prediction. Ten ML models (SVR, ET, XGBoost, Ridge, LightGBM, MLP, RF, LR, DT, KNN) were trained, with R² and RMSE as evaluation metrics. Bayesian optimization was used to minimize RMSE for hyperparameter tuning. The original solid solution strengthening theory was modified using selected features. A validation set of 117 MatWeb data points was used with ten-fold cross-validation. Section 2.2 outlines inverse design: composition ranges were defined for C (0.02–2 wt%), Si (0.1–1 wt%), Mn (0.15–2 wt%), Cr (0.5–25 wt%), S (0–0.035 wt%), Ni (0–2 wt%), P (0–0.045 wt%), Mo (0–3 wt%), V (0–0.5 wt%), W (0–2 wt%). FA, SA, PSO, and GWO algorithms were employed with parameters in Table 3. Section 2.3 details coating preparation: arc cladding on ASTM A36 substrates (300 mm × 120 mm × 40 mm) using optimized wire composition; cladding parameters in Table 4. Characterization: XRD with Cu Kα at 40 kV/40 mA; Vickers microhardness with 1 kg load, 20 s holding time. Figures 2–4 provide correlation, feature selection, and exhaustive screening results. Future chunks need to remember the inverse-designed composition ranges, the ten ML models, the validation approach, substrate material, characterization conditions, and the modified solid solution strengthening theory.\nMaterial systems: Fe-C-Cr-Mn-Si alloy steel; Fe-C-Cr-Mn-Si steel\nSample aliases: Sample 1; Sample 2; Sample 3\nProcessing route: cladding for sample preparation; CGAN synthetic data generation; ML model training with SVR; inverse design using FA; data collection and pre-processing; Data from MatWeb; Z-score and isolation forest outlier removal; CGAN augmentation (98→192 points)\nKey variables: microhardness; R²; RMSE; composition (Fe, C, Cr, Mn, Si, Ni, Mo, V, W); Δσ_sss; Z; M; G\nProperties: microhardness: Sample 1 predicted 521 HV vs. experimental 515 HV (1.17% error); Sample 2 490 vs. 500 HV (2.00%); Sample 3 415 vs. 424 HV (2.09%)\nMechanisms: modified solid solution strengthening: Δσ_sss = Z·M·G·δ_Ec·D_Ec; modified solid solution strengthening theory using selected features\nFigures or tables: Fig. 1 (flowchart, element importance, predicted vs. experimental microhardness); Table 1 (CGAN parameters); Table 2; Table 3; Table 4; Fig. 2; Fig. 3; Fig. 4",
+    "context_update": {
+      "summary": "This chunk describes characterization methods for the coatings (XRD with Cu Kα at 40 kV/40 mA; Vickers microhardness with 1 kg load, 20 s holding time) and presents early ML modeling results. Element screening reveals positive correlation of Cr, Ni, Mo with microhardness (Fig. 2). RFE with RF, LightGBM, XGBoost identifies nine significant features (Fig. 3a); after removing highly correlated pairs, e/a, G, E, δ, D_EC remain key (Fig. 3c). Exhaustive search yields optimal 3-feature combination {δ_Ec, D_Ec, G} with minimum RMSE 0.257 (Fig. 4). Mechanistic insights cover e/a ratio thresholds for FCC/BCC phase stability, shear modulus role in resisting plastic deformation, second ionization energy effects on solid solution strengthening, and cohesive energy mismatch parameters describing bonding. Table 5 provides SVR hyperparameters. Subsequent chunks will involve further model optimization and experimental validation; remember the final key features and the exhaustive search outcome.",
+      "material_systems": [
+        "Fe-C-Cr-Mn-Si coatings"
+      ],
+      "sample_aliases": [],
+      "processing_route": [
+        "X-ray diffraction with Cu Kα at 40 kV/40 mA",
+        "Vickers microhardness at 1 kg load, 20 s holding time"
+      ],
+      "key_variables": [
+        "microhardness",
+        "elemental correlation (Cr, Ni, Mo)",
+        "features (EI-2nd, ηB, w, δEI-2nd, DEc, δEc, r, G, e/a)",
+        "final key features (e/a, G, E, δ, D_EC)",
+        "cross-validation RMSE"
+      ],
+      "microstructure": [],
+      "properties": [],
+      "mechanisms": [
+        "Cr, Ni, Mo form solid solution alloys and carbides; Ni reduces grain size",
+        "e/a < 1.65 favors FCC, e/a > 2.05 favors BCC",
+        "shear modulus G increases solute atom–dislocation interaction energy",
+        "second ionization energy E_I-2nd involves electron cloud interaction",
+        "cohesive energy mismatch δ and D_Ec describe bonding states"
+      ],
+      "figures_or_tables": [
+        "Fig. 2",
+        "Fig. 3a",
+        "Fig. 3b",
+        "Fig. 3c",
+        "Fig. 4",
+        "Fig. 5",
+        "Table 5"
+      ],
+      "unresolved_terms": []
+    },
+    "rolling_context_summary": "Summary: Figures 2–4 provide correlation, feature selection, and exhaustive screening results. Future chunks need to remember the inverse-designed composition ranges, the ten ML models, the validation approach, substrate material, characterization conditions, and the modified solid solution strengthening theory. This chunk describes characterization methods for the coatings (XRD with Cu Kα at 40 kV/40 mA; Vickers microhardness with 1 kg load, 20 s holding time) and presents early ML modeling results. Element screening reveals positive correlation of Cr, Ni, Mo with microhardness (Fig. 2). RFE with RF, LightGBM, XGBoost identifies nine significant features (Fig. 3a); after removing highly correlated pairs, e/a, G, E, δ, D_EC remain key (Fig. 3c). Exhaustive search yields optimal 3-feature combination {δ_Ec, D_Ec, G} with minimum RMSE 0.257 (Fig. 4). Mechanistic insights cover e/a ratio thresholds for FCC/BCC phase stability, shear modulus role in resisting plastic deformation, second ionization energy effects on solid solution strengthening, and cohesive energy mismatch parameters describing bonding. Table 5 provides SVR hyperparameters. Subsequent chunks will involve further model optimization and experimental validation; remember the final key features and the exhaustive search outcome.\nMaterial systems: Fe-C-Cr-Mn-Si alloy steel; Fe-C-Cr-Mn-Si steel; Fe-C-Cr-Mn-Si coatings\nSample aliases: Sample 1; Sample 2; Sample 3\nProcessing route: cladding for sample preparation; CGAN synthetic data generation; ML model training with SVR; inverse design using FA; data collection and pre-processing; Data from MatWeb; Z-score and isolation forest outlier removal; CGAN augmentation (98→192 points)\nKey variables: microhardness; R²; RMSE; composition (Fe, C, Cr, Mn, Si, Ni, Mo, V, W); Δσ_sss; Z; M; G\nProperties: microhardness: Sample 1 predicted 521 HV vs. experimental 515 HV (1.17% error); Sample 2 490 vs. 500 HV (2.00%); Sample 3 415 vs. 424 HV (2.09%)\nMechanisms: modified solid solution strengthening: Δσ_sss = Z·M·G·δ_Ec·D_Ec; modified solid solution strengthening theory using selected features; Cr, Ni, Mo form solid solution alloys and carbides; Ni reduces grain size; e/a < 1.65 favors FCC, e/a > 2.05 favors BCC; shear modulus G increases solute atom–dislocation interaction energy; second ionization energy E_I-2nd involves electron cloud interaction; cohesive energy mismatch δ and D_Ec describe bonding states\nFigures or tables: Fig. 1 (flowchart, element importance, predicted vs. experimental microhardness); Table 1 (CGAN parameters); Table 2; Table 3; Table 4; Fig. 2; Fig. 3; Fig. 4"
+  },
+  {
+    "chunk_id": "chunk_0005",
+    "section": "3.1.2. Screening results of features",
+    "previous_context_summary": "Summary: Figures 2–4 provide correlation, feature selection, and exhaustive screening results. Future chunks need to remember the inverse-designed composition ranges, the ten ML models, the validation approach, substrate material, characterization conditions, and the modified solid solution strengthening theory. This chunk describes characterization methods for the coatings (XRD with Cu Kα at 40 kV/40 mA; Vickers microhardness with 1 kg load, 20 s holding time) and presents early ML modeling results. Element screening reveals positive correlation of Cr, Ni, Mo with microhardness (Fig. 2). RFE with RF, LightGBM, XGBoost identifies nine significant features (Fig. 3a); after removing highly correlated pairs, e/a, G, E, δ, D_EC remain key (Fig. 3c). Exhaustive search yields optimal 3-feature combination {δ_Ec, D_Ec, G} with minimum RMSE 0.257 (Fig. 4). Mechanistic insights cover e/a ratio thresholds for FCC/BCC phase stability, shear modulus role in resisting plastic deformation, second ionization energy effects on solid solution strengthening, and cohesive energy mismatch parameters describing bonding. Table 5 provides SVR hyperparameters. Subsequent chunks will involve further model optimization and experimental validation; remember the final key features and the exhaustive search outcome.\nMaterial systems: Fe-C-Cr-Mn-Si alloy steel; Fe-C-Cr-Mn-Si steel; Fe-C-Cr-Mn-Si coatings\nSample aliases: Sample 1; Sample 2; Sample 3\nProcessing route: cladding for sample preparation; CGAN synthetic data generation; ML model training with SVR; inverse design using FA; data collection and pre-processing; Data from MatWeb; Z-score and isolation forest outlier removal; CGAN augmentation (98→192 points)\nKey variables: microhardness; R²; RMSE; composition (Fe, C, Cr, Mn, Si, Ni, Mo, V, W); Δσ_sss; Z; M; G\nProperties: microhardness: Sample 1 predicted 521 HV vs. experimental 515 HV (1.17% error); Sample 2 490 vs. 500 HV (2.00%); Sample 3 415 vs. 424 HV (2.09%)\nMechanisms: modified solid solution strengthening: Δσ_sss = Z·M·G·δ_Ec·D_Ec; modified solid solution strengthening theory using selected features; Cr, Ni, Mo form solid solution alloys and carbides; Ni reduces grain size; e/a < 1.65 favors FCC, e/a > 2.05 favors BCC; shear modulus G increases solute atom–dislocation interaction energy; second ionization energy E_I-2nd involves electron cloud interaction; cohesive energy mismatch δ and D_Ec describe bonding states\nFigures or tables: Fig. 1 (flowchart, element importance, predicted vs. experimental microhardness); Table 1 (CGAN parameters); Table 2; Table 3; Table 4; Fig. 2; Fig. 3; Fig. 4",
+    "context_update": {
+      "summary": "This chunk covers Sections 3.1.3–4, concluding the paper. It reports the screening of nine ML models for microhardness prediction using features {G, δ_Ec, D_Ec}; SVR achieved the highest R²=0.85 and lowest RMSE=0.39 (Fig. 5, Table 5). The model was then optimized by integrating a modified solid solution strengthening equation Δσ_sss = Z·M·G·δ_Ec·D_Ec (Z=0.0056, M=3.06), improving R² to 0.89 and RMSE to 0.31 (Fig. 6). For inverse design, the firefly algorithm (FA) yielded the highest microhardness of 733.59 HV (Fig. 7). Three Fe-C-Cr-Mn-Si alloy coatings were fabricated by cladding with compositions in Table 6. XRD (Fig. 8) showed Fe-Cr (Sample 1) and Fe-Cr-Ni (Samples 2,3) phases; the diffraction peaks shifted right due to atomic radius differences causing lattice distortion. Microhardness validation (Fig. 9) gave minimum error 1.17% (Sample 1: 521 pred. vs 515 exp.); the solid solution phases were confirmed by δr<0.066 and appropriate ΔHmix. Key conclusions: Cr has the greatest positive effect, and the cohesive energy difference and shear modulus are critical. This chunk provides final validation results, model improvements, and composition-property correlations for the Fe-C-Cr-Mn-Si system.",
+      "material_systems": [
+        "Fe-C-Cr-Mn-Si steel",
+        "Fe-Cr phase",
+        "Fe-Cr-Ni phase"
+      ],
+      "sample_aliases": [
+        "Sample 1",
+        "Sample 2",
+        "Sample 3"
+      ],
+      "processing_route": [
+        "cladding"
+      ],
+      "key_variables": [
+        "microhardness",
+        "R²",
+        "RMSE",
+        "G",
+        "δ_Ec",
+        "D_Ec",
+        "Z",
+        "M",
+        "FA",
+        "PSO",
+        "SA",
+        "GWO"
+      ],
+      "microstructure": [
+        "Fe-Cr phase in Sample 1",
+        "Fe-Cr-Ni phase in Samples 2 and 3",
+        "lattice distortion due to atomic radius differences (Cr, Ni vs Fe)"
+      ],
+      "properties": [
+        "Sample 1 microhardness 515 HV (predicted 521 HV, error 1.17%)",
+        "Sample 2 500 HV (predicted 490 HV, error 2.00%)",
+        "Sample 3 424 HV (predicted 415 HV, error 2.09%)"
+      ],
+      "mechanisms": [
+        "modified solid solution strengthening: Δσ_sss = Z·M·G·δ_Ec·D_Ec",
+        "solid solution phase formation criteria: δr<0.066 and -11.6<ΔHmix<3.2 kJ/mol",
+        "lattice distortion from atomic radius mismatch"
+      ],
+      "figures_or_tables": [
+        "Fig. 5",
+        "Fig. 6",
+        "Fig. 7",
+        "Fig. 8",
+        "Fig. 9",
+        "Table 5",
+        "Table 6"
+      ],
+      "unresolved_terms": []
+    },
+    "rolling_context_summary": "Summary: Subsequent chunks will involve further model optimization and experimental validation; remember the final key features and the exhaustive search outcome. This chunk covers Sections 3.1.3–4, concluding the paper. It reports the screening of nine ML models for microhardness prediction using features {G, δ_Ec, D_Ec}; SVR achieved the highest R²=0.85 and lowest RMSE=0.39 (Fig. 5, Table 5). The model was then optimized by integrating a modified solid solution strengthening equation Δσ_sss = Z·M·G·δ_Ec·D_Ec (Z=0.0056, M=3.06), improving R² to 0.89 and RMSE to 0.31 (Fig. 6). For inverse design, the firefly algorithm (FA) yielded the highest microhardness of 733.59 HV (Fig. 7). Three Fe-C-Cr-Mn-Si alloy coatings were fabricated by cladding with compositions in Table 6. XRD (Fig. 8) showed Fe-Cr (Sample 1) and Fe-Cr-Ni (Samples 2,3) phases; the diffraction peaks shifted right due to atomic radius differences causing lattice distortion. Microhardness validation (Fig. 9) gave minimum error 1.17% (Sample 1: 521 pred. vs 515 exp.); the solid solution phases were confirmed by δr<0.066 and appropriate ΔHmix. Key conclusions: Cr has the greatest positive effect, and the cohesive energy difference and shear modulus are critical. This chunk provides final validation results, model improvements, and composition-property correlations for the Fe-C-Cr-Mn-Si system.\nMaterial systems: Fe-C-Cr-Mn-Si alloy steel; Fe-C-Cr-Mn-Si steel; Fe-C-Cr-Mn-Si coatings; Fe-Cr phase; Fe-Cr-Ni phase\nSample aliases: Sample 1; Sample 2; Sample 3\nProcessing route: cladding for sample preparation; CGAN synthetic data generation; ML model training with SVR; inverse design using FA; data collection and pre-processing; Data from MatWeb; Z-score and isolation forest outlier removal; CGAN augmentation (98→192 points)\nKey variables: microhardness; R²; RMSE; composition (Fe, C, Cr, Mn, Si, Ni, Mo, V, W); Δσ_sss; Z; M; G\nMicrostructure: Fe-Cr phase in Sample 1; Fe-Cr-Ni phase in Samples 2 and 3; lattice distortion due to atomic radius differences (Cr, Ni vs Fe)\nProperties: microhardness: Sample 1 predicted 521 HV vs. experimental 515 HV (1.17% error); Sample 2 490 vs. 500 HV (2.00%); Sample 3 415 vs. 424 HV (2.09%); Sample 1 microhardness 515 HV (predicted 521 HV, error 1.17%); Sample 2 500 HV (predicted 490 HV, error 2.00%); Sample 3 424 HV (predicted 415 HV, error 2.09%)\nMechanisms: modified solid solution strengthening: Δσ_sss = Z·M·G·δ_Ec·D_Ec; modified solid solution strengthening theory using selected features; Cr, Ni, Mo form solid solution alloys and carbides; Ni reduces grain size; e/a < 1.65 favors FCC, e/a > 2.05 favors BCC; shear modulus G increases solute atom–dislocation interaction energy; second ionization energy E_I-2nd involves electron cloud interaction; cohesive energy mismatch δ and D_Ec describe bonding states; solid solution phase formation criteria: δr<0.066 and -11.6<ΔHmix<3.2 kJ/mol\nFigures or tables: Fig. 1 (flowchart, element importance, predicted vs. experimental microhardness); Table 1 (CGAN parameters); Table 2; Table 3; Table 4; Fig. 2; Fig. 3; Fig. 4"
+  }
+]

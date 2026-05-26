@@ -1,0 +1,237 @@
+{
+  "claims": [
+    {
+      "claim_type": "characterization",
+      "subject": "grain boundary identification and density calculation",
+      "claim": "A Python machine learning model based on crystallographic information was used to correctly identify the various boundary types and exactly calculate the boundary density for the specimens, as shown in Fig. 7.",
+      "values": [],
+      "evidence_text": "A Python machine learning model developed by Li et al. [48] based on crystallographic information were used to correctly identify the various boundary types and exactly calculate the boundary density, as shown in Fig. 7(a-2,b-2, c-2,d-2,e-2,f-2).",
+      "figures": ["Fig. 7"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "figure_evidence",
+      "subject": "boundary density distribution",
+      "claim": "In all specimens, austenitic grain (AG) boundaries (15°–45°) and block boundaries (>45°) exhibited the highest two densities of boundary density, as shown in Fig. 8(b).",
+      "values": ["15°–45°", ">45°"],
+      "evidence_text": "As is seen in Fig. 8(b), austenitic grain (AG) boundaries (15◦-45◦), including austenitic boundaries and prior austenitic boundaries, and block boundaries (>45◦) in all specimens were the highest two of boundary density.",
+      "figures": ["Fig. 8(b)"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "block boundary density comparison IQ-1050 vs HR",
+      "claim": "After quenching at 1050 °C, the density of block boundary was higher than that of AG boundary in IQ-1050, opposite to HR, indicating that more austenitic fraction underwent martensitic transformation in IQ-1050 than in HR.",
+      "values": ["1050 °C"],
+      "evidence_text": "After quenching of 1050 °C, the density of block boundary was higher than that of AG boundary, and the situation of HR was opposite, which indicated that more austenitic fraction underwent martensitic transformation than that of HR.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "microstructure",
+      "subject": "boundary density evolution with annealing temperature",
+      "claim": "In QA specimens, AG boundary density increased with annealing temperature up to 740 °C, but decreased at 800 °C due to some coarse austenite grains; meanwhile, block boundary density decreased continuously with annealing temperature.",
+      "values": ["800 °C", "740 °C"],
+      "evidence_text": "For QA specimens, with the increase of annealed temperature, AG boundary density increased. When annealed temperature being 800 °C, the density instead decreased due to some coarse austenite grains. Meanwhile, block boundary density decreased continuously with annealed temperature.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "replacement of block boundaries by AG boundaries",
+      "claim": "With increasing annealing temperature, increasingly reverted austenite nucleated and grew at martensitic lath gaps, causing block boundaries to be gradually replaced by AG boundaries.",
+      "values": [],
+      "evidence_text": "With the increase of annealed temperature, increasingly reverted austenite nucleated and grew up at the martensitic lath gaps, which resulting in that block boundaries gradually replaced by AG boundaries.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "role of AG and block boundaries in strength",
+      "claim": "The variation trend of AG boundary density was consistent with that of austenitic volume fraction, but it did not play an effective role in enhancing strength; the decrease of block boundary density (>45°) contributed to the decrease of yield strength of the annealed specimens with increasing annealed temperature.",
+      "values": [">45°"],
+      "evidence_text": "Obviously, the variation trend of AG boundary density was consistent with that of austenitic volume fraction, but it did not play an effectively role in enhancing strength. ... It was considered that the decrease of block boundary with angle of >45° in density, to some extent, contributed to the decrease of yield strength of the annealed specimens, with the increase of annealed temperature.",
+      "figures": [],
+      "tables": [],
+      "confidence": "medium"
+    },
+    {
+      "claim_type": "property",
+      "subject": "stacking fault energy of QA specimens",
+      "claim": "The estimated stacking fault energies (SFE) for QA specimens were ~36.50 mJ/m² (QA-620), ~38.27 mJ/m² (QA-680), ~33.29 mJ/m² (QA-740), and ~31.53 mJ/m² (QA-800), as listed in Table 4.",
+      "values": ["~36.50 mJ/m²", "~38.27 mJ/m²", "~33.29 mJ/m²", "~31.53 mJ/m²"],
+      "evidence_text": "The estimated SFEs of austenite were listed in Table 4.",
+      "figures": [],
+      "tables": ["Table 4"],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "SFE range and expected TWIP effect",
+      "claim": "The SFEs of QA specimens were between 20 mJ/m² and 40 mJ/m², which meant that TWIP effect was supposed to exist in austenite during deformation.",
+      "values": ["20 mJ/m²", "40 mJ/m²"],
+      "evidence_text": "The SFEs of QA specimens were between 20 mJ/m² and 40 mJ/m², which meant that TWIP effect was supposed to exist in austenite when deformation.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "TRIP effect occurrence despite SFE >20",
+      "claim": "TRIP effect also occurred during deformation of QA specimens, although SFEs >20 mJ/m², because austenitic fraction after tensile test was lower than that before tensile test.",
+      "values": [">20 mJ/m²"],
+      "evidence_text": "It was concluded that TRIP effect, in addition to TWIP effect, also occurred during deformation, although the SFEs >20 mJ/m², because austenitic fraction after tensile test was lower than that before tensile test.",
+      "figures": ["Fig. 9(b)"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "property",
+      "subject": "austenitic mechanical stability constant k",
+      "claim": "The austenitic mechanical stability constant k values, derived from V_ε = V_0 exp(-kε), were ~1.24 for QA-620, ~0.56 for QA-680, ~1.47 for QA-740, and ~1.50 for QA-800, where higher k indicates lower stability (Fig. 9(c)).",
+      "values": ["~1.24", "~0.56", "~1.47", "~1.50"],
+      "evidence_text": "QA-620 | 34 | 21 | 1.24 | 36.50 ... QA-680 | 38 | 31 | 0.56 | 38.27 ... QA-740 | 52 | 26 | 1.47 | 33.29 ... QA-800 | 49 | 27 | 1.50 | 31.53",
+      "figures": ["Fig. 9(c)"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "comparison",
+      "subject": "relationship between k value and SFE",
+      "claim": "With increasing annealing temperature, the variations of k value and SFE displayed an opposite trend, and both indicators consistently reflected austenitic mechanical stability: lower k corresponded to higher SFE and higher stability (Fig. 9(c)).",
+      "values": [],
+      "evidence_text": "With the annealing temperature increased, the variations of k value and SFEs display a opposite trend (Fig. 9(c)). The reflections of the two indictors on austenitic mechanical stability was instead consistent. This was that the lower the k value was, the higher the SFE was, which meant the higher mechanical stability of austenite.",
+      "figures": ["Fig. 9(c)"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "factors governing austenite stability in QA specimens",
+      "claim": "The stability of austenite was related to the enrichment of alloy elements, temperature, and grain size: in QA-620, carbide precipitation reduced alloy elements in austenite, lowering stability compared to QA-680; above 680 °C, increasing annealing temperature diluted alloying elements due to higher austenite fraction, decreasing stability; smaller austenite grains had higher enrichment and stability.",
+      "values": ["620 °C", "680 °C"],
+      "evidence_text": "The stability of austenite was related to the enrichment of alloy elements, temperature, and grain size [52,55,56]. For QA-620, the precipitation of carbides led to a decrease of alloy elements in austenite, which diminished its austenitic stability, compared to QA-680. ... Above 680 °C, austenite fraction increased with the increasing of annealing temperature, which resulted in that the alloying elements in austenite were diluted. Thus, austenitic stability decreased with annealing temperature. ... Smaller grains had higher enrichment of alloy elements, and their stability was higher, while larger austenite grains possessed lower stability.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "origin of superior ductility in QA-740",
+      "claim": "More than half of the austenite in QA-740 participated in TRIP effect, causing the best total elongation.",
+      "values": [],
+      "evidence_text": "Apparently, the outstanding ductility of QA specimens was inevitably traced back to TRIP effect. More than half of the austenite in QA-740 was participated in TRIP effect, causing the best total elongation.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "comparable total elongation in QA-620 and QA-680",
+      "claim": "Due to more austenite undergoing TRIP effect in QA-620 than in QA-680, which neutralized the improvement of ductility resulting from the lower GND density due to higher annealed temperature of the latter, the total elongation of QA-620 was almost the same as that of QA-680.",
+      "values": [],
+      "evidence_text": "Due to more austenite underwent TRIP effect in QA-620 than that of QA-680, which neutralized the improvement of ductility resulting from the lower GND density due to higher annealed temperature of the latter, the total elongation of the former was almost the same as that of the latter.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "reduced ductility in QA-800",
+      "claim": "For QA-800, newly formed martensite during air cooling of annealing deteriorated ductility, and less austenite experienced TRIP effect than QA-740, thereby producing relatively lower ductility.",
+      "values": [],
+      "evidence_text": "For QA-800, not only aforementioned, newly formed martensite during air cooling of annealed treatment deteriorated ductility, less austenite experiencing TRIP effect than QA-740, but also, produced relatively lower ductility.",
+      "figures": [],
+      "tables": [],
+      "confidence": "medium"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "TWIP effect in remaining austenite",
+      "claim": "When some austenite transformed into martensite during deformation, some of the rest of austenite should produce TWIP effect.",
+      "values": [],
+      "evidence_text": "Moreover, when some austenite transformed into martensite during deformation, some of the rest of austenite should produce TWIP effect [27].",
+      "figures": [],
+      "tables": [],
+      "confidence": "medium"
+    }
+  ],
+  "context_update": {
+    "summary": "This chunk extends the structure–property discussion by analyzing grain boundary densities and austenite stability. It introduces a Python ML model to classify boundaries and calculate densities (Fig. 7). The dominant boundary types in all specimens are AG (15°–45°) and block (>45°), with IQ-1050 showing higher block density than HR, indicating more martensitic transformation. In QA specimens, AG boundary density increases with annealing temperature up to 740 °C (then drops at 800 °C due to coarse austenite), while block boundary density continuously decreases because reverted austenite grows at lath gaps and replaces block boundaries. The drop in block boundary density is linked to the reduction in yield strength. The second part computes SFE from XRD data (Table 4) and derives austenite stability constants k (Fig. 9c). QA specimens have SFE between 20 and 40 mJ/m², suggesting TWIP, but TRIP is also active. SFE and k show opposite trends, and lower k (higher SFE) denotes higher stability. Austenite stability is controlled by element enrichment, temperature, and grain size. QA-740’s superior ductility arises from extensive TRIP, while QA-800’s lower ductility is due to pre-formed martensite and less TRIP. These results connect grain boundary character and stability to the observed tensile properties and will support further deformation mechanism analysis.",
+    "material_systems": [
+      "Fe–9Mn–5Al–0.3C low-density steel",
+      "δ-ferrite",
+      "tempered martensite",
+      "retained austenite",
+      "carbides"
+    ],
+    "sample_aliases": [
+      "QA-620",
+      "QA-680",
+      "QA-740",
+      "QA-800",
+      "IQ-1050",
+      "HR"
+    ],
+    "processing_route": [
+      "homogenization/forging 1100 °C 2 h",
+      "hot rolling (start ~1050 °C, finish ~950 °C, air cool)",
+      "intercritical quenching 1050 °C 1 h (water quench) → IQ-1050",
+      "annealing 620, 680, 740, 800 °C 1 h (air cool) → QA-620, QA-680, QA-740, QA-800"
+    ],
+    "key_variables": [
+      "annealing temperature (620, 680, 740, 800 °C)",
+      "AG boundary density",
+      "block boundary density",
+      "SFE (Table 4)",
+      "stability constant k (Fig. 9c)",
+      "austenite fraction before/after tension",
+      "austenite grain size",
+      "carbide precipitation (QA-620)"
+    ],
+    "microstructure": [
+      "laminated δ-ferrite + tempered martensite",
+      "carbides in QA-620",
+      "coarse δ-ferrite grains",
+      "AG boundaries (15°–45°) and block boundaries (>45°) dominant",
+      "block boundaries decreasing with annealing temperature",
+      "reverted austenite at martensite lath gaps replacing block boundaries",
+      "austenite grain size variation"
+    ],
+    "properties": [
+      "SFE: QA-620 ~36.50, QA-680 ~38.27, QA-740 ~33.29, QA-800 ~31.53 mJ/m²",
+      "k values: QA-620 ~1.24, QA-680 ~0.56, QA-740 ~1.47, QA-800 ~1.50",
+      "yield strength inversely related to block boundary density",
+      "TRIP effect present despite SFE >20 mJ/m²",
+      "QA-740 best elongation (~62.4%) due to extensive TRIP"
+    ],
+    "mechanisms": [
+      "block boundary density reduction contributes to yield strength decrease",
+      "AG boundary density does not effectively strengthen",
+      "TRIP effect occurs alongside TWIP (SFE 20–40 mJ/m²)",
+      "austenite stability governed by element enrichment, temperature, grain size",
+      "carbide precipitation in QA-620 lowers alloy content in austenite and stability",
+      "above 680 °C diluted elements reduce stability",
+      "TWIP effect in remaining austenite after martensite transformation"
+    ],
+    "figures_or_tables": [
+      "Fig. 7 (boundary type maps)",
+      "Fig. 8(b) (boundary density bar chart)",
+      "Fig. 9(a) XRD pre/post tension",
+      "Fig. 9(b) austenite fraction pre/post",
+      "Fig. 9(c) k and SFE trends",
+      "Table 4 (SFE parameters)"
+    ],
+    "unresolved_terms": [
+      "SFP (stacking fault probability)",
+      "ε_50^2 (root mean square microstrain)",
+      "Zener elastic anisotropy A",
+      "shear modulus G_<111>"
+    ]
+  }
+}

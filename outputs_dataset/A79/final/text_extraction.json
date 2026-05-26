@@ -1,0 +1,275 @@
+{
+  "papers": [
+    {
+      "paper_id": "A79",
+      "doi": null,
+      "title": "Evaluation of the density of steels",
+      "authors": [
+        "Ulrich Bohnenkamp",
+        "Rolf Sandström"
+      ],
+      "publication_year": "1999",
+      "journal": null,
+      "keywords": [
+        "density",
+        "steels",
+        "regression analysis",
+        "thermodynamic analysis",
+        "ferritic steels",
+        "austenitic steels",
+        "cementite",
+        "TiC"
+      ],
+      "research_type": "computational",
+      "paper_scope": "Development of regression models for the prediction of steel density from chemical composition, using thermodynamic analysis to account for cementite in ferritic steels and TiC in austenitic steels."
+    }
+  ],
+  "alloys": [
+    {
+      "alloy_id": "alloy_ferritic_low",
+      "paper_id": "A79",
+      "alloy_name": "Ferritic and low alloy steels",
+      "aliases": [],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "C",
+        "Cr",
+        "Cu",
+        "Mn",
+        "Mo",
+        "Ni",
+        "Si",
+        "V",
+        "Al",
+        "Co",
+        "Nb",
+        "P",
+        "S",
+        "Ti",
+        "W"
+      ],
+      "nominal_composition": [],
+      "alloys_notes": "Studied composition ranges (max weight percent from 44 batches): C 0.49%, Cr 2.58%, Cu 0.69%, Mn 1.88%, Mo 1.1%, Ni 1.18%, S 0.05%, Si 1.98%, V 0.36%, Al ≤0.03%, Nb ≤0.04%, P ≤0.04%, Ti ≤0.02%. Other elements present in minor amounts; see Table 1."
+    },
+    {
+      "alloy_id": "alloy_austenitic",
+      "paper_id": "A79",
+      "alloy_name": "Austenitic stainless steels",
+      "aliases": [],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "TiC",
+        "C",
+        "Co",
+        "Cr",
+        "Cu",
+        "Mn",
+        "Mo",
+        "N",
+        "Ni",
+        "Si",
+        "Ti",
+        "Al",
+        "Nb",
+        "P",
+        "S",
+        "V"
+      ],
+      "nominal_composition": [],
+      "alloys_notes": "Studied composition ranges from 64 batches (weight percent): C 0.003–0.128%, Co 0–4.45%, Cr 14.6–18.97%, Cu 0–4.47%, Mn 0.01–3.89%, Mo 0.01–3.03%, N 0–0.13%, Ni 9.96–15.73%, Si 0.01–1.96%, Ti 0–0.62%, TiC 0–0.51%, other elements at low levels; see Table 4."
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_ferritic_lit",
+      "paper_id": "A79",
+      "alloy_id": "alloy_ferritic_low",
+      "description": "Literature data: commercial ferritic and low-alloy steels with varying compositions; no detailed processing history available. Thermodynamic equilibrium assumed for cementite formation during heat treatment (temperature set to heat treatment temperature or temperature at which austenite fully transformed).",
+      "processes_notes": null
+    },
+    {
+      "process_id": "proc_austenitic_lit",
+      "paper_id": "A79",
+      "alloy_id": "alloy_austenitic",
+      "description": "Literature data: Ti-stabilized austenitic steels; single-phase austenite or austenite + TiC. Thermodynamic analysis performed to determine TiC content and solubilities in austenite.",
+      "processes_notes": null
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_ferritic_data",
+      "paper_id": "A79",
+      "alloy_id": "alloy_ferritic_low",
+      "process_id": "proc_ferritic_lit"
+    },
+    {
+      "sample_id": "sample_austenitic_data",
+      "paper_id": "A79",
+      "alloy_id": "alloy_austenitic",
+      "process_id": "proc_austenitic_lit"
+    }
+  ],
+  "processing_steps": [],
+  "structures": [
+    {
+      "structure_id": "struct_ferritic",
+      "sample_id": "sample_ferritic_data",
+      "overall_structure": "Ferrite + cementite (Fe3C)",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "micro_ferritic_overall",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "ferrite",
+              "crystal_structure": "bcc",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "cementite",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_austenitic",
+      "sample_id": "sample_austenitic_data",
+      "overall_structure": "Austenite + TiC",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "micro_austenitic_overall",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "fcc",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "TiC",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_ferritic_reg",
+      "sample_id": "sample_ferritic_data",
+      "microstructure_uuid": null,
+      "technique": "Regression analysis (Equation 4) with thermodynamic inputs",
+      "purpose": "Determine regression coefficients for density of ferritic steels as function of composition, separating cementite effect",
+      "key_findings": "Model I (x=steel): R²=0.987, Cu and Mo increase density, C, Cr, Mn, S, Si, V decrease it. Model II (x=ferrite): R²=0.994, with separate cementite density calculation."
+    },
+    {
+      "characterization_id": "char_austenitic_reg",
+      "sample_id": "sample_austenitic_data",
+      "microstructure_uuid": null,
+      "technique": "Regression analysis (Equation 4) with thermodynamic analysis of TiC",
+      "purpose": "Determine regression coefficients for density of austenitic steels",
+      "key_findings": "R²=0.975, TiC, C, Cr, Mn, N, Si, Ti reduce density; Co, Cu, Mo, Ni increase density."
+    },
+    {
+      "characterization_id": "char_thermo_calc",
+      "sample_id": "sample_ferritic_data",
+      "microstructure_uuid": null,
+      "technique": "Thermodynamic calculation (Thermo-Calc)",
+      "purpose": "Compute cementite amount and element solubilities in ferrite/cementite for Model II; also TiC amount in austenitic steels.",
+      "key_findings": "Non-linear effect of Cr and Mn on cementite density captured by Equations (6) and (7)."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_ferritic",
+      "sample_id": "sample_ferritic_data",
+      "simulation_method": "Regression analysis using Equation (4) combined with thermodynamic modeling for cementite phase",
+      "software_used": "Thermo-Calc (for thermodynamic calculations of cementite and solubilities)",
+      "potential_model": null,
+      "validation_against_experiment": "Comparison with literature values shown in Table 3 and Figure 1; apparent densities agree with literature for most elements.",
+      "analytical_model": [
+        {
+          "model_name": "Ferritic steel density Model I (zero solubility in cementite, x=steel)",
+          "equation_role": "Equation (4) with x=steel; assumes all C bound as cementite and other elements insoluble in cementite",
+          "parameters": "r_Fe=1.270e-4 m³/kg, r_C=1.380e-4 (combined Fe+Fe3C), r_Cr=1.384e-4, r_Cu=8.477e-5, r_Mn=1.524e-4, r_Mo=1.076e-4, r_Ni=1.370e-4, r_S=4.046e-4, r_Si=2.381e-4, r_V=2.012e-4",
+          "model_note": "R²=0.987, maximum deviation 5.9 kg/m³, average deviation 2.0 kg/m³. Regression coefficients from Table 2."
+        },
+        {
+          "model_name": "Ferritic steel density Model II (thermodynamic cementite analysis, x=ferrite)",
+          "equation_role": "Equation (4) with x=ferrite; cementite amount and solubilities from Thermo-Calc; density of cementite from Equations (6) and (7)",
+          "parameters": "r_Fe=1.270e-4, r_Cr=1.379e-4, r_Cu=8.563e-5, r_Mn=1.425e-4, r_Mo=1.106e-4, r_Ni=1.347e-4, r_S=4.113e-4, r_Si=2.326e-4, r_V=2.403e-4",
+          "model_note": "R²=0.994, maximum deviation 4.2 kg/m³, average deviation 1.4 kg/m³. Regression coefficients from Table 3."
+        },
+        {
+          "model_name": "Cementite density equations",
+          "equation_role": "Equations (6) and (7) to calculate cementite density as function of Cr and Mn concentration in cementite",
+          "parameters": "For Cr: ρ_cem = 7742 - 687 * C_Cr^wt (valid when C_Cr>0). For Mn: ρ_cem = 7770 - 741 * C_Mn^wt (valid when C_Mn>0.12); otherwise ρ_cem = 7680 kg/m³.",
+          "model_note": "Derived from interpolation of literature data [25]; see Figure 2."
+        }
+      ]
+    },
+    {
+      "computation_id": "comp_austenitic",
+      "sample_id": "sample_austenitic_data",
+      "simulation_method": "Regression analysis using Equation (4) with x=austenite, including TiC mass content as a variable; thermodynamic analysis for TiC amount",
+      "software_used": "Thermo-Calc (implied for TiC thermodynamic analysis)",
+      "potential_model": null,
+      "validation_against_experiment": "Comparison with literature data in Table 4 and Figure 3; apparent densities match literature for most elements except Si.",
+      "analytical_model": [
+        {
+          "model_name": "Austenitic steel density regression model",
+          "equation_role": "Equation (4) with x=austenite; TiC content included as variable, solubilities in TiC neglected",
+          "parameters": "r_γ-Fe=1.231e-4, r_TiC=2.032e-4, r_C=3.178e-4, r_Co=1.111e-4, r_Cr=1.431e-4, r_Cu=1.205e-4, r_Mn=1.307e-4, r_Mo=1.018e-4, r_N=2.186e-4, r_Ni=1.137e-4, r_Si=2.436e-4, r_Ti=1.890e-4",
+          "model_note": "R²=0.975, maximum deviation 10.4 kg/m³, average deviation 2.6 kg/m³. Regression coefficients from Table 4."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "In ferritic steels, Cu and Mo increase density, while C (as cementite), Cr, Mn, S, Si, and V decrease density.",
+    "In austenitic steels, TiC, C, Cr, Mn, N, Si, and Ti reduce density; Co, Cu, Mo, and Ni increase density.",
+    "For substitutional solutes where no regression coefficient is available, theoretical coefficients (1/ρ_i) can give reasonable density estimates.",
+    "Significant deviations from ideal behavior are observed for Si and Mn in ferritic steels (covalent bonds in Si, anomalous Mn effect on Curie temperature), and for Si in austenitic steels.",
+    "The regression formula 1/ρ_x = Σ r_i C_i^wt(x) provided better correlation than the linear formulas used in earlier studies.",
+    "Maximum experimental error reported by Richter is ±0.01% for density measurements.",
+    "The paper provides a collection of literature data on density of steels and reviews earlier studies on the effect of solutes on lattice parameter and density of bcc and fcc iron."
+  ]
+}

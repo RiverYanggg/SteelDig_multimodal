@@ -1,0 +1,135 @@
+{"claims": [
+  {
+    "claim_type": "finding",
+    "subject": "Fe-30Mn-9Al-0.8C steel after MAF",
+    "claim": "The dislocation density increases from 0.79×10^15 m⁻² for MAF-0 to 8.98×10^15 m⁻² for MAF-5 as determined by XRD.",
+    "values": ["0.79×10^15 m⁻² (MAF-0)", "8.98×10^15 m⁻² (MAF-5)"],
+    "evidence_text": "the average dislocation density increased from $0.79 \\times 10^{15} \\mathrm{m}^{-2}$ for MAF-0 to 8.98 × 1015 m− 2 for MAF-5.",
+    "figures": ["Fig. 5", "Fig. 6"],
+    "tables": ["Table 1"],
+    "confidence": "high"
+  },
+  {
+    "claim_type": "finding",
+    "subject": "Dislocation density evolution model",
+    "claim": "Fitting Eq.7 to experimental data yields k1 = 7.9×10^15 m⁻² and k2 = 1.813 for the exponential saturation dislocation density model.",
+    "values": ["k1 = 7.9×10^15 m⁻²", "k2 = 1.813"],
+    "evidence_text": "The fitting curve (Fig. 6) for experimental material finds $k_{1}$ to be $7.9 \\times 10^{15} \\mathrm{m}^{-2}$ and $k_{2}$ to be 1.813.",
+    "figures": ["Fig. 6"],
+    "tables": [],
+    "confidence": "high"
+  },
+  {
+    "claim_type": "mechanism",
+    "subject": "Dislocation rearrangement during MAF",
+    "claim": "Dislocation density increase decelerates and dislocations rearrange at a critical strain of 2.3 (five MAF passes), indicating saturation and microstructural recovery.",
+    "values": ["critical strain 2.3", "5 passes"],
+    "evidence_text": "With increase in amount of imposed plastic strain, initially dislocation density increases, reaching to a maximum, and thereafter degree of increment decreases. Therefore, dislocations are rearranging at a critical strain 2.3 or five passes of MAF.",
+    "figures": [],
+    "tables": [],
+    "confidence": "medium"
+  },
+  {
+    "claim_type": "microstructure",
+    "subject": "High and low angle grain boundary fractions in MAF samples",
+    "claim": "The high-angle grain boundary fraction evolves from 0.62 in MAF-0, drops to 0.29 in MAF-1 and 0.24 in MAF-3, then rises to 0.69 in MAF-5, while the low-angle fraction changes complementarily.",
+    "values": ["MAF-0 HAB 0.62 LAG 0.367", "MAF-1 HAB 0.29 LAG 0.708", "MAF-3 HAB 0.24 LAG 0.759", "MAF-5 HAB 0.69 LAG 0.301"],
+    "evidence_text": "The MAF-0 sample shows high angle boundaries fraction of 0.62, Fig. 7(a). On MAF for 1 pass (MAF-1) high angle boundary fraction decreases drastically to 0.29 and low angle boundary fraction increases to 0.70, Fig. 7(b).",
+    "figures": ["Fig. 7(a-d)"],
+    "tables": [],
+    "confidence": "high"
+  },
+  {
+    "claim_type": "microstructure",
+    "subject": "Texture in MAF-0",
+    "claim": "The MAF-0 sample is strongly textured, with [101] and [111] directions of many grains parallel to the pressing direction.",
+    "values": ["[101] // ND", "[111] // ND"],
+    "evidence_text": "The sample is highly textured. [101] direction of significant number of grains is parallel to pressing direction, Fig. 7(e). [111] direction of other significant fraction orient parallel to pressing direction.",
+    "figures": ["Fig. 7(e)"],
+    "tables": [],
+    "confidence": "high"
+  },
+  {
+    "claim_type": "microstructure",
+    "subject": "Texture evolution during MAF",
+    "claim": "With increasing number of MAF passes, the originally strong texture becomes randomized.",
+    "values": [],
+    "evidence_text": "As the number of passes increase the grains are randomized.",
+    "figures": ["Fig. 7(f-h)"],
+    "tables": [],
+    "confidence": "high"
+  },
+  {
+    "claim_type": "microstructure",
+    "subject": "Grain size evolution during MAF",
+    "claim": "The average grain size reduces from 50 μm (MAF-0) to 35 μm (MAF-1), 20 μm (MAF-3), and 13 μm (MAF-5) with increasing passes.",
+    "values": ["50 μm (MAF-0)", "35 μm (MAF-1)", "20 μm (MAF-3)", "13 μm (MAF-5)"],
+    "evidence_text": "the initial grain size of austenite undergoes a significant reduction, reaching 35 μm and 20 μm after first and third pass, respectively. Subsequently, as the MAF pass continues up to five passes to a total strain of 2.3, there is a further gradual reduction in the grain size, ultimately reaching approximately 13 μm.",
+    "figures": ["Fig. 8(a)"],
+    "tables": [],
+    "confidence": "high"
+  },
+  {
+    "claim_type": "finding",
+    "subject": "Grain size exponential fitting",
+    "claim": "The grain size evolution follows df = d0 exp(-k3 ε) with k3 = 0.63999 ± 0.03785 and R² = 0.99052.",
+    "values": ["k3 = 0.63999", "± 0.03785", "R² = 0.99052"],
+    "evidence_text": "d = 50*exp(-k3*x), k3 = 0.63999 ± 0.03785, R-Square (COD) = 0.99052",
+    "figures": ["Fig. 8(b)"],
+    "tables": [],
+    "confidence": "high"
+  },
+  {
+    "claim_type": "microstructure",
+    "subject": "KAM of MAF-0 and MAF-1",
+    "claim": "The average Kernel Average Misorientation (KAM) is 0.34° for MAF-0 and increases to 0.72° after one MAF pass.",
+    "values": ["KAM MAF-0 0.34°", "KAM MAF-1 0.72°"],
+    "evidence_text": "Fig. 9(a) displays KAM map for MAF-0 sample. The material reports average KAM value of 0.34°. This indicates minimal plastic deformation in the material persisting even after solution annealing (which can be seen in Fig. 9(a), the blue color represents low strain). Fig. 9(b) illustrates the KAM map after a single forging pass. The material displays KAM value of 0.72°.",
+    "figures": ["Fig. 9(a)", "Fig. 9(b)"],
+    "tables": [],
+    "confidence": "high"
+  },
+  {
+    "claim_type": "microstructure",
+    "subject": "KAM of MAF-3 and MAF-5",
+    "claim": "KAM further increases to 0.87° after three passes and to 1.07° after five passes, reflecting greater plastic deformation.",
+    "values": ["KAM MAF-3 0.87°", "KAM MAF-5 1.07°"],
+    "evidence_text": "Fig. 9(c) represents the KAM map after three passes. The material depicts higher KAM value of 0.87°. This indicates a higher level of plastic deformation. Fig. 9(d) represents the KAM map after five forging passes. The material depicts KAM value of 1.07°.",
+    "figures": ["Fig. 9(c)", "Fig. 9(d)"],
+    "tables": [],
+    "confidence": "high"
+  },
+  {
+    "claim_type": "comparison",
+    "subject": "Dislocation density in IF steel (Sarkar et al.)",
+    "claim": "Sarkar et al. reported dislocation densities of 3.6×10^14 m⁻² and 6.88×10^14 m⁻² for equal channel angular treated IF steel at strains of 1.15 and 4.6, which are lower than those of MAF-processed Fe-Mn-Al-C steel.",
+    "values": ["3.6×10^14 m⁻² (strain 1.15)", "6.88×10^14 m⁻² (strain 4.6)"],
+    "evidence_text": "A similar method is used by Sarkar et al. [39] to determine the dislocation density of equal channel angular treated IF steel at strains of 1.15 and 4.6, and they have reported the corresponding values as $3.6 \\times 10^{14} \\mathrm{m}^{-2}$ and $6.88 \\times 10^{14} \\mathrm{m}^{-2}$, respectively.",
+    "figures": [],
+    "tables": [],
+    "confidence": "high"
+  },
+  {
+    "claim_type": "comparison",
+    "subject": "Dislocation density in 316L (Odnobokova et al.)",
+    "claim": "Odnobokova et al. reported for 316L that cold rolling increased dislocation density from 2×10^15 to 4×10^15 m⁻², while multidirectional forging raised it from 6×10^15 to 7.5×10^15 m⁻² at a total strain of 4.",
+    "values": ["cold rolling: 2×10^15 to 4×10^15 m⁻²", "MDF: 6×10^15 to 7.5×10^15 m⁻²", "strain 4"],
+    "evidence_text": "Odnobokova et al. [40] have examined the impact of cold rolling and multidirectional forging over 316 L. They have reported that the dislocation density rises from $\\dot{2} \\times 10^{15} \\mathrm{m}^{-2}$ to $\\dot{4} \\times 10^{15} \\mathrm{m}^{-2}$ for cold rolling and from $6 \\times 10^{15}$ $\\mathbf{m}^{-2}$ to $7.5 \\times 10^{15} \\mathbf{m}^{-2}$ for multidirectional forging when the total strain value is 4.",
+    "figures": [],
+    "tables": [],
+    "confidence": "high"
+  }
+],
+"context_update": {
+  "summary": "This chunk reports XRD and EBSD microstructural characterization of Fe-30Mn-9Al-0.8C low-density steel after multiaxial forging (MAF) at 250 °C up to 5 passes (equivalent strain 2.3). XRD confirmed a fully austenitic structure and quantified dislocation density increasing from 0.79×10^15 m⁻² (MAF-0) to 8.98×10^15 m⁻² (MAF-5), which was fitted to an exponential saturation model (Eq. 7) with k1=7.9×10^15 m⁻² and k2=1.813; deceleration and possible dislocation rearrangement were observed at critical strain 2.3. EBSD image quality maps revealed high-angle boundary fraction initially decreased from 0.62 to 0.24 (MAF-3) and then increased to 0.69 (MAF-5) due to conversion of low-angle boundaries. Texture evolved from strong [101] alignment in MAF-0 to random orientations after multiple passes. Grain size refined from 50 μm to 13 μm, following an exponential decay (k3=0.639, R²=0.99052). KAM maps confirmed increasing plastic strain from 0.34° to 1.07°. These microstructural metrics provide the experimental foundation for the modified Johnson-Cook model and upcoming FE validation. Subsequent chunks should incorporate these data into flow stress predictions and report tensile properties.",
+  "material_systems": ["Fe-30Mn-9Al-0.8C low-density steel (austenitic)"],
+  "sample_aliases": ["MAF-0", "MAF-1", "MAF-3", "MAF-5"],
+  "processing_route": ["multiaxial forging (MAF) at 250 °C", "33% normal strain per pass", "0, 1, 3, 5 passes", "equivalent strain up to 2.3"],
+  "key_variables": ["dislocation density", "grain size", "high-angle grain boundary fraction", "low-angle grain boundary fraction", "KAM", "equivalent plastic strain"],
+  "microstructure": ["austenite phase only", "grain size: MAF-0 50 μm, MAF-1 35 μm, MAF-3 20 μm, MAF-5 13 μm", "HAB fraction: 0.62, 0.29, 0.24, 0.69", "LAG fraction: 0.367, 0.708, 0.759, 0.301", "texture: strong [101] and [111] // ND in MAF-0, randomized with passes", "KAM: 0.34°, 0.72°, 0.87°, 1.07°"],
+  "properties": [],
+  "mechanisms": ["dislocation accumulation and rearrangement", "grain refinement", "texture randomization", "strain hardening"],
+  "figures_or_tables": ["Fig. 5", "Fig. 6", "Fig. 7", "Fig. 8", "Fig. 9", "Table 1"],
+  "unresolved_terms": []
+}
+}

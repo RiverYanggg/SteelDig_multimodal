@@ -1,0 +1,17 @@
+{
+  "paper_id": "A43",
+  "figure_id": "figure_005",
+  "image_paths": [
+    "images/fe2666a44bec94af13c544ed318ab75f8b1eaff5f65a222318b4b1a23e14e476.jpg",
+    "images/10367fe59420435e94a19bb1dbd9df759c20772fd37acfe8e8e5f14ae016bd48.jpg",
+    "images/7eeccb86603ccc45f8ba98daf1ecbc28af45c6446b8a14b17e9113791b5aca21.jpg",
+    "images/85ec84d85175e142e371493caf49e3b47af1f3aef9266182da22fefd5b4ec838.jpg",
+    "images/8ef83e60f2ae490bdec6ca2f869749ea6094e2731bae30071d4808abb1ee8772.jpg",
+    "images/0cd6167baf4feba3c9062a7acbb54f49c77fb43d540ec7ae85cee0a76ca528af.jpg",
+    "images/431d3a84e60daea7a7818157477de740f6c4c8b8feb82c5258f9201c00b4eb04.jpg"
+  ],
+  "image_count": 7,
+  "image_type": "chart_plot",
+  "description": "This figure presents goodness-of-fit scatter plots for seven machine learning models predicting yield strength (YS) in medium-manganese low-density steels. Subfigures (a) through (g) correspond to Decision Tree (DT), XGBoost, LightGBM, CatBoost, Extra Trees, K-Nearest Neighbors (KNN), and AdaBoost, respectively. Each plot compares predicted YS values against actual experimental and literature data (ranging from approximately 0 to 3000 MPa) with a red dashed diagonal line representing ideal prediction. The evaluation metrics reveal that Extra Trees achieves the best performance with R² = 0.978, RMSE = 76.2 MPa, and MAPE = 9.80%, followed closely by CatBoost (R² = 0.970) and XGBoost (R² = 0.969). AdaBoost exhibits the poorest fit (R² = 0.901, MAPE = 33.1%). The data points generally align along the x = y diagonal across all models, indicating reliable predictive capability using input features from four strengthening mechanisms (solid solution, grain refinement, dislocation, and Orowan). This comparison establishes Extra Trees as the optimal base model for subsequent hyperparameter optimization via genetic algorithms.",
+  "confidence": 0.0
+}

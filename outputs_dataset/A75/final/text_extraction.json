@@ -1,0 +1,864 @@
+{
+  "papers": [
+    {
+      "paper_id": "A75",
+      "doi": "10.1002/srin.202400447",
+      "title": "Effects of Cryogenic Rolling on the Microstructure Evolution and Mechanical Properties of Low-Density Fe-28Mn-8Al-1C Steel",
+      "authors": [
+        "Yi Xiong",
+        "Ze-wei Luan",
+        "Xiao-qin Zha",
+        "Yong Li",
+        "Xiu-ju Du",
+        "Feng-zhang Ren",
+        "Shu-bo Wang",
+        "Xiao-jun Liu"
+      ],
+      "publication_year": null,
+      "journal": "steel research international",
+      "keywords": [
+        "low-density steel",
+        "cryogenic rolling",
+        "microstructure",
+        "mechanical properties",
+        "Fe-28Mn-8Al-1C",
+        "dislocation",
+        "twinning",
+        "grain refinement",
+        "strength-ductility trade-off"
+      ],
+      "research_type": "experimental",
+      "paper_scope": "Systematic investigation of the influence of cryogenic rolling deformation on microstructure evolution and mechanical properties of low-density Fe-28Mn-8Al-1C steel."
+    }
+  ],
+  "alloys": [
+    {
+      "alloy_id": "alloy_fe28mn8al1c",
+      "paper_id": "A75",
+      "alloy_name": "Fe-28Mn-8Al-1C",
+      "aliases": [
+        "test steel",
+        "low-density Fe-28Mn-8Al-1C steel"
+      ],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Al",
+        "C"
+      ],
+      "nominal_composition": [
+        {
+          "element": "C",
+          "weight_percent": "0.97",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "27.91",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "8.04",
+          "atomic_percent": null
+        },
+        {
+          "element": "S",
+          "weight_percent": "0.004",
+          "atomic_percent": null
+        },
+        {
+          "element": "P",
+          "weight_percent": "0.006",
+          "atomic_percent": null
+        },
+        {
+          "element": "Fe",
+          "weight_percent": "Bal.",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "Actual chemical composition from Table 1."
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_st",
+      "paper_id": "A75",
+      "alloy_id": "alloy_fe28mn8al1c",
+      "description": "Solution treatment at 1000°C for 1 h followed by water quenching.",
+      "processes_notes": null
+    },
+    {
+      "process_id": "proc_cr",
+      "paper_id": "A75",
+      "alloy_id": "alloy_fe28mn8al1c",
+      "description": "Solution treatment at 1000°C for 1 h and water quenching, then cryogenic rolling with cumulative thickness reductions of 30%, 50%, 70%, and 90%.",
+      "processes_notes": null
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_undeformed",
+      "paper_id": "A75",
+      "alloy_id": "alloy_fe28mn8al1c",
+      "process_id": "proc_st"
+    },
+    {
+      "sample_id": "sample_cr30",
+      "paper_id": "A75",
+      "alloy_id": "alloy_fe28mn8al1c",
+      "process_id": "proc_cr"
+    },
+    {
+      "sample_id": "sample_cr50",
+      "paper_id": "A75",
+      "alloy_id": "alloy_fe28mn8al1c",
+      "process_id": "proc_cr"
+    },
+    {
+      "sample_id": "sample_cr70",
+      "paper_id": "A75",
+      "alloy_id": "alloy_fe28mn8al1c",
+      "process_id": "proc_cr"
+    },
+    {
+      "sample_id": "sample_cr90",
+      "paper_id": "A75",
+      "alloy_id": "alloy_fe28mn8al1c",
+      "process_id": "proc_cr"
+    }
+  ],
+  "processing_steps": [
+    {
+      "sample_id": "sample_undeformed",
+      "paper_id": "A75",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "solution treatment",
+      "temperature": "1000",
+      "unit": "°C",
+      "duration": "1 h",
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Prior to this step, the ingot was heated at 1200°C for 2 h and hot forged into billets."
+    },
+    {
+      "sample_id": "sample_cr30",
+      "paper_id": "A75",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "solution treatment",
+      "temperature": "1000",
+      "unit": "°C",
+      "duration": "1 h",
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_cr30",
+      "paper_id": "A75",
+      "sequence": "2",
+      "type": "cryogenic_rolling",
+      "method": "multi-pass rolling in liquid nitrogen",
+      "temperature": "cryogenic",
+      "unit": null,
+      "duration": null,
+      "cooling_medium": "liquid nitrogen",
+      "reduction_ratio": "30%",
+      "processing_steps_notes": "Specimens immersed in liquid nitrogen for 3–5 min before each pass; single pass reduction ~2%; repeated cycles until cumulative 30% reduction."
+    },
+    {
+      "sample_id": "sample_cr50",
+      "paper_id": "A75",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "solution treatment",
+      "temperature": "1000",
+      "unit": "°C",
+      "duration": "1 h",
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_cr50",
+      "paper_id": "A75",
+      "sequence": "2",
+      "type": "cryogenic_rolling",
+      "method": "multi-pass rolling in liquid nitrogen",
+      "temperature": "cryogenic",
+      "unit": null,
+      "duration": null,
+      "cooling_medium": "liquid nitrogen",
+      "reduction_ratio": "50%",
+      "processing_steps_notes": "Specimens immersed in liquid nitrogen for 3–5 min before each pass; single pass reduction ~2%; repeated cycles until cumulative 50% reduction."
+    },
+    {
+      "sample_id": "sample_cr70",
+      "paper_id": "A75",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "solution treatment",
+      "temperature": "1000",
+      "unit": "°C",
+      "duration": "1 h",
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_cr70",
+      "paper_id": "A75",
+      "sequence": "2",
+      "type": "cryogenic_rolling",
+      "method": "multi-pass rolling in liquid nitrogen",
+      "temperature": "cryogenic",
+      "unit": null,
+      "duration": null,
+      "cooling_medium": "liquid nitrogen",
+      "reduction_ratio": "70%",
+      "processing_steps_notes": "Specimens immersed in liquid nitrogen for 3–5 min before each pass; single pass reduction ~2%; repeated cycles until cumulative 70% reduction."
+    },
+    {
+      "sample_id": "sample_cr90",
+      "paper_id": "A75",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "solution treatment",
+      "temperature": "1000",
+      "unit": "°C",
+      "duration": "1 h",
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_cr90",
+      "paper_id": "A75",
+      "sequence": "2",
+      "type": "cryogenic_rolling",
+      "method": "multi-pass rolling in liquid nitrogen",
+      "temperature": "cryogenic",
+      "unit": null,
+      "duration": null,
+      "cooling_medium": "liquid nitrogen",
+      "reduction_ratio": "90%",
+      "processing_steps_notes": "Specimens immersed in liquid nitrogen for 3–5 min before each pass; single pass reduction ~2%; repeated cycles until cumulative 90% reduction."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_undeformed",
+      "sample_id": "sample_undeformed",
+      "overall_structure": "Equiaxed austenite grains with straight grain boundaries, containing annealing twins and a few dislocation lines.",
+      "number_of_phases": "1",
+      "microstructure_counts": "Annealing twins present.",
+      "microstructure_list": [
+        {
+          "uuid": "uuid_undef_1",
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": "~100%",
+              "morphology": "equiaxed",
+              "grain_size": "40.3 μm",
+              "texture": "relatively random orientations (from EBSD)"
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocations",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "3.2 × 10^14 m^{-2} (from XRD calculation)",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "40.3",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": "weak random texture"
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_cr30",
+      "sample_id": "sample_cr30",
+      "overall_structure": "Austenite grains elongated along RD with many intersecting slip bands; Taylor lattice structure formed by slip band intersections.",
+      "number_of_phases": "1",
+      "microstructure_counts": "Slip bands present; dislocation density increased; Taylor lattice.",
+      "microstructure_list": [
+        {
+          "uuid": "uuid_cr30_1",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": "~100%",
+              "morphology": "elongated grains with slip bands",
+              "grain_size": null,
+              "texture": "copper {112}<111> component begins to appear"
+            }
+          ],
+          "defects": [
+            {
+              "type": "slip bands and increased dislocation density",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "6.2 × 10^14 m^{-2} (from XRD)",
+              "lattice_distortion": "higher KAM near grain boundaries"
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": "copper {112}<111>"
+          },
+          "precipitates": []
+        },
+        {
+          "uuid": "uuid_cr30_2",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "Taylor lattice",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "dislocation substructure",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {},
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_cr50",
+      "sample_id": "sample_cr50",
+      "overall_structure": "Elongated/flattened grains with dense slip bands, dislocation walls, and extensive deformation twins.",
+      "number_of_phases": "1",
+      "microstructure_counts": "Dislocation walls and deformation twins prominent.",
+      "microstructure_list": [
+        {
+          "uuid": "uuid_cr50_1",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": "~100%",
+              "morphology": "elongated/flattened grains",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocation walls, entanglements, deformation twins",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "7.9 × 10^14 m^{-2} (from XRD)",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_cr70",
+      "sample_id": "sample_cr70",
+      "overall_structure": "Elongated grains with larger dislocation cells and reduced twin density.",
+      "number_of_phases": "1",
+      "microstructure_counts": "Dislocation cells dominate; twinning decreases.",
+      "microstructure_list": [
+        {
+          "uuid": "uuid_cr70_1",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": "~100%",
+              "morphology": "elongated grains with dislocation cells",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocation cells, reduced twins",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "12.9 × 10^14 m^{-2} (from XRD)",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_cr90",
+      "sample_id": "sample_cr90",
+      "overall_structure": "Fibrous morphology; nanocrystalline austenite grains with random orientations, micro-shear bands, intersecting slip bands, and few twins.",
+      "number_of_phases": "1",
+      "microstructure_counts": "Average grain size 58.8 nm; continuous SAED rings confirm nanocrystalline structure.",
+      "microstructure_list": [
+        {
+          "uuid": "uuid_cr90_1",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": "~100%",
+              "morphology": "fibrous, nanocrystalline grains",
+              "grain_size": "58.8 nm",
+              "texture": "brass {110}<112> component dominates (copper component at low strain changes to brass)"
+            }
+          ],
+          "defects": [
+            {
+              "type": "high dislocation density, micro-shear bands",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "2.36 × 10^15 m^{-2} (from XRD)",
+              "lattice_distortion": "high KAM in rolling bands"
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "58.8",
+              "unit": "nm"
+            },
+            "grain_size_distribution": "nanocrystalline, random orientation",
+            "texture": "brass {110}<112>"
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "prop_undeformed",
+      "sample_id": "sample_undeformed",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "RD",
+              "value": "505",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "RD",
+              "value": "882",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "RD",
+              "value": "64.5",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "see Figure 8a",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": "bulk",
+            "value": "284",
+            "scale": "HV",
+            "unit": "kgf/mm² equivalent"
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "6.82",
+          "unit": "g/cm³"
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {},
+      "radiation_properties": {}
+    },
+    {
+      "property_set_id": "prop_cr30",
+      "sample_id": "sample_cr30",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "RD",
+              "value": "1092",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "RD",
+              "value": "1261",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "RD",
+              "value": "13.6",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "see Figure 8a",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": "bulk",
+            "value": "435",
+            "scale": "HV",
+            "unit": "kgf/mm² equivalent"
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {},
+      "chemical": {},
+      "radiation_properties": {}
+    },
+    {
+      "property_set_id": "prop_cr50",
+      "sample_id": "sample_cr50",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "RD",
+              "value": "1379",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "RD",
+              "value": "1518",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "RD",
+              "value": "8.8",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "see Figure 8a",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": "bulk",
+            "value": "479",
+            "scale": "HV",
+            "unit": "kgf/mm² equivalent"
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {},
+      "chemical": {},
+      "radiation_properties": {}
+    },
+    {
+      "property_set_id": "prop_cr70",
+      "sample_id": "sample_cr70",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "RD",
+              "value": "1588",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "RD",
+              "value": "1693",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "RD",
+              "value": "7.2",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "see Figure 8a",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": "bulk",
+            "value": "530",
+            "scale": "HV",
+            "unit": "kgf/mm² equivalent"
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {},
+      "chemical": {},
+      "radiation_properties": {}
+    },
+    {
+      "property_set_id": "prop_cr90",
+      "sample_id": "sample_cr90",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "RD",
+              "value": "1791",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "RD",
+              "value": "1861",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "RD",
+              "value": "6.6",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "see Figure 8a",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": "bulk",
+            "value": "578",
+            "scale": "HV",
+            "unit": "kgf/mm² equivalent"
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {},
+      "chemical": {},
+      "radiation_properties": {}
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_undeformed",
+      "sample_id": "sample_undeformed",
+      "microstructure_uuid": "uuid_undef_1",
+      "technique": "OM, TEM, EBSD, XRD, tensile test, microhardness",
+      "purpose": "Microstructural and mechanical characterization of undeformed solution-treated steel",
+      "key_findings": "Equiaxed austenite grains (~40.3 μm), annealing twins, random texture, UTS 882 MPa, YS 505 MPa, elongation 64.5%, hardness 284 HV."
+    },
+    {
+      "characterization_id": "char_cr30",
+      "sample_id": "sample_cr30",
+      "microstructure_uuid": "uuid_cr30_1",
+      "technique": "OM, TEM, EBSD, XRD, tensile test, microhardness",
+      "purpose": "Characterization after 30% CR",
+      "key_findings": "Elongated grains, slip bands, Taylor lattice, copper texture, increased dislocation density, UTS 1261 MPa, YS 1092 MPa, elongation 13.6%, hardness 435 HV."
+    },
+    {
+      "characterization_id": "char_cr50",
+      "sample_id": "sample_cr50",
+      "microstructure_uuid": "uuid_cr50_1",
+      "technique": "OM, TEM, XRD, tensile test, microhardness",
+      "purpose": "Characterization after 50% CR",
+      "key_findings": "Dense slip bands, dislocation walls, deformation twins, UTS 1518 MPa, YS 1379 MPa, elongation 8.8%, hardness 479 HV."
+    },
+    {
+      "characterization_id": "char_cr70",
+      "sample_id": "sample_cr70",
+      "microstructure_uuid": "uuid_cr70_1",
+      "technique": "OM, TEM, XRD, tensile test, microhardness",
+      "purpose": "Characterization after 70% CR",
+      "key_findings": "Dislocation cells, reduced twin density, UTS 1693 MPa, YS 1588 MPa, elongation 7.2%, hardness 530 HV."
+    },
+    {
+      "characterization_id": "char_cr90",
+      "sample_id": "sample_cr90",
+      "microstructure_uuid": "uuid_cr90_1",
+      "technique": "OM, TEM, EBSD, XRD, tensile test, microhardness, SEM fracture",
+      "purpose": "Characterization after 90% CR",
+      "key_findings": "Fibrous morphology, nanocrystalline grains (~58.8 nm), brass texture, micro-shear bands, UTS 1861 MPa, YS 1791 MPa, elongation 6.6%, hardness 578 HV, fracture shows mixed ductile-brittle."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_xrd",
+      "sample_id": null,
+      "simulation_method": null,
+      "software_used": "Nano-Measurer (for grain size from DF-TEM)",
+      "potential_model": null,
+      "validation_against_experiment": "Trend of calculated dislocation density agrees with TEM observations.",
+      "analytical_model": [
+        {
+          "model_name": "Williamson-Hall method",
+          "equation_role": "Separate grain size and microstrain contributions to XRD peak broadening; obtain microstrain and grain size for each deformation condition",
+          "parameters": "K = 0.9, λ = 0.15406 nm",
+          "model_note": "Equation (1): β_τ = Kλ/(D cosθ) + 4ε tanθ."
+        },
+        {
+          "model_name": "Dislocation density calculation",
+          "equation_role": "Calculate dislocation density ρ from microstrain ε and grain size D",
+          "parameters": "ε, D, b (Burgers vector not provided in text)",
+          "model_note": "Equation (2): ρ = 2√3 (ε²)^(1/2) / (D b)."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "The alloy density was measured as 6.82 g cm^{-3}.",
+    "Stacking fault energy (SFE) of this steel at room temperature is 72 mJ m^{-2} and at cryogenic temperature is 51 mJ m^{-2}.",
+    "The critical stress for dislocation slip and twinning follow Hall–Petch relationships, with k_T > k_s, explaining reduced twinning at refined grain sizes.",
+    "Elongation values differ between text (64%) and Figure 8b table (64.5%); table values used.",
+    "DF-TEM grain size analysis yields an average of 58.8 nm, but Figure 3f caption states 50.8 nm — discrepancy likely due to different measurement areas.",
+    "Fracture mode transitions from ductile (large dimples) to mixed ductile-brittle (cleavage features) with increasing CR reduction.",
+    "Texture evolves from copper {112}<111> at low strain to brass {110}<112> at high strain (CR 90%).",
+    "Equation (3) (Hart's necking criterion) is discussed to explain ductility loss."
+  ]
+}

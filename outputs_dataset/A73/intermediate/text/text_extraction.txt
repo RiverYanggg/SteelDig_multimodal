@@ -1,0 +1,654 @@
+{
+  "papers": [
+    {
+      "paper_id": "A73",
+      "doi": "10.1002/srin.202200191",
+      "title": "Fe–Mn–C–Al Low-Density Steel for Structural Materials: A Review of Alloying, Heat Treatment, Microstructure, and Mechanical Properties",
+      "authors": [
+        "Shufen Hu",
+        "Zhibin Zheng",
+        "Weiping Yang",
+        "Haokun Yang"
+      ],
+      "publication_year": "2022",
+      "journal": "Steel Research International",
+      "keywords": [
+        "low-density steel",
+        "Fe-Mn-C-Al",
+        "alloying",
+        "heat treatment",
+        "microstructure",
+        "mechanical properties",
+        "work hardening",
+        "TWIP",
+        "TRIP",
+        "SRO",
+        "κ-carbide",
+        "wear resistance",
+        "cryogenic",
+        "hydrogen embrittlement"
+      ],
+      "research_type": "review",
+      "paper_scope": "The article reviews recent progress in alloying and heat treatment design and their effects on microstructural evolution and mechanical properties of Al-containing Fe-Mn-C-Al low-density steel, with emphasis on work hardening mechanisms, tribological performance, cryogenic behavior, and hydrogen embrittlement."
+    }
+  ],
+  "alloys": [
+    {
+      "alloy_id": "alloy_fully_austenite",
+      "paper_id": "A73",
+      "alloy_name": "Fe-Mn-C-Al fully austenitic low-density steel",
+      "aliases": [],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Al",
+        "C"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Mn",
+          "weight_percent": "12-30",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "5-12",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.6-1.2",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "Fully austenitic low-density steel with high Mn, Al, and C contents to stabilize austenite at room temperature; characterized by annealing twins and fully recovered grains."
+    },
+    {
+      "alloy_id": "alloy_austenite_duplex",
+      "paper_id": "A73",
+      "alloy_name": "Fe-Mn-C-Al austenite-based duplex low-density steel",
+      "aliases": [],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Al",
+        "C"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Mn",
+          "weight_percent": "5-30",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "5-10",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.4-0.7",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "Austenite-based duplex steel consisting of austenite and ferrite mixture; ferrite often elongated along the rolling direction."
+    },
+    {
+      "alloy_id": "alloy_fe28mn8p5al1c1p2si",
+      "paper_id": "A73",
+      "alloy_name": "Fe-28Mn-8.5Al-1C-1.2Si",
+      "aliases": [],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Al",
+        "C",
+        "Si"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Mn",
+          "weight_percent": "28",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "8.5",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "1",
+          "atomic_percent": null
+        },
+        {
+          "element": "Si",
+          "weight_percent": "1.2",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "Used to study austenite decomposition and κ-carbide precipitation during cooling and aging (Figure 3)."
+    },
+    {
+      "alloy_id": "alloy_fe22p33mn1p35c9p87al",
+      "paper_id": "A73",
+      "alloy_name": "Fe-22.33Mn-1.35C-9.87Al",
+      "aliases": [],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "C",
+        "Al"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Mn",
+          "weight_percent": "22.33",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "1.35",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "9.87",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "Used for wear behavior study under different aging temperatures (500–600°C)."
+    },
+    {
+      "alloy_id": "alloy_fe28mn1c8p5al",
+      "paper_id": "A73",
+      "alloy_name": "Fe-28Mn-1C-8.5Al",
+      "aliases": [],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "C",
+        "Al"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Mn",
+          "weight_percent": "28",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "1",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "8.5",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "Investigated for wear behavior after quenching and aging; overaging leads to coarse κ and microcracking."
+    },
+    {
+      "alloy_id": "alloy_fe22mn0p4c1p5al1p5si",
+      "paper_id": "A73",
+      "alloy_name": "Fe-22Mn-0.4C-1.5Al-1.5Si",
+      "aliases": [],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "C",
+        "Al",
+        "Si"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Mn",
+          "weight_percent": "22",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.4",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "1.5",
+          "atomic_percent": null
+        },
+        {
+          "element": "Si",
+          "weight_percent": "1.5",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "Processed by metal injection molding (MIM) and sintered at 1360°C; contains manganese oxide particles in austenitic matrix."
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_fully_austenite_annealed",
+      "paper_id": "A73",
+      "alloy_id": "alloy_fully_austenite",
+      "description": "Annealing treatment to obtain fully austenitic microstructure with annealing twins.",
+      "processes_notes": null
+    },
+    {
+      "process_id": "proc_duplex_annealed",
+      "paper_id": "A73",
+      "alloy_id": "alloy_austenite_duplex",
+      "description": "Annealing treatment to obtain duplex austenite-ferrite microstructure with elongated ferrite grains along rolling direction.",
+      "processes_notes": null
+    },
+    {
+      "process_id": "proc_fe28mn8p5_cool_control",
+      "paper_id": "A73",
+      "alloy_id": "alloy_fe28mn8p5al1c1p2si",
+      "description": "Controlled cooling from austenitization to influence κ precipitation; slow cooling below 4.4°C/h leads to κ formation.",
+      "processes_notes": null
+    },
+    {
+      "process_id": "proc_fe22p33_aging",
+      "paper_id": "A73",
+      "alloy_id": "alloy_fe22p33mn1p35c9p87al",
+      "description": "Homogenization followed by aging at 500°C, 550°C, and 600°C for 1–3 hours.",
+      "processes_notes": null
+    },
+    {
+      "process_id": "proc_fe28mn1c8p5al_q_t",
+      "paper_id": "A73",
+      "alloy_id": "alloy_fe28mn1c8p5al",
+      "description": "Quenching from 1050°C followed by aging at 550°C for 4 h or at 350°C for 3 h.",
+      "processes_notes": null
+    },
+    {
+      "process_id": "proc_fe22mn0p4_sinter",
+      "paper_id": "A73",
+      "alloy_id": "alloy_fe22mn0p4c1p5al1p5si",
+      "description": "Metal injection molding (MIM) process with sintering at 1360°C for 1 h or 3 h.",
+      "processes_notes": null
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_fully_austenite_annealed",
+      "paper_id": "A73",
+      "alloy_id": "alloy_fully_austenite",
+      "process_id": "proc_fully_austenite_annealed"
+    },
+    {
+      "sample_id": "sample_duplex_annealed",
+      "paper_id": "A73",
+      "alloy_id": "alloy_austenite_duplex",
+      "process_id": "proc_duplex_annealed"
+    },
+    {
+      "sample_id": "sample_fe28mn8p5_slow_cool",
+      "paper_id": "A73",
+      "alloy_id": "alloy_fe28mn8p5al1c1p2si",
+      "process_id": "proc_fe28mn8p5_cool_control"
+    },
+    {
+      "sample_id": "sample_fe22p33_aging",
+      "paper_id": "A73",
+      "alloy_id": "alloy_fe22p33mn1p35c9p87al",
+      "process_id": "proc_fe22p33_aging"
+    },
+    {
+      "sample_id": "sample_fe28mn1c8p5al_550c_4h",
+      "paper_id": "A73",
+      "alloy_id": "alloy_fe28mn1c8p5al",
+      "process_id": "proc_fe28mn1c8p5al_q_t"
+    },
+    {
+      "sample_id": "sample_fe22mn0p4_sinter_1h",
+      "paper_id": "A73",
+      "alloy_id": "alloy_fe22mn0p4c1p5al1p5si",
+      "process_id": "proc_fe22mn0p4_sinter"
+    }
+  ],
+  "processing_steps": [
+    {
+      "sample_id": "sample_fully_austenite_annealed",
+      "paper_id": "A73",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "annealing",
+      "temperature": null,
+      "unit": null,
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Details of annealing temperature and time not specified in the review."
+    },
+    {
+      "sample_id": "sample_duplex_annealed",
+      "paper_id": "A73",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "annealing",
+      "temperature": null,
+      "unit": null,
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Annealing followed by rolling to obtain elongated ferrite; specific parameters not given."
+    },
+    {
+      "sample_id": "sample_fe28mn8p5_slow_cool",
+      "paper_id": "A73",
+      "sequence": "1",
+      "type": "thermomechanical_processing",
+      "method": "controlled cooling",
+      "temperature": null,
+      "unit": null,
+      "duration": null,
+      "cooling_medium": "furnace/slow cooling",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Cooling rate below 4.4°C/h results in κ precipitation."
+    },
+    {
+      "sample_id": "sample_fe22p33_aging",
+      "paper_id": "A73",
+      "sequence": "2",
+      "type": "heat_treatment",
+      "method": "aging",
+      "temperature": "500-600",
+      "unit": "°C",
+      "duration": "1-3 h",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Aging applied after homogenization."
+    },
+    {
+      "sample_id": "sample_fe28mn1c8p5al_550c_4h",
+      "paper_id": "A73",
+      "sequence": "2",
+      "type": "heat_treatment",
+      "method": "quenching and aging",
+      "temperature": "1050 (quench) / 550 (aging)",
+      "unit": "°C",
+      "duration": "4 h (aging)",
+      "cooling_medium": "quenching medium not specified",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Quenching from 1050°C then aging at 550°C for 4 h. A separate condition of 350°C for 3 h also mentioned."
+    },
+    {
+      "sample_id": "sample_fe22mn0p4_sinter_1h",
+      "paper_id": "A73",
+      "sequence": "3",
+      "type": "thermomechanical_processing",
+      "method": "metal injection molding + sintering",
+      "temperature": "1360",
+      "unit": "°C",
+      "duration": "1 h or 3 h",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "MIM process, sintering at 1360°C; also includes mixing with HDPE and PW and debinding."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_fully_austenite",
+      "sample_id": "sample_fully_austenite_annealed",
+      "overall_structure": "Fully austenitic matrix with annealing twins; grains are fully recovered.",
+      "number_of_phases": "1",
+      "microstructure_counts": "single phase",
+      "microstructure_list": [
+        {
+          "uuid": "uuid_micro_fully_aust",
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "fcc",
+              "volume_fraction": "100",
+              "morphology": "equiaxed grains with abundant annealing twins",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "none",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_duplex",
+      "sample_id": "sample_duplex_annealed",
+      "overall_structure": "Duplex structure of austenite matrix with elongated ferrite grains along the rolling direction.",
+      "number_of_phases": "2",
+      "microstructure_counts": "two phases",
+      "microstructure_list": [
+        {
+          "uuid": "uuid_micro_duplex",
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "fcc",
+              "volume_fraction": null,
+              "morphology": "matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "ferrite",
+              "crystal_structure": "bcc",
+              "volume_fraction": null,
+              "morphology": "elongated grains along rolling direction",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "none",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "prop_set_fully_austenite",
+      "sample_id": "sample_fully_austenite_annealed",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "up to 950",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "up to 1100",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "not less than 40",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "6.2 - 7.0",
+          "unit": "g cm-3"
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_om_fully_austenite",
+      "sample_id": "sample_fully_austenite_annealed",
+      "microstructure_uuid": "uuid_micro_fully_aust",
+      "technique": "Optical Microscopy (OM)",
+      "purpose": "Observe microstructure of fully austenitic low-density steel",
+      "key_findings": "Abundant annealing twins observed; grains are fully recovered."
+    },
+    {
+      "characterization_id": "char_om_duplex",
+      "sample_id": "sample_duplex_annealed",
+      "microstructure_uuid": "uuid_micro_duplex",
+      "technique": "Optical Microscopy (OM)",
+      "purpose": "Observe duplex microstructure of austenite-based low-density steel",
+      "key_findings": "Elongated ferrite phase grains along the rolling direction observed within austenite matrix."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_calphad",
+      "sample_id": null,
+      "simulation_method": "CALPHAD-type thermodynamic calculation",
+      "software_used": "Thermo-Calc",
+      "potential_model": null,
+      "validation_against_experiment": "Validated using experimental isothermal sections at 900°C.",
+      "analytical_model": [
+        {
+          "model_name": "Density-composition empirical formula",
+          "equation_role": "Estimate density of Fe-Mn-C-Al austenitic steel",
+          "parameters": "ρ = 8.15 - 0.101(wt% Al) - 0.41(wt% C) - 0.0085(wt% Mn)",
+          "model_note": "C addition has strongest density reduction effect per weight percent."
+        },
+        {
+          "model_name": "Lattice constant-composition formula",
+          "equation_role": "Calculate austenite lattice constant from composition",
+          "parameters": "α = 0.35721 + 0.0002771(wt% Al) + 0.0044089(wt% C) + 0.0001166(wt% Mn)",
+          "model_note": "C atom (interstitial) expands lattice more than substitutional Al and Mn."
+        },
+        {
+          "model_name": "Yield strength vs solute content",
+          "equation_role": "Solid solution strengthening contributions",
+          "parameters": "σ_γ(Al) = 10.5(wt% Al) + 351.5; σ_γ(Mn) = 0.58(wt% Mn) + 328.0; σ_γ(C) = 180.7(wt% C) + 250.7",
+          "model_note": "Al and C solutes strengthen by lattice expansion; Mn has little effect."
+        },
+        {
+          "model_name": "W_R dislocation slip mode parameter",
+          "equation_role": "Predict transition from wavy to planar slip with Al content",
+          "parameters": "W_R = γ/μ - 2(1+ν)b_e Ω c / [π(1-ν)]",
+          "model_note": "Lower W_R indicates stronger planar slip due to SRO; parameter decreases with Al."
+        },
+        {
+          "model_name": "Ashby-Orowan precipitation strengthening",
+          "equation_role": "Estimate yield strength increment from carbides",
+          "parameters": "Δσ_p = 0.847·M·(1.2/π)·G·b·√(3/(2π))·(f^0.5/D)·ln(D/(2b))",
+          "model_note": "Small, high volume fraction carbides (TiC, VC, NbC) provide greater strengthening."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "The review emphasizes that Fe-Mn-C-Al low-density steel can achieve tensile strength up to 1.1 GPa with ductility ≥40%.",
+    "Alloying design: C addition reduces density most strongly (4 times that of Al), but solid solubility limit of C in austenite is below 1.2 wt% to avoid crack formation; Al is considered the most suitable alloying element for both density reduction and yield strength improvement.",
+    "Phase composition: fully austenitic steels require Mn 12-30 wt%, Al 5-12 wt%, C 0.6-1.2 wt%; austenite-based duplex steels have Mn 5-30 wt%, Al 5-10 wt%, C 0.4-0.7 wt%.",
+    "Isothermal phase sections at 900°C (Figure 2) show that with increasing Mn, γ region expands in high Al area (>8 wt%), κ phase region expands at high C (>3 wt%) and high Al (>10 wt%); M3C and κ phases appear above 1.2 wt% C; α phase region expands with high Al.",
+    "Aging sequence for γ decomposition (valid for Mn 12-30%, Al ≤12%, C 0.6-2.0 wt%): γ → γ' + γ'' → γ' + L1₂ (SRO) → γ + κ. Slow cooling (<4.4°C/h) causes κ precipitation in Fe-28Mn-8.5Al-1C-1.2Si steel.",
+    "κ-carbide precipitates in high Al steels (≥7 wt%); Fe(Mn)₃C dominates in low Al steels (<7 wt%). Overaging coarsens κ particles and reduces work hardening capacity.",
+    "TWIP effect is suppressed by Al addition (6 wt% Al eliminates TWIP in Fe-22Mn-0.6C-6Al steel) due to increased SFE; TWIP is mainly active in low Al steels.",
+    "TRIP effect operates in austenite-based duplex steels with C < 0.5 wt% and Al 3-6 wt%, where retained austenite transforms to martensite under strain, delaying necking.",
+    "SRO effect promotes planar dislocation slip in high Al (≥6 wt%) steels; dislocation substructures (Taylor lattices, cells) contribute to work hardening.",
+    "Alloying effects summary (Table 1): Al reduces density but weakens TWIP; Nb improves yield stress but weakens TWIP; C enhances twinning but may cause shear fracture via DSA; Mn improves cryogenic toughness but has little effect at room temperature.",
+    "For Fe-17Mn-0.45C-2Al, Fe-19Mn-0.45C-2Al, and Fe-22Mn-0.45C-2Al steels at cryogenic temperature, ductility decreased to 75.7%, 53.4% and 9.7% of room-temperature values, and Charpy impact energy decreased to 80.5%, 49.8% and 41.1%, respectively. Martensite formed in the 17Mn steel.",
+    "For Fe-18Mn-0.6C-xAl steels at cryogenic temperature: impact energy was 122 J for 3Al, 138 J for 5Al, but only 18 J for 8Al due to δ-ferrite formation.",
+    "Room-temperature Charpy impact energy of 22Mn steel was 149 J vs 44 J for 18Mn steel; Mn stabilizes austenite and improves low-temperature toughness.",
+    "Wear behavior: For Fe-22.33Mn-1.35C-9.87Al, aging at 600°C for 3 h produced good wear resistance with incoherent κ inhibiting crack nucleation. For Fe-28Mn-1C-8.5Al, overaging at 550°C for >2 h caused coarse κ along grain boundaries, leading to microcracking and delamination.",
+    "MIM-processed Fe-22Mn-0.4C-1.5Al-1.5Si steel sintered at 1360°C produced fully austenitic matrix with uniformly distributed manganese oxide particles (Figure 9).",
+    "Hydrogen embrittlement: Al addition mitigates HE by increasing hydrogen solubility and reducing diffusivity.",
+    "Production challenges include low heat dissipation of high-Mn ingots, Al-oxide pollution during casting and rolling, and chemical inhomogeneity; solutions such as CaO-SiO₂, CaO-Al₂O₃ mold fluxes and B₂O₃-Li₂O-BaO fluxing agents are being explored.",
+    "Future directions: optimize aging to balance strength/ductility with κ precipitation; reduce Al and Mn usage to lower cost; develop hot stamping technology for forming accuracy."
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "claims": [
+    {
+      "claim_type": "finding",
+      "subject": "formation energies of κ-carbides and related Ni/Cr-rich carbides",
+      "claim": "First-principles calculations give formation energies of (Fe,Mn)₃AlC κ-carbide as −0.160 eV/atom, Cr₂₁(FeC₃)₂ as −0.049 eV/atom, Fe₂NiC as +0.082 eV/atom, and AlNi₃C as −0.181 eV/atom.",
+      "values": [
+        "(Fe,Mn)3AlC: -0.160 eV/atom",
+        "Cr21(FeC3)2: -0.049 eV/atom",
+        "Fe2NiC: 0.082 eV/atom",
+        "AlNi3C: -0.181 eV/atom"
+      ],
+      "evidence_text": "κ-carbides $(Fe, Mn)_3AlC$ -0.160 eV/atom … Cr-rich carbides $Cr_{21}(FeC_3)_2$ -0.049 eV/atom … Ni-rich carbides $Fe_2NiC$ 0.082 eV/atom … $AlNi_3C$ -0.181 eV/atom",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "yield strength decomposition model",
+      "claim": "The yield strength of the Fe–Mn–Al–C steels is decomposed into frictional stress (σ₀), solid solution strengthening (σss), grain boundary strengthening (σgb), and precipitation strengthening (σprep) as σys = σ₀ + σss + σgb + σprep.",
+      "values": [
+        "σys = σ0 + σss + σgb + σprep"
+      ],
+      "evidence_text": "The yield strength can be represented as a linear combination of strengthening mechanisms, as illustrated in Equation (1): σys = σ0 + σss + σgb + σprep",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "property",
+      "subject": "frictional stress σ₀",
+      "claim": "Using τ₀ = 2×10⁻⁴G with the shear modulus G = 70 GPa for Fe–Mn–Al–C austenite, the frictional stress σ₀ = 3τ₀ is calculated as 42 MPa.",
+      "values": [
+        "G = 70 GPa",
+        "τ0 = 2×10⁻⁴G",
+        "σ0 = 42 MPa"
+      ],
+      "evidence_text": "Given that the G value for Fe–Mn–Al–C steel is 70 GPa, σ0 here is calculated to be 42 MPa.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "grain boundary strengthening via Hall-Petch relation",
+      "claim": "Grain boundary strengthening is estimated by σgb = KHP·deff⁻⁰·⁵ with KHP = 446.8 MPa·μm⁰·⁵. Using twin-containing grain sizes deff of 3.51, 3.73, 3.72, and 2.2 μm for 3Cr, 2Ni, 2Ni3Cr, and 2Ni5Cr, the calculated σgb values are 238.5, 231.3, 231.7, and 301.2 MPa, respectively.",
+      "values": [
+        "KHP = 446.8 MPa·μm^0.5",
+        "deff: 3Cr 3.51 μm, 2Ni 3.73 μm, 2Ni3Cr 3.72 μm, 2Ni5Cr 2.2 μm",
+        "σgb: 238.5, 231.3, 231.7, 301.2 MPa"
+      ],
+      "evidence_text": "KHP represents the Hall-Petch coefficient for steels in this study (KHP = 446.8 MPa μm0.5) … deff values from EBSD analysis as 3.51, 3.73, 3.72, and 2.2 μm, respectively … the calculated strengthening component results … 238.5, 231.3, 231.7, and 301.2 MPa, respectively.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "solid solution strengthening formula and values",
+      "claim": "Solid solution strengthening follows the empirical formula σss = 279[C] − 1.5[Mn] + 20.5[Al] + 2.9[Ni] + 3.9[Cr] (wt.%), giving values of 515.4 MPa (3Cr), 509.5 MPa (2Ni), 557.2 MPa (2Ni3Cr), and 554.1 MPa (2Ni5Cr).",
+      "values": [
+        "σss = 279[C] − 1.5[Mn] + 20.5[Al] + 2.9[Ni] + 3.9[Cr]",
+        "3Cr 515.4 MPa",
+        "2Ni 509.5 MPa",
+        "2Ni3Cr 557.2 MPa",
+        "2Ni5Cr 554.1 MPa"
+      ],
+      "evidence_text": "σss = 279[C] - 1.5[Mn] + 20.5[Al] + 2.9[Ni] + 3.9[Cr] … solute strengthening components for the 3Cr, 2Ni, 2Ni3Cr, and 2Ni5Cr samples are 515.4, 509.5, 557.2 and 554.1 MPa, respectively.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "dominant precipitation strengthening mechanism by shearing",
+      "claim": "Precipitation strengthening (σprep) is dominated by dislocation shearing of κ-carbides, combining ordering strengthening (σorder), coherency strengthening (σcoh), and modulus mismatch strengthening (σmod); the larger of σorder and σcoh+σmod is taken as σprep.",
+      "values": [
+        "shearing mechanism",
+        "σorder",
+        "σcoh",
+        "σmod",
+        "σprep = max(σorder, σcoh+σmod)"
+      ],
+      "evidence_text": "moving dislocations shear the precipitates, thus, shear strengthening is the predominant mechanism. The shearing mechanism involves three strengthening processes: ordering strengthening (σorder), coherency strengthening (σcoh), and modulus mismatch strengthening (σmod). … we assume that the larger of the two factors (σorder and σcoh+σmod) contributes to the precipitation strengthening.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "microstructure",
+      "subject": "contribution of LRO nanodomains to ordering strengthening in 3Cr and 2Ni5Cr",
+      "claim": "In 3Cr and 2Ni5Cr steels, some LRO nanodomains are smaller than the critical size, causing σorder to also contribute to precipitation strengthening, whereas in other samples σcoh+σmod dominates.",
+      "values": [
+        "3Cr and 2Ni5Cr contain LRO nanodomains",
+        "some nanodomains smaller than critical size",
+        "σorder contributes"
+      ],
+      "evidence_text": "in the 3Cr and 2Ni5Cr samples with LRO nanodomains, σorder also contributes to σprep because some of the nanodomains are smaller than the critical size.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "figure_evidence",
+      "subject": "Figure 10 precipitation hardening vs. precipitate radius",
+      "claim": "Figure 10 shows the calculated precipitation hardening (σprep) as a function of precipitate radius for (a) 3Cr, (b) 2Ni, (c) 2Ni3Cr, and (d) 2Ni5Cr steels, with the red dashed line marking the transition radius where the dominant mechanism switches from σorder to σcoh+σmod.",
+      "values": [
+        "Fig. 10a-d",
+        "precipitation hardening vs. precipitate radius",
+        "transition radius indicated"
+      ],
+      "evidence_text": "The calculated σprep is shown in Fig. 10, where the red dashed line represents the transition radius, at which the dominant strengthening mechanism shifts from σorder to σcoh+σmod. For the 3Cr, 2Ni, 2Ni3Cr and 2Ni5Cr steels, the strength contribution of σcoh+σmod is dominant.",
+      "figures": [
+        "Figure 10"
+      ],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "figure_evidence",
+      "subject": "Figure 11 comparison of calculated and experimental yield strengths",
+      "claim": "Figure 11 compares the sum of the four strengthening contributions (σprep, σgb, σss, σ₀) with experimental tensile yield strengths for 3Cr, 2Ni, 2Ni3Cr, and 2Ni5Cr, showing very good agreement and confirming the decomposition model.",
+      "values": [
+        "good agreement between calculated and experimental σys"
+      ],
+      "evidence_text": "Fig. 11 compares the results with the measured yield strengths, illustrating the contribution to the yield strength of each strengthening mechanism for each sample. There is a correlation between the calculated and experimental values of yield strength … which are in very good agreement.",
+      "figures": [
+        "Figure 11"
+      ],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "primary strengthening mechanisms and synergistic effect of Ni and Cr",
+      "claim": "Solid solution strengthening is the primary contributor to yield strength, while precipitation strengthening is significant; synergistic Ni and Cr alloying increases the size of the precipitate phase, leading to a gradual increase in precipitation strengthening with precipitate growth.",
+      "values": [
+        "solution strengthening primary",
+        "precipitation strengthening significant",
+        "Ni-Cr synergy increases precipitate size",
+        "gradual increase in precipitation strengthening"
+      ],
+      "evidence_text": "Solution strengthening is evidently the primary strengthening mechanism for these samples, with the enhancement in yield strength … closely associated with a carbon content as high as 1.5%. Precipitation strengthening also plays a significant role … the contribution from Ni and Cr elements synergistically … providing an increase in the size of the precipitate phase, leading to a gradual increase in precipitation strengthening as the precipitate size grows.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    }
+  ],
+  "context_update": {
+    "summary": "This chunk presents the quantitative yield strength decomposition for the 3Cr, 2Ni, 2Ni3Cr, and 2Ni5Cr steels. The total strength is modeled as σys = σ₀ + σss + σgb + σprep, with σ₀ = 42 MPa from friction stress, σgb determined by Hall-Petch (KHP=446.8 MPa·μm⁰·⁵, effective grain sizes 3.51–2.2 μm, giving 238.5–301.2 MPa), solid solution strengthening σss = 279[C]−1.5[Mn]+20.5[Al]+2.9[Ni]+3.9[Cr] (values 509.5–557.2 MPa), and precipitation strengthening σprep from shearable κ-carbides. The shearing contribution is taken as the larger of order strengthening (σorder) and coherency+modulus mismatch (σcoh+σmod). For LRO-nanodomain-containing 3Cr and 2Ni5Cr, σorder also contributes because some domains are below the critical size. Figure 10 plots σprep vs. precipitate radius for each alloy, revealing the transition radius. Figure 11 shows excellent agreement between the summed calculated strengths and experimental tensile yield strengths. Solid solution is the primary strengthening mechanism; precipitation hardening increases gradually with Ni-Cr synergistic alloying due to increased precipitate size. This section provides quantitative foundation for the subsequent discussion on how Cr and Ni jointly enhance strength-ductility synergy.",
+    "material_systems": [
+      "Fe–20Mn–9Al–1.5C austenitic steel with Ni and Cr additions",
+      "γ-austenite matrix",
+      "κ-carbides (E2₁ perovskite)",
+      "LRO nanodomains with L1₂ structure"
+    ],
+    "sample_aliases": [
+      "3Cr",
+      "2Ni",
+      "2Ni3Cr",
+      "2Ni5Cr"
+    ],
+    "processing_route": [
+      "thermo-mechanical processing with ultra-fast cooling (~40 °C/s)",
+      "hot rolling to 4 mm plate",
+      "fully recrystallized condition"
+    ],
+    "key_variables": [
+      "Ni content (0, 2 wt%)",
+      "Cr content (0, 3, 5 wt%)",
+      "effective grain size deff (2.2–3.73 μm)",
+      "precipitate radius distribution",
+      "volume fraction of κ-carbides",
+      "antiphase boundary energy γAPB ≈ 0.35 J/m²",
+      "Shear modulus G = 70 GPa, ΔG ≈ 23.3 GPa",
+      "Hall-Petch coefficient KHP = 446.8 MPa·μm⁰·⁵",
+      "Taylor factor M = 3.06"
+    ],
+    "microstructure": [
+      "equiaxed recrystallized γ grains with annealing twins",
+      "grain sizes incl. twins: 3.51 μm (3Cr), 3.73 μm (2Ni), 3.72 μm (2Ni3Cr), 2.2 μm (2Ni5Cr)",
+      "κ-carbide precipitates of varying radius",
+      "LRO nanodomains present in 3Cr and 2Ni5Cr"
+    ],
+    "properties": [
+      "σ₀ = 42 MPa",
+      "σgb: 238.5 (3Cr), 231.3 (2Ni), 231.7 (2Ni3Cr), 301.2 MPa (2Ni5Cr)",
+      "σss: 515.4 (3Cr), 509.5 (2Ni), 557.2 (2Ni3Cr), 554.1 MPa (2Ni5Cr)",
+      "σprep: see Fig. 10; contributions from σorder and σcoh+σmod",
+      "Experimental yield strengths: 969 (3Cr), 1202 (2Ni), 1110 (2Ni3Cr), 1071 MPa (2Ni5Cr)"
+    ],
+    "mechanisms": [
+      "solid solution strengthening primary (large C content)",
+      "precipitation strengthening via dislocation shearing of κ-carbides",
+      "σprep dominated by σcoh+σmod except LRO domains where σorder contributes",
+      "synergistic Ni-Cr alloying increases precipitate size and gradual precipitation strengthening"
+    ],
+    "figures_or_tables": [
+      "Figure 10: precipitation hardening vs. precipitate radius for 3Cr, 2Ni, 2Ni3Cr, 2Ni5Cr",
+      "Figure 11: stacked bar chart comparing calculated and experimental yield strengths",
+      "Table (unnumbered in chunk): formation energies of κ-carbides and alternative carbides"
+    ],
+    "unresolved_terms": []
+  }
+}

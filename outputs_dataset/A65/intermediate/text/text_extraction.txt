@@ -1,0 +1,2510 @@
+{
+  "papers": [
+    {
+      "paper_id": "A65",
+      "doi": null,
+      "title": "Melting, Processing, and Properties of Disordered Fe-Al and Fe-Al-C Based Alloys",
+      "authors": [
+        "V.V. SATYA PRASAD",
+        "SHIVKUMAR KHAPLE",
+        "R.G. BALIGIDAD"
+      ],
+      "publication_year": null,
+      "journal": null,
+      "keywords": [
+        "lightweight steels",
+        "Fe-Al alloys",
+        "air induction melting with flux cover",
+        "vacuum induction melting",
+        "disordered solid solution",
+        "microstructure",
+        "mechanical properties",
+        "carbon effect",
+        "precipitation hardening",
+        "Fe3AlC0.5"
+      ],
+      "research_type": "experimental",
+      "paper_scope": "To develop cost-effective melting and processing routes (particularly air induction melting with flux cover, AIMFC) for Fe-Al and Fe-Al-C lightweight steels, evaluate microstructure and mechanical properties, and study the effect of carbon on Fe-7Al alloys."
+    }
+  ],
+  "alloys": [
+    {
+      "alloy_id": "alloy_fe7al",
+      "paper_id": "A65",
+      "alloy_name": "Fe-7Al",
+      "aliases": [
+        "Fe-7 wt.% Al"
+      ],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Al",
+        "C"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Al",
+          "weight_percent": "7.0",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.02",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "Minor impurities: Si, Mn, S, O, N. Represents the base Fe-7Al alloy used in AIM, AIMFC, VIM processes."
+    },
+    {
+      "alloy_id": "alloy_fe9al",
+      "paper_id": "A65",
+      "alloy_name": "Fe-9Al",
+      "aliases": [
+        "Fe-9 wt.% Al"
+      ],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Al",
+        "C"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Al",
+          "weight_percent": "9.0",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.02",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "Expected to exhibit short-range ordering. Minor impurities similar to Fe-7Al."
+    },
+    {
+      "alloy_id": "alloy_7al_002c",
+      "paper_id": "A65",
+      "alloy_name": "Fe-7Al-0.002C",
+      "aliases": [
+        "Fe-7Al-.002C"
+      ],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Al",
+        "C"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Al",
+          "weight_percent": "7.0",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.002",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "Actual composition: Al 6.86, C 0.002 wt.% (Table IV)."
+    },
+    {
+      "alloy_id": "alloy_7al_015c",
+      "paper_id": "A65",
+      "alloy_name": "Fe-7Al-0.15C",
+      "aliases": [],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Al",
+        "C"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Al",
+          "weight_percent": "7.0",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.15",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "Actual: Al 6.92, C 0.15 (Table IV)."
+    },
+    {
+      "alloy_id": "alloy_7al_035c",
+      "paper_id": "A65",
+      "alloy_name": "Fe-7Al-0.35C",
+      "aliases": [],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Al",
+        "C"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Al",
+          "weight_percent": "7.0",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.35",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "Actual: Al 6.78, C 0.35."
+    },
+    {
+      "alloy_id": "alloy_7al_05c",
+      "paper_id": "A65",
+      "alloy_name": "Fe-7Al-0.5C",
+      "aliases": [
+        "Fe-7Al-.5C"
+      ],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Al",
+        "C"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Al",
+          "weight_percent": "7.0",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.5",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "Actual: Al 6.95, C 0.50."
+    },
+    {
+      "alloy_id": "alloy_7al_10c",
+      "paper_id": "A65",
+      "alloy_name": "Fe-7Al-1.0C",
+      "aliases": [
+        "Fe-7Al-1C"
+      ],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Al",
+        "C"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Al",
+          "weight_percent": "7.0",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "1.0",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "Actual: Al 7.10, C 1.00."
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_7al_aim",
+      "paper_id": "A65",
+      "alloy_id": "alloy_fe7al",
+      "description": "Air induction melting (AIM) without flux cover, followed by preheating (1373 K, 1 h), hot forging, preheating (1373 K, 1 h) and hot rolling to 12 mm with 50% reduction, reheating after every six passes.",
+      "processes_notes": "AIM ingot sound and free from microcracks for Fe-7Al. Fe-9Al showed gas porosity and was not hot-worked."
+    },
+    {
+      "process_id": "proc_7al_aimfc",
+      "paper_id": "A65",
+      "alloy_id": "alloy_fe7al",
+      "description": "Air induction melting with flux cover (AIMFC) using protective slag (Al2O3, CaO, MgO, CaF2), melt held at 1900 K for 2 min, cast into split iron molds; subsequent hot forging and hot rolling identical to AIM procedure.",
+      "processes_notes": "Flux cover prevents hydrogen pick-up; excellent aluminum recovery (95-98%); low sulfur due to desulfurization by CaO and MgO in slag. Hydrogen content higher than VIM but lower than AIM."
+    },
+    {
+      "process_id": "proc_7al_vim",
+      "paper_id": "A65",
+      "alloy_id": "alloy_fe7al",
+      "description": "Vacuum induction melting (VIM) at 10^-4 torr, melt temperature 1893 K, cast in 80 mm split cast iron molds inside vacuum chamber; subsequently hot forged and hot rolled as in AIM.",
+      "processes_notes": "Alumina crucible; soft iron then aluminum charged; very low hydrogen (<1 ppm expected), sound porosity-free ingots."
+    },
+    {
+      "process_id": "proc_9al_aimfc",
+      "paper_id": "A65",
+      "alloy_id": "alloy_fe9al",
+      "description": "AIMFC process (similar to proc_7al_aimfc) applied to Fe-9Al alloy, followed by preheating (1373 K, 1 h), hot forging, and hot rolling.",
+      "processes_notes": "Ingots free from gas porosity but exhibited microcracks attributed to hydrogen embrittlement; hot workability poor."
+    },
+    {
+      "process_id": "proc_9al_vim",
+      "paper_id": "A65",
+      "alloy_id": "alloy_fe9al",
+      "description": "VIM process (similar to proc_7al_vim) for Fe-9Al alloy, followed by hot forging and hot rolling.",
+      "processes_notes": "Sound ingots, no microcracks; good hot workability."
+    },
+    {
+      "process_id": "proc_7al_aimfc_cr",
+      "paper_id": "A65",
+      "alloy_id": "alloy_fe7al",
+      "description": "AIMFC melting, hot forging, hot rolling, then cold rolling to 2 mm thickness and annealing.",
+      "processes_notes": "Cold rolling parameters and annealing details not provided; yields sheet/foil with excellent room-temperature ductility."
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_7al_aim",
+      "paper_id": "A65",
+      "alloy_id": "alloy_fe7al",
+      "process_id": "proc_7al_aim"
+    },
+    {
+      "sample_id": "sample_7al_aimfc",
+      "paper_id": "A65",
+      "alloy_id": "alloy_fe7al",
+      "process_id": "proc_7al_aimfc"
+    },
+    {
+      "sample_id": "sample_7al_vim",
+      "paper_id": "A65",
+      "alloy_id": "alloy_fe7al",
+      "process_id": "proc_7al_vim"
+    },
+    {
+      "sample_id": "sample_9al_aimfc",
+      "paper_id": "A65",
+      "alloy_id": "alloy_fe9al",
+      "process_id": "proc_9al_aimfc"
+    },
+    {
+      "sample_id": "sample_9al_vim",
+      "paper_id": "A65",
+      "alloy_id": "alloy_fe9al",
+      "process_id": "proc_9al_vim"
+    },
+    {
+      "sample_id": "sample_7al_002c",
+      "paper_id": "A65",
+      "alloy_id": "alloy_7al_002c",
+      "process_id": "proc_7al_aimfc"
+    },
+    {
+      "sample_id": "sample_7al_015c",
+      "paper_id": "A65",
+      "alloy_id": "alloy_7al_015c",
+      "process_id": "proc_7al_aimfc"
+    },
+    {
+      "sample_id": "sample_7al_035c",
+      "paper_id": "A65",
+      "alloy_id": "alloy_7al_035c",
+      "process_id": "proc_7al_aimfc"
+    },
+    {
+      "sample_id": "sample_7al_05c",
+      "paper_id": "A65",
+      "alloy_id": "alloy_7al_05c",
+      "process_id": "proc_7al_aimfc"
+    },
+    {
+      "sample_id": "sample_7al_10c",
+      "paper_id": "A65",
+      "alloy_id": "alloy_7al_10c",
+      "process_id": "proc_7al_aimfc"
+    },
+    {
+      "sample_id": "sample_7al_aimfc_cr",
+      "paper_id": "A65",
+      "alloy_id": "alloy_fe7al",
+      "process_id": "proc_7al_aimfc_cr"
+    }
+  ],
+  "processing_steps": [
+    {
+      "sample_id": "sample_7al_aim",
+      "paper_id": "A65",
+      "sequence": "1",
+      "type": "melting",
+      "method": "air induction melting (AIM) without flux cover",
+      "temperature": null,
+      "unit": null,
+      "duration": null,
+      "cooling_medium": "cast iron mold",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Ingot diameter 80 mm."
+    },
+    {
+      "sample_id": "sample_7al_aim",
+      "paper_id": "A65",
+      "sequence": "2",
+      "type": "heat_treatment",
+      "method": "preheating before forging",
+      "temperature": "1373",
+      "unit": "K",
+      "duration": "1 h",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Hearth furnace."
+    },
+    {
+      "sample_id": "sample_7al_aim",
+      "paper_id": "A65",
+      "sequence": "3",
+      "type": "thermomechanical_processing",
+      "method": "hot forging",
+      "temperature": "room temperature die platens (initial workpiece ~1373 K)",
+      "unit": "K",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "1-tonne pneumatic forge hammer."
+    },
+    {
+      "sample_id": "sample_7al_aim",
+      "paper_id": "A65",
+      "sequence": "4",
+      "type": "heat_treatment",
+      "method": "preheating before rolling",
+      "temperature": "1373",
+      "unit": "K",
+      "duration": "1 h",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_7al_aim",
+      "paper_id": "A65",
+      "sequence": "5",
+      "type": "thermomechanical_processing",
+      "method": "hot rolling",
+      "temperature": "1373",
+      "unit": "K",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": "50% overall (from 24 mm to 12 mm, 1 mm reduction per pass, reheated after every six passes)",
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_7al_aimfc",
+      "paper_id": "A65",
+      "sequence": "1",
+      "type": "melting",
+      "method": "air induction melting with flux cover (AIMFC)",
+      "temperature": "1900",
+      "unit": "K",
+      "duration": "2 min (holding after Al addition)",
+      "cooling_medium": "split cast iron molds (top poured)",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Flux: Al2O3, CaO, MgO, CaF2. Iron melted first, flux added, then Al plunged. Melt held at 1900 K for 2 min."
+    },
+    {
+      "sample_id": "sample_7al_aimfc",
+      "paper_id": "A65",
+      "sequence": "2",
+      "type": "heat_treatment",
+      "method": "preheating before forging",
+      "temperature": "1373",
+      "unit": "K",
+      "duration": "1 h",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_7al_aimfc",
+      "paper_id": "A65",
+      "sequence": "3",
+      "type": "thermomechanical_processing",
+      "method": "hot forging",
+      "temperature": "room temperature die platens (initial workpiece ~1373 K)",
+      "unit": "K",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "1-tonne pneumatic forge hammer."
+    },
+    {
+      "sample_id": "sample_7al_aimfc",
+      "paper_id": "A65",
+      "sequence": "4",
+      "type": "heat_treatment",
+      "method": "preheating before rolling",
+      "temperature": "1373",
+      "unit": "K",
+      "duration": "1 h",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_7al_aimfc",
+      "paper_id": "A65",
+      "sequence": "5",
+      "type": "thermomechanical_processing",
+      "method": "hot rolling",
+      "temperature": "1373",
+      "unit": "K",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": "50% overall (from 24 mm to 12 mm, 1 mm per pass, reheat after every 6 passes)",
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_7al_vim",
+      "paper_id": "A65",
+      "sequence": "1",
+      "type": "melting",
+      "method": "vacuum induction melting (VIM)",
+      "temperature": "1893",
+      "unit": "K",
+      "duration": null,
+      "cooling_medium": "split cast iron molds inside vacuum chamber",
+      "reduction_ratio": null,
+      "processing_steps_notes": "50-kg, 125 kW, alumina crucible, vacuum 10^-4 torr. Soft iron bottom, Al top."
+    },
+    {
+      "sample_id": "sample_7al_vim",
+      "paper_id": "A65",
+      "sequence": "2",
+      "type": "heat_treatment",
+      "method": "preheating before forging",
+      "temperature": "1373",
+      "unit": "K",
+      "duration": "1 h",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_7al_vim",
+      "paper_id": "A65",
+      "sequence": "3",
+      "type": "thermomechanical_processing",
+      "method": "hot forging",
+      "temperature": "room temperature die platens (initial workpiece ~1373 K)",
+      "unit": "K",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_7al_vim",
+      "paper_id": "A65",
+      "sequence": "4",
+      "type": "heat_treatment",
+      "method": "preheating before rolling",
+      "temperature": "1373",
+      "unit": "K",
+      "duration": "1 h",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_7al_vim",
+      "paper_id": "A65",
+      "sequence": "5",
+      "type": "thermomechanical_processing",
+      "method": "hot rolling",
+      "temperature": "1373",
+      "unit": "K",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": "50% overall (from 24 mm to 12 mm, 1 mm per pass, reheat after every 6 passes)",
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_9al_aimfc",
+      "paper_id": "A65",
+      "sequence": "1",
+      "type": "melting",
+      "method": "air induction melting with flux cover (AIMFC)",
+      "temperature": "1900",
+      "unit": "K",
+      "duration": "2 min",
+      "cooling_medium": "split cast iron molds",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Same flux as 7Al AIMFC. Ingots sound but microcracked."
+    },
+    {
+      "sample_id": "sample_9al_aimfc",
+      "paper_id": "A65",
+      "sequence": "2",
+      "type": "heat_treatment",
+      "method": "preheating before forging",
+      "temperature": "1373",
+      "unit": "K",
+      "duration": "1 h",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_9al_aimfc",
+      "paper_id": "A65",
+      "sequence": "3",
+      "type": "thermomechanical_processing",
+      "method": "hot forging",
+      "temperature": "room temperature die platens",
+      "unit": "K",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Poor hot workability; microcracks observed in hot-rolled plates."
+    },
+    {
+      "sample_id": "sample_9al_aimfc",
+      "paper_id": "A65",
+      "sequence": "4",
+      "type": "heat_treatment",
+      "method": "preheating before rolling",
+      "temperature": "1373",
+      "unit": "K",
+      "duration": "1 h",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_9al_aimfc",
+      "paper_id": "A65",
+      "sequence": "5",
+      "type": "thermomechanical_processing",
+      "method": "hot rolling",
+      "temperature": "1373",
+      "unit": "K",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": "50% overall",
+      "processing_steps_notes": "Microcracks persisted."
+    },
+    {
+      "sample_id": "sample_9al_vim",
+      "paper_id": "A65",
+      "sequence": "1",
+      "type": "melting",
+      "method": "vacuum induction melting (VIM)",
+      "temperature": "1893",
+      "unit": "K",
+      "duration": null,
+      "cooling_medium": "split cast iron molds",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Vacuum 10^-4 torr, alumina crucible."
+    },
+    {
+      "sample_id": "sample_9al_vim",
+      "paper_id": "A65",
+      "sequence": "2",
+      "type": "heat_treatment",
+      "method": "preheating before forging",
+      "temperature": "1373",
+      "unit": "K",
+      "duration": "1 h",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_9al_vim",
+      "paper_id": "A65",
+      "sequence": "3",
+      "type": "thermomechanical_processing",
+      "method": "hot forging",
+      "temperature": "room temperature die platens",
+      "unit": "K",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_9al_vim",
+      "paper_id": "A65",
+      "sequence": "4",
+      "type": "heat_treatment",
+      "method": "preheating before rolling",
+      "temperature": "1373",
+      "unit": "K",
+      "duration": "1 h",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_9al_vim",
+      "paper_id": "A65",
+      "sequence": "5",
+      "type": "thermomechanical_processing",
+      "method": "hot rolling",
+      "temperature": "1373",
+      "unit": "K",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": "50% overall",
+      "processing_steps_notes": "Good hot workability."
+    },
+    {
+      "sample_id": "sample_7al_002c",
+      "paper_id": "A65",
+      "sequence": "1",
+      "type": "melting",
+      "method": "air induction melting with flux cover (AIMFC)",
+      "temperature": "1900",
+      "unit": "K",
+      "duration": "2 min",
+      "cooling_medium": "split cast iron molds",
+      "reduction_ratio": null,
+      "processing_steps_notes": "40-kg heat."
+    },
+    {
+      "sample_id": "sample_7al_002c",
+      "paper_id": "A65",
+      "sequence": "2",
+      "type": "heat_treatment",
+      "method": "preheating before forging",
+      "temperature": "1373",
+      "unit": "K",
+      "duration": "1 h",
+      "cooling_medium": null,
+      "reduction_ratio": null
+    },
+    {
+      "sample_id": "sample_7al_002c",
+      "paper_id": "A65",
+      "sequence": "3",
+      "type": "thermomechanical_processing",
+      "method": "hot forging",
+      "temperature": "room temperature die platens",
+      "unit": "K",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null
+    },
+    {
+      "sample_id": "sample_7al_002c",
+      "paper_id": "A65",
+      "sequence": "4",
+      "type": "heat_treatment",
+      "method": "preheating before rolling",
+      "temperature": "1373",
+      "unit": "K",
+      "duration": "1 h",
+      "cooling_medium": null,
+      "reduction_ratio": null
+    },
+    {
+      "sample_id": "sample_7al_002c",
+      "paper_id": "A65",
+      "sequence": "5",
+      "type": "thermomechanical_processing",
+      "method": "hot rolling",
+      "temperature": "1373",
+      "unit": "K",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": "50% overall (to 12 mm)",
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_7al_015c",
+      "paper_id": "A65",
+      "sequence": "1",
+      "type": "melting",
+      "method": "AIMFC",
+      "temperature": "1900",
+      "unit": "K",
+      "duration": "2 min",
+      "cooling_medium": "split cast iron molds",
+      "reduction_ratio": null,
+      "processing_steps_notes": "40-kg heat."
+    },
+    {
+      "sample_id": "sample_7al_015c",
+      "paper_id": "A65",
+      "sequence": "2",
+      "type": "heat_treatment",
+      "method": "preheating before forging",
+      "temperature": "1373",
+      "unit": "K",
+      "duration": "1 h",
+      "cooling_medium": null,
+      "reduction_ratio": null
+    },
+    {
+      "sample_id": "sample_7al_015c",
+      "paper_id": "A65",
+      "sequence": "3",
+      "type": "thermomechanical_processing",
+      "method": "hot forging",
+      "temperature": "room temperature die platens",
+      "unit": "K",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null
+    },
+    {
+      "sample_id": "sample_7al_015c",
+      "paper_id": "A65",
+      "sequence": "4",
+      "type": "heat_treatment",
+      "method": "preheating before rolling",
+      "temperature": "1373",
+      "unit": "K",
+      "duration": "1 h",
+      "cooling_medium": null,
+      "reduction_ratio": null
+    },
+    {
+      "sample_id": "sample_7al_015c",
+      "paper_id": "A65",
+      "sequence": "5",
+      "type": "thermomechanical_processing",
+      "method": "hot rolling",
+      "temperature": "1373",
+      "unit": "K",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": "50% (to 12 mm)",
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_7al_035c",
+      "paper_id": "A65",
+      "sequence": "1",
+      "type": "melting",
+      "method": "AIMFC",
+      "temperature": "1900",
+      "unit": "K",
+      "duration": "2 min",
+      "cooling_medium": "split cast iron molds",
+      "reduction_ratio": null
+    },
+    {
+      "sample_id": "sample_7al_035c",
+      "paper_id": "A65",
+      "sequence": "2",
+      "type": "heat_treatment",
+      "method": "preheating before forging",
+      "temperature": "1373",
+      "unit": "K",
+      "duration": "1 h",
+      "cooling_medium": null,
+      "reduction_ratio": null
+    },
+    {
+      "sample_id": "sample_7al_035c",
+      "paper_id": "A65",
+      "sequence": "3",
+      "type": "thermomechanical_processing",
+      "method": "hot forging",
+      "temperature": "room temperature die platens",
+      "unit": "K",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null
+    },
+    {
+      "sample_id": "sample_7al_035c",
+      "paper_id": "A65",
+      "sequence": "4",
+      "type": "heat_treatment",
+      "method": "preheating before rolling",
+      "temperature": "1373",
+      "unit": "K",
+      "duration": "1 h",
+      "cooling_medium": null,
+      "reduction_ratio": null
+    },
+    {
+      "sample_id": "sample_7al_035c",
+      "paper_id": "A65",
+      "sequence": "5",
+      "type": "thermomechanical_processing",
+      "method": "hot rolling",
+      "temperature": "1373",
+      "unit": "K",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": "50% (to 12 mm)",
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_7al_05c",
+      "paper_id": "A65",
+      "sequence": "1",
+      "type": "melting",
+      "method": "AIMFC",
+      "temperature": "1900",
+      "unit": "K",
+      "duration": "2 min",
+      "cooling_medium": "split cast iron molds",
+      "reduction_ratio": null
+    },
+    {
+      "sample_id": "sample_7al_05c",
+      "paper_id": "A65",
+      "sequence": "2",
+      "type": "heat_treatment",
+      "method": "preheating before forging",
+      "temperature": "1373",
+      "unit": "K",
+      "duration": "1 h",
+      "cooling_medium": null,
+      "reduction_ratio": null
+    },
+    {
+      "sample_id": "sample_7al_05c",
+      "paper_id": "A65",
+      "sequence": "3",
+      "type": "thermomechanical_processing",
+      "method": "hot forging",
+      "temperature": "room temperature die platens",
+      "unit": "K",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null
+    },
+    {
+      "sample_id": "sample_7al_05c",
+      "paper_id": "A65",
+      "sequence": "4",
+      "type": "heat_treatment",
+      "method": "preheating before rolling",
+      "temperature": "1373",
+      "unit": "K",
+      "duration": "1 h",
+      "cooling_medium": null,
+      "reduction_ratio": null
+    },
+    {
+      "sample_id": "sample_7al_05c",
+      "paper_id": "A65",
+      "sequence": "5",
+      "type": "thermomechanical_processing",
+      "method": "hot rolling",
+      "temperature": "1373",
+      "unit": "K",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": "50% (to 12 mm)",
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_7al_10c",
+      "paper_id": "A65",
+      "sequence": "1",
+      "type": "melting",
+      "method": "AIMFC",
+      "temperature": "1900",
+      "unit": "K",
+      "duration": "2 min",
+      "cooling_medium": "split cast iron molds",
+      "reduction_ratio": null
+    },
+    {
+      "sample_id": "sample_7al_10c",
+      "paper_id": "A65",
+      "sequence": "2",
+      "type": "heat_treatment",
+      "method": "preheating before forging",
+      "temperature": "1373",
+      "unit": "K",
+      "duration": "1 h",
+      "cooling_medium": null,
+      "reduction_ratio": null
+    },
+    {
+      "sample_id": "sample_7al_10c",
+      "paper_id": "A65",
+      "sequence": "3",
+      "type": "thermomechanical_processing",
+      "method": "hot forging",
+      "temperature": "room temperature die platens",
+      "unit": "K",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null
+    },
+    {
+      "sample_id": "sample_7al_10c",
+      "paper_id": "A65",
+      "sequence": "4",
+      "type": "heat_treatment",
+      "method": "preheating before rolling",
+      "temperature": "1373",
+      "unit": "K",
+      "duration": "1 h",
+      "cooling_medium": null,
+      "reduction_ratio": null
+    },
+    {
+      "sample_id": "sample_7al_10c",
+      "paper_id": "A65",
+      "sequence": "5",
+      "type": "thermomechanical_processing",
+      "method": "hot rolling",
+      "temperature": "1373",
+      "unit": "K",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": "50% (to 12 mm)",
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_7al_aimfc_cr",
+      "paper_id": "A65",
+      "sequence": "1",
+      "type": "melting",
+      "method": "AIMFC",
+      "temperature": "1900",
+      "unit": "K",
+      "duration": "2 min",
+      "cooling_medium": "split cast iron molds",
+      "reduction_ratio": null
+    },
+    {
+      "sample_id": "sample_7al_aimfc_cr",
+      "paper_id": "A65",
+      "sequence": "2",
+      "type": "heat_treatment",
+      "method": "preheating before forging",
+      "temperature": "1373",
+      "unit": "K",
+      "duration": "1 h",
+      "cooling_medium": null,
+      "reduction_ratio": null
+    },
+    {
+      "sample_id": "sample_7al_aimfc_cr",
+      "paper_id": "A65",
+      "sequence": "3",
+      "type": "thermomechanical_processing",
+      "method": "hot forging",
+      "temperature": "room temperature die platens",
+      "unit": "K",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null
+    },
+    {
+      "sample_id": "sample_7al_aimfc_cr",
+      "paper_id": "A65",
+      "sequence": "4",
+      "type": "heat_treatment",
+      "method": "preheating before rolling",
+      "temperature": "1373",
+      "unit": "K",
+      "duration": "1 h",
+      "cooling_medium": null,
+      "reduction_ratio": null
+    },
+    {
+      "sample_id": "sample_7al_aimfc_cr",
+      "paper_id": "A65",
+      "sequence": "5",
+      "type": "thermomechanical_processing",
+      "method": "hot rolling",
+      "temperature": "1373",
+      "unit": "K",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": "50% (to 12 mm)",
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_7al_aimfc_cr",
+      "paper_id": "A65",
+      "sequence": "6",
+      "type": "mechanical_processing",
+      "method": "cold rolling",
+      "temperature": null,
+      "unit": null,
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": "to 2 mm thickness",
+      "processing_steps_notes": "Produced sheets and foils."
+    },
+    {
+      "sample_id": "sample_7al_aimfc_cr",
+      "paper_id": "A65",
+      "sequence": "7",
+      "type": "heat_treatment",
+      "method": "annealing",
+      "temperature": null,
+      "unit": null,
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Details not provided."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_7al_aim_hotrolled",
+      "sample_id": "sample_7al_aim",
+      "overall_structure": "Annealed microstructure with coarse grain size.",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_7al_aim_1",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "α-Fe(Al) solid solution",
+              "crystal_structure": "bcc",
+              "volume_fraction": "1.0",
+              "morphology": "equiaxed coarse grains",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "190",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_7al_aimfc_hotrolled",
+      "sample_id": "sample_7al_aimfc",
+      "overall_structure": "Annealed coarse grain microstructure.",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_7al_aimfc_1",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "α-Fe(Al) solid solution",
+              "crystal_structure": "bcc",
+              "volume_fraction": "1.0",
+              "morphology": "equiaxed coarse grains",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "195",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_7al_vim_hotrolled",
+      "sample_id": "sample_7al_vim",
+      "overall_structure": "Annealed coarse grain microstructure.",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_7al_vim_1",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "α-Fe(Al) solid solution",
+              "crystal_structure": "bcc",
+              "volume_fraction": "1.0",
+              "morphology": "equiaxed coarse grains",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "186",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_9al_aimfc_hotrolled",
+      "sample_id": "sample_9al_aimfc",
+      "overall_structure": "Coarse grain microstructure; microcracks observed due to hydrogen embrittlement.",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_9al_aimfc_1",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "α-Fe(Al) solid solution (short-range order likely)",
+              "crystal_structure": "bcc",
+              "volume_fraction": "1.0",
+              "morphology": "coarse grains",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "microcracks",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "228",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_9al_vim_hotrolled",
+      "sample_id": "sample_9al_vim",
+      "overall_structure": "Coarse grain microstructure, free of microcracks.",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_9al_vim_1",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "α-Fe(Al) solid solution (short-range order likely)",
+              "crystal_structure": "bcc",
+              "volume_fraction": "1.0",
+              "morphology": "coarse grains",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "218",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_7al_002c_hotrolled",
+      "sample_id": "sample_7al_002c",
+      "overall_structure": "Single-phase structure with no precipitates (low carbon content).",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_7al_002c_1",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "α-Fe(Al) solid solution",
+              "crystal_structure": "bcc",
+              "volume_fraction": "1.0",
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_7al_015c_hotrolled",
+      "sample_id": "sample_7al_015c",
+      "overall_structure": "Two-phase: α-Fe(Al) matrix with Fe3AlC0.5 precipitates.",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_7al_015c_1",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "α-Fe(Al) solid solution",
+              "crystal_structure": "bcc",
+              "volume_fraction": "majority",
+              "morphology": "matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "Fe3AlC0.5 (perovskite)",
+              "crystal_structure": "L12 ordered",
+              "volume_fraction": "increases with carbon content",
+              "morphology": "precipitates",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_7al_015c",
+              "type": "Fe3AlC0.5",
+              "size": {
+                "value": null,
+                "unit": null
+              },
+              "distribution": "uniformly distributed in matrix, volume fraction increases with C",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_7al_035c_hotrolled",
+      "sample_id": "sample_7al_035c",
+      "overall_structure": "Two-phase: α-Fe(Al) with Fe3AlC0.5 precipitates.",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_7al_035c_1",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "α-Fe(Al)",
+              "crystal_structure": "bcc",
+              "volume_fraction": "majority",
+              "morphology": "matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "Fe3AlC0.5",
+              "crystal_structure": "L12",
+              "volume_fraction": "significant (increases with C)",
+              "morphology": "precipitates",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_7al_035c",
+              "type": "Fe3AlC0.5",
+              "size": {
+                "value": null,
+                "unit": null
+              },
+              "distribution": "higher volume fraction than 0.15C",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_7al_05c_hotrolled",
+      "sample_id": "sample_7al_05c",
+      "overall_structure": "Two-phase: α-Fe(Al) with large fraction of Fe3AlC0.5 precipitates.",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_7al_05c_1",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "α-Fe(Al)",
+              "crystal_structure": "bcc",
+              "volume_fraction": "majority",
+              "morphology": "matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "Fe3AlC0.5",
+              "crystal_structure": "L12",
+              "volume_fraction": "high",
+              "morphology": "precipitates",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_7al_05c",
+              "type": "Fe3AlC0.5",
+              "size": {
+                "value": null,
+                "unit": null
+              },
+              "distribution": "large volume fraction",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_7al_10c_hotrolled",
+      "sample_id": "sample_7al_10c",
+      "overall_structure": "Two-phase: α-Fe(Al) with very high volume fraction of Fe3AlC0.5 precipitates.",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_7al_10c_1",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "α-Fe(Al)",
+              "crystal_structure": "bcc",
+              "volume_fraction": "minority",
+              "morphology": "matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "Fe3AlC0.5",
+              "crystal_structure": "L12",
+              "volume_fraction": "very high",
+              "morphology": "precipitates",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_7al_10c",
+              "type": "Fe3AlC0.5",
+              "size": {
+                "value": null,
+                "unit": null
+              },
+              "distribution": "extremely high volume fraction",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "props_7al_aim_hotrolled",
+      "sample_id": "sample_7al_aim",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "428",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "±6.5"
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "472",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "±5.4"
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "8",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": null,
+            "value": "193 ± 7.9",
+            "scale": "HV",
+            "unit": null
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "props_7al_aimfc_hotrolled",
+      "sample_id": "sample_7al_aimfc",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "396",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "±8.1"
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "467",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "±5.7"
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "18",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": null,
+            "value": "198 ± 9.1",
+            "scale": "HV",
+            "unit": null
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "props_7al_vim_hotrolled",
+      "sample_id": "sample_7al_vim",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "360",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "±7.5"
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "445",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "±5.6"
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "20",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": null,
+            "value": "188 ± 7.8",
+            "scale": "HV",
+            "unit": null
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "props_9al_aimfc_hotrolled",
+      "sample_id": "sample_9al_aimfc",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "318",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "±8.0"
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "349",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "±6.3"
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "0.1",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": null,
+            "value": "263 ± 8.9",
+            "scale": "HV",
+            "unit": null
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "props_9al_vim_hotrolled",
+      "sample_id": "sample_9al_vim",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "517",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "±9.0"
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "568",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "±7.0"
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "9",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": null,
+            "value": "250 ± 9.8",
+            "scale": "HV",
+            "unit": null
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "props_7al_002c_hotrolled",
+      "sample_id": "sample_7al_002c",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "382",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "±6.3"
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "425",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "±4.5"
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "21",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": null,
+            "value": "193 ± 5.8",
+            "scale": "HV",
+            "unit": null
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "props_7al_015c_hotrolled",
+      "sample_id": "sample_7al_015c",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "452",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "±6.8"
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "481",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "±5.2"
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "16",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": null,
+            "value": "221 ± 6.9",
+            "scale": "HV",
+            "unit": null
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "props_7al_035c_hotrolled",
+      "sample_id": "sample_7al_035c",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "480",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "±7.2"
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "515",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "±5.6"
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "13",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": null,
+            "value": "248 ± 8.1",
+            "scale": "HV",
+            "unit": null
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "props_7al_05c_hotrolled",
+      "sample_id": "sample_7al_05c",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "652",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "±7.5"
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "928",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "±6.8"
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "8",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": null,
+            "value": "275 ± 9.2",
+            "scale": "HV",
+            "unit": null
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "props_7al_10c_hotrolled",
+      "sample_id": "sample_7al_10c",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "891",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "±9.2"
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "1120",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "±8.2"
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "1.5",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": null,
+            "value": "338 ± 9.8",
+            "scale": "HV",
+            "unit": null
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "props_7al_aimfc_cr",
+      "sample_id": "sample_7al_aimfc_cr",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "340",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "±8.1"
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "467",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "±5.8"
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "40",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_om_hotrolled",
+      "sample_id": null,
+      "microstructure_uuid": null,
+      "technique": "Optical microscopy",
+      "purpose": "Examine grain structure and precipitates in hot-rolled condition",
+      "key_findings": "Coarse equiaxed grains in all alloys; Fe3AlC0.5 precipitates observed in carbon-containing alloys, volume fraction increasing with C content."
+    },
+    {
+      "characterization_id": "char_xrd_c_alloy",
+      "sample_id": "sample_7al_015c",
+      "microstructure_uuid": null,
+      "technique": "X-ray diffraction (Philips 3710, Cu-Kα radiation)",
+      "purpose": "Identify phases in Fe-7Al-C alloys",
+      "key_findings": "Fe3Al peaks in low-C alloy; Fe3Al and Fe3AlC0.5 peaks present in alloys with 0.15-1.0 wt.% C."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": []
+}

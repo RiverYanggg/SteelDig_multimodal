@@ -1,0 +1,111 @@
+{
+  "claims": [
+    {
+      "claim_type": "property",
+      "subject": "Modified constitutive model flow stress and load prediction accuracy under constant deformation conditions",
+      "claim": "Under constant deformation conditions, the modified constitutive model predicts flow stress with RMSE of 4.8944 MPa, R² of 0.9909, and AARE of 3.91%, and load with RMSE of 274.6820 N, R² of 0.9918, and AARE of 6.65%.",
+      "values": [
+        "4.8944 MPa",
+        "0.9909",
+        "3.91%",
+        "274.6820 N",
+        "0.9918",
+        "6.65%",
+        "constant deformation conditions"
+      ],
+      "evidence_text": "Table 2 The accuracy evaluation of flow stress and load simulated by the modified constitutive model under constant deformation conditions.\n\n<table><tr><td></td><td>RMSE</td><td> $R^2$ </td><td>AARE</td></tr><tr><td>Flow stress (constant conditions)</td><td>4.8944 MPa</td><td>0.9909</td><td>3.91 %</td></tr><tr><td>Load (constant conditions)</td><td>274.6820 N</td><td>0.9918</td><td>6.65 %</td></tr></table>",
+      "figures": [],
+      "tables": [
+        "Table 2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "CA model time step",
+      "claim": "The modified time step Δt in the 3D CA model is given by Δt = L0/(ρ_max τ M), where L0 is the cell size, ρ_max is maximum dislocation density, τ is a factor, and M is grain boundary mobility.",
+      "values": [
+        "L0",
+        "ρ_max",
+        "τ",
+        "M",
+        "Δt = L0/(ρ_max τ M)"
+      ],
+      "evidence_text": "Δt = \\frac {L _ {0}}{\\rho_ {\\max} \\tau M} \\tag {43}",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "DRX nucleation criterion",
+      "claim": "A cell in the CA model transitions into a DRX nucleus if its dislocation density is equal to or greater than the critical value ρ_c and a generated random number is less than or equal to the nucleation probability P_nuc = \\dot{n} L_0^3 Δt.",
+      "values": [
+        "ρ_c",
+        "\\dot{n}",
+        "L0",
+        "Δt",
+        "P_nuc"
+      ],
+      "evidence_text": "During each time step, if the cell’s dislocation density was greater than or equal to $\\rho _ { c }$ and the generated random number was less than or equal to the nucleation probability $P _ { n u c } = \\dot { n } L _ { 0 } { } ^ { 3 } \\Delta t ,$ the cell would transition into the DRX nucleus state",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "DRX grain growth triggering condition",
+      "claim": "Grain growth is triggered when a DRX nucleus at a grain boundary has a product of migration velocity v and time step Δt that exceeds the size of a cell, leading to the transformation of a neighboring cell.",
+      "values": [
+        "cell size",
+        "v",
+        "Δ t"
+      ],
+      "evidence_text": "Once a DRX grain nucleated at the grain boundary and its product of v and Δt exceeded the size of a cell, it selected one of the neighboring cells for transformation, calling the grain growth.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    }
+  ],
+  "context_update": {
+    "summary": "This chunk presents the accuracy evaluation (Table 2) of the modified constitutive model under constant deformation conditions, reporting RMSE, R², and AARE for flow stress (4.8944 MPa, 0.9909, 3.91%) and load (274.682 N, 0.9918, 6.65%). It also provides the modified time step expression Δt = L0/(ρ_max τ M) (Eq. 43) for the 3D CA model. Additionally, the inhomogeneous DRX nucleation and grain growth rules are detailed: a cell becomes a DRX nucleus when its dislocation density exceeds ρ_c and a random number is ≤ nucleation probability P_nuc = \\dot{n} L0^3 Δt; grain growth initiates when v·Δt exceeds the cell size, causing it to invade a neighbor. These modeling rules and accuracy metrics are essential for subsequent validation and simulation of multi-stage DRX under varying conditions.",
+    "material_systems": [
+      "low-alloy steel"
+    ],
+    "sample_aliases": [],
+    "processing_route": [],
+    "key_variables": [
+      "ρ_c",
+      "\\dot{n}",
+      "L0",
+      "Δt",
+      "v",
+      "ρ_max",
+      "τ",
+      "M",
+      "random number",
+      "RMSE",
+      "R²",
+      "AARE"
+    ],
+    "microstructure": [
+      "DRX nucleus",
+      "grain boundary"
+    ],
+    "properties": [
+      "flow stress prediction accuracy",
+      "load prediction accuracy"
+    ],
+    "mechanisms": [
+      "DRX nucleation criterion",
+      "grain growth triggered by velocity-step product exceeding cell size"
+    ],
+    "figures_or_tables": [
+      "Table 2"
+    ],
+    "unresolved_terms": [
+      "specific values of ρ_c, \\dot{n}, L0, τ, M, ρ_max and cell size not provided",
+      "random number generation details"
+    ]
+  }
+}

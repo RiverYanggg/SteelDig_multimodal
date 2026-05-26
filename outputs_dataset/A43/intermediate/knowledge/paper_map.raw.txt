@@ -1,0 +1,41 @@
+{
+  "paper_id": "A43",
+  "title": "Data-driven and multi-mechanism strengthening based yield strength prediction in medium-manganese low-density steels",
+  "abstract_summary": "This paper proposes a data-driven framework for predicting the yield strength (YS) of medium-manganese low-density steels by integrating contributions from four strengthening mechanisms. A multi-source dataset of 177 entries was augmented to 776 using Gaussian Mixture Models, and an Extra Trees regressor optimized by a genetic algorithm achieved RMSE=31.60 MPa, MAPE=4.39%, and R²=0.997. Experimental and literature validations showed average prediction errors of 1.56% and 1.84%, confirming the framework's reliability and its capability to capture nonlinear strengthening synergies.",
+  "research_objective": "To overcome the limitations of traditional linear superposition models by developing a data-driven framework that accurately predicts yield strength in medium-manganese low-density steels through the coupled contributions of solid solution, grain refinement, dislocation, and Orowan strengthening mechanisms.",
+  "material_systems": [
+    "medium-manganese low-density steels",
+    "Fe-0.29C-12.14Mn-2.96Al-0.11V-0.063Nb",
+    "Fe-9.7Mn-2.04Al-0.99Si-0.52V-0.42C",
+    "Fe-3Mn-2Al-0.25C-0.4Si"
+  ],
+  "main_process_variables": [
+    "annealing temperature (750–850 °C for Fe-3Mn-2Al-0.25C-0.4Si)",
+    "solid solution strengthening contribution (σ0)",
+    "grain refinement strengthening contribution (σg)",
+    "dislocation strengthening contribution (σd)",
+    "Orowan strengthening contribution (σOrowan)"
+  ],
+  "sample_aliases": [
+    "Fe-0.29C-12.14Mn-2.96Al-0.11V-0.063Nb (three conditions with different strengthening contributions)",
+    "Fe-9.7Mn-2.04Al-0.99Si-0.52V-0.42C (three conditions)",
+    "Fe-3Mn-2Al-0.25C-0.4Si (experimental validation alloy)"
+  ],
+  "expected_information_axis": [
+    "composition",
+    "processing (annealing conditions)",
+    "strengthening mechanism contributions (solid solution, grain refinement, dislocation, Orowan)",
+    "model predicted yield strength",
+    "experimental yield strength validation",
+    "model performance metrics (RMSE, MAPE, R²)",
+    "feature importance and SHAP analysis",
+    "figure evidence (SHAP summary plot, feature importance bar, response diagram)"
+  ],
+  "key_sections": [
+    "1. Introduction: background on medium-manganese low-density steels and limitations of traditional yield strength models, motivation for ML",
+    "2. Architecture of the proposed method: overall data-driven framework outline",
+    "3. Experiment and simulation: data collection/preprocessing, GMM augmentation, model evaluation, selection, and GA optimization",
+    "4. Results and discussions: specimen preparation, calculation of strengthening contributions, GA-Extra Trees prediction results, SHAP model interpretation",
+    "5. Conclusions: summary of framework performance, validation, and future outlook"
+  ]
+}

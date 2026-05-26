@@ -1,0 +1,106 @@
+{
+  "claims": [
+    {
+      "claim_type": "processing",
+      "subject": "dataset construction",
+      "claim": "The multi-source dataset comprised 177 entries collected from published literature, incorporating contributions from solid solution, grain refinement, dislocation, and Orowan strengthening mechanisms.",
+      "values": ["177 entries"],
+      "evidence_text": "This study collected data from published literature, including 177 pieces of data.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "processing",
+      "subject": "data augmentation",
+      "claim": "Gaussian Mixture Model (GMM) data augmentation expanded the dataset from 177 to 776 entries.",
+      "values": ["177 entries", "776 entries"],
+      "evidence_text": "GMM data enhancement method was utilized to enhance the original data set, and the original 177 groups were expanded to 776 groups",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "comparison",
+      "subject": "model comparison",
+      "claim": "Seven machine learning models (Decision Tree, XGBoost, LightGBM, CatBoost, Extra Trees, KNN, AdaBoost) were compared for yield strength prediction.",
+      "values": ["Decision Tree", "XGBoost", "LightGBM", "CatBoost", "Extra Trees", "KNN", "AdaBoost"],
+      "evidence_text": "Seven mainstream machine learning models (Decision Tree (DT), eXtreme Gradient Boosting (XGBoost), Light Gradient Boosting Machine (LightGBM), Categorical Boosting (CatBoost), Extremely Randomized Trees (Extra Trees), K-Nearest Neighbors (KNN), and Adaptive Boosting (AdaBoost)) are selected for comparison.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "optimal model selection",
+      "claim": "Extreme Randomized Trees (Extra Trees) was identified as the optimal model among the compared ensemble learning algorithms.",
+      "values": ["Extra Trees"],
+      "evidence_text": "Through ensemble learning algorithm screening, Extreme Randomized Trees (Extra Trees) were identified as the optimal model.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "property",
+      "subject": "Extra Trees model performance",
+      "claim": "The Extra Trees model achieved a test set root mean square error (RMSE) of 76.2 MPa, mean absolute percentage error (MAPE) of 9.8%, and coefficient of determination (R²) of 0.978.",
+      "values": ["76.2 MPa", "9.8%", "0.978"],
+      "evidence_text": "The model was evaluated using Root Mean Square Error (RMSE), Mean Absolute Percentage Error (MAPE), and coefficient of determination (R2 ), achieving test set metrics of RMSE= 76.2 MPa, MAPE= 9.8 %, and R2 = 0.978.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "property",
+      "subject": "optimized model performance",
+      "claim": "Genetic Algorithm (GA) optimization improved the Extra Trees model performance, yielding RMSE=31.60 MPa, MAPE=4.39%, and R²=0.997.",
+      "values": ["31.60 MPa", "4.39%", "0.997"],
+      "evidence_text": "Subsequent Genetic Algorithm (GA) optimization significantly improved model performance, yielding optimized metrics of RMSE= 31.60 MPa, MAPE= 4.39 %, and R2 = 0.997.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "property",
+      "subject": "validation prediction error",
+      "claim": "Experimental validation demonstrated an average prediction error of 1.56%, while literature data validation achieved an average error of 1.84%.",
+      "values": ["1.56%", "1.84%"],
+      "evidence_text": "Validation through practical experiments and existing literature data demonstrated average prediction errors of 1.56 % and 1.84 %, respectively",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "characterization",
+      "subject": "model interpretability",
+      "claim": "SHAP (SHapley Additive exPlanations) method was used to reveal the decision-making mechanism and analyze feature importance.",
+      "values": ["SHAP"],
+      "evidence_text": "Finally, the decision-making mechanism of the model is revealed by using the Shapley additive explanations method, and the importance of characteristics is analyzed.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "strengthening mechanisms",
+      "claim": "Solid solution strengthening operates through solute atom-induced dislocation motion obstruction; dislocation strengthening arises from mutual interactions between dislocations; grain refinement strengthening enhances strength via grain boundary impediments; and the Orowan mechanism describes dislocation pinning by secondary phase particles.",
+      "values": ["solid solution strengthening", "dislocation strengthening", "grain refinement strengthening", "Orowan strengthening"],
+      "evidence_text": "Solid solution strengthening operates through solute atom-induced dislocation motion obstruction; dislocation strengthening arises from mutual interactions between dislocations to increase deformation resistance, while grain refinement strengthening enhances material strength via grain boundary impediments. Furthermore, the Orowan mechanism describes the dislocation pinning effect by secondary phase particles to augment load-bearing capacity.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    }
+  ],
+  "context_update": {
+    "summary": "The abstract and introduction of this paper establish a data-driven framework for predicting yield strength (YS) of medium-manganese low-density steels. The core novelty is the integration of four strengthening mechanisms—solid solution, grain refinement, dislocation, and Orowan—as input features, moving beyond traditional composition/processing features. A literature-derived dataset of 177 entries was augmented to 776 via Gaussian Mixture Model to address small data limitations. Among seven compared ML models, Extra Trees was selected as optimal, achieving RMSE=76.2 MPa, MAPE=9.8%, R²=0.978 on the test set. Genetic algorithm hyperparameter optimization further boosted performance to RMSE=31.60 MPa, MAPE=4.39%, R²=0.997. Validation experiments and literature data gave average prediction errors of 1.56% and 1.84%, confirming reliability. SHAP analysis was employed to interpret the model. The introduction critiques traditional linear models and highlights the significance of strengthening mechanism contributions. This chunk establishes the problem, framework overview, and headline results; subsequent sections will detail data preparation, model training, experimental validation specifics, and microstructural context.",
+    "material_systems": ["medium-manganese low-density steels"],
+    "sample_aliases": [],
+    "processing_route": [],
+    "key_variables": ["yield strength", "solid solution strengthening", "grain refinement strengthening", "dislocation strengthening", "Orowan strengthening", "RMSE", "MAPE", "R2", "data augmentation", "Genetic Algorithm", "SHAP"],
+    "microstructure": [],
+    "properties": ["yield strength"],
+    "mechanisms": ["solid solution strengthening", "grain refinement strengthening", "dislocation strengthening", "Orowan strengthening"],
+    "figures_or_tables": [],
+    "unresolved_terms": []
+  }
+}

@@ -1,0 +1,282 @@
+[
+  {
+    "chunk_id": "chunk_0001",
+    "section": "Properties of Fe–Mn–Al alloys with different Mn contents using density functional theory",
+    "previous_context_summary": "",
+    "context_update": {
+      "summary": "This chunk covers the abstract, introduction, and calculation methods of the paper. It introduces Fe1−xMnxAl alloys with x from 0 to 1, crystallizing in a cubic Pm-3m supercell. The DFT setup is described: CASTEP code, GGA-PBE functional, ultrasoft pseudopotentials, 450 eV plane-wave cutoff, 8x8x8 k-point mesh, and convergence criteria of 2×10−6 eV for energy and 0.5 eV·nm−1 for forces. The abstract reports that all compositions are thermodynamically stable with negative formation enthalpy and cohesive energy, FeAl being the most stable. Bonding is characterized as a mix of covalent and metallic, leading to high hardness, good conductivity, and high melting points. FeAl achieves the highest elastic moduli: B=187.1 GPa, G=119.8 GPa, E=296.2 GPa. The alloys exhibit mechanical anisotropy shown by 3D Young’s modulus surfaces. Figure 1 displays the crystal structures of the nine compositions. Formulas for formation enthalpy and cohesive energy are provided. The chunk does not yet contain detailed electronic structure or Debye temperature data; those will follow in later sections.",
+      "material_systems": [
+        "Fe1-xMnxAl (cubic, Pm-3m)"
+      ],
+      "sample_aliases": [
+        "FeAl (x=0)",
+        "Fe0.875Mn0.125Al",
+        "Fe0.75Mn0.25Al",
+        "Fe0.625Mn0.375Al",
+        "Fe0.5Mn0.5Al",
+        "Fe0.375Mn0.625Al",
+        "Fe0.25Mn0.75Al",
+        "Fe0.125Mn0.875Al",
+        "MnAl (x=1)"
+      ],
+      "processing_route": [
+        "DFT: CASTEP, GGA-PBE, ultrasoft pseudopotentials",
+        "plane-wave cutoff 450 eV",
+        "8x8x8 k-points",
+        "convergence: 2e-6 eV, 0.5 eV/nm"
+      ],
+      "key_variables": [
+        "Mn content (x)"
+      ],
+      "microstructure": [
+        "cubic supercell, space group Pm-3m",
+        "Mn substitution for Fe in FeAl lattice"
+      ],
+      "properties": [
+        "negative formation enthalpy",
+        "negative cohesive energy",
+        "FeAl bulk modulus 187.1 GPa",
+        "FeAl shear modulus 119.8 GPa",
+        "FeAl Young's modulus 296.2 GPa",
+        "high hardness",
+        "good electronic conductivity",
+        "high melting point",
+        "elastic anisotropy"
+      ],
+      "mechanisms": [
+        "combination of covalent and metallic bonding"
+      ],
+      "figures_or_tables": [
+        "Fig. 1"
+      ],
+      "unresolved_terms": []
+    },
+    "rolling_context_summary": "Summary: This chunk covers the abstract, introduction, and calculation methods of the paper. It introduces Fe1−xMnxAl alloys with x from 0 to 1, crystallizing in a cubic Pm-3m supercell. The DFT setup is described: CASTEP code, GGA-PBE functional, ultrasoft pseudopotentials, 450 eV plane-wave cutoff, 8x8x8 k-point mesh, and convergence criteria of 2×10−6 eV for energy and 0.5 eV·nm−1 for forces. The abstract reports that all compositions are thermodynamically stable with negative formation enthalpy and cohesive energy, FeAl being the most stable. Bonding is characterized as a mix of covalent and metallic, leading to high hardness, good conductivity, and high melting points. FeAl achieves the highest elastic moduli: B=187.1 GPa, G=119.8 GPa, E=296.2 GPa. The alloys exhibit mechanical anisotropy shown by 3D Young’s modulus surfaces. Figure 1 displays the crystal structures of the nine compositions. Formulas for formation enthalpy and cohesive energy are provided. The chunk does not yet contain detailed electronic structure or Debye temperature data; those will follow in later sections.\nMaterial systems: Fe1-xMnxAl (cubic, Pm-3m)\nSample aliases: FeAl (x=0); Fe0.875Mn0.125Al; Fe0.75Mn0.25Al; Fe0.625Mn0.375Al; Fe0.5Mn0.5Al; Fe0.375Mn0.625Al; Fe0.25Mn0.75Al; Fe0.125Mn0.875Al\nProcessing route: DFT: CASTEP, GGA-PBE, ultrasoft pseudopotentials; plane-wave cutoff 450 eV; 8x8x8 k-points; convergence: 2e-6 eV, 0.5 eV/nm\nKey variables: Mn content (x)\nMicrostructure: cubic supercell, space group Pm-3m; Mn substitution for Fe in FeAl lattice\nProperties: negative formation enthalpy; negative cohesive energy; FeAl bulk modulus 187.1 GPa; FeAl shear modulus 119.8 GPa; FeAl Young's modulus 296.2 GPa; high hardness; good electronic conductivity; high melting point\nMechanisms: combination of covalent and metallic bonding\nFigures or tables: Fig. 1"
+  },
+  {
+    "chunk_id": "chunk_0002",
+    "section": "2 Calculation methods",
+    "previous_context_summary": "Summary: This chunk covers the abstract, introduction, and calculation methods of the paper. It introduces Fe1−xMnxAl alloys with x from 0 to 1, crystallizing in a cubic Pm-3m supercell. The DFT setup is described: CASTEP code, GGA-PBE functional, ultrasoft pseudopotentials, 450 eV plane-wave cutoff, 8x8x8 k-point mesh, and convergence criteria of 2×10−6 eV for energy and 0.5 eV·nm−1 for forces. The abstract reports that all compositions are thermodynamically stable with negative formation enthalpy and cohesive energy, FeAl being the most stable. Bonding is characterized as a mix of covalent and metallic, leading to high hardness, good conductivity, and high melting points. FeAl achieves the highest elastic moduli: B=187.1 GPa, G=119.8 GPa, E=296.2 GPa. The alloys exhibit mechanical anisotropy shown by 3D Young’s modulus surfaces. Figure 1 displays the crystal structures of the nine compositions. Formulas for formation enthalpy and cohesive energy are provided. The chunk does not yet contain detailed electronic structure or Debye temperature data; those will follow in later sections.\nMaterial systems: Fe1-xMnxAl (cubic, Pm-3m)\nSample aliases: FeAl (x=0); Fe0.875Mn0.125Al; Fe0.75Mn0.25Al; Fe0.625Mn0.375Al; Fe0.5Mn0.5Al; Fe0.375Mn0.625Al; Fe0.25Mn0.75Al; Fe0.125Mn0.875Al\nProcessing route: DFT: CASTEP, GGA-PBE, ultrasoft pseudopotentials; plane-wave cutoff 450 eV; 8x8x8 k-points; convergence: 2e-6 eV, 0.5 eV/nm\nKey variables: Mn content (x)\nMicrostructure: cubic supercell, space group Pm-3m; Mn substitution for Fe in FeAl lattice\nProperties: negative formation enthalpy; negative cohesive energy; FeAl bulk modulus 187.1 GPa; FeAl shear modulus 119.8 GPa; FeAl Young's modulus 296.2 GPa; high hardness; good electronic conductivity; high melting point\nMechanisms: combination of covalent and metallic bonding\nFigures or tables: Fig. 1",
+    "context_update": {
+      "summary": "In this chunk, stability and electronic structures of Fe1-xMnxAl alloys are analyzed with DFT. Table 1 reports lattice parameters a=b=c (from 0.570 nm for FeAl increasing to 0.584 nm for MnAl), cohesive energies (−6.568 to −6.947 eV·atom⁻¹), and formation enthalpies (−0.215 to −0.391 eV·atom⁻¹). All values are negative, confirming thermodynamic stability; FeAl is most stable due to the lowest formation enthalpy. Figure 2 shows that both cohesive energy and formation enthalpy increase (become less negative) with Mn content. Electronic structures (Figs. 3 and 4) reveal metallic character (nonzero DOS at EF), magnetic asymmetry in spin-polarized TDOS, and hybridization mainly among Al-p, Fe-d, and Mn-d states near the Fermi level. Electron density maps show elongated contours along Al–Fe, Al–Mn, Fe–Mn axes (covalent bonding) and delocalized electrons (metallic bonding), with overall weaker covalent effect. These features suggest high melting points, high hardness, and good conductivity. Later sections will likely address mechanical properties, elastic moduli, anisotropy, and Debye temperature. Key compositions, lattice trends, stability ordering, and bonding picture should be retained.",
+      "material_systems": [
+        "Fe1-xMnxAl (x = 0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1)"
+      ],
+      "sample_aliases": [
+        "FeAl (x=0)",
+        "Fe0.875Mn0.125Al",
+        "Fe0.75Mn0.25Al",
+        "Fe0.625Mn0.375Al",
+        "Fe0.5Mn0.5Al",
+        "Fe0.375Mn0.625Al",
+        "Fe0.25Mn0.75Al",
+        "Fe0.125Mn0.875Al",
+        "MnAl (x=1)"
+      ],
+      "processing_route": [
+        "DFT: CASTEP, GGA-PBE, ultrasoft pseudopotentials, 450 eV cutoff, 8x8x8 k-points"
+      ],
+      "key_variables": [
+        "Mn content (x)"
+      ],
+      "microstructure": [
+        "cubic Pm-3m supercell",
+        "Mn substitution for Fe in FeAl lattice"
+      ],
+      "properties": [
+        "thermodynamic stability (negative formation enthalpy and cohesive energy)",
+        "formation enthalpy range -0.215 to -0.391 eV·atom⁻¹",
+        "cohesive energy range -6.568 to -6.947 eV·atom⁻¹",
+        "FeAl most stable",
+        "lattice parameter a increases with Mn content",
+        "metallic character (nonzero DOS at EF)",
+        "magnetic character (spin asymmetry)",
+        "good electronic conductivity",
+        "high melting point",
+        "high hardness"
+      ],
+      "mechanisms": [
+        "hybridization of Al-p, Fe-d, and Mn-d states",
+        "covalent bonds along Al-Fe, Al-Mn, Fe-Mn axes",
+        "delocalized electrons providing metallic bonding",
+        "overall weaker covalent bonding effect"
+      ],
+      "figures_or_tables": [
+        "Fig. 2",
+        "Fig. 3",
+        "Fig. 4",
+        "Table 1"
+      ],
+      "unresolved_terms": []
+    },
+    "rolling_context_summary": "Summary: Formulas for formation enthalpy and cohesive energy are provided. The chunk does not yet contain detailed electronic structure or Debye temperature data; those will follow in later sections. In this chunk, stability and electronic structures of Fe1-xMnxAl alloys are analyzed with DFT. Table 1 reports lattice parameters a=b=c (from 0.570 nm for FeAl increasing to 0.584 nm for MnAl), cohesive energies (−6.568 to −6.947 eV·atom⁻¹), and formation enthalpies (−0.215 to −0.391 eV·atom⁻¹). All values are negative, confirming thermodynamic stability; FeAl is most stable due to the lowest formation enthalpy. Figure 2 shows that both cohesive energy and formation enthalpy increase (become less negative) with Mn content. Electronic structures (Figs. 3 and 4) reveal metallic character (nonzero DOS at EF), magnetic asymmetry in spin-polarized TDOS, and hybridization mainly among Al-p, Fe-d, and Mn-d states near the Fermi level. Electron density maps show elongated contours along Al–Fe, Al–Mn, Fe–Mn axes (covalent bonding) and delocalized electrons (metallic bonding), with overall weaker covalent effect. These features suggest high melting points, high hardness, and good conductivity. Later sections will likely address mechanical properties, elastic moduli, anisotropy, and Debye temperature. Key compositions, lattice trends, stability ordering, and bonding picture should be retained.\nMaterial systems: Fe1-xMnxAl (cubic, Pm-3m); Fe1-xMnxAl (x = 0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1)\nSample aliases: FeAl (x=0); Fe0.875Mn0.125Al; Fe0.75Mn0.25Al; Fe0.625Mn0.375Al; Fe0.5Mn0.5Al; Fe0.375Mn0.625Al; Fe0.25Mn0.75Al; Fe0.125Mn0.875Al\nProcessing route: DFT: CASTEP, GGA-PBE, ultrasoft pseudopotentials; plane-wave cutoff 450 eV; 8x8x8 k-points; convergence: 2e-6 eV, 0.5 eV/nm; DFT: CASTEP, GGA-PBE, ultrasoft pseudopotentials, 450 eV cutoff, 8x8x8 k-points\nKey variables: Mn content (x)\nMicrostructure: cubic supercell, space group Pm-3m; Mn substitution for Fe in FeAl lattice; cubic Pm-3m supercell\nProperties: negative formation enthalpy; negative cohesive energy; FeAl bulk modulus 187.1 GPa; FeAl shear modulus 119.8 GPa; FeAl Young's modulus 296.2 GPa; high hardness; good electronic conductivity; high melting point\nMechanisms: combination of covalent and metallic bonding; hybridization of Al-p, Fe-d, and Mn-d states; covalent bonds along Al-Fe, Al-Mn, Fe-Mn axes; delocalized electrons providing metallic bonding; overall weaker covalent bonding effect\nFigures or tables: Fig. 1; Fig. 2; Fig. 3; Fig. 4; Table 1"
+  },
+  {
+    "chunk_id": "chunk_0003",
+    "section": "3.2 Electronic structures",
+    "previous_context_summary": "Summary: Formulas for formation enthalpy and cohesive energy are provided. The chunk does not yet contain detailed electronic structure or Debye temperature data; those will follow in later sections. In this chunk, stability and electronic structures of Fe1-xMnxAl alloys are analyzed with DFT. Table 1 reports lattice parameters a=b=c (from 0.570 nm for FeAl increasing to 0.584 nm for MnAl), cohesive energies (−6.568 to −6.947 eV·atom⁻¹), and formation enthalpies (−0.215 to −0.391 eV·atom⁻¹). All values are negative, confirming thermodynamic stability; FeAl is most stable due to the lowest formation enthalpy. Figure 2 shows that both cohesive energy and formation enthalpy increase (become less negative) with Mn content. Electronic structures (Figs. 3 and 4) reveal metallic character (nonzero DOS at EF), magnetic asymmetry in spin-polarized TDOS, and hybridization mainly among Al-p, Fe-d, and Mn-d states near the Fermi level. Electron density maps show elongated contours along Al–Fe, Al–Mn, Fe–Mn axes (covalent bonding) and delocalized electrons (metallic bonding), with overall weaker covalent effect. These features suggest high melting points, high hardness, and good conductivity. Later sections will likely address mechanical properties, elastic moduli, anisotropy, and Debye temperature. Key compositions, lattice trends, stability ordering, and bonding picture should be retained.\nMaterial systems: Fe1-xMnxAl (cubic, Pm-3m); Fe1-xMnxAl (x = 0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1)\nSample aliases: FeAl (x=0); Fe0.875Mn0.125Al; Fe0.75Mn0.25Al; Fe0.625Mn0.375Al; Fe0.5Mn0.5Al; Fe0.375Mn0.625Al; Fe0.25Mn0.75Al; Fe0.125Mn0.875Al\nProcessing route: DFT: CASTEP, GGA-PBE, ultrasoft pseudopotentials; plane-wave cutoff 450 eV; 8x8x8 k-points; convergence: 2e-6 eV, 0.5 eV/nm; DFT: CASTEP, GGA-PBE, ultrasoft pseudopotentials, 450 eV cutoff, 8x8x8 k-points\nKey variables: Mn content (x)\nMicrostructure: cubic supercell, space group Pm-3m; Mn substitution for Fe in FeAl lattice; cubic Pm-3m supercell\nProperties: negative formation enthalpy; negative cohesive energy; FeAl bulk modulus 187.1 GPa; FeAl shear modulus 119.8 GPa; FeAl Young's modulus 296.2 GPa; high hardness; good electronic conductivity; high melting point\nMechanisms: combination of covalent and metallic bonding; hybridization of Al-p, Fe-d, and Mn-d states; covalent bonds along Al-Fe, Al-Mn, Fe-Mn axes; delocalized electrons providing metallic bonding; overall weaker covalent bonding effect\nFigures or tables: Fig. 1; Fig. 2; Fig. 3; Fig. 4; Table 1",
+    "context_update": {
+      "summary": "This chunk completes the electronic structure discussion with electron density maps (Fig. 4) confirming covalent and metallic bonding with overall weak covalency, leading to high melting point and hardness. It then presents comprehensive mechanical stability and elastic property data for Fe1-xMnxAl. All nine cubic compositions satisfy mechanical stability criteria. Table 2 gives elastic constants C11, C12, C44 and derived B, G, E, σ, Hv, B/G from VRH approximation. FeAl exhibits highest moduli (B=187.1, G=119.8, E=296.2 GPa) and hardness (16.5 GPa); MnAl shows lowest values. The B/G ratio classifies FeAl and Fe0.875Mn0.125Al as brittle, others ductile. Table 3 provides elastic anisotropy indices (A^U from 0.56 to 3.80). Figures 5–7 correlate Young’s modulus with (C11-C12), shear modulus with C44, and Poisson’s ratio with B/G. Subsequent sections will likely discuss mechanical anisotropy in more detail (already tabulated in Table 3) and Debye temperature; the full set of elastic constants and moduli should be retained for cross-referencing with anisotropy plots.",
+      "material_systems": [
+        "Fe1-xMnxAl (cubic, Pm-3m)"
+      ],
+      "sample_aliases": [
+        "FeAl",
+        "Fe0.875Mn0.125Al",
+        "Fe0.75Mn0.25Al",
+        "Fe0.625Mn0.375Al",
+        "Fe0.5Mn0.5Al",
+        "Fe0.375Mn0.625Al",
+        "Fe0.25Mn0.75Al",
+        "Fe0.125Mn0.875Al",
+        "MnAl"
+      ],
+      "processing_route": [
+        "DFT: CASTEP, GGA-PBE, ultrasoft pseudopotentials, 450 eV cutoff, 8x8x8 k-points"
+      ],
+      "key_variables": [
+        "Mn content (x)"
+      ],
+      "microstructure": [],
+      "properties": [
+        "negative formation enthalpy",
+        "negative cohesive energy",
+        "covalent and metallic bonding",
+        "mechanically stable",
+        "C11, C12, C44",
+        "bulk modulus B",
+        "shear modulus G",
+        "Young's modulus E",
+        "Poisson's ratio σ",
+        "Vickers hardness Hv",
+        "B/G ratio",
+        "elastic anisotropy A^U, A_B, A_G, A1=A2=A3"
+      ],
+      "mechanisms": [
+        "B/G>1.75 indicates ductility, ≤1.75 brittleness",
+        "strength and hardness primarily carried by FeAl",
+        "elastic anisotropy increases with Mn content"
+      ],
+      "figures_or_tables": [
+        "Fig. 4",
+        "Table 2",
+        "Table 3",
+        "Fig. 5",
+        "Fig. 6",
+        "Fig. 7"
+      ],
+      "unresolved_terms": [
+        "Claim that Fe0.5Mn0.5Al has highest hardness contradicts Table 2; uncertain if derived from a different model or error."
+      ]
+    },
+    "rolling_context_summary": "Summary: These features suggest high melting points, high hardness, and good conductivity. Later sections will likely address mechanical properties, elastic moduli, anisotropy, and Debye temperature. Key compositions, lattice trends, stability ordering, and bonding picture should be retained. This chunk completes the electronic structure discussion with electron density maps (Fig. 4) confirming covalent and metallic bonding with overall weak covalency, leading to high melting point and hardness. It then presents comprehensive mechanical stability and elastic property data for Fe1-xMnxAl. All nine cubic compositions satisfy mechanical stability criteria. Table 2 gives elastic constants C11, C12, C44 and derived B, G, E, σ, Hv, B/G from VRH approximation. FeAl exhibits highest moduli (B=187.1, G=119.8, E=296.2 GPa) and hardness (16.5 GPa); MnAl shows lowest values. The B/G ratio classifies FeAl and Fe0.875Mn0.125Al as brittle, others ductile. Table 3 provides elastic anisotropy indices (A^U from 0.56 to 3.80). Figures 5–7 correlate Young’s modulus with (C11-C12), shear modulus with C44, and Poisson’s ratio with B/G. Subsequent sections will likely discuss mechanical anisotropy in more detail (already tabulated in Table 3) and Debye temperature; the full set of elastic constants and moduli should be retained for cross-referencing with anisotropy plots.\nMaterial systems: Fe1-xMnxAl (cubic, Pm-3m); Fe1-xMnxAl (x = 0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1)\nSample aliases: FeAl (x=0); Fe0.875Mn0.125Al; Fe0.75Mn0.25Al; Fe0.625Mn0.375Al; Fe0.5Mn0.5Al; Fe0.375Mn0.625Al; Fe0.25Mn0.75Al; Fe0.125Mn0.875Al\nProcessing route: DFT: CASTEP, GGA-PBE, ultrasoft pseudopotentials; plane-wave cutoff 450 eV; 8x8x8 k-points; convergence: 2e-6 eV, 0.5 eV/nm; DFT: CASTEP, GGA-PBE, ultrasoft pseudopotentials, 450 eV cutoff, 8x8x8 k-points\nKey variables: Mn content (x)\nMicrostructure: cubic supercell, space group Pm-3m; Mn substitution for Fe in FeAl lattice; cubic Pm-3m supercell\nProperties: negative formation enthalpy; negative cohesive energy; FeAl bulk modulus 187.1 GPa; FeAl shear modulus 119.8 GPa; FeAl Young's modulus 296.2 GPa; high hardness; good electronic conductivity; high melting point\nMechanisms: combination of covalent and metallic bonding; hybridization of Al-p, Fe-d, and Mn-d states; covalent bonds along Al-Fe, Al-Mn, Fe-Mn axes; delocalized electrons providing metallic bonding; overall weaker covalent bonding effect; B/G>1.75 indicates ductility, ≤1.75 brittleness; strength and hardness primarily carried by FeAl; elastic anisotropy increases with Mn content\nFigures or tables: Fig. 1; Fig. 2; Fig. 3; Fig. 4; Table 1; Table 2; Table 3; Fig. 5\nUnresolved terms: Claim that Fe0.5Mn0.5Al has highest hardness contradicts Table 2; uncertain if derived from a different model or error."
+  },
+  {
+    "chunk_id": "chunk_0004",
+    "section": "3.3 Mechanical stability, elastic properties and modulus",
+    "previous_context_summary": "Summary: These features suggest high melting points, high hardness, and good conductivity. Later sections will likely address mechanical properties, elastic moduli, anisotropy, and Debye temperature. Key compositions, lattice trends, stability ordering, and bonding picture should be retained. This chunk completes the electronic structure discussion with electron density maps (Fig. 4) confirming covalent and metallic bonding with overall weak covalency, leading to high melting point and hardness. It then presents comprehensive mechanical stability and elastic property data for Fe1-xMnxAl. All nine cubic compositions satisfy mechanical stability criteria. Table 2 gives elastic constants C11, C12, C44 and derived B, G, E, σ, Hv, B/G from VRH approximation. FeAl exhibits highest moduli (B=187.1, G=119.8, E=296.2 GPa) and hardness (16.5 GPa); MnAl shows lowest values. The B/G ratio classifies FeAl and Fe0.875Mn0.125Al as brittle, others ductile. Table 3 provides elastic anisotropy indices (A^U from 0.56 to 3.80). Figures 5–7 correlate Young’s modulus with (C11-C12), shear modulus with C44, and Poisson’s ratio with B/G. Subsequent sections will likely discuss mechanical anisotropy in more detail (already tabulated in Table 3) and Debye temperature; the full set of elastic constants and moduli should be retained for cross-referencing with anisotropy plots.\nMaterial systems: Fe1-xMnxAl (cubic, Pm-3m); Fe1-xMnxAl (x = 0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1)\nSample aliases: FeAl (x=0); Fe0.875Mn0.125Al; Fe0.75Mn0.25Al; Fe0.625Mn0.375Al; Fe0.5Mn0.5Al; Fe0.375Mn0.625Al; Fe0.25Mn0.75Al; Fe0.125Mn0.875Al\nProcessing route: DFT: CASTEP, GGA-PBE, ultrasoft pseudopotentials; plane-wave cutoff 450 eV; 8x8x8 k-points; convergence: 2e-6 eV, 0.5 eV/nm; DFT: CASTEP, GGA-PBE, ultrasoft pseudopotentials, 450 eV cutoff, 8x8x8 k-points\nKey variables: Mn content (x)\nMicrostructure: cubic supercell, space group Pm-3m; Mn substitution for Fe in FeAl lattice; cubic Pm-3m supercell\nProperties: negative formation enthalpy; negative cohesive energy; FeAl bulk modulus 187.1 GPa; FeAl shear modulus 119.8 GPa; FeAl Young's modulus 296.2 GPa; high hardness; good electronic conductivity; high melting point\nMechanisms: combination of covalent and metallic bonding; hybridization of Al-p, Fe-d, and Mn-d states; covalent bonds along Al-Fe, Al-Mn, Fe-Mn axes; delocalized electrons providing metallic bonding; overall weaker covalent bonding effect; B/G>1.75 indicates ductility, ≤1.75 brittleness; strength and hardness primarily carried by FeAl; elastic anisotropy increases with Mn content\nFigures or tables: Fig. 1; Fig. 2; Fig. 3; Fig. 4; Table 1; Table 2; Table 3; Fig. 5\nUnresolved terms: Claim that Fe0.5Mn0.5Al has highest hardness contradicts Table 2; uncertain if derived from a different model or error.",
+    "context_update": {
+      "summary": "This chunk presents the mechanical anisotropy analysis of Fe1-xMnxAl alloys. Several anisotropy indices are calculated: A_B is zero for all alloys since Voigt and Reuss bulk moduli are identical; A_G values are low indicating weak shear modulus anisotropy. The universal anisotropic index A^U is a better descriptor; FeAl exhibits the smallest A^U, while MnAl the largest. Among intermediate compositions, Fe0.5Mn0.5Al has the maximum A^U. The descending anisotropy order is MnAl > Fe0.5Mn0.5Al > Fe0.625Mn0.375Al > Fe0.125Mn0.875Al > Fe0.375Mn0.625Al > Fe0.75Mn0.25Al > Fe0.25Mn0.75Al > Fe0.875Mn0.125Al > FeAl. Shear anisotropy factors A1, A2, A3 show MnAl (4.97) strongest and FeAl (1.96) weakest in (100), (010), (001) planes. Figure 8 shows A_G and A^U follow the same trend. Young’s modulus on (001) and (110) planes is strongly direction-dependent; Fe0.125Mn0.875Al gives maximum and MnAl minimum values. Figures 5–9 provide the corresponding data. The established elastic anisotropy and moduli trends will be essential for the subsequent Debye temperature discussion.",
+      "material_systems": [
+        "Fe1-xMnxAl (cubic, Pm-3m)"
+      ],
+      "sample_aliases": [
+        "FeAl",
+        "Fe0.875Mn0.125Al",
+        "Fe0.75Mn0.25Al",
+        "Fe0.625Mn0.375Al",
+        "Fe0.5Mn0.5Al",
+        "Fe0.375Mn0.625Al",
+        "Fe0.25Mn0.75Al",
+        "Fe0.125Mn0.875Al",
+        "MnAl"
+      ],
+      "processing_route": [
+        "DFT: CASTEP, GGA-PBE, ultrasoft pseudopotentials, 450 eV cutoff, 8x8x8 k-points"
+      ],
+      "key_variables": [
+        "Mn content (x)",
+        "anisotropy indices (A^U, A_B, A_G, A1, A2, A3)"
+      ],
+      "microstructure": [
+        "single crystal cubic anisotropy"
+      ],
+      "properties": [
+        "A^U: FeAl ~0.6, MnAl ~3.8; Fe0.5Mn0.5Al highest intermediate A^U",
+        "Young's modulus anisotropy on (001) and (110) planes, Fe0.125Mn0.875Al max, MnAl min"
+      ],
+      "mechanisms": [
+        "A^U as better anisotropy indicator",
+        "A_B=0 due to identical Voigt/Reuss B",
+        "A_G and A^U same trend",
+        "anisotropy leads to direction-dependent Young's modulus"
+      ],
+      "figures_or_tables": [
+        "Fig. 5",
+        "Fig. 6",
+        "Fig. 7",
+        "Fig. 8",
+        "Fig. 9",
+        "Table 3"
+      ],
+      "unresolved_terms": []
+    },
+    "rolling_context_summary": "Summary: Subsequent sections will likely discuss mechanical anisotropy in more detail (already tabulated in Table 3) and Debye temperature; the full set of elastic constants and moduli should be retained for cross-referencing with anisotropy plots. This chunk presents the mechanical anisotropy analysis of Fe1-xMnxAl alloys. Several anisotropy indices are calculated: A_B is zero for all alloys since Voigt and Reuss bulk moduli are identical; A_G values are low indicating weak shear modulus anisotropy. The universal anisotropic index A^U is a better descriptor; FeAl exhibits the smallest A^U, while MnAl the largest. Among intermediate compositions, Fe0.5Mn0.5Al has the maximum A^U. The descending anisotropy order is MnAl > Fe0.5Mn0.5Al > Fe0.625Mn0.375Al > Fe0.125Mn0.875Al > Fe0.375Mn0.625Al > Fe0.75Mn0.25Al > Fe0.25Mn0.75Al > Fe0.875Mn0.125Al > FeAl. Shear anisotropy factors A1, A2, A3 show MnAl (4.97) strongest and FeAl (1.96) weakest in (100), (010), (001) planes. Figure 8 shows A_G and A^U follow the same trend. Young’s modulus on (001) and (110) planes is strongly direction-dependent; Fe0.125Mn0.875Al gives maximum and MnAl minimum values. Figures 5–9 provide the corresponding data. The established elastic anisotropy and moduli trends will be essential for the subsequent Debye temperature discussion.\nMaterial systems: Fe1-xMnxAl (cubic, Pm-3m); Fe1-xMnxAl (x = 0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1)\nSample aliases: FeAl (x=0); Fe0.875Mn0.125Al; Fe0.75Mn0.25Al; Fe0.625Mn0.375Al; Fe0.5Mn0.5Al; Fe0.375Mn0.625Al; Fe0.25Mn0.75Al; Fe0.125Mn0.875Al\nProcessing route: DFT: CASTEP, GGA-PBE, ultrasoft pseudopotentials; plane-wave cutoff 450 eV; 8x8x8 k-points; convergence: 2e-6 eV, 0.5 eV/nm; DFT: CASTEP, GGA-PBE, ultrasoft pseudopotentials, 450 eV cutoff, 8x8x8 k-points\nKey variables: Mn content (x); anisotropy indices (A^U, A_B, A_G, A1, A2, A3)\nMicrostructure: cubic supercell, space group Pm-3m; Mn substitution for Fe in FeAl lattice; cubic Pm-3m supercell; single crystal cubic anisotropy\nProperties: negative formation enthalpy; negative cohesive energy; FeAl bulk modulus 187.1 GPa; FeAl shear modulus 119.8 GPa; FeAl Young's modulus 296.2 GPa; high hardness; good electronic conductivity; high melting point\nMechanisms: combination of covalent and metallic bonding; hybridization of Al-p, Fe-d, and Mn-d states; covalent bonds along Al-Fe, Al-Mn, Fe-Mn axes; delocalized electrons providing metallic bonding; overall weaker covalent bonding effect; B/G>1.75 indicates ductility, ≤1.75 brittleness; strength and hardness primarily carried by FeAl; elastic anisotropy increases with Mn content\nFigures or tables: Fig. 1; Fig. 2; Fig. 3; Fig. 4; Table 1; Table 2; Table 3; Fig. 5\nUnresolved terms: Claim that Fe0.5Mn0.5Al has highest hardness contradicts Table 2; uncertain if derived from a different model or error."
+  },
+  {
+    "chunk_id": "chunk_0005",
+    "section": "3.4 Mechanical anisotropy",
+    "previous_context_summary": "Summary: Subsequent sections will likely discuss mechanical anisotropy in more detail (already tabulated in Table 3) and Debye temperature; the full set of elastic constants and moduli should be retained for cross-referencing with anisotropy plots. This chunk presents the mechanical anisotropy analysis of Fe1-xMnxAl alloys. Several anisotropy indices are calculated: A_B is zero for all alloys since Voigt and Reuss bulk moduli are identical; A_G values are low indicating weak shear modulus anisotropy. The universal anisotropic index A^U is a better descriptor; FeAl exhibits the smallest A^U, while MnAl the largest. Among intermediate compositions, Fe0.5Mn0.5Al has the maximum A^U. The descending anisotropy order is MnAl > Fe0.5Mn0.5Al > Fe0.625Mn0.375Al > Fe0.125Mn0.875Al > Fe0.375Mn0.625Al > Fe0.75Mn0.25Al > Fe0.25Mn0.75Al > Fe0.875Mn0.125Al > FeAl. Shear anisotropy factors A1, A2, A3 show MnAl (4.97) strongest and FeAl (1.96) weakest in (100), (010), (001) planes. Figure 8 shows A_G and A^U follow the same trend. Young’s modulus on (001) and (110) planes is strongly direction-dependent; Fe0.125Mn0.875Al gives maximum and MnAl minimum values. Figures 5–9 provide the corresponding data. The established elastic anisotropy and moduli trends will be essential for the subsequent Debye temperature discussion.\nMaterial systems: Fe1-xMnxAl (cubic, Pm-3m); Fe1-xMnxAl (x = 0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1)\nSample aliases: FeAl (x=0); Fe0.875Mn0.125Al; Fe0.75Mn0.25Al; Fe0.625Mn0.375Al; Fe0.5Mn0.5Al; Fe0.375Mn0.625Al; Fe0.25Mn0.75Al; Fe0.125Mn0.875Al\nProcessing route: DFT: CASTEP, GGA-PBE, ultrasoft pseudopotentials; plane-wave cutoff 450 eV; 8x8x8 k-points; convergence: 2e-6 eV, 0.5 eV/nm; DFT: CASTEP, GGA-PBE, ultrasoft pseudopotentials, 450 eV cutoff, 8x8x8 k-points\nKey variables: Mn content (x); anisotropy indices (A^U, A_B, A_G, A1, A2, A3)\nMicrostructure: cubic supercell, space group Pm-3m; Mn substitution for Fe in FeAl lattice; cubic Pm-3m supercell; single crystal cubic anisotropy\nProperties: negative formation enthalpy; negative cohesive energy; FeAl bulk modulus 187.1 GPa; FeAl shear modulus 119.8 GPa; FeAl Young's modulus 296.2 GPa; high hardness; good electronic conductivity; high melting point\nMechanisms: combination of covalent and metallic bonding; hybridization of Al-p, Fe-d, and Mn-d states; covalent bonds along Al-Fe, Al-Mn, Fe-Mn axes; delocalized electrons providing metallic bonding; overall weaker covalent bonding effect; B/G>1.75 indicates ductility, ≤1.75 brittleness; strength and hardness primarily carried by FeAl; elastic anisotropy increases with Mn content\nFigures or tables: Fig. 1; Fig. 2; Fig. 3; Fig. 4; Table 1; Table 2; Table 3; Fig. 5\nUnresolved terms: Claim that Fe0.5Mn0.5Al has highest hardness contradicts Table 2; uncertain if derived from a different model or error.",
+    "context_update": {
+      "summary": "This chunk details the anisotropic Young's modulus on (001) and (110) planes (Fig. 9) and the Debye temperature analysis for the Fe1-xMnxAl system. It reports that Fe0.125Mn0.875Al exhibits maximum and MnAl minimum Young's modulus along specific directions, and non-spherical contours confirm strong anisotropy. The Debye temperature, sound velocities, and density are tabulated (Table 4): FeAl has the highest ΘD (652.5 K) suggesting strongest covalent bonds; MnAl has the lowest (504.1 K) and highest B/G (2.52) indicating metallic character. In the intermediate range, Fe0.5Mn0.5Al shows the highest B/G (2.28) and lowest ΘD (533.3 K). A non-monotonic trend in ΘD with Mn content is observed. Hardness and Debye temperature follow a similar trend (Fig. 10), with FeAl hardness ~16.5 GPa/ΘD ~660 K and MnAl ~5.0 GPa/~500 K. The conclusion reaffirms FeAl stability, combined covalent-metallic bonding, high hardness and melting point, and MnAl having the strongest anisotropy. These results are crucial for understanding thermal and mechanical properties.",
+      "material_systems": [
+        "Fe1-xMnxAl (cubic, space group Pm-3m)"
+      ],
+      "sample_aliases": [
+        "FeAl",
+        "Fe0.875Mn0.125Al",
+        "Fe0.75Mn0.25Al",
+        "Fe0.625Mn0.375Al",
+        "Fe0.5Mn0.5Al",
+        "Fe0.375Mn0.625Al",
+        "Fe0.25Mn0.75Al",
+        "Fe0.125Mn0.875Al",
+        "MnAl"
+      ],
+      "processing_route": [
+        "DFT: CASTEP, GGA-PBE, ultrasoft pseudopotentials, plane-wave cutoff 450 eV, 8x8x8 k-points"
+      ],
+      "key_variables": [
+        "Mn content (x)",
+        "anisotropy indices",
+        "Debye temperature",
+        "sound velocities (longitudinal, transverse, average)",
+        "B/G ratio",
+        "hardness"
+      ],
+      "microstructure": [
+        "cubic supercell, space group Pm-3m",
+        "single crystal cubic anisotropy"
+      ],
+      "properties": [
+        "Debye temperature (504.1–652.5 K)",
+        "sound velocities",
+        "theoretical density",
+        "hardness values (5.0–16.5 GPa)",
+        "Young's modulus directional dependence on (001) and (110)"
+      ],
+      "mechanisms": [
+        "Debye temperature correlates with covalent bond strength",
+        "higher B/G ratio indicates stronger metallic character",
+        "trend of hardness and Debye temperature similar due to bonding features"
+      ],
+      "figures_or_tables": [
+        "Fig. 9",
+        "Table 4",
+        "Fig. 10"
+      ],
+      "unresolved_terms": []
+    },
+    "rolling_context_summary": "Summary: Young’s modulus on (001) and (110) planes is strongly direction-dependent; Fe0.125Mn0.875Al gives maximum and MnAl minimum values. Figures 5–9 provide the corresponding data. The established elastic anisotropy and moduli trends will be essential for the subsequent Debye temperature discussion. This chunk details the anisotropic Young's modulus on (001) and (110) planes (Fig. 9) and the Debye temperature analysis for the Fe1-xMnxAl system. It reports that Fe0.125Mn0.875Al exhibits maximum and MnAl minimum Young's modulus along specific directions, and non-spherical contours confirm strong anisotropy. The Debye temperature, sound velocities, and density are tabulated (Table 4): FeAl has the highest ΘD (652.5 K) suggesting strongest covalent bonds; MnAl has the lowest (504.1 K) and highest B/G (2.52) indicating metallic character. In the intermediate range, Fe0.5Mn0.5Al shows the highest B/G (2.28) and lowest ΘD (533.3 K). A non-monotonic trend in ΘD with Mn content is observed. Hardness and Debye temperature follow a similar trend (Fig. 10), with FeAl hardness ~16.5 GPa/ΘD ~660 K and MnAl ~5.0 GPa/~500 K. The conclusion reaffirms FeAl stability, combined covalent-metallic bonding, high hardness and melting point, and MnAl having the strongest anisotropy. These results are crucial for understanding thermal and mechanical properties.\nMaterial systems: Fe1-xMnxAl (cubic, Pm-3m); Fe1-xMnxAl (x = 0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1); Fe1-xMnxAl (cubic, space group Pm-3m)\nSample aliases: FeAl (x=0); Fe0.875Mn0.125Al; Fe0.75Mn0.25Al; Fe0.625Mn0.375Al; Fe0.5Mn0.5Al; Fe0.375Mn0.625Al; Fe0.25Mn0.75Al; Fe0.125Mn0.875Al\nProcessing route: DFT: CASTEP, GGA-PBE, ultrasoft pseudopotentials; plane-wave cutoff 450 eV; 8x8x8 k-points; convergence: 2e-6 eV, 0.5 eV/nm; DFT: CASTEP, GGA-PBE, ultrasoft pseudopotentials, 450 eV cutoff, 8x8x8 k-points; DFT: CASTEP, GGA-PBE, ultrasoft pseudopotentials, plane-wave cutoff 450 eV, 8x8x8 k-points\nKey variables: Mn content (x); anisotropy indices (A^U, A_B, A_G, A1, A2, A3); anisotropy indices; Debye temperature; sound velocities (longitudinal, transverse, average); B/G ratio; hardness\nMicrostructure: cubic supercell, space group Pm-3m; Mn substitution for Fe in FeAl lattice; cubic Pm-3m supercell; single crystal cubic anisotropy\nProperties: negative formation enthalpy; negative cohesive energy; FeAl bulk modulus 187.1 GPa; FeAl shear modulus 119.8 GPa; FeAl Young's modulus 296.2 GPa; high hardness; good electronic conductivity; high melting point\nMechanisms: combination of covalent and metallic bonding; hybridization of Al-p, Fe-d, and Mn-d states; covalent bonds along Al-Fe, Al-Mn, Fe-Mn axes; delocalized electrons providing metallic bonding; overall weaker covalent bonding effect; B/G>1.75 indicates ductility, ≤1.75 brittleness; strength and hardness primarily carried by FeAl; elastic anisotropy increases with Mn content\nFigures or tables: Fig. 1; Fig. 2; Fig. 3; Fig. 4; Table 1; Table 2; Table 3; Fig. 5\nUnresolved terms: Claim that Fe0.5Mn0.5Al has highest hardness contradicts Table 2; uncertain if derived from a different model or error."
+  }
+]

@@ -5,7 +5,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, List
 
-from paper_extractor.client import create_client
+from paper_extractor.client import build_chat_completion_kwargs, create_client, normalize_openai_base_url
 from paper_extractor.common import clean_text, extract_figure_id, load_text, log_jsonl, truncate_text
 from paper_extractor.config import WorkflowSettings
 from paper_extractor.postprocess import run_post_parse
@@ -140,6 +140,19 @@ def build_loggable_content(content: List[Dict[str, Any]]) -> List[Dict[str, Any]
     return preview
 
 
+def model_endpoint_summary(settings: WorkflowSettings) -> Dict[str, Dict[str, str]]:
+    return {
+        "text_model": {
+            "model": settings.text_model.model,
+            "base_url": normalize_openai_base_url(settings.text_model.base_url),
+        },
+        "multimodal_model": {
+            "model": settings.multimodal_model.model,
+            "base_url": normalize_openai_base_url(settings.multimodal_model.base_url),
+        },
+    }
+
+
 def run_one_paper(
     md_path: Path,
     output_root: Path,
@@ -191,6 +204,7 @@ def run_one_paper(
             "paper_md_path": str(md_path),
             "cleaned_md_path": str(cleaned_md_path),
             "model": settings.text_model.model,
+            "base_url": normalize_openai_base_url(settings.text_model.base_url),
             "messages": [
                 text_messages[0],
                 {
@@ -202,7 +216,13 @@ def run_one_paper(
         },
     )
     print(f"[PAPER {paper_index}/{paper_total}] [{paper_id}] text_extraction start")
-    text_completion = text_client.chat.completions.create(model=settings.text_model.model, messages=text_messages)
+    text_completion = text_client.chat.completions.create(
+        **build_chat_completion_kwargs(
+            settings.text_model,
+            model=settings.text_model.model,
+            messages=text_messages,
+        )
+    )
     text_raw = text_completion.choices[0].message.content or ""
     text_result_path = intermediate_text_dir / "text_extraction.txt"
     text_result_path.write_text(text_raw, encoding="utf-8")
@@ -277,6 +297,7 @@ def run_one_paper(
                     "request_id": request_id,
                     "figure_id": figure_id,
                     "model": settings.multimodal_model.model,
+                    "base_url": normalize_openai_base_url(settings.multimodal_model.base_url),
                     "image_count": len(image_paths),
                     "image_paths": image_paths,
                     "image_abs_paths": [str(path) for path in image_abs_paths],
@@ -289,8 +310,11 @@ def run_one_paper(
             )
             print(f"[PAPER {paper_index}/{paper_total}] [{paper_id}] request {index}/{len(groups)} start images={len(image_paths)}")
             completion = multimodal_client.chat.completions.create(
-                model=settings.multimodal_model.model,
-                messages=messages,
+                **build_chat_completion_kwargs(
+                    settings.multimodal_model,
+                    model=settings.multimodal_model.model,
+                    messages=messages,
+                )
             )
             raw_text = completion.choices[0].message.content or ""
             request_path = intermediate_multimodal_dir / f"{request_id}.txt"
@@ -329,6 +353,8 @@ def run_one_paper(
                     "image_count": len(image_paths),
                     "image_paths": image_paths,
                     "status": "error",
+                    "model": settings.multimodal_model.model,
+                    "base_url": normalize_openai_base_url(settings.multimodal_model.base_url),
                     "error": str(exc),
                 },
             )
@@ -387,7 +413,13 @@ def run_workflow(settings: WorkflowSettings) -> None:
     total_images_fail = 0
     workers = max(1, settings.workers)
 
-    print(f"Workflow started. papers={len(md_files)}, workers={workers}")
+    endpoints = model_endpoint_summary(settings)
+    print(
+        "Workflow started. "
+        f"papers={len(md_files)}, workers={workers}, "
+        f"text_model={endpoints['text_model']['model']}@{endpoints['text_model']['base_url']}, "
+        f"multimodal_model={endpoints['multimodal_model']['model']}@{endpoints['multimodal_model']['base_url']}"
+    )
     with ThreadPoolExecutor(max_workers=workers) as executor:
         # Futures are scheduled per paper instead of per figure/chunk, which
         # keeps resource accounting and output isolation simple.

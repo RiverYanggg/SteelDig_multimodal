@@ -8,6 +8,8 @@
    从论文 Markdown 中抽取结构化文本信息，并可对图片组图做多模态分析。
 2. Knowledge 工作流
    把清洗后的论文文本进一步压缩为适合训练或知识整理的 claim 集与 Markdown 知识卡片。
+3. Knowledge Graph 工作流
+   把 `outputs_dataset/<paper_id>/final/` 下的结构化抽取结果映射为 Neo4j 可查询知识图谱。
 
 这两条链既可以独立运行，也可以按单篇论文串行衔接运行。项目已经支持：
 
@@ -15,6 +17,7 @@
 - 单篇论文内部严格按阶段顺序执行
 - 以 `paper_id` 为目录隔离输出
 - `fused` 模式下把多模态图像结论注入 knowledge 汇总
+- 把文本抽取结果和 multimodal figure 摘要共同导入 Neo4j 图谱
 
 ---
 
@@ -36,6 +39,10 @@
   - normalized claims
   - synthesis payload
   - text_knowledge.md
+- Knowledge Graph 工作流负责“把高密度抽取压缩成实体、关系、证据三层图”
+  - `Paper / Alloy / Process / Sample / PhaseOccurrence / Figure / Finding`
+  - 可增量重复导入 Neo4j
+  - 适合单篇浏览与跨论文查询
 
 ---
 
@@ -73,6 +80,12 @@ dataset/
 │   ├── client.py
 │   ├── common.py
 │   ├── config.py
+│   ├── knowledge_graph/
+│   │   ├── __init__.py
+│   │   ├── builder.py
+│   │   ├── config.py
+│   │   ├── neo4j_writer.py
+│   │   └── README.md
 │   ├── postprocess.py
 │   ├── workflow.py
 │   ├── preprocess/
@@ -93,6 +106,7 @@ dataset/
 │       └── workflow.py
 ├── docs/
 │   └── quickstart.md
+├── run_knowledge_graph.py
 ├── run_knowledge_workflow.py
 ├── run_paper_then_knowledge_workflow.py
 ├── run_paper_workflow.py
@@ -103,6 +117,7 @@ dataset/
 建议同时阅读以下文档：
 
 - [docs/quickstart.md](/Users/mac/Desktop/LLM_project/SteelDig_multimodal/docs/quickstart.md)
+- [docs/neo4j_queries.md](/Users/mac/Desktop/LLM_project/SteelDig_multimodal/docs/neo4j_queries.md)
 - [paper_extractor/README.md](/Users/mac/Desktop/LLM_project/SteelDig_multimodal/paper_extractor/README.md)
 - [paper_extractor/preprocess/README.md](/Users/mac/Desktop/LLM_project/SteelDig_multimodal/paper_extractor/preprocess/README.md)
 - [paper_extractor/knowledge/README.md](/Users/mac/Desktop/LLM_project/SteelDig_multimodal/paper_extractor/knowledge/README.md)
@@ -125,13 +140,16 @@ pip install -r requirements.txt
 
 - `openai`
 - `httpx`
+- `neo4j`
 
 其中：
 
 - `openai` 用于访问 OpenAI-compatible 接口
 - `httpx` 被 [paper_extractor/client.py](/Users/mac/Desktop/LLM_project/SteelDig_multimodal/paper_extractor/client.py:1) 显式依赖
+- `neo4j` 用于把抽取结果写入本地 Neo4j 图数据库
 
 如果你没有安装 `httpx`，运行入口时会直接在 import 阶段失败。
+如果你没有安装 `neo4j`，图谱入口会在写库前直接失败。
 
 ### 4.3 本地模型服务
 
@@ -150,12 +168,14 @@ pip install -r requirements.txt
   "text_model": {
     "model": "Qwen/Qwen3.5-9B",
     "base_url": "http://127.0.0.1:8000/v1",
-    "api_key": "EMPTY"
+    "api_key": "EMPTY",
+    "max_tokens": 16384
   },
   "multimodal_model": {
     "model": "Qwen/Qwen3.5-9B",
     "base_url": "http://127.0.0.1:8000/v1",
-    "api_key": "EMPTY"
+    "api_key": "EMPTY",
+    "max_tokens": 8192
   }
 }
 ```
@@ -164,6 +184,7 @@ pip install -r requirements.txt
 
 - 文本与多模态可以使用同一个模型服务
 - 如果本地服务不要求真实 API key，保留 `"EMPTY"` 即可
+- `max_tokens` 会透传到 OpenAI-compatible `chat.completions.create`，对豆包 / Ark 兼容接口可直接生效
 - `client.py` 会强制 `trust_env=False`，避免本地 `127.0.0.1` 请求被系统代理转发
 
 ---
@@ -258,6 +279,123 @@ python3 run_knowledge_workflow.py \
 这是当前最完整、最适合正式批量跑的入口。
 
 它的语义是：
+
+### 5.4 方式 D：构建 Neo4j 知识图谱
+
+适用于你已经有 `outputs_dataset/<paper_id>/final/text_extraction.json`，并希望把结果导入 Neo4j。
+
+先做 dry-run，只看图谱摘要：
+
+```bash
+python3 run_knowledge_graph.py \
+  --dataset-root outputs_dataset \
+  --paper-id A0 \
+  --dry-run
+```
+
+导出标准化后的图谱 payload，方便检查：
+
+```bash
+python3 run_knowledge_graph.py \
+  --dataset-root outputs_dataset \
+  --paper-id A0 \
+  --dry-run \
+  --export-json evaluation/output/a0_graph_payload.json
+```
+
+正式写入本地 Neo4j：
+
+```bash
+.venv/bin/python run_knowledge_graph.py \
+  --dataset-root outputs_dataset \
+  --uri bolt://127.0.0.1:7687 \
+  --username neo4j \
+  --password '<your-password>' \
+  --database neo4j
+```
+
+导入单篇论文，例如只导入 `A0`：
+
+```bash
+.venv/bin/python run_knowledge_graph.py \
+  --dataset-root outputs_dataset \
+  --paper-id A0 \
+  --username neo4j \
+  --password '<your-password>' \
+  --database neo4j
+```
+
+批量导入多篇指定论文，例如 `A0`、`A1`、`A2`：
+
+```bash
+.venv/bin/python run_knowledge_graph.py \
+  --dataset-root outputs_dataset \
+  --paper-id A0 \
+  --paper-id A1 \
+  --paper-id A2 \
+  --username neo4j \
+  --password '<your-password>' \
+  --database neo4j
+```
+
+一次性导入 `outputs_dataset` 下全部输出：
+
+```bash
+.venv/bin/python run_knowledge_graph.py \
+  --dataset-root outputs_dataset \
+  --username neo4j \
+  --password '<your-password>' \
+  --database neo4j
+```
+
+如果你只想先抽样验证前几篇，可以限制数量：
+
+```bash
+.venv/bin/python run_knowledge_graph.py \
+  --dataset-root outputs_dataset \
+  --limit-papers 5 \
+  --username neo4j \
+  --password '<your-password>' \
+  --database neo4j
+```
+
+如果当前环境还没装 Python 驱动：
+
+```bash
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements.txt
+```
+
+如果本地 Neo4j 还没启动，可先执行：
+
+```bash
+neo4j start
+```
+
+确认状态：
+
+```bash
+neo4j status
+```
+
+如果 `neo4j start` 显示已启动，但 `bolt://127.0.0.1:7687` 仍然连不上，优先检查：
+
+```bash
+tail -n 120 /opt/homebrew/var/log/neo4j/neo4j.log
+tail -n 120 /opt/homebrew/var/log/neo4j/debug.log
+```
+
+这个仓库默认建议用项目内 `.venv` 跑图谱入口，避免系统 `python3`、Homebrew Python、Conda `pip` 指向不同解释器。
+
+这个图谱工作流的设计重点是：
+
+- 一个数据库中容纳多篇论文子图，而不是一篇论文一个库
+- `Sample` 是核心桥接节点，而不是可省略的中间层
+- `Figure` 和 `Finding` 会作为证据层显式入图
+- 温度、单位、方向、描述等高密度信息优先保留为属性，不盲目节点化
+
+更完整的建模说明见 [paper_extractor/knowledge_graph/README.md](/Users/mac/Desktop/LLM_project/SteelDig_multimodal/paper_extractor/knowledge_graph/README.md)。
+常用查询模板见 [docs/neo4j_queries.md](/Users/mac/Desktop/LLM_project/SteelDig_multimodal/docs/neo4j_queries.md)。
 
 - 不同论文之间可并行
 - 同一篇论文内部严格按顺序执行：

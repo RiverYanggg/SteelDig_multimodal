@@ -2,7 +2,9 @@ import json
 import time
 from typing import Any, Dict, List
 
+from paper_extractor.client import build_chat_completion_kwargs
 from paper_extractor.common import extract_json_from_text
+from paper_extractor.config import LocalModelConfig
 from paper_extractor.knowledge.chunker import Chunk
 from paper_extractor.knowledge.prompts import build_claim_prompt, build_markdown_prompt, build_paper_map_prompt
 
@@ -19,9 +21,11 @@ class ModelResponseError(RuntimeError):
         self.raw_content = raw_content
 
 
-def generate_paper_map(client: Any, model: str, paper_id: str, markdown_text: str) -> tuple[Dict[str, Any], str]:
+def generate_paper_map(
+    client: Any, model_config: LocalModelConfig, paper_id: str, markdown_text: str
+) -> tuple[Dict[str, Any], str]:
     prompt = build_paper_map_prompt(paper_id=paper_id, markdown_text=markdown_text)
-    content = _chat(client, model, "你是论文全局信息规划助手。", prompt)
+    content = _chat(client, model_config, "你是论文全局信息规划助手。", prompt)
     try:
         parsed = extract_json_from_text(content)
     except Exception as exc:
@@ -47,7 +51,7 @@ CONTEXT_UPDATE_KEYS = (
 
 def extract_chunk_claims(
     client: Any,
-    model: str,
+    model_config: LocalModelConfig,
     paper_map: Dict[str, Any],
     chunk: Chunk,
     previous_context_summary: str = "",
@@ -57,7 +61,7 @@ def extract_chunk_claims(
         chunk=chunk,
         previous_context_summary=previous_context_summary,
     )
-    content = _chat(client, model, "你是论文局部事实抽取助手。", prompt)
+    content = _chat(client, model_config, "你是论文局部事实抽取助手。", prompt)
     try:
         parsed = extract_json_from_text(content)
     except Exception as exc:
@@ -97,7 +101,7 @@ def _normalize_context_update(value: Any) -> Dict[str, Any]:
 
 def synthesize_markdown(
     client: Any,
-    model: str,
+    model_config: LocalModelConfig,
     paper_map: Dict[str, Any],
     synthesis_payload: Dict[str, Any],
     visual_evidence: List[Dict[str, Any]] | None = None,
@@ -107,19 +111,22 @@ def synthesize_markdown(
         synthesis_payload=synthesis_payload,
         visual_evidence=visual_evidence,
     )
-    content = _chat(client, model, "你是材料科学论文知识卡片写作助手。", prompt)
+    content = _chat(client, model_config, "你是材料科学论文知识卡片写作助手。", prompt)
     return content, prompt
 
 
-def _chat(client: Any, model: str, system: str, user: str) -> str:
+def _chat(client: Any, model_config: LocalModelConfig, system: str, user: str) -> str:
     last_error: ModelResponseError | None = None
     for attempt in range(3):
         completion = client.chat.completions.create(
-            model=model,
-            messages=[
-                {"role": "system", "content": system},
-                {"role": "user", "content": user},
-            ],
+            **build_chat_completion_kwargs(
+                model_config,
+                model=model_config.model,
+                messages=[
+                    {"role": "system", "content": system},
+                    {"role": "user", "content": user},
+                ],
+            )
         )
         try:
             return _extract_chat_content(completion)

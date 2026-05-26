@@ -1,0 +1,296 @@
+{
+  "claims": [
+    {
+      "claim_type": "composition",
+      "subject": "Fe-30Mn-8Al-1C experimental steel",
+      "claim": "The experimental validation steel has a nominal chemical composition of Mn-30, Al-8, C-1 (wt.%) with balance Fe.",
+      "values": [
+        "Mn-30 wt%",
+        "Al-8 wt%",
+        "C-1 wt%",
+        "Fe balance"
+      ],
+      "evidence_text": "Fe-Mn-Al-C steel with the following chemical composition (wt.%): Mn-30, Al-8, C-1, and balance Fe.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "processing",
+      "subject": "Fe-30Mn-8Al-1C steel processing",
+      "claim": "The processing route for the Fe-30Mn-8Al-1C steel included: induction melting, homogenization at 1200°C for 2 h, forging to 60 mm × 60 mm billet, homogenization at 1050°C for 100 min, hot rolling to 12 mm thick plates, air cooling, 75% cold reduction, annealing at 1000°C for 15 min, water quenching, and aging at 550°C for 2 h.",
+      "values": [
+        "1200°C",
+        "2 h",
+        "60 mm × 60 mm",
+        "1050°C",
+        "100 min",
+        "12 mm",
+        "75%",
+        "1000°C",
+        "15 min",
+        "550°C",
+        "2 h"
+      ],
+      "evidence_text": "The as-cast 25 kg ingot was homogenized at 1200 ◦C for 2 h and then forged into a cross-sectional billet of 60 mm × 60 mm. After homogenization at 1050 ◦C for 100 min, the forging stock was hot-rolled to 12 mm thick plates, air-cooled to room temperature, and then cold-rolled with a 75 % thickness reduction at room temperature. The rolled plate was then annealed at 1000 ◦C for 15 min to achieve a recrystallized microstructure, subsequently water-quenched to room temperature, and aged at 550 ◦C for 2 h.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "characterization",
+      "subject": "X-ray diffraction phase identification",
+      "claim": "Phase identification was performed by XRD with Cu Kα radiation scanning from 30° to 100° (2θ) at a step size of 3°/minute.",
+      "values": [
+        "Cu Kα",
+        "30°-100° 2θ",
+        "step size 3°/min"
+      ],
+      "evidence_text": "Phase identification analysis was conducted using X-ray diffraction (XRD) measurements with a Bruker D8 DISCOVER utilizing Cu Kα radiation between 30° and 100° (2θ) with a step size of 3◦/minute.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "characterization",
+      "subject": "microstructure and compositional analysis",
+      "claim": "Microstructure and chemical composition were characterized using SEM (JEOL 7100F), EPMA (JEOL 8530F), and TEM (JEOL 2100F) operating at 200 kV.",
+      "values": [
+        "200 kV TEM",
+        "JEOL 7100F",
+        "JEOL 8530F",
+        "JEOL 2100F"
+      ],
+      "evidence_text": "The microstructure and compositional analysis were characterized using scanning electron microscopy (SEM, JEOL 7100F), electron probe microanalysis (EPMA, JEOL 8530F), and transmission electron microscopy operating at 200 kV (TEM, JEOL 2100F).",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "characterization",
+      "subject": "EBSD sample preparation",
+      "claim": "EBSD specimens were polished to 3000 grit SiC and then electrochemically polished in a 1:9 vol. ratio HClO4:C2H5OH solution at 25 V and room temperature.",
+      "values": [
+        "3000 grit",
+        "HClO4:C2H5OH=1:9",
+        "25 V",
+        "room temperature"
+      ],
+      "evidence_text": "The EBSD samples were polished with SiC sandpaper to 3000 grit and electrochemically polished in a solution of HClO4:C2H5OH=1:9 (volume ratio) at 25 V at room temperature.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "characterization",
+      "subject": "uniaxial tensile testing",
+      "claim": "Uniaxial tensile tests were performed on dog-bone specimens with gauge dimensions 10 mm × 4 mm × 2 mm at a nominal strain rate of 1×10⁻³ s⁻¹ at ambient temperature.",
+      "values": [
+        "10 mm × 4 mm × 2 mm",
+        "1×10⁻³ s⁻¹",
+        "ambient temperature"
+      ],
+      "evidence_text": "Uniaxial tensile tests were conducted on dog-bone-shaped specimens with a nominal strain rate of 1×10⁻³ s⁻¹ at ambient temperature using a SHIMADZU AGS universal electronic tensile tester with gauge dimensions of 10 mm (length) × 4 mm (width) × 2 mm (thickness) prepared by electrical discharge machining.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "figure_evidence",
+      "subject": "feature selection via Pearson correlation",
+      "claim": "Features with Pearson correlation coefficient greater than 0.95 were considered highly correlated and removed; accordingly, Δχ and δ were eliminated from the descriptor set.",
+      "values": [
+        "0.95 threshold",
+        "Δχ",
+        "δ"
+      ],
+      "evidence_text": "Highly correlated features were defined as those with a correlation coefficient greater than 0.95 and removed accordingly, thus, Δχ and δ were eliminated from the model.",
+      "figures": [
+        "Fig. 2"
+      ],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "comparison",
+      "subject": "classification algorithm selection",
+      "claim": "Among KNN, ANN, SVM, RF, and CART with 10-fold cross-validation, random forest (RF) performed best with cross-validation accuracy values of 0.98 for Y1 (κ existence), 0.98 for Y2 ((γ+κ) region), and 0.96 for Y3 (single γ region).",
+      "values": [
+        "0.98 (Y1)",
+        "0.98 (Y2)",
+        "0.96 (Y3)"
+      ],
+      "evidence_text": "RF achieved the best performance, with CVA values of 0.98 (Y ), 0.98 (Y ), and 0.96 (Y ).",
+      "figures": [
+        "Fig. 3a"
+      ],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "Al descriptor importance",
+      "claim": "Al was the most influential descriptor for predicting a single γ region and the existence of the κ phase, as evidenced by the largest decrease in classification accuracy upon its removal.",
+      "values": [
+        "Al",
+        "single γ region",
+        "κ phase existence"
+      ],
+      "evidence_text": "The graph indicated that Al played the most significant role in the partial classification problems (a single γ region and κ exists) since accuracy decreased the most when Al was removed from the set.",
+      "figures": [
+        "Fig. 3b",
+        "Fig. 3d"
+      ],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "Mn and Fe descriptor importance",
+      "claim": "In the classification of the (γ+κ) duplex region at 500–600°C, Mn and Fe were the most important descriptors, while C showed the least effect.",
+      "values": [
+        "Mn",
+        "Fe",
+        "500-600°C"
+      ],
+      "evidence_text": "Fig. 3c demonstrates that Mn and Fe are the most important in the (γ+κ) region in 500–600 °C classification studies, and C still shows the least effect on the model.",
+      "figures": [
+        "Fig. 3c"
+      ],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "effect of Al on austenite stability",
+      "claim": "Al is a BCC-stabilizing element, and an increase in FCC lattice parameters caused by Al negatively impacts the stability of single-phase austenite.",
+      "values": [
+        "Al",
+        "BCC phase stable",
+        "FCC lattice parameter increase"
+      ],
+      "evidence_text": "Al is a BCC phase stable element, and an increase in the FCC lattice parameters has a significant negative impact on the stability of single-phase austenite.",
+      "figures": [],
+      "tables": [],
+      "confidence": "medium"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "Mn role in phase stability",
+      "claim": "Mn stabilizes the γ phase and increases the FCC lattice parameter, which avoids additional ferrite formation from Al addition, but excess Mn can promote the β-Mn phase in the FeMnAlC system.",
+      "values": [
+        "Mn stabilizes γ",
+        "β-Mn phase",
+        "FCC lattice parameter"
+      ],
+      "evidence_text": "Mn can stabilize the γ phase while increasing the FCC lattice parameter, avoiding the production of additional ferrite as a result of the addition of Al, and β-Mn phase promotion is also possible in the FeMnAlC system.",
+      "figures": [],
+      "tables": [],
+      "confidence": "medium"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "Mn-dependent transformation paths",
+      "claim": "Mn contents between 5–12 wt% favor the γ→ε→α′ martensitic transformation, while Mn contents between 15–30 wt% favor the γ→ε transformation without α′.",
+      "values": [
+        "5-12% Mn",
+        "γ→ε→α′",
+        "15-30% Mn",
+        "γ→ε"
+      ],
+      "evidence_text": "The γ→ε→αʹ and the γ→ε are separately favored for Mn contents ranging between (5–12 %) Mn and (15–30 %) Mn.",
+      "figures": [],
+      "tables": [],
+      "confidence": "medium"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "Al content threshold for κ phase",
+      "claim": "When the Mn content is 30 wt%, the Al content only needs to exceed approximately 5 wt% to initiate precipitation of the κ phase.",
+      "values": [
+        "30 wt% Mn",
+        "approximately 5 wt% Al",
+        "κ phase precipitation"
+      ],
+      "evidence_text": "when the Mn content is 30 wt %, the Al content only needs to surpass the lower limit (approximately 5 wt%) to initiate precipitation of the κ phase in the system.",
+      "figures": [
+        "Fig. 6"
+      ],
+      "tables": [],
+      "confidence": "medium"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "optimization screening",
+      "claim": "Through a two-step screening involving phase component screening and then screening for high κ-phase fraction and low density, 150 candidate compositions remained from the initial search space.",
+      "values": [
+        "150 candidates",
+        "κ-phase content (Y4)",
+        "low density (Y5)"
+      ],
+      "evidence_text": "The screening process is mainly divided into two steps, the first step is the phase component screening and the second step is the screening of other features (high κ-phase content (Y4) and low density (Y5). Finally, 150 candidates are left for the search space.",
+      "figures": [
+        "Fig. 5"
+      ],
+      "tables": [],
+      "confidence": "high"
+    }
+  ],
+  "context_update": {
+    "summary": "This chunk first completes the methodology section by specifying k-fold cross-validation for classification and regression, then details the experimental procedure for validating machine learning predictions using a Fe-30Mn-8Al-1C (wt.%) steel. The processing route includes homogenization at 1200°C/2h, forging to 60×60mm, re-homogenization at 1050°C/100min, hot rolling to 12mm, air cooling, 75% cold reduction, annealing at 1000°C/15min, water quenching, and aging at 550°C/2h. Characterization methods are given: XRD (30–100° 2θ, 3°/min), SEM, EPMA, TEM at 200kV, EBSD sample prep, and uniaxial tensile tests (1×10⁻³ s⁻¹ strain rate, gauge 10×4×2mm). The Results section begins with descriptor selection: Δχ and δ are removed due to PCC>0.95 (Fig. 2). For classification, RF is selected as the best algorithm with 10-fold CVA of 0.98 (Y1,Y2) and 0.96 (Y3) (Fig. 3a). Relative importance analysis shows Al is most critical for single γ and κ existence, while Mn and Fe dominate the (γ+κ) region at 500–600°C (Fig. 3b–d). Mechanistic insights link Al to BCC stabilization and κ precipitation, and Mn to γ stabilization and β-Mn formation. For regression, RF shows RMSE 1.8 (Fig. 4a). A screening flowchart reduces 78,477 candidates to 150 by requiring κ existence, single γ, (γ+κ) region, κ fraction ≥10%, and density ≤7 g/cm³ (Fig. 5). Subsequent chunks are expected to present the predicted composition regions and experimental validation microstructures.",
+    "material_systems": [
+      "Fe-Mn-Al-C austenitic low-density steel",
+      "Fe-30Mn-8Al-1C (wt.%) experimental alloy"
+    ],
+    "sample_aliases": [
+      "Fe-30Mn-8Al-1C steel"
+    ],
+    "processing_route": [
+      "induction melting under Ar",
+      "homogenization 1200°C 2h",
+      "forging to 60mm × 60mm billet",
+      "homogenization 1050°C 100min",
+      "hot rolling to 12mm thick plates",
+      "air cooling",
+      "cold rolling with 75% reduction",
+      "annealing 1000°C 15min",
+      "water quenching",
+      "aging 550°C 2h"
+    ],
+    "key_variables": [
+      "aging temperature 550°C",
+      "cold reduction 75%",
+      "annealing temperature 1000°C",
+      "tensile strain rate 1×10^-3 s^-1",
+      "XRD step size 3°/min",
+      "Pearson correlation coefficient threshold >0.95",
+      "10-fold cross-validation",
+      "RF CVA: 0.98 (Y1), 0.98 (Y2), 0.96 (Y3)",
+      "κ fraction ≥10%",
+      "density ≤7 g/cm³"
+    ],
+    "microstructure": [
+      "γ austenite",
+      "κ-carbide",
+      "single γ region",
+      "γ+κ duplex region",
+      "κ phase precipitation initiated at Al>~5 wt% when Mn=30 wt%",
+      "β-Mn possible"
+    ],
+    "mechanisms": [
+      "Al reduces C diffusivity and stabilizes κ phase",
+      "Al is BCC-stabilizing and increases FCC lattice parameter, destabilizing single-phase austenite",
+      "Mn stabilizes γ phase and increases FCC lattice parameter",
+      "Mn content between 5-12% favors γ→ε→αʹ, and 15-30% favors γ→ε",
+      "excess Mn may promote β-Mn phase"
+    ],
+    "figures_or_tables": [
+      "Fig. 2",
+      "Fig. 3",
+      "Fig. 4",
+      "Fig. 5",
+      "Fig. 6"
+    ],
+    "unresolved_terms": []
+  }
+}

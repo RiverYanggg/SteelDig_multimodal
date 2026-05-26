@@ -1,0 +1,130 @@
+{
+  "claims": [
+    {
+      "claim_type": "comparison",
+      "subject": "Extra Trees model",
+      "claim": "Among seven machine learning models trained for yield strength prediction, Extra Trees achieved the best performance with RMSE=76.2 MPa, MAPE=9.8%, and R²=0.978.",
+      "values": [
+        "76.2 MPa",
+        "9.8%",
+        "0.978"
+      ],
+      "evidence_text": "As shown in Fig. 5, among the seven machine learning models trained simultaneously, the Extra Trees model demonstrated the best performance, with an RMSE of 76.2 MPa, a MAPE of 9.8 %, and an $\\mathrm { R } ^ { 2 }$ value of 0.978.",
+      "figures": [
+        "Fig. 5"
+      ],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "GA-Extra trees model",
+      "claim": "After GA optimization, the Extra Trees yield strength model achieved RMSE=31.60 MPa (reduction of 44.60 MPa), MAPE=4.39% (decrease of 5.41%), and R²=0.997 (improvement of 0.019) compared to the standard Extra Trees.",
+      "values": [
+        "31.60 MPa",
+        "4.39%",
+        "0.997",
+        "44.60 MPa reduction",
+        "5.41% decrease",
+        "0.019 improvement"
+      ],
+      "evidence_text": "Following optimization by the algorithm, the GA-Extra trees model achieved an RMSE value of 31.60 MPa, which is a reduction of 44.60 MPa compared to the standard Extra trees model. The MAPE value was 4.39 %, representing a decrease of 5.41 % relative to the standard Extra trees model. Furthermore, the R² value reached 0.997, an improvement of 0.019 compared to the preoptimization state.",
+      "figures": [
+        "Fig. 9",
+        "Fig. 10"
+      ],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "comparison",
+      "subject": "GA-Extra trees vs. grid search and Bayesian optimization",
+      "claim": "GA-Extra trees achieved RMSE=31.60 MPa, outperforming grid search (80.239 MPa) and Bayesian optimization (80.721 MPa); it also showed superior MAPE and R².",
+      "values": [
+        "31.60 MPa",
+        "80.239 MPa",
+        "80.721 MPa"
+      ],
+      "evidence_text": "The RMSE values for the Extra Trees model optimized with grid search and Bayesian optimization were 80.239 MPa and 80.721 MPa, respectively, while the Genetic algorithm-Extremely randomized trees(GA-Extra trees) model achieved a value of 31.60 MPa. In terms of MAPE and R^2, the GA-Extra trees model demonstrated superior performance.",
+      "figures": [
+        "Fig. 8"
+      ],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "processing",
+      "subject": "Genetic algorithm hyperparameter optimization for Extra Trees",
+      "claim": "The GA optimization used population size=30, crossover probability=0.7, mutation probability=0.3, for 30 generations, converging at generation 26, tuning six hyperparameters (n_estimators, max_depth, min_samples_split, etc.) via the DEAP 1.3.3 framework.",
+      "values": [
+        "30",
+        "0.7",
+        "0.3",
+        "30 generations",
+        "26th generation",
+        "DEAP 1.3.3"
+      ],
+      "evidence_text": "Based on the DEAP 1.3.3 framework... The population size is set to 30, with crossover and mutation probabilities set to 0.7 and 0.3, respectively. After 30 generations of evolution, the algorithm tends to converge and stabilize after the 26th generation.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "GA-Extra trees model predictions",
+      "claim": "On the test set, the GA-Extra trees model's predicted yield strength values showed high consistency with actual values in magnitude and trend.",
+      "values": [],
+      "evidence_text": "It was observed that the actual values and predicted values were largely consistent in magnitude and trend, as specifically shown in Fig. 11.",
+      "figures": [
+        "Fig. 11"
+      ],
+      "tables": [],
+      "confidence": "high"
+    }
+  ],
+  "context_update": {
+    "summary": "This chunk (Section 3.5) describes the optimization of the Extra Trees yield strength prediction model using a Genetic Algorithm (GA). The GA is chosen over grid search and Bayesian optimization because of its ability to handle high-dimensional, mixed-variable hyperparameter spaces without requiring gradient information. Using the DEAP 1.3.3 framework, a population of 30 individuals evolved over 30 generations with crossover probability 0.7 and mutation probability 0.3, converging at generation 26. Six key hyperparameters (n_estimators, max_depth, min_samples_split, etc.) were tuned. The resulting GA-Extra trees model achieved RMSE = 31.60 MPa (44.60 MPa reduction), MAPE = 4.39% (5.41% decrease), and R² = 0.997 (0.019 improvement) compared to the standard Extra Trees, substantially outperforming grid search and Bayesian optimization. Fig. 9 shows the goodness-of-fit, Fig. 10 compares metrics, and Fig. 11 confirms test set consistency. The optimized hyperparameters are tabulated in Table 2. The overall material system remains medium-manganese low-density steels; no new compositions, microstructures, or experimental specimens are introduced. Subsequent chunks should remember these optimized performance figures and the GA settings as the final predictive model for validation.",
+    "material_systems": [
+      "medium-manganese low-density steels"
+    ],
+    "sample_aliases": [],
+    "processing_route": [
+      "GA optimization of Extra Trees hyperparameters",
+      "DEAP 1.3.3 framework",
+      "population size 30",
+      "crossover probability 0.7",
+      "mutation probability 0.3",
+      "30 generations",
+      "convergence at generation 26"
+    ],
+    "key_variables": [
+      "RMSE",
+      "MAPE",
+      "R²",
+      "n_estimators",
+      "max_depth",
+      "min_samples_split"
+    ],
+    "microstructure": [],
+    "properties": [
+      "GA-Extra trees RMSE=31.60 MPa",
+      "MAPE=4.39%",
+      "R²=0.997"
+    ],
+    "mechanisms": [
+      "Genetic Algorithm global optimization",
+      "hyperparameter tuning"
+    ],
+    "figures_or_tables": [
+      "Fig. 5",
+      "Fig. 6",
+      "Fig. 7",
+      "Fig. 8",
+      "Fig. 9",
+      "Fig. 10",
+      "Fig. 11",
+      "Table 2"
+    ],
+    "unresolved_terms": []
+  }
+}

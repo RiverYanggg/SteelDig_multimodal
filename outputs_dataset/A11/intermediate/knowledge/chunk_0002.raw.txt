@@ -1,0 +1,194 @@
+{
+  "claims": [
+    {
+      "claim_type": "finding",
+      "subject": "flow stress under varying deformation",
+      "claim": "Peak stress and steady stress under varying deformation conditions are lower than those observed under constant temperatures and strain rates.",
+      "values": [],
+      "evidence_text": "Graetz et al. (2014) and Wang et al. (2020a) found that both peak stress and steady stress were lower than those observed under constant temperatures and strain rates.",
+      "figures": [],
+      "tables": [],
+      "confidence": "medium"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "DRX behavior under strain rate jump",
+      "claim": "The DRX behavior of an austenitic alloy is accelerated significantly with a larger fraction under strain rate jump compared to constant deformation.",
+      "values": [],
+      "evidence_text": "Chen et al. (2019) revealed that the DRX behavior of an austenitic alloy was accelerated significantly with a larger fraction than that under constant deformations due to the strain rate jump.",
+      "figures": [],
+      "tables": [],
+      "confidence": "medium"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "phenomenological constitutive model limitation",
+      "claim": "Typical phenomenological constitutive models (HS, JC, Arrhenius) treat stress only as a nonlinear correlation among temperature, strain rate and strain, losing the influence of previous recrystallization history on subsequent flow stress.",
+      "values": [],
+      "evidence_text": "these models only treat stress as a nonlinear correlation among temperature, strain rate and strain. As a result, the influence of previous recrystallization behaviors on subsequent flow stress is lost",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "CPFEM-CA shortcomings",
+      "claim": "The primary shortcomings of CPFEM-CA are the limitation in computational efficiency and difficulties in simulating industry-scale deformation processes.",
+      "values": [],
+      "evidence_text": "the primary shortcomings of CPFEM-CA are the limitation in computational efficiency and difficulties in simulating industry-scale deformation processes",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "processing",
+      "subject": "low-alloy steel hot compression procedure",
+      "claim": "Low-alloy steel samples were heated to 1250 °C and held for 180 s, compressed to a true strain of 0.9, held for 60 s, then water quenched, and the side section was examined by optical and EBSD microscopy.",
+      "values": [
+        "1250 °C",
+        "180 s",
+        "0.9 true strain",
+        "60 s"
+      ],
+      "evidence_text": "Holding 180s at 1250°C ... Compressing ... Holding 60s ... Water quenching ... Side section ... Optical observation ... EBSD observation",
+      "figures": [
+        "Fig. 1"
+      ],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "processing",
+      "subject": "constant deformation conditions",
+      "claim": "Constant deformation conditions for hot compression covered temperatures from 850 °C to 1150 °C and strain rates from 0.01 s⁻¹ to 10 s⁻¹.",
+      "values": [
+        "850 °C",
+        "1150 °C",
+        "0.01 s⁻¹",
+        "10 s⁻¹"
+      ],
+      "evidence_text": "Constant deformation conditions: 850°C — 1150°C, 0.01s⁻¹ — 10s⁻¹",
+      "figures": [
+        "Fig. 1"
+      ],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "processing",
+      "subject": "varying deformation conditions",
+      "claim": "Varying deformation conditions comprised temperatures of 950 °C and 1050 °C and strain rates of 0.01 s⁻¹ and 0.1 s⁻¹.",
+      "values": [
+        "950 °C",
+        "1050 °C",
+        "0.01 s⁻¹",
+        "0.1 s⁻¹"
+      ],
+      "evidence_text": "Varying deformation conditions: 950°C — 1050°C, 0.01s⁻¹ — 0.1s⁻¹",
+      "figures": [
+        "Fig. 1"
+      ],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "processing",
+      "subject": "transient strain rate variation",
+      "claim": "Transient strain rate variations were introduced at true strains of 0.2 and 0.4, with a base strain rate of 0.1 s⁻¹, involving either a transient decrease or increase.",
+      "values": [
+        "0.2",
+        "0.4",
+        "0.1 s⁻¹"
+      ],
+      "evidence_text": "experimental conditions for transient strain rate variation at 0.2 or 0.4 strains",
+      "figures": [
+        "Fig. 1"
+      ],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "processing",
+      "subject": "continuous temperature variation",
+      "claim": "Continuous temperature variation from 1050 °C to 950 °C was applied over true strain ranges of 0.2–0.3 or 0.4–0.5 at a strain rate of 0.01 s⁻¹.",
+      "values": [
+        "1050 °C",
+        "950 °C",
+        "0.2–0.3",
+        "0.4–0.5",
+        "0.01 s⁻¹"
+      ],
+      "evidence_text": "True strain | Temperature (°C) - Strain rate 0.01s⁻¹ T₁ = 1050°C | Temperature (°C) - Strain rate 0.01s⁻¹ T₂ = 950°C",
+      "figures": [
+        "Fig. 1"
+      ],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "Zhang et al. 2D CA model limitation",
+      "claim": "The 2D CA model by Zhang et al. (2022) did not address the differences in peak stress and steady-state stress under varying and constant deformation conditions.",
+      "values": [],
+      "evidence_text": "these 3D CA models were calibrated under constant deformation conditions and lacked a unified description of flow stress and microstructure evolution under varying deformation conditions. Although Zhang et al. (2022) constructed a 2D CA model ... the differences in peak stress and steady-state stress under the varying and constant deformation conditions were not addressed.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    }
+  ],
+  "context_update": {
+    "summary": "This chunk covers the List of Symbols defining all constants and variables for the CA and constitutive models (e.g., dislocation density, grain size, activation energies, Zener-Hollomon parameter Zp). The Introduction reviews prior DRX modeling approaches, highlighting that phenomenological models lose history-dependent stress prediction and CPFEM-CA suffers from computational limitations. Industrial scenarios causing transient strain-rate and temperature changes are described. The experimental procedure for low-alloy steel hot compression is introduced: constant conditions (850–1150°C, 0.01–10 s⁻¹), varying conditions (950–1050°C, 0.01–0.1 s⁻¹) with transient strain-rate changes at ε=0.2 or 0.4, and continuous temperature variation (1050→950°C) over ε ranges 0.2–0.3 or 0.4–0.5. The sample is held at 1250°C for 180 s, compressed to a true strain of 0.9, held 60 s, and water-quenched; the side section is observed by optical and EBSD microscopy. Key findings from literature show lower peak/steady stresses under varying conditions and accelerated DRX under strain-rate jumps. The objective is to develop a 3D CA model with inhomogeneous dislocation density and GBS to unify flow stress and microstructure prediction.",
+    "material_systems": [
+      "low-alloy steel"
+    ],
+    "sample_aliases": [],
+    "processing_route": [
+      "hot compression",
+      "constant T=850–1150°C, ε̇=0.01–10 s⁻¹",
+      "varying T=950–1050°C, ε̇=0.01–0.1 s⁻¹",
+      "transient strain rate change at ε=0.2,0.4",
+      "continuous T change from 1050 to 950°C over ε 0.2–0.3 or 0.4–0.5",
+      "holding 1250°C 180 s",
+      "holding 60 s after compression",
+      "water quenching",
+      "true strain 0.9",
+      "side section observation by optical and EBSD"
+    ],
+    "key_variables": [
+      "Zener-Hollomon parameter Zp",
+      "dislocation density",
+      "strain rate",
+      "temperature",
+      "true strain",
+      "DRX fraction",
+      "flow stress",
+      "time for 50% DRX t0.5",
+      "softening coefficient ks"
+    ],
+    "microstructure": [
+      "matrix",
+      "first-stage DRX grains",
+      "second-stage DRX grains",
+      "mixed-grain microstructure",
+      "inhomogeneous dislocation density",
+      "grain boundary sliding"
+    ],
+    "properties": [
+      "peak stress",
+      "steady stress",
+      "flow stress"
+    ],
+    "mechanisms": [
+      "dynamic recrystallization (DRX)",
+      "work hardening (WH)",
+      "dynamic recovery (DRV)",
+      "grain-boundary sliding (GBS)",
+      "dislocation density accumulation and annihilation",
+      "nucleation and growth of DRX grains"
+    ],
+    "figures_or_tables": [
+      "Fig. 1 (experimental procedure, deformation conditions tables)"
+    ],
+    "unresolved_terms": []
+  }
+}

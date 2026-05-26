@@ -1,0 +1,1417 @@
+{
+  "papers": [
+    {
+      "paper_id": "A70",
+      "doi": null,
+      "title": "Nano-mechanical properties of Fe-Mn-Al-C lightweight steels",
+      "authors": [
+        "Alireza Rahnama",
+        "Hiren Kotadia",
+        "Samuel Clark",
+        "Vit Janik",
+        "Seetharaman Sridhar"
+      ],
+      "publication_year": "2018",
+      "journal": "Scientific Reports",
+      "keywords": [
+        "low-density steel",
+        "Fe-Mn-Al-C",
+        "nano-indentation",
+        "kappa-carbide",
+        "B2 intermetallic",
+        "DFT",
+        "hardness",
+        "annealing temperature"
+      ],
+      "research_type": "mixed",
+      "paper_scope": "Investigate nanomechanical properties of two duplex low-density steels through nano-indentation and DFT, elucidating the effect of annealing temperature and Ni addition on the hardness of κ-carbides and B2 intermetallics."
+    }
+  ],
+  "alloys": [
+    {
+      "alloy_id": "alloy_fe15mn10al08c5ni",
+      "paper_id": "A70",
+      "alloy_name": "Fe-15Mn-10Al-0.8C-5Ni",
+      "aliases": [
+        "5Ni",
+        "Ni-containing"
+      ],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Al",
+        "C",
+        "Ni"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Fe",
+          "weight_percent": "balance",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "15",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "10",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.8",
+          "atomic_percent": null
+        },
+        {
+          "element": "Ni",
+          "weight_percent": "5",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": null
+    },
+    {
+      "alloy_id": "alloy_fe15mn10al08c",
+      "paper_id": "A70",
+      "alloy_name": "Fe-15Mn-10Al-0.8C",
+      "aliases": [
+        "Ni-free"
+      ],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Al",
+        "C"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Fe",
+          "weight_percent": "balance",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "15",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "10",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.8",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "Table 1 lists carbon content as 0.5C for the same alloys; text consistently states 0.8C."
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_5ni_st",
+      "paper_id": "A70",
+      "alloy_id": "alloy_fe15mn10al08c5ni",
+      "description": "Melted in induction furnace, solution heat-treated at 1250 °C for 35 min under argon, water quenched; no subsequent annealing.",
+      "processes_notes": null
+    },
+    {
+      "process_id": "proc_5ni_500",
+      "paper_id": "A70",
+      "alloy_id": "alloy_fe15mn10al08c5ni",
+      "description": "Solution treated (1250 °C, 35 min, WQ) then annealed at 500 °C.",
+      "processes_notes": null
+    },
+    {
+      "process_id": "proc_5ni_700",
+      "paper_id": "A70",
+      "alloy_id": "alloy_fe15mn10al08c5ni",
+      "description": "Solution treated (1250 °C, 35 min, WQ) then annealed at 700 °C.",
+      "processes_notes": null
+    },
+    {
+      "process_id": "proc_5ni_900",
+      "paper_id": "A70",
+      "alloy_id": "alloy_fe15mn10al08c5ni",
+      "description": "Solution treated (1250 °C, 35 min, WQ) then annealed at 900 °C.",
+      "processes_notes": null
+    },
+    {
+      "process_id": "proc_5ni_1050",
+      "paper_id": "A70",
+      "alloy_id": "alloy_fe15mn10al08c5ni",
+      "description": "Solution treated (1250 °C, 35 min, WQ) then annealed at 1050 °C.",
+      "processes_notes": null
+    },
+    {
+      "process_id": "proc_0c_st",
+      "paper_id": "A70",
+      "alloy_id": "alloy_fe15mn10al08c",
+      "description": "Melted in induction furnace, solution heat-treated at 1250 °C for 35 min under argon, water quenched; no subsequent annealing.",
+      "processes_notes": null
+    },
+    {
+      "process_id": "proc_0c_500",
+      "paper_id": "A70",
+      "alloy_id": "alloy_fe15mn10al08c",
+      "description": "Solution treated (1250 °C, 35 min, WQ) then annealed at 500 °C.",
+      "processes_notes": null
+    },
+    {
+      "process_id": "proc_0c_700",
+      "paper_id": "A70",
+      "alloy_id": "alloy_fe15mn10al08c",
+      "description": "Solution treated (1250 °C, 35 min, WQ) then annealed at 700 °C.",
+      "processes_notes": null
+    },
+    {
+      "process_id": "proc_0c_900",
+      "paper_id": "A70",
+      "alloy_id": "alloy_fe15mn10al08c",
+      "description": "Solution treated (1250 °C, 35 min, WQ) then annealed at 900 °C.",
+      "processes_notes": null
+    },
+    {
+      "process_id": "proc_0c_1050",
+      "paper_id": "A70",
+      "alloy_id": "alloy_fe15mn10al08c",
+      "description": "Solution treated (1250 °C, 35 min, WQ) then annealed at 1050 °C.",
+      "processes_notes": null
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_5ni_st",
+      "paper_id": "A70",
+      "alloy_id": "alloy_fe15mn10al08c5ni",
+      "process_id": "proc_5ni_st"
+    },
+    {
+      "sample_id": "sample_5ni_500",
+      "paper_id": "A70",
+      "alloy_id": "alloy_fe15mn10al08c5ni",
+      "process_id": "proc_5ni_500"
+    },
+    {
+      "sample_id": "sample_5ni_700",
+      "paper_id": "A70",
+      "alloy_id": "alloy_fe15mn10al08c5ni",
+      "process_id": "proc_5ni_700"
+    },
+    {
+      "sample_id": "sample_5ni_900",
+      "paper_id": "A70",
+      "alloy_id": "alloy_fe15mn10al08c5ni",
+      "process_id": "proc_5ni_900"
+    },
+    {
+      "sample_id": "sample_5ni_1050",
+      "paper_id": "A70",
+      "alloy_id": "alloy_fe15mn10al08c5ni",
+      "process_id": "proc_5ni_1050"
+    },
+    {
+      "sample_id": "sample_0c_st",
+      "paper_id": "A70",
+      "alloy_id": "alloy_fe15mn10al08c",
+      "process_id": "proc_0c_st"
+    },
+    {
+      "sample_id": "sample_0c_500",
+      "paper_id": "A70",
+      "alloy_id": "alloy_fe15mn10al08c",
+      "process_id": "proc_0c_500"
+    },
+    {
+      "sample_id": "sample_0c_700",
+      "paper_id": "A70",
+      "alloy_id": "alloy_fe15mn10al08c",
+      "process_id": "proc_0c_700"
+    },
+    {
+      "sample_id": "sample_0c_900",
+      "paper_id": "A70",
+      "alloy_id": "alloy_fe15mn10al08c",
+      "process_id": "proc_0c_900"
+    },
+    {
+      "sample_id": "sample_0c_1050",
+      "paper_id": "A70",
+      "alloy_id": "alloy_fe15mn10al08c",
+      "process_id": "proc_0c_1050"
+    }
+  ],
+  "processing_steps": [
+    {
+      "sample_id": "sample_5ni_st",
+      "paper_id": "A70",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "solution treatment",
+      "temperature": "1250",
+      "unit": "°C",
+      "duration": "35 min",
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Induction melted, argon atmosphere."
+    },
+    {
+      "sample_id": "sample_5ni_500",
+      "paper_id": "A70",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "solution treatment",
+      "temperature": "1250",
+      "unit": "°C",
+      "duration": "35 min",
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_5ni_500",
+      "paper_id": "A70",
+      "sequence": "2",
+      "type": "heat_treatment",
+      "method": "annealing",
+      "temperature": "500",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_5ni_700",
+      "paper_id": "A70",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "solution treatment",
+      "temperature": "1250",
+      "unit": "°C",
+      "duration": "35 min",
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_5ni_700",
+      "paper_id": "A70",
+      "sequence": "2",
+      "type": "heat_treatment",
+      "method": "annealing",
+      "temperature": "700",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_5ni_900",
+      "paper_id": "A70",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "solution treatment",
+      "temperature": "1250",
+      "unit": "°C",
+      "duration": "35 min",
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_5ni_900",
+      "paper_id": "A70",
+      "sequence": "2",
+      "type": "heat_treatment",
+      "method": "annealing",
+      "temperature": "900",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_5ni_1050",
+      "paper_id": "A70",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "solution treatment",
+      "temperature": "1250",
+      "unit": "°C",
+      "duration": "35 min",
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_5ni_1050",
+      "paper_id": "A70",
+      "sequence": "2",
+      "type": "heat_treatment",
+      "method": "annealing",
+      "temperature": "1050",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_0c_st",
+      "paper_id": "A70",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "solution treatment",
+      "temperature": "1250",
+      "unit": "°C",
+      "duration": "35 min",
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Induction melted, argon atmosphere."
+    },
+    {
+      "sample_id": "sample_0c_500",
+      "paper_id": "A70",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "solution treatment",
+      "temperature": "1250",
+      "unit": "°C",
+      "duration": "35 min",
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_0c_500",
+      "paper_id": "A70",
+      "sequence": "2",
+      "type": "heat_treatment",
+      "method": "annealing",
+      "temperature": "500",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_0c_700",
+      "paper_id": "A70",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "solution treatment",
+      "temperature": "1250",
+      "unit": "°C",
+      "duration": "35 min",
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_0c_700",
+      "paper_id": "A70",
+      "sequence": "2",
+      "type": "heat_treatment",
+      "method": "annealing",
+      "temperature": "700",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_0c_900",
+      "paper_id": "A70",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "solution treatment",
+      "temperature": "1250",
+      "unit": "°C",
+      "duration": "35 min",
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_0c_900",
+      "paper_id": "A70",
+      "sequence": "2",
+      "type": "heat_treatment",
+      "method": "annealing",
+      "temperature": "900",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_0c_1050",
+      "paper_id": "A70",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "solution treatment",
+      "temperature": "1250",
+      "unit": "°C",
+      "duration": "35 min",
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_0c_1050",
+      "paper_id": "A70",
+      "sequence": "2",
+      "type": "heat_treatment",
+      "method": "annealing",
+      "temperature": "1050",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_5ni_st",
+      "sample_id": "sample_5ni_st",
+      "overall_structure": "Dual-phase (γ + α) after solution treatment and quenching.",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "5ni_st_gamma",
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "γ (austenite)",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "equiaxed grains",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        },
+        {
+          "uuid": "5ni_st_alpha",
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "α (ferrite)",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "grains",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_5ni_500",
+      "sample_id": "sample_5ni_500",
+      "overall_structure": "Austenitic matrix with cuboid κ-carbides (<100 nm), B2 stringer bands (replacing α), and coarse grain boundary B2 particles (2–7 μm).",
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "5ni_500_gamma_kappa",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "γ (austenite)",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "κ-carbide (cuboid)",
+              "crystal_structure": "L'1_2",
+              "volume_fraction": null,
+              "morphology": "cuboid particles, <100 nm",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": null,
+          "precipitates": [
+            {
+              "precipitate_id": "kappa_5ni_500",
+              "type": "κ-carbide",
+              "size": {
+                "value": "<100",
+                "unit": "nm"
+              },
+              "distribution": "within γ grains",
+              "coherency": null
+            }
+          ]
+        },
+        {
+          "uuid": "5ni_500_B2_stringer",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "B2 stringer bands",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "bands replacing former α phase",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": null,
+          "precipitates": []
+        },
+        {
+          "uuid": "5ni_500_GB_B2",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "coarse B2 particles",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "grain boundary particles, 2–7 μm",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": null,
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_5ni_700",
+      "sample_id": "sample_5ni_700",
+      "overall_structure": "Similar to 500 °C: γ matrix with cuboid κ, B2 stringer bands, coarse GB B2 particles.",
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "5ni_700_gamma_kappa",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "γ",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "cuboid κ-carbide",
+              "crystal_structure": "L'1_2",
+              "volume_fraction": null,
+              "morphology": "cuboid, <100 nm",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": null,
+          "precipitates": [
+            {
+              "precipitate_id": "kappa_5ni_700",
+              "type": "κ-carbide",
+              "size": {
+                "value": "<100",
+                "unit": "nm"
+              },
+              "distribution": "within γ",
+              "coherency": null
+            }
+          ]
+        },
+        {
+          "uuid": "5ni_700_B2_stringer",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "B2 stringer bands",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "bands",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": null,
+          "precipitates": []
+        },
+        {
+          "uuid": "5ni_700_GB_B2",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "coarse B2",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "grain boundary, 2–7 μm",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": null,
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_5ni_900",
+      "sample_id": "sample_5ni_900",
+      "overall_structure": "Dual-phase γ + α. γ contains coarse B2 particles (2–7 μm); α contains disc-like B2 (≈200 nm).",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "5ni_900_gamma_B2",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "γ",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "coarse B2",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "micrometer-sized particles, 2–7 μm",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": null,
+          "precipitates": [
+            {
+              "precipitate_id": "B2_coarse_5ni_900",
+              "type": "B2 intermetallic",
+              "size": {
+                "value": "2–7",
+                "unit": "μm"
+              },
+              "distribution": "in γ matrix",
+              "coherency": null
+            }
+          ]
+        },
+        {
+          "uuid": "5ni_900_alpha_discB2",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "α",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "disc-like B2",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "nano-sized discs, ≈200 nm",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": null,
+          "precipitates": [
+            {
+              "precipitate_id": "B2_disc_5ni_900",
+              "type": "B2 (Ni-Al type)",
+              "size": {
+                "value": "≈200",
+                "unit": "nm"
+              },
+              "distribution": "in α matrix",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_5ni_1050",
+      "sample_id": "sample_5ni_1050",
+      "overall_structure": "Similar to 900 °C: γ + α; coarse B2 (2–4 μm) in γ, disc-like B2 (≈200 nm) in α.",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "5ni_1050_gamma_B2",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "γ",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "coarse B2",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "2–4 μm particles",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": null,
+          "precipitates": [
+            {
+              "precipitate_id": "B2_coarse_5ni_1050",
+              "type": "B2",
+              "size": {
+                "value": "2–4",
+                "unit": "μm"
+              },
+              "distribution": "γ matrix",
+              "coherency": null
+            }
+          ]
+        },
+        {
+          "uuid": "5ni_1050_alpha_discB2",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "α",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "disc-like B2",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "≈200 nm discs",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": null,
+          "precipitates": [
+            {
+              "precipitate_id": "B2_disc_5ni_1050",
+              "type": "B2 (Ni-Al)",
+              "size": {
+                "value": "≈200",
+                "unit": "nm"
+              },
+              "distribution": "α matrix",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_0c_st",
+      "sample_id": "sample_0c_st",
+      "overall_structure": "Dual-phase γ + α after solution treatment and quench.",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "0c_st_gamma",
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "γ",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "equiaxed",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": null,
+          "precipitates": []
+        },
+        {
+          "uuid": "0c_st_alpha",
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "α",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "grains",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": null,
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_0c_500",
+      "sample_id": "sample_0c_500",
+      "overall_structure": "γ matrix with coarse B2 particles (2–4 μm); α matrix with needle-like κ (width 200±33 nm).",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "0c_500_gamma_B2",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "γ",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "coarse B2",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "2–4 μm particles",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": null,
+          "precipitates": [
+            {
+              "precipitate_id": "B2_coarse_0c_500",
+              "type": "B2 intermetallic",
+              "size": {
+                "value": "2–4",
+                "unit": "μm"
+              },
+              "distribution": "γ matrix",
+              "coherency": null
+            }
+          ]
+        },
+        {
+          "uuid": "0c_500_alpha_kappa",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "α",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "needle-like κ",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "needle-like, width 200±33 nm",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": null,
+          "precipitates": [
+            {
+              "precipitate_id": "kappa_needle_0c_500",
+              "type": "κ-carbide",
+              "size": {
+                "value": "200±33",
+                "unit": "nm"
+              },
+              "distribution": "in α phase",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_0c_700",
+      "sample_id": "sample_0c_700",
+      "overall_structure": "γ + α; coarse B2 in γ, needle-like κ (width 500±33 nm) in α.",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "0c_700_gamma_B2",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "γ",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "coarse B2",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "2–4 μm particles",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": null,
+          "precipitates": [
+            {
+              "precipitate_id": "B2_coarse_0c_700",
+              "type": "B2",
+              "size": {
+                "value": "2–4",
+                "unit": "μm"
+              },
+              "distribution": "γ matrix",
+              "coherency": null
+            }
+          ]
+        },
+        {
+          "uuid": "0c_700_alpha_kappa",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "α",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "needle-like κ",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "width 500±33 nm",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": null,
+          "precipitates": [
+            {
+              "precipitate_id": "kappa_needle_0c_700",
+              "type": "κ-carbide",
+              "size": {
+                "value": "500±33",
+                "unit": "nm"
+              },
+              "distribution": "α phase",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_0c_900",
+      "sample_id": "sample_0c_900",
+      "overall_structure": "γ + α; coarse B2 (2–4 μm) in γ, disc-like B2 (≈200 nm) in α.",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "0c_900_gamma_B2",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "γ",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "coarse B2",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "2–4 μm",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": null,
+          "precipitates": [
+            {
+              "precipitate_id": "B2_coarse_0c_900",
+              "type": "B2",
+              "size": {
+                "value": "2–4",
+                "unit": "μm"
+              },
+              "distribution": "γ",
+              "coherency": null
+            }
+          ]
+        },
+        {
+          "uuid": "0c_900_alpha_discB2",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "α",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "disc-like B2",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "≈200 nm discs",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": null,
+          "precipitates": [
+            {
+              "precipitate_id": "B2_disc_0c_900",
+              "type": "B2 (Fe-Al type)",
+              "size": {
+                "value": "≈200",
+                "unit": "nm"
+              },
+              "distribution": "α",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_0c_1050",
+      "sample_id": "sample_0c_1050",
+      "overall_structure": "γ + α; coarse B2 (2–4 μm) in γ, disc-like B2 (≈200 nm) in α.",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "0c_1050_gamma_B2",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "γ",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "coarse B2",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "2–4 μm",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": null,
+          "precipitates": [
+            {
+              "precipitate_id": "B2_coarse_0c_1050",
+              "type": "B2",
+              "size": {
+                "value": "2–4",
+                "unit": "μm"
+              },
+              "distribution": "γ",
+              "coherency": null
+            }
+          ]
+        },
+        {
+          "uuid": "0c_1050_alpha_discB2",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "α",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "disc-like B2",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "≈200 nm discs",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": null,
+          "precipitates": [
+            {
+              "precipitate_id": "B2_disc_0c_1050",
+              "type": "B2 (Fe-Al)",
+              "size": {
+                "value": "≈200",
+                "unit": "nm"
+              },
+              "distribution": "α",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "iface_5ni_500",
+      "sample_id": "sample_5ni_500",
+      "phases": [
+        {
+          "interface_id": "iface1",
+          "microstructure_uuid": "5ni_500_gamma_kappa",
+          "phase_1_name": "γ",
+          "phase_2_name": "κ-carbide",
+          "coherence": null
+        },
+        {
+          "interface_id": "iface2",
+          "microstructure_uuid": "5ni_500_B2_stringer",
+          "phase_1_name": "γ",
+          "phase_2_name": "B2 stringer bands",
+          "coherence": null
+        },
+        {
+          "interface_id": "iface3",
+          "microstructure_uuid": "5ni_500_GB_B2",
+          "phase_1_name": "γ grain boundary",
+          "phase_2_name": "coarse B2",
+          "coherence": null
+        }
+      ],
+      "defect_interaction": [],
+      "interface_notes": [
+        {
+          "stress_strain_distribution": null
+        }
+      ],
+      "phase_evolution": null
+    },
+    {
+      "interface_set_id": "iface_5ni_900",
+      "sample_id": "sample_5ni_900",
+      "phases": [
+        {
+          "interface_id": "iface4",
+          "microstructure_uuid": "5ni_900_gamma_B2",
+          "phase_1_name": "γ",
+          "phase_2_name": "coarse B2",
+          "coherence": null
+        },
+        {
+          "interface_id": "iface5",
+          "microstructure_uuid": "5ni_900_alpha_discB2",
+          "phase_1_name": "α",
+          "phase_2_name": "disc-like B2",
+          "coherence": null
+        }
+      ],
+      "defect_interaction": [],
+      "interface_notes": [],
+      "phase_evolution": null
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_5ni_500",
+      "sample_id": "sample_5ni_500",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "10",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": null,
+      "chemical": null,
+      "radiation_properties": null
+    },
+    {
+      "property_set_id": "prop_0c_500",
+      "sample_id": "sample_0c_500",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "10",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": null,
+      "chemical": null,
+      "radiation_properties": null
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char1",
+      "sample_id": null,
+      "microstructure_uuid": null,
+      "technique": "SEM (FE-SEM)",
+      "purpose": "Microstructure observation after polishing and etching in 5% nital",
+      "key_findings": "Revealed phases as described in Table 1 and Figure 2."
+    },
+    {
+      "characterization_id": "char2",
+      "sample_id": null,
+      "microstructure_uuid": null,
+      "technique": "TEM (JEOL 2000FX)",
+      "purpose": "Selected-area diffraction patterns and bright-field imaging for phase identification",
+      "key_findings": "Imaged disc-like B2, cuboid κ, and determined phase relationships."
+    },
+    {
+      "characterization_id": "char3",
+      "sample_id": null,
+      "microstructure_uuid": null,
+      "technique": "Nano-indentation",
+      "purpose": "Measure hardness of individual phases and composite regions",
+      "key_findings": "Hardness values recorded in Table 2 (not provided in text); Ni-containing samples higher hardness due to NiAl B2; B2 stringer bands had lower hardness than nano-discs; needle κ hardness function of Mn content."
+    },
+    {
+      "characterization_id": "char4",
+      "sample_id": null,
+      "microstructure_uuid": null,
+      "technique": "EDS (Energy Dispersive Spectroscopy)",
+      "purpose": "Compositional analysis in SEM",
+      "key_findings": null
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp1",
+      "sample_id": null,
+      "simulation_method": "DFT (Density Functional Theory) using Quantum-ESPRESSO package",
+      "software_used": "Quantum-ESPRESSO",
+      "potential_model": null,
+      "validation_against_experiment": null,
+      "analytical_model": [
+        {
+          "model_name": "GGA-PBE functional",
+          "equation_role": "exchange-correlation functional",
+          "parameters": null,
+          "model_note": "spin-polarized GGA-PBE; ultrasoft pseudopotentials; 18x18x18 k-points for BZ; 30x30x30 for DOS; bulk modulus fitted with Murnaghan equation of state."
+        },
+        {
+          "model_name": "Elastic constants calculation",
+          "equation_role": "determine Young's modulus of κ-carbides as function of Mn content",
+          "parameters": null,
+          "model_note": "Calculated elastic properties of κ-carbides and B2 (FeAl-L1₂); studied role of Mn in κ structure."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Table 2 containing quantitative nano-hardness values of all phases and composites is referred to but not included in the provided text; all hardness comparisons are qualitative.",
+    "The paper reports that at lower annealing temperatures (500–700 °C) ductility was low (~10% elongation), and increasing annealing temperature improved strength-ductility balance.",
+    "Ni-containing samples had higher hardness due to NiAl-type B2 with stronger Ni-Al bonds compared to Fe-Al bonds in Ni-free samples.",
+    "At ≥900 °C, α phase contained nano-sized disc B2; Ni-containing discs exhibited higher hardness.",
+    "At ≤700 °C, Ni-free sample formed micrometre-sized needle κ in α, lowering hardness; Ni-containing sample replaced α with B2 stringer bands, which had lower hardness than Ni-Al nano-discs.",
+    "Hardness of needle-like κ in α was a function of Mn content.",
+    "Cuboid κ in γ could not be measured individually; composite γ+κ hardness reported.",
+    "DFT calculations provided Young's modulus of κ-carbides; yet no explicit values were extracted from text for the mechanical properties section.",
+    "Figure 4 load-depth curves and hardness values not available as numerical data; only trends described.",
+    "Table 1 microstructural description used to structure the phases; carbon content discrepancy (0.5C in table vs 0.8C in text) noted."
+  ]
+}

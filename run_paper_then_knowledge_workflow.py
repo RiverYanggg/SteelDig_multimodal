@@ -53,10 +53,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--text-model", default=None, help="Local text model name.")
     parser.add_argument("--text-base-url", default=None, help="Local text model base URL.")
     parser.add_argument("--text-api-key", default=None, help="Local text model API key.")
+    parser.add_argument("--text-max-tokens", type=int, default=None, help="Local text model max_tokens.")
 
     parser.add_argument("--mm-model", default=None, help="Local multimodal model name. Defaults to text model.")
     parser.add_argument("--mm-base-url", default=None, help="Local multimodal model base URL. Defaults to text base URL.")
     parser.add_argument("--mm-api-key", default=None, help="Local multimodal model API key. Defaults to text API key.")
+    parser.add_argument("--mm-max-tokens", type=int, default=None, help="Local multimodal model max_tokens. Defaults to text max_tokens.")
     return parser.parse_args()
 
 
@@ -85,11 +87,13 @@ def build_settings(args: argparse.Namespace) -> WorkflowSettings:
         model=args.text_model or settings.text_model.model,
         base_url=args.text_base_url or settings.text_model.base_url,
         api_key=args.text_api_key or settings.text_model.api_key,
+        max_tokens=args.text_max_tokens if args.text_max_tokens is not None else settings.text_model.max_tokens,
     )
     multimodal_model = LocalModelConfig(
         model=args.mm_model or settings.multimodal_model.model or text_model.model,
         base_url=args.mm_base_url or settings.multimodal_model.base_url or text_model.base_url,
         api_key=args.mm_api_key or settings.multimodal_model.api_key or text_model.api_key,
+        max_tokens=args.mm_max_tokens if args.mm_max_tokens is not None else settings.multimodal_model.max_tokens or text_model.max_tokens,
     )
     return WorkflowSettings(
         input_path=args.input or settings.input_path,

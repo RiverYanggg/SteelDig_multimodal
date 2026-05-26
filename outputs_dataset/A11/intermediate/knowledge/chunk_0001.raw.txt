@@ -1,0 +1,75 @@
+{"claims": [
+  {
+    "claim_type": "finding",
+    "subject": "This work",
+    "claim": "This work develops a 3D cellular automaton (CA) model to precisely predict the DRX microstructure and flow stress of low-alloy steel under varying deformation conditions.",
+    "values": [],
+    "evidence_text": "This work develops a 3D cellular automaton (CA) model to precisely predict the DRX microstructure and flow stress of low-alloy steel under varying deformation conditions.",
+    "figures": [],
+    "tables": [],
+    "confidence": "medium"
+  },
+  {
+    "claim_type": "mechanism",
+    "subject": "3D CA model",
+    "claim": "The model incorporates dislocation density gradients and grainboundary sliding to quantify dislocation density evolutions in matrix and multi-stage recrystallization grains during hot compression.",
+    "values": [],
+    "evidence_text": "The model incorporates dislocation density gradients and grainboundary sliding to quantify dislocation density evolutions in matrix and multi-stage recrystallization grains during hot compression.",
+    "figures": [],
+    "tables": [],
+    "confidence": "medium"
+  },
+  {
+    "claim_type": "mechanism",
+    "subject": "Phenomenological constitutive model",
+    "claim": "Parameter variables related to dislocation accumulation and annihilation are derived from a new phenomenological constitutive model, in which the variation of the time for 50% DRX fraction and the residual softening induced by the first-stage recrystallization are considered.",
+    "values": ["50% DRX fraction"],
+    "evidence_text": "Parameter variables related to dislocation accumulation and annihilation are derived from a new phenomenological constitutive model, in which the variation of the time for 50 % DRX fraction and the residual softening induced by the first-stage recrystallization are considered.",
+    "figures": [],
+    "tables": [],
+    "confidence": "medium"
+  },
+  {
+    "claim_type": "mechanism",
+    "subject": "CA simulation results for increasing ZP",
+    "claim": "CA simulation results illustrate that the stress softening following peak stress after transiently increasing the Zener-Hollomon parameter ZP is attributed to the refinement of matrix and first-stage DRX grains (DRXGs) resulting from dislocation differences.",
+    "values": ["ZP increase"],
+    "evidence_text": "CA simulation results illustrate that the stress softening following peak stress after transiently increasing the Zener-Hollomon parameter ZP is attributed to the refinement of matrix and first-stage DRX grains (DRXGs ) resulting from dislocation differences.",
+    "figures": [],
+    "tables": [],
+    "confidence": "medium"
+  },
+  {
+    "claim_type": "finding",
+    "subject": "First-stage DRX grains (DRXGsI)",
+    "claim": "DRXGsI cannot be fully refined due to delayed nucleation of second-stage DRX grains (DRXGsII), resulting in a greater final grain size.",
+    "values": [],
+    "evidence_text": "DRXGsI cannot be fully refined due to delayed nucleation of second-stage DRX grains (DRXGsII), resulting in a greater final grain size.",
+    "figures": [],
+    "tables": [],
+    "confidence": "medium"
+  },
+  {
+    "claim_type": "mechanism",
+    "subject": "After decreasing ZP",
+    "claim": "After decreasing ZP, even if the DRX fraction increases to levels under constant conditions, some matrix still exhibits higher dislocation density due to an inhomogeneous-dislocation-density distribution, which accelerates DRXGs growth to a size similar to that under the constant condition, producing a stress-decreasing rate that closely matches experimental findings.",
+    "values": ["ZP decrease"],
+    "evidence_text": "After decreasing ZP, even if the DRX fraction increases to levels under constant conditions, some matrix still exhibits higher dislocation density due to an inhomogeneous-dislocation-density distribution. This accelerates DRXGs growth to a size similar to that under the constant condition, producing a stress-decreasing rate that closely matches experimental findings.",
+    "figures": [],
+    "tables": [],
+    "confidence": "medium"
+  }
+],
+"context_update": {
+  "summary": "The current chunk includes the paper title, author affiliations, keywords, abstract, and a list of symbols. The research focuses on low-alloy steel and aims to develop a 3D cellular automaton model for predicting dynamic recrystallization (DRX) microstructure and flow stress under varying deformation conditions. The model integrates inhomogeneous dislocation density and grain-boundary sliding, and couples with a new phenomenological constitutive model that accounts for varying 50% DRX time and residual softening from the first recrystallization stage. The abstract reports key simulation findings: an increase in the Zener-Hollomon parameter (ZP) causes matrix and first-stage DRX grain refinement, while a decrease in ZP leads to inhomogeneous dislocation density distribution that accelerates grain growth to sizes similar to constant-condition levels, matching experimental stress-decrease rates. It also describes the delayed nucleation of second-stage DRX grains when ZP increases, resulting in a larger final grain size. No specific numerical values, processing parameters, or figure/table references are provided in this chunk. The symbol list defines all variables used in the model and constitutive equations.",
+  "material_systems": ["low-alloy steel"],
+  "sample_aliases": [],
+  "processing_route": ["hot compression under varying temperatures and strain rates"],
+  "key_variables": ["Zener-Hollomon parameter ZP", "dislocation density", "DRX fraction", "grain size", "flow stress", "time for 50% DRX", "residual softening"],
+  "microstructure": ["matrix", "first-stage DRX grains (DRXGsI)", "second-stage DRX grains (DRXGsII)", "inhomogeneous dislocation density distribution"],
+  "properties": ["flow stress", "stress-decreasing rate"],
+  "mechanisms": ["dislocation density gradients", "grain-boundary sliding", "stress softening due to grain refinement", "inhomogeneous dislocation density accelerating grain growth"],
+  "figures_or_tables": [],
+  "unresolved_terms": []
+}
+}

@@ -1,0 +1,224 @@
+{
+  "papers": [
+    {
+      "paper_id": "A80",
+      "doi": null,
+      "title": "Evaluation of the elastic modulus of steels",
+      "authors": [
+        "Ulrich Bohnenkamp",
+        "Rolf Sandström"
+      ],
+      "publication_year": null,
+      "journal": null,
+      "keywords": null,
+      "research_type": "mixed",
+      "paper_scope": "Collects literature data on physical properties of steels, analyzes elastic modulus dependence on composition using regression analysis and Thermo-Calc thermodynamic calculations for ferritic and austenitic steels, and provides predictive regression coefficients."
+    }
+  ],
+  "alloys": [
+    {
+      "alloy_id": "alloy_ferritic_mart",
+      "paper_id": "A80",
+      "alloy_name": "Martensitic and Ferritic Steels (study I pool)",
+      "aliases": [],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "C",
+        "Cr",
+        "Cu",
+        "Mn",
+        "Mo",
+        "Ni",
+        "Si",
+        "V"
+      ],
+      "nominal_composition": [],
+      "alloys_notes": "Composition ranges (mass%): Fe 82.01-99.25, C 0.06-0.99, Cr 0-16.66, Cu 0-0.69, Mn 0.41-1.04, Mo 0-1.10, Ni 0-9.25, Si 0.14-0.96, V 0-0.36. 53 batches. See Table 1."
+    },
+    {
+      "alloy_id": "alloy_ferritic",
+      "paper_id": "A80",
+      "alloy_name": "Ferritic Steels (study II pool)",
+      "aliases": [],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "C",
+        "Cr",
+        "Cu",
+        "Mn",
+        "Mo",
+        "Ni",
+        "Si",
+        "V"
+      ],
+      "nominal_composition": [],
+      "alloys_notes": "Composition ranges in ferrite (mass%): Fe 90.1-97.84, Cr 0-3.89, Cu 0-0.69, Mn 0-0.60, Mo 0-1.06, Ni 0-1.64, Si 0.14-0.96, V 0-0.29. Cementite 0.78-7.90 mass%. 35 batches. See Table 2."
+    },
+    {
+      "alloy_id": "alloy_austenitic",
+      "paper_id": "A80",
+      "alloy_name": "Austenitic Steels (study III pool)",
+      "aliases": [],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "C",
+        "Cr",
+        "Mo",
+        "N",
+        "Ni",
+        "Si",
+        "Nb",
+        "Ti",
+        "V",
+        "Al",
+        "Cu",
+        "Mn",
+        "Co"
+      ],
+      "nominal_composition": [],
+      "alloys_notes": "Composition ranges in austenite (mass%): Fe 35.90-74.73, Cr 14.60-26.87, Mo 0-3.27, Ni 7.11-32.78, N 0-0.19, Si 0.24-0.97, Nb 0-0.27, Ti 0-1.89, other elements trace. Carbides: TiC 0-1.08, M23C6 0-5.72, NbC 0-1.80 mass%. 24 batches. See Table 3."
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_various",
+      "paper_id": "A80",
+      "alloy_id": null,
+      "description": "Various heat treatment and processing conditions from literature data; details unspecified.",
+      "processes_notes": "Samples collected from open literature with exact compositions but unknown thermomechanical histories."
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_ferritic_mart",
+      "paper_id": "A80",
+      "alloy_id": "alloy_ferritic_mart",
+      "process_id": "proc_various"
+    },
+    {
+      "sample_id": "sample_ferritic",
+      "paper_id": "A80",
+      "alloy_id": "alloy_ferritic",
+      "process_id": "proc_various"
+    },
+    {
+      "sample_id": "sample_austenitic",
+      "paper_id": "A80",
+      "alloy_id": "alloy_austenitic",
+      "process_id": "proc_various"
+    }
+  ],
+  "processing_steps": [
+    {
+      "sample_id": "sample_ferritic_mart",
+      "paper_id": "A80",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "various",
+      "temperature": null,
+      "unit": null,
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Literature samples processed under unspecified conditions; elastic modulus measured at room temperature after temperature correction."
+    },
+    {
+      "sample_id": "sample_ferritic",
+      "paper_id": "A80",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "various",
+      "temperature": null,
+      "unit": null,
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Literature samples processed under unspecified conditions; elastic modulus measured at room temperature after temperature correction."
+    },
+    {
+      "sample_id": "sample_austenitic",
+      "paper_id": "A80",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "various",
+      "temperature": null,
+      "unit": null,
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Literature samples processed under unspecified conditions; elastic modulus measured at room temperature after temperature correction."
+    }
+  ],
+  "structures": [],
+  "interfaces": [],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_01",
+      "sample_id": "sample_ferritic_mart",
+      "microstructure_uuid": null,
+      "technique": "Dynamic elastic modulus measurement (sonic speed at high frequencies)",
+      "purpose": "Determination of elastic modulus at room temperature (20°C)",
+      "key_findings": "Used for all data; values corrected to 20°C by interpolation/extrapolation. Measurement accuracy ±0.3% for elastic modulus; Poisson's ratio determined to ±3%."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_study1",
+      "sample_id": "sample_ferritic_mart",
+      "simulation_method": null,
+      "software_used": null,
+      "potential_model": null,
+      "validation_against_experiment": null,
+      "analytical_model": [
+        {
+          "model_name": "Linear regression of elastic modulus on mass composition (Study I)",
+          "equation_role": "E_steel = sum(r_i * C_i), C_i mass% of element i, r_i regression coefficient (GPa/mass%). Phase composition neglected.",
+          "parameters": "r_Fe=2.114, r_C=-0.050, r_Cr=2.737, r_Cu=2.354, r_Mn=1.691, r_Mo=2.604, r_Ni=-0.233, r_Si=4.625; see Table 1.",
+          "model_note": "Standard error of model 1.2 GPa, R²=0.96. Concentration ranges in Table 1. Cu and Mn coefficients insignificant."
+        }
+      ]
+    },
+    {
+      "computation_id": "comp_study2",
+      "sample_id": "sample_ferritic",
+      "simulation_method": null,
+      "software_used": "Thermo-Calc for phase composition calculation",
+      "potential_model": null,
+      "validation_against_experiment": null,
+      "analytical_model": [
+        {
+          "model_name": "Linear regression of elastic modulus on phase composition (Study II)",
+          "equation_role": "E_steel = sum(r_i * C_i), C_i mass% of element in ferrite or mass% of cementite. Phase composition from Thermo-Calc.",
+          "parameters": "r_Fe=2.092, r_Cr=2.233, r_Cu=2.704, r_Mn=5.386, r_Mo=3.943, r_Si=5.539, r_cementite=2.122; see Table 2.",
+          "model_note": "Standard error 1.1 GPa, R²=0.85. Cementite regression coefficient nearly same as Fe, indicating no effect on modulus. Cu insignificant due to large standard error."
+        }
+      ]
+    },
+    {
+      "computation_id": "comp_study3",
+      "sample_id": "sample_austenitic",
+      "simulation_method": null,
+      "software_used": "Thermo-Calc for phase composition calculation",
+      "potential_model": null,
+      "validation_against_experiment": null,
+      "analytical_model": [
+        {
+          "model_name": "Linear regression of elastic modulus on austenite and carbide composition (Study III)",
+          "equation_role": "E_steel = sum(r_i * C_i), C_i mass% of element in austenite or mass% of carbide phases.",
+          "parameters": "r_Fe=1.952, r_Cr=2.476, r_Mo=0.522, r_Ni=1.887, r_N=15.101, r_TiC=7.309, r_NbC=6.490, r_M23C6=1.933; see Table 3.",
+          "model_note": "Standard error 2.9 GPa, R²=0.83. N effect large but low significance owing to limited data. M23C6 coefficient similar to Fe, thus no effect. Ni and Mo lower than Fe, consistent with modulus reduction."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "For ferritic steels, cementite shows no effect on elastic modulus; Cr, Mo, Si, Mn increase modulus; C and Ni decrease modulus when phase composition neglected.",
+    "For austenitic steels, N, Cr, NbC, TiC increase modulus; Ni and Mo reduce modulus; M23C6 has no effect.",
+    "Regression coefficients can predict elastic modulus for known composition when combined with Thermo-Calc phase calculation for ferritic (study II) and austenitic (study III) cases.",
+    "Elastic modulus of pure γ-iron at RT found to be 195 GPa, lower than that of pure α-iron.",
+    "Data dynamically measured with sonic speed, corrected to 20°C; accuracy ±0.3% (~±0.6 GPa); Poisson's ratio determined to ±3%.",
+    "Texture influence acknowledged but controlled using Poisson's ratio criterion (untextured range 0.26–0.33)."
+  ]
+}

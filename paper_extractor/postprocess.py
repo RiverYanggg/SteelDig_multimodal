@@ -5,6 +5,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, List
 
+from paper_extractor.client import build_chat_completion_kwargs
 from paper_extractor.common import clean_text, extract_figure_id, extract_json_candidates, log_jsonl, truncate_text
 from paper_extractor.config import WorkflowSettings
 
@@ -110,7 +111,7 @@ def run_post_parse_for_paper(
             try:
                 parse_result = fallback_parse_with_agent(
                     fallback_client,
-                    model=settings.text_model.model,
+                    model_config=settings.text_model,
                     stage="text_post_parse",
                     raw_text=text_txt.read_text(encoding="utf-8"),
                     paper_id=paper_id,
@@ -174,7 +175,7 @@ def run_post_parse_for_paper(
             try:
                 parse_result = fallback_parse_with_agent(
                     fallback_client,
-                    model=settings.text_model.model,
+                    model_config=settings.multimodal_model,
                     stage="multimodal_post_parse",
                     raw_text=request_txt.read_text(encoding="utf-8"),
                     paper_id=paper_id,
@@ -283,7 +284,7 @@ def normalize_figure_result(parsed: Dict[str, Any], paper_id: str, group: Dict[s
 
 def fallback_parse_with_agent(
     client: Any,
-    model: str,
+    model_config: Any,
     stage: str,
     raw_text: str,
     paper_id: str,
@@ -291,11 +292,14 @@ def fallback_parse_with_agent(
 ) -> ParseResult:
     prompt = build_fallback_parse_prompt(stage=stage, raw_text=raw_text, paper_id=paper_id, extra_context=extra_context)
     completion = client.chat.completions.create(
-        model=model,
-        messages=[
-            {"role": "system", "content": "你是结构化解析助手。你只负责把原始模型输出修复成合法 JSON，不补充无根据事实。"},
-            {"role": "user", "content": prompt},
-        ],
+        **build_chat_completion_kwargs(
+            model_config,
+            model=model_config.model,
+            messages=[
+                {"role": "system", "content": "你是结构化解析助手。你只负责把原始模型输出修复成合法 JSON，不补充无根据事实。"},
+                {"role": "user", "content": prompt},
+            ],
+        )
     )
     content = completion.choices[0].message.content or ""
     parsed = _parse_best_json_candidate(content)

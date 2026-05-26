@@ -1,0 +1,308 @@
+{
+  "claims": [
+    {
+      "claim_type": "finding",
+      "subject": "Al role in classification",
+      "claim": "In the classification models for a single γ region and κ existence, Al played the most significant role, as accuracy decreased the most when Al was removed from the descriptor set.",
+      "values": [],
+      "evidence_text": "The graph indicated that Al played the most significant role in the partial classification problems (a single γ region and κ exists) since accuracy decreased the most when Al was removed from the set.",
+      "figures": ["Fig. 3b-d"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "Al effect on austenite stability",
+      "claim": "Al is a BCC phase stable element, and an increase in the FCC lattice parameters has a significant negative impact on the stability of single-phase austenite.",
+      "values": [],
+      "evidence_text": "Al is a BCC phase stable element, and an increase in the FCC lattice parameters has a significant negative impact on the stability of single-phase austenite [7].",
+      "figures": ["Fig. 3b-d"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "Mn and Fe importance in (γ+κ) region",
+      "claim": "In the classification of a (γ+κ) region at 500–600 °C, Mn and Fe are the most important descriptors, while C shows the least effect.",
+      "values": ["500–600 °C"],
+      "evidence_text": "Fig. 3c demonstrates that Mn and Fe are the most important in the ( γ + κ) region in 500 – 600 °C classification studies, and C still shows the least effect on the model.",
+      "figures": ["Fig. 3c"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "Mn stabilization of γ and β-Mn",
+      "claim": "Mn can stabilize the γ phase, increase the FCC lattice parameter, avoid additional ferrite from Al addition, and possibly promote the β-Mn phase in FeMnAlC systems.",
+      "values": [],
+      "evidence_text": "Mn can stabilize the γ phase while increasing the FCC lattice parameter[7,9], avoiding the production of additional ferrite as a result of the addition of Al, and β-Mn phase promotion is also possible in the FeMnAlC system [13]",
+      "figures": [],
+      "tables": [],
+      "confidence": "medium"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "Mn content effect on transformation paths",
+      "claim": "The γ→ε→αʹ and γ→ε transformations are favored for Mn contents of 5–12 wt% and 15–30 wt%, respectively.",
+      "values": ["5–12 wt% Mn", "15–30 wt% Mn"],
+      "evidence_text": "The γ→ε→αʹ and the γ→ε are separately favored for Mn contents ranging between (5–12 %) Mn and (15–30 %) Mn [14,15].",
+      "figures": [],
+      "tables": [],
+      "confidence": "medium"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "Al influence on κ phase presence",
+      "claim": "Al has a strong influence on the presence of the κ phase, as shown by feature importance analysis.",
+      "values": [],
+      "evidence_text": "Fig. 3d shows that Al has a strong influence on the presence of the κ phase, which is in alignment with earlier findings.",
+      "figures": ["Fig. 3d"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "Al and C synergy on κ phase",
+      "claim": "Al reduces the diffusivity of C, and higher Al and C levels synergistically stabilize the κ phase.",
+      "values": [],
+      "evidence_text": "Al element can reduce the diffusivity of the C element while higher Al element and C element synergistically stabilize the κ phase[7].",
+      "figures": [],
+      "tables": [],
+      "confidence": "medium"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "C insignificant impact on κ phase",
+      "claim": "Significance analysis revealed that C had no significant impact on the presence of the κ phase.",
+      "values": [],
+      "evidence_text": "The results of the significance analysis revealed that C had no significant impact on the presence of the κ phase.",
+      "figures": ["Fig. 3d"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "κ phase initiation threshold",
+      "claim": "When the Mn content is 30 wt% and Al content exceeds ~5 wt%, κ phase precipitation initiates in the FeMnAlC system.",
+      "values": ["30 wt% Mn", "~5 wt% Al"],
+      "evidence_text": "when the Mn content is 30 wt % , the Al content only needs to surpass the lower limit (approximately 5 wt%) to initiate precipitation of the κ phase in the system.",
+      "figures": ["Fig. 6"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "C and Al interplay in γ+κ region",
+      "claim": "At 500–600 °C, C content influences the formation of the γ+κ duplex region but is tightly intertwined with the role of Al, and κ precipitation is primarily governed by Al.",
+      "values": ["500–600 °C"],
+      "evidence_text": "At temperatures ranging from 500 to 600 °C, while the C content has an impact on the formation of the γ + κ duplex region, it is closely intertwined with the role of Al. Thus, even though C plays a significant role in the composition of the κ phase in this study, the precipitation of the κ phase is primarily governed by Al.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "processing",
+      "subject": "descriptor order for classification",
+      "claim": "The final descriptor sequence for the classification model was input in descending order of mean decrease accuracy values.",
+      "values": [],
+      "evidence_text": "The final sequence of these descriptors was inputted into the model in descending order of mean decrease accuracy values.",
+      "figures": [],
+      "tables": [],
+      "confidence": "medium"
+    },
+    {
+      "claim_type": "property",
+      "subject": "SVM regression RMSE",
+      "claim": "For regression, the SVM algorithm achieved robust performance with 10-fold cross-validation RMSE less than 1% on the training dataset.",
+      "values": ["RMSE < 1%"],
+      "evidence_text": "SVM displayed robust performance in the regression task for the training dataset, with low cross-validation RMSE values of less than 1 %.",
+      "figures": ["Fig. 4"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "characterization",
+      "subject": "regression descriptor order",
+      "claim": "The descriptor order for the regression model was ΔSmix, Fe, ΔHmix, C, Mn, T, VEC, and Al.",
+      "values": [],
+      "evidence_text": "The final sequencing of descriptors for inputting into the model for the regression problem was in the following order: ΔS_mix , Fe , ΔH_mix , C , Mn, T , VEC, and Al.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "number of enumerated combinations",
+      "claim": "A total of 78,477 composition-feature combinations were enumerated for screening using Y1, Y2, Y3, and Y4 predictions.",
+      "values": ["78,477"],
+      "evidence_text": "Fig. 5 demonstrates that 78,477 possible composition-feature combinations were enumerated to predict Y1, Y2, Y3 and Y4 using screened models.",
+      "figures": ["Fig. 5"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "first screening stage result",
+      "claim": "In the first screening stage, 1,320 candidates met the requirements of a single γ region, a (γ+κ) region at 500–600 °C, and κ phase existence.",
+      "values": ["1,320", "500–600 °C"],
+      "evidence_text": "Consequently, 1,320 satisfactory candidates were screened out.",
+      "figures": ["Fig. 5"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "second screening stage result",
+      "claim": "After performance filtering for κ fraction (Y4) and low density, 150 candidates with κ fraction >10% and density ≤7 g/cm³ were identified.",
+      "values": ["150", "κ fraction >10%", "density ≤7 g/cm³"],
+      "evidence_text": "The second stage was the performance filtering for Y4 and low density, leading to the identification of 150 candidates with high κ fractions (more than 10 %) and low density (less than or equal to 7 g/cm³).",
+      "figures": ["Fig. 5"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "composition",
+      "subject": "κ phase critical Al content",
+      "claim": "In the 30% Mn search space, the κ phase exists when Al content exceeds a critical value of 4–4.5 wt%.",
+      "values": ["Al 4–4.5 wt%", "Mn 30 wt%"],
+      "evidence_text": "The red area in Fig. 6a signifies the presence of the κ-phase, with an Al content critical value ranging from 4 to 4.5 %.",
+      "figures": ["Fig. 6a"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "Al effect on stacking fault energy and BCC",
+      "claim": "Al addition elevated the stacking fault energy, facilitating κ carbide precipitation, but excessive Al can induce BCC phase formation.",
+      "values": [],
+      "evidence_text": "The introduction of Al elevated the stacking fault energy, facilitating the precipitation of κ carbides; however, excessive Al content could induce the formation of the BCC phase[7].",
+      "figures": ["Fig. 6a"],
+      "tables": [],
+      "confidence": "medium"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "(γ+κ) region composition bounds",
+      "claim": "The (γ+κ) dual-phase region at 500–600°C is bounded by Al content of 4.5–9.3 wt% and C content of 0.4–1.1 wt%.",
+      "values": ["Al 4.5–9.3 wt%", "C 0.4–1.1 wt%", "500–600 °C"],
+      "evidence_text": "The boundary elements of the red region in Fig. 6b are predominantly composed of (4.5–9.3 %) Al and (0.4–1.1 %) C.",
+      "figures": ["Fig. 6b"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "C critical value for single γ",
+      "claim": "The boundary of the single γ region fluctuates significantly when C content reaches 1.1 wt%, indicating 1.1% C is a critical value for austenite stability.",
+      "values": ["C 1.1 wt%"],
+      "evidence_text": "the boundary line between the red region (Yes) and the blue region (No) fluctuating significantly as the C content escalates to 1.1 %. This variation is mainly attributed to C being an austenitic stable element in the FeMnAlC system, with the content of 1.1 % being critical.",
+      "figures": ["Fig. 6c"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "optimal candidates satisfying Y1+Y2+Y3",
+      "claim": "Candidates satisfying simultaneously Y1 (κ existence), Y2 ((γ+κ) at 500–600°C), and Y3 (single γ) are shown as the red region in Fig. 6e and represent potentially optimal compositions.",
+      "values": [],
+      "evidence_text": "the intersection of Y1, Y2, and Y3 is depicted in the red region of Fig. 6e. Candidates in the red zone meet multiple requirements (Y1, Y2, and Y3), indicating that they are potentially optimal for the system.",
+      "figures": ["Fig. 6e"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "final 30 candidates and constraints",
+      "claim": "With added constraints of κ fraction ≥10% and density ≤7 g/cm³, 30 candidates were identified, with a minimum κ volume fraction of 11% and maximum density of 6.9 g/cm³.",
+      "values": ["30", "κ fraction ≥10%", "density ≤7 g/cm³", "minimum κ fraction 11%", "maximum density 6.9 g/cm³"],
+      "evidence_text": "30 potential candidates were identified by imposing additional constraints on the original screening criteria (i.e., κ fraction ≥ 10 % and density ≤ 7 g/cm³), with a minimum volume fraction of κ phase of 11 % and maximum system density of 6.9 g/cm3.",
+      "figures": ["Fig. 7"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "validation alloy prediction",
+      "claim": "Fe-30Mn-8Al-1C steel aged at 550 °C was predicted to be a single-phase austenitic steel with low density and high strength.",
+      "values": ["Fe-30Mn-8Al-1C", "550 °C"],
+      "evidence_text": "Fe-30Mn-8Al-1C steel aged at 550 °C was predicted to be a single-phase austenitic steel featuring low density and high strength.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "SVM regression correlation performance",
+      "claim": "Correlation coefficient evaluation confirmed that the SVM regression model had satisfactory predictive performance across all data.",
+      "values": [],
+      "evidence_text": "Correlation coefficients were utilized to evaluate the regression models’ predictive performance, revealing that the SVM algorithm had satisfactory performance across all the data.",
+      "figures": ["Fig. 4c"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "figure_evidence",
+      "subject": "Experimental validation Fig. 8",
+      "claim": "The experimental validation of Fe-30Mn-8Al-1C steel is presented in Fig. 8, showing XRD, IPF map, EBSD phase map, BF TEM, DF TEM, and SAED.",
+      "values": [],
+      "evidence_text": "Fig. 8. Experimental results of the Fe-30Mn-8Al-1C austenitic low-density steel. (a) XRD profile. (b) Inverse pole figure (IPF) map. (c) EBSD phase map. (d) Bright field (BF) TEM micrograph. (e) Dark field (DF) TEM micrograph. (f) Selected area electron diffraction (SAED).",
+      "figures": ["Fig. 8"],
+      "tables": [],
+      "confidence": "high"
+    }
+  ],
+  "context_update": {
+    "summary": "The chunk details descriptor importance for classification models: Al is the most critical for single γ and κ existence, while Mn and Fe dominate (γ+κ) region classification at 500–600°C; C has minimal influence on κ presence. Regression using SVM achieves cross-validation RMSE <1% with descriptor order ΔSmix, Fe, ΔHmix, C, Mn, T, VEC, Al. A two-stage screening of 78,477 candidates yields 1320 satisfying Y1/Y2/Y3, then 150 with κ >10% and density ≤7 g/cm³; further tightening to κ≥11% and density ≤6.9 g/cm³ gives 30 candidates. Composition-structure maps at 30% Mn define κ existence (Al>4–4.5%), (γ+κ) region (Al 4.5–9.3%, C 0.4–1.1%), and a single γ boundary highly sensitive at C=1.1%. Fe-30Mn-8Al-1C aged at 550°C is predicted to be single-phase austenite with low density and high strength and was selected for validation. Fig. 8 presents XRD, EBSD, and TEM images of this alloy. Upcoming chunks are expected to provide detailed microstructural and mechanical property results for the validation alloy.",
+    "material_systems": [
+      "Fe-Mn-Al-C austenitic low-density steel",
+      "Fe-30Mn-8Al-1C (validation alloy)"
+    ],
+    "sample_aliases": [
+      "Fe-30Mn-8Al-1C",
+      "validation component"
+    ],
+    "processing_route": [
+      "aging at 550 °C (for validation alloy)"
+    ],
+    "key_variables": [
+      "Mn content (wt%)",
+      "Al content (wt%)",
+      "C content (wt%)",
+      "aging temperature (500–600 °C)",
+      "κ phase volume fraction (Y4)",
+      "density (g/cm³)",
+      "descriptors: ΔSmix, Fe, ΔHmix, C, Mn, T, VEC, Al"
+    ],
+    "microstructure": [
+      "γ austenite",
+      "κ-carbide (κ phase)",
+      "α-ferrite (BCC)",
+      "β-Mn",
+      "single γ phase region",
+      "(γ+κ) duplex region"
+    ],
+    "properties": [
+      "SVM regression RMSE < 1%",
+      "κ fraction >10% and ≥11% in screening",
+      "density ≤7 g/cm³ and ≤6.9 g/cm³",
+      "predicted low density and high strength for Fe-30Mn-8Al-1C"
+    ],
+    "mechanisms": [
+      "Al reduces C diffusivity and elevates stacking fault energy, promoting κ precipitation; excessive Al induces BCC",
+      "Al and C synergistically stabilize κ phase",
+      "Al critical value 4–4.5% triggers κ precipitation at 30% Mn",
+      "C is austenite stabilizer; 1.1% C is critical for single γ boundary",
+      "Mn stabilizes γ and can promote β-Mn",
+      "γ→ε favored at 15–30% Mn, γ→ε→αʹ at 5–12% Mn"
+    ],
+    "figures_or_tables": [
+      "Fig. 3b-d",
+      "Fig. 4",
+      "Fig. 5",
+      "Fig. 6",
+      "Fig. 7",
+      "Fig. 8"
+    ],
+    "unresolved_terms": []
+  }
+}

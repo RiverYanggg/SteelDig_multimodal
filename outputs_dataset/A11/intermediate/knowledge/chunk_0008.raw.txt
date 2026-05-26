@@ -1,0 +1,346 @@
+{
+  "claims": [
+    {
+      "claim_type": "processing",
+      "subject": "3D CA model cell state variables",
+      "claim": "In the 3D cellular automaton model, each cell contains six state variables: DRX round variable, boundary cell index, grain size, dislocation density, migration distance, and constitutive model parameters (initial WH rate, saturation stress, DRX activation energy) used for flow stress and DRX nucleation calculations.",
+      "values": [
+        "six state variables",
+        "DRX round",
+        "boundary index",
+        "grain size",
+        "dislocation density",
+        "migration distance"
+      ],
+      "evidence_text": "DRX round variable used to record the recrystallization times of a cell; (3) Index variable of a boundary cell used to reflect whether the cell located at the grain boundary; (4) Grain size variable of a cell used to calculate the net change of dislocation density; (5) Dislocation density variable employed to evaluate DRX nucleation and grain growth; (6) Migration distance variable used to store the accumulated moving distance of grain boundary. Besides, some model parameters calibrated from the constitutive model in Section 3.1, including the initial WH rate, saturation stress, DRX activation energy and others, were employed to accurately calculate the flow stress evolution and DRX nucleation",
+      "figures": [
+        "Fig. 5"
+      ],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "processing",
+      "subject": "CA loop under varying deformation conditions",
+      "claim": "The CA loop compares total strain to the first-stage strain ε_I to detect transient condition changes; when a change occurs, the stress softening coefficient k_s (Eq. 18) modifies the saturation stress via Eq. (17), followed by recalculation of dislocation density evolution, nucleation, and grain boundary migration until the final strain.",
+      "values": [
+        "ε_I",
+        "k_s",
+        "Eq. (18)",
+        "Eq. (17)"
+      ],
+      "evidence_text": "Initially, the total strain was compared with the first-stage strain ε_I to determine whether the deformation condition varied transiently. If an instantaneous variation in the deformation condition occurred, the stress softening coefficient k_s , calibrated by the constitutive model in Eq. (18), was used to obtain the varying saturation stress in Eq. (17).",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "property",
+      "subject": "characteristic stresses of low-alloy steel",
+      "claim": "The initial stress σ0, saturation stress σss, steady-state stress σs, and critical stress σc are expressed by hyperbolic-sine and logarithmic functions of strain rate and temperature (Eq. 44) with material constants derived from experimental data.",
+      "values": [
+        "σ0=17.716+105.408 sinh⁻¹{[ε̇ exp(321671/RT)/(4.96×10¹⁴)]^0.146}",
+        "σss=292.848 sinh⁻¹{[ε̇ exp(319662/RT)/(1.67×10¹⁵)]^0.170}",
+        "σs=160.854 sinh⁻¹{[ε̇ exp(314300/RT)/(6.28×10¹³)]^0.146}",
+        "σc=111.661{ln[ε̇ exp(376475/RT)]}^0.093 sinh⁻¹{[ε̇ exp(314300/RT)/(6.28×10¹³)]^0.146}"
+      ],
+      "evidence_text": "σ_0 = 1 7. 7 1 6 + 1 0 5. 4 0 8 sinh^{-1} \\left\\{\\left[ \\frac {\\dot {\\varepsilon} e x p \\left(\\frac {3 2 1 6 7 1}{R T}\\right)}{4 . 9 6 \\times 1 0 ^ {1 4}} \\right] ^ {0. 1 4 6} \\right\\} \\\\ \\sigma_ {s s} = 2 9 2. 8 4 8 sinh^{-1} \\left\\{\\left[ \\frac {\\dot {\\varepsilon} e x p \\left(\\frac {3 1 9 6 6 2}{R T}\\right)}{1 . 6 7 \\times 1 0 ^ {1 5}} \\right] ^ {0. 1 7 0} \\right\\} \\\\ \\sigma_ {s} = 1 6 0. 8 5 4 sinh^{-1} \\left\\{\\left[ \\frac {\\dot {\\varepsilon} e x p \\left(\\frac {3 1 4 3 0 0}{R T}\\right)}{6 . 2 8 \\times 1 0 ^ {1 3}} \\right] ^ {0. 1 4 6} \\right\\} \\\\ \\sigma_ {c} = 1 1 1. 6 6 1 \\left\\{\\ln \\left[ \\dot {\\varepsilon} e x p \\left(\\frac {3 7 6 4 7 5}{R T}\\right) \\right] \\right\\} ^ {0. 0 9 3} sinh^{-1} \\left\\{\\left[ \\frac {\\dot {\\varepsilon} e x p \\left(\\frac {3 1 4 3 0 0}{R T}\\right)}{6 . 2 8 \\times 1 0 ^ {1 3}} \\right] ^ {0. 1 4 6} \\right\\}",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "DRX fraction evolution under constant conditions",
+      "claim": "Under constant deformation conditions, the DRX fraction increases slowly after exceeding the critical stress, then accelerates with strain due to nucleation and growth, and finally slows as it approaches unity; higher temperature and lower strain rate increase the final DRX fraction.",
+      "values": [
+        "slow initial increase",
+        "accelerating stage",
+        "deceleration near φ_d=1",
+        "higher T → higher final DRX",
+        "lower ε̇ → higher final DRX"
+      ],
+      "evidence_text": "the DRX fraction increased slowly in the beginning after the recovery stress was larger than the critical stress. More DRX nucleation and grain growth then improved the evolution rate of the DRX fraction with the increasing strain. Eventually, its evolution rate could gradually slow down when the DRX fraction was close to 1. It can also be observed that the final DRX fraction became greater with the higher temperature and lower strain rate.",
+      "figures": [
+        "Fig. 6"
+      ],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "characterization",
+      "subject": "experimental DRX fraction calculation",
+      "claim": "The experimental DRX fraction φ_d is obtained from flow stress as φ_d = (σ_v - σ) / (σ_s - σ_ss) (Eq. 45).",
+      "values": [
+        "φ_d = (σ_v - σ)/(σ_s - σ_ss)"
+      ],
+      "evidence_text": "φ_d = (σ_v - σ) / (σ_s - σ_ss) (Eq. 45)",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "comparison",
+      "subject": "constitutive model validation under constant conditions",
+      "claim": "Under constant deformation conditions, the predicted DRX fraction and flow stress match experiments with correlation coefficient R² exceeding 0.99, and average absolute relative errors (AARE) of 3.91% and 6.65% (Table 2).",
+      "values": [
+        "R² > 0.99",
+        "AARE: 3.91%",
+        "AARE: 6.65%"
+      ],
+      "evidence_text": "The results indicate a strong correlation between the experimental and simulated data, with correlation coefficients exceeding 0.99 under constant deformation conditions. Furthermore, both RMSE values were low, and the AAREs were calculated as 3.91 % and 6.65 %, indicating a small difference between the experimental and predicted values.",
+      "figures": [],
+      "tables": [
+        "Table 2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "high strain rate flow stress behavior",
+      "claim": "At a high strain rate of 10 s⁻¹, DRX nucleation and growth are hindered; dislocation multiplication dominates, causing no significant initial stress softening, and interfacial friction later produces a slow initial increase followed by rapid flow stress growth.",
+      "values": [
+        "10 s⁻¹",
+        "no obvious softening initially",
+        "slow then rapid increase"
+      ],
+      "evidence_text": "At a high strain rate, DRX grains are difficult to undergo the nucleation and growth. The dislocation multiplication rate caused by WH plays a dominant role, resulting in no obvious stress softening in the initial stage. As deformation progresses, the increase in friction on the contact surface leads to a marked rise in flow stress. Consequently, the flow curve exhibits a trend of initial slow increase followed by rapid growth",
+      "figures": [
+        "Fig. 7"
+      ],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "comparison",
+      "subject": "Model 1 vs Model 2 definitions",
+      "claim": "Model 1 does not modify the saturation stress and the time for 50% DRX t_0.5 (Eq. 10), whereas Model 2 incorporates a modified t_0.5 (Eq. 12) and a stress softening coefficient k_s (Eq. 18).",
+      "values": [
+        "Model 1: unchanged saturation stress and t_0.5",
+        "Model 2: modified t_0.5 and k_s"
+      ],
+      "evidence_text": "Model 1 represents a constitutive model that does not modify the saturation stress and t_0.5 (Eq. (10)), as proposed by Puchi-Cabrera et al. (2013, 2014). The constitutive model using modified t_0.5 and softening coefficient k (Eqs. (12) and (18)) is named Model 2.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "property",
+      "subject": "Model 1 accuracy under constant conditions",
+      "claim": "Model 1 achieves RMSE = 5.5881 MPa, R² = 0.9882, and AARE = 4.01% under constant temperature and strain rate conditions, slightly lower prediction accuracy than Model 2.",
+      "values": [
+        "5.5881 MPa",
+        "0.9882",
+        "4.01%"
+      ],
+      "evidence_text": "To evaluate the prediction accuracy of Model 1 under constant temperatures and strain rates, three metrics were calculated: RMSE, R² and AARE, yielding values of 5.5881 MPa, 0.9882, and 4.01 %, respectively.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "flow stress under transient strain rate increase (0.01→0.1 s⁻¹)",
+      "claim": "When the strain rate suddenly rises from 0.01 s⁻¹ (ε̇_I) to 0.1 s⁻¹ (ε̇_II), the experimental flow stress peak is lower than under constant conditions, and peak stress and steady-state stress decrease with increasing onset strain ε_I. Model 1 predicts similar steady-state stress regardless of ε_I, while Model 2 captures the lower steady-state stress due to the softening coefficient k_s.",
+      "values": [
+        "0.01→0.1 s⁻¹",
+        "lower peak stress",
+        "ε_I effect: larger → lower peak/steady stress",
+        "Model 1: steady stress unchanged",
+        "Model 2: steady stress decreases"
+      ],
+      "evidence_text": "when suddenly improving the strain rate from 0.01 s^{-1} (ε̇_I) to 0.1 s^{-1} (ε̇_II), the experimental stress gradually reached a lower peak compared to that observed under the constant deformation condition. … the greater the strain where the strain rate transiently increased, the lower the peak stress and steady-state stress in the second stage became. … Model 1, the steady-state stress predicted by Model 1 tended to be almost similar … Model 2 took the effect of the softening coefficient k_s on the characteristic stresses into account, the steady-state stress declined more significantly",
+      "figures": [
+        "Fig. 8a",
+        "Fig. 8b"
+      ],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "flow stress under transient strain rate decrease (0.1→0.01 s⁻¹)",
+      "claim": "When the strain rate drops from 0.1 s⁻¹ to 0.01 s⁻¹, the experimental stress falls below the constant condition stress within ~0.04 strain interval; larger ε_I accelerates the drop. Model 1 delays softening and cannot predict a lower steady-state stress, whereas Model 2 accurately reproduces the rapid stress decrease.",
+      "values": [
+        "0.1→0.01 s⁻¹",
+        "~0.04 strain interval",
+        "larger ε_I → faster drop",
+        "Model 1: delayed softening, steady stress not lower",
+        "Model 2: accurate rapid softening"
+      ],
+      "evidence_text": "when the strain rate transiently declined from 0.1 s^{-1} (ε̇_I) to 0.01 s^{-1} (ε̇_π), the experimental stress fell to a level lower than that of the constant deformation condition in the about 0.04 strain interval. The greater the strain where the strain rate transiently decreased, the faster the stress descended … Model 1 exhibited a remarkable delay in predicting the stress softening, while Model 2 proved to be more accurate … Model 1 could not predict a lower steady-state stress than that of the constant deformation condition",
+      "figures": [
+        "Fig. 8c",
+        "Fig. 8d"
+      ],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "flow stress under temperature decrease (1050→950°C)",
+      "claim": "When the temperature decreases from 1050°C to 950°C within 0.1 strain, WH strengthening raises stress, and a second-stage peak lower than under constant conditions appears; the peak stress decreases with larger ε_I. Model 1 underestimates stress softening, while Model 2 shows higher prediction accuracy.",
+      "values": [
+        "1050→950°C",
+        "0.1 strain interval",
+        "second-stage peak lower than constant",
+        "ε_I increase → lower peak",
+        "Model 1: weaker softening",
+        "Model 2: higher accuracy"
+      ],
+      "evidence_text": "when the temperature decreases from 1050 °C (T_I) to 950 °C (T_II) within a 0.1 strain interval, the strengthening WH brought an increase in experimental stress. And at the end of the temperature-decreasing process, a new peak lower than that of the constant deformation condition occurred … when the strain where the temperature started to decrease became greater, the peak stress level in the second stage was lower. … Model 1, the predicted stress softening was weaker … Model 2 showed a higher prediction accuracy",
+      "figures": [
+        "Fig. 9a",
+        "Fig. 9b"
+      ],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "flow stress under temperature increase (950→1050°C)",
+      "claim": "When the temperature rises from 950°C to 1050°C over 0.1 strain, the experimental stress gradually decreases below the constant condition stress; larger ε_I produces stronger softening. Model 1 again delays the stress softening, whereas Model 2 accurately captures the softening evolution.",
+      "values": [
+        "950→1050°C",
+        "0.1 strain interval",
+        "stress below constant condition",
+        "larger ε_I → stronger softening",
+        "Model 1: delayed softening",
+        "Model 2: accurate softening"
+      ],
+      "evidence_text": "rising temperature from 950 °C (T_I) to 1050 °C (T_II) in the 0.1 strain interval resulted in the experimental stress gradually decreasing to a lower level lower than that of the constant deformation condition. … the greater the strain where the temperature began to increase, the stronger the softening effect … Model 1 still had a delay in the prediction of the stress softening … Model 2 showed a higher prediction accuracy",
+      "figures": [
+        "Fig. 9c",
+        "Fig. 9d"
+      ],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "comparison",
+      "subject": "accuracy comparison under varying conditions (Table 3)",
+      "claim": "Under varying deformation conditions, Model 2 exhibits a higher R² and lower RMSE and AARE compared to Model 1, indicating superior performance as shown in Table 3.",
+      "values": [
+        "Model 2: higher R², lower RMSE, lower AARE"
+      ],
+      "evidence_text": "Table 3 shows the accuracy evaluation of flow stress using both models under varying deformation conditions. Compared to Model 1, Model 2 exhibited a higher R^2, as well as lower RMSE and AARE, indicating superior performance under varying conditions.",
+      "figures": [],
+      "tables": [
+        "Table 3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "figure_evidence",
+      "subject": "force-stroke FE validation",
+      "claim": "Finite element force-stroke simulations under varying deformation conditions show that Model 1 predicts a slower force decrease in the second stage and significantly overestimates the force magnitude, while Model 2 better reproduces the experimental force evolution (Fig. 10).",
+      "values": [
+        "Model 1: slower force decrease, overestimated force",
+        "Model 2: matches experiment"
+      ],
+      "evidence_text": "Due to the delay in forecasting the decline in flow stress following an abrupt decrease in strain rate or a temperature rise using Model 1 … the decrease velocity of the predicted force in the second stage was obviously lower than experimental results. Moreover, it can be observed that the second-stage force forecasted by Model 1 significantly exceeded the experimental curves, while Model 2 better captured the evolution of the force",
+      "figures": [
+        "Fig. 10"
+      ],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "microstructure",
+      "subject": "3D CA model material parameters",
+      "claim": "The 3D CA model uses material parameters: K=1.38×10⁻²³ J/K, C_drx=1.99×10¹⁰, b=2.45×10⁻¹⁰ m, ν=0.33, E=305,200 J/mol, δD_ob=5×10⁻¹⁰ m³/s, A_GB=37.5, H₀=2.63×10⁻⁷, P_GB=2, n_GB=2, V_m=7.18×10⁻⁶ m³/mol, α_dis=0.5, as listed in Table 4.",
+      "values": [
+        "K=1.38×10⁻²³ J/K",
+        "C_drx=1.99×10¹⁰",
+        "b=2.45×10⁻¹⁰ m",
+        "ν=0.33",
+        "E=305,200 J/mol",
+        "δD_ob=5×10⁻¹⁰ m³/s",
+        "A_GB=37.5",
+        "H₀=2.63×10⁻⁷",
+        "P_GB=2",
+        "n_GB=2",
+        "V_m=7.18×10⁻⁶ m³/mol",
+        "α_dis=0.5"
+      ],
+      "evidence_text": "K (J/K) 1.38×10^{-23} Eq. (30) Liu et al. (2024) C_drx 1.99×10^{10} Eq. (35) Appendix B1 b (m) 2.45×10^{-10} Eq. (30) Xu et al. (2023) v 0.33 Eq. (40) Wu et al. (2020) E (J/mol) 305,200 Eq. (30) Appendix B1 δD_ob (m3/s) 5×10^{-10} Eq. (41) Zhang et al. (2016b) A_GB 37.5 Eq. (30) Appendix B1 H_0 2.63×10^{-7} Eq. (30) Appendix B1 P_GB 2 Eq. (30) Appendix B1 n_GB 2 Eq. (30) Kocks and Mecking (2003) V_m 7.18×10^{-6} Eq. (36) Zheng et al. (2009) α_dis 0.5 Eq. (25) Zhang et al. (2016b)",
+      "figures": [],
+      "tables": [
+        "Table 4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "figure_evidence",
+      "subject": "dislocation density and flow behavior CA simulations",
+      "claim": "Fig. 11 displays 3D CA simulation results of dislocation density distributions and flow behaviors under different deformation conditions.",
+      "values": [],
+      "evidence_text": "Fig. 11. Simulation results of dislocation density distributions and flow behaviors under different deformation conditions.",
+      "figures": [
+        "Fig. 11"
+      ],
+      "tables": [],
+      "confidence": "high"
+    }
+  ],
+  "context_update": {
+    "summary": "This chunk details the 3D CA model framework (six cell state variables, CA loop handling transient conditions using k_s) and validates the constitutive models against experiments. Under constant deformation, DRX fraction evolution and flow stress predictions show high accuracy (R²>0.99, AARE 3.91% and 6.65%). Under varying strain rate (0.01↔0.1 s⁻¹) and temperature (1050↔950°C), Model 2 with modified t_0.5 and softening coefficient k_s accurately captures stress softening (peak lowering, faster stress drop), while Model 1 exhibits delays and higher force predictions. Force-stroke FE simulations confirm Model 2's superiority. Table 4 provides assigned material parameters for the 3D CA model. Fig. 11 previews CA simulation outputs. Subsequent chunks should reference these model accuracy data and material constants, and may present detailed CA microstructures of DRX under varying conditions.",
+    "material_systems": [
+      "low-alloy steel"
+    ],
+    "sample_aliases": [],
+    "processing_route": [
+      "hot compression under constant and varying temperature/strain rate",
+      "transient strain rate change at ε_I=0.2 or 0.4 (0.01↔0.1 s⁻¹)",
+      "transient temperature change over 0.1 strain interval (1050↔950°C)",
+      "holding 1250°C 180 s, then 60 s after compression"
+    ],
+    "key_variables": [
+      "strain rate ε̇",
+      "temperature T",
+      "first-stage strain ε_I",
+      "time for 50% DRX t_0.5",
+      "softening coefficient k_s",
+      "saturation stress σ_ss",
+      "peak stress",
+      "steady-state stress",
+      "DRX fraction φ_d",
+      "dislocation density",
+      "force",
+      "RMSE, R², AARE"
+    ],
+    "microstructure": [
+      "DRX grains",
+      "grain boundaries",
+      "dislocation density distributions",
+      "six CA cell state variables (DRX round, boundary index, grain size, dislocation density, migration distance)"
+    ],
+    "properties": [
+      "flow stress under constant and varying conditions",
+      "characteristic stresses (σ0, σss, σs, σc)",
+      "DRX fraction evolution",
+      "force-stroke curves"
+    ],
+    "mechanisms": [
+      "k_s effect on saturation stress under transient conditions",
+      "delay of stress softening due to unmodified t_0.5",
+      "dominance of dislocation multiplication and interfacial friction at high strain rate (10 s⁻¹)"
+    ],
+    "figures_or_tables": [
+      "Fig. 6",
+      "Fig. 7",
+      "Fig. 8a-d",
+      "Fig. 9a-d",
+      "Fig. 10",
+      "Fig. 11",
+      "Table 2",
+      "Table 3",
+      "Table 4"
+    ],
+    "unresolved_terms": [
+      "exact RMSE, R², AARE values for Model 1 and Model 2 under varying conditions in Table 3 not given in this chunk",
+      "specific values of t_0.5 modification not detailed",
+      "details of GA optimization in Table 1 not shown"
+    ]
+  }
+}

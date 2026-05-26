@@ -1,0 +1,11 @@
+{
+  "paper_id": "A43",
+  "figure_id": "figure_002",
+  "image_paths": [
+    "images/0659e24f6606b4ee1113602b03735739ad891d0520011d8d628551ec054863e6.jpg"
+  ],
+  "image_count": 1,
+  "image_type": "chart_flow",
+  "description": "This flowchart illustrates a comprehensive data-driven framework for predicting yield strength (YS) in medium-manganese low-density steels by systematically integrating four core strengthening mechanisms: dislocation strengthening, fine grain strengthening, solid solution strengthening, and Orowan strengthening (σ_YS = σ_0 + σ_g + σ_d + σ_Orowan). The workflow commences with collecting 177 original data pieces from existing literature, followed by feature filtering based on these mechanisms. Data enhancement utilizing Gaussian Mixture Model (GMM) expands the dataset from 177 to 776 samples while preserving distribution characteristics. Model selection evaluates seven machine learning algorithms (DT, KNN, XGB, CatB, ET, LGBM, AdaB), identifying Extra Trees (ET) as the optimal regressor. Algorithm optimization employs Genetic Algorithm (GA) to optimize ET hyperparameters, achieving superior predictive performance (R²=0.997, RMSE=31.6 MPa, MAPE=4.39%). Experimental verification includes engineering stress-strain curves and comparative bar charts showing predicted versus measured YS values for low-density steel samples prepared with different annealing temperatures (750°C, 800°C, 850°C), demonstrating that GA-ET possesses the best prediction accuracy.",
+  "confidence": 0.0
+}

@@ -1,0 +1,283 @@
+{
+  "claims": [
+    {
+      "claim_type": "comparison",
+      "subject": "SVR model performance among nine ML models",
+      "claim": "Among nine ML models (SVR, ET, MLP, Ridge, LightGBM, XGBoost, RF, LR, DT) trained with features {G, δ_Ec, D_Ec}, SVR achieved the highest R² of 0.85 and the lowest RMSE of 0.39.",
+      "values": [
+        "R²=0.85",
+        "RMSE=0.39",
+        "features: G, δ_Ec, D_Ec"
+      ],
+      "evidence_text": "The SVR model presented the highest R² value (0.85) and the lowest RMSE value (0.39), suggesting the SVR model had the best prediction capability.",
+      "figures": [
+        "Fig. 5"
+      ],
+      "tables": [
+        "Table 5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "modified solid solution strengthening equation",
+      "claim": "The solid solution strengthening equation Δσ_sss = Z·M·G·δ_Ec·D_Ec with Z=0.0056 and M=3.06 was introduced to modify the SVR model, improving R² to 0.89 and RMSE to 0.31, representing a 4.71% increase in R² and an 8.34% decrease in RMSE compared to the unmodified model.",
+      "values": [
+        "Z=0.0056",
+        "M=3.06",
+        "R²=0.89",
+        "RMSE=0.31",
+        "R² increase=4.71%",
+        "RMSE decrease=8.34%"
+      ],
+      "evidence_text": "It is found that the R² and RMSE value was 0.89 and 0.31, respectively. The R² increased by 4.71 %, and the RMSE decreased by 8.34 %, compared to the values without the modified solid solution strengthening theory (Fig. 5a).",
+      "figures": [
+        "Fig. 6",
+        "Fig. 5a"
+      ],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "comparison",
+      "subject": "inverse design optimization algorithms",
+      "claim": "Among four optimization algorithms (FA, PSO, SA, GWO) for inverse designing the alloy microhardness, FA gave the highest microhardness of 733.59 HV, followed by PSO (730.04 HV), GWO (708.60 HV), and SA (700.37 HV).",
+      "values": [
+        "FA: 733.59 HV",
+        "PSO: 730.04 HV",
+        "GWO: 708.60 HV",
+        "SA: 700.37 HV"
+      ],
+      "evidence_text": "The maximum microhardness calculated through the FA, PSO, SA, and GWO algorithm was 733.59 HV, 730.04 HV, 700.37 HV, and 708.60 HV, respectively.",
+      "figures": [
+        "Fig. 7"
+      ],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "composition",
+      "subject": "Sample 1 composition",
+      "claim": "Sample 1 of the Fe-C-Cr-Mn-Si alloy contained C 0.45, Si 0.19, Mn 1.53, Cr 14, S 0.01, Ni 0, P 0.014, Fe 83.806, Mo 0, V 0, W 0 wt% with δr=0.0542 and ΔHmix=-0.914 kJ/mol.",
+      "values": [
+        "C 0.45 wt%",
+        "Si 0.19",
+        "Mn 1.53",
+        "Cr 14",
+        "Ni 0",
+        "Mo 0",
+        "V 0",
+        "W 0",
+        "Fe 83.806",
+        "δr=0.0542",
+        "ΔHmix=-0.914 kJ/mol"
+      ],
+      "evidence_text": "Sample 1 0.45 0.19 1.53 14 0.01 0 0.014 83.806 0 0 0 0.0542 -0.914",
+      "figures": [],
+      "tables": [
+        "Table 6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "composition",
+      "subject": "Sample 2 composition",
+      "claim": "Sample 2 of the Fe-C-Cr-Mn-Si alloy contained C 0.53, Si 0.4, Mn 1.9, Cr 5.3, S 0.01, Ni 1.13, P 0.013, Fe 89.277, Mo 0, V 0.25, W 1.19 wt% with δr=0.0595 and ΔHmix=-1.213 kJ/mol.",
+      "values": [
+        "C 0.53 wt%",
+        "Si 0.4",
+        "Mn 1.9",
+        "Cr 5.3",
+        "Ni 1.13",
+        "V 0.25",
+        "W 1.19",
+        "Fe 89.277",
+        "δr=0.0595",
+        "ΔHmix=-1.213 kJ/mol"
+      ],
+      "evidence_text": "Sample 2 0.53 0.4 1.9 5.3 0.01 1.13 0.013 89.277 0 0.25 1.19 0.0595 -1.213",
+      "figures": [],
+      "tables": [
+        "Table 6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "composition",
+      "subject": "Sample 3 composition",
+      "claim": "Sample 3 of the Fe-C-Cr-Mn-Si alloy contained C 0.15, Si 0.5, Mn 1.5, Cr 5.2, S 0, Ni 1.2, P 0, Fe 89.7, Mo 1.5, V 0.25, W 0 wt% with δr=0.0335 and ΔHmix=-0.451 kJ/mol.",
+      "values": [
+        "C 0.15 wt%",
+        "Si 0.5",
+        "Mn 1.5",
+        "Cr 5.2",
+        "Ni 1.2",
+        "Mo 1.5",
+        "V 0.25",
+        "Fe 89.7",
+        "δr=0.0335",
+        "ΔHmix=-0.451 kJ/mol"
+      ],
+      "evidence_text": "Sample 3 0.15 0.5 1.5 5.2 0 1.2 0 89.7 1.5 0.25 0 0.0335 -0.451",
+      "figures": [],
+      "tables": [
+        "Table 6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "microstructure",
+      "subject": "XRD phase identification",
+      "claim": "XRD revealed that Sample 1 had a main Fe-Cr phase with peaks (100), (200), (211), while Samples 2 and 3 exhibited a main Fe-Cr-Ni phase with the same diffraction peaks, indicating a phase transition with Ni addition.",
+      "values": [
+        "Fe-Cr phase",
+        "Fe-Cr-Ni phase",
+        "peaks (100), (200), (211)"
+      ],
+      "evidence_text": "The main phase structure of the sample 1 was Fe-Cr phase with the diffraction peaks of 100, 200 and 211. With the Ni content increased, the main phase structure of the sample transferred to the Fe-Cr-Ni phase with the diffraction peaks of 100, 200 and 211.",
+      "figures": [
+        "Fig. 8a"
+      ],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "microstructure",
+      "subject": "lattice distortion from XRD peak shift",
+      "claim": "The alloy diffraction peaks shifted to the right compared to standard Fe (2θ 40-50°), attributed to lattice distortion caused by atomic radius differences between Cr, Ni, and Fe.",
+      "values": [
+        "2θ 40-50°",
+        "right shift",
+        "atomic radius differences Cr, Ni, Fe"
+      ],
+      "evidence_text": "Compared with the standard diffraction peak of Fe, it is found that the diffraction peak of the alloy was shifted to the right at the corresponding diffraction peak, which was due to the atomic radius differences between Cr, Ni and Fe, resulting in lattice distortion [45,46].",
+      "figures": [
+        "Fig. 8b"
+      ],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "property",
+      "subject": "microhardness prediction accuracy",
+      "claim": "The minimum prediction error between predicted and experimental microhardness was 1.17% for Sample 1 (predicted 521 HV vs experimental 515 HV), lower than 2.01% and 2.96% reported for high entropy alloys; Sample 2 gave 2.00% error (490 vs 500 HV) and Sample 3 gave 2.09% (415 vs 424 HV).",
+      "values": [
+        "1.17%",
+        "521 HV",
+        "515 HV",
+        "2.00%",
+        "2.09%",
+        "490 HV",
+        "500 HV",
+        "415 HV",
+        "424 HV"
+      ],
+      "evidence_text": "It is noteworthy that the minimum error between the predicted value and experimental value was 1.17 %, lower than 2.01 % and 2.96 % for predicting the hardness of high entropy alloys reported by Ren et al. and Huang et al..",
+      "figures": [
+        "Fig. 9"
+      ],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "solid solution phase stability criteria",
+      "claim": "Solid solution phases formed when δr < 0.066 and -11.6 < ΔHmix < 3.2 kJ/mol; the three samples had δr from 0.0335 to 0.0595 and ΔHmix from -1.213 to -0.451 kJ/mol, satisfying the criteria.",
+      "values": [
+        "δr < 0.066",
+        "-11.6 < ΔHmix < 3.2 kJ/mol",
+        "δr range 0.0335-0.0595",
+        "ΔHmix range -1.213 to -0.451 kJ/mol"
+      ],
+      "evidence_text": "It was reported that the solid solution phases were formed when δr < 0.066 and −11.6 < ΔHmix < 3.2 kJ/mol. We can find that the δ values of the samples were in a range of 0.0335 to 0.0595, lower than 0.066, and the ΔHmix values were in a range of −1.213 to −0.451 kJ/mol, belonging to the range of −11.6 to 3.2 kJ/mol.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "elemental impact on microhardness",
+      "claim": "Cr had the greatest positive impact on the microhardness of the Fe-C-Cr-Mn-Si steel, followed by Ni and Mo.",
+      "values": [
+        "Cr",
+        "Ni",
+        "Mo"
+      ],
+      "evidence_text": "Cr had the greatest positive impact on the microhardness of the Fe-C-Cr-Mn-Si steel, followed by Ni and Mo.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "influence of cohesive energy and shear modulus",
+      "claim": "The difference in cohesive energy, local cohesive energy mismatch, and shear modulus exhibited more pronounced impacts on the microhardness of the steel.",
+      "values": [
+        "δ_Ec",
+        "D_Ec",
+        "G"
+      ],
+      "evidence_text": "The difference in cohesive energy, local cohesive energy mismatch and shear modulus exhibited more pronounced impacts on the microhardness of the steel.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    }
+  ],
+  "context_update": {
+    "summary": "This chunk covers Sections 3.1.3–4, concluding the paper. It reports the screening of nine ML models for microhardness prediction using features {G, δ_Ec, D_Ec}; SVR achieved the highest R²=0.85 and lowest RMSE=0.39 (Fig. 5, Table 5). The model was then optimized by integrating a modified solid solution strengthening equation Δσ_sss = Z·M·G·δ_Ec·D_Ec (Z=0.0056, M=3.06), improving R² to 0.89 and RMSE to 0.31 (Fig. 6). For inverse design, the firefly algorithm (FA) yielded the highest microhardness of 733.59 HV (Fig. 7). Three Fe-C-Cr-Mn-Si alloy coatings were fabricated by cladding with compositions in Table 6. XRD (Fig. 8) showed Fe-Cr (Sample 1) and Fe-Cr-Ni (Samples 2,3) phases; the diffraction peaks shifted right due to atomic radius differences causing lattice distortion. Microhardness validation (Fig. 9) gave minimum error 1.17% (Sample 1: 521 pred. vs 515 exp.); the solid solution phases were confirmed by δr<0.066 and appropriate ΔHmix. Key conclusions: Cr has the greatest positive effect, and the cohesive energy difference and shear modulus are critical. This chunk provides final validation results, model improvements, and composition-property correlations for the Fe-C-Cr-Mn-Si system.",
+    "material_systems": [
+      "Fe-C-Cr-Mn-Si steel",
+      "Fe-Cr phase",
+      "Fe-Cr-Ni phase"
+    ],
+    "sample_aliases": [
+      "Sample 1",
+      "Sample 2",
+      "Sample 3"
+    ],
+    "processing_route": [
+      "cladding"
+    ],
+    "key_variables": [
+      "microhardness",
+      "R²",
+      "RMSE",
+      "G",
+      "δ_Ec",
+      "D_Ec",
+      "Z",
+      "M",
+      "FA",
+      "PSO",
+      "SA",
+      "GWO",
+      "δr",
+      "ΔHmix"
+    ],
+    "microstructure": [
+      "Fe-Cr phase in Sample 1",
+      "Fe-Cr-Ni phase in Samples 2 and 3",
+      "lattice distortion due to atomic radius differences (Cr, Ni vs Fe)"
+    ],
+    "properties": [
+      "Sample 1 microhardness 515 HV (predicted 521 HV, error 1.17%)",
+      "Sample 2 500 HV (predicted 490 HV, error 2.00%)",
+      "Sample 3 424 HV (predicted 415 HV, error 2.09%)"
+    ],
+    "mechanisms": [
+      "modified solid solution strengthening: Δσ_sss = Z·M·G·δ_Ec·D_Ec",
+      "solid solution phase formation criteria: δr<0.066 and -11.6<ΔHmix<3.2 kJ/mol",
+      "lattice distortion from atomic radius mismatch"
+    ],
+    "figures_or_tables": [
+      "Fig. 5",
+      "Fig. 6",
+      "Fig. 7",
+      "Fig. 8",
+      "Fig. 9",
+      "Table 5",
+      "Table 6"
+    ],
+    "unresolved_terms": []
+  }
+}

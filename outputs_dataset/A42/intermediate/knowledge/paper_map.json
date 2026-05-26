@@ -1,0 +1,39 @@
+{
+  "paper_id": "A42",
+  "title": "A modified Johnson-Cook model to determine plastic flow behavior of Fe-30Mn-9Al-0.8 C low-density steel during warm multiaxial forging",
+  "abstract_summary": "The microstructural evolution of Fe-30Mn-9Al-0.8C low-density steel during multiaxial forging (MAF) at 250 °C up to equivalent strain 2.3 was investigated. Dislocation density and grain size were quantified by XRD and EBSD, showing a rise in dislocation density and grain refinement with increasing passes, leading to significant strengthening. A modified Johnson-Cook constitutive model incorporating strain-dependent dislocation density and grain size was developed and implemented via an ABAQUS VUMAT, enabling finite element prediction of yield strength and flow stress. Tensile strength increased from 762 to 1548 MPa after five passes, but ductility dropped from 75% to 8%.",
+  "research_objective": "To understand the microstructural changes and their effect on mechanical properties during MAF of Fe-30Mn-9Al-0.8C low-density steel, and to develop a modified Johnson-Cook model incorporating dislocation density and grain size for accurate flow stress prediction.",
+  "material_systems": [
+    "Fe-30Mn-9Al-0.8C low-density steel (austenitic)"
+  ],
+  "main_process_variables": [
+    "Multiaxial forging (MAF)",
+    "Processing temperature: 250 °C",
+    "Normal strain per pass: 33%",
+    "Number of MAF passes: 0, 1, 3, 5",
+    "Equivalent strain range: up to 2.3",
+    "Deformation mode: warm multiaxial forging"
+  ],
+  "sample_aliases": [
+    "MAF-0 (0 pass, reference undeformed)",
+    "MAF-1 (1 pass)",
+    "MAF-3 (3 passes)",
+    "MAF-5 (5 passes)"
+  ],
+  "expected_information_axis": [
+    "processing",
+    "microstructure",
+    "property",
+    "mechanism",
+    "model",
+    "figure_evidence"
+  ],
+  "key_sections": [
+    "1. Introduction: background on MAF, grain refinement, strengthening mechanisms and motivation for modified constitutive model",
+    "2. Experimental material and methods: material details, MAF processing parameters, microstructural characterization (XRD, EBSD) and mechanical testing",
+    "3. Modified J-C constitutive model: formulation of strain-dependent dislocation density and grain size contributions",
+    "4. Finite element formulation and simulation model: implementation of VUMAT and FE model setup",
+    "5. Results and discussion: XRD analysis of dislocation density, microstructure evolution, mechanical properties and FE simulation validation",
+    "6. Conclusions: summary of strengthening mechanisms, model performance and process limits"
+  ]
+}

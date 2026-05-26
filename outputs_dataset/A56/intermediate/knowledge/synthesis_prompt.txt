@@ -1,0 +1,19 @@
+你是材料科学论文知识卡片写作助手。请根据 paper_map、compressed_core_facts 和可选 visual_evidence 生成高信息密度、事实饱满、适合语言模型训练的 Markdown。
+要求：
+1. 使用英文 Markdown。
+2. 重点突出 Processing-Structure-Property Chain，确保工艺变量、组织演化、性能结果和机理之间的因果链清晰可追踪。
+3. 优先保留高信息密度、高保真的科学事实：材料体系、样品编号、成分、工艺窗口、相/组织、缺陷/析出物、性能数值、图表证据和机理解释。
+4. 不要编造 core_facts 中没有的数值或结论；如果存在 weak support，只能作为低确定性补充，不能写成确定事实。
+5. 每个重要结论都应尽量带上样品/工艺/组织/性能限定条件；避免空泛表述，例如 'properties improved' 这类句子必须补充比较对象和证据。
+6. visual_evidence 不为空时，单独写 Visual Evidence，说明每个 figure 支持了什么事实、趋势或机理；若为空，不要写该章节。
+7. 使用以下结构组织：Material System, Processing Route and Variables, Microstructure and Phase Evolution, Processing-Structure-Property Chain, Mechanistic Interpretation, Key Quantitative Findings, Visual Evidence。
+8. 只输出 Markdown 正文，不要代码块包裹，不要解释生成过程。
+
+paper_map_json:
+{"paper_id": "A56", "title": "A56", "abstract_summary": "This work analyzes the formation of channel segregates in castings, emphasizing the role of small defects in the dendrite network. The analysis reexamines the limitations of existing criteria (e.g., [1]) and introduces an improved condition [10] that accounts for defect permeability. It concludes that defects significantly assist channel segregation by diverting interdendritic flow, even when flow is nearly parallel to isotherms.", "research_objective": "To investigate how small defects in the dendrite network promote channel segregation and to establish a more reliable criterion for its occurrence in real castings.", "material_systems": ["casting alloys (unspecified)"], "main_process_variables": ["liquid fraction", "interdendritic flow direction", "defect orientation relative to isotherms", "defect permeability", "constant n in criterion [10]"], "sample_aliases": [], "expected_information_axis": ["theory_modeling", "defect_effect_on_segregation", "flow_defect_interaction", "criterion_comparison", "segregation_mechanism"], "key_sections": ["Introduction: background on channel segregation and existing criteria [1] and [10]", "Model derivation: formulation of defect-permeability based criterion and percolation model considerations", "Discussion: limitations of model assumptions (ellipsoidal defect, constant n, high liquid fraction accuracy)", "Conclusions: defect-assisted growth, improved criterion, and flow parallel to isotherms can still lead to segregation"]}
+
+compressed_core_facts_json:
+{"paper_focus": {"title": "A56", "research_objective": "To investigate how small defects in the dendrite network promote channel segregation and to establish a more reliable criterion for its occurrence in real castings.", "material_systems": ["casting alloys (unspecified)"], "main_process_variables": ["liquid fraction", "interdendritic flow direction", "defect orientation relative to isotherms", "defect permeability", "constant n in criterion [10]"], "expected_information_axis": ["theory_modeling", "defect_effect_on_segregation", "flow_defect_interaction", "criterion_comparison", "segregation_mechanism"]}, "core_facts": {}, "visual_evidence": []}
+
+visual_evidence_json:
+[]

@@ -1,0 +1,215 @@
+{
+  "claims": [
+    {
+      "claim_type": "mechanism",
+      "subject": "Fe-Mn-Al-C low-density austenitic steels (SIMPLEX)",
+      "claim": "For compositions with 25–30 wt.% Mn and up to 4–5 wt.% Al or even 8 wt.% Al when naturally aged, the TWIP effect dominates and dislocation-based strain hardening followed by mechanical twinning is the primary strain-hardening mechanism.",
+      "values": [
+        "Mn: 25–30 wt.%",
+        "Al: up to 4–5 wt.% (or up to 8 wt.% when naturally aged)"
+      ],
+      "evidence_text": "For compositions with 25–30 wt.% Mn and up to 4–5 wt.% Al or even 8 wt.% Al, when naturally aged, the TWIP effect prevails as deformation mechanism.41,48 Thus, dislocation-based strain hardening, which is followed at higher loads by mechanical twinning, is the primary strain-hardening mechanism.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "Fe-Mn-Al-C austenitic steels after aging or with higher Al",
+      "claim": "After aging at 500–600°C or for alloys with higher Al content, twinning is reduced and strain hardening is essentially associated to κ-carbide and solid solution strengthening.",
+      "values": [
+        "aging temperature: 500–600°C"
+      ],
+      "evidence_text": "After aging at 500–600-C or for alloys with higher Al content, twinning is reduced and strain hardening is essentially associated to j-carbide and solidsolution strengthening (Figs. 5 and 6).",
+      "figures": [
+        "Figure 5",
+        "Figure 6"
+      ],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "Fe-Mn-Al-C steels with Al >10 wt.%",
+      "claim": "If the Al content exceeds 10 wt.%, then κ-carbides can form during quenching, and the exact strain-hardening mechanism for this case is still under investigation.",
+      "values": [
+        "Al: >10 wt.%"
+      ],
+      "evidence_text": "If the Al content exceeds 10 wt.%, then j-carbides can form during quenching. The exact strain-hardening mechanism for the latter case is still under investigation.",
+      "figures": [],
+      "tables": [],
+      "confidence": "medium"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "κ-carbide strengthened austenitic steels",
+      "claim": "In austenitic steels strengthened by regularly arranged nanosized κ-carbides, the prevalent deformation mechanisms consist in Orowan bypassing of longitudinal rods of κ-carbides and subsequent expansion of dislocation loops, assisted by dislocation cross-slip and, to a minor extent, shearing of κ-carbides.",
+      "values": [],
+      "evidence_text": "Gutierrez-Urrutia and Raabe48 suggested that the prevalent deformation mechanisms in austenitic steels that are strengthened by regularly arranged nanosized j-carbides, such as those shown in Fig. 5, consist in Orowan bypassing of longitudinal rods of j-carbides and subsequent expansion of dislocation loops, which is assisted by dislocation cross-slip and, to a minor extent, shearing of j-carbides.",
+      "figures": [
+        "Figure 5"
+      ],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "Dislocation accumulation in κ-carbide-containing steels",
+      "claim": "Higher dislocation densities within dislocation bundles are caused by minor topological differences in the spacing between κ-carbide rods, so that dislocations follow preferential soft paths within the widest channels, and these accumulations can lead to stress values high enough to shear κ-carbide interfaces.",
+      "values": [],
+      "evidence_text": "They further suggest that the higher dislocation densities observed within the dislocation bundles are caused by minor topological differences in the spacing between the j-carbide rods, so that dislocations follow preferential soft paths within the widest channels. In certain cases, these dislocation accumulations can lead to stress values that are high enough to shear j-carbide interfaces.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "modeling",
+      "subject": "Temperature-sensitive constitutive model for SIMPLEX TWIP steels",
+      "claim": "The constitutive model uses three dislocation densities (ρ_c, ρ_w, ρ_d) and the volume fraction of mechanical twins (f_tw) as state variables to describe strain hardening.",
+      "values": [
+        "state variables: ρ_c, ρ_w, ρ_d, f_tw"
+      ],
+      "evidence_text": "The model uses three different dislocation densities (ρ_c, ρ_w, and ρ_d) and the volume fraction of mechanical twins (f_tw) as state variables.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "modeling",
+      "subject": "Constitutive model parameters",
+      "claim": "The model uses b = 2.56 Å as Burgers vector, M = 3.06 as Taylor factor, n = 3 for the average number of active slip systems, and f_c = 0.9 and f_w = 0.1 as the volume fractions of dislocation cell interiors and cell walls, respectively.",
+      "values": [
+        "b = 2.56 Å",
+        "M = 3.06",
+        "n = 3",
+        "f_c = 0.9",
+        "f_w = 0.1"
+      ],
+      "evidence_text": "b = 2.56 Å the Burgers vector; M = 3.06 the Taylor factor; n = 3 a constant for the average number of active slip systems; f_c + f_w = 1 are the volume fractions of the dislocation cell interiors and the dislocation cell walls, set to 0.9 and 0.1, respectively",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "modeling",
+      "subject": "Dislocation climb velocity in the constitutive model",
+      "claim": "Dislocation climb velocity is given by v_climb = (D0/kT) * (GΩ/(π(1-ν)d_d)) * exp(-Q_c/kT), where D0 = 4.0×10⁻⁵ m²s⁻¹ is the self-diffusion coefficient and Q_c is the vacancy formation and migration energy.",
+      "values": [
+        "D0 = 4.0×10⁻⁵ m²s⁻¹"
+      ],
+      "evidence_text": "v_climb = (D0/kT) * (GΩ/(π(1-ν)d_d)) * exp(-Q_c/kT) (4) D0 = 4.0×10⁻⁵ m²s⁻¹ is the self-diffusion coefficient… and Q_c is the vacancy formation and migration energy.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "modeling",
+      "subject": "Mean free path for dislocation evolution",
+      "claim": "The mean free path inside dislocation cells and cell walls is calculated using a harmonic mean incorporating dislocation spacing, grain size, and twin spacing, i.e., 1/Λ_c = √ρ_c/i_c + 1/d + 1/(i_tw t) and 1/Λ_w = √(ρ_w+ρ_d)/i_w + 1/d + 1/(i_tw t).",
+      "values": [],
+      "evidence_text": "We use a harmonic mean to calculate the MFP, one in the cell interior and one in the cell wall: 1/Λ_c = √ρ_c/i_c + 1/d + 1/(i_tw t) (12) 1/Λ_w = √(ρ_w+ρ_d)/i_w + 1/d + 1/(i_tw t) (13)",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "figure_evidence",
+      "subject": "Fe-30Mn-1.2C-8Al steel aged at 600°C for 24 h",
+      "claim": "Figure 5 shows (a) joint atom probe tomographic (APT) and (b) Transmission Electron Microscopy (TEM) analysis of κ-carbides in a Fe-30Mn-1.2C-8Al low-density steel after 24 h at 600°C; the sample was synthesized after identifying suited compositions by the RAP process.",
+      "values": [
+        "alloy: Fe-30Mn-1.2C-8Al",
+        "aging: 600°C, 24 h"
+      ],
+      "evidence_text": "Fig. 5. (a) Joint atom probe tomographic and (b) Transmission Electron Microscopy (TEM) analysis of j-carbides in a Fe-30Mn-1.2C-8Al lowdensity steel after 24 h at 600-C. This sample was synthesized after identifying suited compositions by the RAP process (Color figure online).",
+      "figures": [
+        "Figure 5"
+      ],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "κ-carbides in Fe-30Mn-1.2C-8Al",
+      "claim": "APT iso-surface at 9 at.% C reveals κ-carbide particles with composition showing Fe ~50-55 at.%, Mn ~25 at.%, Al ~15 at.%, and C ~5-10 at.% from the line profile across the particle.",
+      "values": [
+        "Fe ~50-55 at.%",
+        "Mn ~25 at.%",
+        "Al ~15 at.%",
+        "C ~5-10 at.%",
+        "iso-surface 9 at.% C"
+      ],
+      "evidence_text": "iso-surface 9 at.% C… Fe Concentration, at.%: ~50, ~55,… Mn Concentration, at.%: ~25,… Al Concentration, at.%: ~15,… C Concentration, at.%: ~5",
+      "figures": [
+        "Figure 5"
+      ],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "modeling",
+      "subject": "Activation energy for slip in constitutive model",
+      "claim": "The activation energy for slip adopts a Kocks-type modified glide resistance profile, ΔG = Q_s [1 - (τ_eff/τ̂)^p]^q, where p and q are fitting parameters, τ_eff is resolved shear stress, and Q_s is total free energy to overcome an obstacle without external work.",
+      "values": [],
+      "evidence_text": "The activation energy is therefore taken as: ΔG = Q_s [1 - (τ_eff/τ̂)^p]^q (8). The variables p and q are fitting parameters… τ_eff is the resolved shear stress, and Q_s is the total free energy required to overcome an obstacle without the aid of external work.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "modeling",
+      "subject": "Constitutive model for Fe-Mn-C TWIP steels",
+      "claim": "The temperature-sensitive constitutive model by Steinmetz et al. extends the three-internal-variable model of Roters et al. with a physical description of twin nucleation, based on experiments on Fe-Mn-C TWIP steels using ECCI, TEM, and EBSD.",
+      "values": [],
+      "evidence_text": "A general form of a temperature-sensitive constitutive model for fcc metals with low stacking fault energy and mechanical twinning… was introduced by Steinmetz et al.50 It extends the three-internal-variable model of Roters et al.51 with a physical description of twin nucleation. The model is based upon experimental observations performed on Fe-Mn-C TWIP steels… by electron channeling contrast imaging, TEM, and EBSD.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    }
+  ],
+  "context_update": {
+    "summary": "This chunk introduces the microstructure-property relationships for low-density austenitic steels, distinguishing two deformation scenarios: TWIP-dominated in naturally aged 25–30Mn,<4–5Al (or <8Al when naturally aged) SIMPLEX steels, and κ-carbide/solid-solution strengthening dominated after aging at 500–600°C or at higher Al contents. For Al >10 wt.%, κ-carbides form during quenching and their exact strain-hardening mechanism remains under investigation. Key deformation mechanisms for κ-carbide-strengthened steels are described as Orowan bypassing of longitudinal nanorod κ-carbides with subsequent dislocation loop expansion, cross-slip, and occasional shearing, with strain localisation arising from topological variations in rod spacing. Figure 5 presents APT and TEM characterisation of κ-carbides in Fe-30Mn-1.2C-8Al aged at 600°C/24h, revealing composition (Fe~50–55 at.%, Mn~25 at.%, Al~15 at.%, C~5–10 at.%) and ordered L'1₂ structure. The chunk then presents a physics-based constitutive model for SIMPLEX TWIP steels using three dislocation densities (ρ_c, ρ_w, ρ_d) and twin volume fraction f_tw as internal state variables, with detailed evolution equations, parameters (b=2.56 Å, M=3.06, n=3, f_c=0.9, f_w=0.1, D0=4.0×10⁻⁵ m²s⁻¹), mean free path formulation, and a Kocks-type activation energy. Later sections are expected to extend the model to κ-carbide-containing steels or discuss hydrogen effects; thus it is important to remember the two alloy families (SIMPLEX vs. κ-carbide), the Orowan mechanism, the Fig. 5 sample details, and the model framework presented here.",
+    "material_systems": [
+      "SIMPLEX TWIP steel (Fe-25–30Mn, Al <4–5 wt.% or <8 wt.% when naturally aged)",
+      "κ-carbide strengthened austenitic steel (higher Al, Al >10 wt.% for quenching-induced κ-carbides)",
+      "Fe-30Mn-1.2C-8Al low-density steel"
+    ],
+    "sample_aliases": [
+      "Fe-30Mn-1.2C-8Al aged 600°C/24h for Fig. 5"
+    ],
+    "processing_route": [
+      "aging at 500–600°C",
+      "quenching for Al >10 wt.% to form κ-carbides",
+      "RAP combinatorial process to identify compositions for Fig. 5 sample"
+    ],
+    "key_variables": [
+      "Mn content: 25–30 wt.% (SIMPLEX)",
+      "Al content: <4–5 wt.% (or <8 wt.% natural aged) for TWIP; higher for κ-carbide strengthening; >10 wt.% quenching-induced κ",
+      "aging temperature: 500–600°C",
+      "strain rate",
+      "temperature (for constitutive model)",
+      "model parameters: b=2.56 Å, M=3.06, n=3, f_c=0.9, f_w=0.1, D0=4.0×10⁻⁵ m²s⁻¹"
+    ],
+    "microstructure": [
+      "κ-carbide L'1₂ ordered nanoparticles, rod-like morphology, nano-sized",
+      "composition of κ-carbide: Fe~50–55 at.%, Mn~25 at.%, Al~15 at.%, C~5–10 at.%",
+      "dislocation cell interior (ρ_c) and cell walls (ρ_w), dipoles (ρ_d), mechanical twins (f_tw)",
+      "dislocation bundles with higher density due to carbide spacing variations"
+    ],
+    "properties": [],
+    "mechanisms": [
+      "TWIP: dislocation-based strain hardening followed by mechanical twinning",
+      "κ-carbide strengthening: reduction of twinning, Orowan bypassing of κ-carbide rods, expansion of dislocation loops, cross-slip, minor shearing",
+      "dislocation climb",
+      "Kocks-type thermal activation for slip"
+    ],
+    "figures_or_tables": [
+      "Figure 4 (tensile properties for Fe-30Mn-1.2C-xAl alloys)",
+      "Figure 5 (APT and TEM of κ-carbides in Fe-30Mn-1.2C-8Al 600°C/24h)",
+      "Fig./Table 6 mentioned in text"
+    ],
+    "unresolved_terms": [
+      "exact strain-hardening mechanism for Al >10 wt.% with quenching-induced κ-carbides",
+      "notation: κ-carbide written as j-carbide in text"
+    ]
+  }
+}

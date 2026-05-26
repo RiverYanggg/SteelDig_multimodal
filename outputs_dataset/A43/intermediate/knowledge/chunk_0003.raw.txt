@@ -1,0 +1,46 @@
+{
+  "claims": [
+    {
+      "claim_type": "processing",
+      "subject": "GMM data augmentation",
+      "claim": "The GMM data augmentation process expanded the original dataset from 177 to 776 instances by determining the optimal number of Gaussian components via BIC, iteratively estimating parameters with the EM algorithm, and generating 599 synthetic samples through stratified sampling.",
+      "values": ["177", "776", "599"],
+      "evidence_text": "the optimal number of mixture components is determined based on the Bayesian Information Criterion (BIC)… Finally, a stratified sampling strategy is used to generate 599 synthetic samples, increasing the total size of the augmented dataset to 776",
+      "figures": ["Fig. 2"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "figure_evidence",
+      "subject": "Table 1",
+      "claim": "Table 1 presents a sample of the GMM-augmented dataset; one entry lists σ0=80 MPa, σg=528 MPa, σd=321 MPa, σOrowan=178 MPa, and YS=1000 MPa.",
+      "values": ["80 MPa", "528 MPa", "321 MPa", "178 MPa", "1000 MPa"],
+      "evidence_text": "Part of the data after data augmentation is shown in Table 1.",
+      "figures": [],
+      "tables": ["Table 1"],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "Kernel density distribution comparison",
+      "claim": "The kernel density distributions of GMM-generated dislocation, grain refinement, solid solution, Orowan strengthening, and yield strength data reproduce the core features and trends of the original data, with the YS distribution overlapping the original peak and sharing identical right truncation points.",
+      "values": [],
+      "evidence_text": "the generated data for all reinforcement mechanism parameters strictly adhere to the explicit value range. Particularly, the distribution of YS-generated data overlaps with the peak of the original data and shares identical right truncation points",
+      "figures": ["Fig. 3"],
+      "tables": [],
+      "confidence": "high"
+    }
+  ],
+  "context_update": {
+    "summary": "This chunk details the GMM data augmentation method used to expand the medium-manganese low-density steel dataset from 177 to 776 instances. The process involved z-score standardization, Bayesian Information Criterion (BIC) to select the optimal number of Gaussian components, Expectation Maximization (EM) for parameter estimation, and stratified sampling to generate 599 synthetic samples. Table 1 displays a portion of the augmented data with specific strengthening contribution values. Fig. 3 demonstrates that the GMM-generated feature and yield strength distributions closely mirror the original data, preserving the physical laws of strengthening mechanisms. The evaluation metrics RMSE, MAPE, and R² are mathematically defined, preparing for model performance assessment. Subsequent chunks should retain the augmented dataset size, the nature of the four strengthening mechanism features, the validation of distributional fidelity in Fig. 3, and the evaluation metrics as references for training and testing the predictive model.",
+    "material_systems": ["medium-manganese low-density steels"],
+    "sample_aliases": [],
+    "processing_route": ["GMM data augmentation", "z-score standardization", "BIC-based component selection", "EM parameter estimation", "stratified sampling (599 synthetic samples)"],
+    "key_variables": ["σ0", "σg", "σd", "σOrowan", "yield strength", "RMSE", "MAPE", "R²", "dataset size (177→776)"],
+    "microstructure": [],
+    "properties": ["yield strength"],
+    "mechanisms": ["solid solution strengthening", "grain refinement strengthening", "dislocation strengthening", "Orowan strengthening", "GMM-based data augmentation preserving strengthening physics"],
+    "figures_or_tables": ["Fig. 2", "Fig. 3", "Table 1"],
+    "unresolved_terms": []
+  }
+}

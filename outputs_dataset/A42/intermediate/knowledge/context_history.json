@@ -1,0 +1,297 @@
+[
+  {
+    "chunk_id": "chunk_0001",
+    "section": "A modified Johnson-Cook model to determine plastic flow behavior of Fe-30Mn-9Al-0.8 C low-density steel during warm multiaxial forging",
+    "previous_context_summary": "",
+    "context_update": {
+      "summary": "This chunk introduces the paper on Fe-30Mn-9Al-0.8C low-density steel processed by multiaxial forging (MAF) up to equivalent strain 2.3. The abstract reports key findings: 0,1,3,5 passes with 33% normal strain per pass; XRD and EBSD characterization; dislocation density increase from 0.79e15 to 8.98e15 m^-2; microstrain rise from 3.66e-3 to 6.8e-3; grain refinement from 50 μm to 13 μm; yield strength from 380 to 1528 MPa, UTS from 762 to 1548 MPa. Strengthening mechanisms are discussed, with dislocation strengthening dominant up to 3 passes. A modified Johnson-Cook model with dislocation density and grain size is proposed and implemented via ABAQUS VUMAT to predict flow stress and yield strength per pass. The introduction surveys MAF literature: temperature and strain rate effects, strain distribution uniformity, and prior data on austenitic steels, SUS316SS, and interstitial-free steel. Figures show MAF schematic (Fig. 1) and forged billets/tensile samples (Fig. 2). This chunk sets the stage for subsequent experimental details, microstructural analysis, constitutive model formulation, and FE simulations.",
+      "material_systems": [
+        "Fe-30Mn-9Al-0.8C low-density steel (austenitic)"
+      ],
+      "sample_aliases": [
+        "MAF-0",
+        "MAF-1",
+        "MAF-3",
+        "MAF-5"
+      ],
+      "processing_route": [
+        "multiaxial forging (MAF)",
+        "33% normal strain per pass",
+        "0, 1, 3, 5 passes",
+        "equivalent strain up to 2.3",
+        "temperature: warm (specific value not yet stated)"
+      ],
+      "key_variables": [
+        "number of MAF passes",
+        "dislocation density",
+        "grain size",
+        "microstrain",
+        "yield strength",
+        "ultimate tensile strength",
+        "equivalent strain"
+      ],
+      "microstructure": [
+        "initial grain size 50 μm",
+        "final grain size 13 μm",
+        "dislocation density range 0.79-8.98e15 m^-2",
+        "microstrain range 3.66e-3 to 6.8e-3"
+      ],
+      "properties": [
+        "yield strength 380 to 1528 MPa",
+        "UTS 762 to 1548 MPa",
+        "ductility >70% at RT and >95% at 300°C (from literature)"
+      ],
+      "mechanisms": [
+        "dislocation strengthening significant up to 3 passes",
+        "grain boundary strengthening",
+        "strain hardening"
+      ],
+      "figures_or_tables": [
+        "Fig. 1: schematic of MAF process",
+        "Fig. 2: forged billets and cut tensile samples"
+      ],
+      "unresolved_terms": [
+        "exact processing temperature (only warm)",
+        "detailed XRD and EBSD parameters",
+        "modified J-C model parameters and calibration",
+        "FE simulation setup and validation details"
+      ]
+    },
+    "rolling_context_summary": "Summary: This chunk introduces the paper on Fe-30Mn-9Al-0.8C low-density steel processed by multiaxial forging (MAF) up to equivalent strain 2.3. The abstract reports key findings: 0,1,3,5 passes with 33% normal strain per pass; XRD and EBSD characterization; dislocation density increase from 0.79e15 to 8.98e15 m^-2; microstrain rise from 3.66e-3 to 6.8e-3; grain refinement from 50 μm to 13 μm; yield strength from 380 to 1528 MPa, UTS from 762 to 1548 MPa. Strengthening mechanisms are discussed, with dislocation strengthening dominant up to 3 passes. A modified Johnson-Cook model with dislocation density and grain size is proposed and implemented via ABAQUS VUMAT to predict flow stress and yield strength per pass. The introduction surveys MAF literature: temperature and strain rate effects, strain distribution uniformity, and prior data on austenitic steels, SUS316SS, and interstitial-free steel. Figures show MAF schematic (Fig. 1) and forged billets/tensile samples (Fig. 2). This chunk sets the stage for subsequent experimental details, microstructural analysis, constitutive model formulation, and FE simulations.\nMaterial systems: Fe-30Mn-9Al-0.8C low-density steel (austenitic)\nSample aliases: MAF-0; MAF-1; MAF-3; MAF-5\nProcessing route: multiaxial forging (MAF); 33% normal strain per pass; 0, 1, 3, 5 passes; equivalent strain up to 2.3; temperature: warm (specific value not yet stated)\nKey variables: number of MAF passes; dislocation density; grain size; microstrain; yield strength; ultimate tensile strength; equivalent strain\nMicrostructure: initial grain size 50 μm; final grain size 13 μm; dislocation density range 0.79-8.98e15 m^-2; microstrain range 3.66e-3 to 6.8e-3\nProperties: yield strength 380 to 1528 MPa; UTS 762 to 1548 MPa; ductility >70% at RT and >95% at 300°C (from literature)\nMechanisms: dislocation strengthening significant up to 3 passes; grain boundary strengthening; strain hardening\nFigures or tables: Fig. 1: schematic of MAF process; Fig. 2: forged billets and cut tensile samples\nUnresolved terms: exact processing temperature (only warm); detailed XRD and EBSD parameters; modified J-C model parameters and calibration; FE simulation setup and validation details"
+  },
+  {
+    "chunk_id": "chunk_0002",
+    "section": "1. Introduction",
+    "previous_context_summary": "Summary: This chunk introduces the paper on Fe-30Mn-9Al-0.8C low-density steel processed by multiaxial forging (MAF) up to equivalent strain 2.3. The abstract reports key findings: 0,1,3,5 passes with 33% normal strain per pass; XRD and EBSD characterization; dislocation density increase from 0.79e15 to 8.98e15 m^-2; microstrain rise from 3.66e-3 to 6.8e-3; grain refinement from 50 μm to 13 μm; yield strength from 380 to 1528 MPa, UTS from 762 to 1548 MPa. Strengthening mechanisms are discussed, with dislocation strengthening dominant up to 3 passes. A modified Johnson-Cook model with dislocation density and grain size is proposed and implemented via ABAQUS VUMAT to predict flow stress and yield strength per pass. The introduction surveys MAF literature: temperature and strain rate effects, strain distribution uniformity, and prior data on austenitic steels, SUS316SS, and interstitial-free steel. Figures show MAF schematic (Fig. 1) and forged billets/tensile samples (Fig. 2). This chunk sets the stage for subsequent experimental details, microstructural analysis, constitutive model formulation, and FE simulations.\nMaterial systems: Fe-30Mn-9Al-0.8C low-density steel (austenitic)\nSample aliases: MAF-0; MAF-1; MAF-3; MAF-5\nProcessing route: multiaxial forging (MAF); 33% normal strain per pass; 0, 1, 3, 5 passes; equivalent strain up to 2.3; temperature: warm (specific value not yet stated)\nKey variables: number of MAF passes; dislocation density; grain size; microstrain; yield strength; ultimate tensile strength; equivalent strain\nMicrostructure: initial grain size 50 μm; final grain size 13 μm; dislocation density range 0.79-8.98e15 m^-2; microstrain range 3.66e-3 to 6.8e-3\nProperties: yield strength 380 to 1528 MPa; UTS 762 to 1548 MPa; ductility >70% at RT and >95% at 300°C (from literature)\nMechanisms: dislocation strengthening significant up to 3 passes; grain boundary strengthening; strain hardening\nFigures or tables: Fig. 1: schematic of MAF process; Fig. 2: forged billets and cut tensile samples\nUnresolved terms: exact processing temperature (only warm); detailed XRD and EBSD parameters; modified J-C model parameters and calibration; FE simulation setup and validation details",
+    "context_update": {
+      "summary": "This chunk covers the experimental methodology and initial definitions for the study of Fe-30Mn-9Al-0.8C low-density steel processed by multiaxial forging (MAF). The material was vacuum induction melted, homogenized (1200°C/2h), hot forged (1200–900°C, >60%), solution treated (1050°C/1h, WQ), resulting in actual composition Fe-30.6Mn-9.1Al-0.79C and density 6.8 g/cm³. MAF billets (30×20×20 mm) were lubricated with MoS2, heated to 250°C, and deformed at 1 mm/s. Each pass imparts 33% normal strain (equivalent strain 0.47); samples up to 5 passes were studied. Table 1 provides XRD-derived crystallite size (61 nm to 10.12 nm), microstrain (3.66×10⁻³ to 6.88×10⁻³), and dislocation density (0.79×10¹⁵ to 8.98×10¹⁵ m⁻²) for 0,1,3,5 passes. EBSD employed >15° grain boundaries for grain size. No carbide evolution was seen by XRD (Fig. 5). The modified J-C model incorporates grain boundary strengthening (Hall-Petch, k=2374 MPa) and dislocation strengthening (Taylor, α=0.24, M=3.0, G=61 GPa). FE simulation in ABAQUS/Explicit uses 41382 C3D8R elements (0.6 mm) and friction 0.15. Tensile tests were defined (RT, 1×10⁻³ s⁻¹) but results are not yet reported. Subsequent chunks should build on these processing-microstructure links, the quantified XRD data, and the model parameters to evaluate predicted flow stress and validate the FE model.",
+      "material_systems": [
+        "Fe-30Mn-9Al-0.8C low-density steel (actual Fe-30.6Mn-9.1Al-0.79C), austenitic"
+      ],
+      "sample_aliases": [
+        "MAF-0",
+        "MAF-1",
+        "MAF-3",
+        "MAF-5"
+      ],
+      "processing_route": [
+        "Vacuum induction melting, 600 mbar Ar during Mn addition",
+        "Homogenization 1200°C/2h",
+        "Hot forging 1200–900°C, >60% deformation, water quench",
+        "Solutionizing 1050°C/1h, water quench",
+        "MAF: 30×20×20 mm billets, MoS2 lubrication, 250°C preheat, 1 mm/s, 33% normal strain per pass, equivalent strain 0.47/pass, max 5 passes"
+      ],
+      "key_variables": [
+        "number of MAF passes",
+        "equivalent strain (0, 0.47, 1.4, 2.34)",
+        "crystallite size (61, 13.4, 10.87, 10.12 nm)",
+        "microstrain (3.66, 5.18, 6.13, 6.88 ×10⁻³)",
+        "dislocation density (0.79, 5.57, 7.5, 8.98 ×10¹⁵ m⁻²)",
+        "Hall-Petch constant k = 2374 MPa",
+        "Taylor parameters: α=0.24, M=3.0, G=61 GPa",
+        "FE mesh: 0.6 mm, 41382 C3D8R elements",
+        "Friction coefficient 0.15"
+      ],
+      "microstructure": [
+        "XRD: Co-Kα, 2°/min, 0.02° step, 40–120° 2θ",
+        "Dislocation density via Eq. (1) from crystallite size and microstrain",
+        "EBSD: grain size from >15° boundaries",
+        "Table 1: all XRD results per pass"
+      ],
+      "properties": [
+        "Tensile testing configured (RT, 1×10⁻³ s⁻¹, 2 specimens/pass) – results pending in later chunks"
+      ],
+      "mechanisms": [
+        "Grain boundary strengthening (Hall-Petch, k=2374 MPa)",
+        "Dislocation strengthening (Taylor equation)",
+        "Modified J-C model merges both into flow stress"
+      ],
+      "figures_or_tables": [
+        "Fig. 3(a,b): sampling positions and tensile specimen dimensions",
+        "Fig. 4: half-sectional FE model before/after compression",
+        "Fig. 5: XRD patterns showing no carbide evolution",
+        "Fig. 6: dislocation density vs. equivalent strain (measured + predicted)",
+        "Table 1: XRD crystallite size, microstrain, dislocation density"
+      ],
+      "unresolved_terms": []
+    },
+    "rolling_context_summary": "Summary: This chunk covers the experimental methodology and initial definitions for the study of Fe-30Mn-9Al-0.8C low-density steel processed by multiaxial forging (MAF). The material was vacuum induction melted, homogenized (1200°C/2h), hot forged (1200–900°C, >60%), solution treated (1050°C/1h, WQ), resulting in actual composition Fe-30.6Mn-9.1Al-0.79C and density 6.8 g/cm³. MAF billets (30×20×20 mm) were lubricated with MoS2, heated to 250°C, and deformed at 1 mm/s. Each pass imparts 33% normal strain (equivalent strain 0.47); samples up to 5 passes were studied. Table 1 provides XRD-derived crystallite size (61 nm to 10.12 nm), microstrain (3.66×10⁻³ to 6.88×10⁻³), and dislocation density (0.79×10¹⁵ to 8.98×10¹⁵ m⁻²) for 0,1,3,5 passes. EBSD employed >15° grain boundaries for grain size. No carbide evolution was seen by XRD (Fig. 5). The modified J-C model incorporates grain boundary strengthening (Hall-Petch, k=2374 MPa) and dislocation strengthening (Taylor, α=0.24, M=3.0, G=61 GPa). FE simulation in ABAQUS/Explicit uses 41382 C3D8R elements (0.6 mm) and friction 0.15. Tensile tests were defined (RT, 1×10⁻³ s⁻¹) but results are not yet reported. Subsequent chunks should build on these processing-microstructure links, the quantified XRD data, and the model parameters to evaluate predicted flow stress and validate the FE model.\nMaterial systems: Fe-30Mn-9Al-0.8C low-density steel (austenitic); Fe-30Mn-9Al-0.8C low-density steel (actual Fe-30.6Mn-9.1Al-0.79C), austenitic\nSample aliases: MAF-0; MAF-1; MAF-3; MAF-5\nProcessing route: multiaxial forging (MAF); 33% normal strain per pass; 0, 1, 3, 5 passes; equivalent strain up to 2.3; temperature: warm (specific value not yet stated); Vacuum induction melting, 600 mbar Ar during Mn addition; Homogenization 1200°C/2h; Hot forging 1200–900°C, >60% deformation, water quench\nKey variables: number of MAF passes; dislocation density; grain size; microstrain; yield strength; ultimate tensile strength; equivalent strain; equivalent strain (0, 0.47, 1.4, 2.34)\nMicrostructure: initial grain size 50 μm; final grain size 13 μm; dislocation density range 0.79-8.98e15 m^-2; microstrain range 3.66e-3 to 6.8e-3; XRD: Co-Kα, 2°/min, 0.02° step, 40–120° 2θ; Dislocation density via Eq. (1) from crystallite size and microstrain; EBSD: grain size from >15° boundaries; Table 1: all XRD results per pass\nProperties: yield strength 380 to 1528 MPa; UTS 762 to 1548 MPa; ductility >70% at RT and >95% at 300°C (from literature); Tensile testing configured (RT, 1×10⁻³ s⁻¹, 2 specimens/pass) – results pending in later chunks\nMechanisms: dislocation strengthening significant up to 3 passes; grain boundary strengthening; strain hardening; Grain boundary strengthening (Hall-Petch, k=2374 MPa); Dislocation strengthening (Taylor equation); Modified J-C model merges both into flow stress"
+  },
+  {
+    "chunk_id": "chunk_0003",
+    "section": "4. Finite element formulation and simulation model",
+    "previous_context_summary": "Summary: This chunk covers the experimental methodology and initial definitions for the study of Fe-30Mn-9Al-0.8C low-density steel processed by multiaxial forging (MAF). The material was vacuum induction melted, homogenized (1200°C/2h), hot forged (1200–900°C, >60%), solution treated (1050°C/1h, WQ), resulting in actual composition Fe-30.6Mn-9.1Al-0.79C and density 6.8 g/cm³. MAF billets (30×20×20 mm) were lubricated with MoS2, heated to 250°C, and deformed at 1 mm/s. Each pass imparts 33% normal strain (equivalent strain 0.47); samples up to 5 passes were studied. Table 1 provides XRD-derived crystallite size (61 nm to 10.12 nm), microstrain (3.66×10⁻³ to 6.88×10⁻³), and dislocation density (0.79×10¹⁵ to 8.98×10¹⁵ m⁻²) for 0,1,3,5 passes. EBSD employed >15° grain boundaries for grain size. No carbide evolution was seen by XRD (Fig. 5). The modified J-C model incorporates grain boundary strengthening (Hall-Petch, k=2374 MPa) and dislocation strengthening (Taylor, α=0.24, M=3.0, G=61 GPa). FE simulation in ABAQUS/Explicit uses 41382 C3D8R elements (0.6 mm) and friction 0.15. Tensile tests were defined (RT, 1×10⁻³ s⁻¹) but results are not yet reported. Subsequent chunks should build on these processing-microstructure links, the quantified XRD data, and the model parameters to evaluate predicted flow stress and validate the FE model.\nMaterial systems: Fe-30Mn-9Al-0.8C low-density steel (austenitic); Fe-30Mn-9Al-0.8C low-density steel (actual Fe-30.6Mn-9.1Al-0.79C), austenitic\nSample aliases: MAF-0; MAF-1; MAF-3; MAF-5\nProcessing route: multiaxial forging (MAF); 33% normal strain per pass; 0, 1, 3, 5 passes; equivalent strain up to 2.3; temperature: warm (specific value not yet stated); Vacuum induction melting, 600 mbar Ar during Mn addition; Homogenization 1200°C/2h; Hot forging 1200–900°C, >60% deformation, water quench\nKey variables: number of MAF passes; dislocation density; grain size; microstrain; yield strength; ultimate tensile strength; equivalent strain; equivalent strain (0, 0.47, 1.4, 2.34)\nMicrostructure: initial grain size 50 μm; final grain size 13 μm; dislocation density range 0.79-8.98e15 m^-2; microstrain range 3.66e-3 to 6.8e-3; XRD: Co-Kα, 2°/min, 0.02° step, 40–120° 2θ; Dislocation density via Eq. (1) from crystallite size and microstrain; EBSD: grain size from >15° boundaries; Table 1: all XRD results per pass\nProperties: yield strength 380 to 1528 MPa; UTS 762 to 1548 MPa; ductility >70% at RT and >95% at 300°C (from literature); Tensile testing configured (RT, 1×10⁻³ s⁻¹, 2 specimens/pass) – results pending in later chunks\nMechanisms: dislocation strengthening significant up to 3 passes; grain boundary strengthening; strain hardening; Grain boundary strengthening (Hall-Petch, k=2374 MPa); Dislocation strengthening (Taylor equation); Modified J-C model merges both into flow stress",
+    "context_update": {
+      "summary": "This chunk reports XRD and EBSD microstructural characterization of Fe-30Mn-9Al-0.8C low-density steel after multiaxial forging (MAF) at 250 °C up to 5 passes (equivalent strain 2.3). XRD confirmed a fully austenitic structure and quantified dislocation density increasing from 0.79×10^15 m⁻² (MAF-0) to 8.98×10^15 m⁻² (MAF-5), which was fitted to an exponential saturation model (Eq. 7) with k1=7.9×10^15 m⁻² and k2=1.813; deceleration and possible dislocation rearrangement were observed at critical strain 2.3. EBSD image quality maps revealed high-angle boundary fraction initially decreased from 0.62 to 0.24 (MAF-3) and then increased to 0.69 (MAF-5) due to conversion of low-angle boundaries. Texture evolved from strong [101] alignment in MAF-0 to random orientations after multiple passes. Grain size refined from 50 μm to 13 μm, following an exponential decay (k3=0.639, R²=0.99052). KAM maps confirmed increasing plastic strain from 0.34° to 1.07°. These microstructural metrics provide the experimental foundation for the modified Johnson-Cook model and upcoming FE validation. Subsequent chunks should incorporate these data into flow stress predictions and report tensile properties.",
+      "material_systems": [
+        "Fe-30Mn-9Al-0.8C low-density steel (austenitic)"
+      ],
+      "sample_aliases": [
+        "MAF-0",
+        "MAF-1",
+        "MAF-3",
+        "MAF-5"
+      ],
+      "processing_route": [
+        "multiaxial forging (MAF) at 250 °C",
+        "33% normal strain per pass",
+        "0, 1, 3, 5 passes",
+        "equivalent strain up to 2.3"
+      ],
+      "key_variables": [
+        "dislocation density",
+        "grain size",
+        "high-angle grain boundary fraction",
+        "low-angle grain boundary fraction",
+        "KAM",
+        "equivalent plastic strain"
+      ],
+      "microstructure": [
+        "austenite phase only",
+        "grain size: MAF-0 50 μm, MAF-1 35 μm, MAF-3 20 μm, MAF-5 13 μm",
+        "HAB fraction: 0.62, 0.29, 0.24, 0.69",
+        "LAG fraction: 0.367, 0.708, 0.759, 0.301",
+        "texture: strong [101] and [111] // ND in MAF-0, randomized with passes",
+        "KAM: 0.34°, 0.72°, 0.87°, 1.07°"
+      ],
+      "properties": [],
+      "mechanisms": [
+        "dislocation accumulation and rearrangement",
+        "grain refinement",
+        "texture randomization",
+        "strain hardening"
+      ],
+      "figures_or_tables": [
+        "Fig. 5",
+        "Fig. 6",
+        "Fig. 7",
+        "Fig. 8",
+        "Fig. 9",
+        "Table 1"
+      ],
+      "unresolved_terms": []
+    },
+    "rolling_context_summary": "Summary: Subsequent chunks should build on these processing-microstructure links, the quantified XRD data, and the model parameters to evaluate predicted flow stress and validate the FE model. This chunk reports XRD and EBSD microstructural characterization of Fe-30Mn-9Al-0.8C low-density steel after multiaxial forging (MAF) at 250 °C up to 5 passes (equivalent strain 2.3). XRD confirmed a fully austenitic structure and quantified dislocation density increasing from 0.79×10^15 m⁻² (MAF-0) to 8.98×10^15 m⁻² (MAF-5), which was fitted to an exponential saturation model (Eq. 7) with k1=7.9×10^15 m⁻² and k2=1.813; deceleration and possible dislocation rearrangement were observed at critical strain 2.3. EBSD image quality maps revealed high-angle boundary fraction initially decreased from 0.62 to 0.24 (MAF-3) and then increased to 0.69 (MAF-5) due to conversion of low-angle boundaries. Texture evolved from strong [101] alignment in MAF-0 to random orientations after multiple passes. Grain size refined from 50 μm to 13 μm, following an exponential decay (k3=0.639, R²=0.99052). KAM maps confirmed increasing plastic strain from 0.34° to 1.07°. These microstructural metrics provide the experimental foundation for the modified Johnson-Cook model and upcoming FE validation. Subsequent chunks should incorporate these data into flow stress predictions and report tensile properties.\nMaterial systems: Fe-30Mn-9Al-0.8C low-density steel (austenitic); Fe-30Mn-9Al-0.8C low-density steel (actual Fe-30.6Mn-9.1Al-0.79C), austenitic\nSample aliases: MAF-0; MAF-1; MAF-3; MAF-5\nProcessing route: multiaxial forging (MAF); 33% normal strain per pass; 0, 1, 3, 5 passes; equivalent strain up to 2.3; temperature: warm (specific value not yet stated); Vacuum induction melting, 600 mbar Ar during Mn addition; Homogenization 1200°C/2h; Hot forging 1200–900°C, >60% deformation, water quench\nKey variables: number of MAF passes; dislocation density; grain size; microstrain; yield strength; ultimate tensile strength; equivalent strain; equivalent strain (0, 0.47, 1.4, 2.34)\nMicrostructure: initial grain size 50 μm; final grain size 13 μm; dislocation density range 0.79-8.98e15 m^-2; microstrain range 3.66e-3 to 6.8e-3; XRD: Co-Kα, 2°/min, 0.02° step, 40–120° 2θ; Dislocation density via Eq. (1) from crystallite size and microstrain; EBSD: grain size from >15° boundaries; Table 1: all XRD results per pass\nProperties: yield strength 380 to 1528 MPa; UTS 762 to 1548 MPa; ductility >70% at RT and >95% at 300°C (from literature); Tensile testing configured (RT, 1×10⁻³ s⁻¹, 2 specimens/pass) – results pending in later chunks\nMechanisms: dislocation strengthening significant up to 3 passes; grain boundary strengthening; strain hardening; Grain boundary strengthening (Hall-Petch, k=2374 MPa); Dislocation strengthening (Taylor equation); Modified J-C model merges both into flow stress; dislocation accumulation and rearrangement; grain refinement"
+  },
+  {
+    "chunk_id": "chunk_0004",
+    "section": "5.2. Microstructure",
+    "previous_context_summary": "Summary: Subsequent chunks should build on these processing-microstructure links, the quantified XRD data, and the model parameters to evaluate predicted flow stress and validate the FE model. This chunk reports XRD and EBSD microstructural characterization of Fe-30Mn-9Al-0.8C low-density steel after multiaxial forging (MAF) at 250 °C up to 5 passes (equivalent strain 2.3). XRD confirmed a fully austenitic structure and quantified dislocation density increasing from 0.79×10^15 m⁻² (MAF-0) to 8.98×10^15 m⁻² (MAF-5), which was fitted to an exponential saturation model (Eq. 7) with k1=7.9×10^15 m⁻² and k2=1.813; deceleration and possible dislocation rearrangement were observed at critical strain 2.3. EBSD image quality maps revealed high-angle boundary fraction initially decreased from 0.62 to 0.24 (MAF-3) and then increased to 0.69 (MAF-5) due to conversion of low-angle boundaries. Texture evolved from strong [101] alignment in MAF-0 to random orientations after multiple passes. Grain size refined from 50 μm to 13 μm, following an exponential decay (k3=0.639, R²=0.99052). KAM maps confirmed increasing plastic strain from 0.34° to 1.07°. These microstructural metrics provide the experimental foundation for the modified Johnson-Cook model and upcoming FE validation. Subsequent chunks should incorporate these data into flow stress predictions and report tensile properties.\nMaterial systems: Fe-30Mn-9Al-0.8C low-density steel (austenitic); Fe-30Mn-9Al-0.8C low-density steel (actual Fe-30.6Mn-9.1Al-0.79C), austenitic\nSample aliases: MAF-0; MAF-1; MAF-3; MAF-5\nProcessing route: multiaxial forging (MAF); 33% normal strain per pass; 0, 1, 3, 5 passes; equivalent strain up to 2.3; temperature: warm (specific value not yet stated); Vacuum induction melting, 600 mbar Ar during Mn addition; Homogenization 1200°C/2h; Hot forging 1200–900°C, >60% deformation, water quench\nKey variables: number of MAF passes; dislocation density; grain size; microstrain; yield strength; ultimate tensile strength; equivalent strain; equivalent strain (0, 0.47, 1.4, 2.34)\nMicrostructure: initial grain size 50 μm; final grain size 13 μm; dislocation density range 0.79-8.98e15 m^-2; microstrain range 3.66e-3 to 6.8e-3; XRD: Co-Kα, 2°/min, 0.02° step, 40–120° 2θ; Dislocation density via Eq. (1) from crystallite size and microstrain; EBSD: grain size from >15° boundaries; Table 1: all XRD results per pass\nProperties: yield strength 380 to 1528 MPa; UTS 762 to 1548 MPa; ductility >70% at RT and >95% at 300°C (from literature); Tensile testing configured (RT, 1×10⁻³ s⁻¹, 2 specimens/pass) – results pending in later chunks\nMechanisms: dislocation strengthening significant up to 3 passes; grain boundary strengthening; strain hardening; Grain boundary strengthening (Hall-Petch, k=2374 MPa); Dislocation strengthening (Taylor equation); Modified J-C model merges both into flow stress; dislocation accumulation and rearrangement; grain refinement",
+    "context_update": {
+      "summary": "The current chunk reports the mechanical properties of Fe-30Mn-9Al-0.8C low-density steel after warm multiaxial forging (MAF) at 250 °C for 0, 1, 3, and 5 passes. Yield strength rises from 380 to 1528 MPa, ultimate tensile strength from 762 to 1548 MPa, while total elongation decreases from 75% to 8% (uniform elongation 63% to 0.8%). Work hardening capability declines with passes. Strengthening is attributed to dislocation density increase (from 0.79 to 8.98×10^15 m⁻²) and grain refinement (50 to 13 μm); dislocation strengthening dominates early stages (1-3 passes), while grain boundary strengthening dominates later (3-5 passes), as quantified in Table 2. No deformation twinning; negligible annealing twin fractions (0.007 in MAF-1, 0.003 in MAF-5). The section then describes finite element modeling using a modified Johnson-Cook model implemented via ABAQUS VUMAT with six state variables (Table 3) and material properties (Table 4). Simulation maps (Fig. 12) show strain concentration in the center, with maximum strain ~0.6 after 1 pass and ~2.6 after 5 passes. Predicted yield strengths (Fig. 13) match experimental values well up to 3 passes but are lower after 5 passes, possibly due to unaccounted texture effects. Subsequent chunks should note the FE model’s limitations and may address texture influence.",
+      "material_systems": [
+        "Fe-30Mn-9Al-0.8C low-density steel"
+      ],
+      "sample_aliases": [
+        "MAF-0",
+        "MAF-1",
+        "MAF-3",
+        "MAF-5"
+      ],
+      "processing_route": [
+        "multiaxial forging at 250 °C",
+        "0, 1, 3, 5 passes",
+        "imposed equivalent strains 0.46, 1.4, 2.3"
+      ],
+      "key_variables": [
+        "yield strength",
+        "ultimate tensile strength",
+        "total elongation",
+        "uniform elongation",
+        "work hardening",
+        "dislocation density contribution to yield",
+        "grain refinement contribution to yield",
+        "simulated maximum strain",
+        "simulated yield strength",
+        "material properties (Table 4)"
+      ],
+      "microstructure": [
+        "grain size 50, 35, 20, 13 μm",
+        "dislocation density 0.79→5.57→7.8→8.98×10^15 m⁻²",
+        "no deformation twinning",
+        "annealing twin fraction 0.007 (MAF-1), 0.003 (MAF-5)"
+      ],
+      "properties": [
+        "YS: 380, 1040, 1279, 1528 MPa",
+        "UTS: 762, 1368, 1415, 1548 MPa",
+        "Total elongation: 75%, 30%, 13.7%, 8%",
+        "Uniform elongation: 63%, -, 3%, 0.8%",
+        "Work hardening: 392, 328, 126, 20 MPa"
+      ],
+      "mechanisms": [
+        "dislocation strengthening dominant initially (1-3 passes)",
+        "grain boundary strengthening dominant later (3-5 passes)",
+        "work hardening ability decreases with increasing passes due to high dislocation density and microstrain",
+        "texture randomization may increase isotropic strength, causing simulation to underestimate yield",
+        "strain concentrates in central region leading to higher local deformation"
+      ],
+      "figures_or_tables": [
+        "Fig. 8",
+        "Fig. 9",
+        "Fig. 10",
+        "Fig. 11",
+        "Fig. 12",
+        "Fig. 13",
+        "Table 2",
+        "Table 3",
+        "Table 4"
+      ],
+      "unresolved_terms": []
+    },
+    "rolling_context_summary": "Summary: The current chunk reports the mechanical properties of Fe-30Mn-9Al-0.8C low-density steel after warm multiaxial forging (MAF) at 250 °C for 0, 1, 3, and 5 passes. Yield strength rises from 380 to 1528 MPa, ultimate tensile strength from 762 to 1548 MPa, while total elongation decreases from 75% to 8% (uniform elongation 63% to 0.8%). Work hardening capability declines with passes. Strengthening is attributed to dislocation density increase (from 0.79 to 8.98×10^15 m⁻²) and grain refinement (50 to 13 μm); dislocation strengthening dominates early stages (1-3 passes), while grain boundary strengthening dominates later (3-5 passes), as quantified in Table 2. No deformation twinning; negligible annealing twin fractions (0.007 in MAF-1, 0.003 in MAF-5). The section then describes finite element modeling using a modified Johnson-Cook model implemented via ABAQUS VUMAT with six state variables (Table 3) and material properties (Table 4). Simulation maps (Fig. 12) show strain concentration in the center, with maximum strain ~0.6 after 1 pass and ~2.6 after 5 passes. Predicted yield strengths (Fig. 13) match experimental values well up to 3 passes but are lower after 5 passes, possibly due to unaccounted texture effects. Subsequent chunks should note the FE model’s limitations and may address texture influence.\nMaterial systems: Fe-30Mn-9Al-0.8C low-density steel (austenitic); Fe-30Mn-9Al-0.8C low-density steel (actual Fe-30.6Mn-9.1Al-0.79C), austenitic; Fe-30Mn-9Al-0.8C low-density steel\nSample aliases: MAF-0; MAF-1; MAF-3; MAF-5\nProcessing route: multiaxial forging (MAF); 33% normal strain per pass; 0, 1, 3, 5 passes; equivalent strain up to 2.3; temperature: warm (specific value not yet stated); Vacuum induction melting, 600 mbar Ar during Mn addition; Homogenization 1200°C/2h; Hot forging 1200–900°C, >60% deformation, water quench\nKey variables: number of MAF passes; dislocation density; grain size; microstrain; yield strength; ultimate tensile strength; equivalent strain; equivalent strain (0, 0.47, 1.4, 2.34)\nMicrostructure: initial grain size 50 μm; final grain size 13 μm; dislocation density range 0.79-8.98e15 m^-2; microstrain range 3.66e-3 to 6.8e-3; XRD: Co-Kα, 2°/min, 0.02° step, 40–120° 2θ; Dislocation density via Eq. (1) from crystallite size and microstrain; EBSD: grain size from >15° boundaries; Table 1: all XRD results per pass\nProperties: yield strength 380 to 1528 MPa; UTS 762 to 1548 MPa; ductility >70% at RT and >95% at 300°C (from literature); Tensile testing configured (RT, 1×10⁻³ s⁻¹, 2 specimens/pass) – results pending in later chunks; YS: 380, 1040, 1279, 1528 MPa; UTS: 762, 1368, 1415, 1548 MPa; Total elongation: 75%, 30%, 13.7%, 8%; Uniform elongation: 63%, -, 3%, 0.8%\nMechanisms: dislocation strengthening significant up to 3 passes; grain boundary strengthening; strain hardening; Grain boundary strengthening (Hall-Petch, k=2374 MPa); Dislocation strengthening (Taylor equation); Modified J-C model merges both into flow stress; dislocation accumulation and rearrangement; grain refinement"
+  },
+  {
+    "chunk_id": "chunk_0005",
+    "section": "5.4. Finite element analysis of MAF",
+    "previous_context_summary": "Summary: The current chunk reports the mechanical properties of Fe-30Mn-9Al-0.8C low-density steel after warm multiaxial forging (MAF) at 250 °C for 0, 1, 3, and 5 passes. Yield strength rises from 380 to 1528 MPa, ultimate tensile strength from 762 to 1548 MPa, while total elongation decreases from 75% to 8% (uniform elongation 63% to 0.8%). Work hardening capability declines with passes. Strengthening is attributed to dislocation density increase (from 0.79 to 8.98×10^15 m⁻²) and grain refinement (50 to 13 μm); dislocation strengthening dominates early stages (1-3 passes), while grain boundary strengthening dominates later (3-5 passes), as quantified in Table 2. No deformation twinning; negligible annealing twin fractions (0.007 in MAF-1, 0.003 in MAF-5). The section then describes finite element modeling using a modified Johnson-Cook model implemented via ABAQUS VUMAT with six state variables (Table 3) and material properties (Table 4). Simulation maps (Fig. 12) show strain concentration in the center, with maximum strain ~0.6 after 1 pass and ~2.6 after 5 passes. Predicted yield strengths (Fig. 13) match experimental values well up to 3 passes but are lower after 5 passes, possibly due to unaccounted texture effects. Subsequent chunks should note the FE model’s limitations and may address texture influence.\nMaterial systems: Fe-30Mn-9Al-0.8C low-density steel (austenitic); Fe-30Mn-9Al-0.8C low-density steel (actual Fe-30.6Mn-9.1Al-0.79C), austenitic; Fe-30Mn-9Al-0.8C low-density steel\nSample aliases: MAF-0; MAF-1; MAF-3; MAF-5\nProcessing route: multiaxial forging (MAF); 33% normal strain per pass; 0, 1, 3, 5 passes; equivalent strain up to 2.3; temperature: warm (specific value not yet stated); Vacuum induction melting, 600 mbar Ar during Mn addition; Homogenization 1200°C/2h; Hot forging 1200–900°C, >60% deformation, water quench\nKey variables: number of MAF passes; dislocation density; grain size; microstrain; yield strength; ultimate tensile strength; equivalent strain; equivalent strain (0, 0.47, 1.4, 2.34)\nMicrostructure: initial grain size 50 μm; final grain size 13 μm; dislocation density range 0.79-8.98e15 m^-2; microstrain range 3.66e-3 to 6.8e-3; XRD: Co-Kα, 2°/min, 0.02° step, 40–120° 2θ; Dislocation density via Eq. (1) from crystallite size and microstrain; EBSD: grain size from >15° boundaries; Table 1: all XRD results per pass\nProperties: yield strength 380 to 1528 MPa; UTS 762 to 1548 MPa; ductility >70% at RT and >95% at 300°C (from literature); Tensile testing configured (RT, 1×10⁻³ s⁻¹, 2 specimens/pass) – results pending in later chunks; YS: 380, 1040, 1279, 1528 MPa; UTS: 762, 1368, 1415, 1548 MPa; Total elongation: 75%, 30%, 13.7%, 8%; Uniform elongation: 63%, -, 3%, 0.8%\nMechanisms: dislocation strengthening significant up to 3 passes; grain boundary strengthening; strain hardening; Grain boundary strengthening (Hall-Petch, k=2374 MPa); Dislocation strengthening (Taylor equation); Modified J-C model merges both into flow stress; dislocation accumulation and rearrangement; grain refinement",
+    "context_update": {
+      "summary": "This chunk covers Section 5.4 (Finite element analysis of MAF) and the Conclusions. The FE analysis confirms that the modified Johnson-Cook model agrees well with experimental dislocation density, grain size, and yield strength up to 3 passes, but after 3 passes the simulated yield strength deviates lower than experiments, partly attributed to unaccounted texture effects. The simulated yield strength map (Fig. 14) shows maximum strength at the center decreasing toward the surface. The investigation concludes that MAF of Fe-30Mn-9Al-0.8C steel at 250°C raises tensile strength from 762 to 1548 MPa while ductility drops from 75% to 8%. Strengthening is dominated by dislocation density in early passes (1–3) and by grain boundary strengthening in later passes (3–5). The maximum equivalent strain reached is 2.3. The modified J-C model is validated for cold deformation processes. Key figures are Fig. 13 (yield strength comparison), Fig. 14 (yield strength map), Fig. 5 (XRD dislocation density), and Fig. 8 (EBSD grain size). No further data chunks are expected; future chunks may refer to these conclusions.",
+      "material_systems": [
+        "Fe-30Mn-9Al-0.8C low-density steel (austenitic)"
+      ],
+      "sample_aliases": [
+        "MAF-0",
+        "MAF-1",
+        "MAF-3",
+        "MAF-5"
+      ],
+      "processing_route": [
+        "Warm multiaxial forging at 250 °C",
+        "33% normal strain per pass",
+        "0, 1, 3, 5 passes",
+        "Equivalent strain up to 2.3"
+      ],
+      "key_variables": [
+        "yield strength",
+        "tensile strength",
+        "total elongation",
+        "dislocation density",
+        "grain size",
+        "equivalent strain",
+        "number of MAF passes"
+      ],
+      "microstructure": [
+        "dislocation density measured by XRD (Fig. 5)",
+        "grain size measured by EBSD (Fig. 8)"
+      ],
+      "properties": [
+        "Tensile strength: 762 to 1548 MPa",
+        "Total elongation: 75% to 8%",
+        "Yield strength increases with passes"
+      ],
+      "mechanisms": [
+        "Dislocation strengthening dominant up to 3 passes",
+        "Grain boundary strengthening dominant from 3 to 5 passes",
+        "Texture effects not included in simulation, causing underprediction of strength"
+      ],
+      "figures_or_tables": [
+        "Fig. 13",
+        "Fig. 14",
+        "Fig. 5",
+        "Fig. 8"
+      ],
+      "unresolved_terms": []
+    },
+    "rolling_context_summary": "Summary: Predicted yield strengths (Fig. 13) match experimental values well up to 3 passes but are lower after 5 passes, possibly due to unaccounted texture effects. Subsequent chunks should note the FE model’s limitations and may address texture influence. This chunk covers Section 5.4 (Finite element analysis of MAF) and the Conclusions. The FE analysis confirms that the modified Johnson-Cook model agrees well with experimental dislocation density, grain size, and yield strength up to 3 passes, but after 3 passes the simulated yield strength deviates lower than experiments, partly attributed to unaccounted texture effects. The simulated yield strength map (Fig. 14) shows maximum strength at the center decreasing toward the surface. The investigation concludes that MAF of Fe-30Mn-9Al-0.8C steel at 250°C raises tensile strength from 762 to 1548 MPa while ductility drops from 75% to 8%. Strengthening is dominated by dislocation density in early passes (1–3) and by grain boundary strengthening in later passes (3–5). The maximum equivalent strain reached is 2.3. The modified J-C model is validated for cold deformation processes. Key figures are Fig. 13 (yield strength comparison), Fig. 14 (yield strength map), Fig. 5 (XRD dislocation density), and Fig. 8 (EBSD grain size). No further data chunks are expected; future chunks may refer to these conclusions.\nMaterial systems: Fe-30Mn-9Al-0.8C low-density steel (austenitic); Fe-30Mn-9Al-0.8C low-density steel (actual Fe-30.6Mn-9.1Al-0.79C), austenitic; Fe-30Mn-9Al-0.8C low-density steel\nSample aliases: MAF-0; MAF-1; MAF-3; MAF-5\nProcessing route: multiaxial forging (MAF); 33% normal strain per pass; 0, 1, 3, 5 passes; equivalent strain up to 2.3; temperature: warm (specific value not yet stated); Vacuum induction melting, 600 mbar Ar during Mn addition; Homogenization 1200°C/2h; Hot forging 1200–900°C, >60% deformation, water quench\nKey variables: number of MAF passes; dislocation density; grain size; microstrain; yield strength; ultimate tensile strength; equivalent strain; equivalent strain (0, 0.47, 1.4, 2.34)\nMicrostructure: initial grain size 50 μm; final grain size 13 μm; dislocation density range 0.79-8.98e15 m^-2; microstrain range 3.66e-3 to 6.8e-3; XRD: Co-Kα, 2°/min, 0.02° step, 40–120° 2θ; Dislocation density via Eq. (1) from crystallite size and microstrain; EBSD: grain size from >15° boundaries; Table 1: all XRD results per pass\nProperties: yield strength 380 to 1528 MPa; UTS 762 to 1548 MPa; ductility >70% at RT and >95% at 300°C (from literature); Tensile testing configured (RT, 1×10⁻³ s⁻¹, 2 specimens/pass) – results pending in later chunks; YS: 380, 1040, 1279, 1528 MPa; UTS: 762, 1368, 1415, 1548 MPa; Total elongation: 75%, 30%, 13.7%, 8%; Uniform elongation: 63%, -, 3%, 0.8%\nMechanisms: dislocation strengthening significant up to 3 passes; grain boundary strengthening; strain hardening; Grain boundary strengthening (Hall-Petch, k=2374 MPa); Dislocation strengthening (Taylor equation); Modified J-C model merges both into flow stress; dislocation accumulation and rearrangement; grain refinement"
+  }
+]

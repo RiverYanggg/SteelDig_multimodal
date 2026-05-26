@@ -1,0 +1,138 @@
+{
+  "claims": [
+    {
+      "claim_type": "finding",
+      "subject": "Machine learning design strategy for Fe-Mn-Al-C austenitic steels",
+      "claim": "The machine learning framework predicts four key features: existence of the κ phase (Y1) for precipitation strengthening, a (γ+κ) dual-phase area at 500–600 °C (Y2) to exclude other phases, a single γ phase area (Y3) for deformation processing, and the volume fraction of the κ phase (Y4) for better mechanical property potential.",
+      "values": [
+        "Y1: κ phase existence (classification)",
+        "Y2: (γ+κ) dual-phase region at 500–600 °C (classification)",
+        "Y3: single γ phase region (classification)",
+        "Y4: κ phase volume fraction (regression)"
+      ],
+      "evidence_text": "Classification models predict the existence of the κ phase (Y1), and the main purpose is the significant precipitation-strengthening effect of the κ phase. ↓ (γ + κ) dual-phase area at 500–600 ◦C (Y2), and the main purpose is to exclude the influence of other phase structures on the system. A single γ phase area (Y3), and the main purpose is that the single γ phase area is convenient for deformation processing. Regression models predict the volume fraction (Y4) of the κ phase, and a higher κ-phase volume fraction generally gives the system better mechanical property potential.",
+      "figures": [
+        "Fig. 1"
+      ],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "composition",
+      "subject": "Composition space of (100-x-y-z)Fe-xMn-yAl-zC system",
+      "claim": "The potential composition space for the Fe-Mn-Al-C alloys is defined as 10% ≤ x ≤ 30% Mn, 2% ≤ y ≤ 12% Al, and 0.2% ≤ z ≤ 2% C (all in mass percentage).",
+      "values": [
+        "10% ≤ Mn ≤ 30%",
+        "2% ≤ Al ≤ 12%",
+        "0.2% ≤ C ≤ 2%"
+      ],
+      "evidence_text": "The potential composition space was defined according to the following parameters (the element content is the mass percentage): 10% ≤ x ≤ 30%, 2% ≤ y ≤ 12%, and 0.2% ≤ z ≤ 2%.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "Dataset assembly and features",
+      "claim": "The dataset included 448 samples collected from historical literature and JMatPro v9.0 phase balance calculations, with each sample described by 10 features: the four constituent elements (Fe, Mn, Al, C) and six input descriptors (VEC, δ, ΔHmix, ΔSmix, Tm, Δχ).",
+      "values": [
+        "448 samples",
+        "10 features",
+        "4 elements",
+        "6 descriptors"
+      ],
+      "evidence_text": "The dataset for this study included information from historical literature sources [1,3,7,16,17] as well as phase balance data obtained using the JMatPro v9.0 general steel database. (...) A total of 448 samples, each with 10 features, including the four constituent elements and the six input features, were collected.",
+      "figures": [],
+      "tables": [
+        "Table 1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "Target encoding and sample distribution",
+      "claim": "For classification targets Y1 (κ phase), Y2 (γ+κ region at 500–600 °C), and Y3 (single γ region), 448 samples were each labeled as '1' or '0' for presence or absence; after elimination of missing data for regression target Y4 (κ volume fraction), 298 samples were retained.",
+      "values": [
+        "Y1: 448 samples, binary",
+        "Y2: 448 samples, binary",
+        "Y3: 448 samples, binary",
+        "Y4: 298 samples, regression"
+      ],
+      "evidence_text": "To ensure proper algorithm processing, missing data will be handled by elimination for the regression analysis, resulting in a total of 448 samples for Y1, 448 for Y2, 448 for Y3, and 298 for Y4. Each sample in Y1, Y2, and Y3 is categorized as '1' or '0' to denote the presence or absence of specific phases: the κ phase in Υ1, a (γ+κ) dual-phase region at 500–600 °C in Y2, and a single γ region in Y3, making the data suitable for machine learning algorithms.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "Regression model evaluation metrics",
+      "claim": "Ten-fold cross-validation was applied to prevent overfitting in regression models, and model performance was assessed using correlation coefficient (R), explained variance (R²), mean absolute error (MAE), and root mean square error (RMSE).",
+      "values": [
+        "ten-fold cross-validation",
+        "R",
+        "R²",
+        "MAE",
+        "RMSE"
+      ],
+      "evidence_text": "For the regression model, ten-fold cross-validation was also utilized to prevent overfitting. Four evaluation indicators were used for regression models, including the correlation coefficient (R), explained variance (R²), mean absolute error (MAE), and root mean square error (RMSE).",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "Input descriptors for machine learning",
+      "claim": "Six input descriptors were selected to improve model accuracy: valence electron concentration (VEC), atomic size difference (δ), enthalpy of mixing (ΔHmix), entropy of mixing (ΔSmix), melting point (Tm), and Pauli electronegativity difference (Δχ).",
+      "values": [
+        "VEC",
+        "δ",
+        "ΔHmix",
+        "ΔSmix",
+        "Tm",
+        "Δχ"
+      ],
+      "evidence_text": "Six input features or descriptors (See Table 1 for details) were identified in order to improve the accuracy of the machine learning models, these included the valence electron concentration (VEC), atomic size difference (δ), enthalpy of mixing (ΔHmix), entropy of mixing (ΔSmix), melting point (Tm), and Pauli electronegativity difference (Δχ).",
+      "figures": [],
+      "tables": [
+        "Table 1"
+      ],
+      "confidence": "high"
+    }
+  ],
+  "context_update": {
+    "summary": "This chunk describes the Methods section of the study, establishing the machine learning design framework for low-density Fe-Mn-Al-C austenitic steels. The models target four features: κ phase existence (Y1, classification), (γ+κ) dual-phase region at 500–600 °C (Y2, classification), single γ phase region (Y3, classification), and κ phase volume fraction (Y4, regression). The dataset contains 448 samples collected from literature and JMatPro v9.0 phase-balance calculations, covering a composition space of 10–30 wt% Mn, 2–12 wt% Al, and 0.2–2 wt% C. Each sample has 10 features: the elemental contents of Fe, Mn, Al, C, plus six descriptors (VEC, δ, ΔHmix, ΔSmix, Tm, Δχ) defined in Table 1. Binary labels (1/0) are used for Y1–Y3; missing data elimination reduces Y4 to 298 samples. Machine learning algorithms mentioned include KNN, ANN, CART, SVM, and RF. Ten-fold cross-validation is applied to prevent overfitting, and regression models are evaluated with R, R², MAE, and RMSE. This chunk provides the essential methodology, dataset characteristics, and modeling targets that will be used in subsequent model training and validation sections.",
+    "material_systems": [
+      "Fe-Mn-Al-C austenitic low-density steel",
+      "(100-x-y-z)Fe-xMn-yAl-zC system"
+    ],
+    "sample_aliases": [],
+    "processing_route": [],
+    "key_variables": [
+      "Mn content (x): 10-30 wt%",
+      "Al content (y): 2-12 wt%",
+      "C content (z): 0.2-2 wt%",
+      "Y1: κ existence classification",
+      "Y2: (γ+κ) dual-phase region classification",
+      "Y3: single γ region classification",
+      "Y4: κ volume fraction regression",
+      "VEC",
+      "δ (atomic size difference)",
+      "ΔHmix (enthalpy of mixing)",
+      "ΔSmix (entropy of mixing)",
+      "Tm (melting point)",
+      "Δχ (Pauli electronegativity difference)"
+    ],
+    "microstructure": [
+      "κ phase",
+      "γ+κ dual-phase",
+      "single γ phase"
+    ],
+    "properties": [],
+    "mechanisms": [],
+    "figures_or_tables": [
+      "Fig. 1",
+      "Table 1"
+    ],
+    "unresolved_terms": []
+  }
+}

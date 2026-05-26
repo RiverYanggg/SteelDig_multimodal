@@ -1,0 +1,135 @@
+{"claims": [
+  {
+    "claim_type": "finding",
+    "subject": "ML model training",
+    "claim": "Ten different ML models, including SVR, ET, XGBoost, Ridge, LightGBM, MLP, RF, LR, DT, and KNN, were trained to optimize the composition and predict the microhardness of Fe-C-Cr-Mn-Si steel.",
+    "values": ["SVR", "ET", "XGBoost", "Ridge", "LightGBM", "MLP", "RF", "LR", "DT", "KNN"],
+    "evidence_text": "Ten different ML models were trained to optimize the composition and predict the microhardness of Fe-C-Cr-Mn-Si steel, including support vector machine (SVR), ET, XGBoost, ridge regression (Ridge), LightGBM, multilayer perceptron (MLP), RF, linear regression (LR), DT, and k-nearest neighbor (KNN)",
+    "figures": [],
+    "tables": [],
+    "confidence": "high"
+  },
+  {
+    "claim_type": "finding",
+    "subject": "Model evaluation metrics",
+    "claim": "The coefficient of determination (R^2) and root mean square error (RMSE) were employed to evaluate the reliability of the prediction models.",
+    "values": ["R^2", "RMSE"],
+    "evidence_text": "The coefficient of determination $( R ^ { 2 } )$ and root mean square error (RMSE) were employed to ensure the reliability of the prediction model.",
+    "figures": [],
+    "tables": [],
+    "confidence": "high"
+  },
+  {
+    "claim_type": "finding",
+    "subject": "Hyperparameter optimization",
+    "claim": "Bayesian optimization algorithm was employed to optimize the hyperparameters of the ML models with the optimization criterion of minimizing the RMSE.",
+    "values": ["RMSE minimization"],
+    "evidence_text": "Bayesian optimization algorithm was employed with the optimization criterion of minimizing the RMSE to optimize the hyperparameters of ML model.",
+    "figures": [],
+    "tables": [],
+    "confidence": "high"
+  },
+  {
+    "claim_type": "mechanism",
+    "subject": "Solid solution strengthening modification",
+    "claim": "The original solid solution strengthening theory was modified using the selected features to further improve the prediction accuracy of the model.",
+    "values": [],
+    "evidence_text": "The original solid solution strengthening theory was modified by the selected features to further improve the prediction accuracy of the model [14].",
+    "figures": [],
+    "tables": [],
+    "confidence": "medium"
+  },
+  {
+    "claim_type": "finding",
+    "subject": "Validation dataset",
+    "claim": "A validation data set of 117 data points from the material information repository MatWeb was used to verify the prediction performance through ten-fold cross-validation and Bayesian optimization.",
+    "values": ["117 data points", "MatWeb", "ten-fold cross-validation", "Bayesian optimization"],
+    "evidence_text": "Finally, 117 data points from the material information repository MatWeb were served as a validation data set to verify the prediction performance of the model through the ten-fold cross-validation and Bayesian optimization method, respectively.",
+    "figures": [],
+    "tables": [],
+    "confidence": "high"
+  },
+  {
+    "claim_type": "composition",
+    "subject": "Inverse design composition ranges",
+    "claim": "For inverse design, the composition ranges of optimized elements were: C [0.02 wt%, 2 wt%], Si [0.1 wt%, 1 wt%], Mn [0.15 wt%, 2 wt%], Cr [0.5 wt%, 25 wt%], S [0, 0.035 wt%], Ni [0, 2 wt%], P [0, 0.045 wt%], Mo [0, 3 wt%], V [0, 0.5 wt%], W [0, 2 wt%].",
+    "values": ["C: 0.02-2 wt%", "Si: 0.1-1 wt%", "Mn: 0.15-2 wt%", "Cr: 0.5-25 wt%", "S: 0-0.035 wt%", "Ni: 0-2 wt%", "P: 0-0.045 wt%", "Mo: 0-3 wt%", "V: 0-0.5 wt%", "W: 0-2 wt%"],
+    "evidence_text": "C, Si, Mn, Cr, S, Ni, P, Mo, V and W elements were optimized, and the composition ranges were [0.02 wt%, 2 wt%], [0.1 wt%, 1 wt%], [0.15 wt%, 2 wt%], [0.5 wt%, 25 wt%], [0, 0.035 wt%], [0, 2 wt%], [0, 0.045 wt%], [0, 3 wt%], [0, 0.5 wt%], [0, 2 wt%], respectively",
+    "figures": [],
+    "tables": [],
+    "confidence": "high"
+  },
+  {
+    "claim_type": "processing",
+    "subject": "Substrate material for cladding",
+    "claim": "ASTM A36 steel plates with dimensions of 300 mm × 120 mm × 40 mm were used as substrates for arc cladding of Fe-C-Cr-Mn-Si coatings.",
+    "values": ["300 mm × 120 mm × 40 mm", "ASTM A36"],
+    "evidence_text": "The ASTM A36 steel plates with the size of 300 mm × 120 mm × 40 mm were used as the substrates in the experiment.",
+    "figures": [],
+    "tables": [],
+    "confidence": "high"
+  },
+  {
+    "claim_type": "characterization",
+    "subject": "XRD analysis conditions",
+    "claim": "X-ray diffraction analysis of the coatings was performed using Cu Kα radiation at an operating voltage of 40 kV and current of 40 mA.",
+    "values": ["Cu Kα", "40 kV", "40 mA"],
+    "evidence_text": "The phases of the coatings were analyzed by X-ray diffraction (SmartLab SE, Rigaku, Japan) with Cu Kα radiation, operated at a working voltage of 40 kV and current of 40 mA.",
+    "figures": [],
+    "tables": [],
+    "confidence": "high"
+  },
+  {
+    "claim_type": "characterization",
+    "subject": "Vickers microhardness testing conditions",
+    "claim": "Vickers microhardness of the coatings was measured with a load of 1 kg and a holding time of 20 s.",
+    "values": ["1 kg", "20 s"],
+    "evidence_text": "The Vicker\u2019s microhardness of the coatings was measured using a microhardness indenter (HVS-1000A, Laizhou Huayin Testing Instrument Co., Ltd., China). The load was 1 kg with the holding time of 20 s.",
+    "figures": [],
+    "tables": [],
+    "confidence": "high"
+  },
+  {
+    "claim_type": "figure_evidence",
+    "subject": "Correlation scatter matrix",
+    "claim": "Figure 2 presents a correlation scatter matrix graph of the features and microhardness for Fe-C-Cr-Mn-Si steel.",
+    "values": [],
+    "evidence_text": "Fig. 2. Correlation scatter matrix graph.",
+    "figures": ["Fig. 2"],
+    "tables": [],
+    "confidence": "medium"
+  },
+  {
+    "claim_type": "figure_evidence",
+    "subject": "Feature selection results",
+    "claim": "Figure 3 shows the feature selection process: (a) feature selection by RFE voting, (b) heatmap showing the Pearson correlation coefficient between the 9 features, and (c) the importance ranking of the 9 features.",
+    "values": ["9 features"],
+    "evidence_text": "Fig. 3. Feature selection: (a) Feature selection by RFE voting. (b) Heatmap showing the PCC between the 9 features (c) The importance ranking of the 9 features.",
+    "figures": ["Fig. 3"],
+    "tables": [],
+    "confidence": "medium"
+  },
+  {
+    "claim_type": "figure_evidence",
+    "subject": "Exhaustive screening results",
+    "claim": "Figure 4 displays the exhaustive screening cross-validation scores as a function of the number of features.",
+    "values": [],
+    "evidence_text": "Fig. 4. Exhaustive screening results with different numbers of features.",
+    "figures": ["Fig. 4"],
+    "tables": [],
+    "confidence": "medium"
+  }
+],
+"context_update": {
+  "summary": "Section 2.1.3 describes algorithm selection and optimization for microhardness prediction. Ten ML models (SVR, ET, XGBoost, Ridge, LightGBM, MLP, RF, LR, DT, KNN) were trained, with R\u00b2 and RMSE as evaluation metrics. Bayesian optimization was used to minimize RMSE for hyperparameter tuning. The original solid solution strengthening theory was modified using selected features. A validation set of 117 MatWeb data points was used with ten-fold cross-validation. Section 2.2 outlines inverse design: composition ranges were defined for C (0.02\u20132 wt%), Si (0.1\u20131 wt%), Mn (0.15\u20132 wt%), Cr (0.5\u201325 wt%), S (0\u20130.035 wt%), Ni (0\u20132 wt%), P (0\u20130.045 wt%), Mo (0\u20133 wt%), V (0\u20130.5 wt%), W (0\u20132 wt%). FA, SA, PSO, and GWO algorithms were employed with parameters in Table 3. Section 2.3 details coating preparation: arc cladding on ASTM A36 substrates (300 mm \u00d7 120 mm \u00d7 40 mm) using optimized wire composition; cladding parameters in Table 4. Characterization: XRD with Cu K\u03b1 at 40 kV/40 mA; Vickers microhardness with 1 kg load, 20 s holding time. Figures 2\u20134 provide correlation, feature selection, and exhaustive screening results. Future chunks need to remember the inverse-designed composition ranges, the ten ML models, the validation approach, substrate material, characterization conditions, and the modified solid solution strengthening theory.",
+  "material_systems": ["Fe-C-Cr-Mn-Si steel"],
+  "sample_aliases": [],
+  "processing_route": ["arc cladding", "inverse design using FA, SA, PSO, GWO", "ten ML model training", "Bayesian optimization", "ten-fold cross-validation", "MatWeb validation"],
+  "key_variables": ["composition ranges: C: 0.02-2 wt%, Si: 0.1-1 wt%, Mn: 0.15-2 wt%, Cr: 0.5-25 wt%, S: 0-0.035 wt%, Ni: 0-2 wt%, P: 0-0.045 wt%, Mo: 0-3 wt%, V: 0-0.5 wt%, W: 0-2 wt%", "R\u00b2", "RMSE", "XRD conditions: Cu K\u03b1, 40 kV, 40 mA", "Vickers hardness: 1 kg, 20 s"],
+  "microstructure": [],
+  "properties": [],
+  "mechanisms": ["modified solid solution strengthening theory using selected features"],
+  "figures_or_tables": ["Fig. 2", "Fig. 3", "Fig. 4", "Table 3", "Table 4"],
+  "unresolved_terms": []
+}
+}

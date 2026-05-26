@@ -1,0 +1,508 @@
+{
+  "papers": [
+    {
+      "paper_id": "A30",
+      "doi": null,
+      "title": "Dynamic recrystallization mechanisms of an Fe–8% Al low density steel under hot rolling conditions",
+      "authors": [
+        "C. Castan",
+        "F. Montheillet",
+        "A. Perlade"
+      ],
+      "publication_year": "2012",
+      "journal": "Acta Materialia",
+      "keywords": [
+        "Ferritic steels",
+        "High-temperature deformation",
+        "Dynamic recrystallization",
+        "Recrystallized microstructure",
+        "Recrystallization texture"
+      ],
+      "research_type": "experimental",
+      "paper_scope": "Investigation of dynamic recrystallization mechanisms (CDRX and DDRX) in Fe-8% Al low-density ferritic steel under hot torsion conditions (900-1100°C, 0.1-10 s^-1) and their effect on texture and roping defect."
+    }
+  ],
+  "alloys": [
+    {
+      "alloy_id": "alloy_fe8al",
+      "paper_id": "A30",
+      "alloy_name": "Fe–8% Al low density steel",
+      "aliases": [],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Al",
+        "Mn",
+        "C",
+        "Ti",
+        "Nb",
+        "V"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Al",
+          "weight_percent": "8.15",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "0.10",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.0086",
+          "atomic_percent": null
+        },
+        {
+          "element": "Ti+Nb+V",
+          "weight_percent": "<0.10",
+          "atomic_percent": null
+        },
+        {
+          "element": "Fe",
+          "weight_percent": "balance",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": null
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_fe8al_initial",
+      "paper_id": "A30",
+      "alloy_id": "alloy_fe8al",
+      "description": "As-received material: hot rolled to cumulative deformation of 1, fully recrystallized with equiaxed grains of ~800 μm.",
+      "processes_notes": null
+    },
+    {
+      "process_id": "proc_fe8al_torsion",
+      "paper_id": "A30",
+      "alloy_id": "alloy_fe8al",
+      "description": "Hot torsion tests performed in temperature range 900-1100°C and strain rate range 0.1-10 s^-1 under argon atmosphere, followed by immediate argon quench (0.5 s, cooling rate ~200 °C s^-1) to retain microstructure.",
+      "processes_notes": null
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_fe8al_initial",
+      "paper_id": "A30",
+      "alloy_id": "alloy_fe8al",
+      "process_id": "proc_fe8al_initial"
+    },
+    {
+      "sample_id": "sample_fe8al_1000C_01s-1_e1",
+      "paper_id": "A30",
+      "alloy_id": "alloy_fe8al",
+      "process_id": "proc_fe8al_torsion"
+    },
+    {
+      "sample_id": "sample_fe8al_1000C_01s-1_e2",
+      "paper_id": "A30",
+      "alloy_id": "alloy_fe8al",
+      "process_id": "proc_fe8al_torsion"
+    },
+    {
+      "sample_id": "sample_fe8al_1000C_01s-1_e5",
+      "paper_id": "A30",
+      "alloy_id": "alloy_fe8al",
+      "process_id": "proc_fe8al_torsion"
+    },
+    {
+      "sample_id": "sample_fe8al_1000C_01s-1_e25",
+      "paper_id": "A30",
+      "alloy_id": "alloy_fe8al",
+      "process_id": "proc_fe8al_torsion"
+    },
+    {
+      "sample_id": "sample_fe8al_1100C_5s-1_e2",
+      "paper_id": "A30",
+      "alloy_id": "alloy_fe8al",
+      "process_id": "proc_fe8al_torsion"
+    },
+    {
+      "sample_id": "sample_fe8al_1100C_10s-1_e2",
+      "paper_id": "A30",
+      "alloy_id": "alloy_fe8al",
+      "process_id": "proc_fe8al_torsion"
+    }
+  ],
+  "processing_steps": [
+    {
+      "sample_id": "sample_fe8al_initial",
+      "paper_id": "A30",
+      "sequence": "0",
+      "type": "initial_state",
+      "method": "as-received",
+      "temperature": null,
+      "unit": null,
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Hot rolled to cumulative deformation ε=1, fully recrystallized."
+    },
+    {
+      "sample_id": "sample_fe8al_1000C_01s-1_e1",
+      "paper_id": "A30",
+      "sequence": "1",
+      "type": "thermomechanical_processing",
+      "method": "hot torsion",
+      "temperature": "1000",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": "argon quench",
+      "reduction_ratio": null,
+      "strain_rate": "0.1 s^-1",
+      "processing_steps_notes": "Equivalent strain ε=1"
+    },
+    {
+      "sample_id": "sample_fe8al_1000C_01s-1_e2",
+      "paper_id": "A30",
+      "sequence": "1",
+      "type": "thermomechanical_processing",
+      "method": "hot torsion",
+      "temperature": "1000",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": "argon quench",
+      "reduction_ratio": null,
+      "strain_rate": "0.1 s^-1",
+      "processing_steps_notes": "Equivalent strain ε=2"
+    },
+    {
+      "sample_id": "sample_fe8al_1000C_01s-1_e5",
+      "paper_id": "A30",
+      "sequence": "1",
+      "type": "thermomechanical_processing",
+      "method": "hot torsion",
+      "temperature": "1000",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": "argon quench",
+      "reduction_ratio": null,
+      "strain_rate": "0.1 s^-1",
+      "processing_steps_notes": "Equivalent strain ε=5"
+    },
+    {
+      "sample_id": "sample_fe8al_1000C_01s-1_e25",
+      "paper_id": "A30",
+      "sequence": "1",
+      "type": "thermomechanical_processing",
+      "method": "hot torsion",
+      "temperature": "1000",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": "argon quench",
+      "reduction_ratio": null,
+      "strain_rate": "0.1 s^-1",
+      "processing_steps_notes": "Equivalent strain ε=25"
+    },
+    {
+      "sample_id": "sample_fe8al_1100C_5s-1_e2",
+      "paper_id": "A30",
+      "sequence": "1",
+      "type": "thermomechanical_processing",
+      "method": "hot torsion",
+      "temperature": "1100",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": "argon quench",
+      "reduction_ratio": null,
+      "strain_rate": "5 s^-1",
+      "processing_steps_notes": "Equivalent strain ε=2"
+    },
+    {
+      "sample_id": "sample_fe8al_1100C_10s-1_e2",
+      "paper_id": "A30",
+      "sequence": "1",
+      "type": "thermomechanical_processing",
+      "method": "hot torsion",
+      "temperature": "1100",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": "argon quench",
+      "reduction_ratio": null,
+      "strain_rate": "10 s^-1",
+      "processing_steps_notes": "Equivalent strain ε=2"
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_fe8al_initial",
+      "sample_id": "sample_fe8al_initial",
+      "overall_structure": "Fully recrystallized equiaxed ferrite",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_fe8al_initial_1",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "ferrite (bcc A2)",
+              "crystal_structure": "bcc",
+              "volume_fraction": "1",
+              "morphology": "equiaxed",
+              "grain_size": "~800 μm",
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "800",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_fe8al_1000C_01s-1_e1",
+      "sample_id": "sample_fe8al_1000C_01s-1_e1",
+      "overall_structure": "Elongated original grains with subgrain formation near serrated grain boundaries",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_1000C_01s-1_e1",
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "ferrite (bcc A2)",
+              "crystal_structure": "bcc",
+              "volume_fraction": "1",
+              "morphology": "elongated grains",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocation substructure",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "moderately high (subgrain formation)",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": null,
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_fe8al_1000C_01s-1_e2",
+      "sample_id": "sample_fe8al_1000C_01s-1_e2",
+      "overall_structure": "Elongated original grains with progressive subgrain network formation and increase in HAB fraction, onset of CDRX",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_1000C_01s-1_e2",
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "ferrite (bcc A2)",
+              "crystal_structure": "bcc",
+              "volume_fraction": "1",
+              "morphology": "elongated grains with internal subgrains",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "subgrain boundaries (LABs) transforming to HABs",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "high, organized into subgrains",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": null,
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_fe8al_1000C_01s-1_e5",
+      "sample_id": "sample_fe8al_1000C_01s-1_e5",
+      "overall_structure": "Aggregate of crystallites bounded partly by LABs and partly by HABs, no distinction between original and recrystallized grain boundaries",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_1000C_01s-1_e5",
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "ferrite (bcc A2)",
+              "crystal_structure": "bcc",
+              "volume_fraction": "1",
+              "morphology": "crystallite aggregate (mixed LAB/HAB)",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "mixed LAB and HAB network",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "moderate, partially recovered",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": null,
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_fe8al_1000C_01s-1_e25",
+      "sample_id": "sample_fe8al_1000C_01s-1_e25",
+      "overall_structure": "Predominantly recrystallized fine-grained structure with high fraction of HABs from CDRX",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_1000C_01s-1_e25",
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "ferrite (bcc A2)",
+              "crystal_structure": "bcc",
+              "volume_fraction": "1",
+              "morphology": "fine recrystallized grains",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": null,
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_fe8al_1100C_5s-1_e2",
+      "sample_id": "sample_fe8al_1100C_5s-1_e2",
+      "overall_structure": "Mixture of small equiaxed dislocation-free DDRX grains and elongated deformed grains with subgrains",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_1100C_5s-1_e2",
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "ferrite (bcc A2)",
+              "crystal_structure": "bcc",
+              "volume_fraction": "1",
+              "morphology": "mixture of equiaxed new grains and elongated old grains",
+              "grain_size": null,
+              "texture": "random orientation (no preferred texture)"
+            }
+          ],
+          "defects": [
+            {
+              "type": "low dislocation density in new grains; high in old grains",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "heterogeneous",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": null,
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_fe8al_1100C_10s-1_e2",
+      "sample_id": "sample_fe8al_1100C_10s-1_e2",
+      "overall_structure": "Mixture of small equiaxed DDRX grains and elongated deformed grains, similar to 5 s^-1 condition",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_1100C_10s-1_e2",
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "ferrite (bcc A2)",
+              "crystal_structure": "bcc",
+              "volume_fraction": "1",
+              "morphology": "equiaxed new grains and elongated old grains",
+              "grain_size": null,
+              "texture": "random orientation"
+            }
+          ],
+          "defects": [
+            {
+              "type": "low dislocation density in new grains; high in old grains",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "heterogeneous",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": null,
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "prop_fe8al_initial",
+      "sample_id": "sample_fe8al_initial",
+      "mechanical": null,
+      "physical": {
+        "density": {
+          "value": "7",
+          "unit": "g cm^-3"
+        },
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": null,
+      "radiation_properties": null
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_eccd_1000C_01s-1",
+      "sample_id": "sample_fe8al_1000C_01s-1_e2",
+      "microstructure_uuid": "uuid_1000C_01s-1_e2",
+      "technique": "EBSD (SEM JEOL 6500 with HKL Channel 5)",
+      "purpose": "Microstructural characterization, grain/subgrain boundary analysis, orientation mapping, texture measurement",
+      "key_findings": "Progressive transformation of subgrain boundaries (LABs) into grain boundaries (HABs) during CDRX; misorientation distribution shows increase in HAB fraction with strain. At ε=25, balance between LABs and HABs."
+    },
+    {
+      "characterization_id": "char_eccd_1100C_ddrx",
+      "sample_id": "sample_fe8al_1100C_5s-1_e2",
+      "microstructure_uuid": "uuid_1100C_5s-1_e2",
+      "technique": "EBSD (SEM JEOL 6500 with HKL Channel 5)",
+      "purpose": "Characterization of DDRX microstructure and texture",
+      "key_findings": "DDRX produces small equiaxed dislocation-free grains with random orientations; misorientation distribution close to MacKenzie distribution; high strain rate suppresses dynamic recovery, leading to nucleation and growth of new grains."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "The average subgrain size increases with decreasing strain rate or increasing temperature and varies linearly with the inverse of the yield stress (no specific values reported).",
+    "Figure 3: {1 1 0} pole figures of Fe–8% Al deformed by torsion show typical bcc torsion texture; strongest component D2: {-1-12}<111> is self-symmetric; maximum intensity of D2 observed at ε=15.",
+    "Figure 7: Strain rate–temperature map showing DDRX activation domain: 900°C/10 s^-1, 1000°C/10 s^-1, 1100°C/10 s^-1; DDRX not activated at lower strain rates (e.g., 900°C/1 s^-1, 1000°C/0.5 s^-1, 1100°C/0.1 s^-1).",
+    "Roping defect reduction: To limit roping (inhomogeneous orientation distribution), it is advantageous to promote DDRX to achieve recrystallized grains with random orientations.",
+    "The initial grain size of the material is ~800 μm equiaxed; material is morphologically isotropic.",
+    "Geometric dynamic recrystallization (GDRX) mechanism is also discussed: HABs at large strains partly originate from elongation and pinch-off of original boundaries, possibly operating concurrently with CDRX.",
+    "Stress-strain curves are not shown but the text mentions up to the maximum of the stress–strain curve for strain hardening and dynamic recovery balance."
+  ]
+}
