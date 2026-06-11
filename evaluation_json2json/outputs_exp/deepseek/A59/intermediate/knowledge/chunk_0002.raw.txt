@@ -1,0 +1,226 @@
+{
+  "claims": [
+    {
+      "claim_type": "composition",
+      "subject": "tested steel",
+      "claim": "The tested low-density δ-ferrite steel has chemical composition Fe-0.35C-0.26Si-1.47Mn-4.50Al-0.26Cr-0.28Mo-1.47Ni (wt.%).",
+      "values": ["C 0.35", "Si 0.26", "Mn 1.47", "Al 4.50", "Cr 0.26", "Mo 0.28", "Ni 1.47", "Fe Bal", "wt%"],
+      "evidence_text": "<tr><td>0.35</td><td>0.26</td><td>1.47</td><td>4.50</td><td>0.26</td><td>0.28</td><td>1.47</td><td>Bal</td></tr>",
+      "figures": [],
+      "tables": ["Table 1"],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "processing",
+      "subject": "tested steel",
+      "claim": "The steel ingot was homogenized at 1200°C for 4 h, hot forged to 40 mm thickness, air-cooled, then reheated to 650, 750, 850, or 950°C for 2 h, hot rolled with 60% reduction to 16 mm, and air-cooled to produce samples R650, R750, R850, R950.",
+      "values": ["1200°C", "4 h", "40 mm", "60%", "16 mm", "650°C", "750°C", "850°C", "950°C", "2 h", "R650", "R750", "R850", "R950"],
+      "evidence_text": "specimens were placed in a box furnace, heated to 650°C, 750°C, 850°C, and 950°C respectively, and held for 2 h. Subsequent hot rolling deformation was conducted with a 60 % reduction ratio, reducing the plate thickness from 40 mm to 16 mm (Fig. 1a). After air cooling, four groups of samples were obtained and named R650, R750, R850, and R950 in sequence.",
+      "figures": ["Fig. 1a"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "phase transition temperatures",
+      "claim": "Thermo-Calc equilibrium calculations indicate that carbide precipitation/dissolution occurs ≤750°C, while DRX and DIFT occur ≥850°C.",
+      "values": ["≤750°C", "≥850°C"],
+      "evidence_text": "Thermo-Calc software was used to calculate the equilibrium phase diagram and determine the phase composition at each temperature. The experimental design covered the critical temperature ranges for carbide precipitation/ dissolution (≤750°C) as well as DRX and DIFT (≥850°C).",
+      "figures": [],
+      "tables": [],
+      "confidence": "medium"
+    },
+    {
+      "claim_type": "microstructure",
+      "subject": "low-temperature rolled samples (R650, R750)",
+      "claim": "In the low-temperature rolling zone (R650, R750), the steel exhibits a lamellar microstructure of alternating δ-ferrite lamellae (light) and carbide/ferrite composite lamellae (dark).",
+      "values": [],
+      "evidence_text": "In the low-temperature rolling zone, the steel forms a lamellar structure with alternating δ-F (δ-ferrite) lamellae (light areas) and C/F (carbide/ferrite) composite lamellae (dark areas) (Fig. 2a-b).",
+      "figures": ["Fig. 2a", "Fig. 2b"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "microstructure",
+      "subject": "R650, R750 phase fractions",
+      "claim": "In R650, the volume fraction of C/F composite lamellae is 51.5±2.5%, δ-ferrite 48.5±2.5%, martensite 0%; in R750, C/F decreases to 43.3±3.0%, δ-ferrite increases to 56.7±3.0%.",
+      "values": ["51.5%", "48.5%", "43.3%", "56.7%"],
+      "evidence_text": "<tr><td>R650</td><td>0</td><td>48.5 ± 2.5</td><td>51.5 ± 2.5</td>…</tr><tr><td>R750</td><td>0</td><td>56.7 ± 3.0</td><td>43.3 ± 3.0</td>…</tr>",
+      "figures": ["Fig. 2a", "Fig. 2b"],
+      "tables": ["Table 2"],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "microstructure",
+      "subject": "R650, R750 carbide characteristics",
+      "claim": "In R650, ultra-fine spherical carbides have an average diameter of 158.3±76.9 nm and a distribution density of 1.7±0.2 μm⁻²; in R750, carbides coarsen to 247.3±86.8 nm, density decreases to 0.6±0.1 μm⁻² and exhibit coarse carbides at grain boundaries and fine carbides inside grains, consistent with Ostwald ripening.",
+      "values": ["158.3±76.9 nm", "1.7±0.2 μm⁻²", "247.3±86.8 nm", "0.6±0.1 μm⁻²"],
+      "evidence_text": "In R650 sample (Fig. 3d-f), spherical carbides show a high-density and ultra-fine (average diameter: 158.3 ± 76.9 nm, distribution density: 1.7 ± 0.2 μm⁻²) within the lamella. When the temperature rised to 750 °C (Fig. 3g-i), the carbides undergo significant coarsening (average diameter increases to 247.3 ± 86.8 nm, distribution density: 0.6 ± 0.1 μm⁻²) and exhibit a distribution characteristic of “coarse carbides at grain boundaries + fine carbides inside grains”, which is consistent with Ostwald ripening [19,20].",
+      "figures": ["Fig. 3e", "Fig. 3f", "Fig. 3h", "Fig. 3i"],
+      "tables": ["Table 2"],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "microstructure",
+      "subject": "high-temperature rolled samples (R850, R950)",
+      "claim": "In the high-temperature rolling zone (R850, R950), spherical carbides completely dissolve, and the microstructure consists of δ-ferrite lamellae and honeycomb martensite lamellae enclosing equiaxed deformation-induced ferrite (DIF) grains.",
+      "values": [],
+      "evidence_text": "In the high-temperature rolling zone, carbides dissolve completely, and the structure transforms into a duplex structure consisting of δ-ferrite lamellae (light) and honeycomb martensite lamellae (dark) (Fig. 2c-d), with numerous equiaxed ferrite grains (DIF) enclosed within honeycomb martensite lamellae.",
+      "figures": ["Fig. 2c", "Fig. 2d", "Fig. 3j", "Fig. 3k", "Fig. 3m", "Fig. 3n"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "microstructure",
+      "subject": "R850, R950 martensite fraction",
+      "claim": "The volume fraction of honeycomb martensite increases from 33.2±3.6% in R850 to 59.0±4.2% in R950, and the equiaxed DIF grains coarsen.",
+      "values": ["33.2%", "59.0%", "R850", "R950"],
+      "evidence_text": "as rolling temperature rises from 850 °C to 950 °C, the proportion of honeycomb martensite lamellae increases from 33.2 % to 59.0 %, while the equiaxed ferrite grains in martensite grow significantly.",
+      "figures": ["Fig. 2c", "Fig. 2d"],
+      "tables": ["Table 2"],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "microstructure",
+      "subject": "HAGBs proportion",
+      "claim": "In the low-temperature rolled samples (R650, R750), the proportion of high-angle grain boundaries (HAGBs) ranges 43.5–49.6%, whereas in high-temperature rolled samples (R850, R950), HAGBs increase to 60.1–75.7%.",
+      "values": ["43.5%", "49.6%", "60.1%", "75.7%"],
+      "evidence_text": "The proportion of HAGBs (high-angle grain boundaries) in samples from the low-temperature rolling zone ranges from 43.5 % to 49.6 %, while that in samples from the high-temperature rolling zone increases to 60.1 %–75.7 % (Table 3).",
+      "figures": ["Fig. 4a-d"],
+      "tables": ["Table 3"],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "microstructure",
+      "subject": "KAM values",
+      "claim": "In low-temperature rolled samples, the average kernel average misorientation (KAM) is 0.48–0.55°, whereas in high-temperature rolled samples, KAM decreases to 0.3–0.4°, indicating lower dislocation density.",
+      "values": ["0.48–0.55°", "0.3–0.4°"],
+      "evidence_text": "Samples in the low-temperature rolling zone exhibit an average KAM value of 0.48–0.55° (Fig. 4e-f), indicating a high dislocation density. In contrast, the KAM value of samples in the high-temperature rolling zone decreases to 0.3–0.4° (Fig. 4g-h).",
+      "figures": ["Fig. 4e-h"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "microstructure",
+      "subject": "dislocation density",
+      "claim": "The dislocation densities are 3.9 × 10^14 m⁻² (R650), 3.4 × 10^14 m⁻² (R750), 2.1 × 10^14 m⁻² (R850), and 2.8 × 10^14 m⁻² (R950).",
+      "values": ["3.9e14 m⁻²", "3.4e14 m⁻²", "2.1e14 m⁻²", "2.8e14 m⁻²"],
+      "evidence_text": "<tr><td>R650</td><td>49.6</td><td>12.3</td><td>3.9 × 10^14</td>…</tr><tr><td>R750</td><td>43.5</td><td>6.9</td><td>3.4 × 10^14</td>…</tr><tr><td>R850</td><td>60.1</td><td>19.4</td><td>2.1 × 10^14</td>…</tr><tr><td>R950</td><td>75.7</td><td>25.8</td><td>2.8 × 10^14</td>…</tr>",
+      "figures": [],
+      "tables": ["Table 3"],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "microstructure",
+      "subject": "GOS <2° fraction",
+      "claim": "The proportion of grains with GOS < 2° increases from 6.9–12.3% in low-temperature rolled samples to 19.4–25.8% in high-temperature rolled samples, suggesting more recrystallized/new grains.",
+      "values": ["6.9%", "12.3%", "19.4%", "25.8%"],
+      "evidence_text": "Comparison of the proportion of GOS (grain orientation spread) < 2° in the material shows that this proportion increases significantly in the high-temperature rolling zone (19.4–25.8 %) compared with the low-temperature rolling zone (6.9–12.3 %).",
+      "figures": [],
+      "tables": ["Table 3"],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "microstructure",
+      "subject": "crystallographic texture",
+      "claim": "The dominant crystallographic texture shifts from <001> in the low-temperature rolled samples to <101> in the high-temperature rolled samples, indicating the formation of recrystallized and DIFT grains.",
+      "values": ["<001>", "<101>"],
+      "evidence_text": "the grain orientation changes (Fig. 4i-l), with the dominant orientation shifting from <001> (predominant in the low-temperature rolling zone) to <101>. This indicates that high-temperature rolling induced the formation of numerous new grains, including recrystallized grains [22] and products of deformation-induced ferrite transformation.",
+      "figures": ["Fig. 4i-l"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "property",
+      "subject": "nano-hardness in low-temperature rolling zone",
+      "claim": "In the low-temperature rolling zone, the nano-hardness of the carbide/ferrite composite lamellae is 3.64 GPa, significantly higher than that of δ-ferrite lamellae (2.92–2.93 GPa), yielding a hardness mismatch of 0.72 GPa.",
+      "values": ["3.64 GPa", "2.92 GPa", "2.93 GPa", "0.72 GPa"],
+      "evidence_text": "In the low-temperature rolling zone, the hardness of the carbide/ferrite composite lamellae (3.64 GPa) is significantly higher than that of the δ-ferrite lamellae (2.92–2.93 GPa), with a hardness difference of 0.72 GPa.",
+      "figures": ["Fig. 4m-p"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "property",
+      "subject": "nano-hardness in high-temperature rolling zone",
+      "claim": "In the high-temperature rolling zone, nano-hardness follows the order martensite (5.98–6.50 GPa) > DIF (2.84–2.98 GPa) > δ-ferrite (2.64–2.77 GPa), with a maximum hardness mismatch of 3.86 GPa.",
+      "values": ["5.98 GPa", "6.50 GPa", "2.84 GPa", "2.98 GPa", "2.64 GPa", "2.77 GPa", "3.86 GPa"],
+      "evidence_text": "In the high-temperature rolling zone, the hardness of each phase exhibits a gradient distribution, following the order: martensite (5.98–6.50 GPa) > DIF (2.84–2.98 GPa) > δ-ferrite (2.64–2.77 GPa), and the maximum hardness difference reaches 3.86 GPa.",
+      "figures": ["Fig. 4m-p"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "hardness mismatch effects",
+      "claim": "In the low-temperature rolling zone, carbide particles pin dislocations via the Orowan mechanism, increasing work hardening rate; in the high-temperature zone, the large hardness mismatch (max 3.86 GPa) induces stress concentration at phase boundaries, making them preferential crack initiation sites.",
+      "values": ["3.86 GPa"],
+      "evidence_text": "This hardness mismatch induces two key effects. In the low-temperature rolling zone, carbide particles pin dislocations via the Orowan mechanism, leading to an increase in the work hardening rate of the composite lamellae. In the high-temperature rolling zone, the large hardness difference between phases causes stress concentration at phase boundaries, which become preferential sites for crack initiation [23].",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "multi-stage toughening and impact energy",
+      "claim": "The integration of spherical carbide strengthening with lamellar structure achieves multi-stage toughening (crack blunting, deflection, microvoid-induced horizontal propagation) and enables impact energy exceeding 200 J.",
+      "values": ["200 J"],
+      "evidence_text": "The multi-stage toughening mechanism of carbides in the low-temperature rolling zone is revealed through microstructure analysis as follows: ultra-fine spherical carbides induce crack tip blunting, crack deflection, and microvoid nucleation to trigger horizontal crack propagation. These effects dissipate energy and enable the impact energy to exceed 200 J.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "brittle fracture cause in high-temperature rolled zone",
+      "claim": "In the high-temperature rolled samples, equiaxed DIF grains within honeycomb martensite lamellae act as 'prefabricated crack paths', and combined with stress concentration at phase interfaces, jointly induce brittle fracture.",
+      "values": [],
+      "evidence_text": "It was found, by combining EBSD (electron backscatter diffraction) analysis with nanoindentation tests, that equiaxed grains of DIF within honeycomb-like martensite lamellae act as “prefabricated crack paths”. Stress concentration also exists at the phase interface, and the two jointly induce brittle fracture.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "microstructure",
+      "subject": "hot-forged prior microstructure",
+      "claim": "Prior to rolling, the hot-forged microstructure consists of coarse δ-ferrite and martensite/austenite (M/A) constituents without lamellar structure.",
+      "values": [],
+      "evidence_text": "As a control group, Fig. 3a-c depict the hot-forged experimental steel prior to rolling. In the figures, there is no obvious lamellar structure in the material before rolling, and the microstructure is mainly composed of coarse δ-ferrite and M/A (martensite/austenite) constituents.",
+      "figures": ["Fig. 3a-c"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "characterization",
+      "subject": "tensile and impact specimen geometry",
+      "claim": "Tensile tests used rod-shaped specimens with gauge length 25 mm and diameter 5 mm, conducted at crosshead speed 1.5 mm/min along RD; Charpy impact tests used V-notch specimens of 10×10×55 mm, with notch on rolled surface and impact direction perpendicular to RD.",
+      "values": ["25 mm", "5 mm", "1.5 mm/min", "10×10×55 mm"],
+      "evidence_text": "Tensile tests were performed using rod-shaped specimens with a gauge length of 25 mm and a diameter of 5 mm, which were sampled along the rolling direction (RD) of the plate. The tensile test was conducted at a crosshead speed of 1.5 mm/min. The specimens used for the Charpy impact test were Charpy V-notch samples with dimensions of 10 mm × 10 mm × 55 mm. The notch was machined on the rolled surface, and the impact direction was perpendicular to the RD.",
+      "figures": ["Fig. 1b", "Fig. 1c"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "characterization",
+      "subject": "nanoindentation parameters",
+      "claim": "Nanoindentation was performed with a peak load of 5 mN and loading/unloading rate of 500 μN/s, and hardness was calculated via the Oliver-Pharr method.",
+      "values": ["5 mN", "500 μN/s"],
+      "evidence_text": "nanoindentation testing was performed using a G200X nanoindenter with a peak load of 5 mN and a loading/unloading rate of 500 μN/s. Calibration of the indenter was conducted prior to testing, and hardness values were determined following the Oliver-Pharr method.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    }
+  ],
+  "context_update": {
+    "summary": "The current chunk (ending of Introduction, Experimental methods, and initial Results section 3.1) presents the innovation of combining spherical carbide strengthening with lamellar structure via low-temperature rolling, and multi-stage toughening (Orowan, crack blunting/deflection, microvoid-induced propagation) enabling impact energy >200 J. It provides the steel composition (Fe-0.35C-1.47Mn-4.50Al-0.26Cr-0.28Mo-1.47Ni wt%), full processing route (VIM, 1200°C/4h, hot forging 40mm, reheating 650-950°C/2h, 60% hot rolling to 16mm) producing samples R650, R750, R850, R950. Tensile and Charpy specimen geometry and characterization parameters (SEM/EBSD, nanoindentation, TEM) are given. Microstructural results show low-temperature rolled samples have alternating δ-ferrite/carbide-ferrite composite lamellae with ultra-fine spherical carbides (R650: 158nm, 1.7/μm², C/F 51.5%; R750: 247nm, 0.6/μm², C/F 43.3%), while high-temperature rolled samples possess δ-ferrite/honeycomb martensite lamellae with DIF and no carbides (R850 M 33.2%, R950 M 59.0%). EBSD reveals HAGBs, KAM, dislocation densities, GOS, texture evolution, and nanoindentation maps phase hardness. Key hardness mismatches (0.72 GPa low-T, 3.86 GPa high-T) drive Orowan strengthening and stress concentration. Subsequent chunks should link these microstructures to tensile/impact properties and detailed fracture mechanisms, referencing Tables 1-3 and Figures 1-4.",
+    "material_systems": ["low-density δ-ferrite steel", "δ-ferrite", "martensite", "carbide (cementite)", "deformation-induced ferrite (DIF)", "martensite/austenite constituents"],
+    "sample_aliases": ["R650", "R750", "R850", "R950", "hot-forged (prior to rolling)"],
+    "processing_route": ["vacuum induction melting (VIM)", "homogenization at 1200°C for 4h", "hot forging to 40mm thickness", "reheating at 650/750/850/950°C for 2h", "hot rolling with 60% reduction to 16mm", "air cooling"],
+    "key_variables": ["rolling temperature", "60% reduction ratio", "C/F volume fraction", "carbide diameter", "distribution density", "HAGBs proportion", "KAM", "dislocation density", "GOS <2° fraction", "nano-hardness of phases", "hardness mismatch"],
+    "microstructure": ["lamellar δ-ferrite/carbide-ferrite composite (low-T)", "honeycomb martensite with equiaxed DIF (high-T)", "coarse δ-ferrite + M/A (as-forged)", "ultra-fine spherical carbides coarsening at grain boundaries (Ostwald ripening)", "texture change from <001> to <101>"],
+    "properties": ["nano-hardness: C/F 3.64 GPa, δ-F 2.92-2.93 GPa (low-T); M 5.98-6.50 GPa, DIF 2.84-2.98 GPa, δ-F 2.64-2.77 GPa (high-T)", "hardness mismatch 0.72 GPa (low-T) and 3.86 GPa (high-T)", "impact energy >200 J (reported in introduction)"],
+    "mechanisms": ["Orowan strengthening by carbides in composite lamellae", "crack tip blunting, deflection, and microvoid-induced horizontal crack propagation", "DIF equiaxed grains as prefabricated crack paths", "stress concentration at phase boundaries due to hardness mismatch"],
+    "figures_or_tables": ["Fig. 1a-c", "Fig. 2a-d", "Fig. 3a-o", "Fig. 4a-p", "Table 1", "Table 2", "Table 3"],
+    "unresolved_terms": []
+  }
+}

@@ -1,0 +1,699 @@
+{
+  "papers": [
+    {
+      "paper_id": "A70",
+      "doi": null,
+      "title": "Nano-mechanical properties of Fe-Mn-Al-C lightweight steels",
+      "authors": [
+        "Alireza Rahnama",
+        "Hiren Kotadia",
+        "Samuel Clark",
+        "Vit Janik",
+        "Seetharaman Sridhar"
+      ],
+      "publication_year": "2018",
+      "journal": "Scientific Reports",
+      "keywords": [
+        "Fe-Mn-Al-C lightweight steel",
+        "nano-indentation",
+        "DFT calculation",
+        "κ-carbide",
+        "B2 intermetallic",
+        "annealing temperature",
+        "Ni addition",
+        "hardness"
+      ],
+      "research_type": "mixed",
+      "paper_scope": "Investigate nanomechanical properties of two duplex low-density steels Fe-15Mn-10Al-0.8C and Fe-15Mn-10Al-0.8C-5Ni (wt.%) as function of annealing temperature (500–1050°C) and Ni addition, combine nano-indentation experiments and DFT calculations to analyze hardness contribution of κ-carbides and B2 intermetallic phases, and reveal the influence of phase composition, morphology and bonding energy on mechanical properties."
+    }
+  ],
+  "alloys": [
+    {
+      "alloy_id": "alloy_fe15mn10al08c5ni",
+      "paper_id": "A70",
+      "alloy_name": "Fe-15Mn-10Al-0.8C-5Ni",
+      "aliases": [
+        "Ni-containing duplex low-density steel"
+      ],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Al",
+        "C",
+        "Ni"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Mn",
+          "weight_percent": "15",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "10",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.8",
+          "atomic_percent": null
+        },
+        {
+          "element": "Ni",
+          "weight_percent": "5",
+          "atomic_percent": null
+        },
+        {
+          "element": "Fe",
+          "weight_percent": "balance",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": null
+    },
+    {
+      "alloy_id": "alloy_fe15mn10al08c",
+      "paper_id": "A70",
+      "alloy_name": "Fe-15Mn-10Al-0.8C",
+      "aliases": [
+        "Ni-free duplex low-density steel"
+      ],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Al",
+        "C"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Mn",
+          "weight_percent": "15",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "10",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.8",
+          "atomic_percent": null
+        },
+        {
+          "element": "Fe",
+          "weight_percent": "balance",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": null
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_common_solution",
+      "paper_id": "A70",
+      "alloy_id": null,
+      "description": "Solution heat treatment at 1250°C for 35 min under protective argon atmosphere, followed by water quenching",
+      "processes_notes": "Applied to both Ni-containing and Ni-free alloys before annealing"
+    },
+    {
+      "process_id": "proc_anneal_500",
+      "paper_id": "A70",
+      "alloy_id": null,
+      "description": "Isothermal annealing at 500°C",
+      "processes_notes": null
+    },
+    {
+      "process_id": "proc_anneal_700",
+      "paper_id": "A70",
+      "alloy_id": null,
+      "description": "Isothermal annealing at 700°C",
+      "processes_notes": null
+    },
+    {
+      "process_id": "proc_anneal_900",
+      "paper_id": "A70",
+      "alloy_id": null,
+      "description": "Isothermal annealing at 900°C",
+      "processes_notes": null
+    },
+    {
+      "process_id": "proc_anneal_1050",
+      "paper_id": "A70",
+      "alloy_id": null,
+      "description": "Isothermal annealing at 1050°C",
+      "processes_notes": null
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_ni_500",
+      "paper_id": "A70",
+      "alloy_id": "alloy_fe15mn10al08c5ni",
+      "process_id": "proc_anneal_500"
+    },
+    {
+      "sample_id": "sample_ni_700",
+      "paper_id": "A70",
+      "alloy_id": "alloy_fe15mn10al08c5ni",
+      "process_id": "proc_anneal_700"
+    },
+    {
+      "sample_id": "sample_ni_900",
+      "paper_id": "A70",
+      "alloy_id": "alloy_fe15mn10al08c5ni",
+      "process_id": "proc_anneal_900"
+    },
+    {
+      "sample_id": "sample_ni_1050",
+      "paper_id": "A70",
+      "alloy_id": "alloy_fe15mn10al08c5ni",
+      "process_id": "proc_anneal_1050"
+    },
+    {
+      "sample_id": "sample_noni_500",
+      "paper_id": "A70",
+      "alloy_id": "alloy_fe15mn10al08c",
+      "process_id": "proc_anneal_500"
+    },
+    {
+      "sample_id": "sample_noni_700",
+      "paper_id": "A70",
+      "alloy_id": "alloy_fe15mn10al08c",
+      "process_id": "proc_anneal_700"
+    },
+    {
+      "sample_id": "sample_noni_900",
+      "paper_id": "A70",
+      "alloy_id": "alloy_fe15mn10al08c",
+      "process_id": "proc_anneal_900"
+    },
+    {
+      "sample_id": "sample_noni_1050",
+      "paper_id": "A70",
+      "alloy_id": "alloy_fe15mn10al08c",
+      "process_id": "proc_anneal_1050"
+    }
+  ],
+  "processing_steps": [
+    {
+      "sample_id": null,
+      "paper_id": "A70",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "solution heat treatment",
+      "temperature": "1250",
+      "unit": "℃",
+      "duration": "35 min",
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Conducted under protective argon atmosphere, applied to all samples before annealing"
+    },
+    {
+      "sample_id": "sample_ni_500,sample_noni_500",
+      "paper_id": "A70",
+      "sequence": "2-500",
+      "type": "heat_treatment",
+      "method": "isothermal annealing",
+      "temperature": "500",
+      "unit": "℃",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_ni_700,sample_noni_700",
+      "paper_id": "A70",
+      "sequence": "2-700",
+      "type": "heat_treatment",
+      "method": "isothermal annealing",
+      "temperature": "700",
+      "unit": "℃",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_ni_900,sample_noni_900",
+      "paper_id": "A70",
+      "sequence": "2-900",
+      "type": "heat_treatment",
+      "method": "isothermal annealing",
+      "temperature": "900",
+      "unit": "℃",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_ni_1050,sample_noni_1050",
+      "paper_id": "A70",
+      "sequence": "2-1050",
+      "type": "heat_treatment",
+      "method": "isothermal annealing",
+      "temperature": "1050",
+      "unit": "℃",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_ni_lowtemp",
+      "sample_id": "sample_ni_500,sample_ni_700",
+      "overall_structure": "Dual phase structure with γ matrix",
+      "number_of_phases": "3",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_ni_low_01",
+          "related_sequence": "2-500,2-700",
+          "phases_present": [
+            {
+              "phase_name": "γ austenite",
+              "crystal_structure": "fcc",
+              "volume_fraction": null,
+              "morphology": "matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "κ-carbide",
+              "crystal_structure": "L1'2 perovskite",
+              "volume_fraction": null,
+              "morphology": "cuboidal",
+              "grain_size": "<100 nm",
+              "texture": null
+            },
+            {
+              "phase_name": "B2 intermetallic",
+              "crystal_structure": "bcc",
+              "volume_fraction": null,
+              "morphology": "coarse particles, stringer bands",
+              "grain_size": "2-7 μm (coarse particles)",
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "prec_ni_kappa_low",
+              "type": "κ-carbide",
+              "size": {
+                "value": "<100",
+                "unit": "nm"
+              },
+              "distribution": "in γ matrix",
+              "coherency": null
+            },
+            {
+              "precipitate_id": "prec_ni_b2_low_coarse",
+              "type": "B2 (NiAl type)",
+              "size": {
+                "value": "2-7",
+                "unit": "μm"
+              },
+              "distribution": "in γ matrix, grain boundaries",
+              "coherency": null
+            },
+            {
+              "precipitate_id": "prec_ni_b2_stringer",
+              "type": "B2 (NiAl type, low Ni content)",
+              "size": null,
+              "distribution": "stringer bands (replaced α phase)",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_ni_hightemp",
+      "sample_id": "sample_ni_900,sample_ni_1050",
+      "overall_structure": "Dual phase structure with γ and α matrix",
+      "number_of_phases": "3",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_ni_high_01",
+          "related_sequence": "2-900,2-1050",
+          "phases_present": [
+            {
+              "phase_name": "γ austenite",
+              "crystal_structure": "fcc",
+              "volume_fraction": null,
+              "morphology": "matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "α ferrite",
+              "crystal_structure": "bcc",
+              "volume_fraction": null,
+              "morphology": "matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "B2 intermetallic",
+              "crystal_structure": "bcc",
+              "volume_fraction": null,
+              "morphology": "coarse particles, nano-sized discs",
+              "grain_size": "2-4 μm (coarse particles), ~200 nm (discs)",
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "prec_ni_b2_high_coarse",
+              "type": "B2 (NiAl type)",
+              "size": {
+                "value": "2-4",
+                "unit": "μm"
+              },
+              "distribution": "in γ matrix, grain boundaries",
+              "coherency": null
+            },
+            {
+              "precipitate_id": "prec_ni_b2_disc",
+              "type": "B2 (NiAl type)",
+              "size": {
+                "value": "200",
+                "unit": "nm"
+              },
+              "distribution": "nano-sized discs in α matrix",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_noni_lowtemp",
+      "sample_id": "sample_noni_500,sample_noni_700",
+      "overall_structure": "Dual phase structure with γ and α matrix",
+      "number_of_phases": "3",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_noni_low_01",
+          "related_sequence": "2-500,2-700",
+          "phases_present": [
+            {
+              "phase_name": "γ austenite",
+              "crystal_structure": "fcc",
+              "volume_fraction": null,
+              "morphology": "matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "α ferrite",
+              "crystal_structure": "bcc",
+              "volume_fraction": null,
+              "morphology": "matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "κ-carbide",
+              "crystal_structure": "L1'2 perovskite",
+              "volume_fraction": null,
+              "morphology": "cuboidal (in γ), needle-like (in α)",
+              "grain_size": "<100 nm (cuboidal), 200±33 nm width (500℃ needle), 500±33 nm width (700℃ needle)",
+              "texture": null
+            },
+            {
+              "phase_name": "B2 intermetallic",
+              "crystal_structure": "bcc",
+              "volume_fraction": null,
+              "morphology": "coarse particles",
+              "grain_size": "2-4 μm",
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "prec_noni_kappa_gamma",
+              "type": "κ-carbide",
+              "size": {
+                "value": "<100",
+                "unit": "nm"
+              },
+              "distribution": "cuboidal in γ matrix",
+              "coherency": null
+            },
+            {
+              "precipitate_id": "prec_noni_kappa_alpha",
+              "type": "κ-carbide",
+              "size": {
+                "value": "200±33,500±33",
+                "unit": "nm (width)"
+              },
+              "distribution": "needle-like in α matrix",
+              "coherency": null
+            },
+            {
+              "precipitate_id": "prec_noni_b2_low",
+              "type": "B2 (FeAl type)",
+              "size": {
+                "value": "2-4",
+                "unit": "μm"
+              },
+              "distribution": "in γ matrix, grain boundaries",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_noni_hightemp",
+      "sample_id": "sample_noni_900,sample_noni_1050",
+      "overall_structure": "Dual phase structure with γ and α matrix",
+      "number_of_phases": "3",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_noni_high_01",
+          "related_sequence": "2-900,2-1050",
+          "phases_present": [
+            {
+              "phase_name": "γ austenite",
+              "crystal_structure": "fcc",
+              "volume_fraction": null,
+              "morphology": "matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "α ferrite",
+              "crystal_structure": "bcc",
+              "volume_fraction": null,
+              "morphology": "matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "B2 intermetallic",
+              "crystal_structure": "bcc",
+              "volume_fraction": null,
+              "morphology": "coarse particles, nano-sized discs",
+              "grain_size": "2-4 μm (coarse particles), ~200 nm (discs)",
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "prec_noni_b2_high_coarse",
+              "type": "B2 (FeAl type)",
+              "size": {
+                "value": "2-4",
+                "unit": "μm"
+              },
+              "distribution": "in γ matrix, grain boundaries",
+              "coherency": null
+            },
+            {
+              "precipitate_id": "prec_noni_b2_disc",
+              "type": "B2 (FeAl type)",
+              "size": {
+                "value": "200",
+                "unit": "nm"
+              },
+              "distribution": "nano-sized discs in α matrix",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "prop_set_01",
+      "sample_id": null,
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "10",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_01_tem",
+      "sample_id": null,
+      "microstructure_uuid": null,
+      "technique": "Transmission Electron Microscopy (TEM, JEOL 2000FX)",
+      "purpose": "Characterize ordered phases using selected-area diffraction patterns (SADPs) and bright-field (BF) images",
+      "key_findings": "Observed disc-like B2 particles in α matrix at high annealing temperature, cuboid κ particles in γ matrix"
+    },
+    {
+      "characterization_id": "char_02_sem",
+      "sample_id": null,
+      "microstructure_uuid": null,
+      "technique": "Field Emission Scanning Electron Microscopy (FE-SEM, Carl Zeiss Sigma) with Energy Dispersive Spectroscopy (EDS)",
+      "purpose": "Observe microstructure morphology and phase composition",
+      "key_findings": "Observed B2 stringer bands, grain boundary B2 particles, κ-carbides in γ grains at low annealing temperature"
+    },
+    {
+      "characterization_id": "char_03_nanoindent",
+      "sample_id": null,
+      "microstructure_uuid": null,
+      "technique": "Nano-indentation",
+      "purpose": "Measure nano-hardness of individual phases and composite phases",
+      "key_findings": "Nano-indentation tests carried out at loading/unloading rate of 500 μN s⁻¹ up to 10000 μN maximum load, hold time 20 s, each phase measured at least 25 times"
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_01_dft",
+      "sample_id": null,
+      "simulation_method": "Density Functional Theory (DFT) ab-initio calculation",
+      "software_used": "Quantum-ESPRESSO package",
+      "potential_model": "Ultrasoft pseudo-potentials based on modified Rappe-Rabe-Kaxiras-Joannopoulos (RRKJ) scheme",
+      "validation_against_experiment": "Validated against experimental nano-indentation hardness results",
+      "analytical_model": [
+        {
+          "model_name": "Generalized Gradient Approximation (GGA) Perdew-Burke-Ernzerhof (PBE) functional",
+          "equation_role": "Exchange and correlation functional, spin-polarized",
+          "parameters": "Brillouin zone integration grid: 18×18×18 for structure optimization, 30×30×30 for density of states; energy cutoff: 50 Ryd for charge density, 60 Ryd for electronic density of states, 600 Ryd for augmentation charges; Murnaghan equation of state for bulk modulus fitting",
+          "model_note": null
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Ni-containing samples exhibit higher hardness than Ni-free samples because B2 phase is NiAl type with stronger Ni-Al bonds compared to Fe-Al bonds in FeAl type B2 of Ni-free samples",
+    "At 900°C and above, ferrite phase in both alloys contains nano-sized B2 discs, Ni-containing samples show higher hardness due to stronger Ni-Al bonds in B2 phase",
+    "At 700°C and below, nano-sized B2 discs in Ni-free samples are replaced by micron-sized needle-like κ-carbides in α phase, leading to lower hardness",
+    "At 700°C and below, entire α phase in Ni-containing samples is replaced by B2 stringer bands with lower Ni content, showing lower hardness than Ni-Al nano-discs",
+    "Hardness of needle-like κ-carbides formed in α phase is a function of Mn content",
+    "Hardness of nano-sized cuboid κ particles in γ phase cannot be measured individually by nano-indentation, composite hardness of γ+κ phase was measured",
+    "Lower annealing temperatures result in low ductility (elongation ≈10%), increasing annealing temperature improves strength-ductility balance due to removal of κ-carbides and formation of nano-sized B2 discs in ferrite phase"
+  ]
+}

@@ -1,0 +1,475 @@
+{
+    "papers": [
+        {
+            "paper_id": "A73",
+            "doi": "10.1002/srin.202200191",
+            "title": "Fe–Mn–C–Al Low-Density Steel for Structural Materials: A Review of Alloying, Heat Treatment, Microstructure, and Mechanical Properties",
+            "authors": ["Shufen Hu", "Zhibin Zheng", "Weiping Yang", "Haokun Yang"],
+            "publication_year": "2022",
+            "journal": "Steel Research International",
+            "keywords": ["Fe-Mn-C-Al low-density steel", "alloying", "heat treatment", "microstructure", "mechanical properties", "lightweight steel", "κ-carbide", "TWIP effect", "TRIP effect"],
+            "research_type": "review",
+            "paper_scope": "本文综述了含Al Fe-Mn-C-Al低密度钢的合金化、热处理工艺进展，及其对相组成、组织演变和力学性能的调控规律，总结了强化机制与应用场景，为高质量低密度钢的设计和工程化应用提供参考"
+        }
+    ],
+    "alloys": [
+        {
+            "alloy_id": "alloy_femncal",
+            "paper_id": "A73",
+            "alloy_name": "Fe-Mn-C-Al低密度钢",
+            "aliases": ["低密度钢", "Fe-Mn-C-Al钢"],
+            "base_element": "Fe",
+            "alloying_elements": ["Mn", "C", "Al", "Nb", "Cr", "Si", "Ti", "V"],
+            "nominal_composition": [
+                {
+                    "element": "Mn",
+                    "weight_percent": "5-30",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "C",
+                    "weight_percent": "0.4-1.2",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "Al",
+                    "weight_percent": "2-12",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "Nb",
+                    "weight_percent": "<0.05",
+                    "atomic_percent": null
+                }
+            ],
+            "alloys_notes": "分为两类：1)全奥氏体钢：Mn 12-30wt%，Al 5-12wt%，C 0.6-1.2wt%；2)奥氏体基双相钢：Mn 5-30wt%，Al 5-10wt%，C 0.4-0.7wt%"
+        }
+    ],
+    "processes": [
+        {
+            "process_id": "proc_femncal_01",
+            "paper_id": "A73",
+            "alloy_id": "alloy_femncal",
+            "description": "包括熔炼、热/冷加工、退火、时效等全流程工艺，用于调控相组成、析出行为和组织形貌，最终实现密度和力学性能的匹配优化",
+            "processes_notes": "时效温度400-650°C、时间0.5-100h可调控κ碳化物析出；冷却速率可调控奥氏体分解过程，慢冷易析出κ相，快冷可抑制析出"
+        }
+    ],
+    "samples": [
+        {
+            "sample_id": "sample_femncal_01",
+            "paper_id": "A73",
+            "alloy_id": "alloy_femncal",
+            "process_id": "proc_femncal_01"
+        }
+    ],
+    "processing_steps": [
+        {
+            "sample_id": "sample_femncal_01",
+            "paper_id": "A73",
+            "sequence": "1",
+            "type": "alloying",
+            "method": "真空熔炼合金化",
+            "temperature": null,
+            "unit": null,
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "添加Mn、C、Al主合金元素，可按需添加Nb、Ti、V等微合金元素细化晶粒、提升析出强化效果"
+        },
+        {
+            "sample_id": "sample_femncal_01",
+            "paper_id": "A73",
+            "sequence": "2",
+            "type": "thermomechanical_processing",
+            "method": "热轧/冷轧",
+            "temperature": "650-900",
+            "unit": "°C",
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": "up to 45",
+            "processing_steps_notes": "热轧温度接近900°C，冷轧压下量最高可达45%，可调控残余奥氏体含量"
+        },
+        {
+            "sample_id": "sample_femncal_01",
+            "paper_id": "A73",
+            "sequence": "3",
+            "type": "heat_treatment",
+            "method": "退火",
+            "temperature": "900-1360",
+            "unit": "°C",
+            "duration": "1-3",
+            "cooling_medium": "淬火/空冷",
+            "reduction_ratio": null,
+            "processing_steps_notes": "退火可实现晶粒回复再结晶，高温退火可获得全奥氏体组织"
+        },
+        {
+            "sample_id": "sample_femncal_01",
+            "paper_id": "A73",
+            "sequence": "4",
+            "type": "heat_treatment",
+            "method": "时效",
+            "temperature": "400-650",
+            "unit": "°C",
+            "duration": "0.5-100",
+            "cooling_medium": "炉冷/空冷",
+            "reduction_ratio": null,
+            "processing_steps_notes": "时效过程中奥氏体发生分解，析出短程有序相、κ碳化物等，显著影响力学性能"
+        }
+    ],
+    "structures": [
+        {
+            "structure_id": "struct_01",
+            "sample_id": "sample_femncal_01",
+            "overall_structure": "可形成全奥氏体单相组织或奥氏体+铁素体双相组织，时效后可析出κ碳化物、M3C碳化物、微合金碳化物等第二相",
+            "number_of_phases": "1-3",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_micro_001",
+                    "related_sequence": "3",
+                    "phases_present": [
+                        {
+                            "phase_name": "γ（奥氏体）",
+                            "crystal_structure": "面心立方(fcc)",
+                            "volume_fraction": "33.4-100",
+                            "morphology": "等轴晶，含大量退火孪晶",
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "α（铁素体）",
+                            "crystal_structure": "体心立方(bcc)",
+                            "volume_fraction": "0-66.6",
+                            "morphology": "沿轧制方向拉长的条状",
+                            "grain_size": null,
+                            "texture": null
+                        }
+                    ],
+                    "defects": [
+                        {
+                            "type": "退火孪晶、位错",
+                            "porosity": null,
+                            "inclusions": ["MnO", "Al₂O₃"],
+                            "dislocation_density": null,
+                            "lattice_distortion": "随Al、C溶质含量升高而增大"
+                        }
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": "<1.6",
+                            "unit": "μm"
+                        },
+                        "grain_size_distribution": "残余奥氏体晶粒尺寸<1.6μm时稳定性高，TRIP效应被抑制",
+                        "texture": null
+                    },
+                    "precipitates": []
+                },
+                {
+                    "uuid": "uuid_micro_002",
+                    "related_sequence": "4",
+                    "phases_present": [
+                        {
+                            "phase_name": "κ-碳化物",
+                            "crystal_structure": "L1₂有序结构",
+                            "volume_fraction": null,
+                            "morphology": "晶内及晶界析出",
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "M₃C碳化物",
+                            "crystal_structure": "正交晶系",
+                            "volume_fraction": null,
+                            "morphology": "Al含量<7wt%的钢中析出",
+                            "grain_size": null,
+                            "texture": null
+                        }
+                    ],
+                    "defects": [],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": null,
+                            "unit": null
+                        },
+                        "grain_size_distribution": null,
+                        "texture": null
+                    },
+                    "precipitates": [
+                        {
+                            "precipitate_id": "prec_001",
+                            "type": "κ-碳化物",
+                            "size": {
+                                "value": null,
+                                "unit": "nm"
+                            },
+                            "distribution": "晶内均匀析出/晶界连续析出",
+                            "coherency": "时效初期共格，过时效后变为非共格"
+                        },
+                        {
+                            "precipitate_id": "prec_002",
+                            "type": "TiC",
+                            "size": {
+                                "value": "20",
+                                "unit": "nm"
+                            },
+                            "distribution": "晶内弥散析出",
+                            "coherency": null
+                        },
+                        {
+                            "precipitate_id": "prec_003",
+                            "type": "V(C,N)",
+                            "size": {
+                                "value": "30-100",
+                                "unit": "nm"
+                            },
+                            "distribution": "晶内弥散析出",
+                            "coherency": null
+                        },
+                        {
+                            "precipitate_id": "prec_004",
+                            "type": "NbC",
+                            "size": {
+                                "value": "100",
+                                "unit": "nm"
+                            },
+                            "distribution": "晶内弥散析出",
+                            "coherency": null
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "interfaces": [
+        {
+            "interface_set_id": "interface_01",
+            "sample_id": "sample_femncal_01",
+            "phases": [
+                {
+                    "interface_id": "inter_001",
+                    "microstructure_uuid": "uuid_micro_002",
+                    "phase_1_name": "奥氏体(γ)",
+                    "phase_2_name": "κ-碳化物",
+                    "coherence": "时效初期共格，过时效后非共格"
+                },
+                {
+                    "interface_id": "inter_002",
+                    "microstructure_uuid": "uuid_micro_001",
+                    "phase_1_name": "奥氏体(γ)",
+                    "phase_2_name": "铁素体(α)",
+                    "coherence": "半共格"
+                }
+            ],
+            "defect_interaction": [
+                {
+                    "interaction_id": "interact_001",
+                    "microstructure_uuid": "uuid_micro_001",
+                    "interaction_type": "位错被孪晶界钉扎",
+                    "quality_description": "产生动态Hall-Petch效应，提升加工硬化率"
+                },
+                {
+                    "interaction_id": "interact_002",
+                    "microstructure_uuid": "uuid_micro_002",
+                    "interaction_type": "位错剪切或绕过析出相",
+                    "quality_description": "产生析出强化效应，提升屈服强度"
+                }
+            ],
+            "interface_notes": [
+                {
+                    "stress_strain_distribution": "相界面处易产生应力集中，过时效后粗化的κ-碳化物界面易成为微裂纹形核位置"
+                },
+                {
+                    "slippage_situation": "孪晶界可有效阻碍位错滑移，提升材料强度"
+                }
+            ],
+            "phase_evolution": "时效过程中奥氏体分解序列为：γ→γ'+γ''→γ'+L1₂(SRO)→γ+κ"
+        }
+    ],
+    "properties": [
+        {
+            "property_set_id": "prop_01",
+            "sample_id": "sample_femncal_01",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [
+                        {
+                            "direction": null,
+                            "value": "950",
+                            "unit": "MPa",
+                            "others": {
+                                "uncertainty": null
+                            }
+                        }
+                    ],
+                    "ultimate_tensile_strength": [
+                        {
+                            "direction": null,
+                            "value": "1100",
+                            "unit": "MPa",
+                            "others": {
+                                "uncertainty": null
+                            }
+                        }
+                    ],
+                    "elongation": [
+                        {
+                            "direction": null,
+                            "value": "40",
+                            "unit": "%",
+                            "others": null
+                        }
+                    ],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [],
+                "fracture_toughness": {
+                    "value": "44-149",
+                    "unit": "J"
+                },
+                "fatigue_properties": {
+                    "fatigue_limit": null,
+                    "cycles_to_failure": null
+                },
+                "creep_properties": {
+                    "steady_state_creep_rate": null,
+                    "rupture_life": null
+                }
+            },
+            "physical": {
+                "density": {
+                    "value": "6.2-7.0",
+                    "unit": "g/cm³"
+                },
+                "thermal_properties": {
+                    "thermal_conductivity": null,
+                    "thermal_expansion_coefficient": null,
+                    "specific_heat": null
+                },
+                "electrical_properties": {
+                    "electrical_conductivity": null,
+                    "resistivity": null
+                },
+                "magnetic_properties": {
+                    "magnetic_susceptibility": null,
+                    "curie_temperature": null
+                }
+            },
+            "chemical": {
+                "corrosion_resistance": {
+                    "test_medium": null,
+                    "corrosion_rate": null,
+                    "passivation_behavior": null
+                },
+                "oxidation_resistance": {
+                    "oxidation_rate_constant": null,
+                    "protective_scale": null
+                }
+            },
+            "radiation_properties": {
+                "void_swelling": null,
+                "irradiation_hardening": null,
+                "helium_embrittlement": null
+            }
+        }
+    ],
+    "performance": [
+        {
+            "performance_id": "perf_01",
+            "sample_id": "sample_femncal_01",
+            "service_conditions": {
+                "operating_temperature": {
+                    "min": "-196",
+                    "max": "650",
+                    "unit": "°C"
+                },
+                "stress_state": "拉伸、冲击、摩擦磨损、交变载荷等",
+                "environment": "汽车、航空航天、采矿装备、低温LNG储运、氢环境等"
+            },
+            "lifetime_prediction": {
+                "model_used": null,
+                "predicted_lifetime": null,
+                "confidence_interval": null
+            },
+            "comparative_performance": {
+                "benchmark_alloy": "传统高强钢、6000系铝合金、AZ系列镁合金",
+                "benchmark_process_id": null,
+                "benchmark_sample_id": null,
+                "improvement_percentage": "密度比传统钢降低10%-15%，强度比铝合金/镁合金高2倍以上，比强度显著优于传统结构金属材料"
+            }
+        }
+    ],
+    "characterization_methods": [
+        {
+            "characterization_id": "char_01",
+            "sample_id": "sample_femncal_01",
+            "microstructure_uuid": "uuid_micro_001",
+            "technique": "光学显微镜(OM)",
+            "purpose": "观察晶粒形貌、退火孪晶、铁素体分布",
+            "key_findings": "全奥氏体钢含大量退火孪晶，双相钢中铁素体沿轧制方向拉长"
+        },
+        {
+            "characterization_id": "char_02",
+            "sample_id": "sample_femncal_01",
+            "microstructure_uuid": "uuid_micro_001, uuid_micro_002",
+            "technique": "透射电子显微镜(TEM)",
+            "purpose": "观察变形孪晶、位错组态、析出物形貌",
+            "key_findings": "变形过程中形成大量纳米级孪晶，位错被孪晶界钉扎，产生动态Hall-Petch效应"
+        },
+        {
+            "characterization_id": "char_03",
+            "sample_id": "sample_femncal_01",
+            "microstructure_uuid": null,
+            "technique": "扫描电子显微镜(SEM)",
+            "purpose": "观察磨损表面、断口形貌、裂纹扩展路径",
+            "key_findings": "过时效后粗化的κ-碳化物界面易产生微裂纹，导致磨损性能和韧性下降"
+        },
+        {
+            "characterization_id": "char_04",
+            "sample_id": "sample_femncal_01",
+            "microstructure_uuid": null,
+            "technique": "CALPHAD热力学计算",
+            "purpose": "绘制相图、预测相组成与相变行为",
+            "key_findings": "绘制了900°C下Fe-Mn-C-Al系等温截面，明确了Mn、Al、C含量对相区范围的影响规律"
+        }
+    ],
+    "computational_details": [
+        {
+            "computation_id": "comp_01",
+            "sample_id": "sample_femncal_01",
+            "simulation_method": "CALPHAD热力学计算",
+            "software_used": "Thermo-Calc",
+            "potential_model": "钢数据库",
+            "validation_against_experiment": "计算得到的900°C等温截面与实验测定结果吻合",
+            "analytical_model": []
+        },
+        {
+            "computation_id": "comp_02",
+            "sample_id": "sample_femncal_01",
+            "simulation_method": "有限元模拟",
+            "software_used": "ABAQUS/UMAT",
+            "potential_model": null,
+            "validation_against_experiment": "计算得到的各相应力应变响应与实验结果一致",
+            "analytical_model": [
+                {
+                    "model_name": "Ashby-Orowan关系",
+                    "equation_role": "计算析出相对屈服强度的贡献",
+                    "parameters": "泰勒因子M=3.06，剪切模量G，伯氏矢量b，析出相体积分数f，尺寸D",
+                    "model_note": "析出相尺寸越小、体积分数越高，屈服强度提升越显著"
+                }
+            ]
+        }
+    ],
+    "unmapped_findings": [
+        "10%的构件重量降低可带来6%-8%的能耗节约、5%以上的制动距离缩短及更优的抗疲劳性能",
+        "密度经验公式：ρ_Fe-Mn-C-Al = 8.15 - 0.101(wt%Al) - 0.41(wt%C) - 0.0085(wt%Mn)",
+        "奥氏体晶格常数经验公式：α_Fe-Mn-C-Al = 0.35721 + 0.0002771(wt%Al) + 0.0044089(wt%C) + 0.0001166(wt%Mn)",
+        "奥氏体屈服强度与溶质元素的关系：σ_γ=10.5Al_wt%+351.5；σ_γ=0.58Mn_wt%+328.0；σ_γ=180.7C_wt%+250.7",
+        "主要强化机制包括：TWIP效应（低Al钢）、TRIP效应（双相钢）、短程有序(SRO)强化（高Al钢）、析出强化（时效态钢）",
+        "各合金元素的利弊：Al可降低密度但抑制TWIP效应；Nb提升屈服强度但降低TWIP效应；C增强孪生行为但易引发动态应变时效导致剪切断裂；Mn提升低温韧性但室温性能提升有限且成本较高",
+        "该钢种量产面临的核心挑战：高Mn钢锭散热速率低、铸轧过程Al氧化夹杂污染、成分偏析、缩孔裂纹缺陷、时效工艺窗口窄、成本控制难度大",
+        "Al添加可降低氢扩散速率、提高氢溶解度，缓解氢脆敏感性"
+    ]
+}

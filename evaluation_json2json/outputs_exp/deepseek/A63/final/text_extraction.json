@@ -1,0 +1,789 @@
+{
+  "papers": [
+    {
+      "paper_id": "A63",
+      "doi": "10.1016/j.vacuum.2026.115094",
+      "title": "Promoting strength-ductility synergy by heterogeneous grain structure in a zirconium-alloyed Fe-Mn-Al-C low-density steel",
+      "authors": [
+        "Yuheng Wang",
+        "Runze Yu",
+        "Fengchao An",
+        "Suotao Wang",
+        "Hao Wang",
+        "Zibo Zhao",
+        "Hongpu Yue",
+        "Tianxiang Gao",
+        "Junting Luo",
+        "Junsong Zhang",
+        "Riping Liu"
+      ],
+      "publication_year": "2026",
+      "journal": "Vacuum",
+      "keywords": [
+        "Low-density steels",
+        "Bimodal grains",
+        "Zirconium addition",
+        "Mechanical properties"
+      ],
+      "research_type": "mixed",
+      "paper_scope": "Designing a single-phase heterogeneous grain structure in Fe-Mn-Al-C low-density steel by Zr microalloying and thermo-mechanical treatment to overcome strength-ductility trade-off via heterogeneous deformation-induced strengthening, dislocation slip, and nanotwinning."
+    }
+  ],
+  "alloys": [
+    {
+      "alloy_id": "alloy_zr0",
+      "paper_id": "A63",
+      "alloy_name": "Zr0 steel",
+      "aliases": [
+        "Zr0"
+      ],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Al",
+        "C",
+        "Zr"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Fe",
+          "weight_percent": "balance",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "25",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "7",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.9",
+          "atomic_percent": null
+        },
+        {
+          "element": "Zr",
+          "weight_percent": "0",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": null
+    },
+    {
+      "alloy_id": "alloy_zr001",
+      "paper_id": "A63",
+      "alloy_name": "Zr0.01 steel",
+      "aliases": [
+        "Zr0.01"
+      ],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Al",
+        "C",
+        "Zr"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Fe",
+          "weight_percent": "balance",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "25",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "7",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.9",
+          "atomic_percent": null
+        },
+        {
+          "element": "Zr",
+          "weight_percent": "0.01",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": null
+    },
+    {
+      "alloy_id": "alloy_zr050",
+      "paper_id": "A63",
+      "alloy_name": "Zr0.50 steel",
+      "aliases": [
+        "Zr0.50"
+      ],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Al",
+        "C",
+        "Zr"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Fe",
+          "weight_percent": "balance",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "25",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "7",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.9",
+          "atomic_percent": null
+        },
+        {
+          "element": "Zr",
+          "weight_percent": "0.50",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": null
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_tmt",
+      "paper_id": "A63",
+      "alloy_id": null,
+      "description": "Homogenization at 1200°C for 2 h, hot rolling with 40% thickness reduction followed by water quenching, cold rolling with 80% reduction, annealing at 900°C for 5 min followed by water quenching (thermo-mechanical treatment).",
+      "processes_notes": "Same TMT route applied to all three steels (Zr0, Zr0.01, Zr0.50)."
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_zr0",
+      "paper_id": "A63",
+      "alloy_id": "alloy_zr0",
+      "process_id": "proc_tmt"
+    },
+    {
+      "sample_id": "sample_zr001",
+      "paper_id": "A63",
+      "alloy_id": "alloy_zr001",
+      "process_id": "proc_tmt"
+    },
+    {
+      "sample_id": "sample_zr050",
+      "paper_id": "A63",
+      "alloy_id": "alloy_zr050",
+      "process_id": "proc_tmt"
+    }
+  ],
+  "processing_steps": [
+    {
+      "sample_id": "sample_zr0",
+      "paper_id": "A63",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "Homogenization",
+      "temperature": "1200",
+      "unit": "°C",
+      "duration": "2 h",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_zr0",
+      "paper_id": "A63",
+      "sequence": "2",
+      "type": "thermomechanical_processing",
+      "method": "Hot rolling + water quenching",
+      "temperature": null,
+      "unit": null,
+      "duration": null,
+      "cooling_medium": "water",
+      "reduction_ratio": "40%",
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_zr0",
+      "paper_id": "A63",
+      "sequence": "3",
+      "type": "mechanical_processing",
+      "method": "Cold rolling",
+      "temperature": null,
+      "unit": null,
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": "80%",
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_zr0",
+      "paper_id": "A63",
+      "sequence": "4",
+      "type": "heat_treatment",
+      "method": "Annealing",
+      "temperature": "900",
+      "unit": "°C",
+      "duration": "5 min",
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_zr001",
+      "paper_id": "A63",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "Homogenization",
+      "temperature": "1200",
+      "unit": "°C",
+      "duration": "2 h",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_zr001",
+      "paper_id": "A63",
+      "sequence": "2",
+      "type": "thermomechanical_processing",
+      "method": "Hot rolling + water quenching",
+      "temperature": null,
+      "unit": null,
+      "duration": null,
+      "cooling_medium": "water",
+      "reduction_ratio": "40%",
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_zr001",
+      "paper_id": "A63",
+      "sequence": "3",
+      "type": "mechanical_processing",
+      "method": "Cold rolling",
+      "temperature": null,
+      "unit": null,
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": "80%",
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_zr001",
+      "paper_id": "A63",
+      "sequence": "4",
+      "type": "heat_treatment",
+      "method": "Annealing",
+      "temperature": "900",
+      "unit": "°C",
+      "duration": "5 min",
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_zr050",
+      "paper_id": "A63",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "Homogenization",
+      "temperature": "1200",
+      "unit": "°C",
+      "duration": "2 h",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_zr050",
+      "paper_id": "A63",
+      "sequence": "2",
+      "type": "thermomechanical_processing",
+      "method": "Hot rolling + water quenching",
+      "temperature": null,
+      "unit": null,
+      "duration": null,
+      "cooling_medium": "water",
+      "reduction_ratio": "40%",
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_zr050",
+      "paper_id": "A63",
+      "sequence": "3",
+      "type": "mechanical_processing",
+      "method": "Cold rolling",
+      "temperature": null,
+      "unit": null,
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": "80%",
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_zr050",
+      "paper_id": "A63",
+      "sequence": "4",
+      "type": "heat_treatment",
+      "method": "Annealing",
+      "temperature": "900",
+      "unit": "°C",
+      "duration": "5 min",
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_zr0",
+      "sample_id": "sample_zr0",
+      "overall_structure": "Fully recrystallized equiaxed FCC grains with a homogeneous grain size.",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_zr0_fcc",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "FCC",
+              "crystal_structure": "FCC",
+              "volume_fraction": "100%",
+              "morphology": "equiaxed",
+              "grain_size": "12 μm",
+              "texture": "random"
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "12",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": "random"
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_zr001",
+      "sample_id": "sample_zr001",
+      "overall_structure": "Predominantly coarse recrystallized FCC grains with a small fraction (~6%) of fine FCC grains; average grain size ~7 μm.",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_zr001_fcc",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "FCC",
+              "crystal_structure": "FCC",
+              "volume_fraction": "100%",
+              "morphology": "equiaxed (mostly coarse, few fine)",
+              "grain_size": "7 μm (average)",
+              "texture": "random"
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "7",
+              "unit": "μm"
+            },
+            "grain_size_distribution": "bimodal tendency with ~6% fine grains",
+            "texture": "random"
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_zr050",
+      "sample_id": "sample_zr050",
+      "overall_structure": "Single-phase FCC bimodal grain structure consisting of coarse grain (CG) zones (~5 μm, 65% area) and fine grain (FG) zones (~1 μm, 35% area), with nanoscale ZrC precipitates.",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_zr050_cg_zone",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "FCC (CG zone)",
+              "crystal_structure": "FCC",
+              "volume_fraction": "65%",
+              "morphology": "coarse equiaxed",
+              "grain_size": "5 μm",
+              "texture": "random"
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "5",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": "random"
+          },
+          "precipitates": []
+        },
+        {
+          "uuid": "uuid_zr050_fg_zone",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "FCC (FG zone)",
+              "crystal_structure": "FCC",
+              "volume_fraction": "35%",
+              "morphology": "fine equiaxed",
+              "grain_size": "1 μm",
+              "texture": "random"
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocation",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "high (high KAM values in FG zones)",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "1",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": "random"
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "prec_zrc",
+              "type": "ZrC",
+              "size": {
+                "value": "30",
+                "unit": "nm"
+              },
+              "distribution": "uniformly distributed in FCC grain interior (especially in FG regions)",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interface_zr050_cg_fg",
+      "sample_id": "sample_zr050",
+      "phases": [
+        {
+          "interface_id": "if_cg_fg",
+          "microstructure_uuid": null,
+          "phase_1_name": "Coarse FCC grains",
+          "phase_2_name": "Fine FCC grains",
+          "coherence": "incoherent (high-angle grain boundaries)"
+        }
+      ],
+      "defect_interaction": [
+        {
+          "interaction_id": "int_gnd",
+          "microstructure_uuid": null,
+          "interaction_type": "geometrically necessary dislocation (GND) accumulation",
+          "quality_description": "Strain partitioning between soft CG and hard FG zones leads to accumulation of GNDs at hetero-interfaces, generating heterogeneous deformation-induced (HDI) stress."
+        }
+      ],
+      "interface_notes": [
+        {
+          "stress_strain_distribution": "Strain localizes initially in CG zones and at interfaces; at 8% global strain, FG zones also exhibit significant strain (von Mises strain maps, Fig. 5)."
+        },
+        {
+          "slippage_situation": null
+        }
+      ],
+      "phase_evolution": null
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_zr0",
+      "sample_id": "sample_zr0",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "RD",
+              "value": "435",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "~"
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "RD",
+              "value": "820",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "RD",
+              "value": "52",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Engineering stress-strain curves shown in Fig. 4a.",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": {
+        "density": null,
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": null
+    },
+    {
+      "property_set_id": "prop_zr001",
+      "sample_id": "sample_zr001",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "RD",
+              "value": "450",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "~"
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "RD",
+              "value": "832",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "~"
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "RD",
+              "value": "55",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Engineering stress-strain curves shown in Fig. 4a.",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": {
+        "density": null,
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": null
+    },
+    {
+      "property_set_id": "prop_zr050",
+      "sample_id": "sample_zr050",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "RD",
+              "value": "505",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "~"
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "RD",
+              "value": "855",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "~"
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "RD",
+              "value": "58",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Engineering stress-strain curves and true stress-strain curve shown in Fig. 4a; high true UTS observed.",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": {
+        "density": null,
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": null
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_comparison_zr050_vs_zr0",
+      "sample_id": "sample_zr050",
+      "service_conditions": null,
+      "lifetime_prediction": null,
+      "comparative_performance": {
+        "benchmark_alloy": "alloy_zr0",
+        "benchmark_process_id": "proc_tmt",
+        "benchmark_sample_id": "sample_zr0",
+        "improvement_percentage": "YS ~16% increase (435→505 MPa), UTS ~4% increase (820→855 MPa), elongation ~12% increase (52%→58%)"
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_zr0_ebsd",
+      "sample_id": "sample_zr0",
+      "microstructure_uuid": "uuid_zr0_fcc",
+      "technique": "EBSD (IPF, IQ, KAM maps)",
+      "purpose": "Microstructure characterization prior to deformation",
+      "key_findings": "Equiaxed FCC grains with low KAM values, random orientation; fully recrystallized."
+    },
+    {
+      "characterization_id": "char_zr001_ebsd",
+      "sample_id": "sample_zr001",
+      "microstructure_uuid": "uuid_zr001_fcc",
+      "technique": "EBSD (IPF, IQ, KAM maps)",
+      "purpose": "Microstructure characterization prior to deformation",
+      "key_findings": "Predominantly coarse FCC grains with a small fraction of fine grains; grain sizes reduced compared to Zr0, random orientation."
+    },
+    {
+      "characterization_id": "char_zr050_ebsd",
+      "sample_id": "sample_zr050",
+      "microstructure_uuid": "uuid_zr050_cg_zone",
+      "technique": "EBSD (IPF, IQ, KAM maps)",
+      "purpose": "Microstructure characterization prior to deformation",
+      "key_findings": "Bimodal grain structure: CG zones with low KAM values and FG zones with high KAM values (high dislocation density)."
+    },
+    {
+      "characterization_id": "char_zr050_bse",
+      "sample_id": "sample_zr050",
+      "microstructure_uuid": "uuid_zr050_fg_zone",
+      "technique": "BSE imaging",
+      "purpose": "Reveal fine FCC particles in FG regions",
+      "key_findings": "High density of fine particles uniformly distributed in the FG regions."
+    },
+    {
+      "characterization_id": "char_zr050_dic",
+      "sample_id": "sample_zr050",
+      "microstructure_uuid": null,
+      "technique": "Quasi-in-situ tensile test with μ-DIC and EBSD",
+      "purpose": "Local strain evolution and strain partitioning between CG and FG zones",
+      "key_findings": "Strain localizes initially in CG zones and at CG/FG interfaces; at 8% global strain, FG zones also undergo significant plastic strain; heterogeneous deformation-induced hardening observed."
+    },
+    {
+      "characterization_id": "char_zr050_tem",
+      "sample_id": "sample_zr050",
+      "microstructure_uuid": null,
+      "technique": "TEM/HRTEM, SAED",
+      "purpose": "Deformation mechanisms and precipitation analysis",
+      "key_findings": "Dislocations, slip bands along {111} planes, deformation nanotwins (~20 nm thick), interaction between dislocations and nanotwins; ZrC nanoparticles (~30 nm) identified by HRTEM and FFT."
+    },
+    {
+      "characterization_id": "char_all_fractography",
+      "sample_id": "sample_zr0",
+      "microstructure_uuid": null,
+      "technique": "SEM fractography",
+      "purpose": "Fracture surface observation",
+      "key_findings": "Zr0: small dimples and cleavage facets; Zr0.01 and Zr0.50: larger and deeper dimples with increased density (Fig. 4b–d)."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_thermocalc_zr050",
+      "sample_id": "sample_zr050",
+      "simulation_method": "Thermodynamic phase fraction calculation",
+      "software_used": "Thermo-Calc",
+      "potential_model": null,
+      "validation_against_experiment": null,
+      "analytical_model": [
+        {
+          "model_name": null,
+          "equation_role": null,
+          "parameters": null,
+          "model_note": null
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Fracture surface evolution: Zr0 shows small dimples and cleavage faces, while Zr0.01 and Zr0.50 exhibit larger, deeper dimples and increased dimple density, indicating improved ductility.",
+    "Formation mechanism of bimodal grain structure in Zr0.50 steel: The combined effects of Zr solute drag and Zener pinning by nanoscale ZrC particles retard recrystallization, leading to partial recrystallization and bimodal grain structure. Micro shear bands from cold-rolling provide nucleation sites for fine grains.",
+    "According to thermodynamic calculation (Thermo-Calc, Fig. 7), the equilibrium fraction of ZrC in Zr0.50 steel at 900°C is ~0.6%.",
+    "HDI strengthening contribution in Zr0.50 is estimated to be ~300 MPa (based on Hall-Petch and back-stress models). Precipitation strengthening from ZrC is calculated as ~108 MPa.",
+    "Critical twinning stress for the FCC matrix in Zr0.50 is calculated to be ~1.14 GPa (using SFE of ~55 mJ/m^2), which is lower than the true ultimate tensile strength, enabling deformation twinning.",
+    "Deformation mechanisms in Zr0.50 involve dislocation slip, slip bands, nanotwinning, and HDI hardening; the synergistic effect of HDI hardening and twinning enhances strain hardening and ductility.",
+    "The quasi-in-situ EBSD+μ-DIC analysis (Fig. 5) confirms strain partitioning between soft CG and hard FG zones, with GNDs accumulating at hetero-interfaces, contributing to HDI strengthening."
+  ]
+}

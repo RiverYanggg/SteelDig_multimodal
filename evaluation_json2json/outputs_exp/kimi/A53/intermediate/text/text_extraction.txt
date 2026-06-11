@@ -1,0 +1,1323 @@
+{
+    "papers": [
+        {
+            "paper_id": "A53",
+            "doi": null,
+            "title": "High Temperature Oxidation of Iron-Manganese-Aluminum Based Alloys",
+            "authors": [
+                "P. R. S. Jackson",
+                "G. R. Wallwork"
+            ],
+            "publication_year": "1984",
+            "journal": null,
+            "keywords": [
+                "Fe-Mn-Al alloys",
+                "nodules",
+                "alumina scales",
+                "manganese oxides",
+                "high temperature oxidation",
+                "chromium additions"
+            ],
+            "research_type": "experimental",
+            "paper_scope": "Investigation of isothermal oxidation resistance of high purity Fe-Mn-Al and Fe-Mn-Al-Cr alloys at 600-1000°C in pure oxygen at 200 torr, focusing on scale morphologies, oxide map construction, and the effects of manganese, aluminum, and chromium on protective alumina scale formation."
+        }
+    ],
+    "alloys": [
+        {
+            "alloy_id": "alloy_femnal",
+            "paper_id": "A53",
+            "alloy_name": "Fe-Mn-Al",
+            "aliases": [],
+            "base_element": "Fe",
+            "alloying_elements": [
+                "Mn",
+                "Al"
+            ],
+            "nominal_composition": [],
+            "alloys_notes": "High purity iron-manganese-aluminum alloys containing 0 to 40 wt.% manganese and 0 to 15 wt.% aluminum. Approximately 50 compositions were investigated."
+        },
+        {
+            "alloy_id": "alloy_femnalcr",
+            "paper_id": "A53",
+            "alloy_name": "Fe-Mn-Al-Cr",
+            "aliases": [],
+            "base_element": "Fe",
+            "alloying_elements": [
+                "Mn",
+                "Al",
+                "Cr"
+            ],
+            "nominal_composition": [],
+            "alloys_notes": "Fe-Mn-Al alloys with small additions of chromium (3 to 12 wt.%), prepared to study the effect of chromium on oxidation resistance."
+        }
+    ],
+    "processes": [
+        {
+            "process_id": "proc_femnal_cast",
+            "paper_id": "A53",
+            "alloy_id": "alloy_femnal",
+            "description": "Levitation melting from high purity materials; disc shaped specimens in the as-cast condition approximately 7 mm in diameter and 1 mm in thickness.",
+            "processes_notes": "Approximately 50 Fe-Mn-Al alloys and several additional chromium-containing alloys were prepared."
+        },
+        {
+            "process_id": "proc_femnal_ox24",
+            "paper_id": "A53",
+            "alloy_id": "alloy_femnal",
+            "description": "Isothermal oxidation at 800°C in pure oxygen at a pressure of 200 torr for 24 hr under static conditions.",
+            "processes_notes": "Kinetics recorded continuously using a Cahn R.G. electrobalance for all alloys oxidized for 24 hr. Weight gains before and after oxidation measured."
+        },
+        {
+            "process_id": "proc_femnal_ox100",
+            "paper_id": "A53",
+            "alloy_id": "alloy_femnal",
+            "description": "Isothermal oxidation of selected alloys for 100 hr at 600, 800, or 1000°C in pure oxygen at a pressure of 200 torr.",
+            "processes_notes": "Two selected alloys (Fe-10Mn-6Al and Fe-20Mn-8Al) were oxidized to determine effects of temperature and time upon oxidation behavior."
+        },
+        {
+            "process_id": "proc_femnalcr_ox",
+            "paper_id": "A53",
+            "alloy_id": "alloy_femnalcr",
+            "description": "Isothermal oxidation of Fe-Mn-Al-Cr alloys at 800°C in pure oxygen at a pressure of 200 torr for 24 or 100 hr.",
+            "processes_notes": "Preliminary tests showed small additions of chromium improved oxidation resistance; a series of experiments was performed to study its effect."
+        }
+    ],
+    "samples": [
+        {
+            "sample_id": "sample_femnal_cast",
+            "paper_id": "A53",
+            "alloy_id": "alloy_femnal",
+            "process_id": "proc_femnal_cast"
+        },
+        {
+            "sample_id": "sample_femnal_24h800",
+            "paper_id": "A53",
+            "alloy_id": "alloy_femnal",
+            "process_id": "proc_femnal_ox24"
+        },
+        {
+            "sample_id": "sample_10mn6al_600",
+            "paper_id": "A53",
+            "alloy_id": "alloy_femnal",
+            "process_id": "proc_femnal_ox100"
+        },
+        {
+            "sample_id": "sample_10mn6al_800",
+            "paper_id": "A53",
+            "alloy_id": "alloy_femnal",
+            "process_id": "proc_femnal_ox100"
+        },
+        {
+            "sample_id": "sample_10mn6al_1000",
+            "paper_id": "A53",
+            "alloy_id": "alloy_femnal",
+            "process_id": "proc_femnal_ox100"
+        },
+        {
+            "sample_id": "sample_20mn8al_600",
+            "paper_id": "A53",
+            "alloy_id": "alloy_femnal",
+            "process_id": "proc_femnal_ox100"
+        },
+        {
+            "sample_id": "sample_20mn8al_800",
+            "paper_id": "A53",
+            "alloy_id": "alloy_femnal",
+            "process_id": "proc_femnal_ox100"
+        },
+        {
+            "sample_id": "sample_20mn8al_1000",
+            "paper_id": "A53",
+            "alloy_id": "alloy_femnal",
+            "process_id": "proc_femnal_ox100"
+        },
+        {
+            "sample_id": "sample_femnalcr_24h800",
+            "paper_id": "A53",
+            "alloy_id": "alloy_femnalcr",
+            "process_id": "proc_femnalcr_ox"
+        },
+        {
+            "sample_id": "sample_femnalcr_100h800",
+            "paper_id": "A53",
+            "alloy_id": "alloy_femnalcr",
+            "process_id": "proc_femnalcr_ox"
+        }
+    ],
+    "processing_steps": [
+        {
+            "sample_id": "sample_femnal_cast",
+            "paper_id": "A53",
+            "sequence": "1",
+            "type": "casting",
+            "method": "levitation melting",
+            "temperature": null,
+            "unit": null,
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "Prepared from high purity materials; disc shaped specimens approximately 7 mm diameter and 1 mm thickness."
+        },
+        {
+            "sample_id": "sample_femnal_24h800",
+            "paper_id": "A53",
+            "sequence": "1",
+            "type": "heat_treatment",
+            "method": "isothermal oxidation",
+            "temperature": "800",
+            "unit": "°C",
+            "duration": "24",
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "Pure oxygen at 200 torr under static conditions. Weight gains recorded continuously using Cahn R.G. electrobalance."
+        },
+        {
+            "sample_id": "sample_10mn6al_600",
+            "paper_id": "A53",
+            "sequence": "1",
+            "type": "heat_treatment",
+            "method": "isothermal oxidation",
+            "temperature": "600",
+            "unit": "°C",
+            "duration": "100",
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "Pure oxygen at 200 torr. One of two selected alloys for temperature effect study."
+        },
+        {
+            "sample_id": "sample_10mn6al_800",
+            "paper_id": "A53",
+            "sequence": "1",
+            "type": "heat_treatment",
+            "method": "isothermal oxidation",
+            "temperature": "800",
+            "unit": "°C",
+            "duration": "100",
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "Pure oxygen at 200 torr."
+        },
+        {
+            "sample_id": "sample_10mn6al_1000",
+            "paper_id": "A53",
+            "sequence": "1",
+            "type": "heat_treatment",
+            "method": "isothermal oxidation",
+            "temperature": "1000",
+            "unit": "°C",
+            "duration": "100",
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "Pure oxygen at 200 torr."
+        },
+        {
+            "sample_id": "sample_20mn8al_600",
+            "paper_id": "A53",
+            "sequence": "1",
+            "type": "heat_treatment",
+            "method": "isothermal oxidation",
+            "temperature": "600",
+            "unit": "°C",
+            "duration": "100",
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "Pure oxygen at 200 torr. Second selected alloy for temperature effect study."
+        },
+        {
+            "sample_id": "sample_20mn8al_800",
+            "paper_id": "A53",
+            "sequence": "1",
+            "type": "heat_treatment",
+            "method": "isothermal oxidation",
+            "temperature": "800",
+            "unit": "°C",
+            "duration": "100",
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "Pure oxygen at 200 torr. Weight gain unreliable due to spalling."
+        },
+        {
+            "sample_id": "sample_20mn8al_1000",
+            "paper_id": "A53",
+            "sequence": "1",
+            "type": "heat_treatment",
+            "method": "isothermal oxidation",
+            "temperature": "1000",
+            "unit": "°C",
+            "duration": "100",
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "Pure oxygen at 200 torr. Weight gain unreliable due to spalling."
+        },
+        {
+            "sample_id": "sample_femnalcr_24h800",
+            "paper_id": "A53",
+            "sequence": "1",
+            "type": "heat_treatment",
+            "method": "isothermal oxidation",
+            "temperature": "800",
+            "unit": "°C",
+            "duration": "24",
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "Pure oxygen at 200 torr."
+        },
+        {
+            "sample_id": "sample_femnalcr_100h800",
+            "paper_id": "A53",
+            "sequence": "1",
+            "type": "heat_treatment",
+            "method": "isothermal oxidation",
+            "temperature": "800",
+            "unit": "°C",
+            "duration": "100",
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "Pure oxygen at 200 torr. All alloys showed signs of scale degradation after 100 hr."
+        }
+    ],
+    "structures": [
+        {
+            "structure_id": "str_femnal_cast",
+            "sample_id": "sample_femnal_cast",
+            "overall_structure": "As-cast alloy structures depend on composition according to the Fe-Mn-Al phase diagram at 800°C, ranging from fully ferritic to duplex ferrite-austenite or ferrite plus beta-manganese.",
+            "number_of_phases": "1 to 3",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid-cast-general",
+                    "related_sequence": null,
+                    "phases_present": [
+                        {
+                            "phase_name": "ferrite (α)",
+                            "crystal_structure": null,
+                            "volume_fraction": null,
+                            "morphology": "primary and secondary ferrite",
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "austenite (γ)",
+                            "crystal_structure": null,
+                            "volume_fraction": null,
+                            "morphology": "plates in duplex alloys",
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "beta-manganese (β-Mn)",
+                            "crystal_structure": null,
+                            "volume_fraction": null,
+                            "morphology": "present in high manganese compositions",
+                            "grain_size": null,
+                            "texture": null
+                        }
+                    ],
+                    "defects": [],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": null,
+                            "unit": null
+                        },
+                        "grain_size_distribution": null,
+                        "texture": null
+                    },
+                    "precipitates": []
+                }
+            ]
+        },
+        {
+            "structure_id": "str_region1",
+            "sample_id": "sample_femnal_24h800",
+            "overall_structure": "Region I alloys with insufficient aluminum to form continuous alumina scales; scales consist of alumina interspersed with bulky oxide nodules. Nodule morphology depends on manganese concentration.",
+            "number_of_phases": "3 to 4",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid-reg1-large",
+                    "related_sequence": null,
+                    "phases_present": [
+                        {
+                            "phase_name": "Fe2O3",
+                            "crystal_structure": null,
+                            "volume_fraction": null,
+                            "morphology": "white outer layer of large nodules",
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "(Fe,Mn)3O4",
+                            "crystal_structure": null,
+                            "volume_fraction": null,
+                            "morphology": "inner layer of large nodules",
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "Al2O3",
+                            "crystal_structure": null,
+                            "volume_fraction": null,
+                            "morphology": "particles or thin layers at metal-oxide interface",
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "Mn2O3",
+                            "crystal_structure": null,
+                            "volume_fraction": null,
+                            "morphology": "grey semicontinuous layer or particles at gas-oxide interface",
+                            "grain_size": null,
+                            "texture": null
+                        }
+                    ],
+                    "defects": [],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": null,
+                            "unit": null
+                        },
+                        "grain_size_distribution": null,
+                        "texture": null
+                    },
+                    "precipitates": []
+                },
+                {
+                    "uuid": "uuid-reg1-small",
+                    "related_sequence": null,
+                    "phases_present": [
+                        {
+                            "phase_name": "Mn2O3",
+                            "crystal_structure": null,
+                            "volume_fraction": null,
+                            "morphology": "distinct continuous external grey layer of small nodules",
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "Fe2O3",
+                            "crystal_structure": null,
+                            "volume_fraction": null,
+                            "morphology": "layer beneath Mn2O3",
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "(Fe,Mn)3O4",
+                            "crystal_structure": null,
+                            "volume_fraction": null,
+                            "morphology": "inner layer of small nodules",
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "Al2O3 or (Fe,Mn)Al2O4",
+                            "crystal_structure": null,
+                            "volume_fraction": null,
+                            "morphology": "continuous healing layer at metal-oxide interface",
+                            "grain_size": null,
+                            "texture": null
+                        }
+                    ],
+                    "defects": [],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": null,
+                            "unit": null
+                        },
+                        "grain_size_distribution": null,
+                        "texture": null
+                    },
+                    "precipitates": []
+                }
+            ]
+        },
+        {
+            "structure_id": "str_region2",
+            "sample_id": "sample_femnal_24h800",
+            "overall_structure": "Region II duplex alloys (mainly ferrite plus austenite, occasionally triplex with beta-Mn) forming alumina scales with bulky manganese rich oxides and wormlike oxide threads related to substrate structure.",
+            "number_of_phases": "2 to 3",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid-reg2-substrate",
+                    "related_sequence": null,
+                    "phases_present": [
+                        {
+                            "phase_name": "ferrite (α)",
+                            "crystal_structure": null,
+                            "volume_fraction": null,
+                            "morphology": "primary ferrite with high Al; secondary ferrite surface layers depleted in Mn",
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "austenite (γ)",
+                            "crystal_structure": null,
+                            "volume_fraction": null,
+                            "morphology": "plates intersecting surface beneath oxide",
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "beta-manganese (β-Mn)",
+                            "crystal_structure": null,
+                            "volume_fraction": null,
+                            "morphology": "present in Fe-30Mn-9Al",
+                            "grain_size": null,
+                            "texture": null
+                        }
+                    ],
+                    "defects": [],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": null,
+                            "unit": null
+                        },
+                        "grain_size_distribution": null,
+                        "texture": null
+                    },
+                    "precipitates": []
+                },
+                {
+                    "uuid": "uuid-reg2-scale",
+                    "related_sequence": null,
+                    "phases_present": [
+                        {
+                            "phase_name": "Al2O3",
+                            "crystal_structure": null,
+                            "volume_fraction": null,
+                            "morphology": "initial scale",
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "Mn2O3",
+                            "crystal_structure": null,
+                            "volume_fraction": null,
+                            "morphology": "oxide threads and bulky oxides",
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "Mn3O4",
+                            "crystal_structure": null,
+                            "volume_fraction": null,
+                            "morphology": "bulky oxides on alloys with >20% Mn",
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "(Fe,Mn)3O4",
+                            "crystal_structure": null,
+                            "volume_fraction": null,
+                            "morphology": "present in some scale structures associated with incomplete healing layers",
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "(Fe,Mn)Al2O4 or Al2O3",
+                            "crystal_structure": null,
+                            "volume_fraction": null,
+                            "morphology": "layer at metal-oxide interface",
+                            "grain_size": null,
+                            "texture": null
+                        }
+                    ],
+                    "defects": [
+                        {
+                            "type": "voids",
+                            "porosity": null,
+                            "inclusions": [],
+                            "dislocation_density": null,
+                            "lattice_distortion": null
+                        }
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": null,
+                            "unit": null
+                        },
+                        "grain_size_distribution": null,
+                        "texture": null
+                    },
+                    "precipitates": []
+                }
+            ]
+        },
+        {
+            "structure_id": "str_region3",
+            "sample_id": "sample_femnal_24h800",
+            "overall_structure": "Region III totally ferritic alloys with very adherent continuous protective alumina scales, not penetrated by nodules or bulky oxides; small oxide protrusions on high manganese alloys.",
+            "number_of_phases": "2",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid-reg3",
+                    "related_sequence": null,
+                    "phases_present": [
+                        {
+                            "phase_name": "ferrite (α)",
+                            "crystal_structure": null,
+                            "volume_fraction": null,
+                            "morphology": "totally ferritic substrate",
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "Al2O3",
+                            "crystal_structure": null,
+                            "volume_fraction": null,
+                            "morphology": "continuous protective scale, nearly featureless",
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "Mn-rich oxide protrusions",
+                            "crystal_structure": null,
+                            "volume_fraction": null,
+                            "morphology": "small protrusions generally less than a micron, abundant at high Mn concentrations",
+                            "grain_size": null,
+                            "texture": null
+                        }
+                    ],
+                    "defects": [],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": null,
+                            "unit": null
+                        },
+                        "grain_size_distribution": null,
+                        "texture": null
+                    },
+                    "precipitates": []
+                }
+            ]
+        },
+        {
+            "structure_id": "str_region4",
+            "sample_id": "sample_femnal_24h800",
+            "overall_structure": "Region IV alloys with >9% Al forming alumina scales penetrated by small manganese-rich oxide nodules; voids present beneath spalled areas.",
+            "number_of_phases": "3",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid-reg4",
+                    "related_sequence": null,
+                    "phases_present": [
+                        {
+                            "phase_name": "Al2O3",
+                            "crystal_structure": null,
+                            "volume_fraction": null,
+                            "morphology": "alumina scale",
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "Mn2O3",
+                            "crystal_structure": null,
+                            "volume_fraction": null,
+                            "morphology": "small oxide nodules penetrating substrate",
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "(Fe,Mn)Al2O4 or Al2O3",
+                            "crystal_structure": null,
+                            "volume_fraction": null,
+                            "morphology": "thin dark aluminum rich oxide layer at nodule-alloy interface",
+                            "grain_size": null,
+                            "texture": null
+                        }
+                    ],
+                    "defects": [
+                        {
+                            "type": "voids",
+                            "porosity": null,
+                            "inclusions": [],
+                            "dislocation_density": null,
+                            "lattice_distortion": null
+                        }
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": null,
+                            "unit": null
+                        },
+                        "grain_size_distribution": null,
+                        "texture": null
+                    },
+                    "precipitates": []
+                }
+            ]
+        },
+        {
+            "structure_id": "str_10mn6al_1000",
+            "sample_id": "sample_10mn6al_1000",
+            "overall_structure": "Thick convoluted alumina scale formed at 1000°C after 100 hr; adheres to substrate except at edges; two distinct layers.",
+            "number_of_phases": "2",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid-10mn6al-1000",
+                    "related_sequence": null,
+                    "phases_present": [
+                        {
+                            "phase_name": "Al2O3",
+                            "crystal_structure": null,
+                            "volume_fraction": null,
+                            "morphology": "inner layer",
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "Mn-Al oxide solid solution",
+                            "crystal_structure": null,
+                            "volume_fraction": null,
+                            "morphology": "outer layer enriched in manganese and aluminum, probably Mn3O4-Al2O3 solid solution",
+                            "grain_size": null,
+                            "texture": null
+                        }
+                    ],
+                    "defects": [],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": null,
+                            "unit": null
+                        },
+                        "grain_size_distribution": null,
+                        "texture": null
+                    },
+                    "precipitates": []
+                }
+            ]
+        },
+        {
+            "structure_id": "str_20mn8al_1000",
+            "sample_id": "sample_20mn8al_1000",
+            "overall_structure": "Convoluted alumina scale at 1000°C after 100 hr; identical to Fe-10Mn-6Al but spalled badly on cooling; external layer enriched in Mn and Al, inner layer with very little Fe or Mn.",
+            "number_of_phases": "2",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid-20mn8al-1000",
+                    "related_sequence": null,
+                    "phases_present": [
+                        {
+                            "phase_name": "Al2O3",
+                            "crystal_structure": null,
+                            "volume_fraction": null,
+                            "morphology": "inner layer",
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "Mn-Al oxide",
+                            "crystal_structure": null,
+                            "volume_fraction": null,
+                            "morphology": "outer layer enriched in Mn and Al",
+                            "grain_size": null,
+                            "texture": null
+                        }
+                    ],
+                    "defects": [
+                        {
+                            "type": "spallation",
+                            "porosity": null,
+                            "inclusions": [],
+                            "dislocation_density": null,
+                            "lattice_distortion": null
+                        }
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": null,
+                            "unit": null
+                        },
+                        "grain_size_distribution": null,
+                        "texture": null
+                    },
+                    "precipitates": []
+                }
+            ]
+        },
+        {
+            "structure_id": "str_femnalcr",
+            "sample_id": "sample_femnalcr_24h800",
+            "overall_structure": "Fe-Mn-Al-Cr alloys show varied scale morphologies: thin protective alumina on optimized compositions; hollow convoluted oxide mounds or wrinkled scales on low-Al or high-Mn compositions; duplex alloys form scales above austenite.",
+            "number_of_phases": "2 to 4",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid-cr-protective",
+                    "related_sequence": null,
+                    "phases_present": [
+                        {
+                            "phase_name": "Al2O3",
+                            "crystal_structure": null,
+                            "volume_fraction": null,
+                            "morphology": "thin protective alumina scale on Fe-10Mn-4Al-12Cr, Fe-5Mn-5Al-5Cr, and Fe-7.5Mn-5Al-5Cr",
+                            "grain_size": null,
+                            "texture": null
+                        }
+                    ],
+                    "defects": [],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": null,
+                            "unit": null
+                        },
+                        "grain_size_distribution": null,
+                        "texture": null
+                    },
+                    "precipitates": []
+                },
+                {
+                    "uuid": "uuid-cr-nonprotective",
+                    "related_sequence": null,
+                    "phases_present": [
+                        {
+                            "phase_name": "higher oxides of Fe, Mn, Cr",
+                            "crystal_structure": null,
+                            "volume_fraction": null,
+                            "morphology": "hollow convoluted or wrinkled oxide mounds on low Al or low Cr alloys",
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "alumina or aluminate spinel",
+                            "crystal_structure": null,
+                            "volume_fraction": null,
+                            "morphology": "at scale base",
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "small manganese rich nodules",
+                            "crystal_structure": null,
+                            "volume_fraction": null,
+                            "morphology": "associated with spalled alumina and angular voids",
+                            "grain_size": null,
+                            "texture": null
+                        }
+                    ],
+                    "defects": [
+                        {
+                            "type": "voids",
+                            "porosity": null,
+                            "inclusions": [],
+                            "dislocation_density": null,
+                            "lattice_distortion": null
+                        }
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": null,
+                            "unit": null
+                        },
+                        "grain_size_distribution": null,
+                        "texture": null
+                    },
+                    "precipitates": []
+                }
+            ]
+        }
+    ],
+    "interfaces": [
+        {
+            "interface_set_id": "int_set_femnal",
+            "sample_id": "sample_femnal_24h800",
+            "phases": [
+                {
+                    "interface_id": "int_01",
+                    "microstructure_uuid": "uuid-reg1-large",
+                    "phase_1_name": "Fe2O3",
+                    "phase_2_name": "(Fe,Mn)3O4",
+                    "coherence": null
+                },
+                {
+                    "interface_id": "int_02",
+                    "microstructure_uuid": "uuid-reg1-large",
+                    "phase_1_name": "Al2O3",
+                    "phase_2_name": "Fe-Mn-Al alloy",
+                    "coherence": null
+                },
+                {
+                    "interface_id": "int_03",
+                    "microstructure_uuid": "uuid-reg1-small",
+                    "phase_1_name": "Mn2O3",
+                    "phase_2_name": "Fe2O3",
+                    "coherence": null
+                },
+                {
+                    "interface_id": "int_04",
+                    "microstructure_uuid": "uuid-reg1-small",
+                    "phase_1_name": "(Fe,Mn)Al2O4 or Al2O3",
+                    "phase_2_name": "Fe-Mn-Al alloy",
+                    "coherence": null
+                },
+                {
+                    "interface_id": "int_05",
+                    "microstructure_uuid": "uuid-reg2-scale",
+                    "phase_1_name": "Al2O3",
+                    "phase_2_name": "bulky Mn-rich oxide",
+                    "coherence": null
+                },
+                {
+                    "interface_id": "int_06",
+                    "microstructure_uuid": "uuid-reg4",
+                    "phase_1_name": "Al2O3",
+                    "phase_2_name": "Mn2O3 nodule",
+                    "coherence": null
+                }
+            ],
+            "defect_interaction": [
+                {
+                    "interaction_id": "di_01",
+                    "microstructure_uuid": "uuid-reg2-substrate",
+                    "interaction_type": "Austenite promotes breakdown of preexisting alumina scales",
+                    "quality_description": "Bulky manganese rich oxides grow directly above precipitated austenite plates; austenite is detrimental to oxidation resistance."
+                },
+                {
+                    "interaction_id": "di_02",
+                    "microstructure_uuid": "uuid-reg4",
+                    "interaction_type": "Void formation beneath alumina scales facilitates nodule nucleation",
+                    "quality_description": "Smooth rounded voids beneath spalled alumina provide sites for manganese vapor reaction with oxygen at flaws, leading to small Mn oxide nodule growth."
+                }
+            ],
+            "interface_notes": [
+                {
+                    "stress_strain_distribution": null
+                },
+                {
+                    "slippage_situation": null
+                }
+            ],
+            "phase_evolution": "Scales evolve from initial alumina to complex multilayered structures depending on alloy composition and oxidation time. Breakaway and healing kinetics observed. Secondary ferrite forms beneath scales on duplex alloys due to manganese depletion from austenite. At 1000°C, scales become convoluted and duplex-layered."
+        },
+        {
+            "interface_set_id": "int_set_femnalcr",
+            "sample_id": "sample_femnalcr_24h800",
+            "phases": [
+                {
+                    "interface_id": "int_cr_01",
+                    "microstructure_uuid": "uuid-cr-protective",
+                    "phase_1_name": "Al2O3",
+                    "phase_2_name": "Fe-Mn-Al-Cr alloy",
+                    "coherence": null
+                },
+                {
+                    "interface_id": "int_cr_02",
+                    "microstructure_uuid": "uuid-cr-nonprotective",
+                    "phase_1_name": "higher oxides of Fe, Mn, Cr",
+                    "phase_2_name": "alumina or aluminate spinel",
+                    "coherence": null
+                }
+            ],
+            "defect_interaction": [
+                {
+                    "interaction_id": "di_cr_01",
+                    "microstructure_uuid": "uuid-cr-nonprotective",
+                    "interaction_type": "Spallation and void formation associated with small manganese rich nodules",
+                    "quality_description": "Similar to ternary alloys; voids in substrate contain angular voids and internal oxides where spallation occurred."
+                }
+            ],
+            "interface_notes": [
+                {
+                    "stress_strain_distribution": null
+                },
+                {
+                    "slippage_situation": null
+                }
+            ],
+            "phase_evolution": "Small chromium additions reduce the aluminum concentration required to form protective alumina scales. Duplex Fe-Mn-Al-Cr alloys form scales above austenite similar to ternary region II alloys."
+        }
+    ],
+    "properties": [
+        {
+            "property_set_id": "prop_femnal_24h800",
+            "sample_id": "sample_femnal_24h800",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [],
+                    "ultimate_tensile_strength": [],
+                    "elongation": [],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [],
+                "fracture_toughness": {
+                    "value": null,
+                    "unit": null
+                },
+                "fatigue_properties": {
+                    "fatigue_limit": null,
+                    "cycles_to_failure": null
+                },
+                "creep_properties": {
+                    "steady_state_creep_rate": null,
+                    "rupture_life": null
+                }
+            },
+            "physical": {
+                "density": {
+                    "value": null,
+                    "unit": null
+                },
+                "thermal_properties": {
+                    "thermal_conductivity": null,
+                    "thermal_expansion_coefficient": null,
+                    "specific_heat": null
+                },
+                "electrical_properties": {
+                    "electrical_conductivity": null,
+                    "resistivity": null
+                },
+                "magnetic_properties": {
+                    "magnetic_susceptibility": null,
+                    "curie_temperature": null
+                }
+            },
+            "chemical": {
+                "corrosion_resistance": {
+                    "test_medium": null,
+                    "corrosion_rate": null,
+                    "passivation_behavior": null
+                },
+                "oxidation_resistance": {
+                    "oxidation_rate_constant": "Few alloys obeyed simple rate equations. Log-log plots of weight gain vs time yielded a large range of n values from (ΔW/A)^n = kt, indicating kinetics approaching parabolic were observed only infrequently.",
+                    "protective_scale": "Four morphological types at 800°C: Region I (non-protective alumina + bulky iron or manganese rich nodules), Region II (non-protective alumina + bulky Mn-rich oxides and threads over duplex ferrite-austenite), Region III (protective continuous alumina on fully ferritic alloys), Region IV (alumina + small penetrating Mn oxide nodules on alloys with >9% Al)."
+                }
+            },
+            "radiation_properties": {
+                "void_swelling": null,
+                "irradiation_hardening": null,
+                "helium_embrittlement": null
+            }
+        },
+        {
+            "property_set_id": "prop_10mn6al_800",
+            "sample_id": "sample_10mn6al_800",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [],
+                    "ultimate_tensile_strength": [],
+                    "elongation": [],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [],
+                "fracture_toughness": {
+                    "value": null,
+                    "unit": null
+                },
+                "fatigue_properties": {
+                    "fatigue_limit": null,
+                    "cycles_to_failure": null
+                },
+                "creep_properties": {
+                    "steady_state_creep_rate": null,
+                    "rupture_life": null
+                }
+            },
+            "physical": {
+                "density": {
+                    "value": null,
+                    "unit": null
+                },
+                "thermal_properties": {
+                    "thermal_conductivity": null,
+                    "thermal_expansion_coefficient": null,
+                    "specific_heat": null
+                },
+                "electrical_properties": {
+                    "electrical_conductivity": null,
+                    "resistivity": null
+                },
+                "magnetic_properties": {
+                    "magnetic_susceptibility": null,
+                    "curie_temperature": null
+                }
+            },
+            "chemical": {
+                "corrosion_resistance": {
+                    "test_medium": null,
+                    "corrosion_rate": null,
+                    "passivation_behavior": null
+                },
+                "oxidation_resistance": {
+                    "oxidation_rate_constant": null,
+                    "protective_scale": "After 100 hr at 800°C, scales similar to 24 hr but showing signs of degradation including lifting, buckling, and growth of small bulky oxides at localized sites on the surface."
+                }
+            },
+            "radiation_properties": {
+                "void_swelling": null,
+                "irradiation_hardening": null,
+                "helium_embrittlement": null
+            }
+        },
+        {
+            "property_set_id": "prop_10mn6al_1000",
+            "sample_id": "sample_10mn6al_1000",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [],
+                    "ultimate_tensile_strength": [],
+                    "elongation": [],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [],
+                "fracture_toughness": {
+                    "value": null,
+                    "unit": null
+                },
+                "fatigue_properties": {
+                    "fatigue_limit": null,
+                    "cycles_to_failure": null
+                },
+                "creep_properties": {
+                    "steady_state_creep_rate": null,
+                    "rupture_life": null
+                }
+            },
+            "physical": {
+                "density": {
+                    "value": null,
+                    "unit": null
+                },
+                "thermal_properties": {
+                    "thermal_conductivity": null,
+                    "thermal_expansion_coefficient": null,
+                    "specific_heat": null
+                },
+                "electrical_properties": {
+                    "electrical_conductivity": null,
+                    "resistivity": null
+                },
+                "magnetic_properties": {
+                    "magnetic_susceptibility": null,
+                    "curie_temperature": null
+                }
+            },
+            "chemical": {
+                "corrosion_resistance": {
+                    "test_medium": null,
+                    "corrosion_rate": null,
+                    "passivation_behavior": null
+                },
+                "oxidation_resistance": {
+                    "oxidation_rate_constant": null,
+                    "protective_scale": "Thick convoluted alumina scale adhering to substrate except at edges after 100 hr; much thicker than at 600 or 800°C; composed of two distinct layers (inner alumina, outer Mn-Al enriched layer probably Mn3O4-Al2O3 solid solution)."
+                }
+            },
+            "radiation_properties": {
+                "void_swelling": null,
+                "irradiation_hardening": null,
+                "helium_embrittlement": null
+            }
+        },
+        {
+            "property_set_id": "prop_20mn8al_1000",
+            "sample_id": "sample_20mn8al_1000",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [],
+                    "ultimate_tensile_strength": [],
+                    "elongation": [],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [],
+                "fracture_toughness": {
+                    "value": null,
+                    "unit": null
+                },
+                "fatigue_properties": {
+                    "fatigue_limit": null,
+                    "cycles_to_failure": null
+                },
+                "creep_properties": {
+                    "steady_state_creep_rate": null,
+                    "rupture_life": null
+                }
+            },
+            "physical": {
+                "density": {
+                    "value": null,
+                    "unit": null
+                },
+                "thermal_properties": {
+                    "thermal_conductivity": null,
+                    "thermal_expansion_coefficient": null,
+                    "specific_heat": null
+                },
+                "electrical_properties": {
+                    "electrical_conductivity": null,
+                    "resistivity": null
+                },
+                "magnetic_properties": {
+                    "magnetic_susceptibility": null,
+                    "curie_temperature": null
+                }
+            },
+            "chemical": {
+                "corrosion_resistance": {
+                    "test_medium": null,
+                    "corrosion_rate": null,
+                    "passivation_behavior": null
+                },
+                "oxidation_resistance": {
+                    "oxidation_rate_constant": null,
+                    "protective_scale": "Convoluted alumina scale at 1000°C identical to Fe-10Mn-6Al but spalled badly on cooling. External scale layer enriched in Mn and Al; inner layer contained very little Fe or Mn."
+                }
+            },
+            "radiation_properties": {
+                "void_swelling": null,
+                "irradiation_hardening": null,
+                "helium_embrittlement": null
+            }
+        },
+        {
+            "property_set_id": "prop_femnalcr_24h",
+            "sample_id": "sample_femnalcr_24h800",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [],
+                    "ultimate_tensile_strength": [],
+                    "elongation": [],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [],
+                "fracture_toughness": {
+                    "value": null,
+                    "unit": null
+                },
+                "fatigue_properties": {
+                    "fatigue_limit": null,
+                    "cycles_to_failure": null
+                },
+                "creep_properties": {
+                    "steady_state_creep_rate": null,
+                    "rupture_life": null
+                }
+            },
+            "physical": {
+                "density": {
+                    "value": null,
+                    "unit": null
+                },
+                "thermal_properties": {
+                    "thermal_conductivity": null,
+                    "thermal_expansion_coefficient": null,
+                    "specific_heat": null
+                },
+                "electrical_properties": {
+                    "electrical_conductivity": null,
+                    "resistivity": null
+                },
+                "magnetic_properties": {
+                    "magnetic_susceptibility": null,
+                    "curie_temperature": null
+                }
+            },
+            "chemical": {
+                "corrosion_resistance": {
+                    "test_medium": null,
+                    "corrosion_rate": null,
+                    "passivation_behavior": null
+                },
+                "oxidation_resistance": {
+                    "oxidation_rate_constant": null,
+                    "protective_scale": "Fe-10Mn-4Al-12Cr, Fe-5Mn-5Al-5Cr, and Fe-7.5Mn-5Al-5Cr formed thin protective alumina scales after 24 hr. Alloys with less than 5% aluminum subject to breakaway unless alloyed with relatively high levels of chromium. After 100 hr all alloys showed signs of scale degradation."
+                }
+            },
+            "radiation_properties": {
+                "void_swelling": null,
+                "irradiation_hardening": null,
+                "helium_embrittlement": null
+            }
+        }
+    ],
+    "performance": [
+        {
+            "performance_id": "perf_01",
+            "sample_id": "sample_femnal_24h800",
+            "service_conditions": {
+                "operating_temperature": {
+                    "min": "600",
+                    "max": "1000",
+                    "unit": "°C"
+                },
+                "stress_state": "Static oxidation with no applied mechanical stress",
+                "environment": "Pure oxygen at 200 torr"
+            },
+            "lifetime_prediction": {
+                "model_used": null,
+                "predicted_lifetime": null,
+                "confidence_interval": null
+            },
+            "comparative_performance": {
+                "benchmark_alloy": "Fe-Mn-Al alloys without chromium and binary Fe-Al alloys",
+                "benchmark_process_id": null,
+                "benchmark_sample_id": null,
+                "improvement_percentage": null
+            }
+        }
+    ],
+    "characterization_methods": [
+        {
+            "characterization_id": "char_01",
+            "sample_id": "sample_femnal_24h800",
+            "microstructure_uuid": null,
+            "technique": "Scanning electron microscopy (SEM) with EDAX",
+            "purpose": "Surface examination of scales and qualitative elemental analysis of morphological features",
+            "key_findings": "Identified four distinct morphological scale types. Elemental distribution within nodules revealed manganese and aluminum enrichment in inner layers and at gas-oxide interfaces."
+        },
+        {
+            "characterization_id": "char_02",
+            "sample_id": "sample_femnal_cast",
+            "microstructure_uuid": "uuid-cast-general",
+            "technique": "Metallography and optical microscopy",
+            "purpose": "Examination of alloy structures and mounted, polished cross-sections of scales",
+            "key_findings": "Confirmed presence of alloy phases (ferrite, austenite, beta-Mn) in specimens oxidized at 800°C and in quenched specimens. Revealed scale structures and alloy phase boundaries."
+        },
+        {
+            "characterization_id": "char_03",
+            "sample_id": "sample_femnal_24h800",
+            "microstructure_uuid": null,
+            "technique": "Electron-probe microanalysis and X-ray imaging",
+            "purpose": "Quantitative and qualitative composition analysis of scale cross-sections and elemental distribution maps",
+            "key_findings": "Revealed high manganese concentrations in scales on high-Mn alloys; aluminum rich phases at alloy interface; Fe2O3 progressively disappeared in alloys containing more than 20% manganese. Two-layered scales at 1000°C composed almost entirely of Mn and Al oxides."
+        },
+        {
+            "characterization_id": "char_04",
+            "sample_id": "sample_femnal_24h800",
+            "microstructure_uuid": null,
+            "technique": "Thermogravimetric analysis using Cahn R.G. electrobalance",
+            "purpose": "Continuous recording of oxidation kinetics for 24 hr exposures",
+            "key_findings": "Breakaway and healing kinetics observed for non-protective alloys. Few alloys obeyed simple parabolic rate law; large range in n values from log-log plots."
+        }
+    ],
+    "computational_details": [],
+    "unmapped_findings": [
+        "Kinetics: Log-log plots of weight gain versus time (Fig. 1) show breakaway and healing behavior for non-protective alloys and near-parabolic behavior for protective alumina formers. The rate equation (ΔW/A)^n = kt yielded a large range of n values, indicating few alloys obeyed simple rate equations; ΔW/24 values were used for comparison of oxidation rates.",
+        "Table I (24 hr at 800°C): Weight gains of Fe-Mn-Al alloys span from approximately 0.021 mg cm^-2 (Fe-9Mn-4Al) to over 1 mg cm^-2 (Fe-20Mn-6Al, 18 hr). Minimum weight gains occur in the composition range Fe-(5–10)%Mn-(6–10)%Al (e.g., Fe-5Mn-7Al: 0.033; Fe-10Mn-6Al: 0.054; Fe-5Mn-9Al: 0.021 mg cm^-2). Additions of less than 2% Mn greatly increased oxidation rate of binary Fe-Al alloys, whereas 5–10% Mn significantly reduced it.",
+        "Table II (100 hr): Fe-10Mn-6Al weight gains: 0.171 (600°C), 0.117 (800°C), 0.450 (1000°C) mg cm^-2. Fe-20Mn-8Al: 0.101 (600°C), 0.242 (800°C, unreliable due to spalling), 0.253 (1000°C, unreliable due to spalling) mg cm^-2.",
+        "Table III (Fe-Mn-Al-Cr at 800°C): Fe-10Mn-4Al-12Cr showed lowest 24h weight gain 0.061 mg cm^-2 among Cr alloys; Fe-5Mn-5Al-5Cr: 0.068; Fe-7.5Mn-5Al-5Cr: 0.063. Fe-15Mn-5Al-5Cr showed highest 24h gain 2.663 mg cm^-2. Fe-5Mn-4Al-5Cr data 0.292 mg cm^-2 corresponds to 15 hr oxidation.",
+        "Oxide map (Fig. 3) at 800°C classifies alloys into four regions superimposed on the phase diagram: Region I (insufficient Al, alumina + bulky nodules), Region II (duplex α+γ, alumina + bulky Mn-rich oxides + threads), Region III (fully ferritic, continuous protective alumina, Fe-(5–10)%Mn-(6–10)%Al), Region IV (>9% Al, alumina + small penetrating Mn oxide nodules).",
+        "Fig. 17 schematic of nodule structures at 800°C: Type 1 (large iron oxide nodules, <5% Mn) has Fe2O3 outer, (Fe,Mn)3O4 inner, discontinuous Al2O3/aluminate. Type 2 (5–7.5% Mn) similar with partial healing layer. Type 3 (≥7.5% Mn) small Mn-rich nodules with continuous Mn2O3 outer layer and complete healing layer of Al2O3/aluminate at base; absence of (Fe,Mn)3O4 due to continuous aluminate.",
+        "Fig. 18 schematic of duplex alloy oxidation stages: (1) alumina forms over ferrite matrix, (2) austenite nucleates and grows beneath alumina, (3) Mn2O3 threads grow at weaknesses in alumina, (4) threads incorporated into bulky Mn-rich oxide with Mn depletion and austenite conversion back to ferrite, (5) continuous healing layer of Al2O3 or (Fe,Mn)Al2O4 forms.",
+        "Fig. 20 schematic of Region IV small nodule growth mechanism: (1) void formation beneath alumina scale, (2) flaw formation in overlying alumina, (3) outward growth of Mn2O3, (4) filling of void via short-circuit oxygen diffusion, (5) formation of Al2O3 or (Fe,Mn)Al2O4 particles at oxide-metal interface, (6) healing layer formation and conversion of nodule to Mn2O3.",
+        "Key conclusions: The most oxidation resistant alloys have compositions within the range Fe-(5–10)%Mn-(6–10)%Al, are totally ferritic, and develop continuous protective alumina scales. Austenite is detrimental as it promotes breakdown of preexisting alumina scales and growth of bulky manganese rich oxides. Small additions of chromium are beneficial and reduce the concentration of aluminum required to form protective alumina scales."
+    ]
+}

@@ -1,0 +1,953 @@
+{
+  "papers": [
+    {
+      "paper_id": "A42",
+      "doi": null,
+      "title": "A modified Johnson-Cook model to determine plastic flow behavior of Fe-30Mn-9Al-0.8 C low-density steel during warm multiaxial forging",
+      "authors": [
+        "Hemant Kumar",
+        "Manish Tiwari",
+        "R. Manna",
+        "Debashis Khan"
+      ],
+      "publication_year": null,
+      "journal": null,
+      "keywords": [
+        "Low-density steel",
+        "MAF",
+        "Electron microscopy",
+        "Modified J-C model",
+        "Dislocation density",
+        "Grain refinement",
+        "Tensile strength"
+      ],
+      "research_type": "mixed",
+      "paper_scope": "Investigate microstructural evolution and strengthening mechanisms of Fe-30Mn-9Al-0.8C low-density steel during multiaxial forging at 250°C, and develop a modified Johnson-Cook constitutive model incorporating dislocation density and grain size effects to predict flow stress and yield strength via finite element simulation."
+    }
+  ],
+  "alloys": [
+    {
+      "alloy_id": "alloy_30mn9al08c",
+      "paper_id": "A42",
+      "alloy_name": "Fe-30Mn-9Al-0.8C low-density steel",
+      "aliases": [],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Al",
+        "C"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Mn",
+          "weight_percent": "30",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "9",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.8",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "Actual composition after solutionization: Fe-30.6Mn-9.1Al-0.79C. Density of steel measured as 6.8 g/cm³."
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_maf",
+      "paper_id": "A42",
+      "alloy_id": "alloy_30mn9al08c",
+      "description": "Multiaxial forging (MAF) at 250°C with 33% normal strain per pass, up to 5 passes. Samples were heated to 250°C and soaked for 2 hours before each pass. Compressed in three mutually perpendicular directions per pass.",
+      "processes_notes": "MAF conducted on a 100 ton hydraulic press, ram speed 1 mm/s. Lubricated with MoS2. Prior to MAF, ingot homogenized at 1200°C for 2h, hot forged between 1200-900°C, then solutionized at 1050°C for 1h and water quenched."
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_maf0",
+      "paper_id": "A42",
+      "alloy_id": "alloy_30mn9al08c",
+      "process_id": "proc_maf"
+    },
+    {
+      "sample_id": "sample_maf1",
+      "paper_id": "A42",
+      "alloy_id": "alloy_30mn9al08c",
+      "process_id": "proc_maf"
+    },
+    {
+      "sample_id": "sample_maf3",
+      "paper_id": "A42",
+      "alloy_id": "alloy_30mn9al08c",
+      "process_id": "proc_maf"
+    },
+    {
+      "sample_id": "sample_maf5",
+      "paper_id": "A42",
+      "alloy_id": "alloy_30mn9al08c",
+      "process_id": "proc_maf"
+    }
+  ],
+  "processing_steps": [
+    {
+      "sample_id": "sample_maf0",
+      "paper_id": "A42",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "homogenization, hot forging, solutionizing, quenching",
+      "temperature": "1200°C (homogenization), 1050°C (solutionizing)",
+      "unit": "°C",
+      "duration": "2 h (homogenization), 1 h (solutionizing)",
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Vacuum induction melted, homogenized at 1200°C 2h, hot forged between 1200-900°C with >60% deformation, solutionized at 1050°C 1h, water quenched. No MAF pass applied."
+    },
+    {
+      "sample_id": "sample_maf1",
+      "paper_id": "A42",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "homogenization, hot forging, solutionizing, quenching",
+      "temperature": "1200°C (homogenization), 1050°C (solutionizing)",
+      "unit": "°C",
+      "duration": "2 h (homogenization), 1 h (solutionizing)",
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Same pre-processing as MAF-0."
+    },
+    {
+      "sample_id": "sample_maf1",
+      "paper_id": "A42",
+      "sequence": "2",
+      "type": "thermomechanical_processing",
+      "method": "multiaxial forging (MAF) pass 1",
+      "temperature": "250",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": "33% normal strain (equivalent strain 0.47)",
+      "processing_steps_notes": "Sample heated to 250°C and soaked 2h; compressed in three mutually perpendicular directions; ram speed 1 mm/s."
+    },
+    {
+      "sample_id": "sample_maf3",
+      "paper_id": "A42",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "homogenization, hot forging, solutionizing, quenching",
+      "temperature": "1200°C (homogenization), 1050°C (solutionizing)",
+      "unit": "°C",
+      "duration": "2 h (homogenization), 1 h (solutionizing)",
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Same pre-processing."
+    },
+    {
+      "sample_id": "sample_maf3",
+      "paper_id": "A42",
+      "sequence": "2",
+      "type": "thermomechanical_processing",
+      "method": "multiaxial forging (MAF) pass 1",
+      "temperature": "250",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": "33% normal strain (equivalent strain 0.47)",
+      "processing_steps_notes": "MAF pass 1."
+    },
+    {
+      "sample_id": "sample_maf3",
+      "paper_id": "A42",
+      "sequence": "3",
+      "type": "thermomechanical_processing",
+      "method": "multiaxial forging (MAF) pass 2",
+      "temperature": "250",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": "33% normal strain (equivalent strain 0.47)",
+      "processing_steps_notes": "MAF pass 2."
+    },
+    {
+      "sample_id": "sample_maf3",
+      "paper_id": "A42",
+      "sequence": "4",
+      "type": "thermomechanical_processing",
+      "method": "multiaxial forging (MAF) pass 3",
+      "temperature": "250",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": "33% normal strain (equivalent strain 0.47)",
+      "processing_steps_notes": "MAF pass 3."
+    },
+    {
+      "sample_id": "sample_maf5",
+      "paper_id": "A42",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "homogenization, hot forging, solutionizing, quenching",
+      "temperature": "1200°C (homogenization), 1050°C (solutionizing)",
+      "unit": "°C",
+      "duration": "2 h (homogenization), 1 h (solutionizing)",
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Same pre-processing."
+    },
+    {
+      "sample_id": "sample_maf5",
+      "paper_id": "A42",
+      "sequence": "2",
+      "type": "thermomechanical_processing",
+      "method": "multiaxial forging (MAF) pass 1",
+      "temperature": "250",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": "33% normal strain (equivalent strain 0.47)",
+      "processing_steps_notes": "MAF pass 1."
+    },
+    {
+      "sample_id": "sample_maf5",
+      "paper_id": "A42",
+      "sequence": "3",
+      "type": "thermomechanical_processing",
+      "method": "multiaxial forging (MAF) pass 2",
+      "temperature": "250",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": "33% normal strain (equivalent strain 0.47)",
+      "processing_steps_notes": "MAF pass 2."
+    },
+    {
+      "sample_id": "sample_maf5",
+      "paper_id": "A42",
+      "sequence": "4",
+      "type": "thermomechanical_processing",
+      "method": "multiaxial forging (MAF) pass 3",
+      "temperature": "250",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": "33% normal strain (equivalent strain 0.47)",
+      "processing_steps_notes": "MAF pass 3."
+    },
+    {
+      "sample_id": "sample_maf5",
+      "paper_id": "A42",
+      "sequence": "5",
+      "type": "thermomechanical_processing",
+      "method": "multiaxial forging (MAF) pass 4",
+      "temperature": "250",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": "33% normal strain (equivalent strain 0.47)",
+      "processing_steps_notes": "MAF pass 4."
+    },
+    {
+      "sample_id": "sample_maf5",
+      "paper_id": "A42",
+      "sequence": "6",
+      "type": "thermomechanical_processing",
+      "method": "multiaxial forging (MAF) pass 5",
+      "temperature": "250",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": "33% normal strain (equivalent strain 0.47)",
+      "processing_steps_notes": "MAF pass 5."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_maf0",
+      "sample_id": "sample_maf0",
+      "overall_structure": "Single-phase austenitic matrix with coarse grains and low dislocation density.",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_maf0",
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ-Fe)",
+              "crystal_structure": "FCC",
+              "volume_fraction": "100",
+              "morphology": "coarse equiaxed grains",
+              "grain_size": "50 μm",
+              "texture": "Strong texture; significant fraction of grains have [101] parallel to pressing direction and some [111] oriented."
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocation",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "0.79 × 10^15 m^{-2}",
+              "lattice_distortion": "microstrain 3.66 × 10^{-3}"
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "50",
+              "unit": "μm"
+            },
+            "grain_size_distribution": "Relatively wide distribution.",
+            "texture": "Strong texture with [101]//pressing direction; high angle grain boundary fraction 0.62."
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_maf1",
+      "sample_id": "sample_maf1",
+      "overall_structure": "Single-phase austenitic matrix with refined grains and increased dislocation density.",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_maf1",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ-Fe)",
+              "crystal_structure": "FCC",
+              "volume_fraction": "100",
+              "morphology": "partially refined grains",
+              "grain_size": "35 μm",
+              "texture": "Texture begins to randomize; multiple orientations appear parallel to pressing direction."
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocation",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "5.57 × 10^15 m^{-2}",
+              "lattice_distortion": "microstrain 5.18 × 10^{-3}"
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "35",
+              "unit": "μm"
+            },
+            "grain_size_distribution": "Narrower than MAF-0.",
+            "texture": "High angle grain boundary fraction decreases to 0.29; low angle fraction increases to 0.70."
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_maf3",
+      "sample_id": "sample_maf3",
+      "overall_structure": "Single-phase austenitic matrix with further grain refinement and high dislocation density.",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_maf3",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ-Fe)",
+              "crystal_structure": "FCC",
+              "volume_fraction": "100",
+              "morphology": "refined grains, mixed with some lamellar features",
+              "grain_size": "20 μm",
+              "texture": "Further randomization of texture."
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocation",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "7.8 × 10^15 m^{-2}",
+              "lattice_distortion": "microstrain 6.13 × 10^{-3}"
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "20",
+              "unit": "μm"
+            },
+            "grain_size_distribution": "Distribution continues to narrow.",
+            "texture": "High angle boundary fraction 0.24; low angle fraction 0.75."
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_maf5",
+      "sample_id": "sample_maf5",
+      "overall_structure": "Single-phase austenitic matrix with lamellar refined grains (transverse dimension ~13 μm) and very high dislocation density.",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_maf5",
+          "related_sequence": "6",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ-Fe)",
+              "crystal_structure": "FCC",
+              "volume_fraction": "100",
+              "morphology": "lamellar grains with transverse dimension about 13 μm",
+              "grain_size": "13 μm",
+              "texture": "Significantly randomized texture; originally strong [101] texture weakened."
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocation",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "8.98 × 10^15 m^{-2}",
+              "lattice_distortion": "microstrain 6.88 × 10^{-3}"
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "13",
+              "unit": "μm"
+            },
+            "grain_size_distribution": "Narrow and uniform distribution.",
+            "texture": "High angle boundary fraction recovers to 0.69; low angle 0.30; some low-angle boundaries converted to high-angle."
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "prop_maf0",
+      "sample_id": "sample_maf0",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "axial",
+              "value": "380",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "axial",
+              "value": "762",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "total",
+              "value": "75",
+              "unit": "%"
+            },
+            {
+              "direction": "uniform",
+              "value": "63",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": "160000 MPa",
+          "stress_strain_curves": "Engineering stress-strain curve shown in Fig. 10; exhibits high work hardening.",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "6.8",
+          "unit": "g/cm³"
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_maf1",
+      "sample_id": "sample_maf1",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "axial",
+              "value": "1040",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "axial",
+              "value": "1368",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "total",
+              "value": "30",
+              "unit": "%"
+            },
+            {
+              "direction": "uniform",
+              "value": "not specified",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": "160000 MPa",
+          "stress_strain_curves": "Shown in Fig. 10.",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "6.8",
+          "unit": "g/cm³"
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_maf3",
+      "sample_id": "sample_maf3",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "axial",
+              "value": "1279",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "axial",
+              "value": "1415",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "total",
+              "value": "13.7",
+              "unit": "%"
+            },
+            {
+              "direction": "uniform",
+              "value": "3",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": "160000 MPa",
+          "stress_strain_curves": "Shown in Fig. 10.",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "6.8",
+          "unit": "g/cm³"
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_maf5",
+      "sample_id": "sample_maf5",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "axial",
+              "value": "1528",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "axial",
+              "value": "1548",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "total",
+              "value": "8",
+              "unit": "%"
+            },
+            {
+              "direction": "uniform",
+              "value": "0.8",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": "160000 MPa",
+          "stress_strain_curves": "Shown in Fig. 10.",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "6.8",
+          "unit": "g/cm³"
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_xrd_maf0",
+      "sample_id": "sample_maf0",
+      "microstructure_uuid": "uuid_maf0",
+      "technique": "X-ray diffraction (XRD)",
+      "purpose": "Measure crystallite size, microstrain, dislocation density, and phase identification.",
+      "key_findings": "Crystallite size 61 nm, microstrain 3.66×10^{-3}, dislocation density 0.79×10^15 m^{-2}; only austenite phase detected."
+    },
+    {
+      "characterization_id": "char_ebsd_maf0",
+      "sample_id": "sample_maf0",
+      "microstructure_uuid": "uuid_maf0",
+      "technique": "Electron backscatter diffraction (EBSD)",
+      "purpose": "Grain size, grain boundary character, texture analysis, KAM.",
+      "key_findings": "Average grain size 50 μm; high angle boundary fraction 0.62; strong texture with [101]//pressing direction; KAM 0.34°."
+    },
+    {
+      "characterization_id": "char_tensile_maf0",
+      "sample_id": "sample_maf0",
+      "microstructure_uuid": "uuid_maf0",
+      "technique": "Tensile testing",
+      "purpose": "Determine mechanical properties after 0 pass MAF.",
+      "key_findings": "YS 380 MPa, UTS 762 MPa, total elongation 75%, uniform elongation 63%; high work hardening."
+    },
+    {
+      "characterization_id": "char_xrd_maf1",
+      "sample_id": "sample_maf1",
+      "microstructure_uuid": "uuid_maf1",
+      "technique": "X-ray diffraction (XRD)",
+      "purpose": "Measure dislocation density and crystallite size.",
+      "key_findings": "Crystallite size 13.4 nm, microstrain 5.18×10^{-3}, dislocation density 5.57×10^15 m^{-2}."
+    },
+    {
+      "characterization_id": "char_ebsd_maf1",
+      "sample_id": "sample_maf1",
+      "microstructure_uuid": "uuid_maf1",
+      "technique": "EBSD",
+      "purpose": "Grain size and texture.",
+      "key_findings": "Average grain size 35 μm; high angle boundary fraction 0.29; texture somewhat randomized; KAM 0.72°."
+    },
+    {
+      "characterization_id": "char_tensile_maf1",
+      "sample_id": "sample_maf1",
+      "microstructure_uuid": "uuid_maf1",
+      "technique": "Tensile testing",
+      "purpose": "Mechanical properties after 1 pass.",
+      "key_findings": "YS 1040 MPa, UTS 1368 MPa, total elongation 30%."
+    },
+    {
+      "characterization_id": "char_xrd_maf3",
+      "sample_id": "sample_maf3",
+      "microstructure_uuid": "uuid_maf3",
+      "technique": "XRD",
+      "purpose": "Dislocation density.",
+      "key_findings": "Crystallite size 10.87 nm, microstrain 6.13×10^{-3}, dislocation density 7.8×10^15 m^{-2}."
+    },
+    {
+      "characterization_id": "char_ebsd_maf3",
+      "sample_id": "sample_maf3",
+      "microstructure_uuid": "uuid_maf3",
+      "technique": "EBSD",
+      "purpose": "Grain size and texture.",
+      "key_findings": "Grain size 20 μm; high angle boundary fraction 0.24; further texture randomization; KAM 0.87°."
+    },
+    {
+      "characterization_id": "char_tensile_maf3",
+      "sample_id": "sample_maf3",
+      "microstructure_uuid": "uuid_maf3",
+      "technique": "Tensile testing",
+      "purpose": "Mechanical properties after 3 passes.",
+      "key_findings": "YS 1279 MPa, UTS 1415 MPa, total elongation 13.7%, uniform elongation 3%."
+    },
+    {
+      "characterization_id": "char_xrd_maf5",
+      "sample_id": "sample_maf5",
+      "microstructure_uuid": "uuid_maf5",
+      "technique": "XRD",
+      "purpose": "Dislocation density.",
+      "key_findings": "Crystallite size 10.12 nm, microstrain 6.88×10^{-3}, dislocation density 8.98×10^15 m^{-2}."
+    },
+    {
+      "characterization_id": "char_ebsd_maf5",
+      "sample_id": "sample_maf5",
+      "microstructure_uuid": "uuid_maf5",
+      "technique": "EBSD",
+      "purpose": "Grain size and texture.",
+      "key_findings": "Grain size 13 μm; high angle boundary fraction 0.69; significantly randomized texture; KAM 1.07°."
+    },
+    {
+      "characterization_id": "char_tensile_maf5",
+      "sample_id": "sample_maf5",
+      "microstructure_uuid": "uuid_maf5",
+      "technique": "Tensile testing",
+      "purpose": "Mechanical properties after 5 passes.",
+      "key_findings": "YS 1528 MPa, UTS 1548 MPa, total elongation 8%, uniform elongation 0.8%."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_fe_model",
+      "sample_id": null,
+      "simulation_method": "Finite element method (ABAQUS/Explicit) with VUMAT subroutine incorporating modified Johnson-Cook constitutive model that includes evolution of dislocation density (Eq. 7) and grain size (Eq. 8) as a function of equivalent plastic strain.",
+      "software_used": "ABAQUS/Explicit",
+      "potential_model": null,
+      "validation_against_experiment": "Predicted yield strength, dislocation density, and grain size distributions compared with experimental results; good agreement up to 3 passes, slight underprediction at 5 passes attributed to neglecting texture effects.",
+      "analytical_model": [
+        {
+          "model_name": "Modified Johnson-Cook model",
+          "equation_role": "Flow stress constitutive equation incorporating grain boundary strengthening (Hall-Petch) and dislocation strengthening (Taylor equation) into yield stress.",
+          "parameters": "σ0=380 MPa, B=1860 MPa, n=1.02, C=0.0067, m=0.87, k=2374 MPa·μm^0.5, α=0.24, M=3.0, G=61 GPa, b=0.259 nm, k1=7.9×10^15 m^{-2}, k2=1.813, k3=0.639.",
+          "model_note": "Implemented via VUMAT in ABAQUS; SDVs track equivalent plastic strain, strain rate, dislocation density, flow stress, yield strength, grain size."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Manganese added under 600 mbar argon pressure during vacuum induction melting.",
+    "The steel could be forged only up to five passes before fracture on the sixth attempt.",
+    "Average KAM values: 0.34° (MAF-0), 0.72° (MAF-1), 0.87° (MAF-3), 1.07° (MAF-5).",
+    "High angle grain boundary fractions: 0.62 (MAF-0), 0.29 (MAF-1), 0.24 (MAF-3), 0.69 (MAF-5).",
+    "Low angle grain boundary fractions: 0.367 (MAF-0), 0.708 (MAF-1), 0.759 (MAF-3), 0.301 (MAF-5).",
+    "No deformation twinning observed during MAF; negligible annealing twin fraction (0.007 in MAF-1, 0.003 in MAF-5).",
+    "Initial grain size distribution wide, became narrower and more uniform after 5 passes.",
+    "Texture: MAF-0 strongly textured with [101] parallel to pressing direction; randomized with increasing passes.",
+    "Crystallite size reduced from 61 nm to 10.12 nm (Table 1).",
+    "Microstrain increased from 3.66×10^{-3} to 6.88×10^{-3}.",
+    "Work hardening amount (UTS minus YS): MAF-0 392 MPa, MAF-1 328 MPa, MAF-3 126 MPa, MAF-5 20 MPa.",
+    "Peak shift in XRD indicates texturing: from (111) dominant in MAF-0 to (220) in MAF-1.",
+    "Hall-Petch constant k for grain boundary strengthening: 2374 MPa·μm^0.5.",
+    "Taylor constant α=0.24, average Taylor factor M=3.0, shear modulus G=61 GPa, Burgers vector b=0.259 nm.",
+    "Friction coefficient between workpiece and die: 0.15.",
+    "Mesh size 0.6 mm, element type C3D8R with 41382 elements, reduced integration and hourglass control.",
+    "Discrepancy in YS at 3 passes: text says 1279 MPa, Table 2 says 1289 MPa.",
+    "Predicted flow stress contour maps show higher stress in central region.",
+    "The simulation does not account for crystallographic texture, leading to underprediction of yield strength at higher passes.",
+    "Equivalent strain in one MAF pass calculated as 0.47.",
+    "Strain rate sensitivity C=0.0067, thermal softening exponent m=0.87.",
+    "Melting temperature 1450°C, reference room temperature 27°C.",
+    "The sample and die were heated to 250°C and soaked for 2 hours before MAF.",
+    "Ram speed during MAF was 1 mm/s.",
+    "Total accumulated equivalent strains: 0, 0.47, 1.4, and 2.34 for 0, 1, 3, and 5 passes respectively.",
+    "Dislocation density evolution fitted with Eq. 7: ρ_f = ρ_0 + k1(1-exp(-k2 ε)), with k1=7.9×10^15 m^{-2}, k2=1.813.",
+    "Grain size evolution fitted with Eq. 8: d_f = d_0 exp(-k3 ε), with k3=0.639.",
+    "Tensile samples were miniature round specimens with gauge dimensions per Fig. 3(b); tested at strain rate 1×10^{-3} s^{-1} at room temperature.",
+    "XRD scan parameters: Co-Kα radiation, scan speed 2°/min, step size 0.02°, 2θ range 40°–120°; instrumental broadening corrected with standard silicon.",
+    "Electro-polishing performed before XRD and EBSD measurements.",
+    "Yield strength contribution from dislocation density dominated in early passes (1–3), while grain boundary strengthening became more significant in later passes (3–5)."
+  ]
+}

@@ -1,0 +1,404 @@
+{
+  "sample_id": "sample_ferritic_duplex",
+  "sample_score": 71.54621848739495,
+  "sample_weight": 35.7,
+  "field_count": 25,
+  "correct_yes_count": 17,
+  "unknown_count": 5,
+  "no_count": 0,
+  "fields": [
+    {
+      "field_id": "F00133",
+      "sample_id": "sample_ferritic_duplex",
+      "section": "processing_steps",
+      "path": "processing_steps.sample_ferritic_duplex.cooling_medium",
+      "value": "fast cooling / austempering",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "partial",
+      "evidence_confidence": 0.8,
+      "evidence_refs": [
+        "b0195"
+      ],
+      "reason": "证据明确提及austempering，但未明确fast cooling作为选项",
+      "field_score": 48.0
+    },
+    {
+      "field_id": "F00134",
+      "sample_id": "sample_ferritic_duplex",
+      "section": "processing_steps",
+      "path": "processing_steps.sample_ferritic_duplex.duration",
+      "value": "1-30 min",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "unknown",
+      "evidence_confidence": 0.0,
+      "evidence_refs": [],
+      "reason": "无持续时间证据",
+      "field_score": 0.0
+    },
+    {
+      "field_id": "F00135",
+      "sample_id": "sample_ferritic_duplex",
+      "section": "processing_steps",
+      "path": "processing_steps.sample_ferritic_duplex.method",
+      "value": "intercritical annealing",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0195"
+      ],
+      "reason": "证据明确提及intercritical annealing",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00136",
+      "sample_id": "sample_ferritic_duplex",
+      "section": "processing_steps",
+      "path": "processing_steps.sample_ferritic_duplex.processing_steps_notes",
+      "value": "Controls volume fraction, grain size and stability of austenite.",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "partial",
+      "evidence_confidence": 0.6,
+      "evidence_refs": [
+        "b0310"
+      ],
+      "reason": "证据提及控制奥氏体稳定性，但未完全逐字匹配",
+      "field_score": 36.0
+    },
+    {
+      "field_id": "F00137",
+      "sample_id": "sample_ferritic_duplex",
+      "section": "processing_steps",
+      "path": "processing_steps.sample_ferritic_duplex.reduction_ratio",
+      "value": "50",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "unknown",
+      "evidence_confidence": 0.0,
+      "evidence_refs": [],
+      "reason": "无还原比证据",
+      "field_score": 0.0
+    },
+    {
+      "field_id": "F00138",
+      "sample_id": "sample_ferritic_duplex",
+      "section": "processing_steps",
+      "path": "processing_steps.sample_ferritic_duplex.sequence",
+      "value": "3",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "unknown",
+      "evidence_confidence": 0.0,
+      "evidence_refs": [],
+      "reason": "无序列证据",
+      "field_score": 0.0
+    },
+    {
+      "field_id": "F00139",
+      "sample_id": "sample_ferritic_duplex",
+      "section": "processing_steps",
+      "path": "processing_steps.sample_ferritic_duplex.temperature",
+      "value": "room",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "unknown",
+      "evidence_confidence": 0.0,
+      "evidence_refs": [],
+      "reason": "无室温加工证据",
+      "field_score": 0.0
+    },
+    {
+      "field_id": "F00140",
+      "sample_id": "sample_ferritic_duplex",
+      "section": "processing_steps",
+      "path": "processing_steps.sample_ferritic_duplex.temperature_with_unit",
+      "value": "700-900 °C",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0195"
+      ],
+      "reason": "证据明确给出温度范围700-900°C",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00141",
+      "sample_id": "sample_ferritic_duplex",
+      "section": "processing_steps",
+      "path": "processing_steps.sample_ferritic_duplex.type",
+      "value": "heat_treatment",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0195"
+      ],
+      "reason": "退火属于热处理",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00206",
+      "sample_id": "sample_ferritic_duplex",
+      "section": "structures",
+      "path": "structures.sample_ferritic_duplex.microstructure_list[1].defects[possible_kappa_at_delta_gamma_interfaces].type",
+      "value": "possible kappa at delta/gamma interfaces",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.9,
+      "evidence_refs": [
+        "b0285"
+      ],
+      "reason": "证据显示j-carbide在δ/γ界面形成",
+      "field_score": 90.0
+    },
+    {
+      "field_id": "F00207",
+      "sample_id": "sample_ferritic_duplex",
+      "section": "structures",
+      "path": "structures.sample_ferritic_duplex.microstructure_list[1].grain_structure.grain_size_distribution",
+      "value": "bimodal",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0026"
+      ],
+      "reason": "证据明确说bimodal microstructure",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00208",
+      "sample_id": "sample_ferritic_duplex",
+      "section": "structures",
+      "path": "structures.sample_ferritic_duplex.microstructure_list[1].phases_present[austenite_gamma].crystal_structure",
+      "value": "FCC",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.9,
+      "evidence_refs": [
+        "b0061"
+      ],
+      "reason": "证据提到austenite是FCC",
+      "field_score": 90.0
+    },
+    {
+      "field_id": "F00209",
+      "sample_id": "sample_ferritic_duplex",
+      "section": "structures",
+      "path": "structures.sample_ferritic_duplex.microstructure_list[1].phases_present[austenite_gamma].morphology",
+      "value": "refined grains in clusters",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.9,
+      "evidence_refs": [
+        "b0026",
+        "b0388"
+      ],
+      "reason": "证据说clustered austenite particles",
+      "field_score": 90.0
+    },
+    {
+      "field_id": "F00210",
+      "sample_id": "sample_ferritic_duplex",
+      "section": "structures",
+      "path": "structures.sample_ferritic_duplex.microstructure_list[1].phases_present[austenite_gamma].phase_name",
+      "value": "austenite (gamma)",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0026"
+      ],
+      "reason": "常见名称，证据中出现austenite (gamma)",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00211",
+      "sample_id": "sample_ferritic_duplex",
+      "section": "structures",
+      "path": "structures.sample_ferritic_duplex.microstructure_list[1].phases_present[austenite_gamma].volume_fraction",
+      "value": "10-40%",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0388"
+      ],
+      "reason": "证据给出10-40%",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00212",
+      "sample_id": "sample_ferritic_duplex",
+      "section": "structures",
+      "path": "structures.sample_ferritic_duplex.microstructure_list[1].phases_present[delta_ferrite].crystal_structure",
+      "value": "BCC",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.9,
+      "evidence_refs": [
+        "b0082"
+      ],
+      "reason": "证据说BCC",
+      "field_score": 90.0
+    },
+    {
+      "field_id": "F00213",
+      "sample_id": "sample_ferritic_duplex",
+      "section": "structures",
+      "path": "structures.sample_ferritic_duplex.microstructure_list[1].phases_present[delta_ferrite].grain_size",
+      "value": "coarse",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0388"
+      ],
+      "reason": "证据说coarse grained",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00214",
+      "sample_id": "sample_ferritic_duplex",
+      "section": "structures",
+      "path": "structures.sample_ferritic_duplex.microstructure_list[1].phases_present[delta_ferrite].morphology",
+      "value": "banded, partially recrystallized",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.9,
+      "evidence_refs": [
+        "b0283",
+        "b0302"
+      ],
+      "reason": "证据说banded和partially recrystallized",
+      "field_score": 90.0
+    },
+    {
+      "field_id": "F00215",
+      "sample_id": "sample_ferritic_duplex",
+      "section": "structures",
+      "path": "structures.sample_ferritic_duplex.microstructure_list[1].phases_present[delta_ferrite].phase_name",
+      "value": "delta-ferrite",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0082"
+      ],
+      "reason": "常用名称，证据中出现delta-ferrite",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00216",
+      "sample_id": "sample_ferritic_duplex",
+      "section": "structures",
+      "path": "structures.sample_ferritic_duplex.microstructure_list[1].phases_present[delta_ferrite].volume_fraction",
+      "value": ">50%",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0092"
+      ],
+      "reason": "证据说大于50%",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00217",
+      "sample_id": "sample_ferritic_duplex",
+      "section": "structures",
+      "path": "structures.sample_ferritic_duplex.microstructure_list[1].related_sequence",
+      "value": "1",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "unknown",
+      "evidence_confidence": 0.0,
+      "evidence_refs": [],
+      "reason": "无序列证据",
+      "field_score": 0.0
+    },
+    {
+      "field_id": "F00218",
+      "sample_id": "sample_ferritic_duplex",
+      "section": "structures",
+      "path": "structures.sample_ferritic_duplex.number_of_phases",
+      "value": "2-5",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "partial",
+      "evidence_confidence": 0.5,
+      "evidence_refs": [
+        "b0310"
+      ],
+      "reason": "证据提到多种相，但未明确2-5",
+      "field_score": 30.0
+    },
+    {
+      "field_id": "F00219",
+      "sample_id": "sample_ferritic_duplex",
+      "section": "structures",
+      "path": "structures.sample_ferritic_duplex.overall_structure",
+      "value": "Banded mixture of coarse delta-ferrite and refined austenite (or transformation products)",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.9,
+      "evidence_refs": [
+        "b0283",
+        "b0388"
+      ],
+      "reason": "证据描述banded mixture和clustered austenite",
+      "field_score": 90.0
+    },
+    {
+      "field_id": "F00245",
+      "sample_id": "sample_ferritic_duplex",
+      "section": "properties",
+      "path": "properties.sample_ferritic_duplex.mechanical.tensile_properties.elongation[0].value_with_unit",
+      "value": "10-40 %",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0089"
+      ],
+      "reason": "表2明确TE 10-40%",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00246",
+      "sample_id": "sample_ferritic_duplex",
+      "section": "properties",
+      "path": "properties.sample_ferritic_duplex.mechanical.tensile_properties.ultimate_tensile_strength[0].value_with_unit",
+      "value": "400-900 MPa",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0089"
+      ],
+      "reason": "表2明确UTS 400-900 MPa",
+      "field_score": 100.0
+    }
+  ]
+}

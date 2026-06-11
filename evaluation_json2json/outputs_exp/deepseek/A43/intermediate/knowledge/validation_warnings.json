@@ -1,0 +1,116 @@
+[
+  {
+    "chunk_id": "chunk_0001",
+    "claim": "Solid solution strengthening operates through solute atom-induced dislocation motion obstruction; dislocation strengthening arises from mutual interactions between dislocations; grain refinement strengthening enhances strength via grain boundary impediments; and the Orowan mechanism describes dislocation pinning by secondary phase particles.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "Solid solution strengthening operates through solute atom-induced dislocation motion obstruction; dislocation strengthening arises from mutual interactions between dislocations to increase deformation resistance, while grain refinement strengthening enhances material strength via grain boundary impediments. Furthermore, the Orowan mechanism describes the dislocation pinning effect by secondary phase particles to augment load-bearing capacity."
+  },
+  {
+    "chunk_id": "chunk_0002",
+    "claim": "A genetic algorithm (GA) is applied to globally optimize the hyperparameters of the Extra Trees model to further improve prediction performance.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "The intelligent optimization algorithm is used to optimize its hyper-parameters. ... incorporating a Genetic Algorithm (GA) for global hyperparameter optimization."
+  },
+  {
+    "chunk_id": "chunk_0002",
+    "claim": "The yield strength of medium-manganese low-density steels is governed by the synergistic effects of four strengthening mechanisms: solid solution strengthening (σ₀), grain refinement strengthening (σ_g), dislocation strengthening (σ_d), and Orowan strengthening (σ_Orowan).",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "the synergistic effects of multiple strengthening mechanisms govern their mechanical properties. ... the quantitative contributions of four key strengthening mechanisms (Dislocation strengthening, Grain refinement strengthening, Solid solution strengthening, and Orowan strengthening)"
+  },
+  {
+    "chunk_id": "chunk_0002",
+    "claim": "Classical strengthening theory approximates the combined contribution of distinct strengthening mechanisms to yield strength through a linear superposition model: σ_YS = σ_0 + σ_g + σ_d + σ_Orowan.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "Classical strengthening theory postulates that under low-strain conditions coupled with microstructural stability, individual contributions from distinct strengthening mechanisms to YS can be approximately characterized through a linear superposition model, mathematically expressed as: σ_YS = σ_0 + σ_g + σ_d + σ_Orowan"
+  },
+  {
+    "chunk_id": "chunk_0002",
+    "claim": "Z-score standardization is applied to the input features to remove differences in dimensions and numerical ranges, using the formula z_i = (x_i - μ_i) / ε_i.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "z-score standardized method is adopted in this study, and its calculation formula is as follows: z_i = (x_i - μ_i) / ε_i"
+  },
+  {
+    "chunk_id": "chunk_0002",
+    "claim": "Figure 1 presents the overall yield strength prediction framework flowchart, including model selection, GMM data enhancement, feature filtering of the four strengthening contributions, GA-optimized Extra Trees, and experimental verification.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "Fig. 1. Flowchart of the yield strength prediction framework. ... a flowchart with nodes: Model selection, Data enhancement using GMM method, 177 original data training model, Capture features, data expansion 599, Feature filtering, Dislocation strengthening, Fine grain strengthening, Solid solution strengthening, Orovan strengthening, σYS = σ0 + σg + σd + σOrowan, GA-ET, Algorithm optimization, Extra Tree Filing Performance, Experimental verification"
+  },
+  {
+    "chunk_id": "chunk_0003",
+    "claim": "The GMM data augmentation process expanded the original dataset from 177 to 776 instances by determining the optimal number of Gaussian components via BIC, iteratively estimating parameters with the EM algorithm, and generating 599 synthetic samples through stratified sampling.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "the optimal number of mixture components is determined based on the Bayesian Information Criterion (BIC)… Finally, a stratified sampling strategy is used to generate 599 synthetic samples, increasing the total size of the augmented dataset to 776"
+  },
+  {
+    "chunk_id": "chunk_0003",
+    "claim": "The kernel density distributions of GMM-generated dislocation, grain refinement, solid solution, Orowan strengthening, and yield strength data reproduce the core features and trends of the original data, with the YS distribution overlapping the original peak and sharing identical right truncation points.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "the generated data for all reinforcement mechanism parameters strictly adhere to the explicit value range. Particularly, the distribution of YS-generated data overlaps with the peak of the original data and shares identical right truncation points"
+  },
+  {
+    "chunk_id": "chunk_0004",
+    "claim": "The closer R² is to 1, the stronger the model’s ability to explain the variability in the data, indicating a better goodness of fit.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "The closer R^2 is to 1, the stronger the model’s ability to explain the variability in the data, indicating a better goodness of fit."
+  },
+  {
+    "chunk_id": "chunk_0004",
+    "claim": "Among the seven models, Extra Trees achieved the best performance with RMSE = 76.2 MPa, MAPE = 9.8%, and R² = 0.978.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "As shown in Fig. 5, among the seven machine learning models trained simultaneously, the Extra Trees model demonstrated the best performance, with an RMSE of 76.2 MPa, a MAPE of 9.8 %, and an R2 value of 0.978."
+  },
+  {
+    "chunk_id": "chunk_0005",
+    "claim": "GA-Extra trees achieved RMSE=31.60 MPa, outperforming grid search (80.239 MPa) and Bayesian optimization (80.721 MPa); it also showed superior MAPE and R².",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "The RMSE values for the Extra Trees model optimized with grid search and Bayesian optimization were 80.239 MPa and 80.721 MPa, respectively, while the Genetic algorithm-Extremely randomized trees(GA-Extra trees) model achieved a value of 31.60 MPa. In terms of MAPE and R^2, the GA-Extra trees model demonstrated superior performance."
+  },
+  {
+    "chunk_id": "chunk_0005",
+    "claim": "The GA optimization used population size=30, crossover probability=0.7, mutation probability=0.3, for 30 generations, converging at generation 26, tuning six hyperparameters (n_estimators, max_depth, min_samples_split, etc.) via the DEAP 1.3.3 framework.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "Based on the DEAP 1.3.3 framework... The population size is set to 30, with crossover and mutation probabilities set to 0.7 and 0.3, respectively. After 30 generations of evolution, the algorithm tends to converge and stabilize after the 26th generation."
+  },
+  {
+    "chunk_id": "chunk_0006",
+    "claim": "The grain refinement strengthening contributions for ANT750, ANT800, and ANT850 specimens were 264 MPa, 256 MPa, and 292 MPa, respectively; ferrite volume fractions were 52%, 43%, 69% with grain sizes 5.7 μm, 5.4 μm, 6.8 μm, and bainite volume fractions 43.0%, 55.1%, 30.8% with grain sizes 3.0 μm, 4.1 μm, 2.6 μm.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "The ferrite volume fractions of the AN750, AN800, and AN850 specimens were 52 %, 43 %, and 69 %, respectively, with average grain sizes of 5.7μm, 5.4μm, and 6.8μm. The bainite volume fractions were 43.0 %, 55.1 %, and 30.8 %, with average grain sizes of 3.0μm, 4.1μm, and 2.6μm, respectively. ... Therefore, the grain refinement strengthening contributions for the AN750, AN800, and AN850 specimens were 264 MPa, 256 MPa, and 292 MPa, respectively."
+  },
+  {
+    "chunk_id": "chunk_0006",
+    "claim": "The GA-Extra trees model used optimal hyper-parameters: n_estimators=1657, max_depth=51, min_samples_split=3, min_samples_leaf=1.0, max_features=0.85, max_samples=0.92.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "Table 2 Optimal hyper-parameters configuration. Hyper-parameters Best combination n_estimators 1657 max_depth 51 min_samples_split 3 min_samples_leaf 1.0 max_features 0.85 max_samples 0.92"
+  },
+  {
+    "chunk_id": "chunk_0007",
+    "claim": "The dislocation strengthening contributions for AN750, AN800, and AN850 are 263 MPa, 459 MPa, and 414 MPa, respectively, calculated from GND densities (0.61×10^14 m⁻², 0.84×10^14 m⁻², 0.72×10^14 m⁻²) and Taylor factors (3.45, 3.58, 3.53).",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "The GND densities are 0 . 6 1 × 1 0 ^ { 1 4 } m ^ { - 2 } , 0 . 8 4 × 1 0 ^ { 1 4 } m ^ { - 2 } and 0 . 7 2 × 1 0 ^ { 1 4 } m ^ { - 2 } ; , respectively, and the Taylor factor numbers are 3.45, 3.58 and 3.53, respectively. Therefore, the dislocation strengthening contributions of AN750, AN800 and AN850 samples are 263 MPa, 459 MPa and 414 MPa, respectively."
+  },
+  {
+    "chunk_id": "chunk_0007",
+    "claim": "For AN750, the solid solution strengthening is 220 MPa, grain refinement strengthening is 264 MPa, dislocation strengthening is 263 MPa, Orowan strengthening is 0 MPa, the linear-superposition-calculated yield strength is 747 MPa, and the actual measured yield strength is 709 MPa.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "Table 3 Contribution of various strengthening mechanisms to YS of test steel. ... AN750 ... 220 ... 264 ... 263 ... 0 ... 747 ... 709"
+  },
+  {
+    "chunk_id": "chunk_0007",
+    "claim": "For AN800, the solid solution strengthening is 220 MPa, grain refinement strengthening is 256 MPa, dislocation strengthening is 459 MPa, Orowan strengthening is 0 MPa, the calculated yield strength is 935 MPa, and the actual measured yield strength is 968 MPa.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "AN800 ... 220 ... 256 ... 459 ... 0 ... 935 ... 968"
+  },
+  {
+    "chunk_id": "chunk_0007",
+    "claim": "For AN850, the solid solution strengthening is 220 MPa, grain refinement strengthening is 292 MPa, dislocation strengthening is 414 MPa, Orowan strengthening is 0 MPa, the calculated yield strength is 926 MPa, and the actual measured yield strength is 964 MPa.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "AN850 ... 220 ... 292 ... 414 ... 0 ... 926 ... 964"
+  },
+  {
+    "chunk_id": "chunk_0007",
+    "claim": "The GA-Extra Trees yield strength prediction model achieves an average prediction error of 1.84% on six groups of literature data from medium-manganese low-density steels with different compositions, compared to an average error of 1.56% on the experimental validation samples, demonstrating excellent generalization and robustness.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "After analyzing the prediction results of six groups of test data, it can be concluded that the average error between the predicted value of the model and the measured value is 1.84 %, which has little fluctuation compared with the average error value of 1.56 % verified by the previous actual experiment, indicating that the YS prediction model ... has excellent generalization and robustness"
+  }
+]

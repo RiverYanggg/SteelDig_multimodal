@@ -1,0 +1,218 @@
+[
+  {
+    "image_paths": [
+      "images/46544d76e51600dffe2e204c76baa5f47ffbf4b951984535b20bb1f7380953ba.jpg"
+    ],
+    "caption": "",
+    "paper_abstract": "College of Metallurgy and Energy, North China University of Science and Technology, Tangshan 063210, China",
+    "paper_title": "Data-driven and multi-mechanism strengthening based yield strength prediction in medium-manganese low-density steels",
+    "citation_sentences": []
+  },
+  {
+    "image_paths": [
+      "images/0659e24f6606b4ee1113602b03735739ad891d0520011d8d628551ec054863e6.jpg"
+    ],
+    "caption": "Fig. 1. Flowchart of the yield strength prediction framework.",
+    "paper_abstract": "College of Metallurgy and Energy, North China University of Science and Technology, Tangshan 063210, China",
+    "paper_title": "Data-driven and multi-mechanism strengthening based yield strength prediction in medium-manganese low-density steels",
+    "citation_sentences": [
+      "The YS prediction framework developed in this study breaks through the limitations of the traditional empirical model under the synergistic strengthening effect of multiple mechanisms, systematically integrates the quantitative contribution data of four core strengthening mechanisms to the YS of medium manganese low-density steel, and constructs a multi-source data set. The innovative application of GMM(Gaussian mixture model) for data expansion effectively overcomes the problem of scarcity of high-quality experimental data in materials science. On this basis, a robust mapping model between the strengthening mechanism and yield strength is set by using an ensemble learning algorithm. This framework not only offers a new perspective for understanding the evolution of YS of complex alloy systems but also reveals the efficiency of the \"traditional experiment + machine learning\" method. The complete workflow is illustrated in Fig. 1."
+    ]
+  },
+  {
+    "image_paths": [
+      "images/a74d2ee60fc0b2bfc9af312c9d49e73cd6d71349f8d67e19dc2dfa2dc6b61c04.jpg"
+    ],
+    "caption": "Fig. 2. Workflow of GMM-based data augmentation.",
+    "paper_abstract": "College of Metallurgy and Energy, North China University of Science and Technology, Tangshan 063210, China",
+    "paper_title": "Data-driven and multi-mechanism strengthening based yield strength prediction in medium-manganese low-density steels",
+    "citation_sentences": [
+      "In the field of machine learning, data augmentation (DA) is a key technique for expanding the size and diversity of training datasets through algorithmic means. Its core lies in generating new samples with statistical consistency while preserving the essential characteristics of the data [17]. Data augmentation is an important approach to improving the performance of small-sample learning and enhancing model generalization. When the dataset is small, directly training models on the original data often leads to overfitting and limits predictive accuracy. For the small-sample problem addressed in this study (initial dataset $ { \\mathbf { n } } = 1 7 7 )$ , traditional oversampling methods are prone to causing feature space distortion, whereas augmentation techniques based on generative models can achieve more reliable sample expansion by learning the underlying data distribution. Therefore, this study adopts the GMM method as the data augmentation framework, which effectively captures the nonlinear feature associations and local density variations of the original dataset through parametric modeling of the joint distribution of multidimensional features, thereby effectively expanding the dataset [18]. The specific process is illustrated in Fig. 2."
+    ]
+  },
+  {
+    "image_paths": [
+      "images/ecc61f239244603f93fbaf26fd70dcd4880290dd23f97136103f25ae2b88b748.jpg",
+      "images/642c5e9da15080a435788ecb0794366ad215600f7617ba001d4b2558f2400c8a.jpg",
+      "images/fea823cbb6845a411103a8a99c00d1b497e43a09d308c5e02f6a2f021872c27e.jpg",
+      "images/b33528764a880f6e995f8acd62b594714835645e9d00035242b83675287224da.jpg",
+      "images/a29370c090fe17a8f64c003285716e1940d027c654fcd7199834f2899fc1d741.jpg"
+    ],
+    "caption": "Fig. 3. Comparison of nuclear density distribution: (a) Dislocation strengthening; (b) Fine grain strengthening; (c) Solid solution strengthening; (d) Orowan strengthening; (e)YS.",
+    "paper_abstract": "College of Metallurgy and Energy, North China University of Science and Technology, Tangshan 063210, China",
+    "paper_title": "Data-driven and multi-mechanism strengthening based yield strength prediction in medium-manganese low-density steels",
+    "citation_sentences": [
+      "To further commit to the effectiveness of the augmented dataset, Fig. 3 illustrates the kernel density distributions comparing the original data with GMM-enhanced data across four reinforcement mechanisms and YS. Dislocation strengthening, fine grain strengthening, solid solution strengthening, Orowan strengthening, and the generated data for YS all reproduce the core features of the original distribution, exhibiting similar trends. The generated data for all reinforcement mechanism parameters strictly adhere to the explicit value range. Particularly, the distribution of YS-generated data overlaps with the peak of the original data and shares identical right truncation points, further demonstrating the effective transmission of combined reinforcement mechanisms to macroscopic properties [24,25]. This assures that during the data augmentation process, not only has the dataset’s scale been expanded, but the physical laws governing material strengthening mechanisms have also been rigorously preserved."
+    ]
+  },
+  {
+    "image_paths": [
+      "images/fe2666a44bec94af13c544ed318ab75f8b1eaff5f65a222318b4b1a23e14e476.jpg",
+      "images/10367fe59420435e94a19bb1dbd9df759c20772fd37acfe8e8e5f14ae016bd48.jpg",
+      "images/7eeccb86603ccc45f8ba98daf1ecbc28af45c6446b8a14b17e9113791b5aca21.jpg",
+      "images/85ec84d85175e142e371493caf49e3b47af1f3aef9266182da22fefd5b4ec838.jpg",
+      "images/8ef83e60f2ae490bdec6ca2f869749ea6094e2731bae30071d4808abb1ee8772.jpg",
+      "images/0cd6167baf4feba3c9062a7acbb54f49c77fb43d540ec7ae85cee0a76ca528af.jpg",
+      "images/431d3a84e60daea7a7818157477de740f6c4c8b8feb82c5258f9201c00b4eb04.jpg"
+    ],
+    "caption": "Fig. 4. Machine learning modeling workflow: (a)DT; (b)XGBoost; (c)LightGBM; (d)CatBoost; (e)Extra Trees; (f)KNN; (g)AdaBoost.",
+    "paper_abstract": "College of Metallurgy and Energy, North China University of Science and Technology, Tangshan 063210, China",
+    "paper_title": "Data-driven and multi-mechanism strengthening based yield strength prediction in medium-manganese low-density steels",
+    "citation_sentences": [
+      "Taking the quantified values of the four strengthening mechanisms from the GMM data-augmented dataset as model inputs and the corresponding YS as the output, the models were trained using a Python framework. The dataset was divided into training and testing sets at a 7:3 ratio, and the goodness-of-fit plots for the seven machine learning models were obtained, as shown in Fig. 4.",
+      "As shown in Fig. 4, the seven selected machine learning models all exhibited good predictive performance for YS, with the test set data points largely aligning with the x = y diagonal. To further screen for the best-performing model, this study visually compared the values of three evaluation metrics (RMSE, MAPE, and $\\mathrm { R } ^ { \\dot { 2 } } )$ for these models, as detailed in Fig. 5."
+    ]
+  },
+  {
+    "image_paths": [
+      "images/53a520f307de8c890f4b0cdfe7ee3f4a62264336168aaa73c0b458452cf59390.jpg",
+      "images/36c7395b05f84b7f666c1fe25899f5badee0640daa7806dddcd4068c104e91e5.jpg",
+      "images/318986d4ee79901581ff8f4848004d0b6e4bfb2e8479d186b32a83adcfc78f82.jpg"
+    ],
+    "caption": "Fig. 5. Model performance comparison metrics plot: (a)RMSE; (b)MAPE; $( \\mathbf { c } ) \\mathbf { R } ^ { 2 } .$",
+    "paper_abstract": "College of Metallurgy and Energy, North China University of Science and Technology, Tangshan 063210, China",
+    "paper_title": "Data-driven and multi-mechanism strengthening based yield strength prediction in medium-manganese low-density steels",
+    "citation_sentences": [
+      "As shown in Fig. 4, the seven selected machine learning models all exhibited good predictive performance for YS, with the test set data points largely aligning with the x = y diagonal. To further screen for the best-performing model, this study visually compared the values of three evaluation metrics (RMSE, MAPE, and $\\mathrm { R } ^ { \\dot { 2 } } )$ for these models, as detailed in Fig. 5.",
+      "As shown in Fig. 5, among the seven machine learning models trained simultaneously, the Extra Trees model demonstrated the best performance, with an RMSE of 76.2 MPa, a MAPE of 9.8 %, and an $\\mathrm { R } ^ { 2 }$ value of 0.978. Therefore, overall, among the seven different machine learning models, the Extra Trees model can serve as an effective supplement to the new YS prediction model. The specific structure of the extra trees model is shown in Fig. 6."
+    ]
+  },
+  {
+    "image_paths": [
+      "images/2727a07c594185b62cca2213a851d579238ab2d6e3acb4c154f3076c48a4e381.jpg"
+    ],
+    "caption": "Fig. 6. Extra trees model structure.",
+    "paper_abstract": "College of Metallurgy and Energy, North China University of Science and Technology, Tangshan 063210, China",
+    "paper_title": "Data-driven and multi-mechanism strengthening based yield strength prediction in medium-manganese low-density steels",
+    "citation_sentences": [
+      "As shown in Fig. 5, among the seven machine learning models trained simultaneously, the Extra Trees model demonstrated the best performance, with an RMSE of 76.2 MPa, a MAPE of 9.8 %, and an $\\mathrm { R } ^ { 2 }$ value of 0.978. Therefore, overall, among the seven different machine learning models, the Extra Trees model can serve as an effective supplement to the new YS prediction model. The specific structure of the extra trees model is shown in Fig. 6."
+    ]
+  },
+  {
+    "image_paths": [
+      "images/735a62f59397c88bac1a5ae989924fab524b1ed33b88d5decabba6a2692f2c74.jpg"
+    ],
+    "caption": "Fig. 7. Architecture of genetic algorithm.",
+    "paper_abstract": "College of Metallurgy and Energy, North China University of Science and Technology, Tangshan 063210, China",
+    "paper_title": "Data-driven and multi-mechanism strengthening based yield strength prediction in medium-manganese low-density steels",
+    "citation_sentences": [
+      "During the hyper-parameter optimization process of the Extra Trees model, challenges such as high-dimensionality, mixed variables, and non-linear, non-convex objective functions are encountered. Traditional manual tuning or grid search methods are often impractical due to the prohibitively high computational cost of exploring the vast combinatorial search space defined by hyper-parameters [39]. More importantly, the relationship between these hyper-parameters and model performance metrics is typically non-linear and non-convex, meaning multiple local optima exist. As a result, traditional gradient-based methods or local search strategies are prone to getting stuck in local minima, failing to find the global or near-optimal hyper-parameter combination [40]. In this context, based on the global optimization capability of GA, their natural advantage in handling mixed variables, and their proven success in optimizing complex ensemble models, GA can be applied to the hyper-parameter optimization of the Extra Trees model. The specific structure of the GA is illustrated in Fig. 7."
+    ]
+  },
+  {
+    "image_paths": [
+      "images/f29eed8637212cbb13f155906acad523976b6bab1954db657a492008041db9dd.jpg",
+      "images/a33139379f4c264bcdb6e525466a503a11ffa5fc9d652e3c9ac9c6c37956f069.jpg",
+      "images/dd950ba7da1cbf3dc5865cadfaff9628a66001eba73a091f79310774c485a9c0.jpg"
+    ],
+    "caption": "Fig. 8. Performance comparison of different optimization algorithms.",
+    "paper_abstract": "College of Metallurgy and Energy, North China University of Science and Technology, Tangshan 063210, China",
+    "paper_title": "Data-driven and multi-mechanism strengthening based yield strength prediction in medium-manganese low-density steels",
+    "citation_sentences": [
+      "In order to further explain the reason for choosing GA as the model optimization algorithm, this study compares it with alternative optimization technologies such as Bayesian optimization, and uses the same model performance evaluation index to further illustrate the advantages of GA. The results are shown in Fig. 8:",
+      "As shown in Fig. 8, the model was optimized using grid search, Bayesian optimization, and GA, and a comparison was made. Among these methods, the Extra Trees model optimized with GA exhibited the best performance. The RMSE values for the Extra Trees model optimized with grid search and Bayesian optimization were 80.239 MPa and 80.721 MPa, respectively, while the Genetic algorithm-Extremely randomized trees(GA-Extra trees) model achieved a value of 31.60 MPa. In terms of MAPE and $\\mathrm { R } ^ { 2 } ,$ the GA-Extra trees(Genetic algorithm-Extremely randomized trees) model demonstrated superior performance. Therefore, optimizing the Extra trees model using GA is the most suitable approach."
+    ]
+  },
+  {
+    "image_paths": [
+      "images/ba6fa95b3c2c3564338ab325975a68f6251cc2432656a043fe92fc8e4954776a.jpg",
+      "images/0e5b552bd687ad3e9f168d34cf8632e6d5d862c52dbbc60b4c81e8101adb1340.jpg"
+    ],
+    "caption": "Fig. 9. Optimization results of GA-Extra trees model: (a) Fitting results; (b) Optimization process.",
+    "paper_abstract": "College of Metallurgy and Energy, North China University of Science and Technology, Tangshan 063210, China",
+    "paper_title": "Data-driven and multi-mechanism strengthening based yield strength prediction in medium-manganese low-density steels",
+    "citation_sentences": []
+  },
+  {
+    "image_paths": [
+      "images/2e23c834db9ca0dd519f03b130cd7bf599d7d3938e18f63303aa579cc92a3751.jpg",
+      "images/cff10edd34961a084326e4aa74ab35efde2d136b9448ef467081f98a8e13a4ae.jpg",
+      "images/7c333df11cfd32e585febf3512f7ec142e3cfac29d12c20e66acc61a4ca892cb.jpg"
+    ],
+    "caption": "Fig. 10. Comparison of performance indexes between ET and GA-ET models: (a) RMSE; (b) MAPE; (c)R2 .",
+    "paper_abstract": "College of Metallurgy and Energy, North China University of Science and Technology, Tangshan 063210, China",
+    "paper_title": "Data-driven and multi-mechanism strengthening based yield strength prediction in medium-manganese low-density steels",
+    "citation_sentences": []
+  },
+  {
+    "image_paths": [
+      "images/4182b8df8f83dc2e7fe81f1b30fb0b6750f54589733d7d74ac75b691704904d7.jpg"
+    ],
+    "caption": "Fig. 11. Effect chart of model prediction.",
+    "paper_abstract": "College of Metallurgy and Energy, North China University of Science and Technology, Tangshan 063210, China",
+    "paper_title": "Data-driven and multi-mechanism strengthening based yield strength prediction in medium-manganese low-density steels",
+    "citation_sentences": []
+  },
+  {
+    "image_paths": [
+      "images/62800bfec570d5ce5f4e28795fa545ded17b85c7f4134a2e37b5a443a989a688.jpg"
+    ],
+    "caption": "Fig. 12. Engineering stress-strain curves at different annealing temperatures.",
+    "paper_abstract": "College of Metallurgy and Energy, North China University of Science and Technology, Tangshan 063210, China",
+    "paper_title": "Data-driven and multi-mechanism strengthening based yield strength prediction in medium-manganese low-density steels",
+    "citation_sentences": [
+      "In the preceding chapters, this study established a YS prediction model based on the contributions of strengthening mechanisms, utilizing data collected from published literature. This model is now applied to specific experiments to validate the applicability of the developed YS prediction framework. The experimental steel, with a chemical composition (mass fraction) of Fe-0.25C-3Mn-2Al-0.4Si, was melted in a vacuum induction furnace. After hot forging, the specimens were heated to 1200◦C and held for 60 min, followed by a six-pass rolling process on a φ350 mm× 350 mm high-stiffness two-high hot rolling mill. The initial rolling temperature was $1 1 0 0 ^ { \\circ } \\mathrm { C } ,$ , and the final rolling temperature was $8 8 0 ^ { \\circ } \\mathrm { C } ,$ with a cumulative reduction ratio of 90 %. Subsequently, a cold rolling experiment with a total reduction ratio of 60 % was performed on a four-high reversible cold rolling mill. The cold-rolled specimens underwent c annealing at 750◦C, 800◦C, and 850◦C for 30 min, followed by air cooling to room temperature. Thereafter, they were held at 400◦C for 30 min and air-cooled, yielding three groups of specimens designated as ANT750, ANT800, and ANT850. Tensile tests were conducted at room temperature using an Instron 3382 universal electronic materials testing machine. The gauge dimensions of the tensile specimens were 15 mm (length) × 5.0 mm (width) × 1.0 mm (thickness), and the strain rate was $5 \\times 1 0 ^ { - 4 } s ^ { - 1 }$ . To ensure data reliability and repeatability, three samples were tested for each group. Tensile tests performed on the prepared specimens allowed for the plotting of engineering stress-strain curves at different annealing temperatures, as shown in Fig. 12."
+    ]
+  },
+  {
+    "image_paths": [
+      "images/262432b53c0f2313294f3708d1ac6443994965ded03430be0bdd09688ed9f082.jpg",
+      "images/5421a5cde3e1e916129ec10f34b2b3a45d1a8c338ecb57d6cd5c36fb0c15b915.jpg",
+      "images/3af79f8ffe24dc3ecd75da061790d6e1fa1f193c4df7dace23465dcbfde46d73.jpg"
+    ],
+    "caption": "Fig. 13. SEM morphology of AN750, AN800 and AN850 samples: (a) AN750; (b) AN800; (c)AN800.",
+    "paper_abstract": "College of Metallurgy and Energy, North China University of Science and Technology, Tangshan 063210, China",
+    "paper_title": "Data-driven and multi-mechanism strengthening based yield strength prediction in medium-manganese low-density steels",
+    "citation_sentences": [
+      "The ferrite grain size and volume fraction were statistically analyzed using Image-Pro Plus software. For each group of specimens, several SEM images were selected for statistical analysis, and the average values were calculated, as shown in Fig. 13. The ferrite volume fractions of the AN750, AN800, and AN850 specimens were 52 %, 43 %, and 69 %, respectively, with average grain sizes of 5.7μm, 5.4μm, and 6.8μm. The bainite volume fractions were 43.0 %, 55.1 %, and 30.8 %, with average grain sizes of 3.0μm, 4.1μm, and 2.6μm, respectively. Since the retained austenite content was less than 5 %, its strengthening contribution was neglected. Therefore, the grain refinement strengthening contributions for the AN750, AN800, and AN850 specimens were 264 MPa, 256 MPa, and 292 MPa, respectively."
+    ]
+  },
+  {
+    "image_paths": [
+      "images/e5c65e6a0c34ca855c722a45b45fea4e70dc82f0a618fd822d6d5884236b7d56.jpg",
+      "images/8e98ee0b0f2f8b9278a7f341cef76b563773141484a500bd4864cac70799fe52.jpg",
+      "images/7fc72f0d9ddc01cfc5c0f7899a152d9e517a3eef950ea0785530be662e35f067.jpg",
+      "images/dd6e46c70f521dfe6354b346743556267cf5c1b749d1792a1dbdd192130d5aa7.jpg",
+      "images/f129d727fb966bc931ec821965293ce029a1f10ead806f28ad7e1c24a73478c9.jpg",
+      "images/01a4b96a7b7cfdad7dda84cd051cc668f794edf306fc4c4fc3cefd448e3935a8.jpg"
+    ],
+    "caption": "Fig. 14. GND density statistics and Taylor factor statistics of AN750, AN800 and AN850 samples: (a) AN750 GND density; (b) AN800 GND density; (c) AN850 GND density; (d) AN750 Taylor factor; (e) AN800 Taylor factor; (f) AN850 Taylor factor.",
+    "paper_abstract": "College of Metallurgy and Energy, North China University of Science and Technology, Tangshan 063210, China",
+    "paper_title": "Data-driven and multi-mechanism strengthening based yield strength prediction in medium-manganese low-density steels",
+    "citation_sentences": []
+  },
+  {
+    "image_paths": [
+      "images/9670a7f68ffd5508fbd37f78f2293cb7a8ae016ed75e0b10ec6e4552ae04be01.jpg"
+    ],
+    "caption": "Fig. 15. Comparison of model prediction difference.",
+    "paper_abstract": "College of Metallurgy and Energy, North China University of Science and Technology, Tangshan 063210, China",
+    "paper_title": "Data-driven and multi-mechanism strengthening based yield strength prediction in medium-manganese low-density steels",
+    "citation_sentences": []
+  },
+  {
+    "image_paths": [
+      "images/70dc3930afd37bd77891e67ef474ad922979c40deb4ba596396ad7e7081eb79a.jpg"
+    ],
+    "caption": "Fig. 16. Response diagram of model prediction.",
+    "paper_abstract": "College of Metallurgy and Energy, North China University of Science and Technology, Tangshan 063210, China",
+    "paper_title": "Data-driven and multi-mechanism strengthening based yield strength prediction in medium-manganese low-density steels",
+    "citation_sentences": [
+      "The effect of Orovan strengthening mechanism on the prepared Fe-0.25C-3Mn-2Al-0.4Si test steel was not obvious. In order to further verify the prediction ability of the model, this study collected the contribution values of various strengthening mechanisms (including Solid solution strengthening, Grain refinement strengthening, Dislocation strengthening and Orovan strengthening) and the corresponding YS data of medium-manganese low-density steel with different components from the existing studies. The generalization and robustness of the model were further verified. A total of 6 groups of data were collected under 2 different compositions and different experimental conditions [41,42], as shown in Table 5. The YS of the steel was predicted by GA-Extra trees model. In order to display the prediction results conveniently, the response diagram between the predicted value and the real value is further drawn, as shown in Fig. 16.",
+      "As shown in Table 5 and Fig. 16, the established GA-Extra trees YS prediction model has been further proved to be able to migrate to the YS prediction of medium manganese low density steel through the literature data experiment of existing research. After analyzing the prediction results of six groups of test data, it can be concluded that the average error between the predicted value of the model and the measured value is 1.84 %, which has little fluctuation compared with the average error value of 1.56 % verified by the previous actual experiment, indicating that the YS prediction model of medium manganese low density steel established in this study has excellent generalization and robustness, and can provide some theoretical guidance for the design of the material."
+    ]
+  },
+  {
+    "image_paths": [
+      "images/7cd12e037a679508a1d734c91cd4b928876ef57701271eecba459dd538cd1084.jpg",
+      "images/f7030a93fb918e47ddde3d4ddd8408025f08a5e9294abd5419b9059143d36797.jpg"
+    ],
+    "caption": "Fig. 17. Model mechanism analysis: (a) feature importance analysis; (b) SHAP summary chart.",
+    "paper_abstract": "College of Metallurgy and Energy, North China University of Science and Technology, Tangshan 063210, China",
+    "paper_title": "Data-driven and multi-mechanism strengthening based yield strength prediction in medium-manganese low-density steels",
+    "citation_sentences": [
+      "This study has developed a data-driven model for predicting the yield strength of medium-manganese low-density steel. Compared to traditional linear models, the optimized nonlinear model exhibits significant advantages in prediction accuracy. To gain a deeper understanding of the model’s decision-making mechanisms, the SHapley Additive exPlanations (SHAP) method is further employed for interpretability analysis. This approach better elucidates the role mechanisms of key factors influencing yield strength, as illustrated in Fig. 17.",
+      "Each group of medium-manganese low-density steel was prepared with distinct processing techniques and elemental compositions, leading to potential biases in the overall analysis. This study focuses on the interpretability analysis of the Fe-9.7Mn-2.04Al-0.99Si-0.52V-0.42 C composition, as detailed in Section 4.3. As shown in Fig. 17, the results indicate that dislocation strengthening is the dominant mechanism contributing to YS, which the Taylor hardening model can explain. During processing, a high density of dislocations is introduced, forming a complex dislocation network. The entanglement and interaction of these dislocations significantly inhibit the propagation of slip bands, thereby effectively enhancing YS. The second key strengthening mechanism arises from the Orowan strengthening effect of second-phase particles. In medium-manganese low-density steel, strengthening phases such as NbC and VC can achieve dispersed precipitation under appropriate heat treatment conditions. Dislocations bypass these particles via the Orowan mechanism, resulting in additional strength enhancement."
+    ]
+  }
+]

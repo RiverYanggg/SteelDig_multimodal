@@ -1,0 +1,85 @@
+{
+  "id_fields": [
+    "paper_id",
+    "alloy_id",
+    "process_id",
+    "sample_id",
+    "structure_id",
+    "interface_set_id",
+    "interface_id",
+    "interaction_id",
+    "property_set_id",
+    "property_id",
+    "performance_id",
+    "characterization_id",
+    "computation_id",
+    "uuid",
+    "microstructure_uuid",
+    "precipitate_id"
+  ],
+  "sample_id_stopwords": [
+    "sample",
+    "samples",
+    "specimen",
+    "specimens",
+    "property",
+    "properties",
+    "steel",
+    "alloy",
+    "condition",
+    "state",
+    "test",
+    "tests"
+  ],
+  "sample_context_stopwords": [
+    "tensile",
+    "impact",
+    "charpy",
+    "fracture",
+    "strength",
+    "elongation",
+    "hardness",
+    "microstructure",
+    "property",
+    "properties",
+    "sample"
+  ],
+  "process_stopwords": [
+    "process",
+    "condition",
+    "sample",
+    "steel",
+    "alloy",
+    "specimen"
+  ],
+  "numeric_tolerances": {
+    "default": {
+      "abs": 0.0,
+      "rel": 0.02
+    },
+    "alloys.nominal_composition[*].weight_percent": {
+      "abs": 0.05,
+      "rel": 0.02
+    },
+    "alloys.nominal_composition[*].atomic_percent": {
+      "abs": 0.05,
+      "rel": 0.02
+    },
+    "processing_steps.temperature": {
+      "abs": 5.0,
+      "rel": 0.0
+    },
+    "processing_steps.duration": {
+      "abs": 0.25,
+      "rel": 0.05
+    },
+    "properties.*.value": {
+      "abs": 0.1,
+      "rel": 0.03
+    },
+    "properties.*.uncertainty": {
+      "abs": 0.1,
+      "rel": 0.05
+    }
+  }
+}

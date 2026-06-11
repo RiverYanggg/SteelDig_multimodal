@@ -1,0 +1,75 @@
+{
+  "paper_id": "A61",
+  "source_md_path": "/org/caep-xuben/yangzijiang/yzj/datasets/Al_82/Al_82_papers/mineru_data_82/A61/hybrid_auto/A61.md",
+  "cleaned_md_path": "/org/caep-xuben/yangzijiang/yzj/datasets/Al_82/Al_82_papers/output/A61/preprocess/cleaned_input.md",
+  "model": "deepseek-v4-pro",
+  "created_at": "2026-05-10T11:22:24.616848",
+  "claim_count": 72,
+  "source_type": "text_only",
+  "paper_map": {
+    "paper_id": "A61",
+    "title": "Fatigue properties of Fe-30.5Mn-8Al-1C austenitic low-density steel: Critical impact of κ-carbide precipitation state",
+    "abstract_summary": "This study systematically investigates the tension-tension fatigue behavior and deformation mechanisms of solution-treated and aged Fe-30.5Mn-8Al-1C (wt%) austenitic low-density steels, focusing on the critical role of κ-carbide precipitation state in controlling fatigue properties. In aged samples, intragranular κ-carbides induce planar slip and enhance slip reversibility, improving fatigue life at low stress amplitudes, while intergranular κ-carbides impede slip transmission and accelerate damage, reducing fatigue life at high stress amplitudes. The findings highlight that accelerating intragranular κ-carbide precipitation while suppressing intergranular precipitation can concurrently enhance fatigue performance across all stress amplitudes.",
+    "research_objective": "To elucidate the effect of intragranular and intergranular κ-carbide precipitation states on the fatigue behavior and deformation mechanisms of Fe-30.5Mn-8Al-1C austenitic low-density steel, and to provide microstructural design strategies for improved fatigue resistance.",
+    "material_systems": [
+      "Fe-30.5Mn-8Al-1C (wt%) austenitic low-density steel",
+      "κ-carbide (intragranular and intergranular)"
+    ],
+    "main_process_variables": [
+      "Solution treatment: 1050°C for 1h, water quenched (ST)",
+      "Aging treatments: 550°C, 600°C, 650°C for 6h (after ST)",
+      "Hot rolling to 4 mm thickness before heat treatment",
+      "Tensile test: room temperature, strain rate 10^{-3} s^{-1}",
+      "Fatigue test: stress-controlled tension-tension, R=0.1, frequency 20 Hz, sinusoidal waveform, ambient air",
+      "Specimen: flat dog-bone shape, loading axis parallel to rolling direction"
+    ],
+    "sample_aliases": [
+      {
+        "alias": "ST",
+        "description": "Solution treated at 1050°C for 1h, water quenched"
+      },
+      {
+        "alias": "550-6",
+        "description": "ST sample aged at 550°C for 6h"
+      },
+      {
+        "alias": "600-6",
+        "description": "ST sample aged at 600°C for 6h"
+      },
+      {
+        "alias": "650-6",
+        "description": "ST sample aged at 650°C for 6h"
+      }
+    ],
+    "expected_information_axis": [
+      "composition",
+      "processing",
+      "microstructure",
+      "property",
+      "mechanism",
+      "figure_evidence"
+    ],
+    "key_sections": [
+      {
+        "section": "1. Introduction",
+        "purpose": "Background on low-density steels, κ-carbide precipitation, and fatigue; identifies research gap and objectives."
+      },
+      {
+        "section": "2. Experimental materials and methods",
+        "purpose": "Describes material composition, processing (ST and aging), mechanical testing (tensile and fatigue), and microstructural characterization (EBSD, TEM)."
+      },
+      {
+        "section": "3. Results",
+        "purpose": "Presents undeformed microstructures, tensile properties, fatigue S-N data, fracture characteristics, crack propagation, surface deformation, and deformation microstructures."
+      },
+      {
+        "section": "4. Discussion",
+        "purpose": "Discusses impact of intragranular κ-carbides on dislocation slip mode, their effect on fatigue at low stress amplitudes, and effect of intergranular κ-carbides on fatigue at high stress amplitudes."
+      },
+      {
+        "section": "5. Conclusions",
+        "purpose": "Summarizes the critical role of κ-carbide precipitation state in fatigue properties and provides microstructural design guidelines."
+      }
+    ]
+  }
+}

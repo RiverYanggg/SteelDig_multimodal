@@ -1,0 +1,2661 @@
+{
+  "dataset_root": "/Users/mac/Desktop/LLM_project/SteelDig_multimodal/outputs_dataset",
+  "schema_path": "/Users/mac/Desktop/LLM_project/SteelDig_multimodal/prompt/json_schema.json",
+  "files_scanned": 82,
+  "count_rule": "Two metrics are reported for each field when its value is non-empty. occurrence_count increments every time a non-empty field instance appears in the dataset. paper_count increments once per paper if that paper contains at least one non-empty instance of the field. null, empty string, empty list, and empty object are not counted. Arrays and objects are counted at their own field path when they contain at least one non-empty descendant.",
+  "schema_field_count": 208,
+  "observed_field_count": 357,
+  "extra_observed_fields_not_in_schema": [
+    "computational_details[].analytical_model[].parameters.D_Al_fcc",
+    "computational_details[].analytical_model[].parameters.D_C_fcc",
+    "computational_details[].analytical_model[].parameters.D_Cr_fcc",
+    "computational_details[].analytical_model[].parameters.D_Fe_fcc",
+    "computational_details[].analytical_model[].parameters.D_Mn_fcc",
+    "computational_details[].analytical_model[].parameters.dislocation_densities",
+    "computational_details[].analytical_model[].parameters.key_parameters",
+    "computational_details[].analytical_model[].parameters.twin_volume_fraction",
+    "computational_details[].paper_id",
+    "interfaces[].interface_notes[].slippage_situation",
+    "interfaces[].phases[].orientation_relationship",
+    "processing_steps[].strain_rate",
+    "properties[].breakdown_current_density",
+    "properties[].chemical.oxidation_resistance.corrosion_rate",
+    "properties[].chemical.oxidation_resistance.passivation_behavior",
+    "properties[].chemical.oxidation_resistance.test_medium",
+    "properties[].mechanical.bulk_modulus",
+    "properties[].mechanical.bulk_modulus.unit",
+    "properties[].mechanical.bulk_modulus.value",
+    "properties[].mechanical.charpy_impact_toughness",
+    "properties[].mechanical.charpy_impact_toughness[].temperature",
+    "properties[].mechanical.charpy_impact_toughness[].uncertainty",
+    "properties[].mechanical.charpy_impact_toughness[].unit",
+    "properties[].mechanical.charpy_impact_toughness[].value",
+    "properties[].mechanical.elastic_constants",
+    "properties[].mechanical.elastic_constants[].constant",
+    "properties[].mechanical.elastic_constants[].unit",
+    "properties[].mechanical.elastic_constants[].value",
+    "properties[].mechanical.hardness[].others",
+    "properties[].mechanical.hardness[].others.uncertainty",
+    "properties[].mechanical.impact_properties",
+    "properties[].mechanical.impact_properties[].impact_energy",
+    "properties[].mechanical.impact_properties[].impact_energy.uncertainty",
+    "properties[].mechanical.impact_properties[].impact_energy.unit",
+    "properties[].mechanical.impact_properties[].impact_energy.value",
+    "properties[].mechanical.impact_properties[].initiation_energy",
+    "properties[].mechanical.impact_properties[].propagation_energy",
+    "properties[].mechanical.impact_properties[].test_type",
+    "properties[].mechanical.impact_toughness",
+    "properties[].mechanical.impact_toughness.test_method",
+    "properties[].mechanical.impact_toughness.uncertainty",
+    "properties[].mechanical.impact_toughness.unit",
+    "properties[].mechanical.impact_toughness.value",
+    "properties[].mechanical.impact_toughness[].direction",
+    "properties[].mechanical.impact_toughness[].notch_type",
+    "properties[].mechanical.impact_toughness[].temperature",
+    "properties[].mechanical.impact_toughness[].uncertainty",
+    "properties[].mechanical.impact_toughness[].unit",
+    "properties[].mechanical.impact_toughness[].value",
+    "properties[].mechanical.poisson_ratio",
+    "properties[].mechanical.poisson_ratio.value",
+    "properties[].mechanical.pugh_ratio",
+    "properties[].mechanical.pugh_ratio.value",
+    "properties[].mechanical.reduction_of_area",
+    "properties[].mechanical.reduction_of_area[].direction",
+    "properties[].mechanical.reduction_of_area[].others",
+    "properties[].mechanical.reduction_of_area[].others.uncertainty",
+    "properties[].mechanical.reduction_of_area[].unit",
+    "properties[].mechanical.reduction_of_area[].value",
+    "properties[].mechanical.shear_modulus",
+    "properties[].mechanical.shear_modulus.unit",
+    "properties[].mechanical.shear_modulus.value",
+    "properties[].mechanical.tensile_properties.elongation[].others",
+    "properties[].mechanical.tensile_properties.elongation[].others.uncertainty",
+    "properties[].mechanical.tensile_properties.elongation[].uncertainty",
+    "properties[].mechanical.tensile_properties.normal_anisotropy",
+    "properties[].mechanical.tensile_properties.normal_anisotropy[].direction",
+    "properties[].mechanical.tensile_properties.normal_anisotropy[].unit",
+    "properties[].mechanical.tensile_properties.normal_anisotropy[].value",
+    "properties[].mechanical.tensile_properties.reduction_of_area",
+    "properties[].mechanical.tensile_properties.reduction_of_area[].direction",
+    "properties[].mechanical.tensile_properties.reduction_of_area[].unit",
+    "properties[].mechanical.tensile_properties.reduction_of_area[].value",
+    "properties[].mechanical.tensile_properties.strain_hardening_exponent",
+    "properties[].mechanical.tensile_properties.strain_hardening_exponent[].direction",
+    "properties[].mechanical.tensile_properties.strain_hardening_exponent[].unit",
+    "properties[].mechanical.tensile_properties.strain_hardening_exponent[].value",
+    "properties[].mechanical.tensile_properties.true_fracture_stress",
+    "properties[].mechanical.tensile_properties.true_fracture_stress[].direction",
+    "properties[].mechanical.tensile_properties.true_fracture_stress[].unit",
+    "properties[].mechanical.tensile_properties.true_fracture_stress[].value",
+    "properties[].mechanical.tensile_properties.true_ultimate_tensile_strength",
+    "properties[].mechanical.tensile_properties.true_ultimate_tensile_strength[].direction",
+    "properties[].mechanical.tensile_properties.true_ultimate_tensile_strength[].unit",
+    "properties[].mechanical.tensile_properties.true_ultimate_tensile_strength[].value",
+    "properties[].mechanical.tensile_properties.uniform_elongation",
+    "properties[].mechanical.tensile_properties.uniform_elongation[].direction",
+    "properties[].mechanical.tensile_properties.uniform_elongation[].unit",
+    "properties[].mechanical.tensile_properties.uniform_elongation[].value",
+    "properties[].mechanical.tensile_toughness",
+    "properties[].mechanical.tensile_toughness[].direction",
+    "properties[].mechanical.tensile_toughness[].unit",
+    "properties[].mechanical.tensile_toughness[].value",
+    "properties[].mechanical.youngs_modulus_elastic",
+    "properties[].mechanical.youngs_modulus_elastic.unit",
+    "properties[].mechanical.youngs_modulus_elastic.value",
+    "properties[].oxide_film_Al_content",
+    "properties[].oxide_film_NA",
+    "properties[].oxide_film_ND",
+    "properties[].oxide_film_thickness",
+    "properties[].physical.chemical",
+    "properties[].physical.chemical.corrosion_resistance",
+    "properties[].physical.chemical.corrosion_resistance.corrosion_rate",
+    "properties[].physical.chemical.corrosion_resistance.passivation_behavior",
+    "properties[].physical.chemical.corrosion_resistance.test_medium",
+    "properties[].physical.chemical.oxidation_resistance",
+    "properties[].physical.chemical.oxidation_resistance.oxidation_rate_constant",
+    "properties[].physical.chemical.oxidation_resistance.protective_scale",
+    "properties[].physical.damping_ratio",
+    "properties[].physical.debye_temperature",
+    "properties[].physical.debye_temperature.unit",
+    "properties[].physical.debye_temperature.value",
+    "properties[].physical.magnetic_properties.permeability",
+    "properties[].physical.radiation_properties",
+    "properties[].physical.radiation_properties.helium_embrittlement",
+    "properties[].physical.radiation_properties.irradiation_hardening",
+    "properties[].physical.radiation_properties.void_swelling",
+    "properties[].physical.sound_velocity",
+    "properties[].physical.sound_velocity.average",
+    "properties[].physical.sound_velocity.average.unit",
+    "properties[].physical.sound_velocity.average.value",
+    "properties[].physical.sound_velocity.longitudinal",
+    "properties[].physical.sound_velocity.longitudinal.unit",
+    "properties[].physical.sound_velocity.longitudinal.value",
+    "properties[].physical.sound_velocity.transverse",
+    "properties[].physical.sound_velocity.transverse.unit",
+    "properties[].physical.sound_velocity.transverse.value",
+    "properties[].physical.stacking_fault_energy",
+    "properties[].physical.stacking_fault_energy.unit",
+    "properties[].physical.stacking_fault_energy.value",
+    "properties[].polarization_resistance_with_film",
+    "properties[].polarization_resistance_without_film",
+    "structures[].microstructure_list[].defects[].crack_path",
+    "structures[].microstructure_list[].defects[].description",
+    "structures[].microstructure_list[].deformation_twins",
+    "structures[].microstructure_list[].deformation_twins[].location",
+    "structures[].microstructure_list[].deformation_twins[].notes",
+    "structures[].microstructure_list[].deformation_twins[].thickness",
+    "structures[].microstructure_list[].deformation_twins[].type",
+    "structures[].microstructure_list[].deformation_twins[].volume_fraction",
+    "structures[].microstructure_list[].grain_structure.gnd_distribution",
+    "structures[].microstructure_list[].grain_structure.high_angle_grain_boundary_fraction",
+    "structures[].microstructure_list[].grain_structure.low_angle_grain_boundary_fraction",
+    "structures[].microstructure_list[].phases_present[].lattice_parameter",
+    "structures[].microstructure_list[].phases_present[].plane_spacing_002",
+    "structures[].microstructure_list[].substructure_size",
+    "structures[].microstructure_list[].substructure_size.type",
+    "structures[].microstructure_list[].substructure_size.unit",
+    "structures[].microstructure_list[].substructure_size.value"
+  ],
+  "field_frequencies": [
+    {
+      "field_path": "papers",
+      "occurrence_count": 162,
+      "paper_count": 81,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "papers[].paper_id",
+      "occurrence_count": 81,
+      "paper_count": 81,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "papers[].paper_scope",
+      "occurrence_count": 81,
+      "paper_count": 81,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "samples[].alloy_id",
+      "occurrence_count": 744,
+      "paper_count": 80,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "samples[].paper_id",
+      "occurrence_count": 744,
+      "paper_count": 80,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "samples[].sample_id",
+      "occurrence_count": 744,
+      "paper_count": 80,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "samples[].process_id",
+      "occurrence_count": 740,
+      "paper_count": 80,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "alloys[].alloy_id",
+      "occurrence_count": 362,
+      "paper_count": 80,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "alloys[].alloy_name",
+      "occurrence_count": 362,
+      "paper_count": 80,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "alloys[].base_element",
+      "occurrence_count": 362,
+      "paper_count": 80,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "alloys[].paper_id",
+      "occurrence_count": 362,
+      "paper_count": 80,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "processes[].description",
+      "occurrence_count": 358,
+      "paper_count": 80,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "processes[].paper_id",
+      "occurrence_count": 358,
+      "paper_count": 80,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "processes[].process_id",
+      "occurrence_count": 358,
+      "paper_count": 80,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "alloys",
+      "occurrence_count": 160,
+      "paper_count": 80,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "processes",
+      "occurrence_count": 160,
+      "paper_count": 80,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "samples",
+      "occurrence_count": 160,
+      "paper_count": 80,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "papers[].research_type",
+      "occurrence_count": 80,
+      "paper_count": 80,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "alloys[].alloying_elements",
+      "occurrence_count": 714,
+      "paper_count": 79,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "papers[].authors",
+      "occurrence_count": 158,
+      "paper_count": 79,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "unmapped_findings",
+      "occurrence_count": 158,
+      "paper_count": 79,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "papers[].title",
+      "occurrence_count": 79,
+      "paper_count": 79,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].property_set_id",
+      "occurrence_count": 639,
+      "paper_count": 78,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].sample_id",
+      "occurrence_count": 639,
+      "paper_count": 78,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures[].sample_id",
+      "occurrence_count": 429,
+      "paper_count": 78,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties",
+      "occurrence_count": 156,
+      "paper_count": 78,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures",
+      "occurrence_count": 156,
+      "paper_count": 78,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "alloys[].nominal_composition[].element",
+      "occurrence_count": 1403,
+      "paper_count": 77,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures[].microstructure_list[].phases_present",
+      "occurrence_count": 1094,
+      "paper_count": 77,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures[].microstructure_list",
+      "occurrence_count": 844,
+      "paper_count": 77,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures[].microstructure_list[].phases_present[].phase_name",
+      "occurrence_count": 829,
+      "paper_count": 77,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "alloys[].nominal_composition",
+      "occurrence_count": 706,
+      "paper_count": 77,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "characterization_methods[].characterization_id",
+      "occurrence_count": 591,
+      "paper_count": 77,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "characterization_methods[].purpose",
+      "occurrence_count": 591,
+      "paper_count": 77,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "characterization_methods[].technique",
+      "occurrence_count": 591,
+      "paper_count": 77,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "characterization_methods[].key_findings",
+      "occurrence_count": 588,
+      "paper_count": 77,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures[].microstructure_list[].uuid",
+      "occurrence_count": 553,
+      "paper_count": 77,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures[].overall_structure",
+      "occurrence_count": 423,
+      "paper_count": 77,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures[].structure_id",
+      "occurrence_count": 423,
+      "paper_count": 77,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "characterization_methods",
+      "occurrence_count": 154,
+      "paper_count": 77,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "processing_steps[].method",
+      "occurrence_count": 1591,
+      "paper_count": 76,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "processing_steps[].paper_id",
+      "occurrence_count": 1591,
+      "paper_count": 76,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "processing_steps[].sample_id",
+      "occurrence_count": 1591,
+      "paper_count": 76,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "processing_steps[].sequence",
+      "occurrence_count": 1591,
+      "paper_count": 76,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "processing_steps[].type",
+      "occurrence_count": 1586,
+      "paper_count": 76,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "processing_steps",
+      "occurrence_count": 152,
+      "paper_count": 76,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures[].number_of_phases",
+      "occurrence_count": 384,
+      "paper_count": 75,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "papers[].keywords",
+      "occurrence_count": 150,
+      "paper_count": 75,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "alloys[].nominal_composition[].weight_percent",
+      "occurrence_count": 1305,
+      "paper_count": 73,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures[].microstructure_list[].phases_present[].morphology",
+      "occurrence_count": 687,
+      "paper_count": 73,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures[].microstructure_list[].phases_present[].crystal_structure",
+      "occurrence_count": 627,
+      "paper_count": 73,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "processing_steps[].temperature",
+      "occurrence_count": 1172,
+      "paper_count": 71,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "processing_steps[].unit",
+      "occurrence_count": 1098,
+      "paper_count": 69,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical",
+      "occurrence_count": 528,
+      "paper_count": 68,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "processing_steps[].processing_steps_notes",
+      "occurrence_count": 811,
+      "paper_count": 67,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "characterization_methods[].sample_id",
+      "occurrence_count": 520,
+      "paper_count": 67,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "processing_steps[].cooling_medium",
+      "occurrence_count": 645,
+      "paper_count": 65,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties",
+      "occurrence_count": 399,
+      "paper_count": 65,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "processing_steps[].duration",
+      "occurrence_count": 763,
+      "paper_count": 64,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures[].microstructure_list[].phases_present[].volume_fraction",
+      "occurrence_count": 419,
+      "paper_count": 60,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "characterization_methods[].microstructure_uuid",
+      "occurrence_count": 362,
+      "paper_count": 57,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "processes[].alloy_id",
+      "occurrence_count": 273,
+      "paper_count": 57,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "computational_details",
+      "occurrence_count": 114,
+      "paper_count": 57,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "computational_details[].computation_id",
+      "occurrence_count": 84,
+      "paper_count": 57,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.elongation",
+      "occurrence_count": 586,
+      "paper_count": 56,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.elongation[].value",
+      "occurrence_count": 317,
+      "paper_count": 56,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.yield_strength",
+      "occurrence_count": 674,
+      "paper_count": 55,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures[].microstructure_list[].precipitates",
+      "occurrence_count": 478,
+      "paper_count": 55,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures[].microstructure_list[].defects",
+      "occurrence_count": 396,
+      "paper_count": 55,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.yield_strength[].value",
+      "occurrence_count": 367,
+      "paper_count": 55,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "alloys[].aliases",
+      "occurrence_count": 336,
+      "paper_count": 55,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.elongation[].unit",
+      "occurrence_count": 316,
+      "paper_count": 55,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures[].microstructure_list[].precipitates[].type",
+      "occurrence_count": 290,
+      "paper_count": 55,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures[].microstructure_list[].defects[].type",
+      "occurrence_count": 224,
+      "paper_count": 55,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.ultimate_tensile_strength",
+      "occurrence_count": 582,
+      "paper_count": 54,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.yield_strength[].unit",
+      "occurrence_count": 365,
+      "paper_count": 54,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures[].microstructure_list[].precipitates[].precipitate_id",
+      "occurrence_count": 289,
+      "paper_count": 54,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures[].microstructure_list[].related_sequence",
+      "occurrence_count": 346,
+      "paper_count": 53,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.ultimate_tensile_strength[].value",
+      "occurrence_count": 282,
+      "paper_count": 53,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures[].microstructure_list[].precipitates[].distribution",
+      "occurrence_count": 280,
+      "paper_count": 53,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.ultimate_tensile_strength[].unit",
+      "occurrence_count": 281,
+      "paper_count": 52,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "alloys[].alloys_notes",
+      "occurrence_count": 144,
+      "paper_count": 51,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "computational_details[].analytical_model",
+      "occurrence_count": 146,
+      "paper_count": 50,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "computational_details[].analytical_model[].equation_role",
+      "occurrence_count": 130,
+      "paper_count": 49,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "computational_details[].analytical_model[].model_name",
+      "occurrence_count": 130,
+      "paper_count": 49,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "computational_details[].analytical_model[].model_note",
+      "occurrence_count": 119,
+      "paper_count": 49,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "interfaces[].interface_set_id",
+      "occurrence_count": 102,
+      "paper_count": 49,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "interfaces",
+      "occurrence_count": 98,
+      "paper_count": 49,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "interfaces[].phases",
+      "occurrence_count": 200,
+      "paper_count": 48,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "interfaces[].phases[].interface_id",
+      "occurrence_count": 147,
+      "paper_count": 48,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "interfaces[].phases[].phase_1_name",
+      "occurrence_count": 147,
+      "paper_count": 48,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "interfaces[].phases[].phase_2_name",
+      "occurrence_count": 147,
+      "paper_count": 48,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures[].microstructure_list[].grain_structure",
+      "occurrence_count": 180,
+      "paper_count": 46,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "interfaces[].sample_id",
+      "occurrence_count": 98,
+      "paper_count": 46,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "processing_steps[].reduction_ratio",
+      "occurrence_count": 235,
+      "paper_count": 41,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures[].microstructure_list[].precipitates[].size",
+      "occurrence_count": 163,
+      "paper_count": 41,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures[].microstructure_list[].precipitates[].size.value",
+      "occurrence_count": 163,
+      "paper_count": 41,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "computational_details[].analytical_model[].parameters",
+      "occurrence_count": 112,
+      "paper_count": 40,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "computational_details[].simulation_method",
+      "occurrence_count": 51,
+      "paper_count": 40,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures[].microstructure_list[].grain_structure.average_grain_size",
+      "occurrence_count": 149,
+      "paper_count": 39,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures[].microstructure_list[].grain_structure.average_grain_size.value",
+      "occurrence_count": 149,
+      "paper_count": 39,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures[].microstructure_list[].grain_structure.average_grain_size.unit",
+      "occurrence_count": 148,
+      "paper_count": 39,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "computational_details[].validation_against_experiment",
+      "occurrence_count": 41,
+      "paper_count": 38,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "interfaces[].phases[].microstructure_uuid",
+      "occurrence_count": 123,
+      "paper_count": 37,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "interfaces[].phase_evolution",
+      "occurrence_count": 73,
+      "paper_count": 37,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "papers[].publication_year",
+      "occurrence_count": 36,
+      "paper_count": 36,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures[].microstructure_list[].phases_present[].grain_size",
+      "occurrence_count": 164,
+      "paper_count": 35,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "processes[].processes_notes",
+      "occurrence_count": 105,
+      "paper_count": 35,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures[].microstructure_list[].defects[].dislocation_density",
+      "occurrence_count": 122,
+      "paper_count": 34,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "interfaces[].phases[].coherence",
+      "occurrence_count": 94,
+      "paper_count": 34,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures[].microstructure_list[].precipitates[].size.unit",
+      "occurrence_count": 118,
+      "paper_count": 33,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.yield_strength[].direction",
+      "occurrence_count": 232,
+      "paper_count": 32,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.elongation[].direction",
+      "occurrence_count": 165,
+      "paper_count": 32,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.ultimate_tensile_strength[].direction",
+      "occurrence_count": 140,
+      "paper_count": 31,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "interfaces[].defect_interaction",
+      "occurrence_count": 100,
+      "paper_count": 31,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "interfaces[].defect_interaction[].interaction_id",
+      "occurrence_count": 57,
+      "paper_count": 31,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "interfaces[].defect_interaction[].interaction_type",
+      "occurrence_count": 57,
+      "paper_count": 31,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "interfaces[].defect_interaction[].quality_description",
+      "occurrence_count": 57,
+      "paper_count": 31,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "performance",
+      "occurrence_count": 60,
+      "paper_count": 30,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "performance[].performance_id",
+      "occurrence_count": 45,
+      "paper_count": 30,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "computational_details[].software_used",
+      "occurrence_count": 37,
+      "paper_count": 30,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "performance[].sample_id",
+      "occurrence_count": 44,
+      "paper_count": 29,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].physical",
+      "occurrence_count": 156,
+      "paper_count": 28,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "performance[].comparative_performance",
+      "occurrence_count": 41,
+      "paper_count": 28,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "performance[].comparative_performance.benchmark_alloy",
+      "occurrence_count": 41,
+      "paper_count": 28,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures[].microstructure_list[].precipitates[].coherency",
+      "occurrence_count": 111,
+      "paper_count": 27,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.hardness",
+      "occurrence_count": 500,
+      "paper_count": 26,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.hardness[].value",
+      "occurrence_count": 285,
+      "paper_count": 26,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].physical.density",
+      "occurrence_count": 138,
+      "paper_count": 26,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].physical.density.unit",
+      "occurrence_count": 138,
+      "paper_count": 26,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].physical.density.value",
+      "occurrence_count": 138,
+      "paper_count": 26,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "interfaces[].interface_notes",
+      "occurrence_count": 88,
+      "paper_count": 26,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.hardness[].scale",
+      "occurrence_count": 282,
+      "paper_count": 25,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures[].microstructure_counts",
+      "occurrence_count": 118,
+      "paper_count": 25,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "performance[].comparative_performance.improvement_percentage",
+      "occurrence_count": 37,
+      "paper_count": 24,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "interfaces[].interface_notes[].stress_strain_distribution",
+      "occurrence_count": 33,
+      "paper_count": 24,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.ultimate_tensile_strength[].others",
+      "occurrence_count": 103,
+      "paper_count": 23,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.ultimate_tensile_strength[].others.uncertainty",
+      "occurrence_count": 103,
+      "paper_count": 23,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "interfaces[].defect_interaction[].microstructure_uuid",
+      "occurrence_count": 47,
+      "paper_count": 23,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.stress_strain_curves",
+      "occurrence_count": 92,
+      "paper_count": 22,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures[].microstructure_list[].grain_structure.grain_size_distribution",
+      "occurrence_count": 66,
+      "paper_count": 22,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.hardness[].region",
+      "occurrence_count": 161,
+      "paper_count": 20,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.strain_hardening_rate",
+      "occurrence_count": 138,
+      "paper_count": 20,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.yield_strength[].others",
+      "occurrence_count": 91,
+      "paper_count": 20,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.yield_strength[].others.uncertainty",
+      "occurrence_count": 91,
+      "paper_count": 20,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.hardness[].unit",
+      "occurrence_count": 212,
+      "paper_count": 19,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.strain_hardening_rate[].value",
+      "occurrence_count": 91,
+      "paper_count": 19,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "performance[].service_conditions",
+      "occurrence_count": 26,
+      "paper_count": 19,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures[].microstructure_list[].phases_present[].texture",
+      "occurrence_count": 45,
+      "paper_count": 18,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "papers[].journal",
+      "occurrence_count": 18,
+      "paper_count": 18,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "computational_details[].sample_id",
+      "occurrence_count": 26,
+      "paper_count": 17,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "performance[].service_conditions.stress_state",
+      "occurrence_count": 23,
+      "paper_count": 17,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "papers[].doi",
+      "occurrence_count": 17,
+      "paper_count": 17,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "performance[].service_conditions.environment",
+      "occurrence_count": 18,
+      "paper_count": 16,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "interfaces[].interface_notes[].slippage_situation",
+      "occurrence_count": 27,
+      "paper_count": 14,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures[].microstructure_list[].grain_structure.texture",
+      "occurrence_count": 33,
+      "paper_count": 13,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.strain_hardening_rate[].unit",
+      "occurrence_count": 61,
+      "paper_count": 12,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "performance[].comparative_performance.benchmark_sample_id",
+      "occurrence_count": 17,
+      "paper_count": 10,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.strain_hardening_rate[].property_id",
+      "occurrence_count": 54,
+      "paper_count": 9,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures[].microstructure_list[].defects[].lattice_distortion",
+      "occurrence_count": 28,
+      "paper_count": 9,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "performance[].service_conditions.operating_temperature",
+      "occurrence_count": 12,
+      "paper_count": 9,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "performance[].service_conditions.operating_temperature.min",
+      "occurrence_count": 12,
+      "paper_count": 9,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.strain_hardening_rate[].direction",
+      "occurrence_count": 25,
+      "paper_count": 8,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.youngs_modulus",
+      "occurrence_count": 24,
+      "paper_count": 8,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "performance[].service_conditions.operating_temperature.max",
+      "occurrence_count": 11,
+      "paper_count": 8,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "alloys[].nominal_composition[].atomic_percent",
+      "occurrence_count": 117,
+      "paper_count": 6,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "performance[].comparative_performance.benchmark_process_id",
+      "occurrence_count": 13,
+      "paper_count": 6,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].chemical",
+      "occurrence_count": 75,
+      "paper_count": 5,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.elongation[].others",
+      "occurrence_count": 25,
+      "paper_count": 5,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.elongation[].others.uncertainty",
+      "occurrence_count": 25,
+      "paper_count": 5,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.stress_strain_distribution",
+      "occurrence_count": 20,
+      "paper_count": 5,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.stress_strain_distribution[].distribution",
+      "occurrence_count": 12,
+      "paper_count": 5,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.impact_toughness",
+      "occurrence_count": 59,
+      "paper_count": 4,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.stress_strain_distribution[].direction",
+      "occurrence_count": 10,
+      "paper_count": 4,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.fracture_toughness",
+      "occurrence_count": 9,
+      "paper_count": 4,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.fracture_toughness.unit",
+      "occurrence_count": 9,
+      "paper_count": 4,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.fracture_toughness.value",
+      "occurrence_count": 9,
+      "paper_count": 4,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "performance[].service_conditions.operating_temperature.unit",
+      "occurrence_count": 5,
+      "paper_count": 4,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].chemical.oxidation_resistance",
+      "occurrence_count": 68,
+      "paper_count": 3,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].chemical.oxidation_resistance.protective_scale",
+      "occurrence_count": 66,
+      "paper_count": 3,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.impact_toughness[].unit",
+      "occurrence_count": 29,
+      "paper_count": 3,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.impact_toughness[].value",
+      "occurrence_count": 29,
+      "paper_count": 3,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures[].microstructure_list[].defects[].porosity",
+      "occurrence_count": 9,
+      "paper_count": 3,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].chemical.corrosion_resistance",
+      "occurrence_count": 8,
+      "paper_count": 3,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].chemical.corrosion_resistance.passivation_behavior",
+      "occurrence_count": 8,
+      "paper_count": 3,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].chemical.corrosion_resistance.test_medium",
+      "occurrence_count": 8,
+      "paper_count": 3,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures[].microstructure_list[].defects[].inclusions",
+      "occurrence_count": 8,
+      "paper_count": 3,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "computational_details[].potential_model",
+      "occurrence_count": 3,
+      "paper_count": 3,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].chemical.oxidation_resistance.oxidation_rate_constant",
+      "occurrence_count": 66,
+      "paper_count": 2,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.hardness[].others",
+      "occurrence_count": 19,
+      "paper_count": 2,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.hardness[].others.uncertainty",
+      "occurrence_count": 19,
+      "paper_count": 2,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.reduction_of_area",
+      "occurrence_count": 18,
+      "paper_count": 2,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.reduction_of_area",
+      "occurrence_count": 10,
+      "paper_count": 2,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.uniform_elongation",
+      "occurrence_count": 10,
+      "paper_count": 2,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.reduction_of_area[].unit",
+      "occurrence_count": 9,
+      "paper_count": 2,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.reduction_of_area[].value",
+      "occurrence_count": 9,
+      "paper_count": 2,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].chemical.corrosion_resistance.corrosion_rate",
+      "occurrence_count": 7,
+      "paper_count": 2,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.fatigue_properties",
+      "occurrence_count": 6,
+      "paper_count": 2,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.fatigue_properties.fatigue_limit",
+      "occurrence_count": 6,
+      "paper_count": 2,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.reduction_of_area[].unit",
+      "occurrence_count": 6,
+      "paper_count": 2,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.reduction_of_area[].value",
+      "occurrence_count": 6,
+      "paper_count": 2,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.uniform_elongation[].unit",
+      "occurrence_count": 6,
+      "paper_count": 2,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.uniform_elongation[].value",
+      "occurrence_count": 6,
+      "paper_count": 2,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].physical.stacking_fault_energy",
+      "occurrence_count": 6,
+      "paper_count": 2,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].physical.stacking_fault_energy.unit",
+      "occurrence_count": 6,
+      "paper_count": 2,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].physical.stacking_fault_energy.value",
+      "occurrence_count": 6,
+      "paper_count": 2,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.elastic_constants[].constant",
+      "occurrence_count": 27,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.elastic_constants[].unit",
+      "occurrence_count": 27,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.elastic_constants[].value",
+      "occurrence_count": 27,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.charpy_impact_toughness",
+      "occurrence_count": 26,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.true_fracture_stress",
+      "occurrence_count": 26,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.true_ultimate_tensile_strength",
+      "occurrence_count": 26,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.elastic_constants",
+      "occurrence_count": 18,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_toughness",
+      "occurrence_count": 14,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.charpy_impact_toughness[].temperature",
+      "occurrence_count": 13,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.charpy_impact_toughness[].uncertainty",
+      "occurrence_count": 13,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.charpy_impact_toughness[].unit",
+      "occurrence_count": 13,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.charpy_impact_toughness[].value",
+      "occurrence_count": 13,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.true_fracture_stress[].direction",
+      "occurrence_count": 13,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.true_fracture_stress[].unit",
+      "occurrence_count": 13,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.true_fracture_stress[].value",
+      "occurrence_count": 13,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.true_ultimate_tensile_strength[].direction",
+      "occurrence_count": 13,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.true_ultimate_tensile_strength[].unit",
+      "occurrence_count": 13,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.true_ultimate_tensile_strength[].value",
+      "occurrence_count": 13,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.strain_hardening_exponent",
+      "occurrence_count": 10,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].physical.magnetic_properties",
+      "occurrence_count": 10,
+      "paper_count": 1,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].physical.magnetic_properties.permeability",
+      "occurrence_count": 10,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.bulk_modulus",
+      "occurrence_count": 9,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.bulk_modulus.unit",
+      "occurrence_count": 9,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.bulk_modulus.value",
+      "occurrence_count": 9,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.poisson_ratio",
+      "occurrence_count": 9,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.poisson_ratio.value",
+      "occurrence_count": 9,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.pugh_ratio",
+      "occurrence_count": 9,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.pugh_ratio.value",
+      "occurrence_count": 9,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.shear_modulus",
+      "occurrence_count": 9,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.shear_modulus.unit",
+      "occurrence_count": 9,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.shear_modulus.value",
+      "occurrence_count": 9,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.youngs_modulus_elastic",
+      "occurrence_count": 9,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.youngs_modulus_elastic.unit",
+      "occurrence_count": 9,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.youngs_modulus_elastic.value",
+      "occurrence_count": 9,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].physical.debye_temperature",
+      "occurrence_count": 9,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].physical.debye_temperature.unit",
+      "occurrence_count": 9,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].physical.debye_temperature.value",
+      "occurrence_count": 9,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].physical.sound_velocity",
+      "occurrence_count": 9,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].physical.sound_velocity.average",
+      "occurrence_count": 9,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].physical.sound_velocity.average.unit",
+      "occurrence_count": 9,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].physical.sound_velocity.average.value",
+      "occurrence_count": 9,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].physical.sound_velocity.longitudinal",
+      "occurrence_count": 9,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].physical.sound_velocity.longitudinal.unit",
+      "occurrence_count": 9,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].physical.sound_velocity.longitudinal.value",
+      "occurrence_count": 9,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].physical.sound_velocity.transverse",
+      "occurrence_count": 9,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].physical.sound_velocity.transverse.unit",
+      "occurrence_count": 9,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].physical.sound_velocity.transverse.value",
+      "occurrence_count": 9,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.impact_properties",
+      "occurrence_count": 8,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].physical.damping_ratio",
+      "occurrence_count": 8,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures[].microstructure_list[].deformation_twins",
+      "occurrence_count": 8,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_toughness[].direction",
+      "occurrence_count": 7,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_toughness[].unit",
+      "occurrence_count": 7,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_toughness[].value",
+      "occurrence_count": 7,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "processing_steps[].strain_rate",
+      "occurrence_count": 6,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].chemical.oxidation_resistance.passivation_behavior",
+      "occurrence_count": 5,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].chemical.oxidation_resistance.test_medium",
+      "occurrence_count": 5,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.strain_hardening_exponent[].value",
+      "occurrence_count": 5,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].breakdown_current_density",
+      "occurrence_count": 4,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.fatigue_properties.cycles_to_failure",
+      "occurrence_count": 4,
+      "paper_count": 1,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.impact_properties[].impact_energy",
+      "occurrence_count": 4,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.impact_properties[].impact_energy.uncertainty",
+      "occurrence_count": 4,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.impact_properties[].impact_energy.unit",
+      "occurrence_count": 4,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.impact_properties[].impact_energy.value",
+      "occurrence_count": 4,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.impact_properties[].test_type",
+      "occurrence_count": 4,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.impact_toughness[].notch_type",
+      "occurrence_count": 4,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.impact_toughness[].uncertainty",
+      "occurrence_count": 4,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.elongation[].uncertainty",
+      "occurrence_count": 4,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].oxide_film_NA",
+      "occurrence_count": 4,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].oxide_film_ND",
+      "occurrence_count": 4,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].oxide_film_thickness",
+      "occurrence_count": 4,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].polarization_resistance_with_film",
+      "occurrence_count": 4,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].polarization_resistance_without_film",
+      "occurrence_count": 4,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures[].microstructure_list[].defects[].description",
+      "occurrence_count": 4,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures[].microstructure_list[].deformation_twins[].location",
+      "occurrence_count": 4,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures[].microstructure_list[].deformation_twins[].notes",
+      "occurrence_count": 4,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures[].microstructure_list[].deformation_twins[].type",
+      "occurrence_count": 4,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures[].microstructure_list[].deformation_twins[].volume_fraction",
+      "occurrence_count": 4,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures[].microstructure_list[].phases_present[].lattice_parameter",
+      "occurrence_count": 4,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "interfaces[].phases[].orientation_relationship",
+      "occurrence_count": 3,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.impact_toughness.test_method",
+      "occurrence_count": 3,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.impact_toughness.uncertainty",
+      "occurrence_count": 3,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.impact_toughness.unit",
+      "occurrence_count": 3,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.impact_toughness.value",
+      "occurrence_count": 3,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.reduction_of_area[].direction",
+      "occurrence_count": 3,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.reduction_of_area[].others",
+      "occurrence_count": 3,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.reduction_of_area[].others.uncertainty",
+      "occurrence_count": 3,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures[].microstructure_list[].defects[].crack_path",
+      "occurrence_count": 3,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures[].microstructure_list[].grain_structure.gnd_distribution",
+      "occurrence_count": 3,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures[].microstructure_list[].grain_structure.high_angle_grain_boundary_fraction",
+      "occurrence_count": 3,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures[].microstructure_list[].grain_structure.low_angle_grain_boundary_fraction",
+      "occurrence_count": 3,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "computational_details[].analytical_model[].parameters.dislocation_densities",
+      "occurrence_count": 2,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.impact_properties[].propagation_energy",
+      "occurrence_count": 2,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.impact_toughness[].temperature",
+      "occurrence_count": 2,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.normal_anisotropy",
+      "occurrence_count": 2,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.reduction_of_area[].direction",
+      "occurrence_count": 2,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.uniform_elongation[].direction",
+      "occurrence_count": 2,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].oxide_film_Al_content",
+      "occurrence_count": 2,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "computational_details[].analytical_model[].parameters.D_Al_fcc",
+      "occurrence_count": 1,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "computational_details[].analytical_model[].parameters.D_C_fcc",
+      "occurrence_count": 1,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "computational_details[].analytical_model[].parameters.D_Cr_fcc",
+      "occurrence_count": 1,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "computational_details[].analytical_model[].parameters.D_Fe_fcc",
+      "occurrence_count": 1,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "computational_details[].analytical_model[].parameters.D_Mn_fcc",
+      "occurrence_count": 1,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "computational_details[].analytical_model[].parameters.key_parameters",
+      "occurrence_count": 1,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "computational_details[].analytical_model[].parameters.twin_volume_fraction",
+      "occurrence_count": 1,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "computational_details[].paper_id",
+      "occurrence_count": 1,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "performance[].lifetime_prediction",
+      "occurrence_count": 1,
+      "paper_count": 1,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "performance[].lifetime_prediction.predicted_lifetime",
+      "occurrence_count": 1,
+      "paper_count": 1,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.impact_properties[].initiation_energy",
+      "occurrence_count": 1,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.normal_anisotropy[].value",
+      "occurrence_count": 1,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures[].microstructure_list[].deformation_twins[].thickness",
+      "occurrence_count": 1,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures[].microstructure_list[].phases_present[].plane_spacing_002",
+      "occurrence_count": 1,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures[].microstructure_list[].substructure_size",
+      "occurrence_count": 1,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures[].microstructure_list[].substructure_size.type",
+      "occurrence_count": 1,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures[].microstructure_list[].substructure_size.unit",
+      "occurrence_count": 1,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "structures[].microstructure_list[].substructure_size.value",
+      "occurrence_count": 1,
+      "paper_count": 1,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "performance[].lifetime_prediction.confidence_interval",
+      "occurrence_count": 0,
+      "paper_count": 0,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "performance[].lifetime_prediction.model_used",
+      "occurrence_count": 0,
+      "paper_count": 0,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].chemical.oxidation_resistance.corrosion_rate",
+      "occurrence_count": 0,
+      "paper_count": 0,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.creep_properties",
+      "occurrence_count": 0,
+      "paper_count": 0,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.creep_properties.rupture_life",
+      "occurrence_count": 0,
+      "paper_count": 0,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.creep_properties.steady_state_creep_rate",
+      "occurrence_count": 0,
+      "paper_count": 0,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.impact_toughness[].direction",
+      "occurrence_count": 0,
+      "paper_count": 0,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.normal_anisotropy[].direction",
+      "occurrence_count": 0,
+      "paper_count": 0,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.normal_anisotropy[].unit",
+      "occurrence_count": 0,
+      "paper_count": 0,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.strain_hardening_exponent[].direction",
+      "occurrence_count": 0,
+      "paper_count": 0,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].mechanical.tensile_properties.strain_hardening_exponent[].unit",
+      "occurrence_count": 0,
+      "paper_count": 0,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].physical.chemical",
+      "occurrence_count": 0,
+      "paper_count": 0,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].physical.chemical.corrosion_resistance",
+      "occurrence_count": 0,
+      "paper_count": 0,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].physical.chemical.corrosion_resistance.corrosion_rate",
+      "occurrence_count": 0,
+      "paper_count": 0,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].physical.chemical.corrosion_resistance.passivation_behavior",
+      "occurrence_count": 0,
+      "paper_count": 0,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].physical.chemical.corrosion_resistance.test_medium",
+      "occurrence_count": 0,
+      "paper_count": 0,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].physical.chemical.oxidation_resistance",
+      "occurrence_count": 0,
+      "paper_count": 0,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].physical.chemical.oxidation_resistance.oxidation_rate_constant",
+      "occurrence_count": 0,
+      "paper_count": 0,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].physical.chemical.oxidation_resistance.protective_scale",
+      "occurrence_count": 0,
+      "paper_count": 0,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].physical.electrical_properties",
+      "occurrence_count": 0,
+      "paper_count": 0,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].physical.electrical_properties.electrical_conductivity",
+      "occurrence_count": 0,
+      "paper_count": 0,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].physical.electrical_properties.resistivity",
+      "occurrence_count": 0,
+      "paper_count": 0,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].physical.magnetic_properties.curie_temperature",
+      "occurrence_count": 0,
+      "paper_count": 0,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].physical.magnetic_properties.magnetic_susceptibility",
+      "occurrence_count": 0,
+      "paper_count": 0,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].physical.radiation_properties",
+      "occurrence_count": 0,
+      "paper_count": 0,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].physical.radiation_properties.helium_embrittlement",
+      "occurrence_count": 0,
+      "paper_count": 0,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].physical.radiation_properties.irradiation_hardening",
+      "occurrence_count": 0,
+      "paper_count": 0,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].physical.radiation_properties.void_swelling",
+      "occurrence_count": 0,
+      "paper_count": 0,
+      "in_schema": false,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].physical.thermal_properties",
+      "occurrence_count": 0,
+      "paper_count": 0,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].physical.thermal_properties.specific_heat",
+      "occurrence_count": 0,
+      "paper_count": 0,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].physical.thermal_properties.thermal_conductivity",
+      "occurrence_count": 0,
+      "paper_count": 0,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].physical.thermal_properties.thermal_expansion_coefficient",
+      "occurrence_count": 0,
+      "paper_count": 0,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].radiation_properties",
+      "occurrence_count": 0,
+      "paper_count": 0,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].radiation_properties.helium_embrittlement",
+      "occurrence_count": 0,
+      "paper_count": 0,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].radiation_properties.irradiation_hardening",
+      "occurrence_count": 0,
+      "paper_count": 0,
+      "in_schema": true,
+      "observed_in_results": true
+    },
+    {
+      "field_path": "properties[].radiation_properties.void_swelling",
+      "occurrence_count": 0,
+      "paper_count": 0,
+      "in_schema": true,
+      "observed_in_results": true
+    }
+  ],
+  "sort_order": "paper_count desc, occurrence_count desc, field_path asc"
+}

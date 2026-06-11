@@ -1,0 +1,596 @@
+{
+    "papers": [
+        {
+            "paper_id": "A33",
+            "doi": "10.1016/j.scriptamat.2025.116668",
+            "title": "Unprecedented combination of specific tensile strength and ductility achieved in a novel duplex low-density steel",
+            "authors": ["Zhipeng Liu", "Cancan Ding", "Ru Ge", "Bin Hu", "Haiwen Luo"],
+            "publication_year": "2025",
+            "journal": "Scripta Materialia",
+            "keywords": ["Lightweight steel", "Austenite", "Ferrite", "Carbide", "Tensile properties"],
+            "research_type": "experimental",
+            "paper_scope": "开发新型Fe-Mn-Al-C-Cr奥氏体-铁素体双相低密度钢，通过冷轧后退火工艺调控组织，实现比强度与塑性的优异协同，揭示双相组织的强韧化与增塑机理"
+        }
+    ],
+    "alloys": [
+        {
+            "alloy_id": "alloy_30mn12_6al1_32c4_83cr",
+            "paper_id": "A33",
+            "alloy_name": "Fe-Mn-Al-C-Cr双相低密度钢",
+            "aliases": ["30Mn-13Al-1.3C-5Cr钢"],
+            "base_element": "Fe",
+            "alloying_elements": ["Mn", "Al", "C", "Cr"],
+            "nominal_composition": [
+                {
+                    "element": "Mn",
+                    "weight_percent": "30.35",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "Al",
+                    "weight_percent": "12.60",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "C",
+                    "weight_percent": "1.32",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "Cr",
+                    "weight_percent": "4.83",
+                    "atomic_percent": null
+                }
+            ],
+            "alloys_notes": "实测密度为6.36 g·cm-3，添加约5% Cr用于抑制晶界κ-碳化物形成"
+        }
+    ],
+    "processes": [
+        {
+            "process_id": "proc_duplex_01",
+            "paper_id": "A33",
+            "alloy_id": "alloy_30mn12_6al1_32c4_83cr",
+            "description": "真空感应熔炼铸锭，1200℃均质化2h后锻造、热轧至6mm，1050℃保温0.5h水淬，冷轧至3mm厚度（冷轧态）",
+            "processes_notes": null
+        },
+        {
+            "process_id": "proc_duplex_02",
+            "paper_id": "A33",
+            "alloy_id": "alloy_30mn12_6al1_32c4_83cr",
+            "description": "冷轧后950℃退火1min，水淬",
+            "processes_notes": "对应试样编号DP950-1"
+        },
+        {
+            "process_id": "proc_duplex_03",
+            "paper_id": "A33",
+            "alloy_id": "alloy_30mn12_6al1_32c4_83cr",
+            "description": "冷轧后950℃退火5min，水淬",
+            "processes_notes": "对应试样编号DP950-5"
+        },
+        {
+            "process_id": "proc_duplex_04",
+            "paper_id": "A33",
+            "alloy_id": "alloy_30mn12_6al1_32c4_83cr",
+            "description": "冷轧后1000℃退火1min，水淬",
+            "processes_notes": "对应试样编号DP1000-1"
+        },
+        {
+            "process_id": "proc_duplex_05",
+            "paper_id": "A33",
+            "alloy_id": "alloy_30mn12_6al1_32c4_83cr",
+            "description": "冷轧后1000℃退火5min，水淬，拉伸试样沿轧制方向",
+            "processes_notes": "对应试样编号DP1000-5"
+        },
+        {
+            "process_id": "proc_duplex_06",
+            "paper_id": "A33",
+            "alloy_id": "alloy_30mn12_6al1_32c4_83cr",
+            "description": "冷轧后1000℃退火5min，水淬，拉伸试样沿横向",
+            "processes_notes": "对应试样编号DP1000-5-TD"
+        },
+        {
+            "process_id": "proc_duplex_07",
+            "paper_id": "A33",
+            "alloy_id": "alloy_30mn12_6al1_32c4_83cr",
+            "description": "冷轧后1050℃退火1min，水淬",
+            "processes_notes": "对应试样编号DP1050-1"
+        }
+    ],
+    "samples": [
+        {
+            "sample_id": "sample_cr",
+            "paper_id": "A33",
+            "alloy_id": "alloy_30mn12_6al1_32c4_83cr",
+            "process_id": "proc_duplex_01"
+        },
+        {
+            "sample_id": "sample_dp950_1",
+            "paper_id": "A33",
+            "alloy_id": "alloy_30mn12_6al1_32c4_83cr",
+            "process_id": "proc_duplex_02"
+        },
+        {
+            "sample_id": "sample_dp950_5",
+            "paper_id": "A33",
+            "alloy_id": "alloy_30mn12_6al1_32c4_83cr",
+            "process_id": "proc_duplex_03"
+        },
+        {
+            "sample_id": "sample_dp1000_1",
+            "paper_id": "A33",
+            "alloy_id": "alloy_30mn12_6al1_32c4_83cr",
+            "process_id": "proc_duplex_04"
+        },
+        {
+            "sample_id": "sample_dp1000_5",
+            "paper_id": "A33",
+            "alloy_id": "alloy_30mn12_6al1_32c4_83cr",
+            "process_id": "proc_duplex_05"
+        },
+        {
+            "sample_id": "sample_dp1000_5_td",
+            "paper_id": "A33",
+            "alloy_id": "alloy_30mn12_6al1_32c4_83cr",
+            "process_id": "proc_duplex_06"
+        },
+        {
+            "sample_id": "sample_dp1050_1",
+            "paper_id": "A33",
+            "alloy_id": "alloy_30mn12_6al1_32c4_83cr",
+            "process_id": "proc_duplex_07"
+        }
+    ],
+    "processing_steps": [
+        {
+            "sample_id": "sample_cr",
+            "paper_id": "A33",
+            "sequence": "1",
+            "type": "melting_and_casting",
+            "method": "真空感应熔炼",
+            "temperature": null,
+            "unit": null,
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "氩气保护下熔炼，浇铸为铸锭"
+        },
+        {
+            "sample_id": "sample_cr",
+            "paper_id": "A33",
+            "sequence": "2",
+            "type": "heat_treatment",
+            "method": "均质化处理",
+            "temperature": "1200",
+            "unit": "℃",
+            "duration": "2",
+            "unit": "h",
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": null
+        },
+        {
+            "sample_id": "sample_cr",
+            "paper_id": "A33",
+            "sequence": "3",
+            "type": "thermomechanical_processing",
+            "method": "锻造+热轧",
+            "temperature": null,
+            "unit": null,
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "锻造后热轧至6mm厚度"
+        },
+        {
+            "sample_id": "sample_cr",
+            "paper_id": "A33",
+            "sequence": "4",
+            "type": "heat_treatment",
+            "method": "固溶处理",
+            "temperature": "1050",
+            "unit": "℃",
+            "duration": "0.5",
+            "unit": "h",
+            "cooling_medium": "水",
+            "reduction_ratio": null,
+            "processing_steps_notes": null
+        },
+        {
+            "sample_id": "sample_cr",
+            "paper_id": "A33",
+            "sequence": "5",
+            "type": "mechanical_processing",
+            "method": "冷轧",
+            "temperature": null,
+            "unit": null,
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": "50%",
+            "processing_steps_notes": "冷轧至3mm厚度"
+        },
+        {
+            "sample_id": "sample_dp1000_5",
+            "paper_id": "A33",
+            "sequence": "6",
+            "type": "heat_treatment",
+            "method": "退火",
+            "temperature": "1000",
+            "unit": "℃",
+            "duration": "5",
+            "unit": "min",
+            "cooling_medium": "水",
+            "reduction_ratio": null,
+            "processing_steps_notes": null
+        }
+    ],
+    "structures": [
+        {
+            "structure_id": "struct_dp1000_5",
+            "sample_id": "sample_dp1000_5",
+            "overall_structure": "奥氏体-铁素体双相组织，以完全再结晶奥氏体为基体，包含颗粒状α铁素体、沿轧制方向延伸的δ铁素体带，奥氏体晶内析出纳米κ-碳化物",
+            "number_of_phases": "4",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "micro_001",
+                    "related_sequence": "6",
+                    "phases_present": [
+                        {
+                            "phase_name": "奥氏体（γ）",
+                            "crystal_structure": "FCC",
+                            "volume_fraction": "82.2%",
+                            "morphology": "等轴再结晶晶粒",
+                            "grain_size": "7.40±5.13 μm",
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "α铁素体",
+                            "crystal_structure": "BCC",
+                            "volume_fraction": "4.1%",
+                            "morphology": "颗粒状，分布于奥氏体晶界三叉点",
+                            "grain_size": "0.6-1.8 μm",
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "δ铁素体",
+                            "crystal_structure": "BCC",
+                            "volume_fraction": "9.3%",
+                            "morphology": "带状，沿轧制方向延伸",
+                            "grain_size": "长度12-30 μm，厚度2-6 μm",
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "κ-碳化物",
+                            "crystal_structure": null,
+                            "volume_fraction": "1.56%",
+                            "morphology": "纳米颗粒，奥氏体晶内析出",
+                            "grain_size": "0.86±0.20 nm",
+                            "texture": null
+                        }
+                    ],
+                    "defects": [
+                        {
+                            "type": null,
+                            "porosity": null,
+                            "inclusions": [],
+                            "dislocation_density": null,
+                            "lattice_distortion": null
+                        }
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": "7.40±5.13",
+                            "unit": "μm"
+                        },
+                        "grain_size_distribution": null,
+                        "texture": null
+                    },
+                    "precipitates": [
+                        {
+                            "precipitate_id": "prec_001",
+                            "type": "κ-碳化物",
+                            "size": {
+                                "value": "0.86±0.20",
+                                "unit": "nm"
+                            },
+                            "distribution": "奥氏体晶内均匀析出",
+                            "coherency": null
+                        },
+                        {
+                            "precipitate_id": "prec_002",
+                            "type": "Cr7C3碳化物",
+                            "size": {
+                                "value": null,
+                                "unit": null
+                            },
+                            "distribution": "1000℃退火时大部分溶解",
+                            "coherency": null
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "interfaces": [
+        {
+            "interface_set_id": "inter_001",
+            "sample_id": "sample_dp1000_5",
+            "phases": [
+                {
+                    "interface_id": "inter_phase_001",
+                    "microstructure_uuid": "micro_001",
+                    "phase_1_name": "α铁素体",
+                    "phase_2_name": "奥氏体",
+                    "coherence": null
+                },
+                {
+                    "interface_id": "inter_phase_002",
+                    "microstructure_uuid": "micro_001",
+                    "phase_1_name": "δ铁素体",
+                    "phase_2_name": "奥氏体",
+                    "coherence": null
+                }
+            ],
+            "defect_interaction": [
+                {
+                    "interaction_id": "inter_defect_001",
+                    "microstructure_uuid": "micro_001",
+                    "interaction_type": "裂纹-δ铁素体带相互作用",
+                    "quality_description": "变形过程中萌生的裂纹扩展至δ铁素体带时发生偏转、钝化，抑制裂纹快速扩展"
+                }
+            ],
+            "interface_notes": [
+                {
+                    "stress_strain_distribution": null
+                },
+                {
+                    "slippage_situation": null
+                }
+            ],
+            "phase_evolution": "1000℃退火时，Cr7C3碳化物、晶界κ-碳化物及部分铁素体向奥氏体转变，提高奥氏体中Mn/Al/C含量，促进水淬过程中纳米κ-碳化物析出"
+        }
+    ],
+    "properties": [
+        {
+            "property_set_id": "prop_dp1000_5",
+            "sample_id": "sample_dp1000_5",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [
+                        {
+                            "direction": "RD",
+                            "value": "1035±5",
+                            "unit": "MPa",
+                            "others": {
+                                "uncertainty": null
+                            }
+                        }
+                    ],
+                    "ultimate_tensile_strength": [
+                        {
+                            "direction": "RD",
+                            "value": "1250±15",
+                            "unit": "MPa",
+                            "others": {
+                                "uncertainty": null
+                            }
+                        }
+                    ],
+                    "elongation": [
+                        {
+                            "direction": "RD",
+                            "value": "41.4±0.5",
+                            "unit": "%"
+                        }
+                    ],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [],
+                "fracture_toughness": {
+                    "value": null,
+                    "unit": null
+                },
+                "fatigue_properties": {
+                    "fatigue_limit": null,
+                    "cycles_to_failure": null
+                },
+                "creep_properties": {
+                    "steady_state_creep_rate": null,
+                    "rupture_life": null
+                }
+            },
+            "physical": {
+                "density": {
+                    "value": "6.36",
+                    "unit": "g·cm-3"
+                },
+                "thermal_properties": {
+                    "thermal_conductivity": null,
+                    "thermal_expansion_coefficient": null,
+                    "specific_heat": null
+                },
+                "electrical_properties": {
+                    "electrical_conductivity": null,
+                    "resistivity": null
+                },
+                "magnetic_properties": {
+                    "magnetic_susceptibility": null,
+                    "curie_temperature": null
+                }
+            },
+            "chemical": {
+                "corrosion_resistance": {
+                    "test_medium": null,
+                    "corrosion_rate": null,
+                    "passivation_behavior": null
+                },
+                "oxidation_resistance": {
+                    "oxidation_rate_constant": null,
+                    "protective_scale": null
+                }
+            },
+            "radiation_properties": {
+                "void_swelling": null,
+                "irradiation_hardening": null,
+                "helium_embrittlement": null
+            }
+        },
+        {
+            "property_set_id": "prop_dp1000_5_td",
+            "sample_id": "sample_dp1000_5_td",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [
+                        {
+                            "direction": "TD",
+                            "value": "1005±15",
+                            "unit": "MPa",
+                            "others": {
+                                "uncertainty": null
+                            }
+                        }
+                    ],
+                    "ultimate_tensile_strength": [
+                        {
+                            "direction": "TD",
+                            "value": "1190±15",
+                            "unit": "MPa",
+                            "others": {
+                                "uncertainty": null
+                            }
+                        }
+                    ],
+                    "elongation": [
+                        {
+                            "direction": "TD",
+                            "value": "18.1±0.4",
+                            "unit": "%"
+                        }
+                    ],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [],
+                "fracture_toughness": {
+                    "value": null,
+                    "unit": null
+                },
+                "fatigue_properties": {
+                    "fatigue_limit": null,
+                    "cycles_to_failure": null
+                },
+                "creep_properties": {
+                    "steady_state_creep_rate": null,
+                    "rupture_life": null
+                }
+            },
+            "physical": {
+                "density": {
+                    "value": "6.36",
+                    "unit": "g·cm-3"
+                },
+                "thermal_properties": {
+                    "thermal_conductivity": null,
+                    "thermal_expansion_coefficient": null,
+                    "specific_heat": null
+                },
+                "electrical_properties": {
+                    "electrical_conductivity": null,
+                    "resistivity": null
+                },
+                "magnetic_properties": {
+                    "magnetic_susceptibility": null,
+                    "curie_temperature": null
+                }
+            },
+            "chemical": {
+                "corrosion_resistance": {
+                    "test_medium": null,
+                    "corrosion_rate": null,
+                    "passivation_behavior": null
+                },
+                "oxidation_resistance": {
+                    "oxidation_rate_constant": null,
+                    "protective_scale": null
+                }
+            },
+            "radiation_properties": {
+                "void_swelling": null,
+                "irradiation_hardening": null,
+                "helium_embrittlement": null
+            }
+        }
+    ],
+    "performance": [
+        {
+            "performance_id": "perf_001",
+            "sample_id": "sample_dp1000_5",
+            "service_conditions": {
+                "operating_temperature": {
+                    "min": null,
+                    "max": null,
+                    "unit": null
+                },
+                "stress_state": null,
+                "environment": null
+            },
+            "lifetime_prediction": {
+                "model_used": null,
+                "predicted_lifetime": null,
+                "confidence_interval": null
+            },
+            "comparative_performance": {
+                "benchmark_alloy": "29.05Mn-12.01Al-1.48C-5.13Cr奥氏体低密度钢",
+                "benchmark_process_id": null,
+                "benchmark_sample_id": null,
+                "improvement_percentage": "比极限抗拉强度与延伸率的乘积超过8 GPa·g-1·cm3·%，优于现有2000系航空铝合金、Ti6Al4V钛合金及其他Fe-Mn-Al-C低密度钢"
+            }
+        }
+    ],
+    "characterization_methods": [
+        {
+            "characterization_id": "char_001",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "X射线衍射(XRD)",
+            "purpose": "分析不同退火温度下的相组成与相分数",
+            "key_findings": "退火温度600-900℃时出现β-Mn相，950-1000℃出现Cr7C3和κ-碳化物，1050℃时碳化物完全溶解"
+        },
+        {
+            "characterization_id": "char_002",
+            "sample_id": "sample_dp1000_5",
+            "microstructure_uuid": "micro_001",
+            "technique": "透射电子显微镜(TEM)",
+            "purpose": "观察析出物的形貌、尺寸与分布",
+            "key_findings": "DP1000-5中奥氏体晶内析出纳米κ-碳化物，尺寸为0.86±0.20 nm，体积分数为1.56%"
+        },
+        {
+            "characterization_id": "char_003",
+            "sample_id": "sample_dp1000_5",
+            "microstructure_uuid": "micro_001",
+            "technique": "电子背散射衍射(EBSD)",
+            "purpose": "分析晶粒尺寸、再结晶分数与相分布",
+            "key_findings": "DP1000-5中奥氏体再结晶分数为95.2%，平均晶粒尺寸为7.40±5.13 μm，铁素体包含颗粒状α相和带状δ相"
+        },
+        {
+            "characterization_id": "char_004",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "室温单轴拉伸测试",
+            "purpose": "测定不同工艺试样的拉伸性能",
+            "key_findings": "拉伸应变速率为10^-3 s^-1，每个工艺条件测试3个试样取平均值"
+        }
+    ],
+    "computational_details": [],
+    "unmapped_findings": [
+        "DP1000-5的比屈服强度为162.7±0.8 MPa·g-1·cm3，比极限抗拉强度为196.5±2.4 MPa·g-1·cm3",
+        "DP1000-5-TD横向延伸率较低的原因是δ铁素体带/奥氏体界面垂直于拉伸方向，易萌生裂纹并快速连通",
+        "颗粒状α铁素体可抑制奥氏体晶粒长大，δ铁素体带可捕获、偏转变形裂纹，协同实现强度与塑性的优异匹配",
+        "950℃退火试样因存在大量未再结晶奥氏体和晶界碳化物，塑性较差，延伸率仅5.5%左右"
+    ]
+}

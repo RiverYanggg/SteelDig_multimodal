@@ -1,0 +1,55 @@
+{"claims": [
+  {
+    "claim_type": "figure_evidence",
+    "subject": "Fe-22Mn-0.6C TWIP steel",
+    "claim": "Figure 7 shows experimental and simulated true stress\u2013strain and strain-hardening curves for a Fe-22wt.%Mn-0.6wt.%C TWIP model alloy at seven temperatures (293 K, 373 K, 473 K, 573 K, 673 K, 773 K, 873 K), simulated using a single coherent parameter set.",
+    "values": ["293 K", "373 K", "473 K", "573 K", "673 K", "773 K", "873 K", "Fe-22Mn-0.6C"],
+    "evidence_text": "Figure 7a shows the flow curves for a set of seven different temperatures, and Fig. 7b shows the strain-hardening curves corresponding to the stress\u2013strain curves in Fig. 7a.",
+    "figures": ["Figure 7"],
+    "tables": [],
+    "confidence": "high"
+  },
+  {
+    "claim_type": "mechanism",
+    "subject": "Twinning model parameter",
+    "claim": "In the strain-hardening model for fcc alloys with low stacking fault energy, the average twin width e is treated as a constant and set to 30 nm based on experimental observations.",
+    "values": ["30 nm"],
+    "evidence_text": "It is treated as a constant and is set to 30 nm based on experimental observations.",
+    "figures": [],
+    "tables": [],
+    "confidence": "high"
+  },
+  {
+    "claim_type": "characterization",
+    "subject": "EBSD KAM analysis",
+    "claim": "In the KAM map of Figure 8, kernel average misorientation values were calculated from EBSD-derived orientation gradients using the first neighboring EBSD point shell at a spacing of 300 nm.",
+    "values": ["300 nm"],
+    "evidence_text": "The KAM values were calculated using the first neighboring EBSD point shell at a spacing of 300 nm.",
+    "figures": ["Figure 8"],
+    "tables": [],
+    "confidence": "high"
+  },
+  {
+    "claim_type": "figure_evidence",
+    "subject": "Low-density austenitic steel microstructure",
+    "claim": "Figure 8 provides an inverse pole figure texture map (RD-IPF) obtained by EBSD, a KAM map from orientation gradients, and an orientation-optimized ECCI image for a low-density steel microstructure.",
+    "values": [],
+    "evidence_text": "Fig. 8. (a) Inverse pole figure texture mapping obtained by EBSD (RD-IPF). (b) KAM map obtained from the EBSD-derived orientation gradients. ... (c) Orientationoptimized ECCI corresponding to the part surrounded by the white lines in (b).",
+    "figures": ["Figure 8"],
+    "tables": [],
+    "confidence": "high"
+  }
+],
+"context_update": {
+  "summary": "This chunk continues the presentation of a physically based strain-hardening model for fcc alloys with low stacking fault energy. It formulates the twin nucleation rate (equation 27) using probabilities for stacking fault formation and cross-slip-controlled nucleation, and defines twin volume as a disk with average width e=30 nm and radial dimension based on average twin spacing. The model is validated by comparing simulated and experimental flow curves of a Fe-22wt.%Mn-0.6wt.%C TWIP steel at seven temperatures (293-873 K), using a single parameter set (Figure 7). The chunk also includes Figure 8, which displays EBSD inverse pole figure mapping, a KAM map calculated with a 300 nm point spacing, and orientation-optimized ECCI of a low-density austenitic steel, revealing slip localization features. Key information for subsequent chunks includes the model alloy composition Fe-22Mn-0.6C, the twinning geometry parameter (e=30 nm), the validated temperature range, and the microstructural characterization methods (EBSD, ECCI).",
+  "material_systems": ["Fe-22Mn-0.6C TWIP model steel"],
+  "sample_aliases": ["Fe-22wt.%Mn-0.6wt.%C TWIP model alloy"],
+  "processing_route": [],
+  "key_variables": ["twin width e=30 nm", "EBSD KAM shell spacing 300 nm", "deformation temperatures 293, 373, 473, 573, 673, 773, 873 K"],
+  "microstructure": ["twin volume fraction evolution", "KAM orientation gradients", "ECCI slip localization"],
+  "properties": ["simulated vs experimental flow curves", "strain-hardening curves"],
+  "mechanisms": ["twin nucleation controlled by cross-slip probability", "disk-shaped twin growth with instantaneous growth until obstacle"],
+  "figures_or_tables": ["Figure 7", "Figure 8"],
+  "unresolved_terms": []
+}
+}

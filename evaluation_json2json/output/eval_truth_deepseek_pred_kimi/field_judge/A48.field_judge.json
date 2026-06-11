@@ -1,0 +1,502 @@
+{
+  "paper_id": "A48",
+  "sections": {
+    "papers": {
+      "candidate_count": 1,
+      "result_count": 1,
+      "error": null,
+      "raw_response": "{\n  \"results\": [\n    {\"id\": \"papers:0:papers_a48_paper_scope\", \"matched\": true}\n  ]\n}",
+      "decisions": {
+        "papers:0:papers_a48_paper_scope": true
+      },
+      "input_candidates": [
+        {
+          "id": "papers:0:papers_a48_paper_scope",
+          "section": "papers",
+          "canonical_object": "A48",
+          "field": "paper_scope",
+          "field_path": "paper_scope",
+          "truth_path": "papers.A48.paper_scope",
+          "prediction_path": "papers.A48.paper_scope",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Define composition limits to obtain an optimum microstructural state without embrittling phases, and determine composition ranges for structural applications with UTS ≥ 1100 MPa and impact toughness > 50 J/cm².",
+          "prediction_value": "Determination of composition limits for Fe-Mn-Al-C austenitic steels to obtain an optimum microstructural state free of embrittling phases and acceptable mechanical properties for structural applications, specifically UTS greater than 1100 MPa and U-notch impact toughness K_CU greater than 50 J/cm²."
+        }
+      ],
+      "candidates": [
+        {
+          "key": "papers.A48.paper_scope",
+          "truth_path": "papers.A48.paper_scope",
+          "prediction_path": "papers.A48.paper_scope",
+          "canonical_object": "A48",
+          "field_path": "paper_scope",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Define composition limits to obtain an optimum microstructural state without embrittling phases, and determine composition ranges for structural applications with UTS ≥ 1100 MPa and impact toughness > 50 J/cm².",
+          "prediction_value": "Determination of composition limits for Fe-Mn-Al-C austenitic steels to obtain an optimum microstructural state free of embrittling phases and acceptable mechanical properties for structural applications, specifically UTS greater than 1100 MPa and U-notch impact toughness K_CU greater than 50 J/cm².",
+          "error_type": "correct",
+          "matched": true,
+          "method": "llm_field_judge",
+          "truth_normalized": "define composition limits to obtain an optimum microstructural state without embrittling phases, and determine composition ranges for structural applications with uts ≥ 1100 mpa and impact toughness > 50 j/cm2.",
+          "prediction_normalized": "determination of composition limits for fe-mn-al-c austenitic steels to obtain an optimum microstructural state free of embrittling phases and acceptable mechanical properties for structural applications, specifically uts greater than 1100 mpa and u-notch impact toughness k_cu greater than 50 j/cm2.",
+          "reason": "LLM judged same-field values as semantically matched.",
+          "score": 1.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "papers:0:papers_a48_paper_scope"
+        }
+      ]
+    },
+    "alloys": {
+      "candidate_count": 1,
+      "result_count": 1,
+      "error": null,
+      "raw_response": "{\n  \"results\": [\n    {\n      \"id\": \"alloys:0:alloys_alloy_fe29mn9al09c_alloys_notes\",\n      \"matched\": false\n    }\n  ]\n}",
+      "decisions": {
+        "alloys:0:alloys_alloy_fe29mn9al09c_alloys_notes": false
+      },
+      "input_candidates": [
+        {
+          "id": "alloys:0:alloys_alloy_fe29mn9al09c_alloys_notes",
+          "section": "alloys",
+          "canonical_object": "alloy_fe29mn9al09c",
+          "field": "alloys_notes",
+          "field_path": "alloys_notes",
+          "truth_path": "alloys.alloy_fe29mn9al09c.alloys_notes",
+          "prediction_path": "alloys.alloy_fe29mn9al09c.alloys_notes",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Typical nominal composition used as baseline.",
+          "prediction_value": "Systematic study of 31 experimental melts covering Al 3-10%, C 0.3-1.2%, and Mn 24-34%. The optimized composition range for structural applications, accounting for industrial liquation in heavy ingots, is Al 9-9.5%, C 0.9-0.95%, and Mn 28.5-30.5%. Broader fundamental limits without liquation considerations are Al 6.2-9.7%, C 0.7-1%, and Mn 25-31%."
+        }
+      ],
+      "candidates": [
+        {
+          "key": "alloys.alloy_fe29mn9al09c.alloys_notes",
+          "truth_path": "alloys.alloy_fe29mn9al09c.alloys_notes",
+          "prediction_path": "alloys.alloy_fe29mn9al09c.alloys_notes",
+          "canonical_object": "alloy_fe29mn9al09c",
+          "field_path": "alloys_notes",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Typical nominal composition used as baseline.",
+          "prediction_value": "Systematic study of 31 experimental melts covering Al 3-10%, C 0.3-1.2%, and Mn 24-34%. The optimized composition range for structural applications, accounting for industrial liquation in heavy ingots, is Al 9-9.5%, C 0.9-0.95%, and Mn 28.5-30.5%. Broader fundamental limits without liquation considerations are Al 6.2-9.7%, C 0.7-1%, and Mn 25-31%.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "typical nominal composition used as baseline.",
+          "prediction_normalized": "systematic study of 31 experimental melts covering al 3-10%, c 0.3-1.2%, and mn 24-34%. the optimized composition range for structural applications, accounting for industrial liquation in heavy ingots, is al 9-9.5%, c 0.9-0.95%, and mn 28.5-30.5%. broader fundamental limits without liquation considerations are al 6.2-9.7%, c 0.7-1%, and mn 25-31%.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "alloys:0:alloys_alloy_fe29mn9al09c_alloys_notes"
+        }
+      ]
+    },
+    "processes": {
+      "candidate_count": 2,
+      "result_count": 2,
+      "error": null,
+      "raw_response": "{\n  \"results\": [\n    {\"id\": \"processes:0:processes_proc_quench1050_age550_description\", \"matched\": false},\n    {\"id\": \"processes:1:processes_proc_quench1050_age550_processes_notes\", \"matched\": false}\n  ]\n}",
+      "decisions": {
+        "processes:0:processes_proc_quench1050_age550_description": false,
+        "processes:1:processes_proc_quench1050_age550_processes_notes": false
+      },
+      "input_candidates": [
+        {
+          "id": "processes:0:processes_proc_quench1050_age550_description",
+          "section": "processes",
+          "canonical_object": "proc_quench1050_age550",
+          "field": "description",
+          "field_path": "description",
+          "truth_path": "processes.proc_quench1050_age550.description",
+          "prediction_path": "processes.proc_quench1050_age550.description",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Heated to 1050°C, water quenched to room temperature, then aged at 550°C for 16 h.",
+          "prediction_value": "Induction melting in a 100 kg furnace, electroslag remelting, homogenization at 1150°C for 6-8 h, shaping to circular and square rods, solution treatment at 1050°C with water quenching, and aging at 550°C for 16 h."
+        },
+        {
+          "id": "processes:1:processes_proc_quench1050_age550_processes_notes",
+          "section": "processes",
+          "canonical_object": "proc_quench1050_age550",
+          "field": "processes_notes",
+          "field_path": "processes_notes",
+          "truth_path": "processes.proc_quench1050_age550.processes_notes",
+          "prediction_path": "processes.proc_quench1050_age550.processes_notes",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Used for samples in Fig. 6 (solid curves) and Fig. 7.",
+          "prediction_value": "Cast ingot-electrodes were repeatedly melted and refined in an electric-slag remelting furnace. Hot working and shaping to rods (12 mm diameter circular; 14 × 14 mm square) were performed after homogenization. For cast steels with up to 12% delta-ferrite, hot working within 1150-1170°C accompanies delta-ferrite dissolution. Jet spraying of liquid metal in argon atmosphere was also mentioned as a method to suppress liquation and avoid delta-ferrite up to 12% Al."
+        }
+      ],
+      "candidates": [
+        {
+          "key": "processes.proc_quench1050_age550.description",
+          "truth_path": "processes.proc_quench1050_age550.description",
+          "prediction_path": "processes.proc_quench1050_age550.description",
+          "canonical_object": "proc_quench1050_age550",
+          "field_path": "description",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Heated to 1050°C, water quenched to room temperature, then aged at 550°C for 16 h.",
+          "prediction_value": "Induction melting in a 100 kg furnace, electroslag remelting, homogenization at 1150°C for 6-8 h, shaping to circular and square rods, solution treatment at 1050°C with water quenching, and aging at 550°C for 16 h.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "heated to 1050 c , water quenched to room temperature, then aged at 550 c for 16 h.",
+          "prediction_normalized": "induction melting in a 100 kg furnace, electroslag remelting, homogenization at 1150 c for 6-8 h, shaping to circular and square rods, solution treatment at 1050 c with water quenching, and aging at 550 c for 16 h.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "processes:0:processes_proc_quench1050_age550_description"
+        },
+        {
+          "key": "processes.proc_quench1050_age550.processes_notes",
+          "truth_path": "processes.proc_quench1050_age550.processes_notes",
+          "prediction_path": "processes.proc_quench1050_age550.processes_notes",
+          "canonical_object": "proc_quench1050_age550",
+          "field_path": "processes_notes",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Used for samples in Fig. 6 (solid curves) and Fig. 7.",
+          "prediction_value": "Cast ingot-electrodes were repeatedly melted and refined in an electric-slag remelting furnace. Hot working and shaping to rods (12 mm diameter circular; 14 × 14 mm square) were performed after homogenization. For cast steels with up to 12% delta-ferrite, hot working within 1150-1170°C accompanies delta-ferrite dissolution. Jet spraying of liquid metal in argon atmosphere was also mentioned as a method to suppress liquation and avoid delta-ferrite up to 12% Al.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "used for samples in fig. 6 (solid curves) and fig. 7.",
+          "prediction_normalized": "cast ingot-electrodes were repeatedly melted and refined in an electric-slag remelting furnace. hot working and shaping to rods (12 mm diameter circular; 14 x 14 mm square) were performed after homogenization. for cast steels with up to 12% delta-ferrite, hot working within 1150-1170 c accompanies delta-ferrite dissolution. jet spraying of liquid metal in argon atmosphere was also mentioned as a method to suppress liquation and avoid delta-ferrite up to 12% al.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "processes:1:processes_proc_quench1050_age550_processes_notes"
+        }
+      ]
+    },
+    "samples": {
+      "candidate_count": 0,
+      "result_count": 0,
+      "error": null,
+      "raw_response": null,
+      "decisions": {},
+      "input_candidates": [],
+      "candidates": []
+    },
+    "processing_steps": {
+      "candidate_count": 0,
+      "result_count": 0,
+      "error": null,
+      "raw_response": null,
+      "decisions": {},
+      "input_candidates": [],
+      "candidates": []
+    },
+    "structures": {
+      "candidate_count": 0,
+      "result_count": 0,
+      "error": null,
+      "raw_response": null,
+      "decisions": {},
+      "input_candidates": [],
+      "candidates": []
+    },
+    "interfaces": {
+      "candidate_count": 0,
+      "result_count": 0,
+      "error": null,
+      "raw_response": null,
+      "decisions": {},
+      "input_candidates": [],
+      "candidates": []
+    },
+    "properties": {
+      "candidate_count": 0,
+      "result_count": 0,
+      "error": null,
+      "raw_response": null,
+      "decisions": {},
+      "input_candidates": [],
+      "candidates": []
+    },
+    "performance": {
+      "candidate_count": 0,
+      "result_count": 0,
+      "error": null,
+      "raw_response": null,
+      "decisions": {},
+      "input_candidates": [],
+      "candidates": []
+    },
+    "characterization_methods": {
+      "candidate_count": 0,
+      "result_count": 0,
+      "error": null,
+      "raw_response": null,
+      "decisions": {},
+      "input_candidates": [],
+      "candidates": []
+    },
+    "computational_details": {
+      "candidate_count": 1,
+      "result_count": 1,
+      "error": null,
+      "raw_response": "{\n  \"results\": [\n    {\"id\": \"computational_details:0:computational_details_idx_0_analytical_model_0_model_note\", \"matched\": false}\n  ]\n}",
+      "decisions": {
+        "computational_details:0:computational_details_idx_0_analytical_model_0_model_note": false
+      },
+      "input_candidates": [
+        {
+          "id": "computational_details:0:computational_details_idx_0_analytical_model_0_model_note",
+          "section": "computational_details",
+          "canonical_object": "idx_0",
+          "field": "model_note",
+          "field_path": "analytical_model[0].model_note",
+          "truth_path": "computational_details.idx_0.analytical_model[0].model_note",
+          "prediction_path": "computational_details.idx_0.analytical_model[0].model_note",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Used to determine composition limits for UTS ≥ 1100 MPa and K_CU ≥ 50 J/cm². Resulting optimized ranges: Al 9-9.5%, C 0.9-0.95%, Mn 28.5-30.5%.",
+          "prediction_value": "Spatial figures limited by surfaces of equal-content levels were plotted. The model established that UTS of at least 1100 MPa together with K_CU of at least 50 J/cm² are attained for C 0.84-0.99%, Al 8.8-9.7%, and Mn 28.5-30.5%. For heavy ingots, narrower practical limits are Al 9-9.5% and C 0.9-0.95%."
+        }
+      ],
+      "candidates": [
+        {
+          "key": "computational_details.idx_0.analytical_model[0].model_note",
+          "truth_path": "computational_details.idx_0.analytical_model[0].model_note",
+          "prediction_path": "computational_details.idx_0.analytical_model[0].model_note",
+          "canonical_object": "idx_0",
+          "field_path": "analytical_model[0].model_note",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Used to determine composition limits for UTS ≥ 1100 MPa and K_CU ≥ 50 J/cm². Resulting optimized ranges: Al 9-9.5%, C 0.9-0.95%, Mn 28.5-30.5%.",
+          "prediction_value": "Spatial figures limited by surfaces of equal-content levels were plotted. The model established that UTS of at least 1100 MPa together with K_CU of at least 50 J/cm² are attained for C 0.84-0.99%, Al 8.8-9.7%, and Mn 28.5-30.5%. For heavy ingots, narrower practical limits are Al 9-9.5% and C 0.9-0.95%.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "used to determine composition limits for uts ≥ 1100 mpa and k_cu ≥ 50 j/cm2. resulting optimized ranges: al 9-9.5%, c 0.9-0.95%, mn 28.5-30.5%.",
+          "prediction_normalized": "spatial figures limited by surfaces of equal-content levels were plotted. the model established that uts of at least 1100 mpa together with k_cu of at least 50 j/cm2 are attained for c 0.84-0.99%, al 8.8-9.7%, and mn 28.5-30.5%. for heavy ingots, narrower practical limits are al 9-9.5% and c 0.9-0.95%.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "computational_details:0:computational_details_idx_0_analytical_model_0_model_note"
+        }
+      ]
+    },
+    "unmapped_findings": {
+      "candidate_count": 6,
+      "result_count": 6,
+      "error": null,
+      "raw_response": "{\n  \"results\": [\n    {\"id\": \"unmapped_findings:0:unmapped_findings_idx_0_value\", \"matched\": false},\n    {\"id\": \"unmapped_findings:1:unmapped_findings_idx_1_value\", \"matched\": false},\n    {\"id\": \"unmapped_findings:2:unmapped_findings_idx_2_value\", \"matched\": false},\n    {\"id\": \"unmapped_findings:3:unmapped_findings_idx_3_value\", \"matched\": false},\n    {\"id\": \"unmapped_findings:4:unmapped_findings_idx_4_value\", \"matched\": false},\n    {\"id\": \"unmapped_findings:5:unmapped_findings_idx_5_value\", \"matched\": false}\n  ]\n}",
+      "decisions": {
+        "unmapped_findings:4:unmapped_findings_idx_4_value": false,
+        "unmapped_findings:0:unmapped_findings_idx_0_value": false,
+        "unmapped_findings:5:unmapped_findings_idx_5_value": false,
+        "unmapped_findings:2:unmapped_findings_idx_2_value": false,
+        "unmapped_findings:3:unmapped_findings_idx_3_value": false,
+        "unmapped_findings:1:unmapped_findings_idx_1_value": false
+      },
+      "input_candidates": [
+        {
+          "id": "unmapped_findings:0:unmapped_findings_idx_0_value",
+          "section": "unmapped_findings",
+          "canonical_object": "idx_0",
+          "field": "value",
+          "field_path": "value",
+          "truth_path": "unmapped_findings.idx_0.value",
+          "prediction_path": "unmapped_findings.idx_0.value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Fig. 2 shows k-phase (carbide) precipitation along grain boundaries in a steel with 4.6 wt.% Al after aging at 600°C for 16 h, which severely reduces impact toughness.",
+          "prediction_value": "Fig. 1 data (Al effect, water quench from 1150°C and aging at 550°C for 16 h): For 0.85% C, UTS increases from 800 MPa (3% Al) to 1050 MPa (10% Al); for 0.95% C, UTS increases from 800 MPa (3% Al) to 1250 MPa (10% Al). Ductility remains approximately 45% across the entire Al range for both C levels. U-notch impact toughness (K_CU) peaks at 180 J/cm² for 6-7% Al (0.85% C) and 160 J/cm² for 6-7% Al (0.95% C), dropping sharply to 10 J/cm² at 3% Al (0.85% C) and 7 J/cm² at 3% Al (0.95% C), and to 10 J/cm² at 10% Al (0.85% C) and 60 J/cm² at 10% Al (0.95% C)."
+        },
+        {
+          "id": "unmapped_findings:1:unmapped_findings_idx_1_value",
+          "section": "unmapped_findings",
+          "canonical_object": "idx_1",
+          "field": "value",
+          "field_path": "value",
+          "truth_path": "unmapped_findings.idx_1.value",
+          "prediction_path": "unmapped_findings.idx_1.value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Fig. 3 reveals d-ferrite morphology in a steel with 10.5 wt.% Al: (a) as-cast state shows d-ferrite; (b) after hot deformation at 1150-1170°C d-ferrite is partially dissolved.",
+          "prediction_value": "Fig. 5 data (C effect on aging process, Al 9%, Mn 30%): Saturation magnetization (4πJ_s) increases with carbon content and decreases with higher aging temperatures. Representative values after 16 h aging: at 550°C, 0.8% C gives approximately 300 G, 0.92% C gives approximately 600 G, 0.98% C gives approximately 900 G, and 1.06% C gives approximately 1000 G. At 500°C/16h, values range from approximately 150 G (0.8% C) to approximately 750 G (1.06% C). For the same Al content, 4πJ_s increases only up to a certain carbon concentration; raising this limit requires higher Al."
+        },
+        {
+          "id": "unmapped_findings:2:unmapped_findings_idx_2_value",
+          "section": "unmapped_findings",
+          "canonical_object": "idx_2",
+          "field": "value",
+          "field_path": "value",
+          "truth_path": "unmapped_findings.idx_2.value",
+          "prediction_path": "unmapped_findings.idx_2.value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Rapid solidification (jet spraying in Ar) produces small spherical particles (<500 µm) and suppresses d-ferrite up to 12% Al (with 0.9% C and 29% Mn). At 14% Al, d-ferrite volume fraction is about 10% (Fig. 4).",
+          "prediction_value": "Fig. 6 data (C effect on mechanical properties, Al 9%, Mn 30%): The figure presents properties for water-quenched (dashed curves) and aged 550°C/16 h (solid curves) conditions. In the aged state, UTS reaches 1250 MPa at 0.9% C and 1350 MPa at 1.1% C; 0.2% YS reaches 1050 MPa at 0.9% C and 1200 MPa at 1.1% C; ductility is 45% at 0.9% C but drops to 10% at 1.1% C; U-notch impact toughness (K_CU) is 110 J/cm² at 0.9% C and 30 J/cm² at 1.1% C. Carbon concentrations exceeding 1% in the aged state cause grain-boundary carbide precipitation and reduce K_CU by at least 40 J/cm². For C lower than 0.7%, delta-ferrite appears."
+        },
+        {
+          "id": "unmapped_findings:3:unmapped_findings_idx_3_value",
+          "section": "unmapped_findings",
+          "canonical_object": "idx_3",
+          "field": "value",
+          "field_path": "value",
+          "truth_path": "unmapped_findings.idx_3.value",
+          "prediction_path": "unmapped_findings.idx_3.value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Fig. 5 reports saturation magnetization 4πJs (in Gauss, G) after aging at various temperatures and times for Fe-9Al-30Mn steels with different C contents. Example values (approximate from graph): 0.8%C aged 450°C/100h ~1500 G, 550°C/16h ~300 G; 1.06%C aged 450°C/100h ~2400 G, 550°C/16h ~1000 G.",
+          "prediction_value": "Fig. 7 data (Mn effect, Al 9%, C 0.9%, WQ from 1050°C and aged 550°C/16 h): UTS peaks at 1200 MPa for 26% Mn and decreases to 950 MPa for 34% Mn; 0.2% YS is 1000 MPa at 26-28% Mn and 880 MPa at 34% Mn; elongation is highest at 60% for 30% Mn; K_CU is 100-115 J/cm² for Mn 24-32% but drops sharply to 35 J/cm² at 34% Mn due to beta-Mn precipitation after aging."
+        },
+        {
+          "id": "unmapped_findings:4:unmapped_findings_idx_4_value",
+          "section": "unmapped_findings",
+          "canonical_object": "idx_4",
+          "field": "value",
+          "field_path": "value",
+          "truth_path": "unmapped_findings.idx_4.value",
+          "prediction_path": "unmapped_findings.idx_4.value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "The paper defines composition limits for optimum microstructural state: 6.2% < Al < 9.7%, 0.7% < C < 1.0%, 25% < Mn < 31%.",
+          "prediction_value": "Microstructural constraints and phase stability: Homogeneous nucleation of kappa-phase during aging at 550°C occurs for Al greater than approximately 7% (the critical Al concentration decreases with higher C). For Al less than approximately 6.2%, carbides precipitate as a continuous network along grain boundaries during aging (Fig. 2), which is highly detrimental to impact toughness. Delta-ferrite appears for Al greater than 10% in cast structures but dissolves during hot working at 1150-1170°C for contents up to approximately 12%. Beta-Mn precipitates after long-time aging at 550°C when Mn exceeds 31-32%, causing extreme brittleness."
+        },
+        {
+          "id": "unmapped_findings:5:unmapped_findings_idx_5_value",
+          "section": "unmapped_findings",
+          "canonical_object": "idx_5",
+          "field": "value",
+          "field_path": "value",
+          "truth_path": "unmapped_findings.idx_5.value",
+          "prediction_path": "unmapped_findings.idx_5.value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Further narrowed limits for structural applications: Al 9-9.5%, C 0.9-0.95%, Mn 28.5-30.5%.",
+          "prediction_value": "Solidification and liquation control: In open-air melting, delta-ferrite increases with ingot weight for Al greater than 9.5%. Electroslag remelting reduces liquation such that delta-ferrite is absent in hot-worked semifinished products for Al less than 9.5% (cross sections up to 105 × 105 mm). Jet spraying of liquid metal in argon atmosphere suppresses liquation and avoids delta-ferrite even at 12% Al (0.9% C, 29% Mn); at 14% Al, delta-ferrite may reach approximately 10% volume fraction after working."
+        }
+      ],
+      "candidates": [
+        {
+          "key": "unmapped_findings.idx_0.value",
+          "truth_path": "unmapped_findings.idx_0.value",
+          "prediction_path": "unmapped_findings.idx_0.value",
+          "canonical_object": "idx_0",
+          "field_path": "value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Fig. 2 shows k-phase (carbide) precipitation along grain boundaries in a steel with 4.6 wt.% Al after aging at 600°C for 16 h, which severely reduces impact toughness.",
+          "prediction_value": "Fig. 1 data (Al effect, water quench from 1150°C and aging at 550°C for 16 h): For 0.85% C, UTS increases from 800 MPa (3% Al) to 1050 MPa (10% Al); for 0.95% C, UTS increases from 800 MPa (3% Al) to 1250 MPa (10% Al). Ductility remains approximately 45% across the entire Al range for both C levels. U-notch impact toughness (K_CU) peaks at 180 J/cm² for 6-7% Al (0.85% C) and 160 J/cm² for 6-7% Al (0.95% C), dropping sharply to 10 J/cm² at 3% Al (0.85% C) and 7 J/cm² at 3% Al (0.95% C), and to 10 J/cm² at 10% Al (0.85% C) and 60 J/cm² at 10% Al (0.95% C).",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "fig. 2 shows k-phase (carbide) precipitation along grain boundaries in a steel with 4.6 wt.% al after aging at 600 c for 16 h, which severely reduces impact toughness.",
+          "prediction_normalized": "fig. 1 data (al effect, water quench from 1150 c and aging at 550 c for 16 h): for 0.85% c, uts increases from 800 mpa (3% al) to 1050 mpa (10% al); for 0.95% c, uts increases from 800 mpa (3% al) to 1250 mpa (10% al). ductility remains approximately 45% across the entire al range for both c levels. u-notch impact toughness (k_cu) peaks at 180 j/cm2 for 6-7% al (0.85% c) and 160 j/cm2 for 6-7% al (0.95% c), dropping sharply to 10 j/cm2 at 3% al (0.85% c) and 7 j/cm2 at 3% al (0.95% c), and to 10 j/cm2 at 10% al (0.85% c) and 60 j/cm2 at 10% al (0.95% c).",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "unmapped_findings:0:unmapped_findings_idx_0_value"
+        },
+        {
+          "key": "unmapped_findings.idx_1.value",
+          "truth_path": "unmapped_findings.idx_1.value",
+          "prediction_path": "unmapped_findings.idx_1.value",
+          "canonical_object": "idx_1",
+          "field_path": "value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Fig. 3 reveals d-ferrite morphology in a steel with 10.5 wt.% Al: (a) as-cast state shows d-ferrite; (b) after hot deformation at 1150-1170°C d-ferrite is partially dissolved.",
+          "prediction_value": "Fig. 5 data (C effect on aging process, Al 9%, Mn 30%): Saturation magnetization (4πJ_s) increases with carbon content and decreases with higher aging temperatures. Representative values after 16 h aging: at 550°C, 0.8% C gives approximately 300 G, 0.92% C gives approximately 600 G, 0.98% C gives approximately 900 G, and 1.06% C gives approximately 1000 G. At 500°C/16h, values range from approximately 150 G (0.8% C) to approximately 750 G (1.06% C). For the same Al content, 4πJ_s increases only up to a certain carbon concentration; raising this limit requires higher Al.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "fig. 3 reveals d-ferrite morphology in a steel with 10.5 wt.% al: (a) as-cast state shows d-ferrite; (b) after hot deformation at 1150-1170 c d-ferrite is partially dissolved.",
+          "prediction_normalized": "fig. 5 data (c effect on aging process, al 9%, mn 30%): saturation magnetization (4πj_s) increases with carbon content and decreases with higher aging temperatures. representative values after 16 h aging: at 550 c , 0.8% c gives approximately 300 g, 0.92% c gives approximately 600 g, 0.98% c gives approximately 900 g, and 1.06% c gives approximately 1000 g. at 500 c /16h, values range from approximately 150 g (0.8% c) to approximately 750 g (1.06% c). for the same al content, 4πj_s increases only up to a certain carbon concentration; raising this limit requires higher al.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "unmapped_findings:1:unmapped_findings_idx_1_value"
+        },
+        {
+          "key": "unmapped_findings.idx_2.value",
+          "truth_path": "unmapped_findings.idx_2.value",
+          "prediction_path": "unmapped_findings.idx_2.value",
+          "canonical_object": "idx_2",
+          "field_path": "value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Rapid solidification (jet spraying in Ar) produces small spherical particles (<500 µm) and suppresses d-ferrite up to 12% Al (with 0.9% C and 29% Mn). At 14% Al, d-ferrite volume fraction is about 10% (Fig. 4).",
+          "prediction_value": "Fig. 6 data (C effect on mechanical properties, Al 9%, Mn 30%): The figure presents properties for water-quenched (dashed curves) and aged 550°C/16 h (solid curves) conditions. In the aged state, UTS reaches 1250 MPa at 0.9% C and 1350 MPa at 1.1% C; 0.2% YS reaches 1050 MPa at 0.9% C and 1200 MPa at 1.1% C; ductility is 45% at 0.9% C but drops to 10% at 1.1% C; U-notch impact toughness (K_CU) is 110 J/cm² at 0.9% C and 30 J/cm² at 1.1% C. Carbon concentrations exceeding 1% in the aged state cause grain-boundary carbide precipitation and reduce K_CU by at least 40 J/cm². For C lower than 0.7%, delta-ferrite appears.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "rapid solidification (jet spraying in ar) produces small spherical particles (<500 um ) and suppresses d-ferrite up to 12% al (with 0.9% c and 29% mn). at 14% al, d-ferrite volume fraction is about 10% (fig. 4).",
+          "prediction_normalized": "fig. 6 data (c effect on mechanical properties, al 9%, mn 30%): the figure presents properties for water-quenched (dashed curves) and aged 550 c /16 h (solid curves) conditions. in the aged state, uts reaches 1250 mpa at 0.9% c and 1350 mpa at 1.1% c; 0.2% ys reaches 1050 mpa at 0.9% c and 1200 mpa at 1.1% c; ductility is 45% at 0.9% c but drops to 10% at 1.1% c; u-notch impact toughness (k_cu) is 110 j/cm2 at 0.9% c and 30 j/cm2 at 1.1% c. carbon concentrations exceeding 1% in the aged state cause grain-boundary carbide precipitation and reduce k_cu by at least 40 j/cm2. for c lower than 0.7%, delta-ferrite appears.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "unmapped_findings:2:unmapped_findings_idx_2_value"
+        },
+        {
+          "key": "unmapped_findings.idx_3.value",
+          "truth_path": "unmapped_findings.idx_3.value",
+          "prediction_path": "unmapped_findings.idx_3.value",
+          "canonical_object": "idx_3",
+          "field_path": "value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Fig. 5 reports saturation magnetization 4πJs (in Gauss, G) after aging at various temperatures and times for Fe-9Al-30Mn steels with different C contents. Example values (approximate from graph): 0.8%C aged 450°C/100h ~1500 G, 550°C/16h ~300 G; 1.06%C aged 450°C/100h ~2400 G, 550°C/16h ~1000 G.",
+          "prediction_value": "Fig. 7 data (Mn effect, Al 9%, C 0.9%, WQ from 1050°C and aged 550°C/16 h): UTS peaks at 1200 MPa for 26% Mn and decreases to 950 MPa for 34% Mn; 0.2% YS is 1000 MPa at 26-28% Mn and 880 MPa at 34% Mn; elongation is highest at 60% for 30% Mn; K_CU is 100-115 J/cm² for Mn 24-32% but drops sharply to 35 J/cm² at 34% Mn due to beta-Mn precipitation after aging.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "fig. 5 reports saturation magnetization 4πjs (in gauss, g) after aging at various temperatures and times for fe-9al-30mn steels with different c contents. example values (approximate from graph): 0.8%c aged 450 c /100h ~1500 g, 550 c /16h ~300 g; 1.06%c aged 450 c /100h ~2400 g, 550 c /16h ~1000 g.",
+          "prediction_normalized": "fig. 7 data (mn effect, al 9%, c 0.9%, wq from 1050 c and aged 550 c /16 h): uts peaks at 1200 mpa for 26% mn and decreases to 950 mpa for 34% mn; 0.2% ys is 1000 mpa at 26-28% mn and 880 mpa at 34% mn; elongation is highest at 60% for 30% mn; k_cu is 100-115 j/cm2 for mn 24-32% but drops sharply to 35 j/cm2 at 34% mn due to beta-mn precipitation after aging.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "unmapped_findings:3:unmapped_findings_idx_3_value"
+        },
+        {
+          "key": "unmapped_findings.idx_4.value",
+          "truth_path": "unmapped_findings.idx_4.value",
+          "prediction_path": "unmapped_findings.idx_4.value",
+          "canonical_object": "idx_4",
+          "field_path": "value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "The paper defines composition limits for optimum microstructural state: 6.2% < Al < 9.7%, 0.7% < C < 1.0%, 25% < Mn < 31%.",
+          "prediction_value": "Microstructural constraints and phase stability: Homogeneous nucleation of kappa-phase during aging at 550°C occurs for Al greater than approximately 7% (the critical Al concentration decreases with higher C). For Al less than approximately 6.2%, carbides precipitate as a continuous network along grain boundaries during aging (Fig. 2), which is highly detrimental to impact toughness. Delta-ferrite appears for Al greater than 10% in cast structures but dissolves during hot working at 1150-1170°C for contents up to approximately 12%. Beta-Mn precipitates after long-time aging at 550°C when Mn exceeds 31-32%, causing extreme brittleness.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "the paper defines composition limits for optimum microstructural state: 6.2% < al < 9.7%, 0.7% < c < 1.0%, 25% < mn < 31%.",
+          "prediction_normalized": "microstructural constraints and phase stability: homogeneous nucleation of kappa-phase during aging at 550 c occurs for al greater than approximately 7% (the critical al concentration decreases with higher c). for al less than approximately 6.2%, carbides precipitate as a continuous network along grain boundaries during aging (fig. 2), which is highly detrimental to impact toughness. delta-ferrite appears for al greater than 10% in cast structures but dissolves during hot working at 1150-1170 c for contents up to approximately 12%. beta-mn precipitates after long-time aging at 550 c when mn exceeds 31-32%, causing extreme brittleness.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "unmapped_findings:4:unmapped_findings_idx_4_value"
+        },
+        {
+          "key": "unmapped_findings.idx_5.value",
+          "truth_path": "unmapped_findings.idx_5.value",
+          "prediction_path": "unmapped_findings.idx_5.value",
+          "canonical_object": "idx_5",
+          "field_path": "value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Further narrowed limits for structural applications: Al 9-9.5%, C 0.9-0.95%, Mn 28.5-30.5%.",
+          "prediction_value": "Solidification and liquation control: In open-air melting, delta-ferrite increases with ingot weight for Al greater than 9.5%. Electroslag remelting reduces liquation such that delta-ferrite is absent in hot-worked semifinished products for Al less than 9.5% (cross sections up to 105 × 105 mm). Jet spraying of liquid metal in argon atmosphere suppresses liquation and avoids delta-ferrite even at 12% Al (0.9% C, 29% Mn); at 14% Al, delta-ferrite may reach approximately 10% volume fraction after working.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "further narrowed limits for structural applications: al 9-9.5%, c 0.9-0.95%, mn 28.5-30.5%.",
+          "prediction_normalized": "solidification and liquation control: in open-air melting, delta-ferrite increases with ingot weight for al greater than 9.5%. electroslag remelting reduces liquation such that delta-ferrite is absent in hot-worked semifinished products for al less than 9.5% (cross sections up to 105 x 105 mm). jet spraying of liquid metal in argon atmosphere suppresses liquation and avoids delta-ferrite even at 12% al (0.9% c, 29% mn); at 14% al, delta-ferrite may reach approximately 10% volume fraction after working.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "unmapped_findings:5:unmapped_findings_idx_5_value"
+        }
+      ]
+    }
+  }
+}

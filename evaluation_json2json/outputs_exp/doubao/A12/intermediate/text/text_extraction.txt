@@ -1,0 +1,628 @@
+{
+    "papers": [
+        {
+            "paper_id": "A12",
+            "doi": null,
+            "title": "Tensile deformation behavior analysis of low density Fe–18Mn–10Al– xC steels",
+            "authors": ["Hua Ding", "Dong Han", "Jun Zhang", "Zhihui Cai", "Zhiqiang Wu", "Minghui Cai"],
+            "publication_year": "2015",
+            "journal": null,
+            "keywords": ["Fe–Mn–Al–C steels", "Strain hardening", "Ordered phase", "C concentration", "Crussard–Jaoul (C–J) analysis"],
+            "research_type": "experimental",
+            "paper_scope": "研究含0.5、0.8和1.2 wt% C的低密度Fe–18Mn–10Al–xC钢的微观结构差异及其对塑性变形过程中力学行为的影响，通过Crussard–Jaoul分析阐明不同相组成钢的力学行为差异，为低密度Fe–Mn–Al–C钢的合金设计和应用提供参考数据"
+        }
+    ],
+    "alloys": [
+        {
+            "alloy_id": "alloy_fe18mn10al05c",
+            "paper_id": "A12",
+            "alloy_name": "Fe–18Mn–10Al–0.5C steel",
+            "aliases": ["0.5C steel", "0.5C钢"],
+            "base_element": "Fe",
+            "alloying_elements": ["Mn", "Al", "C"],
+            "nominal_composition": [
+                {"element": "Al", "weight_percent": "9.90", "atomic_percent": null},
+                {"element": "Mn", "weight_percent": "17.71", "atomic_percent": null},
+                {"element": "C", "weight_percent": "0.48", "atomic_percent": null},
+                {"element": "Fe", "weight_percent": "Bal.", "atomic_percent": null}
+            ],
+            "alloys_notes": "密度为6.92 g/cm3，奥氏体相堆垛层错能为73.4 mJ/m2"
+        },
+        {
+            "alloy_id": "alloy_fe18mn10al08c",
+            "paper_id": "A12",
+            "alloy_name": "Fe–18Mn–10Al–0.8C steel",
+            "aliases": ["0.8C steel", "0.8C钢"],
+            "base_element": "Fe",
+            "alloying_elements": ["Mn", "Al", "C"],
+            "nominal_composition": [
+                {"element": "Al", "weight_percent": "9.91", "atomic_percent": null},
+                {"element": "Mn", "weight_percent": "17.14", "atomic_percent": null},
+                {"element": "C", "weight_percent": "0.77", "atomic_percent": null},
+                {"element": "Fe", "weight_percent": "Bal.", "atomic_percent": null}
+            ],
+            "alloys_notes": "密度为6.88 g/cm3，奥氏体相堆垛层错能为77.9 mJ/m2"
+        },
+        {
+            "alloy_id": "alloy_fe18mn10al12c",
+            "paper_id": "A12",
+            "alloy_name": "Fe–18Mn–10Al–1.2C steel",
+            "aliases": ["1.2C steel", "1.2C钢"],
+            "base_element": "Fe",
+            "alloying_elements": ["Mn", "Al", "C"],
+            "nominal_composition": [
+                {"element": "Al", "weight_percent": "10.19", "atomic_percent": null},
+                {"element": "Mn", "weight_percent": "17.45", "atomic_percent": null},
+                {"element": "C", "weight_percent": "1.16", "atomic_percent": null},
+                {"element": "Fe", "weight_percent": "Bal.", "atomic_percent": null}
+            ],
+            "alloys_notes": "密度为6.78 g/cm3，奥氏体相堆垛层错能为84.5 mJ/m2"
+        }
+    ],
+    "processes": [
+        {
+            "process_id": "proc_fe18mn10al_01",
+            "paper_id": "A12",
+            "alloy_id": ["alloy_fe18mn10al05c", "alloy_fe18mn10al08c", "alloy_fe18mn10al12c"],
+            "description": "氩气气氛下感应熔炼制备50kg铸锭，1200℃锻造，1200℃均质3h后热轧至3.5mm（压下率90%），热轧带经1000℃退火1h后冷轧至1mm，再经1000℃退火后水淬至室温；室温拉伸试验应变速率为1.33×10^-3 s^-1",
+            "processes_notes": null
+        }
+    ],
+    "samples": [
+        {
+            "sample_id": "sample_fe18mn10al05c_01",
+            "paper_id": "A12",
+            "alloy_id": "alloy_fe18mn10al05c",
+            "process_id": "proc_fe18mn10al_01"
+        },
+        {
+            "sample_id": "sample_fe18mn10al08c_01",
+            "paper_id": "A12",
+            "alloy_id": "alloy_fe18mn10al08c",
+            "process_id": "proc_fe18mn10al_01"
+        },
+        {
+            "sample_id": "sample_fe18mn10al12c_01",
+            "paper_id": "A12",
+            "alloy_id": "alloy_fe18mn10al12c",
+            "process_id": "proc_fe18mn10al_01"
+        }
+    ],
+    "processing_steps": [
+        {
+            "sample_id": ["sample_fe18mn10al05c_01", "sample_fe18mn10al08c_01", "sample_fe18mn10al12c_01"],
+            "paper_id": "A12",
+            "sequence": "1",
+            "type": "melting",
+            "method": "induction melting under argon atmosphere",
+            "temperature": null,
+            "unit": null,
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "制备50kg铸锭"
+        },
+        {
+            "sample_id": ["sample_fe18mn10al05c_01", "sample_fe18mn10al08c_01", "sample_fe18mn10al12c_01"],
+            "paper_id": "A12",
+            "sequence": "2",
+            "type": "thermomechanical_processing",
+            "method": "forging",
+            "temperature": "1200",
+            "unit": "℃",
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": null
+        },
+        {
+            "sample_id": ["sample_fe18mn10al05c_01", "sample_fe18mn10al08c_01", "sample_fe18mn10al12c_01"],
+            "paper_id": "A12",
+            "sequence": "3",
+            "type": "heat_treatment",
+            "method": "homogenization",
+            "temperature": "1200",
+            "unit": "℃",
+            "duration": "3",
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": null
+        },
+        {
+            "sample_id": ["sample_fe18mn10al05c_01", "sample_fe18mn10al08c_01", "sample_fe18mn10al12c_01"],
+            "paper_id": "A12",
+            "sequence": "4",
+            "type": "thermomechanical_processing",
+            "method": "hot rolling",
+            "temperature": "1200",
+            "unit": "℃",
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": "90%",
+            "processing_steps_notes": "热轧至厚度3.5mm"
+        },
+        {
+            "sample_id": ["sample_fe18mn10al05c_01", "sample_fe18mn10al08c_01", "sample_fe18mn10al12c_01"],
+            "paper_id": "A12",
+            "sequence": "5",
+            "type": "heat_treatment",
+            "method": "annealing",
+            "temperature": "1000",
+            "unit": "℃",
+            "duration": "1",
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "热轧带退火"
+        },
+        {
+            "sample_id": ["sample_fe18mn10al05c_01", "sample_fe18mn10al08c_01", "sample_fe18mn10al12c_01"],
+            "paper_id": "A12",
+            "sequence": "6",
+            "type": "mechanical_processing",
+            "method": "cold rolling",
+            "temperature": null,
+            "unit": null,
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "冷轧至厚度1mm"
+        },
+        {
+            "sample_id": ["sample_fe18mn10al05c_01", "sample_fe18mn10al08c_01", "sample_fe18mn10al12c_01"],
+            "paper_id": "A12",
+            "sequence": "7",
+            "type": "heat_treatment",
+            "method": "annealing",
+            "temperature": "1000",
+            "unit": "℃",
+            "duration": null,
+            "cooling_medium": "water",
+            "reduction_ratio": null,
+            "processing_steps_notes": "最终退火后水淬至室温"
+        }
+    ],
+    "structures": [
+        {
+            "structure_id": "struct_05c_01",
+            "sample_id": "sample_fe18mn10al05c_01",
+            "overall_structure": "duplex ferritic-austenitic structure",
+            "number_of_phases": "2",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_05c_01",
+                    "related_sequence": "7",
+                    "phases_present": [
+                        {
+                            "phase_name": "austenite (γ)",
+                            "crystal_structure": "FCC",
+                            "volume_fraction": "59.2%",
+                            "morphology": null,
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "ferrite (α)",
+                            "crystal_structure": "BCC",
+                            "volume_fraction": "40.8%",
+                            "morphology": null,
+                            "grain_size": null,
+                            "texture": null
+                        }
+                    ],
+                    "defects": [
+                        {
+                            "type": null,
+                            "porosity": null,
+                            "inclusions": [],
+                            "dislocation_density": null,
+                            "lattice_distortion": null
+                        }
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {"value": null, "unit": null},
+                        "grain_size_distribution": null,
+                        "texture": null
+                    },
+                    "precipitates": []
+                }
+            ]
+        },
+        {
+            "structure_id": "struct_08c_01",
+            "sample_id": "sample_fe18mn10al08c_01",
+            "overall_structure": "duplex ferritic-austenitic structure with ordered phases in both phases",
+            "number_of_phases": "4",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_08c_01",
+                    "related_sequence": "7",
+                    "phases_present": [
+                        {
+                            "phase_name": "austenite (γ)",
+                            "crystal_structure": "FCC",
+                            "volume_fraction": "84.8%",
+                            "morphology": null,
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "ferrite (α)",
+                            "crystal_structure": "BCC",
+                            "volume_fraction": "15.2%",
+                            "morphology": null,
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "κ carbide",
+                            "crystal_structure": "L'12 perovskite",
+                            "volume_fraction": null,
+                            "morphology": null,
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "B2 phase",
+                            "crystal_structure": "CsCl type",
+                            "volume_fraction": null,
+                            "morphology": null,
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "DO3 phase",
+                            "crystal_structure": "Fm3m type",
+                            "volume_fraction": null,
+                            "morphology": null,
+                            "grain_size": null,
+                            "texture": null
+                        }
+                    ],
+                    "defects": [
+                        {
+                            "type": null,
+                            "porosity": null,
+                            "inclusions": [],
+                            "dislocation_density": null,
+                            "lattice_distortion": null
+                        }
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {"value": null, "unit": null},
+                        "grain_size_distribution": null,
+                        "texture": null
+                    },
+                    "precipitates": [
+                        {
+                            "precipitate_id": "prec_08c_01",
+                            "type": "κ carbide",
+                            "size": {"value": null, "unit": null},
+                            "distribution": "in austenite matrix",
+                            "coherency": null
+                        },
+                        {
+                            "precipitate_id": "prec_08c_02",
+                            "type": "B2/DO3 ordered phase",
+                            "size": {"value": null, "unit": null},
+                            "distribution": "in ferrite matrix",
+                            "coherency": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "structure_id": "struct_12c_01",
+            "sample_id": "sample_fe18mn10al12c_01",
+            "overall_structure": "fully austenitic microstructure with κ carbides and annealing twins",
+            "number_of_phases": "2",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_12c_01",
+                    "related_sequence": "7",
+                    "phases_present": [
+                        {
+                            "phase_name": "austenite (γ)",
+                            "crystal_structure": "FCC",
+                            "volume_fraction": "100%",
+                            "morphology": null,
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "κ carbide",
+                            "crystal_structure": "L'12 perovskite",
+                            "volume_fraction": null,
+                            "morphology": null,
+                            "grain_size": null,
+                            "texture": null
+                        }
+                    ],
+                    "defects": [
+                        {
+                            "type": "annealing twins",
+                            "porosity": null,
+                            "inclusions": [],
+                            "dislocation_density": null,
+                            "lattice_distortion": null
+                        }
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {"value": null, "unit": null},
+                        "grain_size_distribution": null,
+                        "texture": null
+                    },
+                    "precipitates": [
+                        {
+                            "precipitate_id": "prec_12c_01",
+                            "type": "κ carbide",
+                            "size": {"value": null, "unit": null},
+                            "distribution": "uniformly in austenite matrix",
+                            "coherency": null
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "interfaces": [],
+    "properties": [
+        {
+            "property_set_id": "prop_05c_01",
+            "sample_id": "sample_fe18mn10al05c_01",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [
+                        {
+                            "direction": null,
+                            "value": "614.9",
+                            "unit": "MPa",
+                            "others": {"uncertainty": "±1.0"}
+                        }
+                    ],
+                    "ultimate_tensile_strength": [
+                        {
+                            "direction": null,
+                            "value": "856.7",
+                            "unit": "MPa",
+                            "others": {"uncertainty": "±0.7"}
+                        }
+                    ],
+                    "elongation": [
+                        {
+                            "direction": null,
+                            "value": "32.8",
+                            "unit": "%",
+                            "others": {"uncertainty": "±0.6"}
+                        }
+                    ],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": "见Fig.3",
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [],
+                "fracture_toughness": {"value": null, "unit": null},
+                "fatigue_properties": {"fatigue_limit": null, "cycles_to_failure": null},
+                "creep_properties": {"steady_state_creep_rate": null, "rupture_life": null}
+            },
+            "physical": {
+                "density": {"value": "6.92", "unit": "g/cm3"},
+                "thermal_properties": {"thermal_conductivity": null, "thermal_expansion_coefficient": null, "specific_heat": null},
+                "electrical_properties": {"electrical_conductivity": null, "resistivity": null},
+                "magnetic_properties": {"magnetic_susceptibility": null, "curie_temperature": null}
+            },
+            "chemical": {
+                "corrosion_resistance": {"test_medium": null, "corrosion_rate": null, "passivation_behavior": null},
+                "oxidation_resistance": {"oxidation_rate_constant": null, "protective_scale": null}
+            },
+            "radiation_properties": {"void_swelling": null, "irradiation_hardening": null, "helium_embrittlement": null}
+        },
+        {
+            "property_set_id": "prop_08c_01",
+            "sample_id": "sample_fe18mn10al08c_01",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [
+                        {
+                            "direction": null,
+                            "value": "711.2",
+                            "unit": "MPa",
+                            "others": {"uncertainty": "±1.0"}
+                        }
+                    ],
+                    "ultimate_tensile_strength": [
+                        {
+                            "direction": null,
+                            "value": "979.1",
+                            "unit": "MPa",
+                            "others": {"uncertainty": "±1.0"}
+                        }
+                    ],
+                    "elongation": [
+                        {
+                            "direction": null,
+                            "value": "38.4",
+                            "unit": "%",
+                            "others": {"uncertainty": "±1.6"}
+                        }
+                    ],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": "见Fig.3",
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [],
+                "fracture_toughness": {"value": null, "unit": null},
+                "fatigue_properties": {"fatigue_limit": null, "cycles_to_failure": null},
+                "creep_properties": {"steady_state_creep_rate": null, "rupture_life": null}
+            },
+            "physical": {
+                "density": {"value": "6.88", "unit": "g/cm3"},
+                "thermal_properties": {"thermal_conductivity": null, "thermal_expansion_coefficient": null, "specific_heat": null},
+                "electrical_properties": {"electrical_conductivity": null, "resistivity": null},
+                "magnetic_properties": {"magnetic_susceptibility": null, "curie_temperature": null}
+            },
+            "chemical": {
+                "corrosion_resistance": {"test_medium": null, "corrosion_rate": null, "passivation_behavior": null},
+                "oxidation_resistance": {"oxidation_rate_constant": null, "protective_scale": null}
+            },
+            "radiation_properties": {"void_swelling": null, "irradiation_hardening": null, "helium_embrittlement": null}
+        },
+        {
+            "property_set_id": "prop_12c_01",
+            "sample_id": "sample_fe18mn10al12c_01",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [
+                        {
+                            "direction": null,
+                            "value": "735.1",
+                            "unit": "MPa",
+                            "others": {"uncertainty": "±5.0"}
+                        }
+                    ],
+                    "ultimate_tensile_strength": [
+                        {
+                            "direction": null,
+                            "value": "946.7",
+                            "unit": "MPa",
+                            "others": {"uncertainty": "±4.5"}
+                        }
+                    ],
+                    "elongation": [
+                        {
+                            "direction": null,
+                            "value": "56.2",
+                            "unit": "%",
+                            "others": {"uncertainty": "±1.0"}
+                        }
+                    ],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": "见Fig.3",
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [],
+                "fracture_toughness": {"value": null, "unit": null},
+                "fatigue_properties": {"fatigue_limit": null, "cycles_to_failure": null},
+                "creep_properties": {"steady_state_creep_rate": null, "rupture_life": null}
+            },
+            "physical": {
+                "density": {"value": "6.78", "unit": "g/cm3"},
+                "thermal_properties": {"thermal_conductivity": null, "thermal_expansion_coefficient": null, "specific_heat": null},
+                "electrical_properties": {"electrical_conductivity": null, "resistivity": null},
+                "magnetic_properties": {"magnetic_susceptibility": null, "curie_temperature": null}
+            },
+            "chemical": {
+                "corrosion_resistance": {"test_medium": null, "corrosion_rate": null, "passivation_behavior": null},
+                "oxidation_resistance": {"oxidation_rate_constant": null, "protective_scale": null}
+            },
+            "radiation_properties": {"void_swelling": null, "irradiation_hardening": null, "helium_embrittlement": null}
+        }
+    ],
+    "performance": [
+        {
+            "performance_id": "perf_05c_01",
+            "sample_id": "sample_fe18mn10al05c_01",
+            "service_conditions": {"operating_temperature": {"min": null, "max": null, "unit": null}, "stress_state": null, "environment": null},
+            "lifetime_prediction": {"model_used": null, "predicted_lifetime": null, "confidence_interval": null},
+            "comparative_performance": {"benchmark_alloy": null, "benchmark_process_id": null, "benchmark_sample_id": null, "improvement_percentage": null}
+        },
+        {
+            "performance_id": "perf_08c_01",
+            "sample_id": "sample_fe18mn10al08c_01",
+            "service_conditions": {"operating_temperature": {"min": null, "max": null, "unit": null}, "stress_state": null, "environment": null},
+            "lifetime_prediction": {"model_used": null, "predicted_lifetime": null, "confidence_interval": null},
+            "comparative_performance": {
+                "benchmark_alloy": ["Fe–20Mn–10Al–1.2C steel", "Fe–27Mn–12Al–0.8C steel"],
+                "benchmark_process_id": null,
+                "benchmark_sample_id": null,
+                "improvement_percentage": null
+            }
+        },
+        {
+            "performance_id": "perf_12c_01",
+            "sample_id": "sample_fe18mn10al12c_01",
+            "service_conditions": {"operating_temperature": {"min": null, "max": null, "unit": null}, "stress_state": null, "environment": null},
+            "lifetime_prediction": {"model_used": null, "predicted_lifetime": null, "confidence_interval": null},
+            "comparative_performance": {
+                "benchmark_alloy": "Fe–18Mn–10Al–0.5C steel",
+                "benchmark_process_id": null,
+                "benchmark_sample_id": "sample_fe18mn10al05c_01",
+                "improvement_percentage": "~100% (strength-ductility product)"
+            }
+        }
+    ],
+    "characterization_methods": [
+        {
+            "characterization_id": "char_01",
+            "sample_id": ["sample_fe18mn10al05c_01", "sample_fe18mn10al08c_01", "sample_fe18mn10al12c_01"],
+            "microstructure_uuid": null,
+            "technique": "optical microscopy",
+            "purpose": "观察淬火态钢的初始微观组织",
+            "key_findings": "0.5C和0.8C钢为铁素体-奥氏体双相组织，1.2C钢为全奥氏体组织含退火孪晶"
+        },
+        {
+            "characterization_id": "char_02",
+            "sample_id": ["sample_fe18mn10al05c_01", "sample_fe18mn10al08c_01", "sample_fe18mn10al12c_01"],
+            "microstructure_uuid": ["uuid_05c_01", "uuid_08c_01", "uuid_12c_01"],
+            "technique": "transmission electron microscopy (TEM)",
+            "purpose": "分析析出相种类、分布及塑性变形过程中的微观结构演化",
+            "key_findings": "0.5C钢无析出相；0.8C钢铁素体含B2/DO3有序相，奥氏体含κ碳化物；1.2C钢奥氏体含κ碳化物；变形过程中出现平面滑移、位错缠结、Taylor晶格、微带等结构"
+        },
+        {
+            "characterization_id": "char_03",
+            "sample_id": ["sample_fe18mn10al05c_01", "sample_fe18mn10al08c_01", "sample_fe18mn10al12c_01"],
+            "microstructure_uuid": null,
+            "technique": "room temperature tensile test",
+            "purpose": "测试钢的室温拉伸力学性能",
+            "key_findings": "随C含量升高，延伸率逐渐升高，抗拉强度先升后降，1.2C钢具有最优的强塑性匹配"
+        },
+        {
+            "characterization_id": "char_04",
+            "sample_id": ["sample_fe18mn10al05c_01", "sample_fe18mn10al08c_01"],
+            "microstructure_uuid": null,
+            "technique": "image analysis",
+            "purpose": "测量各相的体积分数",
+            "key_findings": "0.5C钢奥氏体分数59.2%，0.8C钢奥氏体分数84.8%"
+        }
+    ],
+    "computational_details": [
+        {
+            "computation_id": "comp_01",
+            "sample_id": ["sample_fe18mn10al05c_01", "sample_fe18mn10al08c_01", "sample_fe18mn10al12c_01"],
+            "simulation_method": "stacking fault energy calculation",
+            "software_used": null,
+            "potential_model": "文献[13]中的SFE计算模型",
+            "validation_against_experiment": null,
+            "analytical_model": []
+        },
+        {
+            "computation_id": "comp_02",
+            "sample_id": ["sample_fe18mn10al05c_01", "sample_fe18mn10al08c_01", "sample_fe18mn10al12c_01"],
+            "simulation_method": "Crussard–Jaoul (C-J) analysis",
+            "software_used": null,
+            "potential_model": null,
+            "validation_against_experiment": "与微观结构演化结果一致",
+            "analytical_model": [
+                {
+                    "model_name": "differential Crussard–Jaoul model",
+                    "equation_role": "strain hardening behavior analysis",
+                    "parameters": "ln(dσ/dε) vs lnε",
+                    "model_note": "0.5C和0.8C钢表现为两阶段应变硬化，1.2C钢表现为三阶段应变硬化"
+                }
+            ]
+        }
+    ],
+    "unmapped_findings": [
+        "0.5C钢变形过程：应变为0.02时奥氏体出现平面滑移、铁素体出现位错缠结；应变为0.18时奥氏体出现密集位错滑移、Taylor晶格和微带，铁素体出现密集位错缠结",
+        "0.8C钢变形过程：应变为0.01时奥氏体出现平面滑移，铁素体出现成对超位错；应变为0.18时奥氏体形成微带，铁素体位错密度显著升高",
+        "1.2C钢变形过程：应变为0.02时出现平面滑移；应变为0.07时出现Taylor晶格结构；应变为0.3时形成发达微带；应变为0.4时出现微带间相互作用",
+        "0.8C钢的强塑积为37597 MPa·%，比强度为142.3 MPa·cm3/g，满足高性能汽车钢要求，性能优于文献报道的Fe–20Mn–10Al–1.2C钢，与Fe–27Mn–12Al–0.8C钢性能相当",
+        "1.2C钢的强塑积为53205 MPa·%，约为0.5C钢的2倍"
+    ]
+}

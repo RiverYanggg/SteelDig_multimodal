@@ -1,0 +1,568 @@
+{
+  "papers": [
+    {
+      "paper_id": "A47",
+      "doi": null,
+      "title": "High-strength Fe–20Mn–Al–C-based Alloys with Low Density",
+      "authors": [
+        "Yuji SUTOU",
+        "Naohide KAMIYA",
+        "Reiko UMINO",
+        "Ikuo OHNUMA",
+        "Kiyohito ISHIDA"
+      ],
+      "publication_year": "2010",
+      "journal": null,
+      "keywords": [
+        "Fe–Mn–Al–C alloy",
+        "Fe–Mn–Al–C–Cr alloy",
+        "low density",
+        "high specific strength",
+        "κ phase",
+        "precipitation hardening"
+      ],
+      "research_type": "experimental",
+      "paper_scope": "系统研究Fe-20Mn-Al-C四元及Fe-20Mn-Al-C-5Cr五元低密度合金的成分、微观结构与力学性能关联规律，揭示κ碳化物析出强化机制，对比其与常规钢的比强度优势，探索工艺调控实现高强塑匹配的方法"
+    }
+  ],
+  "alloys": [
+    {
+      "alloy_id": "alloy_fe20mnalc",
+      "paper_id": "A47",
+      "alloy_name": "Fe-20Mn-Al-C quaternary alloy",
+      "aliases": [],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Al",
+        "C"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Fe",
+          "weight_percent": "bal",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "20",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "10-14",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0-1.8",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "γ(fcc)单相合金密度低于7.0 g/cm³"
+    },
+    {
+      "alloy_id": "alloy_fe20mnalccr",
+      "paper_id": "A47",
+      "alloy_name": "Fe-20Mn-Al-C-5Cr quinary alloy",
+      "aliases": [],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Al",
+        "C",
+        "Cr"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Fe",
+          "weight_percent": "bal",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "20",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "10-14",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.75-1.8",
+          "atomic_percent": null
+        },
+        {
+          "element": "Cr",
+          "weight_percent": "5",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "Cr添加可提升耐蚀性与抗氧化性，抑制κ碳化物析出"
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_fe_01",
+      "paper_id": "A47",
+      "alloy_id": "alloy_fe20mnalc",
+      "description": "高频感应熔炼→1200°C热轧至1.5mm→1100°C保温15min水淬",
+      "processes_notes": "水淬冷却速率约1100 °C/s"
+    },
+    {
+      "process_id": "proc_fe_02",
+      "paper_id": "A47",
+      "alloy_id": "alloy_fe20mnalccr",
+      "description": "高频感应熔炼→1200°C热轧至1.5mm→1100°C保温15min水淬",
+      "processes_notes": "水淬冷却速率约1100 °C/s"
+    },
+    {
+      "process_id": "proc_fe_03",
+      "paper_id": "A47",
+      "alloy_id": null,
+      "description": "高频感应熔炼→1200°C热轧至1.5mm→1100°C保温15min空冷",
+      "processes_notes": "空冷冷却速率约15 °C/s"
+    },
+    {
+      "process_id": "proc_fe_04",
+      "paper_id": "A47",
+      "alloy_id": null,
+      "description": "1100°C保温15min水淬后室温冷轧，压下率30%-94%",
+      "processes_notes": null
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_q_wq",
+      "paper_id": "A47",
+      "alloy_id": "alloy_fe20mnalc",
+      "process_id": "proc_fe_01"
+    },
+    {
+      "sample_id": "sample_qy_wq",
+      "paper_id": "A47",
+      "alloy_id": "alloy_fe20mnalccr",
+      "process_id": "proc_fe_02"
+    },
+    {
+      "sample_id": "sample_ac",
+      "paper_id": "A47",
+      "alloy_id": null,
+      "process_id": "proc_fe_03"
+    },
+    {
+      "sample_id": "sample_cr",
+      "paper_id": "A47",
+      "alloy_id": null,
+      "process_id": "proc_fe_04"
+    },
+    {
+      "sample_id": "sample_opt",
+      "paper_id": "A47",
+      "alloy_id": "alloy_fe20mnalccr",
+      "process_id": "proc_fe_02"
+    }
+  ],
+  "processing_steps": [
+    {
+      "sample_id": null,
+      "paper_id": "A47",
+      "sequence": "1",
+      "type": "melting",
+      "method": "high frequency induction melting",
+      "temperature": null,
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "氩气保护，氧化铝坩埚，原料为电解Fe(99.95%)、电解Mn(99.9%)、Al(99.7%)、电解Cr(99.2%)、石墨"
+    },
+    {
+      "sample_id": null,
+      "paper_id": "A47",
+      "sequence": "2",
+      "type": "thermomechanical_processing",
+      "method": "hot rolling",
+      "temperature": "1200",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "热轧至厚度约1.5 mm"
+    },
+    {
+      "sample_id": null,
+      "paper_id": "A47",
+      "sequence": "3",
+      "type": "heat_treatment",
+      "method": "annealing",
+      "temperature": "900-1100",
+      "unit": "°C",
+      "duration": "15",
+      "cooling_medium": "water/air",
+      "reduction_ratio": null,
+      "processing_steps_notes": "保温时间单位为min"
+    },
+    {
+      "sample_id": "sample_cr",
+      "paper_id": "A47",
+      "sequence": "4",
+      "type": "mechanical_processing",
+      "method": "cold rolling",
+      "temperature": "25",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": "30-94",
+      "processing_steps_notes": "压下率单位为%"
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_01",
+      "sample_id": null,
+      "overall_structure": "γ(fcc)单相、γ+α(bcc)两相、γ+κ(perovskite)两相",
+      "number_of_phases": "1-2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "micro_001",
+          "related_sequence": "3",
+          "phases_present": [
+            {
+              "phase_name": "γ",
+              "crystal_structure": "fcc",
+              "volume_fraction": null,
+              "morphology": "equiaxed grain",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "κ-carbide",
+              "crystal_structure": "perovskite (Fe₃AlCₓ)",
+              "volume_fraction": null,
+              "morphology": "cuboidal",
+              "grain_size": null,
+              "texture": "<001> oriented"
+            },
+            {
+              "phase_name": "α",
+              "crystal_structure": "bcc",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "prec_001",
+              "type": "κ-carbide",
+              "size": {
+                "value": "nano",
+                "unit": "nm"
+              },
+              "distribution": "uniformly distributed in γ matrix",
+              "coherency": "coherent"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "prop_01",
+      "sample_id": "sample_opt",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "1136",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "1192",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "29.0",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "存在上屈服点，随后呈现接近恒定的流变应力",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": null,
+            "value": "431",
+            "scale": "Hv",
+            "unit": null
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "6.51",
+          "unit": "g/cm³"
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_02",
+      "sample_id": "sample_cr",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "1970",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "2111",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "2.8",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": null,
+            "value": "681",
+            "scale": "Hv",
+            "unit": null
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "6.54",
+          "unit": "g/cm³"
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_01",
+      "sample_id": "sample_opt",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": "25",
+          "max": null,
+          "unit": "°C"
+        },
+        "stress_state": null,
+        "environment": "大气"
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy": "常规奥氏体钢、铁素体钢、沉淀硬化钢、TWIP钢",
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "improvement_percentage": "比强度显著高于常规钢，最高可达300 MPa·cm³/g以上"
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_01",
+      "sample_id": null,
+      "microstructure_uuid": "micro_001",
+      "technique": "Optical Microscopy (OM)",
+      "purpose": "观察室温微观组织，确定相组成",
+      "key_findings": "Cr添加使γ/γ+κ相界向高C侧偏移，γ+α两相区向高Al侧拓宽"
+    },
+    {
+      "characterization_id": "char_02",
+      "sample_id": null,
+      "microstructure_uuid": "micro_001",
+      "technique": "Transmission Electron Microscopy (TEM)",
+      "purpose": "观察纳米析出相的形貌、尺寸与分布",
+      "key_findings": "冷却过程中析出纳米级κ碳化物，空冷试样中κ相为立方状沿<001>方向排列，水淬试样中κ相更细小"
+    },
+    {
+      "characterization_id": "char_03",
+      "sample_id": null,
+      "microstructure_uuid": null,
+      "technique": "Vickers hardness test",
+      "purpose": "测试室温硬度",
+      "key_findings": "合金硬度随Al、C含量增加而升高，空冷试样硬度高于水淬试样，冷轧后硬度显著提升"
+    },
+    {
+      "characterization_id": "char_04",
+      "sample_id": null,
+      "microstructure_uuid": null,
+      "technique": "Room temperature tensile test",
+      "purpose": "测试拉伸力学性能",
+      "key_findings": "应变速率0.5 mm/min，高Al、C含量γ合金存在上屈服点，随后接近恒定流变应力，冷轧后强度大幅提升"
+    },
+    {
+      "characterization_id": "char_05",
+      "sample_id": null,
+      "microstructure_uuid": null,
+      "technique": "Archimedes method",
+      "purpose": "测试合金实际密度",
+      "key_findings": "密度计算值与实测值吻合良好，合金密度低于7.0 g/cm³，最低可达6.28 g/cm³"
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_01",
+      "sample_id": null,
+      "simulation_method": "CALPHAD",
+      "software_used": null,
+      "potential_model": null,
+      "validation_against_experiment": "五元合金相图计算结果与OM观察结果一致",
+      "analytical_model": [
+        {
+          "model_name": "fcc相密度估算模型",
+          "equation_role": "计算Fe-Mn-Al-C(-Cr)合金密度",
+          "parameters": "D_Fe^fcc=8.19 g/cm³, D_Mn^fcc=7.19 g/cm³, D_Al^fcc=2.70 g/cm³, D_Cr^fcc=6.36 g/cm³, D_C^fcc=2.85 g/cm³",
+          "model_note": "密度为各元素fcc结构密度参数与原子分数的加权和，计算值与实验值误差小于1%"
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Fe-20Mn-11Al-1.8C-5Cr合金空冷后比强度可达188 MPa·cm³/g，伸长率41%",
+    "93%冷轧的Fe-20Mn-10Al-1.5C合金比强度达323 MPa·cm³/g，伸长率2.8%",
+    "本研究合金比强度高于常规奥氏体、铁素体、沉淀硬化钢及TWIP钢，可通过简单的退火与冷却工艺实现高强塑匹配",
+    "拉伸变形后试样中无应力诱发马氏体相生成",
+    "κ碳化物析出机制可能与调幅分解有关"
+  ]
+}

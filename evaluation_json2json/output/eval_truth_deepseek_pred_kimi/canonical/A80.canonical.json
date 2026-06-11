@@ -1,0 +1,376 @@
+{
+  "paper_id": "A80",
+  "canonical_maps": {
+    "truth": {
+      "alloy_ferritic_mart": "alloy_ferritic_mart",
+      "alloy_ferritic": "alloy_ferritic",
+      "alloy_austenitic": "alloy_austenitic",
+      "proc_various": "proc_various",
+      "sample_ferritic_mart": "sample_ferritic_mart",
+      "sample_ferritic": "sample_ferritic",
+      "sample_austenitic": "sample_austenitic",
+      "a80": "A80"
+    },
+    "prediction": {
+      "alloy_martferr": "alloy_ferritic_mart",
+      "alloy_ferritic": "alloy_ferritic",
+      "alloy_austenitic": "alloy_austenitic",
+      "proc_martferr_01": "proc_various",
+      "proc_ferritic_01": "proc_various",
+      "proc_austenitic_01": "proc_various",
+      "sample_martferr_01": "sample_ferritic_mart",
+      "sample_ferritic_01": "sample_ferritic",
+      "sample_austenitic_01": "sample_austenitic",
+      "a80": "A80"
+    }
+  },
+  "alignment": {
+    "alloy_matches": [
+      {
+        "pred_alloy_id": "alloy_martferr",
+        "truth_alloy_id": "alloy_ferritic_mart",
+        "relation": "same",
+        "confidence": 1.0,
+        "reason": "Same alloy pool (Study I) with identical base element Fe and alloying elements C, Cr, Cu, Mn, Mo, Ni, Si, V."
+      },
+      {
+        "pred_alloy_id": "alloy_ferritic",
+        "truth_alloy_id": "alloy_ferritic",
+        "relation": "same",
+        "confidence": 1.0,
+        "reason": "Same alloy pool (Study II) with identical base element Fe and alloying elements C, Cr, Cu, Mn, Mo, Ni, Si, V."
+      },
+      {
+        "pred_alloy_id": "alloy_austenitic",
+        "truth_alloy_id": "alloy_austenitic",
+        "relation": "same",
+        "confidence": 1.0,
+        "reason": "Same alloy pool (Study III) with identical base element Fe and matching alloying elements (C, Cr, Mo, N, Ni, Si, Nb, Ti, V, Al, Cu, Mn, Co)."
+      }
+    ],
+    "process_matches": [
+      {
+        "pred_process_id": "proc_martferr_01",
+        "truth_process_id": "proc_various",
+        "relation": "many_to_one",
+        "confidence": 0.8,
+        "reason": "Prediction process specific to martensitic/ferritic steels (Study I) is one instance of the generic truth process covering all literature samples with unspecified conditions."
+      },
+      {
+        "pred_process_id": "proc_ferritic_01",
+        "truth_process_id": "proc_various",
+        "relation": "many_to_one",
+        "confidence": 0.8,
+        "reason": "Prediction process specific to ferritic steels (Study II) is one instance of the generic truth process covering all literature samples with unspecified conditions."
+      },
+      {
+        "pred_process_id": "proc_austenitic_01",
+        "truth_process_id": "proc_various",
+        "relation": "many_to_one",
+        "confidence": 0.8,
+        "reason": "Prediction process specific to austenitic steels (Study III) is one instance of the generic truth process covering all literature samples with unspecified conditions."
+      }
+    ],
+    "sample_matches": [
+      {
+        "pred_sample_id": "sample_martferr_01",
+        "truth_sample_id": "sample_ferritic_mart",
+        "relation": "same",
+        "confidence": 0.9,
+        "reason": "Both reference the same alloy (martensitic/ferritic steels) and corresponding processes (specific pred process is a subset of generic truth process)."
+      },
+      {
+        "pred_sample_id": "sample_ferritic_01",
+        "truth_sample_id": "sample_ferritic",
+        "relation": "same",
+        "confidence": 0.9,
+        "reason": "Both reference the same alloy (ferritic steels) and corresponding processes (specific pred process is a subset of generic truth process)."
+      },
+      {
+        "pred_sample_id": "sample_austenitic_01",
+        "truth_sample_id": "sample_austenitic",
+        "relation": "same",
+        "confidence": 0.9,
+        "reason": "Both reference the same alloy (austenitic steels) and corresponding processes (specific pred process is a subset of generic truth process)."
+      }
+    ],
+    "error": null
+  },
+  "flattened_sections": {
+    "papers": {
+      "truth": {
+        "papers.A80.title": "Evaluation of the elastic modulus of steels",
+        "papers.A80.authors[0]": "Ulrich Bohnenkamp",
+        "papers.A80.authors[1]": "Rolf Sandström",
+        "papers.A80.research_type": "mixed",
+        "papers.A80.paper_scope": "Collects literature data on physical properties of steels, analyzes elastic modulus dependence on composition using regression analysis and Thermo-Calc thermodynamic calculations for ferritic and austenitic steels, and provides predictive regression coefficients."
+      },
+      "prediction": {
+        "papers.A80.title": "Evaluation of the elastic modulus of steels",
+        "papers.A80.authors[0]": "Ulrich Bohnenkamp",
+        "papers.A80.authors[1]": "Rolf Sandström",
+        "papers.A80.keywords[0]": "elastic modulus",
+        "papers.A80.keywords[1]": "steels",
+        "papers.A80.keywords[2]": "regression analysis",
+        "papers.A80.keywords[3]": "thermodynamic analysis",
+        "papers.A80.keywords[4]": "Thermo-Calc",
+        "papers.A80.keywords[5]": "composition",
+        "papers.A80.keywords[6]": "martensitic steels",
+        "papers.A80.keywords[7]": "ferritic steels",
+        "papers.A80.keywords[8]": "austenitic steels",
+        "papers.A80.keywords[9]": "cementite",
+        "papers.A80.keywords[10]": "carbides",
+        "papers.A80.research_type": "mixed",
+        "papers.A80.paper_scope": "Analysis of the influence of chemical composition on the elastic modulus of martensitic, ferritic, and austenitic steels based on collected literature data using regression analysis and Thermo-Calc thermodynamic calculations."
+      }
+    },
+    "alloys": {
+      "truth": {
+        "alloys.alloy_ferritic_mart.alloy_name": "Martensitic and Ferritic Steels (study I pool)",
+        "alloys.alloy_ferritic_mart.base_element": "Fe",
+        "alloys.alloy_ferritic_mart.alloying_elements[0]": "C",
+        "alloys.alloy_ferritic_mart.alloying_elements[1]": "Cr",
+        "alloys.alloy_ferritic_mart.alloying_elements[2]": "Cu",
+        "alloys.alloy_ferritic_mart.alloying_elements[3]": "Mn",
+        "alloys.alloy_ferritic_mart.alloying_elements[4]": "Mo",
+        "alloys.alloy_ferritic_mart.alloying_elements[5]": "Ni",
+        "alloys.alloy_ferritic_mart.alloying_elements[6]": "Si",
+        "alloys.alloy_ferritic_mart.alloying_elements[7]": "V",
+        "alloys.alloy_ferritic_mart.alloys_notes": "Composition ranges (mass%): Fe 82.01-99.25, C 0.06-0.99, Cr 0-16.66, Cu 0-0.69, Mn 0.41-1.04, Mo 0-1.10, Ni 0-9.25, Si 0.14-0.96, V 0-0.36. 53 batches. See Table 1.",
+        "alloys.alloy_ferritic.alloy_name": "Ferritic Steels (study II pool)",
+        "alloys.alloy_ferritic.base_element": "Fe",
+        "alloys.alloy_ferritic.alloying_elements[0]": "C",
+        "alloys.alloy_ferritic.alloying_elements[1]": "Cr",
+        "alloys.alloy_ferritic.alloying_elements[2]": "Cu",
+        "alloys.alloy_ferritic.alloying_elements[3]": "Mn",
+        "alloys.alloy_ferritic.alloying_elements[4]": "Mo",
+        "alloys.alloy_ferritic.alloying_elements[5]": "Ni",
+        "alloys.alloy_ferritic.alloying_elements[6]": "Si",
+        "alloys.alloy_ferritic.alloying_elements[7]": "V",
+        "alloys.alloy_ferritic.alloys_notes": "Composition ranges in ferrite (mass%): Fe 90.1-97.84, Cr 0-3.89, Cu 0-0.69, Mn 0-0.60, Mo 0-1.06, Ni 0-1.64, Si 0.14-0.96, V 0-0.29. Cementite 0.78-7.90 mass%. 35 batches. See Table 2.",
+        "alloys.alloy_austenitic.alloy_name": "Austenitic Steels (study III pool)",
+        "alloys.alloy_austenitic.base_element": "Fe",
+        "alloys.alloy_austenitic.alloying_elements[0]": "C",
+        "alloys.alloy_austenitic.alloying_elements[1]": "Cr",
+        "alloys.alloy_austenitic.alloying_elements[2]": "Mo",
+        "alloys.alloy_austenitic.alloying_elements[3]": "N",
+        "alloys.alloy_austenitic.alloying_elements[4]": "Ni",
+        "alloys.alloy_austenitic.alloying_elements[5]": "Si",
+        "alloys.alloy_austenitic.alloying_elements[6]": "Nb",
+        "alloys.alloy_austenitic.alloying_elements[7]": "Ti",
+        "alloys.alloy_austenitic.alloying_elements[8]": "V",
+        "alloys.alloy_austenitic.alloying_elements[9]": "Al",
+        "alloys.alloy_austenitic.alloying_elements[10]": "Cu",
+        "alloys.alloy_austenitic.alloying_elements[11]": "Mn",
+        "alloys.alloy_austenitic.alloying_elements[12]": "Co",
+        "alloys.alloy_austenitic.alloys_notes": "Composition ranges in austenite (mass%): Fe 35.90-74.73, Cr 14.60-26.87, Mo 0-3.27, Ni 7.11-32.78, N 0-0.19, Si 0.24-0.97, Nb 0-0.27, Ti 0-1.89, other elements trace. Carbides: TiC 0-1.08, M23C6 0-5.72, NbC 0-1.80 mass%. 24 batches. See Table 3."
+      },
+      "prediction": {
+        "alloys.alloy_ferritic_mart.alloy_name": "Martensitic and ferritic steels",
+        "alloys.alloy_ferritic_mart.base_element": "Fe",
+        "alloys.alloy_ferritic_mart.alloying_elements[0]": "C",
+        "alloys.alloy_ferritic_mart.alloying_elements[1]": "Cr",
+        "alloys.alloy_ferritic_mart.alloying_elements[2]": "Cu",
+        "alloys.alloy_ferritic_mart.alloying_elements[3]": "Mn",
+        "alloys.alloy_ferritic_mart.alloying_elements[4]": "Mo",
+        "alloys.alloy_ferritic_mart.alloying_elements[5]": "Ni",
+        "alloys.alloy_ferritic_mart.alloying_elements[6]": "Si",
+        "alloys.alloy_ferritic_mart.alloying_elements[7]": "V",
+        "alloys.alloy_ferritic_mart.alloys_notes": "Study I group; 53 batches investigated; phase composition and microstructure neglected in regression analysis.",
+        "alloys.alloy_ferritic.alloy_name": "Ferritic steels",
+        "alloys.alloy_ferritic.base_element": "Fe",
+        "alloys.alloy_ferritic.alloying_elements[0]": "C",
+        "alloys.alloy_ferritic.alloying_elements[1]": "Cr",
+        "alloys.alloy_ferritic.alloying_elements[2]": "Cu",
+        "alloys.alloy_ferritic.alloying_elements[3]": "Mn",
+        "alloys.alloy_ferritic.alloying_elements[4]": "Mo",
+        "alloys.alloy_ferritic.alloying_elements[5]": "Ni",
+        "alloys.alloy_ferritic.alloying_elements[6]": "Si",
+        "alloys.alloy_ferritic.alloying_elements[7]": "V",
+        "alloys.alloy_ferritic.alloys_notes": "Study II group; 35 batches investigated; thermodynamic analysis of ferrite and cementite performed with Thermo-Calc.",
+        "alloys.alloy_austenitic.alloy_name": "Austenitic steels",
+        "alloys.alloy_austenitic.base_element": "Fe",
+        "alloys.alloy_austenitic.alloying_elements[0]": "Al",
+        "alloys.alloy_austenitic.alloying_elements[1]": "C",
+        "alloys.alloy_austenitic.alloying_elements[2]": "Co",
+        "alloys.alloy_austenitic.alloying_elements[3]": "Cr",
+        "alloys.alloy_austenitic.alloying_elements[4]": "Cu",
+        "alloys.alloy_austenitic.alloying_elements[5]": "Mn",
+        "alloys.alloy_austenitic.alloying_elements[6]": "Mo",
+        "alloys.alloy_austenitic.alloying_elements[7]": "N",
+        "alloys.alloy_austenitic.alloying_elements[8]": "Nb",
+        "alloys.alloy_austenitic.alloying_elements[9]": "Ni",
+        "alloys.alloy_austenitic.alloying_elements[10]": "Si",
+        "alloys.alloy_austenitic.alloying_elements[11]": "Ti",
+        "alloys.alloy_austenitic.alloying_elements[12]": "V",
+        "alloys.alloy_austenitic.alloys_notes": "24 batches investigated; thermodynamic analysis of austenite and carbide phases (NbC, TiC, Cr23C6) performed with Thermo-Calc."
+      }
+    },
+    "processes": {
+      "truth": {
+        "processes.proc_various.description": "Various heat treatment and processing conditions from literature data; details unspecified.",
+        "processes.proc_various.processes_notes": "Samples collected from open literature with exact compositions but unknown thermomechanical histories."
+      },
+      "prediction": {
+        "processes.proc_various.description": "Thermodynamic calculation of austenite and carbide phase contents with Thermo-Calc followed by regression analysis of elastic modulus.",
+        "processes.proc_various.processes_notes": "24 batches; steels forming phases other than austenite, NbC, TiC, and Cr23C6 were excluded."
+      }
+    },
+    "samples": {
+      "truth": {},
+      "prediction": {}
+    },
+    "processing_steps": {
+      "truth": {
+        "processing_steps.sample_ferritic_mart.sequence": "1",
+        "processing_steps.sample_ferritic_mart.type": "heat_treatment",
+        "processing_steps.sample_ferritic_mart.method": "various",
+        "processing_steps.sample_ferritic_mart.processing_steps_notes": "Literature samples processed under unspecified conditions; elastic modulus measured at room temperature after temperature correction.",
+        "processing_steps.sample_ferritic.sequence": "1",
+        "processing_steps.sample_ferritic.type": "heat_treatment",
+        "processing_steps.sample_ferritic.method": "various",
+        "processing_steps.sample_ferritic.processing_steps_notes": "Literature samples processed under unspecified conditions; elastic modulus measured at room temperature after temperature correction.",
+        "processing_steps.sample_austenitic.sequence": "1",
+        "processing_steps.sample_austenitic.type": "heat_treatment",
+        "processing_steps.sample_austenitic.method": "various",
+        "processing_steps.sample_austenitic.processing_steps_notes": "Literature samples processed under unspecified conditions; elastic modulus measured at room temperature after temperature correction."
+      },
+      "prediction": {}
+    },
+    "structures": {
+      "truth": {},
+      "prediction": {
+        "structures.sample_ferritic_mart.overall_structure": "Martensitic and ferritic steels; phase composition and microstructure explicitly neglected in the regression analysis.",
+        "structures.sample_ferritic.overall_structure": "Ferritic steels consisting of ferrite matrix and cementite.",
+        "structures.sample_ferritic.number_of_phases": "2",
+        "structures.sample_ferritic.microstructure_list[0].phases_present[ferrite].phase_name": "ferrite",
+        "structures.sample_ferritic.microstructure_list[0].phases_present[ferrite].crystal_structure": "bcc",
+        "structures.sample_ferritic.microstructure_list[0].phases_present[cementite].phase_name": "cementite",
+        "structures.sample_austenitic.overall_structure": "Austenitic steels consisting of austenite matrix and carbide precipitates (NbC, TiC, Cr23C6).",
+        "structures.sample_austenitic.microstructure_list[0].phases_present[austenite].phase_name": "austenite",
+        "structures.sample_austenitic.microstructure_list[0].phases_present[austenite].crystal_structure": "fcc",
+        "structures.sample_austenitic.microstructure_list[0].phases_present[nbc].phase_name": "NbC",
+        "structures.sample_austenitic.microstructure_list[0].phases_present[tic].phase_name": "TiC",
+        "structures.sample_austenitic.microstructure_list[0].phases_present[cr23c6].phase_name": "Cr23C6",
+        "structures.sample_austenitic.microstructure_list[0].precipitates[nbc].type": "NbC",
+        "structures.sample_austenitic.microstructure_list[0].precipitates[tic].type": "TiC",
+        "structures.sample_austenitic.microstructure_list[0].precipitates[cr23c6].type": "Cr23C6"
+      }
+    },
+    "interfaces": {
+      "truth": {},
+      "prediction": {}
+    },
+    "properties": {
+      "truth": {},
+      "prediction": {
+        "properties.sample_ferritic_mart.mechanical.tensile_properties.youngs_modulus": "211 GPa (estimated for pure α-iron from regression coefficient at 100 mass% Fe)",
+        "properties.sample_austenitic.mechanical.tensile_properties.youngs_modulus": "195 GPa (pure γ-iron at room temperature)"
+      }
+    },
+    "performance": {
+      "truth": {},
+      "prediction": {}
+    },
+    "characterization_methods": {
+      "truth": {
+        "characterization_methods.sample_ferritic_mart.technique": "Dynamic elastic modulus measurement (sonic speed at high frequencies)",
+        "characterization_methods.sample_ferritic_mart.purpose": "Determination of elastic modulus at room temperature (20°C)",
+        "characterization_methods.sample_ferritic_mart.key_findings": "Used for all data; values corrected to 20°C by interpolation/extrapolation. Measurement accuracy ±0.3% for elastic modulus; Poisson's ratio determined to ±3%."
+      },
+      "prediction": {
+        "characterization_methods.sample_ferritic_mart.technique": "Dynamic elastic modulus measurement (literature data compilation)",
+        "characterization_methods.sample_ferritic_mart.purpose": "Obtain reproducible elastic modulus and shear modulus values for regression analysis; exclude textured samples using Poisson's ratio criterion.",
+        "characterization_methods.sample_ferritic_mart.key_findings": "Data restricted to dynamic measurements from sonic speed at high frequencies; values corrected to 20°C by interpolation or extrapolation; Poisson's ratio of untextured pure iron is 0.291 and values between 0.26 and 0.33 considered untextured.",
+        "characterization_methods.sample_ferritic.technique": "Thermo-Calc thermodynamic equilibrium calculation",
+        "characterization_methods.sample_ferritic.purpose": "Calculate phase constitution and elemental concentrations in ferrite and cementite for input to regression model.",
+        "characterization_methods.sample_ferritic.key_findings": "Cementite content ranged from 0.78 to 7.90 mass%; ferrite iron content ranged from 90.1 to 97.84 mass%.",
+        "characterization_methods.sample_austenitic.technique": "Thermo-Calc thermodynamic equilibrium calculation",
+        "characterization_methods.sample_austenitic.purpose": "Calculate austenite composition and carbide phase contents (NbC, TiC, Cr23C6) for regression analysis.",
+        "characterization_methods.sample_austenitic.key_findings": "Steels forming phases other than austenite, NbC, TiC, and Cr23C6 were excluded; carbide fractions treated as components in linear regression."
+      }
+    },
+    "computational_details": {
+      "truth": {
+        "computational_details.sample_ferritic_mart.analytical_model[0].model_name": "Linear regression of elastic modulus on mass composition (Study I)",
+        "computational_details.sample_ferritic_mart.analytical_model[0].equation_role": "E_steel = sum(r_i * C_i), C_i mass% of element i, r_i regression coefficient (GPa/mass%). Phase composition neglected.",
+        "computational_details.sample_ferritic_mart.analytical_model[0].parameters": "r_Fe=2.114, r_C=-0.050, r_Cr=2.737, r_Cu=2.354, r_Mn=1.691, r_Mo=2.604, r_Ni=-0.233, r_Si=4.625; see Table 1.",
+        "computational_details.sample_ferritic_mart.analytical_model[0].model_note": "Standard error of model 1.2 GPa, R²=0.96. Concentration ranges in Table 1. Cu and Mn coefficients insignificant.",
+        "computational_details.sample_ferritic.software_used": "Thermo-Calc for phase composition calculation",
+        "computational_details.sample_ferritic.analytical_model[0].model_name": "Linear regression of elastic modulus on phase composition (Study II)",
+        "computational_details.sample_ferritic.analytical_model[0].equation_role": "E_steel = sum(r_i * C_i), C_i mass% of element in ferrite or mass% of cementite. Phase composition from Thermo-Calc.",
+        "computational_details.sample_ferritic.analytical_model[0].parameters": "r_Fe=2.092, r_Cr=2.233, r_Cu=2.704, r_Mn=5.386, r_Mo=3.943, r_Si=5.539, r_cementite=2.122; see Table 2.",
+        "computational_details.sample_ferritic.analytical_model[0].model_note": "Standard error 1.1 GPa, R²=0.85. Cementite regression coefficient nearly same as Fe, indicating no effect on modulus. Cu insignificant due to large standard error.",
+        "computational_details.sample_austenitic.software_used": "Thermo-Calc for phase composition calculation",
+        "computational_details.sample_austenitic.analytical_model[0].model_name": "Linear regression of elastic modulus on austenite and carbide composition (Study III)",
+        "computational_details.sample_austenitic.analytical_model[0].equation_role": "E_steel = sum(r_i * C_i), C_i mass% of element in austenite or mass% of carbide phases.",
+        "computational_details.sample_austenitic.analytical_model[0].parameters": "r_Fe=1.952, r_Cr=2.476, r_Mo=0.522, r_Ni=1.887, r_N=15.101, r_TiC=7.309, r_NbC=6.490, r_M23C6=1.933; see Table 3.",
+        "computational_details.sample_austenitic.analytical_model[0].model_note": "Standard error 2.9 GPa, R²=0.83. N effect large but low significance owing to limited data. M23C6 coefficient similar to Fe, thus no effect. Ni and Mo lower than Fe, consistent with modulus reduction."
+      },
+      "prediction": {
+        "computational_details.sample_ferritic_mart.simulation_method": "Linear regression analysis",
+        "computational_details.sample_ferritic_mart.validation_against_experiment": "Compared with literature data on multicrystalline binary alloys at room temperature; deviations noted for single-crystal estimates.",
+        "computational_details.sample_ferritic_mart.analytical_model[0].model_name": "Composition-only linear regression of elastic modulus",
+        "computational_details.sample_ferritic_mart.analytical_model[0].equation_role": "E_Steel = Σ r_i C_i, where C_i is mass content in % and r_i is regression coefficient in GPa per mass%",
+        "computational_details.sample_ferritic_mart.analytical_model[0].parameters[0]": "Fe: 2.114 GPa per mass%",
+        "computational_details.sample_ferritic_mart.analytical_model[0].parameters[1]": "Cr: 2.737 GPa per mass%",
+        "computational_details.sample_ferritic_mart.analytical_model[0].parameters[2]": "Mo: 2.604 GPa per mass%",
+        "computational_details.sample_ferritic_mart.analytical_model[0].parameters[3]": "Si: 4.625 GPa per mass%",
+        "computational_details.sample_ferritic_mart.analytical_model[0].parameters[4]": "C: 0.050 GPa per mass%",
+        "computational_details.sample_ferritic_mart.analytical_model[0].parameters[5]": "Ni: 0.233 GPa per mass%",
+        "computational_details.sample_ferritic_mart.analytical_model[0].parameters[6]": "Mn: 1.691 GPa per mass% (insignificant)",
+        "computational_details.sample_ferritic_mart.analytical_model[0].parameters[7]": "Cu: 2.354 GPa per mass% (insignificant)",
+        "computational_details.sample_ferritic_mart.analytical_model[0].model_note": "53 batches; phase composition and microstructure neglected; R² = 0.96; standard error = 1.2 GPa; maximum deviation = 3.6 GPa; average deviation = 0.8 GPa.",
+        "computational_details.sample_ferritic.simulation_method": "Thermodynamic equilibrium calculation combined with linear regression",
+        "computational_details.sample_ferritic.software_used": "Thermo-Calc",
+        "computational_details.sample_ferritic.validation_against_experiment": "Compared with literature data on binary alloys; cementite modulus values from literature (138-227 GPa depending on orientation) consistent with finding of no effective contribution.",
+        "computational_details.sample_ferritic.analytical_model[0].model_name": "Phase-aware linear regression for ferritic steels",
+        "computational_details.sample_ferritic.analytical_model[0].equation_role": "E_Steel = Σ r_i C_i using ferrite composition and total cementite content from Thermo-Calc",
+        "computational_details.sample_ferritic.analytical_model[0].parameters[0]": "Fe in ferrite: 2.092 GPa per mass%",
+        "computational_details.sample_ferritic.analytical_model[0].parameters[1]": "Cr in ferrite: 2.233 GPa per mass%",
+        "computational_details.sample_ferritic.analytical_model[0].parameters[2]": "Mn in ferrite: 5.386 GPa per mass%",
+        "computational_details.sample_ferritic.analytical_model[0].parameters[3]": "Mo in ferrite: 3.943 GPa per mass%",
+        "computational_details.sample_ferritic.analytical_model[0].parameters[4]": "Si in ferrite: 5.539 GPa per mass%",
+        "computational_details.sample_ferritic.analytical_model[0].parameters[5]": "Cu in ferrite: 2.704 GPa per mass% (insignificant)",
+        "computational_details.sample_ferritic.analytical_model[0].parameters[6]": "cementite: 2.122 GPa per mass%",
+        "computational_details.sample_ferritic.analytical_model[0].model_note": "35 batches; R² = 0.85; standard error = 1.1 GPa; maximum deviation = 1.5 GPa; average deviation = 0.5 GPa; cementite has highest statistical significance (r_i/σ_i = 26) but virtually no effect on elastic modulus.",
+        "computational_details.sample_austenitic.simulation_method": "Thermodynamic equilibrium calculation combined with linear regression",
+        "computational_details.sample_austenitic.software_used": "Thermo-Calc",
+        "computational_details.sample_austenitic.validation_against_experiment": "Compared with literature data on nitrogen-containing austenitic steels; literature reports coefficient of 34 GPa per mass% N in austenite at RT.",
+        "computational_details.sample_austenitic.analytical_model[0].model_name": "Phase-aware linear regression for austenitic steels",
+        "computational_details.sample_austenitic.analytical_model[0].equation_role": "E_Steel = Σ r_i C_i using austenite composition and carbide phase contents (NbC, TiC, Cr23C6) from Thermo-Calc",
+        "computational_details.sample_austenitic.analytical_model[0].parameters[0]": "Fe in austenite: 1.952 GPa per mass%",
+        "computational_details.sample_austenitic.analytical_model[0].parameters[1]": "Cr in austenite: 2.476 GPa per mass%",
+        "computational_details.sample_austenitic.analytical_model[0].parameters[2]": "Ni in austenite: 1.887 GPa per mass%",
+        "computational_details.sample_austenitic.analytical_model[0].parameters[3]": "Mo in austenite: 0.522 GPa per mass%",
+        "computational_details.sample_austenitic.analytical_model[0].parameters[4]": "N in austenite: 15.101 GPa per mass% (low significance)",
+        "computational_details.sample_austenitic.analytical_model[0].parameters[5]": "NbC: 6.490 GPa per mass%",
+        "computational_details.sample_austenitic.analytical_model[0].parameters[6]": "TiC: 7.309 GPa per mass%",
+        "computational_details.sample_austenitic.analytical_model[0].parameters[7]": "Cr23C6: 1.933 GPa per mass% (statistically significant but no effect)",
+        "computational_details.sample_austenitic.analytical_model[0].model_note": "24 batches; R² = 0.83; standard error = 2.9 GPa; maximum deviation = 3.1 GPa; average deviation = 1.1 GPa; pure γ-iron modulus at RT is 195 GPa."
+      }
+    },
+    "unmapped_findings": {
+      "truth": {
+        "unmapped_findings.idx_0.value": "For ferritic steels, cementite shows no effect on elastic modulus; Cr, Mo, Si, Mn increase modulus; C and Ni decrease modulus when phase composition neglected.",
+        "unmapped_findings.idx_1.value": "For austenitic steels, N, Cr, NbC, TiC increase modulus; Ni and Mo reduce modulus; M23C6 has no effect.",
+        "unmapped_findings.idx_2.value": "Regression coefficients can predict elastic modulus for known composition when combined with Thermo-Calc phase calculation for ferritic (study II) and austenitic (study III) cases.",
+        "unmapped_findings.idx_3.value": "Elastic modulus of pure γ-iron at RT found to be 195 GPa, lower than that of pure α-iron.",
+        "unmapped_findings.idx_4.value": "Data dynamically measured with sonic speed, corrected to 20°C; accuracy ±0.3% (~±0.6 GPa); Poisson's ratio determined to ±3%.",
+        "unmapped_findings.idx_5.value": "Texture influence acknowledged but controlled using Poisson's ratio criterion (untextured range 0.26–0.33)."
+      },
+      "prediction": {
+        "unmapped_findings.idx_0.value": "For martensitic and ferritic steels (Study I, 53 batches), Cr, Mo, and Si increase the elastic modulus, whereas C and Ni decrease it; Mn and Cu are found to be insignificant in the amounts present; R² = 0.96, standard error 1.2 GPa, maximum deviation 3.6 GPa, average deviation 0.8 GPa.",
+        "unmapped_findings.idx_1.value": "For ferritic steels (Study II, 35 batches), Si, Mo, and Mn show a strong increasing effect and Cr a weak increasing effect on the elastic modulus; cementite has the highest statistical significance in the regression analysis but shows virtually no effect on the elastic modulus; the weak increasing effect of Cu is considered insignificant due to the large standard error; R² = 0.85, standard error 1.1 GPa, maximum deviation 1.5 GPa, average deviation 0.5 GPa.",
+        "unmapped_findings.idx_2.value": "For austenitic steels (24 batches), Ni and Mo decrease the elastic modulus, while N, NbC, TiC, and Cr increase it; Cr23C6 is statistically significant but shows no effect on the elastic modulus; R² = 0.83, standard error 2.9 GPa, maximum deviation 3.1 GPa, average deviation 1.1 GPa.",
+        "unmapped_findings.idx_3.value": "Pure γ-iron elastic modulus at room temperature is 195 GPa, which is lower than that of pure α-iron (~211 GPa inferred from the iron regression coefficient).",
+        "unmapped_findings.idx_4.value": "Poisson's ratio of untextured pure iron is 0.291; deviations from this value indicate texture; in engineering work Poisson's ratio is often taken as 0.3, but this is not necessarily a good approximation; data with Poisson's ratio between 0.26 and 0.33 were considered untextured and used in the analysis.",
+        "unmapped_findings.idx_5.value": "Dynamic measurement of elastic modulus produces the most reproducible results and was the only method used in the collected literature data; the values slightly differ from static measurements.",
+        "unmapped_findings.idx_6.value": "The temperature dependence of the elastic modulus was investigated in all literature sources; the present work was related to 20°C; interpolated or extrapolated values were used where necessary by fitting three or four neighbouring points to a line or a second-order polynomial.",
+        "unmapped_findings.idx_7.value": "Nitrogen strongly increases the elastic modulus of austenitic steels; literature reports a coefficient of 34 GPa per mass% N in austenite at room temperature, which is reproduced within the large standard deviation in this regression; the small amount of N-containing steels in the study (4 batches) causes the low significance of the N coefficient (r_i/σ_i = 1.4).",
+        "unmapped_findings.idx_8.value": "The higher regression coefficient for Cr in Study I compared to Study II is an indicator for the role of the martensitic microstructure in some steels of the martensitic-ferritic group.",
+        "unmapped_findings.idx_9.value": "Cementite elastic modulus values reported in literature vary widely depending on orientation and measurement method: 138 GPa transversal to crystal growth direction, 227 GPa in growth direction, and 160-200 GPa for single-phase films; for arbitrary orientation in steel, an effective value lower than the average of 183 GPa applies, supporting the finding that cementite has no net effect on the elastic modulus of ferritic steels in this study."
+      }
+    }
+  }
+}

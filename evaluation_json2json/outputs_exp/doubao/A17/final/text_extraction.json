@@ -1,0 +1,490 @@
+{
+  "papers": [
+    {
+      "paper_id": "A17",
+      "doi": null,
+      "title": "Low-density Fe40Mn19Ni15Al15Si10C1 high entropy steel processed by mechanical alloying and spark plasma sintering: Phase evolution, microstructure and mechanical properties",
+      "authors": [
+        "Harsh Jain",
+        "Yagnesh Shadangi",
+        "Dibyendu Chakravarty",
+        "Kausik Chattopadhyay",
+        "Ashutosh Kumar Dubey",
+        "N.K. Mukhopadhyay"
+      ],
+      "publication_year": null,
+      "journal": null,
+      "keywords": [
+        "High entropy steel",
+        "Mechanical milling and spark plasma sintering",
+        "Phase evolution and microstructure",
+        "Thermal stability",
+        "Mechanical properties",
+        "Strengthening mechanisms"
+      ],
+      "research_type": "mixed",
+      "paper_scope": "研究机械合金化结合放电等离子烧结制备的非等原子比Fe40Mn19Ni15Al15Si10C1低密度高熵钢的相演化、微观结构、热稳定性及力学性能，结合热力学参数、CALPHAD模拟和强化机理解释性能起源，为兼具高强度与高温稳定性的高熵钢设计提供实验依据"
+    }
+  ],
+  "alloys": [
+    {
+      "alloy_id": "alloy_fe40mn19ni15al15si10c1",
+      "paper_id": "A17",
+      "alloy_name": "Fe40Mn19Ni15Al15Si10C1 high entropy steel",
+      "aliases": [
+        "low-density high entropy steel",
+        "non-equiatomic HES"
+      ],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Ni",
+        "Al",
+        "Si",
+        "C"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Fe",
+          "weight_percent": "46.00",
+          "atomic_percent": "40"
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "21.50",
+          "atomic_percent": "19"
+        },
+        {
+          "element": "Ni",
+          "weight_percent": "18.13",
+          "atomic_percent": "15"
+        },
+        {
+          "element": "Al",
+          "weight_percent": "8.34",
+          "atomic_percent": "15"
+        },
+        {
+          "element": "Si",
+          "weight_percent": "5.78",
+          "atomic_percent": "10"
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.25",
+          "atomic_percent": "1"
+        }
+      ],
+      "alloys_notes": "热力学参数满足固溶体形成判据，价电子浓度VEC=6.9，处于BCC与BCC+FCC区间，实验以BCC相为主"
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_fehes_01",
+      "paper_id": "A17",
+      "alloy_id": "alloy_fe40mn19ni15al15si10c1",
+      "description": "机械合金化制备粉末：行星球磨 elemental powder 35h，球料比10:1，转速200rpm，甲苯为过程控制剂防止氧化，每研磨1h暂停20min避免过热",
+      "processes_notes": "采用WC磨球与磨罐，每间隔5h取样检测相演化，35h后获得均质纳米晶复合粉末"
+    },
+    {
+      "process_id": "proc_fehes_02",
+      "paper_id": "A17",
+      "alloy_id": "alloy_fe40mn19ni15al15si10c1",
+      "description": "放电等离子烧结制备块体：35h球磨粉末在900°C、50MPa压力下烧结，升温速率100°C/min，保温15min",
+      "processes_notes": "烧结后样品相对密度约99%，直径约30mm，厚度约9mm，抛光去除表面石墨层后切割为测试样"
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_fehes_01",
+      "paper_id": "A17",
+      "alloy_id": "alloy_fe40mn19ni15al15si10c1",
+      "process_id": "proc_fehes_01"
+    },
+    {
+      "sample_id": "sample_fehes_02",
+      "paper_id": "A17",
+      "alloy_id": "alloy_fe40mn19ni15al15si10c1",
+      "process_id": "proc_fehes_02"
+    }
+  ],
+  "processing_steps": [
+    {
+      "sample_id": "sample_fehes_01",
+      "paper_id": "A17",
+      "sequence": "1",
+      "type": "mechanical_alloying",
+      "method": "planetary ball milling",
+      "temperature": null,
+      "unit": null,
+      "duration": "35 h",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "球料比10:1，转速200rpm，甲苯作过程控制剂，每1h暂停20min冷却，未检测到WC contamination"
+    },
+    {
+      "sample_id": "sample_fehes_02",
+      "paper_id": "A17",
+      "sequence": "1",
+      "type": "mechanical_alloying",
+      "method": "planetary ball milling",
+      "temperature": null,
+      "unit": null,
+      "duration": "35 h",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "同sample_fehes_01球磨工艺"
+    },
+    {
+      "sample_id": "sample_fehes_02",
+      "paper_id": "A17",
+      "sequence": "2",
+      "type": "spark_plasma_sintering",
+      "method": "SPS consolidation",
+      "temperature": "900",
+      "unit": "°C",
+      "duration": "15 min",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "压力50MPa，升温速率100°C/min，相对密度约99%"
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_01",
+      "sample_id": "sample_fehes_01",
+      "overall_structure": "纳米晶多相结构，BCC为主要相",
+      "number_of_phases": "4",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_001",
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "BCC",
+              "crystal_structure": "cI2",
+              "volume_fraction": "64%",
+              "morphology": "Fe-rich matrix phase",
+              "grain_size": "13 nm",
+              "texture": null
+            },
+            {
+              "phase_name": "γ-brass type",
+              "crystal_structure": "cI52",
+              "volume_fraction": "27%",
+              "morphology": "Mn-rich secondary phase",
+              "grain_size": "10 nm",
+              "texture": null
+            },
+            {
+              "phase_name": "B2-type",
+              "crystal_structure": "cP2",
+              "volume_fraction": "6%",
+              "morphology": "ordered intermetallic",
+              "grain_size": "13 nm",
+              "texture": null
+            },
+            {
+              "phase_name": "Si",
+              "crystal_structure": "cF8",
+              "volume_fraction": "3%",
+              "morphology": "undissolved elemental particle",
+              "grain_size": "14 nm",
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocations, lattice strain",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "3.97×10^18 m^-2",
+              "lattice_distortion": "17.013×10^-4 (microstrain for BCC phase)"
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "13",
+              "unit": "nm"
+            },
+            "grain_size_distribution": "BCC:13-17 nm, γ-brass:10-13 nm, Si:14-20 nm",
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_02",
+      "sample_id": "sample_fehes_02",
+      "overall_structure": "多相结构，BCC为主要相，含B2、微量γ-brass和Fe5Si3型硅化物析出相",
+      "number_of_phases": "4",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_002",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "BCC",
+              "crystal_structure": "cI2",
+              "volume_fraction": "56%",
+              "morphology": "Fe-Mn-Ni rich matrix",
+              "grain_size": "29 nm",
+              "texture": null
+            },
+            {
+              "phase_name": "B2-type",
+              "crystal_structure": "cP2",
+              "volume_fraction": "34%",
+              "morphology": "Al-Ni rich ordered intermetallic",
+              "grain_size": "27 nm",
+              "texture": null
+            },
+            {
+              "phase_name": "γ-brass type",
+              "crystal_structure": "cI52",
+              "volume_fraction": "1.6%",
+              "morphology": null,
+              "grain_size": "21 nm",
+              "texture": null
+            },
+            {
+              "phase_name": "Fe5Si3 type",
+              "crystal_structure": "hP16",
+              "volume_fraction": "8.4%",
+              "morphology": "nano-sized silicide precipitate",
+              "grain_size": "23 nm",
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocations",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "4.46×10^15 m^-2 (BCC phase), 3.36×10^15 m^-2 (B2 phase)",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "29",
+              "unit": "nm"
+            },
+            "grain_size_distribution": "BCC:29 nm, B2:27 nm, γ-brass:21 nm, Fe5Si3:23 nm",
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "prec_01",
+              "type": "Fe5Si3-type silicide",
+              "size": {
+                "value": "102",
+                "unit": "nm"
+              },
+              "distribution": "uniformly dispersed",
+              "coherency": null
+            },
+            {
+              "precipitate_id": "prec_02",
+              "type": "B2-type intermetallic",
+              "size": {
+                "value": "220",
+                "unit": "nm"
+              },
+              "distribution": "uniformly distributed",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "prop_01",
+      "sample_id": "sample_fehes_01",
+      "mechanical": null,
+      "physical": {
+        "density": null,
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": null,
+      "radiation_properties": null
+    },
+    {
+      "property_set_id": "prop_02",
+      "sample_id": "sample_fehes_02",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "compressive",
+              "value": "2046",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "160"
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "compressive",
+              "value": "2046",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "160"
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "compressive",
+              "value": "19",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": "184 ± 5 GPa",
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": "bulk",
+            "value": "7.8",
+            "scale": "Vickers",
+            "unit": "GPa",
+            "others": {
+              "uncertainty": "0.3"
+            }
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "6.49",
+          "unit": "g/cm^3",
+          "others": {
+            "uncertainty": "0.3"
+          }
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": null,
+      "radiation_properties": null
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_01",
+      "sample_id": "sample_fehes_02",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": "500",
+          "unit": "°C"
+        },
+        "stress_state": "compressive",
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy": "reported HEAs, conventional stainless steel, dual-phase steel, low-density steel",
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "improvement_percentage": "Microhardness (7.8 GPa) is 225%-290% higher than ferritic dual-phase steel (2.0-2.4 GPa), compressive strength is higher than most reported low-density HEAs"
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_01",
+      "sample_id": "sample_fehes_01",
+      "microstructure_uuid": "uuid_001",
+      "technique": "XRD, Rietveld refinement, SEM, EDS, TEM, DSC, DTA",
+      "purpose": "Characterize phase evolution, microstructure, element distribution, thermal stability of milled powders",
+      "key_findings": "35h milled powder consists of BCC, γ-brass, B2 phases and trace undissolved Si, with nanocrystalline structure, thermally stable up to 500°C"
+    },
+    {
+      "characterization_id": "char_02",
+      "sample_id": "sample_fehes_02",
+      "microstructure_uuid": "uuid_002",
+      "technique": "XRD, Rietveld refinement, SEM, EDS, EPMA, microhardness test, uniaxial compression test",
+      "purpose": "Characterize phase composition, microstructure, mechanical properties of SPSed bulk samples",
+      "key_findings": "SPSed sample retains BCC, B2, γ-brass phases, forms Fe5Si3 precipitates, with high hardness and good compressive ductility"
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_01",
+      "sample_id": null,
+      "simulation_method": "CALPHAD thermodynamic equilibrium calculation",
+      "software_used": "Thermo-Calc, TCFE8 database",
+      "potential_model": null,
+      "validation_against_experiment": "Predicted phase composition shows slight deviation from experimental results, attributed to limitation of conventional steel database for HEA application",
+      "analytical_model": [
+        {
+          "model_name": "Equilibrium phase diagram calculation",
+          "equation_role": "Predict phase evolution at 25°C-1200°C",
+          "parameters": "Alloy composition Fe40Mn19Ni15Al15Si10C1 at.%, pressure 1 atm",
+          "model_note": "Predicts liquid phase above 1200°C, BCC+B2 phases formed at 1100°C, silicide phase formed below 500°C"
+        }
+      ]
+    },
+    {
+      "computation_id": "comp_02",
+      "sample_id": "sample_fehes_02",
+      "simulation_method": "Quantitative strengthening mechanism calculation",
+      "software_used": null,
+      "potential_model": null,
+      "validation_against_experiment": "Calculated theoretical strength (2164 MPa) matches well with experimental compressive strength (2046 MPa)",
+      "analytical_model": [
+        {
+          "model_name": "Hall-Petch, Orowan, Bailey-Hirsch, Fleischer models",
+          "equation_role": "Calculate contribution of each strengthening mechanism to yield strength",
+          "parameters": "Grain boundary strengthening: 52.55%, dislocation strengthening: 30.00%, precipitation strengthening: 5.70%, solid solution strengthening: 6.14%",
+          "model_note": "Grain boundary and dislocation strengthening are dominant strengthening mechanisms"
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "35h milled powder shows exothermic events at 420°C (γ-brass phase ordering/texturing) and 520°C (Fe5Si3 phase formation)",
+    "Al has the highest alloying rate during milling, dissolved completely after 15h; Si remains undissolved after 35h due to lowest self-diffusion coefficient",
+    "No crack formation observed on SPSed sample even under 5000 mN indentation load during microhardness test",
+    "Calculated melting point of the alloy is 1638 K via machine learning approach, 1620 K via rule of mixture",
+    "B2 phase stability at high temperature is attributed to strong bonding between Fe-Al and Ni-Al atomic pairs and sluggish diffusion effect of high entropy alloys"
+  ]
+}

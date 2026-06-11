@@ -1,0 +1,476 @@
+{
+  "paper_id": "A42",
+  "truth_path": "/Users/mac/Desktop/LLM_project/SteelDig_multimodal/evaluation_json2json/outputs_exp/deepseek/A42/final/text_extraction.json",
+  "prediction_path": "/Users/mac/Desktop/LLM_project/SteelDig_multimodal/evaluation_json2json/outputs_exp/kimi/A42/final/text_extraction.json",
+  "prediction_empty": false,
+  "section_diagnostics": {
+    "papers": {
+      "structure_metrics": {
+        "truth_count": 1,
+        "prediction_count": 1,
+        "matched_count": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_anchors": [
+          "papers.A42"
+        ],
+        "unmatched_truth_anchors": [],
+        "unmatched_prediction_anchors": []
+      },
+      "error_summary": {
+        "missing_fact": 14,
+        "extra_fact": 0
+      },
+      "missing_truth_fact_examples": [
+        "papers.A42.authors[0]",
+        "papers.A42.authors[1]",
+        "papers.A42.authors[2]",
+        "papers.A42.authors[3]",
+        "papers.A42.keywords[0]",
+        "papers.A42.keywords[1]",
+        "papers.A42.keywords[2]",
+        "papers.A42.keywords[3]",
+        "papers.A42.keywords[4]",
+        "papers.A42.keywords[5]",
+        "papers.A42.keywords[6]",
+        "papers.A42.paper_scope",
+        "papers.A42.research_type",
+        "papers.A42.title"
+      ],
+      "extra_prediction_fact_examples": [],
+      "mismatched_fact_examples": [],
+      "llm_judge_candidate_count": 0,
+      "llm_judge_candidates": [],
+      "match_method_summary": {}
+    },
+    "alloys": {
+      "structure_metrics": {
+        "truth_count": 1,
+        "prediction_count": 0,
+        "matched_count": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "error_summary": {
+        "missing_fact": 12,
+        "extra_fact": 0
+      },
+      "missing_truth_fact_examples": [
+        "alloys.alloy_30mn9al08c.alloy_name",
+        "alloys.alloy_30mn9al08c.alloying_elements[0]",
+        "alloys.alloy_30mn9al08c.alloying_elements[1]",
+        "alloys.alloy_30mn9al08c.alloying_elements[2]",
+        "alloys.alloy_30mn9al08c.alloys_notes",
+        "alloys.alloy_30mn9al08c.base_element",
+        "alloys.alloy_30mn9al08c.nominal_composition[al].element",
+        "alloys.alloy_30mn9al08c.nominal_composition[al].weight_percent",
+        "alloys.alloy_30mn9al08c.nominal_composition[c].element",
+        "alloys.alloy_30mn9al08c.nominal_composition[c].weight_percent",
+        "alloys.alloy_30mn9al08c.nominal_composition[mn].element",
+        "alloys.alloy_30mn9al08c.nominal_composition[mn].weight_percent"
+      ],
+      "extra_prediction_fact_examples": [],
+      "mismatched_fact_examples": [],
+      "llm_judge_candidate_count": 0,
+      "llm_judge_candidates": [],
+      "match_method_summary": {}
+    },
+    "processes": {
+      "structure_metrics": {
+        "truth_count": 1,
+        "prediction_count": 0,
+        "matched_count": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "error_summary": {
+        "missing_fact": 2,
+        "extra_fact": 0
+      },
+      "missing_truth_fact_examples": [
+        "processes.proc_maf.description",
+        "processes.proc_maf.processes_notes"
+      ],
+      "extra_prediction_fact_examples": [],
+      "mismatched_fact_examples": [],
+      "llm_judge_candidate_count": 0,
+      "llm_judge_candidates": [],
+      "match_method_summary": {}
+    },
+    "samples": {
+      "structure_metrics": {
+        "truth_count": 4,
+        "prediction_count": 0,
+        "matched_count": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "error_summary": {
+        "missing_fact": 0,
+        "extra_fact": 0
+      },
+      "missing_truth_fact_examples": [],
+      "extra_prediction_fact_examples": [],
+      "mismatched_fact_examples": [],
+      "llm_judge_candidate_count": 0,
+      "llm_judge_candidates": [],
+      "match_method_summary": {}
+    },
+    "processing_steps": {
+      "structure_metrics": {
+        "truth_count": 13,
+        "prediction_count": 0,
+        "matched_count": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matched_anchors": [],
+        "unmatched_truth_anchors": [
+          "processing_steps.sample_maf0.1.heat_treatment.homogenization_hot_forging_solutionizing_quenching.1200_c_homogenization_1050_c_solutionizing",
+          "processing_steps.sample_maf1.1.heat_treatment.homogenization_hot_forging_solutionizing_quenching.1200_c_homogenization_1050_c_solutionizing",
+          "processing_steps.sample_maf1.2.thermomechanical_processing.multiaxial_forging_maf_pass_1.250",
+          "processing_steps.sample_maf3.1.heat_treatment.homogenization_hot_forging_solutionizing_quenching.1200_c_homogenization_1050_c_solutionizing",
+          "processing_steps.sample_maf3.2.thermomechanical_processing.multiaxial_forging_maf_pass_1.250",
+          "processing_steps.sample_maf3.3.thermomechanical_processing.multiaxial_forging_maf_pass_2.250",
+          "processing_steps.sample_maf3.4.thermomechanical_processing.multiaxial_forging_maf_pass_3.250",
+          "processing_steps.sample_maf5.1.heat_treatment.homogenization_hot_forging_solutionizing_quenching.1200_c_homogenization_1050_c_solutionizing",
+          "processing_steps.sample_maf5.2.thermomechanical_processing.multiaxial_forging_maf_pass_1.250",
+          "processing_steps.sample_maf5.3.thermomechanical_processing.multiaxial_forging_maf_pass_2.250",
+          "processing_steps.sample_maf5.4.thermomechanical_processing.multiaxial_forging_maf_pass_3.250",
+          "processing_steps.sample_maf5.5.thermomechanical_processing.multiaxial_forging_maf_pass_4.250",
+          "processing_steps.sample_maf5.6.thermomechanical_processing.multiaxial_forging_maf_pass_5.250"
+        ],
+        "unmatched_prediction_anchors": []
+      },
+      "error_summary": {
+        "missing_fact": 31,
+        "extra_fact": 0
+      },
+      "missing_truth_fact_examples": [
+        "processing_steps.sample_maf0.cooling_medium",
+        "processing_steps.sample_maf0.duration",
+        "processing_steps.sample_maf0.method",
+        "processing_steps.sample_maf0.processing_steps_notes",
+        "processing_steps.sample_maf0.sequence",
+        "processing_steps.sample_maf0.temperature_with_unit",
+        "processing_steps.sample_maf0.type",
+        "processing_steps.sample_maf1.cooling_medium",
+        "processing_steps.sample_maf1.duration",
+        "processing_steps.sample_maf1.method",
+        "processing_steps.sample_maf1.processing_steps_notes",
+        "processing_steps.sample_maf1.reduction_ratio",
+        "processing_steps.sample_maf1.sequence",
+        "processing_steps.sample_maf1.temperature_with_unit",
+        "processing_steps.sample_maf1.type",
+        "processing_steps.sample_maf3.cooling_medium",
+        "processing_steps.sample_maf3.duration",
+        "processing_steps.sample_maf3.method",
+        "processing_steps.sample_maf3.processing_steps_notes",
+        "processing_steps.sample_maf3.reduction_ratio"
+      ],
+      "extra_prediction_fact_examples": [],
+      "mismatched_fact_examples": [],
+      "llm_judge_candidate_count": 0,
+      "llm_judge_candidates": [],
+      "match_method_summary": {}
+    },
+    "structures": {
+      "structure_metrics": {
+        "truth_count": 4,
+        "prediction_count": 0,
+        "matched_count": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matched_anchors": [],
+        "unmatched_truth_anchors": [
+          "structures.sample_maf0",
+          "structures.sample_maf1",
+          "structures.sample_maf3",
+          "structures.sample_maf5"
+        ],
+        "unmatched_prediction_anchors": []
+      },
+      "error_summary": {
+        "missing_fact": 60,
+        "extra_fact": 0
+      },
+      "missing_truth_fact_examples": [
+        "structures.sample_maf0.microstructure_list[1].defects[dislocation].dislocation_density",
+        "structures.sample_maf0.microstructure_list[1].defects[dislocation].lattice_distortion",
+        "structures.sample_maf0.microstructure_list[1].defects[dislocation].type",
+        "structures.sample_maf0.microstructure_list[1].grain_structure.average_grain_size.value_with_unit",
+        "structures.sample_maf0.microstructure_list[1].grain_structure.grain_size_distribution",
+        "structures.sample_maf0.microstructure_list[1].grain_structure.texture",
+        "structures.sample_maf0.microstructure_list[1].phases_present[austenite_fe].crystal_structure",
+        "structures.sample_maf0.microstructure_list[1].phases_present[austenite_fe].grain_size",
+        "structures.sample_maf0.microstructure_list[1].phases_present[austenite_fe].morphology",
+        "structures.sample_maf0.microstructure_list[1].phases_present[austenite_fe].phase_name",
+        "structures.sample_maf0.microstructure_list[1].phases_present[austenite_fe].texture",
+        "structures.sample_maf0.microstructure_list[1].phases_present[austenite_fe].volume_fraction",
+        "structures.sample_maf0.microstructure_list[1].related_sequence",
+        "structures.sample_maf0.number_of_phases",
+        "structures.sample_maf0.overall_structure",
+        "structures.sample_maf1.microstructure_list[2].defects[dislocation].dislocation_density",
+        "structures.sample_maf1.microstructure_list[2].defects[dislocation].lattice_distortion",
+        "structures.sample_maf1.microstructure_list[2].defects[dislocation].type",
+        "structures.sample_maf1.microstructure_list[2].grain_structure.average_grain_size.value_with_unit",
+        "structures.sample_maf1.microstructure_list[2].grain_structure.grain_size_distribution"
+      ],
+      "extra_prediction_fact_examples": [],
+      "mismatched_fact_examples": [],
+      "llm_judge_candidate_count": 0,
+      "llm_judge_candidates": [],
+      "match_method_summary": {}
+    },
+    "interfaces": {
+      "structure_metrics": {
+        "truth_count": 0,
+        "prediction_count": 0,
+        "matched_count": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matched_anchors": [],
+        "unmatched_truth_anchors": [],
+        "unmatched_prediction_anchors": []
+      },
+      "error_summary": {
+        "missing_fact": 0,
+        "extra_fact": 0
+      },
+      "missing_truth_fact_examples": [],
+      "extra_prediction_fact_examples": [],
+      "mismatched_fact_examples": [],
+      "llm_judge_candidate_count": 0,
+      "llm_judge_candidates": [],
+      "match_method_summary": {}
+    },
+    "properties": {
+      "structure_metrics": {
+        "truth_count": 4,
+        "prediction_count": 0,
+        "matched_count": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matched_anchors": [],
+        "unmatched_truth_anchors": [
+          "properties.sample_maf0",
+          "properties.sample_maf1",
+          "properties.sample_maf3",
+          "properties.sample_maf5"
+        ],
+        "unmatched_prediction_anchors": []
+      },
+      "error_summary": {
+        "missing_fact": 44,
+        "extra_fact": 0
+      },
+      "missing_truth_fact_examples": [
+        "properties.sample_maf0.mechanical.tensile_properties.elongation[total].direction",
+        "properties.sample_maf0.mechanical.tensile_properties.elongation[total].value_with_unit",
+        "properties.sample_maf0.mechanical.tensile_properties.elongation[uniform].direction",
+        "properties.sample_maf0.mechanical.tensile_properties.elongation[uniform].value_with_unit",
+        "properties.sample_maf0.mechanical.tensile_properties.stress_strain_curves",
+        "properties.sample_maf0.mechanical.tensile_properties.ultimate_tensile_strength[axial].direction",
+        "properties.sample_maf0.mechanical.tensile_properties.ultimate_tensile_strength[axial].value_with_unit",
+        "properties.sample_maf0.mechanical.tensile_properties.yield_strength[axial].direction",
+        "properties.sample_maf0.mechanical.tensile_properties.yield_strength[axial].value_with_unit",
+        "properties.sample_maf0.mechanical.tensile_properties.youngs_modulus",
+        "properties.sample_maf0.physical.density.value_with_unit",
+        "properties.sample_maf1.mechanical.tensile_properties.elongation[total].direction",
+        "properties.sample_maf1.mechanical.tensile_properties.elongation[total].value_with_unit",
+        "properties.sample_maf1.mechanical.tensile_properties.elongation[uniform].direction",
+        "properties.sample_maf1.mechanical.tensile_properties.elongation[uniform].value_with_unit",
+        "properties.sample_maf1.mechanical.tensile_properties.stress_strain_curves",
+        "properties.sample_maf1.mechanical.tensile_properties.ultimate_tensile_strength[axial].direction",
+        "properties.sample_maf1.mechanical.tensile_properties.ultimate_tensile_strength[axial].value_with_unit",
+        "properties.sample_maf1.mechanical.tensile_properties.yield_strength[axial].direction",
+        "properties.sample_maf1.mechanical.tensile_properties.yield_strength[axial].value_with_unit"
+      ],
+      "extra_prediction_fact_examples": [],
+      "mismatched_fact_examples": [],
+      "llm_judge_candidate_count": 0,
+      "llm_judge_candidates": [],
+      "match_method_summary": {}
+    },
+    "performance": {
+      "structure_metrics": {
+        "truth_count": 0,
+        "prediction_count": 0,
+        "matched_count": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matched_anchors": [],
+        "unmatched_truth_anchors": [],
+        "unmatched_prediction_anchors": []
+      },
+      "error_summary": {
+        "missing_fact": 0,
+        "extra_fact": 0
+      },
+      "missing_truth_fact_examples": [],
+      "extra_prediction_fact_examples": [],
+      "mismatched_fact_examples": [],
+      "llm_judge_candidate_count": 0,
+      "llm_judge_candidates": [],
+      "match_method_summary": {}
+    },
+    "characterization_methods": {
+      "structure_metrics": {
+        "truth_count": 4,
+        "prediction_count": 0,
+        "matched_count": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matched_anchors": [],
+        "unmatched_truth_anchors": [
+          "characterization_methods.sample_maf0",
+          "characterization_methods.sample_maf1",
+          "characterization_methods.sample_maf3",
+          "characterization_methods.sample_maf5"
+        ],
+        "unmatched_prediction_anchors": []
+      },
+      "error_summary": {
+        "missing_fact": 12,
+        "extra_fact": 0
+      },
+      "missing_truth_fact_examples": [
+        "characterization_methods.sample_maf0.key_findings",
+        "characterization_methods.sample_maf0.purpose",
+        "characterization_methods.sample_maf0.technique",
+        "characterization_methods.sample_maf1.key_findings",
+        "characterization_methods.sample_maf1.purpose",
+        "characterization_methods.sample_maf1.technique",
+        "characterization_methods.sample_maf3.key_findings",
+        "characterization_methods.sample_maf3.purpose",
+        "characterization_methods.sample_maf3.technique",
+        "characterization_methods.sample_maf5.key_findings",
+        "characterization_methods.sample_maf5.purpose",
+        "characterization_methods.sample_maf5.technique"
+      ],
+      "extra_prediction_fact_examples": [],
+      "mismatched_fact_examples": [],
+      "llm_judge_candidate_count": 0,
+      "llm_judge_candidates": [],
+      "match_method_summary": {}
+    },
+    "computational_details": {
+      "structure_metrics": {
+        "truth_count": 1,
+        "prediction_count": 0,
+        "matched_count": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matched_anchors": [],
+        "unmatched_truth_anchors": [
+          "computational_details.idx_0"
+        ],
+        "unmatched_prediction_anchors": []
+      },
+      "error_summary": {
+        "missing_fact": 7,
+        "extra_fact": 0
+      },
+      "missing_truth_fact_examples": [
+        "computational_details.idx_0.analytical_model[0].equation_role",
+        "computational_details.idx_0.analytical_model[0].model_name",
+        "computational_details.idx_0.analytical_model[0].model_note",
+        "computational_details.idx_0.analytical_model[0].parameters",
+        "computational_details.idx_0.simulation_method",
+        "computational_details.idx_0.software_used",
+        "computational_details.idx_0.validation_against_experiment"
+      ],
+      "extra_prediction_fact_examples": [],
+      "mismatched_fact_examples": [],
+      "llm_judge_candidate_count": 0,
+      "llm_judge_candidates": [],
+      "match_method_summary": {}
+    },
+    "unmapped_findings": {
+      "structure_metrics": {
+        "truth_count": 31,
+        "prediction_count": 0,
+        "matched_count": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matched_anchors": [],
+        "unmatched_truth_anchors": [
+          "unmapped_findings.idx_0",
+          "unmapped_findings.idx_1",
+          "unmapped_findings.idx_10",
+          "unmapped_findings.idx_11",
+          "unmapped_findings.idx_12",
+          "unmapped_findings.idx_13",
+          "unmapped_findings.idx_14",
+          "unmapped_findings.idx_15",
+          "unmapped_findings.idx_16",
+          "unmapped_findings.idx_17",
+          "unmapped_findings.idx_18",
+          "unmapped_findings.idx_19",
+          "unmapped_findings.idx_2",
+          "unmapped_findings.idx_20",
+          "unmapped_findings.idx_21",
+          "unmapped_findings.idx_22",
+          "unmapped_findings.idx_23",
+          "unmapped_findings.idx_24",
+          "unmapped_findings.idx_25",
+          "unmapped_findings.idx_26",
+          "unmapped_findings.idx_27",
+          "unmapped_findings.idx_28",
+          "unmapped_findings.idx_29",
+          "unmapped_findings.idx_3",
+          "unmapped_findings.idx_30",
+          "unmapped_findings.idx_4",
+          "unmapped_findings.idx_5",
+          "unmapped_findings.idx_6",
+          "unmapped_findings.idx_7",
+          "unmapped_findings.idx_8",
+          "unmapped_findings.idx_9"
+        ],
+        "unmatched_prediction_anchors": []
+      },
+      "error_summary": {
+        "missing_fact": 31,
+        "extra_fact": 0
+      },
+      "missing_truth_fact_examples": [
+        "unmapped_findings.idx_0.value",
+        "unmapped_findings.idx_1.value",
+        "unmapped_findings.idx_10.value",
+        "unmapped_findings.idx_11.value",
+        "unmapped_findings.idx_12.value",
+        "unmapped_findings.idx_13.value",
+        "unmapped_findings.idx_14.value",
+        "unmapped_findings.idx_15.value",
+        "unmapped_findings.idx_16.value",
+        "unmapped_findings.idx_17.value",
+        "unmapped_findings.idx_18.value",
+        "unmapped_findings.idx_19.value",
+        "unmapped_findings.idx_2.value",
+        "unmapped_findings.idx_20.value",
+        "unmapped_findings.idx_21.value",
+        "unmapped_findings.idx_22.value",
+        "unmapped_findings.idx_23.value",
+        "unmapped_findings.idx_24.value",
+        "unmapped_findings.idx_25.value",
+        "unmapped_findings.idx_26.value"
+      ],
+      "extra_prediction_fact_examples": [],
+      "mismatched_fact_examples": [],
+      "llm_judge_candidate_count": 0,
+      "llm_judge_candidates": [],
+      "match_method_summary": {}
+    }
+  }
+}

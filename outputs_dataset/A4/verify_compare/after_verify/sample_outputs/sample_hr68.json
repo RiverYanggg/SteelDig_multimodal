@@ -1,0 +1,964 @@
+{
+  "sample_id": "sample_hr68",
+  "sample_score": 94.26365795724465,
+  "sample_weight": 84.2,
+  "field_count": 59,
+  "correct_yes_count": 56,
+  "unknown_count": 2,
+  "no_count": 0,
+  "fields": [
+    {
+      "field_id": "F00052",
+      "sample_id": "sample_hr68",
+      "section": "processing_steps",
+      "path": "processing_steps.sample_hr68.cooling_medium",
+      "value": "water",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0024"
+      ],
+      "reason": "证据明确说明热轧后水淬，冷却介质为水。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00053",
+      "sample_id": "sample_hr68",
+      "section": "processing_steps",
+      "path": "processing_steps.sample_hr68.method",
+      "value": "Water quenching",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0024"
+      ],
+      "reason": "证据明确提到水淬。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00054",
+      "sample_id": "sample_hr68",
+      "section": "processing_steps",
+      "path": "processing_steps.sample_hr68.processing_steps_notes",
+      "value": "6 passes; final thickness 35 mm",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0024"
+      ],
+      "reason": "证据说明HR68经6道次轧制，最终厚度35 mm。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00055",
+      "sample_id": "sample_hr68",
+      "section": "processing_steps",
+      "path": "processing_steps.sample_hr68.reduction_ratio",
+      "value": "68%",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0024"
+      ],
+      "reason": "证据明确HR68轧制压缩率为68%。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00056",
+      "sample_id": "sample_hr68",
+      "section": "processing_steps",
+      "path": "processing_steps.sample_hr68.sequence",
+      "value": "3",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "unknown",
+      "evidence_confidence": 0.0,
+      "evidence_refs": [],
+      "reason": "证据未提及步骤序号，3的含义无法确认。",
+      "field_score": 0.0
+    },
+    {
+      "field_id": "F00057",
+      "sample_id": "sample_hr68",
+      "section": "processing_steps",
+      "path": "processing_steps.sample_hr68.temperature_with_unit",
+      "value": "1150 °C",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0024"
+      ],
+      "reason": "证据明确再加热温度为1150°C。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00058",
+      "sample_id": "sample_hr68",
+      "section": "processing_steps",
+      "path": "processing_steps.sample_hr68.type",
+      "value": "cooling",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0024"
+      ],
+      "reason": "水淬属于冷却类型，证据支持。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00086",
+      "sample_id": "sample_hr68",
+      "section": "structures",
+      "path": "structures.sample_hr68.microstructure_counts",
+      "value": "Austenite matrix >96%, κ-carbide ~3.3%, (Nb,Mo,W)C ~0.201% (volume fractions)",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.9,
+      "evidence_refs": [
+        "b0089",
+        "b0068",
+        "b0035"
+      ],
+      "reason": "证据表明HR68奥氏体基体>96%（>96% inferred from volume fractions sum to ~100%），κ-carbide体积分数约3.3%，(Nb,Mo,W)C体积分数约0.201%。",
+      "field_score": 90.0
+    },
+    {
+      "field_id": "F00087",
+      "sample_id": "sample_hr68",
+      "section": "structures",
+      "path": "structures.sample_hr68.microstructure_list[3].defects[dislocation].dislocation_density",
+      "value": "7.49 × 10^13 m^-2",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0066"
+      ],
+      "reason": "证据明确HR68的GND密度为7.49×10^13 m^-2。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00088",
+      "sample_id": "sample_hr68",
+      "section": "structures",
+      "path": "structures.sample_hr68.microstructure_list[3].defects[dislocation].type",
+      "value": "dislocation",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0066"
+      ],
+      "reason": "证据讨论位错密度，类型为位错。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00089",
+      "sample_id": "sample_hr68",
+      "section": "structures",
+      "path": "structures.sample_hr68.microstructure_list[3].grain_structure.average_grain_size.value_with_unit",
+      "value": "11.55 μm",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0035"
+      ],
+      "reason": "证据明确HR68含孪晶界有效晶粒尺寸为11.55 μm。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00090",
+      "sample_id": "sample_hr68",
+      "section": "structures",
+      "path": "structures.sample_hr68.microstructure_list[3].grain_structure.grain_size_distribution",
+      "value": "Mean grain size excluding twins: 27.02 μm; effective grain size including twin boundaries: 11.55 μm; Σ3 twin boundary fraction: 60%",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0035"
+      ],
+      "reason": "证据给出排除孪晶的平均晶粒尺寸27.02 μm，含孪晶有效晶粒尺寸11.55 μm，Σ3孪晶比例60%。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00091",
+      "sample_id": "sample_hr68",
+      "section": "structures",
+      "path": "structures.sample_hr68.microstructure_list[3].phases_present[austenite].crystal_structure",
+      "value": "FCC",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0035"
+      ],
+      "reason": "证据表明奥氏体为FCC结构。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00092",
+      "sample_id": "sample_hr68",
+      "section": "structures",
+      "path": "structures.sample_hr68.microstructure_list[3].phases_present[austenite].morphology",
+      "value": "Equiaxed grains with annealing twins",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0035"
+      ],
+      "reason": "证据描述为等轴晶粒并含有退火孪晶。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00093",
+      "sample_id": "sample_hr68",
+      "section": "structures",
+      "path": "structures.sample_hr68.microstructure_list[3].phases_present[austenite].phase_name",
+      "value": "Austenite (γ)",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0035"
+      ],
+      "reason": "证据明确奥氏体相。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00094",
+      "sample_id": "sample_hr68",
+      "section": "structures",
+      "path": "structures.sample_hr68.microstructure_list[3].phases_present[austenite].volume_fraction",
+      "value": ">96%",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.9,
+      "evidence_refs": [
+        "b0089",
+        "b0068"
+      ],
+      "reason": "κ-carbide体积分数~3.3%，(Nb,Mo,W)C~0.201%，奥氏体体积分数>96%是合理的推断，证据支持。",
+      "field_score": 90.0
+    },
+    {
+      "field_id": "F00095",
+      "sample_id": "sample_hr68",
+      "section": "structures",
+      "path": "structures.sample_hr68.microstructure_list[3].precipitates[carbide_fe_mn_3alc_x_l_12].coherency",
+      "value": "coherent",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.9,
+      "evidence_refs": [
+        "b0192"
+      ],
+      "reason": "证据表明κ-carbide与基体共格，位错可剪切。",
+      "field_score": 90.0
+    },
+    {
+      "field_id": "F00096",
+      "sample_id": "sample_hr68",
+      "section": "structures",
+      "path": "structures.sample_hr68.microstructure_list[3].precipitates[carbide_fe_mn_3alc_x_l_12].distribution",
+      "value": "Homogeneously distributed within austenite matrix",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0089"
+      ],
+      "reason": "证据描述κ-carbide在奥氏体基体中均匀弥散分布。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00097",
+      "sample_id": "sample_hr68",
+      "section": "structures",
+      "path": "structures.sample_hr68.microstructure_list[3].precipitates[carbide_fe_mn_3alc_x_l_12].size.value_with_unit",
+      "value": "0.78 ± 0.17 nm",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0089"
+      ],
+      "reason": "证据明确HR68的κ-carbide平均尺寸为0.78±0.17 nm。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00098",
+      "sample_id": "sample_hr68",
+      "section": "structures",
+      "path": "structures.sample_hr68.microstructure_list[3].precipitates[carbide_fe_mn_3alc_x_l_12].type",
+      "value": "κ-carbide ((Fe,Mn)3AlC_x, L'12)",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0089"
+      ],
+      "reason": "证据鉴定为(Fe,Mn)3AlC_x型κ-carbide，L'12结构。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00099",
+      "sample_id": "sample_hr68",
+      "section": "structures",
+      "path": "structures.sample_hr68.microstructure_list[3].precipitates[nb_mo_w_c_mc_type_carbide_fcc].coherency",
+      "value": "incoherent",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.8,
+      "evidence_refs": [
+        "b0192"
+      ],
+      "reason": "证据表明位错绕过(Nb,Mo,W)C颗粒，暗示非共格。",
+      "field_score": 80.0
+    },
+    {
+      "field_id": "F00100",
+      "sample_id": "sample_hr68",
+      "section": "structures",
+      "path": "structures.sample_hr68.microstructure_list[3].precipitates[nb_mo_w_c_mc_type_carbide_fcc].distribution",
+      "value": "Submicron particles homogeneously distributed; micron-sized particles along rolling direction at grain boundaries and interior",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0067",
+        "b0068"
+      ],
+      "reason": "证据描述亚微米颗粒均匀分布，微米级颗粒沿轧向分布在晶界和晶内。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00101",
+      "sample_id": "sample_hr68",
+      "section": "structures",
+      "path": "structures.sample_hr68.microstructure_list[3].precipitates[nb_mo_w_c_mc_type_carbide_fcc].size.value_with_unit",
+      "value": "submicron: 256 ± 42; micron-sized: 1–25 nm (submicron); μm (micron)",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "partial",
+      "evidence_confidence": 0.7,
+      "evidence_refs": [
+        "b0068"
+      ],
+      "reason": "证据给出亚微米颗粒平均尺寸256±42 nm，微米级颗粒1-25 μm；但字段值表述混乱，包含多余单位。",
+      "field_score": 42.0
+    },
+    {
+      "field_id": "F00102",
+      "sample_id": "sample_hr68",
+      "section": "structures",
+      "path": "structures.sample_hr68.microstructure_list[3].precipitates[nb_mo_w_c_mc_type_carbide_fcc].type",
+      "value": "(Nb,Mo,W)C (MC-type carbide, FCC)",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0068",
+        "b0088"
+      ],
+      "reason": "证据鉴定为(Nb,Mo,W)C，MC型碳化物，FCC结构。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00103",
+      "sample_id": "sample_hr68",
+      "section": "structures",
+      "path": "structures.sample_hr68.microstructure_list[3].related_sequence",
+      "value": "3",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "unknown",
+      "evidence_confidence": 0.0,
+      "evidence_refs": [],
+      "reason": "证据未提及序列编号3。",
+      "field_score": 0.0
+    },
+    {
+      "field_id": "F00104",
+      "sample_id": "sample_hr68",
+      "section": "structures",
+      "path": "structures.sample_hr68.number_of_phases",
+      "value": "3",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.9,
+      "evidence_refs": [
+        "b0035",
+        "b0089",
+        "b0068"
+      ],
+      "reason": "证据显示存在奥氏体、κ-carbide、(Nb,Mo,W)C三个相。",
+      "field_score": 90.0
+    },
+    {
+      "field_id": "F00105",
+      "sample_id": "sample_hr68",
+      "section": "structures",
+      "path": "structures.sample_hr68.overall_structure",
+      "value": "Equiaxed fully austenitic microstructure with annealing twins, containing nano-sized κ-carbides and (Nb,Mo,W)C particles.",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0035",
+        "b0089",
+        "b0068"
+      ],
+      "reason": "证据描述为等轴全奥氏体微观结构，含退火孪晶，纳米κ-carbide和(Nb,Mo,W)C颗粒。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00134",
+      "sample_id": "sample_hr68",
+      "section": "interfaces",
+      "path": "interfaces.sample_hr68.defect_interaction[0].interaction_type",
+      "value": "shearing",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0192"
+      ],
+      "reason": "证据明确位错剪切κ-carbide机制。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00135",
+      "sample_id": "sample_hr68",
+      "section": "interfaces",
+      "path": "interfaces.sample_hr68.defect_interaction[0].quality_description",
+      "value": "Dislocations shear coherent κ-carbides, creating anti-phase boundaries and causing glide plane softening.",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0192",
+        "b0209"
+      ],
+      "reason": "证据描述位错剪切共格κ-carbide产生反相畴界，导致滑移面软化。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00136",
+      "sample_id": "sample_hr68",
+      "section": "interfaces",
+      "path": "interfaces.sample_hr68.defect_interaction[1].interaction_type",
+      "value": "Orowan bypass",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0192"
+      ],
+      "reason": "证据明确位错绕过(Nb,Mo,W)C颗粒的Orowan机制。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00137",
+      "sample_id": "sample_hr68",
+      "section": "interfaces",
+      "path": "interfaces.sample_hr68.defect_interaction[1].quality_description",
+      "value": "Dislocations bypass incoherent (Nb,Mo,W)C particles via Orowan mechanism.",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0192"
+      ],
+      "reason": "证据描述位错绕过非共格(Nb,Mo,W)C颗粒的Orowan机制。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00138",
+      "sample_id": "sample_hr68",
+      "section": "interfaces",
+      "path": "interfaces.sample_hr68.phases[austenite].coherence",
+      "value": "incoherent",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.8,
+      "evidence_refs": [
+        "b0192"
+      ],
+      "reason": "证据表明(Nb,Mo,W)C与奥氏体非共格（Orowan绕过）。",
+      "field_score": 80.0
+    },
+    {
+      "field_id": "F00139",
+      "sample_id": "sample_hr68",
+      "section": "interfaces",
+      "path": "interfaces.sample_hr68.phases[austenite].phase_1_name",
+      "value": "Austenite",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0035"
+      ],
+      "reason": "证据明确奥氏体相。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00140",
+      "sample_id": "sample_hr68",
+      "section": "interfaces",
+      "path": "interfaces.sample_hr68.phases[austenite].phase_2_name",
+      "value": "(Nb,Mo,W)C",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0088"
+      ],
+      "reason": "证据明确(Nb,Mo,W)C相。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00171",
+      "sample_id": "sample_hr68",
+      "section": "properties",
+      "path": "properties.sample_hr68.mechanical.impact_toughness.test_method",
+      "value": "Charpy V-notch",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0029",
+        "b0092"
+      ],
+      "reason": "证据说明采用Charpy V-notch冲击测试。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00172",
+      "sample_id": "sample_hr68",
+      "section": "properties",
+      "path": "properties.sample_hr68.mechanical.impact_toughness.uncertainty",
+      "value": "2.8",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0157"
+      ],
+      "reason": "Table 1中HR68的CVN uncertainty为2.8。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00173",
+      "sample_id": "sample_hr68",
+      "section": "properties",
+      "path": "properties.sample_hr68.mechanical.impact_toughness.value_with_unit",
+      "value": "116 J/m^2",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0157"
+      ],
+      "reason": "Table 1中HR68的CVN为116 J/m^2。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00174",
+      "sample_id": "sample_hr68",
+      "section": "properties",
+      "path": "properties.sample_hr68.mechanical.reduction_of_area[rd].direction",
+      "value": "RD",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0157"
+      ],
+      "reason": "Table 1断面收缩率数据对应RD方向，值63.0%。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00175",
+      "sample_id": "sample_hr68",
+      "section": "properties",
+      "path": "properties.sample_hr68.mechanical.reduction_of_area[rd].others.uncertainty",
+      "value": "0.0",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0157"
+      ],
+      "reason": "Table 1中HR68的RA uncertainty为0.0。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00176",
+      "sample_id": "sample_hr68",
+      "section": "properties",
+      "path": "properties.sample_hr68.mechanical.reduction_of_area[rd].value_with_unit",
+      "value": "63.0 %",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0157"
+      ],
+      "reason": "Table 1中HR68的RA为63.0%。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00177",
+      "sample_id": "sample_hr68",
+      "section": "properties",
+      "path": "properties.sample_hr68.mechanical.tensile_properties.elongation[rd_total].direction",
+      "value": "RD (total)",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0157"
+      ],
+      "reason": "Table 1总延伸率数据对应RD方向，值57.0%。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00178",
+      "sample_id": "sample_hr68",
+      "section": "properties",
+      "path": "properties.sample_hr68.mechanical.tensile_properties.elongation[rd_total].others.uncertainty",
+      "value": "0.0",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0157"
+      ],
+      "reason": "Table 1中HR68的TE uncertainty为0.0。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00179",
+      "sample_id": "sample_hr68",
+      "section": "properties",
+      "path": "properties.sample_hr68.mechanical.tensile_properties.elongation[rd_total].value_with_unit",
+      "value": "57.0 %",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0157"
+      ],
+      "reason": "Table 1中HR68的TE为57.0%。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00180",
+      "sample_id": "sample_hr68",
+      "section": "properties",
+      "path": "properties.sample_hr68.mechanical.tensile_properties.elongation[rd_uniform].direction",
+      "value": "RD (uniform)",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0157"
+      ],
+      "reason": "Table 1均匀延伸率数据对应RD方向，值47.0%。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00181",
+      "sample_id": "sample_hr68",
+      "section": "properties",
+      "path": "properties.sample_hr68.mechanical.tensile_properties.elongation[rd_uniform].others.uncertainty",
+      "value": "0.5",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0157"
+      ],
+      "reason": "Table 1中HR68的UE uncertainty为0.5。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00182",
+      "sample_id": "sample_hr68",
+      "section": "properties",
+      "path": "properties.sample_hr68.mechanical.tensile_properties.elongation[rd_uniform].value_with_unit",
+      "value": "47.0 %",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0157"
+      ],
+      "reason": "Table 1中HR68的UE为47.0%。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00183",
+      "sample_id": "sample_hr68",
+      "section": "properties",
+      "path": "properties.sample_hr68.mechanical.tensile_properties.strain_hardening_rate[rd].direction",
+      "value": "RD",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0207"
+      ],
+      "reason": "证据显示应变硬化率曲线对应RD方向。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00184",
+      "sample_id": "sample_hr68",
+      "section": "properties",
+      "path": "properties.sample_hr68.mechanical.tensile_properties.strain_hardening_rate[rd].value_with_unit",
+      "value": "~2000 MPa",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0207"
+      ],
+      "reason": "证据提到应变硬化率维持在~2000 MPa。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00185",
+      "sample_id": "sample_hr68",
+      "section": "properties",
+      "path": "properties.sample_hr68.mechanical.tensile_properties.ultimate_tensile_strength[rd].direction",
+      "value": "RD",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0157"
+      ],
+      "reason": "Table 1中HR68的UTS对应RD方向。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00186",
+      "sample_id": "sample_hr68",
+      "section": "properties",
+      "path": "properties.sample_hr68.mechanical.tensile_properties.ultimate_tensile_strength[rd].others.uncertainty",
+      "value": "2.0",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0157"
+      ],
+      "reason": "Table 1中HR68的UTS uncertainty为2.0。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00187",
+      "sample_id": "sample_hr68",
+      "section": "properties",
+      "path": "properties.sample_hr68.mechanical.tensile_properties.ultimate_tensile_strength[rd].value_with_unit",
+      "value": "922.0 MPa",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0157"
+      ],
+      "reason": "Table 1中HR68的UTS为922.0 MPa。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00188",
+      "sample_id": "sample_hr68",
+      "section": "properties",
+      "path": "properties.sample_hr68.mechanical.tensile_properties.yield_strength[rd].direction",
+      "value": "RD",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0157"
+      ],
+      "reason": "Table 1中HR68的YS对应RD方向。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00189",
+      "sample_id": "sample_hr68",
+      "section": "properties",
+      "path": "properties.sample_hr68.mechanical.tensile_properties.yield_strength[rd].others.uncertainty",
+      "value": "0.0",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0157"
+      ],
+      "reason": "Table 1中HR68的YS uncertainty为0.0。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00190",
+      "sample_id": "sample_hr68",
+      "section": "properties",
+      "path": "properties.sample_hr68.mechanical.tensile_properties.yield_strength[rd].value_with_unit",
+      "value": "577.0 MPa",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0157"
+      ],
+      "reason": "Table 1中HR68的YS为577.0 MPa。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00191",
+      "sample_id": "sample_hr68",
+      "section": "properties",
+      "path": "properties.sample_hr68.physical.density.value_with_unit",
+      "value": "6.82 g/cm^3",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0024"
+      ],
+      "reason": "证据测量密度为6.82 g/cm^3。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00192",
+      "sample_id": "sample_hr68",
+      "section": "properties",
+      "path": "properties.sample_hr68.physical.stacking_fault_energy.value_with_unit",
+      "value": "~73 mJ/m^2",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0030",
+        "b0207"
+      ],
+      "reason": "证据计算SFE约为73 mJ/m^2。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00224",
+      "sample_id": "sample_hr68",
+      "section": "characterization_methods",
+      "path": "characterization_methods.sample_hr68.key_findings",
+      "value": "CVN impact energy 116±2.8 J/m^2.",
+      "field_weight": 1.0,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0157"
+      ],
+      "reason": "Table 1中HR68的CVN冲击能量为116±2.8 J/m^2。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00225",
+      "sample_id": "sample_hr68",
+      "section": "characterization_methods",
+      "path": "characterization_methods.sample_hr68.purpose",
+      "value": "Measure impact toughness",
+      "field_weight": 1.0,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0029"
+      ],
+      "reason": "证据表明Charpy冲击测试用于测量冲击韧性。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00226",
+      "sample_id": "sample_hr68",
+      "section": "characterization_methods",
+      "path": "characterization_methods.sample_hr68.technique",
+      "value": "Charpy V-notch impact test (room temperature)",
+      "field_weight": 1.0,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0029",
+        "b0092"
+      ],
+      "reason": "证据明确采用室温Charpy V-notch冲击试验。",
+      "field_score": 100.0
+    }
+  ]
+}

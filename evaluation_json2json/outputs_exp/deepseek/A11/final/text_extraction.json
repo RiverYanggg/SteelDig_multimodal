@@ -1,0 +1,752 @@
+{
+  "papers": [
+    {
+      "paper_id": "A11",
+      "doi": "10.1016/j.ijplas.2025.104353",
+      "title": "Quantification of multi-stage recrystallization in low-alloy steel under varying deformation conditions using inhomogeneous-dislocation-density 3D cellular automaton",
+      "authors": [
+        "Jiawei Xu",
+        "Lifeng Lu",
+        "Xueze Jin",
+        "He Wu",
+        "Qiwei He",
+        "Daolei Yang",
+        "Jingchao Yao",
+        "Weiqiang Zhao",
+        "Shaoshun Bian",
+        "Bin Guo",
+        "Debin Shan",
+        "Wenchen Xu"
+      ],
+      "publication_year": "2025",
+      "journal": "International Journal of Plasticity",
+      "keywords": [
+        "Low-alloy steel",
+        "Dynamic recrystallization",
+        "Varying deformation conditions",
+        "Constitutive model",
+        "3D cellular automaton",
+        "Inhomogeneous dislocation density"
+      ],
+      "research_type": "mixed",
+      "paper_scope": "Develop an inhomogeneous-dislocation-density 3D cellular automaton model to quantify multi-stage dynamic recrystallization and flow stress evolution in low-alloy steel under varying deformation conditions."
+    }
+  ],
+  "alloys": [
+    {
+      "alloy_id": "alloy_04c",
+      "paper_id": "A11",
+      "alloy_name": "Low-alloy steel (0.398C-0.87Mn-0.31Si)",
+      "aliases": [],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "C",
+        "Mn",
+        "Si",
+        "S",
+        "P",
+        "Ni",
+        "Cr",
+        "W",
+        "V",
+        "Mo",
+        "Ti",
+        "Cu"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Fe",
+          "weight_percent": "balance",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.398",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "0.87",
+          "atomic_percent": null
+        },
+        {
+          "element": "Si",
+          "weight_percent": "0.31",
+          "atomic_percent": null
+        },
+        {
+          "element": "S",
+          "weight_percent": "0.024",
+          "atomic_percent": null
+        },
+        {
+          "element": "P",
+          "weight_percent": "0.01",
+          "atomic_percent": null
+        },
+        {
+          "element": "Ni",
+          "weight_percent": "0.05",
+          "atomic_percent": null
+        },
+        {
+          "element": "Cr",
+          "weight_percent": "0.16",
+          "atomic_percent": null
+        },
+        {
+          "element": "W",
+          "weight_percent": "0.01",
+          "atomic_percent": null
+        },
+        {
+          "element": "V",
+          "weight_percent": "0.1",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mo",
+          "weight_percent": "0.03",
+          "atomic_percent": null
+        },
+        {
+          "element": "Ti",
+          "weight_percent": "0.002",
+          "atomic_percent": null
+        },
+        {
+          "element": "Cu",
+          "weight_percent": "0.13",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": null
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_850_001_const",
+      "paper_id": "A11",
+      "alloy_id": "alloy_04c",
+      "description": "Hot compression at constant temperature 850°C and strain rate 0.01 s^-1 to true strain 0.9.",
+      "processes_notes": "Heated to 1250°C at 10°C/s, held 180 s, cooled to 850°C at 10°C/s, held 60 s, compressed, water quenched."
+    },
+    {
+      "process_id": "proc_850_1_const",
+      "paper_id": "A11",
+      "alloy_id": "alloy_04c",
+      "description": "Hot compression at constant temperature 850°C and strain rate 1 s^-1 to true strain 0.9.",
+      "processes_notes": "Heated to 1250°C at 10°C/s, held 180 s, cooled to 850°C at 10°C/s, held 60 s, compressed, water quenched."
+    },
+    {
+      "process_id": "proc_950_001_const",
+      "paper_id": "A11",
+      "alloy_id": "alloy_04c",
+      "description": "Hot compression at constant temperature 950°C and strain rate 0.01 s^-1 to true strain 0.9.",
+      "processes_notes": "Heated to 1250°C at 10°C/s, held 180 s, cooled to 950°C at 10°C/s, held 60 s, compressed, water quenched."
+    },
+    {
+      "process_id": "proc_950_01_const",
+      "paper_id": "A11",
+      "alloy_id": "alloy_04c",
+      "description": "Hot compression at constant temperature 950°C and strain rate 0.1 s^-1 to true strain 0.9.",
+      "processes_notes": "Heated to 1250°C at 10°C/s, held 180 s, cooled to 950°C at 10°C/s, held 60 s, compressed, water quenched."
+    },
+    {
+      "process_id": "proc_950_001_to_01_02",
+      "paper_id": "A11",
+      "alloy_id": "alloy_04c",
+      "description": "Varying strain rate: first stage at 950°C, strain rate 0.01 s^-1 to strain 0.2, then transiently increased to 0.1 s^-1 and compressed to total strain 0.9.",
+      "processes_notes": "Heated to 1250°C at 10°C/s, held 180 s, cooled to 950°C, held 60 s; first stage to ε=0.2 at 0.01 s^-1, second stage at 0.1 s^-1 to ε=0.9, water quenched."
+    },
+    {
+      "process_id": "proc_950_001_to_01_04",
+      "paper_id": "A11",
+      "alloy_id": "alloy_04c",
+      "description": "Varying strain rate: first stage at 950°C, strain rate 0.01 s^-1 to strain 0.4, then transiently increased to 0.1 s^-1 and compressed to total strain 0.9.",
+      "processes_notes": "Heated to 1250°C at 10°C/s, held 180 s, cooled to 950°C, held 60 s; first stage to ε=0.4 at 0.01 s^-1, second stage at 0.1 s^-1 to ε=0.9, water quenched."
+    },
+    {
+      "process_id": "proc_950_01_to_001_02",
+      "paper_id": "A11",
+      "alloy_id": "alloy_04c",
+      "description": "Varying strain rate: first stage at 950°C, strain rate 0.1 s^-1 to strain 0.2, then transiently decreased to 0.01 s^-1 and compressed to total strain 0.9.",
+      "processes_notes": "Heated to 1250°C at 10°C/s, held 180 s, cooled to 950°C, held 60 s; first stage to ε=0.2 at 0.1 s^-1, second stage at 0.01 s^-1 to ε=0.9, water quenched."
+    },
+    {
+      "process_id": "proc_950_01_to_001_04",
+      "paper_id": "A11",
+      "alloy_id": "alloy_04c",
+      "description": "Varying strain rate: first stage at 950°C, strain rate 0.1 s^-1 to strain 0.4, then transiently decreased to 0.01 s^-1 and compressed to total strain 0.9.",
+      "processes_notes": "Heated to 1250°C at 10°C/s, held 180 s, cooled to 950°C, held 60 s; first stage to ε=0.4 at 0.1 s^-1, second stage at 0.01 s^-1 to ε=0.9, water quenched."
+    },
+    {
+      "process_id": "proc_1050_001_const",
+      "paper_id": "A11",
+      "alloy_id": "alloy_04c",
+      "description": "Hot compression at constant temperature 1050°C and strain rate 0.01 s^-1 to true strain 0.9.",
+      "processes_notes": "Heated to 1250°C at 10°C/s, held 180 s, cooled to 1050°C at 10°C/s, held 60 s, compressed, water quenched."
+    },
+    {
+      "process_id": "proc_1050_to_950_02",
+      "paper_id": "A11",
+      "alloy_id": "alloy_04c",
+      "description": "Varying temperature: strain rate 0.01 s^-1, initial temperature 1050°C up to strain 0.2, then continuously decreased to 950°C in strain range 0.2-0.3, compressed to total strain 0.9.",
+      "processes_notes": "Heated to 1250°C at 10°C/s, held 180 s, cooled to 1050°C, held 60 s; deformed at 1050°C to ε=0.2, then temperature decreased to 950°C over Δε=0.1, further compressed to ε=0.9, water quenched."
+    },
+    {
+      "process_id": "proc_1050_to_950_04",
+      "paper_id": "A11",
+      "alloy_id": "alloy_04c",
+      "description": "Varying temperature: strain rate 0.01 s^-1, initial temperature 1050°C up to strain 0.4, then continuously decreased to 950°C in strain range 0.4-0.5, compressed to total strain 0.9.",
+      "processes_notes": "Heated to 1250°C at 10°C/s, held 180 s, cooled to 1050°C, held 60 s; deformed at 1050°C to ε=0.4, then temperature decreased to 950°C over Δε=0.1, further compressed to ε=0.9, water quenched."
+    },
+    {
+      "process_id": "proc_950_to_1050_02",
+      "paper_id": "A11",
+      "alloy_id": "alloy_04c",
+      "description": "Varying temperature: strain rate 0.01 s^-1, initial temperature 950°C up to strain 0.2, then continuously increased to 1050°C in strain range 0.2-0.3, compressed to total strain 0.9.",
+      "processes_notes": "Heated to 1250°C at 10°C/s, held 180 s, cooled to 950°C, held 60 s; deformed at 950°C to ε=0.2, then temperature increased to 1050°C over Δε=0.1, further compressed to ε=0.9, water quenched."
+    },
+    {
+      "process_id": "proc_950_to_1050_04",
+      "paper_id": "A11",
+      "alloy_id": "alloy_04c",
+      "description": "Varying temperature: strain rate 0.01 s^-1, initial temperature 950°C up to strain 0.4, then continuously increased to 1050°C in strain range 0.4-0.5, compressed to total strain 0.9.",
+      "processes_notes": "Heated to 1250°C at 10°C/s, held 180 s, cooled to 950°C, held 60 s; deformed at 950°C to ε=0.4, then temperature increased to 1050°C over Δε=0.1, further compressed to ε=0.9, water quenched."
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_850_001_const",
+      "paper_id": "A11",
+      "alloy_id": "alloy_04c",
+      "process_id": "proc_850_001_const"
+    },
+    {
+      "sample_id": "sample_850_1_const",
+      "paper_id": "A11",
+      "alloy_id": "alloy_04c",
+      "process_id": "proc_850_1_const"
+    },
+    {
+      "sample_id": "sample_950_001_const",
+      "paper_id": "A11",
+      "alloy_id": "alloy_04c",
+      "process_id": "proc_950_001_const"
+    },
+    {
+      "sample_id": "sample_950_01_const",
+      "paper_id": "A11",
+      "alloy_id": "alloy_04c",
+      "process_id": "proc_950_01_const"
+    },
+    {
+      "sample_id": "sample_950_001_to_01_02",
+      "paper_id": "A11",
+      "alloy_id": "alloy_04c",
+      "process_id": "proc_950_001_to_01_02"
+    },
+    {
+      "sample_id": "sample_950_001_to_01_04",
+      "paper_id": "A11",
+      "alloy_id": "alloy_04c",
+      "process_id": "proc_950_001_to_01_04"
+    },
+    {
+      "sample_id": "sample_950_01_to_001_02",
+      "paper_id": "A11",
+      "alloy_id": "alloy_04c",
+      "process_id": "proc_950_01_to_001_02"
+    },
+    {
+      "sample_id": "sample_950_01_to_001_04",
+      "paper_id": "A11",
+      "alloy_id": "alloy_04c",
+      "process_id": "proc_950_01_to_001_04"
+    },
+    {
+      "sample_id": "sample_1050_001_const",
+      "paper_id": "A11",
+      "alloy_id": "alloy_04c",
+      "process_id": "proc_1050_001_const"
+    },
+    {
+      "sample_id": "sample_1050_to_950_02",
+      "paper_id": "A11",
+      "alloy_id": "alloy_04c",
+      "process_id": "proc_1050_to_950_02"
+    },
+    {
+      "sample_id": "sample_1050_to_950_04",
+      "paper_id": "A11",
+      "alloy_id": "alloy_04c",
+      "process_id": "proc_1050_to_950_04"
+    },
+    {
+      "sample_id": "sample_950_to_1050_02",
+      "paper_id": "A11",
+      "alloy_id": "alloy_04c",
+      "process_id": "proc_950_to_1050_02"
+    },
+    {
+      "sample_id": "sample_950_to_1050_04",
+      "paper_id": "A11",
+      "alloy_id": "alloy_04c",
+      "process_id": "proc_950_to_1050_04"
+    }
+  ],
+  "processing_steps": [
+    {
+      "sample_id": "sample_850_001_const",
+      "paper_id": "A11",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "Heating",
+      "temperature": "1250",
+      "unit": "°C",
+      "duration": "ramp at 10°C/s",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Heat to 1250°C at 10°C/s"
+    },
+    {
+      "sample_id": "sample_850_001_const",
+      "paper_id": "A11",
+      "sequence": "2",
+      "type": "heat_treatment",
+      "method": "Holding",
+      "temperature": "1250",
+      "unit": "°C",
+      "duration": "180 s",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Homogenize austenite"
+    },
+    {
+      "sample_id": "sample_850_001_const",
+      "paper_id": "A11",
+      "sequence": "3",
+      "type": "cooling",
+      "method": "Cooling",
+      "temperature": "850",
+      "unit": "°C",
+      "duration": "10°C/s",
+      "cooling_medium": "air",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Cool to deformation temperature"
+    },
+    {
+      "sample_id": "sample_850_001_const",
+      "paper_id": "A11",
+      "sequence": "4",
+      "type": "heat_treatment",
+      "method": "Holding",
+      "temperature": "850",
+      "unit": "°C",
+      "duration": "60 s",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Reduce temperature fluctuations"
+    },
+    {
+      "sample_id": "sample_850_001_const",
+      "paper_id": "A11",
+      "sequence": "5",
+      "type": "thermomechanical_processing",
+      "method": "Hot compression",
+      "temperature": "850",
+      "unit": "°C",
+      "duration": "to true strain 0.9 at 0.01 s^-1",
+      "cooling_medium": null,
+      "reduction_ratio": "true strain 0.9",
+      "processing_steps_notes": "Constant strain rate 0.01 s^-1"
+    },
+    {
+      "sample_id": "sample_850_001_const",
+      "paper_id": "A11",
+      "sequence": "6",
+      "type": "cooling",
+      "method": "Water quenching",
+      "temperature": "room temperature",
+      "unit": "°C",
+      "duration": "immediate",
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Freeze high-temperature microstructure"
+    },
+    {
+      "sample_id": "sample_850_1_const",
+      "paper_id": "A11",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "Heating",
+      "temperature": "1250",
+      "unit": "°C",
+      "duration": "ramp at 10°C/s",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Heat to 1250°C"
+    },
+    {
+      "sample_id": "sample_850_1_const",
+      "paper_id": "A11",
+      "sequence": "2",
+      "type": "heat_treatment",
+      "method": "Holding",
+      "temperature": "1250",
+      "unit": "°C",
+      "duration": "180 s",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Homogenization"
+    },
+    {
+      "sample_id": "sample_850_1_const",
+      "paper_id": "A11",
+      "sequence": "3",
+      "type": "cooling",
+      "method": "Cooling",
+      "temperature": "850",
+      "unit": "°C",
+      "duration": "10°C/s",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Cool to 850°C"
+    },
+    {
+      "sample_id": "sample_850_1_const",
+      "paper_id": "A11",
+      "sequence": "4",
+      "type": "heat_treatment",
+      "method": "Holding",
+      "temperature": "850",
+      "unit": "°C",
+      "duration": "60 s",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Hold at 850°C"
+    },
+    {
+      "sample_id": "sample_850_1_const",
+      "paper_id": "A11",
+      "sequence": "5",
+      "type": "thermomechanical_processing",
+      "method": "Hot compression",
+      "temperature": "850",
+      "unit": "°C",
+      "duration": "to true strain 0.9 at 1 s^-1",
+      "cooling_medium": null,
+      "reduction_ratio": "true strain 0.9",
+      "processing_steps_notes": "Constant strain rate 1 s^-1"
+    },
+    {
+      "sample_id": "sample_850_1_const",
+      "paper_id": "A11",
+      "sequence": "6",
+      "type": "cooling",
+      "method": "Water quenching",
+      "temperature": null,
+      "unit": null,
+      "duration": null,
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Immediate water quenching"
+    },
+    {
+      "sample_id": "sample_950_001_to_01_02",
+      "paper_id": "A11",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "Heating",
+      "temperature": "1250",
+      "unit": "°C",
+      "duration": "ramp at 10°C/s",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Heat to 1250°C"
+    },
+    {
+      "sample_id": "sample_950_001_to_01_02",
+      "paper_id": "A11",
+      "sequence": "2",
+      "type": "heat_treatment",
+      "method": "Holding",
+      "temperature": "1250",
+      "unit": "°C",
+      "duration": "180 s",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Homogenization"
+    },
+    {
+      "sample_id": "sample_950_001_to_01_02",
+      "paper_id": "A11",
+      "sequence": "3",
+      "type": "cooling",
+      "method": "Cooling",
+      "temperature": "950",
+      "unit": "°C",
+      "duration": "10°C/s",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Cool to 950°C"
+    },
+    {
+      "sample_id": "sample_950_001_to_01_02",
+      "paper_id": "A11",
+      "sequence": "4",
+      "type": "heat_treatment",
+      "method": "Holding",
+      "temperature": "950",
+      "unit": "°C",
+      "duration": "60 s",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Hold at 950°C"
+    },
+    {
+      "sample_id": "sample_950_001_to_01_02",
+      "paper_id": "A11",
+      "sequence": "5-compression_stage1",
+      "type": "thermomechanical_processing",
+      "method": "Hot compression",
+      "temperature": "950",
+      "unit": "°C",
+      "duration": "to ε=0.2 at 0.01 s^-1",
+      "cooling_medium": null,
+      "reduction_ratio": "true strain 0.2",
+      "processing_steps_notes": "First stage at 0.01 s^-1"
+    },
+    {
+      "sample_id": "sample_950_001_to_01_02",
+      "paper_id": "A11",
+      "sequence": "6-compression_stage2",
+      "type": "thermomechanical_processing",
+      "method": "Hot compression",
+      "temperature": "950",
+      "unit": "°C",
+      "duration": "to ε=0.9 at 0.1 s^-1",
+      "cooling_medium": null,
+      "reduction_ratio": "additional strain to total 0.9",
+      "processing_steps_notes": "Transiently increase strain rate to 0.1 s^-1"
+    },
+    {
+      "sample_id": "sample_950_001_to_01_02",
+      "paper_id": "A11",
+      "sequence": "7",
+      "type": "cooling",
+      "method": "Water quenching",
+      "temperature": null,
+      "unit": null,
+      "duration": null,
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Immediate water quenching"
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_850_001_const",
+      "sample_id": "sample_850_001_const",
+      "overall_structure": "Partially recrystallized prior austenite microstructure after hot compression at 850°C, 0.01 s^-1, water quenched (martensite). Experimental DRX fraction ~79.3%, average grain size 34.01 ± 4.71 µm (side section).",
+      "number_of_phases": "1",
+      "microstructure_counts": "matrix + DRX grains",
+      "microstructure_list": [
+        {
+          "uuid": "micro_850_001_1",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "Prior austenite (martensite as quenched)",
+              "crystal_structure": "FCC (austenite) / BCT (martensite after quenching)",
+              "volume_fraction": "1.0",
+              "morphology": "mixed: elongated unrecrystallized grains and equiaxed recrystallized grains",
+              "grain_size": "34.01 µm (average, experimental side section), CA 3D: 34.53 µm",
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocation",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "assumed initial 1e11 m^-2 uniform, inhomogeneous during deformation",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "34.01",
+              "unit": "µm"
+            },
+            "grain_size_distribution": "experimental side section 34.01 ± 4.71 µm, CA 2D: 32.94 µm",
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_850_1_const",
+      "sample_id": "sample_850_1_const",
+      "overall_structure": "Partially recrystallized prior austenite microstructure after hot compression at 850°C, 1 s^-1. Experimental DRX fraction ~42.8%, average grain size 61.38 ± 7.41 µm (side section).",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "micro_850_1_1",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "Prior austenite (martensite)",
+              "crystal_structure": "FCC",
+              "volume_fraction": "1.0",
+              "morphology": "mixed, elongated matrix and few recrystallized grains",
+              "grain_size": "61.38 µm (average, experimental), CA 3D: ~50 µm",
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocation",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "61.38",
+              "unit": "µm"
+            },
+            "grain_size_distribution": "61.38 ± 7.41 µm",
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_initial_mixed",
+      "sample_id": "sample_950_001_const",
+      "overall_structure": "Initial mixed-grain microstructure (as-homogenized at 1250°C) used as starting condition for all samples. Maximum grain size 265.20 µm, minimum 10.22 µm, average grain size in 2D ~140.01 µm (optical measurements).",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "micro_init_1",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "Prior austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": "1.0",
+              "morphology": "mixed-grain distribution",
+              "grain_size": "average 140.01 µm (2D) / 143.78 µm (3D), max 265.20 µm, min 10.22 µm",
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocation",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "1e11 m^-2 (assumed uniform initially)",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "140.01",
+              "unit": "µm"
+            },
+            "grain_size_distribution": "SD 51.88 µm (2D), Max 265.20 µm, Min 10.22 µm",
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "props_placeholder",
+      "sample_id": "sample_950_001_const",
+      "mechanical": null,
+      "physical": null,
+      "chemical": null,
+      "radiation_properties": null
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_om_850_001",
+      "sample_id": "sample_850_001_const",
+      "microstructure_uuid": "micro_850_001_1",
+      "technique": "Optical microscopy (Olympus-GX71) after etching with saturated picric acid solution",
+      "purpose": "Reveal prior austenite grain boundaries and measure grain size",
+      "key_findings": "Average grain size 34.01 ± 4.71 µm, DRX fraction 79.3%"
+    },
+    {
+      "characterization_id": "char_ebsd_850_001",
+      "sample_id": "sample_850_001_const",
+      "microstructure_uuid": "micro_850_001_1",
+      "technique": "EBSD (SU5000 SEM, step size 0.65-1.3 µm) and ARPGE reconstruction",
+      "purpose": "Reconstruct prior austenite grains from martensite, distinguish recrystallized grains using GOS threshold 3°",
+      "key_findings": "Reconstructed grain size agreed with optical measurement; maps showed incomplete recrystallization"
+    },
+    {
+      "characterization_id": "char_om_850_1",
+      "sample_id": "sample_850_1_const",
+      "microstructure_uuid": "micro_850_1_1",
+      "technique": "Optical microscopy",
+      "purpose": "Grain size measurement",
+      "key_findings": "Average grain size 61.38 ± 7.41 µm, DRX fraction 42.8%"
+    },
+    {
+      "characterization_id": "char_ebsd_850_1",
+      "sample_id": "sample_850_1_const",
+      "microstructure_uuid": "micro_850_1_1",
+      "technique": "EBSD + ARPGE reconstruction",
+      "purpose": "Reconstruct PAGs and identify DRX grains",
+      "key_findings": "Consistent with optical results; low recrystallization fraction"
+    },
+    {
+      "characterization_id": "char_om_init",
+      "sample_id": "sample_950_001_const",
+      "microstructure_uuid": "micro_init_1",
+      "technique": "Optical microscopy",
+      "purpose": "Characterize initial mixed-grain microstructure",
+      "key_findings": "Max grain size 265.20 µm, min 10.22 µm, 2D average 140.01 µm"
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_3dca",
+      "sample_id": "sample_950_001_const",
+      "simulation_method": "3D cellular automaton with inhomogeneous dislocation density, incorporating dislocation gradients and grain-boundary sliding",
+      "software_used": "In-house CA code, DEFORM 3D with Fortran user subroutines",
+      "potential_model": null,
+      "validation_against_experiment": "Flow stress curves, DRX fraction evolutions, and average grain sizes compared with hot compression experiments under constant and varying conditions; RMSE of flow stress 3.3118 MPa, R² 0.9589; AGS RMSE 4.0169 µm, R² 0.9777; DRX fraction RMSE 0.0229, R² 0.9784.",
+      "analytical_model": [
+        {
+          "model_name": "Modified phenomenological constitutive model (WH+DRV+DRX) with stress softening coefficient k_s and varying t_0.5",
+          "equation_role": "Calibrate dislocation accumulation/annihilation parameters and characteristic stresses for CA model; predict flow stress under varying conditions.",
+          "parameters": null,
+          "model_note": "Incorporates effect of DRX history on saturation stress and time for 50% DRX fraction; validated by FEM."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Figure 7 presents experimental and simulated flow stress–strain curves at 850, 950, 1050, 1150 °C and strain rates 0.01–10 s⁻¹; specific yield/peak stress values are not digitized in the text, only curves are shown.",
+    "Figure 16 shows evolution of average grain size with transient variations; exact numerical values are not reported in the caption but indicate trends of grain size change.",
+    "Tables 6 and 7 provide simulated final grain sizes and volume fractions of first- and second-stage DRX grains under varying conditions; experimental counterparts are shown in figures but not tabulated.",
+    "The paper focuses on hot compression flow behavior, not on tensile properties; therefore no yield strength, UTS, or elongation values are reported in standard mechanical property format.",
+    "EBSD maps are used to reconstruct prior austenite grains and assess recrystallization fraction, with GOS threshold of 3°."
+  ]
+}

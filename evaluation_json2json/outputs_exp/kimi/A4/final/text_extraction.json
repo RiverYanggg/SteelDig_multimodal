@@ -1,0 +1,1186 @@
+{
+  "papers": [
+    {
+      "paper_id": "A4",
+      "doi": null,
+      "title": "Enhanced mechanical properties of a Fe-Mn-Al-C austenitic low-density steel by increasing hot-rolling reduction",
+      "authors": [
+        "Ziyuan Gao",
+        "Qingfeng Kang",
+        "Xueliang An",
+        "Hui Wang",
+        "Cunyu Wang",
+        "Wenquan Cao"
+      ],
+      "publication_year": null,
+      "journal": null,
+      "keywords": [
+        "Fe-Mn-Al-C",
+        "Low-density steel",
+        "Hot rolling",
+        "Grain refinement",
+        "Dislocation strengthening",
+        "Slip band",
+        "Microband",
+        "Strain-hardening behavior"
+      ],
+      "research_type": "experimental",
+      "paper_scope": "Investigation of microstructure evolution, mechanical properties, strengthening mechanisms, and strain-hardening behavior of a Fe-Mn-Al-C austenitic low-density steel at hot-rolling reductions of 45%, 68%, and 82%."
+    }
+  ],
+  "alloys": [
+    {
+      "alloy_id": "alloy_fe31mn9al1c_nb_mo_w",
+      "paper_id": "A4",
+      "alloy_name": "Fe-31Mn-9Al-1C-0.45Nb-0.45Mo-0.45W",
+      "aliases": [
+        "Fe-Mn-Al-C austenitic low-density steel"
+      ],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Al",
+        "C",
+        "Nb",
+        "Mo",
+        "W"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Fe",
+          "weight_percent": "balance",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "30.9",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "8.7",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.9",
+          "atomic_percent": null
+        },
+        {
+          "element": "Nb",
+          "weight_percent": "0.45",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mo",
+          "weight_percent": "0.45",
+          "atomic_percent": null
+        },
+        {
+          "element": "W",
+          "weight_percent": "0.43",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "Nominal composition is Fe-31Mn-9Al-1C-0.45Nb-0.45Mo-0.45W (wt%). Measured density is 6.82 g/cm³, corresponding to a density reduction of ~13% compared to pure iron."
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_fe31mn_01",
+      "paper_id": "A4",
+      "alloy_id": "alloy_fe31mn9al1c_nb_mo_w",
+      "description": "Vacuum induction melting, hot-forged at 1150°C into 110 mm billets, air cooled; reheated to 1150°C, hot-rolled with 45% reduction to 60 mm plate over 4 passes, water quenched to room temperature.",
+      "processes_notes": null
+    },
+    {
+      "process_id": "proc_fe31mn_02",
+      "paper_id": "A4",
+      "alloy_id": "alloy_fe31mn9al1c_nb_mo_w",
+      "description": "Vacuum induction melting, hot-forged at 1150°C into 110 mm billets, air cooled; reheated to 1150°C, hot-rolled with 68% reduction to 35 mm plate over 6 passes, water quenched to room temperature.",
+      "processes_notes": null
+    },
+    {
+      "process_id": "proc_fe31mn_03",
+      "paper_id": "A4",
+      "alloy_id": "alloy_fe31mn9al1c_nb_mo_w",
+      "description": "Vacuum induction melting, hot-forged at 1150°C into 110 mm billets, air cooled; reheated to 1150°C, hot-rolled with 82% reduction to 20 mm plate over 9 passes, water quenched to room temperature.",
+      "processes_notes": null
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_hr45",
+      "paper_id": "A4",
+      "alloy_id": "alloy_fe31mn9al1c_nb_mo_w",
+      "process_id": "proc_fe31mn_01"
+    },
+    {
+      "sample_id": "sample_hr68",
+      "paper_id": "A4",
+      "alloy_id": "alloy_fe31mn9al1c_nb_mo_w",
+      "process_id": "proc_fe31mn_02"
+    },
+    {
+      "sample_id": "sample_hr82",
+      "paper_id": "A4",
+      "alloy_id": "alloy_fe31mn9al1c_nb_mo_w",
+      "process_id": "proc_fe31mn_03"
+    }
+  ],
+  "processing_steps": [
+    {
+      "sample_id": "sample_hr45",
+      "paper_id": "A4",
+      "sequence": "1",
+      "type": "thermomechanical_processing",
+      "method": "hot forging",
+      "temperature": "1150",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": "air",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Billets forged to thickness of 110 mm followed by air cooling to room temperature."
+    },
+    {
+      "sample_id": "sample_hr45",
+      "paper_id": "A4",
+      "sequence": "2",
+      "type": "heat_treatment",
+      "method": "reheating",
+      "temperature": "1150",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Reheating of hot-forged billets prior to hot rolling."
+    },
+    {
+      "sample_id": "sample_hr45",
+      "paper_id": "A4",
+      "sequence": "3",
+      "type": "thermomechanical_processing",
+      "method": "hot rolling",
+      "temperature": "1150",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": "water",
+      "reduction_ratio": "45%",
+      "processing_steps_notes": "Rolled to 60 mm plate in 4 passes followed by water quenching to room temperature."
+    },
+    {
+      "sample_id": "sample_hr68",
+      "paper_id": "A4",
+      "sequence": "1",
+      "type": "thermomechanical_processing",
+      "method": "hot forging",
+      "temperature": "1150",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": "air",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Billets forged to thickness of 110 mm followed by air cooling to room temperature."
+    },
+    {
+      "sample_id": "sample_hr68",
+      "paper_id": "A4",
+      "sequence": "2",
+      "type": "heat_treatment",
+      "method": "reheating",
+      "temperature": "1150",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Reheating of hot-forged billets prior to hot rolling."
+    },
+    {
+      "sample_id": "sample_hr68",
+      "paper_id": "A4",
+      "sequence": "3",
+      "type": "thermomechanical_processing",
+      "method": "hot rolling",
+      "temperature": "1150",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": "water",
+      "reduction_ratio": "68%",
+      "processing_steps_notes": "Rolled to 35 mm plate in 6 passes followed by water quenching to room temperature."
+    },
+    {
+      "sample_id": "sample_hr82",
+      "paper_id": "A4",
+      "sequence": "1",
+      "type": "thermomechanical_processing",
+      "method": "hot forging",
+      "temperature": "1150",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": "air",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Billets forged to thickness of 110 mm followed by air cooling to room temperature."
+    },
+    {
+      "sample_id": "sample_hr82",
+      "paper_id": "A4",
+      "sequence": "2",
+      "type": "heat_treatment",
+      "method": "reheating",
+      "temperature": "1150",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Reheating of hot-forged billets prior to hot rolling."
+    },
+    {
+      "sample_id": "sample_hr82",
+      "paper_id": "A4",
+      "sequence": "3",
+      "type": "thermomechanical_processing",
+      "method": "hot rolling",
+      "temperature": "1150",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": "water",
+      "reduction_ratio": "82%",
+      "processing_steps_notes": "Rolled to 20 mm plate in 9 passes followed by water quenching to room temperature."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_hr45",
+      "sample_id": "sample_hr45",
+      "overall_structure": "Fully austenitic matrix (FCC) with equiaxed grains, a high fraction of first-order annealing twins, nano-sized κ-carbides, and micron/submicron (Nb,Mo,W)C particles.",
+      "number_of_phases": "3",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_hr45_matrix",
+          "related_sequence": "3",
+          "phases_present": [
+            {
+              "phase_name": "Austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "Equiaxed grains with a large fraction of first-order annealing twins",
+              "grain_size": "45.11 μm (21.82 μm including twin boundaries)",
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "geometrically necessary dislocations (GNDs)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "2.71 × 10^13 m^-2",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "45.11",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        },
+        {
+          "uuid": "uuid_hr45_kappa",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "κ-carbide",
+              "crystal_structure": "L'1₂",
+              "volume_fraction": "3.5 ± 0.33%",
+              "morphology": "Nano-sized particles homogeneously precipitated inside austenite grains during water quenching",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": null,
+          "precipitates": [
+            {
+              "precipitate_id": "prec_hr45_kappa",
+              "type": "(Fe,Mn)₃AlCₓ κ-carbide",
+              "size": {
+                "value": "0.81 ± 0.26",
+                "unit": "nm"
+              },
+              "distribution": "Homogeneous intragranular",
+              "coherency": "Coherent"
+            }
+          ]
+        },
+        {
+          "uuid": "uuid_hr45_mc",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "(Nb,Mo,W)C",
+              "crystal_structure": "FCC (lattice parameter ~4.36 Å)",
+              "volume_fraction": "~0.193%",
+              "morphology": "Micron-sized polygonal along rolling direction at grain boundaries/interiors and submicron-sized spherical in matrix",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": null,
+          "precipitates": [
+            {
+              "precipitate_id": "prec_hr45_mc",
+              "type": "MC-type complex carbide (Nb,Mo,W)C",
+              "size": {
+                "value": "261 ± 36",
+                "unit": "nm"
+              },
+              "distribution": "Along grain boundaries and in grain interior",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_hr68",
+      "sample_id": "sample_hr68",
+      "overall_structure": "Fully austenitic matrix (FCC) with equiaxed grains, a high fraction of first-order annealing twins, nano-sized κ-carbides, and micron/submicron (Nb,Mo,W)C particles.",
+      "number_of_phases": "3",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_hr68_matrix",
+          "related_sequence": "3",
+          "phases_present": [
+            {
+              "phase_name": "Austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "Equiaxed grains with a large fraction of first-order annealing twins",
+              "grain_size": "27.02 μm (11.55 μm including twin boundaries)",
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "geometrically necessary dislocations (GNDs)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "7.49 × 10^13 m^-2",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "27.02",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        },
+        {
+          "uuid": "uuid_hr68_kappa",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "κ-carbide",
+              "crystal_structure": "L'1₂",
+              "volume_fraction": "3.3 ± 0.52%",
+              "morphology": "Nano-sized particles homogeneously precipitated inside austenite grains during water quenching",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": null,
+          "precipitates": [
+            {
+              "precipitate_id": "prec_hr68_kappa",
+              "type": "(Fe,Mn)₃AlCₓ κ-carbide",
+              "size": {
+                "value": "0.78 ± 0.17",
+                "unit": "nm"
+              },
+              "distribution": "Homogeneous intragranular",
+              "coherency": "Coherent"
+            }
+          ]
+        },
+        {
+          "uuid": "uuid_hr68_mc",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "(Nb,Mo,W)C",
+              "crystal_structure": "FCC (lattice parameter ~4.36 Å)",
+              "volume_fraction": "~0.201%",
+              "morphology": "Micron-sized polygonal along rolling direction at grain boundaries/interiors and submicron-sized spherical in matrix",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": null,
+          "precipitates": [
+            {
+              "precipitate_id": "prec_hr68_mc",
+              "type": "MC-type complex carbide (Nb,Mo,W)C",
+              "size": {
+                "value": "256 ± 42",
+                "unit": "nm"
+              },
+              "distribution": "Along grain boundaries and in grain interior",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_hr82",
+      "sample_id": "sample_hr82",
+      "overall_structure": "Fully austenitic matrix (FCC) with equiaxed grains, a high fraction of first-order annealing twins, nano-sized κ-carbides, and micron/submicron (Nb,Mo,W)C particles.",
+      "number_of_phases": "3",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_hr82_matrix",
+          "related_sequence": "3",
+          "phases_present": [
+            {
+              "phase_name": "Austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "Equiaxed grains with a large fraction of first-order annealing twins",
+              "grain_size": "18.80 μm (7.02 μm including twin boundaries)",
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "geometrically necessary dislocations (GNDs)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "9.87 × 10^13 m^-2",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "18.80",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        },
+        {
+          "uuid": "uuid_hr82_kappa",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "κ-carbide",
+              "crystal_structure": "L'1₂",
+              "volume_fraction": "3.9 ± 0.39%",
+              "morphology": "Nano-sized particles homogeneously precipitated inside austenite grains during water quenching",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": null,
+          "precipitates": [
+            {
+              "precipitate_id": "prec_hr82_kappa",
+              "type": "(Fe,Mn)₃AlCₓ κ-carbide",
+              "size": {
+                "value": "0.83 ± 0.23",
+                "unit": "nm"
+              },
+              "distribution": "Homogeneous intragranular",
+              "coherency": "Coherent"
+            }
+          ]
+        },
+        {
+          "uuid": "uuid_hr82_mc",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "(Nb,Mo,W)C",
+              "crystal_structure": "FCC (lattice parameter ~4.36 Å)",
+              "volume_fraction": "~0.198%",
+              "morphology": "Micron-sized polygonal along rolling direction at grain boundaries/interiors and submicron-sized spherical in matrix",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": null,
+          "precipitates": [
+            {
+              "precipitate_id": "prec_hr82_mc",
+              "type": "MC-type complex carbide (Nb,Mo,W)C",
+              "size": {
+                "value": "259 ± 23",
+                "unit": "nm"
+              },
+              "distribution": "Along grain boundaries and in grain interior",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "intf_hr45",
+      "sample_id": "sample_hr45",
+      "phases": [
+        {
+          "interface_id": "intf_hr45_kappa_gamma",
+          "microstructure_uuid": "uuid_hr45_kappa",
+          "phase_1_name": "κ-carbide",
+          "phase_2_name": "Austenite",
+          "coherence": "Coherent"
+        }
+      ],
+      "defect_interaction": [
+        {
+          "interaction_id": "di_hr45_gb_disl",
+          "microstructure_uuid": "uuid_hr45_matrix",
+          "interaction_type": "Grain boundaries and twin boundaries as barriers to dislocation movement",
+          "quality_description": "High-angle grain boundaries and Σ3 (60°〈111〉) annealing twin boundaries act as effective impedance sites to dislocation motion and reduce mean free path."
+        }
+      ],
+      "interface_notes": [
+        {
+          "stress_strain_distribution": "Strain/stress concentration occurs at interfaces of intergranular (Nb,Mo,W)C particles due to deformation discrepancy with the austenite matrix; partially alleviated by debonding of intragranular particles and microvoid formation."
+        },
+        {
+          "slippage_situation": null
+        }
+      ],
+      "phase_evolution": "κ-carbides maintained coherency with the austenite matrix in the as-rolled and water-quenched condition without aging-induced coarsening or intergranular network formation."
+    },
+    {
+      "interface_set_id": "intf_hr68",
+      "sample_id": "sample_hr68",
+      "phases": [
+        {
+          "interface_id": "intf_hr68_kappa_gamma",
+          "microstructure_uuid": "uuid_hr68_kappa",
+          "phase_1_name": "κ-carbide",
+          "phase_2_name": "Austenite",
+          "coherence": "Coherent"
+        }
+      ],
+      "defect_interaction": [
+        {
+          "interaction_id": "di_hr68_gb_disl",
+          "microstructure_uuid": "uuid_hr68_matrix",
+          "interaction_type": "Grain boundaries and twin boundaries as barriers to dislocation movement",
+          "quality_description": "High-angle grain boundaries and Σ3 (60°〈111〉) annealing twin boundaries act as effective impedance sites to dislocation motion and reduce mean free path."
+        }
+      ],
+      "interface_notes": [
+        {
+          "stress_strain_distribution": "Strain/stress concentration occurs at interfaces of intergranular (Nb,Mo,W)C particles due to deformation discrepancy with the austenite matrix; partially alleviated by debonding of intragranular particles and microvoid formation."
+        },
+        {
+          "slippage_situation": null
+        }
+      ],
+      "phase_evolution": "κ-carbides maintained coherency with the austenite matrix in the as-rolled and water-quenched condition without aging-induced coarsening or intergranular network formation."
+    },
+    {
+      "interface_set_id": "intf_hr82",
+      "sample_id": "sample_hr82",
+      "phases": [
+        {
+          "interface_id": "intf_hr82_kappa_gamma",
+          "microstructure_uuid": "uuid_hr82_kappa",
+          "phase_1_name": "κ-carbide",
+          "phase_2_name": "Austenite",
+          "coherence": "Coherent"
+        }
+      ],
+      "defect_interaction": [
+        {
+          "interaction_id": "di_hr82_gb_disl",
+          "microstructure_uuid": "uuid_hr82_matrix",
+          "interaction_type": "Grain boundaries and twin boundaries as barriers to dislocation movement",
+          "quality_description": "High-angle grain boundaries and Σ3 (60°〈111〉) annealing twin boundaries act as effective impedance sites to dislocation motion and reduce mean free path."
+        }
+      ],
+      "interface_notes": [
+        {
+          "stress_strain_distribution": "Strain/stress concentration occurs at interfaces of intergranular (Nb,Mo,W)C particles due to deformation discrepancy with the austenite matrix; partially alleviated by debonding of intragranular particles and microvoid formation."
+        },
+        {
+          "slippage_situation": null
+        }
+      ],
+      "phase_evolution": "κ-carbides maintained coherency with the austenite matrix in the as-rolled and water-quenched condition without aging-induced coarsening or intergranular network formation."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_hr45",
+      "sample_id": "sample_hr45",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "RD",
+              "value": "480.0",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "± 0.0 MPa"
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "RD",
+              "value": "861.0",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "± 11.0 MPa"
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "RD",
+              "value": "60.0 ± 1.0",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Engineering stress-strain curve shown in Fig. 5a; true stress-strain and strain-hardening rate curves shown in Fig. 10.",
+          "stress_strain_distribution": null,
+          "strain_hardening_rate": [
+            {
+              "property_id": null,
+              "direction": "RD",
+              "value": "~2000",
+              "unit": "MPa"
+            }
+          ]
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "6.82",
+          "unit": "g/cm³"
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_hr68",
+      "sample_id": "sample_hr68",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "RD",
+              "value": "577.0",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "± 0.0 MPa"
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "RD",
+              "value": "922.0",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "± 2.0 MPa"
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "RD",
+              "value": "57.0 ± 0.0",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Engineering stress-strain curve shown in Fig. 5a; true stress-strain and strain-hardening rate curves shown in Fig. 10.",
+          "stress_strain_distribution": null,
+          "strain_hardening_rate": [
+            {
+              "property_id": null,
+              "direction": "RD",
+              "value": "~2000",
+              "unit": "MPa"
+            }
+          ]
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "6.82",
+          "unit": "g/cm³"
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_hr82",
+      "sample_id": "sample_hr82",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "RD",
+              "value": "648.0",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "± 13.0 MPa"
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "RD",
+              "value": "976.0",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "± 11.0 MPa"
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "RD",
+              "value": "50.0 ± 1.0",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Engineering stress-strain curve shown in Fig. 5a; true stress-strain and strain-hardening rate curves shown in Fig. 10.",
+          "stress_strain_distribution": null,
+          "strain_hardening_rate": [
+            {
+              "property_id": null,
+              "direction": "RD",
+              "value": "~2000",
+              "unit": "MPa"
+            }
+          ]
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "6.82",
+          "unit": "g/cm³"
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_hr45",
+      "sample_id": "sample_hr45",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": "Uniaxial tension at room temperature",
+        "environment": "Laboratory air"
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy": null,
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "improvement_percentage": null
+      }
+    },
+    {
+      "performance_id": "perf_hr68",
+      "sample_id": "sample_hr68",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": "Uniaxial tension at room temperature",
+        "environment": "Laboratory air"
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy": null,
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "improvement_percentage": null
+      }
+    },
+    {
+      "performance_id": "perf_hr82",
+      "sample_id": "sample_hr82",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": "Uniaxial tension at room temperature",
+        "environment": "Laboratory air"
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy": "Aging-hardened austenitic low-density steels and solution-treated austenitic stainless steels",
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "improvement_percentage": "Comparable yield strength (~650 MPa) to aging-hardened Fe-Mn-Al-C alloys but considerably better ductility (50% vs. ~21%) and toughness (105 J vs. ~35 J); markedly higher yield strength than solution-treated austenitic stainless steels and Fe-Mn-Al-C alloys while maintaining similar ductility (~50%) and toughness (~100 J/m²)."
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_hr45_sem",
+      "sample_id": "sample_hr45",
+      "microstructure_uuid": "uuid_hr45_matrix",
+      "technique": "SEM with backscattered electron detector",
+      "purpose": "Microstructure observation and second-phase particle distribution",
+      "key_findings": "Equiaxed FCC austenite grains with micron-sized polygonal and submicron-sized spherical (Nb,Mo,W)C particles distributed along the rolling direction and in the matrix."
+    },
+    {
+      "characterization_id": "char_hr68_sem",
+      "sample_id": "sample_hr68",
+      "microstructure_uuid": "uuid_hr68_matrix",
+      "technique": "SEM with backscattered electron detector",
+      "purpose": "Microstructure observation and second-phase particle distribution",
+      "key_findings": "Equiaxed FCC austenite grains with micron-sized polygonal and submicron-sized spherical (Nb,Mo,W)C particles distributed along the rolling direction and in the matrix."
+    },
+    {
+      "characterization_id": "char_hr82_sem",
+      "sample_id": "sample_hr82",
+      "microstructure_uuid": "uuid_hr82_matrix",
+      "technique": "SEM with backscattered electron detector",
+      "purpose": "Microstructure observation and second-phase particle distribution",
+      "key_findings": "Equiaxed FCC austenite grains with micron-sized polygonal and submicron-sized spherical (Nb,Mo,W)C particles distributed along the rolling direction and in the matrix."
+    },
+    {
+      "characterization_id": "char_hr45_ebsd",
+      "sample_id": "sample_hr45",
+      "microstructure_uuid": "uuid_hr45_matrix",
+      "technique": "EBSD",
+      "purpose": "Grain size, twin boundary characterization, and geometrically necessary dislocation density evaluation",
+      "key_findings": "Mean grain size 45.11 μm (21.82 μm including twins), Σ3 twin boundary fraction 67%, mean GND density 2.71 × 10^13 m^-2; high orientation gradient areas increased with rolling reduction."
+    },
+    {
+      "characterization_id": "char_hr68_ebsd",
+      "sample_id": "sample_hr68",
+      "microstructure_uuid": "uuid_hr68_matrix",
+      "technique": "EBSD",
+      "purpose": "Grain size, twin boundary characterization, and geometrically necessary dislocation density evaluation",
+      "key_findings": "Mean grain size 27.02 μm (11.55 μm including twins), Σ3 twin boundary fraction 60%, mean GND density 7.49 × 10^13 m^-2."
+    },
+    {
+      "characterization_id": "char_hr82_ebsd",
+      "sample_id": "sample_hr82",
+      "microstructure_uuid": "uuid_hr82_matrix",
+      "technique": "EBSD",
+      "purpose": "Grain size, twin boundary characterization, and geometrically necessary dislocation density evaluation",
+      "key_findings": "Mean grain size 18.80 μm (7.02 μm including twins), Σ3 twin boundary fraction 52%, mean GND density 9.87 × 10^13 m^-2."
+    },
+    {
+      "characterization_id": "char_hr45_tem",
+      "sample_id": "sample_hr45",
+      "microstructure_uuid": "uuid_hr45_kappa",
+      "technique": "TEM with SAED and dark-field imaging",
+      "purpose": "Identification of nano-sized κ-carbides and deformation substructures",
+      "key_findings": "κ-carbides with L'1₂ structure, mean size 0.81 ± 0.26 nm, volume fraction 3.5 ± 0.33%; faint (100) and (101) superlattice reflections confirmed ordered structure."
+    },
+    {
+      "characterization_id": "char_hr68_tem",
+      "sample_id": "sample_hr68",
+      "microstructure_uuid": "uuid_hr68_kappa",
+      "technique": "TEM with SAED and dark-field imaging",
+      "purpose": "Identification of nano-sized κ-carbides and deformation substructures",
+      "key_findings": "κ-carbides with L'1₂ structure, mean size 0.78 ± 0.17 nm, volume fraction 3.3 ± 0.52%."
+    },
+    {
+      "characterization_id": "char_hr82_tem",
+      "sample_id": "sample_hr82",
+      "microstructure_uuid": "uuid_hr82_kappa",
+      "technique": "TEM with SAED and dark-field imaging",
+      "purpose": "Identification of nano-sized κ-carbides and deformation substructures",
+      "key_findings": "κ-carbides with L'1₂ structure, mean size 0.83 ± 0.23 nm, volume fraction 3.9 ± 0.39%."
+    },
+    {
+      "characterization_id": "char_hr68_eds",
+      "sample_id": "sample_hr68",
+      "microstructure_uuid": "uuid_hr68_mc",
+      "technique": "TEM-EDS",
+      "purpose": "Chemical composition and crystal structure analysis of submicron-sized precipitates",
+      "key_findings": "Submicron particles identified as (Nb,Mo,W)C complex carbide with FCC structure and lattice parameter 4.36 Å."
+    },
+    {
+      "characterization_id": "char_hr45_tensile",
+      "sample_id": "sample_hr45",
+      "microstructure_uuid": null,
+      "technique": "Uniaxial tensile testing",
+      "purpose": "Mechanical properties and strain-hardening behavior at room temperature",
+      "key_findings": "UTS 861.0 ± 11.0 MPa, YS 480.0 ± 0.0 MPa, total elongation 60.0 ± 1.0%, reduction of area 63.0 ± 1.0%; three-staged strain-hardening behavior with rate maintained at ~2000 MPa."
+    },
+    {
+      "characterization_id": "char_hr68_tensile",
+      "sample_id": "sample_hr68",
+      "microstructure_uuid": null,
+      "technique": "Uniaxial tensile testing",
+      "purpose": "Mechanical properties and strain-hardening behavior at room temperature",
+      "key_findings": "UTS 922.0 ± 2.0 MPa, YS 577.0 ± 0.0 MPa, total elongation 57.0 ± 0.0%, reduction of area 63.0 ± 0.0%; three-staged strain-hardening behavior."
+    },
+    {
+      "characterization_id": "char_hr82_tensile",
+      "sample_id": "sample_hr82",
+      "microstructure_uuid": null,
+      "technique": "Uniaxial tensile testing",
+      "purpose": "Mechanical properties and strain-hardening behavior at room temperature",
+      "key_findings": "UTS 976.0 ± 11.0 MPa, YS 648.0 ± 13.0 MPa, total elongation 50.0 ± 1.0%, reduction of area 61.5 ± 0.3%; excellent strength-ductility combination."
+    },
+    {
+      "characterization_id": "char_hr45_charpy",
+      "sample_id": "sample_hr45",
+      "microstructure_uuid": null,
+      "technique": "Charpy V-notch impact testing",
+      "purpose": "Impact toughness at room temperature",
+      "key_findings": "Charpy impact energy 133 ± 2.5 J/m²; typical ductile fracture with dimples and microvoids."
+    },
+    {
+      "characterization_id": "char_hr68_charpy",
+      "sample_id": "sample_hr68",
+      "microstructure_uuid": null,
+      "technique": "Charpy V-notch impact testing",
+      "purpose": "Impact toughness at room temperature",
+      "key_findings": "Charpy impact energy 116 ± 2.8 J/m²; typical ductile fracture with dimples and microvoids."
+    },
+    {
+      "characterization_id": "char_hr82_charpy",
+      "sample_id": "sample_hr82",
+      "microstructure_uuid": null,
+      "technique": "Charpy V-notch impact testing",
+      "purpose": "Impact toughness at room temperature",
+      "key_findings": "Charpy impact energy 105 ± 1.2 J/m²; typical ductile fracture with dimples and microvoids."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_sfe",
+      "sample_id": null,
+      "simulation_method": "Thermodynamic model",
+      "software_used": null,
+      "potential_model": null,
+      "validation_against_experiment": null,
+      "analytical_model": [
+        {
+          "model_name": "Olson and Cohen SFE model",
+          "equation_role": "Calculation of stacking fault energy Γ",
+          "parameters": "a (lattice constant of austenite), N_A (Avogadro constant), ΔG^(γ→ε) (free energy difference), σ (γ/ε interface energy)",
+          "model_note": "Calculated stacking fault energy (SFE) of the present steel is ~73 mJ/m²."
+        }
+      ]
+    },
+    {
+      "computation_id": "comp_strengthening",
+      "sample_id": null,
+      "simulation_method": "Analytical strengthening models",
+      "software_used": null,
+      "potential_model": null,
+      "validation_against_experiment": "Calculated yield strengths show good consistency with experimental results summarized in Table 2.",
+      "analytical_model": [
+        {
+          "model_name": "Hall-Petch",
+          "equation_role": "Grain boundary strengthening σ_gb",
+          "parameters": "σ_0 = 203.10 MPa (friction stress), k_HP = 733.43 MPa·μm^(1/2)",
+          "model_note": "Effective grain size including annealing twin boundaries was used; contributions: HR45 157.0 MPa, HR68 215.8 MPa, HR82 276.8 MPa."
+        },
+        {
+          "model_name": "Taylor hardening",
+          "equation_role": "Dislocation strengthening σ_ds",
+          "parameters": "M = 3.06, α = 0.2, G = 68 GPa, b = 0.26 nm, ρ_ds from KAM-derived GND density",
+          "model_note": "GND densities used: HR45 2.71×10^13, HR68 7.49×10^13, HR82 9.87×10^13 m^-2; contributions: HR45 56.3 MPa, HR68 93.7 MPa, HR82 107.5 MPa."
+        },
+        {
+          "model_name": "κ-carbide shearing",
+          "equation_role": "Precipitate strengthening σ_p-κ",
+          "parameters": "M = 3.06, G = 68 GPa, b = 0.26 nm, γ_APB ~350 mJ/m²",
+          "model_note": "Shearing mechanism contributions: HR45 ~60.2 MPa, HR68 ~58.0 MPa, HR82 ~60.2 MPa; did not contribute to strength increment between reductions."
+        },
+        {
+          "model_name": "Orowan bypassing",
+          "equation_role": "Precipitate strengthening σ_p-(Nb,Mo,W)C",
+          "parameters": "M = 3.06, G = 170 GPa, b = 0.26 nm, ν (Poisson's ratio)",
+          "model_note": "Submicron-sized particle contributions: HR45 ~6.4 MPa, HR68 ~6.7 MPa, HR82 ~6.5 MPa; micron-sized contribution negligible."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Uniform elongation (UE) from engineering stress-strain curves: HR45 52.0 ± 1.0%, HR68 47.0 ± 0.5%, HR82 39.0 ± 0.8%.",
+    "Reduction of area from tensile tests: HR45 63.0 ± 1.0%, HR68 63.0 ± 0.0%, HR82 61.5 ± 0.3%.",
+    "Charpy V-notch (CVN) impact energy at room temperature: HR45 133 ± 2.5 J/m², HR68 116 ± 2.8 J/m², HR82 105 ± 1.2 J/m².",
+    "Effective grain sizes including annealing twin boundaries (Σ3): HR45 ~21.82 μm, HR68 ~11.55 μm, HR82 ~7.02 μm.",
+    "Annealing twin boundary length fractions relative to total HAGBs (>15°): HR45 67%, HR68 60%, HR82 52%.",
+    "Evolution of slip band spacing with engineering strain (Fig. 12): at strain 0.1, HR45 296.40 ± 50.06 nm, HR68 155.02 ± 38.42 nm, HR82 68.05 ± 8.91 nm; saturation limit reached at ~50 nm at higher strains.",
+    "Deformation substructures during interrupted tensile tests (Fig. 11) showed planar slip bands and Taylor lattice at low strain, transitioning to microbands with ill-defined and distinct boundaries at higher strains; finer-grained samples exhibited faster substructure evolution and earlier microband formation.",
+    "Fractography (Fig. 6) of all hot-rolled samples showed typical ductile fracture with ductile dimples and microvoids; dimple size decreased with increasing rolling reduction due to grain refinement, and intergranular (Nb,Mo,W)C particles played no detrimental effect on toughness.",
+    "Summary of calculated strengthening contributions to yield strength (Table 2): HR45 — σ_0 203.1, σ_p-κ 61.0, σ_p-(Nb,Mo,W)C 6.5, σ_ds 56.3, σ_gb 157.0 (calc 483.9, exp 480.0) MPa; HR68 — σ_0 203.1, σ_p-κ 58.0, σ_p-(Nb,Mo,W)C 6.7, σ_ds 93.7, σ_gb 215.8 (calc 577.3, exp 577.0) MPa; HR82 — σ_0 203.1, σ_p-κ 60.2, σ_p-(Nb,Mo,W)C 6.4, σ_ds 107.5, σ_gb 276.8 (calc 653.9, exp 648.0) MPa."
+  ]
+}

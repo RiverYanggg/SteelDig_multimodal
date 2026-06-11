@@ -1,0 +1,18 @@
+{
+  "outputs_exp_root": "../evaluation_json2json/outputs_exp",
+  "truth_model": "deepseek",
+  "pred_model": "doubao",
+  "output_root": "../evaluation_json2json/output",
+  "field_rules_path": "field_rules.json",
+  "force": false,
+  "workers": 4,
+  "llm_bridge": {
+    "enabled": false,
+    "model": "deepseek-v4-flash",
+    "base_url": "https://api.deepseek.com",
+    "api_key": "sk-9ce501912c184de1ac936fe40d44eaf2",
+    "temperature": 0.0,
+    "prompt_path": "../evaluation_json2json/prompts/sample_bridge_prompt.md",
+    "verify_ssl": true
+  }
+}

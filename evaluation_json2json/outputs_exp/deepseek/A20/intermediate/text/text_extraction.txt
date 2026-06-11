@@ -1,0 +1,721 @@
+{
+  "papers": [
+    {
+      "paper_id": "A20",
+      "doi": null,
+      "title": "Evaluation of change in material properties due to plastic deformation",
+      "authors": [
+        "M. Yang",
+        "Y. Akiyama",
+        "T. Sasaki"
+      ],
+      "publication_year": "2004",
+      "journal": null,
+      "keywords": [
+        "Change in elastic modulus",
+        "Spring-back",
+        "Nano-indentation test"
+      ],
+      "research_type": "experimental",
+      "paper_scope": "Investigating the decrease of elastic modulus due to plastic deformation and its effect on spring-back, using macroscopic tensile tests and nano-indentation."
+    }
+  ],
+  "alloys": [
+    {
+      "alloy_id": "alloy_spce",
+      "paper_id": "A20",
+      "alloy_name": "SPCE",
+      "aliases": [
+        "SPCE sheet metal"
+      ],
+      "base_element": "Fe",
+      "alloying_elements": [],
+      "nominal_composition": [],
+      "alloys_notes": "Deep drawing cold rolled steel sheet, likely low carbon steel. Exact composition not provided."
+    },
+    {
+      "alloy_id": "alloy_spcc",
+      "paper_id": "A20",
+      "alloy_name": "SPCC",
+      "aliases": [
+        "SPCC sheet metal"
+      ],
+      "base_element": "Fe",
+      "alloying_elements": [],
+      "nominal_composition": [],
+      "alloys_notes": "General cold rolled steel sheet, likely low carbon steel. Exact composition not provided."
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_spce_ar",
+      "paper_id": "A20",
+      "alloy_id": "alloy_spce",
+      "description": "SPCE cold rolled sheet, as received.",
+      "processes_notes": null
+    },
+    {
+      "process_id": "proc_spcc_ar",
+      "paper_id": "A20",
+      "alloy_id": "alloy_spcc",
+      "description": "SPCC cold rolled sheet, as received.",
+      "processes_notes": null
+    },
+    {
+      "process_id": "proc_spcc_15ps",
+      "paper_id": "A20",
+      "alloy_id": "alloy_spcc",
+      "description": "15% tensile pre-strain at room temperature.",
+      "processes_notes": null
+    },
+    {
+      "process_id": "proc_spcc_15ps_ht",
+      "paper_id": "A20",
+      "alloy_id": "alloy_spcc",
+      "description": "15% pre-strain followed by heat treatment at 373 K for 90 h to recover Cottrell atmosphere.",
+      "processes_notes": null
+    },
+    {
+      "process_id": "proc_spcc_ar_ht",
+      "paper_id": "A20",
+      "alloy_id": "alloy_spcc",
+      "description": "As received followed by heat treatment at 373 K for 90 h.",
+      "processes_notes": null
+    },
+    {
+      "process_id": "proc_spcc_ann",
+      "paper_id": "A20",
+      "alloy_id": "alloy_spcc",
+      "description": "Annealed (condition details not specified, presumably full annealing).",
+      "processes_notes": null
+    },
+    {
+      "process_id": "proc_spce_cmp",
+      "paper_id": "A20",
+      "alloy_id": "alloy_spce",
+      "description": "SPCE received, surface preparation by etching to reveal grain boundaries and Vickers marking, followed by CMP treatment for surface flattening prior to nano-indentation.",
+      "processes_notes": null
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_spce_ar",
+      "paper_id": "A20",
+      "alloy_id": "alloy_spce",
+      "process_id": "proc_spce_ar"
+    },
+    {
+      "sample_id": "sample_A",
+      "paper_id": "A20",
+      "alloy_id": "alloy_spcc",
+      "process_id": "proc_spcc_ar"
+    },
+    {
+      "sample_id": "sample_B",
+      "paper_id": "A20",
+      "alloy_id": "alloy_spcc",
+      "process_id": "proc_spcc_15ps"
+    },
+    {
+      "sample_id": "sample_C",
+      "paper_id": "A20",
+      "alloy_id": "alloy_spcc",
+      "process_id": "proc_spcc_15ps_ht"
+    },
+    {
+      "sample_id": "sample_D",
+      "paper_id": "A20",
+      "alloy_id": "alloy_spcc",
+      "process_id": "proc_spcc_ar_ht"
+    },
+    {
+      "sample_id": "sample_E",
+      "paper_id": "A20",
+      "alloy_id": "alloy_spcc",
+      "process_id": "proc_spcc_ann"
+    },
+    {
+      "sample_id": "sample_spce_nano",
+      "paper_id": "A20",
+      "alloy_id": "alloy_spce",
+      "process_id": "proc_spce_cmp"
+    }
+  ],
+  "processing_steps": [
+    {
+      "sample_id": "sample_B",
+      "paper_id": "A20",
+      "sequence": "1",
+      "type": "mechanical_processing",
+      "method": "tensile pre-straining",
+      "temperature": null,
+      "unit": null,
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": "15%",
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_C",
+      "paper_id": "A20",
+      "sequence": "1",
+      "type": "mechanical_processing",
+      "method": "tensile pre-straining",
+      "temperature": null,
+      "unit": null,
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": "15%",
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_C",
+      "paper_id": "A20",
+      "sequence": "2",
+      "type": "heat_treatment",
+      "method": "heat treatment for Cottrell atmosphere recovery",
+      "temperature": "373",
+      "unit": "K",
+      "duration": "90 h",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Heating at 373 K for 90 h to allow carbon diffusion and recovery of Cottrell atmosphere while keeping dislocations stationary."
+    },
+    {
+      "sample_id": "sample_D",
+      "paper_id": "A20",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "heat treatment for Cottrell atmosphere recovery",
+      "temperature": "373",
+      "unit": "K",
+      "duration": "90 h",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Heating as-received SPCC at 373 K for 90 h."
+    },
+    {
+      "sample_id": "sample_E",
+      "paper_id": "A20",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "annealing",
+      "temperature": null,
+      "unit": null,
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Annealing treatment, details not specified."
+    },
+    {
+      "sample_id": "sample_spce_nano",
+      "paper_id": "A20",
+      "sequence": "1",
+      "type": "surface_preparation",
+      "method": "etching and Vickers marking",
+      "temperature": null,
+      "unit": null,
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Etching solution used to reveal grain boundaries, followed by Vickers hardness indentations as position markers."
+    },
+    {
+      "sample_id": "sample_spce_nano",
+      "paper_id": "A20",
+      "sequence": "2",
+      "type": "surface_finishing",
+      "method": "CMP (chemical mechanical polishing)",
+      "temperature": null,
+      "unit": null,
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "CMP treatment applied to remove surface roughness and the ditch at grain boundaries for accurate nano-indentation."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_1",
+      "sample_id": "sample_spce_nano",
+      "overall_structure": "Ferritic steel with varying dislocation structure near grain boundaries. Single phase ferrite matrix with dislocation pile-ups at boundaries.",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "micro_1",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "ferrite",
+              "crystal_structure": "bcc",
+              "volume_fraction": "approximately 100%",
+              "morphology": "equiaxed grains",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocation",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "if_set_1",
+      "sample_id": "sample_spce_nano",
+      "phases": [
+        {
+          "interface_id": "if_1",
+          "microstructure_uuid": "micro_1",
+          "phase_1_name": "ferrite",
+          "phase_2_name": "ferrite",
+          "coherence": "high-angle grain boundary (assumed)"
+        }
+      ],
+      "defect_interaction": [
+        {
+          "interaction_id": "di_1",
+          "microstructure_uuid": "micro_1",
+          "interaction_type": "dislocation pile-up",
+          "quality_description": "Dislocations pile up near grain boundaries during plastic deformation; these movable dislocations cause a decrease in apparent elastic modulus, especially near boundaries."
+        }
+      ],
+      "interface_notes": [
+        {
+          "stress_strain_distribution": "Nano-indentation measurements show lower elastic modulus near grain boundary compared to grain interior, consistent with dislocation pile-up model."
+        },
+        {
+          "slippage_situation": null
+        }
+      ],
+      "phase_evolution": null
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "props_A",
+      "sample_id": "sample_A",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": "182 GPa (0-0.05% strain), 173 GPa (whole elastic range)",
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "props_B",
+      "sample_id": "sample_B",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": "188 GPa (0-0.05% strain), 162 GPa (whole elastic range)",
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "props_C",
+      "sample_id": "sample_C",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": "186 GPa (0-0.05% strain), 162 GPa (whole elastic range)",
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "props_D",
+      "sample_id": "sample_D",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": "189 GPa (0-0.05% strain), 189 GPa (whole elastic range)",
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "props_E",
+      "sample_id": "sample_E",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": "224 GPa (0-0.05% strain), 206 GPa (whole elastic range)",
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_1",
+      "sample_id": "sample_spce_ar",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": "V-bending",
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy": "SPCE with constant initial elastic modulus",
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_1",
+      "sample_id": "sample_spce_ar",
+      "microstructure_uuid": null,
+      "technique": "Tensile test with precision extensometer and strain gauges",
+      "purpose": "Measure change in Young's modulus as a function of plastic strain (up to 25% true strain).",
+      "key_findings": "Young's modulus decreases with increasing plastic strain; decrease exceeds 20% after 25% plastic strain."
+    },
+    {
+      "characterization_id": "char_2",
+      "sample_id": "sample_A",
+      "microstructure_uuid": null,
+      "technique": "Tensile test with load cell and strain gauge",
+      "purpose": "Evaluate elastic modulus of SPCC specimens with various pre-treatment conditions to investigate effect of movable dislocations.",
+      "key_findings": "As-received and pre-strained specimens show strong decrease of elastic modulus with strain even within elastic region; annealed specimen shows nearly constant modulus; heat treatment after pre-strain partially restores modulus."
+    },
+    {
+      "characterization_id": "char_3",
+      "sample_id": "sample_spce_nano",
+      "microstructure_uuid": "micro_1",
+      "technique": "Nano-indentation with spherical indenter tip (combined with AFM)",
+      "purpose": "Map local elastic modulus across grain interiors and near grain boundaries.",
+      "key_findings": "Elastic modulus near grain boundary is lower than in grain interior, consistent with dislocation pile-up model. Distribution varies with grain orientation."
+    },
+    {
+      "characterization_id": "char_4",
+      "sample_id": "sample_spce_nano",
+      "microstructure_uuid": "micro_1",
+      "technique": "AFM (Atomic Force Microscope) imaging",
+      "purpose": "Surface topography scanning before and after nano-indentation, selection of indentation points.",
+      "key_findings": null
+    },
+    {
+      "characterization_id": "char_5",
+      "sample_id": "sample_spce_nano",
+      "microstructure_uuid": null,
+      "technique": "Vickers hardness indentation (marking)",
+      "purpose": "Create reference marks for locating grain boundary region during nano-indentation.",
+      "key_findings": null
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_1",
+      "sample_id": "sample_spce_ar",
+      "simulation_method": "Finite element method (FEM) for V-bending spring-back prediction",
+      "software_used": null,
+      "potential_model": null,
+      "validation_against_experiment": "Spring-back predicted with varied elastic modulus (as measured) agrees better with experiment than prediction using constant initial modulus.",
+      "analytical_model": []
+    }
+  ],
+  "unmapped_findings": [
+    "Fig. 1 and its table: Variation of elastic modulus (δE = E/E0) with true strain for SPCE. At 0.00 strain: 100.0%; 0.02: 92.0%; 0.04: 88.0%; 0.06: 85.0%; 0.08: 82.0%; 0.10: 80.0%; 0.12: 79.0%; 0.14: 78.0%; 0.16: 77.0%; 0.18: 76.0%; 0.20: 75.0%; 0.22: 74.0%; 0.24: 73.0%; 0.26: 72.0%.",
+    "Fig. 2 and its table: Comparison of experimental spring-back angle (degree) with simulations using constant E and varied E for V-bending. Data: at bend angle 160°, exp. 0.9, const. E 1.0, varied E 1.15; 140°, 1.25, 1.1, 1.3; 120°, 1.25, 1.1, 1.35; 100°, 1.35, 1.15, 1.35; 90°, 1.4, 1.15, 1.35. Conclusion: varied E improves prediction accuracy.",
+    "Fig. 4a data points extracted: Strain 0.0% stress ~0 MPa for all curves; 0.1% stress ~150 (A), ~200 (B), ~180 (C), ~160 (D), ~170 (E); 0.2% ~200, ~300, ~250, ~220, ~240; 0.3% ~220, ~380, ~360, ~340, ~370 MPa. Fig. 4b: Elastic modulus gradient vs. strain showing rapid decrease from initial ~250 GPa to ~0 GPa at 0.30% strain for some conditions.",
+    "Equation (1): X = (2 D t)^{1/2} used to estimate carbon diffusion distance for heat treatment design (373 K, 90 h).",
+    "Equation (2): Reduced modulus Er = (√π/(2√A))S and P/A used in Berkovich nano-indentation analysis.",
+    "Equation (3): For spherical indenter, he = (9 P^2 / (16 R Er^2))^{1/3} based on Hertz contact theory.",
+    "Dislocation mechanism: Movable dislocations released from Cottrell atmospheres during plastic deformation pile up at grain boundaries; during unloading they move back, reducing apparent elastic modulus. Heat treatment at 373 K for 90 h partially recovers Cottrell locking, restoring modulus.",
+    "Density change due to plastic deformation is less than 1% and cannot account for the large modulus decrease observed.",
+    "CMP treatment was used to flatten surface after etching to avoid the influence of grain boundary ditch on nano-indentation with spherical tip.",
+    "Nano-indentation results (Fig. 9 scatter data): Position [m] vs. elastic modulus Er [GPa] showing drop near boundary. Approximate values: position ~2 m: 170 GPa; ~3 m: 180; ~4 m: 150; ~5 m: 130; ~6 m: 100; boundary region around 5-10 m, modulus drops to ~40-20 GPa.",
+    "Fig. 12 scatter data: Young's modulus near grain boundary for three scan lines Y=0,1,2. At X=0 µm: ~280, ~340, ~260 GPa; X=5: ~180, ~220, ~200; X=10: ~120, ~200, ~220; X=15: ~160, ~220, ~180; X=20: ~140, ~200, ~160 GPa. Minimum near X=5-10 µm indicates grain boundary region."
+  ]
+}

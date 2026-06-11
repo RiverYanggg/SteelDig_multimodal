@@ -1,0 +1,134 @@
+{
+  "sample_id": "sample_fe30mn1.2c_ref",
+  "sample": {
+    "sample_id": "sample_fe30mn1.2c_ref",
+    "paper_id": "A1",
+    "alloy_id": "alloy_fe30mn1.2c",
+    "process_id": "proc_fe30mn1.2c_ref"
+  },
+  "alloy": {
+    "alloy_id": "alloy_fe30mn1.2c",
+    "paper_id": "A1",
+    "alloy_name": "Fe-30Mn-1.2C (TWIP reference)",
+    "aliases": [
+      "Al-free TWIP steel"
+    ],
+    "base_element": "Fe",
+    "alloying_elements": [
+      "Mn",
+      "C"
+    ],
+    "nominal_composition": [
+      {
+        "element": "Fe",
+        "weight_percent": "balance",
+        "atomic_percent": null
+      },
+      {
+        "element": "Mn",
+        "weight_percent": "30",
+        "atomic_percent": null
+      },
+      {
+        "element": "C",
+        "weight_percent": "1.2",
+        "atomic_percent": null
+      },
+      {
+        "element": "Al",
+        "weight_percent": "0",
+        "atomic_percent": null
+      }
+    ],
+    "alloys_notes": "Used as baseline in various figures to compare the effect of Al addition."
+  },
+  "process": {
+    "process_id": "proc_fe30mn1.2c_ref",
+    "paper_id": "A1",
+    "alloy_id": "alloy_fe30mn1.2c",
+    "description": "Solution treatment at 1100 °C, water quenching (reference condition for TWIP).",
+    "processes_notes": null
+  },
+  "processing_steps": [
+    {
+      "sample_id": "sample_fe30mn1.2c_ref",
+      "paper_id": "A1",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "solution treatment",
+      "temperature": "1100",
+      "unit": "°C",
+      "duration": "2 h",
+      "cooling_medium": "water quenching",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Reference TWIP condition, Al-free."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_fe30mn1.2c_ref",
+      "sample_id": "sample_fe30mn1.2c_ref",
+      "overall_structure": "Single-phase austenite with deformation twins",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_twip_ref_01",
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "austenite (gamma)",
+              "crystal_structure": "FCC",
+              "volume_fraction": "1",
+              "morphology": "equiaxed",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "deformation twins",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [],
+  "performance": [],
+  "known_issues": [],
+  "evidence_blocks": [
+    {
+      "block_id": "b0001",
+      "text": "# Current state of Fe-Mn-Al-C low density steels",
+      "char_start": 0,
+      "char_end": 48
+    },
+    {
+      "block_id": "b0002",
+      "text": "Shangping Chen a,⇑ , Radhakanta Rana a , Arunansu Haldar b , Ranjit Kumar Ray b",
+      "char_start": 50,
+      "char_end": 129
+    },
+    {
+      "block_id": "b0003",
+      "text": "a Tata Steel, PO Box 10000, 1970CA IJmuiden, The Netherlands",
+      "char_start": 131,
+      "char_end": 191
+    }
+  ]
+}

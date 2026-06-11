@@ -1,0 +1,622 @@
+```json
+{
+  "papers": [
+    {
+      "paper_id": "A50",
+      "doi": null,
+      "title": "Excellent mechanical properties and underlined deformation twinning mechanism of a low-carbon low-density cryogenic steel",
+      "authors": [
+        "Qingfeng Kang",
+        "Zexi Zhang",
+        "Ziyuan Gao",
+        "Cunyu Wang",
+        "Jianxiong Liang",
+        "Zhengdong Liu",
+        "Yuqing Weng",
+        "Wenquan Cao"
+      ],
+      "publication_year": null,
+      "journal": null,
+      "keywords": [
+        "Low-carbon low-density steel",
+        "Excellent cryogenic toughness",
+        "Deformation twinning",
+        "Short-range ordering",
+        "High stacking fault energy"
+      ],
+      "research_type": "experimental",
+      "paper_scope": "Investigation of mechanical properties, cryogenic toughness, and deformation twinning mechanisms in Fe-35Mn-6Al-0.1C low-carbon low-density steel at room temperature and liquid nitrogen temperature."
+    }
+  ],
+  "alloys": [
+    {
+      "alloy_id": "alloy_fe35mn6al01c",
+      "paper_id": "A50",
+      "alloy_name": "Fe-35Mn-6Al-0.1C",
+      "aliases": [
+        "Fe35Mn6Al0.1C",
+        "low-carbon low-density steel"
+      ],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Al",
+        "C",
+        "Nb",
+        "V",
+        "Mo",
+        "W"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Fe",
+          "weight_percent": "Bal.",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "35",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "6",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.1",
+          "atomic_percent": null
+        },
+        {
+          "element": "Nb",
+          "weight_percent": "0.1",
+          "atomic_percent": null
+        },
+        {
+          "element": "V",
+          "weight_percent": "0.1",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mo",
+          "weight_percent": "1",
+          "atomic_percent": null
+        },
+        {
+          "element": "W",
+          "weight_percent": "1",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "Measured density is 7.18 g·cm⁻³. Stacking fault energy (SFE) is 62.64 mJ·m⁻² at room temperature and 49.46 mJ·m⁻² at liquid nitrogen temperature. Measured composition of specimen: Mn 35.14, Al 5.97, C 0.095, Nb 0.11, V 0.10, Mo 1.24, W 0.95, Fe Bal. (wt.%). Austenite phase composition: Mn 35.92, Al 5.88, C 0.098, Nb 0.09, V 0.09, Mo 1.12, W 0.86, Fe Bal. Ferrite phase composition: Mn 32.44, Al 6.83, C -, Nb 0.09, V 0.18, Mo 1.54, W 1.63, Fe Bal."
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_fe35mn6al01c_01",
+      "paper_id": "A50",
+      "alloy_id": "alloy_fe35mn6al01c",
+      "description": "Vacuum induction melting of 50 Kg ingot under high purity Ar atmosphere, homogenization at 1150 °C for 4 h, hot-rolling into rods with 16.5 mm diameter, and solution treatment at 1050 °C for 2 h followed by oil quenching.",
+      "processes_notes": null
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_fe35mn6al01c_sol",
+      "paper_id": "A50",
+      "alloy_id": "alloy_fe35mn6al01c",
+      "process_id": "proc_fe35mn6al01c_01"
+    }
+  ],
+  "processing_steps": [
+    {
+      "sample_id": "sample_fe35mn6al01c_sol",
+      "paper_id": "A50",
+      "sequence": "1",
+      "type": "casting",
+      "method": "vacuum induction melting",
+      "temperature": null,
+      "unit": null,
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "50 Kg ingot prepared under high purity Ar atmosphere."
+    },
+    {
+      "sample_id": "sample_fe35mn6al01c_sol",
+      "paper_id": "A50",
+      "sequence": "2",
+      "type": "heat_treatment",
+      "method": "homogenization",
+      "temperature": "1150",
+      "unit": "°C",
+      "duration": "4 h",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_fe35mn6al01c_sol",
+      "paper_id": "A50",
+      "sequence": "3",
+      "type": "thermomechanical_processing",
+      "method": "hot rolling",
+      "temperature": null,
+      "unit": null,
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Hot-rolled into rods with a diameter of 16.5 mm."
+    },
+    {
+      "sample_id": "sample_fe35mn6al01c_sol",
+      "paper_id": "A50",
+      "sequence": "4",
+      "type": "heat_treatment",
+      "method": "solution treatment",
+      "temperature": "1050",
+      "unit": "°C",
+      "duration": "2 h",
+      "cooling_medium": "oil",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Oil quenching to obtain equiaxed grain structures with nearly equivalent grain sizes."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "str_fe35mn6al01c_init",
+      "sample_id": "sample_fe35mn6al01c_sol",
+      "overall_structure": "Austenite-based duplex structure with FCC γ matrix embedded with a small fraction of BCC α phase",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_gamma_matrix",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "γ austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": "approximately 97 %",
+              "morphology": "equiaxed grains with annealing twin boundaries",
+              "grain_size": "about 10.8 μm (misorientation angle ≥ 15°)",
+              "texture": "very weak texture"
+            },
+            {
+              "phase_name": "α ferrite",
+              "crystal_structure": "BCC",
+              "volume_fraction": "approximately 3 %",
+              "morphology": "uniformly distributed along austenite grain boundaries",
+              "grain_size": "about 4.7 μm",
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocations",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "1.6 × 10¹³ m⁻² (GND from KAM)",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "10.8",
+              "unit": "μm"
+            },
+            "grain_size_distribution": "nearly equivalent grain sizes",
+            "texture": "very weak texture"
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "prec_sro",
+              "type": "L1₂ type short-range ordering (SRO)",
+              "size": {
+                "value": null,
+                "unit": null
+              },
+              "distribution": "extremely weak superlattice spots in SAED along [100]γ",
+              "coherency": null
+            },
+            {
+              "precipitate_id": "prec_mc",
+              "type": "MC carbide",
+              "size": {
+                "value": null,
+                "unit": null
+              },
+              "distribution": "Approximately 0.047 wt.% Nb, 0.017 wt.% Mo, and 0.024 wt.% W exist in MC carbide; V is completely dissolved.",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "int_fe35mn6al01c_01",
+      "sample_id": "sample_fe35mn6al01c_sol",
+      "phases": [
+        {
+          "interface_id": "int_gamma_alpha",
+          "microstructure_uuid": "uuid_gamma_matrix",
+          "phase_1_name": "γ austenite",
+          "phase_2_name": "α ferrite",
+          "coherence": null
+        }
+      ],
+      "defect_interaction": [],
+      "interface_notes": [
+        {
+          "stress_strain_distribution": "Under cryogenic impact, distinct fine cracks appear around voids generated by the detachment of α phase, indicating the γ/α interface serves as a crack initiation site."
+        },
+        {
+          "slippage_situation": null
+        }
+      ],
+      "phase_evolution": "The small fraction of ferrite is stable during deformation at both room temperature and liquid nitrogen temperature; no phase transformation occurs in austenite under impact."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_fe35mn6al01c_rt",
+      "sample_id": "sample_fe35mn6al01c_sol",
+      "test_temperature": "room temperature (20 °C)",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "251 ± 3",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "± 3 MPa"
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "580 ± 6",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "± 6 MPa"
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "52.0 ± 0.5",
+              "unit": "%"
+            },
+            {
+              "direction": null,
+              "value": "38.5 ± 0.5",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Engineering stress-strain curve and true stress-strain with strain hardening rate curve are shown in Fig. 2(a) and Fig. 2(b); strain hardening exhibits two stages at room temperature.",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": [
+            {
+              "property_id": "shr_rt",
+              "direction": null,
+              "value": "two-stage hardening behavior",
+              "unit": null
+            }
+          ]
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        },
+        "charpy_impact_energy": [
+          {
+            "test_temperature": "room temperature",
+            "value": "331 ± 4",
+            "unit": "J"
+          }
+        ]
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_fe35mn6al01c_lnt",
+      "sample_id": "sample_fe35mn6al01c_sol",
+      "test_temperature": "liquid nitrogen temperature (-196 °C)",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "497 ± 5",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "± 5 MPa"
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "945 ± 8",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "± 8 MPa"
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "75.5 ± 0.5",
+              "unit": "%"
+            },
+            {
+              "direction": null,
+              "value": "56.0 ± 0.5",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Engineering stress-strain curve and true stress-strain with strain hardening rate curve are shown in Fig. 2(a) and Fig. 2(b); strain hardening exhibits four stages (A, B, C, D) at liquid nitrogen temperature.",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": [
+            {
+              "property_id": "shr_lnt",
+              "direction": null,
+              "value": "four-stage hardening behavior (stages A, B, C, D)",
+              "unit": null
+            }
+          ]
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        },
+        "charpy_impact_energy": [
+          {
+            "test_temperature": "liquid nitrogen temperature",
+            "value": "254 ± 6",
+            "unit": "J"
+          }
+        ]
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_fe35mn6al01c_01",
+      "sample_id": "sample_fe35mn6al01c_sol",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": "-196",
+          "max": "20",
+          "unit": "°C"
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy": "9Ni steel, 304 stainless steel, TWIP steel, Al0.1CoCrFeNi high-entropy alloy, high-carbon lightweight steel, low-carbon high manganese steel",
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_01",
+      "sample_id": "sample_fe35mn6al01c_sol",
+      "microstructure_uuid": null,
+      "technique": "wet-chemical analysis",
+      "purpose": "Determine overall composition of the as-solution-treated steel",
+      "key_findings": "Specimen composition: Mn 35.14, Al 5.97, C 0.095, Nb 0.11, V 0.10, Mo 1.24, W 0.95, Fe Bal. (wt.%)"
+    },
+    {
+      "characterization_id": "char_02",
+      "sample_id": "sample_fe35mn6al01c_sol",
+      "microstructure_uuid": null,
+      "technique": "electron probe microanalysis",
+      "purpose": "Estimate compositions of austenite and ferrite phases",
+      "key_findings": "Austenite: Mn 35.92, Al 5.88, C 0.098, Nb 0.09, V 0.09, Mo 1.12, W 0.86, Fe Bal. Ferrite: Mn 32.44, Al 6.83, C -, Nb 0.09, V 0.18, Mo 1.54, W 1.63, Fe Bal."
+    },
+    {
+      "characterization_id": "char_03",
+      "sample_id": "sample_fe35mn6al01c_sol",
+      "microstructure_uuid": null,
+      "technique": "Archimedes principle",
+      "purpose": "Measure density",
+      "key_findings": "Density is 7.18 g·cm⁻³"
+    },
+    {
+      "characterization_id": "char_04",
+      "sample_id": "sample_fe35mn6al01c_sol",
+      "microstructure_uuid": null,
+      "technique": "X-ray diffraction (Bruker D8 Focus)",
+      "purpose": "Determine phase fraction and confirm austenite stability after tensile strain",
+      "key_findings": "Austenite volume fraction is about 97 % with a small fraction of BCC α phase; austenite is stable even after deformation at liquid nitrogen temperature."
+    },
+    {
+      "characterization_id": "char_05",
+      "sample_id": "sample_fe35mn6al01c_sol",
+      "microstructure_uuid": "uuid_gamma_matrix",
+      "technique": "EBSD in SEM (JSM-7800F, HKL channel 5)",
+      "purpose": "Characterize phases, grain size, GND/dislocation density (KAM), texture, and deformation microstructure evolution",
+      "key_findings": "Initial equiaxed γ grains with weak texture, average grain size 10.8 μm, GND density 1.6×10¹³ m⁻². <111>//TA texture develops during tension. Schmid factor evolution and orientation dependence of twinning (type I/II/III grains) are quantified. Step sizes of 1 μm, 300 nm, 100 nm, and 30 nm were adopted."
+    },
+    {
+      "characterization_id": "char_06",
+      "sample_id": "sample_fe35mn6al01c_sol",
+      "microstructure_uuid": null,
+      "technique": "TEM (FEI-Tecnai G2 F20, 200 kV)",
+      "purpose": "Investigate deformation substructures, dislocation cells/blocks, twins, SRO, and precipitates",
+      "key_findings": "Observed L1₂ SRO, MC carbides, dislocation nodes, Lomer-Cottrell locks, high-density dislocation walls, Taylor lattices, cell blocks, dislocation cells, deformation twins, microbands, and stacking faults at LNT. Twin bundle width is about 5 nm at 10 % LNT strain. Primary and secondary twins are activated at high strain. CBs/DCs sizes refined to 242 ± 54 nm at 28 % LNT vs 282 ± 56 nm at RT."
+    },
+    {
+      "characterization_id": "char_07",
+      "sample_id": "sample_fe35mn6al01c_sol",
+      "microstructure_uuid": null,
+      "technique": "tensile test (MTS tensile machine)",
+      "purpose": "Measure tensile mechanical properties at RT and LNT",
+      "key_findings": "Initial strain rate of 1.0×10⁻³ s⁻¹. At least three specimens per condition. Interrupted tensile tests performed to engineering strains of 3 %, 10 %, 20 %, 28 %, 38 %, and 55 %."
+    },
+    {
+      "characterization_id": "char_08",
+      "sample_id": "sample_fe35mn6al01c_sol",
+      "microstructure_uuid": null,
+      "technique": "instrumented Charpy V-notch impact test",
+      "purpose": "Measure impact toughness and record force-displacement and energy-displacement curves at RT and LNT",
+      "key_findings": "Standard samples 55×10×10 mm with 2 mm V-notch. CVN energy is 331 ± 4 J at RT and 254 ± 6 J at LNT. Crack initiation energy is ~80–100 J for both temperatures; crack propagation energy is 251 J at RT and 156 J at LNT. Fracture surfaces are ductile (dimples) at both temperatures."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_01",
+      "sample_id": "sample_fe35mn6al01c_sol",
+      "simulation_method": "Thermodynamic calculation of stacking fault energy and phase diagram",
+      "software_used": "Thermal-Calc (TCFE12 database)",
+      "potential_model": null,
+      "validation_against_experiment": "XRD profiles and measured phase fractions validate the predicted austenite stability from phase diagram calculation.",
+      "analytical_model": [
+        {
+          "model_name": "SFE thermodynamic model",
+          "equation_role": "Calculate γ_SFE = 2ρΔG^(γ→ε) + 2σ",
+          "parameters": "γ_SFE at RT: 62.64 mJ·m⁻²; at LNT: 49.46 mJ·m⁻². ΔG^(γ→ε) at RT: 804.22 J·mol⁻¹; at LNT: 576.90 J·mol⁻¹.",
+          "model_note": "Based on molar Gibbs energy of γ→ε transformation and interfacial energy; solid solution model with magnetic transformation Gibbs energy included."
+        },
+        {
+          "model_name": "Mean-field critical twinning stress model",
+          "equation_role": "Estimate critical stress for twinning nucleation",
+          "parameters": "σ_t = M(Γ/b + Gb/D); M values: 2.2 (Sachs), 2.7 (CPFEM), 3.06 (Taylor random), 3.64 (<111>//TA and <110>//TA); G=68 GPa; b=0.147 nm; D=10.8 μm; Sfe RT=62.64, LNT=49.46 mJ·m⁻².",
+          "model_note": "Experimental critical twinning stress is about 723 MPa at RT and 778 MPa at LNT. Sachs model predicts 939 MPa (RT) and 742 MPa (LNT); Taylor model predicts 1306 MPa (RT) and 1032 MPa (LNT)."
+        },
+        {
+          "model_name": "Hall-Petch-type twinning stress relation",
+          "equation_role": "Estimate critical twinning stress via Hall-Petch-type relation",
+          "parameters": "σ_t = (1/m)(γ/b + K/D^0.5); m=0.326; b=2.5×10⁻¹⁰ m; K=0.350 MPa·m^0.5; D=10.8 μm.",
+          "model_note": "Predicted 1096 MPa at RT and 934 MPa at LNT. K_GB(γ)=0.350 MPa·m^0.5 estimated from yield strengths at different solution treatment temperatures."
+        },
+        {
+          "model_name": "Flow stress decomposition model",
+          "equation_role": "Predict flow stress contributions from lattice friction, grain boundaries, twins, and dislocations",
+          "parameters": "σ_mod = 0.97σ_mod(γ) + 0.03σ_mod(α); α=0.4 for austenite (verified as best fit); M=3.06; G=68 GPa; b=0.26 nm. Lattice friction: 143 MPa (RT), 389 MPa (LNT). Grain boundary strengthening: ~108 MPa. Twin parameters at 55 % LNT: l=182 nm, e=72 nm, F from stereological analysis, twin strengthening=290 MPa.",
+          "model_note": "Dislocation hardening dominates at RT; synergistic dislocation and twinning hardening at LNT. Ferrite contribution <10 MPa and neglected."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Table 2 reports reduction of area (RA): 78 ± 0.5 % at room temperature and 80 ± 1 % at liquid nitrogen temperature for the solution-treated steel.",
+    "Table 3 gives true stress, geometrically necessary dislocation density (ρ^GND from EBSD), XRD dislocation density (ρ), and cell block/dislocation cell (CBs/DCs) sizes at engineering strains of 3 %, 10 %, 20 %, 28 %, 38 %, and 55 % at both RT and LNT. At RT, true stress increases from 339 MPa (3 %) to 800 MPa (38 %); ρ^GND (RT) from 0.71×10¹⁴ to 8.99×10¹⁴ m⁻²; ρ (XRD, RT) from 0.64×10¹⁴ to 8.03×10¹⁴ m⁻². At LNT, true stress increases from 598 MPa (3 %) to 1463 MPa (55 %); ρ^GND (LNT) from 0.97×10¹⁴ to 9.73×10¹⁴ m⁻²; ρ (XRD, LNT) from 0.72×10¹⁴ to 13.32×10¹⁴ m⁻². CBs or DCs size at 20 %: 448 ± 74 nm (RT) and 429 ± 76 nm (LNT); at 28 %: 282 ± 56 nm (RT) and 242 ± 54 nm (LNT).",
+    "Fig. 2(b) shows true stress-strain and strain hardening rate curves: RT exhibits two-stage hardening, while LNT exhibits four-stage hardening (stages A, B, C, D). Stage B at LNT is associated with twin activation at annealed twin boundaries; Stage D involves extensive primary and secondary twin activation sustaining high strain hardening.",
+    "Fig. 4 data: Average {111}<110>γ Schmid factor at RT peaks near 3 % strain (~0.438 initial, ~0.424 at 3 %), while {111}<112>γ Schmid factor at RT decreases then surpasses slip Schmid factor. At LNT, both {111}<110>γ and {111}<112>γ Schmid factors peak at approximately 10 % engineering strain.",
+    "Fig. 5 and Fig. 7–8 descriptions indicate strong orientation dependence of deformation twinning: type I grains (<001>//TA, deviation ~15°) form dislocation cells and show few twins; type II grains (between <001> and <111>) form single-slip traces and single-orientation twins; type III grains (<111>//TA, deviation ~15°) form double glide traces and multiple-orientation twins. Twins at RT initiate at ~28 % strain along cell block walls; at LNT twins initiate at ~10 % strain at annealed twin boundaries with twin bundle width ~5 nm.",
+    "Fig. 6 indicates that at 28 % strain, type II grains exhibit single slip traces and type III grains exhibit double glide traces; grain subdivision is induced by dislocation glide.",
+    "Fig. 9 indicates impact fracture surfaces at both RT and LNT are ductile (micrometer or sub-micrometer dimples). Cryogenic impact sample shows distinct fine cracks around voids generated by α phase detachment, confirming γ/α interface as crack initiation site and contributing to reduced crack propagation energy at low temperature.",
+    "Fig. 10 benchmark data: The studied steel exhibits Charpy impact energy ~254 J and specific yield strength ~70 MPa·cm³·g⁻¹ at LNT, offering a higher Charpy impact energy than high-carbon lightweight steel and TWIP steel, and superior specific yield strength than low-carbon high manganese steel and 304 stainless steel; ductility is nearly 3 times higher than 9Ni steel.",
+    "Fig. 11 XRD profiles and phase diagram (Thermal-Calc TCFE12) confirm austenite stability: about 95.6–97.3 % austenite retained after LNT tensile strains; ferrite fraction remains small and stable.",
+    "Strengthening contributions from Table 6: At 55 % LNT engineering strain, austenite dislocation strengthening σ_dis(γ)=646 MPa and twin strengthening σ_twin(γ)=290 MPa. Ferrite dislocation contribution <10 MPa and neglected in flow stress modeling.",
+    "Williamson–Hall equation and Gaussian curve fitting applied to XRD profiles of (111)γ, (200)γ, and (220)γ peaks to estimate crystallite size D and micro-strain for dislocation density calculation via Eq. (2) with Burgers vector b=0.26 nm.",
+    "Geometrically necessary dislocation density estimated from EBSD KAM data using Eq. (1): ρ^GND = 2θ/ub, where u is unit length and b is Burgers vector."
+  ]
+}
+```

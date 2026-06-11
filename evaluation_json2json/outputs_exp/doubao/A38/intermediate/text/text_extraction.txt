@@ -1,0 +1,671 @@
+{
+    "papers": [
+        {
+            "paper_id": "A38",
+            "doi": null,
+            "title": "Microstructure and mechanical properties of Fe–30Mn–9Al–C–3Ni low-density steel manufactured by selective laser melting",
+            "authors": ["Jiawei Liu", "Tian Xie", "Yinlong Xie", "Le Xiao", "Yuan Lin", "Yu Dai", "Jian Wu"],
+            "publication_year": null,
+            "journal": null,
+            "keywords": ["Selective laser melting", "Fe–Mn–Al–C low-density steel", "Mechanical property", "Austenite"],
+            "research_type": "experimental",
+            "paper_scope": "首次采用等离子旋转电极法制备高球形度Fe-30Mn-9Al-C-3Ni粉末，通过选择性激光熔化技术制备该低密度钢，系统研究70~150W激光功率对其微观组织、孔隙率、表面质量及力学性能的影响，优化得到综合性能最优的工艺参数"
+        }
+    ],
+    "alloys": [
+        {
+            "alloy_id": "alloy_fe30mn9alc3ni",
+            "paper_id": "A38",
+            "alloy_name": "Fe–30Mn–9Al–C–3Ni low-density steel",
+            "aliases": [],
+            "base_element": "Fe",
+            "alloying_elements": ["Mn", "Al", "C", "Ni", "O"],
+            "nominal_composition": [
+                {"element": "Mn", "weight_percent": "29.95", "atomic_percent": null},
+                {"element": "Al", "weight_percent": "8.63", "atomic_percent": null},
+                {"element": "C", "weight_percent": "1.20", "atomic_percent": null},
+                {"element": "Ni", "weight_percent": "3.45", "atomic_percent": null},
+                {"element": "O", "weight_percent": "0.01", "atomic_percent": null},
+                {"element": "Fe", "weight_percent": "Bal.", "atomic_percent": null}
+            ],
+            "alloys_notes": "粉末由等离子旋转电极法制备，粒径范围15~53μm，中位粒径D50为35.69μm，流动性14s/50g，氧含量低，无空心颗粒"
+        }
+    ],
+    "processes": [
+        {
+            "process_id": "proc_prep_powder",
+            "paper_id": "A38",
+            "alloy_id": "alloy_fe30mn9alc3ni",
+            "description": "等离子旋转电极法制备Fe-30Mn-9Al-C-3Ni合金粉末",
+            "processes_notes": null
+        },
+        {
+            "process_id": "proc_slm_70w",
+            "paper_id": "A38",
+            "alloy_id": "alloy_fe30mn9alc3ni",
+            "description": "选择性激光熔化制备合金，激光功率70W，能量密度58.33J/mm³",
+            "processes_notes": null
+        },
+        {
+            "process_id": "proc_slm_90w",
+            "paper_id": "A38",
+            "alloy_id": "alloy_fe30mn9alc3ni",
+            "description": "选择性激光熔化制备合金，激光功率90W，能量密度75.00J/mm³",
+            "processes_notes": null
+        },
+        {
+            "process_id": "proc_slm_110w",
+            "paper_id": "A38",
+            "alloy_id": "alloy_fe30mn9alc3ni",
+            "description": "选择性激光熔化制备合金，激光功率110W，能量密度91.67J/mm³",
+            "processes_notes": null
+        },
+        {
+            "process_id": "proc_slm_130w",
+            "paper_id": "A38",
+            "alloy_id": "alloy_fe30mn9alc3ni",
+            "description": "选择性激光熔化制备合金，激光功率130W，能量密度108.33J/mm³",
+            "processes_notes": null
+        },
+        {
+            "process_id": "proc_slm_150w",
+            "paper_id": "A38",
+            "alloy_id": "alloy_fe30mn9alc3ni",
+            "description": "选择性激光熔化制备合金，激光功率150W，能量密度125.00J/mm³",
+            "processes_notes": null
+        },
+        {
+            "process_id": "proc_cast",
+            "paper_id": "A38",
+            "alloy_id": "alloy_fe30mn9alc3ni",
+            "description": "传统铸造制备Fe-30Mn-9Al-C-3Ni合金，作为对比样品",
+            "processes_notes": null
+        }
+    ],
+    "samples": [
+        {
+            "sample_id": "sample_powder",
+            "paper_id": "A38",
+            "alloy_id": "alloy_fe30mn9alc3ni",
+            "process_id": "proc_prep_powder"
+        },
+        {
+            "sample_id": "sample_p70",
+            "paper_id": "A38",
+            "alloy_id": "alloy_fe30mn9alc3ni",
+            "process_id": "proc_slm_70w"
+        },
+        {
+            "sample_id": "sample_p90",
+            "paper_id": "A38",
+            "alloy_id": "alloy_fe30mn9alc3ni",
+            "process_id": "proc_slm_90w"
+        },
+        {
+            "sample_id": "sample_p110",
+            "paper_id": "A38",
+            "alloy_id": "alloy_fe30mn9alc3ni",
+            "process_id": "proc_slm_110w"
+        },
+        {
+            "sample_id": "sample_p130",
+            "paper_id": "A38",
+            "alloy_id": "alloy_fe30mn9alc3ni",
+            "process_id": "proc_slm_130w"
+        },
+        {
+            "sample_id": "sample_p150",
+            "paper_id": "A38",
+            "alloy_id": "alloy_fe30mn9alc3ni",
+            "process_id": "proc_slm_150w"
+        },
+        {
+            "sample_id": "sample_cast",
+            "paper_id": "A38",
+            "alloy_id": "alloy_fe30mn9alc3ni",
+            "process_id": "proc_cast"
+        }
+    ],
+    "processing_steps": [
+        {
+            "sample_id": "sample_powder",
+            "paper_id": "A38",
+            "sequence": "1",
+            "type": "powder_preparation",
+            "method": "plasma rotating electrode process (PREP)",
+            "temperature": null,
+            "unit": null,
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": null
+        },
+        {
+            "sample_id": "sample_p70",
+            "paper_id": "A38",
+            "sequence": "1",
+            "type": "additive_manufacturing",
+            "method": "selective laser melting (SLM)",
+            "temperature": "200",
+            "unit": "℃",
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "基板预热200℃，氩气保护，成型腔氧含量<300ppm，扫描速度750mm/s，光斑直径0.1mm，层厚0.02mm，hatch间距0.08mm，每层扫描路径旋转67°以减小织构"
+        },
+        {
+            "sample_id": "sample_p90",
+            "paper_id": "A38",
+            "sequence": "1",
+            "type": "additive_manufacturing",
+            "method": "selective laser melting (SLM)",
+            "temperature": "200",
+            "unit": "℃",
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "基板预热200℃，氩气保护，成型腔氧含量<300ppm，扫描速度750mm/s，光斑直径0.1mm，层厚0.02mm，hatch间距0.08mm，每层扫描路径旋转67°以减小织构"
+        },
+        {
+            "sample_id": "sample_p110",
+            "paper_id": "A38",
+            "sequence": "1",
+            "type": "additive_manufacturing",
+            "method": "selective laser melting (SLM)",
+            "temperature": "200",
+            "unit": "℃",
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "基板预热200℃，氩气保护，成型腔氧含量<300ppm，扫描速度750mm/s，光斑直径0.1mm，层厚0.02mm，hatch间距0.08mm，每层扫描路径旋转67°以减小织构"
+        },
+        {
+            "sample_id": "sample_p130",
+            "paper_id": "A38",
+            "sequence": "1",
+            "type": "additive_manufacturing",
+            "method": "selective laser melting (SLM)",
+            "temperature": "200",
+            "unit": "℃",
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "基板预热200℃，氩气保护，成型腔氧含量<300ppm，扫描速度750mm/s，光斑直径0.1mm，层厚0.02mm，hatch间距0.08mm，每层扫描路径旋转67°以减小织构"
+        },
+        {
+            "sample_id": "sample_p150",
+            "paper_id": "A38",
+            "sequence": "1",
+            "type": "additive_manufacturing",
+            "method": "selective laser melting (SLM)",
+            "temperature": "200",
+            "unit": "℃",
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "基板预热200℃，氩气保护，成型腔氧含量<300ppm，扫描速度750mm/s，光斑直径0.1mm，层厚0.02mm，hatch间距0.08mm，每层扫描路径旋转67°以减小织构"
+        }
+    ],
+    "structures": [
+        {
+            "structure_id": "struct_powder",
+            "sample_id": "sample_powder",
+            "overall_structure": "以γ-Fe(M)相为主，含少量α-Fe(M)相，粉末实心无空心，元素分布均匀",
+            "number_of_phases": "2",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_powder_01",
+                    "related_sequence": null,
+                    "phases_present": [
+                        {"phase_name": "γ-Fe(M)", "crystal_structure": null, "volume_fraction": null, "morphology": null, "grain_size": null, "texture": null},
+                        {"phase_name": "α-Fe(M)", "crystal_structure": null, "volume_fraction": null, "morphology": null, "grain_size": null, "texture": null}
+                    ],
+                    "defects": [
+                        {"type": null, "porosity": "0", "inclusions": [], "dislocation_density": null, "lattice_distortion": null}
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {"value": null, "unit": null},
+                        "grain_size_distribution": null,
+                        "texture": null
+                    },
+                    "precipitates": []
+                }
+            ]
+        },
+        {
+            "structure_id": "struct_p70",
+            "sample_id": "sample_p70",
+            "overall_structure": "单一奥氏体相，无α-Fe(M)相，存在大量未熔粉末和孔隙",
+            "number_of_phases": "1",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_p70_01",
+                    "related_sequence": "1",
+                    "phases_present": [
+                        {"phase_name": "奥氏体", "crystal_structure": "FCC", "volume_fraction": "100%", "morphology": "等轴晶为主", "grain_size": null, "texture": "随机取向"}
+                    ],
+                    "defects": [
+                        {"type": "孔隙、未熔粉末", "porosity": "4.75%", "inclusions": [], "dislocation_density": null, "lattice_distortion": null}
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {"value": "8.1", "unit": "μm"},
+                        "grain_size_distribution": null,
+                        "texture": "随机取向"
+                    },
+                    "precipitates": []
+                }
+            ]
+        },
+        {
+            "structure_id": "struct_p90",
+            "sample_id": "sample_p90",
+            "overall_structure": "单一奥氏体相，孔隙率低，无明显未熔粉末",
+            "number_of_phases": "1",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_p90_01",
+                    "related_sequence": "1",
+                    "phases_present": [
+                        {"phase_name": "奥氏体", "crystal_structure": "FCC", "volume_fraction": "100%", "morphology": "等轴晶为主", "grain_size": null, "texture": "随机取向"}
+                    ],
+                    "defects": [
+                        {"type": "少量孔隙", "porosity": "0.25%", "inclusions": [], "dislocation_density": null, "lattice_distortion": null}
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {"value": "10.6", "unit": "μm"},
+                        "grain_size_distribution": null,
+                        "texture": "随机取向"
+                    },
+                    "precipitates": []
+                }
+            ]
+        },
+        {
+            "structure_id": "struct_p110",
+            "sample_id": "sample_p110",
+            "overall_structure": "奥氏体相为主体，含纳米级κ碳化物，位错缠结存在，孔隙率最低，无明显裂纹",
+            "number_of_phases": "2",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_p110_01",
+                    "related_sequence": "1",
+                    "phases_present": [
+                        {"phase_name": "奥氏体", "crystal_structure": "FCC", "volume_fraction": "~99%", "morphology": "横截面为等轴晶，纵截面含柱状晶", "grain_size": null, "texture": "随机取向"},
+                        {"phase_name": "κ碳化物", "crystal_structure": null, "volume_fraction": "少量", "morphology": "纳米颗粒", "grain_size": null, "texture": null}
+                    ],
+                    "defects": [
+                        {"type": "极少量孔隙", "porosity": "0.13%", "inclusions": [], "dislocation_density": "高", "lattice_distortion": null}
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {"value": "11.0", "unit": "μm"},
+                        "grain_size_distribution": "横截面平均晶粒尺寸11.0μm，纵截面平均晶粒尺寸14.9μm",
+                        "texture": "随机取向"
+                    },
+                    "precipitates": [
+                        {"precipitate_id": "prec_kappa_01", "type": "κ碳化物", "size": {"value": null, "unit": "nm"}, "distribution": "均匀分布在奥氏体基体", "coherency": null}
+                    ]
+                }
+            ]
+        },
+        {
+            "structure_id": "struct_p130",
+            "sample_id": "sample_p130",
+            "overall_structure": "单一奥氏体相，存在少量孔隙和球化缺陷",
+            "number_of_phases": "1",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_p130_01",
+                    "related_sequence": "1",
+                    "phases_present": [
+                        {"phase_name": "奥氏体", "crystal_structure": "FCC", "volume_fraction": "100%", "morphology": "等轴晶为主", "grain_size": null, "texture": "随机取向"}
+                    ],
+                    "defects": [
+                        {"type": "少量孔隙、球化缺陷", "porosity": "0.28%", "inclusions": [], "dislocation_density": null, "lattice_distortion": null}
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {"value": "13.9", "unit": "μm"},
+                        "grain_size_distribution": null,
+                        "texture": "随机取向"
+                    },
+                    "precipitates": []
+                }
+            ]
+        },
+        {
+            "structure_id": "struct_p150",
+            "sample_id": "sample_p150",
+            "overall_structure": "单一奥氏体相，存在孔隙、裂纹和球化缺陷",
+            "number_of_phases": "1",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_p150_01",
+                    "related_sequence": "1",
+                    "phases_present": [
+                        {"phase_name": "奥氏体", "crystal_structure": "FCC", "volume_fraction": "100%", "morphology": "等轴晶为主", "grain_size": null, "texture": "随机取向"}
+                    ],
+                    "defects": [
+                        {"type": "孔隙、裂纹、球化缺陷", "porosity": "0.35%", "inclusions": [], "dislocation_density": null, "lattice_distortion": null}
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {"value": "14.3", "unit": "μm"},
+                        "grain_size_distribution": null,
+                        "texture": "随机取向"
+                    },
+                    "precipitates": []
+                }
+            ]
+        }
+    ],
+    "interfaces": [
+        {
+            "interface_set_id": "iface_p110_01",
+            "sample_id": "sample_p110",
+            "phases": [
+                {
+                    "interface_id": "iface_01",
+                    "microstructure_uuid": "uuid_p110_01",
+                    "phase_1_name": "奥氏体",
+                    "phase_2_name": "κ碳化物",
+                    "coherence": null
+                }
+            ],
+            "defect_interaction": [],
+            "interface_notes": [],
+            "phase_evolution": null
+        }
+    ],
+    "properties": [
+        {
+            "property_set_id": "prop_p70",
+            "sample_id": "sample_p70",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [{"direction": null, "value": "776.9", "unit": "MPa", "others": {"uncertainty": null}}],
+                    "ultimate_tensile_strength": [{"direction": null, "value": "986.4", "unit": "MPa", "others": {"uncertainty": null}}],
+                    "elongation": [{"direction": null, "value": "23.10", "unit": "%"}],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [
+                    {"region": "横截面", "value": "278", "scale": "HV", "unit": null},
+                    {"region": "纵截面", "value": "279", "scale": "HV", "unit": null}
+                ],
+                "fracture_toughness": {"value": null, "unit": null},
+                "fatigue_properties": {"fatigue_limit": null, "cycles_to_failure": null},
+                "creep_properties": {"steady_state_creep_rate": null, "rupture_life": null}
+            },
+            "physical": {
+                "density": {"value": "6.78", "unit": "g/cm³"},
+                "thermal_properties": {"thermal_conductivity": null, "thermal_expansion_coefficient": null, "specific_heat": null},
+                "electrical_properties": {"electrical_conductivity": null, "resistivity": null},
+                "magnetic_properties": {"magnetic_susceptibility": null, "curie_temperature": null}
+            },
+            "chemical": {
+                "corrosion_resistance": {"test_medium": null, "corrosion_rate": null, "passivation_behavior": null},
+                "oxidation_resistance": {"oxidation_rate_constant": null, "protective_scale": null}
+            },
+            "radiation_properties": {"void_swelling": null, "irradiation_hardening": null, "helium_embrittlement": null}
+        },
+        {
+            "property_set_id": "prop_p90",
+            "sample_id": "sample_p90",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [{"direction": null, "value": "802.4", "unit": "MPa", "others": {"uncertainty": null}}],
+                    "ultimate_tensile_strength": [{"direction": null, "value": "1067.8", "unit": "MPa", "others": {"uncertainty": null}}],
+                    "elongation": [{"direction": null, "value": "39.68", "unit": "%"}],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [
+                    {"region": "横截面", "value": "285", "scale": "HV", "unit": null},
+                    {"region": "纵截面", "value": "289", "scale": "HV", "unit": null}
+                ],
+                "fracture_toughness": {"value": null, "unit": null},
+                "fatigue_properties": {"fatigue_limit": null, "cycles_to_failure": null},
+                "creep_properties": {"steady_state_creep_rate": null, "rupture_life": null}
+            },
+            "physical": {
+                "density": {"value": null, "unit": "g/cm³"},
+                "thermal_properties": {"thermal_conductivity": null, "thermal_expansion_coefficient": null, "specific_heat": null},
+                "electrical_properties": {"electrical_conductivity": null, "resistivity": null},
+                "magnetic_properties": {"magnetic_susceptibility": null, "curie_temperature": null}
+            },
+            "chemical": {
+                "corrosion_resistance": {"test_medium": null, "corrosion_rate": null, "passivation_behavior": null},
+                "oxidation_resistance": {"oxidation_rate_constant": null, "protective_scale": null}
+            },
+            "radiation_properties": {"void_swelling": null, "irradiation_hardening": null, "helium_embrittlement": null}
+        },
+        {
+            "property_set_id": "prop_p110",
+            "sample_id": "sample_p110",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [{"direction": null, "value": "887.1", "unit": "MPa", "others": {"uncertainty": null}}],
+                    "ultimate_tensile_strength": [{"direction": null, "value": "1076.8", "unit": "MPa", "others": {"uncertainty": null}}],
+                    "elongation": [{"direction": null, "value": "40.80", "unit": "%"}],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [
+                    {"region": "横截面", "value": "292", "scale": "HV", "unit": null},
+                    {"region": "纵截面", "value": "294", "scale": "HV", "unit": null}
+                ],
+                "fracture_toughness": {"value": null, "unit": null},
+                "fatigue_properties": {"fatigue_limit": null, "cycles_to_failure": null},
+                "creep_properties": {"steady_state_creep_rate": null, "rupture_life": null}
+            },
+            "physical": {
+                "density": {"value": null, "unit": "g/cm³"},
+                "thermal_properties": {"thermal_conductivity": null, "thermal_expansion_coefficient": null, "specific_heat": null},
+                "electrical_properties": {"electrical_conductivity": null, "resistivity": null},
+                "magnetic_properties": {"magnetic_susceptibility": null, "curie_temperature": null}
+            },
+            "chemical": {
+                "corrosion_resistance": {"test_medium": null, "corrosion_rate": null, "passivation_behavior": null},
+                "oxidation_resistance": {"oxidation_rate_constant": null, "protective_scale": null}
+            },
+            "radiation_properties": {"void_swelling": null, "irradiation_hardening": null, "helium_embrittlement": null}
+        },
+        {
+            "property_set_id": "prop_p130",
+            "sample_id": "sample_p130",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [{"direction": null, "value": "782.2", "unit": "MPa", "others": {"uncertainty": null}}],
+                    "ultimate_tensile_strength": [{"direction": null, "value": "1039.6", "unit": "MPa", "others": {"uncertainty": null}}],
+                    "elongation": [{"direction": null, "value": "39.72", "unit": "%"}],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [
+                    {"region": "横截面", "value": "283", "scale": "HV", "unit": null},
+                    {"region": "纵截面", "value": "284", "scale": "HV", "unit": null}
+                ],
+                "fracture_toughness": {"value": null, "unit": null},
+                "fatigue_properties": {"fatigue_limit": null, "cycles_to_failure": null},
+                "creep_properties": {"steady_state_creep_rate": null, "rupture_life": null}
+            },
+            "physical": {
+                "density": {"value": null, "unit": "g/cm³"},
+                "thermal_properties": {"thermal_conductivity": null, "thermal_expansion_coefficient": null, "specific_heat": null},
+                "electrical_properties": {"electrical_conductivity": null, "resistivity": null},
+                "magnetic_properties": {"magnetic_susceptibility": null, "curie_temperature": null}
+            },
+            "chemical": {
+                "corrosion_resistance": {"test_medium": null, "corrosion_rate": null, "passivation_behavior": null},
+                "oxidation_resistance": {"oxidation_rate_constant": null, "protective_scale": null}
+            },
+            "radiation_properties": {"void_swelling": null, "irradiation_hardening": null, "helium_embrittlement": null}
+        },
+        {
+            "property_set_id": "prop_p150",
+            "sample_id": "sample_p150",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [{"direction": null, "value": "771.5", "unit": "MPa", "others": {"uncertainty": null}}],
+                    "ultimate_tensile_strength": [{"direction": null, "value": "1032.0", "unit": "MPa", "others": {"uncertainty": null}}],
+                    "elongation": [{"direction": null, "value": "28.28", "unit": "%"}],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [
+                    {"region": "横截面", "value": "281", "scale": "HV", "unit": null},
+                    {"region": "纵截面", "value": "283", "scale": "HV", "unit": null}
+                ],
+                "fracture_toughness": {"value": null, "unit": null},
+                "fatigue_properties": {"fatigue_limit": null, "cycles_to_failure": null},
+                "creep_properties": {"steady_state_creep_rate": null, "rupture_life": null}
+            },
+            "physical": {
+                "density": {"value": null, "unit": "g/cm³"},
+                "thermal_properties": {"thermal_conductivity": null, "thermal_expansion_coefficient": null, "specific_heat": null},
+                "electrical_properties": {"electrical_conductivity": null, "resistivity": null},
+                "magnetic_properties": {"magnetic_susceptibility": null, "curie_temperature": null}
+            },
+            "chemical": {
+                "corrosion_resistance": {"test_medium": null, "corrosion_rate": null, "passivation_behavior": null},
+                "oxidation_resistance": {"oxidation_rate_constant": null, "protective_scale": null}
+            },
+            "radiation_properties": {"void_swelling": null, "irradiation_hardening": null, "helium_embrittlement": null}
+        },
+        {
+            "property_set_id": "prop_cast",
+            "sample_id": "sample_cast",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [{"direction": null, "value": "772.3", "unit": "MPa", "others": {"uncertainty": null}}],
+                    "ultimate_tensile_strength": [{"direction": null, "value": "879.0", "unit": "MPa", "others": {"uncertainty": null}}],
+                    "elongation": [{"direction": null, "value": "20.53", "unit": "%"}],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [],
+                "fracture_toughness": {"value": null, "unit": null},
+                "fatigue_properties": {"fatigue_limit": null, "cycles_to_failure": null},
+                "creep_properties": {"steady_state_creep_rate": null, "rupture_life": null}
+            },
+            "physical": {
+                "density": {"value": null, "unit": "g/cm³"},
+                "thermal_properties": {"thermal_conductivity": null, "thermal_expansion_coefficient": null, "specific_heat": null},
+                "electrical_properties": {"electrical_conductivity": null, "resistivity": null},
+                "magnetic_properties": {"magnetic_susceptibility": null, "curie_temperature": null}
+            },
+            "chemical": {
+                "corrosion_resistance": {"test_medium": null, "corrosion_rate": null, "passivation_behavior": null},
+                "oxidation_resistance": {"oxidation_rate_constant": null, "protective_scale": null}
+            },
+            "radiation_properties": {"void_swelling": null, "irradiation_hardening": null, "helium_embrittlement": null}
+        }
+    ],
+    "performance": [
+        {
+            "performance_id": "perf_p110",
+            "sample_id": "sample_p110",
+            "service_conditions": {
+                "operating_temperature": {"min": null, "max": null, "unit": null},
+                "stress_state": null,
+                "environment": null
+            },
+            "lifetime_prediction": {"model_used": null, "predicted_lifetime": null, "confidence_interval": null},
+            "comparative_performance": {
+                "benchmark_alloy": "铸态Fe-30Mn-9Al-C-3Ni合金",
+                "benchmark_process_id": "proc_cast",
+                "benchmark_sample_id": "sample_cast",
+                "improvement_percentage": "屈服强度提升约14.9%，抗拉强度提升约22.5%，延伸率提升约98.7%"
+            }
+        }
+    ],
+    "characterization_methods": [
+        {
+            "characterization_id": "char_icp",
+            "sample_id": "sample_powder",
+            "microstructure_uuid": null,
+            "technique": "inductively coupled plasma optical emission spectrometry (ICP-OES)",
+            "purpose": "测定粉末化学组成",
+            "key_findings": "粉末成分为Fe-29.95Mn-8.63Al-1.20C-3.45Ni-0.01O(wt%)"
+        },
+        {
+            "characterization_id": "char_xrd_powder",
+            "sample_id": "sample_powder",
+            "microstructure_uuid": "uuid_powder_01",
+            "technique": "X-ray diffraction (XRD)",
+            "purpose": "分析粉末物相组成",
+            "key_findings": "粉末含γ-Fe(M)和α-Fe(M)两相"
+        },
+        {
+            "characterization_id": "char_xrd_printed",
+            "sample_id": "sample_p70",
+            "microstructure_uuid": "uuid_p70_01",
+            "technique": "X-ray diffraction (XRD)",
+            "purpose": "分析打印样品物相组成",
+            "key_findings": "所有SLM打印样品仅含奥氏体单相，无α-Fe(M)相"
+        },
+        {
+            "characterization_id": "char_sem_powder",
+            "sample_id": "sample_powder",
+            "microstructure_uuid": "uuid_powder_01",
+            "technique": "scanning electron microscopy (SEM)",
+            "purpose": "观察粉末形貌和元素分布",
+            "key_findings": "粉末高球形度，无卫星粉，元素分布均匀，无空心颗粒"
+        },
+        {
+            "characterization_id": "char_ebsd",
+            "sample_id": "sample_p110",
+            "microstructure_uuid": "uuid_p110_01",
+            "technique": "electron backscatter diffraction (EBSD)",
+            "purpose": "分析晶粒尺寸和取向",
+            "key_findings": "晶粒取向随机，平均晶粒尺寸随激光功率升高而增大，P-110横截面平均晶粒尺寸11.0μm"
+        },
+        {
+            "characterization_id": "char_tem",
+            "sample_id": "sample_p110",
+            "microstructure_uuid": "uuid_p110_01",
+            "technique": "transmission electron microscopy (TEM)",
+            "purpose": "观察精细微观结构",
+            "key_findings": "奥氏体内部存在位错缠结，纳米级κ碳化物均匀分布在基体中"
+        },
+        {
+            "characterization_id": "char_tensile",
+            "sample_id": "sample_p110",
+            "microstructure_uuid": null,
+            "technique": "室温拉伸测试",
+            "purpose": "测定力学性能",
+            "key_findings": "P-110样品屈服强度887.1MPa，抗拉强度1076.8MPa，延伸率40.80%"
+        },
+        {
+            "characterization_id": "char_hardness",
+            "sample_id": "sample_p110",
+            "microstructure_uuid": null,
+            "technique": "显微硬度测试",
+            "purpose": "测定硬度",
+            "key_findings": "P-110样品纵截面硬度最高为294HV"
+        }
+    ],
+    "computational_details": [],
+    "unmapped_findings": [
+        "SLM打印样品的相对密度随激光功率升高先升后降，P-70到P-150的相对密度分别为98.27%、99.16%、99.34%、99.12%、99.07%",
+        "样品表面粗糙度随激光功率升高逐渐降低，P-70到P-150的表面粗糙度分别为20.71μm、9.19μm、5.29μm、4.65μm、4.19μm",
+        "所有SLM打印样品拉伸断裂均为韧性断裂，断口存在大量韧窝，激光功率过低时存在未熔粉导致的解理面，过高时存在裂纹和球化缺陷导致性能下降",
+        "该合金密度最低为6.78g/cm³，显著低于304不锈钢的7.93g/cm³，属于低密度钢范畴"
+    ]
+}

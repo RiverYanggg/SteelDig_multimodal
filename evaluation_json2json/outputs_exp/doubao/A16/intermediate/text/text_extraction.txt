@@ -1,0 +1,364 @@
+{
+    "papers": [
+        {
+            "paper_id": "A16",
+            "doi": null,
+            "title": "Bi-directional ferrite to austenite transformation through warm temperature deformation of a ferrite-based low density steel",
+            "authors": ["Amir-Reza Kalantari", "Abbas Zarei-Hanzaki", "Hamid Reza Abedi", "Seong-Jun Park", "Jun Young Park"],
+            "publication_year": null,
+            "journal": null,
+            "keywords": ["Low density steel", "Deformation induced transformation", "Thermomechanical processing", "Thermodynamic modelling"],
+            "research_type": "mixed",
+            "paper_scope": "研究Fe-11.15Mn-5.6Al-0.07C低密度钢在温变形过程中的双向应变诱导相变行为，结合热力学吉布斯自由能模型和微观结构分析解释相变机理及对应的流变软化效应"
+        }
+    ],
+    "alloys": [
+        {
+            "alloy_id": "alloy_fe11mn5al007c",
+            "paper_id": "A16",
+            "alloy_name": "Fe-11.15Mn-5.6Al-0.07C low density steel",
+            "aliases": [],
+            "base_element": "Fe",
+            "alloying_elements": ["Mn", "Al", "C"],
+            "nominal_composition": [
+                {
+                    "element": "Mn",
+                    "weight_percent": "11.15",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "Al",
+                    "weight_percent": "5.6",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "C",
+                    "weight_percent": "0.07",
+                    "atomic_percent": null
+                }
+            ],
+            "alloys_notes": "500℃、0.001s⁻¹变形至真应变0.6后，铁素体中Mn含量为10.3±0.1 wt%、Al含量为6.0±0.1 wt%，奥氏体中Mn含量为12.8±0.1 wt%、Al含量为4.7±0.1 wt%"
+        }
+    ],
+    "processes": [
+        {
+            "process_id": "proc_fe11mn5al_01",
+            "paper_id": "A16",
+            "alloy_id": "alloy_fe11mn5al007c",
+            "description": "电渣重熔态试样经1200℃均质化1h，1100-1200℃ 5道次热轧后空冷，950℃退火1h得到铁素体+奥氏体+马氏体三相初始组织，随后在100-700℃温度范围、应变速率0.001s⁻¹条件下压缩变形至真应变0.6，变形后立即水淬保留变形组织",
+            "processes_notes": null
+        }
+    ],
+    "samples": [
+        {
+            "sample_id": "sample_fe11mn5al_01",
+            "paper_id": "A16",
+            "alloy_id": "alloy_fe11mn5al007c",
+            "process_id": "proc_fe11mn5al_01"
+        }
+    ],
+    "processing_steps": [
+        {
+            "sample_id": "sample_fe11mn5al_01",
+            "paper_id": "A16",
+            "sequence": "1",
+            "type": "heat_treatment",
+            "method": "homogenization",
+            "temperature": "1200",
+            "unit": "℃",
+            "duration": "1h",
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "消除电渣重熔态的成分偏析"
+        },
+        {
+            "sample_id": "sample_fe11mn5al_01",
+            "paper_id": "A16",
+            "sequence": "2",
+            "type": "thermomechanical_processing",
+            "method": "hot rolling",
+            "temperature": "1100-1200",
+            "unit": "℃",
+            "duration": null,
+            "cooling_medium": "air",
+            "reduction_ratio": null,
+            "processing_steps_notes": "共5道次热轧"
+        },
+        {
+            "sample_id": "sample_fe11mn5al_01",
+            "paper_id": "A16",
+            "sequence": "3",
+            "type": "heat_treatment",
+            "method": "annealing",
+            "temperature": "950",
+            "unit": "℃",
+            "duration": "1h",
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "获得铁素体+奥氏体+马氏体的三相初始组织"
+        },
+        {
+            "sample_id": "sample_fe11mn5al_01",
+            "paper_id": "A16",
+            "sequence": "4",
+            "type": "sample_preparation",
+            "method": "soaking",
+            "temperature": "100-700",
+            "unit": "℃",
+            "duration": "5min",
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "变形前保温达到热平衡"
+        },
+        {
+            "sample_id": "sample_fe11mn5al_01",
+            "paper_id": "A16",
+            "sequence": "5",
+            "type": "mechanical_processing",
+            "method": "compression test",
+            "temperature": "100-700",
+            "unit": "℃",
+            "duration": null,
+            "cooling_medium": "water",
+            "reduction_ratio": "0.6 true strain",
+            "processing_steps_notes": "应变速率0.001s⁻¹，变形后立即水淬保留高温变形组织"
+        }
+    ],
+    "structures": [
+        {
+            "structure_id": "struct_01",
+            "sample_id": "sample_fe11mn5al_01",
+            "overall_structure": "初始为铁素体+奥氏体+热诱导马氏体的三相组织，温变形过程中位错缠结形成胞状结构和高位错密度墙，发展出变形带，母相奥氏体被变形带剪切，发生双向应变诱导相变：铁素体向奥氏体转变和奥氏体向铁素体转变",
+            "number_of_phases": "3",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_01",
+                    "related_sequence": "5",
+                    "phases_present": [
+                        {
+                            "phase_name": "ferrite",
+                            "crystal_structure": "BCC",
+                            "volume_fraction": null,
+                            "morphology": null,
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "austenite",
+                            "crystal_structure": "FCC",
+                            "volume_fraction": null,
+                            "morphology": null,
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "martensite",
+                            "crystal_structure": "BCC",
+                            "volume_fraction": null,
+                            "morphology": null,
+                            "grain_size": null,
+                            "texture": null
+                        }
+                    ],
+                    "defects": [
+                        {
+                            "type": "dislocation tangles, cell structures, high dislocation density walls (HDDWs), deformation bands",
+                            "porosity": null,
+                            "inclusions": [],
+                            "dislocation_density": "初始极低，变形后显著升高",
+                            "lattice_distortion": null
+                        }
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": null,
+                            "unit": null
+                        },
+                        "grain_size_distribution": null,
+                        "texture": null
+                    },
+                    "precipitates": []
+                }
+            ]
+        }
+    ],
+    "interfaces": [],
+    "properties": [
+        {
+            "property_set_id": "prop_01",
+            "sample_id": "sample_fe11mn5al_01",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [
+                        {
+                            "direction": "compression",
+                            "value": "400",
+                            "unit": "MPa",
+                            "others": {
+                                "uncertainty": null
+                            }
+                        }
+                    ],
+                    "ultimate_tensile_strength": [
+                        {
+                            "direction": "compression",
+                            "value": "600",
+                            "unit": "MPa",
+                            "others": {
+                                "uncertainty": null
+                            }
+                        }
+                    ],
+                    "elongation": [
+                        {
+                            "direction": null,
+                            "value": null,
+                            "unit": null
+                        }
+                    ],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": "200-500℃变形时流变应力稳定，500-600℃变形时真应变0.3后出现明显流变软化，温度超过600℃后应力水平显著下降",
+                    "stress_strain_distribution": [
+                        {
+                            "direction": null,
+                            "distribution": null
+                        }
+                    ],
+                    "strain_hardening_rate": [
+                        {
+                            "property_id": null,
+                            "direction": null,
+                            "value": null,
+                            "unit": null
+                        }
+                    ]
+                },
+                "hardness": [],
+                "fracture_toughness": {
+                    "value": null,
+                    "unit": null
+                },
+                "fatigue_properties": {
+                    "fatigue_limit": null,
+                    "cycles_to_failure": null
+                },
+                "creep_properties": {
+                    "steady_state_creep_rate": null,
+                    "rupture_life": null
+                }
+            },
+            "physical": {
+                "density": {
+                    "value": null,
+                    "unit": null
+                },
+                "thermal_properties": {
+                    "thermal_conductivity": null,
+                    "thermal_expansion_coefficient": null,
+                    "specific_heat": null
+                },
+                "electrical_properties": {
+                    "electrical_conductivity": null,
+                    "resistivity": null
+                },
+                "magnetic_properties": {
+                    "magnetic_susceptibility": null,
+                    "curie_temperature": null
+                }
+            },
+            "chemical": {
+                "corrosion_resistance": {
+                    "test_medium": null,
+                    "corrosion_rate": null,
+                    "passivation_behavior": null
+                },
+                "oxidation_resistance": {
+                    "oxidation_rate_constant": null,
+                    "protective_scale": null
+                }
+            },
+            "radiation_properties": {
+                "void_swelling": null,
+                "irradiation_hardening": null,
+                "helium_embrittlement": null
+            }
+        }
+    ],
+    "performance": [
+        {
+            "performance_id": "perf_01",
+            "sample_id": "sample_fe11mn5al_01",
+            "service_conditions": {
+                "operating_temperature": {
+                    "min": "100",
+                    "max": "700",
+                    "unit": "℃"
+                },
+                "stress_state": "compressive stress",
+                "environment": "air"
+            },
+            "lifetime_prediction": {
+                "model_used": null,
+                "predicted_lifetime": null,
+                "confidence_interval": null
+            },
+            "comparative_performance": {
+                "benchmark_alloy": null,
+                "benchmark_process_id": null,
+                "benchmark_sample_id": null,
+                "improvement_percentage": null
+            }
+        }
+    ],
+    "characterization_methods": [
+        {
+            "characterization_id": "char_01",
+            "sample_id": "sample_fe11mn5al_01",
+            "microstructure_uuid": "uuid_01",
+            "technique": "Field-emission scanning electron microscope (FE-SEM) with electron backscattered diffraction (EBSD) detector",
+            "purpose": "微观结构表征、相鉴定、变形带观察",
+            "key_findings": "成功区分铁素体、奥氏体、马氏体三相，500℃变形后存在密集变形带，600℃变形后无明显变形带，变形后仍保持三相组织"
+        },
+        {
+            "characterization_id": "char_02",
+            "sample_id": "sample_fe11mn5al_01",
+            "microstructure_uuid": "uuid_01",
+            "technique": "Transmission electron microscopy (TEM)",
+            "purpose": "精细微观结构、位错组态和相变产物观察",
+            "key_findings": "变形后铁素体中形成位错缠结、胞状结构和高位错密度墙，变形带剪切奥氏体晶粒，同时观察到应变诱导生成的新鲜铁素体和奥氏体晶粒"
+        },
+        {
+            "characterization_id": "char_03",
+            "sample_id": "sample_fe11mn5al_01",
+            "microstructure_uuid": null,
+            "technique": "Energy dispersive spectroscopy (EDS)",
+            "purpose": "变形后两相中元素含量分析",
+            "key_findings": "Mn偏聚于奥氏体，Al偏聚于铁素体，元素分配结果与热力学计算结果一致"
+        }
+    ],
+    "computational_details": [
+        {
+            "computation_id": "comp_01",
+            "sample_id": "sample_fe11mn5al_01",
+            "simulation_method": "thermodynamic calculation",
+            "software_used": "Thermo-Calc",
+            "potential_model": "TCFE9 database",
+            "validation_against_experiment": "元素分配计算结果与EDS测试结果一致",
+            "analytical_model": [
+                {
+                    "model_name": "Gibbs energy model",
+                    "equation_role": "计算相稳定性，解释双向应变诱导相变的热力学条件",
+                    "parameters": ["Mn content", "Al content", "temperature"],
+                    "model_note": "考虑元素偏聚后的实际相成分计算吉布斯自由能，500℃下铁素体和奥氏体吉布斯自由能相等，为双向相变提供热力学基础"
+                }
+            ]
+        }
+    ],
+    "unmapped_findings": [
+        "实验钢的堆垛层错能为80-110 mJ/m²，理论上不会发生奥氏体向马氏体的相变",
+        "铁素体变形过程中激活的滑移系为{110}<111>和{112}<111>",
+        "双向应变诱导相变作为应变补偿机制，可释放变形带处的剪切应变局部化，降低流变局部化效应，提高材料的加工性能",
+        "Mn元素的分配是决定铁素体和奥氏体吉布斯自由能、影响相稳定性的主要因素，Al含量对相稳定性影响较小"
+    ]
+}

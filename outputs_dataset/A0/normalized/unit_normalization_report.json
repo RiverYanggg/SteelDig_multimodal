@@ -1,0 +1,113 @@
+{
+  "paper_id": "A0",
+  "source_path": "/Users/mac/Desktop/SteelDig/SteelDig_multimodal/outputs_dataset/A0/final/text_extraction.json",
+  "target_unit_policy": {
+    "temperature": "°C",
+    "duration": "h",
+    "stress": "MPa",
+    "length": "μm",
+    "percent": "%",
+    "hardness": "HV",
+    "density": "g/cm^3",
+    "mass_gain": "mg/cm^2",
+    "energy_density": "mJ/m^2",
+    "fracture_toughness": "MPa·m^0.5",
+    "rate": "s^-1"
+  },
+  "summary": {
+    "converted_count": 0,
+    "unchanged_count": 8,
+    "skipped_count": 0,
+    "ambiguous_count": 0
+  },
+  "changes": [
+    {
+      "path": "$.processing_steps[0]",
+      "quantity_kind": "temperature",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": {
+        "unit": "°C",
+        "temperature": "1000"
+      },
+      "normalized": {
+        "unit": "°C",
+        "temperature": "1000"
+      }
+    },
+    {
+      "path": "$.processing_steps[0].duration",
+      "quantity_kind": "duration",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": "1 h",
+      "normalized": "1 h"
+    },
+    {
+      "path": "$.processing_steps[1]",
+      "quantity_kind": "temperature",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": {
+        "unit": "°C",
+        "temperature": "550"
+      },
+      "normalized": {
+        "unit": "°C",
+        "temperature": "550"
+      }
+    },
+    {
+      "path": "$.processing_steps[1].duration",
+      "quantity_kind": "duration",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": "3 h",
+      "normalized": "3 h"
+    },
+    {
+      "path": "$.processing_steps[2]",
+      "quantity_kind": "temperature",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": {
+        "unit": "°C",
+        "temperature": "1000"
+      },
+      "normalized": {
+        "unit": "°C",
+        "temperature": "1000"
+      }
+    },
+    {
+      "path": "$.processing_steps[2].duration",
+      "quantity_kind": "duration",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": "1 h",
+      "normalized": "1 h"
+    },
+    {
+      "path": "$.processing_steps[3]",
+      "quantity_kind": "temperature",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": {
+        "unit": "°C",
+        "temperature": "550"
+      },
+      "normalized": {
+        "unit": "°C",
+        "temperature": "550"
+      }
+    },
+    {
+      "path": "$.processing_steps[3].duration",
+      "quantity_kind": "duration",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": "3 h",
+      "normalized": "3 h"
+    }
+  ]
+}

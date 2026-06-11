@@ -1,0 +1,470 @@
+{
+    "papers": [
+        {
+            "paper_id": "A55",
+            "doi": null,
+            "title": "Transverse tensile and fatigue properties of Fe-Mn-Al-C alloys",
+            "authors": ["M. T. JAHN", "S. C. CHANG", "Y. H. HSIAO"],
+            "publication_year": null,
+            "journal": null,
+            "keywords": ["Fe-Mn-Al-C alloys", "tensile property", "fatigue property", "transverse stress", "austenite", "ferrite", "crack propagation"],
+            "research_type": "experimental",
+            "paper_scope": "研究三种不同碳含量的Fe-Mn-Al-C合金的横向拉伸与疲劳性能，对比此前报道的纵向测试结果，揭示试样取向对性能的影响机理，重点分析铁素相对疲劳裂纹扩展的作用"
+        }
+    ],
+    "alloys": [
+        {
+            "alloy_id": "alloy_fe29mn94al11c",
+            "paper_id": "A55",
+            "alloy_name": "Fe-29Mn-9.4Al-1.1C",
+            "aliases": ["A"],
+            "base_element": "Fe",
+            "alloying_elements": ["Mn", "Al", "C"],
+            "nominal_composition": [
+                {"element": "Fe", "weight_percent": "balance", "atomic_percent": null},
+                {"element": "Mn", "weight_percent": "29", "atomic_percent": null},
+                {"element": "Al", "weight_percent": "9.4", "atomic_percent": null},
+                {"element": "C", "weight_percent": "1.1", "atomic_percent": null}
+            ],
+            "alloys_notes": null
+        },
+        {
+            "alloy_id": "alloy_fe29mn91al06c",
+            "paper_id": "A55",
+            "alloy_name": "Fe-29Mn-9.1Al-0.6C",
+            "aliases": ["B"],
+            "base_element": "Fe",
+            "alloying_elements": ["Mn", "Al", "C"],
+            "nominal_composition": [
+                {"element": "Fe", "weight_percent": "balance", "atomic_percent": null},
+                {"element": "Mn", "weight_percent": "29", "atomic_percent": null},
+                {"element": "Al", "weight_percent": "9.1", "atomic_percent": null},
+                {"element": "C", "weight_percent": "0.6", "atomic_percent": null}
+            ],
+            "alloys_notes": null
+        },
+        {
+            "alloy_id": "alloy_fe29mn92al026c",
+            "paper_id": "A55",
+            "alloy_name": "Fe-29Mn-9.2Al-0.26C",
+            "aliases": ["C"],
+            "base_element": "Fe",
+            "alloying_elements": ["Mn", "Al", "C"],
+            "nominal_composition": [
+                {"element": "Fe", "weight_percent": "balance", "atomic_percent": null},
+                {"element": "Mn", "weight_percent": "29", "atomic_percent": null},
+                {"element": "Al", "weight_percent": "9.2", "atomic_percent": null},
+                {"element": "C", "weight_percent": "0.26", "atomic_percent": null}
+            ],
+            "alloys_notes": null
+        }
+    ],
+    "processes": [
+        {
+            "process_id": "proc_a_01",
+            "paper_id": "A55",
+            "alloy_id": "alloy_fe29mn94al11c",
+            "description": "氩气保护感应炉熔炼，热锻、均匀化处理后冷轧至2mm厚度，1050℃固溶处理1.5h后油淬",
+            "processes_notes": null
+        },
+        {
+            "process_id": "proc_b_01",
+            "paper_id": "A55",
+            "alloy_id": "alloy_fe29mn91al06c",
+            "description": "氩气保护感应炉熔炼，热锻、均匀化处理后冷轧至2mm厚度，1050℃固溶处理1.5h后油淬",
+            "processes_notes": null
+        },
+        {
+            "process_id": "proc_c_01",
+            "paper_id": "A55",
+            "alloy_id": "alloy_fe29mn92al026c",
+            "description": "氩气保护感应炉熔炼，热锻、均匀化处理后冷轧至2mm厚度，1050℃固溶处理1.5h后油淬",
+            "processes_notes": null
+        }
+    ],
+    "samples": [
+        {"sample_id": "sample_a_l", "paper_id": "A55", "alloy_id": "alloy_fe29mn94al11c", "process_id": "proc_a_01"},
+        {"sample_id": "sample_a_t", "paper_id": "A55", "alloy_id": "alloy_fe29mn94al11c", "process_id": "proc_a_01"},
+        {"sample_id": "sample_b_l", "paper_id": "A55", "alloy_id": "alloy_fe29mn91al06c", "process_id": "proc_b_01"},
+        {"sample_id": "sample_b_t", "paper_id": "A55", "alloy_id": "alloy_fe29mn91al06c", "process_id": "proc_b_01"},
+        {"sample_id": "sample_c_l", "paper_id": "A55", "alloy_id": "alloy_fe29mn92al026c", "process_id": "proc_c_01"},
+        {"sample_id": "sample_c_t", "paper_id": "A55", "alloy_id": "alloy_fe29mn92al026c", "process_id": "proc_c_01"}
+    ],
+    "processing_steps": [
+        {"sample_id": "sample_a_l", "paper_id": "A55", "sequence": "1", "type": "melting", "method": "argon protected induction furnace melting", "temperature": null, "unit": null, "duration": null, "cooling_medium": null, "reduction_ratio": null, "processing_steps_notes": "原料为工业纯铁、电解锰、碳粉、纯铝"},
+        {"sample_id": "sample_a_l", "paper_id": "A55", "sequence": "2", "type": "thermomechanical_processing", "method": "hot forging", "temperature": null, "unit": null, "duration": null, "cooling_medium": null, "reduction_ratio": null, "processing_steps_notes": null},
+        {"sample_id": "sample_a_l", "paper_id": "A55", "sequence": "3", "type": "heat_treatment", "method": "homogenization", "temperature": null, "unit": null, "duration": null, "cooling_medium": null, "reduction_ratio": null, "processing_steps_notes": null},
+        {"sample_id": "sample_a_l", "paper_id": "A55", "sequence": "4", "type": "mechanical_processing", "method": "cold rolling", "temperature": null, "unit": null, "duration": null, "cooling_medium": null, "reduction_ratio": null, "processing_steps_notes": "冷轧至厚度2mm"},
+        {"sample_id": "sample_a_l", "paper_id": "A55", "sequence": "5", "type": "heat_treatment", "method": "solution treatment", "temperature": "1050", "unit": "°C", "duration": "1.5", "cooling_medium": "oil", "reduction_ratio": null, "processing_steps_notes": "固溶处理后油淬，随后加工为测试试样"},
+        {"sample_id": "sample_a_t", "paper_id": "A55", "sequence": "1", "type": "melting", "method": "argon protected induction furnace melting", "temperature": null, "unit": null, "duration": null, "cooling_medium": null, "reduction_ratio": null, "processing_steps_notes": "原料为工业纯铁、电解锰、碳粉、纯铝"},
+        {"sample_id": "sample_a_t", "paper_id": "A55", "sequence": "2", "type": "thermomechanical_processing", "method": "hot forging", "temperature": null, "unit": null, "duration": null, "cooling_medium": null, "reduction_ratio": null, "processing_steps_notes": null},
+        {"sample_id": "sample_a_t", "paper_id": "A55", "sequence": "3", "type": "heat_treatment", "method": "homogenization", "temperature": null, "unit": null, "duration": null, "cooling_medium": null, "reduction_ratio": null, "processing_steps_notes": null},
+        {"sample_id": "sample_a_t", "paper_id": "A55", "sequence": "4", "type": "mechanical_processing", "method": "cold rolling", "temperature": null, "unit": null, "duration": null, "cooling_medium": null, "reduction_ratio": null, "processing_steps_notes": "冷轧至厚度2mm"},
+        {"sample_id": "sample_a_t", "paper_id": "A55", "sequence": "5", "type": "heat_treatment", "method": "solution treatment", "temperature": "1050", "unit": "°C", "duration": "1.5", "cooling_medium": "oil", "reduction_ratio": null, "processing_steps_notes": "固溶处理后油淬，随后加工为测试试样"},
+        {"sample_id": "sample_b_l", "paper_id": "A55", "sequence": "1", "type": "melting", "method": "argon protected induction furnace melting", "temperature": null, "unit": null, "duration": null, "cooling_medium": null, "reduction_ratio": null, "processing_steps_notes": "原料为工业纯铁、电解锰、碳粉、纯铝"},
+        {"sample_id": "sample_b_l", "paper_id": "A55", "sequence": "2", "type": "thermomechanical_processing", "method": "hot forging", "temperature": null, "unit": null, "duration": null, "cooling_medium": null, "reduction_ratio": null, "processing_steps_notes": null},
+        {"sample_id": "sample_b_l", "paper_id": "A55", "sequence": "3", "type": "heat_treatment", "method": "homogenization", "temperature": null, "unit": null, "duration": null, "cooling_medium": null, "reduction_ratio": null, "processing_steps_notes": null},
+        {"sample_id": "sample_b_l", "paper_id": "A55", "sequence": "4", "type": "mechanical_processing", "method": "cold rolling", "temperature": null, "unit": null, "duration": null, "cooling_medium": null, "reduction_ratio": null, "processing_steps_notes": "冷轧至厚度2mm"},
+        {"sample_id": "sample_b_l", "paper_id": "A55", "sequence": "5", "type": "heat_treatment", "method": "solution treatment", "temperature": "1050", "unit": "°C", "duration": "1.5", "cooling_medium": "oil", "reduction_ratio": null, "processing_steps_notes": "固溶处理后油淬，随后加工为测试试样"},
+        {"sample_id": "sample_b_t", "paper_id": "A55", "sequence": "1", "type": "melting", "method": "argon protected induction furnace melting", "temperature": null, "unit": null, "duration": null, "cooling_medium": null, "reduction_ratio": null, "processing_steps_notes": "原料为工业纯铁、电解锰、碳粉、纯铝"},
+        {"sample_id": "sample_b_t", "paper_id": "A55", "sequence": "2", "type": "thermomechanical_processing", "method": "hot forging", "temperature": null, "unit": null, "duration": null, "cooling_medium": null, "reduction_ratio": null, "processing_steps_notes": null},
+        {"sample_id": "sample_b_t", "paper_id": "A55", "sequence": "3", "type": "heat_treatment", "method": "homogenization", "temperature": null, "unit": null, "duration": null, "cooling_medium": null, "reduction_ratio": null, "processing_steps_notes": null},
+        {"sample_id": "sample_b_t", "paper_id": "A55", "sequence": "4", "type": "mechanical_processing", "method": "cold rolling", "temperature": null, "unit": null, "duration": null, "cooling_medium": null, "reduction_ratio": null, "processing_steps_notes": "冷轧至厚度2mm"},
+        {"sample_id": "sample_b_t", "paper_id": "A55", "sequence": "5", "type": "heat_treatment", "method": "solution treatment", "temperature": "1050", "unit": "°C", "duration": "1.5", "cooling_medium": "oil", "reduction_ratio": null, "processing_steps_notes": "固溶处理后油淬，随后加工为测试试样"},
+        {"sample_id": "sample_c_l", "paper_id": "A55", "sequence": "1", "type": "melting", "method": "argon protected induction furnace melting", "temperature": null, "unit": null, "duration": null, "cooling_medium": null, "reduction_ratio": null, "processing_steps_notes": "原料为工业纯铁、电解锰、碳粉、纯铝"},
+        {"sample_id": "sample_c_l", "paper_id": "A55", "sequence": "2", "type": "thermomechanical_processing", "method": "hot forging", "temperature": null, "unit": null, "duration": null, "cooling_medium": null, "reduction_ratio": null, "processing_steps_notes": null},
+        {"sample_id": "sample_c_l", "paper_id": "A55", "sequence": "3", "type": "heat_treatment", "method": "homogenization", "temperature": null, "unit": null, "duration": null, "cooling_medium": null, "reduction_ratio": null, "processing_steps_notes": null},
+        {"sample_id": "sample_c_l", "paper_id": "A55", "sequence": "4", "type": "mechanical_processing", "method": "cold rolling", "temperature": null, "unit": null, "duration": null, "cooling_medium": null, "reduction_ratio": null, "processing_steps_notes": "冷轧至厚度2mm"},
+        {"sample_id": "sample_c_l", "paper_id": "A55", "sequence": "5", "type": "heat_treatment", "method": "solution treatment", "temperature": "1050", "unit": "°C", "duration": "1.5", "cooling_medium": "oil", "reduction_ratio": null, "processing_steps_notes": "固溶处理后油淬，随后加工为测试试样"},
+        {"sample_id": "sample_c_t", "paper_id": "A55", "sequence": "1", "type": "melting", "method": "argon protected induction furnace melting", "temperature": null, "unit": null, "duration": null, "cooling_medium": null, "reduction_ratio": null, "processing_steps_notes": "原料为工业纯铁、电解锰、碳粉、纯铝"},
+        {"sample_id": "sample_c_t", "paper_id": "A55", "sequence": "2", "type": "thermomechanical_processing", "method": "hot forging", "temperature": null, "unit": null, "duration": null, "cooling_medium": null, "reduction_ratio": null, "processing_steps_notes": null},
+        {"sample_id": "sample_c_t", "paper_id": "A55", "sequence": "3", "type": "heat_treatment", "method": "homogenization", "temperature": null, "unit": null, "duration": null, "cooling_medium": null, "reduction_ratio": null, "processing_steps_notes": null},
+        {"sample_id": "sample_c_t", "paper_id": "A55", "sequence": "4", "type": "mechanical_processing", "method": "cold rolling", "temperature": null, "unit": null, "duration": null, "cooling_medium": null, "reduction_ratio": null, "processing_steps_notes": "冷轧至厚度2mm"},
+        {"sample_id": "sample_c_t", "paper_id": "A55", "sequence": "5", "type": "heat_treatment", "method": "solution treatment", "temperature": "1050", "unit": "°C", "duration": "1.5", "cooling_medium": "oil", "reduction_ratio": null, "processing_steps_notes": "固溶处理后油淬，随后加工为测试试样"}
+    ],
+    "structures": [
+        {
+            "structure_id": "struct_a_l",
+            "sample_id": "sample_a_l",
+            "overall_structure": "fully austenitic",
+            "number_of_phases": "1",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_a_01",
+                    "related_sequence": "5",
+                    "phases_present": [
+                        {"phase_name": "austenite", "crystal_structure": null, "volume_fraction": "100%", "morphology": null, "grain_size": null, "texture": null}
+                    ],
+                    "defects": [{"type": null, "porosity": null, "inclusions": [], "dislocation_density": null, "lattice_distortion": null}],
+                    "grain_structure": {"average_grain_size": {"value": null, "unit": null}, "grain_size_distribution": null, "texture": null},
+                    "precipitates": []
+                }
+            ]
+        },
+        {
+            "structure_id": "struct_a_t",
+            "sample_id": "sample_a_t",
+            "overall_structure": "fully austenitic",
+            "number_of_phases": "1",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_a_01",
+                    "related_sequence": "5",
+                    "phases_present": [
+                        {"phase_name": "austenite", "crystal_structure": null, "volume_fraction": "100%", "morphology": null, "grain_size": null, "texture": null}
+                    ],
+                    "defects": [{"type": null, "porosity": null, "inclusions": [], "dislocation_density": null, "lattice_distortion": null}],
+                    "grain_structure": {"average_grain_size": {"value": null, "unit": null}, "grain_size_distribution": null, "texture": null},
+                    "precipitates": []
+                }
+            ]
+        },
+        {
+            "structure_id": "struct_b_l",
+            "sample_id": "sample_b_l",
+            "overall_structure": "austenite-ferrite duplex",
+            "number_of_phases": "2",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_b_01",
+                    "related_sequence": "5",
+                    "phases_present": [
+                        {"phase_name": "austenite", "crystal_structure": null, "volume_fraction": "90%", "morphology": null, "grain_size": null, "texture": null},
+                        {"phase_name": "ferrite", "crystal_structure": null, "volume_fraction": "10%", "morphology": "string arrangement", "grain_size": null, "texture": null}
+                    ],
+                    "defects": [{"type": null, "porosity": null, "inclusions": [], "dislocation_density": null, "lattice_distortion": null}],
+                    "grain_structure": {"average_grain_size": {"value": null, "unit": null}, "grain_size_distribution": null, "texture": null},
+                    "precipitates": []
+                }
+            ]
+        },
+        {
+            "structure_id": "struct_b_t",
+            "sample_id": "sample_b_t",
+            "overall_structure": "austenite-ferrite duplex",
+            "number_of_phases": "2",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_b_01",
+                    "related_sequence": "5",
+                    "phases_present": [
+                        {"phase_name": "austenite", "crystal_structure": null, "volume_fraction": "90%", "morphology": null, "grain_size": null, "texture": null},
+                        {"phase_name": "ferrite", "crystal_structure": null, "volume_fraction": "10%", "morphology": "string arrangement", "grain_size": null, "texture": null}
+                    ],
+                    "defects": [{"type": null, "porosity": null, "inclusions": [], "dislocation_density": null, "lattice_distortion": null}],
+                    "grain_structure": {"average_grain_size": {"value": null, "unit": null}, "grain_size_distribution": null, "texture": null},
+                    "precipitates": []
+                }
+            ]
+        },
+        {
+            "structure_id": "struct_c_l",
+            "sample_id": "sample_c_l",
+            "overall_structure": "austenite-ferrite duplex",
+            "number_of_phases": "2",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_c_01",
+                    "related_sequence": "5",
+                    "phases_present": [
+                        {"phase_name": "austenite", "crystal_structure": null, "volume_fraction": "45%", "morphology": null, "grain_size": null, "texture": null},
+                        {"phase_name": "ferrite", "crystal_structure": null, "volume_fraction": "55%", "morphology": null, "grain_size": null, "texture": null}
+                    ],
+                    "defects": [{"type": null, "porosity": null, "inclusions": [], "dislocation_density": null, "lattice_distortion": null}],
+                    "grain_structure": {"average_grain_size": {"value": null, "unit": null}, "grain_size_distribution": null, "texture": null},
+                    "precipitates": []
+                }
+            ]
+        },
+        {
+            "structure_id": "struct_c_t",
+            "sample_id": "sample_c_t",
+            "overall_structure": "austenite-ferrite duplex",
+            "number_of_phases": "2",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_c_01",
+                    "related_sequence": "5",
+                    "phases_present": [
+                        {"phase_name": "austenite", "crystal_structure": null, "volume_fraction": "45%", "morphology": null, "grain_size": null, "texture": null},
+                        {"phase_name": "ferrite", "crystal_structure": null, "volume_fraction": "55%", "morphology": null, "grain_size": null, "texture": null}
+                    ],
+                    "defects": [{"type": null, "porosity": null, "inclusions": [], "dislocation_density": null, "lattice_distortion": null}],
+                    "grain_structure": {"average_grain_size": {"value": null, "unit": null}, "grain_size_distribution": null, "texture": null},
+                    "precipitates": []
+                }
+            ]
+        }
+    ],
+    "interfaces": [
+        {
+            "interface_set_id": "if_b_l_01",
+            "sample_id": "sample_b_l",
+            "phases": [
+                {"interface_id": "if_b_01", "microstructure_uuid": "uuid_b_01", "phase_1_name": "austenite", "phase_2_name": "ferrite", "coherence": null}
+            ],
+            "defect_interaction": [
+                {"interaction_id": "di_b_l_01", "microstructure_uuid": "uuid_b_01", "interaction_type": "fatigue crack impeded by ferrite", "quality_description": "ferrite string arrangement is perpendicular to crack propagation direction, acts as crack arrester"}
+            ],
+            "interface_notes": [
+                {"stress_strain_distribution": null},
+                {"slippage_situation": "slip bands only formed in austenite phase, no slip bands or fatigue cracks in ferrite phase"}
+            ],
+            "phase_evolution": null
+        },
+        {
+            "interface_set_id": "if_b_t_01",
+            "sample_id": "sample_b_t",
+            "phases": [
+                {"interface_id": "if_b_01", "microstructure_uuid": "uuid_b_01", "phase_1_name": "austenite", "phase_2_name": "ferrite", "coherence": null}
+            ],
+            "defect_interaction": [
+                {"interaction_id": "di_b_t_01", "microstructure_uuid": "uuid_b_01", "interaction_type": "fatigue crack propagates through austenite", "quality_description": "ferrite string arrangement is parallel to crack propagation direction, no impediment effect"}
+            ],
+            "interface_notes": [
+                {"stress_strain_distribution": null},
+                {"slippage_situation": "slip bands only formed in austenite phase, no slip bands or fatigue cracks in ferrite phase"}
+            ],
+            "phase_evolution": null
+        }
+    ],
+    "properties": [
+        {
+            "property_set_id": "prop_a_l",
+            "sample_id": "sample_a_l",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [{"direction": "longitudinal", "value": "551.6", "unit": "MPa", "others": {"uncertainty": null}}],
+                    "ultimate_tensile_strength": [{"direction": "longitudinal", "value": "888.1", "unit": "MPa", "others": {"uncertainty": null}}],
+                    "elongation": [{"direction": "longitudinal", "value": "59.0", "unit": "%"}],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [{"region": "bulk", "value": "59.0", "scale": "Rockwell A", "unit": "HRA"}],
+                "fracture_toughness": {"value": null, "unit": null},
+                "fatigue_properties": {"fatigue_limit": null, "cycles_to_failure": null},
+                "creep_properties": {"steady_state_creep_rate": null, "rupture_life": null}
+            },
+            "physical": {"density": {"value": null, "unit": null}, "thermal_properties": {"thermal_conductivity": null, "thermal_expansion_coefficient": null, "specific_heat": null}, "electrical_properties": {"electrical_conductivity": null, "resistivity": null}, "magnetic_properties": {"magnetic_susceptibility": null, "curie_temperature": null}},
+            "chemical": {"corrosion_resistance": {"test_medium": null, "corrosion_rate": null, "passivation_behavior": null}, "oxidation_resistance": {"oxidation_rate_constant": null, "protective_scale": null}},
+            "radiation_properties": {"void_swelling": null, "irradiation_hardening": null, "helium_embrittlement": null}
+        },
+        {
+            "property_set_id": "prop_a_t",
+            "sample_id": "sample_a_t",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [{"direction": "transverse", "value": "566.1", "unit": "MPa", "others": {"uncertainty": null}}],
+                    "ultimate_tensile_strength": [{"direction": "transverse", "value": "835.7", "unit": "MPa", "others": {"uncertainty": null}}],
+                    "elongation": [{"direction": "transverse", "value": "69.0", "unit": "%"}],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [{"region": "bulk", "value": "59.7", "scale": "Rockwell A", "unit": "HRA"}],
+                "fracture_toughness": {"value": null, "unit": null},
+                "fatigue_properties": {"fatigue_limit": null, "cycles_to_failure": null},
+                "creep_properties": {"steady_state_creep_rate": null, "rupture_life": null}
+            },
+            "physical": {"density": {"value": null, "unit": null}, "thermal_properties": {"thermal_conductivity": null, "thermal_expansion_coefficient": null, "specific_heat": null}, "electrical_properties": {"electrical_conductivity": null, "resistivity": null}, "magnetic_properties": {"magnetic_susceptibility": null, "curie_temperature": null}},
+            "chemical": {"corrosion_resistance": {"test_medium": null, "corrosion_rate": null, "passivation_behavior": null}, "oxidation_resistance": {"oxidation_rate_constant": null, "protective_scale": null}},
+            "radiation_properties": {"void_swelling": null, "irradiation_hardening": null, "helium_embrittlement": null}
+        },
+        {
+            "property_set_id": "prop_b_l",
+            "sample_id": "sample_b_l",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [{"direction": "longitudinal", "value": "390.0", "unit": "MPa", "others": {"uncertainty": null}}],
+                    "ultimate_tensile_strength": [{"direction": "longitudinal", "value": "786.0", "unit": "MPa", "others": {"uncertainty": null}}],
+                    "elongation": [{"direction": "longitudinal", "value": "51.0", "unit": "%"}],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [{"region": "bulk", "value": "53.1", "scale": "Rockwell A", "unit": "HRA"}],
+                "fracture_toughness": {"value": null, "unit": null},
+                "fatigue_properties": {"fatigue_limit": null, "cycles_to_failure": null},
+                "creep_properties": {"steady_state_creep_rate": null, "rupture_life": null}
+            },
+            "physical": {"density": {"value": null, "unit": null}, "thermal_properties": {"thermal_conductivity": null, "thermal_expansion_coefficient": null, "specific_heat": null}, "electrical_properties": {"electrical_conductivity": null, "resistivity": null}, "magnetic_properties": {"magnetic_susceptibility": null, "curie_temperature": null}},
+            "chemical": {"corrosion_resistance": {"test_medium": null, "corrosion_rate": null, "passivation_behavior": null}, "oxidation_resistance": {"oxidation_rate_constant": null, "protective_scale": null}},
+            "radiation_properties": {"void_swelling": null, "irradiation_hardening": null, "helium_embrittlement": null}
+        },
+        {
+            "property_set_id": "prop_b_t",
+            "sample_id": "sample_b_t",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [{"direction": "transverse", "value": "393.3", "unit": "MPa", "others": {"uncertainty": null}}],
+                    "ultimate_tensile_strength": [{"direction": "transverse", "value": "738.5", "unit": "MPa", "others": {"uncertainty": null}}],
+                    "elongation": [{"direction": "transverse", "value": "52.7", "unit": "%"}],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [{"region": "bulk", "value": "54.3", "scale": "Rockwell A", "unit": "HRA"}],
+                "fracture_toughness": {"value": null, "unit": null},
+                "fatigue_properties": {"fatigue_limit": null, "cycles_to_failure": null},
+                "creep_properties": {"steady_state_creep_rate": null, "rupture_life": null}
+            },
+            "physical": {"density": {"value": null, "unit": null}, "thermal_properties": {"thermal_conductivity": null, "thermal_expansion_coefficient": null, "specific_heat": null}, "electrical_properties": {"electrical_conductivity": null, "resistivity": null}, "magnetic_properties": {"magnetic_susceptibility": null, "curie_temperature": null}},
+            "chemical": {"corrosion_resistance": {"test_medium": null, "corrosion_rate": null, "passivation_behavior": null}, "oxidation_resistance": {"oxidation_rate_constant": null, "protective_scale": null}},
+            "radiation_properties": {"void_swelling": null, "irradiation_hardening": null, "helium_embrittlement": null}
+        },
+        {
+            "property_set_id": "prop_c_l",
+            "sample_id": "sample_c_l",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [{"direction": "longitudinal", "value": "471.8", "unit": "MPa", "others": {"uncertainty": null}}],
+                    "ultimate_tensile_strength": [{"direction": "longitudinal", "value": "784.0", "unit": "MPa", "others": {"uncertainty": null}}],
+                    "elongation": [{"direction": "longitudinal", "value": "35.3", "unit": "%"}],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [{"region": "bulk", "value": "57.1", "scale": "Rockwell A", "unit": "HRA"}],
+                "fracture_toughness": {"value": null, "unit": null},
+                "fatigue_properties": {"fatigue_limit": null, "cycles_to_failure": null},
+                "creep_properties": {"steady_state_creep_rate": null, "rupture_life": null}
+            },
+            "physical": {"density": {"value": null, "unit": null}, "thermal_properties": {"thermal_conductivity": null, "thermal_expansion_coefficient": null, "specific_heat": null}, "electrical_properties": {"electrical_conductivity": null, "resistivity": null}, "magnetic_properties": {"magnetic_susceptibility": null, "curie_temperature": null}},
+            "chemical": {"corrosion_resistance": {"test_medium": null, "corrosion_rate": null, "passivation_behavior": null}, "oxidation_resistance": {"oxidation_rate_constant": null, "protective_scale": null}},
+            "radiation_properties": {"void_swelling": null, "irradiation_hardening": null, "helium_embrittlement": null}
+        },
+        {
+            "property_set_id": "prop_c_t",
+            "sample_id": "sample_c_t",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [{"direction": "transverse", "value": "469.5", "unit": "MPa", "others": {"uncertainty": null}}],
+                    "ultimate_tensile_strength": [{"direction": "transverse", "value": "757.1", "unit": "MPa", "others": {"uncertainty": null}}],
+                    "elongation": [{"direction": "transverse", "value": "36.0", "unit": "%"}],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [{"region": "bulk", "value": "56.9", "scale": "Rockwell A", "unit": "HRA"}],
+                "fracture_toughness": {"value": null, "unit": null},
+                "fatigue_properties": {"fatigue_limit": null, "cycles_to_failure": null},
+                "creep_properties": {"steady_state_creep_rate": null, "rupture_life": null}
+            },
+            "physical": {"density": {"value": null, "unit": null}, "thermal_properties": {"thermal_conductivity": null, "thermal_expansion_coefficient": null, "specific_heat": null}, "electrical_properties": {"electrical_conductivity": null, "resistivity": null}, "magnetic_properties": {"magnetic_susceptibility": null, "curie_temperature": null}},
+            "chemical": {"corrosion_resistance": {"test_medium": null, "corrosion_rate": null, "passivation_behavior": null}, "oxidation_resistance": {"oxidation_rate_constant": null, "protective_scale": null}},
+            "radiation_properties": {"void_swelling": null, "irradiation_hardening": null, "helium_embrittlement": null}
+        }
+    ],
+    "performance": [
+        {
+            "performance_id": "perf_b_01",
+            "sample_id": "sample_b_l",
+            "service_conditions": {"operating_temperature": {"min": null, "max": null, "unit": null}, "stress_state": "reverse bending fatigue", "environment": "air"},
+            "lifetime_prediction": {"model_used": null, "predicted_lifetime": null, "confidence_interval": null},
+            "comparative_performance": {"benchmark_alloy": "alloy_fe29mn91al06c", "benchmark_process_id": "proc_b_01", "benchmark_sample_id": "sample_b_t", "improvement_percentage": null}
+        }
+    ],
+    "characterization_methods": [
+        {
+            "characterization_id": "char_om_01",
+            "sample_id": "sample_a_l",
+            "microstructure_uuid": "uuid_a_01",
+            "technique": "optical microscopy",
+            "purpose": "observe phase composition after solution treatment",
+            "key_findings": "sample A is fully austenitic after 1050°C solution treatment"
+        },
+        {
+            "characterization_id": "char_om_02",
+            "sample_id": "sample_b_l",
+            "microstructure_uuid": "uuid_b_01",
+            "technique": "optical microscopy",
+            "purpose": "observe phase composition after solution treatment",
+            "key_findings": "sample B contains 10% ferrite and 90% austenite after 1050°C solution treatment"
+        },
+        {
+            "characterization_id": "char_om_03",
+            "sample_id": "sample_c_l",
+            "microstructure_uuid": "uuid_c_01",
+            "technique": "optical microscopy",
+            "purpose": "observe phase composition after solution treatment",
+            "key_findings": "sample C contains 55% ferrite and 45% austenite after 1050°C solution treatment"
+        },
+        {
+            "characterization_id": "char_tensile_01",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "tensile test",
+            "purpose": "test longitudinal and transverse tensile properties",
+            "key_findings": "longitudinal specimens have slightly higher tensile strength and lower elongation than transverse specimens for the same alloy, with no significant difference"
+        },
+        {
+            "characterization_id": "char_fatigue_01",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "reverse bending fatigue test",
+            "purpose": "test longitudinal and transverse fatigue properties",
+            "key_findings": "fatigue properties of alloys A and C are independent of specimen orientation; longitudinal specimen B has better fatigue performance than transverse specimen B"
+        }
+    ],
+    "computational_details": [],
+    "unmapped_findings": [
+        "图1给出了试样BL和BT的反向弯曲疲劳S-N曲线，10^5循环对应应力420MPa，10^6循环对应320MPa，10^7循环对应230MPa",
+        "图2显示BT试样中疲劳裂纹穿过奥氏体晶粒扩展",
+        "图3显示BL试样中疲劳裂纹被铁素体晶粒阻碍，铁素体作为裂纹止裂体，其细化和软质特性导致疲劳初期裂纹钝化、后期加工硬化，阻碍裂纹扩展",
+        "合金B中滑移带仅在奥氏体相中产生，铁素体相中未发现滑移带或疲劳裂纹",
+        "疲劳裂纹萌生于滑移带，沿大致垂直于外加应力的方向扩展"
+    ]
+}

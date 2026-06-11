@@ -1,0 +1,484 @@
+{
+  "papers": [
+    {
+      "paper_id": "A62",
+      "doi": "10.1016/j.jmst.2025.09.036",
+      "title": "Low-density and high-modulus steel achieved by hypereutectic TiB₂ and high Al ferrite phase",
+      "authors": [
+        "Jikui Liu",
+        "Yizhuang Li",
+        "Qianduo Zhuang",
+        "Mingxin Huang",
+        "Wei Xu"
+      ],
+      "publication_year": "2026",
+      "journal": "Journal of Materials Science & Technology",
+      "keywords": [
+        "Low-density steel",
+        "δ-ferrite",
+        "Heterogeneity",
+        "Young’s modulus",
+        "Synchrotron X-ray diffraction",
+        "Dislocation density",
+        "Finite element method"
+      ],
+      "research_type": "mixed",
+      "paper_scope": "开发新型无碳奥氏体基低密度三重相钢，通过引入TiB₂陶瓷相和δ-铁素体，解决传统高铝Fe-Mn-Al-C低密度钢杨氏模量低、铸造加工难度大的问题，实现低密度、高模量、优异强韧性的平衡，可采用传统钢铁冶金工艺大规模低成本生产"
+    }
+  ],
+  "alloys": [
+    {
+      "alloy_id": "alloy_fe16mn39al511ti209b",
+      "paper_id": "A62",
+      "alloy_name": "新型低密度高模量TiB₂增强钢",
+      "aliases": [],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Al",
+        "Ti",
+        "B"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Mn",
+          "weight_percent": "15.5",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "3.95",
+          "atomic_percent": null
+        },
+        {
+          "element": "Ti",
+          "weight_percent": "5",
+          "atomic_percent": null
+        },
+        {
+          "element": "B",
+          "weight_percent": "2.15",
+          "atomic_percent": null
+        },
+        {
+          "element": "Fe",
+          "weight_percent": "余量",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "实测成分：Fe-16Mn-3.9Al-5.11Ti-2.09B (wt.%)，相组成为62 vol.%奥氏体、26 vol.%δ-铁素体、12.5 vol.% TiB₂"
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_fe_mn_al_ti_b_01",
+      "paper_id": "A62",
+      "alloy_id": "alloy_fe16mn39al511ti209b",
+      "description": "真空感应熔炼制备50kg铸锭，1373K均质化2h，两相区5道次热轧，终轧温度1173K，轧制成3mm厚板材，空冷至室温",
+      "processes_notes": null
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_fe_mn_al_ti_b_01",
+      "paper_id": "A62",
+      "alloy_id": "alloy_fe16mn39al511ti209b",
+      "process_id": "proc_fe_mn_al_ti_b_01"
+    }
+  ],
+  "processing_steps": [
+    {
+      "sample_id": "sample_fe_mn_al_ti_b_01",
+      "paper_id": "A62",
+      "sequence": "1",
+      "type": "melting",
+      "method": "真空感应熔炼",
+      "temperature": null,
+      "unit": null,
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "制备50kg铸锭"
+    },
+    {
+      "sample_id": "sample_fe_mn_al_ti_b_01",
+      "paper_id": "A62",
+      "sequence": "2",
+      "type": "heat_treatment",
+      "method": "均质化处理",
+      "temperature": "1373",
+      "unit": "K",
+      "duration": "2",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_fe_mn_al_ti_b_01",
+      "paper_id": "A62",
+      "sequence": "3",
+      "type": "thermomechanical_processing",
+      "method": "热轧",
+      "temperature": "1173",
+      "unit": "K",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "两相区5道次热轧，终轧温度1173K，得到3mm厚板材"
+    },
+    {
+      "sample_id": "sample_fe_mn_al_ti_b_01",
+      "paper_id": "A62",
+      "sequence": "4",
+      "type": "cooling",
+      "method": "空冷",
+      "temperature": null,
+      "unit": null,
+      "duration": null,
+      "cooling_medium": "空气",
+      "reduction_ratio": null,
+      "processing_steps_notes": "冷却至室温"
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_sample_01",
+      "sample_id": "sample_fe_mn_al_ti_b_01",
+      "overall_structure": "异质三重相结构：完全等轴奥氏体基体，嵌入拉长的δ-铁素体带和微米级TiB₂颗粒",
+      "number_of_phases": "3",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_micro_001",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "奥氏体（γ）",
+              "crystal_structure": "FCC",
+              "volume_fraction": "62%",
+              "morphology": "等轴晶",
+              "grain_size": "3.9 μm",
+              "texture": null
+            },
+            {
+              "phase_name": "δ-铁素体",
+              "crystal_structure": "BCC",
+              "volume_fraction": "26%",
+              "morphology": "沿轧制方向拉长的带状",
+              "grain_size": "4.4 μm",
+              "texture": null
+            },
+            {
+              "phase_name": "TiB₂",
+              "crystal_structure": "六方",
+              "volume_fraction": "12.5%",
+              "morphology": "粗六角形初生颗粒、细不规则共晶颗粒",
+              "grain_size": "2.4-35 μm，平均15 μm",
+              "texture": "粗颗粒c轴平行于轧制方向"
+            }
+          ],
+          "defects": [
+            {
+              "type": "位错",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "δ-铁素体初始：1.1±0.2×10^15 m^-2；奥氏体初始：3±0.7×10^14 m^-2；变形后δ-铁素体：1.7±0.7×10^15 m^-2；变形后奥氏体：2±0.3×10^15 m^-2",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": "奥氏体平均晶粒尺寸3.9 μm，δ-铁素体平均晶粒尺寸4.4 μm，δ-铁素体带平均厚度4.3 μm，奥氏体层平均厚度12.1 μm",
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "prec_tib2_01",
+              "type": "TiB₂",
+              "size": {
+                "value": "2.4-35，平均15",
+                "unit": "μm"
+              },
+              "distribution": "晶界/相界处，>10 μm粗颗粒占体积分数80%以上",
+              "coherency": "小TiB₂与δ-铁素体为半共格，其余界面无明确取向关系"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "if_set_01",
+      "sample_id": "sample_fe_mn_al_ti_b_01",
+      "phases": [
+        {
+          "interface_id": "if_001",
+          "microstructure_uuid": "uuid_micro_001",
+          "phase_1_name": "δ-铁素体",
+          "phase_2_name": "小尺寸TiB₂",
+          "coherence": "半共格，取向关系：{110}_δ-ferrite || {1101}_TiB2，<111>_δ-ferrite || <1120>_TiB2"
+        },
+        {
+          "interface_id": "if_002",
+          "microstructure_uuid": "uuid_micro_001",
+          "phase_1_name": "δ-铁素体",
+          "phase_2_name": "大尺寸TiB₂",
+          "coherence": "无明确取向关系"
+        },
+        {
+          "interface_id": "if_003",
+          "microstructure_uuid": "uuid_micro_001",
+          "phase_1_name": "奥氏体",
+          "phase_2_name": "TiB₂",
+          "coherence": "无明确取向关系"
+        },
+        {
+          "interface_id": "if_004",
+          "microstructure_uuid": "uuid_micro_001",
+          "phase_1_name": "δ-铁素体",
+          "phase_2_name": "奥氏体",
+          "coherence": null
+        }
+      ],
+      "defect_interaction": [
+        {
+          "interaction_id": "inter_001",
+          "microstructure_uuid": "uuid_micro_001",
+          "interaction_type": "位错在TiB₂/基体界面塞积",
+          "quality_description": "δ-铁素体/TiB₂界面位错密度显著高于奥氏体/TiB₂界面"
+        }
+      ],
+      "interface_notes": [
+        {
+          "stress_strain_distribution": null
+        },
+        {
+          "slippage_situation": null
+        }
+      ],
+      "phase_evolution": "变形过程中无奥氏体向马氏体相变，两相体积分数基本保持不变"
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_sample_01",
+      "sample_id": "sample_fe_mn_al_ti_b_01",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "轧制方向",
+              "value": "503",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "轧制方向",
+              "value": "672",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "轧制方向",
+              "value": "13",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": "225 GPa",
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [
+            {
+              "direction": "轧制方向",
+              "distribution": "变形时应变集中于TiB₂/基体界面及软相奥氏体，TiB₂承担最高应力"
+            }
+          ],
+          "strain_hardening_rate": [
+            {
+              "property_id": null,
+              "direction": null,
+              "value": null,
+              "unit": null
+            }
+          ]
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "6.88",
+          "unit": "g/cm³"
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_sample_01",
+      "sample_id": "sample_fe_mn_al_ti_b_01",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy": "传统Fe-TiB₂钢、Fe-Mn-Al-C低密度钢",
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "improvement_percentage": "屈服强度较传统Fe-TiB₂钢高22%，抗拉强度高30%，均匀延伸率更高；杨氏模量较Fe-Mn-Al-C钢高18%-40%，比模量达32.7 GPa g^-1 cm³，远高于轻金属的~25 GPa g^-1 cm³"
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_001",
+      "sample_id": "sample_fe_mn_al_ti_b_01",
+      "microstructure_uuid": "uuid_micro_001",
+      "technique": "扫描电子显微镜（SEM）、电子背散射衍射（EBSD）",
+      "purpose": "表征初始及变形后微观组织、相分布、晶粒尺寸、取向、局部应变分布",
+      "key_findings": "基体为奥氏体+δ-铁素体双相带状结构，TiB₂颗粒分布于晶界，δ-铁素体初始位错密度显著高于奥氏体"
+    },
+    {
+      "characterization_id": "char_002",
+      "sample_id": "sample_fe_mn_al_ti_b_01",
+      "microstructure_uuid": "uuid_micro_001",
+      "technique": "透射电子显微镜（TEM）",
+      "purpose": "表征位错形貌、界面结构及取向关系",
+      "key_findings": "小TiB₂与δ-铁素体存在半共格取向关系，δ-铁素体位错密度远高于奥氏体，变形后两相均出现高密度位错缠结"
+    },
+    {
+      "characterization_id": "char_003",
+      "sample_id": "sample_fe_mn_al_ti_b_01",
+      "microstructure_uuid": null,
+      "technique": "同步辐射X射线衍射（s-XRD）",
+      "purpose": "定量测量两相的位错密度及其演化",
+      "key_findings": "初始δ-铁素体位错密度1.1±0.2×10^15 m^-2，奥氏体初始位错密度3±0.7×10^14 m^-2，变形后奥氏体位错密度升至2±0.3×10^15 m^-2，δ-铁素体升至1.7±0.7×10^15 m^-2"
+    },
+    {
+      "characterization_id": "char_004",
+      "sample_id": "sample_fe_mn_al_ti_b_01",
+      "microstructure_uuid": null,
+      "technique": "显微数字图像相关（μ-DIC）",
+      "purpose": "表征变形过程中的局部应变分布",
+      "key_findings": "应变集中于TiB₂/基体界面，奥氏体局部应变高于δ-铁素体"
+    },
+    {
+      "characterization_id": "char_005",
+      "sample_id": "sample_fe_mn_al_ti_b_01",
+      "microstructure_uuid": null,
+      "technique": "显微CT、静水称重、脉冲激励法、准静态拉伸测试",
+      "purpose": "表征TiB₂尺寸分布、密度、杨氏模量、拉伸性能",
+      "key_findings": "密度6.88 g/cm³，杨氏模量225 GPa，屈服强度503 MPa，抗拉强度672 MPa，均匀延伸率13%"
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_001",
+      "sample_id": "sample_fe_mn_al_ti_b_01",
+      "simulation_method": "有限元法（FEM）",
+      "software_used": null,
+      "potential_model": null,
+      "validation_against_experiment": "模拟的应力应变曲线、位错密度演化、局部应变分布与实验结果吻合良好",
+      "analytical_model": [
+        {
+          "model_name": "Hall-Petch模型",
+          "equation_role": "计算晶界强化",
+          "parameters": null,
+          "model_note": null
+        },
+        {
+          "model_name": "Taylor方程",
+          "equation_role": "计算位错强化",
+          "parameters": null,
+          "model_note": null
+        },
+        {
+          "model_name": "Kocks-Mecking模型",
+          "equation_role": "描述位错密度演化",
+          "parameters": null,
+          "model_note": null
+        },
+        {
+          "model_name": "威布尔分布模型",
+          "equation_role": "描述TiB₂颗粒脆性断裂行为",
+          "parameters": null,
+          "model_note": null
+        },
+        {
+          "model_name": "双线性牵引-分离内聚力模型",
+          "equation_role": "描述TiB₂/基体界面脱粘行为",
+          "parameters": null,
+          "model_note": null
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "δ-铁素体贡献了170 MPa的屈服强度，占总屈服强度的30%以上，作为稳定的强化骨架",
+    "变形时奥氏体先发生屈服，之后位错密度大幅提升，贡献主要的加工硬化，实现强韧性平衡",
+    "TiB₂颗粒中>10 μm的粗颗粒占体积分数80%以上，主导材料的力学性能，细小颗粒对性能影响可忽略",
+    "奥氏体包围的TiB₂颗粒断裂频率显著高于铁素体包围的颗粒，是主要的损伤源",
+    "本钢可采用传统钢铁冶金工艺大规模生产，成本远低于采用特种工艺制备的纳米TiB₂增强钢"
+  ]
+}

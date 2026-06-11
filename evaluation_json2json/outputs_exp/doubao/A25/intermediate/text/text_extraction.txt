@@ -1,0 +1,480 @@
+{
+    "papers": [
+        {
+            "paper_id": "A25",
+            "doi": null,
+            "title": "Effects of Al contents on aging hardening behaviors of Fe-Mn-Al-Cu low-density steels with ultra-high specific hardness",
+            "authors": ["Dongwei Wang", "Yang Zuo", "Lixin Sun", "Fanyu Wang", "Jiankun Xu", "Yang Zhao", "Yu Fu", "Huabei Peng"],
+            "publication_year": null,
+            "journal": null,
+            "keywords": ["Low-density steels", "Hardness", "Aging treatment", "β-Mn", "Specific hardness"],
+            "research_type": "experimental",
+            "paper_scope": "Systematically investigate the effects of Al contents on aging hardening behaviors of Fe-35Mn-(15,17,19)Al-5Cu (at.%) low-density steels, develop novel low-density steels with wide-range tunable hardness and ultra-high specific hardness, and reveal the influence mechanism of Al on β-Mn precipitation kinetics, phase composition and mechanical properties."
+        }
+    ],
+    "alloys": [
+        {
+            "alloy_id": "alloy_fe35mn15al5cu",
+            "paper_id": "A25",
+            "alloy_name": "Fe-35.2Mn-15Al-5.2Cu",
+            "aliases": ["15Al"],
+            "base_element": "Fe",
+            "alloying_elements": ["Mn", "Al", "Cu"],
+            "nominal_composition": [
+                {"element": "Fe", "weight_percent": null, "atomic_percent": "44.6"},
+                {"element": "Mn", "weight_percent": null, "atomic_percent": "35.2"},
+                {"element": "Al", "weight_percent": null, "atomic_percent": "15.0"},
+                {"element": "Cu", "weight_percent": null, "atomic_percent": "5.2"}
+            ],
+            "alloys_notes": null
+        },
+        {
+            "alloy_id": "alloy_fe35mn17al5cu",
+            "paper_id": "A25",
+            "alloy_name": "Fe-34.8Mn-17Al-5Cu",
+            "aliases": ["17Al"],
+            "base_element": "Fe",
+            "alloying_elements": ["Mn", "Al", "Cu"],
+            "nominal_composition": [
+                {"element": "Fe", "weight_percent": null, "atomic_percent": "43.2"},
+                {"element": "Mn", "weight_percent": null, "atomic_percent": "34.8"},
+                {"element": "Al", "weight_percent": null, "atomic_percent": "17.0"},
+                {"element": "Cu", "weight_percent": null, "atomic_percent": "5.0"}
+            ],
+            "alloys_notes": null
+        },
+        {
+            "alloy_id": "alloy_fe35mn19al5cu",
+            "paper_id": "A25",
+            "alloy_name": "Fe-34.8Mn-18.6Al-5Cu",
+            "aliases": ["19Al"],
+            "base_element": "Fe",
+            "alloying_elements": ["Mn", "Al", "Cu"],
+            "nominal_composition": [
+                {"element": "Fe", "weight_percent": null, "atomic_percent": "41.6"},
+                {"element": "Mn", "weight_percent": null, "atomic_percent": "34.8"},
+                {"element": "Al", "weight_percent": null, "atomic_percent": "18.6"},
+                {"element": "Cu", "weight_percent": null, "atomic_percent": "5.0"}
+            ],
+            "alloys_notes": null
+        }
+    ],
+    "processes": [
+        {
+            "process_id": "proc_fe_mn_al_cu_01",
+            "paper_id": "A25",
+            "alloy_id": null,
+            "description": "Alloy ingots were homogenized at 1200 °C for 24 h, hot rolled to 4 mm thick plates, solution treated at 1100 °C for 10 min followed by oil quenching, then aged at 525-650 °C for 1/3/6/10 h followed by water quenching.",
+            "processes_notes": null
+        }
+    ],
+    "samples": [
+        {
+            "sample_id": "sample_15al",
+            "paper_id": "A25",
+            "alloy_id": "alloy_fe35mn15al5cu",
+            "process_id": "proc_fe_mn_al_cu_01"
+        },
+        {
+            "sample_id": "sample_17al",
+            "paper_id": "A25",
+            "alloy_id": "alloy_fe35mn17al5cu",
+            "process_id": "proc_fe_mn_al_cu_01"
+        },
+        {
+            "sample_id": "sample_19al",
+            "paper_id": "A25",
+            "alloy_id": "alloy_fe35mn19al5cu",
+            "process_id": "proc_fe_mn_al_cu_01"
+        }
+    ],
+    "processing_steps": [
+        {
+            "sample_id": null,
+            "paper_id": "A25",
+            "sequence": "1",
+            "type": "heat_treatment",
+            "method": "homogenization",
+            "temperature": "1200",
+            "unit": "°C",
+            "duration": "24",
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "Homogenization of as-cast ingots"
+        },
+        {
+            "sample_id": null,
+            "paper_id": "A25",
+            "sequence": "2",
+            "type": "thermomechanical_processing",
+            "method": "hot rolling",
+            "temperature": null,
+            "unit": null,
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "Hot rolled to 4 mm thick plates"
+        },
+        {
+            "sample_id": null,
+            "paper_id": "A25",
+            "sequence": "3",
+            "type": "heat_treatment",
+            "method": "solution treatment",
+            "temperature": "1100",
+            "unit": "°C",
+            "duration": "10",
+            "cooling_medium": "oil",
+            "reduction_ratio": null,
+            "processing_steps_notes": "Solution treatment under argon atmosphere"
+        },
+        {
+            "sample_id": null,
+            "paper_id": "A25",
+            "sequence": "4",
+            "type": "heat_treatment",
+            "method": "aging treatment",
+            "temperature": "525-650",
+            "unit": "°C",
+            "duration": "1,3,6,10",
+            "cooling_medium": "water",
+            "reduction_ratio": null,
+            "processing_steps_notes": "Aging duration unit: h"
+        }
+    ],
+    "structures": [
+        {
+            "structure_id": "struct_15al",
+            "sample_id": "sample_15al",
+            "overall_structure": "Single BCC α phase in solution-treated state; β-Mn, α-Mn, FCC Cu-rich phase and BCC phase precipitate during aging, α matrix almost fully transforms to β-Mn after sufficient aging",
+            "number_of_phases": "5",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_15al_01",
+                    "related_sequence": null,
+                    "phases_present": [
+                        {"phase_name": "α matrix", "crystal_structure": "BCC", "volume_fraction": "100%", "morphology": null, "grain_size": null, "texture": null},
+                        {"phase_name": "β-Mn", "crystal_structure": null, "volume_fraction": "up to >85%", "morphology": "short rod-shaped, near equiaxed after growth", "grain_size": null, "texture": null},
+                        {"phase_name": "α-Mn", "crystal_structure": null, "volume_fraction": null, "morphology": "fine particles", "grain_size": null, "texture": null},
+                        {"phase_name": "FCC Cu-rich phase", "crystal_structure": "FCC", "volume_fraction": "~3.9%", "morphology": "fine particles distributed at β-Mn interfaces", "grain_size": null, "texture": null},
+                        {"phase_name": "BCC phase", "crystal_structure": "BCC", "volume_fraction": null, "morphology": "fine particles distributed at β-Mn interfaces", "grain_size": null, "texture": null}
+                    ],
+                    "defects": [
+                        {"type": null, "porosity": null, "inclusions": [], "dislocation_density": null, "lattice_distortion": null}
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {"value": null, "unit": null},
+                        "grain_size_distribution": null,
+                        "texture": null
+                    },
+                    "precipitates": [
+                        {
+                            "precipitate_id": "prec_15al_beta_mn",
+                            "type": "β-Mn",
+                            "size": {"value": null, "unit": null},
+                            "distribution": "precipitated along α grain boundaries and inside grains",
+                            "coherency": null
+                        },
+                        {
+                            "precipitate_id": "prec_15al_cu_rich",
+                            "type": "FCC Cu-rich phase",
+                            "size": {"value": null, "unit": null},
+                            "distribution": "distributed at β-Mn interfaces",
+                            "coherency": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "structure_id": "struct_17al",
+            "sample_id": "sample_17al",
+            "overall_structure": "Single BCC α phase in solution-treated state; β-Mn precipitation kinetics is slower than 15Al alloy, lower β-Mn volume fraction under same aging condition, higher content of interfacial precipitates",
+            "number_of_phases": "5",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_17al_01",
+                    "related_sequence": null,
+                    "phases_present": [
+                        {"phase_name": "α matrix", "crystal_structure": "BCC", "volume_fraction": "100%", "morphology": null, "grain_size": null, "texture": null},
+                        {"phase_name": "β-Mn", "crystal_structure": null, "volume_fraction": "20.5% after 525 °C aging for 10 h", "morphology": "short rod-shaped", "grain_size": null, "texture": null},
+                        {"phase_name": "α-Mn", "crystal_structure": null, "volume_fraction": null, "morphology": "fine particles", "grain_size": null, "texture": null},
+                        {"phase_name": "FCC Cu-rich phase", "crystal_structure": "FCC", "volume_fraction": "~4.7%", "morphology": "fine particles at β-Mn interfaces", "grain_size": null, "texture": null},
+                        {"phase_name": "BCC phase", "crystal_structure": "BCC", "volume_fraction": null, "morphology": "fine particles at β-Mn interfaces", "grain_size": null, "texture": null}
+                    ],
+                    "defects": [
+                        {"type": null, "porosity": null, "inclusions": [], "dislocation_density": null, "lattice_distortion": null}
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {"value": null, "unit": null},
+                        "grain_size_distribution": null,
+                        "texture": null
+                    },
+                    "precipitates": [
+                        {
+                            "precipitate_id": "prec_17al_beta_mn",
+                            "type": "β-Mn",
+                            "size": {"value": null, "unit": null},
+                            "distribution": "precipitated along α grain boundaries and inside grains",
+                            "coherency": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "structure_id": "struct_19al",
+            "sample_id": "sample_19al",
+            "overall_structure": "Single BCC α phase in solution-treated state; slowest β-Mn precipitation kinetics among three alloys, lowest peak β-Mn volume fraction, highest content of interfacial precipitates",
+            "number_of_phases": "5",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_19al_01",
+                    "related_sequence": null,
+                    "phases_present": [
+                        {"phase_name": "α matrix", "crystal_structure": "BCC", "volume_fraction": "100%", "morphology": null, "grain_size": null, "texture": null},
+                        {"phase_name": "β-Mn", "crystal_structure": null, "volume_fraction": "12.1% after 525 °C aging for 10 h", "morphology": "short rod-shaped", "grain_size": null, "texture": null},
+                        {"phase_name": "α-Mn", "crystal_structure": null, "volume_fraction": null, "morphology": "fine particles", "grain_size": null, "texture": null},
+                        {"phase_name": "FCC Cu-rich phase", "crystal_structure": "FCC", "volume_fraction": "~6.5%", "morphology": "fine particles at β-Mn interfaces", "grain_size": null, "texture": null},
+                        {"phase_name": "BCC phase", "crystal_structure": "BCC", "volume_fraction": null, "morphology": "fine particles at β-Mn interfaces", "grain_size": null, "texture": null}
+                    ],
+                    "defects": [
+                        {"type": null, "porosity": null, "inclusions": [], "dislocation_density": null, "lattice_distortion": null}
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {"value": null, "unit": null},
+                        "grain_size_distribution": null,
+                        "texture": null
+                    },
+                    "precipitates": [
+                        {
+                            "precipitate_id": "prec_19al_beta_mn",
+                            "type": "β-Mn",
+                            "size": {"value": null, "unit": null},
+                            "distribution": "precipitated along α grain boundaries and inside grains",
+                            "coherency": null
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "interfaces": [
+        {
+            "interface_set_id": "int_set_01",
+            "sample_id": null,
+            "phases": [
+                {
+                    "interface_id": "int_01",
+                    "microstructure_uuid": null,
+                    "phase_1_name": "β-Mn",
+                    "phase_2_name": "FCC Cu-rich phase",
+                    "coherence": null
+                },
+                {
+                    "interface_id": "int_02",
+                    "microstructure_uuid": null,
+                    "phase_1_name": "β-Mn",
+                    "phase_2_name": "BCC phase",
+                    "coherence": null
+                }
+            ],
+            "defect_interaction": [],
+            "interface_notes": [
+                {"stress_strain_distribution": null},
+                {"slippage_situation": null}
+            ],
+            "phase_evolution": "α → α + FCC Cu-rich phase + α-Mn + β-Mn + BCC phase → β-Mn + BCC phase + FCC Cu-rich phase"
+        }
+    ],
+    "properties": [
+        {
+            "property_set_id": "prop_15al",
+            "sample_id": "sample_15al",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [],
+                    "ultimate_tensile_strength": [],
+                    "elongation": [],
+                    "youngs_modulus": "164 GPa",
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [
+                    {"region": "solution-treated", "value": "253.4", "scale": "HV", "unit": null},
+                    {"region": "peak aging (600 °C, 6 h)", "value": "965.6", "scale": "HV", "unit": null},
+                    {"region": "β-Mn intrinsic hardness", "value": "12.1 ± 0.3", "scale": null, "unit": "GPa"}
+                ],
+                "fracture_toughness": {"value": "8.6", "unit": "MPa·m^(1/2)"},
+                "fatigue_properties": {"fatigue_limit": null, "cycles_to_failure": null},
+                "creep_properties": {"steady_state_creep_rate": null, "rupture_life": null}
+            },
+            "physical": {
+                "density": {"value": "6.85", "unit": "g·cm^(-3)"},
+                "thermal_properties": {"thermal_conductivity": null, "thermal_expansion_coefficient": null, "specific_heat": null},
+                "electrical_properties": {"electrical_conductivity": null, "resistivity": null},
+                "magnetic_properties": {"magnetic_susceptibility": null, "curie_temperature": null}
+            },
+            "chemical": {
+                "corrosion_resistance": {"test_medium": null, "corrosion_rate": null, "passivation_behavior": null},
+                "oxidation_resistance": {"oxidation_rate_constant": null, "protective_scale": null}
+            },
+            "radiation_properties": {"void_swelling": null, "irradiation_hardening": null, "helium_embrittlement": null}
+        },
+        {
+            "property_set_id": "prop_17al",
+            "sample_id": "sample_17al",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [],
+                    "ultimate_tensile_strength": [],
+                    "elongation": [],
+                    "youngs_modulus": "175 GPa",
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [
+                    {"region": "solution-treated", "value": "259.8", "scale": "HV", "unit": null},
+                    {"region": "peak aging (575 °C, 6 h)", "value": "924.9", "scale": "HV", "unit": null},
+                    {"region": "β-Mn intrinsic hardness", "value": "12.2 ± 0.1", "scale": null, "unit": "GPa"}
+                ],
+                "fracture_toughness": {"value": "6.6", "unit": "MPa·m^(1/2)"},
+                "fatigue_properties": {"fatigue_limit": null, "cycles_to_failure": null},
+                "creep_properties": {"steady_state_creep_rate": null, "rupture_life": null}
+            },
+            "physical": {
+                "density": {"value": "6.76", "unit": "g·cm^(-3)"},
+                "thermal_properties": {"thermal_conductivity": null, "thermal_expansion_coefficient": null, "specific_heat": null},
+                "electrical_properties": {"electrical_conductivity": null, "resistivity": null},
+                "magnetic_properties": {"magnetic_susceptibility": null, "curie_temperature": null}
+            },
+            "chemical": {
+                "corrosion_resistance": {"test_medium": null, "corrosion_rate": null, "passivation_behavior": null},
+                "oxidation_resistance": {"oxidation_rate_constant": null, "protective_scale": null}
+            },
+            "radiation_properties": {"void_swelling": null, "irradiation_hardening": null, "helium_embrittlement": null}
+        },
+        {
+            "property_set_id": "prop_19al",
+            "sample_id": "sample_19al",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [],
+                    "ultimate_tensile_strength": [],
+                    "elongation": [],
+                    "youngs_modulus": "181 GPa",
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [
+                    {"region": "solution-treated", "value": "263.8", "scale": "HV", "unit": null},
+                    {"region": "peak aging (600 °C, 10 h)", "value": "917.8", "scale": "HV", "unit": null},
+                    {"region": "β-Mn intrinsic hardness", "value": "12.5 ± 0.4", "scale": null, "unit": "GPa"}
+                ],
+                "fracture_toughness": {"value": "3.5", "unit": "MPa·m^(1/2)"},
+                "fatigue_properties": {"fatigue_limit": null, "cycles_to_failure": null},
+                "creep_properties": {"steady_state_creep_rate": null, "rupture_life": null}
+            },
+            "physical": {
+                "density": {"value": "6.66", "unit": "g·cm^(-3)"},
+                "thermal_properties": {"thermal_conductivity": null, "thermal_expansion_coefficient": null, "specific_heat": null},
+                "electrical_properties": {"electrical_conductivity": null, "resistivity": null},
+                "magnetic_properties": {"magnetic_susceptibility": null, "curie_temperature": null}
+            },
+            "chemical": {
+                "corrosion_resistance": {"test_medium": null, "corrosion_rate": null, "passivation_behavior": null},
+                "oxidation_resistance": {"oxidation_rate_constant": null, "protective_scale": null}
+            },
+            "radiation_properties": {"void_swelling": null, "irradiation_hardening": null, "helium_embrittlement": null}
+        }
+    ],
+    "performance": [
+        {
+            "performance_id": "perf_01",
+            "sample_id": "sample_15al",
+            "service_conditions": {
+                "operating_temperature": {"min": null, "max": null, "unit": null},
+                "stress_state": null,
+                "environment": null
+            },
+            "lifetime_prediction": {"model_used": null, "predicted_lifetime": null, "confidence_interval": null},
+            "comparative_performance": {
+                "benchmark_alloy": "traditional low-density steels, pure iron, medium/high entropy alloys",
+                "benchmark_process_id": null,
+                "benchmark_sample_id": null,
+                "improvement_percentage": "Specific hardness reaches 141 HV·cm³/g, significantly higher than benchmark materials (usually below 120 HV·cm³/g)"
+            }
+        }
+    ],
+    "characterization_methods": [
+        {
+            "characterization_id": "char_01",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "Energy Dispersive Spectroscopy (EDS)",
+            "purpose": "Measure alloy chemical composition and element distribution",
+            "key_findings": "Measured actual compositions of 15Al, 17Al, 19Al alloys; β-Mn is rich in Mn, poor in Al and Cu; FCC phase is rich in Cu, depleted in Fe, Mn and Al."
+        },
+        {
+            "characterization_id": "char_02",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "X-ray Diffraction (XRD)",
+            "purpose": "Phase identification",
+            "key_findings": "α-Mn and β-Mn co-precipitate during aging before α matrix fully transforms to β-Mn."
+        },
+        {
+            "characterization_id": "char_03",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "Scanning Electron Microscopy (SEM) + Electron Backscattered Diffraction (EBSD)",
+            "purpose": "Microstructure characterization and phase composition analysis",
+            "key_findings": "Solution-treated alloys have single BCC α phase; increasing Al content reduces β-Mn precipitation kinetics; optimal aging temperature range for ultra-high hardness shifts to higher temperature with increasing Al content."
+        },
+        {
+            "characterization_id": "char_04",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "Transmission Electron Microscopy (TEM)",
+            "purpose": "Fine microstructure characterization",
+            "key_findings": "FCC Cu-rich phases with twin structure are distributed at β-Mn interfaces."
+        },
+        {
+            "characterization_id": "char_05",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "Vickers hardness test",
+            "purpose": "Measure alloy macro hardness",
+            "key_findings": "Hardness of alloys ranges from 253.4 HV to 965.6 HV; peak hardness decreases with increasing Al content."
+        },
+        {
+            "characterization_id": "char_06",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "Nanoindentation test",
+            "purpose": "Measure intrinsic hardness of phases",
+            "key_findings": "Intrinsic hardness of β-Mn is 12.1-12.5 GPa, slightly increases with increasing Al content; hardness of FCC Cu-rich phase and BCC phase is lower than β-Mn."
+        },
+        {
+            "characterization_id": "char_07",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "Archimedes method",
+            "purpose": "Measure alloy density",
+            "key_findings": "Densities of 15Al, 17Al, 19Al alloys are 6.85, 6.76, 6.66 g·cm^(-3) respectively."
+        }
+    ],
+    "computational_details": [],
+    "unmapped_findings": [
+        "Wide-range tunable hardness from 253.4 HV to 965.6 HV can be obtained in Fe-Mn-Al-Cu low-density steels by adjusting aging parameters",
+        "The optimal aging temperature range for ultra-high hardness is 525-600 °C for 15Al, 550-600 °C for 17Al, 575-625 °C for 19Al",
+        "Alloys can be formed in soft solution-treated state then aged to target hardness, reducing fabrication cost of high hardness wear-resistant components",
+        "Increasing Al content leads to reduced fracture toughness of the alloys, requiring comprehensive balance between density and mechanical properties in composition design"
+    ]
+}

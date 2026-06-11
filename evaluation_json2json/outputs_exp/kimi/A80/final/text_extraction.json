@@ -1,0 +1,584 @@
+{
+  "papers": [
+    {
+      "paper_id": "A80",
+      "doi": null,
+      "title": "Evaluation of the elastic modulus of steels",
+      "authors": [
+        "Ulrich Bohnenkamp",
+        "Rolf Sandström"
+      ],
+      "publication_year": null,
+      "journal": null,
+      "keywords": [
+        "elastic modulus",
+        "steels",
+        "regression analysis",
+        "thermodynamic analysis",
+        "Thermo-Calc",
+        "composition",
+        "martensitic steels",
+        "ferritic steels",
+        "austenitic steels",
+        "cementite",
+        "carbides"
+      ],
+      "research_type": "mixed",
+      "paper_scope": "Analysis of the influence of chemical composition on the elastic modulus of martensitic, ferritic, and austenitic steels based on collected literature data using regression analysis and Thermo-Calc thermodynamic calculations."
+    }
+  ],
+  "alloys": [
+    {
+      "alloy_id": "alloy_martferr",
+      "paper_id": "A80",
+      "alloy_name": "Martensitic and ferritic steels",
+      "aliases": [],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "C",
+        "Cr",
+        "Cu",
+        "Mn",
+        "Mo",
+        "Ni",
+        "Si",
+        "V"
+      ],
+      "nominal_composition": [],
+      "alloys_notes": "Study I group; 53 batches investigated; phase composition and microstructure neglected in regression analysis."
+    },
+    {
+      "alloy_id": "alloy_ferritic",
+      "paper_id": "A80",
+      "alloy_name": "Ferritic steels",
+      "aliases": [],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "C",
+        "Cr",
+        "Cu",
+        "Mn",
+        "Mo",
+        "Ni",
+        "Si",
+        "V"
+      ],
+      "nominal_composition": [],
+      "alloys_notes": "Study II group; 35 batches investigated; thermodynamic analysis of ferrite and cementite performed with Thermo-Calc."
+    },
+    {
+      "alloy_id": "alloy_austenitic",
+      "paper_id": "A80",
+      "alloy_name": "Austenitic steels",
+      "aliases": [],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Al",
+        "C",
+        "Co",
+        "Cr",
+        "Cu",
+        "Mn",
+        "Mo",
+        "N",
+        "Nb",
+        "Ni",
+        "Si",
+        "Ti",
+        "V"
+      ],
+      "nominal_composition": [],
+      "alloys_notes": "24 batches investigated; thermodynamic analysis of austenite and carbide phases (NbC, TiC, Cr23C6) performed with Thermo-Calc."
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_martferr_01",
+      "paper_id": "A80",
+      "alloy_id": "alloy_martferr",
+      "description": "Data collection from open literature and regression analysis of elastic modulus as a function of total elemental composition, neglecting phase composition and microstructure.",
+      "processes_notes": "Study I; only data with exact composition and dynamic measurement values were used; values corrected to 20°C."
+    },
+    {
+      "process_id": "proc_ferritic_01",
+      "paper_id": "A80",
+      "alloy_id": "alloy_ferritic",
+      "description": "Thermodynamic calculation of phase constitution with Thermo-Calc followed by regression analysis of elastic modulus using ferrite composition and cementite content.",
+      "processes_notes": "Study II; 35 batches; cementite content ranged from 0.78 to 7.90 mass%."
+    },
+    {
+      "process_id": "proc_austenitic_01",
+      "paper_id": "A80",
+      "alloy_id": "alloy_austenitic",
+      "description": "Thermodynamic calculation of austenite and carbide phase contents with Thermo-Calc followed by regression analysis of elastic modulus.",
+      "processes_notes": "24 batches; steels forming phases other than austenite, NbC, TiC, and Cr23C6 were excluded."
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_martferr_01",
+      "paper_id": "A80",
+      "alloy_id": "alloy_martferr",
+      "process_id": "proc_martferr_01"
+    },
+    {
+      "sample_id": "sample_ferritic_01",
+      "paper_id": "A80",
+      "alloy_id": "alloy_ferritic",
+      "process_id": "proc_ferritic_01"
+    },
+    {
+      "sample_id": "sample_austenitic_01",
+      "paper_id": "A80",
+      "alloy_id": "alloy_austenitic",
+      "process_id": "proc_austenitic_01"
+    }
+  ],
+  "processing_steps": [],
+  "structures": [
+    {
+      "structure_id": "struct_martferr_01",
+      "sample_id": "sample_martferr_01",
+      "overall_structure": "Martensitic and ferritic steels; phase composition and microstructure explicitly neglected in the regression analysis.",
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": []
+    },
+    {
+      "structure_id": "struct_ferritic_01",
+      "sample_id": "sample_ferritic_01",
+      "overall_structure": "Ferritic steels consisting of ferrite matrix and cementite.",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_ferrite_alpha_01",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "ferrite",
+              "crystal_structure": "bcc",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "cementite",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_austenitic_01",
+      "sample_id": "sample_austenitic_01",
+      "overall_structure": "Austenitic steels consisting of austenite matrix and carbide precipitates (NbC, TiC, Cr23C6).",
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_austenite_gamma_01",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "fcc",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "NbC",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "TiC",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "Cr23C6",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "precip_nbc_01",
+              "type": "NbC",
+              "size": {
+                "value": null,
+                "unit": null
+              },
+              "distribution": null,
+              "coherency": null
+            },
+            {
+              "precipitate_id": "precip_tic_01",
+              "type": "TiC",
+              "size": {
+                "value": null,
+                "unit": null
+              },
+              "distribution": null,
+              "coherency": null
+            },
+            {
+              "precipitate_id": "precip_cr23c6_01",
+              "type": "Cr23C6",
+              "size": {
+                "value": null,
+                "unit": null
+              },
+              "distribution": null,
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "prop_martferr_01",
+      "sample_id": "sample_martferr_01",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": "211 GPa (estimated for pure α-iron from regression coefficient at 100 mass% Fe)",
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_ferritic_01",
+      "sample_id": "sample_ferritic_01",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_austenitic_01",
+      "sample_id": "sample_austenitic_01",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": "195 GPa (pure γ-iron at room temperature)",
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_01",
+      "sample_id": "sample_martferr_01",
+      "microstructure_uuid": null,
+      "technique": "Dynamic elastic modulus measurement (literature data compilation)",
+      "purpose": "Obtain reproducible elastic modulus and shear modulus values for regression analysis; exclude textured samples using Poisson's ratio criterion.",
+      "key_findings": "Data restricted to dynamic measurements from sonic speed at high frequencies; values corrected to 20°C by interpolation or extrapolation; Poisson's ratio of untextured pure iron is 0.291 and values between 0.26 and 0.33 considered untextured."
+    },
+    {
+      "characterization_id": "char_02",
+      "sample_id": "sample_ferritic_01",
+      "microstructure_uuid": null,
+      "technique": "Thermo-Calc thermodynamic equilibrium calculation",
+      "purpose": "Calculate phase constitution and elemental concentrations in ferrite and cementite for input to regression model.",
+      "key_findings": "Cementite content ranged from 0.78 to 7.90 mass%; ferrite iron content ranged from 90.1 to 97.84 mass%."
+    },
+    {
+      "characterization_id": "char_03",
+      "sample_id": "sample_austenitic_01",
+      "microstructure_uuid": null,
+      "technique": "Thermo-Calc thermodynamic equilibrium calculation",
+      "purpose": "Calculate austenite composition and carbide phase contents (NbC, TiC, Cr23C6) for regression analysis.",
+      "key_findings": "Steels forming phases other than austenite, NbC, TiC, and Cr23C6 were excluded; carbide fractions treated as components in linear regression."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_01",
+      "sample_id": "sample_martferr_01",
+      "simulation_method": "Linear regression analysis",
+      "software_used": null,
+      "potential_model": null,
+      "validation_against_experiment": "Compared with literature data on multicrystalline binary alloys at room temperature; deviations noted for single-crystal estimates.",
+      "analytical_model": [
+        {
+          "model_name": "Composition-only linear regression of elastic modulus",
+          "equation_role": "E_Steel = Σ r_i C_i, where C_i is mass content in % and r_i is regression coefficient in GPa per mass%",
+          "parameters": [
+            "Fe: 2.114 GPa per mass%",
+            "Cr: 2.737 GPa per mass%",
+            "Mo: 2.604 GPa per mass%",
+            "Si: 4.625 GPa per mass%",
+            "C: 0.050 GPa per mass%",
+            "Ni: 0.233 GPa per mass%",
+            "Mn: 1.691 GPa per mass% (insignificant)",
+            "Cu: 2.354 GPa per mass% (insignificant)"
+          ],
+          "model_note": "53 batches; phase composition and microstructure neglected; R² = 0.96; standard error = 1.2 GPa; maximum deviation = 3.6 GPa; average deviation = 0.8 GPa."
+        }
+      ]
+    },
+    {
+      "computation_id": "comp_02",
+      "sample_id": "sample_ferritic_01",
+      "simulation_method": "Thermodynamic equilibrium calculation combined with linear regression",
+      "software_used": "Thermo-Calc",
+      "potential_model": null,
+      "validation_against_experiment": "Compared with literature data on binary alloys; cementite modulus values from literature (138-227 GPa depending on orientation) consistent with finding of no effective contribution.",
+      "analytical_model": [
+        {
+          "model_name": "Phase-aware linear regression for ferritic steels",
+          "equation_role": "E_Steel = Σ r_i C_i using ferrite composition and total cementite content from Thermo-Calc",
+          "parameters": [
+            "Fe in ferrite: 2.092 GPa per mass%",
+            "Cr in ferrite: 2.233 GPa per mass%",
+            "Mn in ferrite: 5.386 GPa per mass%",
+            "Mo in ferrite: 3.943 GPa per mass%",
+            "Si in ferrite: 5.539 GPa per mass%",
+            "Cu in ferrite: 2.704 GPa per mass% (insignificant)",
+            "cementite: 2.122 GPa per mass%"
+          ],
+          "model_note": "35 batches; R² = 0.85; standard error = 1.1 GPa; maximum deviation = 1.5 GPa; average deviation = 0.5 GPa; cementite has highest statistical significance (r_i/σ_i = 26) but virtually no effect on elastic modulus."
+        }
+      ]
+    },
+    {
+      "computation_id": "comp_03",
+      "sample_id": "sample_austenitic_01",
+      "simulation_method": "Thermodynamic equilibrium calculation combined with linear regression",
+      "software_used": "Thermo-Calc",
+      "potential_model": null,
+      "validation_against_experiment": "Compared with literature data on nitrogen-containing austenitic steels; literature reports coefficient of 34 GPa per mass% N in austenite at RT.",
+      "analytical_model": [
+        {
+          "model_name": "Phase-aware linear regression for austenitic steels",
+          "equation_role": "E_Steel = Σ r_i C_i using austenite composition and carbide phase contents (NbC, TiC, Cr23C6) from Thermo-Calc",
+          "parameters": [
+            "Fe in austenite: 1.952 GPa per mass%",
+            "Cr in austenite: 2.476 GPa per mass%",
+            "Ni in austenite: 1.887 GPa per mass%",
+            "Mo in austenite: 0.522 GPa per mass%",
+            "N in austenite: 15.101 GPa per mass% (low significance)",
+            "NbC: 6.490 GPa per mass%",
+            "TiC: 7.309 GPa per mass%",
+            "Cr23C6: 1.933 GPa per mass% (statistically significant but no effect)"
+          ],
+          "model_note": "24 batches; R² = 0.83; standard error = 2.9 GPa; maximum deviation = 3.1 GPa; average deviation = 1.1 GPa; pure γ-iron modulus at RT is 195 GPa."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "For martensitic and ferritic steels (Study I, 53 batches), Cr, Mo, and Si increase the elastic modulus, whereas C and Ni decrease it; Mn and Cu are found to be insignificant in the amounts present; R² = 0.96, standard error 1.2 GPa, maximum deviation 3.6 GPa, average deviation 0.8 GPa.",
+    "For ferritic steels (Study II, 35 batches), Si, Mo, and Mn show a strong increasing effect and Cr a weak increasing effect on the elastic modulus; cementite has the highest statistical significance in the regression analysis but shows virtually no effect on the elastic modulus; the weak increasing effect of Cu is considered insignificant due to the large standard error; R² = 0.85, standard error 1.1 GPa, maximum deviation 1.5 GPa, average deviation 0.5 GPa.",
+    "For austenitic steels (24 batches), Ni and Mo decrease the elastic modulus, while N, NbC, TiC, and Cr increase it; Cr23C6 is statistically significant but shows no effect on the elastic modulus; R² = 0.83, standard error 2.9 GPa, maximum deviation 3.1 GPa, average deviation 1.1 GPa.",
+    "Pure γ-iron elastic modulus at room temperature is 195 GPa, which is lower than that of pure α-iron (~211 GPa inferred from the iron regression coefficient).",
+    "Poisson's ratio of untextured pure iron is 0.291; deviations from this value indicate texture; in engineering work Poisson's ratio is often taken as 0.3, but this is not necessarily a good approximation; data with Poisson's ratio between 0.26 and 0.33 were considered untextured and used in the analysis.",
+    "Dynamic measurement of elastic modulus produces the most reproducible results and was the only method used in the collected literature data; the values slightly differ from static measurements.",
+    "The temperature dependence of the elastic modulus was investigated in all literature sources; the present work was related to 20°C; interpolated or extrapolated values were used where necessary by fitting three or four neighbouring points to a line or a second-order polynomial.",
+    "Nitrogen strongly increases the elastic modulus of austenitic steels; literature reports a coefficient of 34 GPa per mass% N in austenite at room temperature, which is reproduced within the large standard deviation in this regression; the small amount of N-containing steels in the study (4 batches) causes the low significance of the N coefficient (r_i/σ_i = 1.4).",
+    "The higher regression coefficient for Cr in Study I compared to Study II is an indicator for the role of the martensitic microstructure in some steels of the martensitic-ferritic group.",
+    "Cementite elastic modulus values reported in literature vary widely depending on orientation and measurement method: 138 GPa transversal to crystal growth direction, 227 GPa in growth direction, and 160-200 GPa for single-phase films; for arbitrary orientation in steel, an effective value lower than the average of 183 GPa applies, supporting the finding that cementite has no net effect on the elastic modulus of ferritic steels in this study."
+  ]
+}

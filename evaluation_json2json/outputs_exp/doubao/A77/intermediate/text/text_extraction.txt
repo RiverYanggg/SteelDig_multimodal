@@ -1,0 +1,569 @@
+{
+    "papers": [
+        {
+            "paper_id": "A77",
+            "doi": "10.1002/srin.202400904",
+            "title": "Lightweight Fe–Mn–Al–C Steels: Current State, Manufacturing, and Implementation Prospects",
+            "authors": ["Valentyn Veis", "Anastasiia Semenko", "Mykhailo Voron", "Andrii Tymoshenko", "Richard Likhatskyi", "Ivan Likhatskyi", "Zhanna Parkhomchuk"],
+            "publication_year": "2024",
+            "journal": "Steel Research International",
+            "keywords": ["Fe-Mn-Al-C steels", "lightweight steels", "TWIP steels", "κ-carbides", "alloying", "thermomechanical processing", "mechanical properties"],
+            "research_type": "review",
+            "paper_scope": "This review summarizes the effects of alloying elements on the structure and properties of austenitic Fe-Mn-Al-C steels, the formation and distribution of κ-carbides, the role of alloying and microalloying elements, manufacturing processes, and discusses the challenges and prospects for their industrial application."
+        }
+    ],
+    "alloys": [
+        {
+            "alloy_id": "alloy_femnalc",
+            "paper_id": "A77",
+            "alloy_name": "Fe-Mn-Al-C lightweight steel",
+            "aliases": ["TWIP steel", "TRIP steel", "low-density high-strength steel"],
+            "base_element": "Fe",
+            "alloying_elements": ["Mn", "Al", "C", "Si", "Cr", "Cu", "V", "Nb", "Mo", "Ni"],
+            "nominal_composition": [
+                {
+                    "element": "Mn",
+                    "weight_percent": "5-30",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "Al",
+                    "weight_percent": "5-13.2",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "C",
+                    "weight_percent": "0.4-1.6",
+                    "atomic_percent": null
+                }
+            ],
+            "alloys_notes": "Classified into ferritic, duplex, and austenitic types; austenitic and duplex steels are main research objects, density is 13-20% lower than conventional steels; fully austenitic steels contain 12-30 wt% Mn, 5-12 wt% Al, 0.6-1.2 wt% C, duplex steels contain 5-30 wt% Mn, 5-10 wt% Al, 0.4-0.7 wt% C."
+        }
+    ],
+    "processes": [
+        {
+            "process_id": "proc_femnalc_01",
+            "paper_id": "A77",
+            "alloy_id": "alloy_femnalc",
+            "description": "Melting and casting process",
+            "processes_notes": "Can be produced by open induction furnace (MgO lining, Ar protection required) or vacuum induction furnace; use olivine sand molds or preheated molds; strict control of phosphorus impurity is required."
+        },
+        {
+            "process_id": "proc_femnalc_02",
+            "paper_id": "A77",
+            "alloy_id": "alloy_femnalc",
+            "description": "Thermomechanical processing (rolling + heat treatment)",
+            "processes_notes": "Homogenization at 1100-1250℃ for 1-3 h, hot rolling at 850-1100℃ to 2-5 mm thickness, optional cold rolling, annealing at 600-800℃, aging at 500-700℃ for 0.5-2 h."
+        },
+        {
+            "process_id": "proc_femnalc_03",
+            "paper_id": "A77",
+            "alloy_id": "alloy_femnalc",
+            "description": "Laser powder bed fusion (LPBF) additive manufacturing",
+            "processes_notes": "Produces fine-grained austenitic microstructure, no special post-processing required for basic mechanical properties."
+        }
+    ],
+    "samples": [
+        {
+            "sample_id": "sample_femnalc_01",
+            "paper_id": "A77",
+            "alloy_id": "alloy_femnalc",
+            "process_id": "proc_femnalc_01"
+        },
+        {
+            "sample_id": "sample_femnalc_02",
+            "paper_id": "A77",
+            "alloy_id": "alloy_femnalc",
+            "process_id": "proc_femnalc_02"
+        },
+        {
+            "sample_id": "sample_femnalc_03",
+            "paper_id": "A77",
+            "alloy_id": "alloy_femnalc",
+            "process_id": "proc_femnalc_03"
+        }
+    ],
+    "processing_steps": [
+        {
+            "sample_id": "sample_femnalc_01",
+            "paper_id": "A77",
+            "sequence": "1",
+            "type": "melting",
+            "method": "vacuum/open induction melting",
+            "temperature": "above liquidus temperature",
+            "unit": "℃",
+            "duration": null,
+            "cooling_medium": "olivine sand mold/preheated mold",
+            "reduction_ratio": null,
+            "processing_steps_notes": "Open melting requires Ar protection to avoid Al oxidation; oxygen content is controlled below 6 ppm."
+        },
+        {
+            "sample_id": "sample_femnalc_02",
+            "paper_id": "A77",
+            "sequence": "1",
+            "type": "heat_treatment",
+            "method": "homogenization annealing",
+            "temperature": "1100-1250",
+            "unit": "℃",
+            "duration": "1-3",
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "Eliminate casting segregation, prepare for hot rolling."
+        },
+        {
+            "sample_id": "sample_femnalc_02",
+            "paper_id": "A77",
+            "sequence": "2",
+            "type": "thermomechanical_processing",
+            "method": "hot rolling",
+            "temperature": "850-1100",
+            "unit": "℃",
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": "to 2-5 mm thickness",
+            "processing_steps_notes": "Reheating between passes may be required to avoid cracking."
+        },
+        {
+            "sample_id": "sample_femnalc_02",
+            "paper_id": "A77",
+            "sequence": "3",
+            "type": "heat_treatment",
+            "method": "annealing",
+            "temperature": "600-800",
+            "unit": "℃",
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "Recrystallization annealing to adjust grain size and δ-ferrite morphology."
+        },
+        {
+            "sample_id": "sample_femnalc_02",
+            "paper_id": "A77",
+            "sequence": "4",
+            "type": "heat_treatment",
+            "method": "aging",
+            "temperature": "500-700",
+            "unit": "℃",
+            "duration": "0.5-2",
+            "cooling_medium": "air/water",
+            "reduction_ratio": null,
+            "processing_steps_notes": "Promote nucleation of nanoscale intragranular κ-carbides."
+        }
+    ],
+    "structures": [
+        {
+            "structure_id": "struct_femnalc_01",
+            "sample_id": "sample_femnalc_02",
+            "overall_structure": "Multiphase structure dominated by austenite, may contain ferrite, κ-carbides, ordered B2/DO3 phases, and other precipitated carbides.",
+            "number_of_phases": "2-4",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_struct_001",
+                    "related_sequence": null,
+                    "phases_present": [
+                        {
+                            "phase_name": "Austenite (γ)",
+                            "crystal_structure": "FCC",
+                            "volume_fraction": "40-100 vol%",
+                            "morphology": "equiaxed/banded",
+                            "grain_size": "1-100 μm",
+                            "texture": "Rolling texture exists after deformation"
+                        },
+                        {
+                            "phase_name": "κ-carbide",
+                            "crystal_structure": "E21 perovskite, stoichiometric formula (Fe,Mn)3AlC",
+                            "volume_fraction": "0-30 vol%",
+                            "morphology": "nanoscale cuboidal (intragranular) / lamellar (intergranular)",
+                            "grain_size": "2-200 nm",
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "Ferrite (α/δ)",
+                            "crystal_structure": "BCC",
+                            "volume_fraction": "0-60 vol%",
+                            "morphology": "banded/equiaxed",
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "Ordered B2/DO3 phase",
+                            "crystal_structure": "ordered BCC",
+                            "volume_fraction": "0-20 vol%",
+                            "morphology": "fine particles",
+                            "grain_size": null,
+                            "texture": null
+                        }
+                    ],
+                    "defects": [
+                        {
+                            "type": "Dislocations, stacking faults, twins",
+                            "porosity": null,
+                            "inclusions": ["Al2O3", "MnS", "phosphide inclusions"],
+                            "dislocation_density": "Increases after plastic deformation",
+                            "lattice_distortion": "2.7% lattice mismatch between austenite and κ-carbide"
+                        }
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": "1-100",
+                            "unit": "μm"
+                        },
+                        "grain_size_distribution": "Depends on rolling and annealing process",
+                        "texture": "Rolling texture present in deformed samples"
+                    },
+                    "precipitates": [
+                        {
+                            "precipitate_id": "prec_001",
+                            "type": "intragranular κ-carbide",
+                            "size": {
+                                "value": "2-50",
+                                "unit": "nm"
+                            },
+                            "distribution": "Uniformly distributed in austenite grains",
+                            "coherency": "Coherent with austenite matrix"
+                        },
+                        {
+                            "precipitate_id": "prec_002",
+                            "type": "intergranular κ-carbide",
+                            "size": {
+                                "value": "50-200",
+                                "unit": "nm"
+                            },
+                            "distribution": "Precipitated at austenite grain boundaries",
+                            "coherency": "Incoherent/semi-coherent"
+                        },
+                        {
+                            "precipitate_id": "prec_003",
+                            "type": "Microalloyed carbides (VC/NbC/Mo2C)",
+                            "size": {
+                                "value": "1-50",
+                                "unit": "nm"
+                            },
+                            "distribution": "Dispersed in austenite and ferrite",
+                            "coherency": "Semi-coherent"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "interfaces": [
+        {
+            "interface_set_id": "inter_femnalc_01",
+            "sample_id": "sample_femnalc_02",
+            "phases": [
+                {
+                    "interface_id": "inter_001",
+                    "microstructure_uuid": "uuid_struct_001",
+                    "phase_1_name": "Austenite (γ)",
+                    "phase_2_name": "Intragranular κ-carbide",
+                    "coherence": "Coherent, lattice mismatch 2.7%"
+                }
+            ],
+            "defect_interaction": [
+                {
+                    "interaction_id": "inter_def_001",
+                    "microstructure_uuid": "uuid_struct_001",
+                    "interaction_type": "Dislocation cutting of fine κ-carbides / Orowan bypassing of coarse carbides",
+                    "quality_description": "Nanoscale coherent κ-carbides can be cut by dislocations, leading to moderate strain hardening; coarse carbides cause Orowan strengthening and higher strain hardening rate"
+                }
+            ],
+            "interface_notes": [
+                {
+                    "stress_strain_distribution": "Stress concentration occurs at intergranular κ-carbide sites, leading to crack initiation"
+                },
+                {
+                    "slippage_situation": "Twins and microbands act as barriers to dislocation slip, improving strength and ductility"
+                }
+            ],
+            "phase_evolution": "During aging, κ-carbides first precipitate as nanoscale intragranular particles via spinodal decomposition; prolonged aging or high temperature leads to coarsening of intergranular κ-carbides via eutectoid reaction at grain boundaries."
+        }
+    ],
+    "properties": [
+        {
+            "property_set_id": "prop_femnalc_01",
+            "sample_id": "sample_femnalc_02",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [
+                        {
+                            "direction": null,
+                            "value": "400-1300",
+                            "unit": "MPa",
+                            "others": {
+                                "uncertainty": null
+                            }
+                        }
+                    ],
+                    "ultimate_tensile_strength": [
+                        {
+                            "direction": null,
+                            "value": "600-2000",
+                            "unit": "MPa",
+                            "others": {
+                                "uncertainty": null
+                            }
+                        }
+                    ],
+                    "elongation": [
+                        {
+                            "direction": null,
+                            "value": "20-100",
+                            "unit": "%"
+                        }
+                    ],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [
+                    {
+                        "region": null,
+                        "value": "300-420",
+                        "scale": "HB",
+                        "unit": "HB"
+                    }
+                ],
+                "fracture_toughness": {
+                    "value": null,
+                    "unit": null
+                },
+                "fatigue_properties": {
+                    "fatigue_limit": "Improved by ~15% after aging due to nanoscale κ-carbides",
+                    "cycles_to_failure": null
+                },
+                "creep_properties": {
+                    "steady_state_creep_rate": "Reduced by Ni addition via grain boundary strengthening",
+                    "rupture_life": null
+                }
+            },
+            "physical": {
+                "density": {
+                    "value": "6.3-7.2",
+                    "unit": "g/cm3"
+                },
+                "thermal_properties": {
+                    "thermal_conductivity": null,
+                    "thermal_expansion_coefficient": null,
+                    "specific_heat": null
+                },
+                "electrical_properties": {
+                    "electrical_conductivity": null,
+                    "resistivity": "Increased by ~20 wt% Mn addition"
+                },
+                "magnetic_properties": {
+                    "magnetic_susceptibility": null,
+                    "curie_temperature": null
+                }
+            },
+            "chemical": {
+                "corrosion_resistance": {
+                    "test_medium": "NaCl solution",
+                    "corrosion_rate": "Reduced by ~40% with 3-5 wt% Cr addition",
+                    "passivation_behavior": "Cr addition promotes formation of stable passive film"
+                },
+                "oxidation_resistance": {
+                    "oxidation_rate_constant": "Reduced by Mn addition via formation of (Mn,Fe)Al2O4 spinel layer",
+                    "protective_scale": "(Mn,Fe)Al2O4 spinel, Al2O3 film"
+                }
+            },
+            "radiation_properties": {
+                "void_swelling": null,
+                "irradiation_hardening": null,
+                "helium_embrittlement": null
+            }
+        },
+        {
+            "property_set_id": "prop_femnalc_02",
+            "sample_id": "sample_femnalc_03",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [
+                        {
+                            "direction": null,
+                            "value": null,
+                            "unit": "MPa",
+                            "others": {
+                                "uncertainty": null
+                            }
+                        }
+                    ],
+                    "ultimate_tensile_strength": [
+                        {
+                            "direction": null,
+                            "value": ">900",
+                            "unit": "MPa",
+                            "others": {
+                                "uncertainty": null
+                            }
+                        }
+                    ],
+                    "elongation": [
+                        {
+                            "direction": null,
+                            "value": ">20",
+                            "unit": "%"
+                        }
+                    ],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [],
+                "fracture_toughness": {
+                    "value": null,
+                    "unit": null
+                },
+                "fatigue_properties": {
+                    "fatigue_limit": null,
+                    "cycles_to_failure": null
+                },
+                "creep_properties": {
+                    "steady_state_creep_rate": null,
+                    "rupture_life": null
+                }
+            },
+            "physical": {
+                "density": {
+                    "value": null,
+                    "unit": "g/cm3"
+                },
+                "thermal_properties": {
+                    "thermal_conductivity": null,
+                    "thermal_expansion_coefficient": null,
+                    "specific_heat": null
+                },
+                "electrical_properties": {
+                    "electrical_conductivity": null,
+                    "resistivity": null
+                },
+                "magnetic_properties": {
+                    "magnetic_susceptibility": null,
+                    "curie_temperature": null
+                }
+            },
+            "chemical": {
+                "corrosion_resistance": {
+                    "test_medium": null,
+                    "corrosion_rate": null,
+                    "passivation_behavior": null
+                },
+                "oxidation_resistance": {
+                    "oxidation_rate_constant": null,
+                    "protective_scale": null
+                }
+            },
+            "radiation_properties": {
+                "void_swelling": null,
+                "irradiation_hardening": null,
+                "helium_embrittlement": null
+            }
+        }
+    ],
+    "performance": [
+        {
+            "performance_id": "perf_femnalc_01",
+            "sample_id": "sample_femnalc_02",
+            "service_conditions": {
+                "operating_temperature": {
+                    "min": "-196",
+                    "max": "600",
+                    "unit": "℃"
+                },
+                "stress_state": "Static load, dynamic load, impact, ballistic load",
+                "environment": "Atmosphere, corrosive media, high temperature oxidation environment"
+            },
+            "lifetime_prediction": {
+                "model_used": null,
+                "predicted_lifetime": null,
+                "confidence_interval": null
+            },
+            "comparative_performance": {
+                "benchmark_alloy": "Rolled Homogeneous Armor (RHA) steel",
+                "benchmark_process_id": null,
+                "benchmark_sample_id": null,
+                "improvement_percentage": "13% lower density, 10% higher strength, ballistic mass efficiency 1.1"
+            }
+        },
+        {
+            "performance_id": "perf_femnalc_02",
+            "sample_id": "sample_femnalc_02",
+            "service_conditions": {
+                "operating_temperature": {
+                    "min": null,
+                    "max": null,
+                    "unit": "℃"
+                },
+                "stress_state": null,
+                "environment": null
+            },
+            "lifetime_prediction": {
+                "model_used": null,
+                "predicted_lifetime": null,
+                "confidence_interval": null
+            },
+            "comparative_performance": {
+                "benchmark_alloy": "Ti-6Al-4V titanium alloy",
+                "benchmark_process_id": null,
+                "benchmark_sample_id": null,
+                "improvement_percentage": "Higher specific strength, significantly lower production cost"
+            }
+        }
+    ],
+    "characterization_methods": [
+        {
+            "characterization_id": "char_001",
+            "sample_id": "sample_femnalc_02",
+            "microstructure_uuid": "uuid_struct_001",
+            "technique": "SEM-EBSD",
+            "purpose": "Phase identification and grain structure characterization",
+            "key_findings": "Distinguish ferrite and austenite phases, measure grain size and orientation distribution"
+        },
+        {
+            "characterization_id": "char_002",
+            "sample_id": "sample_femnalc_02",
+            "microstructure_uuid": "uuid_struct_001",
+            "technique": "EPMA",
+            "purpose": "Element distribution and precipitate characterization",
+            "key_findings": "Observe segregation of Cu, Al, C and distribution of precipitated phases"
+        },
+        {
+            "characterization_id": "char_003",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "XRD, TEM, atom probe tomography",
+            "purpose": "Phase structure, precipitate morphology and composition analysis",
+            "key_findings": "Identify κ-carbide crystal structure, measure precipitate size and coherency"
+        }
+    ],
+    "computational_details": [
+        {
+            "computation_id": "comp_001",
+            "sample_id": null,
+            "simulation_method": "First-principles calculation, CALPHAD thermodynamic simulation",
+            "software_used": null,
+            "potential_model": null,
+            "validation_against_experiment": "Consistent with experimental phase diagrams and mechanical property results",
+            "analytical_model": [
+                {
+                    "model_name": "Stacking fault energy calculation model, precipitation strengthening model",
+                    "equation_role": "Predict deformation mechanism and strength contribution of precipitates",
+                    "parameters": "Alloy composition, temperature",
+                    "model_note": null
+                }
+            ]
+        }
+    ],
+    "unmapped_findings": [
+        "The deformation mechanism of Fe-Mn-Al-C steels is determined by stacking fault energy (SFE): TRIP mechanism dominates when SFE < 12 mJ/m², TWIP mechanism when SFE is 12-35 mJ/m², and MBIP or dislocation slip mechanism when SFE > 35 mJ/m².",
+        "Each 1 wt% Al addition reduces steel density by 1.3% and increases austenite lattice parameter by 0.00094 nm.",
+        "Scopus database shows the number of publications on Fe-Mn-Al-C steels increased from 8 in 2010 to 30 in 2022, showing a continuous growth trend.",
+        "Excessive alloying with three or more elements may deteriorate the processing and mechanical properties of Fe-Mn-Al-C steels.",
+        "Fe-30Mn-13.2Al-1.6C-5Cr steel has a density of only 6.3 g/cm³, ~20% lower than conventional steel.",
+        "As armor material, Fe-Mn-Al-C steel has a volume efficiency of 1.02, allowing direct replacement of RHA components to achieve 13% weight reduction without changing component geometry.",
+        "Current industrial application challenges: melt reaction with refractory materials leading to inclusions, continuous casting nozzle clogging, surface defects, low-temperature failure behavior, mechanical anisotropy, hydrogen embrittlement, etc."
+    ]
+}

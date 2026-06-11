@@ -1,0 +1,603 @@
+{
+    "papers": [
+        {
+            "paper_id": "A74",
+            "doi": "10.1002/srin.202300767",
+            "title": "Effect of Al Content on Inclusions in Fe-15Mn-xAl-C Low-Density Steel",
+            "authors": ["Lei Cao", "Guocheng Wang", "Yuanyou Xiao", "Ke Tao"],
+            "publication_year": "2023",
+            "journal": "Steel Research International",
+            "keywords": ["Fe-Mn-Al-C low-density steel", "Al content", "inclusions", "solidification route", "heterogeneous nucleation", "mismatch degree"],
+            "research_type": "mixed",
+            "paper_scope": "Study the effect of Al content (1, 3, 5 wt%) on the solidification route, type, quantity, size distribution and precipitation mechanism of inclusions in Fe-15Mn-xAl-C low-density steel"
+        }
+    ],
+    "alloys": [
+        {
+            "alloy_id": "alloy_fe15mn09al_c",
+            "paper_id": "A74",
+            "alloy_name": "Fe-15Mn-1Al-C steel (1#)",
+            "aliases": ["1# sample"],
+            "base_element": "Fe",
+            "alloying_elements": ["Mn", "Al", "C", "Si", "P", "S", "Ti", "N", "O"],
+            "nominal_composition": [
+                {"element": "C", "weight_percent": "0.41", "atomic_percent": null},
+                {"element": "Si", "weight_percent": "0.32", "atomic_percent": null},
+                {"element": "Mn", "weight_percent": "14.85", "atomic_percent": null},
+                {"element": "Al", "weight_percent": "0.868", "atomic_percent": null},
+                {"element": "N", "weight_percent": "0.0032", "atomic_percent": null},
+                {"element": "P", "weight_percent": "0.043", "atomic_percent": null},
+                {"element": "S", "weight_percent": "0.014", "atomic_percent": null},
+                {"element": "O", "weight_percent": "0.0005", "atomic_percent": null},
+                {"element": "Ti", "weight_percent": "0.0057", "atomic_percent": null},
+                {"element": "Fe", "weight_percent": "Bal.", "atomic_percent": null}
+            ],
+            "alloys_notes": null
+        },
+        {
+            "alloy_id": "alloy_fe15mn28al_c",
+            "paper_id": "A74",
+            "alloy_name": "Fe-15Mn-3Al-C steel (2#)",
+            "aliases": ["2# sample"],
+            "base_element": "Fe",
+            "alloying_elements": ["Mn", "Al", "C", "Si", "P", "S", "Ti", "N", "O"],
+            "nominal_composition": [
+                {"element": "C", "weight_percent": "0.41", "atomic_percent": null},
+                {"element": "Si", "weight_percent": "0.32", "atomic_percent": null},
+                {"element": "Mn", "weight_percent": "14.86", "atomic_percent": null},
+                {"element": "Al", "weight_percent": "2.766", "atomic_percent": null},
+                {"element": "N", "weight_percent": "0.0029", "atomic_percent": null},
+                {"element": "P", "weight_percent": "0.045", "atomic_percent": null},
+                {"element": "S", "weight_percent": "0.014", "atomic_percent": null},
+                {"element": "O", "weight_percent": "0.0005", "atomic_percent": null},
+                {"element": "Ti", "weight_percent": "0.0059", "atomic_percent": null},
+                {"element": "Fe", "weight_percent": "Bal.", "atomic_percent": null}
+            ],
+            "alloys_notes": null
+        },
+        {
+            "alloy_id": "alloy_fe15mn47al_c",
+            "paper_id": "A74",
+            "alloy_name": "Fe-15Mn-5Al-C steel (3#)",
+            "aliases": ["3# sample"],
+            "base_element": "Fe",
+            "alloying_elements": ["Mn", "Al", "C", "Si", "P", "S", "Ti", "N", "O"],
+            "nominal_composition": [
+                {"element": "C", "weight_percent": "0.41", "atomic_percent": null},
+                {"element": "Si", "weight_percent": "0.31", "atomic_percent": null},
+                {"element": "Mn", "weight_percent": "14.83", "atomic_percent": null},
+                {"element": "Al", "weight_percent": "4.695", "atomic_percent": null},
+                {"element": "N", "weight_percent": "0.0021", "atomic_percent": null},
+                {"element": "P", "weight_percent": "0.045", "atomic_percent": null},
+                {"element": "S", "weight_percent": "0.016", "atomic_percent": null},
+                {"element": "O", "weight_percent": "0.0013", "atomic_percent": null},
+                {"element": "Ti", "weight_percent": "0.0060", "atomic_percent": null},
+                {"element": "Fe", "weight_percent": "Bal.", "atomic_percent": null}
+            ],
+            "alloys_notes": null
+        }
+    ],
+    "processes": [
+        {
+            "process_id": "proc_fe15mn09al_01",
+            "paper_id": "A74",
+            "alloy_id": "alloy_fe15mn09al_c",
+            "description": "Laboratory smelting in tubular furnace: iron powder + ferrous oxalate heated to 1873 K, add ferromanganese, then add 11 g Al particles, hold, cool to room temperature with furnace",
+            "processes_notes": "The amount of ferromanganese added is consistent among three groups, only Al addition differs"
+        },
+        {
+            "process_id": "proc_fe15mn28al_01",
+            "paper_id": "A74",
+            "alloy_id": "alloy_fe15mn28al_c",
+            "description": "Laboratory smelting in tubular furnace: iron powder + ferrous oxalate heated to 1873 K, add ferromanganese, then add 28 g Al particles, hold, cool to room temperature with furnace",
+            "processes_notes": "The amount of ferromanganese added is consistent among three groups, only Al addition differs"
+        },
+        {
+            "process_id": "proc_fe15mn47al_01",
+            "paper_id": "A74",
+            "alloy_id": "alloy_fe15mn47al_c",
+            "description": "Laboratory smelting in tubular furnace: iron powder + ferrous oxalate heated to 1873 K, add ferromanganese, then add 48 g Al particles, hold, cool to room temperature with furnace",
+            "processes_notes": "The amount of ferromanganese added is consistent among three groups, only Al addition differs"
+        }
+    ],
+    "samples": [
+        {
+            "sample_id": "sample_1#",
+            "paper_id": "A74",
+            "alloy_id": "alloy_fe15mn09al_c",
+            "process_id": "proc_fe15mn09al_01"
+        },
+        {
+            "sample_id": "sample_2#",
+            "paper_id": "A74",
+            "alloy_id": "alloy_fe15mn28al_c",
+            "process_id": "proc_fe15mn28al_01"
+        },
+        {
+            "sample_id": "sample_3#",
+            "paper_id": "A74",
+            "alloy_id": "alloy_fe15mn47al_c",
+            "process_id": "proc_fe15mn47al_01"
+        }
+    ],
+    "processing_steps": [
+        {
+            "sample_id": "sample_1#",
+            "paper_id": "A74",
+            "sequence": "1",
+            "type": "melting",
+            "method": "charging",
+            "temperature": null,
+            "unit": null,
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "Place 700 g iron powder and 1.575 g ferrous oxalate into alumina crucible"
+        },
+        {
+            "sample_id": "sample_1#",
+            "paper_id": "A74",
+            "sequence": "2",
+            "type": "heat_treatment",
+            "method": "heating and holding",
+            "temperature": "1873",
+            "unit": "K",
+            "duration": "40",
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "Heat tubular furnace to 1873 K and hold for 40 min"
+        },
+        {
+            "sample_id": "sample_1#",
+            "paper_id": "A74",
+            "sequence": "3",
+            "type": "melting",
+            "method": "alloy addition",
+            "temperature": "1873",
+            "unit": "K",
+            "duration": "20",
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "Add 225 g ferromanganese and hold for 20 min"
+        },
+        {
+            "sample_id": "sample_1#",
+            "paper_id": "A74",
+            "sequence": "4",
+            "type": "melting",
+            "method": "deoxidizer addition",
+            "temperature": "1873",
+            "unit": "K",
+            "duration": "60",
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "Add 11 g pure Al particles wrapped in pure iron sheet, hold for 60 min"
+        },
+        {
+            "sample_id": "sample_1#",
+            "paper_id": "A74",
+            "sequence": "5",
+            "type": "cooling",
+            "method": "furnace cooling",
+            "temperature": null,
+            "unit": "K",
+            "duration": null,
+            "cooling_medium": "furnace atmosphere",
+            "reduction_ratio": null,
+            "processing_steps_notes": "Cool sample to room temperature in tubular furnace"
+        },
+        {
+            "sample_id": "sample_2#",
+            "paper_id": "A74",
+            "sequence": "1",
+            "type": "melting",
+            "method": "charging",
+            "temperature": null,
+            "unit": null,
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "Place 700 g iron powder and 1.575 g ferrous oxalate into alumina crucible"
+        },
+        {
+            "sample_id": "sample_2#",
+            "paper_id": "A74",
+            "sequence": "2",
+            "type": "heat_treatment",
+            "method": "heating and holding",
+            "temperature": "1873",
+            "unit": "K",
+            "duration": "40",
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "Heat tubular furnace to 1873 K and hold for 40 min"
+        },
+        {
+            "sample_id": "sample_2#",
+            "paper_id": "A74",
+            "sequence": "3",
+            "type": "melting",
+            "method": "alloy addition",
+            "temperature": "1873",
+            "unit": "K",
+            "duration": "20",
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "Add 225 g ferromanganese and hold for 20 min"
+        },
+        {
+            "sample_id": "sample_2#",
+            "paper_id": "A74",
+            "sequence": "4",
+            "type": "melting",
+            "method": "deoxidizer addition",
+            "temperature": "1873",
+            "unit": "K",
+            "duration": "60",
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "Add 28 g pure Al particles wrapped in pure iron sheet, hold for 60 min"
+        },
+        {
+            "sample_id": "sample_2#",
+            "paper_id": "A74",
+            "sequence": "5",
+            "type": "cooling",
+            "method": "furnace cooling",
+            "temperature": null,
+            "unit": "K",
+            "duration": null,
+            "cooling_medium": "furnace atmosphere",
+            "reduction_ratio": null,
+            "processing_steps_notes": "Cool sample to room temperature in tubular furnace"
+        },
+        {
+            "sample_id": "sample_3#",
+            "paper_id": "A74",
+            "sequence": "1",
+            "type": "melting",
+            "method": "charging",
+            "temperature": null,
+            "unit": null,
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "Place 700 g iron powder and 1.575 g ferrous oxalate into alumina crucible"
+        },
+        {
+            "sample_id": "sample_3#",
+            "paper_id": "A74",
+            "sequence": "2",
+            "type": "heat_treatment",
+            "method": "heating and holding",
+            "temperature": "1873",
+            "unit": "K",
+            "duration": "40",
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "Heat tubular furnace to 1873 K and hold for 40 min"
+        },
+        {
+            "sample_id": "sample_3#",
+            "paper_id": "A74",
+            "sequence": "3",
+            "type": "melting",
+            "method": "alloy addition",
+            "temperature": "1873",
+            "unit": "K",
+            "duration": "20",
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "Add 225 g ferromanganese and hold for 20 min"
+        },
+        {
+            "sample_id": "sample_3#",
+            "paper_id": "A74",
+            "sequence": "4",
+            "type": "melting",
+            "method": "deoxidizer addition",
+            "temperature": "1873",
+            "unit": "K",
+            "duration": "60",
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "Add 48 g pure Al particles wrapped in pure iron sheet, hold for 60 min"
+        },
+        {
+            "sample_id": "sample_3#",
+            "paper_id": "A74",
+            "sequence": "5",
+            "type": "cooling",
+            "method": "furnace cooling",
+            "temperature": null,
+            "unit": "K",
+            "duration": null,
+            "cooling_medium": "furnace atmosphere",
+            "reduction_ratio": null,
+            "processing_steps_notes": "Cool sample to room temperature in tubular furnace"
+        }
+    ],
+    "structures": [
+        {
+            "structure_id": "struct_1#",
+            "sample_id": "sample_1#",
+            "overall_structure": "Steel matrix with various single and composite inclusions",
+            "number_of_phases": null,
+            "microstructure_counts": "Inclusions size distribution: 1-5 μm 58.4%, 5-10 μm 32.3%, >10 μm 9.4%",
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_inc_1",
+                    "related_sequence": null,
+                    "phases_present": [
+                        {"phase_name": "Al₂O₃", "crystal_structure": null, "volume_fraction": "7%", "morphology": "elongated, irregular", "grain_size": ">8 μm", "texture": null},
+                        {"phase_name": "AlN", "crystal_structure": null, "volume_fraction": "3%", "morphology": "elliptical, elongated", "grain_size": "~12 μm", "texture": null},
+                        {"phase_name": "MnS", "crystal_structure": null, "volume_fraction": "1%", "morphology": "single particle", "grain_size": null, "texture": null},
+                        {"phase_name": "TiN", "crystal_structure": null, "volume_fraction": "6%", "morphology": "angular", "grain_size": null, "texture": null},
+                        {"phase_name": "Al₂O₃-MnS", "crystal_structure": null, "volume_fraction": "14%", "morphology": "core-shell", "grain_size": null, "texture": null},
+                        {"phase_name": "AlN-MnS", "crystal_structure": null, "volume_fraction": "25%", "morphology": "composite", "grain_size": null, "texture": null},
+                        {"phase_name": "TiN-MnS", "crystal_structure": null, "volume_fraction": "8%", "morphology": "composite", "grain_size": null, "texture": null},
+                        {"phase_name": "Al₂O₃-AlN-MnS", "crystal_structure": null, "volume_fraction": "32%", "morphology": "multi-layer composite", "grain_size": null, "texture": null}
+                    ],
+                    "defects": [
+                        {"type": "inclusions", "porosity": null, "inclusions": ["Al₂O₃", "AlN", "MnS", "TiN", "Al₂O₃-MnS", "AlN-MnS", "TiN-MnS", "Al₂O₃-AlN-MnS"], "dislocation_density": null, "lattice_distortion": null}
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {"value": null, "unit": null},
+                        "grain_size_distribution": null,
+                        "texture": null
+                    },
+                    "precipitates": [
+                        {"precipitate_id": "pre_Al2O3", "type": "oxide", "size": {"value": ">8", "unit": "μm"}, "distribution": null, "coherency": null},
+                        {"precipitate_id": "pre_AlN", "type": "nitride", "size": {"value": "~12", "unit": "μm"}, "distribution": null, "coherency": null},
+                        {"precipitate_id": "pre_MnS", "type": "sulfide", "size": {"value": null, "unit": null}, "distribution": null, "coherency": null},
+                        {"precipitate_id": "pre_TiN", "type": "nitride", "size": {"value": null, "unit": null}, "distribution": null, "coherency": null}
+                    ]
+                }
+            ]
+        },
+        {
+            "structure_id": "struct_2#",
+            "sample_id": "sample_2#",
+            "overall_structure": "Steel matrix with various single and composite inclusions",
+            "number_of_phases": null,
+            "microstructure_counts": "Inclusions size distribution: 1-5 μm 53.6%, 5-10 μm 34.6%, >10 μm 11.8%",
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_inc_2",
+                    "related_sequence": null,
+                    "phases_present": [
+                        {"phase_name": "Al₂O₃", "crystal_structure": null, "volume_fraction": "7%", "morphology": null, "grain_size": null, "texture": null},
+                        {"phase_name": "AlN", "crystal_structure": null, "volume_fraction": "3%", "morphology": "single particle", "grain_size": "~23 μm", "texture": null},
+                        {"phase_name": "MnS", "crystal_structure": null, "volume_fraction": "1%", "morphology": "octahedron", "grain_size": null, "texture": null},
+                        {"phase_name": "TiN", "crystal_structure": null, "volume_fraction": "6%", "morphology": "boot-shaped", "grain_size": null, "texture": null},
+                        {"phase_name": "Al₂O₃-MnS", "crystal_structure": null, "volume_fraction": "14%", "morphology": "core-shell", "grain_size": null, "texture": null},
+                        {"phase_name": "AlN-MnS", "crystal_structure": null, "volume_fraction": "25%", "morphology": "composite with tight binding", "grain_size": null, "texture": null},
+                        {"phase_name": "TiN-MnS", "crystal_structure": null, "volume_fraction": "10%", "morphology": "composite", "grain_size": null, "texture": null},
+                        {"phase_name": "Al₂O₃-AlN-MnS", "crystal_structure": null, "volume_fraction": "5%", "morphology": "multi-layer (Al₂O₃ core, AlN middle, MnS outer)", "grain_size": null, "texture": null}
+                    ],
+                    "defects": [
+                        {"type": "inclusions", "porosity": null, "inclusions": ["Al₂O₃", "AlN", "MnS", "TiN", "Al₂O₃-MnS", "AlN-MnS", "TiN-MnS", "Al₂O₃-AlN-MnS"], "dislocation_density": null, "lattice_distortion": null}
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {"value": null, "unit": null},
+                        "grain_size_distribution": null,
+                        "texture": null
+                    },
+                    "precipitates": [
+                        {"precipitate_id": "pre_AlN_2", "type": "nitride", "size": {"value": "~23", "unit": "μm"}, "distribution": null, "coherency": null}
+                    ]
+                }
+            ]
+        },
+        {
+            "structure_id": "struct_3#",
+            "sample_id": "sample_3#",
+            "overall_structure": "Steel matrix with various single and composite inclusions",
+            "number_of_phases": null,
+            "microstructure_counts": "Inclusions size distribution: 1-5 μm 48.2%, 5-10 μm 46.9%, >10 μm 4.9%",
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_inc_3",
+                    "related_sequence": null,
+                    "phases_present": [
+                        {"phase_name": "Al₂O₃", "crystal_structure": null, "volume_fraction": "7%", "morphology": null, "grain_size": null, "texture": null},
+                        {"phase_name": "AlN", "crystal_structure": null, "volume_fraction": "3%", "morphology": "polyhedral, single/multi particle", "grain_size": null, "texture": null},
+                        {"phase_name": "MnS", "crystal_structure": null, "volume_fraction": "1%", "morphology": "octahedron", "grain_size": "~10 μm", "texture": null},
+                        {"phase_name": "TiN", "crystal_structure": null, "volume_fraction": "6%", "morphology": "elongated", "grain_size": ">30 μm", "texture": null},
+                        {"phase_name": "Al₂O₃-MnS", "crystal_structure": null, "volume_fraction": "14%", "morphology": "composite (Al₂O₃ bottom, MnS upper)", "grain_size": null, "texture": null},
+                        {"phase_name": "AlN-MnS", "crystal_structure": null, "volume_fraction": "15%", "morphology": "composite with tight binding", "grain_size": null, "texture": null},
+                        {"phase_name": "TiN-MnS", "crystal_structure": null, "volume_fraction": "10%", "morphology": "cigarette bag shaped", "grain_size": null, "texture": null}
+                    ],
+                    "defects": [
+                        {"type": "inclusions", "porosity": null, "inclusions": ["Al₂O₃", "AlN", "MnS", "TiN", "Al₂O₃-MnS", "AlN-MnS", "TiN-MnS"], "dislocation_density": null, "lattice_distortion": null}
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {"value": null, "unit": null},
+                        "grain_size_distribution": null,
+                        "texture": null
+                    },
+                    "precipitates": [
+                        {"precipitate_id": "pre_MnS_3", "type": "sulfide", "size": {"value": "~10", "unit": "μm"}, "distribution": null, "coherency": null},
+                        {"precipitate_id": "pre_TiN_3", "type": "nitride", "size": {"value": ">30", "unit": "μm"}, "distribution": null, "coherency": null}
+                    ]
+                }
+            ]
+        }
+    ],
+    "interfaces": [
+        {
+            "interface_set_id": "if_set_1",
+            "sample_id": null,
+            "phases": [
+                {"interface_id": "if_1", "microstructure_uuid": null, "phase_1_name": "Al₂O₃", "phase_2_name": "MnS", "coherence": "8.41% mismatch"},
+                {"interface_id": "if_2", "microstructure_uuid": null, "phase_1_name": "AlN", "phase_2_name": "MnS", "coherence": "8.94% mismatch"},
+                {"interface_id": "if_3", "microstructure_uuid": null, "phase_1_name": "TiN", "phase_2_name": "MnS", "coherence": "11.65% mismatch"},
+                {"interface_id": "if_4", "microstructure_uuid": null, "phase_1_name": "AlN", "phase_2_name": "Al₂O₃", "coherence": "11.66% mismatch"}
+            ],
+            "defect_interaction": [
+                {"interaction_id": "int_1", "microstructure_uuid": null, "interaction_type": "heterogeneous nucleation", "quality_description": "Earlier precipitated phases act as nucleation sites for later precipitated inclusions"}
+            ],
+            "interface_notes": [
+                {"stress_strain_distribution": null},
+                {"slippage_situation": null}
+            ],
+            "phase_evolution": "Inclusion precipitation order: Al₂O₃ > AlN > MnS > TiN, later phases nucleate and grow on earlier formed inclusions"
+        }
+    ],
+    "properties": [
+        {
+            "property_set_id": "prop_1#",
+            "sample_id": "sample_1#",
+            "mechanical": {
+                "tensile_properties": {"yield_strength": [], "ultimate_tensile_strength": [], "elongation": [], "youngs_modulus": null, "stress_strain_curves": null, "stress_strain_distribution": [], "strain_hardening_rate": []},
+                "hardness": [],
+                "fracture_toughness": {"value": null, "unit": null},
+                "fatigue_properties": {"fatigue_limit": null, "cycles_to_failure": null},
+                "creep_properties": {"steady_state_creep_rate": null, "rupture_life": null}
+            },
+            "physical": {
+                "density": {"value": null, "unit": null},
+                "thermal_properties": {"thermal_conductivity": null, "thermal_expansion_coefficient": null, "specific_heat": null},
+                "electrical_properties": {"electrical_conductivity": null, "resistivity": null},
+                "magnetic_properties": {"magnetic_susceptibility": null, "curie_temperature": null}
+            },
+            "chemical": {
+                "corrosion_resistance": {"test_medium": null, "corrosion_rate": null, "passivation_behavior": null},
+                "oxidation_resistance": {"oxidation_rate_constant": null, "protective_scale": null}
+            },
+            "radiation_properties": {"void_swelling": null, "irradiation_hardening": null, "helium_embrittlement": null}
+        },
+        {
+            "property_set_id": "prop_2#",
+            "sample_id": "sample_2#",
+            "mechanical": {
+                "tensile_properties": {"yield_strength": [], "ultimate_tensile_strength": [], "elongation": [], "youngs_modulus": null, "stress_strain_curves": null, "stress_strain_distribution": [], "strain_hardening_rate": []},
+                "hardness": [],
+                "fracture_toughness": {"value": null, "unit": null},
+                "fatigue_properties": {"fatigue_limit": null, "cycles_to_failure": null},
+                "creep_properties": {"steady_state_creep_rate": null, "rupture_life": null}
+            },
+            "physical": {
+                "density": {"value": null, "unit": null},
+                "thermal_properties": {"thermal_conductivity": null, "thermal_expansion_coefficient": null, "specific_heat": null},
+                "electrical_properties": {"electrical_conductivity": null, "resistivity": null},
+                "magnetic_properties": {"magnetic_susceptibility": null, "curie_temperature": null}
+            },
+            "chemical": {
+                "corrosion_resistance": {"test_medium": null, "corrosion_rate": null, "passivation_behavior": null},
+                "oxidation_resistance": {"oxidation_rate_constant": null, "protective_scale": null}
+            },
+            "radiation_properties": {"void_swelling": null, "irradiation_hardening": null, "helium_embrittlement": null}
+        },
+        {
+            "property_set_id": "prop_3#",
+            "sample_id": "sample_3#",
+            "mechanical": {
+                "tensile_properties": {"yield_strength": [], "ultimate_tensile_strength": [], "elongation": [], "youngs_modulus": null, "stress_strain_curves": null, "stress_strain_distribution": [], "strain_hardening_rate": []},
+                "hardness": [],
+                "fracture_toughness": {"value": null, "unit": null},
+                "fatigue_properties": {"fatigue_limit": null, "cycles_to_failure": null},
+                "creep_properties": {"steady_state_creep_rate": null, "rupture_life": null}
+            },
+            "physical": {
+                "density": {"value": null, "unit": null},
+                "thermal_properties": {"thermal_conductivity": null, "thermal_expansion_coefficient": null, "specific_heat": null},
+                "electrical_properties": {"electrical_conductivity": null, "resistivity": null},
+                "magnetic_properties": {"magnetic_susceptibility": null, "curie_temperature": null}
+            },
+            "chemical": {
+                "corrosion_resistance": {"test_medium": null, "corrosion_rate": null, "passivation_behavior": null},
+                "oxidation_resistance": {"oxidation_rate_constant": null, "protective_scale": null}
+            },
+            "radiation_properties": {"void_swelling": null, "irradiation_hardening": null, "helium_embrittlement": null}
+        }
+    ],
+    "performance": [
+        {
+            "performance_id": "perf_1#",
+            "sample_id": "sample_1#",
+            "service_conditions": {"operating_temperature": {"min": null, "max": null, "unit": null}, "stress_state": null, "environment": null},
+            "lifetime_prediction": {"model_used": null, "predicted_lifetime": null, "confidence_interval": null},
+            "comparative_performance": {"benchmark_alloy": null, "benchmark_process_id": null, "benchmark_sample_id": null, "improvement_percentage": null}
+        },
+        {
+            "performance_id": "perf_2#",
+            "sample_id": "sample_2#",
+            "service_conditions": {"operating_temperature": {"min": null, "max": null, "unit": null}, "stress_state": null, "environment": null},
+            "lifetime_prediction": {"model_used": null, "predicted_lifetime": null, "confidence_interval": null},
+            "comparative_performance": {"benchmark_alloy": null, "benchmark_process_id": null, "benchmark_sample_id": null, "improvement_percentage": null}
+        },
+        {
+            "performance_id": "perf_3#",
+            "sample_id": "sample_3#",
+            "service_conditions": {"operating_temperature": {"min": null, "max": null, "unit": null}, "stress_state": null, "environment": null},
+            "lifetime_prediction": {"model_used": null, "predicted_lifetime": null, "confidence_interval": null},
+            "comparative_performance": {"benchmark_alloy": null, "benchmark_process_id": null, "benchmark_sample_id": null, "improvement_percentage": null}
+        }
+    ],
+    "characterization_methods": [
+        {
+            "characterization_id": "char_1",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "Chemical analysis",
+            "purpose": "Detect chemical composition of experimental steels",
+            "key_findings": "Chemical composition of three steels obtained as shown in Table 2"
+        },
+        {
+            "characterization_id": "char_2",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "Carbon sulfur analyzer",
+            "purpose": "Detect content of C, S, total O and total N",
+            "key_findings": "N content decreases with increasing Al content, O content slightly increases with increasing Al content"
+        },
+        {
+            "characterization_id": "char_3",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "Inductively coupled plasma mass spectrometry (ICP-MS)",
+            "purpose": "Detect content of Al, Si, Ti, Mn, P",
+            "key_findings": "Si content ~0.32%, Ti content ~60 ppm for all samples"
+        },
+        {
+            "characterization_id": "char_4",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "Field-emission scanning electron microscopy (ZEISS ΣIGMA HD) with energy dispersive spectrometer (Oxford-X-Max 50 mm²)",
+            "purpose": "Observe morphology, type and element distribution of inclusions",
+            "key_findings": "Single inclusions (Al₂O₃, AlN, MnS, TiN) and composite inclusions (Al₂O₃-MnS, AlN-MnS, TiN-MnS, Al₂O₃-AlN-MnS) observed, clear interface between phases of composite inclusions"
+        },
+        {
+            "characterization_id": "char_5",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "Automatic inclusion analysis system",
+            "purpose": "Detect size, type and number of inclusions, detection area 52 mm²",
+            "key_findings": "Quantity and size distribution of inclusions for three samples obtained as shown in Figure 4 and Figure 5"
+        }
+    ],
+    "computational_details": [
+        {
+            "computation_id": "comp_1",
+            "sample_id": null,
+            "simulation_method": "Thermodynamic calculation, segregation model, mismatch calculation",
+            "software_used": "FactSage 8.2",
+            "potential_model": null,
+            "validation_against_experiment": "Calculated precipitation sequence and mismatch results match experimental observed inclusion types and composite structures",
+            "analytical_model": [
+                {"model_name": "FactSage phase diagram calculation", "equation_role": "Calculate solidification route, liquidus and solidus temperature", "parameters": "Fe-C-Si-Mn-P-S-Al-O-N-Ti system", "model_note": "Liquidus of 1#/2#/3#: 1702/1740/1796 K, solidus: 1588/1560/1532 K"},
+                {"model_name": "Clyne-Kurz segregation model", "equation_role": "Calculate element segregation at solidification front, inclusion precipitation solidification fraction", "parameters": null, "model_note": "AlN precipitation solidification fraction: 0.46 (1#), 0.22 (2#), 0.51 (3#); TiN: 0.89/0.93/0.94; MnS: 0.77/0.81/0.85"},
+                {"model_name": "Bramfit mismatch calculation", "equation_role": "Calculate interface mismatch between different inclusions", "parameters": "Lattice parameters of inclusions from Table 6", "model_note": "Mismatch degrees: Al₂O₃/MnS 8.41%, AlN/MnS 8.94%, TiN/MnS 11.65%, AlN/Al₂O₃ 11.66%"}
+            ]
+        }
+    ],
+    "unmapped_findings": [
+        "With increasing Al content, number percentage of Al₂O₃ decreases, AlN increases, Al₂O₃-MnS increases, AlN-MnS and TiN-MnS decreases",
+        "1# sample solidification route: L → L+FCC → FCC; 2#: L → L+BCC → L+BCC+FCC → L+FCC → FCC; 3#: L → L+BCC → L+BCC+FCC → BCC+FCC → FCC",
+        "Increasing Al content narrows austenite (FCC) region and expands ferrite (BCC) region",
+        "AlN precipitation is advanced when Al content increases from 0.868% to 2.766%, delayed when Al content further increases to 4.695% due to reduced N solubility",
+        "Precipitation of MnS and TiN is continuously delayed with increasing Al content",
+        "Al₂O₃-AlN-MnS composite inclusions are not observed in 3# sample due to low amount of single Al₂O₃ inclusions"
+    ]
+}

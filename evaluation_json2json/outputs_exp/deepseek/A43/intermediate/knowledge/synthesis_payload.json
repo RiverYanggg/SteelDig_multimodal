@@ -1,0 +1,72 @@
+{
+  "paper_focus": {
+    "title": "Data-driven and multi-mechanism strengthening based yield strength prediction in medium-manganese low-density steels",
+    "research_objective": "To overcome the limitations of traditional linear superposition models by developing a data-driven framework that accurately predicts yield strength in medium-manganese low-density steels through the coupled contributions of solid solution, grain refinement, dislocation, and Orowan strengthening mechanisms.",
+    "material_systems": [
+      "medium-manganese low-density steels",
+      "Fe-0.29C-12.14Mn-2.96Al-0.11V-0.063Nb",
+      "Fe-9.7Mn-2.04Al-0.99Si-0.52V-0.42C",
+      "Fe-3Mn-2Al-0.25C-0.4Si"
+    ],
+    "main_process_variables": [
+      "annealing temperature (750–850 °C for Fe-3Mn-2Al-0.25C-0.4Si)",
+      "solid solution strengthening contribution (σ0)",
+      "grain refinement strengthening contribution (σg)",
+      "dislocation strengthening contribution (σd)",
+      "Orowan strengthening contribution (σOrowan)"
+    ],
+    "expected_information_axis": [
+      "composition",
+      "processing (annealing conditions)",
+      "strengthening mechanism contributions (solid solution, grain refinement, dislocation, Orowan)",
+      "model predicted yield strength",
+      "experimental yield strength validation",
+      "model performance metrics (RMSE, MAPE, R²)",
+      "feature importance and SHAP analysis",
+      "figure evidence (SHAP summary plot, feature importance bar, response diagram)"
+    ]
+  },
+  "core_facts": {},
+  "visual_evidence": [
+    {
+      "figure_id": "figure_001",
+      "image_type": "microscopy_sem",
+      "description": "This figure comprises scanning electron microscopy (SEM) micrographs and correlative quantitative microstructural data for medium-manganese low-density steels (Fe-0.25C-3Mn-2Al-0.4Si, designated as ANT steel) subjected..."
+    },
+    {
+      "figure_id": "figure_002",
+      "image_type": "chart_flow",
+      "description": "This flowchart illustrates a comprehensive data-driven framework for predicting yield strength (YS) in medium-manganese low-density steels by systematically integrating four core strengthening mechanisms: dislocation..."
+    },
+    {
+      "figure_id": "figure_003",
+      "image_type": "chart_flow",
+      "description": "This figure presents the workflow of Gaussian Mixture Model (GMM)-based data augmentation for yield strength prediction in medium-manganese low-density steels. The process comprises three sequential stages: (1) Original..."
+    },
+    {
+      "figure_id": "figure_004",
+      "image_type": "chart_plot",
+      "description": "This figure presents kernel density distribution plots comparing original experimental data with Gaussian Mixture Model (GMM) augmented data across five panels: (a) Dislocation strengthening, (b) Fine grain..."
+    },
+    {
+      "figure_id": "figure_005",
+      "image_type": "chart_plot",
+      "description": "This figure presents goodness-of-fit scatter plots for seven machine learning models predicting yield strength (YS) in medium-manganese low-density steels. Subfigures (a) through (g) correspond to Decision Tree (DT),..."
+    },
+    {
+      "figure_id": "figure_006",
+      "image_type": "chart_plot",
+      "description": "This figure presents a comprehensive performance comparison of seven machine learning models for yield strength prediction in medium-manganese low-density steels, displayed as three grouped bar charts. Subfigure (a)..."
+    },
+    {
+      "figure_id": "figure_007",
+      "image_type": "chart_schematic",
+      "description": "This figure presents a schematic illustration of the Extra Trees (Extremely Randomized Trees) ensemble learning model architecture employed for data-driven yield strength prediction in medium-manganese low-density..."
+    },
+    {
+      "figure_id": "figure_008",
+      "image_type": "chart_schematic",
+      "description": "Figure 7 illustrates the architecture and crossover mechanism of the Genetic Algorithm (GA) employed for hyper-parameter optimization of the Extra Trees machine learning model. The schematic displays four horizontal..."
+    }
+  ]
+}

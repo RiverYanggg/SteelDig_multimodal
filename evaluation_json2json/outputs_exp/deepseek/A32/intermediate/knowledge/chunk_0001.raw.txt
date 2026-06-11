@@ -1,0 +1,277 @@
+{
+  "claims": [
+    {
+      "claim_type": "composition",
+      "subject": "Alloy compositions and annealing temperatures",
+      "claim": "The three experimental steels have compositions (wt.%): Base 0.028C-0.0034N-15.05Ni-11.06Cr-1.09Mn-0.002Si-0.05Al, annealed at 1040 °C; 2.5 Si 0.028C-0.0036N-14.99Ni-10.98Cr-1.10Mn-2.50Si-0.06Al, annealed at 1075 °C; 2.5 Al 0.030C-0.0034N-15.04Ni-11.02Cr-1.08Mn-0.034Si-2.47Al, annealed at 1060 °C, as given in Table 1.",
+      "values": [
+        "Base: C 0.028, N 0.0034, Ni 15.05, Cr 11.06, Mn 1.09, Si 0.002, Al 0.05, 1040 °C",
+        "2.5 Si: C 0.028, N 0.0036, Ni 14.99, Cr 10.98, Mn 1.10, Si 2.50, Al 0.06, 1075 °C",
+        "2.5 Al: C 0.030, N 0.0034, Ni 15.04, Cr 11.02, Mn 1.08, Si 0.034, Al 2.47, 1060 °C"
+      ],
+      "evidence_text": "In this study, the influences of Si and Al on the austenite lattice parameter and SFE are investigated using the three austenitic steel compositions shown in Table 1, which were derived from a microstructure survey of the Fe–Ni–Cr–Al–Si system [30]. The compositions are all approximately the same except for variations in Al and Si alloying.",
+      "figures": [],
+      "tables": ["Table 1"],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "processing",
+      "subject": "Experimental alloy processing",
+      "claim": "The three alloys were vacuum cast, homogenized at 1200 °C for 20 h, hot rolled, and annealed for 1 h at temperatures 1040 °C (Base), 1075 °C (2.5 Si), 1060 °C (2.5 Al), obtaining a grain size ≈140 μm.",
+      "values": [
+        "vacuum casting",
+        "1200 °C 20 h homogenization",
+        "hot rolling",
+        "annealing: 1040 °C, 1075 °C, 1060 °C",
+        "grain size ~140 μm"
+      ],
+      "evidence_text": "The three steels were vacuum cast, homogenized for 20 h at 1200 °C, hot rolled and then annealed for 1 h at the temperatures indicated in Table 1 to achieve coarse grain sizes of approximately 140 lm.",
+      "figures": [],
+      "tables": ["Table 1"],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "microstructure",
+      "subject": "Fully austenitic microstructure",
+      "claim": "The steels are fully austenitic with a coarse grain size (~140 μm), avoiding multiphase partitioning assumptions for XRD and simplifying TEM of dislocations.",
+      "values": [
+        "single-phase austenite",
+        "grain size ~140 μm"
+      ],
+      "evidence_text": "Fully austenitic steels were employed because no assumptions regarding element partitioning in a multiphase microstructure need to be made in the XRD analysis. Furthermore, TEM analysis of dislocations for SFE determination is performed more easily with a coarse-grained single-phase microstructure.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "characterization",
+      "subject": "XRD lattice parameter determination",
+      "claim": "The lattice parameter a0 was obtained from the first four austenite peaks ((111), (200), (220), (311)) by linear regression extrapolation of a0 vs cos²θ/sinθ to θ=90°, with weighted regression favoring high-angle peaks.",
+      "values": [
+        "peaks: (111), (200), (220), (311)",
+        "extrapolation to θ=90°",
+        "weighting: 4×(311), 3×(220), 2×(200), 1×(111)"
+      ],
+      "evidence_text": "The lattice parameters (a0) determined from the first four austenite peaks ((1 1 1), (2 0 0), (2 2 0) and (3 1 1)) were plotted against cos²θ/sinh, and the a0 for each specimen was determined from a linear regression extrapolation to θ = 90° [31]. The a0 vs. cos²θ/sinh regression analysis was weighted to favor higher angle peaks by using quadruplicate data points for (3 1 1) peaks, triplicate data points for (2 2 0) peaks, duplicate data points for (2 0 0) peaks and single data points for (1 1 1) peaks [32].",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "property",
+      "subject": "Effect of alloying on lattice parameter",
+      "claim": "Al addition (2.5 wt.%) increases the austenite lattice parameter by 1.41×10⁻³ nm (from 0.3585 nm base to 0.3598 nm), whereas 2.5 wt.% Si has a negligible effect (a0=0.3587 nm), as shown in Figure 2 and Table 2.",
+      "values": [
+        "Δa0(Al)=+1.41×10⁻³ nm",
+        "Base a0=0.3585 nm",
+        "2.5 Al a0=0.3598 nm",
+        "2.5 Si a0=0.3587 nm"
+      ],
+      "evidence_text": "Figure 2 and Table 2 show the calculated austenite lattice parameter as a function of relative Si and Al alloying. Figure 2 indicates that 2.5 wt.% Al increases the austenite lattice parameter by 1.41 × 10⁻³ nm relative to the base alloy, while 2.5 wt.% Si has a minimal effect.",
+      "figures": ["Figure 2"],
+      "tables": ["Table 2"],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "property",
+      "subject": "Lattice parameter coefficients A_LP",
+      "claim": "The linear lattice parameter coefficients A_LP are -0.018×10⁻³ nm/wt% for Si and 0.582×10⁻³ nm/wt% for Al, consistent with literature (Table 2).",
+      "values": [
+        "A_LP(Si) = -0.018×10⁻³ nm/wt%",
+        "A_LP(Al) = 0.582×10⁻³ nm/wt%"
+      ],
+      "evidence_text": "The calculated A^LP for Si and Al are 0.018 and 0.582 1 0^{-3} nm wt.%^{-1}, respectively. These values agree well with those reported by Dyson and Holmes [16] (Table 2).",
+      "figures": [],
+      "tables": ["Table 2"],
+      "confidence": "medium"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "Overestimation of carbon content when Al is neglected",
+      "claim": "Excluding Al contribution in lattice-parameter-based carbon estimation leads to an overestimate δ_C = x_Al(A_Al^LP/A_C^LP); for x_Al=1 wt.% and literature A_C^LP, δ_C ranges 0.125–0.176 wt.%.",
+      "values": [
+        "δ_C = 0.125–0.176 wt.% for 1 wt% Al",
+        "δ_C = x_Al (A_Al^LP/A_C^LP)"
+      ],
+      "evidence_text": "If Al alloying is ignored, the overestimate of austenite C content, δ_C, can be expressed as δ_C = x_Al (A_Al^LP / A_C^LP). Using the value of A_Al^LP found in this study, the range of A_C^LP values reported in the literature, and assuming x_Al is 1 wt.%, the value of δ_C ranges from 0.125 to 0.176 wt.%.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "characterization",
+      "subject": "SFE sample preparation and TEM imaging",
+      "claim": "SFE specimens: 12.7 mm cylinders compressed 5% true strain, slices at 45° electropolished (95% acetic, 5% perchloric). TEM at 120 kV with WBDF g3g (220) reflections (s_g≈0.22 nm⁻¹) on {111} grains near foil plane.",
+      "values": [
+        "5% true strain",
+        "45° slices",
+        "electropolish: 95% acetic acid, 5% perchloric acid",
+        "TEM 120 kV",
+        "WBDF g3g (220) reflections, s_g≈0.22 nm⁻¹",
+        "{111} grains"
+      ],
+      "evidence_text": "The cylinders were compressed to 5% true strain to introduce dislocations into the specimens. Thin slices were then sectioned from the cylinders at 45° from the compression axis and prepared for TEM by grinding and electropolishing with 95% acetic acid and 5% perchloric acid. TEM investigation was performed in a Phillips CM12 TEM operating at 120 kV. For each material, grains with {1 11} planes nearly aligned with the plane of the foil were used for weak-beam dark-field (WBDF) imaging of dissociated dislocations [33,34]. The WBDF imaging was performed using g3g conditions with (220)-type reflections (s_g ≈ 0.22 nm⁻¹).",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "characterization",
+      "subject": "SFE calculation assumptions",
+      "claim": "SFE was calculated from d and α using Eq. (1), with experimental a0, shear modulus G=74 GPa, ν=0.3 (isotropic); elastic anisotropy correction was not applied in the primary analysis.",
+      "values": [
+        "G = 74 GPa",
+        "ν = 0.3",
+        "isotropic assumption"
+      ],
+      "evidence_text": "The isotropic shear modulus (G) and Poisson ratio (m) were assumed to be the same for each material, and were 74 GPa and 0.3, respectively [36]. Since elastic anisotropy was not evaluated in this study ... the isotropic elastic properties were used in the SFE calculations.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "property",
+      "subject": "Stacking fault energy results",
+      "claim": "The base SFE is 26.3 mJ/m². 2.5% Al addition increases SFE by 12.0 mJ/m², and 2.5% Si decreases it by 6.4 mJ/m², as per Figure 3b.",
+      "values": [
+        "Base SFE = 26.3 mJ/m²",
+        "Al addition Δ=+12.0 mJ/m²",
+        "Si addition Δ=-6.4 mJ/m²"
+      ],
+      "evidence_text": "The base alloy SFE is 26.3 mJ m⁻², which is consistent with the value of 30 mJ m⁻² found for a similar 15 Ni–11 Cr alloy... Figure 3(b) indicates that 2.5 wt.% Al alloying increases the SFE by 12.0 mJ m⁻² from the base alloy value whereas 2.5 wt.% Si alloying decreases it by 6.4 mJ m⁻².",
+      "figures": ["Figure 3b"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "figure_evidence",
+      "subject": "Dislocation separation vs angle data",
+      "claim": "Figure 3a presents the measured partial dislocation separation as a function of dislocation character angle for the three alloys, with solid lines for average SFE and dashed lines showing standard deviation bounds.",
+      "values": [
+        "Figure 3a",
+        "d vs α"
+      ],
+      "evidence_text": "Figure 3(a) shows the measurements of partial dislocation spacing as a function of dislocation angle for the base, 2.5 Si and 2.5 Al alloys. In Figure 3(a), the solid lines represent the average calculated SFE for each material and the dashed lines indicate the upper and lower bounds from the calculated SFE standard deviations.",
+      "figures": ["Figure 3a"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "figure_evidence",
+      "subject": "WBDF TEM micrograph of dissociated dislocation",
+      "claim": "Figure 1 displays a WBDF image of a dissociated dislocation in the base alloy, defining partial dislocation separation d and character angle α, with the g vector parallel to b.",
+      "values": [
+        "d, α",
+        "g // b"
+      ],
+      "evidence_text": "Figure 1 shows an example WBDF image of a dissociated dislocation in the base alloy, along with representations of d and a. As shown in Figure 1, a is the angle between the line vector and the Burgers vector, b, of the undissociated dislocation.",
+      "figures": ["Figure 1"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "property",
+      "subject": "SFE linear coefficients",
+      "claim": "The linear SFE coefficient for Si is -2.6 mJ/m²/wt% (consistent with literature range -1 to -3.5), and for Al is 4.9 mJ/m²/wt% (agreeing with thermochemical 5.2 and XRD 6.4), Table 2.",
+      "values": [
+        "A_SFE(Si) = -2.6 mJ/m²/wt%",
+        "A_SFE(Al) = 4.9 mJ/m²/wt%"
+      ],
+      "evidence_text": "The values of A_Si^SFE reported in the high-Mn steel literature vary from 1 to 3.5 mJ m⁻² wt.%⁻¹, which is in good agreement with the value -2.6 mJ m⁻² wt.%⁻¹ found in this study (Table 2). Thermochemical modeling of the SFE in high-Mn alloys predicts an A_Al^SFE value of approximately 5.2 mJ m⁻² wt.%⁻¹, which is in very good agreement with the value of 4.9 mJ m⁻² wt.%⁻¹ found in this study (Table 2).",
+      "figures": [],
+      "tables": ["Table 2"],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "Partial dislocation strain field correction effect",
+      "claim": "An upper limit estimate of the strain field correction [34] would increase the 2.5 Al alloy SFE to 44.0±9.8 mJ/m², while other alloys change ≤1 mJ/m².",
+      "values": [
+        "2.5 Al corrected SFE = 44.0±9.8 mJ/m²",
+        "Δ ≤ 1 mJ/m² for base and 2.5 Si"
+      ],
+      "evidence_text": "An upper limit estimation suggests that the biggest change is in the 2.5 Al alloy, where the correction would increase the SFE of the 2.5 Al alloy to 44.0 ± 9.8 mJ m⁻². The SFEs of the other alloys would change by approximately 1 mJ m⁻² or less.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "Mechanism of Al and Si on austenite stability via SFE",
+      "claim": "Lower SFE promotes planar shear bands and strain-induced martensite; Al increases SFE thereby suppressing shear band formation, while Si decreases SFE enhancing such transformations.",
+      "values": [
+        "SFE decrease promotes shear bands",
+        "SFE increase suppresses shear bands"
+      ],
+      "evidence_text": "Lower austenite SFE values promote the formation of planar shear bands, including epsilon martensite, the intersections of which may serve as α' martensite nuclei [20]. Increasing the austenite SFE is expected to suppress shear band formation and strain-induced martensite formation.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    }
+  ],
+  "context_update": {
+    "summary": "This chunk presents core experimental data for the effects of 2.5 wt.% Si and Al on austenite lattice parameter and SFE in three fully austenitic Fe-Ni-Cr alloys: Base, 2.5 Si, and 2.5 Al. Processing included vacuum casting, homogenization (1200°C/20 h), hot rolling, and annealing to ~140 μm grain size. XRD (Cu Kα, extrapolation) yielded lattice parameters: base 0.3585 nm, 2.5 Si 0.3587 nm, 2.5 Al 0.3598 nm, corresponding to a 1.41×10⁻³ nm expansion by Al and negligible Si effect. Linear lattice parameter coefficients were derived; ignoring Al leads to carbon content overestimation of 0.125–0.176 wt.% for 1 wt.% Al. SFE was determined by WBDF TEM of dissociated dislocations in 5% pre-strained samples; uncorrected SFE values: base 26.3 mJ/m², 2.5 Al 38.3 mJ/m² (+12.0), 2.5 Si 19.9 mJ/m² (−6.4). Linear SFE coefficients are -2.6 (Si) and 4.9 (Al) mJ/m²/wt%. Al raises SFE, suppressing shear bands. Key figures/tables: Table 1 (compositions), Table 2 (coefficients), Figure 1 (dislocation micrograph), Figure 2 (lattice parameter), Figure 3 (dislocation spacing and SFE). Subsequent chunks should retain the alloy aliases, base property values, and the noted SFE trends.",
+    "material_systems": [
+      "Fe-Ni-Cr austenitic steel",
+      "Base alloy (Fe-15.05Ni-11.06Cr-1.09Mn-0.028C-0.002Si-0.05Al)",
+      "2.5 Si alloy (Fe-14.99Ni-10.98Cr-1.10Mn-0.028C-2.50Si-0.06Al)",
+      "2.5 Al alloy (Fe-15.04Ni-11.02Cr-1.08Mn-0.030C-0.034Si-2.47Al)"
+    ],
+    "sample_aliases": ["Base", "2.5 Si", "2.5 Al"],
+    "processing_route": [
+      "Vacuum casting",
+      "Homogenization: 1200 °C, 20 h",
+      "Hot rolling",
+      "Annealing: 1 h at 1040 °C (Base), 1075 °C (2.5 Si), 1060 °C (2.5 Al)",
+      "5% true compression for SFE samples",
+      "TEM preparation: grinding, electropolishing in 95% acetic acid + 5% perchloric acid",
+      "XRD preparation: grinding to 600 grit, chemical polishing in 10 H2O + 10 H2O2 + 1 HF"
+    ],
+    "key_variables": [
+      "Alloy composition (Si, Al)",
+      "Solution annealing temperature",
+      "Austenite lattice parameter a0",
+      "Stacking fault energy (SFE)",
+      "Partial dislocation separation d",
+      "Dislocation character angle α",
+      "Lattice parameter coefficients A_LP",
+      "SFE coefficients A_SFE",
+      "Carbon content overestimation δ_C",
+      "Elastic constants G, ν"
+    ],
+    "microstructure": [
+      "Fully austenitic single phase",
+      "Coarse grain size ≈140 μm",
+      "5% pre-strain introduces dislocations",
+      "Dissociated dislocations with stacking faults imaged"
+    ],
+    "properties": [
+      "Base a0 = 0.3585 nm",
+      "2.5 Si a0 = 0.3587 nm (minimal change)",
+      "2.5 Al a0 = 0.3598 nm (+1.41×10⁻³ nm)",
+      "Base SFE = 26.3 mJ/m²",
+      "2.5 Si SFE = 19.9 mJ/m² (Δ = -6.4)",
+      "2.5 Al SFE = 38.3 mJ/m² (Δ = +12.0)",
+      "Upper limit corrected SFE for 2.5 Al: 44.0 ± 9.8 mJ/m²",
+      "A_LP(Si) = -0.018×10⁻³ nm/wt%, A_LP(Al) = 0.582×10⁻³ nm/wt%",
+      "A_SFE(Si) = -2.6 mJ/m²/wt%, A_SFE(Al) = 4.9 mJ/m²/wt%",
+      "δ_C = 0.125–0.176 wt% for 1 wt% Al"
+    ],
+    "mechanisms": [
+      "Al expands austenite lattice, Si negligible",
+      "Al increases SFE, Si decreases SFE",
+      "SFE increase suppresses shear band formation and strain-induced martensite",
+      "Ignoring Al in XRD-based carbon measurement overestimates C content",
+      "Linear additive relationships assumed for composition effects on a0 and SFE"
+    ],
+    "figures_or_tables": [
+      "Figure 1: WBDF of dissociated dislocation in base",
+      "Figure 2: lattice parameter vs alloying",
+      "Figure 3a: partial dislocation spacing vs angle",
+      "Figure 3b: SFE vs alloying",
+      "Table 1: alloy compositions and annealing temperatures",
+      "Table 2: lattice parameter and SFE coefficients"
+    ],
+    "unresolved_terms": []
+  }
+}

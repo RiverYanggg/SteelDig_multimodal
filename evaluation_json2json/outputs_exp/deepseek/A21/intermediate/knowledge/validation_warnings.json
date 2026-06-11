@@ -1,0 +1,194 @@
+[
+  {
+    "chunk_id": "chunk_0001",
+    "claim": "Al addition in FeMnAlC steels decreases C diffusivity, promotes alumina layer formation, stabilizes the α phase, and improves stacking fault energy (SFE), thereby inhibiting the transformation from γ to ε phase.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "Incorporating Al into FeMnAlC steels can decrease C diffusivity, promote the formation of a protective alumina layer (Al O ), and stabilize the α phase. Moreover, the addition of Al improves the stacking fault energy (SFE) of the FeMnAlC system, which curbs the transformation from the austenitic γ to ε phase."
+  },
+  {
+    "chunk_id": "chunk_0001",
+    "claim": "Mn enhances γ phase stability by raising the FCC lattice parameter and impeding additional ferrite formation; excessive Mn leads to the formation of brittle β-Mn phase.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "Mn enhances γ phase stability by raising the FCC lattice parameter and impeding additional ferrite formation caused by Al inclusion. Nevertheless, an excessive amount of Mn can lead to the formation of the brittle β-Mn phase."
+  },
+  {
+    "chunk_id": "chunk_0001",
+    "claim": "β-Mn precipitates lead to a substantial increase in strength but a reduction in plasticity, and induce brittle fractures in the FeMnAlC system, reducing impact energy.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "Typically, the inclusion of β-Mn precipitates leads to a substantial increase in steel strength but a reduction in plasticity. The presence of β-Mn precipitates also tends to induce brittle fractures within the FeMnAlC system, resulting in diminished impact energy."
+  },
+  {
+    "chunk_id": "chunk_0001",
+    "claim": "κ-carbide is a metastable coherent ordered precipitate within austenite grains, with aging primarily occurring in the temperature range of 500-600 °C.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "FeMnAlC austenitic steels have been observed to form a metastable phase of coherent ordered precipitate called the κ-carbide (κ-phase) within their austenite grains. It has been indicated that the aging of coherent, nanosized κ-carbides is primarily impacted within the intermediate temperature range of 500-600 ℃."
+  },
+  {
+    "chunk_id": "chunk_0001",
+    "claim": "During deformation, κ-carbides are sheared by dislocations on the {111}<110> slip system, with possible dislocation bypassing.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "During force deformation, κ-carbides are sheared by dislocations belonging to the {1 11} 〈1 1 0〉 slip system, while dislocation bypassing can also occur."
+  },
+  {
+    "chunk_id": "chunk_0001",
+    "claim": "The addition of Al ultimately results in a reduction in steel density by decreasing the material’s average molar mass and lattice expansion.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "Moreover, the addition of Al improves the stacking fault energy (SFE) of the FeMnAlC system, which curbs the transformation from the austenitic γ to ε phase. This ultimately results in a reduction in steel density by decreasing the material’s average molar mass and lattice expansion."
+  },
+  {
+    "chunk_id": "chunk_0002",
+    "claim": "The machine learning framework predicts four key features: existence of the κ phase (Y1) for precipitation strengthening, a (γ+κ) dual-phase area at 500–600 °C (Y2) to exclude other phases, a single γ phase area (Y3) for deformation processing, and the volume fraction of the κ phase (Y4) for better mechanical property potential.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "Classification models predict the existence of the κ phase (Y1), and the main purpose is the significant precipitation-strengthening effect of the κ phase. ↓ (γ + κ) dual-phase area at 500–600 ◦C (Y2), and the main purpose is to exclude the influence of other phase structures on the system. A single γ phase area (Y3), and the main purpose is that the single γ phase area is convenient for deformation processing. Regression models predict the volume fraction (Y4) of the κ phase, and a higher κ-phase volume fraction generally gives the system better mechanical property potential."
+  },
+  {
+    "chunk_id": "chunk_0002",
+    "claim": "The potential composition space for the Fe-Mn-Al-C alloys is defined as 10% ≤ x ≤ 30% Mn, 2% ≤ y ≤ 12% Al, and 0.2% ≤ z ≤ 2% C (all in mass percentage).",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "The potential composition space was defined according to the following parameters (the element content is the mass percentage): 10% ≤ x ≤ 30%, 2% ≤ y ≤ 12%, and 0.2% ≤ z ≤ 2%."
+  },
+  {
+    "chunk_id": "chunk_0002",
+    "claim": "The dataset included 448 samples collected from historical literature and JMatPro v9.0 phase balance calculations, with each sample described by 10 features: the four constituent elements (Fe, Mn, Al, C) and six input descriptors (VEC, δ, ΔHmix, ΔSmix, Tm, Δχ).",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "The dataset for this study included information from historical literature sources [1,3,7,16,17] as well as phase balance data obtained using the JMatPro v9.0 general steel database. (...) A total of 448 samples, each with 10 features, including the four constituent elements and the six input features, were collected."
+  },
+  {
+    "chunk_id": "chunk_0002",
+    "claim": "For classification targets Y1 (κ phase), Y2 (γ+κ region at 500–600 °C), and Y3 (single γ region), 448 samples were each labeled as '1' or '0' for presence or absence; after elimination of missing data for regression target Y4 (κ volume fraction), 298 samples were retained.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "To ensure proper algorithm processing, missing data will be handled by elimination for the regression analysis, resulting in a total of 448 samples for Y1, 448 for Y2, 448 for Y3, and 298 for Y4. Each sample in Y1, Y2, and Y3 is categorized as '1' or '0' to denote the presence or absence of specific phases: the κ phase in Υ1, a (γ+κ) dual-phase region at 500–600 °C in Y2, and a single γ region in Y3, making the data suitable for machine learning algorithms."
+  },
+  {
+    "chunk_id": "chunk_0002",
+    "claim": "Ten-fold cross-validation was applied to prevent overfitting in regression models, and model performance was assessed using correlation coefficient (R), explained variance (R²), mean absolute error (MAE), and root mean square error (RMSE).",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "For the regression model, ten-fold cross-validation was also utilized to prevent overfitting. Four evaluation indicators were used for regression models, including the correlation coefficient (R), explained variance (R²), mean absolute error (MAE), and root mean square error (RMSE)."
+  },
+  {
+    "chunk_id": "chunk_0002",
+    "claim": "Six input descriptors were selected to improve model accuracy: valence electron concentration (VEC), atomic size difference (δ), enthalpy of mixing (ΔHmix), entropy of mixing (ΔSmix), melting point (Tm), and Pauli electronegativity difference (Δχ).",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "Six input features or descriptors (See Table 1 for details) were identified in order to improve the accuracy of the machine learning models, these included the valence electron concentration (VEC), atomic size difference (δ), enthalpy of mixing (ΔHmix), entropy of mixing (ΔSmix), melting point (Tm), and Pauli electronegativity difference (Δχ)."
+  },
+  {
+    "chunk_id": "chunk_0003",
+    "claim": "The processing route for the Fe-30Mn-8Al-1C steel included: induction melting, homogenization at 1200°C for 2 h, forging to 60 mm × 60 mm billet, homogenization at 1050°C for 100 min, hot rolling to 12 mm thick plates, air cooling, 75% cold reduction, annealing at 1000°C for 15 min, water quenching, and aging at 550°C for 2 h.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "The as-cast 25 kg ingot was homogenized at 1200 ◦C for 2 h and then forged into a cross-sectional billet of 60 mm × 60 mm. After homogenization at 1050 ◦C for 100 min, the forging stock was hot-rolled to 12 mm thick plates, air-cooled to room temperature, and then cold-rolled with a 75 % thickness reduction at room temperature. The rolled plate was then annealed at 1000 ◦C for 15 min to achieve a recrystallized microstructure, subsequently water-quenched to room temperature, and aged at 550 ◦C for 2 h."
+  },
+  {
+    "chunk_id": "chunk_0003",
+    "claim": "Phase identification was performed by XRD with Cu Kα radiation scanning from 30° to 100° (2θ) at a step size of 3°/minute.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "Phase identification analysis was conducted using X-ray diffraction (XRD) measurements with a Bruker D8 DISCOVER utilizing Cu Kα radiation between 30° and 100° (2θ) with a step size of 3◦/minute."
+  },
+  {
+    "chunk_id": "chunk_0003",
+    "claim": "EBSD specimens were polished to 3000 grit SiC and then electrochemically polished in a 1:9 vol. ratio HClO4:C2H5OH solution at 25 V and room temperature.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "The EBSD samples were polished with SiC sandpaper to 3000 grit and electrochemically polished in a solution of HClO4:C2H5OH=1:9 (volume ratio) at 25 V at room temperature."
+  },
+  {
+    "chunk_id": "chunk_0003",
+    "claim": "Uniaxial tensile tests were performed on dog-bone specimens with gauge dimensions 10 mm × 4 mm × 2 mm at a nominal strain rate of 1×10⁻³ s⁻¹ at ambient temperature.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "Uniaxial tensile tests were conducted on dog-bone-shaped specimens with a nominal strain rate of 1×10⁻³ s⁻¹ at ambient temperature using a SHIMADZU AGS universal electronic tensile tester with gauge dimensions of 10 mm (length) × 4 mm (width) × 2 mm (thickness) prepared by electrical discharge machining."
+  },
+  {
+    "chunk_id": "chunk_0003",
+    "claim": "In the classification of the (γ+κ) duplex region at 500–600°C, Mn and Fe were the most important descriptors, while C showed the least effect.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "Fig. 3c demonstrates that Mn and Fe are the most important in the (γ+κ) region in 500–600 °C classification studies, and C still shows the least effect on the model."
+  },
+  {
+    "chunk_id": "chunk_0003",
+    "claim": "Al is a BCC-stabilizing element, and an increase in FCC lattice parameters caused by Al negatively impacts the stability of single-phase austenite.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "Al is a BCC phase stable element, and an increase in the FCC lattice parameters has a significant negative impact on the stability of single-phase austenite."
+  },
+  {
+    "chunk_id": "chunk_0003",
+    "claim": "Mn stabilizes the γ phase and increases the FCC lattice parameter, which avoids additional ferrite formation from Al addition, but excess Mn can promote the β-Mn phase in the FeMnAlC system.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "Mn can stabilize the γ phase while increasing the FCC lattice parameter, avoiding the production of additional ferrite as a result of the addition of Al, and β-Mn phase promotion is also possible in the FeMnAlC system."
+  },
+  {
+    "chunk_id": "chunk_0003",
+    "claim": "Mn contents between 5–12 wt% favor the γ→ε→α′ martensitic transformation, while Mn contents between 15–30 wt% favor the γ→ε transformation without α′.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "The γ→ε→αʹ and the γ→ε are separately favored for Mn contents ranging between (5–12 %) Mn and (15–30 %) Mn."
+  },
+  {
+    "chunk_id": "chunk_0003",
+    "claim": "When the Mn content is 30 wt%, the Al content only needs to exceed approximately 5 wt% to initiate precipitation of the κ phase.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "when the Mn content is 30 wt %, the Al content only needs to surpass the lower limit (approximately 5 wt%) to initiate precipitation of the κ phase in the system."
+  },
+  {
+    "chunk_id": "chunk_0003",
+    "claim": "Through a two-step screening involving phase component screening and then screening for high κ-phase fraction and low density, 150 candidate compositions remained from the initial search space.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "The screening process is mainly divided into two steps, the first step is the phase component screening and the second step is the screening of other features (high κ-phase content (Y4) and low density (Y5). Finally, 150 candidates are left for the search space."
+  },
+  {
+    "chunk_id": "chunk_0004",
+    "claim": "In the classification of a (γ+κ) region at 500–600 °C, Mn and Fe are the most important descriptors, while C shows the least effect.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "Fig. 3c demonstrates that Mn and Fe are the most important in the ( γ + κ) region in 500 – 600 °C classification studies, and C still shows the least effect on the model."
+  },
+  {
+    "chunk_id": "chunk_0004",
+    "claim": "When the Mn content is 30 wt% and Al content exceeds ~5 wt%, κ phase precipitation initiates in the FeMnAlC system.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "when the Mn content is 30 wt % , the Al content only needs to surpass the lower limit (approximately 5 wt%) to initiate precipitation of the κ phase in the system."
+  },
+  {
+    "chunk_id": "chunk_0004",
+    "claim": "At 500–600 °C, C content influences the formation of the γ+κ duplex region but is tightly intertwined with the role of Al, and κ precipitation is primarily governed by Al.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "At temperatures ranging from 500 to 600 °C, while the C content has an impact on the formation of the γ + κ duplex region, it is closely intertwined with the role of Al. Thus, even though C plays a significant role in the composition of the κ phase in this study, the precipitation of the κ phase is primarily governed by Al."
+  },
+  {
+    "chunk_id": "chunk_0004",
+    "claim": "The descriptor order for the regression model was ΔSmix, Fe, ΔHmix, C, Mn, T, VEC, and Al.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "The final sequencing of descriptors for inputting into the model for the regression problem was in the following order: ΔS_mix , Fe , ΔH_mix , C , Mn, T , VEC, and Al."
+  },
+  {
+    "chunk_id": "chunk_0004",
+    "claim": "A total of 78,477 composition-feature combinations were enumerated for screening using Y1, Y2, Y3, and Y4 predictions.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "Fig. 5 demonstrates that 78,477 possible composition-feature combinations were enumerated to predict Y1, Y2, Y3 and Y4 using screened models."
+  },
+  {
+    "chunk_id": "chunk_0004",
+    "claim": "After performance filtering for κ fraction (Y4) and low density, 150 candidates with κ fraction >10% and density ≤7 g/cm³ were identified.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "The second stage was the performance filtering for Y4 and low density, leading to the identification of 150 candidates with high κ fractions (more than 10 %) and low density (less than or equal to 7 g/cm³)."
+  },
+  {
+    "chunk_id": "chunk_0004",
+    "claim": "Candidates satisfying simultaneously Y1 (κ existence), Y2 ((γ+κ) at 500–600°C), and Y3 (single γ) are shown as the red region in Fig. 6e and represent potentially optimal compositions.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "the intersection of Y1, Y2, and Y3 is depicted in the red region of Fig. 6e. Candidates in the red zone meet multiple requirements (Y1, Y2, and Y3), indicating that they are potentially optimal for the system."
+  },
+  {
+    "chunk_id": "chunk_0004",
+    "claim": "With added constraints of κ fraction ≥10% and density ≤7 g/cm³, 30 candidates were identified, with a minimum κ volume fraction of 11% and maximum density of 6.9 g/cm³.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "30 potential candidates were identified by imposing additional constraints on the original screening criteria (i.e., κ fraction ≥ 10 % and density ≤ 7 g/cm³), with a minimum volume fraction of κ phase of 11 % and maximum system density of 6.9 g/cm3."
+  },
+  {
+    "chunk_id": "chunk_0004",
+    "claim": "Fe-30Mn-8Al-1C steel aged at 550 °C was predicted to be a single-phase austenitic steel with low density and high strength.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "Fe-30Mn-8Al-1C steel aged at 550 °C was predicted to be a single-phase austenitic steel featuring low density and high strength."
+  },
+  {
+    "chunk_id": "chunk_0005",
+    "claim": "EPMA maps reveal uniform distribution of Fe, Mn, Al, and C, confirming a single FCC phase.",
+    "validation_status": "evidence_not_found",
+    "evidence_text": "EPMA map results reveal the uniform distribution of all steel elements (Fe, Mn, Al, C). ... it is not difficult to confirm the presence of a single FCC phase in this study."
+  }
+]

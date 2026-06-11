@@ -1,0 +1,1009 @@
+{
+    "papers": [
+        {
+            "paper_id": "A35",
+            "doi": null,
+            "title": "Improving impact toughness of Fe–20Mn–9Al-1.5C–2Ni–3Cr low-density steel by optimizing grain boundaries via multi-stage heat treatment without compromising high strength and ductility",
+            "authors": ["Lei Xiao", "Yanjun Zhou", "Chuheng Zhang", "Yangyang Wang", "Xiangtao Deng", "Zhaodong Wang"],
+            "publication_year": null,
+            "journal": null,
+            "keywords": ["Low-density steel", "Multi-stage heat treatment", "Strengthening mechanism", "Toughness", "Grain boundaries", "Grain size"],
+            "research_type": "experimental",
+            "paper_scope": "Study the effect of single-stage and multi-stage heat treatment on the microstructure, mechanical properties and fracture behavior of Fe–20Mn–9Al-1.5C–2Ni–3Cr low-density steel, establish the relationship between microstructure and mechanical properties, and provide guidance for the microstructure design of high strength and high impact toughness low-density steel"
+        }
+    ],
+    "alloys": [
+        {
+            "alloy_id": "alloy_fe20mn9al1_5c2ni3cr",
+            "paper_id": "A35",
+            "alloy_name": "Fe–20Mn–9Al-1.5C–2Ni–3Cr low-density steel",
+            "aliases": [],
+            "base_element": "Fe",
+            "alloying_elements": ["Mn", "Al", "C", "Ni", "Cr"],
+            "nominal_composition": [
+                {
+                    "element": "Mn",
+                    "weight_percent": "20.3",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "Al",
+                    "weight_percent": "8.6",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "C",
+                    "weight_percent": "1.4",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "Ni",
+                    "weight_percent": "2.1",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "Cr",
+                    "weight_percent": "2.9",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "Fe",
+                    "weight_percent": "Bal.",
+                    "atomic_percent": null
+                }
+            ],
+            "alloys_notes": "Nominal composition is Fe-20Mn-9Al-1.5C-2Ni-3Cr wt.%, measured density is 6.78 g/cm³, 14% lower than pure iron"
+        }
+    ],
+    "processes": [
+        {
+            "process_id": "proc_fe_01",
+            "paper_id": "A35",
+            "alloy_id": "alloy_fe20mn9al1_5c2ni3cr",
+            "description": "Single-stage heat treatment: 1000 °C holding for 3 min followed by quenching to room temperature, denoted as S1000",
+            "processes_notes": "Common pre-processing: homogenization at 1200 °C for 2 h, hot rolling at 1050-950 °C to 6 mm sheet, air cooling to room temperature"
+        },
+        {
+            "process_id": "proc_fe_02",
+            "paper_id": "A35",
+            "alloy_id": "alloy_fe20mn9al1_5c2ni3cr",
+            "description": "Single-stage heat treatment: 1050 °C holding for 3 min followed by quenching to room temperature, denoted as S1050",
+            "processes_notes": "Common pre-processing: homogenization at 1200 °C for 2 h, hot rolling at 1050-950 °C to 6 mm sheet, air cooling to room temperature"
+        },
+        {
+            "process_id": "proc_fe_03",
+            "paper_id": "A35",
+            "alloy_id": "alloy_fe20mn9al1_5c2ni3cr",
+            "description": "Multi-stage heat treatment: first 1000 °C holding for 3 min quenching, then 750 °C holding for 15 min quenching, finally 1050 °C holding for 3 min quenching, denoted as MHT",
+            "processes_notes": "Common pre-processing: homogenization at 1200 °C for 2 h, hot rolling at 1050-950 °C to 6 mm sheet, air cooling to room temperature"
+        },
+        {
+            "process_id": "proc_fe_04",
+            "paper_id": "A35",
+            "alloy_id": "alloy_fe20mn9al1_5c2ni3cr",
+            "description": "Single-stage heat treatment: 1100 °C holding for 3 min followed by quenching to room temperature, denoted as S1100, only for tensile property comparison",
+            "processes_notes": "Common pre-processing: homogenization at 1200 °C for 2 h, hot rolling at 1050-950 °C to 6 mm sheet, air cooling to room temperature"
+        }
+    ],
+    "samples": [
+        {
+            "sample_id": "sample_fe_01",
+            "paper_id": "A35",
+            "alloy_id": "alloy_fe20mn9al1_5c2ni3cr",
+            "process_id": "proc_fe_01"
+        },
+        {
+            "sample_id": "sample_fe_02",
+            "paper_id": "A35",
+            "alloy_id": "alloy_fe20mn9al1_5c2ni3cr",
+            "process_id": "proc_fe_02"
+        },
+        {
+            "sample_id": "sample_fe_03",
+            "paper_id": "A35",
+            "alloy_id": "alloy_fe20mn9al1_5c2ni3cr",
+            "process_id": "proc_fe_03"
+        },
+        {
+            "sample_id": "sample_fe_04",
+            "paper_id": "A35",
+            "alloy_id": "alloy_fe20mn9al1_5c2ni3cr",
+            "process_id": "proc_fe_04"
+        }
+    ],
+    "processing_steps": [
+        {
+            "sample_id": "sample_fe_01,sample_fe_02,sample_fe_03,sample_fe_04",
+            "paper_id": "A35",
+            "sequence": "1",
+            "type": "heat_treatment",
+            "method": "homogenization",
+            "temperature": "1200",
+            "unit": "°C",
+            "duration": "2",
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "h"
+        },
+        {
+            "sample_id": "sample_fe_01,sample_fe_02,sample_fe_03,sample_fe_04",
+            "paper_id": "A35",
+            "sequence": "2",
+            "type": "thermomechanical_processing",
+            "method": "hot rolling",
+            "temperature": "1050-950",
+            "unit": "°C",
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": "to 6 mm sheet",
+            "processing_steps_notes": null
+        },
+        {
+            "sample_id": "sample_fe_01,sample_fe_02,sample_fe_03,sample_fe_04",
+            "paper_id": "A35",
+            "sequence": "3",
+            "type": "cooling",
+            "method": "air cooling",
+            "temperature": null,
+            "unit": null,
+            "duration": null,
+            "cooling_medium": "air",
+            "reduction_ratio": null,
+            "processing_steps_notes": "cool to room temperature"
+        },
+        {
+            "sample_id": "sample_fe_01",
+            "paper_id": "A35",
+            "sequence": "4",
+            "type": "heat_treatment",
+            "method": "solution treatment",
+            "temperature": "1000",
+            "unit": "°C",
+            "duration": "3",
+            "cooling_medium": "quenching medium",
+            "reduction_ratio": null,
+            "processing_steps_notes": "min, quench to room temperature"
+        },
+        {
+            "sample_id": "sample_fe_02",
+            "paper_id": "A35",
+            "sequence": "4",
+            "type": "heat_treatment",
+            "method": "solution treatment",
+            "temperature": "1050",
+            "unit": "°C",
+            "duration": "3",
+            "cooling_medium": "quenching medium",
+            "reduction_ratio": null,
+            "processing_steps_notes": "min, quench to room temperature"
+        },
+        {
+            "sample_id": "sample_fe_03",
+            "paper_id": "A35",
+            "sequence": "4",
+            "type": "heat_treatment",
+            "method": "first stage solution treatment",
+            "temperature": "1000",
+            "unit": "°C",
+            "duration": "3",
+            "cooling_medium": "quenching medium",
+            "reduction_ratio": null,
+            "processing_steps_notes": "min, quench to room temperature"
+        },
+        {
+            "sample_id": "sample_fe_03",
+            "paper_id": "A35",
+            "sequence": "5",
+            "type": "heat_treatment",
+            "method": "second stage intermediate treatment",
+            "temperature": "750",
+            "unit": "°C",
+            "duration": "15",
+            "cooling_medium": "quenching medium",
+            "reduction_ratio": null,
+            "processing_steps_notes": "min, quench to room temperature"
+        },
+        {
+            "sample_id": "sample_fe_03",
+            "paper_id": "A35",
+            "sequence": "6",
+            "type": "heat_treatment",
+            "method": "third stage solution treatment",
+            "temperature": "1050",
+            "unit": "°C",
+            "duration": "3",
+            "cooling_medium": "quenching medium",
+            "reduction_ratio": null,
+            "processing_steps_notes": "min, quench to room temperature"
+        },
+        {
+            "sample_id": "sample_fe_04",
+            "paper_id": "A35",
+            "sequence": "4",
+            "type": "heat_treatment",
+            "method": "solution treatment",
+            "temperature": "1100",
+            "unit": "°C",
+            "duration": "3",
+            "cooling_medium": "quenching medium",
+            "reduction_ratio": null,
+            "processing_steps_notes": "min, quench to room temperature"
+        }
+    ],
+    "structures": [
+        {
+            "structure_id": "struct_01",
+            "sample_id": "sample_fe_01",
+            "overall_structure": "Austenite matrix",
+            "number_of_phases": "4",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_01",
+                    "related_sequence": "4",
+                    "phases_present": [
+                        {
+                            "phase_name": "Austenite",
+                            "crystal_structure": "FCC",
+                            "volume_fraction": null,
+                            "morphology": null,
+                            "grain_size": "3.17",
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "Cr7C3",
+                            "crystal_structure": null,
+                            "volume_fraction": null,
+                            "morphology": "elongated stripe-like along grain boundaries",
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "κ-carbide",
+                            "crystal_structure": "co-grid with austenite, orientation relationship [011]γ//[011]κ",
+                            "volume_fraction": null,
+                            "morphology": "nanoscale particles",
+                            "grain_size": "3-10",
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "B2 phase",
+                            "crystal_structure": null,
+                            "volume_fraction": null,
+                            "morphology": "particles in grains",
+                            "grain_size": "20-160",
+                            "texture": null
+                        }
+                    ],
+                    "defects": [],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": "3.17",
+                            "unit": "μm"
+                        },
+                        "grain_size_distribution": null,
+                        "texture": null
+                    },
+                    "precipitates": [
+                        {
+                            "precipitate_id": "prec_01_1",
+                            "type": "Cr7C3",
+                            "size": {
+                                "value": null,
+                                "unit": null
+                            },
+                            "distribution": "along austenite grain boundaries",
+                            "coherency": null
+                        },
+                        {
+                            "precipitate_id": "prec_01_2",
+                            "type": "κ-carbide",
+                            "size": {
+                                "value": "3-10",
+                                "unit": "nm"
+                            },
+                            "distribution": "in austenite grains",
+                            "coherency": "coherent with austenite"
+                        },
+                        {
+                            "precipitate_id": "prec_01_3",
+                            "type": "B2 phase",
+                            "size": {
+                                "value": "20-160",
+                                "unit": "nm"
+                            },
+                            "distribution": "in austenite grains",
+                            "coherency": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "structure_id": "struct_02",
+            "sample_id": "sample_fe_02",
+            "overall_structure": "Austenite matrix",
+            "number_of_phases": "3",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_02",
+                    "related_sequence": "4",
+                    "phases_present": [
+                        {
+                            "phase_name": "Austenite",
+                            "crystal_structure": "FCC",
+                            "volume_fraction": null,
+                            "morphology": null,
+                            "grain_size": "3.84",
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "κ-carbide",
+                            "crystal_structure": "co-grid with austenite, orientation relationship [011]γ//[011]κ",
+                            "volume_fraction": null,
+                            "morphology": "nanoscale particles",
+                            "grain_size": "3-10",
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "B2 phase",
+                            "crystal_structure": null,
+                            "volume_fraction": null,
+                            "morphology": "particles in grains",
+                            "grain_size": "20-160",
+                            "texture": null
+                        }
+                    ],
+                    "defects": [],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": "3.84",
+                            "unit": "μm"
+                        },
+                        "grain_size_distribution": null,
+                        "texture": null
+                    },
+                    "precipitates": [
+                        {
+                            "precipitate_id": "prec_02_1",
+                            "type": "κ-carbide",
+                            "size": {
+                                "value": "3-10",
+                                "unit": "nm"
+                            },
+                            "distribution": "in austenite grains",
+                            "coherency": "coherent with austenite"
+                        },
+                        {
+                            "precipitate_id": "prec_02_2",
+                            "type": "B2 phase",
+                            "size": {
+                                "value": "20-160",
+                                "unit": "nm"
+                            },
+                            "distribution": "in austenite grains",
+                            "coherency": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "structure_id": "struct_03",
+            "sample_id": "sample_fe_03",
+            "overall_structure": "Austenite matrix",
+            "number_of_phases": "3",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_03",
+                    "related_sequence": "6",
+                    "phases_present": [
+                        {
+                            "phase_name": "Austenite",
+                            "crystal_structure": "FCC",
+                            "volume_fraction": null,
+                            "morphology": null,
+                            "grain_size": "7.31",
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "κ-carbide",
+                            "crystal_structure": "co-grid with austenite, orientation relationship [011]γ//[011]κ",
+                            "volume_fraction": null,
+                            "morphology": "nanoscale particles",
+                            "grain_size": "3-10",
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "B2 phase",
+                            "crystal_structure": null,
+                            "volume_fraction": null,
+                            "morphology": "particles in grains",
+                            "grain_size": "20-160",
+                            "texture": null
+                        }
+                    ],
+                    "defects": [],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": "7.31",
+                            "unit": "μm"
+                        },
+                        "grain_size_distribution": null,
+                        "texture": null
+                    },
+                    "precipitates": [
+                        {
+                            "precipitate_id": "prec_03_1",
+                            "type": "κ-carbide",
+                            "size": {
+                                "value": "3-10",
+                                "unit": "nm"
+                            },
+                            "distribution": "in austenite grains",
+                            "coherency": "coherent with austenite"
+                        },
+                        {
+                            "precipitate_id": "prec_03_2",
+                            "type": "B2 phase",
+                            "size": {
+                                "value": "20-160",
+                                "unit": "nm"
+                            },
+                            "distribution": "in austenite grains, slightly smaller than S1050",
+                            "coherency": null
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "interfaces": [
+        {
+            "interface_set_id": "if_01",
+            "sample_id": "sample_fe_01",
+            "phases": [
+                {
+                    "interface_id": "if_01_1",
+                    "microstructure_uuid": "uuid_01",
+                    "phase_1_name": "Austenite",
+                    "phase_2_name": "Cr7C3",
+                    "coherence": null
+                }
+            ],
+            "defect_interaction": [],
+            "interface_notes": [
+                {
+                    "stress_strain_distribution": null
+                },
+                {
+                    "slippage_situation": null
+                }
+            ],
+            "phase_evolution": "Proportion of special grain boundaries (Σ≤29) is 71.7%, Cr7C3 precipitates along austenite grain boundaries"
+        },
+        {
+            "interface_set_id": "if_02",
+            "sample_id": "sample_fe_02",
+            "phases": [],
+            "defect_interaction": [],
+            "interface_notes": [
+                {
+                    "stress_strain_distribution": null
+                },
+                {
+                    "slippage_situation": null
+                }
+            ],
+            "phase_evolution": "Proportion of special grain boundaries (Σ≤29) is 68.3%, intergranular Cr7C3 dissolves"
+        },
+        {
+            "interface_set_id": "if_03",
+            "sample_id": "sample_fe_03",
+            "phases": [],
+            "defect_interaction": [],
+            "interface_notes": [
+                {
+                    "stress_strain_distribution": null
+                },
+                {
+                    "slippage_situation": null
+                }
+            ],
+            "phase_evolution": "Proportion of special grain boundaries (Σ≤29) is 71.2%, intergranular Cr7C3 dissolves, more twin nucleation sites due to intermediate 750°C treatment"
+        }
+    ],
+    "properties": [
+        {
+            "property_set_id": "prop_01",
+            "sample_id": "sample_fe_01",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [
+                        {
+                            "direction": "rolling direction",
+                            "value": "955",
+                            "unit": "MPa",
+                            "others": {
+                                "uncertainty": "±7"
+                            }
+                        }
+                    ],
+                    "ultimate_tensile_strength": [
+                        {
+                            "direction": "rolling direction",
+                            "value": "1126",
+                            "unit": "MPa",
+                            "others": {
+                                "uncertainty": "±3"
+                            }
+                        }
+                    ],
+                    "elongation": [
+                        {
+                            "direction": "rolling direction",
+                            "value": "55.5",
+                            "unit": "%"
+                        }
+                    ],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [],
+                "fracture_toughness": {
+                    "value": null,
+                    "unit": null
+                },
+                "fatigue_properties": {
+                    "fatigue_limit": null,
+                    "cycles_to_failure": null
+                },
+                "creep_properties": {
+                    "steady_state_creep_rate": null,
+                    "rupture_life": null
+                }
+            },
+            "physical": {
+                "density": {
+                    "value": "6.78",
+                    "unit": "g/cm³"
+                },
+                "thermal_properties": {
+                    "thermal_conductivity": null,
+                    "thermal_expansion_coefficient": null,
+                    "specific_heat": null
+                },
+                "electrical_properties": {
+                    "electrical_conductivity": null,
+                    "resistivity": null
+                },
+                "magnetic_properties": {
+                    "magnetic_susceptibility": null,
+                    "curie_temperature": null
+                }
+            },
+            "chemical": {
+                "corrosion_resistance": {
+                    "test_medium": null,
+                    "corrosion_rate": null,
+                    "passivation_behavior": null
+                },
+                "oxidation_resistance": {
+                    "oxidation_rate_constant": null,
+                    "protective_scale": null
+                }
+            },
+            "radiation_properties": {
+                "void_swelling": null,
+                "irradiation_hardening": null,
+                "helium_embrittlement": null
+            }
+        },
+        {
+            "property_set_id": "prop_02",
+            "sample_id": "sample_fe_02",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [
+                        {
+                            "direction": "rolling direction",
+                            "value": "945",
+                            "unit": "MPa",
+                            "others": {
+                                "uncertainty": "±14"
+                            }
+                        }
+                    ],
+                    "ultimate_tensile_strength": [
+                        {
+                            "direction": "rolling direction",
+                            "value": "1113",
+                            "unit": "MPa",
+                            "others": {
+                                "uncertainty": "±3"
+                            }
+                        }
+                    ],
+                    "elongation": [
+                        {
+                            "direction": "rolling direction",
+                            "value": "55.8",
+                            "unit": "%"
+                        }
+                    ],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [],
+                "fracture_toughness": {
+                    "value": null,
+                    "unit": null
+                },
+                "fatigue_properties": {
+                    "fatigue_limit": null,
+                    "cycles_to_failure": null
+                },
+                "creep_properties": {
+                    "steady_state_creep_rate": null,
+                    "rupture_life": null
+                }
+            },
+            "physical": {
+                "density": {
+                    "value": "6.78",
+                    "unit": "g/cm³"
+                },
+                "thermal_properties": {
+                    "thermal_conductivity": null,
+                    "thermal_expansion_coefficient": null,
+                    "specific_heat": null
+                },
+                "electrical_properties": {
+                    "electrical_conductivity": null,
+                    "resistivity": null
+                },
+                "magnetic_properties": {
+                    "magnetic_susceptibility": null,
+                    "curie_temperature": null
+                }
+            },
+            "chemical": {
+                "corrosion_resistance": {
+                    "test_medium": null,
+                    "corrosion_rate": null,
+                    "passivation_behavior": null
+                },
+                "oxidation_resistance": {
+                    "oxidation_rate_constant": null,
+                    "protective_scale": null
+                }
+            },
+            "radiation_properties": {
+                "void_swelling": null,
+                "irradiation_hardening": null,
+                "helium_embrittlement": null
+            }
+        },
+        {
+            "property_set_id": "prop_03",
+            "sample_id": "sample_fe_03",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [
+                        {
+                            "direction": "rolling direction",
+                            "value": "910",
+                            "unit": "MPa",
+                            "others": {
+                                "uncertainty": "±7"
+                            }
+                        }
+                    ],
+                    "ultimate_tensile_strength": [
+                        {
+                            "direction": "rolling direction",
+                            "value": "1076",
+                            "unit": "MPa",
+                            "others": {
+                                "uncertainty": "±2"
+                            }
+                        }
+                    ],
+                    "elongation": [
+                        {
+                            "direction": "rolling direction",
+                            "value": "50.9",
+                            "unit": "%"
+                        }
+                    ],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [],
+                "fracture_toughness": {
+                    "value": null,
+                    "unit": null
+                },
+                "fatigue_properties": {
+                    "fatigue_limit": null,
+                    "cycles_to_failure": null
+                },
+                "creep_properties": {
+                    "steady_state_creep_rate": null,
+                    "rupture_life": null
+                }
+            },
+            "physical": {
+                "density": {
+                    "value": "6.78",
+                    "unit": "g/cm³"
+                },
+                "thermal_properties": {
+                    "thermal_conductivity": null,
+                    "thermal_expansion_coefficient": null,
+                    "specific_heat": null
+                },
+                "electrical_properties": {
+                    "electrical_conductivity": null,
+                    "resistivity": null
+                },
+                "magnetic_properties": {
+                    "magnetic_susceptibility": null,
+                    "curie_temperature": null
+                }
+            },
+            "chemical": {
+                "corrosion_resistance": {
+                    "test_medium": null,
+                    "corrosion_rate": null,
+                    "passivation_behavior": null
+                },
+                "oxidation_resistance": {
+                    "oxidation_rate_constant": null,
+                    "protective_scale": null
+                }
+            },
+            "radiation_properties": {
+                "void_swelling": null,
+                "irradiation_hardening": null,
+                "helium_embrittlement": null
+            }
+        },
+        {
+            "property_set_id": "prop_04",
+            "sample_id": "sample_fe_04",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [
+                        {
+                            "direction": "rolling direction",
+                            "value": "827",
+                            "unit": "MPa",
+                            "others": {
+                                "uncertainty": null
+                            }
+                        }
+                    ],
+                    "ultimate_tensile_strength": [
+                        {
+                            "direction": "rolling direction",
+                            "value": "998",
+                            "unit": "MPa",
+                            "others": {
+                                "uncertainty": null
+                            }
+                        }
+                    ],
+                    "elongation": [],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [],
+                "fracture_toughness": {
+                    "value": null,
+                    "unit": null
+                },
+                "fatigue_properties": {
+                    "fatigue_limit": null,
+                    "cycles_to_failure": null
+                },
+                "creep_properties": {
+                    "steady_state_creep_rate": null,
+                    "rupture_life": null
+                }
+            },
+            "physical": {
+                "density": {
+                    "value": "6.78",
+                    "unit": "g/cm³"
+                },
+                "thermal_properties": {
+                    "thermal_conductivity": null,
+                    "thermal_expansion_coefficient": null,
+                    "specific_heat": null
+                },
+                "electrical_properties": {
+                    "electrical_conductivity": null,
+                    "resistivity": null
+                },
+                "magnetic_properties": {
+                    "magnetic_susceptibility": null,
+                    "curie_temperature": null
+                }
+            },
+            "chemical": {
+                "corrosion_resistance": {
+                    "test_medium": null,
+                    "corrosion_rate": null,
+                    "passivation_behavior": null
+                },
+                "oxidation_resistance": {
+                    "oxidation_rate_constant": null,
+                    "protective_scale": null
+                }
+            },
+            "radiation_properties": {
+                "void_swelling": null,
+                "irradiation_hardening": null,
+                "helium_embrittlement": null
+            }
+        }
+    ],
+    "performance": [
+        {
+            "performance_id": "perf_01",
+            "sample_id": "sample_fe_01",
+            "service_conditions": {
+                "operating_temperature": {
+                    "min": "25",
+                    "max": "25",
+                    "unit": "°C"
+                },
+                "stress_state": null,
+                "environment": "air"
+            },
+            "lifetime_prediction": {
+                "model_used": null,
+                "predicted_lifetime": null,
+                "confidence_interval": null
+            },
+            "comparative_performance": {
+                "benchmark_alloy": null,
+                "benchmark_process_id": null,
+                "benchmark_sample_id": null,
+                "improvement_percentage": null
+            }
+        },
+        {
+            "performance_id": "perf_02",
+            "sample_id": "sample_fe_02",
+            "service_conditions": {
+                "operating_temperature": {
+                    "min": "25",
+                    "max": "25",
+                    "unit": "°C"
+                },
+                "stress_state": null,
+                "environment": "air"
+            },
+            "lifetime_prediction": {
+                "model_used": null,
+                "predicted_lifetime": null,
+                "confidence_interval": null
+            },
+            "comparative_performance": {
+                "benchmark_alloy": null,
+                "benchmark_process_id": "proc_fe_01",
+                "benchmark_sample_id": "sample_fe_01",
+                "improvement_percentage": "46.6"
+            }
+        },
+        {
+            "performance_id": "perf_03",
+            "sample_id": "sample_fe_03",
+            "service_conditions": {
+                "operating_temperature": {
+                    "min": "25",
+                    "max": "25",
+                    "unit": "°C"
+                },
+                "stress_state": null,
+                "environment": "air"
+            },
+            "lifetime_prediction": {
+                "model_used": null,
+                "predicted_lifetime": null,
+                "confidence_interval": null
+            },
+            "comparative_performance": {
+                "benchmark_alloy": null,
+                "benchmark_process_id": "proc_fe_01",
+                "benchmark_sample_id": "sample_fe_01",
+                "improvement_percentage": "88.6"
+            }
+        }
+    ],
+    "characterization_methods": [
+        {
+            "characterization_id": "char_01",
+            "sample_id": "sample_fe_01,sample_fe_02,sample_fe_03",
+            "microstructure_uuid": null,
+            "technique": "SEM",
+            "purpose": "Observe microstructure, fracture morphology, crack propagation",
+            "key_findings": "S1000 has intergranular Cr7C3 precipitates, MHT has larger shear zone in impact fracture, ductile fracture"
+        },
+        {
+            "characterization_id": "char_02",
+            "sample_id": "sample_fe_01,sample_fe_02,sample_fe_03",
+            "microstructure_uuid": null,
+            "technique": "EBSD",
+            "purpose": "Measure grain size, grain boundary type and proportion, misorientation angle distribution",
+            "key_findings": "Special grain boundary proportion for S1000, S1050, MHT is 71.7%, 68.3%, 71.2% respectively, main misorientation peak near 60° corresponding to Σ3 twins"
+        },
+        {
+            "characterization_id": "char_03",
+            "sample_id": "sample_fe_01,sample_fe_02,sample_fe_03",
+            "microstructure_uuid": null,
+            "technique": "TEM",
+            "purpose": "Characterize precipitates type, size, morphology and orientation relationship",
+            "key_findings": "Nanoscale κ-carbide (3-10 nm) co-grid with austenite, B2 phase (20-160 nm), Cr7C3 along grain boundaries in S1000"
+        },
+        {
+            "characterization_id": "char_04",
+            "sample_id": "sample_fe_01,sample_fe_02,sample_fe_03,sample_fe_04",
+            "microstructure_uuid": null,
+            "technique": "Room temperature tensile test",
+            "purpose": "Measure tensile mechanical properties",
+            "key_findings": "MHT maintains yield strength 910 MPa, ultimate tensile strength 1076 MPa, elongation 50.9%"
+        },
+        {
+            "characterization_id": "char_05",
+            "sample_id": "sample_fe_01,sample_fe_02,sample_fe_03",
+            "microstructure_uuid": null,
+            "technique": "Charpy V-notch impact test",
+            "purpose": "Measure impact toughness, crack initiation and propagation energy",
+            "key_findings": "Impact energy of S1000, S1050, MHT is 29.2 J, 42.8 J, 55.1 J respectively, toughness improvement mainly from increased crack propagation energy"
+        }
+    ],
+    "computational_details": [
+        {
+            "computation_id": "comp_01",
+            "sample_id": "sample_fe_01,sample_fe_02,sample_fe_03",
+            "simulation_method": null,
+            "software_used": null,
+            "potential_model": null,
+            "validation_against_experiment": "yes",
+            "analytical_model": [
+                {
+                    "model_name": "Lattice constant calculation model for C content in austenite",
+                    "equation_role": "Calculate C content in austenite from XRD measured lattice constant",
+                    "parameters": "α_γ = λ√(h²+k²+l²)/(2sinθ); α_γ = 3.578 + 0.033X_C + 0.00095X_Mn - 0.0002X_Ni + 0.0006X_Cr + 0.0056X_Al",
+                    "model_note": null
+                },
+                {
+                    "model_name": "Yield strength calculation model",
+                    "equation_role": "Calculate contributions of different strengthening mechanisms to yield strength",
+                    "parameters": "σ_YS = σ0 + σ_GR + σ_PPT; σ0 includes lattice friction and solid solution strengthening; σ_GR follows Hall-Petch relationship σ_GR = Kd_eff^(-1/2), K=461 MPa·μm^(1/2)",
+                    "model_note": "Calculated solid solution strengthening for S1000, S1050, MHT is 601, 609, 599 MPa respectively, grain boundary strengthening is 145, 120, 63 MPa respectively, precipitation strengthening is 209, 216, 248 MPa respectively"
+                }
+            ]
+        }
+    ],
+    "unmapped_findings": [
+        "Strain hardening rate of all samples goes through three stages, reaches maximum 2000 MPa at strain 0.20-0.22",
+        "Crack propagation energy of S1000, S1050, MHT is 9.87 J, 26.64 J, 36.78 J respectively, crack initiation energy is comparable for S1000 and MHT",
+        "Tensile fracture of all samples shows dimple morphology, impact fracture of S1000 shows intergranular fracture feature, MHT shows ductile fracture with dimples",
+        "S1100 sample (1100 °C 3 min quenching) is only used for tensile property comparison, no impact test data",
+        "Intermediate 750 °C treatment in MHT process produces precipitates at grain boundaries, increasing twin nucleation sites and special grain boundary proportion"
+    ]
+}

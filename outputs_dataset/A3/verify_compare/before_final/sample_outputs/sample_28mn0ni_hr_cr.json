@@ -1,0 +1,510 @@
+{
+  "sample_id": "sample_28mn0ni_hr_cr",
+  "sample_score": 78.58715596330275,
+  "sample_weight": 43.6,
+  "field_count": 31,
+  "correct_yes_count": 22,
+  "unknown_count": 2,
+  "no_count": 1,
+  "fields": [
+    {
+      "field_id": "F00106",
+      "sample_id": "sample_28mn0ni_hr_cr",
+      "section": "processing_steps",
+      "path": "processing_steps.sample_28mn0ni_hr_cr.duration",
+      "value": "2.5 h",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0021"
+      ],
+      "reason": "证据明确说 homogenized at 1423 K for 2.5 h，持续时间2.5 h直接对应。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00107",
+      "sample_id": "sample_28mn0ni_hr_cr",
+      "section": "processing_steps",
+      "path": "processing_steps.sample_28mn0ni_hr_cr.method",
+      "value": "multiple pass cold rolling at room temperature",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0021",
+        "b0013"
+      ],
+      "reason": "证据明确 cold rolled to 50% reduction by several passes, 且在室温进行，multiple pass 和 room temperature 均被支持。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00108",
+      "sample_id": "sample_28mn0ni_hr_cr",
+      "section": "processing_steps",
+      "path": "processing_steps.sample_28mn0ni_hr_cr.processing_steps_notes",
+      "value": "Reduction from ~13 mm to ~6 mm.",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0021"
+      ],
+      "reason": "证据显示热轧后~13 mm，冷轧至~6 mm，减少量吻合。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00109",
+      "sample_id": "sample_28mn0ni_hr_cr",
+      "section": "processing_steps",
+      "path": "processing_steps.sample_28mn0ni_hr_cr.reduction_ratio",
+      "value": "50",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0021",
+        "b0013"
+      ],
+      "reason": "证据明确 cold rolled to ~50% reduction。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00110",
+      "sample_id": "sample_28mn0ni_hr_cr",
+      "section": "processing_steps",
+      "path": "processing_steps.sample_28mn0ni_hr_cr.sequence",
+      "value": "3",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "unknown",
+      "evidence_confidence": 0.0,
+      "evidence_refs": [],
+      "reason": "证据中没有出现sequence数字3，无法判断。",
+      "field_score": 0.0
+    },
+    {
+      "field_id": "F00111",
+      "sample_id": "sample_28mn0ni_hr_cr",
+      "section": "processing_steps",
+      "path": "processing_steps.sample_28mn0ni_hr_cr.temperature_with_unit",
+      "value": "room temperature K",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "partial",
+      "evidence_confidence": 0.8,
+      "evidence_refs": [
+        "b0013"
+      ],
+      "reason": "证据支持室温冷轧，但未以开尔文表示，字段值'room temperature K'不准确。",
+      "field_score": 48.0
+    },
+    {
+      "field_id": "F00112",
+      "sample_id": "sample_28mn0ni_hr_cr",
+      "section": "processing_steps",
+      "path": "processing_steps.sample_28mn0ni_hr_cr.type",
+      "value": "cold_rolling",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0021",
+        "b0013"
+      ],
+      "reason": "证据明确 cold rolling，类型正确。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00120",
+      "sample_id": "sample_28mn0ni_hr_cr",
+      "section": "structures",
+      "path": "structures.sample_28mn0ni_hr_cr.microstructure_list[3].defects[planar_slip_bands].dislocation_density",
+      "value": "high (cold rolled)",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "partial",
+      "evidence_confidence": 0.6,
+      "evidence_refs": [
+        "b0033",
+        "b0073"
+      ],
+      "reason": "证据支持存在位错密度高，但未明确写'high (cold rolled)'，推断合理但非直接。",
+      "field_score": 36.0
+    },
+    {
+      "field_id": "F00121",
+      "sample_id": "sample_28mn0ni_hr_cr",
+      "section": "structures",
+      "path": "structures.sample_28mn0ni_hr_cr.microstructure_list[3].defects[planar_slip_bands].type",
+      "value": "planar slip bands",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0033"
+      ],
+      "reason": "证据明确描述平面滑移带，类型一致。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00122",
+      "sample_id": "sample_28mn0ni_hr_cr",
+      "section": "structures",
+      "path": "structures.sample_28mn0ni_hr_cr.microstructure_list[3].grain_structure.average_grain_size.value_with_unit",
+      "value": "5-7 μm",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "partial",
+      "evidence_confidence": 0.6,
+      "evidence_refs": [
+        "b0032"
+      ],
+      "reason": "证据中5-7 μm对应HR条件而非HR+CR，字段值可能不适用于冷轧后状态。",
+      "field_score": 36.0
+    },
+    {
+      "field_id": "F00123",
+      "sample_id": "sample_28mn0ni_hr_cr",
+      "section": "structures",
+      "path": "structures.sample_28mn0ni_hr_cr.microstructure_list[3].grain_structure.texture",
+      "value": "nearly random",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "partial",
+      "evidence_confidence": 0.6,
+      "evidence_refs": [
+        "b0032"
+      ],
+      "reason": "证据中nearly random texture对应HR条件，冷轧后织构可能改变，字段值不完全匹配。",
+      "field_score": 36.0
+    },
+    {
+      "field_id": "F00124",
+      "sample_id": "sample_28mn0ni_hr_cr",
+      "section": "structures",
+      "path": "structures.sample_28mn0ni_hr_cr.microstructure_list[3].phases_present[austenite].crystal_structure",
+      "value": "FCC",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0015",
+        "b0033"
+      ],
+      "reason": "证据明确奥氏体为FCC结构。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00125",
+      "sample_id": "sample_28mn0ni_hr_cr",
+      "section": "structures",
+      "path": "structures.sample_28mn0ni_hr_cr.microstructure_list[3].phases_present[austenite].grain_size",
+      "value": "~5-7 μm (similar to HR)",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "partial",
+      "evidence_confidence": 0.6,
+      "evidence_refs": [
+        "b0032"
+      ],
+      "reason": "证据中~5-7 μm为HR条件的晶粒尺寸，冷轧后尺寸未必相似，字段标注'similar to HR'缺乏直接证据。",
+      "field_score": 36.0
+    },
+    {
+      "field_id": "F00126",
+      "sample_id": "sample_28mn0ni_hr_cr",
+      "section": "structures",
+      "path": "structures.sample_28mn0ni_hr_cr.microstructure_list[3].phases_present[austenite].morphology",
+      "value": "deformed grains with parallel planar slip bands",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0033"
+      ],
+      "reason": "证据描述变形晶粒内平行滑移带，形态一致。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00127",
+      "sample_id": "sample_28mn0ni_hr_cr",
+      "section": "structures",
+      "path": "structures.sample_28mn0ni_hr_cr.microstructure_list[3].phases_present[austenite].phase_name",
+      "value": "γ (austenite)",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0015",
+        "b0033"
+      ],
+      "reason": "证据中明确相为γ austenite。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00128",
+      "sample_id": "sample_28mn0ni_hr_cr",
+      "section": "structures",
+      "path": "structures.sample_28mn0ni_hr_cr.microstructure_list[3].phases_present[austenite].texture",
+      "value": "nearly random",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "no",
+      "evidence_confidence": 0.3,
+      "evidence_refs": [
+        "b0032"
+      ],
+      "reason": "证据中nearly random织构仅用于HR条件，冷轧后织构应变化，字段值矛盾。",
+      "field_score": 0.0
+    },
+    {
+      "field_id": "F00129",
+      "sample_id": "sample_28mn0ni_hr_cr",
+      "section": "structures",
+      "path": "structures.sample_28mn0ni_hr_cr.microstructure_list[3].phases_present[austenite].volume_fraction",
+      "value": "1.0",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0033"
+      ],
+      "reason": "证据明确28Mn0Ni为单相奥氏体，体积分数为1.0。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00130",
+      "sample_id": "sample_28mn0ni_hr_cr",
+      "section": "structures",
+      "path": "structures.sample_28mn0ni_hr_cr.microstructure_list[3].related_sequence",
+      "value": "3",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "unknown",
+      "evidence_confidence": 0.0,
+      "evidence_refs": [],
+      "reason": "证据中无相关sequence信息。",
+      "field_score": 0.0
+    },
+    {
+      "field_id": "F00131",
+      "sample_id": "sample_28mn0ni_hr_cr",
+      "section": "structures",
+      "path": "structures.sample_28mn0ni_hr_cr.number_of_phases",
+      "value": "1",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0033"
+      ],
+      "reason": "证据支持单相奥氏体，相数为1。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00132",
+      "sample_id": "sample_28mn0ni_hr_cr",
+      "section": "structures",
+      "path": "structures.sample_28mn0ni_hr_cr.overall_structure",
+      "value": "Single-phase deformed austenite with planar slip bands; no deformation twinning or martensite.",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0033"
+      ],
+      "reason": "证据明确单相变形奥氏体、平面滑移、无变形孪晶和马氏体。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00187",
+      "sample_id": "sample_28mn0ni_hr_cr",
+      "section": "properties",
+      "path": "properties.sample_28mn0ni_hr_cr.mechanical.hardness[bulk].region",
+      "value": "bulk",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0028"
+      ],
+      "reason": "证据明确 bulk hardness 测量。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00188",
+      "sample_id": "sample_28mn0ni_hr_cr",
+      "section": "properties",
+      "path": "properties.sample_28mn0ni_hr_cr.mechanical.hardness[bulk].scale",
+      "value": "Vickers",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0028"
+      ],
+      "reason": "证据使用 Vickers 硬度计。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00189",
+      "sample_id": "sample_28mn0ni_hr_cr",
+      "section": "properties",
+      "path": "properties.sample_28mn0ni_hr_cr.mechanical.hardness[bulk].value_with_unit",
+      "value": "430 VHN",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0118"
+      ],
+      "reason": "证据表格中28Mn0Ni在50%冷轧时硬度为430 VHN，数值一致。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00190",
+      "sample_id": "sample_28mn0ni_hr_cr",
+      "section": "properties",
+      "path": "properties.sample_28mn0ni_hr_cr.mechanical.tensile_properties.elongation[0].value_with_unit",
+      "value": "10 ± 0.4 %",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0138"
+      ],
+      "reason": "证据表格显示TE=10±0.4%。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00191",
+      "sample_id": "sample_28mn0ni_hr_cr",
+      "section": "properties",
+      "path": "properties.sample_28mn0ni_hr_cr.mechanical.tensile_properties.ultimate_tensile_strength[0].others.uncertainty",
+      "value": "10",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0138"
+      ],
+      "reason": "证据表格显示UTS=1500±10 MPa，不确定度10。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00192",
+      "sample_id": "sample_28mn0ni_hr_cr",
+      "section": "properties",
+      "path": "properties.sample_28mn0ni_hr_cr.mechanical.tensile_properties.ultimate_tensile_strength[0].value_with_unit",
+      "value": "1500 ± 10 MPa",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0138"
+      ],
+      "reason": "证据表格显示UTS=1500±10 MPa。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00193",
+      "sample_id": "sample_28mn0ni_hr_cr",
+      "section": "properties",
+      "path": "properties.sample_28mn0ni_hr_cr.mechanical.tensile_properties.yield_strength[0].others.uncertainty",
+      "value": "10",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0138"
+      ],
+      "reason": "证据表格显示YS=1350±10 MPa，不确定度10。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00194",
+      "sample_id": "sample_28mn0ni_hr_cr",
+      "section": "properties",
+      "path": "properties.sample_28mn0ni_hr_cr.mechanical.tensile_properties.yield_strength[0].value_with_unit",
+      "value": "1350 ± 10 MPa",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0138"
+      ],
+      "reason": "证据表格显示YS=1350±10 MPa。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00252",
+      "sample_id": "sample_28mn0ni_hr_cr",
+      "section": "characterization_methods",
+      "path": "characterization_methods.sample_28mn0ni_hr_cr.key_findings",
+      "value": "Hardness increased to ~430 VHN after 50% cold reduction.",
+      "field_weight": 1.0,
+      "candidate_evidence_refs": [],
+      "is_correct": "partial",
+      "evidence_confidence": 0.8,
+      "evidence_refs": [
+        "b0073",
+        "b0118"
+      ],
+      "reason": "证据表明硬度~450 VHN（文本）或430 VHN（表格），字段值430 VHN与表格一致但与文字描述略有偏差。",
+      "field_score": 48.0
+    },
+    {
+      "field_id": "F00253",
+      "sample_id": "sample_28mn0ni_hr_cr",
+      "section": "characterization_methods",
+      "path": "characterization_methods.sample_28mn0ni_hr_cr.purpose",
+      "value": "Measure bulk hardness (30 kg load)",
+      "field_weight": 1.0,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0028"
+      ],
+      "reason": "证据明确测量 bulk hardness 使用30 kg载荷。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00254",
+      "sample_id": "sample_28mn0ni_hr_cr",
+      "section": "characterization_methods",
+      "path": "characterization_methods.sample_28mn0ni_hr_cr.technique",
+      "value": "Vickers hardness tester",
+      "field_weight": 1.0,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0028"
+      ],
+      "reason": "证据明确使用 Vickers 硬度计。",
+      "field_score": 100.0
+    }
+  ]
+}

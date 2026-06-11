@@ -1,0 +1,399 @@
+```json
+{
+    "papers": [
+      {
+        "paper_id": "A34",
+        "doi": null,
+        "title": "Dynamic recrystallization behavior and microstructure evolution of low-density high-strength Fe-Mn-Al-C steel",
+        "authors": [
+          "Peng Wan",
+          "Tao Kang",
+          "Feng Li",
+          "Pengfei Gao",
+          "Lei Zhang",
+          "Zhengzhi Zhao"
+        ],
+        "publication_year": "2021",
+        "journal": null,
+        "keywords": [
+          "Low-density high-strength steel",
+          "Microstructure evolution",
+          "Dynamic recrystallization state diagram",
+          "Hot deformation",
+          "Grain size"
+        ],
+        "research_type": "experimental",
+        "paper_scope": "Experimental study of hot deformation behavior, dynamic recrystallization kinetics, and microstructure evolution of low-density high-strength Fe-Mn-Al-C steel using Gleeble-3500 thermo-mechanical simulator, including activation energy, Zener-Hollomon parameter modeling, DRX state diagram, and grain size prediction model."
+      }
+    ],
+    "alloys": [
+      {
+        "alloy_id": "alloy_fe25mn10al1c",
+        "paper_id": "A34",
+        "alloy_name": "Fe-Mn-Al-C steel",
+        "aliases": [
+          "low-density high-strength Fe-Mn-Al-C steel"
+        ],
+        "base_element": "Fe",
+        "alloying_elements": [
+          "Mn",
+          "Al",
+          "C",
+          "Nb"
+        ],
+        "nominal_composition": [
+          {
+            "element": "Fe",
+            "weight_percent": "balance",
+            "atomic_percent": null
+          },
+          {
+            "element": "C",
+            "weight_percent": "1.46",
+            "atomic_percent": null
+          },
+          {
+            "element": "Mn",
+            "weight_percent": "25.14",
+            "atomic_percent": null
+          },
+          {
+            "element": "Al",
+            "weight_percent": "10",
+            "atomic_percent": null
+          },
+          {
+            "element": "Nb",
+            "weight_percent": "0.053",
+            "atomic_percent": null
+          }
+        ],
+        "alloys_notes": null
+      }
+    ],
+    "processes": [
+      {
+        "process_id": "proc_fe25mn10al1c_01",
+        "paper_id": "A34",
+        "alloy_id": "alloy_fe25mn10al1c",
+        "description": "Isothermal constant strain rate hot compression on Gleeble-3500 thermo-mechanical simulator at 900-1150°C and 0.01-10 s⁻¹ to 60% height reduction, following heating to 1200°C, homogenization, controlled cooling to test temperature, holding, and post-compression water quenching.",
+        "processes_notes": null
+      }
+    ],
+    "samples": [
+      {
+        "sample_id": "sample_fe25mn10al1c_01",
+        "paper_id": "A34",
+        "alloy_id": "alloy_fe25mn10al1c",
+        "process_id": "proc_fe25mn10al1c_01"
+      }
+    ],
+    "processing_steps": [
+      {
+        "sample_id": "sample_fe25mn10al1c_01",
+        "paper_id": "A34",
+        "sequence": "1",
+        "type": "heat_treatment",
+        "method": "heating",
+        "temperature": "1200",
+        "unit": "°C",
+        "duration": null,
+        "cooling_medium": null,
+        "reduction_ratio": null,
+        "processing_steps_notes": "Heating rate 10 °C/s to homogenization temperature."
+      },
+      {
+        "sample_id": "sample_fe25mn10al1c_01",
+        "paper_id": "A34",
+        "sequence": "2",
+        "type": "heat_treatment",
+        "method": "homogenization",
+        "temperature": "1200",
+        "unit": "°C",
+        "duration": "120 s",
+        "cooling_medium": null,
+        "reduction_ratio": null,
+        "processing_steps_notes": "Holding for temperature uniformity before cooling."
+      },
+      {
+        "sample_id": "sample_fe25mn10al1c_01",
+        "paper_id": "A34",
+        "sequence": "3",
+        "type": "cooling",
+        "method": "controlled cooling",
+        "temperature": null,
+        "unit": "°C",
+        "duration": null,
+        "cooling_medium": null,
+        "reduction_ratio": null,
+        "processing_steps_notes": "Cooled from 1200 °C to the set deformation temperature at 5 °C/s."
+      },
+      {
+        "sample_id": "sample_fe25mn10al1c_01",
+        "paper_id": "A34",
+        "sequence": "4",
+        "type": "heat_treatment",
+        "method": "holding",
+        "temperature": "900-1150",
+        "unit": "°C",
+        "duration": "15 s",
+        "cooling_medium": null,
+        "reduction_ratio": null,
+        "processing_steps_notes": "Holding at the set deformation temperature to equalize internal and external temperature before compression."
+      },
+      {
+        "sample_id": "sample_fe25mn10al1c_01",
+        "paper_id": "A34",
+        "sequence": "5",
+        "type": "thermomechanical_processing",
+        "method": "isothermal constant strain rate compression",
+        "temperature": "900-1150",
+        "unit": "°C",
+        "duration": null,
+        "cooling_medium": null,
+        "reduction_ratio": "60%",
+        "processing_steps_notes": "Strain rates: 0.01, 0.1, 1, and 10 s⁻¹; maximum true strain 0.92; mica foils with high-temperature lubricants applied to end faces to reduce friction and deformation non-uniformity."
+      },
+      {
+        "sample_id": "sample_fe25mn10al1c_01",
+        "paper_id": "A34",
+        "sequence": "6",
+        "type": "cooling",
+        "method": "water quenching",
+        "temperature": null,
+        "unit": "°C",
+        "duration": null,
+        "cooling_medium": "water",
+        "reduction_ratio": null,
+        "processing_steps_notes": "Sprayed with water immediately after compression to cool the sample."
+      }
+    ],
+    "structures": [
+      {
+        "structure_id": "struct_01",
+        "sample_id": "sample_fe25mn10al1c_01",
+        "overall_structure": "Polycrystalline microstructure exhibiting dynamic recrystallization behavior; deformation induces heterogeneous microstructure across difficult, small, and large deformation zones.",
+        "number_of_phases": null,
+        "microstructure_counts": null,
+        "microstructure_list": [
+          {
+            "uuid": "uuid_initial_microstructure",
+            "related_sequence": null,
+            "phases_present": [
+              {
+                "phase_name": null,
+                "crystal_structure": null,
+                "volume_fraction": null,
+                "morphology": null,
+                "grain_size": null,
+                "texture": null
+              }
+            ],
+            "defects": [
+              {
+                "type": null,
+                "porosity": null,
+                "inclusions": [],
+                "dislocation_density": null,
+                "lattice_distortion": null
+              }
+            ],
+            "grain_structure": {
+              "average_grain_size": {
+                "value": null,
+                "unit": "μm"
+              },
+              "grain_size_distribution": null,
+              "texture": null
+            },
+            "precipitates": []
+          },
+          {
+            "uuid": "uuid_drx_microstructure",
+            "related_sequence": "5",
+            "phases_present": [
+              {
+                "phase_name": null,
+                "crystal_structure": null,
+                "volume_fraction": null,
+                "morphology": "DRX grains distributed along elongated original grain boundaries as small equiaxed necklace structures; grain boundaries serrated in large deformation zone",
+                "grain_size": null,
+                "texture": null
+              }
+            ],
+            "defects": [
+              {
+                "type": "dislocations",
+                "porosity": null,
+                "inclusions": [],
+                "dislocation_density": null,
+                "lattice_distortion": null
+              }
+            ],
+            "grain_structure": {
+              "average_grain_size": {
+                "value": "varies 4 to 75",
+                "unit": "μm"
+              },
+              "grain_size_distribution": "Fine and uniform at 950-1000 °C / 0.01-0.1 s⁻¹ and 1050-1100 °C / 1-10 s⁻¹; coarse at 1150 °C / 0.01 s⁻¹ exceeding 70 μm; heterogeneous with insufficient DRX at low temperature and high strain rate",
+              "texture": null
+            },
+            "precipitates": []
+          }
+        ]
+      }
+    ],
+    "interfaces": [],
+    "properties": [
+      {
+        "property_set_id": "prop_01",
+        "sample_id": "sample_fe25mn10al1c_01",
+        "mechanical": {
+          "tensile_properties": {
+            "yield_strength": [],
+            "ultimate_tensile_strength": [],
+            "elongation": [],
+            "youngs_modulus": null,
+            "stress_strain_curves": "Rheological stress curves under hot compression at 900-1150 °C and 0.01-10 s⁻¹ exhibit peak stress behavior characteristic of dynamic recrystallization, with flow stress decreasing as temperature increases or strain rate decreases.",
+            "stress_strain_distribution": [],
+            "strain_hardening_rate": []
+          },
+          "hardness": [],
+          "fracture_toughness": {
+            "value": null,
+            "unit": null
+          },
+          "fatigue_properties": {
+            "fatigue_limit": null,
+            "cycles_to_failure": null
+          },
+          "creep_properties": {
+            "steady_state_creep_rate": null,
+            "rupture_life": null
+          }
+        },
+        "physical": {
+          "density": {
+            "value": null,
+            "unit": null
+          },
+          "thermal_properties": {
+            "thermal_conductivity": null,
+            "thermal_expansion_coefficient": null,
+            "specific_heat": null
+          },
+          "electrical_properties": {
+            "electrical_conductivity": null,
+            "resistivity": null
+          },
+          "magnetic_properties": {
+            "magnetic_susceptibility": null,
+            "curie_temperature": null
+          }
+        },
+        "chemical": {
+          "corrosion_resistance": {
+            "test_medium": null,
+            "corrosion_rate": null,
+            "passivation_behavior": null
+          },
+          "oxidation_resistance": {
+            "oxidation_rate_constant": null,
+            "protective_scale": null
+          }
+        },
+        "radiation_properties": {
+          "void_swelling": null,
+          "irradiation_hardening": null,
+          "helium_embrittlement": null
+        }
+      }
+    ],
+    "performance": [
+      {
+        "performance_id": "perf_01",
+        "sample_id": "sample_fe25mn10al1c_01",
+        "service_conditions": {
+          "operating_temperature": {
+            "min": "900",
+            "max": "1150",
+            "unit": "°C"
+          },
+          "stress_state": "hot compression",
+          "environment": "laboratory air"
+        },
+        "lifetime_prediction": {
+          "model_used": null,
+          "predicted_lifetime": null,
+          "confidence_interval": null
+        },
+        "comparative_performance": {
+          "benchmark_alloy": null,
+          "benchmark_process_id": null,
+          "benchmark_sample_id": null,
+          "improvement_percentage": null
+        }
+      }
+    ],
+    "characterization_methods": [
+      {
+        "characterization_id": "char_01",
+        "sample_id": "sample_fe25mn10al1c_01",
+        "microstructure_uuid": "uuid_drx_microstructure",
+        "technique": "laser confocal microscopy (LEXT OLS4000)",
+        "purpose": "Microstructure observation of initial and deformed samples after etching",
+        "key_findings": "Observed heterogeneous deformation zones (difficult, small, large); DRX grains appear as necklace structures along original grain boundaries in large deformation zone; grain size varies with temperature and strain rate."
+      },
+      {
+        "characterization_id": "char_02",
+        "sample_id": "sample_fe25mn10al1c_01",
+        "microstructure_uuid": null,
+        "technique": "Gleeble-3500 thermo-mechanical simulator",
+        "purpose": "Isothermal constant strain rate thermal compression experiments and rheological stress measurement",
+        "key_findings": "Obtained rheological stress curves under 900-1150 °C and 0.01-10 s⁻¹; confirmed reproducibility; material is negative temperature-sensitive and positive strain rate-sensitive."
+      }
+    ],
+    "computational_details": [
+      {
+        "computation_id": "comp_01",
+        "sample_id": "sample_fe25mn10al1c_01",
+        "simulation_method": "finite element simulation (DEFORM-3D)",
+        "software_used": "DEFORM-3D",
+        "potential_model": null,
+        "validation_against_experiment": "Grain size prediction model validated against experimental data with correlation coefficient R = 0.996 and mean relative error MRE = 4.53%; absolute error mostly within 3 μm.",
+        "analytical_model": [
+          {
+            "model_name": "Arrhenius hyperbolic sine function",
+            "equation_role": "Constitutive relationship between peak stress, temperature, and strain rate for DRX activation energy calculation",
+            "parameters": "α = 0.00599, Q_p = 669.844 kJ/mol, R = 8.314 J/(mol·K); average slopes k1 = 5.135 and k2 = 15.690 from linear fitting",
+            "model_note": "Used to calculate dynamic recrystallization activation energy and Zener-Hollomon parameter Z."
+          },
+          {
+            "model_name": "Cingara-McQueen equation",
+            "equation_role": "Determination of critical strain for dynamic recrystallization",
+            "parameters": "Material constant C; εc/εp ≈ 0.452",
+            "model_note": "Critical strain identified via inflection point on work hardening rate curves; result consistent with literature for low-density high-strength steel."
+          },
+          {
+            "model_name": "DRX average grain size prediction model",
+            "equation_role": "Predict dynamic recrystallization average grain size under hot deformation conditions",
+            "parameters": "d_rex = 807743.63 * ε_dot^(-0.1903) * exp(-120648.47 / RT) + 4.338",
+            "model_note": "Derived using Levenberg-Marquardt optimization; initial grain size and strain treated as fixed values; friction coefficient 0.3 and convection coefficient 0.02 N/(s·mm·°C) used in DEFORM-3D setup."
+          }
+        ]
+      }
+    ],
+    "unmapped_findings": [
+      "The dynamic recrystallization activation energy of Fe-Mn-Al-C steel is calculated as 669.844 kJ mol⁻¹ based on the Arrhenius hyperbolic sine constitutive equation and linear fitting of lnε_dot-ln[sinh(ασp)] and ln[sinh(ασp)]-1000/T plots.",
+      "At strain rate 0.01 s⁻¹, peak stress decreased from 305.4 MPa at 900 °C to 53.8 MPa at 1150 °C, a reduction of 82%; at 10 s⁻¹, peak stress decreased by 73% over the same temperature range, indicating that peak stress is more sensitive to strain rate than to temperature within the tested ranges.",
+      "Zener-Hollomon parameter Z increases with increasing strain rate or decreasing temperature; calculated lnZ values range from 52.01 (1150 °C / 0.01 s⁻¹) to 70.99 (900 °C / 10 s⁻¹).",
+      "Functional relationships between characteristic rheological stress values and lnZ were established by multiple linear regression: εc = 0.0093 lnZ - 0.43; σc = 1.0048(lnZ)² - 97.23 lnZ + 2379.08; εp = 0.020 lnZ - 0.94; σp = 0.98(lnZ)² - 94.21 lnZ + 2291.34; εs = 0.034 lnZ - 1.53; σs = 0.55(lnZ)² - 46.96 lnZ + 984.67.",
+      "Dynamic recrystallization state diagram (Fig. 7) identifies zone A (work hardening), zone B (partial DRX), and zone C (complete DRX); with increasing Z parameter, the initiation and completion of DRX become more difficult.",
+      "Microstructure after compression shows three deformation zones: 1-difficult deformation zone, 2-small deformation zone, 3-large deformation zone; DRX degree follows zone 3 > zone 2 > zone 1.",
+      "DRX average grain size data (μm) measured from the large deformation zone core (Fig. 10) under different temperatures and strain rates: 900 °C: 12, 8, 6, 4; 950 °C: 18, 12, 8, 6; 1000 °C: 26, 18, 12, 8; 1050 °C: 34, 28, 16, 10; 1100 °C: 50, 38, 22, 14; 1150 °C: 75, 54, 32, 22 (for 0.01, 0.1, 1, 10 s⁻¹ respectively). At 1150 °C / 0.01 s⁻¹ grain size exceeds 70 μm and the structure is coarse; at low temperature and high strain rate, grains are small but DRX is insufficient and original large grains remain, leading to poor homogeneity.",
+      "Fine and uniform grain structure can be obtained by hot working in the range of 950-1000 °C / 0.01-0.1 s⁻¹ and 1050-1100 °C / 1-10 s⁻¹, where full DRX occurs with relatively fine and uniform grains.",
+      "The steel is a negative temperature-sensitive and positive strain rate-sensitive material; decreasing strain rate or increasing temperature reduces rheological stress by promoting DRX and dynamic recovery.",
+      "Post-compression water quenching preserves the high-temperature deformed microstructure for metallographic analysis; samples were etched with 30% nitric acid alcohol solution (volume fraction)."
+    ]
+  }
+```

@@ -1,0 +1,1205 @@
+```json
+{
+  "papers": [
+    {
+      "paper_id": "A64",
+      "doi": null,
+      "title": "Alloy Design, Combinatorial Synthesis, and Microstructure–Property Relations for Low-Density Fe-Mn-Al-C Austenitic Steels",
+      "authors": [
+        "D. Raabe",
+        "H. Springer",
+        "I. Gutierrez-Urrutia",
+        "F. Roters",
+        "M. Bausch",
+        "J.-B. Seol",
+        "M. Koyama",
+        "P.-P. Choi",
+        "K. Tsuzaki"
+      ],
+      "publication_year": null,
+      "journal": null,
+      "keywords": [
+        "low-density steel",
+        "TWIP",
+        "Fe-Mn-Al-C",
+        "kappa-carbide",
+        "SIMPLEX",
+        "combinatorial synthesis",
+        "rapid alloy prototyping",
+        "hydrogen embrittlement",
+        "stacking fault energy",
+        "Orowan strengthening"
+      ],
+      "research_type": "experimental",
+      "paper_scope": "Recent developments in low-density Fe-Mn-Al-C austenitic steels covering combinatorial alloy design via rapid alloy prototyping, microstructure-property relations for TWIP and kappa-carbide strengthened grades, constitutive modeling of strain hardening, and hydrogen embrittlement susceptibility."
+    }
+  ],
+  "alloys": [
+    {
+      "alloy_id": "alloy_fe30mn12c_0al",
+      "paper_id": "A64",
+      "alloy_name": "Fe-30Mn-1.2C",
+      "aliases": [],
+      "base_element": "Fe",
+      "alloying_elements": ["Mn", "C"],
+      "nominal_composition": [
+        {"element": "Fe", "weight_percent": "balance", "atomic_percent": null},
+        {"element": "Mn", "weight_percent": "30", "atomic_percent": null},
+        {"element": "C", "weight_percent": "1.2", "atomic_percent": null}
+      ],
+      "alloys_notes": "Reference ternary base alloy for the RAP screening series."
+    },
+    {
+      "alloy_id": "alloy_fe30mn12c_8al",
+      "paper_id": "A64",
+      "alloy_name": "Fe-30Mn-1.2C-8Al",
+      "aliases": [],
+      "base_element": "Fe",
+      "alloying_elements": ["Mn", "Al", "C"],
+      "nominal_composition": [
+        {"element": "Fe", "weight_percent": "balance", "atomic_percent": null},
+        {"element": "Mn", "weight_percent": "30", "atomic_percent": null},
+        {"element": "Al", "weight_percent": "8", "atomic_percent": null},
+        {"element": "C", "weight_percent": "1.2", "atomic_percent": null}
+      ],
+      "alloys_notes": "Highest Al variant in the Fe-30Mn-1.2C-xAl RAP series; density-reduced and susceptible to kappa-carbide precipitation during aging."
+    },
+    {
+      "alloy_id": "alloy_fe20mn04c_8al",
+      "paper_id": "A64",
+      "alloy_name": "Fe-20Mn-0.4C-8Al",
+      "aliases": [],
+      "base_element": "Fe",
+      "alloying_elements": ["Mn", "Al", "C"],
+      "nominal_composition": [
+        {"element": "Fe", "weight_percent": "balance", "atomic_percent": null},
+        {"element": "Mn", "weight_percent": "20", "atomic_percent": null},
+        {"element": "Al", "weight_percent": "8", "atomic_percent": null},
+        {"element": "C", "weight_percent": "0.4", "atomic_percent": null}
+      ],
+      "alloys_notes": "Dual-phase austenite-ferrite low-density TWIP steel variant."
+    },
+    {
+      "alloy_id": "alloy_fe20mn04c_11al",
+      "paper_id": "A64",
+      "alloy_name": "Fe-20Mn-0.4C-11Al",
+      "aliases": [],
+      "base_element": "Fe",
+      "alloying_elements": ["Mn", "Al", "C"],
+      "nominal_composition": [
+        {"element": "Fe", "weight_percent": "balance", "atomic_percent": null},
+        {"element": "Mn", "weight_percent": "20", "atomic_percent": null},
+        {"element": "Al", "weight_percent": "11", "atomic_percent": null},
+        {"element": "C", "weight_percent": "0.4", "atomic_percent": null}
+      ],
+      "alloys_notes": "Higher-Al variant in the Fe-20Mn-0.4C-xAl series; significant ferrite fraction and kappa-carbide tendency."
+    },
+    {
+      "alloy_id": "alloy_fe26mn11al12c",
+      "paper_id": "A64",
+      "alloy_name": "Fe-26Mn-11Al-1.2C",
+      "aliases": [],
+      "base_element": "Fe",
+      "alloying_elements": ["Mn", "Al", "C"],
+      "nominal_composition": [
+        {"element": "Fe", "weight_percent": "balance", "atomic_percent": null},
+        {"element": "Mn", "weight_percent": "26", "atomic_percent": null},
+        {"element": "Al", "weight_percent": "11", "atomic_percent": null},
+        {"element": "C", "weight_percent": "1.2", "atomic_percent": null}
+      ],
+      "alloys_notes": "Kappa-carbide hardened austenitic low-density steel used for hydrogen embrittlement study."
+    },
+    {
+      "alloy_id": "alloy_fe22mn06c",
+      "paper_id": "A64",
+      "alloy_name": "Fe-22Mn-0.6C",
+      "aliases": [],
+      "base_element": "Fe",
+      "alloying_elements": ["Mn", "C"],
+      "nominal_composition": [
+        {"element": "Fe", "weight_percent": "balance", "atomic_percent": null},
+        {"element": "Mn", "weight_percent": "22", "atomic_percent": null},
+        {"element": "C", "weight_percent": "0.6", "atomic_percent": null}
+      ],
+      "alloys_notes": "Model TWIP alloy used for constitutive model validation (data from Ref. 50)."
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_rap_base",
+      "paper_id": "A64",
+      "alloy_id": null,
+      "description": "VIM melting under 400 mbar Ar, casting into Cu molds, hot rolling at 1100°C to 2 mm sheet, reheating to 1100°C and water quenching, homogenization at 1100°C for 2 h under Ar followed by water quenching.",
+      "processes_notes": "Rapid alloy prototyping (RAP) synthesis route used for Fe-30Mn-1.2C-xAl and Fe-20Mn-0.4C-xAl bulk combinatorial screening."
+    },
+    {
+      "process_id": "proc_aging_600c24h",
+      "paper_id": "A64",
+      "alloy_id": null,
+      "description": "Aging at 600°C for 24 h in air followed by oil quenching.",
+      "processes_notes": "Applied to selected Fe-30Mn-1.2C-xAl alloys to precipitate kappa-carbides."
+    },
+    {
+      "process_id": "proc_aging_550c24h",
+      "paper_id": "A64",
+      "alloy_id": null,
+      "description": "Aging at 550°C for 24 h in air followed by oil quenching.",
+      "processes_notes": "Intermediate aging condition producing significant strengthening in high-Al variants."
+    },
+    {
+      "process_id": "proc_as_quenched",
+      "paper_id": "A64",
+      "alloy_id": null,
+      "description": "Reheating to 1100°C and water quenching; homogenized as-quenched state without subsequent aging.",
+      "processes_notes": "Baseline condition for Fe-20Mn-0.4C-xAl series prior to tempering."
+    },
+    {
+      "process_id": "proc_h_charging",
+      "paper_id": "A64",
+      "alloy_id": null,
+      "description": "Hydrogen precharging for 40 min plus permanent in situ hydrogen charging imposed during ongoing tensile tests.",
+      "processes_notes": "Direct hydrogen charging approach used to study hydrogen embrittlement susceptibility."
+    },
+    {
+      "process_id": "proc_compression_temp",
+      "paper_id": "A64",
+      "alloy_id": null,
+      "description": "Compression testing at seven temperatures from 293 K to 873 K with a single coherent parameter set.",
+      "processes_notes": "Validation experiments for the temperature-sensitive constitutive model using a Fe-22Mn-0.6C TWIP model alloy."
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_fe30mn12c_0al_homo",
+      "paper_id": "A64",
+      "alloy_id": "alloy_fe30mn12c_0al",
+      "process_id": "proc_rap_base"
+    },
+    {
+      "sample_id": "sample_fe30mn12c_8al_homo",
+      "paper_id": "A64",
+      "alloy_id": "alloy_fe30mn12c_8al",
+      "process_id": "proc_rap_base"
+    },
+    {
+      "sample_id": "sample_fe30mn12c_8al_600c24h",
+      "paper_id": "A64",
+      "alloy_id": "alloy_fe30mn12c_8al",
+      "process_id": "proc_aging_600c24h"
+    },
+    {
+      "sample_id": "sample_fe20mn04c_8al_aq",
+      "paper_id": "A64",
+      "alloy_id": "alloy_fe20mn04c_8al",
+      "process_id": "proc_as_quenched"
+    },
+    {
+      "sample_id": "sample_fe20mn04c_11al_aq",
+      "paper_id": "A64",
+      "alloy_id": "alloy_fe20mn04c_11al",
+      "process_id": "proc_as_quenched"
+    },
+    {
+      "sample_id": "sample_fe26mn11al12c_h",
+      "paper_id": "A64",
+      "alloy_id": "alloy_fe26mn11al12c",
+      "process_id": "proc_h_charging"
+    },
+    {
+      "sample_id": "sample_fe22mn06c_val",
+      "paper_id": "A64",
+      "alloy_id": "alloy_fe22mn06c",
+      "process_id": "proc_compression_temp"
+    }
+  ],
+  "processing_steps": [
+    {
+      "sample_id": "sample_fe30mn12c_0al_homo",
+      "paper_id": "A64",
+      "sequence": "1",
+      "type": "synthesis",
+      "method": "vacuum induction melting",
+      "temperature": "1100",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Melting and casting in Cu molds under 400 mbar Ar pressure; five alloys synthesized per operation from a 4-kg ingot."
+    },
+    {
+      "sample_id": "sample_fe30mn12c_0al_homo",
+      "paper_id": "A64",
+      "sequence": "2",
+      "type": "thermomechanical_processing",
+      "method": "hot rolling",
+      "temperature": "1100",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Hot rolled to 2 ± 0.1 mm thick sheets (~500 mm long)."
+    },
+    {
+      "sample_id": "sample_fe30mn12c_0al_homo",
+      "paper_id": "A64",
+      "sequence": "3",
+      "type": "heat_treatment",
+      "method": "reheating and water quenching",
+      "temperature": "1100",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Reheated to 1100°C and water quenched before segmenting."
+    },
+    {
+      "sample_id": "sample_fe30mn12c_0al_homo",
+      "paper_id": "A64",
+      "sequence": "4",
+      "type": "heat_treatment",
+      "method": "homogenization",
+      "temperature": "1100",
+      "unit": "°C",
+      "duration": "2 h",
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Homogenized under Ar atmosphere followed by water quenching; as-homogenized reference state."
+    },
+    {
+      "sample_id": "sample_fe30mn12c_8al_600c24h",
+      "paper_id": "A64",
+      "sequence": "5",
+      "type": "heat_treatment",
+      "method": "aging",
+      "temperature": "600",
+      "unit": "°C",
+      "duration": "24 h",
+      "cooling_medium": "oil",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Aging in air followed by oil quenching; scales removed by low-pressure fine-grit sandblasting."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "str_fe30_0al_homo",
+      "sample_id": "sample_fe30mn12c_0al_homo",
+      "overall_structure": "Fully recrystallized single-phase austenite with equiaxed grains",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid-str-fe30-0al-001",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "fcc",
+              "volume_fraction": "100 vol.%",
+              "morphology": "equiaxed",
+              "grain_size": "~20 μm",
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocation substructures/cells",
+              "porosity": "none observed",
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "~20",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "str_fe30_8al_homo",
+      "sample_id": "sample_fe30mn12c_8al_homo",
+      "overall_structure": "Fully recrystallized single-phase austenite; minor retained microsegregations of Mn",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid-str-fe30-8al-homo-001",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "fcc",
+              "volume_fraction": "100 vol.%",
+              "morphology": "equiaxed",
+              "grain_size": "~20 μm",
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "~20",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "str_fe30_8al_aged",
+      "sample_id": "sample_fe30mn12c_8al_600c24h",
+      "overall_structure": "Austenitic matrix with regularly arranged nanosized kappa-carbide precipitates",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid-str-fe30-8al-aged-001",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "fcc",
+              "volume_fraction": null,
+              "morphology": "matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "kappa-carbide",
+              "crystal_structure": "L'1₂ ordered fcc",
+              "volume_fraction": null,
+              "morphology": "cuboidal nanoprecipitates",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "kp-001",
+              "type": "kappa-carbide (non-oxide perovskite, approximate (Fe,Mn)₃AlC)",
+              "size": {
+                "value": "nanosized",
+                "unit": "nm"
+              },
+              "distribution": "regularly arranged in austenitic matrix",
+              "coherency": "coherent with lattice mismatch below 3%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "structure_id": "str_fe20_8al_aq",
+      "sample_id": "sample_fe20mn04c_8al_aq",
+      "overall_structure": "Dual-phase austenite and ferrite",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid-str-fe20-8al-001",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "fcc",
+              "volume_fraction": "~63 vol.%",
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "ferrite",
+              "crystal_structure": "bcc",
+              "volume_fraction": "~37 vol.%",
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "str_fe26_11al_h",
+      "sample_id": "sample_fe26mn11al12c_h",
+      "overall_structure": "Kappa-carbide hardened austenite with hydrogen-induced damage",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid-str-fe26-11al-001",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "fcc",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "kappa-carbide",
+              "crystal_structure": "L'1₂ ordered fcc",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "planar slip localization and grain boundary voids",
+              "porosity": "microvoid chains along grain boundaries",
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "int_fe30_8al_001",
+      "sample_id": "sample_fe30mn12c_8al_600c24h",
+      "phases": [
+        {
+          "interface_id": "int-ph-001",
+          "microstructure_uuid": "uuid-str-fe30-8al-aged-001",
+          "phase_1_name": "austenite",
+          "phase_2_name": "kappa-carbide",
+          "coherence": "coherent; lattice mismatch below 3%"
+        }
+      ],
+      "defect_interaction": [
+        {
+          "interaction_id": "int-def-001",
+          "microstructure_uuid": "uuid-str-fe30-8al-aged-001",
+          "interaction_type": "Dislocation bypassing and shearing of kappa-carbide rods",
+          "quality_description": "Orowan bypassing of longitudinal rods with dislocation loop expansion assisted by cross-slip; minor shearing of kappa-carbide interfaces under high local stress"
+        }
+      ],
+      "interface_notes": [],
+      "phase_evolution": "Kappa-carbides thermally stable at 600°C, persisting after 100 h with only modest coarsening; form during aging at 500–600°C or during quenching for Al > 10 wt.%."
+    },
+    {
+      "interface_set_id": "int_fe26_11al_001",
+      "sample_id": "sample_fe26mn11al12c_h",
+      "phases": [],
+      "defect_interaction": [],
+      "interface_notes": [
+        {
+          "stress_strain_distribution": "Pronounced planar slip localization leads to high stress concentrations at grain boundaries"
+        },
+        {
+          "slippage_situation": "Hydrogen-assisted planar slip promotes grain boundary void coalescence and intergranular cracking"
+        }
+      ],
+      "phase_evolution": null
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_fe30_0al_homo",
+      "sample_id": "sample_fe30mn12c_0al_homo",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "360",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "830",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "77",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_fe30_8al_homo",
+      "sample_id": "sample_fe30mn12c_8al_homo",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "510",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "720",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "72",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_fe30_8al_600c24h",
+      "sample_id": "sample_fe30mn12c_8al_600c24h",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "830",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "930",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "10",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": null,
+            "value": "330",
+            "scale": null,
+            "unit": null
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_fe20_8al_aq",
+      "sample_id": "sample_fe20mn04c_8al_aq",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "690",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "50",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_fe20_11al_aq",
+      "sample_id": "sample_fe20mn04c_11al_aq",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "800",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "15",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_fe26_11al_h",
+      "sample_id": "sample_fe26mn11al12c_h",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "1000",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_fe22_06c",
+      "sample_id": "sample_fe22mn06c_val",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_fe26_11al_h",
+      "sample_id": "sample_fe26mn11al12c_h",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": "293",
+          "max": "293",
+          "unit": "K"
+        },
+        "stress_state": "uniaxial tension",
+        "environment": "Hydrogen charging (precharging 40 min + permanent in situ charging during tensile testing)"
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy": null,
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_001",
+      "sample_id": "sample_fe30mn12c_8al_600c24h",
+      "microstructure_uuid": null,
+      "technique": "X-ray diffraction (XRD)",
+      "purpose": "Phase identification across RAP sample matrix",
+      "key_findings": "Confirmed austenite and kappa-carbide reflections; absence of epsilon-martensite in selected high-Al aged conditions."
+    },
+    {
+      "characterization_id": "char_002",
+      "sample_id": "sample_fe30mn12c_8al_600c24h",
+      "microstructure_uuid": "uuid-str-fe30-8al-aged-001",
+      "technique": "Transmission Electron Microscopy (TEM)",
+      "purpose": "Microstructural analysis of precipitate morphology and distribution",
+      "key_findings": "Observed regularly arranged nanosized cuboidal kappa-carbide precipitates in austenitic matrix."
+    },
+    {
+      "characterization_id": "char_003",
+      "sample_id": "sample_fe30mn12c_8al_600c24h",
+      "microstructure_uuid": "uuid-str-fe30-8al-aged-001",
+      "technique": "Atom Probe Tomography (APT)",
+      "purpose": "Chemical compositional analysis of nanosized precipitates",
+      "key_findings": "Kappa-carbide exhibits approximate stoichiometry (Fe,Mn)3AlC with C ~5 at.% and Fe/Mn/Al enrichments matching the L'1₂ structure."
+    },
+    {
+      "characterization_id": "char_004",
+      "sample_id": "sample_fe26mn11al12c_h",
+      "microstructure_uuid": null,
+      "technique": "Electron Backscatter Diffraction (EBSD) and Electron Channeling Contrast Imaging (ECCI)",
+      "purpose": "Hydrogen damage micromechanisms and slip localization",
+      "key_findings": "Cracking initiated at grain boundary triple junctions; chain-like microvoids formed along grain boundaries associated with pronounced planar slip localization."
+    },
+    {
+      "characterization_id": "char_005",
+      "sample_id": "sample_fe26mn11al12c_h",
+      "microstructure_uuid": null,
+      "technique": "Thermal Desorption Analysis",
+      "purpose": "Hydrogen trapping characterization",
+      "key_findings": "Kappa-carbides act as hydrogen trap sites with estimated activation energy of ~76–80 kJ/mol from Redlich-Kister analysis."
+    },
+    {
+      "characterization_id": "char_006",
+      "sample_id": "sample_fe22mn06c_val",
+      "microstructure_uuid": null,
+      "technique": "Compression mechanical testing",
+      "purpose": "Constitutive model validation across temperatures",
+      "key_findings": "Experimental true stress-strain and strain-hardening curves matched simulation across 293K–873K using a single coherent parameter set."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_001",
+      "sample_id": "sample_fe22mn06c_val",
+      "simulation_method": "Crystal plasticity constitutive model for fcc metals with low stacking fault energy and mechanical twinning; three-internal-variable dislocation density framework with twin nucleation",
+      "software_used": null,
+      "potential_model": null,
+      "validation_against_experiment": "Validated against experimental true stress-strain compression curves and strain-hardening curves of Fe-22wt.%Mn-0.6wt.%C TWIP steel at temperatures from 293 K to 873 K using one coherent parameter set.",
+      "analytical_model": [
+        {
+          "model_name": "Steinmetz-Roters temperature-sensitive twinning dislocation density model",
+          "equation_role": "Evolution of dislocation densities rho_c, rho_w, rho_d and twin volume fraction f_tw; mean free path including twin and grain boundary contributions; glide resistance and activation energy for slip",
+          "parameters": "b=2.56 Å, M=3.06, n=3, D0=4.0×10^-5 m²/s, fc=0.9, fw=0.1, twin width e=30 nm, p and q fitting parameters, Qs activation energy for slip, Qc vacancy formation and migration energy",
+          "model_note": "Extends Roters three-internal-variable model with Mahajan-Chin twin nucleation; harmonic mean free path for cell interior and walls; resolved shear stress calculated separately for cell interior and walls; can be extended to include kappa-carbide Orowan looping."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Fig. 4 selected tensile strength for Fe-30Mn-1.2C-0Al (~500 MPa) deviates from Fig. 3b and text (~820–830 MPa as-homogenized), likely reflecting different data selections or conditions.",
+    "Fe-30Mn-1.2C-8Al exhibits pronounced age strengthening during 500–600°C aging; after 24 h at 600°C, YS ~830 MPa, UTS ~930 MPa, hardness ~330, and TE drops to ~10% due to nanosized kappa-carbide precipitation.",
+    "Kappa-carbides in Fe-Mn-Al-C steels show high thermal stability at 600°C, persisting after 100 h with only modest coarsening, and possess a wide compositional existence range.",
+    "For Al > 10 wt.%, kappa-carbides can form during quenching; the exact strain-hardening mechanism for as-quenched kappa-carbide steels remains under investigation.",
+    "Low-density TWIP (SIMPLEX) steels with 25–30 wt.% Mn and <4–5 wt.% Al deform by dislocation hardening followed by massive mechanical twinning, providing specific energy absorption up to ~0.54 J/mm³, exceeding conventional deep-drawing steels.",
+    "Hydrogen embrittlement in Fe-26Mn-11Al-1.2C involves grain boundary triple junction cracking and microvoid chain formation along grain boundaries linked to planar slip localization induced by kappa-carbides.",
+    "Fig. 8 EBSD/ECCI data (inverse pole figure, KAM map, orientation-optimized ECCI) reveal slip localization and grain boundary damage in hydrogen-charged low-density steel, but pixel-level image details are not provided in the text pipeline."
+  ]
+}
+```

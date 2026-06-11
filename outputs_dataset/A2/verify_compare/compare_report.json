@@ -1,0 +1,66 @@
+{
+  "paper_id": "A2",
+  "score_formula": {
+    "correctness_mapping": {
+      "yes": 1.0,
+      "partial": 0.6,
+      "unknown": 0.3,
+      "no": 0.0
+    },
+    "field_score": "correctness_score * evidence_confidence * 100",
+    "sample_score": "sum(field_score * field_weight) / sum(field_weight)",
+    "paper_score": "sum(sample_score * sample_weight) / sum(sample_weight)",
+    "sample_weight": "sum(field_weight for fields in this sample group)",
+    "gate_rule": "if structure gate fails, paper_score = 0",
+    "field_weight_rules": {
+      "structures/properties/performance": 1.5,
+      "samples/processing_steps/interfaces": 1.3,
+      "papers/unmapped_findings": 0.7,
+      "default": 1.0
+    }
+  },
+  "before": {
+    "target_kind": "final_original",
+    "target_path": "/Users/mac/Desktop/SteelDig/SteelDig_multimodal/outputs_dataset/A2/final/text_extraction.json",
+    "paper_score": 78.97277739490008,
+    "field_count": 236,
+    "sample_count": 9,
+    "gate_ok": true,
+    "llm_error_count": 0,
+    "summary": {
+      "avg_sample_score": 78.97277739490008,
+      "field_count": 236,
+      "yes_count": 184,
+      "partial_count": 24,
+      "unknown_count": 21,
+      "no_count": 7
+    }
+  },
+  "after": {
+    "target_kind": "verify_fixed",
+    "target_path": "/Users/mac/Desktop/SteelDig/SteelDig_multimodal/outputs_dataset/A2/verify/text_extraction_fixed.json",
+    "paper_score": 81.3855961405927,
+    "field_count": 236,
+    "sample_count": 9,
+    "gate_ok": true,
+    "llm_error_count": 0,
+    "summary": {
+      "avg_sample_score": 81.3855961405927,
+      "field_count": 236,
+      "yes_count": 198,
+      "partial_count": 21,
+      "unknown_count": 15,
+      "no_count": 2
+    }
+  },
+  "delta": {
+    "paper_score": 2.4128187456926184,
+    "field_count": 0,
+    "target": "after_verify - before_final"
+  },
+  "paths": {
+    "before_report": "/Users/mac/Desktop/SteelDig/SteelDig_multimodal/outputs_dataset/A2/verify_compare/before_final/quality_report.json",
+    "after_report": "/Users/mac/Desktop/SteelDig/SteelDig_multimodal/outputs_dataset/A2/verify_compare/after_verify/quality_report.json"
+  },
+  "llm_error_count": 0
+}

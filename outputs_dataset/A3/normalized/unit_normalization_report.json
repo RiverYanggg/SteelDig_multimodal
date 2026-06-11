@@ -1,0 +1,720 @@
+{
+  "paper_id": "A3",
+  "source_path": "/Users/mac/Desktop/SteelDig/SteelDig_multimodal/outputs_dataset/A3/final/text_extraction.json",
+  "target_unit_policy": {
+    "temperature": "°C",
+    "duration": "h",
+    "stress": "MPa",
+    "length": "μm",
+    "percent": "%",
+    "hardness": "HV",
+    "density": "g/cm^3",
+    "mass_gain": "mg/cm^2",
+    "energy_density": "mJ/m^2",
+    "fracture_toughness": "MPa·m^0.5",
+    "rate": "s^-1"
+  },
+  "summary": {
+    "converted_count": 9,
+    "unchanged_count": 7,
+    "skipped_count": 13,
+    "ambiguous_count": 32
+  },
+  "changes": [
+    {
+      "path": "$.processing_steps[0]",
+      "quantity_kind": "temperature",
+      "status": "converted",
+      "reason": "normalized temperature to °C",
+      "original": {
+        "unit": "K",
+        "temperature": "1423"
+      },
+      "normalized": {
+        "unit": "°C",
+        "temperature": "1149.85"
+      }
+    },
+    {
+      "path": "$.processing_steps[0].duration",
+      "quantity_kind": "duration",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": "2.5 h",
+      "normalized": "2.5 h"
+    },
+    {
+      "path": "$.processing_steps[1]",
+      "quantity_kind": "temperature",
+      "status": "converted",
+      "reason": "normalized temperature to °C",
+      "original": {
+        "unit": "K",
+        "temperature": "1323"
+      },
+      "normalized": {
+        "unit": "°C",
+        "temperature": "1049.85"
+      }
+    },
+    {
+      "path": "$.processing_steps[2]",
+      "quantity_kind": "temperature",
+      "status": "converted",
+      "reason": "normalized temperature to °C",
+      "original": {
+        "unit": "K",
+        "temperature": "1423"
+      },
+      "normalized": {
+        "unit": "°C",
+        "temperature": "1149.85"
+      }
+    },
+    {
+      "path": "$.processing_steps[2].duration",
+      "quantity_kind": "duration",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": "2.5 h",
+      "normalized": "2.5 h"
+    },
+    {
+      "path": "$.processing_steps[3]",
+      "quantity_kind": "temperature",
+      "status": "converted",
+      "reason": "normalized temperature to °C",
+      "original": {
+        "unit": "K",
+        "temperature": "1323"
+      },
+      "normalized": {
+        "unit": "°C",
+        "temperature": "1049.85"
+      }
+    },
+    {
+      "path": "$.processing_steps[4].temperature",
+      "quantity_kind": null,
+      "status": "ambiguous",
+      "reason": "cannot parse numeric value",
+      "original": {
+        "value": "room temperature",
+        "unit": "K"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.processing_steps[5]",
+      "quantity_kind": "temperature",
+      "status": "converted",
+      "reason": "normalized temperature to °C",
+      "original": {
+        "unit": "K",
+        "temperature": "1423"
+      },
+      "normalized": {
+        "unit": "°C",
+        "temperature": "1149.85"
+      }
+    },
+    {
+      "path": "$.processing_steps[5].duration",
+      "quantity_kind": "duration",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": "2.5 h",
+      "normalized": "2.5 h"
+    },
+    {
+      "path": "$.processing_steps[6]",
+      "quantity_kind": "temperature",
+      "status": "converted",
+      "reason": "normalized temperature to °C",
+      "original": {
+        "unit": "K",
+        "temperature": "1323"
+      },
+      "normalized": {
+        "unit": "°C",
+        "temperature": "1049.85"
+      }
+    },
+    {
+      "path": "$.processing_steps[7].temperature",
+      "quantity_kind": null,
+      "status": "ambiguous",
+      "reason": "cannot parse numeric value",
+      "original": {
+        "value": "room temperature",
+        "unit": "K"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.processing_steps[8]",
+      "quantity_kind": "temperature",
+      "status": "converted",
+      "reason": "normalized temperature to °C",
+      "original": {
+        "unit": "K",
+        "temperature": "973"
+      },
+      "normalized": {
+        "unit": "°C",
+        "temperature": "699.85"
+      }
+    },
+    {
+      "path": "$.processing_steps[8].duration",
+      "quantity_kind": "duration",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": "1 h",
+      "normalized": "1 h"
+    },
+    {
+      "path": "$.structures[0].microstructure_list[0].grain_structure.average_grain_size",
+      "quantity_kind": "length",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": {
+        "unit": "μm",
+        "value": "5-7"
+      },
+      "normalized": {
+        "unit": "μm",
+        "value": "5-7"
+      }
+    },
+    {
+      "path": "$.structures[1].microstructure_list[0].grain_structure.average_grain_size",
+      "quantity_kind": "length",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": {
+        "unit": "μm",
+        "value": "2.5"
+      },
+      "normalized": {
+        "unit": "μm",
+        "value": "2.5"
+      }
+    },
+    {
+      "path": "$.structures[1].microstructure_list[0].precipitates[0].size",
+      "quantity_kind": "length",
+      "status": "converted",
+      "reason": "normalized length to μm",
+      "original": {
+        "unit": "nm",
+        "value": "10-60"
+      },
+      "normalized": {
+        "unit": "μm",
+        "value": "0.01-0.06"
+      }
+    },
+    {
+      "path": "$.structures[1].microstructure_list[1].precipitates[0].size",
+      "quantity_kind": "length",
+      "status": "converted",
+      "reason": "normalized length to μm",
+      "original": {
+        "unit": "nm",
+        "value": "10-60"
+      },
+      "normalized": {
+        "unit": "μm",
+        "value": "0.01-0.06"
+      }
+    },
+    {
+      "path": "$.structures[1].microstructure_list[1].precipitates[1].size",
+      "quantity_kind": "length",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": {
+        "unit": "μm",
+        "value": "0.5-1.5"
+      },
+      "normalized": {
+        "unit": "μm",
+        "value": "0.5-1.5"
+      }
+    },
+    {
+      "path": "$.properties[0].mechanical.tensile_properties.yield_strength[0].value",
+      "quantity_kind": null,
+      "status": "ambiguous",
+      "reason": "cannot parse numeric value",
+      "original": {
+        "value": "1350 ± 10",
+        "unit": "MPa"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.properties[0].mechanical.tensile_properties.ultimate_tensile_strength[0].value",
+      "quantity_kind": null,
+      "status": "ambiguous",
+      "reason": "cannot parse numeric value",
+      "original": {
+        "value": "1500 ± 10",
+        "unit": "MPa"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.properties[0].mechanical.tensile_properties.elongation[0].value",
+      "quantity_kind": null,
+      "status": "ambiguous",
+      "reason": "cannot parse numeric value",
+      "original": {
+        "value": "10 ± 0.4",
+        "unit": "%"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.properties[0].mechanical.hardness[0]",
+      "quantity_kind": "hardness",
+      "status": "skipped",
+      "reason": "unsupported conversion VHN -> HV",
+      "original": {
+        "unit": "VHN",
+        "value": "430"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.properties[1].mechanical.tensile_properties.yield_strength[0].value",
+      "quantity_kind": null,
+      "status": "ambiguous",
+      "reason": "cannot parse numeric value",
+      "original": {
+        "value": "884 ± 6",
+        "unit": "MPa"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.properties[1].mechanical.tensile_properties.ultimate_tensile_strength[0].value",
+      "quantity_kind": null,
+      "status": "ambiguous",
+      "reason": "cannot parse numeric value",
+      "original": {
+        "value": "1162 ± 10",
+        "unit": "MPa"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.properties[1].mechanical.tensile_properties.elongation[0].value",
+      "quantity_kind": null,
+      "status": "ambiguous",
+      "reason": "cannot parse numeric value",
+      "original": {
+        "value": "23 ± 0.5",
+        "unit": "%"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.properties[1].mechanical.tensile_properties.strain_hardening_rate[0]",
+      "quantity_kind": "stress",
+      "status": "skipped",
+      "reason": "unsupported conversion dimensionless -> MPa",
+      "original": {
+        "unit": "dimensionless",
+        "value": "0.16"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.properties[1].mechanical.hardness[0]",
+      "quantity_kind": "hardness",
+      "status": "skipped",
+      "reason": "unsupported conversion VHN -> HV",
+      "original": {
+        "unit": "VHN",
+        "value": "340"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.properties[2].mechanical.tensile_properties.yield_strength[0].value",
+      "quantity_kind": null,
+      "status": "ambiguous",
+      "reason": "cannot parse numeric value",
+      "original": {
+        "value": "732 ± 2",
+        "unit": "MPa"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.properties[2].mechanical.tensile_properties.ultimate_tensile_strength[0].value",
+      "quantity_kind": null,
+      "status": "ambiguous",
+      "reason": "cannot parse numeric value",
+      "original": {
+        "value": "1051 ± 5",
+        "unit": "MPa"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.properties[2].mechanical.tensile_properties.elongation[0].value",
+      "quantity_kind": null,
+      "status": "ambiguous",
+      "reason": "cannot parse numeric value",
+      "original": {
+        "value": "36 ± 2",
+        "unit": "%"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.properties[2].mechanical.tensile_properties.strain_hardening_rate[0]",
+      "quantity_kind": "stress",
+      "status": "skipped",
+      "reason": "unsupported conversion dimensionless -> MPa",
+      "original": {
+        "unit": "dimensionless",
+        "value": "0.30"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.properties[3].mechanical.tensile_properties.yield_strength[0].value",
+      "quantity_kind": null,
+      "status": "ambiguous",
+      "reason": "cannot parse numeric value",
+      "original": {
+        "value": "504 ± 5",
+        "unit": "MPa"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.properties[3].mechanical.tensile_properties.ultimate_tensile_strength[0].value",
+      "quantity_kind": null,
+      "status": "ambiguous",
+      "reason": "cannot parse numeric value",
+      "original": {
+        "value": "905 ± 8",
+        "unit": "MPa"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.properties[3].mechanical.tensile_properties.elongation[0].value",
+      "quantity_kind": null,
+      "status": "ambiguous",
+      "reason": "cannot parse numeric value",
+      "original": {
+        "value": "86 ± 2",
+        "unit": "%"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.properties[3].mechanical.tensile_properties.strain_hardening_rate[0]",
+      "quantity_kind": "stress",
+      "status": "skipped",
+      "reason": "unsupported conversion dimensionless -> MPa",
+      "original": {
+        "unit": "dimensionless",
+        "value": "0.50"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.properties[3].mechanical.hardness[0]",
+      "quantity_kind": "hardness",
+      "status": "skipped",
+      "reason": "unsupported conversion VHN -> HV",
+      "original": {
+        "unit": "VHN",
+        "value": "240"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.properties[4].mechanical.tensile_properties.yield_strength[0].value",
+      "quantity_kind": null,
+      "status": "ambiguous",
+      "reason": "cannot parse numeric value",
+      "original": {
+        "value": "1394 ± 5",
+        "unit": "MPa"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.properties[4].mechanical.tensile_properties.ultimate_tensile_strength[0].value",
+      "quantity_kind": null,
+      "status": "ambiguous",
+      "reason": "cannot parse numeric value",
+      "original": {
+        "value": "1571 ± 5",
+        "unit": "MPa"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.properties[4].mechanical.tensile_properties.elongation[0].value",
+      "quantity_kind": null,
+      "status": "ambiguous",
+      "reason": "cannot parse numeric value",
+      "original": {
+        "value": "11 ± 0.4",
+        "unit": "%"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.properties[4].mechanical.hardness[0]",
+      "quantity_kind": "hardness",
+      "status": "skipped",
+      "reason": "unsupported conversion VHN -> HV",
+      "original": {
+        "unit": "VHN",
+        "value": "450"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.properties[5].mechanical.tensile_properties.yield_strength[0].value",
+      "quantity_kind": null,
+      "status": "ambiguous",
+      "reason": "cannot parse numeric value",
+      "original": {
+        "value": "1450 ± 15",
+        "unit": "MPa"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.properties[5].mechanical.tensile_properties.ultimate_tensile_strength[0].value",
+      "quantity_kind": null,
+      "status": "ambiguous",
+      "reason": "cannot parse numeric value",
+      "original": {
+        "value": "1645 ± 10",
+        "unit": "MPa"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.properties[5].mechanical.tensile_properties.elongation[0].value",
+      "quantity_kind": null,
+      "status": "ambiguous",
+      "reason": "cannot parse numeric value",
+      "original": {
+        "value": "5 ± 1",
+        "unit": "%"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.properties[5].mechanical.hardness[0]",
+      "quantity_kind": "hardness",
+      "status": "skipped",
+      "reason": "unsupported conversion VHN -> HV",
+      "original": {
+        "unit": "VHN",
+        "value": "450"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.properties[6].mechanical.tensile_properties.yield_strength[0].value",
+      "quantity_kind": null,
+      "status": "ambiguous",
+      "reason": "cannot parse numeric value",
+      "original": {
+        "value": "1289 ± 2",
+        "unit": "MPa"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.properties[6].mechanical.tensile_properties.ultimate_tensile_strength[0].value",
+      "quantity_kind": null,
+      "status": "ambiguous",
+      "reason": "cannot parse numeric value",
+      "original": {
+        "value": "1537 ± 2",
+        "unit": "MPa"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.properties[6].mechanical.tensile_properties.elongation[0].value",
+      "quantity_kind": null,
+      "status": "ambiguous",
+      "reason": "cannot parse numeric value",
+      "original": {
+        "value": "17 ± 1",
+        "unit": "%"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.properties[7].mechanical.tensile_properties.yield_strength[0].value",
+      "quantity_kind": null,
+      "status": "ambiguous",
+      "reason": "cannot parse numeric value",
+      "original": {
+        "value": "900 ± 4",
+        "unit": "MPa"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.properties[7].mechanical.tensile_properties.ultimate_tensile_strength[0].value",
+      "quantity_kind": null,
+      "status": "ambiguous",
+      "reason": "cannot parse numeric value",
+      "original": {
+        "value": "1236 ± 5",
+        "unit": "MPa"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.properties[7].mechanical.tensile_properties.elongation[0].value",
+      "quantity_kind": null,
+      "status": "ambiguous",
+      "reason": "cannot parse numeric value",
+      "original": {
+        "value": "39 ± 1",
+        "unit": "%"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.properties[7].mechanical.tensile_properties.strain_hardening_rate[0]",
+      "quantity_kind": "stress",
+      "status": "skipped",
+      "reason": "unsupported conversion dimensionless -> MPa",
+      "original": {
+        "unit": "dimensionless",
+        "value": "0.30"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.properties[7].mechanical.hardness[0]",
+      "quantity_kind": "hardness",
+      "status": "skipped",
+      "reason": "unsupported conversion VHN -> HV",
+      "original": {
+        "unit": "VHN",
+        "value": "330"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.properties[8].mechanical.tensile_properties.yield_strength[0].value",
+      "quantity_kind": null,
+      "status": "ambiguous",
+      "reason": "cannot parse numeric value",
+      "original": {
+        "value": "1665 ± 12",
+        "unit": "MPa"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.properties[8].mechanical.tensile_properties.ultimate_tensile_strength[0].value",
+      "quantity_kind": null,
+      "status": "ambiguous",
+      "reason": "cannot parse numeric value",
+      "original": {
+        "value": "1800 ± 15",
+        "unit": "MPa"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.properties[8].mechanical.tensile_properties.elongation[0].value",
+      "quantity_kind": null,
+      "status": "ambiguous",
+      "reason": "cannot parse numeric value",
+      "original": {
+        "value": "7 ± 0.5",
+        "unit": "%"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.properties[8].mechanical.hardness[0]",
+      "quantity_kind": "hardness",
+      "status": "skipped",
+      "reason": "unsupported conversion VHN -> HV",
+      "original": {
+        "unit": "VHN",
+        "value": "460"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.properties[9].mechanical.tensile_properties.yield_strength[0].value",
+      "quantity_kind": null,
+      "status": "ambiguous",
+      "reason": "cannot parse numeric value",
+      "original": {
+        "value": "971 ± 5",
+        "unit": "MPa"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.properties[9].mechanical.tensile_properties.ultimate_tensile_strength[0].value",
+      "quantity_kind": null,
+      "status": "ambiguous",
+      "reason": "cannot parse numeric value",
+      "original": {
+        "value": "1303 ± 12",
+        "unit": "MPa"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.properties[9].mechanical.tensile_properties.elongation[0].value",
+      "quantity_kind": null,
+      "status": "ambiguous",
+      "reason": "cannot parse numeric value",
+      "original": {
+        "value": "36 ± 1",
+        "unit": "%"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.properties[9].mechanical.tensile_properties.strain_hardening_rate[0]",
+      "quantity_kind": "stress",
+      "status": "skipped",
+      "reason": "unsupported conversion dimensionless -> MPa",
+      "original": {
+        "unit": "dimensionless",
+        "value": "0.30"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.properties[9].mechanical.hardness[0]",
+      "quantity_kind": "hardness",
+      "status": "skipped",
+      "reason": "unsupported conversion VHN -> HV",
+      "original": {
+        "unit": "VHN",
+        "value": "340"
+      },
+      "normalized": null
+    }
+  ]
+}

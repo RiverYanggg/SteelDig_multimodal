@@ -1,0 +1,832 @@
+{
+  "papers": [
+    {
+      "paper_id": "A60",
+      "doi": "10.1016/j.corsci.2025.113331",
+      "title": "Enhancing the corrosion resistance of low-density steels via Al-rich oxide film formation by grain size optimization",
+      "authors": [
+        "Guang Yang",
+        "Li Wang",
+        "Xiaoqian Fu",
+        "Yucheng Ji",
+        "Wenquan Cao",
+        "Cunyu Wang",
+        "Jianxiong Liang",
+        "Chaofang Dong"
+      ],
+      "publication_year": "2025",
+      "journal": "Corrosion Science",
+      "keywords": [
+        "Low-density steels",
+        "Grain size",
+        "Microstructure",
+        "Oxide film",
+        "Corrosion resistance"
+      ],
+      "research_type": "experimental",
+      "paper_scope": "This study investigates the effects of grain size on oxide film formation and corrosion behavior of Fe-Mn-Al-C low-density steels (LDSs). LDSs with grain sizes ranging from 8.7 μm to 32 μm are prepared by adjusting solution treatment temperature between 950 ℃ and 1150 ℃, revealing that grain refinement promotes the formation of uniform and stable Al-rich oxide film, thus improving corrosion resistance."
+    }
+  ],
+  "alloys": [
+    {
+      "alloy_id": "alloy_fe30mn89al09c",
+      "paper_id": "A60",
+      "alloy_name": "Fe-Mn-Al-C low-density steel",
+      "aliases": [
+        "LDSs"
+      ],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Al",
+        "C"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Mn",
+          "weight_percent": "30.34",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "8.93",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.9",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": null
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_lds_01",
+      "paper_id": "A60",
+      "alloy_id": "alloy_fe30mn89al09c",
+      "description": "Steel ingot homogenized at 1200 ℃ for 2 h, hot rolled at 1200–950 ℃ into 20 mm thick slabs, quenched in water, no subsequent solution treatment (sample S0)",
+      "processes_notes": null
+    },
+    {
+      "process_id": "proc_lds_02",
+      "paper_id": "A60",
+      "alloy_id": "alloy_fe30mn89al09c",
+      "description": "Pre-treated as S0, then solution treated at 950 ℃ for 2 h followed by water quenching (sample S950)",
+      "processes_notes": null
+    },
+    {
+      "process_id": "proc_lds_03",
+      "paper_id": "A60",
+      "alloy_id": "alloy_fe30mn89al09c",
+      "description": "Pre-treated as S0, then solution treated at 1050 ℃ for 2 h followed by water quenching (sample S1050)",
+      "processes_notes": null
+    },
+    {
+      "process_id": "proc_lds_04",
+      "paper_id": "A60",
+      "alloy_id": "alloy_fe30mn89al09c",
+      "description": "Pre-treated as S0, then solution treated at 1150 ℃ for 2 h followed by water quenching (sample S1150)",
+      "processes_notes": null
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_lds_01",
+      "paper_id": "A60",
+      "alloy_id": "alloy_fe30mn89al09c",
+      "process_id": "proc_lds_01"
+    },
+    {
+      "sample_id": "sample_lds_02",
+      "paper_id": "A60",
+      "alloy_id": "alloy_fe30mn89al09c",
+      "process_id": "proc_lds_02"
+    },
+    {
+      "sample_id": "sample_lds_03",
+      "paper_id": "A60",
+      "alloy_id": "alloy_fe30mn89al09c",
+      "process_id": "proc_lds_03"
+    },
+    {
+      "sample_id": "sample_lds_04",
+      "paper_id": "A60",
+      "alloy_id": "alloy_fe30mn89al09c",
+      "process_id": "proc_lds_04"
+    }
+  ],
+  "processing_steps": [
+    {
+      "sample_id": "sample_lds_01",
+      "paper_id": "A60",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "homogenization",
+      "temperature": "1200",
+      "unit": "℃",
+      "duration": "2",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_lds_01",
+      "paper_id": "A60",
+      "sequence": "2",
+      "type": "thermomechanical_processing",
+      "method": "hot rolling",
+      "temperature": "1200-950",
+      "unit": "℃",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Rolled into 20 mm thick slabs"
+    },
+    {
+      "sample_id": "sample_lds_01",
+      "paper_id": "A60",
+      "sequence": "3",
+      "type": "cooling",
+      "method": "water quenching",
+      "temperature": null,
+      "unit": null,
+      "duration": null,
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Quenched to room temperature"
+    },
+    {
+      "sample_id": "sample_lds_02",
+      "paper_id": "A60",
+      "sequence": "4",
+      "type": "heat_treatment",
+      "method": "solution treatment",
+      "temperature": "950",
+      "unit": "℃",
+      "duration": "2",
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Quenched to room temperature after solution treatment"
+    },
+    {
+      "sample_id": "sample_lds_03",
+      "paper_id": "A60",
+      "sequence": "4",
+      "type": "heat_treatment",
+      "method": "solution treatment",
+      "temperature": "1050",
+      "unit": "℃",
+      "duration": "2",
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Quenched to room temperature after solution treatment"
+    },
+    {
+      "sample_id": "sample_lds_04",
+      "paper_id": "A60",
+      "sequence": "4",
+      "type": "heat_treatment",
+      "method": "solution treatment",
+      "temperature": "1150",
+      "unit": "℃",
+      "duration": "2",
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Quenched to room temperature after solution treatment"
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_01",
+      "sample_id": "sample_lds_01",
+      "overall_structure": "Single-phase face-centered cubic (FCC) austenite with non-uniform grain size, κ-carbides and high dislocation density",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_micro_001",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "equiaxed + deformed grains",
+              "grain_size": null,
+              "texture": "random orientation"
+            },
+            {
+              "phase_name": "κ-carbide",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "nanoscale precipitates",
+              "grain_size": "5-10",
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocations, low-angle grain boundaries (LAGBs)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "high",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": "μm"
+            },
+            "grain_size_distribution": "non-uniform, mix of large deformed grains and fragmented small grains",
+            "texture": "random orientation"
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_01",
+              "type": "κ-carbide",
+              "size": {
+                "value": "5-10",
+                "unit": "nm"
+              },
+              "distribution": "irregularly distributed in matrix",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_02",
+      "sample_id": "sample_lds_02",
+      "overall_structure": "Single-phase FCC austenite with fine grains, high density of annealing twin boundaries (ATBs) and high-angle grain boundaries (HAGBs)",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_micro_002",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": "100",
+              "morphology": "equiaxed grains",
+              "grain_size": "8.7",
+              "texture": "random orientation"
+            }
+          ],
+          "defects": [
+            {
+              "type": "low dislocation density, ATBs, HAGBs",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "low",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "8.7",
+              "unit": "μm"
+            },
+            "grain_size_distribution": "uniform",
+            "texture": "random orientation"
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_03",
+      "sample_id": "sample_lds_03",
+      "overall_structure": "Single-phase FCC austenite with medium grain size, moderate density of ATBs and HAGBs",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_micro_003",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": "100",
+              "morphology": "equiaxed grains",
+              "grain_size": null,
+              "texture": "random orientation"
+            }
+          ],
+          "defects": [
+            {
+              "type": "low dislocation density, ATBs, HAGBs",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "low",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": "μm"
+            },
+            "grain_size_distribution": "uniform",
+            "texture": "random orientation"
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_04",
+      "sample_id": "sample_lds_04",
+      "overall_structure": "Single-phase FCC austenite with coarse grains, low density of ATBs and HAGBs",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_micro_004",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": "100",
+              "morphology": "equiaxed grains",
+              "grain_size": "32",
+              "texture": "random orientation"
+            }
+          ],
+          "defects": [
+            {
+              "type": "low dislocation density, ATBs, HAGBs",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "low",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "32",
+              "unit": "μm"
+            },
+            "grain_size_distribution": "uniform",
+            "texture": "random orientation"
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "if_set_01",
+      "sample_id": "sample_lds_02",
+      "phases": [
+        {
+          "interface_id": "if_001",
+          "microstructure_uuid": "uuid_micro_002",
+          "phase_1_name": "austenite matrix",
+          "phase_2_name": "HAGB",
+          "coherence": "incoherent"
+        },
+        {
+          "interface_id": "if_002",
+          "microstructure_uuid": "uuid_micro_002",
+          "phase_1_name": "austenite matrix",
+          "phase_2_name": "ATB",
+          "coherence": "coherent"
+        }
+      ],
+      "defect_interaction": [
+        {
+          "interaction_id": "inter_001",
+          "microstructure_uuid": "uuid_micro_002",
+          "interaction_type": "dislocation pile-up at ATBs",
+          "quality_description": "ATBs effectively hinder dislocation movement"
+        }
+      ],
+      "interface_notes": [
+        {
+          "stress_strain_distribution": null
+        },
+        {
+          "slippage_situation": null
+        }
+      ],
+      "phase_evolution": "HAGBs have lower potential than matrix, ATBs have ~30 mV higher potential than matrix, leading to preferential anodic dissolution of HAGBs during initial corrosion stage"
+    },
+    {
+      "interface_set_id": "if_set_02",
+      "sample_id": "sample_lds_04",
+      "phases": [
+        {
+          "interface_id": "if_003",
+          "microstructure_uuid": "uuid_micro_004",
+          "phase_1_name": "austenite matrix",
+          "phase_2_name": "HAGB",
+          "coherence": "incoherent"
+        },
+        {
+          "interface_id": "if_004",
+          "microstructure_uuid": "uuid_micro_004",
+          "phase_1_name": "austenite matrix",
+          "phase_2_name": "ATB",
+          "coherence": "coherent"
+        }
+      ],
+      "defect_interaction": [],
+      "interface_notes": [
+        {
+          "stress_strain_distribution": null
+        },
+        {
+          "slippage_situation": null
+        }
+      ],
+      "phase_evolution": "Low GB density leads to sparse nucleation sites for oxide film formation"
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_set_01",
+      "sample_id": "sample_lds_01",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": "3.5 wt% NaCl solution",
+          "corrosion_rate": "0.326 mm/y",
+          "passivation_behavior": "forms oxide film with high defect density"
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": "oxide film thickness 16.2 ± 0.8 nm, low Al content"
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_set_02",
+      "sample_id": "sample_lds_02",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": "3.5 wt% NaCl solution",
+          "corrosion_rate": "0.160 mm/y",
+          "passivation_behavior": "rapidly forms dense Al-rich oxide film"
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": "oxide film thickness 25.2 ± 1.2 nm, Al content 90.17 at%, donor density 0.26 × 10^21 /cm³, acceptor density 0.68 × 10^21 /cm³"
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_set_03",
+      "sample_id": "sample_lds_03",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": "3.5 wt% NaCl solution",
+          "corrosion_rate": "0.248 mm/y",
+          "passivation_behavior": "forms oxide film with medium Al content"
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": "oxide film thickness 21.6 ± 1 nm, donor density 0.38 × 10^21 /cm³, acceptor density 1.03 × 10^21 /cm³"
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_set_04",
+      "sample_id": "sample_lds_04",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": "3.5 wt% NaCl solution",
+          "corrosion_rate": "0.281 mm/y",
+          "passivation_behavior": "forms thin oxide film with low Al content and high defect density"
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": "oxide film thickness 18 ± 0.9 nm, Al content 69.91 at%, donor density 0.49 × 10^21 /cm³, acceptor density 1.25 × 10^21 /cm³"
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_01",
+      "sample_id": "sample_lds_02",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": "25",
+          "max": "25",
+          "unit": "℃"
+        },
+        "stress_state": null,
+        "environment": "3.5 wt% NaCl solution"
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy": "alloy_fe30mn89al09c",
+        "benchmark_process_id": "proc_lds_04",
+        "benchmark_sample_id": "sample_lds_04",
+        "improvement_percentage": "43"
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_001",
+      "sample_id": null,
+      "microstructure_uuid": null,
+      "technique": "X-ray diffraction (XRD)",
+      "purpose": "Phase composition analysis",
+      "key_findings": "All solution-treated samples have single-phase FCC austenite structure"
+    },
+    {
+      "characterization_id": "char_002",
+      "sample_id": null,
+      "microstructure_uuid": null,
+      "technique": "Scanning electron microscopy (SEM), energy dispersive spectroscopy (EDS)",
+      "purpose": "Microstructure observation and elemental analysis",
+      "key_findings": "Grain size increases with increasing solution treatment temperature"
+    },
+    {
+      "characterization_id": "char_003",
+      "sample_id": null,
+      "microstructure_uuid": null,
+      "technique": "Electron backscatter diffraction (EBSD)",
+      "purpose": "Grain structure, grain boundary density and misorientation analysis",
+      "key_findings": "S950 sample has highest HAGB (0.114 μm/μm²) and ATB (0.146 μm/μm²) density, which decreases with increasing solution temperature"
+    },
+    {
+      "characterization_id": "char_004",
+      "sample_id": null,
+      "microstructure_uuid": null,
+      "technique": "Transmission electron microscopy (TEM)",
+      "purpose": "Nanoscale microstructure and precipitate analysis",
+      "key_findings": "S0 sample contains 5-10 nm κ-carbides and high dislocation density; solution-treated samples have low dislocation density and annealing twins"
+    },
+    {
+      "characterization_id": "char_005",
+      "sample_id": null,
+      "microstructure_uuid": null,
+      "technique": "Scanning Kelvin Probe Force Microscopy (SKPFM)",
+      "purpose": "Grain boundary potential measurement",
+      "key_findings": "HAGBs have lower potential than matrix, ATBs have ~30 mV higher potential than matrix"
+    },
+    {
+      "characterization_id": "char_006",
+      "sample_id": null,
+      "microstructure_uuid": null,
+      "technique": "Electrochemical tests (potentiodynamic polarization, EIS, potentiostatic polarization, cyclic voltammetry, Mott-Schottky analysis)",
+      "purpose": "Corrosion resistance and oxide film semiconductor property evaluation",
+      "key_findings": "S950 sample has lowest breakdown current density (2.72 μA/cm²) and highest polarization resistance (12486 Ω·cm²); oxide film has duplex n-type and p-type semiconductor characteristics"
+    },
+    {
+      "characterization_id": "char_007",
+      "sample_id": null,
+      "microstructure_uuid": null,
+      "technique": "X-ray photoelectron spectroscopy (XPS)",
+      "purpose": "Oxide film composition and valence state analysis",
+      "key_findings": "Al content in oxide film decreases from 90.17 at% (S950) to 69.91 at% (S1150) with increasing grain size"
+    },
+    {
+      "characterization_id": "char_008",
+      "sample_id": null,
+      "microstructure_uuid": null,
+      "technique": "Auger electron spectroscopy (AES)",
+      "purpose": "Oxide film depth profile analysis",
+      "key_findings": "Oxide film thickness decreases from 25.2 ± 1.2 nm (S950) to 18 ± 0.9 nm (S1150) with increasing grain size"
+    },
+    {
+      "characterization_id": "char_009",
+      "sample_id": null,
+      "microstructure_uuid": null,
+      "technique": "Immersion test",
+      "purpose": "Long-term corrosion resistance evaluation",
+      "key_findings": "S950 sample has lowest corrosion rate (0.160 mm/y) after 30 days immersion in 3.5 wt% NaCl solution"
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_001",
+      "sample_id": null,
+      "simulation_method": "E-pH diagram calculation",
+      "software_used": "HSC Chemistry 9",
+      "potential_model": null,
+      "validation_against_experiment": "Consistent with experimental observation that Al preferentially forms stable Al2O3 oxide film in test environment",
+      "analytical_model": [
+        {
+          "model_name": "Pourbaix (E-pH) diagram for Fe-Mn-Al-H2O system",
+          "equation_role": "Thermodynamic stability prediction of oxidation products",
+          "parameters": "25 ℃, 1 atm, ion concentration 1×10^-10 M",
+          "model_note": "Al2O3 is thermodynamically stable under experimental conditions"
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Table 1 summarizes previous corrosion-related studies on Fe-Mn-Al-C low-density steels, which mainly focused on improving corrosion resistance via compositional optimization through alloying elements addition (Cr, Mo, Ni, Cu etc.)",
+    "The oxide film of LDSs exhibits duplex semiconductor characteristics: n-type behavior dominated by cation interstitials and oxygen vacancies in the potential range of -1.13 V_SCE to -0.93 V_SCE, and p-type behavior dominated by cation vacancies in the range of -0.93 V_SCE to -0.67 V_SCE",
+    "The protection efficiency (PE) of oxide film for S950 sample is 30.75%, which is significantly higher than 17.95% of S1150 sample",
+    "High-density grain boundaries in fine-grained samples provide numerous nucleation sites for oxide film growth, promoting rapid formation of continuous and stable Al-rich oxide film during initial corrosion stage"
+  ]
+}

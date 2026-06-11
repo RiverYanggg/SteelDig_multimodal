@@ -1,0 +1,361 @@
+{
+  "paper_id": "A62",
+  "canonical_maps": {
+    "truth": {
+      "alloy_fe15_5mn3_95al5ti2_15b": "alloy_fe15_5mn3_95al5ti2_15b",
+      "proc_fe15_5mn3_95al5ti2_15b_hr": "proc_fe15_5mn3_95al5ti2_15b_hr",
+      "sample_lds_hr": "sample_lds_hr",
+      "a62": "A62"
+    },
+    "prediction": {
+      "alloy_fe15_5mn3_95al5ti2_15b": "alloy_fe15_5mn3_95al5ti2_15b",
+      "proc_fe15_5mn_01": "proc_fe15_5mn3_95al5ti2_15b_hr",
+      "sample_fe15_5mn_01": "sample_lds_hr",
+      "a62": "A62"
+    }
+  },
+  "alignment": {
+    "alloy_matches": [
+      {
+        "pred_alloy_id": "alloy_fe15_5mn3_95al5ti2_15b",
+        "truth_alloy_id": "alloy_fe15_5mn3_95al5ti2_15b",
+        "relation": "same",
+        "confidence": 1.0,
+        "reason": "Same alloy name, base element, alloying elements, and nominal composition (Fe balance vs 73.4% are equivalent)."
+      }
+    ],
+    "process_matches": [
+      {
+        "pred_process_id": "proc_fe15_5mn_01",
+        "truth_process_id": "proc_fe15_5mn3_95al5ti2_15b_hr",
+        "relation": "same",
+        "confidence": 1.0,
+        "reason": "Both describe vacuum induction melting, homogenization at 1373 K/2h, hot rolling five passes finishing 1173 K, air cooling to 3 mm sheet, linked to same alloy."
+      }
+    ],
+    "sample_matches": [
+      {
+        "pred_sample_id": "sample_fe15_5mn_01",
+        "truth_sample_id": "sample_lds_hr",
+        "relation": "same",
+        "confidence": 1.0,
+        "reason": "Referenced alloy and process match, context describes same triplex microstructure (austenite, δ-ferrite, TiB2)."
+      }
+    ],
+    "error": null
+  },
+  "flattened_sections": {
+    "papers": {
+      "truth": {
+        "papers.A62.doi": "10.1016/j.jmst.2025.09.036",
+        "papers.A62.title": "Low-density and high-modulus steel achieved by hypereutectic TiB2 and high Al ferrite phase",
+        "papers.A62.authors[0]": "Jikui Liu",
+        "papers.A62.authors[1]": "Yizhuang Li",
+        "papers.A62.authors[2]": "Qianduo Zhuang",
+        "papers.A62.authors[3]": "Mingxin Huang",
+        "papers.A62.authors[4]": "Wei Xu",
+        "papers.A62.publication_year": "2026",
+        "papers.A62.journal": "Journal of Materials Science & Technology",
+        "papers.A62.keywords[0]": "Low-density steel",
+        "papers.A62.keywords[1]": "δ-ferrite",
+        "papers.A62.keywords[2]": "Heterogeneity",
+        "papers.A62.keywords[3]": "Young's modulus",
+        "papers.A62.keywords[4]": "Synchrotron X-ray diffraction",
+        "papers.A62.keywords[5]": "Dislocation density",
+        "papers.A62.keywords[6]": "Finite element method",
+        "papers.A62.research_type": "mixed",
+        "papers.A62.paper_scope": "Design and characterization of a novel low-density steel with hypereutectic TiB2 and high-Al δ-ferrite phase to achieve low density, high Young's modulus, and balanced mechanical properties."
+      },
+      "prediction": {
+        "papers.A62.title": "Low-density and high-modulus steel achieved by hypereutectic TiB2 and high Al ferrite phase",
+        "papers.A62.authors[0]": "Jikui Liu",
+        "papers.A62.authors[1]": "Yizhuang Li",
+        "papers.A62.authors[2]": "Qianduo Zhuang",
+        "papers.A62.authors[3]": "Mingxin Huang",
+        "papers.A62.authors[4]": "Wei Xu",
+        "papers.A62.publication_year": "2026",
+        "papers.A62.journal": "Journal of Materials Science & Technology",
+        "papers.A62.keywords[0]": "Low-density steel",
+        "papers.A62.keywords[1]": "δ-ferrite",
+        "papers.A62.keywords[2]": "Heterogeneity",
+        "papers.A62.keywords[3]": "Young's modulus",
+        "papers.A62.keywords[4]": "Synchrotron X-ray diffraction",
+        "papers.A62.keywords[5]": "Dislocation density",
+        "papers.A62.keywords[6]": "Finite element method",
+        "papers.A62.research_type": "mixed",
+        "papers.A62.paper_scope": "Design of a carbon-free austenite-based low-density triplex steel containing in-situ TiB2 and δ-ferrite bands in an austenite matrix, achieving low density (6.88 g cm^-3), high Young's modulus (225 GPa), and superior strength-ductility balance via conventional steel processing, with systematic investigation of deformation mechanisms through experiments and FEM simulations."
+      }
+    },
+    "alloys": {
+      "truth": {
+        "alloys.alloy_fe15_5mn3_95al5ti2_15b.alloy_name": "Fe-15.5Mn-3.95Al-5Ti-2.15B",
+        "alloys.alloy_fe15_5mn3_95al5ti2_15b.aliases[0]": "present low-density steel",
+        "alloys.alloy_fe15_5mn3_95al5ti2_15b.aliases[1]": "LDS",
+        "alloys.alloy_fe15_5mn3_95al5ti2_15b.base_element": "Fe",
+        "alloys.alloy_fe15_5mn3_95al5ti2_15b.alloying_elements[0]": "Mn",
+        "alloys.alloy_fe15_5mn3_95al5ti2_15b.alloying_elements[1]": "Al",
+        "alloys.alloy_fe15_5mn3_95al5ti2_15b.alloying_elements[2]": "Ti",
+        "alloys.alloy_fe15_5mn3_95al5ti2_15b.alloying_elements[3]": "B",
+        "alloys.alloy_fe15_5mn3_95al5ti2_15b.nominal_composition[fe].element": "Fe",
+        "alloys.alloy_fe15_5mn3_95al5ti2_15b.nominal_composition[fe].weight_percent": "73.4",
+        "alloys.alloy_fe15_5mn3_95al5ti2_15b.nominal_composition[mn].element": "Mn",
+        "alloys.alloy_fe15_5mn3_95al5ti2_15b.nominal_composition[mn].weight_percent": "15.5",
+        "alloys.alloy_fe15_5mn3_95al5ti2_15b.nominal_composition[al].element": "Al",
+        "alloys.alloy_fe15_5mn3_95al5ti2_15b.nominal_composition[al].weight_percent": "3.95",
+        "alloys.alloy_fe15_5mn3_95al5ti2_15b.nominal_composition[ti].element": "Ti",
+        "alloys.alloy_fe15_5mn3_95al5ti2_15b.nominal_composition[ti].weight_percent": "5",
+        "alloys.alloy_fe15_5mn3_95al5ti2_15b.nominal_composition[b].element": "B",
+        "alloys.alloy_fe15_5mn3_95al5ti2_15b.nominal_composition[b].weight_percent": "2.15",
+        "alloys.alloy_fe15_5mn3_95al5ti2_15b.alloys_notes": "Actual composition measured as Fe-16Mn-3.9Al-5.11Ti-2.09B (wt.%)"
+      },
+      "prediction": {
+        "alloys.alloy_fe15_5mn3_95al5ti2_15b.alloy_name": "Fe-15.5Mn-3.95Al-5Ti-2.15B",
+        "alloys.alloy_fe15_5mn3_95al5ti2_15b.aliases[0]": "Our LDS",
+        "alloys.alloy_fe15_5mn3_95al5ti2_15b.aliases[1]": "present steel",
+        "alloys.alloy_fe15_5mn3_95al5ti2_15b.base_element": "Fe",
+        "alloys.alloy_fe15_5mn3_95al5ti2_15b.alloying_elements[0]": "Mn",
+        "alloys.alloy_fe15_5mn3_95al5ti2_15b.alloying_elements[1]": "Al",
+        "alloys.alloy_fe15_5mn3_95al5ti2_15b.alloying_elements[2]": "Ti",
+        "alloys.alloy_fe15_5mn3_95al5ti2_15b.alloying_elements[3]": "B",
+        "alloys.alloy_fe15_5mn3_95al5ti2_15b.nominal_composition[fe].element": "Fe",
+        "alloys.alloy_fe15_5mn3_95al5ti2_15b.nominal_composition[fe].weight_percent": "balance",
+        "alloys.alloy_fe15_5mn3_95al5ti2_15b.nominal_composition[mn].element": "Mn",
+        "alloys.alloy_fe15_5mn3_95al5ti2_15b.nominal_composition[mn].weight_percent": "15.5",
+        "alloys.alloy_fe15_5mn3_95al5ti2_15b.nominal_composition[al].element": "Al",
+        "alloys.alloy_fe15_5mn3_95al5ti2_15b.nominal_composition[al].weight_percent": "3.95",
+        "alloys.alloy_fe15_5mn3_95al5ti2_15b.nominal_composition[ti].element": "Ti",
+        "alloys.alloy_fe15_5mn3_95al5ti2_15b.nominal_composition[ti].weight_percent": "5",
+        "alloys.alloy_fe15_5mn3_95al5ti2_15b.nominal_composition[b].element": "B",
+        "alloys.alloy_fe15_5mn3_95al5ti2_15b.nominal_composition[b].weight_percent": "2.15",
+        "alloys.alloy_fe15_5mn3_95al5ti2_15b.alloys_notes": "Actual measured composition of the rolled sheet is Fe-16Mn-3.9Al-5.11Ti-2.09B (wt.%). Designed to contain ~14 vol.% TiB2 in a matrix of δ-ferrite and austenite."
+      }
+    },
+    "processes": {
+      "truth": {
+        "processes.proc_fe15_5mn3_95al5ti2_15b_hr.description": "Vacuum induction melting of 50 kg ingot, homogenization at 1373 K for 2 h, hot rolling in five passes with finishing temperature 1173 K, air cooling to room temperature, producing 3 mm thick sheet.",
+        "processes.proc_fe15_5mn3_95al5ti2_15b_hr.processes_notes": "Hot rolling performed in two-phase region; final sheet thickness 3 mm."
+      },
+      "prediction": {
+        "processes.proc_fe15_5mn3_95al5ti2_15b_hr.description": "Vacuum induction melting of a 50 kg ingot, homogenization at 1373 K for 2 h, hot rolling in the two-phase region in five steps with a finishing temperature of 1173 K to a 3 mm thick sheet, followed by air cooling to room temperature.",
+        "processes.proc_fe15_5mn3_95al5ti2_15b_hr.processes_notes": "Phase diagram calculations (Thermo-Calc, TCFE9) were used to design the composition for ~14 vol.% TiB2 in a dual-phase matrix."
+      }
+    },
+    "samples": {
+      "truth": {},
+      "prediction": {}
+    },
+    "processing_steps": {
+      "truth": {
+        "processing_steps.sample_lds_hr.sequence": "4",
+        "processing_steps.sample_lds_hr.type": "cooling",
+        "processing_steps.sample_lds_hr.method": "air cooling",
+        "processing_steps.sample_lds_hr.processing_steps_notes": "Finishing temperature 1173 K, rolled in two-phase region",
+        "processing_steps.sample_lds_hr.temperature_with_unit": "1173 K",
+        "processing_steps.sample_lds_hr.duration": "five passes",
+        "processing_steps.sample_lds_hr.cooling_medium": "air",
+        "processing_steps.sample_lds_hr.reduction_ratio": "from ingot to 3 mm sheet",
+        "processing_steps.sample_lds_hr.temperature": "room temperature"
+      },
+      "prediction": {
+        "processing_steps.sample_lds_hr.sequence": "3",
+        "processing_steps.sample_lds_hr.type": "thermomechanical_processing",
+        "processing_steps.sample_lds_hr.method": "hot rolling",
+        "processing_steps.sample_lds_hr.processing_steps_notes": "Five rolling steps in the two-phase region to produce a 3 mm thick sheet, finishing temperature 1173 K, followed by air cooling to room temperature.",
+        "processing_steps.sample_lds_hr.temperature_with_unit": "1173 K",
+        "processing_steps.sample_lds_hr.duration": "2 h",
+        "processing_steps.sample_lds_hr.cooling_medium": "air"
+      }
+    },
+    "structures": {
+      "truth": {
+        "structures.sample_lds_hr.overall_structure": "Heterogeneous triplex microstructure: equiaxed austenite matrix embedded with elongated δ-ferrite bands and micron-sized TiB2 particles.",
+        "structures.sample_lds_hr.number_of_phases": "3",
+        "structures.sample_lds_hr.microstructure_list[0].phases_present[austenite].phase_name": "austenite",
+        "structures.sample_lds_hr.microstructure_list[0].phases_present[austenite].crystal_structure": "fcc",
+        "structures.sample_lds_hr.microstructure_list[0].phases_present[austenite].volume_fraction": "0.62",
+        "structures.sample_lds_hr.microstructure_list[0].phases_present[austenite].morphology": "equiaxed, recrystallized",
+        "structures.sample_lds_hr.microstructure_list[0].phases_present[austenite].grain_size": "3.9",
+        "structures.sample_lds_hr.microstructure_list[0].phases_present[ferrite].phase_name": "δ-ferrite",
+        "structures.sample_lds_hr.microstructure_list[0].phases_present[ferrite].crystal_structure": "bcc",
+        "structures.sample_lds_hr.microstructure_list[0].phases_present[ferrite].volume_fraction": "0.26",
+        "structures.sample_lds_hr.microstructure_list[0].phases_present[ferrite].morphology": "elongated bands, partially recrystallized",
+        "structures.sample_lds_hr.microstructure_list[0].phases_present[ferrite].grain_size": "4.4",
+        "structures.sample_lds_hr.microstructure_list[0].phases_present[ferrite].texture": "elongated along RD",
+        "structures.sample_lds_hr.microstructure_list[0].phases_present[tib2].phase_name": "TiB2",
+        "structures.sample_lds_hr.microstructure_list[0].phases_present[tib2].crystal_structure": "hexagonal",
+        "structures.sample_lds_hr.microstructure_list[0].phases_present[tib2].volume_fraction": "0.125",
+        "structures.sample_lds_hr.microstructure_list[0].phases_present[tib2].morphology": "irregular particles, primary (hexagonal prisms) and eutectic (plate-like/needle-like)",
+        "structures.sample_lds_hr.microstructure_list[0].phases_present[tib2].texture": "c-axes tend to parallel RD",
+        "structures.sample_lds_hr.microstructure_list[0].defects[dislocation_density_ferrite].type": "dislocation_density_δ-ferrite",
+        "structures.sample_lds_hr.microstructure_list[0].defects[dislocation_density_ferrite].dislocation_density": "1.1±0.2 ×10^15 m^-2",
+        "structures.sample_lds_hr.microstructure_list[0].defects[dislocation_density_austenite].type": "dislocation_density_austenite",
+        "structures.sample_lds_hr.microstructure_list[0].defects[dislocation_density_austenite].dislocation_density": "3±0.7 ×10^14 m^-2",
+        "structures.sample_lds_hr.microstructure_list[0].defects[dislocation_tangles_at_interfaces].type": "dislocation_tangles_at_interfaces",
+        "structures.sample_lds_hr.microstructure_list[0].defects[dislocation_tangles_at_interfaces].dislocation_density": "high in δ-ferrite near TiB2 interfaces, lower at austenite/TiB2 interfaces",
+        "structures.sample_lds_hr.microstructure_list[0].grain_structure.grain_size_distribution": "austenite grain size ~3.9 μm (equiaxed), δ-ferrite grain size ~4.4 μm (elongated), δ-ferrite band thickness ~4.3 μm, austenite layer thickness ~12.1 μm",
+        "structures.sample_lds_hr.microstructure_list[0].precipitates[tib2].type": "TiB2",
+        "structures.sample_lds_hr.microstructure_list[0].precipitates[tib2].size.value_with_unit": "2.4-35 μm",
+        "structures.sample_lds_hr.microstructure_list[0].precipitates[tib2].distribution": "mainly at grain/phase boundaries, avg ~15 μm, coarse >10 μm dominate volume fraction (>80%)"
+      },
+      "prediction": {
+        "structures.sample_lds_hr.overall_structure": "Heterogeneous triplex microstructure comprising a fully equiaxed-austenitic matrix embedded with elongated δ-ferrite bands and micron-sized TiB2 particles at grain/phase boundaries.",
+        "structures.sample_lds_hr.number_of_phases": "3",
+        "structures.sample_lds_hr.microstructure_list[0].phases_present[austenite].phase_name": "austenite",
+        "structures.sample_lds_hr.microstructure_list[0].phases_present[austenite].crystal_structure": "FCC",
+        "structures.sample_lds_hr.microstructure_list[0].phases_present[austenite].volume_fraction": "~62% (XRD); ~59% (EBSD area)",
+        "structures.sample_lds_hr.microstructure_list[0].phases_present[austenite].morphology": "equiaxed grains",
+        "structures.sample_lds_hr.microstructure_list[0].phases_present[austenite].grain_size": "~3.9 μm",
+        "structures.sample_lds_hr.microstructure_list[0].phases_present[ferrite].phase_name": "δ-ferrite",
+        "structures.sample_lds_hr.microstructure_list[0].phases_present[ferrite].crystal_structure": "BCC",
+        "structures.sample_lds_hr.microstructure_list[0].phases_present[ferrite].volume_fraction": "~26% (XRD); ~28% (EBSD area)",
+        "structures.sample_lds_hr.microstructure_list[0].phases_present[ferrite].morphology": "elongated bands parallel to rolling direction, average band thickness ~4.3 μm",
+        "structures.sample_lds_hr.microstructure_list[0].phases_present[ferrite].grain_size": "~4.4 μm",
+        "structures.sample_lds_hr.microstructure_list[0].phases_present[tib2].phase_name": "TiB2",
+        "structures.sample_lds_hr.microstructure_list[0].phases_present[tib2].crystal_structure": "hexagonal",
+        "structures.sample_lds_hr.microstructure_list[0].phases_present[tib2].volume_fraction": "~12.5% (XRD); ~13% (EBSD area)",
+        "structures.sample_lds_hr.microstructure_list[0].phases_present[tib2].morphology": "hexagonal prisms (primary) and irregular plate-like/needle-like debris (eutectic)",
+        "structures.sample_lds_hr.microstructure_list[0].phases_present[tib2].grain_size": "2.4–35 μm, average ~15 μm",
+        "structures.sample_lds_hr.microstructure_list[0].defects[dislocations].type": "dislocations",
+        "structures.sample_lds_hr.microstructure_list[0].defects[dislocations].dislocation_density": "Initial state: δ-ferrite (1.1±0.2)×10^15 m^-2, austenite (3±0.7)×10^14 m^-2. After tensile fracture: δ-ferrite (1.7±0.7)×10^15 m^-2, austenite (2±0.3)×10^15 m^-2.",
+        "structures.sample_lds_hr.microstructure_list[0].grain_structure.grain_size_distribution": "Bimodal matrix: austenite equiaxed ~3.9 μm; δ-ferrite elongated ~4.4 μm with band thickness ~4.3 μm."
+      }
+    },
+    "interfaces": {
+      "truth": {
+        "interfaces.sample_lds_hr.phases[ferrite].phase_1_name": "δ-ferrite",
+        "interfaces.sample_lds_hr.phases[ferrite].phase_2_name": "austenite",
+        "interfaces.sample_lds_hr.phases[ferrite].coherence": "coherent or semi-coherent: {110}_δ || {1101}_TiB2, <111>_δ || <1120>_TiB2",
+        "interfaces.sample_lds_hr.phases[austenite].phase_1_name": "austenite",
+        "interfaces.sample_lds_hr.phases[austenite].phase_2_name": "TiB2",
+        "interfaces.sample_lds_hr.phases[austenite].coherence": "no clear orientation relationship, incoherent",
+        "interfaces.sample_lds_hr.defect_interaction[0].interaction_type": "dislocation pile-up and tangles",
+        "interfaces.sample_lds_hr.defect_interaction[0].quality_description": "High dislocation density at δ-ferrite/TiB2 interfaces, forming dense dislocation tangles.",
+        "interfaces.sample_lds_hr.defect_interaction[1].interaction_type": "dislocation pile-up and sparse tangles",
+        "interfaces.sample_lds_hr.defect_interaction[1].quality_description": "Lower dislocation density at austenite/TiB2 interfaces compared to δ-ferrite/TiB2.",
+        "interfaces.sample_lds_hr.interface_notes[0].stress_strain_distribution": "Strain concentration observed at TiB2/matrix interfaces, especially at δ-ferrite/TiB2 and austenite/TiB2 boundaries, leading to strain gradients and GND formation."
+      },
+      "prediction": {
+        "interfaces.sample_lds_hr.phases[ferrite].phase_1_name": "δ-ferrite",
+        "interfaces.sample_lds_hr.phases[ferrite].phase_2_name": "TiB2",
+        "interfaces.sample_lds_hr.phases[ferrite].coherence": "coherent or semi-coherent",
+        "interfaces.sample_lds_hr.phases[austenite].phase_1_name": "austenite",
+        "interfaces.sample_lds_hr.phases[austenite].phase_2_name": "TiB2",
+        "interfaces.sample_lds_hr.phases[austenite].coherence": "no clear crystallographic orientation relationship",
+        "interfaces.sample_lds_hr.defect_interaction[0].interaction_type": "dislocation accumulation at ceramic/metal interfaces",
+        "interfaces.sample_lds_hr.defect_interaction[0].quality_description": "Dense dislocation tangles at δ-ferrite/TiB2 interfaces; sparse dislocation tangles at austenite/TiB2 interfaces. All TiB2 particles are exclusively located at grain or phase boundaries.",
+        "interfaces.sample_lds_hr.interface_notes[0].stress_strain_distribution": "Local von Mises strain concentrations of ~10% at small TiB2/δ-ferrite interfaces, ~16% at austenite/TiB2 boundaries, and up to ~20% near sharp TiB2/austenite and TiB2/δ-ferrite boundaries at higher deformation; strain localizations oriented at ~45° to the loading axis.",
+        "interfaces.sample_lds_hr.phase_evolution": "TiB2 particles formed during liquid-phase solidification (primary and eutectic); both types underwent fragmentation during hot rolling but retained inherited morphologies. δ-ferrite formed during solidification and persisted through hot rolling and air cooling. Austenite dynamically recrystallized during hot rolling, resulting in equiaxed grains."
+      }
+    },
+    "properties": {
+      "truth": {
+        "properties.sample_lds_hr.mechanical.tensile_properties.yield_strength[rd].value_with_unit": "503 MPa",
+        "properties.sample_lds_hr.mechanical.tensile_properties.yield_strength[rd].direction": "RD",
+        "properties.sample_lds_hr.mechanical.tensile_properties.ultimate_tensile_strength[rd].value_with_unit": "672 MPa",
+        "properties.sample_lds_hr.mechanical.tensile_properties.ultimate_tensile_strength[rd].direction": "RD",
+        "properties.sample_lds_hr.mechanical.tensile_properties.elongation[rd].value_with_unit": "13 %",
+        "properties.sample_lds_hr.mechanical.tensile_properties.elongation[rd].direction": "RD",
+        "properties.sample_lds_hr.mechanical.tensile_properties.youngs_modulus": "225 GPa",
+        "properties.sample_lds_hr.mechanical.tensile_properties.stress_strain_curves": "Engineering stress-strain curve presented in Fig. 3(a); true stress-strain curves used in FEM simulations.",
+        "properties.sample_lds_hr.physical.density.value_with_unit": "6.88 g cm^-3"
+      },
+      "prediction": {
+        "properties.sample_lds_hr.mechanical.tensile_properties.yield_strength[parallel_to_rolling_direction].value_with_unit": "503 MPa",
+        "properties.sample_lds_hr.mechanical.tensile_properties.yield_strength[parallel_to_rolling_direction].direction": "parallel to rolling direction",
+        "properties.sample_lds_hr.mechanical.tensile_properties.ultimate_tensile_strength[parallel_to_rolling_direction].value_with_unit": "672 MPa",
+        "properties.sample_lds_hr.mechanical.tensile_properties.ultimate_tensile_strength[parallel_to_rolling_direction].direction": "parallel to rolling direction",
+        "properties.sample_lds_hr.mechanical.tensile_properties.elongation[parallel_to_rolling_direction].value_with_unit": "13 % (uniform elongation)",
+        "properties.sample_lds_hr.mechanical.tensile_properties.elongation[parallel_to_rolling_direction].direction": "parallel to rolling direction",
+        "properties.sample_lds_hr.mechanical.tensile_properties.youngs_modulus": "225 GPa (measured by impulse excitation technique)",
+        "properties.sample_lds_hr.mechanical.tensile_properties.stress_strain_curves": "Engineering stress-strain curve values for present steel at discrete strains: 5% ~600 MPa, 10% ~650 MPa, 15% ~670 MPa, 20% ~660 MPa, 25% ~650 MPa, 30% ~640 MPa. See Fig. 3(a) for comparison with conventional Fe-TiB2 and IF steels.",
+        "properties.sample_lds_hr.mechanical.tensile_properties.stress_strain_distribution[parallel_to_rolling_direction].direction": "parallel to rolling direction",
+        "properties.sample_lds_hr.mechanical.tensile_properties.stress_strain_distribution[parallel_to_rolling_direction].distribution": "μ-DIC and FEM reveal strain localizations at ~45° to loading axis; high strain (~10%) at small TiB2/δ-ferrite interfaces, elevated strain (~16%) at austenite/TiB2 boundaries, and concentrations up to ~20% near sharp TiB2/matrix boundaries at higher plastic deformation.",
+        "properties.sample_lds_hr.physical.density.value_with_unit": "6.88 g cm^-3"
+      }
+    },
+    "performance": {
+      "truth": {
+        "performance.sample_lds_hr.service_conditions.stress_state": "uniaxial tension, nominal strain rate 1e-3 s^-1",
+        "performance.sample_lds_hr.service_conditions.environment": "room temperature",
+        "performance.sample_lds_hr.comparative_performance.benchmark_alloy": "Fe-TiB2 steel",
+        "performance.sample_lds_hr.comparative_performance.improvement_percentage": "22% increase in yield strength (503 vs 389 MPa), 30% increase in UTS (672 vs 549 MPa), uniform elongation 13% vs 11%"
+      },
+      "prediction": {
+        "performance.sample_lds_hr.service_conditions.operating_temperature.min": "20",
+        "performance.sample_lds_hr.service_conditions.operating_temperature.max": "20",
+        "performance.sample_lds_hr.service_conditions.operating_temperature.unit": "°C",
+        "performance.sample_lds_hr.service_conditions.stress_state": "uniaxial tension",
+        "performance.sample_lds_hr.service_conditions.environment": "air",
+        "performance.sample_lds_hr.comparative_performance.benchmark_alloy": "conventional Fe-TiB2 steel",
+        "performance.sample_lds_hr.comparative_performance.improvement_percentage": "Yield strength 22% higher (503 vs 389 MPa), UTS 30% higher (672 vs 549 MPa), uniform elongation 13% vs 11%"
+      }
+    },
+    "characterization_methods": {
+      "truth": {
+        "characterization_methods.sample_lds_hr.technique": "FEM",
+        "characterization_methods.sample_lds_hr.purpose": "Simulate stress-strain partitioning, dislocation density evolution, and damage evolution",
+        "characterization_methods.sample_lds_hr.key_findings": "Validated against experimental tensile curves and dislocation densities. Phase stress ranking: TiB2 > δ-ferrite > austenite. Heterogeneous microstructure promotes uniform plastic flow and delays shear band localization."
+      },
+      "prediction": {
+        "characterization_methods.sample_lds_hr.technique": "Quasi-static uniaxial tensile testing (SANS CMT-3000, nominal strain rate 1×10^-3 s^-1, room temperature)",
+        "characterization_methods.sample_lds_hr.purpose": "Mechanical property evaluation",
+        "characterization_methods.sample_lds_hr.key_findings": "Yield strength 503 MPa, UTS 672 MPa, uniform elongation 13% for dog-bone specimens with gauge length 25 mm and width 6 mm cut parallel to rolling direction."
+      }
+    },
+    "computational_details": {
+      "truth": {
+        "computational_details.sample_lds_hr.simulation_method": "Two-dimensional representative volume element (RVE) based on EBSD data, periodic boundary conditions, mesh size 0.4 μm (500×500 elements)",
+        "computational_details.sample_lds_hr.validation_against_experiment": "Simulated true stress-strain curves and dislocation density evolution closely match experimental results for both present steel and reference Fe-TiB2 steel.",
+        "computational_details.sample_lds_hr.analytical_model[0].model_name": "Kocks-Mecking dislocation density evolution",
+        "computational_details.sample_lds_hr.analytical_model[0].equation_role": "Strain hardening in metallic phases (δ-ferrite and austenite)",
+        "computational_details.sample_lds_hr.analytical_model[0].parameters": "k1: 230,000 (δ-ferrite), 200,000 (austenite); k2: 6 (δ-ferrite), 4.5 (austenite); combined with Taylor equation α=0.2, M=3.16/3.06, b=0.248/0.258 nm, μ=80.7/65 GPa",
+        "computational_details.sample_lds_hr.analytical_model[0].model_note": "Dislocation density evolution couples with flow stress via Taylor equation; Hall-Petch strengthening also included.",
+        "computational_details.sample_lds_hr.analytical_model[1].model_name": "Weibull fracture model for TiB2 particles",
+        "computational_details.sample_lds_hr.analytical_model[1].equation_role": "Brittle particle cracking damage",
+        "computational_details.sample_lds_hr.analytical_model[1].parameters": "σc (critical stress) = 320 MPa, n (shape factor) = 1.5, k (damage scale) = 0.09, f0 = 0.1480, fd0 = 0.1245",
+        "computational_details.sample_lds_hr.analytical_model[1].model_note": "Fracture probability depends on particle volume and internal defects.",
+        "computational_details.sample_lds_hr.analytical_model[2].model_name": "Cohesive zone model for interfaces",
+        "computational_details.sample_lds_hr.analytical_model[2].equation_role": "Interface debonding between matrix and TiB2",
+        "computational_details.sample_lds_hr.analytical_model[2].parameters": "Interface stiffness K = 10^6 MPa mm⁻¹, strength Tc = 700 MPa (δ-ferrite/TiB2), 640 MPa (austenite/TiB2)",
+        "computational_details.sample_lds_hr.analytical_model[2].model_note": "Zero-thickness COH3D8 cohesive elements with bilinear traction-separation law."
+      },
+      "prediction": {
+        "computational_details.sample_lds_hr.simulation_method": "Finite element method with 2D EBSD-based RVE (200 μm × 200 μm, 500×500 CPE4 elements, 0.4 μm mesh size) and periodic boundary conditions; TiB2 treated as linearly elastic; matrix plasticity via Von Mises yield criterion with Taylor, Hall-Petch, and Kocks-Mecking hardening; damage via Weibull-distributed particle fracture and cohesive-zone interface debonding.",
+        "computational_details.sample_lds_hr.validation_against_experiment": "Simulated true stress-strain curves and dislocation density evolutions closely match experimental measurements; strain distributions validated against μ-DIC results.",
+        "computational_details.sample_lds_hr.analytical_model[0].model_name": "Taylor dislocation hardening",
+        "computational_details.sample_lds_hr.analytical_model[0].equation_role": "Dislocation strengthening contribution: σ_dis = α M μ b √ρ",
+        "computational_details.sample_lds_hr.analytical_model[0].parameters": "α=0.2; M=3.06 (austenite) / 3.16 (ferrite); μ=65 GPa (austenite) / 80.7 GPa (ferrite); b=0.258 nm (austenite) / 0.248 nm (ferrite)",
+        "computational_details.sample_lds_hr.analytical_model[1].model_name": "Hall-Petch grain boundary strengthening",
+        "computational_details.sample_lds_hr.analytical_model[1].equation_role": "Grain boundary contribution: σ_gb = kHP / √d",
+        "computational_details.sample_lds_hr.analytical_model[1].parameters": "kHP=460 MPa μm^-1/2 (austenite), 130 MPa μm^-1/2 (ferrite); d=3.9 μm (austenite), 4.4 μm (ferrite)",
+        "computational_details.sample_lds_hr.analytical_model[2].model_name": "Kocks-Mecking dislocation evolution",
+        "computational_details.sample_lds_hr.analytical_model[2].equation_role": "Evolution of dislocation density during straining: dρ/dε = M(k1√ρ - k2ρ)",
+        "computational_details.sample_lds_hr.analytical_model[2].parameters": "k1=200000 (austenite), 230000 (δ-ferrite), 180000 (α-ferrite reference); k2=4.5 (austenite), 6 (ferrite)"
+      }
+    },
+    "unmapped_findings": {
+      "truth": {
+        "unmapped_findings.idx_0.value": "Specific modulus (E/ρ) of the present steel is 32.7 GPa g⁻¹ cm³, which is higher than typical light metals (Al, Mg, Ti ~25 GPa g⁻¹ cm³).",
+        "unmapped_findings.idx_1.value": "Specific yield strength (SYS) = 73.1 MPa g⁻¹ cm³, specific ultimate tensile strength (SUTS) = 97.7 MPa g⁻¹ cm³.",
+        "unmapped_findings.idx_2.value": "δ-ferrite contributes about 170 MPa to the overall flow stress (>30% of yield strength) as a stable strengthening baseline throughout deformation.",
+        "unmapped_findings.idx_3.value": "The heterogeneous microstructure promotes additional geometrically necessary dislocations (GNDs) due to strain incompatibility between soft austenite and hard δ-ferrite, enhancing strain hardening.",
+        "unmapped_findings.idx_4.value": "Compared to conventional Fe-TiB2 steel, the present steel exhibits a more uniform dislocation distribution and suppressed shear band formation, leading to improved ductility.",
+        "unmapped_findings.idx_5.value": "Particle fracture is a major damage mechanism; austenite-surrounded TiB2 particles show higher fracture frequency due to multi-directional shear strains from multiple grains.",
+        "unmapped_findings.idx_6.value": "Crack tip blunting retards crack propagation from fractured TiB2 particles.",
+        "unmapped_findings.idx_7.value": "Fractography reveals mixed fracture mode: ductile dimples, quasi-cleavage of TiB2, and particle/matrix decohesion.",
+        "unmapped_findings.idx_8.value": "The alloy design intentionally avoids carbon to prevent TiC formation and uses B to form TiB2 with superior physical properties.",
+        "unmapped_findings.idx_9.value": "The steel can be produced via conventional steel metallurgy (induction melting, hot rolling) without requiring advanced processing like splat cooling or additive manufacturing."
+      },
+      "prediction": {
+        "unmapped_findings.idx_0.value": "Specific modulus (E/ρ) is 32.7 GPa g^-1 cm^3, remarkably higher than typical ~25 GPa g^-1 cm^3 for light metals such as aluminum, magnesium, and titanium.",
+        "unmapped_findings.idx_1.value": "Specific yield strength (SYS) is 73.1 MPa g^-1 cm^3 and specific ultimate tensile strength (SUTS) is 97.7 MPa g^-1 cm^3.",
+        "unmapped_findings.idx_2.value": "Compared to typical Fe-Mn-Al-C low-density steels (E 160–190 GPa with 8–10 wt.% Al), the present steel achieves 18%–40% higher Young's modulus at a comparable density (~6.88 g cm^-3) with only ~4 wt.% Al.",
+        "unmapped_findings.idx_3.value": "Compared to interstitial-free (IF) steel and the conventional Fe-TiB2 reference steel (σy=389 MPa, σu=549 MPa, UE=11%): the present steel shows nearly 100% higher yield strength than monolithic ferritic Fe-TiB2 steel reported in literature (257 MPa), and 22%/30% higher yield strength/UTS than the existing Fe-TiB2 reference with improved uniform elongation (13% vs 11%).",
+        "unmapped_findings.idx_4.value": "Equilibrium phase fractions from Thermo-Calc (Fig. 1(a)): at 1050°C ferrite 0.4 + austenite 0.6 + TiB2 0.15; at 1200°C ferrite 0.85 + TiB2 0.15; at 1350°C liquid 0.4 + ferrite 0.6 + TiB2 0.15.",
+        "unmapped_findings.idx_5.value": "Damage initiation: first TiB2 particle fracture occurred at true plastic strain εp=0.0069 and applied true stress σa=556 MPa (exceeding yield stress 503 MPa). Austenite-surrounded TiB2 particles exhibited significantly higher fracture frequencies than ferrite-surrounded ones due to multi-directional shear strains from surrounding grains.",
+        "unmapped_findings.idx_6.value": "Post-fracture analysis revealed numerous voids from cracking of large primary TiB2 particles (oriented nearly perpendicular to tensile axis) and substantial particle/matrix decohesion; fracture surface shows mixed mode of ductile dimples, quasi-cleavage of TiB2, and interfacial decohesion.",
+        "unmapped_findings.idx_7.value": "FEM analysis indicates δ-ferrite provides a stable ~170 MPa strengthening contribution (>30% of overall yield strength) throughout deformation via composite effect, while austenite contributes increasing strain hardening due to rapid dislocation accumulation and geometrically necessary dislocations from phase heterogeneity."
+      }
+    }
+  }
+}

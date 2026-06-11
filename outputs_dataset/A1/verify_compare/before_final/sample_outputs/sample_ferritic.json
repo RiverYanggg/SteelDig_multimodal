@@ -1,0 +1,432 @@
+{
+  "sample_id": "sample_ferritic",
+  "sample_score": 78.72340425531915,
+  "sample_weight": 37.6,
+  "field_count": 26,
+  "correct_yes_count": 21,
+  "unknown_count": 2,
+  "no_count": 1,
+  "fields": [
+    {
+      "field_id": "F00126",
+      "sample_id": "sample_ferritic",
+      "section": "processing_steps",
+      "path": "processing_steps.sample_ferritic.method",
+      "value": "recrystallization annealing",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.95,
+      "evidence_refs": [
+        "b0195",
+        "b0204"
+      ],
+      "reason": "明确描述ferritic Fe-Al steels经过冷轧后再结晶退火，温度700-950°C",
+      "field_score": 95.0
+    },
+    {
+      "field_id": "F00127",
+      "sample_id": "sample_ferritic",
+      "section": "processing_steps",
+      "path": "processing_steps.sample_ferritic.processing_steps_notes",
+      "value": "Grain size 40-90 µm after annealing; texture random with Cube fibre.",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.95,
+      "evidence_refs": [
+        "b0204"
+      ],
+      "reason": "明确给出晶粒尺寸40-90 µm，以及随机织构和立方织构",
+      "field_score": 95.0
+    },
+    {
+      "field_id": "F00128",
+      "sample_id": "sample_ferritic",
+      "section": "processing_steps",
+      "path": "processing_steps.sample_ferritic.reduction_ratio",
+      "value": "~50",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.9,
+      "evidence_refs": [
+        "b0204"
+      ],
+      "reason": "明确说明50%冷轧压下量",
+      "field_score": 90.0
+    },
+    {
+      "field_id": "F00129",
+      "sample_id": "sample_ferritic",
+      "section": "processing_steps",
+      "path": "processing_steps.sample_ferritic.sequence",
+      "value": "4",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "unknown",
+      "evidence_confidence": 0.0,
+      "evidence_refs": [],
+      "reason": "未提供处理步骤序号的任何证据",
+      "field_score": 0.0
+    },
+    {
+      "field_id": "F00130",
+      "sample_id": "sample_ferritic",
+      "section": "processing_steps",
+      "path": "processing_steps.sample_ferritic.temperature",
+      "value": "room",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "no",
+      "evidence_confidence": 0.0,
+      "evidence_refs": [
+        "b0195",
+        "b0204"
+      ],
+      "reason": "退火温度应为700-950°C，而值为'room'矛盾",
+      "field_score": 0.0
+    },
+    {
+      "field_id": "F00131",
+      "sample_id": "sample_ferritic",
+      "section": "processing_steps",
+      "path": "processing_steps.sample_ferritic.temperature_with_unit",
+      "value": "700-950 °C",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.95,
+      "evidence_refs": [
+        "b0195",
+        "b0204"
+      ],
+      "reason": "明确再结晶退火温度700-950°C",
+      "field_score": 95.0
+    },
+    {
+      "field_id": "F00132",
+      "sample_id": "sample_ferritic",
+      "section": "processing_steps",
+      "path": "processing_steps.sample_ferritic.type",
+      "value": "heat_treatment",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.95,
+      "evidence_refs": [
+        "b0195",
+        "b0204"
+      ],
+      "reason": "退火属于热处理，证据明确",
+      "field_score": 95.0
+    },
+    {
+      "field_id": "F00190",
+      "sample_id": "sample_ferritic",
+      "section": "structures",
+      "path": "structures.sample_ferritic.microstructure_list[2].defects[grain_boundary_kappa_carbides].type",
+      "value": "grain boundary kappa-carbides",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.95,
+      "evidence_refs": [
+        "b0201"
+      ],
+      "reason": "明确描述粗大κ碳化物沿原始δ铁素体晶界形成",
+      "field_score": 95.0
+    },
+    {
+      "field_id": "F00191",
+      "sample_id": "sample_ferritic",
+      "section": "structures",
+      "path": "structures.sample_ferritic.microstructure_list[2].grain_structure.average_grain_size.value_with_unit",
+      "value": "40-90 µm",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.95,
+      "evidence_refs": [
+        "b0204"
+      ],
+      "reason": "明确晶粒尺寸40-90 µm",
+      "field_score": 95.0
+    },
+    {
+      "field_id": "F00192",
+      "sample_id": "sample_ferritic",
+      "section": "structures",
+      "path": "structures.sample_ferritic.microstructure_list[2].grain_structure.texture",
+      "value": "Cube {001}<110> and random after annealing",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.9,
+      "evidence_refs": [
+        "b0204"
+      ],
+      "reason": "证据描述随机织构伴随较强立方织构，数值等效",
+      "field_score": 90.0
+    },
+    {
+      "field_id": "F00193",
+      "sample_id": "sample_ferritic",
+      "section": "structures",
+      "path": "structures.sample_ferritic.microstructure_list[2].phases_present[delta_ferrite].crystal_structure",
+      "value": "BCC",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.9,
+      "evidence_refs": [
+        "b0061",
+        "b0082"
+      ],
+      "reason": "δ-铁素体为BCC结构，证据明确",
+      "field_score": 90.0
+    },
+    {
+      "field_id": "F00194",
+      "sample_id": "sample_ferritic",
+      "section": "structures",
+      "path": "structures.sample_ferritic.microstructure_list[2].phases_present[delta_ferrite].grain_size",
+      "value": "40-90 µm after recrystallization",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.95,
+      "evidence_refs": [
+        "b0204"
+      ],
+      "reason": "再结晶退火后晶粒尺寸40-90 µm",
+      "field_score": 95.0
+    },
+    {
+      "field_id": "F00195",
+      "sample_id": "sample_ferritic",
+      "section": "structures",
+      "path": "structures.sample_ferritic.microstructure_list[2].phases_present[delta_ferrite].morphology",
+      "value": "elongated bands, equiaxed after annealing",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.95,
+      "evidence_refs": [
+        "b0201",
+        "b0204"
+      ],
+      "reason": "热轧态为沿轧向伸长条带，退火后等轴化",
+      "field_score": 95.0
+    },
+    {
+      "field_id": "F00196",
+      "sample_id": "sample_ferritic",
+      "section": "structures",
+      "path": "structures.sample_ferritic.microstructure_list[2].phases_present[delta_ferrite].phase_name",
+      "value": "delta-ferrite",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0083",
+        "b0201"
+      ],
+      "reason": "相名称明确为δ-铁素体",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00197",
+      "sample_id": "sample_ferritic",
+      "section": "structures",
+      "path": "structures.sample_ferritic.microstructure_list[2].phases_present[delta_ferrite].texture",
+      "value": "Cube fibre and random components",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.9,
+      "evidence_refs": [
+        "b0204"
+      ],
+      "reason": "织构为随机和立方纤维，与证据一致",
+      "field_score": 90.0
+    },
+    {
+      "field_id": "F00198",
+      "sample_id": "sample_ferritic",
+      "section": "structures",
+      "path": "structures.sample_ferritic.microstructure_list[2].phases_present[delta_ferrite].volume_fraction",
+      "value": "1",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "partial",
+      "evidence_confidence": 0.6,
+      "evidence_refs": [
+        "b0083"
+      ],
+      "reason": "证据暗示为单一δ-铁素体组织，但未明确给出体积分数确切值1",
+      "field_score": 36.0
+    },
+    {
+      "field_id": "F00199",
+      "sample_id": "sample_ferritic",
+      "section": "structures",
+      "path": "structures.sample_ferritic.microstructure_list[2].precipitates[kappa_carbide_fe_mn_3alc].coherency",
+      "value": "semicoherent",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.9,
+      "evidence_refs": [
+        "b0201"
+      ],
+      "reason": "明确κ碳化物在铁素体基体中为半共格",
+      "field_score": 90.0
+    },
+    {
+      "field_id": "F00200",
+      "sample_id": "sample_ferritic",
+      "section": "structures",
+      "path": "structures.sample_ferritic.microstructure_list[2].precipitates[kappa_carbide_fe_mn_3alc].distribution",
+      "value": "along original delta-ferrite grain boundaries",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.95,
+      "evidence_refs": [
+        "b0201"
+      ],
+      "reason": "明确沿原始δ-铁素体晶界分布",
+      "field_score": 95.0
+    },
+    {
+      "field_id": "F00201",
+      "sample_id": "sample_ferritic",
+      "section": "structures",
+      "path": "structures.sample_ferritic.microstructure_list[2].precipitates[kappa_carbide_fe_mn_3alc].size.value",
+      "value": "coarse",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.9,
+      "evidence_refs": [
+        "b0201"
+      ],
+      "reason": "描述为粗大κ碳化物",
+      "field_score": 90.0
+    },
+    {
+      "field_id": "F00202",
+      "sample_id": "sample_ferritic",
+      "section": "structures",
+      "path": "structures.sample_ferritic.microstructure_list[2].precipitates[kappa_carbide_fe_mn_3alc].type",
+      "value": "kappa-carbide (Fe, Mn)3AlC",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.95,
+      "evidence_refs": [
+        "b0132",
+        "b0201"
+      ],
+      "reason": "κ-碳化物化学式(Fe,Mn)3AlC明确",
+      "field_score": 95.0
+    },
+    {
+      "field_id": "F00203",
+      "sample_id": "sample_ferritic",
+      "section": "structures",
+      "path": "structures.sample_ferritic.microstructure_list[2].related_sequence",
+      "value": "2",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "unknown",
+      "evidence_confidence": 0.0,
+      "evidence_refs": [],
+      "reason": "无证据支持该序列号",
+      "field_score": 0.0
+    },
+    {
+      "field_id": "F00204",
+      "sample_id": "sample_ferritic",
+      "section": "structures",
+      "path": "structures.sample_ferritic.number_of_phases",
+      "value": "1",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "partial",
+      "evidence_confidence": 0.5,
+      "evidence_refs": [
+        "b0083"
+      ],
+      "reason": "证据表明为单一铁素体相，但未明确给出数字1",
+      "field_score": 30.0
+    },
+    {
+      "field_id": "F00205",
+      "sample_id": "sample_ferritic",
+      "section": "structures",
+      "path": "structures.sample_ferritic.overall_structure",
+      "value": "Elongated delta-ferrite bands with possible grain boundary kappa-carbides",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.95,
+      "evidence_refs": [
+        "b0201",
+        "b0204"
+      ],
+      "reason": "伸长δ铁素体条带及晶界κ碳化物与证据完全吻合",
+      "field_score": 95.0
+    },
+    {
+      "field_id": "F00242",
+      "sample_id": "sample_ferritic",
+      "section": "properties",
+      "path": "properties.sample_ferritic.mechanical.tensile_properties.elongation[0].value_with_unit",
+      "value": "10-40 %",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.95,
+      "evidence_refs": [
+        "b0089"
+      ],
+      "reason": "表格明确铁素体钢延伸率10-40%",
+      "field_score": 95.0
+    },
+    {
+      "field_id": "F00243",
+      "sample_id": "sample_ferritic",
+      "section": "properties",
+      "path": "properties.sample_ferritic.mechanical.tensile_properties.ultimate_tensile_strength[0].value_with_unit",
+      "value": "200-600 MPa",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.95,
+      "evidence_refs": [
+        "b0089"
+      ],
+      "reason": "表格明确铁素体钢抗拉强度200-600 MPa",
+      "field_score": 95.0
+    },
+    {
+      "field_id": "F00244",
+      "sample_id": "sample_ferritic",
+      "section": "properties",
+      "path": "properties.sample_ferritic.physical.density.value_with_unit",
+      "value": "7.87 - 0.098*Al(wt%) g/cm3",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.95,
+      "evidence_refs": [
+        "b0062"
+      ],
+      "reason": "公式明确ρ_ferritic = 7.874 - 0.098(wt%Al) g/cm³",
+      "field_score": 95.0
+    }
+  ]
+}

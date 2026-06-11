@@ -1,0 +1,446 @@
+{
+  "paper_id": "A72",
+  "canonical_maps": {
+    "truth": {
+      "alloy_ln": "alloy_ln",
+      "alloy_hn": "alloy_hn",
+      "proc_ln_01": "proc_ln_01",
+      "proc_hn_01": "proc_hn_01",
+      "sample_ln": "sample_ln",
+      "sample_hn": "sample_hn",
+      "a72": "A72"
+    },
+    "prediction": {
+      "alloy_fe28mn10al0p8c_ln": "alloy_ln",
+      "alloy_fe28mn10al0p8c_hn": "alloy_hn",
+      "proc_01": "proc_hn_01",
+      "sample_ln_01": "sample_ln",
+      "sample_hn_01": "sample_hn",
+      "a72": "A72"
+    }
+  },
+  "alignment": {
+    "alloy_matches": [
+      {
+        "pred_alloy_id": "alloy_fe28mn10al0p8c_ln",
+        "truth_alloy_id": "alloy_ln",
+        "relation": "same",
+        "confidence": 1.0,
+        "reason": "Same nominal composition, base element, alloying elements, and aliases (LN steel)."
+      },
+      {
+        "pred_alloy_id": "alloy_fe28mn10al0p8c_hn",
+        "truth_alloy_id": "alloy_hn",
+        "relation": "same",
+        "confidence": 1.0,
+        "reason": "Same nominal composition, base element, alloying elements, and aliases (HN steel)."
+      }
+    ],
+    "process_matches": [
+      {
+        "pred_process_id": "proc_01",
+        "truth_process_id": "proc_ln_01",
+        "relation": "one_to_many",
+        "confidence": 1.0,
+        "reason": "Prediction process description matches both truth processes; combined for LN and HN."
+      },
+      {
+        "pred_process_id": "proc_01",
+        "truth_process_id": "proc_hn_01",
+        "relation": "one_to_many",
+        "confidence": 1.0,
+        "reason": "Prediction process description matches both truth processes; combined for LN and HN."
+      }
+    ],
+    "sample_matches": [
+      {
+        "pred_sample_id": "sample_ln_01",
+        "truth_sample_id": "sample_ln",
+        "relation": "same",
+        "confidence": 1.0,
+        "reason": "Referenced alloy (LN) and process (proc_01/proc_ln_01) are semantically the same."
+      },
+      {
+        "pred_sample_id": "sample_hn_01",
+        "truth_sample_id": "sample_hn",
+        "relation": "same",
+        "confidence": 1.0,
+        "reason": "Referenced alloy (HN) and process (proc_01/proc_hn_01) are semantically the same."
+      }
+    ],
+    "error": null
+  },
+  "flattened_sections": {
+    "papers": {
+      "truth": {
+        "papers.A72.title": "Effects of Nitrogen on the Microstructure and Mechanical Properties of Fe–28Mn–10Al–0.8C Low-Density Steel",
+        "papers.A72.authors[0]": "Shuai Guo",
+        "papers.A72.authors[1]": "Hangyu Zhu",
+        "papers.A72.authors[2]": "Jixuan Zhao",
+        "papers.A72.authors[3]": "Mingming Song",
+        "papers.A72.authors[4]": "Jianli Li",
+        "papers.A72.authors[5]": "Zhengliang Xue",
+        "papers.A72.keywords[0]": "low-density steel",
+        "papers.A72.keywords[1]": "nitrogen",
+        "papers.A72.keywords[2]": "microstructure",
+        "papers.A72.keywords[3]": "mechanical properties",
+        "papers.A72.keywords[4]": "AlN inclusions",
+        "papers.A72.keywords[5]": "grain refinement",
+        "papers.A72.keywords[6]": "Fe-Mn-Al-C steel",
+        "papers.A72.research_type": "mixed",
+        "papers.A72.paper_scope": "Investigation of effects of nitrogen content on inclusion characteristics, microstructure, and mechanical properties of Fe–28Mn–10Al–0.8C low-density steel"
+      },
+      "prediction": {
+        "papers.A72.title": "Effects of Nitrogen on the Microstructure and Mechanical Properties of Fe–28Mn–10Al–0.8C Low-Density Steel",
+        "papers.A72.authors[0]": "Shuai Guo",
+        "papers.A72.authors[1]": "Hangyu Zhu",
+        "papers.A72.authors[2]": "Jixuan Zhao",
+        "papers.A72.authors[3]": "Mingming Song",
+        "papers.A72.authors[4]": "Jianli Li",
+        "papers.A72.authors[5]": "Zhengliang Xue",
+        "papers.A72.research_type": "experimental",
+        "papers.A72.paper_scope": "Investigating the effects of nitrogen content on non-metallic inclusions, microstructure, and mechanical properties of Fe-28Mn-10Al-0.8C low-density steel."
+      }
+    },
+    "alloys": {
+      "truth": {
+        "alloys.alloy_ln.alloy_name": "Low-nitrogen Fe-28Mn-10Al-0.8C steel",
+        "alloys.alloy_ln.aliases[0]": "LN steel",
+        "alloys.alloy_ln.aliases[1]": "LN",
+        "alloys.alloy_ln.base_element": "Fe",
+        "alloys.alloy_ln.alloying_elements[0]": "Mn",
+        "alloys.alloy_ln.alloying_elements[1]": "Al",
+        "alloys.alloy_ln.alloying_elements[2]": "C",
+        "alloys.alloy_ln.alloying_elements[3]": "N",
+        "alloys.alloy_ln.alloying_elements[4]": "S",
+        "alloys.alloy_ln.nominal_composition[mn].element": "Mn",
+        "alloys.alloy_ln.nominal_composition[mn].weight_percent": "28.21",
+        "alloys.alloy_ln.nominal_composition[al].element": "Al",
+        "alloys.alloy_ln.nominal_composition[al].weight_percent": "9.90",
+        "alloys.alloy_ln.nominal_composition[c].element": "C",
+        "alloys.alloy_ln.nominal_composition[c].weight_percent": "0.82",
+        "alloys.alloy_ln.nominal_composition[n].element": "N",
+        "alloys.alloy_ln.nominal_composition[n].weight_percent": "0.0025",
+        "alloys.alloy_ln.nominal_composition[s].element": "S",
+        "alloys.alloy_ln.nominal_composition[s].weight_percent": "0.0085",
+        "alloys.alloy_ln.nominal_composition[fe].element": "Fe",
+        "alloys.alloy_ln.nominal_composition[fe].weight_percent": "Bal.",
+        "alloys.alloy_hn.alloy_name": "High-nitrogen Fe-28Mn-10Al-0.8C steel",
+        "alloys.alloy_hn.aliases[0]": "HN steel",
+        "alloys.alloy_hn.aliases[1]": "HN",
+        "alloys.alloy_hn.base_element": "Fe",
+        "alloys.alloy_hn.alloying_elements[0]": "Mn",
+        "alloys.alloy_hn.alloying_elements[1]": "Al",
+        "alloys.alloy_hn.alloying_elements[2]": "C",
+        "alloys.alloy_hn.alloying_elements[3]": "N",
+        "alloys.alloy_hn.alloying_elements[4]": "S",
+        "alloys.alloy_hn.nominal_composition[mn].element": "Mn",
+        "alloys.alloy_hn.nominal_composition[mn].weight_percent": "28.10",
+        "alloys.alloy_hn.nominal_composition[al].element": "Al",
+        "alloys.alloy_hn.nominal_composition[al].weight_percent": "9.95",
+        "alloys.alloy_hn.nominal_composition[c].element": "C",
+        "alloys.alloy_hn.nominal_composition[c].weight_percent": "0.81",
+        "alloys.alloy_hn.nominal_composition[n].element": "N",
+        "alloys.alloy_hn.nominal_composition[n].weight_percent": "0.1326",
+        "alloys.alloy_hn.nominal_composition[s].element": "S",
+        "alloys.alloy_hn.nominal_composition[s].weight_percent": "0.0093",
+        "alloys.alloy_hn.nominal_composition[fe].element": "Fe",
+        "alloys.alloy_hn.nominal_composition[fe].weight_percent": "Bal."
+      },
+      "prediction": {
+        "alloys.alloy_ln.alloy_name": "LN steel",
+        "alloys.alloy_ln.aliases[0]": "low-nitrogen steel",
+        "alloys.alloy_ln.aliases[1]": "LN",
+        "alloys.alloy_ln.base_element": "Fe",
+        "alloys.alloy_ln.alloying_elements[0]": "Mn",
+        "alloys.alloy_ln.alloying_elements[1]": "Al",
+        "alloys.alloy_ln.alloying_elements[2]": "C",
+        "alloys.alloy_ln.alloying_elements[3]": "N",
+        "alloys.alloy_ln.alloying_elements[4]": "S",
+        "alloys.alloy_ln.nominal_composition[mn].element": "Mn",
+        "alloys.alloy_ln.nominal_composition[mn].weight_percent": "28.21",
+        "alloys.alloy_ln.nominal_composition[al].element": "Al",
+        "alloys.alloy_ln.nominal_composition[al].weight_percent": "9.90",
+        "alloys.alloy_ln.nominal_composition[c].element": "C",
+        "alloys.alloy_ln.nominal_composition[c].weight_percent": "0.82",
+        "alloys.alloy_ln.nominal_composition[n].element": "N",
+        "alloys.alloy_ln.nominal_composition[n].weight_percent": "0.0025",
+        "alloys.alloy_ln.nominal_composition[s].element": "S",
+        "alloys.alloy_ln.nominal_composition[s].weight_percent": "0.0085",
+        "alloys.alloy_ln.nominal_composition[fe].element": "Fe",
+        "alloys.alloy_ln.nominal_composition[fe].weight_percent": "Bal.",
+        "alloys.alloy_hn.alloy_name": "HN steel",
+        "alloys.alloy_hn.aliases[0]": "high-nitrogen steel",
+        "alloys.alloy_hn.aliases[1]": "HN",
+        "alloys.alloy_hn.base_element": "Fe",
+        "alloys.alloy_hn.alloying_elements[0]": "Mn",
+        "alloys.alloy_hn.alloying_elements[1]": "Al",
+        "alloys.alloy_hn.alloying_elements[2]": "C",
+        "alloys.alloy_hn.alloying_elements[3]": "N",
+        "alloys.alloy_hn.alloying_elements[4]": "S",
+        "alloys.alloy_hn.nominal_composition[mn].element": "Mn",
+        "alloys.alloy_hn.nominal_composition[mn].weight_percent": "28.10",
+        "alloys.alloy_hn.nominal_composition[al].element": "Al",
+        "alloys.alloy_hn.nominal_composition[al].weight_percent": "9.95",
+        "alloys.alloy_hn.nominal_composition[c].element": "C",
+        "alloys.alloy_hn.nominal_composition[c].weight_percent": "0.81",
+        "alloys.alloy_hn.nominal_composition[n].element": "N",
+        "alloys.alloy_hn.nominal_composition[n].weight_percent": "0.1326",
+        "alloys.alloy_hn.nominal_composition[s].element": "S",
+        "alloys.alloy_hn.nominal_composition[s].weight_percent": "0.0093",
+        "alloys.alloy_hn.nominal_composition[fe].element": "Fe",
+        "alloys.alloy_hn.nominal_composition[fe].weight_percent": "Bal."
+      }
+    },
+    "processes": {
+      "truth": {
+        "processes.proc_ln_01.description": "Vacuum medium-frequency induction melting, ingot held at 1423 K for 2 h, multidirectional hot forging at 1123–1323 K, air cooling",
+        "processes.proc_hn_01.description": "Vacuum medium-frequency induction melting, ingot held at 1423 K for 2 h, multidirectional hot forging at 1123–1323 K, air cooling"
+      },
+      "prediction": {
+        "processes.proc_hn_01.description": "Vacuum induction melting of 50 kg ingots, holding at 1423 K for 2 h, multidirectional hot forging in 1123–1323 K, followed by air cooling."
+      }
+    },
+    "samples": {
+      "truth": {},
+      "prediction": {}
+    },
+    "processing_steps": {
+      "truth": {
+        "processing_steps.sample_ln.temperature_with_unit": "1123–1323 K",
+        "processing_steps.sample_ln.sequence": "3",
+        "processing_steps.sample_ln.type": "cooling",
+        "processing_steps.sample_ln.method": "air cooling",
+        "processing_steps.sample_ln.duration": "2 h",
+        "processing_steps.sample_ln.processing_steps_notes": "Forging temperature range 1123–1323 K",
+        "processing_steps.sample_ln.cooling_medium": "air",
+        "processing_steps.sample_hn.temperature_with_unit": "1123–1323 K",
+        "processing_steps.sample_hn.sequence": "3",
+        "processing_steps.sample_hn.type": "cooling",
+        "processing_steps.sample_hn.method": "air cooling",
+        "processing_steps.sample_hn.duration": "2 h",
+        "processing_steps.sample_hn.processing_steps_notes": "Forging temperature range 1123–1323 K",
+        "processing_steps.sample_hn.cooling_medium": "air"
+      },
+      "prediction": {
+        "processing_steps.sample_ln.sequence": "3",
+        "processing_steps.sample_ln.type": "thermomechanical_processing",
+        "processing_steps.sample_ln.method": "multidirectional hot forging",
+        "processing_steps.sample_ln.processing_steps_notes": "50 kg ingots prepared from pure iron, ferromanganese, carbon particles, aluminum particles, and manganese nitrogen alloy.",
+        "processing_steps.sample_ln.temperature_with_unit": "1123–1323 K",
+        "processing_steps.sample_ln.duration": "2 h",
+        "processing_steps.sample_ln.cooling_medium": "air",
+        "processing_steps.sample_hn.sequence": "3",
+        "processing_steps.sample_hn.type": "thermomechanical_processing",
+        "processing_steps.sample_hn.method": "multidirectional hot forging",
+        "processing_steps.sample_hn.processing_steps_notes": "50 kg ingots prepared from pure iron, ferromanganese, carbon particles, aluminum particles, and manganese nitrogen alloy.",
+        "processing_steps.sample_hn.temperature_with_unit": "1123–1323 K",
+        "processing_steps.sample_hn.duration": "2 h",
+        "processing_steps.sample_hn.cooling_medium": "air"
+      }
+    },
+    "structures": {
+      "truth": {
+        "structures.sample_ln.overall_structure": "Austenite matrix with elongated ferrite at grain boundaries, deformation twins present",
+        "structures.sample_ln.number_of_phases": "2",
+        "structures.sample_ln.microstructure_list[0].phases_present[austenite].phase_name": "Austenite",
+        "structures.sample_ln.microstructure_list[0].phases_present[austenite].crystal_structure": "FCC",
+        "structures.sample_ln.microstructure_list[0].phases_present[austenite].volume_fraction": "94.92",
+        "structures.sample_ln.microstructure_list[0].phases_present[austenite].morphology": "matrix",
+        "structures.sample_ln.microstructure_list[0].phases_present[ferrite].phase_name": "Ferrite",
+        "structures.sample_ln.microstructure_list[0].phases_present[ferrite].crystal_structure": "BCC",
+        "structures.sample_ln.microstructure_list[0].phases_present[ferrite].volume_fraction": "5.08",
+        "structures.sample_ln.microstructure_list[0].phases_present[ferrite].morphology": "long parallel stripes at austenite grain boundaries",
+        "structures.sample_ln.microstructure_list[0].defects[deformation_twins].type": "deformation twins",
+        "structures.sample_ln.microstructure_list[0].grain_structure.average_grain_size.value_with_unit": "20.5 μm",
+        "structures.sample_ln.microstructure_list[0].precipitates[aln].type": "AlN",
+        "structures.sample_ln.microstructure_list[0].precipitates[aln].size.value_with_unit": "3.435 μm",
+        "structures.sample_ln.microstructure_list[0].precipitates[aln].distribution": "polyhedral, some with sulfide attached; number density 73 mm^{-2}",
+        "structures.sample_ln.microstructure_list[0].precipitates[mn_mg_s].type": "Mn(Mg)S",
+        "structures.sample_ln.microstructure_list[0].precipitates[mn_mg_s].distribution": "elliptical with smooth edge",
+        "structures.sample_hn.overall_structure": "Austenite matrix with reduced ferrite, finer grains, abundant deformation twins",
+        "structures.sample_hn.number_of_phases": "2",
+        "structures.sample_hn.microstructure_list[0].phases_present[austenite].phase_name": "Austenite",
+        "structures.sample_hn.microstructure_list[0].phases_present[austenite].crystal_structure": "FCC",
+        "structures.sample_hn.microstructure_list[0].phases_present[austenite].volume_fraction": "98.16",
+        "structures.sample_hn.microstructure_list[0].phases_present[austenite].morphology": "matrix",
+        "structures.sample_hn.microstructure_list[0].phases_present[ferrite].phase_name": "Ferrite",
+        "structures.sample_hn.microstructure_list[0].phases_present[ferrite].crystal_structure": "BCC",
+        "structures.sample_hn.microstructure_list[0].phases_present[ferrite].volume_fraction": "1.84",
+        "structures.sample_hn.microstructure_list[0].phases_present[ferrite].morphology": "long parallel stripes at austenite grain boundaries",
+        "structures.sample_hn.microstructure_list[0].defects[deformation_twins].type": "deformation twins",
+        "structures.sample_hn.microstructure_list[0].grain_structure.average_grain_size.value_with_unit": "12.1 μm",
+        "structures.sample_hn.microstructure_list[0].precipitates[aln].type": "AlN",
+        "structures.sample_hn.microstructure_list[0].precipitates[aln].size.value_with_unit": "1.521 μm",
+        "structures.sample_hn.microstructure_list[0].precipitates[aln].distribution": "straight edge and sharp angle, 84% < 2 μm; number density 133 mm^{-2}, some aggregated; broken after forging"
+      },
+      "prediction": {
+        "structures.sample_ln.overall_structure": "Austenite matrix with ferrite at grain boundaries and annealing twins",
+        "structures.sample_ln.number_of_phases": "2",
+        "structures.sample_ln.microstructure_list[0].phases_present[austenite].phase_name": "Austenite",
+        "structures.sample_ln.microstructure_list[0].phases_present[austenite].crystal_structure": "FCC",
+        "structures.sample_ln.microstructure_list[0].phases_present[ferrite].phase_name": "Ferrite",
+        "structures.sample_ln.microstructure_list[0].phases_present[ferrite].crystal_structure": "BCC",
+        "structures.sample_ln.microstructure_list[0].phases_present[ferrite].volume_fraction": "5.08%",
+        "structures.sample_ln.microstructure_list[0].phases_present[ferrite].morphology": "long parallel stripes at austenite boundaries",
+        "structures.sample_ln.microstructure_list[0].phases_present[ferrite].grain_size": "coarser and larger than HN ferrite",
+        "structures.sample_ln.microstructure_list[0].defects[inclusions].type": "inclusions",
+        "structures.sample_ln.microstructure_list[0].defects[inclusions].inclusions[0]": "AlN",
+        "structures.sample_ln.microstructure_list[0].defects[inclusions].inclusions[1]": "Mn(Mg)S",
+        "structures.sample_ln.microstructure_list[0].defects[inclusions].inclusions[2]": "AlN–Mn(Mg)S composite",
+        "structures.sample_ln.microstructure_list[0].grain_structure.average_grain_size.value_with_unit": "20.5 μm",
+        "structures.sample_hn.overall_structure": "Refined austenite matrix with less ferrite, more deformation twins, and fine AlN inclusions",
+        "structures.sample_hn.number_of_phases": "2",
+        "structures.sample_hn.microstructure_list[0].phases_present[austenite].phase_name": "Austenite",
+        "structures.sample_hn.microstructure_list[0].phases_present[austenite].crystal_structure": "FCC",
+        "structures.sample_hn.microstructure_list[0].phases_present[ferrite].phase_name": "Ferrite",
+        "structures.sample_hn.microstructure_list[0].phases_present[ferrite].crystal_structure": "BCC",
+        "structures.sample_hn.microstructure_list[0].phases_present[ferrite].volume_fraction": "1.84%",
+        "structures.sample_hn.microstructure_list[0].phases_present[ferrite].morphology": "less abundant than in LN steel",
+        "structures.sample_hn.microstructure_list[0].phases_present[ferrite].grain_size": "finer than LN ferrite",
+        "structures.sample_hn.microstructure_list[0].defects[inclusions].type": "inclusions",
+        "structures.sample_hn.microstructure_list[0].defects[inclusions].inclusions[0]": "AlN",
+        "structures.sample_hn.microstructure_list[0].defects[inclusions].inclusions[1]": "aggregated AlN",
+        "structures.sample_hn.microstructure_list[0].defects[deformation_twins].type": "deformation twins",
+        "structures.sample_hn.microstructure_list[0].grain_structure.average_grain_size.value_with_unit": "12.1 μm",
+        "structures.sample_hn.microstructure_list[0].precipitates[aln_inclusion].type": "AlN inclusion",
+        "structures.sample_hn.microstructure_list[0].precipitates[aln_inclusion].size.value_with_unit": "1.521 μm",
+        "structures.sample_hn.microstructure_list[0].precipitates[aln_inclusion].distribution": "fine and dispersed, with 84% smaller than 2 μm"
+      }
+    },
+    "interfaces": {
+      "truth": {},
+      "prediction": {}
+    },
+    "properties": {
+      "truth": {
+        "properties.sample_ln.mechanical.tensile_properties.yield_strength[room_temperature].value_with_unit": "685 MPa",
+        "properties.sample_ln.mechanical.tensile_properties.yield_strength[room_temperature].direction": "room temperature",
+        "properties.sample_ln.mechanical.tensile_properties.yield_strength[room_temperature].others.uncertainty": "±1.5",
+        "properties.sample_ln.mechanical.tensile_properties.ultimate_tensile_strength[room_temperature].value_with_unit": "832.5 MPa",
+        "properties.sample_ln.mechanical.tensile_properties.ultimate_tensile_strength[room_temperature].direction": "room temperature",
+        "properties.sample_ln.mechanical.tensile_properties.ultimate_tensile_strength[room_temperature].others.uncertainty": "±1.5",
+        "properties.sample_ln.mechanical.tensile_properties.elongation[room_temperature].value_with_unit": "62.5 %",
+        "properties.sample_ln.mechanical.tensile_properties.elongation[room_temperature].direction": "room temperature",
+        "properties.sample_ln.mechanical.tensile_properties.stress_strain_distribution[room_temperature].direction": "room temperature",
+        "properties.sample_ln.mechanical.tensile_properties.stress_strain_distribution[room_temperature].distribution": "Data from Figure 2: Strain 0%/Stress 0, 10%/700, 20%/750, 30%/780, 40%/800, 50%/820, 60%/830, 70%/840, 80%/550 MPa (LN)",
+        "properties.sample_hn.mechanical.tensile_properties.yield_strength[room_temperature].value_with_unit": "647 MPa",
+        "properties.sample_hn.mechanical.tensile_properties.yield_strength[room_temperature].direction": "room temperature",
+        "properties.sample_hn.mechanical.tensile_properties.yield_strength[room_temperature].others.uncertainty": "±1",
+        "properties.sample_hn.mechanical.tensile_properties.ultimate_tensile_strength[room_temperature].value_with_unit": "841.5 MPa",
+        "properties.sample_hn.mechanical.tensile_properties.ultimate_tensile_strength[room_temperature].direction": "room temperature",
+        "properties.sample_hn.mechanical.tensile_properties.ultimate_tensile_strength[room_temperature].others.uncertainty": "±3.5",
+        "properties.sample_hn.mechanical.tensile_properties.elongation[room_temperature].value_with_unit": "74.5 %",
+        "properties.sample_hn.mechanical.tensile_properties.elongation[room_temperature].direction": "room temperature",
+        "properties.sample_hn.mechanical.tensile_properties.stress_strain_distribution[room_temperature].direction": "room temperature",
+        "properties.sample_hn.mechanical.tensile_properties.stress_strain_distribution[room_temperature].distribution": "Data from Figure 2: Strain 0%/Stress 0, 10%/650, 20%/700, 30%/750, 40%/780, 50%/800, 60%/820, 70%/830, 80%/550 MPa (HN)"
+      },
+      "prediction": {
+        "properties.sample_ln.mechanical.tensile_properties.yield_strength[0].value_with_unit": "685 MPa",
+        "properties.sample_ln.mechanical.tensile_properties.yield_strength[0].others.uncertainty": "±1.5",
+        "properties.sample_ln.mechanical.tensile_properties.ultimate_tensile_strength[0].value_with_unit": "832.5 MPa",
+        "properties.sample_ln.mechanical.tensile_properties.ultimate_tensile_strength[0].others.uncertainty": "±1.5",
+        "properties.sample_ln.mechanical.tensile_properties.elongation[0].value_with_unit": "62.5 %",
+        "properties.sample_hn.mechanical.tensile_properties.yield_strength[0].value_with_unit": "647 MPa",
+        "properties.sample_hn.mechanical.tensile_properties.yield_strength[0].others.uncertainty": "±1",
+        "properties.sample_hn.mechanical.tensile_properties.ultimate_tensile_strength[0].value_with_unit": "841.5 MPa",
+        "properties.sample_hn.mechanical.tensile_properties.ultimate_tensile_strength[0].others.uncertainty": "±3.5",
+        "properties.sample_hn.mechanical.tensile_properties.elongation[0].value_with_unit": "74.5 %"
+      }
+    },
+    "performance": {
+      "truth": {},
+      "prediction": {
+        "performance.sample_hn.comparative_performance.benchmark_alloy": "LN steel (Fe-28Mn-10Al-0.8C low-density steel)",
+        "performance.sample_hn.comparative_performance.benchmark_process_id": "proc_01",
+        "performance.sample_hn.comparative_performance.benchmark_sample_id": "sample_ln_01"
+      }
+    },
+    "characterization_methods": {
+      "truth": {
+        "characterization_methods.idx_0.technique": "SEM-EDS",
+        "characterization_methods.idx_0.purpose": "Morphology and composition of inclusions and fracture surfaces",
+        "characterization_methods.idx_0.key_findings": "AlN and Mn(Mg)S inclusions identified; aggregated AlN in HN steel",
+        "characterization_methods.idx_1.technique": "Optical microscopy / superdepth of field microscope (VHX-500)",
+        "characterization_methods.idx_1.purpose": "Microstructure and fracture morphology",
+        "characterization_methods.idx_1.key_findings": "Grain size refinement, ferrite fraction difference, dimple characteristics",
+        "characterization_methods.sample_ln.technique": "Impact testing machine (JB-300B)",
+        "characterization_methods.sample_ln.purpose": "Room temperature impact toughness (Charpy V-notch)",
+        "characterization_methods.sample_ln.key_findings": "Impact energy 81 ± 3 J",
+        "characterization_methods.sample_hn.technique": "Impact testing machine (JB-300B)",
+        "characterization_methods.sample_hn.purpose": "Room temperature impact toughness (Charpy V-notch)",
+        "characterization_methods.sample_hn.key_findings": "Impact energy 130.5 ± 5.5 J"
+      },
+      "prediction": {
+        "characterization_methods.sample_ln.technique": "ImageJ software on SEM images",
+        "characterization_methods.sample_ln.purpose": "Inclusion statistics",
+        "characterization_methods.sample_ln.key_findings": "Number density 73 mm^-2, average size 3.435 μm, area ratio 0.212%; 78% of inclusions less than 4 μm.",
+        "characterization_methods.sample_hn.technique": "ImageJ software on SEM images",
+        "characterization_methods.sample_hn.purpose": "Inclusion statistics",
+        "characterization_methods.sample_hn.key_findings": "Number density 133 mm^-2, average size 1.521 μm, area ratio 1.005%; 95% of inclusions less than 4 μm, 84% of AlN smaller than 2 μm."
+      }
+    },
+    "computational_details": {
+      "truth": {
+        "computational_details.idx_0.simulation_method": "Thermodynamic equilibrium calculation",
+        "computational_details.idx_0.software_used": "Thermo-Calc",
+        "computational_details.idx_0.potential_model": "TCFE8 database",
+        "computational_details.idx_0.analytical_model[0].model_name": "Fe–28Mn–10Al–0.8C–N pseudobinary phase diagram",
+        "computational_details.idx_0.analytical_model[0].equation_role": "predict austenite/ferrite phase stability with N content",
+        "computational_details.idx_0.analytical_model[0].parameters": "system Fe-28Mn-10Al-0.8C with varying N",
+        "computational_details.idx_0.analytical_model[0].model_note": "Austenite phase region expands and ferrite disappears with increasing N",
+        "computational_details.idx_1.simulation_method": "Thermodynamic equilibrium calculation",
+        "computational_details.idx_1.software_used": "FactSage 8.0",
+        "computational_details.idx_1.analytical_model[0].model_name": "AlN stability diagram",
+        "computational_details.idx_1.analytical_model[0].equation_role": "determine AlN formation conditions based on Al and N content and temperature",
+        "computational_details.idx_1.analytical_model[0].parameters": "liquidus 1587 K, solidus 1493 K; Al and N content of LN and HN steels",
+        "computational_details.idx_1.analytical_model[0].model_note": "HN steel composition far exceeds equilibrium line, AlN stable in melt",
+        "computational_details.idx_2.simulation_method": "Analytical model",
+        "computational_details.idx_2.analytical_model[0].model_name": "Griffith fracture equation",
+        "computational_details.idx_2.analytical_model[0].equation_role": "relates grain size to fracture stress",
+        "computational_details.idx_2.analytical_model[0].parameters": "σ_f = [4 E γ / π (1 - ν^2) c_0]^{1/2}",
+        "computational_details.idx_2.analytical_model[0].model_note": "c_0 effective grain size; refined grains improve fracture toughness",
+        "computational_details.idx_2.analytical_model[1].model_name": "Hall-Petch equation",
+        "computational_details.idx_2.analytical_model[1].equation_role": "relates yield strength to grain size",
+        "computational_details.idx_2.analytical_model[1].parameters": "σ_y = σ_0 + K_y d^{-1/2}",
+        "computational_details.idx_2.analytical_model[1].model_note": "yield strength expected to increase with grain refinement; lower YS of HN attributed to reduced ferrite content"
+      },
+      "prediction": {
+        "computational_details.idx_0.software_used": "FactSage 8.0",
+        "computational_details.idx_0.validation_against_experiment": "Calculated liquidus 1587 K and solidus 1493 K were compared with experimental AlN stability observations.",
+        "computational_details.idx_1.simulation_method": "Thermodynamic equilibrium calculation",
+        "computational_details.idx_1.software_used": "Thermo-Calc with TCFE8 database",
+        "computational_details.idx_1.validation_against_experiment": "Pseudobinary phase diagram used to explain austenite stabilization and ferrite reduction with nitrogen addition.",
+        "computational_details.idx_2.analytical_model[0].model_name": "Griffith's equation",
+        "computational_details.idx_2.analytical_model[0].equation_role": "Fracture stress prediction linking grain refinement to toughness",
+        "computational_details.idx_2.analytical_model[0].model_note": "sigma_f = [4 E gamma / (pi (1-nu^2) c0)]^{1/2}",
+        "computational_details.idx_3.analytical_model[0].model_name": "Hall-Petch formula",
+        "computational_details.idx_3.analytical_model[0].equation_role": "Yield strength versus grain size relationship",
+        "computational_details.idx_3.analytical_model[0].model_note": "sigma_y = sigma_0 + K_y / d^{-1/2}"
+      }
+    },
+    "unmapped_findings": {
+      "truth": {
+        "unmapped_findings.idx_0.value": "Reduction of area (RA): LN 57(±6)%, HN 70(±2)%.",
+        "unmapped_findings.idx_1.value": "Impact toughness (CVN): LN 81(±3) J, HN 130.5(±5.5) J; shear lip area ratio larger in HN.",
+        "unmapped_findings.idx_2.value": "Inclusion statistics: LN number density 73 mm^{-2}, average size 3.435 μm, area ratio 0.212%; HN number density 133 mm^{-2}, average size 1.521 μm, area ratio 1.005%.",
+        "unmapped_findings.idx_3.value": "Number percentages of inclusions: <4 μm: LN 78%, HN 95%; <2 μm: HN 84%.",
+        "unmapped_findings.idx_4.value": "Fe–28Mn–10Al–0.8C with 0.1326 wt% N forms AlN in liquid steel; LN with 0.0025 wt% N does not.",
+        "unmapped_findings.idx_5.value": "Austenite grain refinement by fine AlN particles acting as heterogeneous nucleation sites and pinning grain boundaries.",
+        "unmapped_findings.idx_6.value": "Fracture morphology: LN tensile fracture at 45° to load direction (shear), HN crater-shaped; LN impact dimples elongated, HN dimples large and uniform.",
+        "unmapped_findings.idx_7.value": "Aggregated AlN inclusions found in dimples of HN steel, formed during smelting and act as crack initiation sites."
+      },
+      "prediction": {
+        "unmapped_findings.idx_0.value": "With nitrogen addition, plasticity and impact toughness were distinctly enhanced, whereas yield strength decreased due to reduced ferrite content; the area percentage of ferrite was 5.08% in LN steel and 1.84% in HN steel.",
+        "unmapped_findings.idx_1.value": "Reduction of area (RA) for LN steel was 57(±6)% and for HN steel was 70(±2)%, representing approximately 13% relative improvement.",
+        "unmapped_findings.idx_2.value": "Impact energy (CVN) for LN steel was 81(±3) J and for HN steel was 130.5(±5.5) J, which was 49.5 J higher than LN steel.",
+        "unmapped_findings.idx_3.value": "AlN inclusions were the dominant inclusions in HN steel, with 84% of AlN inclusions smaller than 2 μm, acting as heterogeneous nucleation cores for austenite and pinning grain boundaries during solidification.",
+        "unmapped_findings.idx_4.value": "Aggregated AlN inclusions were detected in the dimples of HN steel fracture surfaces, generated during the smelting process, and tended to cause crack initiation.",
+        "unmapped_findings.idx_5.value": "The fracture morphology of HN steel showed a crater shape with large and deep dimples, while LN steel fractured at 45° to the load direction with smaller and more numerous dimples, indicating shear fracture.",
+        "unmapped_findings.idx_6.value": "Impact fractures of both LN and HN steels exhibited standard ductile characteristics including fibrous, radiation, and shear lip zones, with HN steel having a significantly higher area ratio of shear lip zone.",
+        "unmapped_findings.idx_7.value": "Tensile tests were conducted at room temperature using a strain rate of 1×10^-3 s^-1 and tensile speed of 3 mm min^-1; stress-strain curves were corrected by adding real elastic deformation to plastic deformation.",
+        "unmapped_findings.idx_8.value": "Nitrogen addition expanded the austenite phase area and promoted the growth of the austenite nucleus, thereby preventing the growth of ferrite according to the pseudobinary phase diagram calculation."
+      }
+    }
+  }
+}

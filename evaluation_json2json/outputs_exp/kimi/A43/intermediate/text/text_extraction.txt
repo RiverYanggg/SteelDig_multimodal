@@ -1,0 +1,890 @@
+```json
+{
+    "papers": [
+        {
+            "paper_id": "A43",
+            "doi": null,
+            "title": "Data-driven and multi-mechanism strengthening based yield strength prediction in medium-manganese low-density steels",
+            "authors": [
+                "Rui-xiao Zhang",
+                "Jia-he Yan",
+                "Guo-long Liu",
+                "Ming-he Zhang",
+                "Yun-li Feng"
+            ],
+            "publication_year": null,
+            "journal": null,
+            "keywords": [
+                "Medium-manganese low-density steels",
+                "Yield strength",
+                "Strengthening mechanisms",
+                "Machine learning",
+                "Genetic algorithm-Extremely randomized trees"
+            ],
+            "research_type": "mixed",
+            "paper_scope": "Development and experimental validation of a data-driven yield strength prediction framework for medium-manganese low-density steels, integrating Gaussian Mixture Model data augmentation, Extra Trees ensemble learning, Genetic Algorithm hyperparameter optimization, and SHAP interpretability, verified on Fe-0.25C-3Mn-2Al-0.4Si steel annealed at 750, 800, and 850 degrees Celsius."
+        }
+    ],
+    "alloys": [
+        {
+            "alloy_id": "alloy_fe025c3mn2al04si",
+            "paper_id": "A43",
+            "alloy_name": "Fe-0.25C-3Mn-2Al-0.4Si",
+            "aliases": [
+                "medium-manganese low-density steel"
+            ],
+            "base_element": "Fe",
+            "alloying_elements": [
+                "C",
+                "Mn",
+                "Al",
+                "Si"
+            ],
+            "nominal_composition": [
+                {
+                    "element": "Fe",
+                    "weight_percent": "balance",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "C",
+                    "weight_percent": "0.25",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "Mn",
+                    "weight_percent": "3",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "Al",
+                    "weight_percent": "2",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "Si",
+                    "weight_percent": "0.4",
+                    "atomic_percent": null
+                }
+            ],
+            "alloys_notes": "Al and Si additions suppress carbide precipitation, resulting in negligible Orowan strengthening effect in this alloy system."
+        }
+    ],
+    "processes": [
+        {
+            "process_id": "proc_fe025c_750",
+            "paper_id": "A43",
+            "alloy_id": "alloy_fe025c3mn2al04si",
+            "description": "Vacuum induction melting, hot forging, reheating at 1200 degrees C for 60 min, six-pass hot rolling from 1100 to 880 degrees C with 90% cumulative reduction, cold rolling with 60% total reduction, annealing at 750 degrees C for 30 min with air cooling, and tempering at 400 degrees C for 30 min with air cooling.",
+            "processes_notes": null
+        },
+        {
+            "process_id": "proc_fe025c_800",
+            "paper_id": "A43",
+            "alloy_id": "alloy_fe025c3mn2al04si",
+            "description": "Identical processing route to proc_fe025c_750, but with annealing at 800 degrees C for 30 min with air cooling.",
+            "processes_notes": null
+        },
+        {
+            "process_id": "proc_fe025c_850",
+            "paper_id": "A43",
+            "alloy_id": "alloy_fe025c3mn2al04si",
+            "description": "Identical processing route to proc_fe025c_750, but with annealing at 850 degrees C for 30 min with air cooling.",
+            "processes_notes": null
+        }
+    ],
+    "samples": [
+        {
+            "sample_id": "sample_fe025c_750",
+            "paper_id": "A43",
+            "alloy_id": "alloy_fe025c3mn2al04si",
+            "process_id": "proc_fe025c_750"
+        },
+        {
+            "sample_id": "sample_fe025c_800",
+            "paper_id": "A43",
+            "alloy_id": "alloy_fe025c3mn2al04si",
+            "process_id": "proc_fe025c_800"
+        },
+        {
+            "sample_id": "sample_fe025c_850",
+            "paper_id": "A43",
+            "alloy_id": "alloy_fe025c3mn2al04si",
+            "process_id": "proc_fe025c_850"
+        }
+    ],
+    "processing_steps": [
+        {
+            "sample_id": "sample_fe025c_750",
+            "paper_id": "A43",
+            "sequence": "1",
+            "type": "melting",
+            "method": "vacuum induction melting",
+            "temperature": null,
+            "unit": null,
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "Steel melted in vacuum induction furnace."
+        },
+        {
+            "sample_id": "sample_fe025c_750",
+            "paper_id": "A43",
+            "sequence": "2",
+            "type": "thermomechanical_processing",
+            "method": "hot forging",
+            "temperature": null,
+            "unit": null,
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "Hot forging performed after melting."
+        },
+        {
+            "sample_id": "sample_fe025c_750",
+            "paper_id": "A43",
+            "sequence": "3",
+            "type": "heat_treatment",
+            "method": "reheating",
+            "temperature": "1200",
+            "unit": "degrees C",
+            "duration": "60 min",
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "Reheating before hot rolling."
+        },
+        {
+            "sample_id": "sample_fe025c_750",
+            "paper_id": "A43",
+            "sequence": "4",
+            "type": "thermomechanical_processing",
+            "method": "hot rolling",
+            "temperature": "1100 to 880",
+            "unit": "degrees C",
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": "90%",
+            "processing_steps_notes": "Six-pass rolling on phi350 mm x 350 mm high-stiffness two-high hot rolling mill; initial rolling temperature 1100 degrees C, final rolling temperature 880 degrees C."
+        },
+        {
+            "sample_id": "sample_fe025c_750",
+            "paper_id": "A43",
+            "sequence": "5",
+            "type": "mechanical_processing",
+            "method": "cold rolling",
+            "temperature": null,
+            "unit": null,
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": "60%",
+            "processing_steps_notes": "Cold rolling on four-high reversible cold rolling mill."
+        },
+        {
+            "sample_id": "sample_fe025c_750",
+            "paper_id": "A43",
+            "sequence": "6",
+            "type": "heat_treatment",
+            "method": "annealing",
+            "temperature": "750",
+            "unit": "degrees C",
+            "duration": "30 min",
+            "cooling_medium": "air",
+            "reduction_ratio": null,
+            "processing_steps_notes": "Intercritical annealing after cold rolling."
+        },
+        {
+            "sample_id": "sample_fe025c_750",
+            "paper_id": "A43",
+            "sequence": "7",
+            "type": "heat_treatment",
+            "method": "tempering",
+            "temperature": "400",
+            "unit": "degrees C",
+            "duration": "30 min",
+            "cooling_medium": "air",
+            "reduction_ratio": null,
+            "processing_steps_notes": "Tempering after annealing and air cooling."
+        },
+        {
+            "sample_id": "sample_fe025c_800",
+            "paper_id": "A43",
+            "sequence": "1",
+            "type": "melting",
+            "method": "vacuum induction melting",
+            "temperature": null,
+            "unit": null,
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "Steel melted in vacuum induction furnace."
+        },
+        {
+            "sample_id": "sample_fe025c_800",
+            "paper_id": "A43",
+            "sequence": "2",
+            "type": "thermomechanical_processing",
+            "method": "hot forging",
+            "temperature": null,
+            "unit": null,
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "Hot forging performed after melting."
+        },
+        {
+            "sample_id": "sample_fe025c_800",
+            "paper_id": "A43",
+            "sequence": "3",
+            "type": "heat_treatment",
+            "method": "reheating",
+            "temperature": "1200",
+            "unit": "degrees C",
+            "duration": "60 min",
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "Reheating before hot rolling."
+        },
+        {
+            "sample_id": "sample_fe025c_800",
+            "paper_id": "A43",
+            "sequence": "4",
+            "type": "thermomechanical_processing",
+            "method": "hot rolling",
+            "temperature": "1100 to 880",
+            "unit": "degrees C",
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": "90%",
+            "processing_steps_notes": "Six-pass rolling on phi350 mm x 350 mm high-stiffness two-high hot rolling mill; initial rolling temperature 1100 degrees C, final rolling temperature 880 degrees C."
+        },
+        {
+            "sample_id": "sample_fe025c_800",
+            "paper_id": "A43",
+            "sequence": "5",
+            "type": "mechanical_processing",
+            "method": "cold rolling",
+            "temperature": null,
+            "unit": null,
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": "60%",
+            "processing_steps_notes": "Cold rolling on four-high reversible cold rolling mill."
+        },
+        {
+            "sample_id": "sample_fe025c_800",
+            "paper_id": "A43",
+            "sequence": "6",
+            "type": "heat_treatment",
+            "method": "annealing",
+            "temperature": "800",
+            "unit": "degrees C",
+            "duration": "30 min",
+            "cooling_medium": "air",
+            "reduction_ratio": null,
+            "processing_steps_notes": "Intercritical annealing after cold rolling."
+        },
+        {
+            "sample_id": "sample_fe025c_800",
+            "paper_id": "A43",
+            "sequence": "7",
+            "type": "heat_treatment",
+            "method": "tempering",
+            "temperature": "400",
+            "unit": "degrees C",
+            "duration": "30 min",
+            "cooling_medium": "air",
+            "reduction_ratio": null,
+            "processing_steps_notes": "Tempering after annealing and air cooling."
+        },
+        {
+            "sample_id": "sample_fe025c_850",
+            "paper_id": "A43",
+            "sequence": "1",
+            "type": "melting",
+            "method": "vacuum induction melting",
+            "temperature": null,
+            "unit": null,
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "Steel melted in vacuum induction furnace."
+        },
+        {
+            "sample_id": "sample_fe025c_850",
+            "paper_id": "A43",
+            "sequence": "2",
+            "type": "thermomechanical_processing",
+            "method": "hot forging",
+            "temperature": null,
+            "unit": null,
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "Hot forging performed after melting."
+        },
+        {
+            "sample_id": "sample_fe025c_850",
+            "paper_id": "A43",
+            "sequence": "3",
+            "type": "heat_treatment",
+            "method": "reheating",
+            "temperature": "1200",
+            "unit": "degrees C",
+            "duration": "60 min",
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "Reheating before hot rolling."
+        },
+        {
+            "sample_id": "sample_fe025c_850",
+            "paper_id": "A43",
+            "sequence": "4",
+            "type": "thermomechanical_processing",
+            "method": "hot rolling",
+            "temperature": "1100 to 880",
+            "unit": "degrees C",
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": "90%",
+            "processing_steps_notes": "Six-pass rolling on phi350 mm x 350 mm high-stiffness two-high hot rolling mill; initial rolling temperature 1100 degrees C, final rolling temperature 880 degrees C."
+        },
+        {
+            "sample_id": "sample_fe025c_850",
+            "paper_id": "A43",
+            "sequence": "5",
+            "type": "mechanical_processing",
+            "method": "cold rolling",
+            "temperature": null,
+            "unit": null,
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": "60%",
+            "processing_steps_notes": "Cold rolling on four-high reversible cold rolling mill."
+        },
+        {
+            "sample_id": "sample_fe025c_850",
+            "paper_id": "A43",
+            "sequence": "6",
+            "type": "heat_treatment",
+            "method": "annealing",
+            "temperature": "850",
+            "unit": "degrees C",
+            "duration": "30 min",
+            "cooling_medium": "air",
+            "reduction_ratio": null,
+            "processing_steps_notes": "Intercritical annealing after cold rolling."
+        },
+        {
+            "sample_id": "sample_fe025c_850",
+            "paper_id": "A43",
+            "sequence": "7",
+            "type": "heat_treatment",
+            "method": "tempering",
+            "temperature": "400",
+            "unit": "degrees C",
+            "duration": "30 min",
+            "cooling_medium": "air",
+            "reduction_ratio": null,
+            "processing_steps_notes": "Tempering after annealing and air cooling."
+        }
+    ],
+    "structures": [
+        {
+            "structure_id": "struct_fe025c_750",
+            "sample_id": "sample_fe025c_750",
+            "overall_structure": "Dual-phase microstructure consisting of ferrite and bainite with minor retained austenite (less than 5%).",
+            "number_of_phases": "2",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_micro_750_001",
+                    "related_sequence": null,
+                    "phases_present": [
+                        {
+                            "phase_name": "ferrite",
+                            "crystal_structure": null,
+                            "volume_fraction": "52%",
+                            "morphology": null,
+                            "grain_size": "5.7 micrometers",
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "bainite",
+                            "crystal_structure": null,
+                            "volume_fraction": "43.0%",
+                            "morphology": null,
+                            "grain_size": "3.0 micrometers",
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "retained austenite",
+                            "crystal_structure": null,
+                            "volume_fraction": "<5%",
+                            "morphology": null,
+                            "grain_size": null,
+                            "texture": null
+                        }
+                    ],
+                    "defects": [
+                        {
+                            "type": "geometrically necessary dislocations (GND)",
+                            "porosity": null,
+                            "inclusions": [],
+                            "dislocation_density": "0.61×10^14 m^-2",
+                            "lattice_distortion": null
+                        }
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": null,
+                            "unit": null
+                        },
+                        "grain_size_distribution": null,
+                        "texture": null
+                    },
+                    "precipitates": []
+                }
+            ]
+        },
+        {
+            "structure_id": "struct_fe025c_800",
+            "sample_id": "sample_fe025c_800",
+            "overall_structure": "Dual-phase microstructure consisting of ferrite and bainite with minor retained austenite (less than 5%).",
+            "number_of_phases": "2",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_micro_800_001",
+                    "related_sequence": null,
+                    "phases_present": [
+                        {
+                            "phase_name": "ferrite",
+                            "crystal_structure": null,
+                            "volume_fraction": "43%",
+                            "morphology": null,
+                            "grain_size": "5.4 micrometers",
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "bainite",
+                            "crystal_structure": null,
+                            "volume_fraction": "55.1%",
+                            "morphology": null,
+                            "grain_size": "4.1 micrometers",
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "retained austenite",
+                            "crystal_structure": null,
+                            "volume_fraction": "<5%",
+                            "morphology": null,
+                            "grain_size": null,
+                            "texture": null
+                        }
+                    ],
+                    "defects": [
+                        {
+                            "type": "geometrically necessary dislocations (GND)",
+                            "porosity": null,
+                            "inclusions": [],
+                            "dislocation_density": "0.84×10^14 m^-2",
+                            "lattice_distortion": null
+                        }
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": null,
+                            "unit": null
+                        },
+                        "grain_size_distribution": null,
+                        "texture": null
+                    },
+                    "precipitates": []
+                }
+            ]
+        },
+        {
+            "structure_id": "struct_fe025c_850",
+            "sample_id": "sample_fe025c_850",
+            "overall_structure": "Dual-phase microstructure consisting of ferrite and bainite with minor retained austenite (less than 5%).",
+            "number_of_phases": "2",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_micro_850_001",
+                    "related_sequence": null,
+                    "phases_present": [
+                        {
+                            "phase_name": "ferrite",
+                            "crystal_structure": null,
+                            "volume_fraction": "69%",
+                            "morphology": null,
+                            "grain_size": "6.8 micrometers",
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "bainite",
+                            "crystal_structure": null,
+                            "volume_fraction": "30.8%",
+                            "morphology": null,
+                            "grain_size": "2.6 micrometers",
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "retained austenite",
+                            "crystal_structure": null,
+                            "volume_fraction": "<5%",
+                            "morphology": null,
+                            "grain_size": null,
+                            "texture": null
+                        }
+                    ],
+                    "defects": [
+                        {
+                            "type": "geometrically necessary dislocations (GND)",
+                            "porosity": null,
+                            "inclusions": [],
+                            "dislocation_density": "0.72×10^14 m^-2",
+                            "lattice_distortion": null
+                        }
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": null,
+                            "unit": null
+                        },
+                        "grain_size_distribution": null,
+                        "texture": null
+                    },
+                    "precipitates": []
+                }
+            ]
+        }
+    ],
+    "interfaces": [],
+    "properties": [
+        {
+            "property_set_id": "prop_fe025c_750",
+            "sample_id": "sample_fe025c_750",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [
+                        {
+                            "direction": null,
+                            "value": "709",
+                            "unit": "MPa",
+                            "others": {
+                                "uncertainty": null
+                            }
+                        }
+                    ],
+                    "ultimate_tensile_strength": [],
+                    "elongation": [],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [],
+                "fracture_toughness": {
+                    "value": null,
+                    "unit": null
+                },
+                "fatigue_properties": {
+                    "fatigue_limit": null,
+                    "cycles_to_failure": null
+                },
+                "creep_properties": {
+                    "steady_state_creep_rate": null,
+                    "rupture_life": null
+                }
+            },
+            "physical": {
+                "density": {
+                    "value": null,
+                    "unit": null
+                },
+                "thermal_properties": {
+                    "thermal_conductivity": null,
+                    "thermal_expansion_coefficient": null,
+                    "specific_heat": null
+                },
+                "electrical_properties": {
+                    "electrical_conductivity": null,
+                    "resistivity": null
+                },
+                "magnetic_properties": {
+                    "magnetic_susceptibility": null,
+                    "curie_temperature": null
+                }
+            },
+            "chemical": {
+                "corrosion_resistance": {
+                    "test_medium": null,
+                    "corrosion_rate": null,
+                    "passivation_behavior": null
+                },
+                "oxidation_resistance": {
+                    "oxidation_rate_constant": null,
+                    "protective_scale": null
+                }
+            },
+            "radiation_properties": {
+                "void_swelling": null,
+                "irradiation_hardening": null,
+                "helium_embrittlement": null
+            }
+        },
+        {
+            "property_set_id": "prop_fe025c_800",
+            "sample_id": "sample_fe025c_800",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [
+                        {
+                            "direction": null,
+                            "value": "968",
+                            "unit": "MPa",
+                            "others": {
+                                "uncertainty": null
+                            }
+                        }
+                    ],
+                    "ultimate_tensile_strength": [],
+                    "elongation": [],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [],
+                "fracture_toughness": {
+                    "value": null,
+                    "unit": null
+                },
+                "fatigue_properties": {
+                    "fatigue_limit": null,
+                    "cycles_to_failure": null
+                },
+                "creep_properties": {
+                    "steady_state_creep_rate": null,
+                    "rupture_life": null
+                }
+            },
+            "physical": {
+                "density": {
+                    "value": null,
+                    "unit": null
+                },
+                "thermal_properties": {
+                    "thermal_conductivity": null,
+                    "thermal_expansion_coefficient": null,
+                    "specific_heat": null
+                },
+                "electrical_properties": {
+                    "electrical_conductivity": null,
+                    "resistivity": null
+                },
+                "magnetic_properties": {
+                    "magnetic_susceptibility": null,
+                    "curie_temperature": null
+                }
+            },
+            "chemical": {
+                "corrosion_resistance": {
+                    "test_medium": null,
+                    "corrosion_rate": null,
+                    "passivation_behavior": null
+                },
+                "oxidation_resistance": {
+                    "oxidation_rate_constant": null,
+                    "protective_scale": null
+                }
+            },
+            "radiation_properties": {
+                "void_swelling": null,
+                "irradiation_hardening": null,
+                "helium_embrittlement": null
+            }
+        },
+        {
+            "property_set_id": "prop_fe025c_850",
+            "sample_id": "sample_fe025c_850",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [
+                        {
+                            "direction": null,
+                            "value": "964",
+                            "unit": "MPa",
+                            "others": {
+                                "uncertainty": null
+                            }
+                        }
+                    ],
+                    "ultimate_tensile_strength": [],
+                    "elongation": [],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [],
+                "fracture_toughness": {
+                    "value": null,
+                    "unit": null
+                },
+                "fatigue_properties": {
+                    "fatigue_limit": null,
+                    "cycles_to_failure": null
+                },
+                "creep_properties": {
+                    "steady_state_creep_rate": null,
+                    "rupture_life": null
+                }
+            },
+            "physical": {
+                "density": {
+                    "value": null,
+                    "unit": null
+                },
+                "thermal_properties": {
+                    "thermal_conductivity": null,
+                    "thermal_expansion_coefficient": null,
+                    "specific_heat": null
+                },
+                "electrical_properties": {
+                    "electrical_conductivity": null,
+                    "resistivity": null
+                },
+                "magnetic_properties": {
+                    "magnetic_susceptibility": null,
+                    "curie_temperature": null
+                }
+            },
+            "chemical": {
+                "corrosion_resistance": {
+                    "test_medium": null,
+                    "corrosion_rate": null,
+                    "passivation_behavior": null
+                },
+                "oxidation_resistance": {
+                    "oxidation_rate_constant": null,
+                    "protective_scale": null
+                }
+            },
+            "radiation_properties": {
+                "void_swelling": null,
+                "irradiation_hardening": null,
+                "helium_embrittlement": null
+            }
+        }
+    ],
+    "performance": [],
+    "characterization_methods": [
+        {
+            "characterization_id": "char_sem_750",
+            "sample_id": "sample_fe025c_750",
+            "microstructure_uuid": "uuid_micro_750_001",
+            "technique": "Scanning Electron Microscopy (SEM) with Image-Pro Plus image analysis",
+            "purpose": "Microstructural observation and statistical quantification of ferrite and bainite volume fractions and average grain sizes",
+            "key_findings": "Ferrite volume fraction 52% with average grain size 5.7 micrometers; bainite volume fraction 43.0% with average grain size 3.0 micrometers; retained austenite below 5%."
+        },
+        {
+            "characterization_id": "char_sem_800",
+            "sample_id": "sample_fe025c_800",
+            "microstructure_uuid": "uuid_micro_800_001",
+            "technique": "Scanning Electron Microscopy (SEM) with Image-Pro Plus image analysis",
+            "purpose": "Microstructural observation and statistical quantification of ferrite and bainite volume fractions and average grain sizes",
+            "key_findings": "Ferrite volume fraction 43% with average grain size 5.4 micrometers; bainite volume fraction 55.1% with average grain size 4.1 micrometers; retained austenite below 5%."
+        },
+        {
+            "characterization_id": "char_sem_850",
+            "sample_id": "sample_fe025c_850",
+            "microstructure_uuid": "uuid_micro_850_001",
+            "technique": "Scanning Electron Microscopy (SEM) with Image-Pro Plus image analysis",
+            "purpose": "Microstructural observation and statistical quantification of ferrite and bainite volume fractions and average grain sizes",
+            "key_findings": "Ferrite volume fraction 69% with average grain size 6.8 micrometers; bainite volume fraction 30.8% with average grain size 2.6 micrometers; retained austenite below 5%."
+        },
+        {
+            "characterization_id": "char_ebsd_750",
+            "sample_id": "sample_fe025c_750",
+            "microstructure_uuid": "uuid_micro_750_001",
+            "technique": "Electron Backscatter Diffraction (EBSD)",
+            "purpose": "Kernel Average Misorientation (KAM) analysis to determine Geometrically Necessary Dislocation (GND) density and Taylor factor",
+            "key_findings": "GND density 0.61×10^14 m^-2 and Taylor factor 3.45; EBSD scanning step size 0.2 micrometers."
+        },
+        {
+            "characterization_id": "char_ebsd_800",
+            "sample_id": "sample_fe025c_800",
+            "microstructure_uuid": "uuid_micro_800_001",
+            "technique": "Electron Backscatter Diffraction (EBSD)",
+            "purpose": "Kernel Average Misorientation (KAM) analysis to determine Geometrically Necessary Dislocation (GND) density and Taylor factor",
+            "key_findings": "GND density 0.84×10^14 m^-2 and Taylor factor 3.58; EBSD scanning step size 0.2 micrometers."
+        },
+        {
+            "characterization_id": "char_ebsd_850",
+            "sample_id": "sample_fe025c_850",
+            "microstructure_uuid": "uuid_micro_850_001",
+            "technique": "Electron Backscatter Diffraction (EBSD)",
+            "purpose": "Kernel Average Misorientation (KAM) analysis to determine Geometrically Necessary Dislocation (GND) density and Taylor factor",
+            "key_findings": "GND density 0.72×10^14 m^-2 and Taylor factor 3.53; EBSD scanning step size 0.2 micrometers."
+        },
+        {
+            "characterization_id": "char_tensile_750",
+            "sample_id": "sample_fe025c_750",
+            "microstructure_uuid": null,
+            "technique": "Tensile testing (Instron 3382 universal electronic materials testing machine)",
+            "purpose": "Measure yield strength at room temperature",
+            "key_findings": "Yield strength 709 MPa at room temperature; gauge dimensions 15 mm x 5.0 mm x 1.0 mm; strain rate 5×10^-4 s^-1."
+        },
+        {
+            "characterization_id": "char_tensile_800",
+            "sample_id": "sample_fe025c_800",
+            "microstructure_uuid": null,
+            "technique": "Tensile testing (Instron 3382 universal electronic materials testing machine)",
+            "purpose": "Measure yield strength at room temperature",
+            "key_findings": "Yield strength 968 MPa at room temperature; gauge dimensions 15 mm x 5.0 mm x 1.0 mm; strain rate 5×10^-4 s^-1."
+        },
+        {
+            "characterization_id": "char_tensile_850",
+            "sample_id": "sample_fe025c_850",
+            "microstructure_uuid": null,
+            "technique": "Tensile testing (Instron 3382 universal electronic materials testing machine)",
+            "purpose": "Measure yield strength at room temperature",
+            "key_findings": "Yield strength 964 MPa at room temperature; gauge dimensions 15 mm x 5.0 mm x 1.0 mm; strain rate 5×10^-4 s^-1."
+        }
+    ],
+    "computational_details": [
+        {
+            "computation_id": "comp_001",
+            "sample_id": null,
+            "simulation_method": "Machine learning regression using Extremely Randomized Trees (Extra Trees) ensemble algorithm with Genetic Algorithm (GA) hyperparameter optimization and Gaussian Mixture Model (GMM) data augmentation",
+            "software_used": "Python framework with DEAP 1.3.3 for GA optimization",
+            "potential_model": null,
+            "validation_against_experiment": "Experimental verification on Fe-0.25C-3Mn-2Al-0.4Si steel yielded average prediction error 1.56%; validation against six literature datasets yielded average error 1.84%.",
+            "analytical_model": [
+                {
+                    "model_name": "Classical linear superposition of strengthening mechanisms",
+                    "equation_role": "Baseline constitutive equation for yield strength feature extraction",
+                    "parameters": "sigma_YS = sigma_0 + sigma_g + sigma_d + sigma_Orowan",
+                    "model_note": "Traditional physical metallurgy model (Eq. 1) used to quantify individual contributions of solid solution, grain refinement, dislocation, and Orowan strengthening as input features."
+                }
+            ]
+        }
+    ],
+    "unmapped_findings": [
+        "Original dataset of 177 entries was expanded to 776 using Gaussian Mixture Model (GMM) data augmentation based on Bayesian Information Criterion (BIC) and Expectation Maximization (EM) algorithm.",
+        "Extra Trees model test set performance before optimization: RMSE=76.2 MPa, MAPE=9.8%, R²=0.978. After GA optimization: RMSE=31.60 MPa, MAPE=4.39%, R²=0.997.",
+        "GA-optimized Extra Trees hyperparameters (Table 2): n_estimators=1657, max_depth=51, min_samples_split=3, min_samples_leaf=1.0, max_features=0.85, max_samples=0.92.",
+        "Comparison with alternative optimizations: Grid Search-ET RMSE=80.239 MPa, Bayesian-ET RMSE=80.721 MPa, versus GA-ET RMSE=31.60 MPa.",
+        "Prediction error reduction via GA optimization for experimental samples: 750 degrees C reduced by 22 MPa (Extra Trees diff 34 MPa to GA-ET diff 12 MPa); 800 degrees C reduced by 21 MPa (31 to 10 MPa); 850 degrees C reduced by 17 MPa (36 to 19 MPa).",
+        "Theoretical strengthening contributions and calculated vs actual YS (Table 3): AN750/ANT750 sigma0=220, sigmag=264, sigmad=263, sigmaOrowan=0 MPa, calculated YS=747 MPa; AN800/ANT800 sigma0=220, sigmag=256, sigmad=459, sigmaOrowan=0 MPa, calculated=935 MPa; AN850/ANT850 sigma0=220, sigmag=292, sigmad=414, sigmaOrowan=0 MPa, calculated=926 MPa.",
+        "Specimen designation inconsistency in text: Section 4.1 uses ANT750, ANT800, ANT850 while Section 4.2 and Table 3 use AN750, AN800, AN850, likely referring to the same specimen set.",
+        "Strengthening mechanism calculation formulas: solid solution delta_sigma0 = 32.3[Mn] + 83.2[Si] + 360[C] + 354.2[N] + 11[Mo] - 30[Cr] (Eq. 6); grain refinement sigma_g = K d^(-1/2) with K_alpha=400 MPa·micrometer^(1/2) and K_bainite=700 MPa·micrometer^(1/2) (Eq. 7); dislocation sigma_d = alpha M G b rho^(1/2) with alpha=0.4, M=Taylor factor, G=81 GPa, b=0.25 nm (Eq. 9); GND density rho_GND = 2 theta / (mu b) with mu=0.2 micrometer (Eq. 10).",
+        "Fig. 12 engineering stress-strain curve data points from figure table: approximate stress values at engineering strains 5-35% are provided for 750, 800, and 850 degrees C annealed samples, showing peak flow stresses around 1050-1300 MPa depending on annealing temperature.",
+        "SHAP interpretability analysis (Fig. 17) feature importance ranking: dislocation strengthening (0.48), Orowan strengthening (0.27), fine grain strengthening (0.19), solid solution strengthening (0.05); dislocation strengthening is identified as the dominant YS contributor.",
+        "Literature validation dataset (Table 5) includes two compositions: Fe-0.29C-12.14Mn-2.96Al-0.11V-0.063Nb (three processing conditions) and Fe-9.7Mn-2.04Al-0.99Si-0.52V-0.42C (three processing conditions), with GA-Extra Trees predictions yielding average error 1.84% compared to measured YS values ranging from 591.5 to 1665.4 MPa."
+    ]
+}
+```

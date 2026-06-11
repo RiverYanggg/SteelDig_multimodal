@@ -1,0 +1,157 @@
+[
+  {
+    "paper_id": "A10",
+    "figure_id": "figure_001",
+    "image_paths": [
+      "images/36b14554370d46ae1d8472f8658758c138a81af87398e96c22576eef330e455d.jpg"
+    ],
+    "image_count": 1,
+    "image_type": "chart_plot",
+    "description": "The displayed image is an irrelevant \"Check for updates\" UI button, indicating the target material science figure failed to load correctly, so no material-related visual information can be extracted from the current image. Based on the associated paper context, the figure is expected to relate to the machine learning-based high-accuracy prediction and design of Fe-C-Cr-Mn-Si steel: the research proposes a data-driven model integrating machine learning, firefly optimization algorithm and conditional generative adversarial network for solid solution strengthening prediction of the target steel system, three arc-cladded Fe-C-Cr-Mn-Si steel samples with designed compositions are prepared for validation, achieving a minimum hardness prediction error of 1.17%, which supports the high reliability of the proposed model for advanced steel design.",
+    "confidence": 0.0
+  },
+  {
+    "paper_id": "A10",
+    "figure_id": "figure_002",
+    "image_paths": [
+      "images/43b273b0dc8df305846876fc148d948f6751b6d2ee4dfaa48c4a20dc5fce7f00.jpg"
+    ],
+    "image_count": 1,
+    "image_type": "chart_plot",
+    "description": "This figure contains two sections supporting machine learning based high-accuracy design of Fe-C-Cr-Mn-Si steel. The left section is labeled as the research dataset, whose specific internal data entries are partially unreadable due to limited image resolution. The right section shows the importance ranking of alloying elements for the target mechanical property (microhardness related to solid solution strengthening) of the steel: Cr has the highest importance, followed by Ni, then Mo, with other relevant elements omitted. This ranking confirms that Cr, Ni, Mo are the most influential alloying elements for the property of interest, providing critical feature selection guidance for the construction of the machine learning prediction model in this study.",
+    "confidence": 0.0
+  },
+  {
+    "paper_id": "A10",
+    "figure_id": "figure_003",
+    "image_paths": [
+      "images/359c00afaab19ea50f57848b3049e8127b984625c563020c45c0f34a2c611590.jpg",
+      "images/f70c66de5d3148bb2918a61a7e99a4acbc94d2b675aea8a5dbac2725c9109db7.jpg"
+    ],
+    "image_count": 2,
+    "image_type": "chart_plot",
+    "description": "This group of charts supports machine learning model development and validation for hardness prediction of Fe-C-Cr-Mn-Si steel. The upper partially readable panel contains three subplots: a heatmap for solid solution strengthening hardness prediction, a heatmap for conditional bias correlation, and a bar chart for feature importance, where the top-ranked feature shows the largest contribution, and feature importance decreases with descending feature rank. The lower scatter plot presents cross-validation scores as a function of feature number (1 to 5 on the x-axis): when the feature number is 1, cross-validation scores distribute widely (from ~0.3 to ~1.27), while for feature numbers ≥2, scores stabilize in the 0.2-0.7 range, indicating appropriate feature count selection balances model accuracy and complexity. These plots validate feature optimization and model reliability for high-accuracy mechanical property prediction of the target steel system.",
+    "confidence": 0.0
+  },
+  {
+    "paper_id": "A10",
+    "figure_id": "figure_004",
+    "image_paths": [
+      "images/cf8ee17a13a264ee7acb67cb9b57f74d4f8bfe1ffc1566a79e0114326456b62f.jpg"
+    ],
+    "image_count": 1,
+    "image_type": "chart_plot",
+    "description": "This chart presents the prediction performance of a support vector machine (SVM) model for solid solution strengthening increment Δσ<sub>sss</sub> (unit: MPa) of Fe-C-Cr-Mn-Si steels. The x-axis denotes experimentally measured Δσ<sub>sss</sub>, and the y-axis denotes SVM-predicted Δσ<sub>sss</sub>. Blue scatter points represent all test samples, the blue dashed line is the y=x guide line for ideal perfect prediction. The color bar on the right represents the prediction error, ranging from 0.60 to 29.90. The SVM model achieves a root mean square error (RMSE) of 0.31 and a coefficient of determination R² of 0.89, indicating satisfactory prediction accuracy for the target mechanical property of this steel system. This result verifies that the machine learning method is reliable for performance prediction and composition design of Fe-C-Cr-Mn-Si steels.",
+    "confidence": 0.0
+  },
+  {
+    "paper_id": "A10",
+    "figure_id": "figure_005",
+    "image_paths": [
+      "images/9ca73ca66364493c62717647d15cb8b9002e4c6286981a796fbd28feb3148385.jpg"
+    ],
+    "image_count": 1,
+    "image_type": "property_mechanical",
+    "description": "This bar chart compares the Vickers microhardness (unit: HV) of three arc-cladded Fe-C-Cr-Mn-Si steel samples between machine learning predicted values (blue bars) and experimental measured values (light red bars). For Sample 1, the predicted hardness is 521 HV and experimental value is 515 HV, with a relative error of 1.17%; for Sample 2, predicted value is 490 HV, experimental value is 500 HV, with a relative error of 2.00%; for Sample 3, predicted value is 415 HV, experimental value is 424 HV, with a relative error of 2.09%. All relative errors between prediction and experiment are lower than 2.1%, which verifies the extremely high prediction accuracy of the proposed machine learning model for the microhardness of this steel system, supporting the conclusion that the developed data-driven model can be applied to high-precision performance design of Fe-C-Cr-Mn-Si steels.",
+    "confidence": 0.0
+  },
+  {
+    "paper_id": "A10",
+    "figure_id": "figure_006",
+    "image_paths": [
+      "images/d07fa09a84828d7ee3a083cfaf8e29330c87b31abdb4e94312478ab293f55eaa.jpg"
+    ],
+    "image_count": 1,
+    "image_type": "chart_plot",
+    "description": "This figure is a correlation scatter matrix for Fe-C-Cr-Mn-Si steel systems, analyzing pairwise relationships between 12 variables: alloying elements (C, Si, Mn, Cr, S, Ni, P, Fe, Mo, V, W, all measured in wt.%) and Vickers microhardness (in HV). Diagonal subplots present univariate histograms showing the distribution of each variable across the studied dataset, including three arc-cladded experimental steel samples and supplementary compiled alloy data. Off-diagonal subplots are pairwise scatter plots to reveal correlation patterns: carbide-forming elements (C, Cr, Mo, W) show clear positive correlations with microhardness, while Fe content exhibits a negative correlation with hardness. The matrix quantifies feature relationships to support machine learning model training for high-accuracy steel property prediction, confirming direct composition-performance correlations that underpin the subsequent solid solution strengthening analysis and alloy design workflow.",
+    "confidence": 0.0
+  },
+  {
+    "paper_id": "A10",
+    "figure_id": "figure_007",
+    "image_paths": [
+      "images/9e0181a3247bd196616d44b1afed90f7bf274c2006252f26435bdf9f273f0268.jpg",
+      "images/eaabd1ed08a635cdcaf6ef5bf812df2dbe5d4d182f7c721ee53e512d05c2575b.jpg",
+      "images/802cc3a7845aa9d4f8a00b4b51b3f0554e7e417474c01db01348ce6bb20188bd.jpg"
+    ],
+    "image_count": 3,
+    "image_type": "chart_plot",
+    "description": "This figure presents feature selection for microhardness prediction of Fe-C-Cr-Mn-Si steel, consisting of three subplots. Subplot (a) shows recursive feature elimination (RFE) voting results using XGBoost, RF and LightGBM algorithms, where dark blue cells (marked as 1) indicate high-importance features, and 9 candidate features are screened out. Subplot (b) is the Pearson correlation coefficient (PCC) heatmap of the 9 selected features, with multiple feature pairs showing absolute PCC values ≥ 0.95, indicating high linear correlation. Subplot (c) is the bar chart of importance ranking for the 9 features, where EI-2nd has the highest importance score (~0.46), followed by ηB, ω, δEI-2nd, DEc, δEc, γ, G, and e/a has the lowest score. Based on these results, low-importance features in high-correlation pairs are removed, and e/a, G, EI-2nd, δEc, DEc are identified as key features for high-accuracy hardness prediction, supporting machine learning model construction for the studied steel system.",
+    "confidence": 0.0
+  },
+  {
+    "paper_id": "A10",
+    "figure_id": "figure_008",
+    "image_paths": [
+      "images/131f2b4b7649c77bc644c3bf1a0792744b1b9da792a12758531053481cf61b5c.jpg"
+    ],
+    "image_count": 1,
+    "image_type": "chart_plot",
+    "description": "This scatter plot presents exhaustive feature screening results for machine learning model construction targeting Fe-C-Cr-Mn-Si steel performance prediction. The x-axis represents the number of selected features ranging from 1 to 5, while the y-axis denotes cross-validation scores of the constructed models. Scattered points at each feature number show the distribution of cross-validation scores across different feature combination schemes. A clear decreasing trend of maximum cross-validation score is observed with rising feature count: the highest score reaches ~1.27 when only 1 feature is used, drops to ~0.69 for 2 features, and further reduces to around 0.3 for 3, 4, and 5 features. This figure guides optimal feature number selection to improve the prediction accuracy of machine learning models for Fe-C-Cr-Mn-Si steel properties such as hardness.",
+    "confidence": 0.0
+  },
+  {
+    "paper_id": "A10",
+    "figure_id": "figure_009",
+    "image_paths": [
+      "images/eb80958c1f4d0496a1529816bc1dd1a22a3719f9f08a18c879454d18b12ec8dc.jpg",
+      "images/36bcd5a9117fe62e80a419b64c121f726de4a57ea1836c4a7a72376e209d363a.jpg",
+      "images/97c06a93384397fdc11598580021873a17bb8ebe7e437c3e5befdf2a47ea16a5.jpg",
+      "images/abf81e03af544b918fca2ef102b10579d89c4741c599af968a181f1f39b0c8e7.jpg",
+      "images/b27850f1f888174d8fbbc8553a6ac1386aa90cadb1500319fef8e1c9bb48c4c3.jpg",
+      "images/1d2fe215814a75fc553900c4eadc5063ed468b16c8a1bab3a081c13d7812c812.jpg",
+      "images/1a73624f7217990a5fe42834b00ddc5778f310c2b7a7981763f616f692cfd81c.jpg",
+      "images/2a8fae9db5673bc19f5097f9830df0aa1224359f806613986fd93d17a3938746.jpg",
+      "images/bf42d952f7bc017682f9e3563fa4b087cbe7c2e060a94f427248cef1ea10dfb8.jpg"
+    ],
+    "image_count": 9,
+    "image_type": "chart_plot",
+    "description": "This set of 9 subplots presents the comparison between predicted and experimental microhardness (HV) of Fe-C-Cr-Mn-Si steels using 9 machine learning models: SVR (subplot a), ET (subplot b), MLP (subplot c), Ridge (subplot d), LightGBM (subplot e), XGBoost (subplot f), RF (subplot g), LR (subplot h), and DT (subplot i). For each subplot, the x-axis refers to experimental microhardness, the y-axis refers to predicted microhardness, blue dots represent training data, yellow dots represent testing data, and the dashed diagonal line represents the ideal prediction line where predicted value equals experimental value. The recorded R² and RMSE of each model are as follows: SVR (R²=0.85, RMSE=0.39), ET (R²=0.80, RMSE=0.45), MLP (R²=0.81, RMSE=0.44), Ridge (R²=0.82, RMSE=0.43), LightGBM (R²=0.63, RMSE=0.62), XGBoost (R²=0.79, RMSE=0.46), RF (R²=0.74, RMSE=0.52), LR (R²=0.76, RMSE=0.48), DT (R²=0.72, RMSE=0.54). The results demonstrate that the SVR model achieves the best prediction performance with the highest R² and lowest RMSE. SVR, ET, MLP and Ridge all have R² above 0.8 and RMSE below 0.45, showing strong linear correlation between predicted and experimental values. This figure supports the conclusion that SVR is the optimal model for microhardness prediction of the studied Fe-C-Cr-Mn-Si steel system.",
+    "confidence": 0.0
+  },
+  {
+    "paper_id": "A10",
+    "figure_id": "figure_010",
+    "image_paths": [
+      "images/9ca90681da2dc1c9cd5386ea1ac40fa690904677cde1c47a56225cb1e301e2e7.jpg"
+    ],
+    "image_count": 1,
+    "image_type": "chart_plot",
+    "description": "This chart presents the prediction performance of solid solution strengthening increment Δσ<sub>sss</sub> (unit: MPa) for Fe-C-Cr-Mn-Si steels under ten-fold cross validation, with {δ<sub>Ec</sub>, D, G} as input features of the machine learning model. The x-axis represents experimental Δσ<sub>sss</sub> values, the y-axis represents predicted Δσ<sub>sss</sub> values, both ranging from 1200 MPa to 1800 MPa. Blue scattered points denote all test samples, the blue dashed line is the ideal 1:1 guide line for perfect prediction. The color of scattered points corresponds to prediction error, ranging from 0.60 to 29.90. The model achieves an RMSE of 0.31 and R<sup>2</sup> of 0.89, indicating high consistency between predicted and experimental Δσ<sub>sss</sub> values. This figure confirms the adopted machine learning model has high accuracy for solid solution strengthening prediction of Fe-C-Cr-Mn-Si steels, supporting its application in property-oriented design of this steel system.",
+    "confidence": 0.0
+  },
+  {
+    "paper_id": "A10",
+    "figure_id": "figure_011",
+    "image_paths": [
+      "images/ec326fec27498b19dcfaeb015e42eff0bd7fb7ce481b3e035a2d8ef352f6c2d1.jpg"
+    ],
+    "image_count": 1,
+    "image_type": "chart_plot",
+    "description": "This bar chart compares the predicted microhardness (unit: HV) of inversely designed Fe-C-Cr-Mn-Si steel obtained from four different intelligent optimization algorithms, including firefly optimization (FA), particle swarm optimization (PSO), simulated annealing (SA), and grey wolf optimization (GWO). The recorded microhardness values are 733.59 HV for FA, 730.04 HV for PSO, 700.37 HV for SA, and 708.60 HV for GWO respectively. The results show that FA yields the highest predicted microhardness, followed by PSO, GWO, and SA in descending order. This figure supports the conclusion that FA exhibits superior local optimization capacity for the composition optimization of Fe-C-Cr-Mn-Si steel to achieve higher microhardness, compared with the other three tested optimization algorithms.",
+    "confidence": 0.0
+  },
+  {
+    "paper_id": "A10",
+    "figure_id": "figure_012",
+    "image_paths": [
+      "images/bebeb0dae3f7227c93b5b7d5081f80f51f1e5da4c7b4687034418752ad1a9e18.jpg",
+      "images/613267133d7e830e53619f72fcf5b665ce690453ad56d4980f2ec1791400a9c5.jpg"
+    ],
+    "image_count": 2,
+    "image_type": "diffraction_xrd",
+    "description": "This figure consists of two X-ray diffraction (XRD) patterns of three arc-cladded Fe-C-Cr-Mn-Si steel samples. Subplot (a) shows full XRD scans in the 2θ range of 20° to 100°, while subplot (b) presents an enlarged view of the (110) diffraction peak region at 2θ of 40° to 50°. Sample 1 exhibits characteristic (110), (200), and (211) peaks assigned to the Fe-Cr phase, while Sample 2 and Sample 3 show corresponding peaks attributed to the Fe-Cr-Ni phase. All three samples' (110) peaks shift to higher 2θ values compared to the standard pure Fe diffraction peak, indicating lattice distortion caused by atomic radius differences between alloying elements (Cr, Ni) and Fe. This figure confirms the phase composition of the three experimental samples, and the observed lattice distortion supports the solid solution strengthening mechanism applied in the machine learning hardness prediction model for the studied steel system.",
+    "confidence": 0.0
+  },
+  {
+    "paper_id": "A10",
+    "figure_id": "figure_013",
+    "image_paths": [
+      "images/19e7d8a7f87b54825e03695d58fb7c6f7c8981f8a2491becbe061258c404ad91.jpg"
+    ],
+    "image_count": 1,
+    "image_type": "property_mechanical",
+    "description": "This bar chart compares machine learning predicted microhardness (unit: HV, light blue bars) and experimental measured microhardness (light pink bars) for three arc-cladded Fe-C-Cr-Mn-Si steel samples. For Sample 1, the predicted hardness is 521 HV and the experimental value is 515 HV, with a relative error of 1.17%. For Sample 2, the predicted hardness is 490 HV and the experimental value is 500 HV, with a relative error of 2.00%. For Sample 3, the predicted hardness is 415 HV and the experimental value is 424 HV, with a relative error of 2.09%. All relative errors between predicted and experimental values are below 2.1%, verifying the extremely high accuracy of the proposed machine learning model for microhardness prediction of the Fe-C-Cr-Mn-Si steel system.",
+    "confidence": 0.0
+  }
+]

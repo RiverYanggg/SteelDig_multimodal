@@ -1,0 +1,485 @@
+{
+  "papers": [
+    {
+      "paper_id": "A57",
+      "doi": "https://doi.org/10.3390/cryst15121019",
+      "title": "An Ultrastrong and Ductile Duplex Lightweight Steel with Dual-Nanoprecipitation",
+      "authors": [
+        "Menghao Zhang",
+        "Huihui Zhi",
+        "Ruizhe Wang",
+        "Xinlan Ye",
+        "Xiyue Li",
+        "Zihao Xu",
+        "Weijun Wang",
+        "Haifeng Wang",
+        "Yanjing Su"
+      ],
+      "publication_year": "2025",
+      "journal": "Crystals",
+      "keywords": [
+        "lightweight steel",
+        "precipitation",
+        "strengthening",
+        "strain hardening"
+      ],
+      "research_type": "experimental",
+      "paper_scope": "设计并研究了Fe-30Mn-9Al-1C-1V-5Ni双相轻质钢的微观组织、力学性能，揭示其多重强韧化机制，实现了超高强度与优异塑性的协同"
+    }
+  ],
+  "alloys": [
+    {
+      "alloy_id": "alloy_fe30mn9al1c1v5ni",
+      "paper_id": "A57",
+      "alloy_name": "Fe-30Mn-9Al-1C-1V-5Ni duplex lightweight steel",
+      "aliases": [],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Al",
+        "C",
+        "V",
+        "Ni",
+        "P",
+        "S"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Mn",
+          "weight_percent": "30.45",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "9.50",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "1.20",
+          "atomic_percent": null
+        },
+        {
+          "element": "V",
+          "weight_percent": "1.09",
+          "atomic_percent": null
+        },
+        {
+          "element": "Ni",
+          "weight_percent": "4.94",
+          "atomic_percent": null
+        },
+        {
+          "element": "P",
+          "weight_percent": "0.0040",
+          "atomic_percent": null
+        },
+        {
+          "element": "S",
+          "weight_percent": "0.0044",
+          "atomic_percent": null
+        },
+        {
+          "element": "Fe",
+          "weight_percent": "Bal.",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "名义成分为Fe-30Mn-9Al-1C-1V-5Ni (wt.%)"
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_fe30mn_01",
+      "paper_id": "A57",
+      "alloy_id": "alloy_fe30mn9al1c1v5ni",
+      "description": "包含均质化、热轧、冷轧、固溶处理及水淬的短流程制备工艺",
+      "processes_notes": "热轧总压下量85%，冷轧总压下量50%，单道次冷轧压下率≤5%"
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_fe30mn_01",
+      "paper_id": "A57",
+      "alloy_id": "alloy_fe30mn9al1c1v5ni",
+      "process_id": "proc_fe30mn_01"
+    }
+  ],
+  "processing_steps": [
+    {
+      "sample_id": "sample_fe30mn_01",
+      "paper_id": "A57",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "homogenization",
+      "temperature": "1050",
+      "unit": "°C",
+      "duration": "1 h",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_fe30mn_01",
+      "paper_id": "A57",
+      "sequence": "2",
+      "type": "thermomechanical_processing",
+      "method": "hot rolling",
+      "temperature": null,
+      "unit": null,
+      "duration": null,
+      "cooling_medium": "water",
+      "reduction_ratio": "85%",
+      "processing_steps_notes": "热轧后厚度从20 mm降至3 mm"
+    },
+    {
+      "sample_id": "sample_fe30mn_01",
+      "paper_id": "A57",
+      "sequence": "3",
+      "type": "mechanical_processing",
+      "method": "cold rolling",
+      "temperature": "room temperature",
+      "unit": null,
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": "50%",
+      "processing_steps_notes": "单道次压下率≤5%，冷轧后厚度降至1.5 mm"
+    },
+    {
+      "sample_id": "sample_fe30mn_01",
+      "paper_id": "A57",
+      "sequence": "4",
+      "type": "heat_treatment",
+      "method": "solution treatment",
+      "temperature": "900",
+      "unit": "°C",
+      "duration": "15 min",
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struc_01",
+      "sample_id": "sample_fe30mn_01",
+      "overall_structure": "奥氏体+B2双相组织，奥氏体内原位析出L'1₂型长程有序畴和VC纳米碳化物",
+      "number_of_phases": "3",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_micro_001",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": "78%",
+              "morphology": "等轴晶",
+              "grain_size": "1.31 µm",
+              "texture": null
+            },
+            {
+              "phase_name": "B2",
+              "crystal_structure": "CsCl-type ordered structure",
+              "volume_fraction": "20%",
+              "morphology": "长条状大晶粒+晶界细小颗粒，双峰分布",
+              "grain_size": "1.02 µm / 3.38 µm",
+              "texture": null
+            },
+            {
+              "phase_name": "VC",
+              "crystal_structure": null,
+              "volume_fraction": "0.26%",
+              "morphology": "纳米球状析出相",
+              "grain_size": "19.9±6.2 nm",
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocation",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "奥氏体初始5.36×10^13 m^-2，B2初始1.04×10^14 m^-2",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "1.31",
+              "unit": "µm"
+            },
+            "grain_size_distribution": "奥氏体单峰分布，B2相双峰分布",
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "prec_vc_01",
+              "type": "VC carbide",
+              "size": {
+                "value": "19.9±6.2",
+                "unit": "nm"
+              },
+              "distribution": "均匀分布于奥氏体基体",
+              "coherency": "与奥氏体基体共格"
+            },
+            {
+              "precipitate_id": "prec_lro_01",
+              "type": "L'1₂ type long-range ordered domain",
+              "size": {
+                "value": "1.0±0.3",
+                "unit": "nm"
+              },
+              "distribution": "均匀分布于奥氏体基体",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "inter_set_01",
+      "sample_id": "sample_fe30mn_01",
+      "phases": [
+        {
+          "interface_id": "inter_001",
+          "microstructure_uuid": "uuid_micro_001",
+          "phase_1_name": "austenite",
+          "phase_2_name": "B2",
+          "coherence": "半共格"
+        },
+        {
+          "interface_id": "inter_002",
+          "microstructure_uuid": "uuid_micro_001",
+          "phase_1_name": "austenite",
+          "phase_2_name": "VC",
+          "coherence": "共格"
+        }
+      ],
+      "defect_interaction": [
+        {
+          "interaction_id": "act_001",
+          "microstructure_uuid": "uuid_micro_001",
+          "interaction_type": "dislocation shearing L'1₂ domains",
+          "quality_description": "变形过程中L'1₂有序畴被位错剪切，体积分数随应变升高逐渐降低"
+        },
+        {
+          "interaction_id": "act_002",
+          "microstructure_uuid": "uuid_micro_001",
+          "interaction_type": "dislocation bypassing VC precipitates",
+          "quality_description": "VC钉扎位错运动，导致位错在析出相周围塞积，产生析出强化"
+        }
+      ],
+      "interface_notes": [
+        {
+          "stress_strain_distribution": "两相变形不协调，在相界处产生应变梯度，积累几何必须位错，产生长-range背应力与HDI强化"
+        },
+        {
+          "slippage_situation": null
+        }
+      ],
+      "phase_evolution": "变形过程中L'1₂有序畴逐渐被破坏，两相位错密度随应变升高，6%应变时奥氏体位错密度达2.64×10^14 m^-2，B2达2.51×10^14 m^-2"
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_set_01",
+      "sample_id": "sample_fe30mn_01",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "1316±16",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "±16 MPa"
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "1458±11",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "±11 MPa"
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "11.7±1.2",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": [
+            {
+              "property_id": "shr_01",
+              "direction": null,
+              "value": "快速下降至0以下",
+              "unit": "GPa"
+            },
+            {
+              "property_id": "shr_02",
+              "direction": null,
+              "value": "快速上升至最大值3.7",
+              "unit": "GPa"
+            },
+            {
+              "property_id": "shr_03",
+              "direction": null,
+              "value": "缓慢下降至2.7",
+              "unit": "GPa"
+            }
+          ]
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_01",
+      "sample_id": "sample_fe30mn_01",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": "uniaxial tension",
+        "environment": "room temperature air"
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy": "traditional Fe-Mn-Al-C lightweight steel",
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_01",
+      "sample_id": "sample_fe30mn_01",
+      "microstructure_uuid": "uuid_micro_001",
+      "technique": "X-ray diffraction (XRD)",
+      "purpose": "phase identification and volume fraction quantification",
+      "key_findings": "检测到奥氏体、B2、VC三相，B2相体积分数为20%"
+    },
+    {
+      "characterization_id": "char_02",
+      "sample_id": "sample_fe30mn_01",
+      "microstructure_uuid": "uuid_micro_001",
+      "technique": "electron backscatter diffraction (EBSD)",
+      "purpose": "grain structure, orientation and geometrically necessary dislocation (GND) density characterization",
+      "key_findings": "奥氏体平均晶粒尺寸1.31 µm，B2相呈双峰尺寸分布；变形过程中两相GND密度随应变升高，6%应变时分别达2.64×10^14 m^-2和2.51×10^14 m^-2"
+    },
+    {
+      "characterization_id": "char_03",
+      "sample_id": "sample_fe30mn_01",
+      "microstructure_uuid": "uuid_micro_001",
+      "technique": "Transmission electron microscopy (TEM), Scanning transmission electron microscopy (STEM)",
+      "purpose": "nanoprecipitate, interface structure and dislocation-precipitate interaction characterization",
+      "key_findings": "奥氏体内存在19.9±6.2 nm VC和1.0±0.3 nm L'1₂有序畴；B2与奥氏体半共格，VC与奥氏体共格；变形过程中位错剪切L'1₂畴、绕过VC析出相"
+    },
+    {
+      "characterization_id": "char_04",
+      "sample_id": "sample_fe30mn_01",
+      "microstructure_uuid": null,
+      "technique": "Uniaxial tensile test, cyclic loading-unloading-reloading (LUR) tensile test",
+      "purpose": "mechanical property measurement and heterogeneous deformation induced (HDI) stress characterization",
+      "key_findings": "屈服强度1316±16 MPa，抗拉强度1458±11 MPa，延伸率11.7±1.2%；HDI应力随真应变从1%的620 MPa升高至11%的845 MPa"
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_01",
+      "sample_id": "sample_fe30mn_01",
+      "simulation_method": "thermodynamic calculation",
+      "software_used": "Thermo-Calc 2021b",
+      "potential_model": null,
+      "validation_against_experiment": "计算相组成与XRD、EBSD实测结果一致，900°C下奥氏体、B2、VC三相共存",
+      "analytical_model": [
+        {
+          "model_name": "yield strength superposition model",
+          "equation_role": "quantify contribution of different strengthening mechanisms to yield strength",
+          "parameters": "lattice friction stress, solid solution strengthening, dislocation strengthening, precipitation strengthening, HDI strengthening",
+          "model_note": "HDI强化贡献597 MPa，为主要强化机制之一，其次为固溶强化、L'1₂和VC析出强化"
+        },
+        {
+          "model_name": "Taylor strengthening model, Orowan mechanism",
+          "equation_role": "calculate dislocation strengthening and VC precipitation strengthening contribution",
+          "parameters": "Taylor factor, shear modulus, Burgers vector, dislocation density, VC size and volume fraction",
+          "model_note": "VC析出强化贡献92 MPa，位错强化奥氏体贡献106 MPa、B2贡献227 MPa"
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "加工硬化分为三个阶段：阶段I（0~1%真应变）快速下降至0以下，阶段II（1~4.3%真应变）快速上升至3.7 GPa，阶段III（>4.3%真应变）缓慢下降但保持2.7~3.7 GPa的高水平",
+    "拉伸断口呈韧窝特征，为典型韧性断裂",
+    "变形过程中滞后回线面积和屈服跌落Δσy随应变升高而增大，对应Bauschinger效应和HDI强化效应增强",
+    "900°C固溶处理后κ′-碳化物完全溶解，避免了脆性相导致的塑性恶化"
+  ]
+}

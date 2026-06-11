@@ -1,0 +1,5 @@
+{
+    "image_type": "chart_plot",
+    "description": "This set of 7 scatter plots presents the fitting performance of 7 machine learning models for yield strength (YS, unit: MPa) prediction in medium-manganese low-density steels, using quantified multi-strengthening mechanism values from a GMM-augmented dataset as inputs, with a 7:3 train-test split. The evaluated models are: (a) Decision Tree (DT), (b) XGBoost, (c) LightGBM, (d) CatBoost, (e) Extra Trees, (f) KNN, (g) AdaBoost. Each subplot plots predicted YS against actual YS, with a red dashed x=y reference diagonal, and reports three evaluation metrics: R², root mean square error (RMSE, MPa), mean absolute percentage error (MAPE, %). All models show data points largely aligning with the reference diagonal, confirming good YS prediction capability. Extra Trees achieves the best base model performance (R²=0.978, RMSE=76.2 MPa, MAPE=9.80%), while AdaBoost shows the worst performance (R²=0.901, RMSE=162.5 MPa, MAPE=33.1%), supporting that Extra Trees is the optimal base model for further optimization to predict YS of the studied steel system.",
+    "confidence": "high"
+}

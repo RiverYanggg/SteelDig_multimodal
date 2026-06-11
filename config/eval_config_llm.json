@@ -1,0 +1,18 @@
+{
+  "outputs_exp_root": "../evaluation_json2json/outputs_exp",
+  "truth_model": "deepseek",
+  "pred_model": "doubao",
+  "output_root": "../evaluation_json2json/output",
+  "field_rules_path": "field_rules.json",
+  "force": false,
+  "workers": 4,
+  "llm_bridge": {
+    "enabled": true,
+    "model": "deepseek-v4-flash",
+    "base_url": "YOUR_BASE_URL",
+    "api_key": "YOUR_API_KEY",
+    "temperature": 0.0,
+    "prompt_path": "../evaluation_json2json/prompts/sample_bridge_prompt.md",
+    "verify_ssl": true
+  }
+}

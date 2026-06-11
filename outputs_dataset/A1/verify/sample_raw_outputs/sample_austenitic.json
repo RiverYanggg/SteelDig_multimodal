@@ -1,0 +1,26 @@
+{
+  "paper_id": "A1",
+  "sample_id": "sample_austenitic",
+  "verdict": "uncertain",
+  "issues": [
+    {
+      "issue_type": "value_mismatch",
+      "target_path": "properties[property_set_id=prop_austenitic].mechanical.fracture_toughness.value",
+      "evidence_refs": [
+        "b0484"
+      ],
+      "reason": "证据b0484中给出的动态断裂韧性为71.5 J/cm²（Fe-30Mn-9Al-0.9C-xSi固溶态），而当前记录值为200 J/cm²。虽成分范围有重叠，但未在证据中找到200值，可能存在数据来源不一致或错误。"
+    },
+    {
+      "issue_type": "unlikely_association",
+      "target_path": "interfaces[interface_set_id=intf_austenitic_01].phases[interface_id=intf_gamma_alpha]",
+      "evidence_refs": [
+        "b0091",
+        "b0310"
+      ],
+      "reason": "证据b0091明确说明本样本为全奥氏体钢，不应含有α-铁素体相。该接口描述涉及奥氏体与α-铁素体，可能属于双相钢范畴，与当前样本类型不符，存在错挂风险。"
+    }
+  ],
+  "patch_ops": [],
+  "confidence": "low"
+}

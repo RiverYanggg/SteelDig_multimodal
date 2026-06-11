@@ -1,0 +1,469 @@
+{
+  "paper_id": "A24",
+  "truth_path": "/Users/mac/Desktop/LLM_project/SteelDig_multimodal/evaluation_json2json/outputs_exp/deepseek/A24/final/text_extraction.json",
+  "prediction_path": "/Users/mac/Desktop/LLM_project/SteelDig_multimodal/evaluation_json2json/outputs_exp/kimi/A24/final/text_extraction.json",
+  "prediction_empty": true,
+  "section_diagnostics": {
+    "papers": {
+      "structure_metrics": {
+        "truth_count": 1,
+        "prediction_count": 0,
+        "matched_count": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matched_anchors": [],
+        "unmatched_truth_anchors": [
+          "papers.A24"
+        ],
+        "unmatched_prediction_anchors": []
+      },
+      "error_summary": {
+        "missing_fact": 16,
+        "extra_fact": 0
+      },
+      "missing_truth_fact_examples": [
+        "papers.A24.authors[0]",
+        "papers.A24.authors[1]",
+        "papers.A24.authors[2]",
+        "papers.A24.authors[3]",
+        "papers.A24.authors[4]",
+        "papers.A24.authors[5]",
+        "papers.A24.authors[6]",
+        "papers.A24.authors[7]",
+        "papers.A24.keywords[0]",
+        "papers.A24.keywords[1]",
+        "papers.A24.keywords[2]",
+        "papers.A24.keywords[3]",
+        "papers.A24.keywords[4]",
+        "papers.A24.paper_scope",
+        "papers.A24.research_type",
+        "papers.A24.title"
+      ],
+      "extra_prediction_fact_examples": [],
+      "mismatched_fact_examples": [],
+      "llm_judge_candidate_count": 0,
+      "llm_judge_candidates": [],
+      "match_method_summary": {}
+    },
+    "alloys": {
+      "structure_metrics": {
+        "truth_count": 4,
+        "prediction_count": 0,
+        "matched_count": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "error_summary": {
+        "missing_fact": 67,
+        "extra_fact": 0
+      },
+      "missing_truth_fact_examples": [
+        "alloys.alloy_05be.aliases[0]",
+        "alloys.alloy_05be.alloy_name",
+        "alloys.alloy_05be.alloying_elements[0]",
+        "alloys.alloy_05be.alloying_elements[1]",
+        "alloys.alloy_05be.alloying_elements[2]",
+        "alloys.alloy_05be.alloying_elements[3]",
+        "alloys.alloy_05be.base_element",
+        "alloys.alloy_05be.nominal_composition[al].element",
+        "alloys.alloy_05be.nominal_composition[al].weight_percent",
+        "alloys.alloy_05be.nominal_composition[be].element",
+        "alloys.alloy_05be.nominal_composition[be].weight_percent",
+        "alloys.alloy_05be.nominal_composition[c].element",
+        "alloys.alloy_05be.nominal_composition[c].weight_percent",
+        "alloys.alloy_05be.nominal_composition[fe].element",
+        "alloys.alloy_05be.nominal_composition[fe].weight_percent",
+        "alloys.alloy_05be.nominal_composition[mn].element",
+        "alloys.alloy_05be.nominal_composition[mn].weight_percent",
+        "alloys.alloy_0be.aliases[0]",
+        "alloys.alloy_0be.alloy_name",
+        "alloys.alloy_0be.alloying_elements[0]"
+      ],
+      "extra_prediction_fact_examples": [],
+      "mismatched_fact_examples": [],
+      "llm_judge_candidate_count": 0,
+      "llm_judge_candidates": [],
+      "match_method_summary": {}
+    },
+    "processes": {
+      "structure_metrics": {
+        "truth_count": 2,
+        "prediction_count": 0,
+        "matched_count": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "error_summary": {
+        "missing_fact": 2,
+        "extra_fact": 0
+      },
+      "missing_truth_fact_examples": [
+        "processes.proc_as_cast.description",
+        "processes.proc_hot_rolled.description"
+      ],
+      "extra_prediction_fact_examples": [],
+      "mismatched_fact_examples": [],
+      "llm_judge_candidate_count": 0,
+      "llm_judge_candidates": [],
+      "match_method_summary": {}
+    },
+    "samples": {
+      "structure_metrics": {
+        "truth_count": 8,
+        "prediction_count": 0,
+        "matched_count": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "error_summary": {
+        "missing_fact": 0,
+        "extra_fact": 0
+      },
+      "missing_truth_fact_examples": [],
+      "extra_prediction_fact_examples": [],
+      "mismatched_fact_examples": [],
+      "llm_judge_candidate_count": 0,
+      "llm_judge_candidates": [],
+      "match_method_summary": {}
+    },
+    "processing_steps": {
+      "structure_metrics": {
+        "truth_count": 12,
+        "prediction_count": 0,
+        "matched_count": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matched_anchors": [],
+        "unmatched_truth_anchors": [
+          "processing_steps.sample_05be_cast.1.melting_casting.vacuum_induction_melting_and_casting",
+          "processing_steps.sample_05be_rolled.1.heat_treatment.heating_to_rolling_temperature.1050",
+          "processing_steps.sample_05be_rolled.2.thermomechanical_processing.hot_rolling_and_water_quenching.1050",
+          "processing_steps.sample_0be_cast.1.melting_casting.vacuum_induction_melting_and_casting",
+          "processing_steps.sample_0be_rolled.1.heat_treatment.heating_to_rolling_temperature.1050",
+          "processing_steps.sample_0be_rolled.2.thermomechanical_processing.hot_rolling_and_water_quenching.1050",
+          "processing_steps.sample_10be_cast.1.melting_casting.vacuum_induction_melting_and_casting",
+          "processing_steps.sample_10be_rolled.1.heat_treatment.heating_to_rolling_temperature.1050",
+          "processing_steps.sample_10be_rolled.2.thermomechanical_processing.hot_rolling_and_water_quenching.1050",
+          "processing_steps.sample_15be_cast.1.melting_casting.vacuum_induction_melting_and_casting",
+          "processing_steps.sample_15be_rolled.1.heat_treatment.heating_to_rolling_temperature.1050",
+          "processing_steps.sample_15be_rolled.2.thermomechanical_processing.hot_rolling_and_water_quenching.1050"
+        ],
+        "unmatched_prediction_anchors": []
+      },
+      "error_summary": {
+        "missing_fact": 40,
+        "extra_fact": 0
+      },
+      "missing_truth_fact_examples": [
+        "processing_steps.sample_05be_cast.method",
+        "processing_steps.sample_05be_cast.sequence",
+        "processing_steps.sample_05be_cast.type",
+        "processing_steps.sample_05be_rolled.cooling_medium",
+        "processing_steps.sample_05be_rolled.method",
+        "processing_steps.sample_05be_rolled.processing_steps_notes",
+        "processing_steps.sample_05be_rolled.reduction_ratio",
+        "processing_steps.sample_05be_rolled.sequence",
+        "processing_steps.sample_05be_rolled.temperature_with_unit",
+        "processing_steps.sample_05be_rolled.type",
+        "processing_steps.sample_0be_cast.method",
+        "processing_steps.sample_0be_cast.sequence",
+        "processing_steps.sample_0be_cast.type",
+        "processing_steps.sample_0be_rolled.cooling_medium",
+        "processing_steps.sample_0be_rolled.method",
+        "processing_steps.sample_0be_rolled.processing_steps_notes",
+        "processing_steps.sample_0be_rolled.reduction_ratio",
+        "processing_steps.sample_0be_rolled.sequence",
+        "processing_steps.sample_0be_rolled.temperature_with_unit",
+        "processing_steps.sample_0be_rolled.type"
+      ],
+      "extra_prediction_fact_examples": [],
+      "mismatched_fact_examples": [],
+      "llm_judge_candidate_count": 0,
+      "llm_judge_candidates": [],
+      "match_method_summary": {}
+    },
+    "structures": {
+      "structure_metrics": {
+        "truth_count": 8,
+        "prediction_count": 0,
+        "matched_count": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matched_anchors": [],
+        "unmatched_truth_anchors": [
+          "structures.sample_05be_cast",
+          "structures.sample_05be_rolled",
+          "structures.sample_0be_cast",
+          "structures.sample_0be_rolled",
+          "structures.sample_10be_cast",
+          "structures.sample_10be_rolled",
+          "structures.sample_15be_cast",
+          "structures.sample_15be_rolled"
+        ],
+        "unmatched_prediction_anchors": []
+      },
+      "error_summary": {
+        "missing_fact": 91,
+        "extra_fact": 0
+      },
+      "missing_truth_fact_examples": [
+        "structures.sample_05be_cast.microstructure_list[1].phases_present[austenite].crystal_structure",
+        "structures.sample_05be_cast.microstructure_list[1].phases_present[austenite].morphology",
+        "structures.sample_05be_cast.microstructure_list[1].phases_present[austenite].phase_name",
+        "structures.sample_05be_cast.microstructure_list[1].precipitates[be12fe].distribution",
+        "structures.sample_05be_cast.microstructure_list[1].precipitates[be12fe].size.value_with_unit",
+        "structures.sample_05be_cast.microstructure_list[1].precipitates[be12fe].type",
+        "structures.sample_05be_cast.microstructure_list[1].related_sequence",
+        "structures.sample_05be_cast.number_of_phases",
+        "structures.sample_05be_cast.overall_structure",
+        "structures.sample_05be_rolled.microstructure_list[2].grain_structure.average_grain_size.value_with_unit",
+        "structures.sample_05be_rolled.microstructure_list[2].grain_structure.grain_size_distribution",
+        "structures.sample_05be_rolled.microstructure_list[2].phases_present[austenite].crystal_structure",
+        "structures.sample_05be_rolled.microstructure_list[2].phases_present[austenite].grain_size",
+        "structures.sample_05be_rolled.microstructure_list[2].phases_present[austenite].morphology",
+        "structures.sample_05be_rolled.microstructure_list[2].phases_present[austenite].phase_name",
+        "structures.sample_05be_rolled.microstructure_list[2].precipitates[be11fe].distribution",
+        "structures.sample_05be_rolled.microstructure_list[2].precipitates[be11fe].type",
+        "structures.sample_05be_rolled.microstructure_list[2].precipitates[be2c].distribution",
+        "structures.sample_05be_rolled.microstructure_list[2].precipitates[be2c].type",
+        "structures.sample_05be_rolled.microstructure_list[2].related_sequence"
+      ],
+      "extra_prediction_fact_examples": [],
+      "mismatched_fact_examples": [],
+      "llm_judge_candidate_count": 0,
+      "llm_judge_candidates": [],
+      "match_method_summary": {}
+    },
+    "interfaces": {
+      "structure_metrics": {
+        "truth_count": 0,
+        "prediction_count": 0,
+        "matched_count": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matched_anchors": [],
+        "unmatched_truth_anchors": [],
+        "unmatched_prediction_anchors": []
+      },
+      "error_summary": {
+        "missing_fact": 0,
+        "extra_fact": 0
+      },
+      "missing_truth_fact_examples": [],
+      "extra_prediction_fact_examples": [],
+      "mismatched_fact_examples": [],
+      "llm_judge_candidate_count": 0,
+      "llm_judge_candidates": [],
+      "match_method_summary": {}
+    },
+    "properties": {
+      "structure_metrics": {
+        "truth_count": 8,
+        "prediction_count": 0,
+        "matched_count": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matched_anchors": [],
+        "unmatched_truth_anchors": [
+          "properties.sample_05be_cast",
+          "properties.sample_05be_rolled",
+          "properties.sample_0be_cast",
+          "properties.sample_0be_rolled",
+          "properties.sample_10be_cast",
+          "properties.sample_10be_rolled",
+          "properties.sample_15be_cast",
+          "properties.sample_15be_rolled"
+        ],
+        "unmatched_prediction_anchors": []
+      },
+      "error_summary": {
+        "missing_fact": 58,
+        "extra_fact": 0
+      },
+      "missing_truth_fact_examples": [
+        "properties.sample_05be_cast.mechanical.hardness[matrix_austenite].region",
+        "properties.sample_05be_cast.mechanical.hardness[matrix_austenite].scale",
+        "properties.sample_05be_cast.mechanical.hardness[matrix_austenite].value_with_unit",
+        "properties.sample_05be_rolled.mechanical.hardness[matrix_austenite].region",
+        "properties.sample_05be_rolled.mechanical.hardness[matrix_austenite].scale",
+        "properties.sample_05be_rolled.mechanical.hardness[matrix_austenite].value_with_unit",
+        "properties.sample_05be_rolled.mechanical.tensile_properties.elongation[0].value_with_unit",
+        "properties.sample_05be_rolled.mechanical.tensile_properties.ultimate_tensile_strength[0].value_with_unit",
+        "properties.sample_05be_rolled.mechanical.tensile_properties.yield_strength[0].value_with_unit",
+        "properties.sample_05be_rolled.physical.density.value_with_unit",
+        "properties.sample_0be_cast.mechanical.hardness[matrix_austenite].region",
+        "properties.sample_0be_cast.mechanical.hardness[matrix_austenite].scale",
+        "properties.sample_0be_cast.mechanical.hardness[matrix_austenite].value_with_unit",
+        "properties.sample_0be_rolled.mechanical.hardness[matrix_austenite].region",
+        "properties.sample_0be_rolled.mechanical.hardness[matrix_austenite].scale",
+        "properties.sample_0be_rolled.mechanical.hardness[matrix_austenite].value_with_unit",
+        "properties.sample_0be_rolled.mechanical.tensile_properties.elongation[0].value_with_unit",
+        "properties.sample_0be_rolled.mechanical.tensile_properties.ultimate_tensile_strength[0].value_with_unit",
+        "properties.sample_0be_rolled.mechanical.tensile_properties.yield_strength[0].value_with_unit",
+        "properties.sample_0be_rolled.physical.density.value_with_unit"
+      ],
+      "extra_prediction_fact_examples": [],
+      "mismatched_fact_examples": [],
+      "llm_judge_candidate_count": 0,
+      "llm_judge_candidates": [],
+      "match_method_summary": {}
+    },
+    "performance": {
+      "structure_metrics": {
+        "truth_count": 1,
+        "prediction_count": 0,
+        "matched_count": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matched_anchors": [],
+        "unmatched_truth_anchors": [
+          "performance.sample_05be_rolled"
+        ],
+        "unmatched_prediction_anchors": []
+      },
+      "error_summary": {
+        "missing_fact": 3,
+        "extra_fact": 0
+      },
+      "missing_truth_fact_examples": [
+        "performance.sample_05be_rolled.comparative_performance.benchmark_alloy",
+        "performance.sample_05be_rolled.comparative_performance.improvement_percentage",
+        "performance.sample_05be_rolled.service_conditions.environment"
+      ],
+      "extra_prediction_fact_examples": [],
+      "mismatched_fact_examples": [],
+      "llm_judge_candidate_count": 0,
+      "llm_judge_candidates": [],
+      "match_method_summary": {}
+    },
+    "characterization_methods": {
+      "structure_metrics": {
+        "truth_count": 8,
+        "prediction_count": 0,
+        "matched_count": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matched_anchors": [],
+        "unmatched_truth_anchors": [
+          "characterization_methods.sample_05be_cast",
+          "characterization_methods.sample_05be_rolled",
+          "characterization_methods.sample_0be_cast",
+          "characterization_methods.sample_0be_rolled",
+          "characterization_methods.sample_10be_cast",
+          "characterization_methods.sample_10be_rolled",
+          "characterization_methods.sample_15be_cast",
+          "characterization_methods.sample_15be_rolled"
+        ],
+        "unmatched_prediction_anchors": []
+      },
+      "error_summary": {
+        "missing_fact": 24,
+        "extra_fact": 0
+      },
+      "missing_truth_fact_examples": [
+        "characterization_methods.sample_05be_cast.key_findings",
+        "characterization_methods.sample_05be_cast.purpose",
+        "characterization_methods.sample_05be_cast.technique",
+        "characterization_methods.sample_05be_rolled.key_findings",
+        "characterization_methods.sample_05be_rolled.purpose",
+        "characterization_methods.sample_05be_rolled.technique",
+        "characterization_methods.sample_0be_cast.key_findings",
+        "characterization_methods.sample_0be_cast.purpose",
+        "characterization_methods.sample_0be_cast.technique",
+        "characterization_methods.sample_0be_rolled.key_findings",
+        "characterization_methods.sample_0be_rolled.purpose",
+        "characterization_methods.sample_0be_rolled.technique",
+        "characterization_methods.sample_10be_cast.key_findings",
+        "characterization_methods.sample_10be_cast.purpose",
+        "characterization_methods.sample_10be_cast.technique",
+        "characterization_methods.sample_10be_rolled.key_findings",
+        "characterization_methods.sample_10be_rolled.purpose",
+        "characterization_methods.sample_10be_rolled.technique",
+        "characterization_methods.sample_15be_cast.key_findings",
+        "characterization_methods.sample_15be_cast.purpose"
+      ],
+      "extra_prediction_fact_examples": [],
+      "mismatched_fact_examples": [],
+      "llm_judge_candidate_count": 0,
+      "llm_judge_candidates": [],
+      "match_method_summary": {}
+    },
+    "computational_details": {
+      "structure_metrics": {
+        "truth_count": 1,
+        "prediction_count": 0,
+        "matched_count": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matched_anchors": [],
+        "unmatched_truth_anchors": [
+          "computational_details.idx_0"
+        ],
+        "unmatched_prediction_anchors": []
+      },
+      "error_summary": {
+        "missing_fact": 4,
+        "extra_fact": 0
+      },
+      "missing_truth_fact_examples": [
+        "computational_details.idx_0.analytical_model[0].equation_role",
+        "computational_details.idx_0.analytical_model[0].model_name",
+        "computational_details.idx_0.analytical_model[0].model_note",
+        "computational_details.idx_0.analytical_model[0].parameters"
+      ],
+      "extra_prediction_fact_examples": [],
+      "mismatched_fact_examples": [],
+      "llm_judge_candidate_count": 0,
+      "llm_judge_candidates": [],
+      "match_method_summary": {}
+    },
+    "unmapped_findings": {
+      "structure_metrics": {
+        "truth_count": 6,
+        "prediction_count": 0,
+        "matched_count": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matched_anchors": [],
+        "unmatched_truth_anchors": [
+          "unmapped_findings.idx_0",
+          "unmapped_findings.idx_1",
+          "unmapped_findings.idx_2",
+          "unmapped_findings.idx_3",
+          "unmapped_findings.idx_4",
+          "unmapped_findings.idx_5"
+        ],
+        "unmatched_prediction_anchors": []
+      },
+      "error_summary": {
+        "missing_fact": 6,
+        "extra_fact": 0
+      },
+      "missing_truth_fact_examples": [
+        "unmapped_findings.idx_0.value",
+        "unmapped_findings.idx_1.value",
+        "unmapped_findings.idx_2.value",
+        "unmapped_findings.idx_3.value",
+        "unmapped_findings.idx_4.value",
+        "unmapped_findings.idx_5.value"
+      ],
+      "extra_prediction_fact_examples": [],
+      "mismatched_fact_examples": [],
+      "llm_judge_candidate_count": 0,
+      "llm_judge_candidates": [],
+      "match_method_summary": {}
+    }
+  }
+}

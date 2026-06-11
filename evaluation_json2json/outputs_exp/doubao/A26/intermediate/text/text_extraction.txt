@@ -1,0 +1,507 @@
+{
+    "papers": [
+        {
+            "paper_id": "A26",
+            "doi": null,
+            "title": "Making low alloy ultrahigh strength steel tough by high-density NiAl clusters",
+            "authors": ["Xiaohan Duan", "Xin Cao", "Yangxin Wang", "Hongshan Zhao", "Chundong Hu", "Han Dong"],
+            "publication_year": null,
+            "journal": null,
+            "keywords": ["Low alloy ultrahigh strength steel", "NiAl clusters", "Dual-precipitation", "Toughening mechanisms"],
+            "research_type": "experimental",
+            "paper_scope": "Develop a novel low alloy ultrahigh strength steel by introducing high-density coherent NiAl clusters, systematically investigate its precipitation behavior and toughening mechanisms, achieve excellent strength-toughness synergy with ultimate tensile strength ~1.9 GPa."
+        }
+    ],
+    "alloys": [
+        {
+            "alloy_id": "alloy_0al",
+            "paper_id": "A26",
+            "alloy_name": "0Al steel",
+            "aliases": [],
+            "base_element": "Fe",
+            "alloying_elements": ["C", "Si", "Mn", "Cr", "Ni", "Mo", "V", "Al"],
+            "nominal_composition": [
+                {"element": "C", "weight_percent": "0.32", "atomic_percent": null},
+                {"element": "Si", "weight_percent": "1.98", "atomic_percent": null},
+                {"element": "Mn", "weight_percent": "1.02", "atomic_percent": null},
+                {"element": "Cr", "weight_percent": "1.00", "atomic_percent": null},
+                {"element": "Ni", "weight_percent": "3.41", "atomic_percent": null},
+                {"element": "Mo", "weight_percent": "0.56", "atomic_percent": null},
+                {"element": "V", "weight_percent": "0.09", "atomic_percent": null},
+                {"element": "Al", "weight_percent": "0.03", "atomic_percent": null}
+            ],
+            "alloys_notes": null
+        },
+        {
+            "alloy_id": "alloy_13al",
+            "paper_id": "A26",
+            "alloy_name": "1.3Al steel",
+            "aliases": [],
+            "base_element": "Fe",
+            "alloying_elements": ["C", "Si", "Mn", "Cr", "Ni", "Mo", "V", "Al"],
+            "nominal_composition": [
+                {"element": "C", "weight_percent": "0.31", "atomic_percent": null},
+                {"element": "Si", "weight_percent": "2.01", "atomic_percent": null},
+                {"element": "Mn", "weight_percent": "1.03", "atomic_percent": null},
+                {"element": "Cr", "weight_percent": "1.00", "atomic_percent": null},
+                {"element": "Ni", "weight_percent": "5.06", "atomic_percent": null},
+                {"element": "Mo", "weight_percent": "0.60", "atomic_percent": null},
+                {"element": "V", "weight_percent": "0.11", "atomic_percent": null},
+                {"element": "Al", "weight_percent": "1.30", "atomic_percent": null}
+            ],
+            "alloys_notes": null
+        }
+    ],
+    "processes": [
+        {
+            "process_id": "proc_0al_wq",
+            "paper_id": "A26",
+            "alloy_id": "alloy_0al",
+            "description": "970 °C solution treatment for 1 h, water quenching",
+            "processes_notes": null
+        },
+        {
+            "process_id": "proc_0al_2h",
+            "paper_id": "A26",
+            "alloy_id": "alloy_0al",
+            "description": "970 °C solution treatment for 1 h followed by water quenching, then tempering at 180 °C for 2 h, water quenching",
+            "processes_notes": null
+        },
+        {
+            "process_id": "proc_13al_wq",
+            "paper_id": "A26",
+            "alloy_id": "alloy_13al",
+            "description": "970 °C solution treatment for 1 h, water quenching",
+            "processes_notes": null
+        },
+        {
+            "process_id": "proc_13al_2h",
+            "paper_id": "A26",
+            "alloy_id": "alloy_13al",
+            "description": "970 °C solution treatment for 1 h followed by water quenching, then tempering at 180 °C for 2 h, water quenching",
+            "processes_notes": null
+        }
+    ],
+    "samples": [
+        {
+            "sample_id": "sample_0al_wq",
+            "paper_id": "A26",
+            "alloy_id": "alloy_0al",
+            "process_id": "proc_0al_wq"
+        },
+        {
+            "sample_id": "sample_0al_2h",
+            "paper_id": "A26",
+            "alloy_id": "alloy_0al",
+            "process_id": "proc_0al_2h"
+        },
+        {
+            "sample_id": "sample_13al_wq",
+            "paper_id": "A26",
+            "alloy_id": "alloy_13al",
+            "process_id": "proc_13al_wq"
+        },
+        {
+            "sample_id": "sample_13al_2h",
+            "paper_id": "A26",
+            "alloy_id": "alloy_13al",
+            "process_id": "proc_13al_2h"
+        }
+    ],
+    "processing_steps": [
+        {
+            "sample_id": "sample_0al_wq",
+            "paper_id": "A26",
+            "sequence": "1",
+            "type": "heat_treatment",
+            "method": "solution treatment",
+            "temperature": "970",
+            "unit": "°C",
+            "duration": "1",
+            "cooling_medium": "water",
+            "reduction_ratio": null,
+            "processing_steps_notes": null
+        },
+        {
+            "sample_id": "sample_0al_2h",
+            "paper_id": "A26",
+            "sequence": "1",
+            "type": "heat_treatment",
+            "method": "solution treatment",
+            "temperature": "970",
+            "unit": "°C",
+            "duration": "1",
+            "cooling_medium": "water",
+            "reduction_ratio": null,
+            "processing_steps_notes": null
+        },
+        {
+            "sample_id": "sample_0al_2h",
+            "paper_id": "A26",
+            "sequence": "2",
+            "type": "heat_treatment",
+            "method": "tempering",
+            "temperature": "180",
+            "unit": "°C",
+            "duration": "2",
+            "cooling_medium": "water",
+            "reduction_ratio": null,
+            "processing_steps_notes": null
+        },
+        {
+            "sample_id": "sample_13al_wq",
+            "paper_id": "A26",
+            "sequence": "1",
+            "type": "heat_treatment",
+            "method": "solution treatment",
+            "temperature": "970",
+            "unit": "°C",
+            "duration": "1",
+            "cooling_medium": "water",
+            "reduction_ratio": null,
+            "processing_steps_notes": null
+        },
+        {
+            "sample_id": "sample_13al_2h",
+            "paper_id": "A26",
+            "sequence": "1",
+            "type": "heat_treatment",
+            "method": "solution treatment",
+            "temperature": "970",
+            "unit": "°C",
+            "duration": "1",
+            "cooling_medium": "water",
+            "reduction_ratio": null,
+            "processing_steps_notes": null
+        },
+        {
+            "sample_id": "sample_13al_2h",
+            "paper_id": "A26",
+            "sequence": "2",
+            "type": "heat_treatment",
+            "method": "tempering",
+            "temperature": "180",
+            "unit": "°C",
+            "duration": "2",
+            "cooling_medium": "water",
+            "reduction_ratio": null,
+            "processing_steps_notes": null
+        }
+    ],
+    "structures": [
+        {
+            "structure_id": "struct_0al_2h",
+            "sample_id": "sample_0al_2h",
+            "overall_structure": "tempered martensite",
+            "number_of_phases": "3",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "ms_0al_2h_01",
+                    "related_sequence": "2",
+                    "phases_present": [
+                        {"phase_name": "α-Fe martensite", "crystal_structure": "bcc", "volume_fraction": null, "morphology": "lath", "grain_size": null, "texture": null},
+                        {"phase_name": "retained austenite", "crystal_structure": "fcc", "volume_fraction": "1.0%", "morphology": "thin film at lath boundaries", "grain_size": null, "texture": null},
+                        {"phase_name": "ε-carbide", "crystal_structure": "hcp", "volume_fraction": null, "morphology": "needle-like", "grain_size": null, "texture": null}
+                    ],
+                    "defects": [
+                        {"type": "dislocation", "porosity": null, "inclusions": [], "dislocation_density": "2.01×10^15 m^-2", "lattice_distortion": null}
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {"value": "26.1", "unit": "μm"},
+                        "grain_size_distribution": "±9.4 μm",
+                        "texture": null
+                    },
+                    "precipitates": [
+                        {
+                            "precipitate_id": "prec_epsilon_0al",
+                            "type": "ε-carbide",
+                            "size": {"value": "100-500", "unit": "nm"},
+                            "distribution": "uniformly distributed within martensite laths",
+                            "coherency": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "structure_id": "struct_13al_2h",
+            "sample_id": "sample_13al_2h",
+            "overall_structure": "tempered martensite",
+            "number_of_phases": "4",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "ms_13al_2h_01",
+                    "related_sequence": "2",
+                    "phases_present": [
+                        {"phase_name": "α-Fe martensite", "crystal_structure": "bcc", "volume_fraction": null, "morphology": "lath", "grain_size": null, "texture": null},
+                        {"phase_name": "retained austenite", "crystal_structure": "fcc", "volume_fraction": "1.8%", "morphology": "thin film at lath boundaries", "grain_size": null, "texture": null},
+                        {"phase_name": "ε-carbide", "crystal_structure": "hcp", "volume_fraction": null, "morphology": "needle-like", "grain_size": null, "texture": null},
+                        {"phase_name": "NiAl cluster", "crystal_structure": "B2 ordered bcc", "volume_fraction": null, "morphology": "near-spherical", "grain_size": null, "texture": null}
+                    ],
+                    "defects": [
+                        {"type": "dislocation", "porosity": null, "inclusions": [], "dislocation_density": "2.20×10^15 m^-2", "lattice_distortion": null}
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {"value": "23.4", "unit": "μm"},
+                        "grain_size_distribution": "±5.9 μm",
+                        "texture": null
+                    },
+                    "precipitates": [
+                        {
+                            "precipitate_id": "prec_epsilon_13al",
+                            "type": "ε-carbide",
+                            "size": {"value": "100-500", "unit": "nm"},
+                            "distribution": "uniformly distributed within martensite laths",
+                            "coherency": null
+                        },
+                        {
+                            "precipitate_id": "prec_nial_13al",
+                            "type": "NiAl cluster",
+                            "size": {"value": "0.57", "unit": "nm"},
+                            "distribution": "uniformly dispersed in matrix, number density 4.88×10^24 m^-3",
+                            "coherency": "fully coherent"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "interfaces": [
+        {
+            "interface_set_id": "if_13al_01",
+            "sample_id": "sample_13al_2h",
+            "phases": [
+                {
+                    "interface_id": "if_nial_matrix",
+                    "microstructure_uuid": "ms_13al_2h_01",
+                    "phase_1_name": "NiAl cluster",
+                    "phase_2_name": "α-Fe martensite matrix",
+                    "coherence": "fully coherent"
+                }
+            ],
+            "defect_interaction": [],
+            "interface_notes": [
+                {"stress_strain_distribution": null},
+                {"slippage_situation": null}
+            ],
+            "phase_evolution": null
+        }
+    ],
+    "properties": [
+        {
+            "property_set_id": "prop_0al_wq",
+            "sample_id": "sample_0al_wq",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [{"direction": null, "value": "1234", "unit": "MPa", "others": {"uncertainty": "22"}}],
+                    "ultimate_tensile_strength": [{"direction": null, "value": "2294", "unit": "MPa", "others": {"uncertainty": "9"}}],
+                    "elongation": [{"direction": null, "value": "9.5", "unit": "%", "others": {"uncertainty": "0.6"}}],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [],
+                "fracture_toughness": {"value": null, "unit": null},
+                "fatigue_properties": {"fatigue_limit": null, "cycles_to_failure": null},
+                "creep_properties": {"steady_state_creep_rate": null, "rupture_life": null}
+            },
+            "physical": {
+                "density": {"value": null, "unit": null},
+                "thermal_properties": {"thermal_conductivity": null, "thermal_expansion_coefficient": null, "specific_heat": null},
+                "electrical_properties": {"electrical_conductivity": null, "resistivity": null},
+                "magnetic_properties": {"magnetic_susceptibility": null, "curie_temperature": null}
+            },
+            "chemical": {
+                "corrosion_resistance": {"test_medium": null, "corrosion_rate": null, "passivation_behavior": null},
+                "oxidation_resistance": {"oxidation_rate_constant": null, "protective_scale": null}
+            },
+            "radiation_properties": {"void_swelling": null, "irradiation_hardening": null, "helium_embrittlement": null}
+        },
+        {
+            "property_set_id": "prop_0al_2h",
+            "sample_id": "sample_0al_2h",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [{"direction": null, "value": "1400", "unit": "MPa", "others": {"uncertainty": "12"}}],
+                    "ultimate_tensile_strength": [{"direction": null, "value": "1925", "unit": "MPa", "others": {"uncertainty": "5"}}],
+                    "elongation": [{"direction": null, "value": "13.5", "unit": "%", "others": {"uncertainty": "1.8"}}],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [],
+                "fracture_toughness": {"value": "97.6", "unit": "MPa·m^1/2"},
+                "fatigue_properties": {"fatigue_limit": null, "cycles_to_failure": null},
+                "creep_properties": {"steady_state_creep_rate": null, "rupture_life": null}
+            },
+            "physical": {
+                "density": {"value": null, "unit": null},
+                "thermal_properties": {"thermal_conductivity": null, "thermal_expansion_coefficient": null, "specific_heat": null},
+                "electrical_properties": {"electrical_conductivity": null, "resistivity": null},
+                "magnetic_properties": {"magnetic_susceptibility": null, "curie_temperature": null}
+            },
+            "chemical": {
+                "corrosion_resistance": {"test_medium": null, "corrosion_rate": null, "passivation_behavior": null},
+                "oxidation_resistance": {"oxidation_rate_constant": null, "protective_scale": null}
+            },
+            "radiation_properties": {"void_swelling": null, "irradiation_hardening": null, "helium_embrittlement": null}
+        },
+        {
+            "property_set_id": "prop_13al_wq",
+            "sample_id": "sample_13al_wq",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [{"direction": null, "value": "1113", "unit": "MPa", "others": {"uncertainty": "11"}}],
+                    "ultimate_tensile_strength": [{"direction": null, "value": "2145", "unit": "MPa", "others": {"uncertainty": "144"}}],
+                    "elongation": [{"direction": null, "value": "4.3", "unit": "%", "others": {"uncertainty": "0.9"}}],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [],
+                "fracture_toughness": {"value": null, "unit": null},
+                "fatigue_properties": {"fatigue_limit": null, "cycles_to_failure": null},
+                "creep_properties": {"steady_state_creep_rate": null, "rupture_life": null}
+            },
+            "physical": {
+                "density": {"value": null, "unit": null},
+                "thermal_properties": {"thermal_conductivity": null, "thermal_expansion_coefficient": null, "specific_heat": null},
+                "electrical_properties": {"electrical_conductivity": null, "resistivity": null},
+                "magnetic_properties": {"magnetic_susceptibility": null, "curie_temperature": null}
+            },
+            "chemical": {
+                "corrosion_resistance": {"test_medium": null, "corrosion_rate": null, "passivation_behavior": null},
+                "oxidation_resistance": {"oxidation_rate_constant": null, "protective_scale": null}
+            },
+            "radiation_properties": {"void_swelling": null, "irradiation_hardening": null, "helium_embrittlement": null}
+        },
+        {
+            "property_set_id": "prop_13al_2h",
+            "sample_id": "sample_13al_2h",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [{"direction": null, "value": "1272", "unit": "MPa", "others": {"uncertainty": "52"}}],
+                    "ultimate_tensile_strength": [{"direction": null, "value": "1876", "unit": "MPa", "others": {"uncertainty": "25"}}],
+                    "elongation": [{"direction": null, "value": "13.7", "unit": "%", "others": {"uncertainty": "0.4"}}],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [],
+                "fracture_toughness": {"value": "108.0", "unit": "MPa·m^1/2"},
+                "fatigue_properties": {"fatigue_limit": null, "cycles_to_failure": null},
+                "creep_properties": {"steady_state_creep_rate": null, "rupture_life": null}
+            },
+            "physical": {
+                "density": {"value": null, "unit": null},
+                "thermal_properties": {"thermal_conductivity": null, "thermal_expansion_coefficient": null, "specific_heat": null},
+                "electrical_properties": {"electrical_conductivity": null, "resistivity": null},
+                "magnetic_properties": {"magnetic_susceptibility": null, "curie_temperature": null}
+            },
+            "chemical": {
+                "corrosion_resistance": {"test_medium": null, "corrosion_rate": null, "passivation_behavior": null},
+                "oxidation_resistance": {"oxidation_rate_constant": null, "protective_scale": null}
+            },
+            "radiation_properties": {"void_swelling": null, "irradiation_hardening": null, "helium_embrittlement": null}
+        }
+    ],
+    "performance": [
+        {
+            "performance_id": "perf_13al_2h",
+            "sample_id": "sample_13al_2h",
+            "service_conditions": {
+                "operating_temperature": {"min": null, "max": null, "unit": null},
+                "stress_state": null,
+                "environment": null
+            },
+            "lifetime_prediction": {"model_used": null, "predicted_lifetime": null, "confidence_interval": null},
+            "comparative_performance": {
+                "benchmark_alloy": "alloy_0al",
+                "benchmark_process_id": "proc_0al_2h",
+                "benchmark_sample_id": "sample_0al_2h",
+                "improvement_percentage": "23"
+            }
+        }
+    ],
+    "characterization_methods": [
+        {
+            "characterization_id": "char_001",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "scanning electron microscopy (SEM)",
+            "purpose": "microstructure observation, fracture morphology analysis, EBSD measurement",
+            "key_findings": null
+        },
+        {
+            "characterization_id": "char_002",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "transmission electron microscopy (TEM)",
+            "purpose": "nanoscale microstructure, precipitates and interface characterization",
+            "key_findings": null
+        },
+        {
+            "characterization_id": "char_003",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "electron backscatter diffraction (EBSD)",
+            "purpose": "grain structure, orientation, and local strain distribution analysis",
+            "key_findings": null
+        },
+        {
+            "characterization_id": "char_004",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "X-ray diffraction (XRD)",
+            "purpose": "phase identification, retained austenite content and dislocation density calculation",
+            "key_findings": null
+        },
+        {
+            "characterization_id": "char_005",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "atom probe tomography (APT)",
+            "purpose": "three-dimensional atomic distribution and precipitate composition analysis",
+            "key_findings": null
+        },
+        {
+            "characterization_id": "char_006",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "room temperature tensile test",
+            "purpose": "tensile property measurement",
+            "key_findings": null
+        },
+        {
+            "characterization_id": "char_007",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "Charpy U-notch impact test",
+            "purpose": "impact toughness measurement",
+            "key_findings": null
+        },
+        {
+            "characterization_id": "char_008",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "plane strain fracture toughness test (three-point bending)",
+            "purpose": "fracture toughness measurement",
+            "key_findings": null
+        }
+    ],
+    "computational_details": [],
+    "unmapped_findings": [
+        "ε-carbides and NiAl clusters nucleate and grow independently during tempering, no elemental overlap or competitive partitioning between C and Ni/Al observed",
+        "A small fraction of NiAl clusters interacts with Si during precipitation, increasing heterogeneous nucleation sites",
+        "NiAl clusters promote uniform dislocation distribution, suppress dislocation pile-ups at boundaries, delay crack initiation",
+        "Multi-scale toughening mechanisms for 1.3Al steel include large dimple growth, uniform plastic deformation, secondary crack formation, and extensive crack deflection",
+        "Crack initiation energy of 1.3Al steel is 37.8% higher, crack propagation energy is 20.7% higher than 0Al steel",
+        "Lattice mismatch between NiAl clusters and martensite matrix is only ~0.5%, contributing to fully coherent interface"
+    ]
+}

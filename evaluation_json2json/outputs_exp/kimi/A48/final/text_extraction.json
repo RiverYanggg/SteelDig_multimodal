@@ -1,0 +1,731 @@
+{
+  "papers": [
+    {
+      "paper_id": "A48",
+      "doi": null,
+      "title": "Chemical Composition Optimization for Austenitic Steels of the Fe-Mn-Al-C System",
+      "authors": [
+        "I. Kalashnikov",
+        "O. Acselrad",
+        "A. Shalkevich",
+        "L.C. Pereira"
+      ],
+      "publication_year": "2000",
+      "journal": null,
+      "keywords": [
+        "austenitic steels",
+        "FeMnAlC alloys",
+        "mechanical properties"
+      ],
+      "research_type": "experimental",
+      "paper_scope": "Determination of composition limits for Fe-Mn-Al-C austenitic steels to obtain an optimum microstructural state free of embrittling phases and acceptable mechanical properties for structural applications, specifically UTS greater than 1100 MPa and U-notch impact toughness K_CU greater than 50 J/cm²."
+    }
+  ],
+  "alloys": [
+    {
+      "alloy_id": "alloy_femnalc",
+      "paper_id": "A48",
+      "alloy_name": "Fe-Mn-Al-C austenitic steel",
+      "aliases": [],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Al",
+        "C"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Fe",
+          "weight_percent": "balance",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "28.5 - 30.5",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "9.0 - 9.5",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.90 - 0.95",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "Systematic study of 31 experimental melts covering Al 3-10%, C 0.3-1.2%, and Mn 24-34%. The optimized composition range for structural applications, accounting for industrial liquation in heavy ingots, is Al 9-9.5%, C 0.9-0.95%, and Mn 28.5-30.5%. Broader fundamental limits without liquation considerations are Al 6.2-9.7%, C 0.7-1%, and Mn 25-31%."
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_femnalc_01",
+      "paper_id": "A48",
+      "alloy_id": "alloy_femnalc",
+      "description": "Induction melting in a 100 kg furnace, electroslag remelting, homogenization at 1150°C for 6-8 h, shaping to circular and square rods, solution treatment at 1050°C with water quenching, and aging at 550°C for 16 h.",
+      "processes_notes": "Cast ingot-electrodes were repeatedly melted and refined in an electric-slag remelting furnace. Hot working and shaping to rods (12 mm diameter circular; 14 × 14 mm square) were performed after homogenization. For cast steels with up to 12% delta-ferrite, hot working within 1150-1170°C accompanies delta-ferrite dissolution. Jet spraying of liquid metal in argon atmosphere was also mentioned as a method to suppress liquation and avoid delta-ferrite up to 12% Al."
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_femnalc_01",
+      "paper_id": "A48",
+      "alloy_id": "alloy_femnalc",
+      "process_id": "proc_femnalc_01"
+    }
+  ],
+  "processing_steps": [
+    {
+      "sample_id": "sample_femnalc_01",
+      "paper_id": "A48",
+      "sequence": "1",
+      "type": "melting",
+      "method": "induction melting and electroslag remelting",
+      "temperature": null,
+      "unit": null,
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Prepared in a 100 kg induction furnace and poured into 20 kg cylindrical ingot-electrodes; subsequently subjected to repeated melting and refining in an electric-slag remelting furnace."
+    },
+    {
+      "sample_id": "sample_femnalc_01",
+      "paper_id": "A48",
+      "sequence": "2",
+      "type": "heat_treatment",
+      "method": "homogenization",
+      "temperature": "1150",
+      "unit": "°C",
+      "duration": "6 to 8",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_femnalc_01",
+      "paper_id": "A48",
+      "sequence": "3",
+      "type": "mechanical_processing",
+      "method": "hot working and shaping to rods",
+      "temperature": "1150 to 1170",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Shaped as circular rods (12 mm diameter) and square rods (14 × 14 mm cross section). Hot-working temperature must not exceed 1170°C to avoid additional delta-ferrite formation."
+    },
+    {
+      "sample_id": "sample_femnalc_01",
+      "paper_id": "A48",
+      "sequence": "4",
+      "type": "heat_treatment",
+      "method": "solution treatment and quenching",
+      "temperature": "1050",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Tensile and impact specimens were heated to 1050°C and quenched into water at room temperature. Some melts were also processed by homogenization at 1150°C prior to shaping, followed by water quench from 1150°C."
+    },
+    {
+      "sample_id": "sample_femnalc_01",
+      "paper_id": "A48",
+      "sequence": "5",
+      "type": "heat_treatment",
+      "method": "aging",
+      "temperature": "550",
+      "unit": "°C",
+      "duration": "16",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Standard aging condition to precipitate kappa-phase particles for strengthening. Aging within 400-850°C was also investigated for magnetic response and phase transformation kinetics."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_femnalc_01",
+      "sample_id": "sample_femnalc_01",
+      "overall_structure": "Fully austenitic matrix in the optimized condition; microstructural optimization requires absence of delta-ferrite, grain-boundary carbide networks, and beta-Mn precipitates. Kappa-phase precipitation provides age hardening.",
+      "number_of_phases": "1 to 3 depending on composition and thermal history",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_femnlc_gamma_01",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "fcc",
+              "volume_fraction": "dominant",
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": null,
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        },
+        {
+          "uuid": "uuid_femnlc_kappa_01",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "kappa-phase",
+              "crystal_structure": null,
+              "volume_fraction": "increases with Al content beyond approximately 7%",
+              "morphology": "particles within austenite matrix",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": null,
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_kappa_01",
+              "type": "kappa-phase",
+              "size": {
+                "value": null,
+                "unit": null
+              },
+              "distribution": "homogeneous precipitation within grains for Al greater than approximately 6.2-7%",
+              "coherency": null
+            }
+          ]
+        },
+        {
+          "uuid": "uuid_femnlc_delta_01",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "delta-ferrite",
+              "crystal_structure": "bcc",
+              "volume_fraction": "up to approximately 12% in cast high-Al alloys",
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": null,
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        },
+        {
+          "uuid": "uuid_femnlc_carbide_01",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "carbide",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "network along grain boundaries",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": null,
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_carbide_01",
+              "type": "carbide",
+              "size": {
+                "value": null,
+                "unit": null
+              },
+              "distribution": "grain boundary network in low-Al or high-C aged conditions",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "prop_femnalc_01",
+      "sample_id": "sample_femnalc_01",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "Mn 24%, Al 9%, C 0.9%, aged",
+              "value": "950",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            },
+            {
+              "direction": "Mn 26%, Al 9%, C 0.9%, aged",
+              "value": "1000",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            },
+            {
+              "direction": "Mn 28%, Al 9%, C 0.9%, aged",
+              "value": "1000",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            },
+            {
+              "direction": "Mn 30%, Al 9%, C 0.9%, aged",
+              "value": "980",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            },
+            {
+              "direction": "Mn 32%, Al 9%, C 0.9%, aged",
+              "value": "950",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            },
+            {
+              "direction": "Mn 34%, Al 9%, C 0.9%, aged",
+              "value": "880",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            },
+            {
+              "direction": "C 0.3%, Al 9%, Mn 30%",
+              "value": "650",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            },
+            {
+              "direction": "C 0.5%, Al 9%, Mn 30%",
+              "value": "750",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            },
+            {
+              "direction": "C 0.7%, Al 9%, Mn 30%",
+              "value": "900",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            },
+            {
+              "direction": "C 0.9%, Al 9%, Mn 30%",
+              "value": "1050",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            },
+            {
+              "direction": "C 1.1%, Al 9%, Mn 30%",
+              "value": "1200",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "Mn 24%, Al 9%, C 0.9%, aged",
+              "value": "1100",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            },
+            {
+              "direction": "Mn 26%, Al 9%, C 0.9%, aged",
+              "value": "1200",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            },
+            {
+              "direction": "Mn 28%, Al 9%, C 0.9%, aged",
+              "value": "1180",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            },
+            {
+              "direction": "Mn 30%, Al 9%, C 0.9%, aged",
+              "value": "1150",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            },
+            {
+              "direction": "Mn 32%, Al 9%, C 0.9%, aged",
+              "value": "1100",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            },
+            {
+              "direction": "Mn 34%, Al 9%, C 0.9%, aged",
+              "value": "950",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            },
+            {
+              "direction": "C 0.3%, Al 9%, Mn 30%",
+              "value": "850",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            },
+            {
+              "direction": "C 0.5%, Al 9%, Mn 30%",
+              "value": "950",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            },
+            {
+              "direction": "C 0.7%, Al 9%, Mn 30%",
+              "value": "1100",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            },
+            {
+              "direction": "C 0.9%, Al 9%, Mn 30%",
+              "value": "1250",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            },
+            {
+              "direction": "C 1.1%, Al 9%, Mn 30%",
+              "value": "1350",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            },
+            {
+              "direction": "Al 8%, C 0.95%, WQ 1150°C + aged 550°C 16 h",
+              "value": "1100",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            },
+            {
+              "direction": "Al 9%, C 0.95%, WQ 1150°C + aged 550°C 16 h",
+              "value": "1200",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            },
+            {
+              "direction": "Al 10%, C 0.95%, WQ 1150°C + aged 550°C 16 h",
+              "value": "1250",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "Mn 24%, Al 9%, C 0.9%, aged",
+              "value": "50",
+              "unit": "%"
+            },
+            {
+              "direction": "Mn 26%, Al 9%, C 0.9%, aged",
+              "value": "50",
+              "unit": "%"
+            },
+            {
+              "direction": "Mn 28%, Al 9%, C 0.9%, aged",
+              "value": "55",
+              "unit": "%"
+            },
+            {
+              "direction": "Mn 30%, Al 9%, C 0.9%, aged",
+              "value": "60",
+              "unit": "%"
+            },
+            {
+              "direction": "Mn 32%, Al 9%, C 0.9%, aged",
+              "value": "55",
+              "unit": "%"
+            },
+            {
+              "direction": "Mn 34%, Al 9%, C 0.9%, aged",
+              "value": "20",
+              "unit": "%"
+            },
+            {
+              "direction": "C 0.3%, Al 9%, Mn 30%",
+              "value": "25",
+              "unit": "%"
+            },
+            {
+              "direction": "C 0.5%, Al 9%, Mn 30%",
+              "value": "35",
+              "unit": "%"
+            },
+            {
+              "direction": "C 0.7%, Al 9%, Mn 30%",
+              "value": "50",
+              "unit": "%"
+            },
+            {
+              "direction": "C 0.9%, Al 9%, Mn 30%",
+              "value": "45",
+              "unit": "%"
+            },
+            {
+              "direction": "C 1.1%, Al 9%, Mn 30%",
+              "value": "10",
+              "unit": "%"
+            },
+            {
+              "direction": "Al 3-10%, C 0.85% and 0.95%, WQ 1150°C + aged 550°C 16 h",
+              "value": "45",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_femnalc_01",
+      "sample_id": "sample_femnalc_01",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": "cryogenic",
+          "max": "673",
+          "unit": "K"
+        },
+        "stress_state": "structural components",
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy": "Non-optimized Fe-Mn-Al-C alloys",
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_01",
+      "sample_id": "sample_femnalc_01",
+      "microstructure_uuid": null,
+      "technique": "metallography",
+      "purpose": "microstructural analysis and delta-ferrite identification",
+      "key_findings": "Specimens etched with 4-7% nitric acid in ethanol. Micrographs revealed austenite matrix, kappa-phase precipitation, delta-ferrite in high-Al conditions, and grain-boundary carbide networks in low-Al or high-C aged conditions."
+    },
+    {
+      "characterization_id": "char_02",
+      "sample_id": "sample_femnalc_01",
+      "microstructure_uuid": null,
+      "technique": "x-ray structure analysis",
+      "purpose": "phase identification and quantification of delta-ferrite",
+      "key_findings": "Used alongside metallography to determine the content of delta-ferrite in the as-cast and worked structures."
+    },
+    {
+      "characterization_id": "char_03",
+      "sample_id": "sample_femnalc_01",
+      "microstructure_uuid": null,
+      "technique": "tensile testing",
+      "purpose": "evaluation of mechanical strength and ductility",
+      "key_findings": "Performed on circular rod specimens (12 mm diameter) after solution treatment at 1050°C, water quenching, and aging at 550°C for 16 h."
+    },
+    {
+      "characterization_id": "char_04",
+      "sample_id": "sample_femnalc_01",
+      "microstructure_uuid": null,
+      "technique": "U-notch impact testing",
+      "purpose": "evaluation of impact toughness",
+      "key_findings": "Performed on square rod specimens (14 × 14 mm) with 1 mm notch radius after heat treatment. U-notch impact toughness K_CU was measured across the composition ranges."
+    },
+    {
+      "characterization_id": "char_05",
+      "sample_id": "sample_femnalc_01",
+      "microstructure_uuid": null,
+      "technique": "magnetic measurement of saturation magnetization",
+      "purpose": "qualitative assessment of aging process intensity",
+      "key_findings": "Saturation magnetization (4πJ_s) measured after aging for 16 and 100 h at temperatures between 400°C and 850°C. Carbon was identified as the leading element at the onset of aging; the extent of aging depends on aluminum content."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_01",
+      "sample_id": null,
+      "simulation_method": null,
+      "software_used": null,
+      "potential_model": null,
+      "validation_against_experiment": "Experimental data from 31 compositions were used to construct and validate the response surfaces.",
+      "analytical_model": [
+        {
+          "model_name": "second-order polynomial regression",
+          "equation_role": "correlating UTS and K_CU with independent composition variables Mn, Al, and C",
+          "parameters": null,
+          "model_note": "Spatial figures limited by surfaces of equal-content levels were plotted. The model established that UTS of at least 1100 MPa together with K_CU of at least 50 J/cm² are attained for C 0.84-0.99%, Al 8.8-9.7%, and Mn 28.5-30.5%. For heavy ingots, narrower practical limits are Al 9-9.5% and C 0.9-0.95%."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Fig. 1 data (Al effect, water quench from 1150°C and aging at 550°C for 16 h): For 0.85% C, UTS increases from 800 MPa (3% Al) to 1050 MPa (10% Al); for 0.95% C, UTS increases from 800 MPa (3% Al) to 1250 MPa (10% Al). Ductility remains approximately 45% across the entire Al range for both C levels. U-notch impact toughness (K_CU) peaks at 180 J/cm² for 6-7% Al (0.85% C) and 160 J/cm² for 6-7% Al (0.95% C), dropping sharply to 10 J/cm² at 3% Al (0.85% C) and 7 J/cm² at 3% Al (0.95% C), and to 10 J/cm² at 10% Al (0.85% C) and 60 J/cm² at 10% Al (0.95% C).",
+    "Fig. 5 data (C effect on aging process, Al 9%, Mn 30%): Saturation magnetization (4πJ_s) increases with carbon content and decreases with higher aging temperatures. Representative values after 16 h aging: at 550°C, 0.8% C gives approximately 300 G, 0.92% C gives approximately 600 G, 0.98% C gives approximately 900 G, and 1.06% C gives approximately 1000 G. At 500°C/16h, values range from approximately 150 G (0.8% C) to approximately 750 G (1.06% C). For the same Al content, 4πJ_s increases only up to a certain carbon concentration; raising this limit requires higher Al.",
+    "Fig. 6 data (C effect on mechanical properties, Al 9%, Mn 30%): The figure presents properties for water-quenched (dashed curves) and aged 550°C/16 h (solid curves) conditions. In the aged state, UTS reaches 1250 MPa at 0.9% C and 1350 MPa at 1.1% C; 0.2% YS reaches 1050 MPa at 0.9% C and 1200 MPa at 1.1% C; ductility is 45% at 0.9% C but drops to 10% at 1.1% C; U-notch impact toughness (K_CU) is 110 J/cm² at 0.9% C and 30 J/cm² at 1.1% C. Carbon concentrations exceeding 1% in the aged state cause grain-boundary carbide precipitation and reduce K_CU by at least 40 J/cm². For C lower than 0.7%, delta-ferrite appears.",
+    "Fig. 7 data (Mn effect, Al 9%, C 0.9%, WQ from 1050°C and aged 550°C/16 h): UTS peaks at 1200 MPa for 26% Mn and decreases to 950 MPa for 34% Mn; 0.2% YS is 1000 MPa at 26-28% Mn and 880 MPa at 34% Mn; elongation is highest at 60% for 30% Mn; K_CU is 100-115 J/cm² for Mn 24-32% but drops sharply to 35 J/cm² at 34% Mn due to beta-Mn precipitation after aging.",
+    "Microstructural constraints and phase stability: Homogeneous nucleation of kappa-phase during aging at 550°C occurs for Al greater than approximately 7% (the critical Al concentration decreases with higher C). For Al less than approximately 6.2%, carbides precipitate as a continuous network along grain boundaries during aging (Fig. 2), which is highly detrimental to impact toughness. Delta-ferrite appears for Al greater than 10% in cast structures but dissolves during hot working at 1150-1170°C for contents up to approximately 12%. Beta-Mn precipitates after long-time aging at 550°C when Mn exceeds 31-32%, causing extreme brittleness.",
+    "Solidification and liquation control: In open-air melting, delta-ferrite increases with ingot weight for Al greater than 9.5%. Electroslag remelting reduces liquation such that delta-ferrite is absent in hot-worked semifinished products for Al less than 9.5% (cross sections up to 105 × 105 mm). Jet spraying of liquid metal in argon atmosphere suppresses liquation and avoids delta-ferrite even at 12% Al (0.9% C, 29% Mn); at 14% Al, delta-ferrite may reach approximately 10% volume fraction after working.",
+    "Carbon solid-solution hardening relationship: In the as-quenched condition, each 0.1% increase in carbon content increases the yield stress by 30 to 40 MPa.",
+    "Figure 2 caption and image description indicate kappa-phase precipitation in steel with 4.6 wt.% Al after aging at 600°C for 16 h, showing polygonal crystalline structures. Figure 3 shows delta-ferrite in 10.5 wt.% Al steel in as-cast and deformed conditions. Figure 4 shows granulated and pressed steel quenched from 1100°C with 9.8% Al and 14% Al. Exact precipitate dimensions, ferrite morphology details, and grain size distributions are not extractable from the provided text and captions alone."
+  ]
+}

@@ -1,0 +1,293 @@
+{
+    "papers": [
+        {
+            "paper_id": "A34",
+            "doi": null,
+            "title": "Dynamic recrystallization behavior and microstructure evolution of low-density high-strength Fe-Mn-Al-C steel",
+            "authors": ["Peng Wan", "Tao Kang", "Feng Li", "Pengfei Gao", "Lei Zhang", "Zhengzhi Zhao"],
+            "publication_year": "2021",
+            "journal": null,
+            "keywords": ["Low-density high-strength steel", "Microstructure evolution", "Dynamic recrystallization state diagram", "Hot deformation", "Grain size"],
+            "research_type": "experimental",
+            "paper_scope": "研究低密度高强Fe-Mn-Al-C钢在900~1150℃、应变速率0.01~10s⁻¹范围内的热变形行为、动态再结晶特性与组织演化规律，建立动态再结晶特征值模型及平均晶粒尺寸预测模型，为该钢的热锻工艺制定与数值模拟提供理论支撑"
+        }
+    ],
+    "alloys": [
+        {
+            "alloy_id": "alloy_fe25mn10al146c",
+            "paper_id": "A34",
+            "alloy_name": "low-density high-strength Fe-Mn-Al-C steel",
+            "aliases": ["低密度高强Fe-Mn-Al-C钢"],
+            "base_element": "Fe",
+            "alloying_elements": ["C", "Mn", "Al", "Nb"],
+            "nominal_composition": [
+                {
+                    "element": "C",
+                    "weight_percent": "1.46",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "Mn",
+                    "weight_percent": "25.14",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "Al",
+                    "weight_percent": "10",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "Nb",
+                    "weight_percent": "0.053",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "Fe",
+                    "weight_percent": "余量",
+                    "atomic_percent": null
+                }
+            ],
+            "alloys_notes": null
+        }
+    ],
+    "processes": [
+        {
+            "process_id": "proc_fe_mn_al_c_01",
+            "paper_id": "A34",
+            "alloy_id": "alloy_fe25mn10al146c",
+            "description": "等温热压缩变形实验，温度范围900~1150℃，应变速率范围0.01~10s⁻¹，最大压下量60%（对应最大真应变0.92），压缩后水淬保留组织",
+            "processes_notes": "样品加热至1200℃保温120s均匀化，以5℃/s冷却至设定变形温度后保温15s再进行压缩"
+        }
+    ],
+    "samples": [
+        {
+            "sample_id": "sample_fe_mn_al_c_01",
+            "paper_id": "A34",
+            "alloy_id": "alloy_fe25mn10al146c",
+            "process_id": "proc_fe_mn_al_c_01"
+        }
+    ],
+    "processing_steps": [
+        {
+            "sample_id": "sample_fe_mn_al_c_01",
+            "paper_id": "A34",
+            "sequence": "1",
+            "type": "heat_treatment",
+            "method": "heating and homogenization",
+            "temperature": "1200",
+            "unit": "℃",
+            "duration": "120",
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "加热速率10℃/s，保温使成分组织均匀"
+        },
+        {
+            "sample_id": "sample_fe_mn_al_c_01",
+            "paper_id": "A34",
+            "sequence": "2",
+            "type": "heat_treatment",
+            "method": "cooling and holding",
+            "temperature": "900~1150",
+            "unit": "℃",
+            "duration": "15",
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "冷却速率5℃/s，保温使样品内外温度一致"
+        },
+        {
+            "sample_id": "sample_fe_mn_al_c_01",
+            "paper_id": "A34",
+            "sequence": "3",
+            "type": "thermomechanical_processing",
+            "method": "isothermal constant strain rate compression",
+            "temperature": "900~1150",
+            "unit": "℃",
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": "60",
+            "processing_steps_notes": "应变速率范围0.01~10s⁻¹，对应最大真应变0.92，样品两端垫含高温润滑剂的云母箔减小摩擦"
+        },
+        {
+            "sample_id": "sample_fe_mn_al_c_01",
+            "paper_id": "A34",
+            "sequence": "4",
+            "type": "heat_treatment",
+            "method": "quenching",
+            "temperature": null,
+            "unit": null,
+            "duration": null,
+            "cooling_medium": "water",
+            "reduction_ratio": null,
+            "processing_steps_notes": "压缩后立即喷水冷却，保留高温变形组织"
+        }
+    ],
+    "structures": [
+        {
+            "structure_id": "struct_01",
+            "sample_id": "sample_fe_mn_al_c_01",
+            "overall_structure": "热变形过程中发生动态再结晶，再结晶程度随变形量增大、温度升高、应变速率降低而提高，晶粒尺寸随温度升高、应变速率降低而增大，最优工艺下可获得细小均匀的等轴再结晶晶粒",
+            "number_of_phases": null,
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_001",
+                    "related_sequence": "3",
+                    "phases_present": [],
+                    "defects": [],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": "4~75",
+                            "unit": "μm"
+                        },
+                        "grain_size_distribution": "随温度升高、应变速率降低而增大，900℃/10s⁻¹时约4μm，1150℃/0.01s⁻¹时约75μm",
+                        "texture": null
+                    },
+                    "precipitates": []
+                }
+            ]
+        }
+    ],
+    "interfaces": [],
+    "properties": [
+        {
+            "property_set_id": "prop_01",
+            "sample_id": "sample_fe_mn_al_c_01",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [],
+                    "ultimate_tensile_strength": [
+                        {
+                            "direction": "压缩",
+                            "value": "53.8~305.4",
+                            "unit": "MPa",
+                            "others": {
+                                "uncertainty": null
+                            }
+                        }
+                    ],
+                    "elongation": [],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [],
+                "fracture_toughness": {
+                    "value": null,
+                    "unit": null
+                },
+                "fatigue_properties": {
+                    "fatigue_limit": null,
+                    "cycles_to_failure": null
+                },
+                "creep_properties": {
+                    "steady_state_creep_rate": null,
+                    "rupture_life": null
+                }
+            },
+            "physical": {
+                "density": {
+                    "value": null,
+                    "unit": null
+                },
+                "thermal_properties": {
+                    "thermal_conductivity": null,
+                    "thermal_expansion_coefficient": null,
+                    "specific_heat": null
+                },
+                "electrical_properties": {
+                    "electrical_conductivity": null,
+                    "resistivity": null
+                },
+                "magnetic_properties": {
+                    "magnetic_susceptibility": null,
+                    "curie_temperature": null
+                }
+            },
+            "chemical": {
+                "corrosion_resistance": {
+                    "test_medium": null,
+                    "corrosion_rate": null,
+                    "passivation_behavior": null
+                },
+                "oxidation_resistance": {
+                    "oxidation_rate_constant": null,
+                    "protective_scale": null
+                }
+            },
+            "radiation_properties": {
+                "void_swelling": null,
+                "irradiation_hardening": null,
+                "helium_embrittlement": null
+            }
+        }
+    ],
+    "performance": [
+        {
+            "performance_id": "perf_01",
+            "sample_id": "sample_fe_mn_al_c_01",
+            "service_conditions": {
+                "operating_temperature": {
+                    "min": "950",
+                    "max": "1100",
+                    "unit": "℃"
+                },
+                "stress_state": "热压缩变形",
+                "environment": "空气"
+            },
+            "lifetime_prediction": {
+                "model_used": null,
+                "predicted_lifetime": null,
+                "confidence_interval": null
+            },
+            "comparative_performance": {
+                "benchmark_alloy": null,
+                "benchmark_process_id": null,
+                "benchmark_sample_id": null,
+                "improvement_percentage": null
+            }
+        }
+    ],
+    "characterization_methods": [
+        {
+            "characterization_id": "char_01",
+            "sample_id": "sample_fe_mn_al_c_01",
+            "microstructure_uuid": null,
+            "technique": "Gleeble-3500热机械模拟器",
+            "purpose": "开展等温热压缩实验，获取流变应力曲线，计算动态再结晶激活能",
+            "key_findings": "该钢为负温度敏感、正应变速率敏感材料，流变应力随温度升高、应变速率降低而减小；动态再结晶激活能为669.844 kJ·mol⁻¹"
+        },
+        {
+            "characterization_id": "char_02",
+            "sample_id": "sample_fe_mn_al_c_01",
+            "microstructure_uuid": "uuid_001",
+            "technique": "LEXT OLS4000激光共聚焦显微镜",
+            "purpose": "观察热变形后样品显微组织，测量动态再结晶晶粒尺寸",
+            "key_findings": "压缩样品分为难变形区、小变形区、大变形区，动态再结晶程度：大变形区>小变形区>难变形区；再结晶晶粒尺寸随温度升高、应变速率降低而增大"
+        }
+    ],
+    "computational_details": [
+        {
+            "computation_id": "comp_01",
+            "sample_id": "sample_fe_mn_al_c_01",
+            "simulation_method": "有限元模拟",
+            "software_used": "DEFORM-3D",
+            "potential_model": null,
+            "validation_against_experiment": "预测模型相关系数R=0.996，平均相对误差MRE=4.53%，绝对误差大多在3μm以内，预测精度高",
+            "analytical_model": [
+                {
+                    "model_name": "动态再结晶平均晶粒尺寸预测模型",
+                    "equation_role": "预测热变形后动态再结晶平均晶粒尺寸",
+                    "parameters": "d_rex = 807743.63 * ε̇^(-0.1903) * exp(-120648.47/(RT)) + 4.338",
+                    "model_note": "适用于该Fe-Mn-Al-C钢900~1150℃、0.01~10s⁻¹热变形条件下的晶粒尺寸预测"
+                }
+            ]
+        }
+    ],
+    "unmapped_findings": [
+        "建立了动态再结晶临界应变/应力、峰值应变/应力、稳态应变/应力与Zener-Hollomon参数的关系模型，临界应变与峰值应变比值ε_c/ε_p≈0.452",
+        "绘制了动态再结晶状态图，分为加工硬化区、部分动态再结晶区、完全动态再结晶区；Z参数随应变速率升高、温度降低而增大，Z值越大动态再结晶越难发生",
+        "获得细小均匀动态再结晶晶粒的最优热加工工艺区间：950~1000℃/0.01~0.1 s⁻¹、1050~1100℃/1~10 s⁻¹",
+        "应变速率对峰值应力的影响大于温度：0.01s⁻¹时900℃到1150℃峰值应力降低82%，10s⁻¹时同温度区间峰值应力降低73%"
+    ]
+}

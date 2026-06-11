@@ -1,0 +1,1197 @@
+{
+  "papers": [
+    {
+      "paper_id": "A28",
+      "doi": null,
+      "title": "Temperature dependence of the deformation behavior and mechanical properties of a Fe–Mn–Al–C low-density steel for cryogenic application",
+      "authors": [
+        "Qi Zhang",
+        "Guanghui Chen",
+        "Haijiang Hu",
+        "Wanjie Zheng",
+        "Xiangliang Wan",
+        "Zhengliang Xue",
+        "Guang Xu"
+      ],
+      "publication_year": null,
+      "journal": null,
+      "keywords": [
+        "Austenitic low-density steel",
+        "Stacking fault energy",
+        "Tensile deformation",
+        "Impact toughness",
+        "Deformed microstructure"
+      ],
+      "research_type": "experimental",
+      "paper_scope": "Investigating temperature dependence of deformation behavior, mechanical properties, and impact toughness of Fe-20Mn-6Al-0.6C-0.15Si austenitic low-density steel for cryogenic applications."
+    }
+  ],
+  "alloys": [
+    {
+      "alloy_id": "alloy_fe20mn6al06c015si",
+      "paper_id": "A28",
+      "alloy_name": "Fe-20Mn-6Al-0.6C-0.15Si",
+      "aliases": [],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Al",
+        "C",
+        "Si"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Fe",
+          "weight_percent": "balance",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "20",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "6",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.6",
+          "atomic_percent": null
+        },
+        {
+          "element": "Si",
+          "weight_percent": "0.15",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": null
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_asforged_01",
+      "paper_id": "A28",
+      "alloy_id": "alloy_fe20mn6al06c015si",
+      "description": "As-forged condition after vacuum induction melting, casting, homogenization, and forging.",
+      "processes_notes": "Melted in 50 kg vacuum induction furnace, air cooled to RT; reheated to 1250°C for 2 h; forged between 1100°C and 950°C to 60 mm round bar, then furnace cooled to RT."
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_initial",
+      "paper_id": "A28",
+      "alloy_id": "alloy_fe20mn6al06c015si",
+      "process_id": "proc_asforged_01"
+    },
+    {
+      "sample_id": "sample_rt_tensile",
+      "paper_id": "A28",
+      "alloy_id": "alloy_fe20mn6al06c015si",
+      "process_id": "proc_asforged_01"
+    },
+    {
+      "sample_id": "sample_m77_tensile",
+      "paper_id": "A28",
+      "alloy_id": "alloy_fe20mn6al06c015si",
+      "process_id": "proc_asforged_01"
+    },
+    {
+      "sample_id": "sample_m196_tensile",
+      "paper_id": "A28",
+      "alloy_id": "alloy_fe20mn6al06c015si",
+      "process_id": "proc_asforged_01"
+    },
+    {
+      "sample_id": "sample_rt_impact",
+      "paper_id": "A28",
+      "alloy_id": "alloy_fe20mn6al06c015si",
+      "process_id": "proc_asforged_01"
+    },
+    {
+      "sample_id": "sample_m77_impact",
+      "paper_id": "A28",
+      "alloy_id": "alloy_fe20mn6al06c015si",
+      "process_id": "proc_asforged_01"
+    },
+    {
+      "sample_id": "sample_m196_impact",
+      "paper_id": "A28",
+      "alloy_id": "alloy_fe20mn6al06c015si",
+      "process_id": "proc_asforged_01"
+    }
+  ],
+  "processing_steps": [
+    {
+      "sample_id": "sample_initial",
+      "paper_id": "A28",
+      "sequence": "1",
+      "type": "casting",
+      "method": "vacuum induction melting and casting",
+      "temperature": null,
+      "unit": null,
+      "duration": null,
+      "cooling_medium": "air",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Melted in 50 kg vacuum induction furnace, air cooled to RT."
+    },
+    {
+      "sample_id": "sample_initial",
+      "paper_id": "A28",
+      "sequence": "2",
+      "type": "heat_treatment",
+      "method": "homogenization",
+      "temperature": "1250",
+      "unit": "°C",
+      "duration": "2 h",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Reheated to 1250°C and held for 2 h before forging."
+    },
+    {
+      "sample_id": "sample_initial",
+      "paper_id": "A28",
+      "sequence": "3",
+      "type": "thermomechanical_processing",
+      "method": "forging",
+      "temperature": "1100-950",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": "furnace",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Forged from 1100°C to 950°C to a 60 mm diameter round bar, then furnace cooled to RT."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_initial",
+      "sample_id": "sample_initial",
+      "overall_structure": "Equiaxed fully austenitic grains",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_initial_aus",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": "100",
+              "morphology": "equiaxed",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": null,
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_tensile_m196",
+      "sample_id": "sample_m196_tensile",
+      "overall_structure": "Deformed austenite with mechanical twins, high fraction of LAGBs, and GND accumulation",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_tensile_m196_main",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": "majority",
+              "morphology": "deformed, planar slip",
+              "grain_size": null,
+              "texture": "{111} and {001} fiber"
+            },
+            {
+              "phase_name": "mechanical_twin",
+              "crystal_structure": "FCC (twin)",
+              "volume_fraction": null,
+              "morphology": "thin lamellae along {111} planes",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocations",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "high, planar glide",
+              "lattice_distortion": null
+            },
+            {
+              "type": "GND",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "accumulated at LAGBs",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null,
+            "low_angle_grain_boundary_fraction": "70.2",
+            "high_angle_grain_boundary_fraction": "29.8",
+            "gnd_distribution": "GNDs accumulate at LAGBs"
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_tensile_m77",
+      "sample_id": "sample_m77_tensile",
+      "overall_structure": "Deformed austenite with microbands, moderate LAGB fraction, no mechanical twins",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_tensile_m77_main",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": "100",
+              "morphology": "deformed, microbands along {111} planes",
+              "grain_size": null,
+              "texture": "{111} and {001} fiber"
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocations",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "planar glide, dense microbands",
+              "lattice_distortion": null
+            },
+            {
+              "type": "GND",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "accumulated at LAGBs",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null,
+            "low_angle_grain_boundary_fraction": "63.0",
+            "high_angle_grain_boundary_fraction": "37.0",
+            "gnd_distribution": "GNDs accumulate at LAGBs"
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_tensile_rt",
+      "sample_id": "sample_rt_tensile",
+      "overall_structure": "Deformed austenite with lower LAGB fraction, planar slip features less pronounced",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_tensile_rt_main",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": "100",
+              "morphology": "deformed, planar slip",
+              "grain_size": null,
+              "texture": "{111} and {001} fiber"
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocations",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "moderate planar glide",
+              "lattice_distortion": null
+            },
+            {
+              "type": "GND",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "accumulated at LAGBs",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null,
+            "low_angle_grain_boundary_fraction": "56.0",
+            "high_angle_grain_boundary_fraction": "44.0",
+            "gnd_distribution": "GNDs accumulate at LAGBs"
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_impact_m196",
+      "sample_id": "sample_m196_impact",
+      "overall_structure": "Fracture surface with large dimples, tear edges, quasic cleavage features; near-fracture region shows limited planar glide",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_impact_m196_main",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": "100",
+              "morphology": "transgranular fracture, minor planar glide",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "primary_crack",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null,
+              "crack_path": "zigzag transgranular"
+            },
+            {
+              "type": "dimples",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null,
+              "description": "large dimples with tear edges"
+            },
+            {
+              "type": "planar_glide_features",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "very limited",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_impact_m77",
+      "sample_id": "sample_m77_impact",
+      "overall_structure": "Fracture surface with more ductile features, larger fibrous zone; near-fracture region shows more pronounced planar glide",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_impact_m77_main",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": "100",
+              "morphology": "transgranular fracture, planar glide features present",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "primary_crack",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null,
+              "crack_path": "zigzag transgranular"
+            },
+            {
+              "type": "dimples",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null,
+              "description": "ductile dimples"
+            },
+            {
+              "type": "planar_glide_features",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "moderate",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_impact_rt",
+      "sample_id": "sample_rt_impact",
+      "overall_structure": "Fracture surface with pronounced ductile fracture, secondary cracks present; near-fracture region shows pronounced planar glide",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_impact_rt_main",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": "100",
+              "morphology": "transgranular fracture, pronounced planar glide",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "primary_crack",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null,
+              "crack_path": "zigzag transgranular"
+            },
+            {
+              "type": "secondary_cracks",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null,
+              "description": "secondary cracks relieve stress concentration near primary crack tip"
+            },
+            {
+              "type": "dimples",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null,
+              "description": "ductile dimples"
+            },
+            {
+              "type": "planar_glide_features",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "high",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "prop_tensile_rt",
+      "sample_id": "sample_rt_tensile",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "400",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "800",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "32",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": [
+            {
+              "property_id": "n1",
+              "direction": null,
+              "value": "0.174",
+              "unit": null
+            },
+            {
+              "property_id": "n2",
+              "direction": null,
+              "value": "0.362",
+              "unit": null
+            }
+          ]
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "7.114",
+          "unit": "g/cm^3"
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_tensile_m77",
+      "sample_id": "sample_m77_tensile",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "650",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "1000",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "58",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": [
+            {
+              "property_id": "n1",
+              "direction": null,
+              "value": "0.181",
+              "unit": null
+            },
+            {
+              "property_id": "n2",
+              "direction": null,
+              "value": "0.362",
+              "unit": null
+            }
+          ]
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": null,
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_tensile_m196",
+      "sample_id": "sample_m196_tensile",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "900",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "1300",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "68",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": [
+            {
+              "property_id": "n1",
+              "direction": null,
+              "value": "0.204",
+              "unit": null
+            },
+            {
+              "property_id": "n2",
+              "direction": null,
+              "value": "0.362",
+              "unit": null
+            }
+          ]
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": null,
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_impact_rt",
+      "sample_id": "sample_rt_impact",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": null,
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_impact_m77",
+      "sample_id": "sample_m77_impact",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": null,
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_impact_m196",
+      "sample_id": "sample_m196_impact",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": null,
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_ebsd_initial",
+      "sample_id": "sample_initial",
+      "microstructure_uuid": "uuid_initial_aus",
+      "technique": "EBSD",
+      "purpose": "Initial microstructure characterization",
+      "key_findings": "Fully austenitic equiaxed grains; no isothermal martensite at -196°C"
+    },
+    {
+      "characterization_id": "char_xrd_initial",
+      "sample_id": "sample_initial",
+      "microstructure_uuid": null,
+      "technique": "XRD",
+      "purpose": "Phase identification and lattice parameter",
+      "key_findings": "γ-austenite peaks; lattice parameter 0.36757 nm; no ε-martensite"
+    },
+    {
+      "characterization_id": "char_tensile_rt",
+      "sample_id": "sample_rt_tensile",
+      "microstructure_uuid": null,
+      "technique": "Tensile test",
+      "purpose": "Tensile properties at RT",
+      "key_findings": "YS 400 MPa, UTS 800 MPa, TE 32%"
+    },
+    {
+      "characterization_id": "char_tensile_m77",
+      "sample_id": "sample_m77_tensile",
+      "microstructure_uuid": null,
+      "technique": "Tensile test",
+      "purpose": "Tensile properties at -77°C",
+      "key_findings": "YS 650 MPa, UTS 1000 MPa, TE 58%"
+    },
+    {
+      "characterization_id": "char_tensile_m196",
+      "sample_id": "sample_m196_tensile",
+      "microstructure_uuid": null,
+      "technique": "Tensile test",
+      "purpose": "Tensile properties at -196°C",
+      "key_findings": "YS 900 MPa, UTS 1300 MPa, TE 68%"
+    },
+    {
+      "characterization_id": "char_ebsd_tensile_m196",
+      "sample_id": "sample_m196_tensile",
+      "microstructure_uuid": "uuid_tensile_m196_main",
+      "technique": "EBSD",
+      "purpose": "Deformed microstructure after tensile at -196°C",
+      "key_findings": "Mechanical twins, high LAGB fraction 70.2%, GND accumulation"
+    },
+    {
+      "characterization_id": "char_ebsd_tensile_m77",
+      "sample_id": "sample_m77_tensile",
+      "microstructure_uuid": "uuid_tensile_m77_main",
+      "technique": "EBSD",
+      "purpose": "Deformed microstructure after tensile at -77°C",
+      "key_findings": "Microbands, LAGB fraction 63.0%, no twinning"
+    },
+    {
+      "characterization_id": "char_ebsd_tensile_rt",
+      "sample_id": "sample_rt_tensile",
+      "microstructure_uuid": "uuid_tensile_rt_main",
+      "technique": "EBSD",
+      "purpose": "Deformed microstructure after tensile at RT",
+      "key_findings": "Planar slip, LAGB fraction 56.0%"
+    },
+    {
+      "characterization_id": "char_tem_m196",
+      "sample_id": "sample_m196_tensile",
+      "microstructure_uuid": null,
+      "technique": "TEM",
+      "purpose": "Confirm mechanical twins after -196°C tensile",
+      "key_findings": "Mechanical twins on {111} planes, <110> zone axis"
+    },
+    {
+      "characterization_id": "char_tem_m77",
+      "sample_id": "sample_m77_tensile",
+      "microstructure_uuid": null,
+      "technique": "TEM",
+      "purpose": "Observe microbands after -77°C tensile",
+      "key_findings": "Microbands along {111} planes"
+    },
+    {
+      "characterization_id": "char_impact_test_rt",
+      "sample_id": "sample_rt_impact",
+      "microstructure_uuid": null,
+      "technique": "Charpy impact test",
+      "purpose": "Impact toughness at RT",
+      "key_findings": "Total absorbed energy 327 J"
+    },
+    {
+      "characterization_id": "char_impact_test_m77",
+      "sample_id": "sample_m77_impact",
+      "microstructure_uuid": null,
+      "technique": "Charpy impact test",
+      "purpose": "Impact toughness at -77°C",
+      "key_findings": "Total absorbed energy 277 J"
+    },
+    {
+      "characterization_id": "char_impact_test_m196",
+      "sample_id": "sample_m196_impact",
+      "microstructure_uuid": null,
+      "technique": "Charpy impact test",
+      "purpose": "Impact toughness at -196°C",
+      "key_findings": "Total absorbed energy 188 J"
+    },
+    {
+      "characterization_id": "char_sem_fracture_m196",
+      "sample_id": "sample_m196_impact",
+      "microstructure_uuid": "uuid_impact_m196_main",
+      "technique": "SEM",
+      "purpose": "Fracture surface observation at -196°C",
+      "key_findings": "Large dimples, tear edges, quasic cleavage features"
+    },
+    {
+      "characterization_id": "char_sem_fracture_m77",
+      "sample_id": "sample_m77_impact",
+      "microstructure_uuid": "uuid_impact_m77_main",
+      "technique": "SEM",
+      "purpose": "Fracture surface observation at -77°C",
+      "key_findings": "Ductile dimples, more obvious ductile fracture"
+    },
+    {
+      "characterization_id": "char_sem_fracture_rt",
+      "sample_id": "sample_rt_impact",
+      "microstructure_uuid": "uuid_impact_rt_main",
+      "technique": "SEM",
+      "purpose": "Fracture surface observation at RT",
+      "key_findings": "Secondary cracks, pronounced ductile fracture"
+    },
+    {
+      "characterization_id": "char_ebsd_impact_m196",
+      "sample_id": "sample_m196_impact",
+      "microstructure_uuid": "uuid_impact_m196_main",
+      "technique": "EBSD",
+      "purpose": "Microstructure near fracture after -196°C impact",
+      "key_findings": "Transgranular fracture, limited planar glide"
+    },
+    {
+      "characterization_id": "char_ebsd_impact_rt",
+      "sample_id": "sample_rt_impact",
+      "microstructure_uuid": "uuid_impact_rt_main",
+      "technique": "EBSD",
+      "purpose": "Microstructure near fracture after RT impact",
+      "key_findings": "Transgranular fracture, secondary cracks, pronounced planar glide"
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_sfe",
+      "sample_id": null,
+      "simulation_method": "analytical thermodynamic model",
+      "software_used": null,
+      "potential_model": null,
+      "validation_against_experiment": null,
+      "analytical_model": [
+        {
+          "model_name": "Stacking fault energy calculation",
+          "equation_role": "SFE = 2 ρ_A ΔG^{γ→ε} + 2 σ^{γ/ε}",
+          "parameters": "ΔG^{γ→ε} from thermodynamic expressions in Table 1; ρ_A from lattice parameter 0.36757 nm; σ^{γ/ε}=15 mJ/m^2; equations (2)-(4).",
+          "model_note": "SFE at RT: 61 mJ/m^2, -77°C: 40 mJ/m^2, -196°C: 32 mJ/m^2."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Estimated density from equation (1) is 7.078 g/cm^3, measured density is 7.114 g/cm^3.",
+    "Charpy impact W_initiation values from Fig. 5b table differ from text: table gives 110, 65, 55 J for -196, -77, RT respectively; text states 112, 68, 57 J. W_stable and W_unstable from Fig. 5b: -196°C: 30, 40 J; -77°C: 180, 50 J; RT: 180, 60 J.",
+    "Linear relationships from Fig. 2c: UTS = 813.0 - 2.36*T, YS = 474.6 - 2.05*T, where T is temperature in °C.",
+    "Planar glide promotes continuous uniform deformation; lower SFE increases glide planarity but high strain rate impact at low temperature is difficult due to higher activation energy for slip systems, leading to limited planar glide and poor cryogenic toughness."
+  ]
+}

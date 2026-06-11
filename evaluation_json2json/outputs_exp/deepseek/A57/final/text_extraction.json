@@ -1,0 +1,439 @@
+{
+  "papers": [
+    {
+      "paper_id": "A57",
+      "doi": "10.3390/cryst15121019",
+      "title": "An Ultrastrong and Ductile Duplex Lightweight Steel with Dual-Nanoprecipitation",
+      "authors": [
+        "Menghao Zhang",
+        "Huihui Zhi",
+        "Ruizhe Wang",
+        "Xinlan Ye",
+        "Xiyue Li",
+        "Zihao Xu",
+        "Weijun Wang",
+        "Haifeng Wang",
+        "Yanjing Su"
+      ],
+      "publication_year": "2025",
+      "journal": "Crystals",
+      "keywords": [
+        "lightweight steel",
+        "precipitation",
+        "strengthening",
+        "strain hardening"
+      ],
+      "research_type": "experimental",
+      "paper_scope": "Investigation of microstructure and mechanical properties of Fe-30Mn-9Al-1C-1V-5Ni duplex lightweight steel with dual-nanoprecipitation (L'12 ordered domains and VC carbides) produced by cold rolling and heat treatment, focusing on strengthening and strain hardening mechanisms."
+    }
+  ],
+  "alloys": [
+    {
+      "alloy_id": "alloy_fe30mn9al1c1v5ni",
+      "paper_id": "A57",
+      "alloy_name": "Fe-30Mn-9Al-1C-1V-5Ni",
+      "aliases": [],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Al",
+        "C",
+        "V",
+        "Ni"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Fe",
+          "weight_percent": "Bal.",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "30",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "9",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "1",
+          "atomic_percent": null
+        },
+        {
+          "element": "V",
+          "weight_percent": "1",
+          "atomic_percent": null
+        },
+        {
+          "element": "Ni",
+          "weight_percent": "5",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "Measured composition (wt.%, Table 1): Mn 30.45, Al 9.50, C 1.20, V 1.09, Ni 4.94, P 0.0040, S 0.0044, Fe Bal."
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_fe30mn9al1c1v5ni_01",
+      "paper_id": "A57",
+      "alloy_id": "alloy_fe30mn9al1c1v5ni",
+      "description": "Homogenized at 1050°C for 1 h, hot-rolled to 3 mm (85% reduction), water-quenched, cold-rolled to 1.5 mm (50% total reduction, single pass ≤5%), solution-treated at 900°C for 15 min, water-quenched.",
+      "processes_notes": null
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_fe30mn9al1c1v5ni_01",
+      "paper_id": "A57",
+      "alloy_id": "alloy_fe30mn9al1c1v5ni",
+      "process_id": "proc_fe30mn9al1c1v5ni_01"
+    }
+  ],
+  "processing_steps": [
+    {
+      "sample_id": "sample_fe30mn9al1c1v5ni_01",
+      "paper_id": "A57",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "homogenization",
+      "temperature": "1050",
+      "unit": "°C",
+      "duration": "1 h",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Prior to hot rolling"
+    },
+    {
+      "sample_id": "sample_fe30mn9al1c1v5ni_01",
+      "paper_id": "A57",
+      "sequence": "2",
+      "type": "thermomechanical_processing",
+      "method": "hot rolling",
+      "temperature": null,
+      "unit": null,
+      "duration": null,
+      "cooling_medium": "water",
+      "reduction_ratio": "85",
+      "processing_steps_notes": "Hot rolled to 3 mm thickness, immediately water-quenched"
+    },
+    {
+      "sample_id": "sample_fe30mn9al1c1v5ni_01",
+      "paper_id": "A57",
+      "sequence": "3",
+      "type": "mechanical_processing",
+      "method": "cold rolling",
+      "temperature": null,
+      "unit": null,
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": "50 (single pass ≤5%)",
+      "processing_steps_notes": "Cold rolled to 1.5 mm final thickness"
+    },
+    {
+      "sample_id": "sample_fe30mn9al1c1v5ni_01",
+      "paper_id": "A57",
+      "sequence": "4",
+      "type": "heat_treatment",
+      "method": "solution treatment",
+      "temperature": "900",
+      "unit": "°C",
+      "duration": "15 min",
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_01",
+      "sample_id": "sample_fe30mn9al1c1v5ni_01",
+      "overall_structure": "Duplex microstructure of austenite (γ-FCC) and B2 (ordered BCC) phases, with nanoscale L'12 ordered domains (average size 1.0±0.3 nm, volume fraction 11.10%) and VC carbides (average size 19.9±6.2 nm, volume fraction 0.26%) within the austenite.",
+      "number_of_phases": "3",
+      "microstructure_counts": "Austenite ~80%, B2 20%, VC 0.26%, LRO domains 11.10% (within austenite)",
+      "microstructure_list": [
+        {
+          "uuid": "uuid_1",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": "~80",
+              "morphology": "equiaxed",
+              "grain_size": "1.31 µm",
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocations",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "5.36×10^13 m^-2 (initial)",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "1.31",
+              "unit": "µm"
+            },
+            "grain_size_distribution": "shown in Figure 2e",
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "prec_LRO",
+              "type": "L'12 ordered domains",
+              "size": {
+                "value": "1.0 ± 0.3",
+                "unit": "nm"
+              },
+              "distribution": "homogeneously distributed within austenite grains",
+              "coherency": null
+            },
+            {
+              "precipitate_id": "prec_VC",
+              "type": "VC carbides",
+              "size": {
+                "value": "19.9 ± 6.2",
+                "unit": "nm"
+              },
+              "distribution": "dispersed in austenite",
+              "coherency": "coherent"
+            }
+          ]
+        },
+        {
+          "uuid": "uuid_2",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "B2",
+              "crystal_structure": "B2 (ordered BCC)",
+              "volume_fraction": "20",
+              "morphology": "long strip-like large grains and fine particles decorating austenite grain boundaries",
+              "grain_size": "bimodal: mean 1.02 µm and 3.38 µm",
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocations",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "1.04×10^14 m^-2 (initial)",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": "bimodal, see Figure 2f",
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "intf_set_01",
+      "sample_id": "sample_fe30mn9al1c1v5ni_01",
+      "phases": [
+        {
+          "interface_id": "intf_aust_B2",
+          "microstructure_uuid": null,
+          "phase_1_name": "austenite",
+          "phase_2_name": "B2",
+          "coherence": "semi-coherent"
+        },
+        {
+          "interface_id": "intf_aust_VC",
+          "microstructure_uuid": null,
+          "phase_1_name": "austenite",
+          "phase_2_name": "VC",
+          "coherence": "coherent"
+        }
+      ],
+      "defect_interaction": [
+        {
+          "interaction_id": "inter_01",
+          "microstructure_uuid": null,
+          "interaction_type": "dislocation pile-up at austenite/B2 interfaces",
+          "quality_description": "during deformation, GNDs accumulate at interfaces causing HDI strengthening"
+        }
+      ],
+      "interface_notes": [
+        {
+          "stress_strain_distribution": null
+        },
+        {
+          "slippage_situation": null
+        }
+      ],
+      "phase_evolution": "During tensile deformation, dislocations shear the LRO domains reducing their volume fraction; VC precipitates impede dislocation motion; dislocation density increases in both phases and accumulates at phase boundaries, enhancing HDI hardening."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_set_01",
+      "sample_id": "sample_fe30mn9al1c1v5ni_01",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "1316",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "±16"
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "1458",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "±11"
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "11.7",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Engineering stress-strain curve shown in Figure 4a; true stress-strain and work hardening rate curves shown in Figure 4b",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": [
+            {
+              "property_id": "stage_III",
+              "direction": null,
+              "value": "2.7-3.7",
+              "unit": "GPa"
+            }
+          ]
+        },
+        "hardness": [],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": null,
+      "chemical": null,
+      "radiation_properties": null
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_1",
+      "sample_id": "sample_fe30mn9al1c1v5ni_01",
+      "microstructure_uuid": null,
+      "technique": "XRD",
+      "purpose": "Phase identification and volume fraction analysis",
+      "key_findings": "Identified austenite, B2, and VC phases; B2 fraction ~20 vol%"
+    },
+    {
+      "characterization_id": "char_2",
+      "sample_id": "sample_fe30mn9al1c1v5ni_01",
+      "microstructure_uuid": "uuid_1",
+      "technique": "EBSD",
+      "purpose": "Phase map, grain morphology, grain size distribution, and GND density measurement",
+      "key_findings": "Austenite equiaxed grains, B2 as long strip-like grains and fine particles; average austenite grain size 1.31 µm; initial GND densities γ: 5.36×10^13 m^-2, B2: 1.04×10^14 m^-2"
+    },
+    {
+      "characterization_id": "char_3",
+      "sample_id": "sample_fe30mn9al1c1v5ni_01",
+      "microstructure_uuid": "uuid_1",
+      "technique": "TEM/STEM/EDS",
+      "purpose": "Nanoscale precipitate characterization, interface structure, and deformation substructure",
+      "key_findings": "LRO domains (1.0±0.3 nm, 11.10 vol%) and VC (19.9±6.2 nm, 0.26 vol%) in austenite; semi-coherent B2/austenite interface, coherent VC/austenite; dislocations shear LRO and accumulate at VC particles and phase boundaries"
+    },
+    {
+      "characterization_id": "char_4",
+      "sample_id": "sample_fe30mn9al1c1v5ni_01",
+      "microstructure_uuid": null,
+      "technique": "in-situ EBSD tensile testing",
+      "purpose": "Capture microstructural evolution and GND density changes during deformation",
+      "key_findings": "GND density increases with strain in both phases; austenite accumulates dislocations faster and surpasses B2 at 6% strain; Schmid factor significantly influences grain deformation"
+    },
+    {
+      "characterization_id": "char_5",
+      "sample_id": "sample_fe30mn9al1c1v5ni_01",
+      "microstructure_uuid": null,
+      "technique": "LUR tensile testing",
+      "purpose": "Evaluate HDI stress evolution and Bauschinger effect",
+      "key_findings": "HDI stress increases with strain (from ~620 MPa at 1% to ~845 MPa at 10.4%); yield drop Δσ_y and hysteresis loops reflect HDI strengthening; at yielding, HDI stress extrapolated to 597 MPa"
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_1",
+      "sample_id": "sample_fe30mn9al1c1v5ni_01",
+      "simulation_method": "Thermodynamic calculations using CALPHAD and analytical strengthening models",
+      "software_used": "Thermo-Calc 2021b, MATLAB 2018b",
+      "potential_model": null,
+      "validation_against_experiment": "Equilibrium phase diagram predictions consistent with XRD and EBSD phase fractions; calculated yield strength matches experimental 1316 MPa",
+      "analytical_model": [
+        {
+          "model_name": "Yield strength rule of mixtures",
+          "equation_role": "σ_YS = σ_γ f_γ + σ_B2 f_B2 + σ_HDI (Equation 1)",
+          "parameters": "f_γ=0.8, f_B2=0.2, σ_HDI=597 MPa",
+          "model_note": null
+        },
+        {
+          "model_name": "Solid solution strengthening in austenite",
+          "equation_role": "σ_ss,γ = 91.3X_C - 1.5X_Mn + 20.5X_Al + 2.9X_Ni + 3X_V (Equation 4)",
+          "parameters": "based on measured composition (wt.%): C 1.20, Mn 30.45, Al 9.50, Ni 4.94, V 1.09; σ_ss,γ = 228 MPa",
+          "model_note": null
+        },
+        {
+          "model_name": "Taylor dislocation strengthening",
+          "equation_role": "σ_dis = M α G b √ρ (Equation 5)",
+          "parameters": "γ: M=3.06, α=0.26, G=70 GPa, b=0.260 nm, ρ₀=5.36×10^13 m^-2 → σ_dis,γ=106 MPa; B2: M=2.75, α=0.4, G=82 GPa, b=0.248 nm, ρ₀=1.04×10^14 m^-2 → σ_dis,B2=227 MPa",
+          "model_note": null
+        },
+        {
+          "model_name": "Orowan precipitation strengthening (VC)",
+          "equation_role": "σ_VC = 0.538 G b f_VC^(1/2) / D_VC ln(D_VC / 2b) (Equation 6)",
+          "parameters": "G=70 GPa, b=0.260 nm, f_VC=0.0026, D_VC=19.9 nm → σ_VC = 92 MPa",
+          "model_note": null
+        },
+        {
+          "model_name": "HDI stress extrapolation",
+          "equation_role": "σ_HDI = (σ_u + σ_r)/2 from LUR loops",
+          "parameters": "yield HDI stress = 597 MPa (extrapolated from Figure 5d)",
+          "model_note": null
+        },
+        {
+          "model_name": "LRO strengthening (back-calculated)",
+          "equation_role": "σ_LRO = YS - (other contributions)",
+          "parameters": "σ_LRO = 119 MPa",
+          "model_note": "derived from difference after accounting for other mechanisms"
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "The fracture surface exhibits dimples, indicating a ductile fracture mode (Figure 4a inset).",
+    "The work-hardening curve shows three distinct stages: Stage I (0-1% true strain) sharp decrease with rate dropping below zero; Stage II (1-4.3%) rapid increase; Stage III (4.3-12%) gradual decrease but work-hardening rate remains high at 2.7-3.7 GPa.",
+    "LUR tests reveal yield drop Δσ_y and hysteresis loops that enlarge with strain; HDI stress increases progressively from about 620 MPa at 1% strain to about 845 MPa at 10.4% strain.",
+    "The measured chemical composition (Table 1) is: Mn 30.45, Al 9.50, C 1.20, V 1.09, Ni 4.94, P 0.0040, S 0.0044, Fe Bal. (wt.%).",
+    "GND density evolution from in-situ EBSD: in austenite from 5.36×10^13 to 2.64×10^14 m^-2, in B2 from 1.04×10^14 to 2.51×10^14 m^-2 as strain increases from 0% to 6%.",
+    "The volume fraction of LRO domains decreases from 11.10% in the initial state after deformation due to dislocations shearing the ordered domains.",
+    "The steel was produced via a simple processing route (homogenization, hot rolling, cold rolling, solution treatment) without complex thermomechanical treatments.",
+    "Schmid factor distributions were employed to explain variations in GND densities among individual austenite and B2 grains.",
+    "The B2 phase has a bimodal grain size distribution with mean sizes of 1.02 µm and 3.38 µm."
+  ]
+}

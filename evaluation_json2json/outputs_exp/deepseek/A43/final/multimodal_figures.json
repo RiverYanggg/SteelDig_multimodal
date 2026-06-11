@@ -1,0 +1,225 @@
+[
+  {
+    "paper_id": "A43",
+    "figure_id": "figure_001",
+    "image_paths": [
+      "images/46544d76e51600dffe2e204c76baa5f47ffbf4b951984535b20bb1f7380953ba.jpg"
+    ],
+    "image_count": 1,
+    "image_type": "microscopy_sem",
+    "description": "This figure comprises scanning electron microscopy (SEM) micrographs and correlative quantitative microstructural data for medium-manganese low-density steels (Fe-0.25C-3Mn-2Al-0.4Si, designated as ANT steel) subjected to annealing treatments at 750°C, 800°C, and 850°C. The micrographs display dual-phase microstructures consisting of equiaxed ferrite grains (5.4–6.8 μm in size, 43–69 vol%) and lath-like bainite (2.6–4.1 μm, 30.8–55.1 vol%), together with minor retained austenite (<5%). Associated characterization data from electron backscatter diffraction (EBSD) indicate geometrically necessary dislocation densities ranging from 0.61 to 0.84×10^14 m^-2 and Taylor factors of 3.45–3.58. Corresponding tensile testing reveals yield strengths of 709 MPa, 968 MPa, and 964 MPa for the respective annealing conditions. The figure supports the core scientific conclusion that dislocation strengthening contributes approximately 48% to the total yield strength, followed by grain refinement strengthening (19%), validating the data-driven multi-mechanism strengthening model for these lightweight steels. Note: Specific visual details are inferred from text extraction as the image resolution is insufficient for direct microstructural verification.",
+    "confidence": 0.0
+  },
+  {
+    "paper_id": "A43",
+    "figure_id": "figure_002",
+    "image_paths": [
+      "images/0659e24f6606b4ee1113602b03735739ad891d0520011d8d628551ec054863e6.jpg"
+    ],
+    "image_count": 1,
+    "image_type": "chart_flow",
+    "description": "This flowchart illustrates a comprehensive data-driven framework for predicting yield strength (YS) in medium-manganese low-density steels by systematically integrating four core strengthening mechanisms: dislocation strengthening, fine grain strengthening, solid solution strengthening, and Orowan strengthening (σ_YS = σ_0 + σ_g + σ_d + σ_Orowan). The workflow commences with collecting 177 original data pieces from existing literature, followed by feature filtering based on these mechanisms. Data enhancement utilizing Gaussian Mixture Model (GMM) expands the dataset from 177 to 776 samples while preserving distribution characteristics. Model selection evaluates seven machine learning algorithms (DT, KNN, XGB, CatB, ET, LGBM, AdaB), identifying Extra Trees (ET) as the optimal regressor. Algorithm optimization employs Genetic Algorithm (GA) to optimize ET hyperparameters, achieving superior predictive performance (R²=0.997, RMSE=31.6 MPa, MAPE=4.39%). Experimental verification includes engineering stress-strain curves and comparative bar charts showing predicted versus measured YS values for low-density steel samples prepared with different annealing temperatures (750°C, 800°C, 850°C), demonstrating that GA-ET possesses the best prediction accuracy.",
+    "confidence": 0.0
+  },
+  {
+    "paper_id": "A43",
+    "figure_id": "figure_003",
+    "image_paths": [
+      "images/a74d2ee60fc0b2bfc9af312c9d49e73cd6d71349f8d67e19dc2dfa2dc6b61c04.jpg"
+    ],
+    "image_count": 1,
+    "image_type": "chart_flow",
+    "description": "This figure presents the workflow of Gaussian Mixture Model (GMM)-based data augmentation for yield strength prediction in medium-manganese low-density steels. The process comprises three sequential stages: (1) Original dataset preparation, where input features including friction stress (σ₀), grain refinement contribution (σg), dislocation strengthening (σd), and Orowan strengthening (σOrowan) are extracted from n=177 samples; (2) Training phase, which optimizes the number of Gaussian components and selects the optimal configuration using the Bayesian Information Criterion (BIC); and (3) Result generation, where the Expectation-Maximization (EM) algorithm iteratively estimates mean, covariance, and weight parameters for each Gaussian component, followed by denoising and data consolidation. The final dataset combines generated samples with raw data, expanding the sample size from 177 to 776 while preserving statistical consistency. This workflow addresses the small-sample limitation in materials machine learning by capturing nonlinear feature associations and local density variations through parametric modeling of multidimensional feature joint distributions, thereby improving model generalization and preventing overfitting.",
+    "confidence": 0.0
+  },
+  {
+    "paper_id": "A43",
+    "figure_id": "figure_004",
+    "image_paths": [
+      "images/ecc61f239244603f93fbaf26fd70dcd4880290dd23f97136103f25ae2b88b748.jpg",
+      "images/642c5e9da15080a435788ecb0794366ad215600f7617ba001d4b2558f2400c8a.jpg",
+      "images/fea823cbb6845a411103a8a99c00d1b497e43a09d308c5e02f6a2f021872c27e.jpg",
+      "images/b33528764a880f6e995f8acd62b594714835645e9d00035242b83675287224da.jpg",
+      "images/a29370c090fe17a8f64c003285716e1940d027c654fcd7199834f2899fc1d741.jpg"
+    ],
+    "image_count": 5,
+    "image_type": "chart_plot",
+    "description": "This figure presents kernel density distribution plots comparing original experimental data with Gaussian Mixture Model (GMM) augmented data across five panels: (a) Dislocation strengthening, (b) Fine grain strengthening, (c) Solid solution strengthening, (d) Orowan strengthening, and (e) Yield Strength (YS). In each subplot, the blue solid curve represents the Original Data while the orange dashed curve represents the Augmented Data generated through GMM-based data expansion. The distributions demonstrate that the augmented dataset successfully reproduces the core statistical features and value ranges of the original distributions for all four strengthening mechanisms (Taylor hardening, Hall-Petch grain refinement, solid solution, and precipitation/Orowan mechanisms) as well as macroscopic yield strength. Notably, the YS distribution shows overlapping peaks and identical right truncation points between original and generated data, confirming that the augmentation process preserves the physical laws governing material strengthening mechanisms while expanding the dataset from 177 to 776 samples for machine learning model training in medium-manganese low-density steels (Fe-C-Mn-Al-Si systems).",
+    "confidence": 0.0
+  },
+  {
+    "paper_id": "A43",
+    "figure_id": "figure_005",
+    "image_paths": [
+      "images/fe2666a44bec94af13c544ed318ab75f8b1eaff5f65a222318b4b1a23e14e476.jpg",
+      "images/10367fe59420435e94a19bb1dbd9df759c20772fd37acfe8e8e5f14ae016bd48.jpg",
+      "images/7eeccb86603ccc45f8ba98daf1ecbc28af45c6446b8a14b17e9113791b5aca21.jpg",
+      "images/85ec84d85175e142e371493caf49e3b47af1f3aef9266182da22fefd5b4ec838.jpg",
+      "images/8ef83e60f2ae490bdec6ca2f869749ea6094e2731bae30071d4808abb1ee8772.jpg",
+      "images/0cd6167baf4feba3c9062a7acbb54f49c77fb43d540ec7ae85cee0a76ca528af.jpg",
+      "images/431d3a84e60daea7a7818157477de740f6c4c8b8feb82c5258f9201c00b4eb04.jpg"
+    ],
+    "image_count": 7,
+    "image_type": "chart_plot",
+    "description": "This figure presents goodness-of-fit scatter plots for seven machine learning models predicting yield strength (YS) in medium-manganese low-density steels. Subfigures (a) through (g) correspond to Decision Tree (DT), XGBoost, LightGBM, CatBoost, Extra Trees, K-Nearest Neighbors (KNN), and AdaBoost, respectively. Each plot compares predicted YS values against actual experimental and literature data (ranging from approximately 0 to 3000 MPa) with a red dashed diagonal line representing ideal prediction. The evaluation metrics reveal that Extra Trees achieves the best performance with R² = 0.978, RMSE = 76.2 MPa, and MAPE = 9.80%, followed closely by CatBoost (R² = 0.970) and XGBoost (R² = 0.969). AdaBoost exhibits the poorest fit (R² = 0.901, MAPE = 33.1%). The data points generally align along the x = y diagonal across all models, indicating reliable predictive capability using input features from four strengthening mechanisms (solid solution, grain refinement, dislocation, and Orowan). This comparison establishes Extra Trees as the optimal base model for subsequent hyperparameter optimization via genetic algorithms.",
+    "confidence": 0.0
+  },
+  {
+    "paper_id": "A43",
+    "figure_id": "figure_006",
+    "image_paths": [
+      "images/53a520f307de8c890f4b0cdfe7ee3f4a62264336168aaa73c0b458452cf59390.jpg",
+      "images/36c7395b05f84b7f666c1fe25899f5badee0640daa7806dddcd4068c104e91e5.jpg",
+      "images/318986d4ee79901581ff8f4848004d0b6e4bfb2e8479d186b32a83adcfc78f82.jpg"
+    ],
+    "image_count": 3,
+    "image_type": "chart_plot",
+    "description": "This figure presents a comprehensive performance comparison of seven machine learning models for yield strength prediction in medium-manganese low-density steels, displayed as three grouped bar charts. Subfigure (a) compares Root Mean Square Error (RMSE) values, showing Extra Trees achieves the lowest error at 76.2 MPa, followed by CatBoost (89.5 MPa), XGBoost (90.4 MPa), KNN (85.2 MPa), LightGBM (104.8 MPa), DT (123 MPa), and AdaBoost performs worst at 162.5 MPa. Subfigure (b) displays Mean Absolute Percentage Error (MAPE), where Extra Trees again leads with 9.8%, followed closely by CatBoost (10.2%), KNN (10.4%), LightGBM (12.7%), XGBoost (13.4%), DT (19%), and AdaBoost (33.1%). Subfigure (c) shows R² coefficients, with Extra Trees achieving the highest value of 0.978, followed by CatBoost (0.97), KNN (0.973), XGBoost (0.969), LightGBM (0.959), DT (0.944), and AdaBoost (0.901). The consistent superiority of Extra Trees across all three metrics (lowest RMSE and MAPE, highest R²) supports its selection as the optimal base model, which was subsequently optimized using Genetic Algorithm to create the GA-Extra Trees predictor for the multi-mechanism strengthening based yield strength prediction framework.",
+    "confidence": 0.0
+  },
+  {
+    "paper_id": "A43",
+    "figure_id": "figure_007",
+    "image_paths": [
+      "images/2727a07c594185b62cca2213a851d579238ab2d6e3acb4c154f3076c48a4e381.jpg"
+    ],
+    "image_count": 1,
+    "image_type": "chart_schematic",
+    "description": "This figure presents a schematic illustration of the Extra Trees (Extremely Randomized Trees) ensemble learning model architecture employed for data-driven yield strength prediction in medium-manganese low-density steels. The diagram depicts an ensemble of N independent decision trees (Tree 1 through Tree N), where each tree consists of hierarchical nodes (represented by yellow and blue circles) that generate individual prediction results (Result 1 through Result N). These individual outputs are subsequently aggregated through a Majority voting mechanism to produce the final prediction result. As stated in the accompanying text, this Extra Trees model demonstrated superior performance among seven machine learning algorithms, achieving an RMSE of 76.2 MPa, MAPE of 9.8%, and R² value of 0.978. The schematic effectively visualizes the working mechanism of ensemble learning, where multiple randomized trees collectively enhance prediction accuracy and robustness, serving as the foundational structure for the Genetic Algorithm-Extra Trees hybrid framework that integrates contributions from solid solution, grain refinement, dislocation, and Orowan strengthening mechanisms.",
+    "confidence": 0.0
+  },
+  {
+    "paper_id": "A43",
+    "figure_id": "figure_008",
+    "image_paths": [
+      "images/735a62f59397c88bac1a5ae989924fab524b1ed33b88d5decabba6a2692f2c74.jpg"
+    ],
+    "image_count": 1,
+    "image_type": "chart_schematic",
+    "description": "Figure 7 illustrates the architecture and crossover mechanism of the Genetic Algorithm (GA) employed for hyper-parameter optimization of the Extra Trees machine learning model. The schematic displays four horizontal chromosome arrays representing Parent 1, Parent 2, Offspring 1, and Offspring 2, where colored blocks encode genetic information (numerical values 1-9 visible in Parent 1 as the sequence 3-1-4-2-5-8-7-6-9). Parent 1 shows a complete genotype with alternating gray and light cyan segments, while Parent 2 exhibits dark blue conserved regions and light cyan variable segments. Offspring 1 demonstrates the crossover outcome, inheriting specific gene segments from both parents (e.g., 3-1-4 from Parent 1 and 8-2-5-7 from Parent 2), exemplifying how GA explores the vast combinatorial hyper-parameter search space. As stated in the caption and supporting text, this GA architecture addresses high-dimensionality, mixed variables, and non-convex objective functions encountered in optimizing complex ensemble models, utilizing a population size of 30, crossover probability of 0.7, and mutation probability of 0.3 to achieve global optimization and avoid local minima.",
+    "confidence": 0.0
+  },
+  {
+    "paper_id": "A43",
+    "figure_id": "figure_009",
+    "image_paths": [
+      "images/f29eed8637212cbb13f155906acad523976b6bab1954db657a492008041db9dd.jpg",
+      "images/a33139379f4c264bcdb6e525466a503a11ffa5fc9d652e3c9ac9c6c37956f069.jpg",
+      "images/dd950ba7da1cbf3dc5865cadfaff9628a66001eba73a091f79310774c485a9c0.jpg"
+    ],
+    "image_count": 3,
+    "image_type": "chart_plot",
+    "description": "Figure 8 presents a comprehensive performance comparison of three optimization algorithms applied to the Extra Trees (ET) regression model for yield strength prediction in medium-manganese low-density steels. The figure comprises three subplots evaluating different metrics: (a) Root Mean Square Error (RMSE), (b) Mean Absolute Percentage Error (MAPE), and (c) coefficient of determination (R²). Subplot (a) shows RMSE values of 80.239 MPa for Grid Search-ET, 80.721 MPa for Bayesian-ET, and 31.6 MPa for the proposed Genetic Algorithm-ET (GA-ET) method. Subplot (b) displays MAPE values of 11.037%, 11.423%, and 4.39% respectively. Subplot (c) reveals R² values of 0.972, 0.976, and 0.997 respectively. The results demonstrate that the GA-optimized Extra Trees model significantly outperforms both Grid Search and Bayesian optimization approaches, achieving substantially lower prediction errors and higher goodness-of-fit. This validates the selection of Genetic Algorithm as the optimal hyperparameter tuning strategy for the machine learning model, supporting the development of an accurate data-driven framework for predicting yield strength based on multi-mechanism strengthening contributions.",
+    "confidence": 0.0
+  },
+  {
+    "paper_id": "A43",
+    "figure_id": "figure_010",
+    "image_paths": [
+      "images/ba6fa95b3c2c3564338ab325975a68f6251cc2432656a043fe92fc8e4954776a.jpg",
+      "images/0e5b552bd687ad3e9f168d34cf8632e6d5d862c52dbbc60b4c81e8101adb1340.jpg"
+    ],
+    "image_count": 2,
+    "image_type": "chart_plot",
+    "description": "Figure 9 presents the optimization results of the GA-Extra Trees model for yield strength prediction in medium-manganese low-density steels. Subfigure (a) displays the fitting results as a scatter plot of predicted versus actual yield strength (YS) values, spanning from 0 to approximately 2700 MPa. The experimental and literature data points cluster tightly around the diagonal dashed line, indicating excellent predictive accuracy with high correlation. Subfigure (b) illustrates the evolutionary progress of the Genetic Algorithm optimization over 30 generations, plotting both Best RMSE (blue circles) and Average RMSE (green squares) against generation number. The Best RMSE converges rapidly to near-zero values and remains stable, while the Average RMSE starts above 500,000, decreases with fluctuations across generations, and stabilizes after approximately the 26th generation. The figure demonstrates the successful hyperparameter optimization (n_estimators=1657, max_depth=51, min_samples_split=3) for the Extra Trees regressor, validated against experimental steels (Fe-0.25C-3Mn-2Al-0.4Si processed at 750°C, 800°C, and 850°C) and literature datasets, achieving final prediction errors as low as 10-19 MPa for experimental validations.",
+    "confidence": 0.0
+  },
+  {
+    "paper_id": "A43",
+    "figure_id": "figure_011",
+    "image_paths": [
+      "images/2e23c834db9ca0dd519f03b130cd7bf599d7d3938e18f63303aa579cc92a3751.jpg",
+      "images/cff10edd34961a084326e4aa74ab35efde2d136b9448ef467081f98a8e13a4ae.jpg",
+      "images/7c333df11cfd32e585febf3512f7ec142e3cfac29d12c20e66acc61a4ca892cb.jpg"
+    ],
+    "image_count": 3,
+    "image_type": "chart_plot",
+    "description": "This figure presents a comparative performance evaluation of machine learning models for yield strength prediction in medium-manganese low-density steels, comprising three bar charts labeled (a) RMSE Comparison, (b) MAPE Comparison, and (c) R² Comparison. Each subplot compares the baseline Extra Trees (ET) model (red bars) against the Genetic Algorithm-optimized Extra Trees (GA-ET) model (blue bars). Subplot (a) shows that GA-ET achieves a Root Mean Square Error of 31.6, representing a significant reduction from 76.2 for the standard ET model. Subplot (b) demonstrates that GA-ET reduces the Mean Absolute Percentage Error to 4.39% compared to 9.8% for ET. Subplot (c) indicates that GA-ET improves the coefficient of determination to 0.997 versus 0.978 for the baseline model. Collectively, these metrics demonstrate that genetic algorithm optimization substantially enhances prediction accuracy, reducing RMSE by approximately 58.5% and MAPE by 55.2% while improving model reliability for yield strength prediction in these steel alloys.",
+    "confidence": 0.0
+  },
+  {
+    "paper_id": "A43",
+    "figure_id": "figure_012",
+    "image_paths": [
+      "images/4182b8df8f83dc2e7fe81f1b30fb0b6750f54589733d7d74ac75b691704904d7.jpg"
+    ],
+    "image_count": 1,
+    "image_type": "chart_plot",
+    "description": "Figure 11 presents a model prediction validation chart comparing actual yield strength (YS) values against machine learning-predicted counterparts for medium-manganese low-density steels. The line graph displays two distinct curves: a gray line representing experimentally measured Actual YS and a red line representing GA-Extra Trees Predicted YS across approximately 120 sample indices. The vertical axis spans 0–3000 MPa, encompassing yield strength values from diverse alloy compositions including Fe-0.25C-3Mn-2Al-0.4Si and literature datasets. The predicted curve closely follows the actual data trend with minimal deviation, visually confirming the model's high accuracy reported in the statistical validation (R²=0.997, RMSE=31.60 MPa). This comparison demonstrates that the Genetic Algorithm-optimized Extremely Randomized Trees framework successfully integrates contributions from solid solution, grain refinement, dislocation, and Orowan strengthening mechanisms to predict mechanical properties of steels subjected to varying annealing temperatures (750–850°C) and thermomechanical processing histories.",
+    "confidence": 0.0
+  },
+  {
+    "paper_id": "A43",
+    "figure_id": "figure_013",
+    "image_paths": [
+      "images/62800bfec570d5ce5f4e28795fa545ded17b85c7f4134a2e37b5a443a989a688.jpg"
+    ],
+    "image_count": 1,
+    "image_type": "property_mechanical",
+    "description": "This figure displays room-temperature engineering stress-strain curves for medium-manganese low-density steel (Fe-0.25C-3Mn-2Al-0.4Si) subjected to vacuum induction melting, hot forging, hot rolling (90% reduction), cold rolling (60% reduction), and annealing at 750°C (black curve, sample ANT750), 800°C (red curve, sample ANT800), and 850°C (blue curve, sample ANT850) for 30 min followed by air cooling and tempering at 400°C. The 750°C-annealed specimen exhibits continuous yielding with the lowest strength (~709 MPa yield strength) but exceptional ductility exceeding 30% strain. In contrast, the 800°C and 850°C samples show discontinuous yielding with significantly higher yield strengths (~968 MPa and ~964 MPa) and pronounced strain hardening peaks (~1230 MPa and ~1280 MPa), though with reduced elongation to fracture (~14% and ~9% respectively). These curves demonstrate the strength-ductility trade-off governed by annealing temperature-dependent microstructural evolution (ferrite fraction, bainite morphology, and grain size), serving as experimental validation for the data-driven yield strength prediction model.",
+    "confidence": 0.0
+  },
+  {
+    "paper_id": "A43",
+    "figure_id": "figure_014",
+    "image_paths": [
+      "images/262432b53c0f2313294f3708d1ac6443994965ded03430be0bdd09688ed9f082.jpg",
+      "images/5421a5cde3e1e916129ec10f34b2b3a45d1a8c338ecb57d6cd5c36fb0c15b915.jpg",
+      "images/3af79f8ffe24dc3ecd75da061790d6e1fa1f193c4df7dace23465dcbfde46d73.jpg"
+    ],
+    "image_count": 3,
+    "image_type": "microscopy_sem",
+    "description": "This figure presents scanning electron microscopy (SEM) micrographs illustrating the microstructural evolution of medium-manganese low-density steels (Fe-0.25C-3Mn-2Al-0.4Si) under different annealing temperatures. Subfigures (a), (b), and (c) correspond to samples AN750, AN800, and AN850, annealed at 750°C, 800°C, and 850°C for 30 minutes respectively, followed by tempering at 400°C. The images display a dual-phase microstructure comprising equiaxed ferrite grains (bright contrast) and lath-like bainite (dark regions), with retained austenite content below 5%. Quantitative analysis reveals that AN750 contains 52% ferrite (5.7 μm grain size) and 43.0% bainite (3.0 μm), AN800 shows 43% ferrite (5.4 μm) and 55.1% bainite (4.1 μm), while AN850 exhibits 69% ferrite (6.8 μm) and 30.8% bainite (2.6 μm). These microstructural parameters demonstrate increasing ferrite volume fraction and grain size with higher annealing temperatures, providing essential inputs for calculating grain refinement strengthening contributions (264 MPa, 256 MPa, and 292 MPa) within the data-driven yield strength prediction framework.",
+    "confidence": 0.0
+  },
+  {
+    "paper_id": "A43",
+    "figure_id": "figure_015",
+    "image_paths": [
+      "images/e5c65e6a0c34ca855c722a45b45fea4e70dc82f0a618fd822d6d5884236b7d56.jpg",
+      "images/8e98ee0b0f2f8b9278a7f341cef76b563773141484a500bd4864cac70799fe52.jpg",
+      "images/7fc72f0d9ddc01cfc5c0f7899a152d9e517a3eef950ea0785530be662e35f067.jpg",
+      "images/dd6e46c70f521dfe6354b346743556267cf5c1b749d1792a1dbdd192130d5aa7.jpg",
+      "images/f129d727fb966bc931ec821965293ce029a1f10ead806f28ad7e1c24a73478c9.jpg",
+      "images/01a4b96a7b7cfdad7dda84cd051cc668f794edf306fc4c4fc3cefd448e3935a8.jpg"
+    ],
+    "image_count": 6,
+    "image_type": "chart_plot",
+    "description": "This figure presents statistical histograms showing the geometrically necessary dislocation (GND) density and Taylor factor distributions for medium-manganese low-density steels (Fe-0.25C-3Mn-2Al-0.4Si) subjected to different annealing temperatures. Subfigures (a)-(c) display GND density distributions for samples AN750, AN800, and AN850 (annealed at 750°C, 800°C, and 850°C for 30 min, respectively), with mean values of ρGND_mean = 0.61×10^14 m^-2, 0.84×10^14 m^-2, and 0.72×10^14 m^-2. All GND distributions exhibit right-skewed patterns peaking at low dislocation densities (~50-100 ×10^14 m^-2). Subfigures (d)-(f) show the corresponding Taylor factor distributions, with average values of 3.45, 3.58, and 3.53, respectively. The AN800 sample exhibits the highest GND density and Taylor factor among the three conditions, correlating with its superior yield strength (968 MPa) compared to AN750 (709 MPa) and AN850 (964 MPa). These statistics were derived from EBSD data analysis, revealing that dislocation strengthening and crystallographic orientation play significant roles in the mechanical behavior of these dual-phase (ferrite + bainite) steels.",
+    "confidence": 0.0
+  },
+  {
+    "paper_id": "A43",
+    "figure_id": "figure_016",
+    "image_paths": [
+      "images/9670a7f68ffd5508fbd37f78f2293cb7a8ae016ed75e0b10ec6e4552ae04be01.jpg"
+    ],
+    "image_count": 1,
+    "image_type": "chart_plot",
+    "description": "This bar chart compares the prediction differences (errors) between two machine learning models—standard Extra Trees and Genetic Algorithm-optimized Extra Trees (GA-Extra Trees)—for yield strength prediction in medium-manganese low-density steels. The x-axis displays three annealing temperatures (750°C, 800°C, and 850°C) corresponding to experimental samples ANT750, ANT800, and ANT850 of the Fe-0.25C-3Mn-2Al-0.4Si alloy system processed via vacuum induction melting, hot rolling, cold rolling, and annealing. The y-axis quantifies the model prediction error in MPa. At 750°C, Extra Trees exhibits a 34 MPa difference versus 12 MPa for GA-Extra Trees; at 800°C, 31 MPa versus 10 MPa; and at 850°C, 36 MPa versus 19 MPa. The data reveals that the GA-optimized model consistently achieves substantially lower prediction errors across all processing conditions, reducing discrepancies by approximately 65% on average compared to the baseline model. This figure supports the conclusion that hyperparameter optimization via Genetic Algorithm significantly enhances the predictive accuracy of Extra Trees regression for yield strength in multi-phase steels.",
+    "confidence": 0.0
+  },
+  {
+    "paper_id": "A43",
+    "figure_id": "figure_017",
+    "image_paths": [
+      "images/70dc3930afd37bd77891e67ef474ad922979c40deb4ba596396ad7e7081eb79a.jpg"
+    ],
+    "image_count": 1,
+    "image_type": "chart_plot",
+    "description": "This figure presents a scatter plot comparing the predicted versus actual yield strength (YS) values for medium-manganese low-density steels, serving as a response diagram for the GA-Extra Trees machine learning model validation. The x-axis displays Actual Values in MPa ranging from 400 to 1800, while the y-axis shows Predicted Values/MPa across the same range. A red dashed diagonal line represents the ideal prediction where predicted values equal actual measurements. Six orange data points represent literature-derived validation datasets comprising two distinct alloy compositions (Fe-0.29C-12.14Mn-2.96Al-0.11V-0.063Nb and Fe-9.7Mn-2.04Al-0.99Si-0.52V-0.42C) with varying thermomechanical processing conditions, incorporating contributions from four strengthening mechanisms: solid solution, grain refinement, dislocation, and Orowan strengthening. The data points cluster tightly around the ideal line, with caption and text reporting an average prediction error of 1.84% for these literature data, closely matching the 1.56% error from the authors' own experimental validation. This demonstrates the model's excellent generalization capability and robustness across different compositional and processing conditions, confirming that the data-driven GA-Extra Trees framework can reliably predict YS in medium-manganese low-density steels and provide theoretical guidance for alloy design.",
+    "confidence": 0.0
+  },
+  {
+    "paper_id": "A43",
+    "figure_id": "figure_018",
+    "image_paths": [
+      "images/7cd12e037a679508a1d734c91cd4b928876ef57701271eecba459dd538cd1084.jpg",
+      "images/f7030a93fb918e47ddde3d4ddd8408025f08a5e9294abd5419b9059143d36797.jpg"
+    ],
+    "image_count": 2,
+    "image_type": "chart_plot",
+    "description": "This figure presents model interpretability analysis for a data-driven yield strength prediction framework in medium-manganese low-density steels, specifically focusing on the Fe-9.7Mn-2.04Al-0.99Si-0.52V-0.42C composition. Panel (a) displays the Feature Importance Ranking as horizontal bar charts quantifying the relative contribution of four strengthening mechanisms: dislocation strengthening exhibits the highest importance at approximately 0.48, followed by Orowan strengthening (~0.27), fine grain strengthening (~0.19), and solid solution strengthening (~0.05). Panel (b) presents the SHAP (SHapley Additive exPlanations) Feature Importance analysis, showing mean absolute SHAP values that confirm the same hierarchical trend with dislocation strengthening having the largest mean |SHAP value| (~560), Orowan strengthening second (~150), fine grain strengthening third (~80), and solid solution strengthening lowest (~20). Both analyses consistently identify dislocation strengthening as the dominant mechanism governing yield strength, which the caption states can be explained by the Taylor hardening model due to high-density dislocation networks inhibiting slip band propagation. Orowan strengthening represents the second key mechanism attributed to dispersed precipitates such as NbC and VC, while solid solution strengthening contributes minimally to the overall strength. The figure validates that the Genetic Algorithm-optimized Extra Trees model captures physically meaningful strengthening mechanisms consistent with metallurgical principles.",
+    "confidence": 0.0
+  }
+]

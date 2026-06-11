@@ -1,0 +1,75 @@
+{"claims": [
+  {
+    "claim_type": "finding",
+    "subject": "regression coefficient validity range",
+    "claim": "Regression coefficients for elements work in the concentration range of the single-phase region or, if the phase border is well below a mass content of 0.01, they are valid in the two-phase region in which they were determined.",
+    "values": ["0.01"],
+    "evidence_text": "The regression coefficients for the elements work in the concentration range of the single-phase region or, if the phase border of this region is well below a mass content of 0.01, they are valid in the two-phase region in which they were determined.",
+    "figures": [],
+    "tables": [],
+    "confidence": "high"
+  },
+  {
+    "claim_type": "property",
+    "subject": "element effects on density of ferritic steels",
+    "claim": "The regression analysis shows that the density of ferritic steels is increased by the addition of Cu and Mo and is decreased by C (cementite), Cr, Mn, S, Si, and V.",
+    "values": ["Cu", "Mo", "C (cementite)", "Cr", "Mn", "S", "Si", "V"],
+    "evidence_text": "the density of ferritic steels is increased by the addition of Cu and Mo and is decreased by C (cementite), Cr, Mn, S, Si, and V;",
+    "figures": [],
+    "tables": [],
+    "confidence": "high"
+  },
+  {
+    "claim_type": "property",
+    "subject": "element effects on density of austenitic steels",
+    "claim": "The regression analysis shows that the density of austenitic steels is reduced by addition of C, Cr, Mn, N, Si, Ti, and TiC and increased by Co, Cu, Mo, and Ni.",
+    "values": ["C", "Cr", "Mn", "N", "Si", "Ti", "TiC", "Co", "Cu", "Mo", "Ni"],
+    "evidence_text": "the density of austenitic steels is reduced by addition of C, Cr, Mn, N, Si, Ti, and TiC and increased by Co, Cu, Mo, and Ni.",
+    "figures": [],
+    "tables": [],
+    "confidence": "high"
+  },
+  {
+    "claim_type": "finding",
+    "subject": "density estimation method using regression tables",
+    "claim": "Equation (4) with the regression coefficients from Table 2 (ferritic steels) or Table 4 (austenitic steels) can be used for density estimation of ferritic or austenitic steels.",
+    "values": ["Equation (4)", "Table 2", "Table 4"],
+    "evidence_text": "For an estimation of the density of ferritic or austenitic steels, equation (4) with the regression coefficients r_i in table 2, respectively, table 4 can be used.",
+    "figures": [],
+    "tables": ["Table 2", "Table 4"],
+    "confidence": "high"
+  },
+  {
+    "claim_type": "finding",
+    "subject": "thermodynamic analysis for improved accuracy",
+    "claim": "For improved accuracy for ferritic steels and for Ti-stabilized austenitic steels, a thermodynamic analysis must be performed; for ferritic steels the density of cementite is computed by equations (6) and (7) and the density of ferrite by equation (4) using the coefficients r_i in Table 3.",
+    "values": ["Equations (6) and (7)", "Equation (4)", "Table 3"],
+    "evidence_text": "For improved accuracy for ferritic steels and for Ti-stabilized austenitic steels, a thermodynamic analysis has to be performed. Then, for ferritic steels the density of cementite has to be computed by equations (6) and (7) and the density of ferrite by equation (4) using the coefficients r_i in table 3.",
+    "figures": [],
+    "tables": ["Table 3"],
+    "confidence": "high"
+  },
+  {
+    "claim_type": "finding",
+    "subject": "density estimation when regression data missing",
+    "claim": "When no regression data are available for an element, the density of steels can be estimated with reasonable accuracy by use of a literature value or, for substitutional solutes, a coefficient obtained from the density of the pure element.",
+    "values": [],
+    "evidence_text": "In the case that no regression data are available for one element the density of steels can be estimated with reasonable accuracy by use of a literature value or, for substitutional solutes, a coefficient obtained from the density of the pure element.",
+    "figures": [],
+    "tables": [],
+    "confidence": "high"
+  }
+],
+"context_update": {
+  "summary": "This chunk covers the Discussion and Conclusions. It specifies that regression coefficients are valid within the single-phase concentration range or the two-phase region when the phase boundary is well below 0.01 mass%. The main conclusions from the regression analysis are presented: in ferritic steels density increases with Cu and Mo and decreases with C (cementite), Cr, Mn, S, Si, and V; in austenitic steels density decreases with C, Cr, Mn, N, Si, Ti, and TiC and increases with Co, Cu, Mo, and Ni. Practical guidelines are given: Equation (4) with coefficients from Table 2 (ferritic) or Table 4 (austenitic) can estimate density; improved accuracy for ferritic and Ti-stabilized austenitic steels requires thermodynamic analysis using Equations (6, 7) and Table 3; and if no regression data exist, literature values or coefficients from pure element densities can be used. No new figures or tables appear; previously introduced Tables 2, 3, and 4 are referenced. Future parts may apply these predictive rules and coefficients for density calculations and model validation.",
+  "material_systems": ["ferritic steels", "low alloy steels", "austenitic steels", "Ti-stabilized austenitic steels", "cementite", "TiC"],
+  "sample_aliases": [],
+  "processing_route": [],
+  "key_variables": ["regression coefficients r_i", "density", "mass content 0.01", "Table 2", "Table 3", "Table 4", "Equation (4)", "Equation (6)", "Equation (7)", "Cu", "Mo", "Cr", "Mn", "S", "Si", "V", "C", "N", "Ti", "TiC", "Co", "Ni"],
+  "microstructure": ["ferrite", "austenite", "cementite", "TiC"],
+  "properties": ["density"],
+  "mechanisms": ["regression analysis of composition-density relationship", "separate treatment of cementite and TiC effects"],
+  "figures_or_tables": ["Table 2", "Table 3", "Table 4"],
+  "unresolved_terms": []
+}
+}

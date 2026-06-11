@@ -1,0 +1,249 @@
+{
+  "paper_id": "A2",
+  "source_path": "/Users/mac/Desktop/SteelDig/SteelDig_multimodal/outputs_dataset/A2/final/text_extraction.json",
+  "target_unit_policy": {
+    "temperature": "°C",
+    "duration": "h",
+    "stress": "MPa",
+    "length": "μm",
+    "percent": "%",
+    "hardness": "HV",
+    "density": "g/cm^3",
+    "mass_gain": "mg/cm^2",
+    "energy_density": "mJ/m^2",
+    "fracture_toughness": "MPa·m^0.5",
+    "rate": "s^-1"
+  },
+  "summary": {
+    "converted_count": 11,
+    "unchanged_count": 5,
+    "skipped_count": 0,
+    "ambiguous_count": 0
+  },
+  "changes": [
+    {
+      "path": "$.structures[0].microstructure_list[0].grain_structure.average_grain_size",
+      "quantity_kind": "length",
+      "status": "converted",
+      "reason": "normalized length to μm",
+      "original": {
+        "unit": "mm",
+        "value": "0.25"
+      },
+      "normalized": {
+        "unit": "μm",
+        "value": "250"
+      }
+    },
+    {
+      "path": "$.structures[1].microstructure_list[0].grain_structure.average_grain_size",
+      "quantity_kind": "length",
+      "status": "converted",
+      "reason": "normalized length to μm",
+      "original": {
+        "unit": "mm",
+        "value": "0.25"
+      },
+      "normalized": {
+        "unit": "μm",
+        "value": "250"
+      }
+    },
+    {
+      "path": "$.structures[2].microstructure_list[0].grain_structure.average_grain_size",
+      "quantity_kind": "length",
+      "status": "converted",
+      "reason": "normalized length to μm",
+      "original": {
+        "unit": "mm",
+        "value": "0.25"
+      },
+      "normalized": {
+        "unit": "μm",
+        "value": "250"
+      }
+    },
+    {
+      "path": "$.structures[3].microstructure_list[0].grain_structure.average_grain_size",
+      "quantity_kind": "length",
+      "status": "converted",
+      "reason": "normalized length to μm",
+      "original": {
+        "unit": "mm",
+        "value": "0.25"
+      },
+      "normalized": {
+        "unit": "μm",
+        "value": "250"
+      }
+    },
+    {
+      "path": "$.structures[4].microstructure_list[0].grain_structure.average_grain_size",
+      "quantity_kind": "length",
+      "status": "converted",
+      "reason": "normalized length to μm",
+      "original": {
+        "unit": "mm",
+        "value": "0.25"
+      },
+      "normalized": {
+        "unit": "μm",
+        "value": "250"
+      }
+    },
+    {
+      "path": "$.structures[5].microstructure_list[0].grain_structure.average_grain_size",
+      "quantity_kind": "length",
+      "status": "converted",
+      "reason": "normalized length to μm",
+      "original": {
+        "unit": "mm",
+        "value": "0.25"
+      },
+      "normalized": {
+        "unit": "μm",
+        "value": "250"
+      }
+    },
+    {
+      "path": "$.properties[0].mechanical.tensile_properties.yield_strength[0]",
+      "quantity_kind": "stress",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": {
+        "unit": "MPa",
+        "value": "300"
+      },
+      "normalized": {
+        "unit": "MPa",
+        "value": "300"
+      }
+    },
+    {
+      "path": "$.properties[0].mechanical.tensile_properties.strain_hardening_rate[0]",
+      "quantity_kind": "stress",
+      "status": "converted",
+      "reason": "normalized stress to MPa",
+      "original": {
+        "unit": "GPa",
+        "value": "0.5"
+      },
+      "normalized": {
+        "unit": "MPa",
+        "value": "500"
+      }
+    },
+    {
+      "path": "$.properties[1].mechanical.tensile_properties.yield_strength[0]",
+      "quantity_kind": "stress",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": {
+        "unit": "MPa",
+        "value": "400"
+      },
+      "normalized": {
+        "unit": "MPa",
+        "value": "400"
+      }
+    },
+    {
+      "path": "$.properties[1].mechanical.tensile_properties.strain_hardening_rate[0]",
+      "quantity_kind": "stress",
+      "status": "converted",
+      "reason": "normalized stress to MPa",
+      "original": {
+        "unit": "GPa",
+        "value": "5.0"
+      },
+      "normalized": {
+        "unit": "MPa",
+        "value": "5000"
+      }
+    },
+    {
+      "path": "$.properties[2].mechanical.tensile_properties.yield_strength[0]",
+      "quantity_kind": "stress",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": {
+        "unit": "MPa",
+        "value": "500"
+      },
+      "normalized": {
+        "unit": "MPa",
+        "value": "500"
+      }
+    },
+    {
+      "path": "$.properties[2].mechanical.tensile_properties.strain_hardening_rate[0]",
+      "quantity_kind": "stress",
+      "status": "converted",
+      "reason": "normalized stress to MPa",
+      "original": {
+        "unit": "GPa",
+        "value": "7.0"
+      },
+      "normalized": {
+        "unit": "MPa",
+        "value": "7000"
+      }
+    },
+    {
+      "path": "$.properties[4].mechanical.tensile_properties.yield_strength[0]",
+      "quantity_kind": "stress",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": {
+        "unit": "MPa",
+        "value": "600"
+      },
+      "normalized": {
+        "unit": "MPa",
+        "value": "600"
+      }
+    },
+    {
+      "path": "$.properties[4].mechanical.tensile_properties.strain_hardening_rate[0]",
+      "quantity_kind": "stress",
+      "status": "converted",
+      "reason": "normalized stress to MPa",
+      "original": {
+        "unit": "GPa",
+        "value": "16.0"
+      },
+      "normalized": {
+        "unit": "MPa",
+        "value": "16000"
+      }
+    },
+    {
+      "path": "$.properties[5].mechanical.tensile_properties.yield_strength[0]",
+      "quantity_kind": "stress",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": {
+        "unit": "MPa",
+        "value": "700"
+      },
+      "normalized": {
+        "unit": "MPa",
+        "value": "700"
+      }
+    },
+    {
+      "path": "$.properties[5].mechanical.tensile_properties.strain_hardening_rate[0]",
+      "quantity_kind": "stress",
+      "status": "converted",
+      "reason": "normalized stress to MPa",
+      "original": {
+        "unit": "GPa",
+        "value": "7.0"
+      },
+      "normalized": {
+        "unit": "MPa",
+        "value": "7000"
+      }
+    }
+  ]
+}

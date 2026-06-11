@@ -1,0 +1,145 @@
+{
+  "instruction": "你正在执行材料论文结构化抽取结果的保守校验与修复建议。\n\n你的角色不是重新抽取器，而是“证据驱动的审查员”。你只能基于 sample_bundle.evidence_blocks 中给出的论文证据判断，不能使用外部知识，不能凭常识补事实。\n\n核心原则：\n1. 宁可不修改，也不要提出有风险的修改。\n2. 只有证据明确支持时，才提出 patch。\n3. 不要重写整篇 JSON，不要输出完整 text_extraction.json。\n4. 只检查当前 sample_bundle 对应的 sample 及其关联记录。\n5. 重点关注 sample 归属、alloy/process 绑定、下游 structures/properties/performance/interfaces/processing_steps 是否错挂。\n6. 低置信度问题只写入 issues，不要提出会被应用的 patch。\n\n允许的 patch 操作：\n- replace_field：替换已有记录中的某个字段值。\n- move_record_to_sample：把已有下游记录移动到另一个已存在 sample_id。\n- drop_record：删除明显重复或明显错误的下游记录。禁止删除 papers/alloys/processes/samples。\n- append_record：只有 append_record_enabled=true 时才允许；否则不要使用。\n\npatch 路径格式必须严格遵守：\n- replace_field.path 示例：samples[sample_id=sample_3cu].process_id\n- move_record_to_sample.record_path 示例：properties[property_set_id=prop_12]\n- drop_record.record_path 示例：structures[structure_id=struct_duplicate]\n\n每个 patch 必须包含：\n- op\n- evidence_refs：至少一个 evidence block id，例如 [\"b0017\"]\n- reason：简短中文理由，说明证据如何支持该修改\n- confidence：\"high\"、\"medium\" 或 \"low\"\n\n输出要求：\n只输出 JSON，不要 Markdown，不要解释性前后缀。JSON 顶层格式固定为：\n{\n  \"paper_id\": \"...\",\n  \"sample_id\": \"...\",\n  \"verdict\": \"ok\" 或 \"needs_fix\" 或 \"uncertain\",\n  \"issues\": [\n    {\n      \"issue_type\": \"...\",\n      \"target_path\": \"...\",\n      \"evidence_refs\": [\"b0001\"],\n      \"reason\": \"...\"\n    }\n  ],\n  \"patch_ops\": [\n    {\n      \"op\": \"move_record_to_sample\",\n      \"record_path\": \"properties[property_set_id=prop_12]\",\n      \"to_sample_id\": \"sample_x\",\n      \"evidence_refs\": [\"b0001\"],\n      \"reason\": \"...\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"confidence\": \"high\" 或 \"medium\" 或 \"low\"\n}\n\n如果证据不足或当前 sample 看起来没有明确错误，返回 verdict=\"ok\" 或 \"uncertain\"，patch_ops=[]。\n",
+  "paper_id": "A1",
+  "sample_bundle": {
+    "sample_id": "sample_fe30mn1.2c_ref",
+    "sample": {
+      "sample_id": "sample_fe30mn1.2c_ref",
+      "paper_id": "A1",
+      "alloy_id": "alloy_fe30mn1.2c",
+      "process_id": "proc_fe30mn1.2c_ref"
+    },
+    "alloy": {
+      "alloy_id": "alloy_fe30mn1.2c",
+      "paper_id": "A1",
+      "alloy_name": "Fe-30Mn-1.2C (TWIP reference)",
+      "aliases": [
+        "Al-free TWIP steel"
+      ],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "C"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Fe",
+          "weight_percent": "balance",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "30",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "1.2",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "0",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "Used as baseline in various figures to compare the effect of Al addition."
+    },
+    "process": {
+      "process_id": "proc_fe30mn1.2c_ref",
+      "paper_id": "A1",
+      "alloy_id": "alloy_fe30mn1.2c",
+      "description": "Solution treatment at 1100 °C, water quenching (reference condition for TWIP).",
+      "processes_notes": null
+    },
+    "processing_steps": [
+      {
+        "sample_id": "sample_fe30mn1.2c_ref",
+        "paper_id": "A1",
+        "sequence": "1",
+        "type": "heat_treatment",
+        "method": "solution treatment",
+        "temperature": "1100",
+        "unit": "°C",
+        "duration": "2 h",
+        "cooling_medium": "water quenching",
+        "reduction_ratio": null,
+        "processing_steps_notes": "Reference TWIP condition, Al-free."
+      }
+    ],
+    "structures": [
+      {
+        "structure_id": "struct_fe30mn1.2c_ref",
+        "sample_id": "sample_fe30mn1.2c_ref",
+        "overall_structure": "Single-phase austenite with deformation twins",
+        "number_of_phases": "1",
+        "microstructure_counts": null,
+        "microstructure_list": [
+          {
+            "uuid": "uuid_twip_ref_01",
+            "related_sequence": "1",
+            "phases_present": [
+              {
+                "phase_name": "austenite (gamma)",
+                "crystal_structure": "FCC",
+                "volume_fraction": "1",
+                "morphology": "equiaxed",
+                "grain_size": null,
+                "texture": null
+              }
+            ],
+            "defects": [
+              {
+                "type": "deformation twins",
+                "porosity": null,
+                "inclusions": [],
+                "dislocation_density": null,
+                "lattice_distortion": null
+              }
+            ],
+            "grain_structure": {
+              "average_grain_size": {
+                "value": null,
+                "unit": null
+              },
+              "grain_size_distribution": null,
+              "texture": null
+            },
+            "precipitates": []
+          }
+        ]
+      }
+    ],
+    "interfaces": [],
+    "properties": [],
+    "performance": [],
+    "known_issues": [],
+    "evidence_blocks": [
+      {
+        "block_id": "b0001",
+        "text": "# Current state of Fe-Mn-Al-C low density steels",
+        "char_start": 0,
+        "char_end": 48
+      },
+      {
+        "block_id": "b0002",
+        "text": "Shangping Chen a,⇑ , Radhakanta Rana a , Arunansu Haldar b , Ranjit Kumar Ray b",
+        "char_start": 50,
+        "char_end": 129
+      },
+      {
+        "block_id": "b0003",
+        "text": "a Tata Steel, PO Box 10000, 1970CA IJmuiden, The Netherlands",
+        "char_start": 131,
+        "char_end": 191
+      }
+    ]
+  },
+  "allowed_patch_ops": [
+    "append_record",
+    "drop_record",
+    "move_record_to_sample",
+    "replace_field"
+  ],
+  "append_record_enabled": false
+}

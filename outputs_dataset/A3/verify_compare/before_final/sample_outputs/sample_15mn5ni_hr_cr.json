@@ -1,0 +1,140 @@
+{
+  "sample_id": "sample_15mn5ni_hr_cr",
+  "sample_score": 100.0,
+  "sample_weight": 12.0,
+  "field_count": 8,
+  "correct_yes_count": 8,
+  "unknown_count": 0,
+  "no_count": 0,
+  "fields": [
+    {
+      "field_id": "F00170",
+      "sample_id": "sample_15mn5ni_hr_cr",
+      "section": "properties",
+      "path": "properties.sample_15mn5ni_hr_cr.mechanical.hardness[bulk].region",
+      "value": "bulk",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0028",
+        "b0118"
+      ],
+      "reason": "证据b0028明确提及‘bulk hardness’，b0118表格给出15Mn5Ni在50%冷轧后硬度为460 VHN，支持region=bulk。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00171",
+      "sample_id": "sample_15mn5ni_hr_cr",
+      "section": "properties",
+      "path": "properties.sample_15mn5ni_hr_cr.mechanical.hardness[bulk].scale",
+      "value": "Vickers",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0028"
+      ],
+      "reason": "证据b0028明确使用Vickers硬度计，支持scale=Vickers。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00172",
+      "sample_id": "sample_15mn5ni_hr_cr",
+      "section": "properties",
+      "path": "properties.sample_15mn5ni_hr_cr.mechanical.hardness[bulk].value_with_unit",
+      "value": "460 VHN",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0118"
+      ],
+      "reason": "b0118表格中15Mn5Ni在50%冷轧下硬度值为460 VHN，与字段值完全一致。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00173",
+      "sample_id": "sample_15mn5ni_hr_cr",
+      "section": "properties",
+      "path": "properties.sample_15mn5ni_hr_cr.mechanical.tensile_properties.elongation[0].value_with_unit",
+      "value": "7 ± 0.5 %",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0138"
+      ],
+      "reason": "b0138表格中15Mn5Ni在HR+CR条件下TE=7±0.5%，与字段值一致。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00174",
+      "sample_id": "sample_15mn5ni_hr_cr",
+      "section": "properties",
+      "path": "properties.sample_15mn5ni_hr_cr.mechanical.tensile_properties.ultimate_tensile_strength[0].others.uncertainty",
+      "value": "15",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0138"
+      ],
+      "reason": "b0138表格中15Mn5Ni在HR+CR条件下UTS=1800±15 MPa，不确定性15，与字段一致。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00175",
+      "sample_id": "sample_15mn5ni_hr_cr",
+      "section": "properties",
+      "path": "properties.sample_15mn5ni_hr_cr.mechanical.tensile_properties.ultimate_tensile_strength[0].value_with_unit",
+      "value": "1800 ± 15 MPa",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0138"
+      ],
+      "reason": "b0138表格中15Mn5Ni在HR+CR条件下UTS=1800±15 MPa，与字段值完全一致。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00176",
+      "sample_id": "sample_15mn5ni_hr_cr",
+      "section": "properties",
+      "path": "properties.sample_15mn5ni_hr_cr.mechanical.tensile_properties.yield_strength[0].others.uncertainty",
+      "value": "12",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0138"
+      ],
+      "reason": "b0138表格中15Mn5Ni在HR+CR条件下YS=1665±12 MPa，不确定性12，与字段一致。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00177",
+      "sample_id": "sample_15mn5ni_hr_cr",
+      "section": "properties",
+      "path": "properties.sample_15mn5ni_hr_cr.mechanical.tensile_properties.yield_strength[0].value_with_unit",
+      "value": "1665 ± 12 MPa",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0138"
+      ],
+      "reason": "b0138表格中15Mn5Ni在HR+CR条件下YS=1665±12 MPa，与字段值完全一致。",
+      "field_score": 100.0
+    }
+  ]
+}

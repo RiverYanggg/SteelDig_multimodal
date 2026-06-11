@@ -1,0 +1,862 @@
+{
+    "papers": [
+        {
+            "paper_id": "A1",
+            "doi": null,
+            "title": "Current state of Fe-Mn-Al-C low density steels",
+            "authors": ["Shangping Chen", "Radhakanta Rana", "Arunansu Haldar", "Ranjit Kumar Ray"],
+            "publication_year": "2017",
+            "journal": null,
+            "keywords": ["Low density steels", "Deformation mechanisms", "Phase transformation", "Short-range ordering", "κ-carbide", "Planar glide", "TRIP steel", "TWIP steel", "Stacking fault energy"],
+            "research_type": "review",
+            "paper_scope": "本文综述了多年公开文献中Fe-Mn-Al-C低密度钢的物理冶金、加工策略、强化机制和力学性能，梳理了该类钢的分类、相图热力学、微观组织演化规律，总结了其拉伸、冲击、高应变率等性能特征，并提出了该合金在汽车领域未来应用的发展方向和待解决的关键问题"
+        }
+    ],
+    "alloys": [
+        {
+            "alloy_id": "alloy_ferritic_fe_al",
+            "paper_id": "A1",
+            "alloy_name": "Ferritic Fe-Al low density steel",
+            "aliases": [],
+            "base_element": "Fe",
+            "alloying_elements": ["Al", "Mn", "C"],
+            "nominal_composition": [
+                {
+                    "element": "Al",
+                    "weight_percent": "5-9",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "Mn",
+                    "weight_percent": "<5",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "C",
+                    "weight_percent": "<0.05",
+                    "atomic_percent": null
+                }
+            ],
+            "alloys_notes": "高温热加工状态下为 elongated δ-ferrite组织，室温下根据Al含量可存在A2无序FeAl、B2有序FeAl或DO3有序Fe3Al相，Al含量超过7%易出现脆化"
+        },
+        {
+            "alloy_id": "alloy_duplex_ferrite_based",
+            "paper_id": "A1",
+            "alloy_name": "Ferrite based duplex Fe-Mn-Al-C low density steel",
+            "aliases": [],
+            "base_element": "Fe",
+            "alloying_elements": ["Al", "Mn", "C"],
+            "nominal_composition": [
+                {
+                    "element": "Al",
+                    "weight_percent": "3-7",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "Mn",
+                    "weight_percent": "2-12",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "C",
+                    "weight_percent": "0.05-0.5",
+                    "atomic_percent": null
+                }
+            ],
+            "alloys_notes": "热加工温度下为γ+δ-ferrite双相组织，δ-ferrite体积分数大于50%，可通过工艺控制获得双态组织，利用TRIP/TWIP效应提升强塑性匹配"
+        },
+        {
+            "alloy_id": "alloy_duplex_austenite_based",
+            "paper_id": "A1",
+            "alloy_name": "Austenite based duplex Fe-Mn-Al-C low density steel",
+            "aliases": ["Triplex steel"],
+            "base_element": "Fe",
+            "alloying_elements": ["Al", "Mn", "C"],
+            "nominal_composition": [
+                {
+                    "element": "Al",
+                    "weight_percent": "5-10",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "Mn",
+                    "weight_percent": "5-30",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "C",
+                    "weight_percent": "0.4-0.7",
+                    "atomic_percent": null
+                }
+            ],
+            "alloys_notes": "热加工温度下为γ+δ双相组织，γ为连续基体，室温组织通常为γ基体+少量δ-ferrite+晶内纳米κ'-carbide，δ相易转变为脆性B2/DO3有序相"
+        },
+        {
+            "alloy_id": "alloy_austenitic_fe_mn_al_c",
+            "paper_id": "A1",
+            "alloy_name": "Austenitic Fe-Mn-Al-C low density steel",
+            "aliases": [],
+            "base_element": "Fe",
+            "alloying_elements": ["Al", "Mn", "C"],
+            "nominal_composition": [
+                {
+                    "element": "Al",
+                    "weight_percent": "5-12",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "Mn",
+                    "weight_percent": "12-30",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "C",
+                    "weight_percent": "0.6-2.0",
+                    "atomic_percent": null
+                }
+            ],
+            "alloys_notes": "热加工温度下为全奥氏体组织，快冷后奥氏体可保持亚稳态，Al>7%且C>0.7%时可析出纳米级共格κ'-carbide产生显著时效硬化效应"
+        },
+        {
+            "alloy_id": "alloy_fe_28mn_10al_1c",
+            "paper_id": "A1",
+            "alloy_name": "Fe-28Mn-10Al-1C austenitic steel",
+            "aliases": [],
+            "base_element": "Fe",
+            "alloying_elements": ["Mn", "Al", "C"],
+            "nominal_composition": [
+                {
+                    "element": "Mn",
+                    "weight_percent": "28",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "Al",
+                    "weight_percent": "10",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "C",
+                    "weight_percent": "1.0",
+                    "atomic_percent": null
+                }
+            ],
+            "alloys_notes": "固溶水淬态下延伸率可达~98.9%，抗拉强度~873MPa，变形机制为微带诱导塑性(MBIP)"
+        },
+        {
+            "alloy_id": "alloy_fe_30mn_8al_12c",
+            "paper_id": "A1",
+            "alloy_name": "Fe-30Mn-8Al-1.2C austenitic steel",
+            "aliases": [],
+            "base_element": "Fe",
+            "alloying_elements": ["Mn", "Al", "C"],
+            "nominal_composition": [
+                {
+                    "element": "Mn",
+                    "weight_percent": "30",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "Al",
+                    "weight_percent": "8",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "C",
+                    "weight_percent": "1.2",
+                    "atomic_percent": null
+                }
+            ],
+            "alloys_notes": "固溶油淬态下延伸率~68%，抗拉强度~900MPa，变形机制为动态滑移带细化(DSBR)"
+        }
+    ],
+    "processes": [
+        {
+            "process_id": "proc_lab_melt_casting",
+            "paper_id": "A1",
+            "alloy_id": null,
+            "description": "实验室规模采用标准熔炼工艺制备~50kg小钢锭，钢锭在1100-1250℃下均质化1-3h以消除元素偏析",
+            "processes_notes": null
+        },
+        {
+            "process_id": "proc_hot_rolling",
+            "paper_id": "A1",
+            "alloy_id": null,
+            "description": "均质化后将钢坯热轧至2-5mm厚度，终轧温度控制在850-1000℃，轧后可选择冷却至500-650℃保温1-5h模拟卷取，或直接水淬/空冷至室温",
+            "processes_notes": "高Al钢热轧过程中易出现表面氧化层难以去除、热开裂等问题"
+        },
+        {
+            "process_id": "proc_solution_quench",
+            "paper_id": "A1",
+            "alloy_id": "alloy_austenitic_fe_mn_al_c",
+            "description": "将热轧/冷轧试样在900-1100℃下固溶处理，使析出相充分溶解，随后快速水淬/油淬至室温，抑制晶界κ*碳化物析出",
+            "processes_notes": "冷却速率影响SRO和κ'-carbide的析出程度，慢冷会增加析出密度"
+        },
+        {
+            "process_id": "proc_aging_treatment",
+            "paper_id": "A1",
+            "alloy_id": "alloy_austenitic_fe_mn_al_c",
+            "description": "将固溶水淬后的试样在500-700℃下保温5-20h进行时效处理，析出纳米级κ'-carbide产生时效硬化",
+            "processes_notes": "时效温度过高或时间过长会导致晶界粗化κ*碳化物析出，显著降低塑性和韧性"
+        },
+        {
+            "process_id": "proc_cold_rolling_annealing_ferritic",
+            "paper_id": "A1",
+            "alloy_id": "alloy_ferritic_fe_al",
+            "description": "热轧铁素体钢经冷轧后，在700-1000℃下进行再结晶退火，控制铁素体晶粒尺寸和织构，抑制Cube织构的形成",
+            "processes_notes": "可添加微量Nb、Ti等微合金元素通过粒子激发形核机制细化晶粒"
+        },
+        {
+            "process_id": "proc_intercritical_annealing_duplex",
+            "paper_id": "A1",
+            "alloy_id": "alloy_duplex_ferrite_based",
+            "description": "冷轧双相钢在700-900℃临界区退火后，快速冷却至400℃左右进行等温淬火，调控残余奥氏体的稳定性以利用TRIP/TWIP效应",
+            "processes_notes": null
+        }
+    ],
+    "samples": [
+        {
+            "sample_id": "sample_ferritic_hot_rolled",
+            "paper_id": "A1",
+            "alloy_id": "alloy_ferritic_fe_al",
+            "process_id": "proc_hot_rolling"
+        },
+        {
+            "sample_id": "sample_ferritic_cold_rolled_annealed",
+            "paper_id": "A1",
+            "alloy_id": "alloy_ferritic_fe_al",
+            "process_id": "proc_cold_rolling_annealing_ferritic"
+        },
+        {
+            "sample_id": "sample_austenitic_solution_quenched",
+            "paper_id": "A1",
+            "alloy_id": "alloy_austenitic_fe_mn_al_c",
+            "process_id": "proc_solution_quench"
+        },
+        {
+            "sample_id": "sample_austenitic_aged",
+            "paper_id": "A1",
+            "alloy_id": "alloy_austenitic_fe_mn_al_c",
+            "process_id": "proc_aging_treatment"
+        },
+        {
+            "sample_id": "sample_ferrite_duplex_annealed",
+            "paper_id": "A1",
+            "alloy_id": "alloy_duplex_ferrite_based",
+            "process_id": "proc_intercritical_annealing_duplex"
+        }
+    ],
+    "processing_steps": [
+        {
+            "sample_id": null,
+            "paper_id": "A1",
+            "sequence": "1",
+            "type": "melting_casting",
+            "method": "laboratory ingot casting",
+            "temperature": null,
+            "unit": null,
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "制备~50kg小钢锭"
+        },
+        {
+            "sample_id": null,
+            "paper_id": "A1",
+            "sequence": "2",
+            "type": "heat_treatment",
+            "method": "homogenization",
+            "temperature": "1100-1250",
+            "unit": "℃",
+            "duration": "1-3",
+            "unit": "h",
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "消除铸态元素偏析"
+        },
+        {
+            "sample_id": null,
+            "paper_id": "A1",
+            "sequence": "3",
+            "type": "thermomechanical_processing",
+            "method": "hot rolling",
+            "temperature": "850-1250",
+            "unit": "℃",
+            "duration": null,
+            "cooling_medium": "water/air/coiling insulation",
+            "reduction_ratio": null,
+            "processing_steps_notes": "终轧温度850-1000℃，轧后厚度2-5mm"
+        },
+        {
+            "sample_id": null,
+            "paper_id": "A1",
+            "sequence": "4",
+            "type": "heat_treatment",
+            "method": "solution treatment",
+            "temperature": "900-1100",
+            "unit": "℃",
+            "duration": "0.5-2",
+            "unit": "h",
+            "cooling_medium": "water/oil",
+            "reduction_ratio": null,
+            "processing_steps_notes": "使析出相充分溶解，快速冷却抑制晶界碳化物析出"
+        },
+        {
+            "sample_id": null,
+            "paper_id": "A1",
+            "sequence": "5",
+            "type": "mechanical_processing",
+            "method": "cold rolling",
+            "temperature": "room",
+            "unit": "℃",
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": "30-70",
+            "unit": "%",
+            "processing_steps_notes": "冷轧至目标厚度，引入加工硬化"
+        },
+        {
+            "sample_id": null,
+            "paper_id": "A1",
+            "sequence": "6",
+            "type": "heat_treatment",
+            "method": "aging/annealing",
+            "temperature": "500-1000",
+            "unit": "℃",
+            "duration": "0.08-20",
+            "unit": "h",
+            "cooling_medium": "air/water",
+            "reduction_ratio": null,
+            "processing_steps_notes": "根据钢种类型选择再结晶退火、时效或等温淬火工艺"
+        }
+    ],
+    "structures": [
+        {
+            "structure_id": "struct_ferritic_hot_rolled",
+            "sample_id": "sample_ferritic_hot_rolled",
+            "overall_structure": "沿轧制方向拉长的δ-ferrite带组织，晶粒粗大",
+            "number_of_phases": "1-3",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_ferritic_001",
+                    "related_sequence": "3",
+                    "phases_present": [
+                        {
+                            "phase_name": "δ-ferrite",
+                            "crystal_structure": "BCC_A2",
+                            "volume_fraction": ">90",
+                            "unit": "%",
+                            "morphology": "elongated band",
+                            "grain_size": "40-90",
+                            "unit": "μm",
+                            "texture": "强Cube织构{001}<110>"
+                        },
+                        {
+                            "phase_name": "B2 FeAl",
+                            "crystal_structure": "B2 ordered BCC",
+                            "volume_fraction": null,
+                            "morphology": null,
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "DO3 Fe3Al",
+                            "crystal_structure": "DO3 ordered BCC",
+                            "volume_fraction": null,
+                            "morphology": null,
+                            "grain_size": null,
+                            "texture": null
+                        }
+                    ],
+                    "defects": [
+                        {
+                            "type": "dislocation",
+                            "porosity": null,
+                            "inclusions": ["Al2O3"],
+                            "dislocation_density": null,
+                            "lattice_distortion": null
+                        }
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": "40-90",
+                            "unit": "μm"
+                        },
+                        "grain_size_distribution": "不均匀，存在粗大 elongated晶粒",
+                        "texture": "强Cube织构{001}<110>"
+                    },
+                    "precipitates": [
+                        {
+                            "precipitate_id": "prec_ferritic_001",
+                            "type": "κ-carbide",
+                            "size": {
+                                "value": null,
+                                "unit": "nm"
+                            },
+                            "distribution": "沿晶界析出",
+                            "coherency": "semicoherent"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "structure_id": "struct_austenitic_solution_quenched",
+            "sample_id": "sample_austenitic_solution_quenched",
+            "overall_structure": "等轴奥氏体晶粒，含退火孪晶",
+            "number_of_phases": "2-3",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_austenitic_001",
+                    "related_sequence": "4",
+                    "phases_present": [
+                        {
+                            "phase_name": "γ-austenite",
+                            "crystal_structure": "FCC",
+                            "volume_fraction": ">95",
+                            "unit": "%",
+                            "morphology": "equiaxed grain",
+                            "grain_size": "30-80",
+                            "unit": "μm",
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "short range ordering (SRO)",
+                            "crystal_structure": "L12 ordered",
+                            "volume_fraction": null,
+                            "morphology": "nanoscale clusters",
+                            "grain_size": "<2",
+                            "unit": "nm",
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "κ'-carbide",
+                            "crystal_structure": "E21 perovskite",
+                            "volume_fraction": null,
+                            "morphology": "cuboidal nanoparticle",
+                            "grain_size": "2-30",
+                            "unit": "nm",
+                            "texture": null
+                        }
+                    ],
+                    "defects": [
+                        {
+                            "type": "annealing twin",
+                            "porosity": null,
+                            "inclusions": [],
+                            "dislocation_density": null,
+                            "lattice_distortion": null
+                        }
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": "30-80",
+                            "unit": "μm"
+                        },
+                        "grain_size_distribution": "相对均匀",
+                        "texture": null
+                    },
+                    "precipitates": [
+                        {
+                            "precipitate_id": "prec_austenitic_001",
+                            "type": "κ'-carbide",
+                            "size": {
+                                "value": "2-30",
+                                "unit": "nm"
+                            },
+                            "distribution": "均匀分布在晶内",
+                            "coherency": "coherent"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "structure_id": "struct_ferrite_duplex_annealed",
+            "sample_id": "sample_ferrite_duplex_annealed",
+            "overall_structure": "双态组织：粗大δ-ferrite基体+弥散分布的奥氏体/马氏体颗粒",
+            "number_of_phases": "3-5",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_duplex_001",
+                    "related_sequence": "6",
+                    "phases_present": [
+                        {
+                            "phase_name": "δ-ferrite",
+                            "crystal_structure": "BCC_A2",
+                            "volume_fraction": "50-90",
+                            "unit": "%",
+                            "morphology": "banded",
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "γ-austenite",
+                            "crystal_structure": "FCC",
+                            "volume_fraction": "10-40",
+                            "unit": "%",
+                            "morphology": "globular particle",
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "α'-martensite",
+                            "crystal_structure": "BCC",
+                            "volume_fraction": null,
+                            "morphology": "lath",
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "κ-carbide",
+                            "crystal_structure": "E21 perovskite",
+                            "volume_fraction": null,
+                            "morphology": null,
+                            "grain_size": null,
+                            "texture": null
+                        }
+                    ],
+                    "defects": [],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": null,
+                            "unit": null
+                        },
+                        "grain_size_distribution": "双模态分布",
+                        "texture": null
+                    },
+                    "precipitates": []
+                }
+            ]
+        }
+    ],
+    "interfaces": [
+        {
+            "interface_set_id": "if_set_001",
+            "sample_id": "sample_austenitic_solution_quenched",
+            "phases": [
+                {
+                    "interface_id": "if_001",
+                    "microstructure_uuid": "uuid_austenitic_001",
+                    "phase_1_name": "γ-austenite",
+                    "phase_2_name": "κ'-carbide",
+                    "coherence": "coherent"
+                }
+            ],
+            "defect_interaction": [],
+            "interface_notes": [
+                {
+                    "stress_strain_distribution": "晶格失配<3%"
+                },
+                {
+                    "slippage_situation": "κ'-carbide可被位错剪切，导致平面滑移"
+                }
+            ],
+            "phase_evolution": "时效过程中κ'-carbide长大，逐渐失去共格性"
+        },
+        {
+            "interface_set_id": "if_set_002",
+            "sample_id": "sample_austenitic_aged",
+            "phases": [
+                {
+                    "interface_id": "if_002",
+                    "microstructure_uuid": null,
+                    "phase_1_name": "γ-austenite",
+                    "phase_2_name": "κ*-carbide",
+                    "coherence": "semicoherent/incoherent"
+                }
+            ],
+            "defect_interaction": [],
+            "interface_notes": [
+                {
+                    "stress_strain_distribution": "晶界粗化κ*碳化物易导致应力集中"
+                },
+                {
+                    "slippage_situation": null
+                }
+            ],
+            "phase_evolution": "长时间时效后κ*碳化物长大为层片状组织，严重降低塑性"
+        }
+    ],
+    "properties": [
+        {
+            "property_set_id": "prop_set_austenitic_solution",
+            "sample_id": "sample_austenitic_solution_quenched",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [
+                        {
+                            "direction": "rolling direction",
+                            "value": "0.4-1.0",
+                            "unit": "GPa",
+                            "others": {
+                                "uncertainty": null
+                            }
+                        }
+                    ],
+                    "ultimate_tensile_strength": [
+                        {
+                            "direction": "rolling direction",
+                            "value": "0.6-2.0",
+                            "unit": "GPa",
+                            "others": {
+                                "uncertainty": null
+                            }
+                        }
+                    ],
+                    "elongation": [
+                        {
+                            "direction": "rolling direction",
+                            "value": "30-100",
+                            "unit": "%"
+                        }
+                    ],
+                    "youngs_modulus": "每添加1wt%Al降低2-2.5%",
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [],
+                "fracture_toughness": {
+                    "value": "~200",
+                    "unit": "J/cm²"
+                },
+                "fatigue_properties": {
+                    "fatigue_limit": null,
+                    "cycles_to_failure": null
+                },
+                "creep_properties": {
+                    "steady_state_creep_rate": null,
+                    "rupture_life": null
+                }
+            },
+            "physical": {
+                "density": {
+                    "value": "每添加1wt%Al降低1.3%，奥氏体钢密度公式：8.15 - 0.101×wt%Al - 0.41×wt%C - 0.0085×wt%Mn",
+                    "unit": "g/cm³"
+                },
+                "thermal_properties": {
+                    "thermal_conductivity": null,
+                    "thermal_expansion_coefficient": null,
+                    "specific_heat": null
+                },
+                "electrical_properties": {
+                    "electrical_conductivity": null,
+                    "resistivity": null
+                },
+                "magnetic_properties": {
+                    "magnetic_susceptibility": null,
+                    "curie_temperature": null
+                }
+            },
+            "chemical": {
+                "corrosion_resistance": {
+                    "test_medium": "3.5% NaCl",
+                    "corrosion_rate": "与常规高强钢相当，无显著提升",
+                    "passivation_behavior": null
+                },
+                "oxidation_resistance": {
+                    "oxidation_rate_constant": null,
+                    "protective_scale": null
+                }
+            },
+            "radiation_properties": {
+                "void_swelling": null,
+                "irradiation_hardening": null,
+                "helium_embrittlement": null
+            }
+        },
+        {
+            "property_set_id": "prop_set_ferritic_annealed",
+            "sample_id": "sample_ferritic_cold_rolled_annealed",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [
+                        {
+                            "direction": null,
+                            "value": "200-500",
+                            "unit": "MPa",
+                            "others": {
+                                "uncertainty": null
+                            }
+                        }
+                    ],
+                    "ultimate_tensile_strength": [
+                        {
+                            "direction": null,
+                            "value": "400-600",
+                            "unit": "MPa",
+                            "others": {
+                                "uncertainty": null
+                            }
+                        }
+                    ],
+                    "elongation": [
+                        {
+                            "direction": null,
+                            "value": "10-40",
+                            "unit": "%"
+                        }
+                    ],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [],
+                "fracture_toughness": {
+                    "value": null,
+                    "unit": null
+                },
+                "fatigue_properties": {
+                    "fatigue_limit": null,
+                    "cycles_to_failure": null
+                },
+                "creep_properties": {
+                    "steady_state_creep_rate": null,
+                    "rupture_life": null
+                }
+            },
+            "physical": {
+                "density": {
+                    "value": "铁素体钢密度公式：7.874 - 0.098×wt%Al",
+                    "unit": "g/cm³"
+                },
+                "thermal_properties": {
+                    "thermal_conductivity": null,
+                    "thermal_expansion_coefficient": null,
+                    "specific_heat": null
+                },
+                "electrical_properties": {
+                    "electrical_conductivity": null,
+                    "resistivity": null
+                },
+                "magnetic_properties": {
+                    "magnetic_susceptibility": null,
+                    "curie_temperature": null
+                }
+            },
+            "chemical": {
+                "corrosion_resistance": {
+                    "test_medium": null,
+                    "corrosion_rate": null,
+                    "passivation_behavior": null
+                },
+                "oxidation_resistance": {
+                    "oxidation_rate_constant": null,
+                    "protective_scale": null
+                }
+            },
+            "radiation_properties": {
+                "void_swelling": null,
+                "irradiation_hardening": null,
+                "helium_embrittlement": null
+            }
+        }
+    ],
+    "performance": [
+        {
+            "performance_id": "perf_001",
+            "sample_id": "sample_austenitic_solution_quenched",
+            "service_conditions": {
+                "operating_temperature": {
+                    "min": "-100",
+                    "max": "200",
+                    "unit": "℃"
+                },
+                "stress_state": null,
+                "environment": "汽车结构件服役环境"
+            },
+            "lifetime_prediction": {
+                "model_used": null,
+                "predicted_lifetime": null,
+                "confidence_interval": null
+            },
+            "comparative_performance": {
+                "benchmark_alloy": "Mn TWIP steel, conventional deep drawing steel, HSLA steel",
+                "benchmark_process_id": null,
+                "benchmark_sample_id": null,
+                "improvement_percentage": "比能量吸收较常规深冲钢高50%"
+            }
+        }
+    ],
+    "characterization_methods": [
+        {
+            "characterization_id": "char_001",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "Transmission Electron Microscopy (TEM)",
+            "purpose": "观察微观组织、析出相形貌、尺寸和晶体结构",
+            "key_findings": "观察到纳米级κ'-carbide尺寸2-30nm，与奥氏体基体共格，晶格失配<3%；观察到SRO、位错、微带、剪切带等变形亚结构"
+        },
+        {
+            "characterization_id": "char_002",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "X-ray Diffraction (XRD)",
+            "purpose": "物相鉴定、定量分析相含量、晶格常数测定",
+            "key_findings": "鉴定出γ-austenite、δ-ferrite、κ-carbide、B2、DO3等相；测定SFE与成分的关系"
+        },
+        {
+            "characterization_id": "char_003",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "Quasi-static tensile test",
+            "purpose": "测定室温拉伸性能",
+            "key_findings": "奥氏体钢固溶态屈服强度0.4-1.0GPa，抗拉强度0.6-2.0GPa，延伸率30-100%"
+        },
+        {
+            "characterization_id": "char_004",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "Charpy V-notch impact test",
+            "purpose": "测定冲击韧性",
+            "key_findings": "固溶态奥氏体钢室温CVN冲击能量~200J/cm²，与奥氏体不锈钢相当；时效后冲击韧性大幅降低"
+        },
+        {
+            "characterization_id": "char_005",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "High strain rate compression test",
+            "purpose": "测定 crash工况下的能量吸收性能",
+            "key_findings": "Al>7%的Fe-Mn-Al-C钢比能量吸收约0.5J/mm³，与TWIP钢相当，较常规深冲钢高50%"
+        }
+    ],
+    "computational_details": [
+        {
+            "computation_id": "comp_001",
+            "sample_id": null,
+            "simulation_method": "CALPHAD thermodynamic calculation",
+            "software_used": "FactSage 6.4, Thermo-Calc",
+            "potential_model": null,
+            "validation_against_experiment": "预测的相区范围与实验值存在偏差，尤其是高Mn、高Al含量区域，需进一步完善热力学数据库",
+            "analytical_model": [
+                {
+                    "model_name": "Fe-Mn-Al-C密度计算模型",
+                    "equation_role": "计算不同成分的铁素体和奥氏体钢的密度",
+                    "parameters": ["ρ_ferritic = 7.874 - 0.098×wt%Al g/cm³", "ρ_austenitic = 8.15 - 0.101×wt%Al - 0.41×wt%C - 0.0085×wt%Mn g/cm³"],
+                    "model_note": "Al对密度的降低效果在铁素体和奥氏体中相近，C对奥氏体密度降低效果是Al的4倍"
+                },
+                {
+                    "model_name": "Stacking Fault Energy (SFE)计算模型",
+                    "equation_role": "计算奥氏体的层错能，预测变形机制",
+                    "parameters": ["Al每增加1wt%，SFE增加10mJ/m²", "C每增加1wt%，SFE增加40mJ/m²", "Mn在0-20wt%范围内降低SFE，超过20wt%后每增加1wt%Mn，SFE增加1.2-3mJ/m²"],
+                    "model_note": "SFE>80mJ/m²时变形机制以平面滑移为主，TWIP效应被抑制"
+                }
+            ]
+        }
+    ],
+    "unmapped_findings": [
+        "Fe-Mn-Al-C钢的应用性能如疲劳性能、成形性、焊接性、涂装性目前研究数据有限，无法充分评估其工业适用性",
+        "现有热力学数据库对高Mn、高Al含量的Fe-Mn-Al-C钢的相边界和温度范围预测精度不足，需进一步完善",
+        "高Al、高Mn含量带来的炼钢、连铸、热轧过程中的工艺问题如喷嘴堵塞、表面氧化层难以去除、热开裂等制约其工业化生产",
+        "高Al、高C含量的峰时效Fe-Mn-Al-C钢出现的负加工硬化率现象的微观机制尚未完全明确",
+        "Fe-Mn-Al-C钢的杨氏模量较低，每添加1wt%Al降低2-2.5%，限制了其在对刚度要求较高的汽车零件上的应用",
+        "Al含量>7%且C>0.7%是奥氏体钢中析出纳米共格κ'-carbide产生有效时效硬化的必要条件",
+        "高SFE奥氏体钢中存在的短程有序(SRO)导致的滑移面软化是平面滑移变形的主要原因，衍生出MBIP、DSBR、SIP等新型变形机制",
+        "铁素体基双相钢可通过工艺控制实现TRIP/TWIP效应，强塑性匹配优于第一代先进高强钢"
+    ]
+}

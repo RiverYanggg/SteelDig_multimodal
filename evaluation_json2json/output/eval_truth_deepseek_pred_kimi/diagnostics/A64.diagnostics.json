@@ -1,0 +1,1751 @@
+{
+  "paper_id": "A64",
+  "truth_path": "/Users/mac/Desktop/LLM_project/SteelDig_multimodal/evaluation_json2json/outputs_exp/deepseek/A64/final/text_extraction.json",
+  "prediction_path": "/Users/mac/Desktop/LLM_project/SteelDig_multimodal/evaluation_json2json/outputs_exp/kimi/A64/final/text_extraction.json",
+  "prediction_empty": false,
+  "section_diagnostics": {
+    "papers": {
+      "structure_metrics": {
+        "truth_count": 1,
+        "prediction_count": 1,
+        "matched_count": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_anchors": [
+          "papers.A64"
+        ],
+        "unmatched_truth_anchors": [],
+        "unmatched_prediction_anchors": []
+      },
+      "error_summary": {
+        "missing_fact": 0,
+        "extra_fact": 3,
+        "correct": 14,
+        "value_mismatch": 5
+      },
+      "missing_truth_fact_examples": [],
+      "extra_prediction_fact_examples": [
+        "papers.A64.keywords[7]",
+        "papers.A64.keywords[8]",
+        "papers.A64.keywords[9]"
+      ],
+      "mismatched_fact_examples": [
+        {
+          "key": "papers.A64.keywords[4]",
+          "truth_path": "papers.A64.keywords[4]",
+          "prediction_path": "papers.A64.keywords[4]",
+          "canonical_object": "A64",
+          "field_path": "keywords[4]",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "hydrogen embrittlement",
+          "prediction_value": "SIMPLEX",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "deterministic_mismatch",
+          "truth_normalized": "hydrogen embrittlement",
+          "prediction_normalized": "simplex",
+          "reason": "no deterministic matcher accepted the values",
+          "score": 0.0,
+          "needs_llm_judge": false
+        },
+        {
+          "key": "papers.A64.keywords[5]",
+          "truth_path": "papers.A64.keywords[5]",
+          "prediction_path": "papers.A64.keywords[5]",
+          "canonical_object": "A64",
+          "field_path": "keywords[5]",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "combinatorial high-throughput design",
+          "prediction_value": "combinatorial synthesis",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "deterministic_mismatch",
+          "truth_normalized": "combinatorial high-throughput design",
+          "prediction_normalized": "combinatorial synthesis",
+          "reason": "no deterministic matcher accepted the values",
+          "score": 0.0,
+          "needs_llm_judge": false
+        },
+        {
+          "key": "papers.A64.keywords[6]",
+          "truth_path": "papers.A64.keywords[6]",
+          "prediction_path": "papers.A64.keywords[6]",
+          "canonical_object": "A64",
+          "field_path": "keywords[6]",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "strain hardening",
+          "prediction_value": "rapid alloy prototyping",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "deterministic_mismatch",
+          "truth_normalized": "strain hardening",
+          "prediction_normalized": "rapid alloy prototyping",
+          "reason": "no deterministic matcher accepted the values",
+          "score": 0.0,
+          "needs_llm_judge": false
+        },
+        {
+          "key": "papers.A64.paper_scope",
+          "truth_path": "papers.A64.paper_scope",
+          "prediction_path": "papers.A64.paper_scope",
+          "canonical_object": "A64",
+          "field_path": "paper_scope",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Designs low-density Fe-Mn-Al-C austenitic steels by combinatorial high-throughput methods, explores microstructure-property relations, TWIP and κ-carbide strengthening mechanisms, and hydrogen embrittlement susceptibility.",
+          "prediction_value": "Recent developments in low-density Fe-Mn-Al-C austenitic steels covering combinatorial alloy design via rapid alloy prototyping, microstructure-property relations for TWIP and kappa-carbide strengthened grades, constitutive modeling of strain hardening, and hydrogen embrittlement susceptibility.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "designs low-density fe-mn-al-c austenitic steels by combinatorial high-throughput methods, explores microstructure-property relations, twip and κ-carbide strengthening mechanisms, and hydrogen embrittlement susceptibility.",
+          "prediction_normalized": "recent developments in low-density fe-mn-al-c austenitic steels covering combinatorial alloy design via rapid alloy prototyping, microstructure-property relations for twip and kappa-carbide strengthened grades, constitutive modeling of strain hardening, and hydrogen embrittlement susceptibility.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "papers:0:papers_a64_paper_scope"
+        },
+        {
+          "key": "papers.A64.research_type",
+          "truth_path": "papers.A64.research_type",
+          "prediction_path": "papers.A64.research_type",
+          "canonical_object": "A64",
+          "field_path": "research_type",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "mixed",
+          "prediction_value": "experimental",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "deterministic_mismatch",
+          "truth_normalized": "mixed",
+          "prediction_normalized": "experimental",
+          "reason": "no deterministic matcher accepted the values",
+          "score": 0.0,
+          "needs_llm_judge": false
+        }
+      ],
+      "llm_judge_candidate_count": 1,
+      "llm_judge_candidates": [
+        {
+          "key": "papers.A64.paper_scope",
+          "truth_path": "papers.A64.paper_scope",
+          "prediction_path": "papers.A64.paper_scope",
+          "canonical_object": "A64",
+          "field_path": "paper_scope",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Designs low-density Fe-Mn-Al-C austenitic steels by combinatorial high-throughput methods, explores microstructure-property relations, TWIP and κ-carbide strengthening mechanisms, and hydrogen embrittlement susceptibility.",
+          "prediction_value": "Recent developments in low-density Fe-Mn-Al-C austenitic steels covering combinatorial alloy design via rapid alloy prototyping, microstructure-property relations for TWIP and kappa-carbide strengthened grades, constitutive modeling of strain hardening, and hydrogen embrittlement susceptibility.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "designs low-density fe-mn-al-c austenitic steels by combinatorial high-throughput methods, explores microstructure-property relations, twip and κ-carbide strengthening mechanisms, and hydrogen embrittlement susceptibility.",
+          "prediction_normalized": "recent developments in low-density fe-mn-al-c austenitic steels covering combinatorial alloy design via rapid alloy prototyping, microstructure-property relations for twip and kappa-carbide strengthened grades, constitutive modeling of strain hardening, and hydrogen embrittlement susceptibility.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "papers:0:papers_a64_paper_scope"
+        }
+      ],
+      "match_method_summary": {
+        "normalized_exact": {
+          "matched": 13,
+          "mismatched": 0
+        },
+        "label_synonym": {
+          "matched": 1,
+          "mismatched": 0
+        },
+        "deterministic_mismatch": {
+          "matched": 0,
+          "mismatched": 4
+        },
+        "llm_field_judge": {
+          "matched": 0,
+          "mismatched": 1
+        }
+      }
+    },
+    "alloys": {
+      "structure_metrics": {
+        "truth_count": 12,
+        "prediction_count": 6,
+        "matched_count": 6,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      "error_summary": {
+        "missing_fact": 87,
+        "extra_fact": 0,
+        "correct": 72,
+        "value_mismatch": 6
+      },
+      "missing_truth_fact_examples": [
+        "alloys.alloy_fe20mn0.4c_al0.aliases[0]",
+        "alloys.alloy_fe20mn0.4c_al0.alloy_name",
+        "alloys.alloy_fe20mn0.4c_al0.alloying_elements[0]",
+        "alloys.alloy_fe20mn0.4c_al0.alloying_elements[1]",
+        "alloys.alloy_fe20mn0.4c_al0.base_element",
+        "alloys.alloy_fe20mn0.4c_al0.nominal_composition[c].element",
+        "alloys.alloy_fe20mn0.4c_al0.nominal_composition[c].weight_percent",
+        "alloys.alloy_fe20mn0.4c_al0.nominal_composition[fe].element",
+        "alloys.alloy_fe20mn0.4c_al0.nominal_composition[fe].weight_percent",
+        "alloys.alloy_fe20mn0.4c_al0.nominal_composition[mn].element",
+        "alloys.alloy_fe20mn0.4c_al0.nominal_composition[mn].weight_percent",
+        "alloys.alloy_fe20mn0.4c_al11.aliases[0]",
+        "alloys.alloy_fe20mn0.4c_al2.aliases[0]",
+        "alloys.alloy_fe20mn0.4c_al2.alloy_name",
+        "alloys.alloy_fe20mn0.4c_al2.alloying_elements[0]",
+        "alloys.alloy_fe20mn0.4c_al2.alloying_elements[1]",
+        "alloys.alloy_fe20mn0.4c_al2.alloying_elements[2]",
+        "alloys.alloy_fe20mn0.4c_al2.base_element",
+        "alloys.alloy_fe20mn0.4c_al2.nominal_composition[al].element",
+        "alloys.alloy_fe20mn0.4c_al2.nominal_composition[al].weight_percent"
+      ],
+      "extra_prediction_fact_examples": [],
+      "mismatched_fact_examples": [
+        {
+          "key": "alloys.alloy_fe20mn0.4c_al11.alloying_elements[1]",
+          "truth_path": "alloys.alloy_fe20mn0.4c_al11.alloying_elements[1]",
+          "prediction_path": "alloys.alloy_fe20mn0.4c_al11.alloying_elements[1]",
+          "canonical_object": "alloy_fe20mn0",
+          "field_path": "4c_al11.alloying_elements[1]",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "C",
+          "prediction_value": "Al",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "deterministic_mismatch",
+          "truth_normalized": "c",
+          "prediction_normalized": "al",
+          "reason": "no deterministic matcher accepted the values",
+          "score": 0.0,
+          "needs_llm_judge": false
+        },
+        {
+          "key": "alloys.alloy_fe20mn0.4c_al11.alloying_elements[2]",
+          "truth_path": "alloys.alloy_fe20mn0.4c_al11.alloying_elements[2]",
+          "prediction_path": "alloys.alloy_fe20mn0.4c_al11.alloying_elements[2]",
+          "canonical_object": "alloy_fe20mn0",
+          "field_path": "4c_al11.alloying_elements[2]",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Al",
+          "prediction_value": "C",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "deterministic_mismatch",
+          "truth_normalized": "al",
+          "prediction_normalized": "c",
+          "reason": "no deterministic matcher accepted the values",
+          "score": 0.0,
+          "needs_llm_judge": false
+        },
+        {
+          "key": "alloys.alloy_fe20mn0.4c_al8.alloying_elements[1]",
+          "truth_path": "alloys.alloy_fe20mn0.4c_al8.alloying_elements[1]",
+          "prediction_path": "alloys.alloy_fe20mn0.4c_al8.alloying_elements[1]",
+          "canonical_object": "alloy_fe20mn0",
+          "field_path": "4c_al8.alloying_elements[1]",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "C",
+          "prediction_value": "Al",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "deterministic_mismatch",
+          "truth_normalized": "c",
+          "prediction_normalized": "al",
+          "reason": "no deterministic matcher accepted the values",
+          "score": 0.0,
+          "needs_llm_judge": false
+        },
+        {
+          "key": "alloys.alloy_fe20mn0.4c_al8.alloying_elements[2]",
+          "truth_path": "alloys.alloy_fe20mn0.4c_al8.alloying_elements[2]",
+          "prediction_path": "alloys.alloy_fe20mn0.4c_al8.alloying_elements[2]",
+          "canonical_object": "alloy_fe20mn0",
+          "field_path": "4c_al8.alloying_elements[2]",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Al",
+          "prediction_value": "C",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "deterministic_mismatch",
+          "truth_normalized": "al",
+          "prediction_normalized": "c",
+          "reason": "no deterministic matcher accepted the values",
+          "score": 0.0,
+          "needs_llm_judge": false
+        },
+        {
+          "key": "alloys.alloy_fe30mn1.2c_al8.alloying_elements[1]",
+          "truth_path": "alloys.alloy_fe30mn1.2c_al8.alloying_elements[1]",
+          "prediction_path": "alloys.alloy_fe30mn1.2c_al8.alloying_elements[1]",
+          "canonical_object": "alloy_fe30mn1",
+          "field_path": "2c_al8.alloying_elements[1]",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "C",
+          "prediction_value": "Al",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "deterministic_mismatch",
+          "truth_normalized": "c",
+          "prediction_normalized": "al",
+          "reason": "no deterministic matcher accepted the values",
+          "score": 0.0,
+          "needs_llm_judge": false
+        },
+        {
+          "key": "alloys.alloy_fe30mn1.2c_al8.alloying_elements[2]",
+          "truth_path": "alloys.alloy_fe30mn1.2c_al8.alloying_elements[2]",
+          "prediction_path": "alloys.alloy_fe30mn1.2c_al8.alloying_elements[2]",
+          "canonical_object": "alloy_fe30mn1",
+          "field_path": "2c_al8.alloying_elements[2]",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Al",
+          "prediction_value": "C",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "deterministic_mismatch",
+          "truth_normalized": "al",
+          "prediction_normalized": "c",
+          "reason": "no deterministic matcher accepted the values",
+          "score": 0.0,
+          "needs_llm_judge": false
+        }
+      ],
+      "llm_judge_candidate_count": 6,
+      "llm_judge_candidates": [
+        {
+          "key": "alloys.alloy_fe20mn0.4c_al11.alloys_notes",
+          "truth_path": "alloys.alloy_fe20mn0.4c_al11.alloys_notes",
+          "prediction_path": "alloys.alloy_fe20mn0.4c_al11.alloys_notes",
+          "canonical_object": "alloy_fe20mn0",
+          "field_path": "4c_al11.alloys_notes",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "High ferrite fraction.",
+          "prediction_value": "Higher-Al variant in the Fe-20Mn-0.4C-xAl series; significant ferrite fraction and kappa-carbide tendency.",
+          "error_type": "correct",
+          "matched": true,
+          "method": "llm_field_judge",
+          "truth_normalized": "high ferrite fraction.",
+          "prediction_normalized": "higher-al variant in the fe-20mn-0.4c-xal series; significant ferrite fraction and kappa-carbide tendency.",
+          "reason": "LLM judged same-field values as semantically matched.",
+          "score": 1.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "alloys:0:alloys_alloy_fe20mn0_4c_al11_alloys_notes"
+        },
+        {
+          "key": "alloys.alloy_fe20mn0.4c_al8.alloys_notes",
+          "truth_path": "alloys.alloy_fe20mn0.4c_al8.alloys_notes",
+          "prediction_path": "alloys.alloy_fe20mn0.4c_al8.alloys_notes",
+          "canonical_object": "alloy_fe20mn0",
+          "field_path": "4c_al8.alloys_notes",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Shows ferrite + austenite dual-phase structure.",
+          "prediction_value": "Dual-phase austenite-ferrite low-density TWIP steel variant.",
+          "error_type": "correct",
+          "matched": true,
+          "method": "llm_field_judge",
+          "truth_normalized": "shows ferrite + austenite dual-phase structure.",
+          "prediction_normalized": "dual-phase austenite-ferrite low-density twip steel variant.",
+          "reason": "LLM judged same-field values as semantically matched.",
+          "score": 1.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "alloys:1:alloys_alloy_fe20mn0_4c_al8_alloys_notes"
+        },
+        {
+          "key": "alloys.alloy_fe22mn0.6c.alloys_notes",
+          "truth_path": "alloys.alloy_fe22mn0.6c.alloys_notes",
+          "prediction_path": "alloys.alloy_fe22mn0.6c.alloys_notes",
+          "canonical_object": "alloy_fe22mn0",
+          "field_path": "6c.alloys_notes",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Used for constitutive model validation (compression tests at various temperatures).",
+          "prediction_value": "Model TWIP alloy used for constitutive model validation (data from Ref. 50).",
+          "error_type": "correct",
+          "matched": true,
+          "method": "llm_field_judge",
+          "truth_normalized": "used for constitutive model validation (compression tests at various temperatures).",
+          "prediction_normalized": "model twip alloy used for constitutive model validation (data from ref. 50).",
+          "reason": "LLM judged same-field values as semantically matched.",
+          "score": 1.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "alloys:2:alloys_alloy_fe22mn0_6c_alloys_notes"
+        },
+        {
+          "key": "alloys.alloy_fe26mn11al1.2c.alloys_notes",
+          "truth_path": "alloys.alloy_fe26mn11al1.2c.alloys_notes",
+          "prediction_path": "alloys.alloy_fe26mn11al1.2c.alloys_notes",
+          "canonical_object": "alloy_fe26mn11al1",
+          "field_path": "2c.alloys_notes",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "κ-carbide hardened austenitic low-density steel, used for hydrogen embrittlement study.",
+          "prediction_value": "Kappa-carbide hardened austenitic low-density steel used for hydrogen embrittlement study.",
+          "error_type": "correct",
+          "matched": true,
+          "method": "llm_field_judge",
+          "truth_normalized": "κ-carbide hardened austenitic low-density steel, used for hydrogen embrittlement study.",
+          "prediction_normalized": "kappa-carbide hardened austenitic low-density steel used for hydrogen embrittlement study.",
+          "reason": "LLM judged same-field values as semantically matched.",
+          "score": 1.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "alloys:3:alloys_alloy_fe26mn11al1_2c_alloys_notes"
+        },
+        {
+          "key": "alloys.alloy_fe30mn1.2c_al0.alloys_notes",
+          "truth_path": "alloys.alloy_fe30mn1.2c_al0.alloys_notes",
+          "prediction_path": "alloys.alloy_fe30mn1.2c_al0.alloys_notes",
+          "canonical_object": "alloy_fe30mn1",
+          "field_path": "2c_al0.alloys_notes",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Base composition for 30Mn TWIP steel group, no Al addition.",
+          "prediction_value": "Reference ternary base alloy for the RAP screening series.",
+          "error_type": "correct",
+          "matched": true,
+          "method": "llm_field_judge",
+          "truth_normalized": "base composition for 30mn twip steel group, no al addition.",
+          "prediction_normalized": "reference ternary base alloy for the rap screening series.",
+          "reason": "LLM judged same-field values as semantically matched.",
+          "score": 1.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "alloys:4:alloys_alloy_fe30mn1_2c_al0_alloys_notes"
+        },
+        {
+          "key": "alloys.alloy_fe30mn1.2c_al8.alloys_notes",
+          "truth_path": "alloys.alloy_fe30mn1.2c_al8.alloys_notes",
+          "prediction_path": "alloys.alloy_fe30mn1.2c_al8.alloys_notes",
+          "canonical_object": "alloy_fe30mn1",
+          "field_path": "2c_al8.alloys_notes",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Highest Al content in RAP Fe-30Mn-1.2C series, strong aging response due to κ-carbides.",
+          "prediction_value": "Highest Al variant in the Fe-30Mn-1.2C-xAl RAP series; density-reduced and susceptible to kappa-carbide precipitation during aging.",
+          "error_type": "correct",
+          "matched": true,
+          "method": "llm_field_judge",
+          "truth_normalized": "highest al content in rap fe-30mn-1.2c series, strong aging response due to κ-carbides.",
+          "prediction_normalized": "highest al variant in the fe-30mn-1.2c-xal rap series; density-reduced and susceptible to kappa-carbide precipitation during aging.",
+          "reason": "LLM judged same-field values as semantically matched.",
+          "score": 1.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "alloys:5:alloys_alloy_fe30mn1_2c_al8_alloys_notes"
+        }
+      ],
+      "match_method_summary": {
+        "normalized_exact": {
+          "matched": 66,
+          "mismatched": 0
+        },
+        "deterministic_mismatch": {
+          "matched": 0,
+          "mismatched": 6
+        },
+        "llm_field_judge": {
+          "matched": 6,
+          "mismatched": 0
+        }
+      }
+    },
+    "processes": {
+      "structure_metrics": {
+        "truth_count": 11,
+        "prediction_count": 6,
+        "matched_count": 4,
+        "precision": 0.6666666666666666,
+        "recall": 0.36363636363636365,
+        "f1": 0.4705882352941177
+      },
+      "error_summary": {
+        "missing_fact": 8,
+        "extra_fact": 5,
+        "correct": 3,
+        "value_mismatch": 4
+      },
+      "missing_truth_fact_examples": [
+        "processes.proc_aging_400c_24h.description",
+        "processes.proc_aging_400c_24h.processes_notes",
+        "processes.proc_aging_450c_1h.description",
+        "processes.proc_aging_450c_24h.description",
+        "processes.proc_aging_500c_1h.description",
+        "processes.proc_aging_500c_24h.description",
+        "processes.proc_aging_550c_1h.description",
+        "processes.proc_aging_600c_1h.description"
+      ],
+      "extra_prediction_fact_examples": [
+        "processes.proc_aging_550c_24h.processes_notes",
+        "processes.proc_compression_temp.description",
+        "processes.proc_compression_temp.processes_notes",
+        "processes.proc_h_charging.description",
+        "processes.proc_h_charging.processes_notes"
+      ],
+      "mismatched_fact_examples": [
+        {
+          "key": "processes.proc_aging_600c_24h.processes_notes",
+          "truth_path": "processes.proc_aging_600c_24h.processes_notes",
+          "prediction_path": "processes.proc_aging_600c_24h.processes_notes",
+          "canonical_object": "proc_aging_600c_24h",
+          "field_path": "processes_notes",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Promotes strong κ-carbide precipitation in high-Al alloys.",
+          "prediction_value": "Applied to selected Fe-30Mn-1.2C-xAl alloys to precipitate kappa-carbides.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "promotes strong κ-carbide precipitation in high-al alloys.",
+          "prediction_normalized": "applied to selected fe-30mn-1.2c-xal alloys to precipitate kappa-carbides.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "processes:2:processes_proc_aging_600c_24h_processes_notes"
+        },
+        {
+          "key": "processes.proc_as_quenched.processes_notes",
+          "truth_path": "processes.proc_as_quenched.processes_notes",
+          "prediction_path": "processes.proc_as_quenched.processes_notes",
+          "canonical_object": "proc_as_quenched",
+          "field_path": "processes_notes",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Corresponds to homogenized and water-quenched state for Fe-20Mn series.",
+          "prediction_value": "Baseline condition for Fe-20Mn-0.4C-xAl series prior to tempering.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "corresponds to homogenized and water-quenched state for fe-20mn series.",
+          "prediction_normalized": "baseline condition for fe-20mn-0.4c-xal series prior to tempering.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "processes:4:processes_proc_as_quenched_processes_notes"
+        },
+        {
+          "key": "processes.proc_homogenised_wq.description",
+          "truth_path": "processes.proc_homogenised_wq.description",
+          "prediction_path": "processes.proc_homogenised_wq.description",
+          "canonical_object": "proc_homogenised_wq",
+          "field_path": "description",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Homogenization at 1100 °C for 2 h under Ar, followed by water quenching.",
+          "prediction_value": "VIM melting under 400 mbar Ar, casting into Cu molds, hot rolling at 1100°C to 2 mm sheet, reheating to 1100°C and water quenching, homogenization at 1100°C for 2 h under Ar followed by water quenching.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "homogenization at 1100 c for 2 h under ar, followed by water quenching.",
+          "prediction_normalized": "vim melting under 400 mbar ar, casting into cu molds, hot rolling at 1100 c to 2 mm sheet, reheating to 1100 c and water quenching, homogenization at 1100 c for 2 h under ar followed by water quenching.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "processes:5:processes_proc_homogenised_wq_description"
+        },
+        {
+          "key": "processes.proc_homogenised_wq.processes_notes",
+          "truth_path": "processes.proc_homogenised_wq.processes_notes",
+          "prediction_path": "processes.proc_homogenised_wq.processes_notes",
+          "canonical_object": "proc_homogenised_wq",
+          "field_path": "processes_notes",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Applied to hot-rolled sheets before aging treatments.",
+          "prediction_value": "Rapid alloy prototyping (RAP) synthesis route used for Fe-30Mn-1.2C-xAl and Fe-20Mn-0.4C-xAl bulk combinatorial screening.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "applied to hot-rolled sheets before aging treatments.",
+          "prediction_normalized": "rapid alloy prototyping (rap) synthesis route used for fe-30mn-1.2c-xal and fe-20mn-0.4c-xal bulk combinatorial screening.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "processes:6:processes_proc_homogenised_wq_processes_notes"
+        }
+      ],
+      "llm_judge_candidate_count": 7,
+      "llm_judge_candidates": [
+        {
+          "key": "processes.proc_aging_550c_24h.description",
+          "truth_path": "processes.proc_aging_550c_24h.description",
+          "prediction_path": "processes.proc_aging_550c_24h.description",
+          "canonical_object": "proc_aging_550c_24h",
+          "field_path": "description",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Aging at 550 °C for 24 h in air, oil quenching.",
+          "prediction_value": "Aging at 550°C for 24 h in air followed by oil quenching.",
+          "error_type": "correct",
+          "matched": true,
+          "method": "llm_field_judge",
+          "truth_normalized": "aging at 550 c for 24 h in air, oil quenching.",
+          "prediction_normalized": "aging at 550 c for 24 h in air followed by oil quenching.",
+          "reason": "LLM judged same-field values as semantically matched.",
+          "score": 1.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "processes:0:processes_proc_aging_550c_24h_description"
+        },
+        {
+          "key": "processes.proc_aging_600c_24h.description",
+          "truth_path": "processes.proc_aging_600c_24h.description",
+          "prediction_path": "processes.proc_aging_600c_24h.description",
+          "canonical_object": "proc_aging_600c_24h",
+          "field_path": "description",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Aging at 600 °C for 24 h in air, oil quenching.",
+          "prediction_value": "Aging at 600°C for 24 h in air followed by oil quenching.",
+          "error_type": "correct",
+          "matched": true,
+          "method": "llm_field_judge",
+          "truth_normalized": "aging at 600 c for 24 h in air, oil quenching.",
+          "prediction_normalized": "aging at 600 c for 24 h in air followed by oil quenching.",
+          "reason": "LLM judged same-field values as semantically matched.",
+          "score": 1.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "processes:1:processes_proc_aging_600c_24h_description"
+        },
+        {
+          "key": "processes.proc_aging_600c_24h.processes_notes",
+          "truth_path": "processes.proc_aging_600c_24h.processes_notes",
+          "prediction_path": "processes.proc_aging_600c_24h.processes_notes",
+          "canonical_object": "proc_aging_600c_24h",
+          "field_path": "processes_notes",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Promotes strong κ-carbide precipitation in high-Al alloys.",
+          "prediction_value": "Applied to selected Fe-30Mn-1.2C-xAl alloys to precipitate kappa-carbides.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "promotes strong κ-carbide precipitation in high-al alloys.",
+          "prediction_normalized": "applied to selected fe-30mn-1.2c-xal alloys to precipitate kappa-carbides.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "processes:2:processes_proc_aging_600c_24h_processes_notes"
+        },
+        {
+          "key": "processes.proc_as_quenched.description",
+          "truth_path": "processes.proc_as_quenched.description",
+          "prediction_path": "processes.proc_as_quenched.description",
+          "canonical_object": "proc_as_quenched",
+          "field_path": "description",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "As-quenched condition after hot rolling and reheating, without aging.",
+          "prediction_value": "Reheating to 1100°C and water quenching; homogenized as-quenched state without subsequent aging.",
+          "error_type": "correct",
+          "matched": true,
+          "method": "llm_field_judge",
+          "truth_normalized": "as-quenched condition after hot rolling and reheating, without aging.",
+          "prediction_normalized": "reheating to 1100 c and water quenching; homogenized as-quenched state without subsequent aging.",
+          "reason": "LLM judged same-field values as semantically matched.",
+          "score": 1.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "processes:3:processes_proc_as_quenched_description"
+        },
+        {
+          "key": "processes.proc_as_quenched.processes_notes",
+          "truth_path": "processes.proc_as_quenched.processes_notes",
+          "prediction_path": "processes.proc_as_quenched.processes_notes",
+          "canonical_object": "proc_as_quenched",
+          "field_path": "processes_notes",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Corresponds to homogenized and water-quenched state for Fe-20Mn series.",
+          "prediction_value": "Baseline condition for Fe-20Mn-0.4C-xAl series prior to tempering.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "corresponds to homogenized and water-quenched state for fe-20mn series.",
+          "prediction_normalized": "baseline condition for fe-20mn-0.4c-xal series prior to tempering.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "processes:4:processes_proc_as_quenched_processes_notes"
+        },
+        {
+          "key": "processes.proc_homogenised_wq.description",
+          "truth_path": "processes.proc_homogenised_wq.description",
+          "prediction_path": "processes.proc_homogenised_wq.description",
+          "canonical_object": "proc_homogenised_wq",
+          "field_path": "description",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Homogenization at 1100 °C for 2 h under Ar, followed by water quenching.",
+          "prediction_value": "VIM melting under 400 mbar Ar, casting into Cu molds, hot rolling at 1100°C to 2 mm sheet, reheating to 1100°C and water quenching, homogenization at 1100°C for 2 h under Ar followed by water quenching.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "homogenization at 1100 c for 2 h under ar, followed by water quenching.",
+          "prediction_normalized": "vim melting under 400 mbar ar, casting into cu molds, hot rolling at 1100 c to 2 mm sheet, reheating to 1100 c and water quenching, homogenization at 1100 c for 2 h under ar followed by water quenching.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "processes:5:processes_proc_homogenised_wq_description"
+        },
+        {
+          "key": "processes.proc_homogenised_wq.processes_notes",
+          "truth_path": "processes.proc_homogenised_wq.processes_notes",
+          "prediction_path": "processes.proc_homogenised_wq.processes_notes",
+          "canonical_object": "proc_homogenised_wq",
+          "field_path": "processes_notes",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Applied to hot-rolled sheets before aging treatments.",
+          "prediction_value": "Rapid alloy prototyping (RAP) synthesis route used for Fe-30Mn-1.2C-xAl and Fe-20Mn-0.4C-xAl bulk combinatorial screening.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "applied to hot-rolled sheets before aging treatments.",
+          "prediction_normalized": "rapid alloy prototyping (rap) synthesis route used for fe-30mn-1.2c-xal and fe-20mn-0.4c-xal bulk combinatorial screening.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "processes:6:processes_proc_homogenised_wq_processes_notes"
+        }
+      ],
+      "match_method_summary": {
+        "llm_field_judge": {
+          "matched": 3,
+          "mismatched": 4
+        }
+      }
+    },
+    "samples": {
+      "structure_metrics": {
+        "truth_count": 23,
+        "prediction_count": 7,
+        "matched_count": 5,
+        "precision": 0.7142857142857143,
+        "recall": 0.21739130434782608,
+        "f1": 0.3333333333333333
+      },
+      "error_summary": {
+        "missing_fact": 0,
+        "extra_fact": 0
+      },
+      "missing_truth_fact_examples": [],
+      "extra_prediction_fact_examples": [],
+      "mismatched_fact_examples": [],
+      "llm_judge_candidate_count": 0,
+      "llm_judge_candidates": [],
+      "match_method_summary": {}
+    },
+    "processing_steps": {
+      "structure_metrics": {
+        "truth_count": 4,
+        "prediction_count": 5,
+        "matched_count": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matched_anchors": [],
+        "unmatched_truth_anchors": [
+          "processing_steps.sample_30mn8al_600c24h.3.heat_treatment.aging.600",
+          "processing_steps.sample_30mn8al_homog.1.synthesis.vim_casting_hot_rolling_at_1100_c_to_2_mm_sheet.1100",
+          "processing_steps.sample_30mn8al_homog.2.heat_treatment.reheating_water_quenching.1100",
+          "processing_steps.sample_30mn8al_homog.3.heat_treatment.homogenization.1100"
+        ],
+        "unmatched_prediction_anchors": [
+          "processing_steps.sample_30mn0al_homog.1.synthesis.vacuum_induction_melting.1100",
+          "processing_steps.sample_30mn0al_homog.2.thermomechanical_processing.hot_rolling.1100",
+          "processing_steps.sample_30mn0al_homog.3.heat_treatment.reheating_and_water_quenching.1100",
+          "processing_steps.sample_30mn0al_homog.4.heat_treatment.homogenization.1100",
+          "processing_steps.sample_30mn8al_600c24h.5.heat_treatment.aging.600"
+        ]
+      },
+      "error_summary": {
+        "missing_fact": 7,
+        "extra_fact": 7,
+        "correct": 5,
+        "value_mismatch": 2
+      },
+      "missing_truth_fact_examples": [
+        "processing_steps.sample_30mn8al_homog.cooling_medium",
+        "processing_steps.sample_30mn8al_homog.duration",
+        "processing_steps.sample_30mn8al_homog.method",
+        "processing_steps.sample_30mn8al_homog.processing_steps_notes",
+        "processing_steps.sample_30mn8al_homog.sequence",
+        "processing_steps.sample_30mn8al_homog.temperature_with_unit",
+        "processing_steps.sample_30mn8al_homog.type"
+      ],
+      "extra_prediction_fact_examples": [
+        "processing_steps.sample_30mn0al_homog.cooling_medium",
+        "processing_steps.sample_30mn0al_homog.duration",
+        "processing_steps.sample_30mn0al_homog.method",
+        "processing_steps.sample_30mn0al_homog.processing_steps_notes",
+        "processing_steps.sample_30mn0al_homog.sequence",
+        "processing_steps.sample_30mn0al_homog.temperature_with_unit",
+        "processing_steps.sample_30mn0al_homog.type"
+      ],
+      "mismatched_fact_examples": [
+        {
+          "key": "processing_steps.sample_30mn8al_600c24h.processing_steps_notes",
+          "truth_path": "processing_steps.sample_30mn8al_600c24h.processing_steps_notes",
+          "prediction_path": "processing_steps.sample_30mn8al_600c24h.processing_steps_notes",
+          "canonical_object": "sample_30mn8al_600c24h",
+          "field_path": "processing_steps_notes",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "After homogenization and water quenching.",
+          "prediction_value": "Aging in air followed by oil quenching; scales removed by low-pressure fine-grit sandblasting.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "after homogenization and water quenching.",
+          "prediction_normalized": "aging in air followed by oil quenching; scales removed by low-pressure fine-grit sandblasting.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "processing_steps:0:processing_steps_sample_30mn8al_600c24h_processing_steps_notes"
+        },
+        {
+          "key": "processing_steps.sample_30mn8al_600c24h.sequence",
+          "truth_path": "processing_steps.sample_30mn8al_600c24h.sequence",
+          "prediction_path": "processing_steps.sample_30mn8al_600c24h.sequence",
+          "canonical_object": "sample_30mn8al_600c24h",
+          "field_path": "sequence",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "3",
+          "prediction_value": "5",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "deterministic_mismatch",
+          "truth_normalized": "3",
+          "prediction_normalized": "5",
+          "reason": "no deterministic matcher accepted the values",
+          "score": 0.0,
+          "needs_llm_judge": false
+        }
+      ],
+      "llm_judge_candidate_count": 1,
+      "llm_judge_candidates": [
+        {
+          "key": "processing_steps.sample_30mn8al_600c24h.processing_steps_notes",
+          "truth_path": "processing_steps.sample_30mn8al_600c24h.processing_steps_notes",
+          "prediction_path": "processing_steps.sample_30mn8al_600c24h.processing_steps_notes",
+          "canonical_object": "sample_30mn8al_600c24h",
+          "field_path": "processing_steps_notes",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "After homogenization and water quenching.",
+          "prediction_value": "Aging in air followed by oil quenching; scales removed by low-pressure fine-grit sandblasting.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "after homogenization and water quenching.",
+          "prediction_normalized": "aging in air followed by oil quenching; scales removed by low-pressure fine-grit sandblasting.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "processing_steps:0:processing_steps_sample_30mn8al_600c24h_processing_steps_notes"
+        }
+      ],
+      "match_method_summary": {
+        "normalized_exact": {
+          "matched": 5,
+          "mismatched": 0
+        },
+        "llm_field_judge": {
+          "matched": 0,
+          "mismatched": 1
+        },
+        "deterministic_mismatch": {
+          "matched": 0,
+          "mismatched": 1
+        }
+      }
+    },
+    "structures": {
+      "structure_metrics": {
+        "truth_count": 2,
+        "prediction_count": 5,
+        "matched_count": 2,
+        "precision": 0.4,
+        "recall": 1.0,
+        "f1": 0.5714285714285715,
+        "matched_anchors": [
+          "structures.sample_30mn8al_600c24h",
+          "structures.sample_30mn8al_homog"
+        ],
+        "unmatched_truth_anchors": [],
+        "unmatched_prediction_anchors": [
+          "structures.sample_20mn8al_aq",
+          "structures.sample_30mn0al_homog",
+          "structures.sample_fe26mn11al12c_h"
+        ]
+      },
+      "error_summary": {
+        "missing_fact": 19,
+        "extra_fact": 45,
+        "correct": 3,
+        "value_mismatch": 1
+      },
+      "missing_truth_fact_examples": [
+        "structures.sample_30mn8al_600c24h.microstructure_list[3].phases_present[austenite].crystal_structure",
+        "structures.sample_30mn8al_600c24h.microstructure_list[3].phases_present[austenite].morphology",
+        "structures.sample_30mn8al_600c24h.microstructure_list[3].phases_present[austenite].phase_name",
+        "structures.sample_30mn8al_600c24h.microstructure_list[3].phases_present[austenite].volume_fraction",
+        "structures.sample_30mn8al_600c24h.microstructure_list[3].phases_present[carbide_l_12].crystal_structure",
+        "structures.sample_30mn8al_600c24h.microstructure_list[3].phases_present[carbide_l_12].morphology",
+        "structures.sample_30mn8al_600c24h.microstructure_list[3].phases_present[carbide_l_12].phase_name",
+        "structures.sample_30mn8al_600c24h.microstructure_list[3].precipitates[carbide_fe_mn_3alc].coherency",
+        "structures.sample_30mn8al_600c24h.microstructure_list[3].precipitates[carbide_fe_mn_3alc].distribution",
+        "structures.sample_30mn8al_600c24h.microstructure_list[3].precipitates[carbide_fe_mn_3alc].size.value",
+        "structures.sample_30mn8al_600c24h.microstructure_list[3].precipitates[carbide_fe_mn_3alc].type",
+        "structures.sample_30mn8al_600c24h.microstructure_list[3].related_sequence",
+        "structures.sample_30mn8al_homog.microstructure_list[3].defects[microsegregation].type",
+        "structures.sample_30mn8al_homog.microstructure_list[3].grain_structure.average_grain_size.value_with_unit",
+        "structures.sample_30mn8al_homog.microstructure_list[3].phases_present[austenite].crystal_structure",
+        "structures.sample_30mn8al_homog.microstructure_list[3].phases_present[austenite].morphology",
+        "structures.sample_30mn8al_homog.microstructure_list[3].phases_present[austenite].phase_name",
+        "structures.sample_30mn8al_homog.microstructure_list[3].phases_present[austenite].volume_fraction",
+        "structures.sample_30mn8al_homog.microstructure_list[3].related_sequence"
+      ],
+      "extra_prediction_fact_examples": [
+        "structures.sample_20mn8al_aq.microstructure_list[0].phases_present[austenite].crystal_structure",
+        "structures.sample_20mn8al_aq.microstructure_list[0].phases_present[austenite].phase_name",
+        "structures.sample_20mn8al_aq.microstructure_list[0].phases_present[austenite].volume_fraction",
+        "structures.sample_20mn8al_aq.microstructure_list[0].phases_present[ferrite].crystal_structure",
+        "structures.sample_20mn8al_aq.microstructure_list[0].phases_present[ferrite].phase_name",
+        "structures.sample_20mn8al_aq.microstructure_list[0].phases_present[ferrite].volume_fraction",
+        "structures.sample_20mn8al_aq.number_of_phases",
+        "structures.sample_20mn8al_aq.overall_structure",
+        "structures.sample_30mn0al_homog.microstructure_list[4].defects[dislocation_substructures_cells].porosity",
+        "structures.sample_30mn0al_homog.microstructure_list[4].defects[dislocation_substructures_cells].type",
+        "structures.sample_30mn0al_homog.microstructure_list[4].grain_structure.average_grain_size.value_with_unit",
+        "structures.sample_30mn0al_homog.microstructure_list[4].phases_present[austenite].crystal_structure",
+        "structures.sample_30mn0al_homog.microstructure_list[4].phases_present[austenite].grain_size",
+        "structures.sample_30mn0al_homog.microstructure_list[4].phases_present[austenite].morphology",
+        "structures.sample_30mn0al_homog.microstructure_list[4].phases_present[austenite].phase_name",
+        "structures.sample_30mn0al_homog.microstructure_list[4].phases_present[austenite].volume_fraction",
+        "structures.sample_30mn0al_homog.microstructure_list[4].related_sequence",
+        "structures.sample_30mn0al_homog.number_of_phases",
+        "structures.sample_30mn0al_homog.overall_structure",
+        "structures.sample_30mn8al_600c24h.microstructure_list[5].phases_present[austenite].crystal_structure"
+      ],
+      "mismatched_fact_examples": [
+        {
+          "key": "structures.sample_30mn8al_600c24h.overall_structure",
+          "truth_path": "structures.sample_30mn8al_600c24h.overall_structure",
+          "prediction_path": "structures.sample_30mn8al_600c24h.overall_structure",
+          "canonical_object": "sample_30mn8al_600c24h",
+          "field_path": "overall_structure",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Austenitic matrix containing nanosized κ-carbide precipitates.",
+          "prediction_value": "Austenitic matrix with regularly arranged nanosized kappa-carbide precipitates",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "austenitic matrix containing nanosized κ-carbide precipitates.",
+          "prediction_normalized": "austenitic matrix with regularly arranged nanosized kappa-carbide precipitates",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "structures:0:structures_sample_30mn8al_600c24h_overall_structure"
+        }
+      ],
+      "llm_judge_candidate_count": 2,
+      "llm_judge_candidates": [
+        {
+          "key": "structures.sample_30mn8al_600c24h.overall_structure",
+          "truth_path": "structures.sample_30mn8al_600c24h.overall_structure",
+          "prediction_path": "structures.sample_30mn8al_600c24h.overall_structure",
+          "canonical_object": "sample_30mn8al_600c24h",
+          "field_path": "overall_structure",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Austenitic matrix containing nanosized κ-carbide precipitates.",
+          "prediction_value": "Austenitic matrix with regularly arranged nanosized kappa-carbide precipitates",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "austenitic matrix containing nanosized κ-carbide precipitates.",
+          "prediction_normalized": "austenitic matrix with regularly arranged nanosized kappa-carbide precipitates",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "structures:0:structures_sample_30mn8al_600c24h_overall_structure"
+        },
+        {
+          "key": "structures.sample_30mn8al_homog.overall_structure",
+          "truth_path": "structures.sample_30mn8al_homog.overall_structure",
+          "prediction_path": "structures.sample_30mn8al_homog.overall_structure",
+          "canonical_object": "sample_30mn8al_homog",
+          "field_path": "overall_structure",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Fully recrystallized austenite with some retained microsegregations of Mn.",
+          "prediction_value": "Fully recrystallized single-phase austenite; minor retained microsegregations of Mn",
+          "error_type": "correct",
+          "matched": true,
+          "method": "llm_field_judge",
+          "truth_normalized": "fully recrystallized austenite with some retained microsegregations of mn.",
+          "prediction_normalized": "fully recrystallized single-phase austenite; minor retained microsegregations of mn",
+          "reason": "LLM judged same-field values as semantically matched.",
+          "score": 1.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "structures:1:structures_sample_30mn8al_homog_overall_structure"
+        }
+      ],
+      "match_method_summary": {
+        "normalized_exact": {
+          "matched": 2,
+          "mismatched": 0
+        },
+        "llm_field_judge": {
+          "matched": 1,
+          "mismatched": 1
+        }
+      }
+    },
+    "interfaces": {
+      "structure_metrics": {
+        "truth_count": 2,
+        "prediction_count": 2,
+        "matched_count": 1,
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1": 0.5,
+        "matched_anchors": [
+          "interfaces.sample_30mn8al_600c24h"
+        ],
+        "unmatched_truth_anchors": [
+          "interfaces.idx_1"
+        ],
+        "unmatched_prediction_anchors": [
+          "interfaces.sample_fe26mn11al12c_h"
+        ]
+      },
+      "error_summary": {
+        "missing_fact": 5,
+        "extra_fact": 4,
+        "value_mismatch": 2,
+        "correct": 2
+      },
+      "missing_truth_fact_examples": [
+        "interfaces.idx_1.phases[ferrite].coherence",
+        "interfaces.idx_1.phases[ferrite].phase_1_name",
+        "interfaces.idx_1.phases[ferrite].phase_2_name",
+        "interfaces.sample_30mn8al_600c24h.interface_notes[0].stress_strain_distribution",
+        "interfaces.sample_30mn8al_600c24h.interface_notes[1].slippage_situation"
+      ],
+      "extra_prediction_fact_examples": [
+        "interfaces.sample_30mn8al_600c24h.defect_interaction[0].interaction_type",
+        "interfaces.sample_30mn8al_600c24h.defect_interaction[0].quality_description",
+        "interfaces.sample_fe26mn11al12c_h.interface_notes[0].stress_strain_distribution",
+        "interfaces.sample_fe26mn11al12c_h.interface_notes[1].slippage_situation"
+      ],
+      "mismatched_fact_examples": [
+        {
+          "key": "interfaces.sample_30mn8al_600c24h.phase_evolution",
+          "truth_path": "interfaces.sample_30mn8al_600c24h.phase_evolution",
+          "prediction_path": "interfaces.sample_30mn8al_600c24h.phase_evolution",
+          "canonical_object": "sample_30mn8al_600c24h",
+          "field_path": "phase_evolution",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "κ-carbides precipitate during aging at 450-600°C; remain stable up to 100 h at 600°C.",
+          "prediction_value": "Kappa-carbides thermally stable at 600°C, persisting after 100 h with only modest coarsening; form during aging at 500–600°C or during quenching for Al > 10 wt.%.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "κ-carbides precipitate during aging at 450-600 c ; remain stable up to 100 h at 600 c .",
+          "prediction_normalized": "kappa-carbides thermally stable at 600 c , persisting after 100 h with only modest coarsening; form during aging at 500-600 c or during quenching for al > 10 wt.%.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "interfaces:0:interfaces_sample_30mn8al_600c24h_phase_evolution"
+        },
+        {
+          "key": "interfaces.sample_30mn8al_600c24h.phases[austenite].phase_1_name",
+          "truth_path": "interfaces.sample_30mn8al_600c24h.phases[austenite].phase_1_name",
+          "prediction_path": "interfaces.sample_30mn8al_600c24h.phases[austenite].phase_1_name",
+          "canonical_object": "sample_30mn8al_600c24h",
+          "field_path": "phases[austenite].phase_1_name",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "austenite (γ)",
+          "prediction_value": "austenite",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "deterministic_mismatch",
+          "truth_normalized": "austenite (γ)",
+          "prediction_normalized": "austenite",
+          "reason": "no deterministic matcher accepted the values",
+          "score": 0.0,
+          "needs_llm_judge": false
+        }
+      ],
+      "llm_judge_candidate_count": 1,
+      "llm_judge_candidates": [
+        {
+          "key": "interfaces.sample_30mn8al_600c24h.phase_evolution",
+          "truth_path": "interfaces.sample_30mn8al_600c24h.phase_evolution",
+          "prediction_path": "interfaces.sample_30mn8al_600c24h.phase_evolution",
+          "canonical_object": "sample_30mn8al_600c24h",
+          "field_path": "phase_evolution",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "κ-carbides precipitate during aging at 450-600°C; remain stable up to 100 h at 600°C.",
+          "prediction_value": "Kappa-carbides thermally stable at 600°C, persisting after 100 h with only modest coarsening; form during aging at 500–600°C or during quenching for Al > 10 wt.%.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "κ-carbides precipitate during aging at 450-600 c ; remain stable up to 100 h at 600 c .",
+          "prediction_normalized": "kappa-carbides thermally stable at 600 c , persisting after 100 h with only modest coarsening; form during aging at 500-600 c or during quenching for al > 10 wt.%.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "interfaces:0:interfaces_sample_30mn8al_600c24h_phase_evolution"
+        }
+      ],
+      "match_method_summary": {
+        "llm_field_judge": {
+          "matched": 0,
+          "mismatched": 1
+        },
+        "quantity_with_unit": {
+          "matched": 1,
+          "mismatched": 0
+        },
+        "deterministic_mismatch": {
+          "matched": 0,
+          "mismatched": 1
+        },
+        "phase_label_synonym": {
+          "matched": 1,
+          "mismatched": 0
+        }
+      }
+    },
+    "properties": {
+      "structure_metrics": {
+        "truth_count": 5,
+        "prediction_count": 7,
+        "matched_count": 4,
+        "precision": 0.5714285714285714,
+        "recall": 0.8,
+        "f1": 0.6666666666666666,
+        "matched_anchors": [
+          "properties.sample_20mn11al_aq",
+          "properties.sample_30mn0al_homog",
+          "properties.sample_30mn8al_600c24h",
+          "properties.sample_30mn8al_homog"
+        ],
+        "unmatched_truth_anchors": [
+          "properties.sample_20mn0al_aq"
+        ],
+        "unmatched_prediction_anchors": [
+          "properties.sample_20mn8al_aq",
+          "properties.sample_fe22mn06c_val",
+          "properties.sample_fe26mn11al12c_h"
+        ]
+      },
+      "error_summary": {
+        "missing_fact": 34,
+        "extra_fact": 15
+      },
+      "missing_truth_fact_examples": [
+        "properties.sample_20mn0al_aq.mechanical.tensile_properties.elongation[rolling_direction].direction",
+        "properties.sample_20mn0al_aq.mechanical.tensile_properties.elongation[rolling_direction].value_with_unit",
+        "properties.sample_20mn0al_aq.mechanical.tensile_properties.ultimate_tensile_strength[rolling_direction].direction",
+        "properties.sample_20mn0al_aq.mechanical.tensile_properties.ultimate_tensile_strength[rolling_direction].value_with_unit",
+        "properties.sample_20mn0al_aq.mechanical.tensile_properties.yield_strength[rolling_direction].direction",
+        "properties.sample_20mn0al_aq.mechanical.tensile_properties.yield_strength[rolling_direction].value_with_unit",
+        "properties.sample_20mn11al_aq.mechanical.hardness[0].scale",
+        "properties.sample_20mn11al_aq.mechanical.hardness[0].value_with_unit",
+        "properties.sample_20mn11al_aq.mechanical.tensile_properties.elongation[rolling_direction].direction",
+        "properties.sample_20mn11al_aq.mechanical.tensile_properties.elongation[rolling_direction].value_with_unit",
+        "properties.sample_20mn11al_aq.mechanical.tensile_properties.ultimate_tensile_strength[rolling_direction].direction",
+        "properties.sample_20mn11al_aq.mechanical.tensile_properties.ultimate_tensile_strength[rolling_direction].value_with_unit",
+        "properties.sample_20mn11al_aq.mechanical.tensile_properties.yield_strength[rolling_direction].direction",
+        "properties.sample_20mn11al_aq.mechanical.tensile_properties.yield_strength[rolling_direction].value_with_unit",
+        "properties.sample_30mn0al_homog.mechanical.tensile_properties.elongation[rolling_direction].direction",
+        "properties.sample_30mn0al_homog.mechanical.tensile_properties.elongation[rolling_direction].value_with_unit",
+        "properties.sample_30mn0al_homog.mechanical.tensile_properties.ultimate_tensile_strength[rolling_direction].direction",
+        "properties.sample_30mn0al_homog.mechanical.tensile_properties.ultimate_tensile_strength[rolling_direction].value_with_unit",
+        "properties.sample_30mn0al_homog.mechanical.tensile_properties.yield_strength[rolling_direction].direction",
+        "properties.sample_30mn0al_homog.mechanical.tensile_properties.yield_strength[rolling_direction].value_with_unit"
+      ],
+      "extra_prediction_fact_examples": [
+        "properties.sample_20mn11al_aq.mechanical.tensile_properties.elongation[0].value_with_unit",
+        "properties.sample_20mn11al_aq.mechanical.tensile_properties.ultimate_tensile_strength[0].value_with_unit",
+        "properties.sample_20mn8al_aq.mechanical.tensile_properties.elongation[0].value_with_unit",
+        "properties.sample_20mn8al_aq.mechanical.tensile_properties.ultimate_tensile_strength[0].value_with_unit",
+        "properties.sample_30mn0al_homog.mechanical.tensile_properties.elongation[0].value_with_unit",
+        "properties.sample_30mn0al_homog.mechanical.tensile_properties.ultimate_tensile_strength[0].value_with_unit",
+        "properties.sample_30mn0al_homog.mechanical.tensile_properties.yield_strength[0].value_with_unit",
+        "properties.sample_30mn8al_600c24h.mechanical.hardness[0].value",
+        "properties.sample_30mn8al_600c24h.mechanical.tensile_properties.elongation[0].value_with_unit",
+        "properties.sample_30mn8al_600c24h.mechanical.tensile_properties.ultimate_tensile_strength[0].value_with_unit",
+        "properties.sample_30mn8al_600c24h.mechanical.tensile_properties.yield_strength[0].value_with_unit",
+        "properties.sample_30mn8al_homog.mechanical.tensile_properties.elongation[0].value_with_unit",
+        "properties.sample_30mn8al_homog.mechanical.tensile_properties.ultimate_tensile_strength[0].value_with_unit",
+        "properties.sample_30mn8al_homog.mechanical.tensile_properties.yield_strength[0].value_with_unit",
+        "properties.sample_fe26mn11al12c_h.mechanical.tensile_properties.ultimate_tensile_strength[0].value_with_unit"
+      ],
+      "mismatched_fact_examples": [],
+      "llm_judge_candidate_count": 0,
+      "llm_judge_candidates": [],
+      "match_method_summary": {}
+    },
+    "performance": {
+      "structure_metrics": {
+        "truth_count": 1,
+        "prediction_count": 1,
+        "matched_count": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matched_anchors": [],
+        "unmatched_truth_anchors": [
+          "performance.idx_0"
+        ],
+        "unmatched_prediction_anchors": [
+          "performance.sample_fe26mn11al12c_h"
+        ]
+      },
+      "error_summary": {
+        "missing_fact": 2,
+        "extra_fact": 5
+      },
+      "missing_truth_fact_examples": [
+        "performance.idx_0.comparative_performance.benchmark_alloy",
+        "performance.idx_0.comparative_performance.improvement_percentage"
+      ],
+      "extra_prediction_fact_examples": [
+        "performance.sample_fe26mn11al12c_h.service_conditions.environment",
+        "performance.sample_fe26mn11al12c_h.service_conditions.operating_temperature.max",
+        "performance.sample_fe26mn11al12c_h.service_conditions.operating_temperature.min",
+        "performance.sample_fe26mn11al12c_h.service_conditions.operating_temperature.unit",
+        "performance.sample_fe26mn11al12c_h.service_conditions.stress_state"
+      ],
+      "mismatched_fact_examples": [],
+      "llm_judge_candidate_count": 0,
+      "llm_judge_candidates": [],
+      "match_method_summary": {}
+    },
+    "characterization_methods": {
+      "structure_metrics": {
+        "truth_count": 2,
+        "prediction_count": 3,
+        "matched_count": 1,
+        "precision": 0.3333333333333333,
+        "recall": 0.5,
+        "f1": 0.4,
+        "matched_anchors": [
+          "characterization_methods.sample_30mn8al_600c24h"
+        ],
+        "unmatched_truth_anchors": [
+          "characterization_methods.sample_fe26mn11al1_2c_withh"
+        ],
+        "unmatched_prediction_anchors": [
+          "characterization_methods.sample_fe22mn06c_val",
+          "characterization_methods.sample_fe26mn11al12c_h"
+        ]
+      },
+      "error_summary": {
+        "missing_fact": 3,
+        "extra_fact": 6,
+        "value_mismatch": 3
+      },
+      "missing_truth_fact_examples": [
+        "characterization_methods.sample_fe26mn11al1.2c_withH.key_findings",
+        "characterization_methods.sample_fe26mn11al1.2c_withH.purpose",
+        "characterization_methods.sample_fe26mn11al1.2c_withH.technique"
+      ],
+      "extra_prediction_fact_examples": [
+        "characterization_methods.sample_fe22mn06c_val.key_findings",
+        "characterization_methods.sample_fe22mn06c_val.purpose",
+        "characterization_methods.sample_fe22mn06c_val.technique",
+        "characterization_methods.sample_fe26mn11al12c_h.key_findings",
+        "characterization_methods.sample_fe26mn11al12c_h.purpose",
+        "characterization_methods.sample_fe26mn11al12c_h.technique"
+      ],
+      "mismatched_fact_examples": [
+        {
+          "key": "characterization_methods.sample_30mn8al_600c24h.key_findings",
+          "truth_path": "characterization_methods.sample_30mn8al_600c24h.key_findings",
+          "prediction_path": "characterization_methods.sample_30mn8al_600c24h.key_findings",
+          "canonical_object": "sample_30mn8al_600c24h",
+          "field_path": "key_findings",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "κ-carbides have L'12 structure, composition (Fe,Mn)3AlC, size ~nm, arranged as rods.",
+          "prediction_value": "Kappa-carbide exhibits approximate stoichiometry (Fe,Mn)3AlC with C ~5 at.% and Fe/Mn/Al enrichments matching the L'1₂ structure.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "κ-carbides have l'12 structure, composition (fe,mn)3alc, size ~nm, arranged as rods.",
+          "prediction_normalized": "kappa-carbide exhibits approximate stoichiometry (fe,mn)3alc with c ~5 at.% and fe/mn/al enrichments matching the l'12 structure.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "characterization_methods:0:characterization_methods_sample_30mn8al_600c24h_key_findings"
+        },
+        {
+          "key": "characterization_methods.sample_30mn8al_600c24h.purpose",
+          "truth_path": "characterization_methods.sample_30mn8al_600c24h.purpose",
+          "prediction_path": "characterization_methods.sample_30mn8al_600c24h.purpose",
+          "canonical_object": "sample_30mn8al_600c24h",
+          "field_path": "purpose",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Nanoscale characterization of κ-carbides",
+          "prediction_value": "Chemical compositional analysis of nanosized precipitates",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "nanoscale characterization of κ-carbides",
+          "prediction_normalized": "chemical compositional analysis of nanosized precipitates",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "characterization_methods:1:characterization_methods_sample_30mn8al_600c24h_purpose"
+        },
+        {
+          "key": "characterization_methods.sample_30mn8al_600c24h.technique",
+          "truth_path": "characterization_methods.sample_30mn8al_600c24h.technique",
+          "prediction_path": "characterization_methods.sample_30mn8al_600c24h.technique",
+          "canonical_object": "sample_30mn8al_600c24h",
+          "field_path": "technique",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Transmission Electron Microscopy (TEM) + Atom Probe Tomography (APT)",
+          "prediction_value": "Atom Probe Tomography (APT)",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "deterministic_mismatch",
+          "truth_normalized": "transmission electron microscopy (tem) + atom probe tomography (apt)",
+          "prediction_normalized": "atom probe tomography (apt)",
+          "reason": "no deterministic matcher accepted the values",
+          "score": 0.0,
+          "needs_llm_judge": false
+        }
+      ],
+      "llm_judge_candidate_count": 2,
+      "llm_judge_candidates": [
+        {
+          "key": "characterization_methods.sample_30mn8al_600c24h.key_findings",
+          "truth_path": "characterization_methods.sample_30mn8al_600c24h.key_findings",
+          "prediction_path": "characterization_methods.sample_30mn8al_600c24h.key_findings",
+          "canonical_object": "sample_30mn8al_600c24h",
+          "field_path": "key_findings",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "κ-carbides have L'12 structure, composition (Fe,Mn)3AlC, size ~nm, arranged as rods.",
+          "prediction_value": "Kappa-carbide exhibits approximate stoichiometry (Fe,Mn)3AlC with C ~5 at.% and Fe/Mn/Al enrichments matching the L'1₂ structure.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "κ-carbides have l'12 structure, composition (fe,mn)3alc, size ~nm, arranged as rods.",
+          "prediction_normalized": "kappa-carbide exhibits approximate stoichiometry (fe,mn)3alc with c ~5 at.% and fe/mn/al enrichments matching the l'12 structure.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "characterization_methods:0:characterization_methods_sample_30mn8al_600c24h_key_findings"
+        },
+        {
+          "key": "characterization_methods.sample_30mn8al_600c24h.purpose",
+          "truth_path": "characterization_methods.sample_30mn8al_600c24h.purpose",
+          "prediction_path": "characterization_methods.sample_30mn8al_600c24h.purpose",
+          "canonical_object": "sample_30mn8al_600c24h",
+          "field_path": "purpose",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Nanoscale characterization of κ-carbides",
+          "prediction_value": "Chemical compositional analysis of nanosized precipitates",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "nanoscale characterization of κ-carbides",
+          "prediction_normalized": "chemical compositional analysis of nanosized precipitates",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "characterization_methods:1:characterization_methods_sample_30mn8al_600c24h_purpose"
+        }
+      ],
+      "match_method_summary": {
+        "llm_field_judge": {
+          "matched": 0,
+          "mismatched": 2
+        },
+        "deterministic_mismatch": {
+          "matched": 0,
+          "mismatched": 1
+        }
+      }
+    },
+    "computational_details": {
+      "structure_metrics": {
+        "truth_count": 1,
+        "prediction_count": 1,
+        "matched_count": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matched_anchors": [],
+        "unmatched_truth_anchors": [
+          "computational_details.sample_fe22mn0_6c_exp"
+        ],
+        "unmatched_prediction_anchors": [
+          "computational_details.sample_fe22mn06c_val"
+        ]
+      },
+      "error_summary": {
+        "missing_fact": 9,
+        "extra_fact": 6
+      },
+      "missing_truth_fact_examples": [
+        "computational_details.sample_fe22mn0.6c_exp.analytical_model[0].equation_role",
+        "computational_details.sample_fe22mn0.6c_exp.analytical_model[0].model_name",
+        "computational_details.sample_fe22mn0.6c_exp.analytical_model[0].model_note",
+        "computational_details.sample_fe22mn0.6c_exp.analytical_model[0].parameters.dislocation_densities[0]",
+        "computational_details.sample_fe22mn0.6c_exp.analytical_model[0].parameters.dislocation_densities[1]",
+        "computational_details.sample_fe22mn0.6c_exp.analytical_model[0].parameters.dislocation_densities[2]",
+        "computational_details.sample_fe22mn0.6c_exp.analytical_model[0].parameters.key_parameters",
+        "computational_details.sample_fe22mn0.6c_exp.analytical_model[0].parameters.twin_volume_fraction",
+        "computational_details.sample_fe22mn0.6c_exp.validation_against_experiment"
+      ],
+      "extra_prediction_fact_examples": [
+        "computational_details.sample_fe22mn06c_val.analytical_model[0].equation_role",
+        "computational_details.sample_fe22mn06c_val.analytical_model[0].model_name",
+        "computational_details.sample_fe22mn06c_val.analytical_model[0].model_note",
+        "computational_details.sample_fe22mn06c_val.analytical_model[0].parameters",
+        "computational_details.sample_fe22mn06c_val.simulation_method",
+        "computational_details.sample_fe22mn06c_val.validation_against_experiment"
+      ],
+      "mismatched_fact_examples": [],
+      "llm_judge_candidate_count": 0,
+      "llm_judge_candidates": [],
+      "match_method_summary": {}
+    },
+    "unmapped_findings": {
+      "structure_metrics": {
+        "truth_count": 10,
+        "prediction_count": 7,
+        "matched_count": 7,
+        "precision": 1.0,
+        "recall": 0.7,
+        "f1": 0.8235294117647058,
+        "matched_anchors": [
+          "unmapped_findings.idx_0",
+          "unmapped_findings.idx_1",
+          "unmapped_findings.idx_2",
+          "unmapped_findings.idx_3",
+          "unmapped_findings.idx_4",
+          "unmapped_findings.idx_5",
+          "unmapped_findings.idx_6"
+        ],
+        "unmatched_truth_anchors": [
+          "unmapped_findings.idx_7",
+          "unmapped_findings.idx_8",
+          "unmapped_findings.idx_9"
+        ],
+        "unmatched_prediction_anchors": []
+      },
+      "error_summary": {
+        "missing_fact": 3,
+        "extra_fact": 0,
+        "value_mismatch": 6,
+        "correct": 1
+      },
+      "missing_truth_fact_examples": [
+        "unmapped_findings.idx_7.value",
+        "unmapped_findings.idx_8.value",
+        "unmapped_findings.idx_9.value"
+      ],
+      "extra_prediction_fact_examples": [],
+      "mismatched_fact_examples": [
+        {
+          "key": "unmapped_findings.idx_0.value",
+          "truth_path": "unmapped_findings.idx_0.value",
+          "prediction_path": "unmapped_findings.idx_0.value",
+          "canonical_object": "idx_0",
+          "field_path": "value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Density reduction as function of Al content: Fe-Mn-Al-C TWIP steels with ~3% Al → density 7.25 g/cm³ (~8% reduction), ~6% Al → 7.10 (~10%), ~8% Al → 6.90 (~12%), ~11% Al → 6.60 (~15%), ~12% Al → 6.55 (~16%), ~13% Al → 6.50 (~17%). (Fig. 1)",
+          "prediction_value": "Fig. 4 selected tensile strength for Fe-30Mn-1.2C-0Al (~500 MPa) deviates from Fig. 3b and text (~820–830 MPa as-homogenized), likely reflecting different data selections or conditions.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "density reduction as function of al content: fe-mn-al-c twip steels with ~3% al → density 7.25 g/cm3 (~8% reduction), ~6% al → 7.10 (~10%), ~8% al → 6.90 (~12%), ~11% al → 6.60 (~15%), ~12% al → 6.55 (~16%), ~13% al → 6.50 (~17%). (fig. 1)",
+          "prediction_normalized": "fig. 4 selected tensile strength for fe-30mn-1.2c-0al (~500 mpa) deviates from fig. 3b and text (~820-830 mpa as-homogenized), likely reflecting different data selections or conditions.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "unmapped_findings:0:unmapped_findings_idx_0_value"
+        },
+        {
+          "key": "unmapped_findings.idx_1.value",
+          "truth_path": "unmapped_findings.idx_1.value",
+          "prediction_path": "unmapped_findings.idx_1.value",
+          "canonical_object": "idx_1",
+          "field_path": "value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Fig. 2: Specific energy absorption E_spec (J/mm³) for Fe-Mn-Al-C alloys reaches ~0.54 J/mm³, outperforming high-strength IF steel (~0.25) and HC300LA (~0.33).",
+          "prediction_value": "Fe-30Mn-1.2C-8Al exhibits pronounced age strengthening during 500–600°C aging; after 24 h at 600°C, YS ~830 MPa, UTS ~930 MPa, hardness ~330, and TE drops to ~10% due to nanosized kappa-carbide precipitation.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "fig. 2: specific energy absorption e_spec (j/mm3) for fe-mn-al-c alloys reaches ~0.54 j/mm3, outperforming high-strength if steel (~0.25) and hc300la (~0.33).",
+          "prediction_normalized": "fe-30mn-1.2c-8al exhibits pronounced age strengthening during 500-600 c aging; after 24 h at 600 c , ys ~830 mpa, uts ~930 mpa, hardness ~330, and te drops to ~10% due to nanosized kappa-carbide precipitation.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "unmapped_findings:1:unmapped_findings_idx_1_value"
+        },
+        {
+          "key": "unmapped_findings.idx_2.value",
+          "truth_path": "unmapped_findings.idx_2.value",
+          "prediction_path": "unmapped_findings.idx_2.value",
+          "canonical_object": "idx_2",
+          "field_path": "value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Fig. 3 complete RAP mechanical data (YS, UTS, TE, hardness) for Fe-30Mn-1.2C-xAl (x=0,2,4,6,8) after different aging treatments (as-homogenised, 450°C/1h, 500°C/1h, 550°C/1h, 600°C/1h, 550°C/24h, 600°C/24h, 450°C/24h, 500°C/24h). Key values: 0Al as-homog YS ~370 MPa, UTS ~830 MPa, TE ~70%; 8Al as-homog YS ~510 MPa, UTS ~750 MPa, TE ~72%; 8Al 600°C/24h YS ~950 MPa, UTS ~930 MPa, TE ~38%, hardness ~360 HV.",
+          "prediction_value": "Kappa-carbides in Fe-Mn-Al-C steels show high thermal stability at 600°C, persisting after 100 h with only modest coarsening, and possess a wide compositional existence range.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "fig. 3 complete rap mechanical data (ys, uts, te, hardness) for fe-30mn-1.2c-xal (x=0,2,4,6,8) after different aging treatments (as-homogenised, 450 c /1h, 500 c /1h, 550 c /1h, 600 c /1h, 550 c /24h, 600 c /24h, 450 c /24h, 500 c /24h). key values: 0al as-homog ys ~370 mpa, uts ~830 mpa, te ~70%; 8al as-homog ys ~510 mpa, uts ~750 mpa, te ~72%; 8al 600 c /24h ys ~950 mpa, uts ~930 mpa, te ~38%, hardness ~360 hv.",
+          "prediction_normalized": "kappa-carbides in fe-mn-al-c steels show high thermal stability at 600 c , persisting after 100 h with only modest coarsening, and possess a wide compositional existence range.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "unmapped_findings:2:unmapped_findings_idx_2_value"
+        },
+        {
+          "key": "unmapped_findings.idx_3.value",
+          "truth_path": "unmapped_findings.idx_3.value",
+          "prediction_path": "unmapped_findings.idx_3.value",
+          "canonical_object": "idx_3",
+          "field_path": "value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Fig. 4: Selected tensile data for Fe-30Mn-1.2C-xAl (aging condition not explicit); 8Al sample shows UTS ~950 MPa and elongation ~25%, while 0Al shows ~500 MPa and ~70% elongation.",
+          "prediction_value": "For Al > 10 wt.%, kappa-carbides can form during quenching; the exact strain-hardening mechanism for as-quenched kappa-carbide steels remains under investigation.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "fig. 4: selected tensile data for fe-30mn-1.2c-xal (aging condition not explicit); 8al sample shows uts ~950 mpa and elongation ~25%, while 0al shows ~500 mpa and ~70% elongation.",
+          "prediction_normalized": "for al > 10 wt.%, kappa-carbides can form during quenching; the exact strain-hardening mechanism for as-quenched kappa-carbide steels remains under investigation.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "unmapped_findings:3:unmapped_findings_idx_3_value"
+        },
+        {
+          "key": "unmapped_findings.idx_4.value",
+          "truth_path": "unmapped_findings.idx_4.value",
+          "prediction_path": "unmapped_findings.idx_4.value",
+          "canonical_object": "idx_4",
+          "field_path": "value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Fig. 6a mechanical data for Fe-20Mn-0.4C-xAl (x=0,2,5,8,11) after as-quenched and aging 400°C/24h, 500°C/24h, 600°C/24h. YS and UTS increase, TE decreases with Al. As-quenched values: 0Al YS 380 MPa, UTS 640 MPa, TE 30%; 11Al YS 700 MPa, UTS 800 MPa, TE 15%. XRD in Fig. 6b shows increasing ferrite content with Al, and emergence of κ-carbides.",
+          "prediction_value": "Low-density TWIP (SIMPLEX) steels with 25–30 wt.% Mn and <4–5 wt.% Al deform by dislocation hardening followed by massive mechanical twinning, providing specific energy absorption up to ~0.54 J/mm³, exceeding conventional deep-drawing steels.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "fig. 6a mechanical data for fe-20mn-0.4c-xal (x=0,2,5,8,11) after as-quenched and aging 400 c /24h, 500 c /24h, 600 c /24h. ys and uts increase, te decreases with al. as-quenched values: 0al ys 380 mpa, uts 640 mpa, te 30%; 11al ys 700 mpa, uts 800 mpa, te 15%. xrd in fig. 6b shows increasing ferrite content with al, and emergence of κ-carbides.",
+          "prediction_normalized": "low-density twip (simplex) steels with 25-30 wt.% mn and <4-5 wt.% al deform by dislocation hardening followed by massive mechanical twinning, providing specific energy absorption up to ~0.54 j/mm3, exceeding conventional deep-drawing steels.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "unmapped_findings:4:unmapped_findings_idx_4_value"
+        },
+        {
+          "key": "unmapped_findings.idx_6.value",
+          "truth_path": "unmapped_findings.idx_6.value",
+          "prediction_path": "unmapped_findings.idx_6.value",
+          "canonical_object": "idx_6",
+          "field_path": "value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Strain hardening model (equations 1–29) for low-SFE TWIP steels successfully reproduces experimental stress–strain curves for Fe-22Mn-0.6C between 293K and 873K.",
+          "prediction_value": "Fig. 8 EBSD/ECCI data (inverse pole figure, KAM map, orientation-optimized ECCI) reveal slip localization and grain boundary damage in hydrogen-charged low-density steel, but pixel-level image details are not provided in the text pipeline.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "strain hardening model (equations 1-29) for low-sfe twip steels successfully reproduces experimental stress-strain curves for fe-22mn-0.6c between 293k and 873k.",
+          "prediction_normalized": "fig. 8 ebsd/ecci data (inverse pole figure, kam map, orientation-optimized ecci) reveal slip localization and grain boundary damage in hydrogen-charged low-density steel, but pixel-level image details are not provided in the text pipeline.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "unmapped_findings:6:unmapped_findings_idx_6_value"
+        }
+      ],
+      "llm_judge_candidate_count": 7,
+      "llm_judge_candidates": [
+        {
+          "key": "unmapped_findings.idx_0.value",
+          "truth_path": "unmapped_findings.idx_0.value",
+          "prediction_path": "unmapped_findings.idx_0.value",
+          "canonical_object": "idx_0",
+          "field_path": "value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Density reduction as function of Al content: Fe-Mn-Al-C TWIP steels with ~3% Al → density 7.25 g/cm³ (~8% reduction), ~6% Al → 7.10 (~10%), ~8% Al → 6.90 (~12%), ~11% Al → 6.60 (~15%), ~12% Al → 6.55 (~16%), ~13% Al → 6.50 (~17%). (Fig. 1)",
+          "prediction_value": "Fig. 4 selected tensile strength for Fe-30Mn-1.2C-0Al (~500 MPa) deviates from Fig. 3b and text (~820–830 MPa as-homogenized), likely reflecting different data selections or conditions.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "density reduction as function of al content: fe-mn-al-c twip steels with ~3% al → density 7.25 g/cm3 (~8% reduction), ~6% al → 7.10 (~10%), ~8% al → 6.90 (~12%), ~11% al → 6.60 (~15%), ~12% al → 6.55 (~16%), ~13% al → 6.50 (~17%). (fig. 1)",
+          "prediction_normalized": "fig. 4 selected tensile strength for fe-30mn-1.2c-0al (~500 mpa) deviates from fig. 3b and text (~820-830 mpa as-homogenized), likely reflecting different data selections or conditions.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "unmapped_findings:0:unmapped_findings_idx_0_value"
+        },
+        {
+          "key": "unmapped_findings.idx_1.value",
+          "truth_path": "unmapped_findings.idx_1.value",
+          "prediction_path": "unmapped_findings.idx_1.value",
+          "canonical_object": "idx_1",
+          "field_path": "value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Fig. 2: Specific energy absorption E_spec (J/mm³) for Fe-Mn-Al-C alloys reaches ~0.54 J/mm³, outperforming high-strength IF steel (~0.25) and HC300LA (~0.33).",
+          "prediction_value": "Fe-30Mn-1.2C-8Al exhibits pronounced age strengthening during 500–600°C aging; after 24 h at 600°C, YS ~830 MPa, UTS ~930 MPa, hardness ~330, and TE drops to ~10% due to nanosized kappa-carbide precipitation.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "fig. 2: specific energy absorption e_spec (j/mm3) for fe-mn-al-c alloys reaches ~0.54 j/mm3, outperforming high-strength if steel (~0.25) and hc300la (~0.33).",
+          "prediction_normalized": "fe-30mn-1.2c-8al exhibits pronounced age strengthening during 500-600 c aging; after 24 h at 600 c , ys ~830 mpa, uts ~930 mpa, hardness ~330, and te drops to ~10% due to nanosized kappa-carbide precipitation.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "unmapped_findings:1:unmapped_findings_idx_1_value"
+        },
+        {
+          "key": "unmapped_findings.idx_2.value",
+          "truth_path": "unmapped_findings.idx_2.value",
+          "prediction_path": "unmapped_findings.idx_2.value",
+          "canonical_object": "idx_2",
+          "field_path": "value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Fig. 3 complete RAP mechanical data (YS, UTS, TE, hardness) for Fe-30Mn-1.2C-xAl (x=0,2,4,6,8) after different aging treatments (as-homogenised, 450°C/1h, 500°C/1h, 550°C/1h, 600°C/1h, 550°C/24h, 600°C/24h, 450°C/24h, 500°C/24h). Key values: 0Al as-homog YS ~370 MPa, UTS ~830 MPa, TE ~70%; 8Al as-homog YS ~510 MPa, UTS ~750 MPa, TE ~72%; 8Al 600°C/24h YS ~950 MPa, UTS ~930 MPa, TE ~38%, hardness ~360 HV.",
+          "prediction_value": "Kappa-carbides in Fe-Mn-Al-C steels show high thermal stability at 600°C, persisting after 100 h with only modest coarsening, and possess a wide compositional existence range.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "fig. 3 complete rap mechanical data (ys, uts, te, hardness) for fe-30mn-1.2c-xal (x=0,2,4,6,8) after different aging treatments (as-homogenised, 450 c /1h, 500 c /1h, 550 c /1h, 600 c /1h, 550 c /24h, 600 c /24h, 450 c /24h, 500 c /24h). key values: 0al as-homog ys ~370 mpa, uts ~830 mpa, te ~70%; 8al as-homog ys ~510 mpa, uts ~750 mpa, te ~72%; 8al 600 c /24h ys ~950 mpa, uts ~930 mpa, te ~38%, hardness ~360 hv.",
+          "prediction_normalized": "kappa-carbides in fe-mn-al-c steels show high thermal stability at 600 c , persisting after 100 h with only modest coarsening, and possess a wide compositional existence range.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "unmapped_findings:2:unmapped_findings_idx_2_value"
+        },
+        {
+          "key": "unmapped_findings.idx_3.value",
+          "truth_path": "unmapped_findings.idx_3.value",
+          "prediction_path": "unmapped_findings.idx_3.value",
+          "canonical_object": "idx_3",
+          "field_path": "value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Fig. 4: Selected tensile data for Fe-30Mn-1.2C-xAl (aging condition not explicit); 8Al sample shows UTS ~950 MPa and elongation ~25%, while 0Al shows ~500 MPa and ~70% elongation.",
+          "prediction_value": "For Al > 10 wt.%, kappa-carbides can form during quenching; the exact strain-hardening mechanism for as-quenched kappa-carbide steels remains under investigation.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "fig. 4: selected tensile data for fe-30mn-1.2c-xal (aging condition not explicit); 8al sample shows uts ~950 mpa and elongation ~25%, while 0al shows ~500 mpa and ~70% elongation.",
+          "prediction_normalized": "for al > 10 wt.%, kappa-carbides can form during quenching; the exact strain-hardening mechanism for as-quenched kappa-carbide steels remains under investigation.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "unmapped_findings:3:unmapped_findings_idx_3_value"
+        },
+        {
+          "key": "unmapped_findings.idx_4.value",
+          "truth_path": "unmapped_findings.idx_4.value",
+          "prediction_path": "unmapped_findings.idx_4.value",
+          "canonical_object": "idx_4",
+          "field_path": "value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Fig. 6a mechanical data for Fe-20Mn-0.4C-xAl (x=0,2,5,8,11) after as-quenched and aging 400°C/24h, 500°C/24h, 600°C/24h. YS and UTS increase, TE decreases with Al. As-quenched values: 0Al YS 380 MPa, UTS 640 MPa, TE 30%; 11Al YS 700 MPa, UTS 800 MPa, TE 15%. XRD in Fig. 6b shows increasing ferrite content with Al, and emergence of κ-carbides.",
+          "prediction_value": "Low-density TWIP (SIMPLEX) steels with 25–30 wt.% Mn and <4–5 wt.% Al deform by dislocation hardening followed by massive mechanical twinning, providing specific energy absorption up to ~0.54 J/mm³, exceeding conventional deep-drawing steels.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "fig. 6a mechanical data for fe-20mn-0.4c-xal (x=0,2,5,8,11) after as-quenched and aging 400 c /24h, 500 c /24h, 600 c /24h. ys and uts increase, te decreases with al. as-quenched values: 0al ys 380 mpa, uts 640 mpa, te 30%; 11al ys 700 mpa, uts 800 mpa, te 15%. xrd in fig. 6b shows increasing ferrite content with al, and emergence of κ-carbides.",
+          "prediction_normalized": "low-density twip (simplex) steels with 25-30 wt.% mn and <4-5 wt.% al deform by dislocation hardening followed by massive mechanical twinning, providing specific energy absorption up to ~0.54 j/mm3, exceeding conventional deep-drawing steels.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "unmapped_findings:4:unmapped_findings_idx_4_value"
+        },
+        {
+          "key": "unmapped_findings.idx_5.value",
+          "truth_path": "unmapped_findings.idx_5.value",
+          "prediction_path": "unmapped_findings.idx_5.value",
+          "canonical_object": "idx_5",
+          "field_path": "value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Hydrogen embrittlement study on Fe-26Mn-11Al-1.2C: tensile ductility drastically reduced under hydrogen charging; two damage mechanisms identified: grain boundary triple junction cracking and void chains along grain boundaries due to planar slip localization. Thermal desorption analysis indicates κ-carbides act as hydrogen trap sites with activation energy ~76–80 kJ/mol (Redlich–Kister analysis). (Fig. 8, 9)",
+          "prediction_value": "Hydrogen embrittlement in Fe-26Mn-11Al-1.2C involves grain boundary triple junction cracking and microvoid chain formation along grain boundaries linked to planar slip localization induced by kappa-carbides.",
+          "error_type": "correct",
+          "matched": true,
+          "method": "llm_field_judge",
+          "truth_normalized": "hydrogen embrittlement study on fe-26mn-11al-1.2c: tensile ductility drastically reduced under hydrogen charging; two damage mechanisms identified: grain boundary triple junction cracking and void chains along grain boundaries due to planar slip localization. thermal desorption analysis indicates κ-carbides act as hydrogen trap sites with activation energy ~76-80 kj/mol (redlich-kister analysis). (fig. 8, 9)",
+          "prediction_normalized": "hydrogen embrittlement in fe-26mn-11al-1.2c involves grain boundary triple junction cracking and microvoid chain formation along grain boundaries linked to planar slip localization induced by kappa-carbides.",
+          "reason": "LLM judged same-field values as semantically matched.",
+          "score": 1.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "unmapped_findings:5:unmapped_findings_idx_5_value"
+        },
+        {
+          "key": "unmapped_findings.idx_6.value",
+          "truth_path": "unmapped_findings.idx_6.value",
+          "prediction_path": "unmapped_findings.idx_6.value",
+          "canonical_object": "idx_6",
+          "field_path": "value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Strain hardening model (equations 1–29) for low-SFE TWIP steels successfully reproduces experimental stress–strain curves for Fe-22Mn-0.6C between 293K and 873K.",
+          "prediction_value": "Fig. 8 EBSD/ECCI data (inverse pole figure, KAM map, orientation-optimized ECCI) reveal slip localization and grain boundary damage in hydrogen-charged low-density steel, but pixel-level image details are not provided in the text pipeline.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "strain hardening model (equations 1-29) for low-sfe twip steels successfully reproduces experimental stress-strain curves for fe-22mn-0.6c between 293k and 873k.",
+          "prediction_normalized": "fig. 8 ebsd/ecci data (inverse pole figure, kam map, orientation-optimized ecci) reveal slip localization and grain boundary damage in hydrogen-charged low-density steel, but pixel-level image details are not provided in the text pipeline.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "unmapped_findings:6:unmapped_findings_idx_6_value"
+        }
+      ],
+      "match_method_summary": {
+        "llm_field_judge": {
+          "matched": 1,
+          "mismatched": 6
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,135 @@
+[
+  {
+    "paper_id": "A20",
+    "figure_id": "figure_001",
+    "image_paths": [
+      "images/ae433364ab1a671dfce072f5699d418dec7eb78ea1294a204cf6738f5d22a8a4.jpg"
+    ],
+    "image_count": 1,
+    "image_type": "property_mechanical",
+    "description": "This figure presents the variation in normalized elastic modulus (δE = E/E0, in %) of SPCC/SPCE low carbon steel sheets as a function of true strain, with true strain ranging from 0 to 0.3 on the x-axis, and relative elastic modulus ranging from 50% to 100% on the y-axis. Blue diamond markers represent experimental data measured using a precision extensometer, and a fitted quadratic curve is provided with the empirical formula E = E0*(351ε² - 160ε + 93.8). The elastic modulus decreases monotonically with increasing plastic strain: it retains 100% of its initial value at zero strain, drops to ~80% at 0.1 true strain, and stabilizes at ~75% when true strain exceeds 0.2, with a total reduction of over 20%. This result confirms that plastic deformation significantly reduces the elastic modulus of the tested steel, providing experimental support for the variable elastic modulus model applied in sheet metal springback FEM simulation.",
+    "confidence": 0.0
+  },
+  {
+    "paper_id": "A20",
+    "figure_id": "figure_002",
+    "image_paths": [
+      "images/fc9dea5c6499adb7be488f3575fd3589e4c0846a9814e375ae6a02a03806070c.jpg"
+    ],
+    "image_count": 1,
+    "image_type": "property_mechanical",
+    "description": "This figure compares experimental and simulated springback values of 1.2 mm thick SPCC/SPCE low carbon steel sheets in V-bending tests. The x-axis stands for bend angle before unloading in degree, ranging from 80° to 180° where smaller values correspond to larger bending deformation, and the y-axis stands for springback angle after unloading in degree. Three datasets are included: diamond markers for experimentally measured springback, square markers for finite element simulation results with constant elastic modulus (E), and triangle markers for simulation results using E varied with plastic deformation. All three curves show springback angle rises as pre-unloading bend angle decreases. The varied E simulation matches experimental results far better than constant E simulation, proving that considering plastic deformation induced elastic modulus reduction can significantly improve V-bending springback prediction accuracy for finite element analysis.",
+    "confidence": 0.0
+  },
+  {
+    "paper_id": "A20",
+    "figure_id": "figure_003",
+    "image_paths": [
+      "images/8f332a3b4e281d82998ea9ca88a3e46cd4a9cd366cb2d991df6ac1f77169d355.jpg"
+    ],
+    "image_count": 1,
+    "image_type": "chart_schematic",
+    "description": "This figure is a schematic model of dislocation pile-up at grain boundaries under applied shear stress τ. Subfigure (a) presents the state of dislocations piled up at the grain boundary under shear loading, while subfigure (b) illustrates the movement of piled-up dislocations away from the grain boundary as loading state changes. The model demonstrates that dislocations tend to pile up near grain boundaries during plastic deformation, leading to higher density of movable dislocations at grain boundary regions than grain interiors. This visual model supports the core conclusion that apparent elastic modulus varies from grain boundary to grain center after plastic deformation, which is the microscopic mechanism for elastic modulus reduction in pre-strained SPCC/SPCE low carbon steel sheets, and provides theoretical basis for subsequent nano-indentation tests measuring elastic modulus distribution across grains.",
+    "confidence": 0.0
+  },
+  {
+    "paper_id": "A20",
+    "figure_id": "figure_004",
+    "image_paths": [
+      "images/228c6f2543dcdd3adad637c308befc8417767653369f9ba5809fc5f288aa8e8e.jpg",
+      "images/886dcb16ab8fcfc64918a55633e283a16df3b1da4ea99058337cc24882e561fb.jpg"
+    ],
+    "image_count": 2,
+    "image_type": "property_mechanical",
+    "description": "This figure contains two subplots demonstrating mechanical properties of SPCC/SPCE low carbon steel samples with different processing treatments. Subplot (a) presents stress-strain curves measured by strain gauge, with x-axis as strain [%] and y-axis as stress [MPa], for 5 samples: A (as-received state), B (15% pre-strained), C (15% pre-strained followed by 373 K 90 h heat treatment), D (as-received with direct heat treatment), E (annealed state). Pre-strained samples B and C show higher flow stress than non-prestrained samples A and D, while annealed sample E has the highest initial slope of stress-strain curve. Subplot (b) shows the variation of elastic modulus (gradient of stress-strain curve) with strain, with x-axis as strain [%] and y-axis as elastic modulus [GPa]. All samples exhibit decreasing elastic modulus as strain increases, and pre-strained samples show more significant modulus reduction than unstrained counterparts. The figure confirms that plastic deformation reduces the apparent elastic modulus of the tested steel, which provides experimental support for improving spring-back FEM simulation accuracy by adopting strain-dependent elastic modulus.",
+    "confidence": 0.0
+  },
+  {
+    "paper_id": "A20",
+    "figure_id": "figure_005",
+    "image_paths": [
+      "images/2884d94d6b664bd2c0e1959ae8f82b61b7d22ee27153dc899709220fa953e6aa.jpg"
+    ],
+    "image_count": 1,
+    "image_type": "chart_schematic",
+    "description": "This figure presents the schematic set-up of the nano-indentation apparatus applied to test microscale elastic modulus of SPCC/SPCE low carbon steel samples with different pre-strain and heat treatment conditions in this study. The apparatus consists of a transducer equipped with an indenter tip, a 3D piezo actuator holding the test sample, a microscope, a signal adaptor, two separate control and data acquisition systems (one scanning probe microscopy (SPM) system and one transducer system), each connected to an independent video display monitor. This setup enables high-sensitivity nano-indentation measurements (100 nN force sensitivity, 0.2 nm displacement sensitivity) to characterize elastic modulus variations across grain interiors and grain boundaries, validating the mechanism that dislocation pile-up at grain boundaries reduces apparent elastic modulus after plastic deformation, to support more accurate sheet metal spring-back FEM simulation.",
+    "confidence": 0.0
+  },
+  {
+    "paper_id": "A20",
+    "figure_id": "figure_006",
+    "image_paths": [
+      "images/8a0f1d1358059fdf0410ea172b59aa46b62943d14f98cc353907b91fc7c339bf.jpg"
+    ],
+    "image_count": 1,
+    "image_type": "property_mechanical",
+    "description": "This figure presents a typical nanoindentation load (P) versus indentation depth (h) curve for mechanical property characterization, conducted on SPCC/SPCE low-carbon steel samples with different pre-strain and heat treatment conditions in the study of plastic deformation induced material property changes. It contains two curves: the loading curve, which shows non-linear increase of indentation load with indentation depth as the indentation test proceeds, and the unloading curve recorded after the load reaches the maximum value P_max. The initial slope of the unloading curve is defined as the contact stiffness S = dP/dh, which is used to calculate elastic modulus and hardness of the tested material via indentation contact theories. This curve provides fundamental experimental data for nanoindentation measurement, supports the conclusion that plastic deformation induced dislocation pile-up reduces the apparent elastic modulus of low-carbon steels, and lays experimental basis for improving the prediction accuracy of sheet metal stamping spring-back FEM simulation.",
+    "confidence": 0.0
+  },
+  {
+    "paper_id": "A20",
+    "figure_id": "figure_007",
+    "image_paths": [
+      "images/213fa157c9a326d643b8381ee454bc66878e708ffe15d51b4c29903a3dce306e.jpg"
+    ],
+    "image_count": 1,
+    "image_type": "microscopy_afm",
+    "description": "This figure displays an atomic force microscopy (AFM) image of the surface near a grain boundary of SPCC/SPCE low carbon steel samples, which are investigated for plastic deformation induced material property changes. The horizontal axis marks position in the range of 0 to 12 μm, covering both grain interior and grain boundary regions. Three parallel measurement lines are marked: Line #1 (triangle markers), Line #2 (diamond markers), Line #3 (square markers), each with evenly distributed test points for spherical-tip nanoindentation tests. These measurement points are set to acquire microscale elastic modulus data across the grain boundary, to verify that dislocation pile-up near grain boundaries after plastic deformation leads to lower local elastic modulus than grain interiors. This figure supports the core conclusion that position-dependent mechanical properties near grain boundaries contribute to the overall reduction of apparent elastic modulus after plastic deformation, which is critical for improving the accuracy of sheet metal springback FEM simulations.",
+    "confidence": 0.0
+  },
+  {
+    "paper_id": "A20",
+    "figure_id": "figure_008",
+    "image_paths": [
+      "images/aa4567e72130351e4bb0e3641e5b4af850c6122afb694497b2b89bb9eb912124.jpg"
+    ],
+    "image_count": 1,
+    "image_type": "property_mechanical",
+    "description": "This figure presents a load-displacement curve obtained from a nano-indentation test on SPCC/SPCE low carbon steel sheets. The x-axis represents penetration depth h in nanometers, ranging from 0 to 12 nm, while the y-axis represents indentation load P in micronewtons, ranging from 0 to 400 μN. The noisy red line is the experimental measured data, and the black line is the linear fitting result of the test data. The load increases approximately linearly with the increase of penetration depth, reaching ~380 μN at the maximum penetration depth of ~9.8 nm. The test uses a spherical indenter with nominal radius of 50 μm, and specimens were treated with CMP before test to eliminate the influence of surface roughness and grain boundary ditches. This curve is used to calculate the micro-scale elastic modulus of the material, supporting the conclusion that elastic modulus near grain boundaries is lower than that in grain interiors, and providing experimental evidence for the mechanism of elastic modulus reduction induced by plastic deformation.",
+    "confidence": 0.0
+  },
+  {
+    "paper_id": "A20",
+    "figure_id": "figure_009",
+    "image_paths": [
+      "images/1df163a88199e8e624b42b370f6eb3989a66e97b5273118b2adbcd55532b1d49.jpg"
+    ],
+    "image_count": 1,
+    "image_type": "property_mechanical",
+    "description": "This group of scatter plots presents elastic modulus (Er, unit: GPa) measured via nano-indentation tests on SPCC/SPCE low carbon steel sheets, as a function of test position (unit: μm) across grain boundaries. Three subplots correspond to three independent test lines traversing a grain boundary, with the grain boundary position marked by a black arrow in each subplot. The observed trend shows that elastic modulus values near the grain boundary are significantly lower than those in the grain interior regions on both sides of the boundary; modulus value levels in different grain interiors differ, which is attributed to different crystallographic orientations of adjacent grains. This figure confirms that reduced elastic modulus at grain boundaries, caused by dislocation pile-up after plastic deformation, is a microstructural origin of the overall reduced elastic modulus of deformed materials, supporting the use of strain-dependent elastic modulus to improve the accuracy of stamping spring-back FEM simulations.",
+    "confidence": 0.0
+  },
+  {
+    "paper_id": "A20",
+    "figure_id": "figure_010",
+    "image_paths": [
+      "images/4e41f79f8ac97357a3809347093e3f372ca41cf725eb4c065195cdfca743c04d.jpg"
+    ],
+    "image_count": 1,
+    "image_type": "chart_schematic",
+    "description": "This schematic illustrates the layout of position identification markers on the surface of SPCE low-carbon steel sheet, with all dimensions in μm. The two larger outer markers, labeled \"Marker for finding me\", are designed to locate the target indentation test region, while the two smaller inner markers labeled \"Marker for finding location\" are used to determine the precise position of the measurement point. The leftmost marker is positioned 1150 μm horizontally and 2660 μm vertically from the top-left corner of the SPCE sheet, with intervals between adjacent markers being 300 μm, 340 μm, and 300 μm sequentially. These markers are Vickers indentations fabricated before nanoindentation tests: after sample surface etching, the indentation markers are made near targeted grain boundaries, followed by CMP treatment for surface finishing. The marker layout ensures accurate repositioning of target grain boundary regions for subsequent micro-mechanical property testing, supporting research on plastic deformation induced material property changes.",
+    "confidence": 0.0
+  },
+  {
+    "paper_id": "A20",
+    "figure_id": "figure_011",
+    "image_paths": [
+      "images/d7c811959913787fd440d1c59cc337f119f4eb2b8ae414bc0bb32b405ccfebf5.jpg"
+    ],
+    "image_count": 1,
+    "image_type": "microscopy_optical",
+    "description": "This figure contains two correlated parts: the left part is an optical micrograph of the pre-CMP treatment measurement region on SPCC/SPCE low carbon steel, presenting clear grain boundary morphologies of the alloy's metallographic structure. The right part is a schematic diagram of the nanoindentation test point grid, with coordinate axes in unit of μm covering a 3 μm × 2 μm area, where each hollow circle denotes a measured point for micro-scale elastic modulus detection. This figure specifies the test region for subsequent nanoindentation characterization, which aims to distinguish mechanical property differences between grain interiors and grain boundaries. The related test results support the core conclusion that dislocation pile-up near grain boundaries after plastic deformation reduces the apparent elastic modulus, providing microscopic evidence for optimizing stamping spring-back FEM simulation accuracy.",
+    "confidence": 0.0
+  },
+  {
+    "paper_id": "A20",
+    "figure_id": "figure_012",
+    "image_paths": [
+      "images/8c332a80be8b2ae6c18aaa8ea8268513270a31cd30c0088fcc83c99b863989eb.jpg"
+    ],
+    "image_count": 1,
+    "image_type": "property_mechanical",
+    "description": "This figure contains three subplots corresponding to Y=0, Y=1 and Y=2 positions respectively, presenting the spatial distribution of Young's modulus (unit: GPa) of pre-deformed SPCC/SPCE low carbon steel near grain boundaries as a function of position X (unit: μm). Two spherical nanoindentation tips with radius R=50μm and R=200μm are used for the tests, marked with different symbols: pink squares and dark blue diamonds for R=50μm, yellow triangles for R=200μm. A consistent trend is observed across all subplots: the measured Young's modulus generally decreases as X increases from grain interior to grain boundary; measurements with the larger R=200μm tip, which samples a larger volume containing more grain boundary areas with dislocation pile-ups, yield 50-150 GPa lower modulus values than those from the smaller R=50μm tip. These results confirm that local Young's modulus reduction near grain boundaries induced by dislocation pile-up after plastic deformation is the micro-mechanism for the macroscopic elastic modulus decrease with plastic strain, providing experimental basis for improved spring-back FEM simulation accuracy.",
+    "confidence": 0.0
+  }
+]

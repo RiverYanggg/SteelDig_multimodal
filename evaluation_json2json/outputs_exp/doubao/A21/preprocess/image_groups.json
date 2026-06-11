@@ -1,0 +1,122 @@
+[
+  {
+    "image_paths": [
+      "images/9a0701e917797ff9a780d27deb353a3d55975ed8fcfddc06727df68059a82278.jpg"
+    ],
+    "caption": "",
+    "paper_abstract": "a Tianjin Key Laboratory of Materials Laminating Fabrication and Interface Control Technology, School of Materials Science and Engineering, Hebei University of Technology, Tianjin 300132, China b Xuzhou Jihua Metal Material Technology Co., Ltd., Xuzhou 221100, China c Institute of New Materials, Guangdong Academy of Science, Guangzhou 510651, China",
+    "paper_title": "Deciphering the composition-microstructure correlation in low-density FeMnAlC steels with machine learning",
+    "citation_sentences": []
+  },
+  {
+    "image_paths": [
+      "images/b743283140748566d9047649f8a526382a56dd9b4ef3a1a3c7ee137faebd9eca.jpg"
+    ],
+    "caption": "Fig. 1. Framework of the design process of the low-density Fe–Mn–Al–C austenitic steels by machine learning.",
+    "paper_abstract": "a Tianjin Key Laboratory of Materials Laminating Fabrication and Interface Control Technology, School of Materials Science and Engineering, Hebei University of Technology, Tianjin 300132, China b Xuzhou Jihua Metal Material Technology Co., Ltd., Xuzhou 221100, China c Institute of New Materials, Guangdong Academy of Science, Guangzhou 510651, China",
+    "paper_title": "Deciphering the composition-microstructure correlation in low-density FeMnAlC steels with machine learning",
+    "citation_sentences": [
+      "We propose a novel machine learning-based design strategy aimed at expediting the development of low-density Fe-Mn-Al-C austenitic steels. Fig. 1 illustrates the framework the design process, focused on establishing the correlation between the composition of low-density steel and its microstructure characteristics."
+    ]
+  },
+  {
+    "image_paths": [
+      "images/84e4730c7a737188435d776f83f834fa8dfc94eb84222a544650212c87098abd.jpg"
+    ],
+    "caption": "Fig. 2. Feature selection to identify the most important features from the feature pool. The heatmap of Pearson correlation coefficient matrix between the original 10 descriptors. A larger circle with deeper color indicates a high level of correlation.",
+    "paper_abstract": "a Tianjin Key Laboratory of Materials Laminating Fabrication and Interface Control Technology, School of Materials Science and Engineering, Hebei University of Technology, Tianjin 300132, China b Xuzhou Jihua Metal Material Technology Co., Ltd., Xuzhou 221100, China c Institute of New Materials, Guangdong Academy of Science, Guangzhou 510651, China",
+    "paper_title": "Deciphering the composition-microstructure correlation in low-density FeMnAlC steels with machine learning",
+    "citation_sentences": [
+      "To increase the robustness of the model, highly correlated descriptors were reduced by eliminating redundant features utilizing the Pearson correlation coefficient filter [39]. In order to avoid redundancy when modeling, only one highly correlated feature was retained while the others were removed. The Pearson correlation coefficient map between diverse features is plotted in the lower left corner of Fig. 2. Highly correlated features were defined as those with a correlation coefficient greater than 0.95 and removed accordingly, thus, Δχ and δ were eliminated from the model. The Pearson correlation coefficient (PCC) formula for describing the correlations between features is:"
+    ]
+  },
+  {
+    "image_paths": [
+      "images/8f8599539d1bb8aa5079eecb54d28b3d9eb9151e63df7981f391459074299d0b.jpg",
+      "images/644b5035ae7a7355ffca10b65d95b106b8cb57e5fadd9aa239f9e775778181d9.jpg",
+      "images/62dad0112d3d88a63d946f525a6efd43c37a20753857c3326d4b3c5f8937b4ec.jpg",
+      "images/4562da76fbc713e748748998de14643baea818049fedf542c2236426fc0154e5.jpg"
+    ],
+    "caption": "Fig. 3. Algorithm determination and the relative importance of 8 descriptors for the classifications. (a) The comparison between different machine learning methods. (b) the relative importance of 8 descriptors for a single γ region. (c) the relative importance of 8 descriptors for a $( \\gamma + \\kappa )$ region in 500– $6 0 0 ~ ^ { \\circ } \\mathrm { C } .$ (d) the relative importance of 8 descriptors for the existence of the κ-phase.",
+    "paper_abstract": "a Tianjin Key Laboratory of Materials Laminating Fabrication and Interface Control Technology, School of Materials Science and Engineering, Hebei University of Technology, Tianjin 300132, China b Xuzhou Jihua Metal Material Technology Co., Ltd., Xuzhou 221100, China c Institute of New Materials, Guangdong Academy of Science, Guangzhou 510651, China",
+    "paper_title": "Deciphering the composition-microstructure correlation in low-density FeMnAlC steels with machine learning",
+    "citation_sentences": [
+      "In this study, five algorithms (KNN, ANN, SVM, RF, and CART) were used for training data via 10-fold cross-validation. Fig. 3 compares the performance of these algorithms in terms of the 10-fold cross-validation accuracy and the relative importance of the 8 descriptors used in the classifications. For the training dataset, KNN, ANN, RF, and CART all performed well in the classification task, with high cross-validation accuracy (CVA) values, ranging from above 0.9 to less than 1. Among these algorithms, RF achieved the best performance, with CVA values of 0.98 (Y ), 0.98 (Y ), and 0.96 (Y ). Although ANN showed satisfactory performance on the partial classification (Y2), it performed poorly in the remaining classifications. Therefore, RF was chosen as the most appropriate algorithm for the classification prediction in this study.",
+      "remaining descriptor set. The evaluation results were displayed in Fig. 3b-d. The graph indicated that Al played the most significant role in the partial classification problems (a single γ region and κ exists) since accuracy decreased the most when Al was removed from the set. This view has been confirmed by earlier studies. Al is a BCC phase stable element, and an increase in the FCC lattice parameters has a significant negative impact on the stability of single-phase austenite [7]. Additionally, Fig. 3c demonstrates that Mn and Fe are the most important in the $( \\gamma +$ κ) region in $5 0 0 { - } 6 0 0 \\ { ^ { \\circ } } \\mathrm { C }$ classification studies, and C still shows the least effect on the model. This result depends on the complex relationship between different Mn levels and phase transitions. Mn can stabilize the γ phase while increasing the FCC lattice parameter[7,9], avoiding the production of additional ferrite as a result of the addition of Al, and β-Mn phase promotion is also possible in the FeMnAlC system [13], which would affect the mechanical properties of low-density steel. The γ→ε→αʹ and the γ→ε are separately favored for Mn contents ranging between (5–12 %) Mn and (15–30 %) Mn [14,15]. It is thus established that Mn plays a crucial role in the phase stability of steel. Similarly, Fig. 3d shows that Al has a strong influence on the presence of the κ phase, which is in alignment with earlier findings. Originally, the diffusion and enrichment of C elements were the primary causes of the formation of the κ phase, but the Al element can reduce the diffusivity of the C element while higher Al element and C element synergistically stabilize the κ phase[7]. The results of the significance analysis revealed that C had no significant impact on the presence of the κ phase. This study (Fig. 6) identified a strong correlation between the presence of the κ phase and the Al element. For instance, when the Mn content is 30 wt $^ { \\% , }$ the Al content only needs to surpass the lower limit (approximately 5 wt%) to initiate precipitation of the κ phase in the system. At temperatures ranging from 500 to $6 0 0 ^ { \\circ } \\mathrm { C } ,$ , while the C content has an impact on the formation of the $\\gamma + \\kappa$ duplex region, it is closely intertwined with the role of Al. Thus, even though C plays a significant role in the composition of the κ phase in this study, the precipitation of the κ phase is primarily governed by Al. It should be noted that this assessment result variation was negligible, even after changing the sampling. The final sequence of these descriptors was inputted into the model in descending order of mean decrease accuracy values."
+    ]
+  },
+  {
+    "image_paths": [
+      "images/e82bbf663f8a0495038f8386ee9484700d4a139bb3b23c07f84b7314d6ff01f0.jpg",
+      "images/a85b009100babdc3e100ca1e309e5340c6ed6a74c201eb7c669cf2b0b3341e14.jpg",
+      "images/40c3bc2f2f424c42b5480fb031641113b748bc8d89cb5f43b9a84e9d45d8788e.jpg"
+    ],
+    "caption": "Fig. 4. (a) The comparison between different machine learning methods in the high κ-phase fraction. (b) The relative importance of 8 descriptors for the high κ-phase fraction. (c) The predicted κ-phase fraction by ML model for 10-fold cross-validation.",
+    "paper_abstract": "a Tianjin Key Laboratory of Materials Laminating Fabrication and Interface Control Technology, School of Materials Science and Engineering, Hebei University of Technology, Tianjin 300132, China b Xuzhou Jihua Metal Material Technology Co., Ltd., Xuzhou 221100, China c Institute of New Materials, Guangdong Academy of Science, Guangzhou 510651, China",
+    "paper_title": "Deciphering the composition-microstructure correlation in low-density FeMnAlC steels with machine learning",
+    "citation_sentences": [
+      "The dataset is trained with five regression algorithms (KAA, ANN, SVM, RF, and GART), following a methodology akin to that used for classification problems, and undergoes 10-fold cross-validation. Fig. 4 compares the five algorithms in terms of the 10-fold cross-validation accuracy and the relative importance of eight descriptors for the regression. SVM displayed robust performance in the regression task for the training dataset, with low cross-validation RMSE values of less than 1 %. The final sequencing of descriptors for inputting into the model for the regression problem was in the following order: $\\Delta S _ { \\mathrm { m i x } } , \\mathrm { F e } , \\Delta \\mathrm { H } _ { \\mathrm { m i x } } , \\mathrm { C } ,$ Mn, T , VEC, and Al."
+    ]
+  },
+  {
+    "image_paths": [
+      "images/d72a3c597ac217bc17e8161721b742d1a565efb52c1fec3b6698c23d26db9e30.jpg"
+    ],
+    "caption": "Fig. 5. Scheme of the optimization process of the Fe-Mn-Al-C austenitic lowdensity steels. The screening process is mainly divided into two steps, the first step is the phase component screening and the second step is the screening of other features (high κ-phase content $\\mathrm { ( Y _ { 4 } ) }$ and low density $( \\mathrm { Y } _ { 5 } ) .$ . Finally, 150 candidates are left for the search space.",
+    "paper_abstract": "a Tianjin Key Laboratory of Materials Laminating Fabrication and Interface Control Technology, School of Materials Science and Engineering, Hebei University of Technology, Tianjin 300132, China b Xuzhou Jihua Metal Material Technology Co., Ltd., Xuzhou 221100, China c Institute of New Materials, Guangdong Academy of Science, Guangzhou 510651, China",
+    "paper_title": "Deciphering the composition-microstructure correlation in low-density FeMnAlC steels with machine learning",
+    "citation_sentences": []
+  },
+  {
+    "image_paths": [
+      "images/0db319201c5037d20cdd3df05780a264b26dd94d5631ba6f3e1d1c4ab15410ec.jpg",
+      "images/a13b5aba2a9b4fbac15577aa1129d84b8dacb67dfdb19dd5e8aeeb926b3ccee5.jpg",
+      "images/24ed99f215addb6bf11c79d51929848c98281cbb7cfa7fd76b2799f59ac50d15.jpg",
+      "images/e4985f59f6587d45cceeef78477e2dc63fcef22ebe2523916a134c2122e221cd.jpg",
+      "images/acfa3a7dccc1a5b2d3107b0acd784edc4904864d31e63bf2bd279e0f94f7ea94.jpg"
+    ],
+    "caption": "Fig. 6. Process parameters and structural optimization process of FeMnAlC austenitic low-density steel in the 30 % Mn search space. (The first step in screening). (a) The existence of the κ phase (Y1). (b) $\\mathsf { a } \\gamma + \\kappa$ dual-phase region at 500– $6 0 0 \\ ^ { \\circ } \\mathrm { C } \\ \\left( \\mathrm { Y } _ { 2 } \\right)$ . (c) a single γ phase region (Y3). (d) the component space in which ${ \\bf Y } _ { 1 }$ and ${ \\mathrm { Y } } _ { 3 }$ are screened together. (e) the component space in which $\\mathrm { Y } _ { 1 } , \\mathrm { Y } _ { 2 }$ and ${ \\mathrm { Y } } _ { 3 }$ are screened together. (The overall data is relatively large, and the two-dimensional search space of 30 % Mn is specially used for display.).",
+    "paper_abstract": "a Tianjin Key Laboratory of Materials Laminating Fabrication and Interface Control Technology, School of Materials Science and Engineering, Hebei University of Technology, Tianjin 300132, China b Xuzhou Jihua Metal Material Technology Co., Ltd., Xuzhou 221100, China c Institute of New Materials, Guangdong Academy of Science, Guangzhou 510651, China",
+    "paper_title": "Deciphering the composition-microstructure correlation in low-density FeMnAlC steels with machine learning",
+    "citation_sentences": [
+      "remaining descriptor set. The evaluation results were displayed in Fig. 3b-d. The graph indicated that Al played the most significant role in the partial classification problems (a single γ region and κ exists) since accuracy decreased the most when Al was removed from the set. This view has been confirmed by earlier studies. Al is a BCC phase stable element, and an increase in the FCC lattice parameters has a significant negative impact on the stability of single-phase austenite [7]. Additionally, Fig. 3c demonstrates that Mn and Fe are the most important in the $( \\gamma +$ κ) region in $5 0 0 { - } 6 0 0 \\ { ^ { \\circ } } \\mathrm { C }$ classification studies, and C still shows the least effect on the model. This result depends on the complex relationship between different Mn levels and phase transitions. Mn can stabilize the γ phase while increasing the FCC lattice parameter[7,9], avoiding the production of additional ferrite as a result of the addition of Al, and β-Mn phase promotion is also possible in the FeMnAlC system [13], which would affect the mechanical properties of low-density steel. The γ→ε→αʹ and the γ→ε are separately favored for Mn contents ranging between (5–12 %) Mn and (15–30 %) Mn [14,15]. It is thus established that Mn plays a crucial role in the phase stability of steel. Similarly, Fig. 3d shows that Al has a strong influence on the presence of the κ phase, which is in alignment with earlier findings. Originally, the diffusion and enrichment of C elements were the primary causes of the formation of the κ phase, but the Al element can reduce the diffusivity of the C element while higher Al element and C element synergistically stabilize the κ phase[7]. The results of the significance analysis revealed that C had no significant impact on the presence of the κ phase. This study (Fig. 6) identified a strong correlation between the presence of the κ phase and the Al element. For instance, when the Mn content is 30 wt $^ { \\% , }$ the Al content only needs to surpass the lower limit (approximately 5 wt%) to initiate precipitation of the κ phase in the system. At temperatures ranging from 500 to $6 0 0 ^ { \\circ } \\mathrm { C } ,$ , while the C content has an impact on the formation of the $\\gamma + \\kappa$ duplex region, it is closely intertwined with the role of Al. Thus, even though C plays a significant role in the composition of the κ phase in this study, the precipitation of the κ phase is primarily governed by Al. It should be noted that this assessment result variation was negligible, even after changing the sampling. The final sequence of these descriptors was inputted into the model in descending order of mean decrease accuracy values.",
+      "To offer a better understanding of the FeMnAlC system’s composition and microstructure relationship of low-density steels and the optimization process, Fig. 6d-e was created. The intersection of $\\mathrm { Y } _ { 1 }$ and $\\mathrm { Y } _ { 3 }$ is represented by the red area in Fig. 6d, and the intersection of $\\mathrm { Y } _ { 1 } , \\mathrm { Y } _ { 2 } ,$ and $\\mathrm { Y } _ { 3 }$ is depicted in the red region of Fig. 6e. Candidates in the red zone meet multiple requirements $\\left( \\mathrm { Y } _ { 1 } , \\mathrm { Y } _ { 2 } , \\right.$ and $\\mathrm { Y } _ { 3 } )$ , indicating that they are potentially optimal for the system."
+    ]
+  },
+  {
+    "image_paths": [
+      "images/2fe523db0f552b1d7ceb2b46a8e7351d5e4f719df46d438262038e636114eb15.jpg"
+    ],
+    "caption": "Fig. 7. Performance screening based on process parameters and structure screening. (The second step of screening). (a) The volume fraction of κ (Y4). (b) Composition optimization process (c) The density of steels $\\left( \\Upsilon _ { 5 } \\right)$ .",
+    "paper_abstract": "a Tianjin Key Laboratory of Materials Laminating Fabrication and Interface Control Technology, School of Materials Science and Engineering, Hebei University of Technology, Tianjin 300132, China b Xuzhou Jihua Metal Material Technology Co., Ltd., Xuzhou 221100, China c Institute of New Materials, Guangdong Academy of Science, Guangzhou 510651, China",
+    "paper_title": "Deciphering the composition-microstructure correlation in low-density FeMnAlC steels with machine learning",
+    "citation_sentences": [
+      "The second step in the optimization process of the study is demonstrated in Fig. 7a-c, with the search space based on the first step optimization process. Fig. 7a illustrates the correlation between the κ phase fraction (Y ) and the composition of the FeMnAlC system, while Fig. 7c presents the scatter plot between density $\\left( \\Upsilon _ { 5 } \\right)$ and FeMnAlC composition. The correlogram’s legend on the right side shows the κ fraction/density and the corresponding color intensity. Increasing the volume fraction range of the κ phase often improves the system’s strength. To further perfect the system composition, 30 potential candidates were identified by imposing additional constraints on the original screening criteria (i.e., κ fraction ≥ 10 % and density $\\leq 7 \\ { \\mathrm { g } } / { \\mathrm { c m } } ^ { 3 } ) .$ , with a minimum volume fraction of κ phase of 11 % and maximum system density of 6.9 g/cm3 . The screening protocol is delineated in Fig. 7b. In order to validate the precision of the calculated outcomes, (Fe-30Mn-8Al-1C) was chosen for experimental corroboration."
+    ]
+  },
+  {
+    "image_paths": [
+      "images/2706c94665d09ef6d40022234698e0eab26bf7d7077d8d15e3c010413eb1e15b.jpg",
+      "images/90a3fa7c90382aa3188197b7b133186f4fbf362ed050a8b13026b01a240264e5.jpg",
+      "images/01844d571842b06948b017140c1b20698f9b4b328c1b6fe157c8e814ef96872d.jpg",
+      "images/f6d2471fad1f601e89963862d61a37b791a1c0ca11b367c1143481bd15c93a6f.jpg",
+      "images/4ecfb132352684679f7f0d956357cb5ec41b2cdf0c1d750129e7f3b7ddd68908.jpg",
+      "images/2561257f325feb832c8d63266ef0bcfdf041e1adb2d691d3d992b020557a59fa.jpg"
+    ],
+    "caption": "Fig. 8. Experimental results of the Fe-30Mn-8Al-1C austenitic low-density steel. (a) XRD profile. (b) Inverse pole figure (IPF) map. (c) EBSD phase map. (d) Bright field (BF) TEM micrograph. (e) Dark field (DF) TEM micrograph. (f) Selected area electron diffraction (SAED).",
+    "paper_abstract": "a Tianjin Key Laboratory of Materials Laminating Fabrication and Interface Control Technology, School of Materials Science and Engineering, Hebei University of Technology, Tianjin 300132, China b Xuzhou Jihua Metal Material Technology Co., Ltd., Xuzhou 221100, China c Institute of New Materials, Guangdong Academy of Science, Guangzhou 510651, China",
+    "paper_title": "Deciphering the composition-microstructure correlation in low-density FeMnAlC steels with machine learning",
+    "citation_sentences": [
+      "The measured chemical composition of the alloy is as follows (wt.%): Mn 30.4 %, Al 7.9 %, C 1.1 %, Fe (balance). Fig. 8 displays the microstructure and structural characteristics of Fe-30Mn-8Al-1C single-phase austenitic low-density steel. Fig. 8a reveals only FCC single-phase peaks in the XRD profile of the samples. Fig. 8b and Fig. 8c display EBSD inverse pole figure (IPF) maps and phase maps (PM), respectively. The microstructure of the low-density steel is recrystallized, with an average grain size of 17 μm and a single FCC phase. TEM analysis confirms the generation of κ phase precipitates, as depicted in Fig. 8d-e. The presence of nanoscale κ phases that have precipitated under aging conditions of 550 ◦C is confirmed by the bright field (BF) and dark field (DF) TEM micrographs. The κ phases were further verified through selected-area diffraction pattern analysis. Prior studies [40] have shown that while the cooling rate may not significantly affect the microstructure’s grain size, it can have a significant effect on the nanoscale microstructure. Cooling rate effects on the formation of the κ phase are similar to that of aging, with slower cooling rates resulting in a higher frequency and even distribution of the nanoscale κ phase. As this experiment employed water cooling, the generation of κ phase is confirmed to occur at 550 ◦C during aging, which is further confirmed as the (γ + κ) dual-phase at 500–600 ◦C. The presence of high-density κ carbide contributed significantly to the strengthening through precipitation, thus attributing the exceptional strength of high-Mn austenitic low-density steels to the presence of nano-sized intragranular κ-carbide."
+    ]
+  },
+  {
+    "image_paths": [
+      "images/0e00e0690a611e342c6a1ecd4eaf34782db5f78a5d7d1b6284a287ff26dfda9c.jpg"
+    ],
+    "caption": "Fig. 9. (a) Element distribution maps of element distribution with secondary electron map and backscattered electron map. (b) Engineering stress–strain curves. (c) Optical micrographs.",
+    "paper_abstract": "a Tianjin Key Laboratory of Materials Laminating Fabrication and Interface Control Technology, School of Materials Science and Engineering, Hebei University of Technology, Tianjin 300132, China b Xuzhou Jihua Metal Material Technology Co., Ltd., Xuzhou 221100, China c Institute of New Materials, Guangdong Academy of Science, Guangzhou 510651, China",
+    "paper_title": "Deciphering the composition-microstructure correlation in low-density FeMnAlC steels with machine learning",
+    "citation_sentences": []
+  }
+]

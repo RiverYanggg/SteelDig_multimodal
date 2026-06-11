@@ -1,0 +1,968 @@
+{
+  "papers": [
+    {
+      "paper_id": "A61",
+      "doi": null,
+      "title": "Fatigue properties of Fe-30.5Mn-8Al-1C austenitic low-density steel: Critical impact of κ-carbide precipitation state",
+      "authors": [
+        "J.H. Du",
+        "P. Chen",
+        "Z.P. Jia",
+        "X.W. Li"
+      ],
+      "publication_year": null,
+      "journal": null,
+      "keywords": [
+        "Fe-Mn-Al-C austenitic low-density steel",
+        "κ-carbide",
+        "Precipitation state",
+        "Fatigue property",
+        "Micromechanism"
+      ],
+      "research_type": "experimental",
+      "paper_scope": "Systematic investigation of tension-tension fatigue behavior and deformation mechanisms of solution-treated and aging-treated Fe-30.5Mn-8Al-1C austenitic low-density steel, focusing on the critical role of intragranular and intergranular κ-carbide precipitation states in controlling fatigue life, cyclic response, and damage mechanisms."
+    }
+  ],
+  "alloys": [
+    {
+      "alloy_id": "alloy_fe30_5mn8al1c",
+      "paper_id": "A61",
+      "alloy_name": "Fe-30.5Mn-8Al-1C",
+      "aliases": [],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Al",
+        "C"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Fe",
+          "weight_percent": "balance",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "30.5",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "8",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "1",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": null
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_fe30_5mn8al1c_st",
+      "paper_id": "A61",
+      "alloy_id": "alloy_fe30_5mn8al1c",
+      "description": "Solution treatment at 1050 °C for 1 h followed by water quenching to room temperature; starting from a hot-rolled 4 mm sheet.",
+      "processes_notes": "The as-cast 50 kg ingot was forged into a 30 mm × 30 mm billet and then hot-rolled to 4 mm thickness prior to solution treatment."
+    },
+    {
+      "process_id": "proc_fe30_5mn8al1c_550_6",
+      "paper_id": "A61",
+      "alloy_id": "alloy_fe30_5mn8al1c",
+      "description": "Aging at 550 °C for 6 h after solution treatment; produces high-density nanoscale intragranular κ-carbides (~11 nm) with rectangular morphology uniformly precipitated within austenite grains.",
+      "processes_notes": "Selected ST samples were further aged to tailor κ-carbide precipitation state."
+    },
+    {
+      "process_id": "proc_fe30_5mn8al1c_600_6",
+      "paper_id": "A61",
+      "alloy_id": "alloy_fe30_5mn8al1c",
+      "description": "Aging at 600 °C for 6 h after solution treatment; produces coarsened intragranular κ-carbides (~18 nm) forming rectangular parallelepiped arrays along orthogonal <100> directions, with concurrent intergranular κ-carbide precipitation.",
+      "processes_notes": null
+    },
+    {
+      "process_id": "proc_fe30_5mn8al1c_650_6",
+      "paper_id": "A61",
+      "alloy_id": "alloy_fe30_5mn8al1c",
+      "description": "Aging at 650 °C for 6 h after solution treatment; leads to further coarsening of intragranular κ-carbides (~24 nm) and more pronounced intergranular κ-carbide precipitation.",
+      "processes_notes": null
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_st",
+      "paper_id": "A61",
+      "alloy_id": "alloy_fe30_5mn8al1c",
+      "process_id": "proc_fe30_5mn8al1c_st"
+    },
+    {
+      "sample_id": "sample_550_6",
+      "paper_id": "A61",
+      "alloy_id": "alloy_fe30_5mn8al1c",
+      "process_id": "proc_fe30_5mn8al1c_550_6"
+    },
+    {
+      "sample_id": "sample_600_6",
+      "paper_id": "A61",
+      "alloy_id": "alloy_fe30_5mn8al1c",
+      "process_id": "proc_fe30_5mn8al1c_600_6"
+    },
+    {
+      "sample_id": "sample_650_6",
+      "paper_id": "A61",
+      "alloy_id": "alloy_fe30_5mn8al1c",
+      "process_id": "proc_fe30_5mn8al1c_650_6"
+    }
+  ],
+  "processing_steps": [
+    {
+      "sample_id": "sample_st",
+      "paper_id": "A61",
+      "sequence": "1",
+      "type": "thermomechanical_processing",
+      "method": "forging and hot rolling",
+      "temperature": null,
+      "unit": null,
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Forged into 30 mm × 30 mm billet then hot-rolled to 4 mm final thickness."
+    },
+    {
+      "sample_id": "sample_st",
+      "paper_id": "A61",
+      "sequence": "2",
+      "type": "heat_treatment",
+      "method": "solution treatment",
+      "temperature": "1050",
+      "unit": "°C",
+      "duration": "1 h",
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Water quenching to room temperature; condition designated as ST."
+    },
+    {
+      "sample_id": "sample_550_6",
+      "paper_id": "A61",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "solution treatment",
+      "temperature": "1050",
+      "unit": "°C",
+      "duration": "1 h",
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Shared initial step with ST condition."
+    },
+    {
+      "sample_id": "sample_550_6",
+      "paper_id": "A61",
+      "sequence": "2",
+      "type": "heat_treatment",
+      "method": "aging",
+      "temperature": "550",
+      "unit": "°C",
+      "duration": "6 h",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Designated as 550-6."
+    },
+    {
+      "sample_id": "sample_600_6",
+      "paper_id": "A61",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "solution treatment",
+      "temperature": "1050",
+      "unit": "°C",
+      "duration": "1 h",
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Shared initial step with ST condition."
+    },
+    {
+      "sample_id": "sample_600_6",
+      "paper_id": "A61",
+      "sequence": "2",
+      "type": "heat_treatment",
+      "method": "aging",
+      "temperature": "600",
+      "unit": "°C",
+      "duration": "6 h",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Designated as 600-6."
+    },
+    {
+      "sample_id": "sample_650_6",
+      "paper_id": "A61",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "solution treatment",
+      "temperature": "1050",
+      "unit": "°C",
+      "duration": "1 h",
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Shared initial step with ST condition."
+    },
+    {
+      "sample_id": "sample_650_6",
+      "paper_id": "A61",
+      "sequence": "2",
+      "type": "heat_treatment",
+      "method": "aging",
+      "temperature": "650",
+      "unit": "°C",
+      "duration": "6 h",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Designated as 650-6."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_st",
+      "sample_id": "sample_st",
+      "overall_structure": "Fully austenitic microstructure",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "a61_uuid_st_matrix",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "γ-austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_550_6",
+      "sample_id": "sample_550_6",
+      "overall_structure": "Austenitic matrix with uniform nanoscale intragranular κ-carbide precipitation",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "a61_uuid_550_matrix",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "γ-austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "kapa_550_intra",
+              "type": "intragranular κ-carbide",
+              "size": {
+                "value": "~11",
+                "unit": "nm"
+              },
+              "distribution": "uniformly precipitated within austenite grains",
+              "coherency": "coherent ordered L12 structure"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_600_6",
+      "sample_id": "sample_600_6",
+      "overall_structure": "Austenitic matrix with intragranular κ-carbide arrays and intergranular κ-carbide precipitation",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "a61_uuid_600_matrix",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "γ-austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "kapa_600_intra",
+              "type": "intragranular κ-carbide",
+              "size": {
+                "value": "~18",
+                "unit": "nm"
+              },
+              "distribution": "rectangular parallelepipeds forming well-defined arrays aligned along orthogonal <100> matrix directions",
+              "coherency": "coherent"
+            },
+            {
+              "precipitate_id": "kapa_600_inter",
+              "type": "intergranular κ-carbide",
+              "size": {
+                "value": "coarse",
+                "unit": null
+              },
+              "distribution": "observable at grain boundaries",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_650_6",
+      "sample_id": "sample_650_6",
+      "overall_structure": "Austenitic matrix with coarsened intragranular and pronounced intergranular κ-carbide precipitation",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "a61_uuid_650_matrix",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "γ-austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "kapa_650_intra",
+              "type": "intragranular κ-carbide",
+              "size": {
+                "value": "~24",
+                "unit": "nm"
+              },
+              "distribution": "coarsened intragranular precipitates",
+              "coherency": "coherent"
+            },
+            {
+              "precipitate_id": "kapa_650_inter",
+              "type": "intergranular κ-carbide",
+              "size": {
+                "value": "coarse",
+                "unit": null
+              },
+              "distribution": "pronounced precipitation at grain boundaries disrupting grain boundary continuity",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "if_set_550",
+      "sample_id": "sample_550_6",
+      "phases": [
+        {
+          "interface_id": "if_550_01",
+          "microstructure_uuid": "a61_uuid_550_matrix",
+          "phase_1_name": "γ-austenite",
+          "phase_2_name": "κ-carbide",
+          "coherence": "coherent"
+        }
+      ],
+      "defect_interaction": [
+        {
+          "interaction_id": "di_550_01",
+          "microstructure_uuid": "a61_uuid_550_matrix",
+          "interaction_type": "dislocation shearing of intragranular κ-carbides",
+          "quality_description": "Moving dislocations shear coherent precipitates creating anti-phase boundaries; repeated shearing causes mechanical dissolution during cyclic loading"
+        }
+      ],
+      "interface_notes": [],
+      "phase_evolution": null
+    },
+    {
+      "interface_set_id": "if_set_600",
+      "sample_id": "sample_600_6",
+      "phases": [
+        {
+          "interface_id": "if_600_01",
+          "microstructure_uuid": "a61_uuid_600_matrix",
+          "phase_1_name": "γ-austenite",
+          "phase_2_name": "κ-carbide",
+          "coherence": "coherent"
+        }
+      ],
+      "defect_interaction": [
+        {
+          "interaction_id": "di_600_01",
+          "microstructure_uuid": "a61_uuid_600_matrix",
+          "interaction_type": "dislocation shearing of intragranular κ-carbides",
+          "quality_description": "Intragranular κ-carbides impede dislocation movement and redistribute local crack-tip stress field, promoting activation of multiple slip systems"
+        }
+      ],
+      "interface_notes": [],
+      "phase_evolution": null
+    },
+    {
+      "interface_set_id": "if_set_650",
+      "sample_id": "sample_650_6",
+      "phases": [
+        {
+          "interface_id": "if_650_01",
+          "microstructure_uuid": "a61_uuid_650_matrix",
+          "phase_1_name": "γ-austenite",
+          "phase_2_name": "κ-carbide",
+          "coherence": "coherent"
+        },
+        {
+          "interface_id": "if_650_02",
+          "microstructure_uuid": "a61_uuid_650_matrix",
+          "phase_1_name": "γ-austenite grain boundary",
+          "phase_2_name": "intergranular κ-carbide",
+          "coherence": null
+        }
+      ],
+      "defect_interaction": [
+        {
+          "interaction_id": "di_650_01",
+          "microstructure_uuid": "a61_uuid_650_matrix",
+          "interaction_type": "dislocation pile-up at intergranular κ-carbides",
+          "quality_description": "Coarse intergranular κ-carbides act as strong slip barriers, intensifying dislocation pile-ups, elevating local stress concentration, and promoting earlier crack nucleation"
+        }
+      ],
+      "interface_notes": [],
+      "phase_evolution": "Severe intergranular precipitation undermines beneficial intragranular strengthening effect and degrades grain boundary integrity"
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_st",
+      "sample_id": "sample_st",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "rolling direction",
+              "value": "337",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "±32"
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "rolling direction",
+              "value": "784",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "±15"
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "rolling direction",
+              "value": "72.0",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Fig. 4",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": "157.5 MPa (at 10^7 cycles)",
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_550_6",
+      "sample_id": "sample_550_6",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "rolling direction",
+              "value": "829",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "±17"
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "rolling direction",
+              "value": "1045",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "±8"
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "rolling direction",
+              "value": "57.7",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Fig. 4",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": "162 MPa (at 10^7 cycles)",
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_600_6",
+      "sample_id": "sample_600_6",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "rolling direction",
+              "value": "776",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "±19"
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "rolling direction",
+              "value": "1104",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "±17"
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "rolling direction",
+              "value": "58.4",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Fig. 4",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": "175.5 MPa (at 10^7 cycles)",
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_650_6",
+      "sample_id": "sample_650_6",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "rolling direction",
+              "value": "579",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "±14"
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "rolling direction",
+              "value": "978",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "±4"
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "rolling direction",
+              "value": "52.7",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Fig. 4",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": "171 MPa (at 10^7 cycles)",
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_600_6",
+      "sample_id": "sample_600_6",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": "stress-controlled tension-tension cyclic loading, sinusoidal waveform, 20 Hz, stress ratio R = 0.1, ambient air",
+        "environment": "ambient air"
+      },
+      "lifetime_prediction": {
+        "model_used": "Basquin equation: Δσ/2 = σ'f (2Nf)^b fitted to finite-life fatigue data",
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy": "Fe-30.5Mn-8Al-1C",
+        "benchmark_process_id": "proc_fe30_5mn8al1c_st",
+        "benchmark_sample_id": "sample_st",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_ebsd_st",
+      "sample_id": "sample_st",
+      "microstructure_uuid": "a61_uuid_st_matrix",
+      "technique": "EBSD on TESCAN MIRA3 SEM with Oxford detector",
+      "purpose": "Microstructural characterization of undeformed sample and fatigue crack propagation path analysis",
+      "key_findings": "Undeformed ST sample exhibits fully austenitic FCC microstructure (IPF map); fatigued sample at 225 MPa shows relatively straight transgranular crack path along slip bands in large austenite grains"
+    },
+    {
+      "characterization_id": "char_tem_550",
+      "sample_id": "sample_550_6",
+      "microstructure_uuid": "a61_uuid_550_matrix",
+      "technique": "TEM on JEOL JEM-2100F at 200 kV",
+      "purpose": "κ-carbide precipitation characterization and post-fatigue deformation microstructure analysis",
+      "key_findings": "High-density nanoscale intragranular κ-carbides (~11 nm) with rectangular morphology uniformly precipitated within austenite grains; fatigued sample shows uniformly distributed planar slip bands with low dislocation density; dislocation shearing of κ-carbides creating anti-phase boundaries observed by HRTEM/IFFT at 180 MPa"
+    },
+    {
+      "characterization_id": "char_tem_600",
+      "sample_id": "sample_600_6",
+      "microstructure_uuid": "a61_uuid_600_matrix",
+      "technique": "TEM on JEOL JEM-2100F at 200 kV",
+      "purpose": "κ-carbide precipitation characterization and post-fatigue deformation microstructure analysis",
+      "key_findings": "Intragranular κ-carbides coarsened to ~18 nm forming rectangular parallelepiped arrays along orthogonal <100> directions with concurrent intergranular precipitation; post-fatigue deformation shows uniformly distributed planar slip bands at both 180 MPa and 315 MPa"
+    },
+    {
+      "characterization_id": "char_tem_650",
+      "sample_id": "sample_650_6",
+      "microstructure_uuid": "a61_uuid_650_matrix",
+      "technique": "TEM on JEOL JEM-2100F at 200 kV",
+      "purpose": "κ-carbide precipitation characterization and post-fatigue deformation microstructure analysis near grain boundaries",
+      "key_findings": "Coarsened intragranular κ-carbides (~24 nm) and pronounced intergranular precipitation; at 315 MPa, coarse intergranular κ-carbides cause severe dislocation pile-ups and tangled wavy-slip patterns elevating local stress concentration; HRTEM/IFFT confirms shear steps and APB formation within κ-carbides at 180 MPa"
+    },
+    {
+      "characterization_id": "char_sem_650",
+      "sample_id": "sample_650_6",
+      "microstructure_uuid": null,
+      "technique": "SEM on JEOL JSM-7800F",
+      "purpose": "Fracture surface morphology examination in rapid fracture zone after fatigue",
+      "key_findings": "Mixed fracture characteristics featuring both dimples and cleavage faceted regions at final fracture stage, associated with reduced ductility due to extensive intergranular κ-carbide precipitation"
+    },
+    {
+      "characterization_id": "char_ebsd_600",
+      "sample_id": "sample_600_6",
+      "microstructure_uuid": "a61_uuid_600_matrix",
+      "technique": "EBSD band contrast and IPF superimposed maps, KAM maps, and SF maps",
+      "purpose": "Fatigue crack propagation path and local strain field analysis at 225 MPa",
+      "key_findings": "Increased crack-path tortuosity and microbranching compared with ST; more moderate KAM levels with diffuse misorientation distribution around crack tip, indicating homogeneous plastic accommodation by uniformly dispersed intragranular κ-carbides; cracks nucleate in low-Schmid-factor grains and propagate into high-Schmid-factor grains"
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_basquin",
+      "sample_id": null,
+      "simulation_method": null,
+      "software_used": null,
+      "potential_model": null,
+      "validation_against_experiment": "Fitted to experimental Δσ/2-2Nf curves with root mean square error of log10 Nf reported in Table 1",
+      "analytical_model": [
+        {
+          "model_name": "Basquin equation",
+          "equation_role": "Finite-life fatigue analysis of stress-controlled tension-tension tests",
+          "parameters": "Δσ/2 = σ'f (2Nf)^b, where Δσ/2 is stress amplitude, Nf is fatigue life, σ'f is fatigue strength coefficient, b is fatigue strength exponent",
+          "model_note": "Linear in double-logarithmic coordinates; fitted parameters for ST, 550-6, 600-6, and 650-6 are reported in Table 1"
+        }
+      ]
+    },
+    {
+      "computation_id": "comp_strengthening",
+      "sample_id": null,
+      "simulation_method": null,
+      "software_used": null,
+      "potential_model": null,
+      "validation_against_experiment": null,
+      "analytical_model": [
+        {
+          "model_name": "Precipitation shearing strengthening model",
+          "equation_role": "Estimation of strengthening increments from intragranular κ-carbides in the shearing regime",
+          "parameters": "Δσ_cs = KM(Gεc)^(3/2)(rf/0.5Gb)^(1/2); Δσ_ms = 0.0055M(ΔG)^(3/2)(2f/G)^(1/2)(r/b)^(3m/2-1); Δσ_os = 0.81M(γ_APB/2b)(3πf/8)^(1/2). Constants K=2.6 and m=0.85. M is Taylor factor, εc is lattice misfit strain, b is Burgers vector, G is shear modulus, ΔG is modulus misfit, γ_APB is anti-phase boundary energy, r and f are radius and volume fraction of intragranular κ-carbides.",
+          "model_note": "Used to rationalize non-monotonic fatigue strength ranking based on precipitate size; coherency strain, modulus mismatch, and order strengthening contributions increase with precipitate size at fixed volume fraction"
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Solution treatment was conducted on a hot-rolled 4 mm sheet obtained by forging a 30 mm × 30 mm billet from a 50 kg vacuum-melted ingot.",
+    "Tensile tests: room temperature, constant strain rate of 10^-3 s^-1, tensile axis parallel to rolling direction, Shimadzu AG-Xplus 250 kN.",
+    "Fatigue tests: stress-controlled tension-tension, sinusoidal waveform, 20 Hz, stress ratio R = 0.1, ambient air, Shimadzu EHF-EV050K2A-020-1, loading axis parallel to rolling direction.",
+    "Table 1 provides uniform elongation (UE) and total elongation (TE); UE values are 57.7 ± 1.3 % (ST), 45.5 ± 1.4 % (550-6), 45.1 ± 1.5 % (600-6), 46.4 ± 1.2 % (650-6); TE values are 72.0 ± 0.8 %, 57.7 ± 0.4 %, 58.4 ± 1.4 %, 52.7 ± 1.6 %, respectively.",
+    "Basquin fatigue parameters from Table 1: ST (σ'f = 1510, b = -0.15, RMSE = 0.0429), 550-6 (σ'f = 2243, b = -0.17, RMSE = 0.0952), 600-6 (σ'f = 1040, b = -0.11, RMSE = 0.1776), 650-6 (σ'f = 1153, b = -0.12, RMSE = 0.1139).",
+    "Fig. 4 tabulates engineering stress values (MPa) at engineering strains of 0 %, 20 %, 40 %, 60 %, and 70 % for all four samples, but continuous stress-strain curve data are not provided in text.",
+    "Fig. 5 presents Δσ/2-2Nf curves in double-logarithmic coordinates; fatigue strengths at 10^7 cycles are 157.5 MPa (ST), 162 MPa (550-6), 175.5 MPa (600-6), and 171 MPa (650-6).",
+    "Fig. 6 macroscopic fracture surfaces show three-zone morphology (crack initiation, propagation, rapid fracture); the area fraction of crack initiation and propagation zones is larger in aged samples than in ST, with 600-6 largest at 180 MPa and 550-6 highest at 315 MPa, consistent with optimal fatigue resistance at low and high stress amplitudes respectively.",
+    "Fig. 7 fatigue crack propagation zones exhibit well-defined fatigue striations indicating transgranular crack advancement; 550-6 and 600-6 show more pronounced and closely spaced striations, with narrowest spacing in 550-6 at 315 MPa and in 600-6 at 180 MPa.",
+    "Fig. 8 rapid fracture zones: ST, 550-6, and 600-6 show dimples indicating ductile microvoid coalescence; 650-6 displays mixed dimples and cleavage facets attributed to extensive intergranular κ-carbide precipitation.",
+    "Fig. 9 EBSD analysis at 225 MPa reveals transgranular crack propagation along slip bands; KAM maps show highest grain-boundary strain localization in ST and localized hot spots at intergranular κ-carbides in 650-6; SF maps confirm cracks nucleate in hard-oriented (low SF) grains and propagate into soft-oriented (high SF) grains.",
+    "Fig. 10 surface deformation morphologies: ST shows wavy slip (cross slip) at 180 MPa and kink bands at 315 MPa; 600-6 exhibits distinct planar slip bands at both amplitudes due to glide plane softening, with decreased band spacing and cooperative multiple slip activation at 315 MPa.",
+    "Fig. 11 post-fatigue TEM deformation microstructures: ST exhibits persistent Lüder's bands (PLBs) at 180 MPa indicating strain localization; aged samples show lower overall dislocation density and more uniformly distributed planar slip bands, with narrower spacing at 315 MPa.",
+    "Fig. 14 TEM near grain boundaries at 315 MPa: 550-6 shows uniform intragranular κ-carbides facilitating organized planar slip transfer across grain boundaries; 650-6 shows coarse intergranular κ-carbides disrupting grain boundary continuity, impeding slip transfer and causing severe dislocation pile-ups and wavy-slip patterns.",
+    "The critical precipitate size for shearing-to-Orowan transition in analogous Fe-Mn-Al-C alloy systems is reported as approximately 27 nm; all investigated aged conditions (11–24 nm intragranular κ-carbides) remain in the shearing regime.",
+    "The 600-6 sample exhibits the best overall mechanical performance among investigated conditions, combining high tensile strength with superior fatigue strength and fatigue life."
+  ]
+}

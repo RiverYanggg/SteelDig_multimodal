@@ -1,0 +1,706 @@
+{
+  "papers": [
+    {
+      "paper_id": "A10",
+      "doi": null,
+      "title": "Extreme high accuracy prediction and design of Fe-C-Cr-Mn-Si steel using machine learning",
+      "authors": [
+        "Hao Wu",
+        "Jianyuan Zhang",
+        "Jintao Zhang",
+        "Chengjie Ge",
+        "Lu Ren",
+        "Xinkun Suo"
+      ],
+      "publication_year": null,
+      "journal": null,
+      "keywords": [
+        "Fe-C-Cr-Mn-Si steel",
+        "Machine learning",
+        "Conditional generative adversarial networks",
+        "Solid solution strengthening",
+        "Firefly optimization algorithm"
+      ],
+      "research_type": "mixed",
+      "paper_scope": "A machine learning-based approach combining SVR, CGANs and firefly optimization algorithm to predict and inverse-design the microhardness of Fe-C-Cr-Mn-Si steel, validated by arc cladding experiments."
+    }
+  ],
+  "alloys": [
+    {
+      "alloy_id": "alloy_fecrmnsi_s1",
+      "paper_id": "A10",
+      "alloy_name": "Fe-C-Cr-Mn-Si steel (Sample 1)",
+      "aliases": [
+        "Sample 1"
+      ],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "C",
+        "Si",
+        "Mn",
+        "Cr",
+        "S",
+        "P"
+      ],
+      "nominal_composition": [
+        {
+          "element": "C",
+          "weight_percent": "0.45",
+          "atomic_percent": null
+        },
+        {
+          "element": "Si",
+          "weight_percent": "0.19",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "1.53",
+          "atomic_percent": null
+        },
+        {
+          "element": "Cr",
+          "weight_percent": "14",
+          "atomic_percent": null
+        },
+        {
+          "element": "S",
+          "weight_percent": "0.01",
+          "atomic_percent": null
+        },
+        {
+          "element": "P",
+          "weight_percent": "0.014",
+          "atomic_percent": null
+        },
+        {
+          "element": "Fe",
+          "weight_percent": "83.806",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "δ_r = 0.0542; ΔH_mix = -0.914 kJ/mol"
+    },
+    {
+      "alloy_id": "alloy_fecrmnsi_s2",
+      "paper_id": "A10",
+      "alloy_name": "Fe-C-Cr-Mn-Si steel (Sample 2)",
+      "aliases": [
+        "Sample 2"
+      ],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "C",
+        "Si",
+        "Mn",
+        "Cr",
+        "S",
+        "Ni",
+        "P",
+        "V",
+        "W"
+      ],
+      "nominal_composition": [
+        {
+          "element": "C",
+          "weight_percent": "0.53",
+          "atomic_percent": null
+        },
+        {
+          "element": "Si",
+          "weight_percent": "0.4",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "1.9",
+          "atomic_percent": null
+        },
+        {
+          "element": "Cr",
+          "weight_percent": "5.3",
+          "atomic_percent": null
+        },
+        {
+          "element": "S",
+          "weight_percent": "0.01",
+          "atomic_percent": null
+        },
+        {
+          "element": "Ni",
+          "weight_percent": "1.13",
+          "atomic_percent": null
+        },
+        {
+          "element": "P",
+          "weight_percent": "0.013",
+          "atomic_percent": null
+        },
+        {
+          "element": "Fe",
+          "weight_percent": "89.277",
+          "atomic_percent": null
+        },
+        {
+          "element": "V",
+          "weight_percent": "0.25",
+          "atomic_percent": null
+        },
+        {
+          "element": "W",
+          "weight_percent": "1.19",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "δ_r = 0.0595; ΔH_mix = -1.213 kJ/mol"
+    },
+    {
+      "alloy_id": "alloy_fecrmnsi_s3",
+      "paper_id": "A10",
+      "alloy_name": "Fe-C-Cr-Mn-Si steel (Sample 3)",
+      "aliases": [
+        "Sample 3"
+      ],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "C",
+        "Si",
+        "Mn",
+        "Cr",
+        "Ni",
+        "Mo",
+        "V"
+      ],
+      "nominal_composition": [
+        {
+          "element": "C",
+          "weight_percent": "0.15",
+          "atomic_percent": null
+        },
+        {
+          "element": "Si",
+          "weight_percent": "0.5",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "1.5",
+          "atomic_percent": null
+        },
+        {
+          "element": "Cr",
+          "weight_percent": "5.2",
+          "atomic_percent": null
+        },
+        {
+          "element": "Ni",
+          "weight_percent": "1.2",
+          "atomic_percent": null
+        },
+        {
+          "element": "Fe",
+          "weight_percent": "89.7",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mo",
+          "weight_percent": "1.5",
+          "atomic_percent": null
+        },
+        {
+          "element": "V",
+          "weight_percent": "0.25",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "δ_r = 0.0335; ΔH_mix = -0.451 kJ/mol"
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_clad_01",
+      "paper_id": "A10",
+      "alloy_id": null,
+      "description": "Wire-fed arc cladding on ASTM A36 steel substrate; current 440-600 A, voltage 30-32 V, cladding speed 24 m/h, interlayer temperature 380-410 °C, wire feed speed 76.8 m/h",
+      "processes_notes": null
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_fecrmnsi_s1",
+      "paper_id": "A10",
+      "alloy_id": "alloy_fecrmnsi_s1",
+      "process_id": "proc_clad_01"
+    },
+    {
+      "sample_id": "sample_fecrmnsi_s2",
+      "paper_id": "A10",
+      "alloy_id": "alloy_fecrmnsi_s2",
+      "process_id": "proc_clad_01"
+    },
+    {
+      "sample_id": "sample_fecrmnsi_s3",
+      "paper_id": "A10",
+      "alloy_id": "alloy_fecrmnsi_s3",
+      "process_id": "proc_clad_01"
+    }
+  ],
+  "processing_steps": [
+    {
+      "sample_id": "sample_fecrmnsi_s1",
+      "paper_id": "A10",
+      "sequence": "1",
+      "type": "deposition",
+      "method": "arc cladding",
+      "temperature": "380 ~ 410",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "IDEALARC DC-1000 equipment; ASTM A36 substrate 300 mm × 120 mm × 40 mm; current 440 ~ 600 A; voltage 30 ~ 32 V; cladding speed 24 m/h; wire feed speed 76.8 m/h"
+    },
+    {
+      "sample_id": "sample_fecrmnsi_s2",
+      "paper_id": "A10",
+      "sequence": "1",
+      "type": "deposition",
+      "method": "arc cladding",
+      "temperature": "380 ~ 410",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "IDEALARC DC-1000 equipment; ASTM A36 substrate 300 mm × 120 mm × 40 mm; current 440 ~ 600 A; voltage 30 ~ 32 V; cladding speed 24 m/h; wire feed speed 76.8 m/h"
+    },
+    {
+      "sample_id": "sample_fecrmnsi_s3",
+      "paper_id": "A10",
+      "sequence": "1",
+      "type": "deposition",
+      "method": "arc cladding",
+      "temperature": "380 ~ 410",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "IDEALARC DC-1000 equipment; ASTM A36 substrate 300 mm × 120 mm × 40 mm; current 440 ~ 600 A; voltage 30 ~ 32 V; cladding speed 24 m/h; wire feed speed 76.8 m/h"
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "str_s1",
+      "sample_id": "sample_fecrmnsi_s1",
+      "overall_structure": "Single-phase Fe-Cr solid solution",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_s1_fecr",
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "Fe-Cr",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": null,
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": "Diffraction peaks shifted to higher 2θ relative to standard Fe due to atomic radius differences between Cr, Ni and Fe"
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "str_s2",
+      "sample_id": "sample_fecrmnsi_s2",
+      "overall_structure": "Single-phase Fe-Cr-Ni solid solution",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_s2_fecrni",
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "Fe-Cr-Ni",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": null,
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": "Diffraction peaks shifted to higher 2θ relative to standard Fe due to atomic radius differences between Cr, Ni and Fe"
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "str_s3",
+      "sample_id": "sample_fecrmnsi_s3",
+      "overall_structure": "Single-phase Fe-Cr-Ni solid solution",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_s3_fecrni",
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "Fe-Cr-Ni",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": null,
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": "Diffraction peaks shifted to higher 2θ relative to standard Fe due to atomic radius differences between Cr, Ni and Fe"
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "prop_s1",
+      "sample_id": "sample_fecrmnsi_s1",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": null,
+            "value": "515",
+            "scale": "Vickers",
+            "unit": "HV"
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_s2",
+      "sample_id": "sample_fecrmnsi_s2",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": null,
+            "value": "500",
+            "scale": "Vickers",
+            "unit": "HV"
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_s3",
+      "sample_id": "sample_fecrmnsi_s3",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": null,
+            "value": "424",
+            "scale": "Vickers",
+            "unit": "HV"
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_xrd_s1",
+      "sample_id": "sample_fecrmnsi_s1",
+      "microstructure_uuid": "uuid_s1_fecr",
+      "technique": "X-ray diffraction (XRD)",
+      "purpose": "Phase identification of the arc-cladded coating",
+      "key_findings": "Main phase Fe-Cr identified; diffraction peaks shifted to higher 2θ relative to standard Fe due to atomic radius differences"
+    },
+    {
+      "characterization_id": "char_hard_s1",
+      "sample_id": "sample_fecrmnsi_s1",
+      "microstructure_uuid": null,
+      "technique": "Vickers microhardness testing",
+      "purpose": "Measure coating microhardness",
+      "key_findings": "Microhardness of 515 HV measured under 1 kg load with 20 s holding time"
+    },
+    {
+      "characterization_id": "char_xrd_s2",
+      "sample_id": "sample_fecrmnsi_s2",
+      "microstructure_uuid": "uuid_s2_fecrni",
+      "technique": "X-ray diffraction (XRD)",
+      "purpose": "Phase identification of the arc-cladded coating",
+      "key_findings": "Main phase Fe-Cr-Ni identified; diffraction peaks shifted to higher 2θ relative to standard Fe due to atomic radius differences"
+    },
+    {
+      "characterization_id": "char_hard_s2",
+      "sample_id": "sample_fecrmnsi_s2",
+      "microstructure_uuid": null,
+      "technique": "Vickers microhardness testing",
+      "purpose": "Measure coating microhardness",
+      "key_findings": "Microhardness of 500 HV measured under 1 kg load with 20 s holding time"
+    },
+    {
+      "characterization_id": "char_xrd_s3",
+      "sample_id": "sample_fecrmnsi_s3",
+      "microstructure_uuid": "uuid_s3_fecrni",
+      "technique": "X-ray diffraction (XRD)",
+      "purpose": "Phase identification of the arc-cladded coating",
+      "key_findings": "Main phase Fe-Cr-Ni identified; diffraction peaks shifted to higher 2θ relative to standard Fe due to atomic radius differences"
+    },
+    {
+      "characterization_id": "char_hard_s3",
+      "sample_id": "sample_fecrmnsi_s3",
+      "microstructure_uuid": null,
+      "technique": "Vickers microhardness testing",
+      "purpose": "Measure coating microhardness",
+      "key_findings": "Microhardness of 424 HV measured under 1 kg load with 20 s holding time"
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_ml_01",
+      "sample_id": null,
+      "simulation_method": "Support vector regression (SVR) with Bayesian hyperparameter optimization, ten-fold cross-validation, CGANs synthetic data augmentation, and firefly optimization algorithm (FA) inverse design",
+      "software_used": null,
+      "potential_model": null,
+      "validation_against_experiment": "Minimum prediction error of 1.17 % between the SVR-based model and experimental microhardness on three arc-cladded Fe-C-Cr-Mn-Si alloys",
+      "analytical_model": [
+        {
+          "model_name": "Modified solid solution strengthening theory",
+          "equation_role": "Enhancement of SVR microhardness prediction",
+          "parameters": "Z = 0.0056; M = 3.06; shear modulus G; difference in cohesive energy δ_Ec; local cohesive energy mismatch D_Ec",
+          "model_note": "Δσ_sss = Z·M·G·δ_Ec·D_Ec; coupling this equation with SVR improved R² from 0.85 to 0.89 and reduced RMSE from 0.39 to 0.31"
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Dataset construction: 173 Fe-C-Cr-Mn-Si steel data points were initially collected from MatWeb; after Z-score and isolation forest outlier removal, 98 data points remained; CGANs with double hidden layers expanded the dataset to 192 data points.",
+    "Feature engineering: 41 features were collected and standardized; recursive feature elimination (RFE) wrapped with RF, LightGBM and XGBoost, combined with Pearson correlation screening (|PCC| ≥ 0.95), reduced candidates to 9; exhaustive screening identified the optimal 3-feature combination {δ_Ec, D_Ec, G} with the lowest cross-validation RMSE of 0.257.",
+    "ML model comparison before solid-solution modification: SVR (R² = 0.85, RMSE = 0.39), ET (0.80, 0.45), MLP (0.81, 0.44), Ridge (0.82, 0.43), LightGBM (0.63, 0.62), XGBoost (0.79, 0.46), RF (0.74, 0.52), LR (0.76, 0.48), DT (0.72, 0.54).",
+    "Inverse design optimization predicted maximum microhardness: FA 733.59 HV, PSO 730.04 HV, GWO 708.60 HV, SA 700.37 HV; FA was selected for the highest predicted hardness.",
+    "Experimental validation errors: Sample 1 predicted 521 HV versus experimental 515 HV (1.17 % error); Sample 2 predicted 490 HV versus 500 HV (2.00 %); Sample 3 predicted 415 HV versus 424 HV (2.09 %); the minimum error of 1.17 % is lower than previously reported 2.01 % (Ren et al.) and 2.96 % (Huang et al.) for high-entropy alloy hardness prediction.",
+    "Elemental impact on microhardness from data correlation: Cr exhibited the strongest positive correlation with microhardness, followed by Ni and Mo; Mn, V and W showed weaker correlations.",
+    "Solid solution formation criteria for the experimental alloys: δ_r ranged 0.0335–0.0595 (below the 0.066 threshold) and ΔH_mix ranged -1.213 to -0.451 kJ/mol (within the -11.6 to 3.2 kJ/mol range), consistent with complete solid solution formation.",
+    "XRD detail note: Fig. 8 caption/table labels Sample 1 peaks as (1 1 0) at ~45°, (2 0 0) at ~65°, (2 1 1) at ~82°, whereas the body text describes Sample 1 as Fe-Cr with diffraction peaks 100, 200, 211 in an FCC lattice; Samples 2 and 3 are described as Fe-Cr-Ni phase."
+  ]
+}

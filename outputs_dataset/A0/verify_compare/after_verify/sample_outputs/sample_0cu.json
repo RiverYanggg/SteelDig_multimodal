@@ -1,0 +1,265 @@
+{
+  "sample_id": "sample_0cu",
+  "sample_score": 65.48837209302326,
+  "sample_weight": 21.5,
+  "field_count": 16,
+  "correct_yes_count": 10,
+  "unknown_count": 3,
+  "no_count": 0,
+  "fields": [
+    {
+      "field_id": "F00047",
+      "sample_id": "sample_0cu",
+      "section": "processing_steps",
+      "path": "processing_steps.sample_0cu.duration",
+      "value": "3 h",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0017"
+      ],
+      "reason": "证据明确说明时效处理持续时间3小时。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00048",
+      "sample_id": "sample_0cu",
+      "section": "processing_steps",
+      "path": "processing_steps.sample_0cu.method",
+      "value": "aging treatment",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0017"
+      ],
+      "reason": "证据明确提到时效处理。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00049",
+      "sample_id": "sample_0cu",
+      "section": "processing_steps",
+      "path": "processing_steps.sample_0cu.sequence",
+      "value": "2",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.9,
+      "evidence_refs": [
+        "b0017"
+      ],
+      "reason": "证据描述处理顺序为先固溶后时效，因此时效为第二步。",
+      "field_score": 90.0
+    },
+    {
+      "field_id": "F00050",
+      "sample_id": "sample_0cu",
+      "section": "processing_steps",
+      "path": "processing_steps.sample_0cu.temperature_with_unit",
+      "value": "550 °C",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0017"
+      ],
+      "reason": "证据明确时效温度550°C。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00051",
+      "sample_id": "sample_0cu",
+      "section": "processing_steps",
+      "path": "processing_steps.sample_0cu.type",
+      "value": "heat_treatment",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.95,
+      "evidence_refs": [
+        "b0017"
+      ],
+      "reason": "时效处理属于热处理类型。",
+      "field_score": 95.0
+    },
+    {
+      "field_id": "F00057",
+      "sample_id": "sample_0cu",
+      "section": "structures",
+      "path": "structures.sample_0cu.microstructure_counts",
+      "value": "Austenite matrix only; no precipitate characterization reported.",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "partial",
+      "evidence_confidence": 0.5,
+      "evidence_refs": [
+        "b0048"
+      ],
+      "reason": "证据仅提及0Cu钢晶格参数和κ-carbide可析出性，未直接描述其微观结构；字段值推测无析出物表征，但未明确支持。",
+      "field_score": 30.0
+    },
+    {
+      "field_id": "F00058",
+      "sample_id": "sample_0cu",
+      "section": "structures",
+      "path": "structures.sample_0cu.microstructure_list[0].phases_present[austenite].crystal_structure",
+      "value": "FCC",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "unknown",
+      "evidence_confidence": 0.3,
+      "evidence_refs": [],
+      "reason": "证据未明确说明奥氏体的晶体结构。",
+      "field_score": 9.0
+    },
+    {
+      "field_id": "F00059",
+      "sample_id": "sample_0cu",
+      "section": "structures",
+      "path": "structures.sample_0cu.microstructure_list[0].phases_present[austenite].lattice_parameter",
+      "value": "0.3687 nm",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0048"
+      ],
+      "reason": "证据明确给出0Cu钢的晶格参数为0.3687 nm。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00060",
+      "sample_id": "sample_0cu",
+      "section": "structures",
+      "path": "structures.sample_0cu.microstructure_list[0].phases_present[austenite].morphology",
+      "value": "matrix",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.9,
+      "evidence_refs": [
+        "b0013",
+        "b0017",
+        "b0048"
+      ],
+      "reason": "多处证据提及奥氏体基体。",
+      "field_score": 90.0
+    },
+    {
+      "field_id": "F00061",
+      "sample_id": "sample_0cu",
+      "section": "structures",
+      "path": "structures.sample_0cu.microstructure_list[0].phases_present[austenite].phase_name",
+      "value": "austenite (γ)",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.9,
+      "evidence_refs": [
+        "b0013",
+        "b0017"
+      ],
+      "reason": "证据中多次出现'奥氏体基体'，可对应 austenite (γ)。",
+      "field_score": 90.0
+    },
+    {
+      "field_id": "F00062",
+      "sample_id": "sample_0cu",
+      "section": "structures",
+      "path": "structures.sample_0cu.microstructure_list[0].phases_present[austenite].volume_fraction",
+      "value": "100",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "unknown",
+      "evidence_confidence": 0.2,
+      "evidence_refs": [],
+      "reason": "证据未提及体积分数。",
+      "field_score": 6.0
+    },
+    {
+      "field_id": "F00063",
+      "sample_id": "sample_0cu",
+      "section": "structures",
+      "path": "structures.sample_0cu.number_of_phases",
+      "value": "1",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "unknown",
+      "evidence_confidence": 0.2,
+      "evidence_refs": [],
+      "reason": "证据未提及相数。",
+      "field_score": 6.0
+    },
+    {
+      "field_id": "F00064",
+      "sample_id": "sample_0cu",
+      "section": "structures",
+      "path": "structures.sample_0cu.overall_structure",
+      "value": "Austenitic matrix (γ) after solution and aging treatment; presumably no precipitates (only lattice parameter measured).",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "partial",
+      "evidence_confidence": 0.5,
+      "evidence_refs": [
+        "b0017",
+        "b0048"
+      ],
+      "reason": "证据支持奥氏体基体和热处理条件，但关于无析出物的推测与证据中κ-carbide可析出性不完全一致。",
+      "field_score": 30.0
+    },
+    {
+      "field_id": "F00093",
+      "sample_id": "sample_0cu",
+      "section": "characterization_methods",
+      "path": "characterization_methods.sample_0cu.key_findings",
+      "value": "Lattice parameter of 0Cu steel: a = 0.3687 nm",
+      "field_weight": 1.0,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0048"
+      ],
+      "reason": "证据明确给出晶格参数。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00094",
+      "sample_id": "sample_0cu",
+      "section": "characterization_methods",
+      "path": "characterization_methods.sample_0cu.purpose",
+      "value": "Determine lattice parameter of austenitic matrix after solution treatment",
+      "field_weight": 1.0,
+      "candidate_evidence_refs": [],
+      "is_correct": "partial",
+      "evidence_confidence": 0.6,
+      "evidence_refs": [
+        "b0048"
+      ],
+      "reason": "证据显示了晶格参数测量结果，但未明确表述目的。",
+      "field_score": 36.0
+    },
+    {
+      "field_id": "F00095",
+      "sample_id": "sample_0cu",
+      "section": "characterization_methods",
+      "path": "characterization_methods.sample_0cu.technique",
+      "value": "X-ray diffraction (XRD)",
+      "field_weight": 1.0,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0048"
+      ],
+      "reason": "证据明确使用XRD计算。",
+      "field_score": 100.0
+    }
+  ]
+}

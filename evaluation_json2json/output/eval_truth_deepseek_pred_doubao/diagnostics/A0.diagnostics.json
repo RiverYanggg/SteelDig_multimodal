@@ -1,0 +1,927 @@
+{
+  "paper_id": "A0",
+  "truth_path": "/Users/mac/Desktop/LLM_project/SteelDig_multimodal/evaluation_json2json/outputs_exp/deepseek/A0/final/text_extraction.json",
+  "prediction_path": "/Users/mac/Desktop/LLM_project/SteelDig_multimodal/evaluation_json2json/outputs_exp/doubao/A0/final/text_extraction.json",
+  "prediction_empty": false,
+  "section_diagnostics": {
+    "papers": {
+      "structure_metrics": {
+        "truth_count": 1,
+        "prediction_count": 1,
+        "matched_count": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_anchors": [
+          "papers.A0"
+        ],
+        "unmatched_truth_anchors": [],
+        "unmatched_prediction_anchors": []
+      },
+      "error_summary": {
+        "missing_fact": 0,
+        "extra_fact": 0,
+        "correct": 12,
+        "value_mismatch": 1
+      },
+      "missing_truth_fact_examples": [],
+      "extra_prediction_fact_examples": [],
+      "mismatched_fact_examples": [
+        {
+          "key": "papers.A0.paper_scope",
+          "truth_path": "papers.A0.paper_scope",
+          "prediction_path": "papers.A0.paper_scope",
+          "canonical_object": "A0",
+          "field_path": "paper_scope",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Investigate co-precipitation behavior and mechanism of Cu-rich phase and κ-carbide in Fe-28Mn-10Al-1C-3Cu austenitic low-density steel, including the effect of Cu addition on κ-carbide precipitation and mutual promotion between the two phases.",
+          "prediction_value": "Investigate the co-precipitation mechanism of Cu-rich phase and κ-carbide particles in Fe-28Mn-10Al-1C-3Cu austenitic low-density steel, clarify the mutual promotion effect of the two precipitates, their orientation relationship and coherence with austenite matrix.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "investigate co-precipitation behavior and mechanism of cu-rich phase and κ-carbide in fe-28mn-10al-1c-3cu austenitic low-density steel, including the effect of cu addition on κ-carbide precipitation and mutual promotion between the two phases.",
+          "prediction_normalized": "investigate the co-precipitation mechanism of cu-rich phase and κ-carbide particles in fe-28mn-10al-1c-3cu austenitic low-density steel, clarify the mutual promotion effect of the two precipitates, their orientation relationship and coherence with austenite matrix.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "papers:0:papers_a0_paper_scope"
+        }
+      ],
+      "llm_judge_candidate_count": 1,
+      "llm_judge_candidates": [
+        {
+          "key": "papers.A0.paper_scope",
+          "truth_path": "papers.A0.paper_scope",
+          "prediction_path": "papers.A0.paper_scope",
+          "canonical_object": "A0",
+          "field_path": "paper_scope",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Investigate co-precipitation behavior and mechanism of Cu-rich phase and κ-carbide in Fe-28Mn-10Al-1C-3Cu austenitic low-density steel, including the effect of Cu addition on κ-carbide precipitation and mutual promotion between the two phases.",
+          "prediction_value": "Investigate the co-precipitation mechanism of Cu-rich phase and κ-carbide particles in Fe-28Mn-10Al-1C-3Cu austenitic low-density steel, clarify the mutual promotion effect of the two precipitates, their orientation relationship and coherence with austenite matrix.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "investigate co-precipitation behavior and mechanism of cu-rich phase and κ-carbide in fe-28mn-10al-1c-3cu austenitic low-density steel, including the effect of cu addition on κ-carbide precipitation and mutual promotion between the two phases.",
+          "prediction_normalized": "investigate the co-precipitation mechanism of cu-rich phase and κ-carbide particles in fe-28mn-10al-1c-3cu austenitic low-density steel, clarify the mutual promotion effect of the two precipitates, their orientation relationship and coherence with austenite matrix.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "papers:0:papers_a0_paper_scope"
+        }
+      ],
+      "match_method_summary": {
+        "normalized_exact": {
+          "matched": 12,
+          "mismatched": 0
+        },
+        "llm_field_judge": {
+          "matched": 0,
+          "mismatched": 1
+        }
+      }
+    },
+    "alloys": {
+      "structure_metrics": {
+        "truth_count": 2,
+        "prediction_count": 2,
+        "matched_count": 2,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "error_summary": {
+        "missing_fact": 0,
+        "extra_fact": 2,
+        "correct": 29,
+        "text_mismatch": 2
+      },
+      "missing_truth_fact_examples": [],
+      "extra_prediction_fact_examples": [
+        "alloys.alloy_0cu.nominal_composition[cu].element",
+        "alloys.alloy_0cu.nominal_composition[cu].weight_percent"
+      ],
+      "mismatched_fact_examples": [
+        {
+          "key": "alloys.alloy_0cu.alloy_name",
+          "truth_path": "alloys.alloy_0cu.alloy_name",
+          "prediction_path": "alloys.alloy_0cu.alloy_name",
+          "canonical_object": "alloy_0cu",
+          "field_path": "alloy_name",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Fe-28Mn-10Al-1C",
+          "prediction_value": "0Cu austenitic low-density steel",
+          "error_type": "text_mismatch",
+          "matched": false,
+          "method": "deterministic_mismatch",
+          "truth_normalized": "fe-28mn-10al-1c",
+          "prediction_normalized": "0cu austenitic low-density steel",
+          "reason": "no deterministic matcher accepted the values",
+          "score": 0.0,
+          "needs_llm_judge": false
+        },
+        {
+          "key": "alloys.alloy_3cu.alloy_name",
+          "truth_path": "alloys.alloy_3cu.alloy_name",
+          "prediction_path": "alloys.alloy_3cu.alloy_name",
+          "canonical_object": "alloy_3cu",
+          "field_path": "alloy_name",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Fe-28Mn-10Al-1C-3Cu",
+          "prediction_value": "3Cu austenitic low-density steel",
+          "error_type": "text_mismatch",
+          "matched": false,
+          "method": "deterministic_mismatch",
+          "truth_normalized": "fe-28mn-10al-1c-3cu",
+          "prediction_normalized": "3cu austenitic low-density steel",
+          "reason": "no deterministic matcher accepted the values",
+          "score": 0.0,
+          "needs_llm_judge": false
+        }
+      ],
+      "llm_judge_candidate_count": 0,
+      "llm_judge_candidates": [],
+      "match_method_summary": {
+        "normalized_exact": {
+          "matched": 27,
+          "mismatched": 0
+        },
+        "deterministic_mismatch": {
+          "matched": 0,
+          "mismatched": 2
+        },
+        "percent_synonym": {
+          "matched": 2,
+          "mismatched": 0
+        }
+      }
+    },
+    "processes": {
+      "structure_metrics": {
+        "truth_count": 2,
+        "prediction_count": 1,
+        "matched_count": 1,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      "error_summary": {
+        "missing_fact": 1,
+        "extra_fact": 1,
+        "correct": 1
+      },
+      "missing_truth_fact_examples": [
+        "processes.proc_3cu_sol_age.description"
+      ],
+      "extra_prediction_fact_examples": [
+        "processes.proc_0cu_sol_age.processes_notes"
+      ],
+      "mismatched_fact_examples": [],
+      "llm_judge_candidate_count": 0,
+      "llm_judge_candidates": [],
+      "match_method_summary": {
+        "normalized_exact": {
+          "matched": 1,
+          "mismatched": 0
+        }
+      }
+    },
+    "samples": {
+      "structure_metrics": {
+        "truth_count": 2,
+        "prediction_count": 2,
+        "matched_count": 2,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "error_summary": {
+        "missing_fact": 0,
+        "extra_fact": 0
+      },
+      "missing_truth_fact_examples": [],
+      "extra_prediction_fact_examples": [],
+      "mismatched_fact_examples": [],
+      "llm_judge_candidate_count": 0,
+      "llm_judge_candidates": [],
+      "match_method_summary": {}
+    },
+    "processing_steps": {
+      "structure_metrics": {
+        "truth_count": 4,
+        "prediction_count": 2,
+        "matched_count": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matched_anchors": [],
+        "unmatched_truth_anchors": [
+          "processing_steps.sample_0cu.1.heat_treatment.solution_treatment.1000",
+          "processing_steps.sample_0cu.2.heat_treatment.aging_treatment.550",
+          "processing_steps.sample_3cu.1.heat_treatment.solution_treatment.1000",
+          "processing_steps.sample_3cu.2.heat_treatment.aging_treatment.550"
+        ],
+        "unmatched_prediction_anchors": [
+          "processing_steps.A0.1.heat_treatment.solution_treatment.1000",
+          "processing_steps.A0.2.heat_treatment.aging_treatment.550"
+        ]
+      },
+      "error_summary": {
+        "missing_fact": 10,
+        "extra_fact": 6
+      },
+      "missing_truth_fact_examples": [
+        "processing_steps.sample_0cu.duration",
+        "processing_steps.sample_0cu.method",
+        "processing_steps.sample_0cu.sequence",
+        "processing_steps.sample_0cu.temperature_with_unit",
+        "processing_steps.sample_0cu.type",
+        "processing_steps.sample_3cu.duration",
+        "processing_steps.sample_3cu.method",
+        "processing_steps.sample_3cu.sequence",
+        "processing_steps.sample_3cu.temperature_with_unit",
+        "processing_steps.sample_3cu.type"
+      ],
+      "extra_prediction_fact_examples": [
+        "processing_steps.A0.duration",
+        "processing_steps.A0.method",
+        "processing_steps.A0.processing_steps_notes",
+        "processing_steps.A0.sequence",
+        "processing_steps.A0.temperature_with_unit",
+        "processing_steps.A0.type"
+      ],
+      "mismatched_fact_examples": [],
+      "llm_judge_candidate_count": 0,
+      "llm_judge_candidates": [],
+      "match_method_summary": {}
+    },
+    "structures": {
+      "structure_metrics": {
+        "truth_count": 2,
+        "prediction_count": 1,
+        "matched_count": 1,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666,
+        "matched_anchors": [
+          "structures.sample_3cu"
+        ],
+        "unmatched_truth_anchors": [
+          "structures.sample_0cu"
+        ],
+        "unmatched_prediction_anchors": []
+      },
+      "error_summary": {
+        "missing_fact": 18,
+        "extra_fact": 10,
+        "correct": 6,
+        "value_mismatch": 2
+      },
+      "missing_truth_fact_examples": [
+        "structures.sample_0cu.microstructure_counts",
+        "structures.sample_0cu.microstructure_list[0].phases_present[austenite].crystal_structure",
+        "structures.sample_0cu.microstructure_list[0].phases_present[austenite].lattice_parameter",
+        "structures.sample_0cu.microstructure_list[0].phases_present[austenite].morphology",
+        "structures.sample_0cu.microstructure_list[0].phases_present[austenite].phase_name",
+        "structures.sample_0cu.microstructure_list[0].phases_present[austenite].volume_fraction",
+        "structures.sample_0cu.number_of_phases",
+        "structures.sample_0cu.overall_structure",
+        "structures.sample_3cu.microstructure_counts",
+        "structures.sample_3cu.microstructure_list[0].phases_present[austenite].crystal_structure",
+        "structures.sample_3cu.microstructure_list[0].phases_present[austenite].lattice_parameter",
+        "structures.sample_3cu.microstructure_list[0].phases_present[austenite].morphology",
+        "structures.sample_3cu.microstructure_list[0].phases_present[austenite].phase_name",
+        "structures.sample_3cu.microstructure_list[2].defects[dislocation].dislocation_density",
+        "structures.sample_3cu.microstructure_list[2].defects[dislocation].type",
+        "structures.sample_3cu.microstructure_list[2].phases_present[carbide].lattice_parameter",
+        "structures.sample_3cu.microstructure_list[2].phases_present[cu_rich_phase].lattice_parameter",
+        "structures.sample_3cu.microstructure_list[2].phases_present[cu_rich_phase].plane_spacing_002"
+      ],
+      "extra_prediction_fact_examples": [
+        "structures.sample_3cu.microstructure_list[2].defects[0].dislocation_density",
+        "structures.sample_3cu.microstructure_list[2].phases_present[austenitic_matrix].crystal_structure",
+        "structures.sample_3cu.microstructure_list[2].phases_present[austenitic_matrix].phase_name",
+        "structures.sample_3cu.microstructure_list[2].precipitates[carbide].coherency",
+        "structures.sample_3cu.microstructure_list[2].precipitates[carbide].distribution",
+        "structures.sample_3cu.microstructure_list[2].precipitates[carbide].type",
+        "structures.sample_3cu.microstructure_list[2].precipitates[cu_rich_phase].coherency",
+        "structures.sample_3cu.microstructure_list[2].precipitates[cu_rich_phase].distribution",
+        "structures.sample_3cu.microstructure_list[2].precipitates[cu_rich_phase].size.value_with_unit",
+        "structures.sample_3cu.microstructure_list[2].precipitates[cu_rich_phase].type"
+      ],
+      "mismatched_fact_examples": [
+        {
+          "key": "structures.sample_3cu.microstructure_list[2].phases_present[cu_rich_phase].crystal_structure",
+          "truth_path": "structures.sample_3cu.microstructure_list[2].phases_present[cu_rich_phase].crystal_structure",
+          "prediction_path": "structures.sample_3cu.microstructure_list[2].phases_present[cu_rich_phase].crystal_structure",
+          "canonical_object": "sample_3cu",
+          "field_path": "microstructure_list[2].phases_present[cu_rich_phase].crystal_structure",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "FCC",
+          "prediction_value": "FCC (BCC structure detected by SAED)",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "deterministic_mismatch",
+          "truth_normalized": "fcc",
+          "prediction_normalized": "fcc (bcc structure detected by saed)",
+          "reason": "no deterministic matcher accepted the values",
+          "score": 0.0,
+          "needs_llm_judge": false
+        },
+        {
+          "key": "structures.sample_3cu.microstructure_list[2].phases_present[cu_rich_phase].morphology",
+          "truth_path": "structures.sample_3cu.microstructure_list[2].phases_present[cu_rich_phase].morphology",
+          "prediction_path": "structures.sample_3cu.microstructure_list[2].phases_present[cu_rich_phase].morphology",
+          "canonical_object": "sample_3cu",
+          "field_path": "microstructure_list[2].phases_present[cu_rich_phase].morphology",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "mainly irregular oval (diameter ~10 nm) and a small amount of bars (length ~30 nm)",
+          "prediction_value": "irregular oval, bar shape",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "mainly irregular oval (diameter ~10 nm) and a small amount of bars (length ~30 nm)",
+          "prediction_normalized": "irregular oval, bar shape",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "structures:1:uctures_sample_3cu_microstructure_list_2_phases_present_cu_rich_phase_morphology"
+        }
+      ],
+      "llm_judge_candidate_count": 3,
+      "llm_judge_candidates": [
+        {
+          "key": "structures.sample_3cu.microstructure_list[2].phases_present[carbide].morphology",
+          "truth_path": "structures.sample_3cu.microstructure_list[2].phases_present[carbide].morphology",
+          "prediction_path": "structures.sample_3cu.microstructure_list[2].phases_present[carbide].morphology",
+          "canonical_object": "sample_3cu",
+          "field_path": "microstructure_list[2].phases_present[carbide].morphology",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "dots or bars",
+          "prediction_value": "dot, bar shape",
+          "error_type": "correct",
+          "matched": true,
+          "method": "llm_field_judge",
+          "truth_normalized": "dots or bars",
+          "prediction_normalized": "dot, bar shape",
+          "reason": "LLM judged same-field values as semantically matched.",
+          "score": 1.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "structures:0:structures_sample_3cu_microstructure_list_2_phases_present_carbide_morphology"
+        },
+        {
+          "key": "structures.sample_3cu.microstructure_list[2].phases_present[cu_rich_phase].morphology",
+          "truth_path": "structures.sample_3cu.microstructure_list[2].phases_present[cu_rich_phase].morphology",
+          "prediction_path": "structures.sample_3cu.microstructure_list[2].phases_present[cu_rich_phase].morphology",
+          "canonical_object": "sample_3cu",
+          "field_path": "microstructure_list[2].phases_present[cu_rich_phase].morphology",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "mainly irregular oval (diameter ~10 nm) and a small amount of bars (length ~30 nm)",
+          "prediction_value": "irregular oval, bar shape",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "mainly irregular oval (diameter ~10 nm) and a small amount of bars (length ~30 nm)",
+          "prediction_normalized": "irregular oval, bar shape",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "structures:1:uctures_sample_3cu_microstructure_list_2_phases_present_cu_rich_phase_morphology"
+        },
+        {
+          "key": "structures.sample_3cu.overall_structure",
+          "truth_path": "structures.sample_3cu.overall_structure",
+          "prediction_path": "structures.sample_3cu.overall_structure",
+          "canonical_object": "sample_3cu",
+          "field_path": "overall_structure",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Austenitic matrix (γ) with coherent precipitates of κ-carbide and Cu-rich phase.",
+          "prediction_value": "Austenitic matrix with co-precipitated Cu-rich phase and κ-carbide particles",
+          "error_type": "correct",
+          "matched": true,
+          "method": "llm_field_judge",
+          "truth_normalized": "austenitic matrix (γ) with coherent precipitates of κ-carbide and cu-rich phase.",
+          "prediction_normalized": "austenitic matrix with co-precipitated cu-rich phase and κ-carbide particles",
+          "reason": "LLM judged same-field values as semantically matched.",
+          "score": 1.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "structures:2:structures_sample_3cu_overall_structure"
+        }
+      ],
+      "match_method_summary": {
+        "llm_field_judge": {
+          "matched": 2,
+          "mismatched": 1
+        },
+        "normalized_exact": {
+          "matched": 4,
+          "mismatched": 0
+        },
+        "deterministic_mismatch": {
+          "matched": 0,
+          "mismatched": 1
+        }
+      }
+    },
+    "interfaces": {
+      "structure_metrics": {
+        "truth_count": 1,
+        "prediction_count": 1,
+        "matched_count": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_anchors": [
+          "interfaces.sample_3cu"
+        ],
+        "unmatched_truth_anchors": [],
+        "unmatched_prediction_anchors": []
+      },
+      "error_summary": {
+        "missing_fact": 6,
+        "extra_fact": 3,
+        "correct": 3,
+        "value_mismatch": 1
+      },
+      "missing_truth_fact_examples": [
+        "interfaces.sample_3cu.interface_notes[0].stress_strain_distribution",
+        "interfaces.sample_3cu.phases[austenite].coherence",
+        "interfaces.sample_3cu.phases[austenite].orientation_relationship",
+        "interfaces.sample_3cu.phases[austenite].phase_1_name",
+        "interfaces.sample_3cu.phases[austenite].phase_2_name",
+        "interfaces.sample_3cu.phases[carbide].orientation_relationship"
+      ],
+      "extra_prediction_fact_examples": [
+        "interfaces.sample_3cu.phases[austenitic_matrix].coherence",
+        "interfaces.sample_3cu.phases[austenitic_matrix].phase_1_name",
+        "interfaces.sample_3cu.phases[austenitic_matrix].phase_2_name"
+      ],
+      "mismatched_fact_examples": [
+        {
+          "key": "interfaces.sample_3cu.phases[carbide].coherence",
+          "truth_path": "interfaces.sample_3cu.phases[carbide].coherence",
+          "prediction_path": "interfaces.sample_3cu.phases[carbide].coherence",
+          "canonical_object": "sample_3cu",
+          "field_path": "phases[carbide].coherence",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "coherent",
+          "prediction_value": "coherent, lattice misfit 3.4%",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "deterministic_mismatch",
+          "truth_normalized": "coherent",
+          "prediction_normalized": "coherent, lattice misfit 3.4%",
+          "reason": "no deterministic matcher accepted the values",
+          "score": 0.0,
+          "needs_llm_judge": false
+        }
+      ],
+      "llm_judge_candidate_count": 1,
+      "llm_judge_candidates": [
+        {
+          "key": "interfaces.sample_3cu.phase_evolution",
+          "truth_path": "interfaces.sample_3cu.phase_evolution",
+          "prediction_path": "interfaces.sample_3cu.phase_evolution",
+          "canonical_object": "sample_3cu",
+          "field_path": "phase_evolution",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "κ-carbide precipitates first from austenitic matrix. Cu atoms are rejected from κ-carbide, enriching the surrounding matrix. When Cu concentration reaches critical level, Cu clusters form and precipitate as Cu-rich phase. Cu-rich phase nucleates in austenitic matrix near κ-carbide due to lower misfit with matrix (1.0%) compared to with κ-carbide (3.4%). The presence of κ-carbide promotes Cu-rich phase precipitation. Addition of Cu increases austenite lattice parameter, promoting κ-carbide precipitation.",
+          "prediction_value": "κ-carbide precipitates preferentially than Cu-rich phase, Cu atoms are excluded from κ-carbide and accumulate around κ-carbide, then Cu-rich phase precipitates when Cu concentration reaches critical value. κ-carbide and Cu-rich phase have cube-on-cube orientation relationship with austenitic matrix: [11\\-0]γ//[11\\-0]κ//[110]Cu, (11\\-1)γ//(11\\-1)κ//(11\\-1)Cu.",
+          "error_type": "correct",
+          "matched": true,
+          "method": "llm_field_judge",
+          "truth_normalized": "κ-carbide precipitates first from austenitic matrix. cu atoms are rejected from κ-carbide, enriching the surrounding matrix. when cu concentration reaches critical level, cu clusters form and precipitate as cu-rich phase. cu-rich phase nucleates in austenitic matrix near κ-carbide due to lower misfit with matrix (1.0%) compared to with κ-carbide (3.4%). the presence of κ-carbide promotes cu-rich phase precipitation. addition of cu increases austenite lattice parameter, promoting κ-carbide precipitation.",
+          "prediction_normalized": "κ-carbide precipitates preferentially than cu-rich phase, cu atoms are excluded from κ-carbide and accumulate around κ-carbide, then cu-rich phase precipitates when cu concentration reaches critical value. κ-carbide and cu-rich phase have cube-on-cube orientation relationship with austenitic matrix: [11\\-0]γ//[11\\-0]κ//[110]cu, (11\\-1)γ//(11\\-1)κ//(11\\-1)cu.",
+          "reason": "LLM judged same-field values as semantically matched.",
+          "score": 1.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "interfaces:0:interfaces_sample_3cu_phase_evolution"
+        }
+      ],
+      "match_method_summary": {
+        "llm_field_judge": {
+          "matched": 1,
+          "mismatched": 0
+        },
+        "deterministic_mismatch": {
+          "matched": 0,
+          "mismatched": 1
+        },
+        "normalized_exact": {
+          "matched": 2,
+          "mismatched": 0
+        }
+      }
+    },
+    "properties": {
+      "structure_metrics": {
+        "truth_count": 1,
+        "prediction_count": 1,
+        "matched_count": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matched_anchors": [],
+        "unmatched_truth_anchors": [
+          "properties.sample_3cu"
+        ],
+        "unmatched_prediction_anchors": [
+          "properties.sample_0cu"
+        ]
+      },
+      "error_summary": {
+        "missing_fact": 0,
+        "extra_fact": 1
+      },
+      "missing_truth_fact_examples": [],
+      "extra_prediction_fact_examples": [
+        "properties.sample_0cu.mechanical.tensile_properties.yield_strength[0].value_with_unit"
+      ],
+      "mismatched_fact_examples": [],
+      "llm_judge_candidate_count": 0,
+      "llm_judge_candidates": [],
+      "match_method_summary": {}
+    },
+    "performance": {
+      "structure_metrics": {
+        "truth_count": 0,
+        "prediction_count": 0,
+        "matched_count": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matched_anchors": [],
+        "unmatched_truth_anchors": [],
+        "unmatched_prediction_anchors": []
+      },
+      "error_summary": {
+        "missing_fact": 0,
+        "extra_fact": 0
+      },
+      "missing_truth_fact_examples": [],
+      "extra_prediction_fact_examples": [],
+      "mismatched_fact_examples": [],
+      "llm_judge_candidate_count": 0,
+      "llm_judge_candidates": [],
+      "match_method_summary": {}
+    },
+    "characterization_methods": {
+      "structure_metrics": {
+        "truth_count": 2,
+        "prediction_count": 2,
+        "matched_count": 1,
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1": 0.5,
+        "matched_anchors": [
+          "characterization_methods.sample_3cu"
+        ],
+        "unmatched_truth_anchors": [
+          "characterization_methods.sample_0cu"
+        ],
+        "unmatched_prediction_anchors": [
+          "characterization_methods.idx_3"
+        ]
+      },
+      "error_summary": {
+        "missing_fact": 3,
+        "extra_fact": 3,
+        "value_mismatch": 3
+      },
+      "missing_truth_fact_examples": [
+        "characterization_methods.sample_0cu.key_findings",
+        "characterization_methods.sample_0cu.purpose",
+        "characterization_methods.sample_0cu.technique"
+      ],
+      "extra_prediction_fact_examples": [
+        "characterization_methods.idx_3.key_findings",
+        "characterization_methods.idx_3.purpose",
+        "characterization_methods.idx_3.technique"
+      ],
+      "mismatched_fact_examples": [
+        {
+          "key": "characterization_methods.sample_3cu.key_findings",
+          "truth_path": "characterization_methods.sample_3cu.key_findings",
+          "prediction_path": "characterization_methods.sample_3cu.key_findings",
+          "canonical_object": "sample_3cu",
+          "field_path": "key_findings",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "κ-carbide regions are enriched in Fe, Mn, Al, and depleted in Cu. Cu-rich phase regions are enriched in Cu and depleted in Fe, Mn, Al. This indicates Cu partitioning to the matrix surrounding κ-carbide, leading to Cu-rich clustering and precipitation.",
+          "prediction_value": "Cu atoms are excluded from κ-carbide precipitates, accumulate around κ-carbide to form Cu-rich phase, Fe/Mn/Al are excluded from Cu-rich phase",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "κ-carbide regions are enriched in fe, mn, al, and depleted in cu. cu-rich phase regions are enriched in cu and depleted in fe, mn, al. this indicates cu partitioning to the matrix surrounding κ-carbide, leading to cu-rich clustering and precipitation.",
+          "prediction_normalized": "cu atoms are excluded from κ-carbide precipitates, accumulate around κ-carbide to form cu-rich phase, fe/mn/al are excluded from cu-rich phase",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "characterization_methods:0:characterization_methods_sample_3cu_key_findings"
+        },
+        {
+          "key": "characterization_methods.sample_3cu.purpose",
+          "truth_path": "characterization_methods.sample_3cu.purpose",
+          "prediction_path": "characterization_methods.sample_3cu.purpose",
+          "canonical_object": "sample_3cu",
+          "field_path": "purpose",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Elemental distribution in aged 3Cu steel",
+          "prediction_value": "Detect element distribution of precipitates",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "elemental distribution in aged 3cu steel",
+          "prediction_normalized": "detect element distribution of precipitates",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "characterization_methods:1:characterization_methods_sample_3cu_purpose"
+        },
+        {
+          "key": "characterization_methods.sample_3cu.technique",
+          "truth_path": "characterization_methods.sample_3cu.technique",
+          "prediction_path": "characterization_methods.sample_3cu.technique",
+          "canonical_object": "sample_3cu",
+          "field_path": "technique",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Energy dispersive spectrometer (EDS) mapping in TEM",
+          "prediction_value": "Energy dispersive spectrometer (EDS) mapping",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "deterministic_mismatch",
+          "truth_normalized": "energy dispersive spectrometer (eds) mapping in tem",
+          "prediction_normalized": "energy dispersive spectrometer (eds) mapping",
+          "reason": "no deterministic matcher accepted the values",
+          "score": 0.0,
+          "needs_llm_judge": false
+        }
+      ],
+      "llm_judge_candidate_count": 2,
+      "llm_judge_candidates": [
+        {
+          "key": "characterization_methods.sample_3cu.key_findings",
+          "truth_path": "characterization_methods.sample_3cu.key_findings",
+          "prediction_path": "characterization_methods.sample_3cu.key_findings",
+          "canonical_object": "sample_3cu",
+          "field_path": "key_findings",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "κ-carbide regions are enriched in Fe, Mn, Al, and depleted in Cu. Cu-rich phase regions are enriched in Cu and depleted in Fe, Mn, Al. This indicates Cu partitioning to the matrix surrounding κ-carbide, leading to Cu-rich clustering and precipitation.",
+          "prediction_value": "Cu atoms are excluded from κ-carbide precipitates, accumulate around κ-carbide to form Cu-rich phase, Fe/Mn/Al are excluded from Cu-rich phase",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "κ-carbide regions are enriched in fe, mn, al, and depleted in cu. cu-rich phase regions are enriched in cu and depleted in fe, mn, al. this indicates cu partitioning to the matrix surrounding κ-carbide, leading to cu-rich clustering and precipitation.",
+          "prediction_normalized": "cu atoms are excluded from κ-carbide precipitates, accumulate around κ-carbide to form cu-rich phase, fe/mn/al are excluded from cu-rich phase",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "characterization_methods:0:characterization_methods_sample_3cu_key_findings"
+        },
+        {
+          "key": "characterization_methods.sample_3cu.purpose",
+          "truth_path": "characterization_methods.sample_3cu.purpose",
+          "prediction_path": "characterization_methods.sample_3cu.purpose",
+          "canonical_object": "sample_3cu",
+          "field_path": "purpose",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Elemental distribution in aged 3Cu steel",
+          "prediction_value": "Detect element distribution of precipitates",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "elemental distribution in aged 3cu steel",
+          "prediction_normalized": "detect element distribution of precipitates",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "characterization_methods:1:characterization_methods_sample_3cu_purpose"
+        }
+      ],
+      "match_method_summary": {
+        "llm_field_judge": {
+          "matched": 0,
+          "mismatched": 2
+        },
+        "deterministic_mismatch": {
+          "matched": 0,
+          "mismatched": 1
+        }
+      }
+    },
+    "computational_details": {
+      "structure_metrics": {
+        "truth_count": 1,
+        "prediction_count": 1,
+        "matched_count": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matched_anchors": [],
+        "unmatched_truth_anchors": [
+          "computational_details.sample_3cu"
+        ],
+        "unmatched_prediction_anchors": [
+          "computational_details.idx_0"
+        ]
+      },
+      "error_summary": {
+        "missing_fact": 4,
+        "extra_fact": 4
+      },
+      "missing_truth_fact_examples": [
+        "computational_details.sample_3cu.analytical_model[0].equation_role",
+        "computational_details.sample_3cu.analytical_model[0].model_name",
+        "computational_details.sample_3cu.analytical_model[0].model_note",
+        "computational_details.sample_3cu.analytical_model[0].parameters"
+      ],
+      "extra_prediction_fact_examples": [
+        "computational_details.idx_0.analytical_model[0].equation_role",
+        "computational_details.idx_0.analytical_model[0].model_name",
+        "computational_details.idx_0.analytical_model[0].model_note",
+        "computational_details.idx_0.analytical_model[0].parameters"
+      ],
+      "mismatched_fact_examples": [],
+      "llm_judge_candidate_count": 0,
+      "llm_judge_candidates": [],
+      "match_method_summary": {}
+    },
+    "unmapped_findings": {
+      "structure_metrics": {
+        "truth_count": 6,
+        "prediction_count": 3,
+        "matched_count": 3,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666,
+        "matched_anchors": [
+          "unmapped_findings.idx_0",
+          "unmapped_findings.idx_1",
+          "unmapped_findings.idx_2"
+        ],
+        "unmatched_truth_anchors": [
+          "unmapped_findings.idx_3",
+          "unmapped_findings.idx_4",
+          "unmapped_findings.idx_5"
+        ],
+        "unmatched_prediction_anchors": []
+      },
+      "error_summary": {
+        "missing_fact": 3,
+        "extra_fact": 0,
+        "value_mismatch": 3
+      },
+      "missing_truth_fact_examples": [
+        "unmapped_findings.idx_3.value",
+        "unmapped_findings.idx_4.value",
+        "unmapped_findings.idx_5.value"
+      ],
+      "extra_prediction_fact_examples": [],
+      "mismatched_fact_examples": [
+        {
+          "key": "unmapped_findings.idx_0.value",
+          "truth_path": "unmapped_findings.idx_0.value",
+          "prediction_path": "unmapped_findings.idx_0.value",
+          "canonical_object": "idx_0",
+          "field_path": "value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Cu addition to Fe-28Mn-10Al-1C steel increases the lattice parameter of austenitic matrix (from 0.3687 nm to 0.3689 nm), which promotes precipitation of κ-carbide.",
+          "prediction_value": "Adding Cu to Fe-28Mn-10Al-1C austenitic low-density steel can increase the lattice parameter of austenitic matrix, promote the precipitation of κ-carbide, and κ-carbide can also promote the precipitation of Cu-rich phase.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "cu addition to fe-28mn-10al-1c steel increases the lattice parameter of austenitic matrix (from 0.3687 nm to 0.3689 nm), which promotes precipitation of κ-carbide.",
+          "prediction_normalized": "adding cu to fe-28mn-10al-1c austenitic low-density steel can increase the lattice parameter of austenitic matrix, promote the precipitation of κ-carbide, and κ-carbide can also promote the precipitation of cu-rich phase.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "unmapped_findings:0:unmapped_findings_idx_0_value"
+        },
+        {
+          "key": "unmapped_findings.idx_1.value",
+          "truth_path": "unmapped_findings.idx_1.value",
+          "prediction_path": "unmapped_findings.idx_1.value",
+          "canonical_object": "idx_1",
+          "field_path": "value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "The precipitation of κ-carbide expelled Cu atoms, locally increasing Cu concentration in surrounding matrix; upon reaching critical concentration, Cu clusters form and precipitate as Cu-rich phase.",
+          "prediction_value": "The critical lattice parameter of austenitic matrix for κ-carbide precipitation is about 0.3670 nm, lattice parameter lower than this value will not form intragranular κ-carbide.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "the precipitation of κ-carbide expelled cu atoms, locally increasing cu concentration in surrounding matrix; upon reaching critical concentration, cu clusters form and precipitate as cu-rich phase.",
+          "prediction_normalized": "the critical lattice parameter of austenitic matrix for κ-carbide precipitation is about 0.3670 nm, lattice parameter lower than this value will not form intragranular κ-carbide.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "unmapped_findings:1:unmapped_findings_idx_1_value"
+        },
+        {
+          "key": "unmapped_findings.idx_2.value",
+          "truth_path": "unmapped_findings.idx_2.value",
+          "prediction_path": "unmapped_findings.idx_2.value",
+          "canonical_object": "idx_2",
+          "field_path": "value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "The critical lattice parameter of austenitic matrix for κ-carbide precipitation is approximately a = 0.3670 nm; below this, κ-carbide cannot precipitate. The calculation suggests a composition boundary formula exists for intragranular κ-carbide precipitation in Fe-Mn-Al-C steels.",
+          "prediction_value": "Al and C increase austenitic matrix lattice parameter, while Mn reduces austenitic matrix lattice parameter.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "the critical lattice parameter of austenitic matrix for κ-carbide precipitation is approximately a = 0.3670 nm; below this, κ-carbide cannot precipitate. the calculation suggests a composition boundary formula exists for intragranular κ-carbide precipitation in fe-mn-al-c steels.",
+          "prediction_normalized": "al and c increase austenitic matrix lattice parameter, while mn reduces austenitic matrix lattice parameter.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "unmapped_findings:2:unmapped_findings_idx_2_value"
+        }
+      ],
+      "llm_judge_candidate_count": 3,
+      "llm_judge_candidates": [
+        {
+          "key": "unmapped_findings.idx_0.value",
+          "truth_path": "unmapped_findings.idx_0.value",
+          "prediction_path": "unmapped_findings.idx_0.value",
+          "canonical_object": "idx_0",
+          "field_path": "value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Cu addition to Fe-28Mn-10Al-1C steel increases the lattice parameter of austenitic matrix (from 0.3687 nm to 0.3689 nm), which promotes precipitation of κ-carbide.",
+          "prediction_value": "Adding Cu to Fe-28Mn-10Al-1C austenitic low-density steel can increase the lattice parameter of austenitic matrix, promote the precipitation of κ-carbide, and κ-carbide can also promote the precipitation of Cu-rich phase.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "cu addition to fe-28mn-10al-1c steel increases the lattice parameter of austenitic matrix (from 0.3687 nm to 0.3689 nm), which promotes precipitation of κ-carbide.",
+          "prediction_normalized": "adding cu to fe-28mn-10al-1c austenitic low-density steel can increase the lattice parameter of austenitic matrix, promote the precipitation of κ-carbide, and κ-carbide can also promote the precipitation of cu-rich phase.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "unmapped_findings:0:unmapped_findings_idx_0_value"
+        },
+        {
+          "key": "unmapped_findings.idx_1.value",
+          "truth_path": "unmapped_findings.idx_1.value",
+          "prediction_path": "unmapped_findings.idx_1.value",
+          "canonical_object": "idx_1",
+          "field_path": "value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "The precipitation of κ-carbide expelled Cu atoms, locally increasing Cu concentration in surrounding matrix; upon reaching critical concentration, Cu clusters form and precipitate as Cu-rich phase.",
+          "prediction_value": "The critical lattice parameter of austenitic matrix for κ-carbide precipitation is about 0.3670 nm, lattice parameter lower than this value will not form intragranular κ-carbide.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "the precipitation of κ-carbide expelled cu atoms, locally increasing cu concentration in surrounding matrix; upon reaching critical concentration, cu clusters form and precipitate as cu-rich phase.",
+          "prediction_normalized": "the critical lattice parameter of austenitic matrix for κ-carbide precipitation is about 0.3670 nm, lattice parameter lower than this value will not form intragranular κ-carbide.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "unmapped_findings:1:unmapped_findings_idx_1_value"
+        },
+        {
+          "key": "unmapped_findings.idx_2.value",
+          "truth_path": "unmapped_findings.idx_2.value",
+          "prediction_path": "unmapped_findings.idx_2.value",
+          "canonical_object": "idx_2",
+          "field_path": "value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "The critical lattice parameter of austenitic matrix for κ-carbide precipitation is approximately a = 0.3670 nm; below this, κ-carbide cannot precipitate. The calculation suggests a composition boundary formula exists for intragranular κ-carbide precipitation in Fe-Mn-Al-C steels.",
+          "prediction_value": "Al and C increase austenitic matrix lattice parameter, while Mn reduces austenitic matrix lattice parameter.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "the critical lattice parameter of austenitic matrix for κ-carbide precipitation is approximately a = 0.3670 nm; below this, κ-carbide cannot precipitate. the calculation suggests a composition boundary formula exists for intragranular κ-carbide precipitation in fe-mn-al-c steels.",
+          "prediction_normalized": "al and c increase austenitic matrix lattice parameter, while mn reduces austenitic matrix lattice parameter.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "unmapped_findings:2:unmapped_findings_idx_2_value"
+        }
+      ],
+      "match_method_summary": {
+        "llm_field_judge": {
+          "matched": 0,
+          "mismatched": 3
+        }
+      }
+    }
+  }
+}

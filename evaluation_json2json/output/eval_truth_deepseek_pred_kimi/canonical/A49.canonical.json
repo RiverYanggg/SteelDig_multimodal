@@ -1,0 +1,356 @@
+{
+  "paper_id": "A49",
+  "canonical_maps": {
+    "truth": {
+      "alloy_fe28mn9al086c": "alloy_fe28mn9al086c",
+      "proc_fe28mn9al086c_q": "proc_fe28mn9al086c_q",
+      "sample_fe28mn9al086c_1": "sample_fe28mn9al086c_1",
+      "a49": "A49"
+    },
+    "prediction": {
+      "alloy_fe28mn9al0_86c": "alloy_fe28mn9al086c",
+      "proc_fe_mn_al_c_01": "proc_fe28mn9al086c_q",
+      "sample_fe_mn_al_c_base": "sample_fe28mn9al086c_1",
+      "sample_fe_mn_al_c_fatigue_293": "sample_fe28mn9al086c_1",
+      "sample_fe_mn_al_c_fatigue_673": "sample_fe28mn9al086c_1",
+      "sample_fe_mn_al_c_thermocycle": "sample_fe28mn9al086c_1",
+      "sample_fe_mn_al_c_thermal_fatigue": "sample_fe28mn9al086c_1",
+      "sample_fe_mn_al_c_bend": "sample_fe28mn9al086c_1",
+      "proc_fe_mn_al_c_cw": "proc_fe_mn_al_c_cw",
+      "sample_fe_mn_al_c_cw_10": "sample_fe_mn_al_c_cw_10",
+      "sample_fe_mn_al_c_cw_20": "sample_fe_mn_al_c_cw_20",
+      "a49": "A49"
+    }
+  },
+  "alignment": {
+    "alloy_matches": [
+      {
+        "pred_alloy_id": "alloy_fe28mn9al0_86c",
+        "truth_alloy_id": "alloy_fe28mn9al086c",
+        "relation": "same",
+        "confidence": 1.0,
+        "reason": "Same alloy composition, aliases, and base element. Prediction includes all key alloying elements and similar nominal composition."
+      }
+    ],
+    "process_matches": [
+      {
+        "pred_process_id": "proc_fe_mn_al_c_01",
+        "truth_process_id": "proc_fe28mn9al086c_q",
+        "relation": "same",
+        "confidence": 1.0,
+        "reason": "Both describe ESR followed by water quenching from 1323 K. Prediction includes additional detail but is semantically identical."
+      }
+    ],
+    "sample_matches": [
+      {
+        "pred_sample_id": "sample_fe_mn_al_c_base",
+        "truth_sample_id": "sample_fe28mn9al086c_1",
+        "relation": "many_to_one",
+        "confidence": 1.0,
+        "reason": "Same alloy and process (water quenched base material). Prediction sample is one of multiple specimens from the same material."
+      },
+      {
+        "pred_sample_id": "sample_fe_mn_al_c_fatigue_293",
+        "truth_sample_id": "sample_fe28mn9al086c_1",
+        "relation": "many_to_one",
+        "confidence": 1.0,
+        "reason": "Same alloy and process; fatigue specimen from the same base heat treatment."
+      },
+      {
+        "pred_sample_id": "sample_fe_mn_al_c_fatigue_673",
+        "truth_sample_id": "sample_fe28mn9al086c_1",
+        "relation": "many_to_one",
+        "confidence": 1.0,
+        "reason": "Same alloy and process; fatigue specimen at 673 K from base material."
+      },
+      {
+        "pred_sample_id": "sample_fe_mn_al_c_thermocycle",
+        "truth_sample_id": "sample_fe28mn9al086c_1",
+        "relation": "many_to_one",
+        "confidence": 1.0,
+        "reason": "Same alloy and base process; thermal cycling test on base material."
+      },
+      {
+        "pred_sample_id": "sample_fe_mn_al_c_thermal_fatigue",
+        "truth_sample_id": "sample_fe28mn9al086c_1",
+        "relation": "many_to_one",
+        "confidence": 1.0,
+        "reason": "Same alloy and base process; thermal fatigue specimen from base material."
+      },
+      {
+        "pred_sample_id": "sample_fe_mn_al_c_bend",
+        "truth_sample_id": "sample_fe28mn9al086c_1",
+        "relation": "many_to_one",
+        "confidence": 1.0,
+        "reason": "Same alloy and base process; bending test specimen from base material."
+      }
+    ],
+    "error": null
+  },
+  "flattened_sections": {
+    "papers": {
+      "truth": {
+        "papers.A49.title": "Behavior of Fe-Mn-Al-C Steels during Cyclic Tests",
+        "papers.A49.authors[0]": "I.S.Kalashnikov",
+        "papers.A49.authors[1]": "O.Acselrad",
+        "papers.A49.authors[2]": "T.Kalichak",
+        "papers.A49.authors[3]": "M.S.Khadyyev",
+        "papers.A49.authors[4]": "L.C.Pereira",
+        "papers.A49.publication_year": "2000",
+        "papers.A49.keywords[0]": "fatigue",
+        "papers.A49.keywords[1]": "thermal fatigue",
+        "papers.A49.keywords[2]": "Fe-Mn-Al-C steels",
+        "papers.A49.research_type": "experimental",
+        "papers.A49.paper_scope": "To describe the behavior of Fe-Mn-Al-C alloys under cyclic loading, including elasto-plastic deformation and cyclic temperatures, and to compare with martensitic Cr steels."
+      },
+      "prediction": {
+        "papers.A49.title": "Behavior of Fe-Mn-Al-C Steels during Cyclic Tests",
+        "papers.A49.authors[0]": "I.S. Kalashnikov",
+        "papers.A49.authors[1]": "O. Acselrad",
+        "papers.A49.authors[2]": "T. Kalichak",
+        "papers.A49.authors[3]": "M.S. Khadyyev",
+        "papers.A49.authors[4]": "L.C. Pereira",
+        "papers.A49.publication_year": "2000",
+        "papers.A49.keywords[0]": "fatigue",
+        "papers.A49.keywords[1]": "thermal fatigue",
+        "papers.A49.keywords[2]": "Fe-Mn-Al-C steels",
+        "papers.A49.research_type": "experimental",
+        "papers.A49.paper_scope": "Experimental investigation of the cyclic behavior of austenitic Fe-Mn-Al-C steels, including elasto-plastic bending, isothermal fatigue at 293 K and 673 K, thermocycling fatigue, and thermal fatigue between 313 K and 873 K, with microstructural characterization by optical microscopy and TEM."
+      }
+    },
+    "alloys": {
+      "truth": {
+        "alloys.alloy_fe28mn9al086c.alloy_name": "Fe-28Mn-9Al-0.86C-0.7W-0.43Mo-0.49Nb",
+        "alloys.alloy_fe28mn9al086c.aliases[0]": "Fe-29Mn-9Al-0.9C",
+        "alloys.alloy_fe28mn9al086c.aliases[1]": "Fe-Mn-Al-C",
+        "alloys.alloy_fe28mn9al086c.base_element": "Fe",
+        "alloys.alloy_fe28mn9al086c.alloying_elements[0]": "Mn",
+        "alloys.alloy_fe28mn9al086c.alloying_elements[1]": "Al",
+        "alloys.alloy_fe28mn9al086c.alloying_elements[2]": "C",
+        "alloys.alloy_fe28mn9al086c.alloying_elements[3]": "W",
+        "alloys.alloy_fe28mn9al086c.alloying_elements[4]": "Mo",
+        "alloys.alloy_fe28mn9al086c.alloying_elements[5]": "Nb",
+        "alloys.alloy_fe28mn9al086c.nominal_composition[fe].element": "Fe",
+        "alloys.alloy_fe28mn9al086c.nominal_composition[mn].element": "Mn",
+        "alloys.alloy_fe28mn9al086c.nominal_composition[mn].weight_percent": "28",
+        "alloys.alloy_fe28mn9al086c.nominal_composition[al].element": "Al",
+        "alloys.alloy_fe28mn9al086c.nominal_composition[al].weight_percent": "9",
+        "alloys.alloy_fe28mn9al086c.nominal_composition[c].element": "C",
+        "alloys.alloy_fe28mn9al086c.nominal_composition[c].weight_percent": "0.86",
+        "alloys.alloy_fe28mn9al086c.nominal_composition[w].element": "W",
+        "alloys.alloy_fe28mn9al086c.nominal_composition[w].weight_percent": "0.7",
+        "alloys.alloy_fe28mn9al086c.nominal_composition[mo].element": "Mo",
+        "alloys.alloy_fe28mn9al086c.nominal_composition[mo].weight_percent": "0.43",
+        "alloys.alloy_fe28mn9al086c.nominal_composition[nb].element": "Nb",
+        "alloys.alloy_fe28mn9al086c.nominal_composition[nb].weight_percent": "0.49",
+        "alloys.alloy_fe28mn9al086c.alloys_notes": "Produced by electroslag refining (ESR). The nominal composition is also referred to as Fe-29Mn-9Al-0.9C."
+      },
+      "prediction": {
+        "alloys.alloy_fe28mn9al086c.alloy_name": "Fe-Mn-Al-C steel",
+        "alloys.alloy_fe28mn9al086c.aliases[0]": "Fe-28Mn-9Al-0.86C-0.7W-0.43Mo-0.49Nb",
+        "alloys.alloy_fe28mn9al086c.aliases[1]": "Fe-29Mn-9Al-0.9C",
+        "alloys.alloy_fe28mn9al086c.base_element": "Fe",
+        "alloys.alloy_fe28mn9al086c.alloying_elements[0]": "Mn",
+        "alloys.alloy_fe28mn9al086c.alloying_elements[1]": "Al",
+        "alloys.alloy_fe28mn9al086c.alloying_elements[2]": "C",
+        "alloys.alloy_fe28mn9al086c.alloying_elements[3]": "W",
+        "alloys.alloy_fe28mn9al086c.alloying_elements[4]": "Mo",
+        "alloys.alloy_fe28mn9al086c.alloying_elements[5]": "Nb",
+        "alloys.alloy_fe28mn9al086c.nominal_composition[fe].element": "Fe",
+        "alloys.alloy_fe28mn9al086c.nominal_composition[fe].weight_percent": "balance",
+        "alloys.alloy_fe28mn9al086c.nominal_composition[mn].element": "Mn",
+        "alloys.alloy_fe28mn9al086c.nominal_composition[mn].weight_percent": "28",
+        "alloys.alloy_fe28mn9al086c.nominal_composition[al].element": "Al",
+        "alloys.alloy_fe28mn9al086c.nominal_composition[al].weight_percent": "9",
+        "alloys.alloy_fe28mn9al086c.nominal_composition[c].element": "C",
+        "alloys.alloy_fe28mn9al086c.nominal_composition[c].weight_percent": "0.86",
+        "alloys.alloy_fe28mn9al086c.nominal_composition[w].element": "W",
+        "alloys.alloy_fe28mn9al086c.nominal_composition[w].weight_percent": "0.7",
+        "alloys.alloy_fe28mn9al086c.nominal_composition[mo].element": "Mo",
+        "alloys.alloy_fe28mn9al086c.nominal_composition[mo].weight_percent": "0.43",
+        "alloys.alloy_fe28mn9al086c.nominal_composition[nb].element": "Nb",
+        "alloys.alloy_fe28mn9al086c.nominal_composition[nb].weight_percent": "0.49",
+        "alloys.alloy_fe28mn9al086c.alloys_notes": "Industrial electroslag refined ingot; conclusions refer to nominal composition Fe-29Mn-9Al-0.9C."
+      }
+    },
+    "processes": {
+      "truth": {
+        "processes.proc_fe28mn9al086c_q.description": "Water quenched from 1323 K after electroslag refining.",
+        "processes.proc_fe28mn9al086c_q.processes_notes": "Ingot size 415 mm square cross section, 2200 kg."
+      },
+      "prediction": {
+        "processes.proc_fe28mn9al086c_q.description": "Electroslag refining (ESR) of a 2200 kg ingot with 415 mm square cross section, followed by water quenching from 1323 K.",
+        "processes.proc_fe_mn_al_c_cw.description": "Cold working to controlled true strains for microstructural observation of dislocation and twin evolution."
+      }
+    },
+    "samples": {
+      "truth": {},
+      "prediction": {}
+    },
+    "processing_steps": {
+      "truth": {
+        "processing_steps.sample_fe28mn9al086c_1.temperature_with_unit": "673 K K",
+        "processing_steps.sample_fe28mn9al086c_1.sequence": "3",
+        "processing_steps.sample_fe28mn9al086c_1.type": "mechanical_testing",
+        "processing_steps.sample_fe28mn9al086c_1.method": "elasto-plastic bending test (cyclic)",
+        "processing_steps.sample_fe28mn9al086c_1.cooling_medium": "distilled water",
+        "processing_steps.sample_fe28mn9al086c_1.processing_steps_notes": "Constant deflection 150 mm, specimen diameter 50 mm."
+      },
+      "prediction": {
+        "processing_steps.sample_fe28mn9al086c_1.sequence": "1",
+        "processing_steps.sample_fe28mn9al086c_1.type": "heat_treatment",
+        "processing_steps.sample_fe28mn9al086c_1.method": "water quenching",
+        "processing_steps.sample_fe28mn9al086c_1.processing_steps_notes": "Same base heat treatment as sample_fe_mn_al_c_base.",
+        "processing_steps.sample_fe28mn9al086c_1.temperature_with_unit": "1323 K",
+        "processing_steps.sample_fe28mn9al086c_1.cooling_medium": "water",
+        "processing_steps.sample_fe_mn_al_c_cw_10.sequence": "1",
+        "processing_steps.sample_fe_mn_al_c_cw_10.type": "mechanical_processing",
+        "processing_steps.sample_fe_mn_al_c_cw_10.method": "cold working",
+        "processing_steps.sample_fe_mn_al_c_cw_10.reduction_ratio": "10%",
+        "processing_steps.sample_fe_mn_al_c_cw_10.processing_steps_notes": "True strain 10% cold working for TEM observation of dislocation structure.",
+        "processing_steps.sample_fe_mn_al_c_cw_20.sequence": "1",
+        "processing_steps.sample_fe_mn_al_c_cw_20.type": "mechanical_processing",
+        "processing_steps.sample_fe_mn_al_c_cw_20.method": "cold working",
+        "processing_steps.sample_fe_mn_al_c_cw_20.reduction_ratio": "20%",
+        "processing_steps.sample_fe_mn_al_c_cw_20.processing_steps_notes": "True strain 20% cold working for TEM observation of dislocation structure."
+      }
+    },
+    "structures": {
+      "truth": {
+        "structures.sample_fe28mn9al086c_1.overall_structure": "Austenitic matrix with extensive mechanical twinning and high dislocation density after cyclic bending or tensile deformation.",
+        "structures.sample_fe28mn9al086c_1.number_of_phases": "1",
+        "structures.sample_fe28mn9al086c_1.microstructure_list[1].related_sequence": "1",
+        "structures.sample_fe28mn9al086c_1.microstructure_list[1].phases_present[austenite].phase_name": "austenite",
+        "structures.sample_fe28mn9al086c_1.microstructure_list[1].phases_present[austenite].crystal_structure": "FCC",
+        "structures.sample_fe28mn9al086c_1.microstructure_list[1].phases_present[phase].phase_name": "κ-phase",
+        "structures.sample_fe28mn9al086c_1.microstructure_list[1].phases_present[phase].morphology": "grain boundary precipitates",
+        "structures.sample_fe28mn9al086c_1.microstructure_list[1].precipitates[phase].type": "κ-phase",
+        "structures.sample_fe28mn9al086c_1.microstructure_list[1].precipitates[phase].distribution": "grain boundaries",
+        "structures.sample_fe28mn9al086c_1.microstructure_list[2].related_sequence": "2",
+        "structures.sample_fe28mn9al086c_1.microstructure_list[2].phases_present[austenite].phase_name": "austenite",
+        "structures.sample_fe28mn9al086c_1.microstructure_list[2].phases_present[austenite].crystal_structure": "FCC",
+        "structures.sample_fe28mn9al086c_1.microstructure_list[2].phases_present[phase].phase_name": "κ-phase",
+        "structures.sample_fe28mn9al086c_1.microstructure_list[2].phases_present[phase].morphology": "thickened grain boundary precipitates",
+        "structures.sample_fe28mn9al086c_1.microstructure_list[2].precipitates[phase].type": "κ-phase",
+        "structures.sample_fe28mn9al086c_1.microstructure_list[2].precipitates[phase].distribution": "grain boundaries, thickened",
+        "structures.sample_fe28mn9al086c_1.microstructure_list[3].related_sequence": "3",
+        "structures.sample_fe28mn9al086c_1.microstructure_list[3].phases_present[austenite].phase_name": "austenite",
+        "structures.sample_fe28mn9al086c_1.microstructure_list[3].phases_present[austenite].crystal_structure": "FCC",
+        "structures.sample_fe28mn9al086c_1.microstructure_list[3].defects[deformation_twins].type": "deformation twins",
+        "structures.sample_fe28mn9al086c_1.microstructure_list[3].defects[dislocation_tangles].type": "dislocation tangles",
+        "structures.sample_fe28mn9al086c_1.microstructure_list[3].defects[dislocation_tangles].dislocation_density": "high"
+      },
+      "prediction": {
+        "structures.sample_fe28mn9al086c_1.overall_structure": "Austenitic with aged grain boundaries",
+        "structures.sample_fe28mn9al086c_1.number_of_phases": "2",
+        "structures.sample_fe28mn9al086c_1.microstructure_list[2].related_sequence": "2",
+        "structures.sample_fe28mn9al086c_1.microstructure_list[2].phases_present[austenite].phase_name": "γ-austenite",
+        "structures.sample_fe28mn9al086c_1.microstructure_list[0].phases_present[austenite].phase_name": "γ-austenite",
+        "structures.sample_fe28mn9al086c_1.microstructure_list[0].phases_present[phase].phase_name": "κ-phase",
+        "structures.sample_fe28mn9al086c_1.microstructure_list[0].phases_present[phase].morphology": "grain boundary precipitates",
+        "structures.sample_fe28mn9al086c_1.microstructure_list[0].precipitates[phase].type": "κ-phase",
+        "structures.sample_fe28mn9al086c_1.microstructure_list[0].precipitates[phase].size.value": "thickened",
+        "structures.sample_fe28mn9al086c_1.microstructure_list[0].precipitates[phase].distribution": "grain boundary",
+        "structures.sample_fe_mn_al_c_cw_10.overall_structure": "Austenitic with deformation twins and increased dislocations",
+        "structures.sample_fe_mn_al_c_cw_10.number_of_phases": "1",
+        "structures.sample_fe_mn_al_c_cw_10.microstructure_list[1].related_sequence": "1",
+        "structures.sample_fe_mn_al_c_cw_10.microstructure_list[1].phases_present[austenite].phase_name": "γ-austenite",
+        "structures.sample_fe_mn_al_c_cw_10.microstructure_list[1].phases_present[austenite].morphology": "mechanical twins",
+        "structures.sample_fe_mn_al_c_cw_10.microstructure_list[1].defects[dislocation_tangles].type": "dislocation tangles",
+        "structures.sample_fe_mn_al_c_cw_10.microstructure_list[1].defects[dislocation_tangles].dislocation_density": "sharply increased",
+        "structures.sample_fe_mn_al_c_cw_20.overall_structure": "Austenitic with dense dislocation networks",
+        "structures.sample_fe_mn_al_c_cw_20.number_of_phases": "1",
+        "structures.sample_fe_mn_al_c_cw_20.microstructure_list[1].related_sequence": "1",
+        "structures.sample_fe_mn_al_c_cw_20.microstructure_list[1].phases_present[austenite].phase_name": "γ-austenite",
+        "structures.sample_fe_mn_al_c_cw_20.microstructure_list[1].phases_present[austenite].morphology": "mechanical twins",
+        "structures.sample_fe_mn_al_c_cw_20.microstructure_list[1].defects[dislocation_tangles].type": "dislocation tangles",
+        "structures.sample_fe_mn_al_c_cw_20.microstructure_list[1].defects[dislocation_tangles].dislocation_density": "sharply increased with localized dense tangles"
+      }
+    },
+    "interfaces": {
+      "truth": {},
+      "prediction": {}
+    },
+    "properties": {
+      "truth": {
+        "properties.sample_fe28mn9al086c_1.mechanical.tensile_properties.stress_strain_distribution[tensile].direction": "tensile",
+        "properties.sample_fe28mn9al086c_1.mechanical.tensile_properties.stress_strain_distribution[tensile].distribution": "True Strain: 0.0, 0.1, 0.2, 0.3, 0.4; True Stress (MPa): 500, 800, 1000, 1200, 1400; Strain rate 1 mm/min.",
+        "properties.sample_fe28mn9al086c_1.mechanical.tensile_properties.stress_strain_distribution[rotating_bending_293_k].direction": "rotating bending, 293 K",
+        "properties.sample_fe28mn9al086c_1.mechanical.tensile_properties.stress_strain_distribution[rotating_bending_293_k].distribution": "N (10^6): 0.1, 0.5, 1, 2, 5, 10, 50; Stress (MPa): 420, 380, 340, 300, 280, 260, 240 (Series 1)",
+        "properties.sample_fe28mn9al086c_1.mechanical.tensile_properties.stress_strain_distribution[rotating_bending_673_k].direction": "rotating bending, 673 K",
+        "properties.sample_fe28mn9al086c_1.mechanical.tensile_properties.stress_strain_distribution[rotating_bending_673_k].distribution": "N (10^6): 0.1, 0.5, 1, 2, 5, 10, 50; Stress: 500, 480, 460, 440, 420, 400, 380 (Series 2)",
+        "properties.sample_fe28mn9al086c_1.mechanical.tensile_properties.stress_strain_distribution[rotating_bending_293_k_673_k].direction": "rotating bending, 293 K ↔ 673 K",
+        "properties.sample_fe28mn9al086c_1.mechanical.tensile_properties.stress_strain_distribution[rotating_bending_293_k_673_k].distribution": "N (10^6): 0.1, 0.5, 1, 2, 5, 10, 50; Stress: 480, 460, 440, 420, 400, 380, 360 (Series 3)"
+      },
+      "prediction": {
+        "properties.sample_fe28mn9al086c_1.mechanical.fatigue_properties.cycles_to_failure": "16000 cycles before failure under thermal fatigue with 80% thermal expansion restriction"
+      }
+    },
+    "performance": {
+      "truth": {
+        "performance.sample_fe28mn9al086c_1.service_conditions.operating_temperature.min": "293",
+        "performance.sample_fe28mn9al086c_1.service_conditions.operating_temperature.max": "293",
+        "performance.sample_fe28mn9al086c_1.service_conditions.operating_temperature.unit": "K",
+        "performance.sample_fe28mn9al086c_1.lifetime_prediction.predicted_lifetime": "16000 cycles before failure",
+        "performance.sample_fe28mn9al086c_1.comparative_performance.benchmark_alloy": "Fe-13Cr-0.2C (martensitic Cr steel)",
+        "performance.sample_fe28mn9al086c_1.comparative_performance.improvement_percentage": "~300%",
+        "performance.sample_fe28mn9al086c_1.service_conditions.stress_state": "alternating bending",
+        "performance.sample_fe28mn9al086c_1.service_conditions.environment": "air"
+      },
+      "prediction": {
+        "performance.sample_fe28mn9al086c_1.service_conditions.operating_temperature.min": "293",
+        "performance.sample_fe28mn9al086c_1.service_conditions.operating_temperature.max": "673",
+        "performance.sample_fe28mn9al086c_1.service_conditions.operating_temperature.unit": "K",
+        "performance.sample_fe28mn9al086c_1.service_conditions.stress_state": "rotating bending fatigue with superimposed thermocycling",
+        "performance.sample_fe28mn9al086c_1.service_conditions.environment": "pulse cooling in distilled water",
+        "performance.sample_fe28mn9al086c_1.lifetime_prediction.predicted_lifetime": "Four times the cycles of comparable martensitic chromium steel before failure",
+        "performance.sample_fe28mn9al086c_1.comparative_performance.benchmark_alloy": "Martensitic chromium steel Fe-13Cr-0.2C",
+        "performance.sample_fe28mn9al086c_1.comparative_performance.improvement_percentage": "Fatigue strength curve occupies intermediate position between 293 K and 673 K isothermal tests; degree of strengthening is time-dependent at higher temperatures",
+        "performance.sample_fe28mn9al086c_1.comparative_performance.benchmark_sample_id": "sample_fe_mn_al_c_fatigue_673"
+      }
+    },
+    "characterization_methods": {
+      "truth": {
+        "characterization_methods.sample_fe28mn9al086c_1.technique": "TEM (EMV-100L, 100 kV)",
+        "characterization_methods.sample_fe28mn9al086c_1.purpose": "Observe dislocation structure and deformation twins after cold working",
+        "characterization_methods.sample_fe28mn9al086c_1.key_findings": "High dislocation density, dislocation tangles, mechanical twinning."
+      },
+      "prediction": {
+        "characterization_methods.sample_fe28mn9al086c_1.technique": "optical microscopy (Neophot-21)",
+        "characterization_methods.sample_fe28mn9al086c_1.purpose": "microstructural examination after thermal fatigue tests",
+        "characterization_methods.sample_fe28mn9al086c_1.key_findings": "High-temperature aging characterized by thickening of grain boundary κ-phase precipitates after thermal cycling (Fig. 3b).",
+        "characterization_methods.sample_fe_mn_al_c_cw_10.technique": "transmission electron microscopy (TEM, EMV-100L at 100 kV)",
+        "characterization_methods.sample_fe_mn_al_c_cw_10.purpose": "dislocation structure observation after 10% cold working",
+        "characterization_methods.sample_fe_mn_al_c_cw_10.key_findings": "Dislocation structure after 10% cold work; mechanical twins and increased dislocation density (Fig. 6a).",
+        "characterization_methods.sample_fe_mn_al_c_cw_20.technique": "transmission electron microscopy (TEM, EMV-100L at 100 kV)",
+        "characterization_methods.sample_fe_mn_al_c_cw_20.purpose": "dislocation structure observation after 20% cold working",
+        "characterization_methods.sample_fe_mn_al_c_cw_20.key_findings": "Dense dislocation tangles formed where slipping systems crossed after 20% cold work (Fig. 6b)."
+      }
+    },
+    "computational_details": {
+      "truth": {},
+      "prediction": {}
+    },
+    "unmapped_findings": {
+      "truth": {
+        "unmapped_findings.idx_0.value": "Fig. 1 shows (a) the thermocycling test apparatus with restricted expansion and (b) the elasto-plastic bending test machine ZDM-200PU.",
+        "unmapped_findings.idx_1.value": "The fatigue strength of Fe-Mn-Al-C alloys in the temperature range 523–823 K is stated to be higher than at room temperature, with the maximum at 723 K based on 2×10^7 cycles (from Ref. 4).",
+        "unmapped_findings.idx_2.value": "Deformation aging in zones of microplastic deformation is mentioned as a time-dependent strengthening mechanism at higher temperatures.",
+        "unmapped_findings.idx_3.value": "Fig. 3 presents optical micrographs of the austenitic Fe-Mn-Al-C steel before and after tests, and of martensitic Cr-Ni steel before and after tests, illustrating the thickening of grain boundary κ-phase and the decomposition of martensite.",
+        "unmapped_findings.idx_4.value": "Fig. 4 provides force-deflection diagrams for the bending test, showing that the hysteresis loop repeats and absorbed energy remains nearly constant.",
+        "unmapped_findings.idx_5.value": "Fig. 5 shows the true stress–true strain curve of Fe-Mn-Al-C austenite at a strain rate of 1 mm/min.",
+        "unmapped_findings.idx_6.value": "Fig. 6 shows dislocation structure after 10% and 20% cold working, indicating increased dislocation tangles."
+      },
+      "prediction": {
+        "unmapped_findings.idx_0.value": "The fatigue strength of Fe-Mn-Al-C steels in the temperature range 523 to 823 K is higher than at room temperature, with the greatest magnitude of fatigue strength s−1 obtained at 723 K based on 2×10^7 cycles.",
+        "unmapped_findings.idx_1.value": "Figure 2 S-N curve data (fatigue strength σ vs cycles N): Series 1 at 293 K — 0.1×10^6: 420 MPa, 0.5×10^6: 380 MPa, 1×10^6: 340 MPa, 2×10^6: 300 MPa, 5×10^6: 280 MPa, 10×10^6: 260 MPa, 50×10^6: 240 MPa; Series 2 at 673 K — 0.1×10^6: 500 MPa, 0.5×10^6: 480 MPa, 1×10^6: 460 MPa, 2×10^6: 440 MPa, 5×10^6: 420 MPa, 10×10^6: 400 MPa, 50×10^6: 380 MPa; Series 3 under thermocycling 293 K ↔ 673 K — 0.1×10^6: 480 MPa, 0.5×10^6: 460 MPa, 1×10^6: 440 MPa, 2×10^6: 420 MPa, 5×10^6: 400 MPa, 10×10^6: 380 MPa, 50×10^6: 360 MPa.",
+        "unmapped_findings.idx_2.value": "Figure 4 force-deflection diagram for elasto-plastic bending (specimen 50 mm working part): 1st cycle H = 150 mm, Q×10^3 = 30 N; 2nd cycle H = 120 mm, Q×10^3 = 40 N; 12th cycle H = 100 mm, Q×10^3 = 35 N. Work spent on elasto-plastic deformation from cycle to cycle practically did not vary; hysteresis loop is repeated.",
+        "unmapped_findings.idx_3.value": "Figure 5 true stress vs true strain for strain hardening of Fe-Mn-Al-C austenite at strain rate 1 mm/min: 0.0 → 500 MPa, 0.1 → 800 MPa, 0.2 → 1000 MPa, 0.3 → 1200 MPa, 0.4 → 1400 MPa.",
+        "unmapped_findings.idx_4.value": "The basic plastic deformation mechanism in austenitic Fe-Mn-Al-C is mechanical twinning; deformation twins act as obstacles to further plastic deformation by sliding and twinning. With increasing deformation, dislocation density sharply increases and localized tangles form where slipping systems cross.",
+        "unmapped_findings.idx_5.value": "Under elasto-plastic cyclic loading, highly strengthened local volumes are created at each cycle, and new sites are continuously formed during cyclic loading, explaining the high endurance and invariant absorbed energy per cycle. Failure occurs when every region of the entire working volume has undergone such strengthening.",
+        "unmapped_findings.idx_6.value": "For comparative martensitic Cr-Ni steel (Fe-12Cr-1.5Ni-0.2V-1.8W-0.5Mo-0.15C) tested in similar thermal fatigue conditions, the solid solution decomposes into a ferrite-carbide mixture, the martensitic orientation disappears, and mechanical strength decreases; failure occurred after 9000 cycles.",
+        "unmapped_findings.idx_7.value": "Thermocycling was imposed by alternation of heating samples up to 673 K and pulse cooling in distilled water to 293 K. At 673 K, an increase in fatigue strength was detected, but maximum strengthening at this temperature was not attained."
+      }
+    }
+  }
+}

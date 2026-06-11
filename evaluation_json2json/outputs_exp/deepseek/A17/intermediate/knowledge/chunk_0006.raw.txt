@@ -1,0 +1,215 @@
+{
+  "claims": [
+    {
+      "claim_type": "characterization",
+      "subject": "CALPHAD modelling discrepancy",
+      "claim": "The phases formed during annealing and SPS were correlated with CALPHAD (Thermo-Calc) predicted phases, but differences existed because the TCFE8 database was used instead of the TCHEA3 database, indicating database limitations.",
+      "values": [],
+      "evidence_text": "The phases formed during the annealing and SPSed were also correlated with the CALPHAD (Thermo-Calc) modelling predicted phases. Some difference was there between the experimental results and CALPHAD predicted phases. This may be due to the fact that the CALPHAD database TCFE8 was used instead of the TCHEA3.",
+      "figures": [],
+      "tables": [],
+      "confidence": "medium"
+    },
+    {
+      "claim_type": "property",
+      "subject": "SPSed Fe40Mn19Ni15Al15Si10C1 sample",
+      "claim": "The measured yield stress of the SPSed non-equiatomic high entropy steel is 2046 ± 160 MPa.",
+      "values": ["2046", "160", "MPa"],
+      "evidence_text": "The measured yield stress of the SPSed sample of the non-equiatomic HES is found to be 2046 ± 160 MPa and it is the combination of the frictional stress and the various strengthening mechanisms",
+      "figures": [],
+      "tables": ["Table 9"],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "Yield stress decomposition",
+      "claim": "The total yield stress of the SPSed sample is expressed as σy = σo + Δσgb + Δσp + Δσd + Δσss (Equation 5), where the terms represent frictional, grain boundary, precipitate, dislocation, and solid solution strengthening.",
+      "values": ["σo", "Δσgb", "Δσp", "Δσd", "Δσss"],
+      "evidence_text": "The total yield stress can be expressed as: $$\\sigma_ {\\mathrm{y}} = \\sigma_ {\\mathrm{o}} + \\Delta \\sigma_ {\\mathrm{gb}} + \\Delta \\sigma_ {\\mathrm{p}} + \\Delta \\sigma_ {\\mathrm{d}} + \\Delta \\sigma_ {\\mathrm{ss}}$$ (5) where, σ0 is frictional stress, Δσgb is grain boundary strengthening, Δσp is precipitate strengthening, Δσd is dislocation strengthening and Δσss is solid solution strengthening.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "Frictional stress",
+      "claim": "The frictional stress for BCC and B2 phases is taken as 120 MPa.",
+      "values": ["120 MPa"],
+      "evidence_text": "The frictional stress is taken as 120 MPa for BCC and B2, respectively",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "Grain boundary strengthening",
+      "claim": "The Hall-Petch grain boundary strengthening contribution is 1085 MPa for BCC (grain size 0.28 μm) and 1224 MPa for B2 (grain size 0.22 μm) using K0 = 574 MPa/μm1/2.",
+      "values": ["1085 MPa", "1224 MPa", "0.28 μm", "0.22 μm", "574 MPa/μm1/2"],
+      "evidence_text": "The value of the grain size for BCC and B2-type was found to be 0.28 μm and 0.22 μm, respectively. The value for grain boundary strengthening was evaluated to be 1085 MPa and 1224 MPa for BCC and B2-type, respectively.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "Precipitation strengthening",
+      "claim": "Precipitation strengthening contributions for BCC are 54 MPa from Fe5Si3 silicides and 111 MPa from B2 precipitates; for B2-type, 55 MPa from silicides, calculated using Orowan equation with volume fractions 8.4% and 34%, and radii 102 nm and 220 nm.",
+      "values": ["54 MPa", "111 MPa", "55 MPa", "8.4%", "34%", "102 nm", "220 nm"],
+      "evidence_text": "The value of the dispersion strengthening for BCC phase was found to be 54 MPa and 111 MPa for silicide and B2-type, respectively and for B2-type was found to be 55 MPa for silicides.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "Dislocation strengthening",
+      "claim": "Dislocation strengthening using Bailey-Hirsch relation yields 687 MPa for BCC (dislocation density 4.46×10^15 m−2) and 590 MPa for B2 (3.36×10^15 m−2).",
+      "values": ["687 MPa", "590 MPa", "4.46e15 m^-2", "3.36e15 m^-2"],
+      "evidence_text": "The contribution of the dislocation strengthening was calculated using the Bailey-Hirsch relationship ... ρdd ... 4.46×10^15 m−2 and 3.36×10^15 m−2, for BCC and B2-type, respectively. The strength value was found to be 687 MPa and 590 MPa for BCC and B2-type respectively.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "Solid solution strengthening",
+      "claim": "Solid solution strengthening using Fleischer model with Al as solute gives 106 MPa for BCC (Al at.%=13.45) and 177 MPa for B2 (Al at.%=36.55).",
+      "values": ["106 MPa", "177 MPa", "13.45 at%", "36.55 at%"],
+      "evidence_text": "The strength value was found to be 106 MPa and 177 MPa for BCC and B2-type, respectively.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "Phase fraction normalization",
+      "claim": "In the strengthening calculation the phase fractions of BCC and B2 were normalized from the measured 56.0% and 34.0% to 62.0% and 38.0% assuming 100% active phase.",
+      "values": ["56.0%", "34.0%", "62.0%", "38.0%"],
+      "evidence_text": "The phase fraction of BCC and B2-type in the SPSed sample of the high entropy steel was calculated as 56.0% and 34.0%, respectively. Therefore, the phase fraction of the BCC and B2-type for the calculation of the strengthening mechanism was taken as 62.0% and 38.0%, respectively.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "comparison",
+      "subject": "Strengthening mechanism contributions",
+      "claim": "The dominant strengthening contributors are grain boundary (52.55%) and dislocation (30.00%); precipitation and solid solution contribute 5.70% and 6.14%, respectively.",
+      "values": ["52.55%", "30.00%", "5.70%", "6.14%"],
+      "evidence_text": "The individual contribution of different strengthening mechanisms are as follows: grain boundary (52.55%), dislocation (30.00%), precipitation (5.70%) and solid solution strengthening (6.14%).",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "comparison",
+      "subject": "Theoretical vs. experimental strength",
+      "claim": "The calculated theoretical total strength is 2164 MPa, closely matching the experimental yield strength of 2046 MPa.",
+      "values": ["2164 MPa", "2046 MPa"],
+      "evidence_text": "The calculated theoretical strength and the measured strength of the alloy are in close agreement.",
+      "figures": [],
+      "tables": ["Table 9"],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "comparison",
+      "subject": "Microhardness vs. dual-phase steel",
+      "claim": "The microhardness of the present alloy (7.8 GPa) is much higher than that of ferritic dual-phase steel (2.0–2.4 GPa).",
+      "values": ["7.8 GPa", "2.0–2.4 GPa"],
+      "evidence_text": "The ferritic dual phase steel has the microhardness in the range of 2.0–2.4 GPa [59]. The microhardness of the present alloy (7.8 GPa) is much higher than the dual-phase steel.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "figure_evidence",
+      "subject": "Comprehensive property comparison",
+      "claim": "Figure 9(e,f) and Supplementary Table S1 show that the present quinary low-density HES with BCC+B2+silicide exhibits excellent compressive strength and microhardness compared to reported HEAs and conventional steels.",
+      "values": [],
+      "evidence_text": "A comprehensive comparison of the present alloy with the high entropy alloys is shown in Fig. 9(e and f). The quinary low-density high entropy steel with the formation of BCC and B2 with silicide phase showed the excellent mechanical properties i.e., compressive strength and microhardness as compared to the HEAs and conventionally steel.",
+      "figures": ["Figure 9(e,f)"],
+      "tables": ["Supplementary Table S1"],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "property",
+      "subject": "Ductility of SPSed HES",
+      "claim": "The SPSed high entropy steel exhibits limited ductility of ~19%.",
+      "values": ["~19%"],
+      "evidence_text": "these SPSed HES were found to have a limited ductility of ~19%.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "Role of in-situ silicide",
+      "claim": "The in-situ formation of silicide in the present alloy plays a crucial role in strengthening, enhancing microhardness and compressive strength while retaining good ductility.",
+      "values": [],
+      "evidence_text": "In the present alloy, the in-situ formation of the silicide has played a crucial role to strengthen the alloy i.e., microhardness and compressive strength with good amount of ductility.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    }
+  ],
+  "context_update": {
+    "summary": "This chunk closes the CALPHAD discrepancy note (TCFE8 vs TCHEA3) and covers the full Section 4.3 on mechanical properties and strengthening mechanisms of the SPSed Fe40Mn19Ni15Al15Si10C1. The measured compressive yield strength is 2046 ± 160 MPa, decomposed into frictional (120 MPa), Hall-Petch grain boundary (1085 MPa BCC, 1224 MPa B2), Bailey-Hirsch dislocation (687 MPa BCC, 590 MPa B2), Orowan precipitation (54+111 MPa BCC, 55 MPa B2), and Fleischer solid solution (106 MPa BCC, 177 MPa B2) contributions. Theoretical total is 2164 MPa, closely matching experiment. Dominant mechanisms are grain boundary (52.55%) and dislocation (30.00%). Microstructural inputs include BCC grain size 0.28 μm, B2 0.22 μm, Fe5Si3 vol. 8.4% radius 102 nm, B2 precipitates vol. 34% radius 220 nm, dislocation densities 4.46e15 and 3.36e15 m−2. Phase fractions were measured as BCC 56%, B2 34%, normalized to 62% and 38%. The alloy microhardness (7.8 GPa) far exceeds dual-phase steel (2.0–2.4 GPa); Fig. 9(e,f) and Table 9 / Supplementary Table S1 compare properties against HEAs and conventional steels. Ductility is ~19%. No Conclusion text beyond heading appeared. Future chunks should carry these strengthening contributions, phase/thickness parameters, and the cited figures/tables for any conclusion or extended discussion.",
+    "material_systems": [
+      "Fe40Mn19Ni15Al15Si10C1 high entropy steel",
+      "BCC phase",
+      "B2-type phase",
+      "Fe5Si3 silicide",
+      "dual-phase steel"
+    ],
+    "sample_aliases": [
+      "SPSed sample",
+      "non-equiatomic HES"
+    ],
+    "processing_route": [
+      "Spark plasma sintering"
+    ],
+    "key_variables": [
+      "yield strength: 2046 ± 160 MPa",
+      "grain size BCC: 0.28 μm",
+      "grain size B2: 0.22 μm",
+      "K0: 574 MPa·μm^(1/2)",
+      "frictional stress: 120 MPa",
+      "Fe5Si3 volume fraction: 8.4%",
+      "Fe5Si3 radius: 102 nm",
+      "B2 precipitate volume fraction: 34%",
+      "B2 radius: 220 nm",
+      "dislocation density BCC: 4.46e15 m−2",
+      "dislocation density B2: 3.36e15 m−2",
+      "shear modulus G: 75.34 GPa",
+      "grain boundary contribution: 52.55%",
+      "dislocation contribution: 30.00%",
+      "microhardness: 7.8 GPa",
+      "ductility: ~19%",
+      "theoretical strength: 2164 MPa"
+    ],
+    "microstructure": [
+      "BCC (56%, normalized 62%) with grain size 0.28 μm",
+      "B2 (34%, normalized 38%) with grain size 0.22 μm",
+      "Fe5Si3 precipitates (8.4 vol.%, radius 102 nm)",
+      "B2 precipitates (34 vol.%, radius 220 nm)",
+      "dislocation densities 4.46e15 m−2 (BCC), 3.36e15 m−2 (B2)"
+    ],
+    "properties": [
+      "compressive yield strength: 2046 ± 160 MPa",
+      "microhardness: 7.8 GPa",
+      "ductility: ~19%",
+      "theoretical total strength: 2164 MPa"
+    ],
+    "mechanisms": [
+      "grain boundary strengthening 52.55%",
+      "dislocation strengthening 30.00%",
+      "solid solution strengthening 6.14%",
+      "precipitation strengthening 5.70%"
+    ],
+    "figures_or_tables": [
+      "Figure 9(e,f)",
+      "Table 9",
+      "Supplementary Table S1"
+    ],
+    "unresolved_terms": []
+  }
+}

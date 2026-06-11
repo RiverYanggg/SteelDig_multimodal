@@ -1,0 +1,281 @@
+# Verify Eval Report: A2
+
+- target_kind: verify_fixed
+- paper_score: 81.39
+- field_count: 236
+- gate_ok: True
+
+## Scoring Formula
+
+- yes=1.0, partial=0.6, unknown=0.3, no=0.0
+- field_score = correctness_score * evidence_confidence * 100
+- sample_score = sum(field_score * field_weight) / sum(field_weight)
+- paper_score = sum(sample_score * sample_weight) / sum(sample_weight)
+- if structure gate fails, paper_score = 0
+
+## Samples
+- paper_level: 97.55 (73 fields)
+- sample_15al: 72.10 (21 fields)
+- sample_20al: 78.21 (21 fields)
+- sample_20al_01b: 87.00 (4 fields)
+- sample_25al: 71.68 (31 fields)
+- sample_28al: 75.46 (26 fields)
+- sample_30al: 83.21 (28 fields)
+- sample_30al_01b: 82.50 (4 fields)
+- sample_35al: 75.90 (28 fields)
+
+## Field-Level Trace
+
+### paper_level
+- F00001 `papers.A2.authors[0]`: score=100.00, judge=yes, conf=1.00, refs=b0002
+- F00002 `papers.A2.authors[1]`: score=100.00, judge=yes, conf=1.00, refs=b0002
+- F00003 `papers.A2.authors[2]`: score=100.00, judge=yes, conf=1.00, refs=b0002
+- F00004 `papers.A2.keywords[0]`: score=100.00, judge=yes, conf=1.00, refs=b0008
+- F00005 `papers.A2.keywords[1]`: score=100.00, judge=yes, conf=1.00, refs=b0008
+- F00006 `papers.A2.keywords[2]`: score=100.00, judge=yes, conf=1.00, refs=b0008
+- F00007 `papers.A2.keywords[3]`: score=100.00, judge=yes, conf=1.00, refs=b0008
+- F00008 `papers.A2.paper_scope`: score=90.00, judge=yes, conf=0.90, refs=b0006,b0035
+- F00009 `papers.A2.publication_year`: score=100.00, judge=yes, conf=1.00, refs=b0004,b0007
+- F00010 `papers.A2.research_type`: score=100.00, judge=yes, conf=1.00, refs=b0034,b0035
+- F00011 `papers.A2.title`: score=100.00, judge=yes, conf=1.00, refs=b0001
+- F00012 `alloys.alloy_15al.alloy_name`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00013 `alloys.alloy_15al.alloying_elements[0]`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00014 `alloys.alloy_15al.base_element`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00015 `alloys.alloy_15al.nominal_composition[al].atomic_percent`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00016 `alloys.alloy_15al.nominal_composition[al].element`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00017 `alloys.alloy_20al.alloy_name`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00018 `alloys.alloy_20al.alloying_elements[0]`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00019 `alloys.alloy_20al.base_element`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00020 `alloys.alloy_20al.nominal_composition[al].atomic_percent`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00021 `alloys.alloy_20al.nominal_composition[al].element`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00022 `alloys.alloy_20al_01b.alloy_name`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00023 `alloys.alloy_20al_01b.alloying_elements[0]`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00024 `alloys.alloy_20al_01b.alloying_elements[1]`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00025 `alloys.alloy_20al_01b.base_element`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00026 `alloys.alloy_20al_01b.nominal_composition[al].atomic_percent`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00027 `alloys.alloy_20al_01b.nominal_composition[al].element`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00028 `alloys.alloy_20al_01b.nominal_composition[b].atomic_percent`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00029 `alloys.alloy_20al_01b.nominal_composition[b].element`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00030 `alloys.alloy_25al.alloy_name`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00031 `alloys.alloy_25al.alloying_elements[0]`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00032 `alloys.alloy_25al.base_element`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00033 `alloys.alloy_25al.nominal_composition[al].atomic_percent`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00034 `alloys.alloy_25al.nominal_composition[al].element`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00035 `alloys.alloy_28al.alloy_name`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00036 `alloys.alloy_28al.alloying_elements[0]`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00037 `alloys.alloy_28al.base_element`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00038 `alloys.alloy_28al.nominal_composition[al].atomic_percent`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00039 `alloys.alloy_28al.nominal_composition[al].element`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00040 `alloys.alloy_30al.alloy_name`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00041 `alloys.alloy_30al.alloying_elements[0]`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00042 `alloys.alloy_30al.base_element`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00043 `alloys.alloy_30al.nominal_composition[al].atomic_percent`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00044 `alloys.alloy_30al.nominal_composition[al].element`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00045 `alloys.alloy_30al_01b.alloy_name`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00046 `alloys.alloy_30al_01b.alloying_elements[0]`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00047 `alloys.alloy_30al_01b.alloying_elements[1]`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00048 `alloys.alloy_30al_01b.base_element`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00049 `alloys.alloy_30al_01b.nominal_composition[al].atomic_percent`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00050 `alloys.alloy_30al_01b.nominal_composition[al].element`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00051 `alloys.alloy_30al_01b.nominal_composition[b].atomic_percent`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00052 `alloys.alloy_30al_01b.nominal_composition[b].element`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00053 `alloys.alloy_35al.alloy_name`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00054 `alloys.alloy_35al.alloying_elements[0]`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00055 `alloys.alloy_35al.base_element`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00056 `alloys.alloy_35al.nominal_composition[al].atomic_percent`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00057 `alloys.alloy_35al.nominal_composition[al].element`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00058 `processes.proc_15al_ac.description`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00059 `processes.proc_20al_01b_ac.description`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00060 `processes.proc_20al_ac.description`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00061 `processes.proc_25al_ac.description`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00062 `processes.proc_28al_ac.description`: score=0.00, judge=no, conf=0.00, refs=b0035
+- F00063 `processes.proc_30al_01b_ac.description`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00064 `processes.proc_30al_ac.description`: score=42.00, judge=partial, conf=0.70, refs=b0035,b0096
+- F00065 `processes.proc_35al_ac.description`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00229 `unmapped_findings.idx_0.value`: score=100.00, judge=yes, conf=1.00, refs=b0012,b0051
+- F00230 `unmapped_findings.idx_1.value`: score=100.00, judge=yes, conf=1.00, refs=b0137
+- F00231 `unmapped_findings.idx_2.value`: score=100.00, judge=yes, conf=1.00, refs=b0137,b0028
+- F00232 `unmapped_findings.idx_3.value`: score=100.00, judge=yes, conf=1.00, refs=b0051
+- F00233 `unmapped_findings.idx_4.value`: score=100.00, judge=yes, conf=1.00, refs=b0133,b0139
+- F00234 `unmapped_findings.idx_5.value`: score=100.00, judge=yes, conf=1.00, refs=b0024
+- F00235 `unmapped_findings.idx_6.value`: score=100.00, judge=yes, conf=1.00, refs=b0028,b0032
+- F00236 `unmapped_findings.idx_7.value`: score=100.00, judge=yes, conf=1.00, refs=b0072,b0073,b0138
+
+### sample_15al
+- F00066 `processing_steps.sample_15al.cooling_medium`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00067 `processing_steps.sample_15al.method`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00068 `processing_steps.sample_15al.sequence`: score=6.00, judge=unknown, conf=0.20, refs=b0035
+- F00069 `processing_steps.sample_15al.type`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00102 `structures.sample_15al.microstructure_list[1].defects[dislocation].dislocation_density`: score=48.00, judge=partial, conf=0.80, refs=b0039,b0053
+- F00103 `structures.sample_15al.microstructure_list[1].defects[dislocation].type`: score=100.00, judge=yes, conf=1.00, refs=b0039,b0053
+- F00104 `structures.sample_15al.microstructure_list[1].grain_structure.average_grain_size.value_with_unit`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00105 `structures.sample_15al.microstructure_list[1].phases_present[fe_disordered_bcc].crystal_structure`: score=70.00, judge=yes, conf=0.70, refs=b0006,b0053
+- F00106 `structures.sample_15al.microstructure_list[1].phases_present[fe_disordered_bcc].morphology`: score=36.00, judge=partial, conf=0.60, refs=b0035
+- F00107 `structures.sample_15al.microstructure_list[1].phases_present[fe_disordered_bcc].phase_name`: score=90.00, judge=yes, conf=0.90, refs=b0006,b0129
+- F00108 `structures.sample_15al.microstructure_list[1].phases_present[fe_disordered_bcc].volume_fraction`: score=9.00, judge=unknown, conf=0.30, refs=b0035,b0053
+- F00109 `structures.sample_15al.microstructure_list[1].related_sequence`: score=6.00, judge=unknown, conf=0.20, refs=b0035
+- F00110 `structures.sample_15al.number_of_phases`: score=36.00, judge=partial, conf=0.60, refs=b0035,b0053
+- F00111 `structures.sample_15al.overall_structure`: score=80.00, judge=yes, conf=0.80, refs=b0006,b0035
+- F00189 `properties.sample_15al.mechanical.tensile_properties.strain_hardening_rate[compression_1_1_5_strain].direction`: score=90.00, judge=yes, conf=0.90, refs=b0012,b0040
+- F00190 `properties.sample_15al.mechanical.tensile_properties.strain_hardening_rate[compression_1_1_5_strain].value_with_unit`: score=100.00, judge=yes, conf=1.00, refs=b0020
+- F00191 `properties.sample_15al.mechanical.tensile_properties.yield_strength[compression].direction`: score=100.00, judge=yes, conf=1.00, refs=b0040
+- F00192 `properties.sample_15al.mechanical.tensile_properties.yield_strength[compression].value_with_unit`: score=100.00, judge=yes, conf=1.00, refs=b0016
+- F00211 `characterization_methods.sample_15al.key_findings`: score=90.00, judge=yes, conf=0.90, refs=b0039
+- F00212 `characterization_methods.sample_15al.purpose`: score=70.00, judge=yes, conf=0.70, refs=b0029,b0048
+- F00213 `characterization_methods.sample_15al.technique`: score=100.00, judge=yes, conf=1.00, refs=b0048
+
+### sample_20al
+- F00070 `processing_steps.sample_20al.cooling_medium`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00071 `processing_steps.sample_20al.method`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00072 `processing_steps.sample_20al.sequence`: score=36.00, judge=partial, conf=0.60, refs=b0035
+- F00073 `processing_steps.sample_20al.type`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00112 `structures.sample_20al.microstructure_list[1].defects[dislocation].dislocation_density`: score=48.00, judge=partial, conf=0.80, refs=b0053,b0057
+- F00113 `structures.sample_20al.microstructure_list[1].defects[dislocation].type`: score=100.00, judge=yes, conf=1.00, refs=b0053,b0057
+- F00114 `structures.sample_20al.microstructure_list[1].grain_structure.average_grain_size.value_with_unit`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00115 `structures.sample_20al.microstructure_list[1].phases_present[fe_disordered_short_range_ordered_bcc].crystal_structure`: score=100.00, judge=yes, conf=1.00, refs=b0053,b0013
+- F00116 `structures.sample_20al.microstructure_list[1].phases_present[fe_disordered_short_range_ordered_bcc].morphology`: score=36.00, judge=partial, conf=0.60, refs=b0035
+- F00117 `structures.sample_20al.microstructure_list[1].phases_present[fe_disordered_short_range_ordered_bcc].phase_name`: score=42.00, judge=partial, conf=0.70, refs=b0053,b0013
+- F00118 `structures.sample_20al.microstructure_list[1].phases_present[fe_disordered_short_range_ordered_bcc].volume_fraction`: score=36.00, judge=partial, conf=0.60, refs=b0053
+- F00119 `structures.sample_20al.microstructure_list[1].related_sequence`: score=6.00, judge=unknown, conf=0.20, refs=-
+- F00120 `structures.sample_20al.number_of_phases`: score=90.00, judge=yes, conf=0.90, refs=b0053
+- F00121 `structures.sample_20al.overall_structure`: score=90.00, judge=yes, conf=0.90, refs=b0035,b0053
+- F00193 `properties.sample_20al.mechanical.tensile_properties.strain_hardening_rate[compression_1_1_5_strain].direction`: score=100.00, judge=yes, conf=1.00, refs=b0012,b0040
+- F00194 `properties.sample_20al.mechanical.tensile_properties.strain_hardening_rate[compression_1_1_5_strain].value_with_unit`: score=100.00, judge=yes, conf=1.00, refs=b0020
+- F00195 `properties.sample_20al.mechanical.tensile_properties.yield_strength[compression].direction`: score=100.00, judge=yes, conf=1.00, refs=b0040
+- F00196 `properties.sample_20al.mechanical.tensile_properties.yield_strength[compression].value_with_unit`: score=90.00, judge=yes, conf=0.90, refs=b0016
+- F00214 `characterization_methods.sample_20al.key_findings`: score=100.00, judge=yes, conf=1.00, refs=b0053,b0057
+- F00215 `characterization_methods.sample_20al.purpose`: score=90.00, judge=yes, conf=0.90, refs=b0048,b0053
+- F00216 `characterization_methods.sample_20al.technique`: score=100.00, judge=yes, conf=1.00, refs=b0048
+
+### sample_20al_01b
+- F00074 `processing_steps.sample_20al_01b.cooling_medium`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00075 `processing_steps.sample_20al_01b.method`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00076 `processing_steps.sample_20al_01b.sequence`: score=48.00, judge=partial, conf=0.80, refs=b0035
+- F00077 `processing_steps.sample_20al_01b.type`: score=100.00, judge=yes, conf=1.00, refs=b0035
+
+### sample_25al
+- F00078 `processing_steps.sample_25al.cooling_medium`: score=90.00, judge=yes, conf=0.90, refs=b0035
+- F00079 `processing_steps.sample_25al.method`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00080 `processing_steps.sample_25al.processing_steps_notes`: score=90.00, judge=yes, conf=0.90, refs=b0035
+- F00081 `processing_steps.sample_25al.sequence`: score=9.00, judge=unknown, conf=0.30, refs=b0035
+- F00082 `processing_steps.sample_25al.type`: score=90.00, judge=yes, conf=0.90, refs=b0035
+- F00122 `structures.sample_25al.microstructure_list[1].defects[dislocation_and_apb].dislocation_density`: score=90.00, judge=yes, conf=0.90, refs=b0065,b0066,b0071
+- F00123 `structures.sample_25al.microstructure_list[1].defects[dislocation_and_apb].type`: score=90.00, judge=yes, conf=0.90, refs=b0065
+- F00124 `structures.sample_25al.microstructure_list[1].grain_structure.average_grain_size.value_with_unit`: score=90.00, judge=yes, conf=0.90, refs=b0035
+- F00125 `structures.sample_25al.microstructure_list[1].phases_present[fe3al_b2_do3_ordered].crystal_structure`: score=80.00, judge=yes, conf=0.80, refs=b0035,b0065
+- F00126 `structures.sample_25al.microstructure_list[1].phases_present[fe3al_b2_do3_ordered].morphology`: score=42.00, judge=partial, conf=0.70, refs=b0035,b0065
+- F00127 `structures.sample_25al.microstructure_list[1].phases_present[fe3al_b2_do3_ordered].phase_name`: score=90.00, judge=yes, conf=0.90, refs=b0035,b0065
+- F00128 `structures.sample_25al.microstructure_list[1].phases_present[fe3al_b2_do3_ordered].volume_fraction`: score=9.00, judge=unknown, conf=0.30, refs=b0035
+- F00129 `structures.sample_25al.microstructure_list[1].related_sequence`: score=6.00, judge=unknown, conf=0.20, refs=-
+- F00130 `structures.sample_25al.number_of_phases`: score=60.00, judge=yes, conf=0.60, refs=b0035
+- F00131 `structures.sample_25al.overall_structure`: score=90.00, judge=yes, conf=0.90, refs=b0035,b0065
+- F00162 `interfaces.sample_25al.defect_interaction[0].interaction_type`: score=90.00, judge=yes, conf=0.90, refs=b0065
+- F00163 `interfaces.sample_25al.defect_interaction[0].quality_description`: score=90.00, judge=yes, conf=0.90, refs=b0065,b0071
+- F00164 `interfaces.sample_25al.phase_evolution`: score=80.00, judge=yes, conf=0.80, refs=b0065
+- F00165 `interfaces.sample_25al.phases[b2_domain].coherence`: score=0.00, judge=no, conf=0.80, refs=b0065
+- F00166 `interfaces.sample_25al.phases[b2_domain].phase_1_name`: score=90.00, judge=yes, conf=0.90, refs=b0065
+- F00167 `interfaces.sample_25al.phases[b2_domain].phase_2_name`: score=80.00, judge=yes, conf=0.80, refs=b0065
+- F00168 `interfaces.sample_25al.phases[do3_domain].coherence`: score=9.00, judge=unknown, conf=0.30, refs=b0024,b0065
+- F00169 `interfaces.sample_25al.phases[do3_domain].phase_1_name`: score=90.00, judge=yes, conf=0.90, refs=b0065
+- F00170 `interfaces.sample_25al.phases[do3_domain].phase_2_name`: score=80.00, judge=yes, conf=0.80, refs=b0065
+- F00197 `properties.sample_25al.mechanical.tensile_properties.strain_hardening_rate[compression_1_1_5_strain].direction`: score=80.00, judge=yes, conf=0.80, refs=b0012,b0040
+- F00198 `properties.sample_25al.mechanical.tensile_properties.strain_hardening_rate[compression_1_1_5_strain].value_with_unit`: score=90.00, judge=yes, conf=0.90, refs=b0020
+- F00199 `properties.sample_25al.mechanical.tensile_properties.yield_strength[compression].direction`: score=80.00, judge=yes, conf=0.80, refs=b0040
+- F00200 `properties.sample_25al.mechanical.tensile_properties.yield_strength[compression].value_with_unit`: score=90.00, judge=yes, conf=0.90, refs=b0016
+- F00217 `characterization_methods.sample_25al.key_findings`: score=90.00, judge=yes, conf=0.90, refs=b0065,b0066,b0071
+- F00218 `characterization_methods.sample_25al.purpose`: score=80.00, judge=yes, conf=0.80, refs=b0064
+- F00219 `characterization_methods.sample_25al.technique`: score=90.00, judge=yes, conf=0.90, refs=b0048,b0064
+
+### sample_28al
+- F00083 `processing_steps.sample_28al.cooling_medium`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00084 `processing_steps.sample_28al.method`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00085 `processing_steps.sample_28al.processing_steps_notes`: score=36.00, judge=partial, conf=0.60, refs=b0035
+- F00086 `processing_steps.sample_28al.sequence`: score=6.00, judge=unknown, conf=0.20, refs=-
+- F00087 `processing_steps.sample_28al.type`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00132 `structures.sample_28al.microstructure_list[1].defects[dislocation].dislocation_density`: score=100.00, judge=yes, conf=1.00, refs=b0072,b0073
+- F00133 `structures.sample_28al.microstructure_list[1].defects[dislocation].type`: score=100.00, judge=yes, conf=1.00, refs=b0072
+- F00134 `structures.sample_28al.microstructure_list[1].grain_structure.average_grain_size.value_with_unit`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00135 `structures.sample_28al.microstructure_list[1].phases_present[feal_b2_ordered_with_weak_do3].crystal_structure`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00136 `structures.sample_28al.microstructure_list[1].phases_present[feal_b2_ordered_with_weak_do3].morphology`: score=48.00, judge=partial, conf=0.80, refs=b0035
+- F00137 `structures.sample_28al.microstructure_list[1].phases_present[feal_b2_ordered_with_weak_do3].phase_name`: score=42.00, judge=partial, conf=0.70, refs=b0035,b0011
+- F00138 `structures.sample_28al.microstructure_list[1].phases_present[feal_b2_ordered_with_weak_do3].volume_fraction`: score=6.00, judge=unknown, conf=0.20, refs=-
+- F00139 `structures.sample_28al.microstructure_list[1].related_sequence`: score=6.00, judge=unknown, conf=0.20, refs=-
+- F00140 `structures.sample_28al.number_of_phases`: score=6.00, judge=unknown, conf=0.20, refs=-
+- F00141 `structures.sample_28al.overall_structure`: score=90.00, judge=yes, conf=0.90, refs=b0035,b0072,b0073
+- F00171 `interfaces.sample_28al.defect_interaction[0].interaction_type`: score=100.00, judge=yes, conf=1.00, refs=b0072,b0073
+- F00172 `interfaces.sample_28al.defect_interaction[0].quality_description`: score=100.00, judge=yes, conf=1.00, refs=b0072,b0073
+- F00173 `interfaces.sample_28al.phase_evolution`: score=100.00, judge=yes, conf=1.00, refs=b0072,b0096
+- F00174 `interfaces.sample_28al.phases[do3_domain].coherence`: score=100.00, judge=yes, conf=1.00, refs=b0072
+- F00175 `interfaces.sample_28al.phases[do3_domain].phase_1_name`: score=100.00, judge=yes, conf=1.00, refs=b0035,b0072
+- F00176 `interfaces.sample_28al.phases[do3_domain].phase_2_name`: score=100.00, judge=yes, conf=1.00, refs=b0035,b0072
+- F00201 `properties.sample_28al.mechanical.tensile_properties.strain_hardening_rate[compression_1_1_5_strain].direction`: score=100.00, judge=yes, conf=1.00, refs=b0012,b0040
+- F00202 `properties.sample_28al.mechanical.tensile_properties.strain_hardening_rate[compression_1_1_5_strain].unit`: score=100.00, judge=yes, conf=1.00, refs=b0020
+- F00220 `characterization_methods.sample_28al.key_findings`: score=100.00, judge=yes, conf=1.00, refs=b0072,b0073
+- F00221 `characterization_methods.sample_28al.purpose`: score=42.00, judge=partial, conf=0.70, refs=b0029
+- F00222 `characterization_methods.sample_28al.technique`: score=100.00, judge=yes, conf=1.00, refs=b0048,b0072
+
+### sample_30al
+- F00088 `processing_steps.sample_30al.cooling_medium`: score=95.00, judge=yes, conf=0.95, refs=b0035
+- F00089 `processing_steps.sample_30al.method`: score=95.00, judge=yes, conf=0.95, refs=b0035
+- F00090 `processing_steps.sample_30al.processing_steps_notes`: score=95.00, judge=yes, conf=0.95, refs=b0035
+- F00091 `processing_steps.sample_30al.sequence`: score=70.00, judge=yes, conf=0.70, refs=b0035
+- F00092 `processing_steps.sample_30al.type`: score=95.00, judge=yes, conf=0.95, refs=b0035
+- F00142 `structures.sample_30al.microstructure_list[1].defects[dislocation_and_apb].dislocation_density`: score=90.00, judge=yes, conf=0.90, refs=b0096,b0073
+- F00143 `structures.sample_30al.microstructure_list[1].defects[dislocation_and_apb].type`: score=95.00, judge=yes, conf=0.95, refs=b0096
+- F00144 `structures.sample_30al.microstructure_list[1].grain_structure.average_grain_size.value_with_unit`: score=95.00, judge=yes, conf=0.95, refs=b0035
+- F00145 `structures.sample_30al.microstructure_list[1].phases_present[feal_b2_ordered_with_weak_do3].crystal_structure`: score=90.00, judge=yes, conf=0.90, refs=b0035
+- F00146 `structures.sample_30al.microstructure_list[1].phases_present[feal_b2_ordered_with_weak_do3].morphology`: score=36.00, judge=partial, conf=0.60, refs=b0035
+- F00147 `structures.sample_30al.microstructure_list[1].phases_present[feal_b2_ordered_with_weak_do3].phase_name`: score=90.00, judge=yes, conf=0.90, refs=b0096,b0035
+- F00148 `structures.sample_30al.microstructure_list[1].phases_present[feal_b2_ordered_with_weak_do3].volume_fraction`: score=30.00, judge=partial, conf=0.50, refs=b0096
+- F00149 `structures.sample_30al.microstructure_list[1].related_sequence`: score=6.00, judge=unknown, conf=0.20, refs=-
+- F00150 `structures.sample_30al.number_of_phases`: score=80.00, judge=yes, conf=0.80, refs=b0096
+- F00151 `structures.sample_30al.overall_structure`: score=90.00, judge=yes, conf=0.90, refs=b0035,b0096
+- F00177 `interfaces.sample_30al.defect_interaction[0].interaction_type`: score=95.00, judge=yes, conf=0.95, refs=b0096
+- F00178 `interfaces.sample_30al.defect_interaction[0].quality_description`: score=95.00, judge=yes, conf=0.95, refs=b0096
+- F00179 `interfaces.sample_30al.phase_evolution`: score=95.00, judge=yes, conf=0.95, refs=b0096
+- F00180 `interfaces.sample_30al.phases[do3_domain].coherence`: score=90.00, judge=yes, conf=0.90, refs=b0096
+- F00181 `interfaces.sample_30al.phases[do3_domain].phase_1_name`: score=90.00, judge=yes, conf=0.90, refs=b0096
+- F00182 `interfaces.sample_30al.phases[do3_domain].phase_2_name`: score=90.00, judge=yes, conf=0.90, refs=b0096
+- F00203 `properties.sample_30al.mechanical.tensile_properties.strain_hardening_rate[compression_1_1_5_strain].direction`: score=95.00, judge=yes, conf=0.95, refs=b0012,b0020
+- F00204 `properties.sample_30al.mechanical.tensile_properties.strain_hardening_rate[compression_1_1_5_strain].value_with_unit`: score=95.00, judge=yes, conf=0.95, refs=b0020
+- F00205 `properties.sample_30al.mechanical.tensile_properties.yield_strength[compression].direction`: score=95.00, judge=yes, conf=0.95, refs=b0040
+- F00206 `properties.sample_30al.mechanical.tensile_properties.yield_strength[compression].value_with_unit`: score=90.00, judge=yes, conf=0.90, refs=b0016,b0011
+- F00223 `characterization_methods.sample_30al.key_findings`: score=90.00, judge=yes, conf=0.90, refs=b0096,b0073
+- F00224 `characterization_methods.sample_30al.purpose`: score=80.00, judge=yes, conf=0.80, refs=b0048
+- F00225 `characterization_methods.sample_30al.technique`: score=95.00, judge=yes, conf=0.95, refs=b0048
+
+### sample_30al_01b
+- F00093 `processing_steps.sample_30al_01b.cooling_medium`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00094 `processing_steps.sample_30al_01b.method`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00095 `processing_steps.sample_30al_01b.sequence`: score=30.00, judge=partial, conf=0.50, refs=b0035
+- F00096 `processing_steps.sample_30al_01b.type`: score=100.00, judge=yes, conf=1.00, refs=b0035
+
+### sample_35al
+- F00097 `processing_steps.sample_35al.cooling_medium`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00098 `processing_steps.sample_35al.method`: score=100.00, judge=yes, conf=1.00, refs=b0035
+- F00099 `processing_steps.sample_35al.processing_steps_notes`: score=90.00, judge=yes, conf=0.90, refs=b0035
+- F00100 `processing_steps.sample_35al.sequence`: score=80.00, judge=yes, conf=0.80, refs=b0035
+- F00101 `processing_steps.sample_35al.type`: score=90.00, judge=yes, conf=0.90, refs=b0035
+- F00152 `structures.sample_35al.microstructure_list[1].defects[dislocation].dislocation_density`: score=90.00, judge=yes, conf=0.90, refs=b0109,b0124
+- F00153 `structures.sample_35al.microstructure_list[1].defects[dislocation].type`: score=100.00, judge=yes, conf=1.00, refs=b0109
+- F00154 `structures.sample_35al.microstructure_list[1].grain_structure.average_grain_size.value_with_unit`: score=90.00, judge=yes, conf=0.90, refs=b0035
+- F00155 `structures.sample_35al.microstructure_list[1].phases_present[feal_b2_ordered].crystal_structure`: score=80.00, judge=yes, conf=0.80, refs=b0035,b0109
+- F00156 `structures.sample_35al.microstructure_list[1].phases_present[feal_b2_ordered].morphology`: score=36.00, judge=partial, conf=0.60, refs=b0035
+- F00157 `structures.sample_35al.microstructure_list[1].phases_present[feal_b2_ordered].phase_name`: score=42.00, judge=partial, conf=0.70, refs=b0035,b0109
+- F00158 `structures.sample_35al.microstructure_list[1].phases_present[feal_b2_ordered].volume_fraction`: score=6.00, judge=unknown, conf=0.20, refs=-
+- F00159 `structures.sample_35al.microstructure_list[1].related_sequence`: score=80.00, judge=yes, conf=0.80, refs=b0035
+- F00160 `structures.sample_35al.number_of_phases`: score=9.00, judge=unknown, conf=0.30, refs=b0109
+- F00161 `structures.sample_35al.overall_structure`: score=90.00, judge=yes, conf=0.90, refs=b0035,b0109
+- F00183 `interfaces.sample_35al.defect_interaction[0].interaction_type`: score=42.00, judge=partial, conf=0.70, refs=b0109
+- F00184 `interfaces.sample_35al.defect_interaction[0].quality_description`: score=90.00, judge=yes, conf=0.90, refs=b0109
+- F00185 `interfaces.sample_35al.phase_evolution`: score=90.00, judge=yes, conf=0.90, refs=b0109
+- F00186 `interfaces.sample_35al.phases[do3_domain].coherence`: score=80.00, judge=yes, conf=0.80, refs=b0109
+- F00187 `interfaces.sample_35al.phases[do3_domain].phase_1_name`: score=70.00, judge=yes, conf=0.70, refs=b0109
+- F00188 `interfaces.sample_35al.phases[do3_domain].phase_2_name`: score=70.00, judge=yes, conf=0.70, refs=b0109
+- F00207 `properties.sample_35al.mechanical.tensile_properties.strain_hardening_rate[compression_1_1_5_strain].direction`: score=90.00, judge=yes, conf=0.90, refs=b0012,b0051,b0020
+- F00208 `properties.sample_35al.mechanical.tensile_properties.strain_hardening_rate[compression_1_1_5_strain].value_with_unit`: score=90.00, judge=yes, conf=0.90, refs=b0020
+- F00209 `properties.sample_35al.mechanical.tensile_properties.yield_strength[compression].direction`: score=100.00, judge=yes, conf=1.00, refs=b0040
+- F00210 `properties.sample_35al.mechanical.tensile_properties.yield_strength[compression].value_with_unit`: score=80.00, judge=yes, conf=0.80, refs=b0016
+- F00226 `characterization_methods.sample_35al.key_findings`: score=90.00, judge=yes, conf=0.90, refs=b0109,b0120,b0124
+- F00227 `characterization_methods.sample_35al.purpose`: score=80.00, judge=yes, conf=0.80, refs=b0109,b0048
+- F00228 `characterization_methods.sample_35al.technique`: score=90.00, judge=yes, conf=0.90, refs=b0048,b0120

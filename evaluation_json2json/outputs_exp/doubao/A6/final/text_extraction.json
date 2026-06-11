@@ -1,0 +1,780 @@
+{
+  "papers": [
+    {
+      "paper_id": "A6",
+      "doi": null,
+      "title": "Research status and development prospect of Fe-Mn-C-Al system low-density steels",
+      "authors": [
+        "Shao-bin Bai",
+        "Yong-an Chen",
+        "Xin Liu",
+        "Hui-hu Lu",
+        "Pei-kang Bai",
+        "Da-zhao Li",
+        "Zhi-quan Huang",
+        "Jing-yang Li"
+      ],
+      "publication_year": "2023",
+      "journal": null,
+      "keywords": [
+        "Fe-Mn-C-Al low-density steel",
+        "Microstructure",
+        "Production process",
+        "Strengthening and toughening mechanisms",
+        "Service performance"
+      ],
+      "research_type": "review",
+      "paper_scope": "Systematically expounds the composition design, production process, strengthening and strain hardening mechanism, microstructure evolution of Fe-Mn-Al-C system low-density steels, discusses various strengthening and strain hardening mechanisms including solid solution strengthening, grain refinement strengthening, precipitation strengthening, TRIP, TWIP, MBIP, SIP and DSBR etc., analyzes service performance covering cryogenic performance, impact toughness, fatigue performance, hydrogen embrittlement, wear performance and tensile properties, points out existing problems and future challenges, and prospects the future development direction."
+    }
+  ],
+  "alloys": [
+    {
+      "alloy_id": "alloy_fe_mn_al_c",
+      "paper_id": "A6",
+      "alloy_name": "Fe-Mn-Al-C system low-density steel",
+      "aliases": [
+        "low-density steel",
+        "FeMnAlC lightweight steel"
+      ],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Al",
+        "C",
+        "Si",
+        "Ni",
+        "Cr",
+        "V",
+        "Mo",
+        "Nb",
+        "Ti",
+        "Cu"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Mn",
+          "weight_percent": "Single ferrite steel: <5.0; Single austenite steel: 15.0-30.0; A-BDP steel: 10.0-25.0; F-BDP steel: 3.0-10.0",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "Single ferrite steel: 5.0-12.0; Single austenite steel: 2.0-12.0; A-BDP steel: 5.0-12.0; F-BDP steel: 3.0-9.0",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "Single ferrite steel: <0.1; Single austenite steel: 0.5-2.0; A-BDP steel: 0.6-1.0; F-BDP steel: <0.4",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "Density calculation formula: ρ = 8.15 - 0.101ω(Al) - 0.41ω(C) - 0.0085ω(Mn); Austenite lattice constant formula: α = 0.35721 + 0.0002771ω(Al) + 0.0044089ω(C) + 0.0001166ω(Mn); Yield strength increment formulas: σ_yield = 10.5ω(Al) + 351.5, σ_yield = 0.58ω(Mn) + 328.0, σ_yield = 180.7ω(C) + 250.7; C solid solution in austenite is generally below 1.2 wt% to restrain carbide precipitation and crack generation during plastic processing."
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_01_hot_rolling",
+      "paper_id": "A6",
+      "alloy_id": "alloy_fe_mn_al_c",
+      "description": "Homogenization at 1100-1250 °C for 1-3 h, then hot rolled to 2-5 mm thickness between 1100 and 850 °C, possible reheating between rolling passes to avoid crack generation.",
+      "processes_notes": "Large rolling reduction provides enough recrystallization driving force to inhibit segregation of Fe-Al or FeAl phases."
+    },
+    {
+      "process_id": "proc_02_cold_rolling_annealing",
+      "paper_id": "A6",
+      "alloy_id": "alloy_fe_mn_al_c",
+      "description": "Cold rolling followed by recrystallization annealing to tailor δ-ferrite size, texture and κ-carbide, eliminate work hardening and improve toughness.",
+      "processes_notes": "Cold rolling reduction of 30%, 40%, 50% are commonly adopted, hardness increases with cold rolling reduction and decreases with annealing time due to recrystallization."
+    },
+    {
+      "process_id": "proc_03_aging",
+      "paper_id": "A6",
+      "alloy_id": "alloy_fe_mn_al_c",
+      "description": "Aging treatment at 500-700 °C for 0.5-2 h to promote nucleation of nano precipitates, adjust carbide distribution and enhance precipitation strengthening.",
+      "processes_notes": "Aging temperature and time need precise regulation to avoid formation of intergranular κ*-carbide and brittle β-Mn phase."
+    },
+    {
+      "process_id": "proc_04_solution_aging",
+      "paper_id": "A6",
+      "alloy_id": "alloy_fe_mn_al_c",
+      "description": "Solution treatment followed by rapid cooling to room temperature, then subjected to isothermal annealing and aging treatments for austenite-base steels.",
+      "processes_notes": "Cooling rate after hot rolling strongly influences intergranular κ-carbide formation."
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_ferrite",
+      "paper_id": "A6",
+      "alloy_id": "alloy_fe_mn_al_c",
+      "process_id": "proc_01_hot_rolling"
+    },
+    {
+      "sample_id": "sample_austenite",
+      "paper_id": "A6",
+      "alloy_id": "alloy_fe_mn_al_c",
+      "process_id": "proc_04_solution_aging"
+    },
+    {
+      "sample_id": "sample_abdp",
+      "paper_id": "A6",
+      "alloy_id": "alloy_fe_mn_al_c",
+      "process_id": "proc_02_cold_rolling_annealing"
+    },
+    {
+      "sample_id": "sample_fbdp",
+      "paper_id": "A6",
+      "alloy_id": "alloy_fe_mn_al_c",
+      "process_id": "proc_03_aging"
+    }
+  ],
+  "processing_steps": [
+    {
+      "sample_id": null,
+      "paper_id": "A6",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "homogenization",
+      "temperature": "1100-1250",
+      "unit": "°C",
+      "duration": "1-3",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Before hot rolling"
+    },
+    {
+      "sample_id": null,
+      "paper_id": "A6",
+      "sequence": "2",
+      "type": "thermomechanical_processing",
+      "method": "hot rolling",
+      "temperature": "850-1100",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": "to 2-5 mm thickness",
+      "processing_steps_notes": "Possible reheating between passes to avoid cracks"
+    },
+    {
+      "sample_id": null,
+      "paper_id": "A6",
+      "sequence": "3",
+      "type": "thermomechanical_processing",
+      "method": "cold rolling",
+      "temperature": null,
+      "unit": null,
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": "30%, 40%, 50% commonly used",
+      "processing_steps_notes": "Deformation twins generated during cold rolling refine grains through dynamic Hall-Petch effect"
+    },
+    {
+      "sample_id": null,
+      "paper_id": "A6",
+      "sequence": "4",
+      "type": "heat_treatment",
+      "method": "recrystallization annealing",
+      "temperature": "600-800",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Eliminates work hardening, improves toughness, tailors grain size and precipitates"
+    },
+    {
+      "sample_id": null,
+      "paper_id": "A6",
+      "sequence": "5",
+      "type": "heat_treatment",
+      "method": "aging",
+      "temperature": "500-700",
+      "unit": "°C",
+      "duration": "0.5-2",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Promotes nucleation of nano precipitates, enhances precipitation strengthening"
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_ferrite",
+      "sample_id": "sample_ferrite",
+      "overall_structure": "Single ferrite structure, δ-ferrite prolongs along rolling direction and presents banded morphology under hot rolling",
+      "number_of_phases": "4",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "ms_001",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "δ-ferrite",
+              "crystal_structure": "BCC",
+              "volume_fraction": "major",
+              "morphology": "banded",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "B2",
+              "crystal_structure": "ordered BCC (CsCl type)",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "DO3",
+              "crystal_structure": "ordered Fe3Al",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "κ-carbide",
+              "crystal_structure": "L12 ordered perovskite",
+              "volume_fraction": null,
+              "morphology": "precipitated along grain boundary at slow cooling rate",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocation",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_austenite",
+      "sample_id": "sample_austenite",
+      "overall_structure": "Single austenite structure, composed of equiaxed austenite together with annealing twins",
+      "number_of_phases": "5",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "ms_002",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "γ-austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": "major",
+              "morphology": "equiaxed, lath-like after cold rolling",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "α-ferrite",
+              "crystal_structure": "BCC",
+              "volume_fraction": "minor",
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "δ-ferrite",
+              "crystal_structure": "BCC",
+              "volume_fraction": "minor",
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "κ-carbide",
+              "crystal_structure": "L12 ordered perovskite",
+              "volume_fraction": null,
+              "morphology": "intragranular κ'-carbide, intergranular κ*-carbide",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "β-Mn",
+              "crystal_structure": null,
+              "volume_fraction": "minor",
+              "morphology": "brittle phase formed at high Mn content (>20 wt%)",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "annealing twin, deformation twin",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_abdp",
+      "sample_id": "sample_abdp",
+      "overall_structure": "Austenite base duplex phase structure, full austenite after quenching, lath-like ferrite forms along austenite grain boundary after aging at 500-800 °C",
+      "number_of_phases": "6",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "ms_003",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "α-ferrite",
+              "crystal_structure": "BCC",
+              "volume_fraction": null,
+              "morphology": "lath-like",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "B2",
+              "crystal_structure": "ordered BCC (CsCl type)",
+              "volume_fraction": null,
+              "morphology": "banded, blocky, ultrafine",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "DO3",
+              "crystal_structure": "ordered Fe3Al",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "γ-austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": "major",
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "κ-carbide",
+              "crystal_structure": "L12 ordered perovskite",
+              "volume_fraction": null,
+              "morphology": "generated along interface between austenite and δ-ferrite",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "β-Mn",
+              "crystal_structure": null,
+              "volume_fraction": "minor",
+              "morphology": "brittle phase",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocation",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_fbdp",
+      "sample_id": "sample_fbdp",
+      "overall_structure": "Ferrite base duplex phase structure, typical bimodal banded structure of δ-ferrite and austenite after hot/cold rolling",
+      "number_of_phases": "7",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "ms_004",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "α-ferrite",
+              "crystal_structure": "BCC",
+              "volume_fraction": "major",
+              "morphology": "banded",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "δ-ferrite",
+              "crystal_structure": "BCC",
+              "volume_fraction": null,
+              "morphology": "banded",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "B2",
+              "crystal_structure": "ordered BCC (CsCl type)",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "DO3",
+              "crystal_structure": "ordered Fe3Al",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "γ-austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": "minor",
+              "morphology": "ultrafine distributed on ferrite matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "κ-carbide",
+              "crystal_structure": "L12 ordered perovskite",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "α'-martensite",
+              "crystal_structure": "BCT",
+              "volume_fraction": "minor",
+              "morphology": "strain-induced",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocation",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "prop_set_01",
+      "sample_id": null,
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "1058",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            },
+            {
+              "direction": null,
+              "value": "800",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "1548",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            },
+            {
+              "direction": null,
+              "value": "1620",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            },
+            {
+              "direction": null,
+              "value": "1310",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            },
+            {
+              "direction": null,
+              "value": "840",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "98.9",
+              "unit": "%"
+            },
+            {
+              "direction": null,
+              "value": "80",
+              "unit": "%"
+            },
+            {
+              "direction": null,
+              "value": "40",
+              "unit": "%"
+            },
+            {
+              "direction": null,
+              "value": "18.0",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": null,
+            "value": "430",
+            "scale": "HV",
+            "unit": null
+          },
+          {
+            "region": null,
+            "value": "400",
+            "scale": "HV",
+            "unit": null
+          },
+          {
+            "region": null,
+            "value": "340",
+            "scale": "HV",
+            "unit": null
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": "about twice that of Fe-12Cr-1.5Ni-0.2V-1.8W-0.5Mo-0.15C martensite stainless steel"
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "6.29-7.4",
+          "unit": "g/cm³"
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_01",
+      "sample_id": null,
+      "service_conditions": {
+        "operating_temperature": {
+          "min": "-196",
+          "max": "100",
+          "unit": "°C"
+        },
+        "stress_state": null,
+        "environment": "Automotive service environment, cryogenic gas storage/transportation environment, wear environment, hydrogen containing environment"
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy": "304L austenite stainless steel, martensite stainless steel, conventional automotive steel",
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "improvement_percentage": "Higher fatigue crack growth resistance than 304L stainless steel; Higher specific strength than conventional steels, lower density up to ~20% lower than plain carbon steel"
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_01",
+      "sample_id": null,
+      "microstructure_uuid": null,
+      "technique": "Transmission electron microscopy (TEM)",
+      "purpose": "Observe microstructure, precipitates, dislocations, twins, phase morphology",
+      "key_findings": "Observed κ-carbide distribution, B2 phase morphology, dislocation substructure, deformation twins, etc."
+    },
+    {
+      "characterization_id": "char_02",
+      "sample_id": null,
+      "microstructure_uuid": null,
+      "technique": "Scanning electron microscopy (SEM), Electron backscatter diffraction (EBSD)",
+      "purpose": "Analyze grain structure, orientation, phase distribution, strain localization, fracture morphology",
+      "key_findings": "Observed banded ferrite/austenite structure, grain boundary cracking, strain localization during hydrogen embrittlement, etc."
+    },
+    {
+      "characterization_id": "char_03",
+      "sample_id": null,
+      "microstructure_uuid": null,
+      "technique": "Atom probe tomography (APT)",
+      "purpose": "Analyze elemental distribution, precipitate composition at nanoscale",
+      "key_findings": "Revealed composition of κ-carbide, element partitioning between phases"
+    },
+    {
+      "characterization_id": "char_04",
+      "sample_id": null,
+      "microstructure_uuid": null,
+      "technique": "X-ray diffraction (XRD)",
+      "purpose": "Identify phase composition, crystal structure, calculate stacking fault energy",
+      "key_findings": "Identified various phases including κ-carbide, B2, DO3, martensite, etc."
+    },
+    {
+      "characterization_id": "char_05",
+      "sample_id": null,
+      "microstructure_uuid": null,
+      "technique": "Mechanical test (tensile, Charpy impact, fatigue, wear, hardness)",
+      "purpose": "Evaluate mechanical and service properties",
+      "key_findings": "Obtained tensile strength, elongation, impact energy, fatigue life, wear resistance data of various Fe-Mn-Al-C steels"
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_01",
+      "sample_id": null,
+      "simulation_method": "Density functional theory (DFT), thermodynamic calculation",
+      "software_used": null,
+      "potential_model": null,
+      "validation_against_experiment": "yes",
+      "analytical_model": [
+        {
+          "model_name": "Density calculation model",
+          "equation_role": "Calculate density of Fe-Mn-Al-C steel based on elemental mass fractions",
+          "parameters": "ρ = 8.15 - 0.101ω(Al) - 0.41ω(C) - 0.0085ω(Mn)",
+          "model_note": "C has most significant effect on density reduction"
+        },
+        {
+          "model_name": "Austenite lattice constant model",
+          "equation_role": "Calculate austenite lattice constant based on elemental mass fractions",
+          "parameters": "α = 0.35721 + 0.0002771ω(Al) + 0.0044089ω(C) + 0.0001166ω(Mn)",
+          "model_note": "C atom is most important for expanding austenite lattice constant"
+        },
+        {
+          "model_name": "Yield strength increment model",
+          "equation_role": "Calculate yield strength increment contributed by Al, Mn, C",
+          "parameters": "σ_yield = 10.5ω(Al) + 351.5; σ_yield = 0.58ω(Mn) + 328.0; σ_yield = 180.7ω(C) + 250.7",
+          "model_note": "C and Al play more positive role in yield strength increment than Mn"
+        },
+        {
+          "model_name": "DFT calculation of hydrogen-k-carbide interaction",
+          "equation_role": "Reveal interaction between k-carbide and hydrogen",
+          "parameters": null,
+          "model_note": "HeH shows strong repulsive force in short distance, CeH shows strong repulsive force in long distance; k-carbide/austenite interface is effective hydrogen capture center"
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "The role of Si element in Fe-Mn-Al-C steels is still controversial, thus not discussed in this review.",
+    "Depth-type purification during smelting process is the primary technical problem to be solved for Fe-Mn-Al-C low-density steels.",
+    "κ-carbide has L12 ordered crystal structure similar to perovskite oxide, chemical formula is usually (Fe, Mn)AlC.",
+    "B2 phase is favorable to corrosion resistance, oxidation resistance and wear resistance, but large amount of hard and brittle B2 distributed along grain boundary deteriorates plasticity and toughness.",
+    "Strain hardening mechanisms of Fe-Mn-Al-C steels include TRIP, TWIP, MBIP, SIP, DSBR, Taylor lattice (TL), etc.",
+    "Deformation mechanism of single austenite steels changes from TRIP to TWIP then to MBIP and SIP with increasing stacking fault energy (SFE), which increases with Al content.",
+    "Research on microbands only stays in abstract conceptual stage without quantitative results.",
+    "Effect of MC carbide (NbC, VC, TiC etc.) on κ-carbide precipitation and growth has no agreed theory.",
+    "Austenite stability in F-BDP steels is affected by grain size, C content, constraining effect from adjacent phases, and austenite volume fraction, but the evaluation criteria of these factors need further clarification.",
+    "Basic research on service properties of Fe-Mn-Al-C low-density steels is insufficient.",
+    "Fe-Mn-Al-C low-density steels show three-stage or five-stage strain hardening behavior depending on phase composition and hardness difference between phases.",
+    "Hydrogen-induced fracture modes include intergranular and transgranular fractures, initiated at grain boundaries and twin boundaries."
+  ]
+}

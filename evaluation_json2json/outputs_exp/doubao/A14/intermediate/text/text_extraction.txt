@@ -1,0 +1,839 @@
+{
+    "papers": [
+        {
+            "paper_id": "A14",
+            "doi": null,
+            "title": "Strengthening mechanisms in Fe-Al based ferritic low-density steels",
+            "authors": ["Sudipta Pramanik", "Suresh Koppoju", "A.V. Anupama", "Balaram Sahoo", "Satyam Suwas"],
+            "publication_year": null,
+            "journal": null,
+            "keywords": ["Low-density steel", "Strengthening mechanisms", "Mössbauer spectroscopy", "Small angle X-Ray scattering (SAXS)"],
+            "research_type": "experimental",
+            "paper_scope": "研究不同Al含量Fe-Al基铁素体低密度钢的强化机制，重点分析Fe-6.8wt%Al合金的强化贡献来源，包括晶界、位错、纳米有序相、固溶原子及晶格摩擦应力，建立各强化机制的本构模型以解释强度变化规律"
+        }
+    ],
+    "alloys": [
+        {
+            "alloy_id": "alloy_fe_5al",
+            "paper_id": "A14",
+            "alloy_name": "Fe-5Al low-density steel",
+            "aliases": [],
+            "base_element": "Fe",
+            "alloying_elements": ["Al"],
+            "nominal_composition": [
+                {
+                    "element": "Al",
+                    "weight_percent": "5",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "Fe",
+                    "weight_percent": "balance",
+                    "atomic_percent": null
+                }
+            ],
+            "alloys_notes": null
+        },
+        {
+            "alloy_id": "alloy_fe_6al",
+            "paper_id": "A14",
+            "alloy_name": "Fe-6Al low-density steel",
+            "aliases": [],
+            "base_element": "Fe",
+            "alloying_elements": ["Al"],
+            "nominal_composition": [
+                {
+                    "element": "Al",
+                    "weight_percent": "6",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "Fe",
+                    "weight_percent": "balance",
+                    "atomic_percent": null
+                }
+            ],
+            "alloys_notes": null
+        },
+        {
+            "alloy_id": "alloy_fe_6p8al",
+            "paper_id": "A14",
+            "alloy_name": "Fe-6.8Al low-density steel",
+            "aliases": [],
+            "base_element": "Fe",
+            "alloying_elements": ["Al"],
+            "nominal_composition": [
+                {
+                    "element": "Al",
+                    "weight_percent": "6.8",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "Fe",
+                    "weight_percent": "balance",
+                    "atomic_percent": null
+                }
+            ],
+            "alloys_notes": "本文重点研究对象"
+        },
+        {
+            "alloy_id": "alloy_fe_9al",
+            "paper_id": "A14",
+            "alloy_name": "Fe-9Al low-density steel",
+            "aliases": [],
+            "base_element": "Fe",
+            "alloying_elements": ["Al"],
+            "nominal_composition": [
+                {
+                    "element": "Al",
+                    "weight_percent": "9",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "Fe",
+                    "weight_percent": "balance",
+                    "atomic_percent": null
+                }
+            ],
+            "alloys_notes": null
+        }
+    ],
+    "processes": [
+        {
+            "process_id": "proc_feal_melt",
+            "paper_id": "A14",
+            "alloy_id": null,
+            "description": "真空电弧熔炼IF钢与纯铝的混合料，重熔7-8次去除成分偏析",
+            "processes_notes": null
+        },
+        {
+            "process_id": "proc_feal_cr_98pct",
+            "paper_id": "A14",
+            "alloy_id": "alloy_fe_6p8al",
+            "description": "Fe-6.8Al合金冷轧至厚度压下量98%",
+            "processes_notes": null
+        },
+        {
+            "process_id": "proc_feal_anneal_750c_5min",
+            "paper_id": "A14",
+            "alloy_id": "alloy_fe_6p8al",
+            "description": "冷轧后的Fe-6.8Al合金在750℃等温退火5min",
+            "processes_notes": "退火后样品完全再结晶"
+        },
+        {
+            "process_id": "proc_feal_anneal_750c_60min",
+            "paper_id": "A14",
+            "alloy_id": "alloy_fe_6p8al",
+            "description": "冷轧后的Fe-6.8Al合金在750℃等温退火60min",
+            "processes_notes": "退火后发生明显晶粒长大"
+        },
+        {
+            "process_id": "proc_feal_powder_anneal_600c_60min",
+            "paper_id": "A14",
+            "alloy_id": null,
+            "description": "锉削得到的合金粉末在1e-5 mbar真空下600℃退火60min以去除内应力",
+            "processes_notes": "用于Mössbauer光谱和SAXS测试的样品前处理"
+        }
+    ],
+    "samples": [
+        {
+            "sample_id": "sample_fe_5al_powder",
+            "paper_id": "A14",
+            "alloy_id": "alloy_fe_5al",
+            "process_id": "proc_feal_powder_anneal_600c_60min"
+        },
+        {
+            "sample_id": "sample_fe_6al_powder",
+            "paper_id": "A14",
+            "alloy_id": "alloy_fe_6al",
+            "process_id": "proc_feal_powder_anneal_600c_60min"
+        },
+        {
+            "sample_id": "sample_fe_6p8al_cr",
+            "paper_id": "A14",
+            "alloy_id": "alloy_fe_6p8al",
+            "process_id": "proc_feal_cr_98pct"
+        },
+        {
+            "sample_id": "sample_fe_6p8al_anneal_5min",
+            "paper_id": "A14",
+            "alloy_id": "alloy_fe_6p8al",
+            "process_id": "proc_feal_anneal_750c_5min"
+        },
+        {
+            "sample_id": "sample_fe_6p8al_anneal_60min",
+            "paper_id": "A14",
+            "alloy_id": "alloy_fe_6p8al",
+            "process_id": "proc_feal_anneal_750c_60min"
+        },
+        {
+            "sample_id": "sample_fe_9al_powder",
+            "paper_id": "A14",
+            "alloy_id": "alloy_fe_9al",
+            "process_id": "proc_feal_powder_anneal_600c_60min"
+        }
+    ],
+    "processing_steps": [
+        {
+            "sample_id": null,
+            "paper_id": "A14",
+            "sequence": "1",
+            "type": "thermomechanical_processing",
+            "method": "vacuum arc melting",
+            "temperature": null,
+            "unit": null,
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "重熔7-8次去除偏析，得到直径10cm、高度5cm的圆形铸锭"
+        },
+        {
+            "sample_id": "sample_fe_6p8al_cr",
+            "paper_id": "A14",
+            "sequence": "2",
+            "type": "mechanical_processing",
+            "method": "cold rolling",
+            "temperature": "room",
+            "unit": "°C",
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": "98%",
+            "processing_steps_notes": null
+        },
+        {
+            "sample_id": "sample_fe_6p8al_anneal_5min",
+            "paper_id": "A14",
+            "sequence": "3",
+            "type": "heat_treatment",
+            "method": "isothermal annealing",
+            "temperature": "750",
+            "unit": "°C",
+            "duration": "5",
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "退火后样品完全再结晶"
+        },
+        {
+            "sample_id": "sample_fe_6p8al_anneal_60min",
+            "paper_id": "A14",
+            "sequence": "4",
+            "type": "heat_treatment",
+            "method": "isothermal annealing",
+            "temperature": "750",
+            "unit": "°C",
+            "duration": "60",
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "退火后发生明显晶粒长大"
+        },
+        {
+            "sample_id": null,
+            "paper_id": "A14",
+            "sequence": "5",
+            "type": "heat_treatment",
+            "method": "powder stress relief annealing",
+            "temperature": "600",
+            "unit": "°C",
+            "duration": "60",
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "真空度1e-5 mbar，用于Mössbauer和SAXS测试样品前处理"
+        }
+    ],
+    "structures": [
+        {
+            "structure_id": "struct_fe6p8al_cr",
+            "sample_id": "sample_fe_6p8al_cr",
+            "overall_structure": "单一体心立方铁素体相， heavily elongated pancaked grains along rolling direction，存在40°夹角剪切带",
+            "number_of_phases": "1",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_001",
+                    "related_sequence": "2",
+                    "phases_present": [
+                        {
+                            "phase_name": "ferrite",
+                            "crystal_structure": "BCC",
+                            "volume_fraction": "100%",
+                            "morphology": "elongated lamellae",
+                            "grain_size": "102.3 ± 9.8 nm",
+                            "texture": null
+                        }
+                    ],
+                    "defects": [
+                        {
+                            "type": "dislocation",
+                            "porosity": null,
+                            "inclusions": [],
+                            "dislocation_density": "~2.2×10^15 m^-2",
+                            "lattice_distortion": "1.46×10^-3"
+                        }
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": "102.3",
+                            "unit": "nm"
+                        },
+                        "grain_size_distribution": null,
+                        "texture": null
+                    },
+                    "precipitates": [
+                        {
+                            "precipitate_id": "prec_001",
+                            "type": "DO3 Fe3Al ordered phase",
+                            "size": {
+                                "value": "2.7",
+                                "unit": "nm"
+                            },
+                            "distribution": "uniformly dispersed",
+                            "coherency": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "structure_id": "struct_fe6p8al_anneal_5min",
+            "sample_id": "sample_fe_6p8al_anneal_5min",
+            "overall_structure": "单一体心立方铁素体相，完全再结晶等轴晶",
+            "number_of_phases": "1",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_002",
+                    "related_sequence": "3",
+                    "phases_present": [
+                        {
+                            "phase_name": "ferrite",
+                            "crystal_structure": "BCC",
+                            "volume_fraction": "100%",
+                            "morphology": "equiaxed grain",
+                            "grain_size": "25.2 ± 5.0 μm",
+                            "texture": null
+                        }
+                    ],
+                    "defects": [
+                        {
+                            "type": "dislocation",
+                            "porosity": null,
+                            "inclusions": [],
+                            "dislocation_density": null,
+                            "lattice_distortion": "9.46×10^-4"
+                        }
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": "25.2",
+                            "unit": "μm"
+                        },
+                        "grain_size_distribution": null,
+                        "texture": null
+                    },
+                    "precipitates": [
+                        {
+                            "precipitate_id": "prec_002",
+                            "type": "DO3 Fe3Al ordered phase",
+                            "size": {
+                                "value": "2.7",
+                                "unit": "nm"
+                            },
+                            "distribution": "uniformly dispersed",
+                            "coherency": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "structure_id": "struct_fe6p8al_anneal_60min",
+            "sample_id": "sample_fe_6p8al_anneal_60min",
+            "overall_structure": "单一体心立方铁素体相，再结晶后晶粒长大",
+            "number_of_phases": "1",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_003",
+                    "related_sequence": "4",
+                    "phases_present": [
+                        {
+                            "phase_name": "ferrite",
+                            "crystal_structure": "BCC",
+                            "volume_fraction": "100%",
+                            "morphology": "equiaxed grain",
+                            "grain_size": "48.3 ± 1.2 μm",
+                            "texture": null
+                        }
+                    ],
+                    "defects": [
+                        {
+                            "type": "dislocation",
+                            "porosity": null,
+                            "inclusions": [],
+                            "dislocation_density": "~1×10^12 m^-2",
+                            "lattice_distortion": "1.46×10^-4"
+                        }
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": "48.3",
+                            "unit": "μm"
+                        },
+                        "grain_size_distribution": null,
+                        "texture": null
+                    },
+                    "precipitates": [
+                        {
+                            "precipitate_id": "prec_003",
+                            "type": "DO3 Fe3Al ordered phase",
+                            "size": {
+                                "value": "2.7",
+                                "unit": "nm"
+                            },
+                            "distribution": "uniformly dispersed",
+                            "coherency": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "structure_id": "struct_all_al_alloy",
+            "sample_id": null,
+            "overall_structure": "单一体心立方铁素体相，存在纳米级DO3 Fe3Al有序相",
+            "number_of_phases": "2",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_004",
+                    "related_sequence": null,
+                    "phases_present": [
+                        {
+                            "phase_name": "ferrite matrix",
+                            "crystal_structure": "BCC",
+                            "volume_fraction": null,
+                            "morphology": null,
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "DO3 Fe3Al ordered phase",
+                            "crystal_structure": "DO3",
+                            "volume_fraction": "0.4%-1.9%",
+                            "morphology": "spherical nanoparticle",
+                            "grain_size": "2.5-3.75 nm",
+                            "texture": null
+                        }
+                    ],
+                    "defects": [],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": null,
+                            "unit": null
+                        },
+                        "grain_size_distribution": null,
+                        "texture": null
+                    },
+                    "precipitates": []
+                }
+            ]
+        }
+    ],
+    "interfaces": [],
+    "properties": [
+        {
+            "property_set_id": "prop_fe6p8al_cr",
+            "sample_id": "sample_fe_6p8al_cr",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [
+                        {
+                            "direction": "rolling direction",
+                            "value": "1800",
+                            "unit": "MPa",
+                            "others": {
+                                "uncertainty": null
+                            }
+                        }
+                    ],
+                    "ultimate_tensile_strength": [
+                        {
+                            "direction": null,
+                            "value": null,
+                            "unit": "MPa",
+                            "others": {
+                                "uncertainty": null
+                            }
+                        }
+                    ],
+                    "elongation": [
+                        {
+                            "direction": null,
+                            "value": "1.2",
+                            "unit": "%"
+                        }
+                    ],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [],
+                "fracture_toughness": {
+                    "value": null,
+                    "unit": null
+                },
+                "fatigue_properties": {
+                    "fatigue_limit": null,
+                    "cycles_to_failure": null
+                },
+                "creep_properties": {
+                    "steady_state_creep_rate": null,
+                    "rupture_life": null
+                }
+            },
+            "physical": {
+                "density": {
+                    "value": null,
+                    "unit": null
+                },
+                "thermal_properties": {
+                    "thermal_conductivity": null,
+                    "thermal_expansion_coefficient": null,
+                    "specific_heat": null
+                },
+                "electrical_properties": {
+                    "electrical_conductivity": null,
+                    "resistivity": null
+                },
+                "magnetic_properties": {
+                    "magnetic_susceptibility": null,
+                    "curie_temperature": null
+                }
+            },
+            "chemical": {
+                "corrosion_resistance": {
+                    "test_medium": null,
+                    "corrosion_rate": null,
+                    "passivation_behavior": null
+                },
+                "oxidation_resistance": {
+                    "oxidation_rate_constant": null,
+                    "protective_scale": null
+                }
+            },
+            "radiation_properties": {
+                "void_swelling": null,
+                "irradiation_hardening": null,
+                "helium_embrittlement": null
+            }
+        },
+        {
+            "property_set_id": "prop_fe6p8al_anneal_5min",
+            "sample_id": "sample_fe_6p8al_anneal_5min",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [
+                        {
+                            "direction": "rolling direction",
+                            "value": "700",
+                            "unit": "MPa",
+                            "others": {
+                                "uncertainty": null
+                            }
+                        }
+                    ],
+                    "ultimate_tensile_strength": [
+                        {
+                            "direction": "rolling direction",
+                            "value": "870",
+                            "unit": "MPa",
+                            "others": {
+                                "uncertainty": null
+                            }
+                        }
+                    ],
+                    "elongation": [
+                        {
+                            "direction": null,
+                            "value": "20.0",
+                            "unit": "%"
+                        }
+                    ],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [],
+                "fracture_toughness": {
+                    "value": null,
+                    "unit": null
+                },
+                "fatigue_properties": {
+                    "fatigue_limit": null,
+                    "cycles_to_failure": null
+                },
+                "creep_properties": {
+                    "steady_state_creep_rate": null,
+                    "rupture_life": null
+                }
+            },
+            "physical": {
+                "density": {
+                    "value": null,
+                    "unit": null
+                },
+                "thermal_properties": {
+                    "thermal_conductivity": null,
+                    "thermal_expansion_coefficient": null,
+                    "specific_heat": null
+                },
+                "electrical_properties": {
+                    "electrical_conductivity": null,
+                    "resistivity": null
+                },
+                "magnetic_properties": {
+                    "magnetic_susceptibility": null,
+                    "curie_temperature": null
+                }
+            },
+            "chemical": {
+                "corrosion_resistance": {
+                    "test_medium": null,
+                    "corrosion_rate": null,
+                    "passivation_behavior": null
+                },
+                "oxidation_resistance": {
+                    "oxidation_rate_constant": null,
+                    "protective_scale": null
+                }
+            },
+            "radiation_properties": {
+                "void_swelling": null,
+                "irradiation_hardening": null,
+                "helium_embrittlement": null
+            }
+        },
+        {
+            "property_set_id": "prop_fe6p8al_anneal_60min",
+            "sample_id": "sample_fe_6p8al_anneal_60min",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [
+                        {
+                            "direction": "rolling direction",
+                            "value": "265",
+                            "unit": "MPa",
+                            "others": {
+                                "uncertainty": null
+                            }
+                        }
+                    ],
+                    "ultimate_tensile_strength": [
+                        {
+                            "direction": "rolling direction",
+                            "value": "394",
+                            "unit": "MPa",
+                            "others": {
+                                "uncertainty": null
+                            }
+                        }
+                    ],
+                    "elongation": [
+                        {
+                            "direction": null,
+                            "value": "29.8",
+                            "unit": "%"
+                        }
+                    ],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [],
+                "fracture_toughness": {
+                    "value": null,
+                    "unit": null
+                },
+                "fatigue_properties": {
+                    "fatigue_limit": null,
+                    "cycles_to_failure": null
+                },
+                "creep_properties": {
+                    "steady_state_creep_rate": null,
+                    "rupture_life": null
+                }
+            },
+            "physical": {
+                "density": {
+                    "value": null,
+                    "unit": null
+                },
+                "thermal_properties": {
+                    "thermal_conductivity": null,
+                    "thermal_expansion_coefficient": null,
+                    "specific_heat": null
+                },
+                "electrical_properties": {
+                    "electrical_conductivity": null,
+                    "resistivity": null
+                },
+                "magnetic_properties": {
+                    "magnetic_susceptibility": null,
+                    "curie_temperature": null
+                }
+            },
+            "chemical": {
+                "corrosion_resistance": {
+                    "test_medium": null,
+                    "corrosion_rate": null,
+                    "passivation_behavior": null
+                },
+                "oxidation_resistance": {
+                    "oxidation_rate_constant": null,
+                    "protective_scale": null
+                }
+            },
+            "radiation_properties": {
+                "void_swelling": null,
+                "irradiation_hardening": null,
+                "helium_embrittlement": null
+            }
+        }
+    ],
+    "performance": [
+        {
+            "performance_id": "perf_001",
+            "sample_id": "sample_fe_6p8al_anneal_5min",
+            "service_conditions": {
+                "operating_temperature": {
+                    "min": null,
+                    "max": null,
+                    "unit": null
+                },
+                "stress_state": null,
+                "environment": null
+            },
+            "lifetime_prediction": {
+                "model_used": null,
+                "predicted_lifetime": null,
+                "confidence_interval": null
+            },
+            "comparative_performance": {
+                "benchmark_alloy": "Fe-6.8Al (Rana et al.)",
+                "benchmark_process_id": null,
+                "benchmark_sample_id": null,
+                "improvement_percentage": "104.7%"
+            }
+        }
+    ],
+    "characterization_methods": [
+        {
+            "characterization_id": "char_001",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "Wavelength Dispersive Spectroscopy (WDS) in Electron Probe Micro-Analyzer (EPMA)",
+            "purpose": "测定合金实际成分",
+            "key_findings": null
+        },
+        {
+            "characterization_id": "char_002",
+            "sample_id": null,
+            "microstructure_uuid": "uuid_004",
+            "technique": "Mössbauer spectroscopy",
+            "purpose": "分析合金局部原子构型，验证有序相存在",
+            "key_findings": "不同Al含量合金的超精细场分布随Al原子近邻数量增加而降低，检测到与DO3 Fe3Al相对应的超精细场分量"
+        },
+        {
+            "characterization_id": "char_003",
+            "sample_id": null,
+            "microstructure_uuid": "uuid_004",
+            "technique": "Small Angle X-Ray Scattering (SAXS)",
+            "purpose": "定量测定有序相的尺寸、体积分数和数密度",
+            "key_findings": "DO3 Fe3Al有序相尺寸随Al含量增加从2.5±0.15nm升至3.75±0.2nm，体积分数从0.4%升至1.9%"
+        },
+        {
+            "characterization_id": "char_004",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "X-Ray Diffraction (XRD)",
+            "purpose": "物相鉴定、位错密度和晶粒尺寸测定",
+            "key_findings": "所有合金均为单一BCC铁素体相，98%冷轧样品位错密度~2.2e15 m-2，750℃退火60min后降至~1e12 m-2"
+        },
+        {
+            "characterization_id": "char_005",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "Scanning Electron Microscopy (SEM)",
+            "purpose": "显微组织观察、晶粒尺寸统计",
+            "key_findings": "750℃退火5min样品晶粒尺寸25.2±5.0μm，退火60min后长大至48.3±1.2μm"
+        },
+        {
+            "characterization_id": "char_006",
+            "sample_id": null,
+            "microstructure_uuid": "uuid_004",
+            "technique": "Transmission Electron Microscopy (TEM)",
+            "purpose": "有序相形貌和尺寸观察",
+            "key_findings": "观察到尺寸2.1±0.2nm的DO3有序相纳米颗粒，与SAXS结果一致"
+        },
+        {
+            "characterization_id": "char_007",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "Uniaxial tensile test",
+            "purpose": "测定力学性能",
+            "key_findings": "750℃退火5min样品屈服强度700MPa、抗拉强度870MPa、延伸率20%，性能优于同成分对比文献样品"
+        }
+    ],
+    "computational_details": [
+        {
+            "computation_id": "comp_001",
+            "sample_id": null,
+            "simulation_method": null,
+            "software_used": ["NORMOS", "FIT2D", "MAUD", "ANIZC"],
+            "potential_model": null,
+            "validation_against_experiment": "yes",
+            "analytical_model": [
+                {
+                    "model_name": "Hall-Petch equation",
+                    "equation_role": "calculate grain boundary strengthening contribution",
+                    "parameters": "k_HP: Hall-Petch constant for pure iron, D: grain diameter",
+                    "model_note": null
+                },
+                {
+                    "model_name": "Taylor equation",
+                    "equation_role": "calculate dislocation strengthening contribution",
+                    "parameters": "M: Taylor factor, α: constant, G: shear modulus, b: Burgers vector, ρ: dislocation density",
+                    "model_note": null
+                },
+                {
+                    "model_name": "Ordered phase strengthening model",
+                    "equation_role": "calculate strengthening contribution from nano-sized DO3 Fe3Al phase",
+                    "parameters": "γ: antiphase boundary energy, G: shear modulus, b: Burgers vector, f: volume fraction of ordered phase, r: radius of ordered phase",
+                    "model_note": null
+                },
+                {
+                    "model_name": "Solid solution strengthening model",
+                    "equation_role": "calculate strengthening contribution from Al solute atoms",
+                    "parameters": "G: shear modulus, ε_s: solute misfit parameter, c: solute concentration",
+                    "model_note": "Fe-6.8Al合金固溶强化贡献为95.6MPa"
+                },
+                {
+                    "model_name": "Peierls-Nabarro model",
+                    "equation_role": "calculate lattice frictional stress",
+                    "parameters": "G: shear modulus, ν: Poisson's ratio, a: interplanar spacing, b: Burgers vector",
+                    "model_note": "室温下采用数值为41MPa"
+                }
+            ]
+        }
+    ],
+    "unmapped_findings": [
+        "98%冷轧Fe-6.8Al样品的剪切带与轧制方向呈约40°夹角",
+        "Fe-6.8Al样品750℃退火5min时已完全再结晶，退火60min发生明显晶粒长大",
+        "Fe-6.8Al合金750℃退火5min的屈服强度700MPa，优于文献中同成分900℃退火1min样品的342MPa，主要源于更细的晶粒尺寸",
+        "冷轧样品的位错密度较退火60min样品高3个数量级，位错强化是冷轧态的主要强化机制",
+        "退火60min样品的主要强化贡献为有序相强化和固溶强化"
+    ]
+}

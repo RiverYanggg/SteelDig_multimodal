@@ -1,0 +1,1026 @@
+{
+    "papers": [
+        {
+            "paper_id": "A7",
+            "doi": null,
+            "title": "Factors influencing austenite stability during Inter-critical annealing and effect on mechanical properties of low-density medium Mn steels",
+            "authors": ["Kishan Bharti", "Nitin Kumar Sharma"],
+            "publication_year": null,
+            "journal": null,
+            "keywords": ["Advanced high strength steels (AHSS)", "Low density steel (LDS)", "Intercritical annealing (IA)", "Retained austenite (RA)", "Transformation induced plasticity (TRIP)"],
+            "research_type": "experimental",
+            "paper_scope": "研究向Fe-8Mn-0.2C中锰钢体系添加3wt%Al（含或不含1wt%Si）后，临界退火过程中奥氏体稳定性的影响因素及其对力学性能的调控作用，揭示了元素偏析、晶粒尺寸等局部微观结构不均匀性对奥氏体稳定性的作用机制，获得了强塑积优异的低密度中锰钢材料"
+        }
+    ],
+    "alloys": [
+        {
+            "alloy_id": "alloy_fe8mn3al02c",
+            "paper_id": "A7",
+            "alloy_name": "Fe-8Mn-3Al-0.2C",
+            "aliases": ["M1"],
+            "base_element": "Fe",
+            "alloying_elements": ["Mn", "Al", "C"],
+            "nominal_composition": [
+                {
+                    "element": "Mn",
+                    "weight_percent": "8",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "Al",
+                    "weight_percent": "3",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "C",
+                    "weight_percent": "0.2",
+                    "atomic_percent": null
+                }
+            ],
+            "alloys_notes": "无Si添加的中锰钢，临界退火态无δ铁素体析出"
+        },
+        {
+            "alloy_id": "alloy_fe8mn3al1si02c",
+            "paper_id": "A7",
+            "alloy_name": "Fe-8Mn-3Al-1Si-0.2C",
+            "aliases": ["M2"],
+            "base_element": "Fe",
+            "alloying_elements": ["Mn", "Al", "Si", "C"],
+            "nominal_composition": [
+                {
+                    "element": "Mn",
+                    "weight_percent": "8",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "Al",
+                    "weight_percent": "3",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "Si",
+                    "weight_percent": "1",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "C",
+                    "weight_percent": "0.2",
+                    "atomic_percent": null
+                }
+            ],
+            "alloys_notes": "含1wt%Si的中锰钢，临界退火态有δ铁素体析出"
+        }
+    ],
+    "processes": [
+        {
+            "process_id": "proc_fe8mn3al02c_hr",
+            "paper_id": "A7",
+            "alloy_id": "alloy_fe8mn3al02c",
+            "description": "真空电弧熔炼后1100℃均质化2h水淬，随后1100℃热轧厚度压下50%空冷",
+            "processes_notes": "热轧后试样命名为M1-HR"
+        },
+        {
+            "process_id": "proc_fe8mn3al02c_ia",
+            "paper_id": "A7",
+            "alloy_id": "alloy_fe8mn3al02c",
+            "description": "热轧后试样经700℃临界退火保温1h水淬",
+            "processes_notes": "临界退火后试样命名为M1-IA"
+        },
+        {
+            "process_id": "proc_fe8mn3al1si02c_hr",
+            "paper_id": "A7",
+            "alloy_id": "alloy_fe8mn3al1si02c",
+            "description": "真空电弧熔炼后1100℃均质化2h水淬，随后1100℃热轧厚度压下50%空冷",
+            "processes_notes": "热轧后试样命名为M2-HR"
+        },
+        {
+            "process_id": "proc_fe8mn3al1si02c_ia",
+            "paper_id": "A7",
+            "alloy_id": "alloy_fe8mn3al1si02c",
+            "description": "热轧后试样经700℃临界退火保温1h水淬",
+            "processes_notes": "临界退火后试样命名为M2-IA"
+        }
+    ],
+    "samples": [
+        {
+            "sample_id": "sample_m1_hr",
+            "paper_id": "A7",
+            "alloy_id": "alloy_fe8mn3al02c",
+            "process_id": "proc_fe8mn3al02c_hr"
+        },
+        {
+            "sample_id": "sample_m1_ia",
+            "paper_id": "A7",
+            "alloy_id": "alloy_fe8mn3al02c",
+            "process_id": "proc_fe8mn3al02c_ia"
+        },
+        {
+            "sample_id": "sample_m2_hr",
+            "paper_id": "A7",
+            "alloy_id": "alloy_fe8mn3al1si02c",
+            "process_id": "proc_fe8mn3al1si02c_hr"
+        },
+        {
+            "sample_id": "sample_m2_ia",
+            "paper_id": "A7",
+            "alloy_id": "alloy_fe8mn3al1si02c",
+            "process_id": "proc_fe8mn3al1si02c_ia"
+        }
+    ],
+    "processing_steps": [
+        {
+            "sample_id": "sample_m1_ia",
+            "paper_id": "A7",
+            "sequence": "1",
+            "type": "casting",
+            "method": "vacuum arc melting",
+            "temperature": null,
+            "unit": null,
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "重熔4次保证成分均匀"
+        },
+        {
+            "sample_id": "sample_m1_ia",
+            "paper_id": "A7",
+            "sequence": "2",
+            "type": "heat_treatment",
+            "method": "homogenization",
+            "temperature": "1100",
+            "unit": "°C",
+            "duration": "2",
+            "cooling_medium": "water",
+            "reduction_ratio": null,
+            "processing_steps_notes": null
+        },
+        {
+            "sample_id": "sample_m1_ia",
+            "paper_id": "A7",
+            "sequence": "3",
+            "type": "thermomechanical_processing",
+            "method": "hot rolling",
+            "temperature": "1100",
+            "unit": "°C",
+            "duration": null,
+            "cooling_medium": "air",
+            "reduction_ratio": "50",
+            "processing_steps_notes": "终轧温度约900°C"
+        },
+        {
+            "sample_id": "sample_m1_ia",
+            "paper_id": "A7",
+            "sequence": "4",
+            "type": "heat_treatment",
+            "method": "intercritical annealing",
+            "temperature": "700",
+            "unit": "°C",
+            "duration": "1",
+            "cooling_medium": "water",
+            "reduction_ratio": null,
+            "processing_steps_notes": "退火温度对应奥氏体中Mn含量约11wt%"
+        },
+        {
+            "sample_id": "sample_m2_ia",
+            "paper_id": "A7",
+            "sequence": "1",
+            "type": "casting",
+            "method": "vacuum arc melting",
+            "temperature": null,
+            "unit": null,
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "重熔4次保证成分均匀"
+        },
+        {
+            "sample_id": "sample_m2_ia",
+            "paper_id": "A7",
+            "sequence": "2",
+            "type": "heat_treatment",
+            "method": "homogenization",
+            "temperature": "1100",
+            "unit": "°C",
+            "duration": "2",
+            "cooling_medium": "water",
+            "reduction_ratio": null,
+            "processing_steps_notes": null
+        },
+        {
+            "sample_id": "sample_m2_ia",
+            "paper_id": "A7",
+            "sequence": "3",
+            "type": "thermomechanical_processing",
+            "method": "hot rolling",
+            "temperature": "1100",
+            "unit": "°C",
+            "duration": null,
+            "cooling_medium": "air",
+            "reduction_ratio": "50",
+            "processing_steps_notes": "终轧温度约900°C"
+        },
+        {
+            "sample_id": "sample_m2_ia",
+            "paper_id": "A7",
+            "sequence": "4",
+            "type": "heat_treatment",
+            "method": "intercritical annealing",
+            "temperature": "700",
+            "unit": "°C",
+            "duration": "1",
+            "cooling_medium": "water",
+            "reduction_ratio": null,
+            "processing_steps_notes": "退火温度对应奥氏体中Mn含量约11wt%"
+        }
+    ],
+    "structures": [
+        {
+            "structure_id": "struct_m1_hr",
+            "sample_id": "sample_m1_hr",
+            "overall_structure": "多边形α铁素体+板条状马氏体-奥氏体(α'+γ)复合相",
+            "number_of_phases": "3",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_m1_hr_01",
+                    "related_sequence": "3",
+                    "phases_present": [
+                        {
+                            "phase_name": "α-ferrite",
+                            "crystal_structure": "BCC",
+                            "volume_fraction": null,
+                            "morphology": "polygonal",
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "martensite-austenite constituent",
+                            "crystal_structure": "BCC+FCC",
+                            "volume_fraction": null,
+                            "morphology": "lath-type",
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "retained austenite",
+                            "crystal_structure": "FCC",
+                            "volume_fraction": "5.1",
+                            "morphology": null,
+                            "grain_size": null,
+                            "texture": null
+                        }
+                    ],
+                    "defects": [
+                        {
+                            "type": "dislocation",
+                            "porosity": null,
+                            "inclusions": [],
+                            "dislocation_density": null,
+                            "lattice_distortion": null
+                        }
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": null,
+                            "unit": null
+                        },
+                        "grain_size_distribution": null,
+                        "texture": null
+                    },
+                    "precipitates": []
+                }
+            ]
+        },
+        {
+            "structure_id": "struct_m1_ia",
+            "sample_id": "sample_m1_ia",
+            "overall_structure": "α铁素体+奥氏体，极少量马氏体",
+            "number_of_phases": "2",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_m1_ia_01",
+                    "related_sequence": "4",
+                    "phases_present": [
+                        {
+                            "phase_name": "α-ferrite",
+                            "crystal_structure": "BCC",
+                            "volume_fraction": "55",
+                            "morphology": null,
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "retained austenite",
+                            "crystal_structure": "FCC",
+                            "volume_fraction": "45",
+                            "morphology": null,
+                            "grain_size": null,
+                            "texture": null
+                        }
+                    ],
+                    "defects": [
+                        {
+                            "type": "dislocation",
+                            "porosity": null,
+                            "inclusions": [],
+                            "dislocation_density": null,
+                            "lattice_distortion": null
+                        }
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": null,
+                            "unit": null
+                        },
+                        "grain_size_distribution": "存在大量尺寸<0.5μm的细奥氏体晶粒",
+                        "texture": null
+                    },
+                    "precipitates": []
+                }
+            ]
+        },
+        {
+            "structure_id": "struct_m2_hr",
+            "sample_id": "sample_m2_hr",
+            "overall_structure": "δ铁素体+α铁素体+细小马氏体-奥氏体(α'+γ)复合相",
+            "number_of_phases": "3",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_m2_hr_01",
+                    "related_sequence": "3",
+                    "phases_present": [
+                        {
+                            "phase_name": "δ-ferrite",
+                            "crystal_structure": "BCC",
+                            "volume_fraction": null,
+                            "morphology": null,
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "α-ferrite",
+                            "crystal_structure": "BCC",
+                            "volume_fraction": null,
+                            "morphology": null,
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "retained austenite",
+                            "crystal_structure": "FCC",
+                            "volume_fraction": "5.7",
+                            "morphology": null,
+                            "grain_size": null,
+                            "texture": null
+                        }
+                    ],
+                    "defects": [
+                        {
+                            "type": "dislocation",
+                            "porosity": null,
+                            "inclusions": [],
+                            "dislocation_density": null,
+                            "lattice_distortion": null
+                        }
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": null,
+                            "unit": null
+                        },
+                        "grain_size_distribution": null,
+                        "texture": null
+                    },
+                    "precipitates": []
+                }
+            ]
+        },
+        {
+            "structure_id": "struct_m2_ia",
+            "sample_id": "sample_m2_ia",
+            "overall_structure": "δ铁素体+α铁素体+奥氏体，极少量马氏体",
+            "number_of_phases": "3",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_m2_ia_01",
+                    "related_sequence": "4",
+                    "phases_present": [
+                        {
+                            "phase_name": "δ-ferrite",
+                            "crystal_structure": "BCC",
+                            "volume_fraction": null,
+                            "morphology": "coarse band-type",
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "α-ferrite",
+                            "crystal_structure": "BCC",
+                            "volume_fraction": "81",
+                            "morphology": null,
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "retained austenite",
+                            "crystal_structure": "FCC",
+                            "volume_fraction": "19",
+                            "morphology": null,
+                            "grain_size": null,
+                            "texture": null
+                        }
+                    ],
+                    "defects": [
+                        {
+                            "type": "dislocation",
+                            "porosity": null,
+                            "inclusions": [],
+                            "dislocation_density": null,
+                            "lattice_distortion": null
+                        }
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": null,
+                            "unit": null
+                        },
+                        "grain_size_distribution": "细奥氏体晶粒占比低于M1-IA试样",
+                        "texture": null
+                    },
+                    "precipitates": []
+                }
+            ]
+        }
+    ],
+    "interfaces": [
+        {
+            "interface_set_id": "if_set_01",
+            "sample_id": "sample_m1_ia",
+            "phases": [
+                {
+                    "interface_id": "if_m1_01",
+                    "microstructure_uuid": "uuid_m1_ia_01",
+                    "phase_1_name": "α-ferrite",
+                    "phase_2_name": "austenite",
+                    "coherence": null
+                }
+            ],
+            "defect_interaction": [],
+            "interface_notes": [
+                {
+                    "stress_strain_distribution": null
+                },
+                {
+                    "slippage_situation": null
+                }
+            ],
+            "phase_evolution": "临界退火过程中Mn、C等奥氏体稳定元素从α铁素体向奥氏体偏聚，提高奥氏体稳定性"
+        },
+        {
+            "interface_set_id": "if_set_02",
+            "sample_id": "sample_m2_ia",
+            "phases": [
+                {
+                    "interface_id": "if_m2_01",
+                    "microstructure_uuid": "uuid_m2_ia_01",
+                    "phase_1_name": "α-ferrite",
+                    "phase_2_name": "austenite",
+                    "coherence": null
+                },
+                {
+                    "interface_id": "if_m2_02",
+                    "microstructure_uuid": "uuid_m2_ia_01",
+                    "phase_1_name": "δ-ferrite",
+                    "phase_2_name": "austenite",
+                    "coherence": null
+                }
+            ],
+            "defect_interaction": [],
+            "interface_notes": [
+                {
+                    "stress_strain_distribution": null
+                },
+                {
+                    "slippage_situation": null
+                }
+            ],
+            "phase_evolution": "临界退火过程中Mn、C从铁素体向奥氏体偏聚，Si从奥氏体向δ铁素体、α铁素体偏聚"
+        }
+    ],
+    "properties": [
+        {
+            "property_set_id": "prop_m1_hr",
+            "sample_id": "sample_m1_hr",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [
+                        {
+                            "direction": null,
+                            "value": null,
+                            "unit": null,
+                            "others": {
+                                "uncertainty": null
+                            }
+                        }
+                    ],
+                    "ultimate_tensile_strength": [
+                        {
+                            "direction": null,
+                            "value": "1712",
+                            "unit": "MPa",
+                            "others": {
+                                "uncertainty": "±10"
+                            }
+                        }
+                    ],
+                    "elongation": [
+                        {
+                            "direction": null,
+                            "value": "14.8",
+                            "unit": "%"
+                        }
+                    ],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [
+                        {
+                            "direction": null,
+                            "distribution": null
+                        }
+                    ],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [],
+                "fracture_toughness": {
+                    "value": null,
+                    "unit": null
+                },
+                "fatigue_properties": {
+                    "fatigue_limit": null,
+                    "cycles_to_failure": null
+                },
+                "creep_properties": {
+                    "steady_state_creep_rate": null,
+                    "rupture_life": null
+                }
+            },
+            "physical": {
+                "density": {
+                    "value": null,
+                    "unit": null
+                },
+                "thermal_properties": {
+                    "thermal_conductivity": null,
+                    "thermal_expansion_coefficient": null,
+                    "specific_heat": null
+                },
+                "electrical_properties": {
+                    "electrical_conductivity": null,
+                    "resistivity": null
+                },
+                "magnetic_properties": {
+                    "magnetic_susceptibility": null,
+                    "curie_temperature": null
+                }
+            },
+            "chemical": {
+                "corrosion_resistance": {
+                    "test_medium": null,
+                    "corrosion_rate": null,
+                    "passivation_behavior": null
+                },
+                "oxidation_resistance": {
+                    "oxidation_rate_constant": null,
+                    "protective_scale": null
+                }
+            },
+            "radiation_properties": {
+                "void_swelling": null,
+                "irradiation_hardening": null,
+                "helium_embrittlement": null
+            }
+        },
+        {
+            "property_set_id": "prop_m1_ia",
+            "sample_id": "sample_m1_ia",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [
+                        {
+                            "direction": null,
+                            "value": null,
+                            "unit": null,
+                            "others": {
+                                "uncertainty": null
+                            }
+                        }
+                    ],
+                    "ultimate_tensile_strength": [
+                        {
+                            "direction": null,
+                            "value": "867",
+                            "unit": "MPa",
+                            "others": {
+                                "uncertainty": "±10"
+                            }
+                        }
+                    ],
+                    "elongation": [
+                        {
+                            "direction": null,
+                            "value": "71.8",
+                            "unit": "%"
+                        }
+                    ],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [
+                        {
+                            "direction": null,
+                            "distribution": null
+                        }
+                    ],
+                    "strain_hardening_rate": [
+                        {
+                            "property_id": null,
+                            "direction": null,
+                            "value": "1338",
+                            "unit": "MPa"
+                        }
+                    ]
+                },
+                "hardness": [],
+                "fracture_toughness": {
+                    "value": null,
+                    "unit": null
+                },
+                "fatigue_properties": {
+                    "fatigue_limit": null,
+                    "cycles_to_failure": null
+                },
+                "creep_properties": {
+                    "steady_state_creep_rate": null,
+                    "rupture_life": null
+                }
+            },
+            "physical": {
+                "density": {
+                    "value": null,
+                    "unit": null
+                },
+                "thermal_properties": {
+                    "thermal_conductivity": null,
+                    "thermal_expansion_coefficient": null,
+                    "specific_heat": null
+                },
+                "electrical_properties": {
+                    "electrical_conductivity": null,
+                    "resistivity": null
+                },
+                "magnetic_properties": {
+                    "magnetic_susceptibility": null,
+                    "curie_temperature": null
+                }
+            },
+            "chemical": {
+                "corrosion_resistance": {
+                    "test_medium": null,
+                    "corrosion_rate": null,
+                    "passivation_behavior": null
+                },
+                "oxidation_resistance": {
+                    "oxidation_rate_constant": null,
+                    "protective_scale": null
+                }
+            },
+            "radiation_properties": {
+                "void_swelling": null,
+                "irradiation_hardening": null,
+                "helium_embrittlement": null
+            }
+        },
+        {
+            "property_set_id": "prop_m2_hr",
+            "sample_id": "sample_m2_hr",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [
+                        {
+                            "direction": null,
+                            "value": null,
+                            "unit": null,
+                            "others": {
+                                "uncertainty": null
+                            }
+                        }
+                    ],
+                    "ultimate_tensile_strength": [
+                        {
+                            "direction": null,
+                            "value": "1055",
+                            "unit": "MPa",
+                            "others": {
+                                "uncertainty": "±15"
+                            }
+                        }
+                    ],
+                    "elongation": [
+                        {
+                            "direction": null,
+                            "value": "15.4",
+                            "unit": "%"
+                        }
+                    ],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [
+                        {
+                            "direction": null,
+                            "distribution": null
+                        }
+                    ],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [],
+                "fracture_toughness": {
+                    "value": null,
+                    "unit": null
+                },
+                "fatigue_properties": {
+                    "fatigue_limit": null,
+                    "cycles_to_failure": null
+                },
+                "creep_properties": {
+                    "steady_state_creep_rate": null,
+                    "rupture_life": null
+                }
+            },
+            "physical": {
+                "density": {
+                    "value": null,
+                    "unit": null
+                },
+                "thermal_properties": {
+                    "thermal_conductivity": null,
+                    "thermal_expansion_coefficient": null,
+                    "specific_heat": null
+                },
+                "electrical_properties": {
+                    "electrical_conductivity": null,
+                    "resistivity": null
+                },
+                "magnetic_properties": {
+                    "magnetic_susceptibility": null,
+                    "curie_temperature": null
+                }
+            },
+            "chemical": {
+                "corrosion_resistance": {
+                    "test_medium": null,
+                    "corrosion_rate": null,
+                    "passivation_behavior": null
+                },
+                "oxidation_resistance": {
+                    "oxidation_rate_constant": null,
+                    "protective_scale": null
+                }
+            },
+            "radiation_properties": {
+                "void_swelling": null,
+                "irradiation_hardening": null,
+                "helium_embrittlement": null
+            }
+        },
+        {
+            "property_set_id": "prop_m2_ia",
+            "sample_id": "sample_m2_ia",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [
+                        {
+                            "direction": null,
+                            "value": null,
+                            "unit": null,
+                            "others": {
+                                "uncertainty": null
+                            }
+                        }
+                    ],
+                    "ultimate_tensile_strength": [
+                        {
+                            "direction": null,
+                            "value": "698",
+                            "unit": "MPa",
+                            "others": {
+                                "uncertainty": "±20"
+                            }
+                        }
+                    ],
+                    "elongation": [
+                        {
+                            "direction": null,
+                            "value": "59.4",
+                            "unit": "%"
+                        }
+                    ],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [
+                        {
+                            "direction": null,
+                            "distribution": null
+                        }
+                    ],
+                    "strain_hardening_rate": [
+                        {
+                            "property_id": null,
+                            "direction": null,
+                            "value": "989",
+                            "unit": "MPa"
+                        }
+                    ]
+                },
+                "hardness": [],
+                "fracture_toughness": {
+                    "value": null,
+                    "unit": null
+                },
+                "fatigue_properties": {
+                    "fatigue_limit": null,
+                    "cycles_to_failure": null
+                },
+                "creep_properties": {
+                    "steady_state_creep_rate": null,
+                    "rupture_life": null
+                }
+            },
+            "physical": {
+                "density": {
+                    "value": null,
+                    "unit": null
+                },
+                "thermal_properties": {
+                    "thermal_conductivity": null,
+                    "thermal_expansion_coefficient": null,
+                    "specific_heat": null
+                },
+                "electrical_properties": {
+                    "electrical_conductivity": null,
+                    "resistivity": null
+                },
+                "magnetic_properties": {
+                    "magnetic_susceptibility": null,
+                    "curie_temperature": null
+                }
+            },
+            "chemical": {
+                "corrosion_resistance": {
+                    "test_medium": null,
+                    "corrosion_rate": null,
+                    "passivation_behavior": null
+                },
+                "oxidation_resistance": {
+                    "oxidation_rate_constant": null,
+                    "protective_scale": null
+                }
+            },
+            "radiation_properties": {
+                "void_swelling": null,
+                "irradiation_hardening": null,
+                "helium_embrittlement": null
+            }
+        }
+    ],
+    "performance": [
+        {
+            "performance_id": "perf_m1_ia",
+            "sample_id": "sample_m1_ia",
+            "service_conditions": {
+                "operating_temperature": {
+                    "min": null,
+                    "max": null,
+                    "unit": null
+                },
+                "stress_state": null,
+                "environment": null
+            },
+            "lifetime_prediction": {
+                "model_used": null,
+                "predicted_lifetime": null,
+                "confidence_interval": null
+            },
+            "comparative_performance": {
+                "benchmark_alloy": "alloy_fe8mn3al1si02c",
+                "benchmark_process_id": "proc_fe8mn3al1si02c_ia",
+                "benchmark_sample_id": "sample_m2_ia",
+                "improvement_percentage": "48.78"
+            }
+        }
+    ],
+    "characterization_methods": [
+        {
+            "characterization_id": "char_xrd_01",
+            "sample_id": "sample_m1_hr",
+            "microstructure_uuid": "uuid_m1_hr_01",
+            "technique": "X-ray diffraction (XRD)",
+            "purpose": "相鉴定与残余奥氏体含量定量",
+            "key_findings": "残余奥氏体体积分数为5.1%"
+        },
+        {
+            "characterization_id": "char_xrd_02",
+            "sample_id": "sample_m1_ia",
+            "microstructure_uuid": "uuid_m1_ia_01",
+            "technique": "X-ray diffraction (XRD)",
+            "purpose": "相鉴定与残余奥氏体含量定量",
+            "key_findings": "残余奥氏体体积分数为45%"
+        },
+        {
+            "characterization_id": "char_xrd_03",
+            "sample_id": "sample_m2_hr",
+            "microstructure_uuid": "uuid_m2_hr_01",
+            "technique": "X-ray diffraction (XRD)",
+            "purpose": "相鉴定与残余奥氏体含量定量",
+            "key_findings": "残余奥氏体体积分数为5.7%"
+        },
+        {
+            "characterization_id": "char_xrd_04",
+            "sample_id": "sample_m2_ia",
+            "microstructure_uuid": "uuid_m2_ia_01",
+            "technique": "X-ray diffraction (XRD)",
+            "purpose": "相鉴定与残余奥氏体含量定量",
+            "key_findings": "残余奥氏体体积分数为19%"
+        },
+        {
+            "characterization_id": "char_ebsd_01",
+            "sample_id": "sample_m1_ia",
+            "microstructure_uuid": "uuid_m1_ia_01",
+            "technique": "Electron backscatter diffraction (EBSD)",
+            "purpose": "相分布与晶粒取向表征",
+            "key_findings": "组织由α铁素体和奥氏体组成，存在大量细奥氏体晶粒"
+        },
+        {
+            "characterization_id": "char_ebsd_02",
+            "sample_id": "sample_m2_ia",
+            "microstructure_uuid": "uuid_m2_ia_01",
+            "technique": "Electron backscatter diffraction (EBSD)",
+            "purpose": "相分布与晶粒取向表征",
+            "key_findings": "组织由δ铁素体、α铁素体和奥氏体组成，δ铁素体呈粗带状分布"
+        },
+        {
+            "characterization_id": "char_tensile_01",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "Uniaxial tensile test",
+            "purpose": "室温力学性能测试",
+            "key_findings": "应变速率1e-3 s-1，M1-IA强塑积61 GPa%，M2-IA强塑积41 GPa%"
+        }
+    ],
+    "computational_details": [
+        {
+            "computation_id": "comp_thermocalc_01",
+            "sample_id": null,
+            "simulation_method": "Thermodynamic equilibrium calculation",
+            "software_used": "ThermoCalc",
+            "potential_model": "TCFE9 steel database",
+            "validation_against_experiment": "验证了Al、Si添加对临界退火温度窗口的拓宽作用",
+            "analytical_model": []
+        },
+        {
+            "computation_id": "comp_km_01",
+            "sample_id": null,
+            "simulation_method": "Theoretical calculation",
+            "software_used": null,
+            "potential_model": "Koistinen-Marburger model",
+            "validation_against_experiment": "计算残余奥氏体含量低于实验值，需考虑局部微观不均匀性影响",
+            "analytical_model": [
+                {
+                    "model_name": "Koistinen-Marburger equation",
+                    "equation_role": "计算冷却过程中残余奥氏体含量",
+                    "parameters": null,
+                    "model_note": "(1-f) = exp{-0.011[Ms-T]}"
+                },
+                {
+                    "model_name": "Ms temperature calculation formula",
+                    "equation_role": "计算马氏体开始转变温度",
+                    "parameters": null,
+                    "model_note": "Ms(°C) = 539 - 423C - 30.4Mn -7.5Si +30Al"
+                },
+                {
+                    "model_name": "Austenite transformation kinetics model",
+                    "equation_role": "表征变形过程中奥氏体机械稳定性",
+                    "parameters": "B=3.6 for M1, B=3.8 for M2",
+                    "model_note": "f_γ = A×e^(-Bε), B越小奥氏体机械稳定性越高"
+                }
+            ]
+        }
+    ],
+    "unmapped_findings": [
+        "M1和M2钢 stacking fault energy 均低于18 mJ/m²，变形过程中发生TRIP效应",
+        "拉伸变形后M1-IA残余奥氏体含量降至6.5%，M2-IA降至3.2%，大部分奥氏体发生变形诱导马氏体相变",
+        "应变硬化曲线分为三个阶段：阶段I为铁素体变形导致硬化率快速下降，阶段II为TRIP效应导致硬化率缓慢下降，阶段III为颈缩前孔洞形成导致硬化率快速下降",
+        "添加Al可拓宽临界退火温度窗口，3wt%Al添加使窗口从88°C拓宽至300°C"
+    ]
+}

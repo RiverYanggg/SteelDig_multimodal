@@ -1,0 +1,251 @@
+# Verify Eval Report: A1
+
+- target_kind: final_original
+- paper_score: 80.17
+- field_count: 278
+- gate_ok: True
+
+## Scoring Formula
+
+- yes=1.0, partial=0.6, unknown=0.3, no=0.0
+- field_score = correctness_score * evidence_confidence * 100
+- sample_score = sum(field_score * field_weight) / sum(field_weight)
+- paper_score = sum(sample_score * sample_weight) / sum(sample_weight)
+- if structure gate fails, paper_score = 0
+
+## Samples
+- paper_level: 82.89 (140 fields)
+- sample_austenitic: 83.30 (51 fields)
+- sample_austenitic_duplex: 77.59 (36 fields)
+- sample_ferritic: 78.72 (26 fields)
+- sample_ferritic_duplex: 68.54 (25 fields)
+
+## Field-Level Trace
+
+### paper_level
+- F00001 `papers.A1.authors[0]`: score=90.00, judge=yes, conf=0.90, refs=b0002
+- F00002 `papers.A1.authors[1]`: score=90.00, judge=yes, conf=0.90, refs=b0002
+- F00003 `papers.A1.authors[2]`: score=90.00, judge=yes, conf=0.90, refs=b0002
+- F00004 `papers.A1.authors[3]`: score=90.00, judge=yes, conf=0.90, refs=b0002
+- F00005 `papers.A1.keywords[0]`: score=90.00, judge=yes, conf=0.90, refs=b0013
+- F00006 `papers.A1.keywords[1]`: score=90.00, judge=yes, conf=0.90, refs=b0014
+- F00007 `papers.A1.keywords[2]`: score=90.00, judge=yes, conf=0.90, refs=b0015
+- F00008 `papers.A1.keywords[3]`: score=90.00, judge=yes, conf=0.90, refs=b0016
+- F00009 `papers.A1.keywords[4]`: score=90.00, judge=yes, conf=0.90, refs=b0017
+- F00010 `papers.A1.keywords[5]`: score=90.00, judge=yes, conf=0.90, refs=b0018
+- F00011 `papers.A1.keywords[6]`: score=90.00, judge=yes, conf=0.90, refs=b0019
+- F00012 `papers.A1.keywords[7]`: score=90.00, judge=yes, conf=0.90, refs=b0020
+- F00013 `papers.A1.keywords[8]`: score=90.00, judge=yes, conf=0.90, refs=b0021
+- F00014 `papers.A1.paper_scope`: score=90.00, judge=yes, conf=0.90, refs=b0023
+- F00015 `papers.A1.publication_year`: score=90.00, judge=yes, conf=0.90, refs=b0028
+- F00016 `papers.A1.research_type`: score=90.00, judge=yes, conf=0.90, refs=b0023
+- F00017 `papers.A1.title`: score=90.00, judge=yes, conf=0.90, refs=b0001
+- F00018 `alloys.alloy_austenitic.aliases[0]`: score=6.00, judge=unknown, conf=0.20, refs=-
+- F00019 `alloys.alloy_austenitic.aliases[1]`: score=6.00, judge=unknown, conf=0.20, refs=-
+- F00020 `alloys.alloy_austenitic.alloy_name`: score=90.00, judge=yes, conf=0.90, refs=b0026
+- F00021 `alloys.alloy_austenitic.alloying_elements[0]`: score=90.00, judge=yes, conf=0.90, refs=b0089
+- F00022 `alloys.alloy_austenitic.alloying_elements[1]`: score=90.00, judge=yes, conf=0.90, refs=b0089
+- F00023 `alloys.alloy_austenitic.alloying_elements[2]`: score=90.00, judge=yes, conf=0.90, refs=b0089
+- F00024 `alloys.alloy_austenitic.alloys_notes`: score=48.00, judge=partial, conf=0.80, refs=b0091,b0255
+- F00025 `alloys.alloy_austenitic.base_element`: score=90.00, judge=yes, conf=0.90, refs=b0089
+- F00026 `alloys.alloy_austenitic.nominal_composition[al].element`: score=90.00, judge=yes, conf=0.90, refs=b0089
+- F00027 `alloys.alloy_austenitic.nominal_composition[al].weight_percent`: score=90.00, judge=yes, conf=0.90, refs=b0089
+- F00028 `alloys.alloy_austenitic.nominal_composition[c].element`: score=90.00, judge=yes, conf=0.90, refs=b0089
+- F00029 `alloys.alloy_austenitic.nominal_composition[c].weight_percent`: score=90.00, judge=yes, conf=0.90, refs=b0089
+- F00030 `alloys.alloy_austenitic.nominal_composition[fe].element`: score=90.00, judge=yes, conf=0.90, refs=b0089
+- F00031 `alloys.alloy_austenitic.nominal_composition[fe].weight_percent`: score=90.00, judge=yes, conf=0.90, refs=b0089
+- F00032 `alloys.alloy_austenitic.nominal_composition[mn].element`: score=90.00, judge=yes, conf=0.90, refs=b0089
+- F00033 `alloys.alloy_austenitic.nominal_composition[mn].weight_percent`: score=90.00, judge=yes, conf=0.90, refs=b0089
+- F00034 `alloys.alloy_austenitic_duplex.aliases[0]`: score=90.00, judge=yes, conf=0.90, refs=b0093
+- F00035 `alloys.alloy_austenitic_duplex.aliases[1]`: score=90.00, judge=yes, conf=0.90, refs=b0093
+- F00036 `alloys.alloy_austenitic_duplex.alloy_name`: score=90.00, judge=yes, conf=0.90, refs=b0093,b0089
+- F00037 `alloys.alloy_austenitic_duplex.alloying_elements[0]`: score=90.00, judge=yes, conf=0.90, refs=b0089
+- F00038 `alloys.alloy_austenitic_duplex.alloying_elements[1]`: score=90.00, judge=yes, conf=0.90, refs=b0089
+- F00039 `alloys.alloy_austenitic_duplex.alloying_elements[2]`: score=90.00, judge=yes, conf=0.90, refs=b0089
+- F00040 `alloys.alloy_austenitic_duplex.alloys_notes`: score=48.00, judge=partial, conf=0.80, refs=b0093,b0089
+- F00041 `alloys.alloy_austenitic_duplex.base_element`: score=90.00, judge=yes, conf=0.90, refs=b0089
+- F00042 `alloys.alloy_austenitic_duplex.nominal_composition[al].element`: score=90.00, judge=yes, conf=0.90, refs=b0089
+- F00043 `alloys.alloy_austenitic_duplex.nominal_composition[al].weight_percent`: score=90.00, judge=yes, conf=0.90, refs=b0089
+- F00044 `alloys.alloy_austenitic_duplex.nominal_composition[c].element`: score=90.00, judge=yes, conf=0.90, refs=b0089
+- F00045 `alloys.alloy_austenitic_duplex.nominal_composition[c].weight_percent`: score=90.00, judge=yes, conf=0.90, refs=b0089
+- F00046 `alloys.alloy_austenitic_duplex.nominal_composition[fe].element`: score=90.00, judge=yes, conf=0.90, refs=b0089
+- F00047 `alloys.alloy_austenitic_duplex.nominal_composition[fe].weight_percent`: score=90.00, judge=yes, conf=0.90, refs=b0089
+- F00048 `alloys.alloy_austenitic_duplex.nominal_composition[mn].element`: score=90.00, judge=yes, conf=0.90, refs=b0089
+- F00049 `alloys.alloy_austenitic_duplex.nominal_composition[mn].weight_percent`: score=90.00, judge=yes, conf=0.90, refs=b0089
+- F00050 `alloys.alloy_fe30mn1.2c.aliases[0]`: score=90.00, judge=yes, conf=0.90, refs=b0055,b0001
+- F00051 `alloys.alloy_fe30mn1.2c.alloy_name`: score=90.00, judge=yes, conf=0.90, refs=b0055
+- F00052 `alloys.alloy_fe30mn1.2c.alloying_elements[0]`: score=90.00, judge=yes, conf=0.90, refs=b0055
+- F00053 `alloys.alloy_fe30mn1.2c.alloying_elements[1]`: score=90.00, judge=yes, conf=0.90, refs=b0055
+- F00054 `alloys.alloy_fe30mn1.2c.alloys_notes`: score=90.00, judge=yes, conf=0.90, refs=b0241,b0075
+- F00055 `alloys.alloy_fe30mn1.2c.base_element`: score=90.00, judge=yes, conf=0.90, refs=b0055
+- F00056 `alloys.alloy_fe30mn1.2c.nominal_composition[al].element`: score=90.00, judge=yes, conf=0.90, refs=b0055
+- F00057 `alloys.alloy_fe30mn1.2c.nominal_composition[al].weight_percent`: score=90.00, judge=yes, conf=0.90, refs=b0241
+- F00058 `alloys.alloy_fe30mn1.2c.nominal_composition[c].element`: score=90.00, judge=yes, conf=0.90, refs=b0055
+- F00059 `alloys.alloy_fe30mn1.2c.nominal_composition[c].weight_percent`: score=90.00, judge=yes, conf=0.90, refs=b0055
+- F00060 `alloys.alloy_fe30mn1.2c.nominal_composition[fe].element`: score=90.00, judge=yes, conf=0.90, refs=b0055
+- F00061 `alloys.alloy_fe30mn1.2c.nominal_composition[fe].weight_percent`: score=90.00, judge=yes, conf=0.90, refs=b0055
+- F00062 `alloys.alloy_fe30mn1.2c.nominal_composition[mn].element`: score=90.00, judge=yes, conf=0.90, refs=b0055
+- F00063 `alloys.alloy_fe30mn1.2c.nominal_composition[mn].weight_percent`: score=90.00, judge=yes, conf=0.90, refs=b0055
+- F00064 `alloys.alloy_ferritic.aliases[0]`: score=90.00, judge=yes, conf=0.90, refs=b0083
+- F00065 `alloys.alloy_ferritic.aliases[1]`: score=90.00, judge=yes, conf=0.90, refs=b0083,b0089
+- F00066 `alloys.alloy_ferritic.alloy_name`: score=90.00, judge=yes, conf=0.90, refs=b0026,b0089
+- F00067 `alloys.alloy_ferritic.alloying_elements[0]`: score=90.00, judge=yes, conf=0.90, refs=b0089
+- F00068 `alloys.alloy_ferritic.alloying_elements[1]`: score=90.00, judge=yes, conf=0.90, refs=b0089
+- F00069 `alloys.alloy_ferritic.alloying_elements[2]`: score=90.00, judge=yes, conf=0.90, refs=b0089
+- F00070 `alloys.alloy_ferritic.alloys_notes`: score=48.00, judge=partial, conf=0.80, refs=b0083,b0313
+- F00071 `alloys.alloy_ferritic.base_element`: score=90.00, judge=yes, conf=0.90, refs=b0089
+- F00072 `alloys.alloy_ferritic.nominal_composition[al].element`: score=90.00, judge=yes, conf=0.90, refs=b0089
+- F00073 `alloys.alloy_ferritic.nominal_composition[al].weight_percent`: score=90.00, judge=yes, conf=0.90, refs=b0089
+- F00074 `alloys.alloy_ferritic.nominal_composition[c].element`: score=90.00, judge=yes, conf=0.90, refs=b0089
+- F00075 `alloys.alloy_ferritic.nominal_composition[c].weight_percent`: score=90.00, judge=yes, conf=0.90, refs=b0089
+- F00076 `alloys.alloy_ferritic.nominal_composition[fe].element`: score=90.00, judge=yes, conf=0.90, refs=b0089
+- F00077 `alloys.alloy_ferritic.nominal_composition[fe].weight_percent`: score=90.00, judge=yes, conf=0.90, refs=b0089
+- F00078 `alloys.alloy_ferritic.nominal_composition[mn].element`: score=90.00, judge=yes, conf=0.90, refs=b0089
+- F00079 `alloys.alloy_ferritic.nominal_composition[mn].weight_percent`: score=90.00, judge=yes, conf=0.90, refs=b0089
+- F00080 `alloys.alloy_ferritic_duplex.aliases[0]`: score=90.00, judge=yes, conf=0.90, refs=b0092
+
+### sample_austenitic
+- F00104 `processing_steps.sample_austenitic.cooling_medium`: score=95.00, judge=yes, conf=0.95, refs=b0197
+- F00105 `processing_steps.sample_austenitic.duration`: score=95.00, judge=yes, conf=0.95, refs=b0197
+- F00106 `processing_steps.sample_austenitic.method`: score=95.00, judge=yes, conf=0.95, refs=b0197
+- F00107 `processing_steps.sample_austenitic.processing_steps_notes`: score=90.00, judge=yes, conf=0.90, refs=b0197
+- F00108 `processing_steps.sample_austenitic.reduction_ratio`: score=90.00, judge=yes, conf=0.90, refs=b0468
+- F00109 `processing_steps.sample_austenitic.sequence`: score=3.00, judge=unknown, conf=0.10, refs=-
+- F00110 `processing_steps.sample_austenitic.temperature_with_unit`: score=95.00, judge=yes, conf=0.95, refs=b0197
+- F00111 `processing_steps.sample_austenitic.type`: score=100.00, judge=yes, conf=1.00, refs=b0197
+- F00142 `structures.sample_austenitic.microstructure_list[1].grain_structure.average_grain_size.value_with_unit`: score=42.00, judge=partial, conf=0.70, refs=b0342
+- F00143 `structures.sample_austenitic.microstructure_list[1].phases_present[austenite_gamma].crystal_structure`: score=100.00, judge=yes, conf=1.00, refs=b0132
+- F00144 `structures.sample_austenitic.microstructure_list[1].phases_present[austenite_gamma].grain_size`: score=6.00, judge=unknown, conf=0.20, refs=-
+- F00145 `structures.sample_austenitic.microstructure_list[1].phases_present[austenite_gamma].morphology`: score=95.00, judge=yes, conf=0.95, refs=b0207
+- F00146 `structures.sample_austenitic.microstructure_list[1].phases_present[austenite_gamma].phase_name`: score=100.00, judge=yes, conf=1.00, refs=b0091
+- F00147 `structures.sample_austenitic.microstructure_list[1].phases_present[austenite_gamma].volume_fraction`: score=95.00, judge=yes, conf=0.95, refs=b0132
+- F00148 `structures.sample_austenitic.microstructure_list[1].phases_present[short_range_order_sro_kappa_carbide].crystal_structure`: score=100.00, judge=yes, conf=1.00, refs=b0132
+- F00149 `structures.sample_austenitic.microstructure_list[1].phases_present[short_range_order_sro_kappa_carbide].grain_size`: score=95.00, judge=yes, conf=0.95, refs=b0221,b0346
+- F00150 `structures.sample_austenitic.microstructure_list[1].phases_present[short_range_order_sro_kappa_carbide].morphology`: score=95.00, judge=yes, conf=0.95, refs=b0224
+- F00151 `structures.sample_austenitic.microstructure_list[1].phases_present[short_range_order_sro_kappa_carbide].phase_name`: score=100.00, judge=yes, conf=1.00, refs=b0132
+- F00152 `structures.sample_austenitic.microstructure_list[1].phases_present[short_range_order_sro_kappa_carbide].volume_fraction`: score=85.00, judge=yes, conf=0.85, refs=b0255
+- F00153 `structures.sample_austenitic.microstructure_list[1].precipitates[kappa_carbide_fe_mn_3alcx].coherency`: score=100.00, judge=yes, conf=1.00, refs=b0213
+- F00154 `structures.sample_austenitic.microstructure_list[1].precipitates[kappa_carbide_fe_mn_3alcx].distribution`: score=95.00, judge=yes, conf=0.95, refs=b0211
+- F00155 `structures.sample_austenitic.microstructure_list[1].precipitates[kappa_carbide_fe_mn_3alcx].size.value_with_unit`: score=95.00, judge=yes, conf=0.95, refs=b0346
+- F00156 `structures.sample_austenitic.microstructure_list[1].precipitates[kappa_carbide_fe_mn_3alcx].type`: score=100.00, judge=yes, conf=1.00, refs=b0132
+- F00157 `structures.sample_austenitic.microstructure_list[1].related_sequence`: score=3.00, judge=unknown, conf=0.10, refs=-
+- F00158 `structures.sample_austenitic.number_of_phases`: score=90.00, judge=yes, conf=0.90, refs=b0091,b0255
+- F00159 `structures.sample_austenitic.overall_structure`: score=90.00, judge=yes, conf=0.90, refs=b0089,b0223
+- F00220 `interfaces.sample_austenitic.defect_interaction[0].interaction_type`: score=100.00, judge=yes, conf=1.00, refs=b0343
+- F00221 `interfaces.sample_austenitic.defect_interaction[0].quality_description`: score=100.00, judge=yes, conf=1.00, refs=b0343
+- F00222 `interfaces.sample_austenitic.interface_notes[0].slippage_situation`: score=95.00, judge=yes, conf=0.95, refs=b0344,b0345
+- F00223 `interfaces.sample_austenitic.phase_evolution`: score=100.00, judge=yes, conf=1.00, refs=b0220,b0238
+- F00224 `interfaces.sample_austenitic.phases[austenite].coherence`: score=100.00, judge=yes, conf=1.00, refs=b0272
+- F00225 `interfaces.sample_austenitic.phases[austenite].phase_1_name`: score=100.00, judge=yes, conf=1.00, refs=b0091
+- F00226 `interfaces.sample_austenitic.phases[austenite].phase_2_name`: score=100.00, judge=yes, conf=1.00, refs=b0272
+- F00232 `properties.sample_austenitic.chemical.corrosion_resistance.passivation_behavior`: score=100.00, judge=yes, conf=1.00, refs=b0506
+- F00233 `properties.sample_austenitic.chemical.corrosion_resistance.test_medium`: score=95.00, judge=yes, conf=0.95, refs=b0506
+- F00234 `properties.sample_austenitic.mechanical.fracture_toughness.value_with_unit`: score=100.00, judge=yes, conf=1.00, refs=b0476
+- F00235 `properties.sample_austenitic.mechanical.tensile_properties.elongation[0].value_with_unit`: score=100.00, judge=yes, conf=1.00, refs=b0050
+- F00236 `properties.sample_austenitic.mechanical.tensile_properties.ultimate_tensile_strength[0].value_with_unit`: score=100.00, judge=yes, conf=1.00, refs=b0089
+- F00237 `properties.sample_austenitic.mechanical.tensile_properties.yield_strength[0].value_with_unit`: score=100.00, judge=yes, conf=1.00, refs=b0050
+- F00238 `properties.sample_austenitic.mechanical.tensile_properties.youngs_modulus`: score=42.00, judge=partial, conf=0.70, refs=b0075,b0074
+- F00239 `properties.sample_austenitic.physical.density.value_with_unit`: score=100.00, judge=yes, conf=1.00, refs=b0063
+- F00247 `performance.sample_austenitic.comparative_performance.benchmark_alloy`: score=100.00, judge=yes, conf=1.00, refs=b0487
+- F00248 `performance.sample_austenitic.comparative_performance.improvement_percentage`: score=100.00, judge=yes, conf=1.00, refs=b0487
+- F00249 `performance.sample_austenitic.service_conditions.environment`: score=3.00, judge=unknown, conf=0.10, refs=-
+- F00250 `performance.sample_austenitic.service_conditions.operating_temperature.max`: score=3.00, judge=unknown, conf=0.10, refs=-
+- F00251 `performance.sample_austenitic.service_conditions.operating_temperature.min`: score=36.00, judge=partial, conf=0.60, refs=b0476
+- F00252 `performance.sample_austenitic.service_conditions.operating_temperature.unit`: score=100.00, judge=yes, conf=1.00, refs=b0476
+- F00253 `performance.sample_austenitic.service_conditions.stress_state`: score=95.00, judge=yes, conf=0.95, refs=b0487
+- F00257 `characterization_methods.sample_austenitic.key_findings`: score=100.00, judge=yes, conf=1.00, refs=b0050,b0370
+- F00258 `characterization_methods.sample_austenitic.purpose`: score=42.00, judge=partial, conf=0.70, refs=b0050
+- F00259 `characterization_methods.sample_austenitic.technique`: score=100.00, judge=yes, conf=1.00, refs=b0050
+
+### sample_austenitic_duplex
+- F00112 `processing_steps.sample_austenitic_duplex.cooling_medium`: score=100.00, judge=yes, conf=1.00, refs=b0197,b0208
+- F00113 `processing_steps.sample_austenitic_duplex.duration`: score=30.00, judge=partial, conf=0.50, refs=b0197,b0258
+- F00114 `processing_steps.sample_austenitic_duplex.method`: score=100.00, judge=yes, conf=1.00, refs=b0197
+- F00115 `processing_steps.sample_austenitic_duplex.processing_steps_notes`: score=100.00, judge=yes, conf=1.00, refs=b0224,b0209
+- F00116 `processing_steps.sample_austenitic_duplex.sequence`: score=0.00, judge=unknown, conf=0.00, refs=-
+- F00117 `processing_steps.sample_austenitic_duplex.temperature_with_unit`: score=48.00, judge=partial, conf=0.80, refs=b0197,b0258
+- F00118 `processing_steps.sample_austenitic_duplex.type`: score=100.00, judge=yes, conf=1.00, refs=b0197
+- F00160 `structures.sample_austenitic_duplex.microstructure_list[1].grain_structure.average_grain_size.value_with_unit`: score=0.00, judge=unknown, conf=0.00, refs=-
+- F00161 `structures.sample_austenitic_duplex.microstructure_list[1].phases_present[austenite_gamma].crystal_structure`: score=100.00, judge=yes, conf=1.00, refs=b0061
+- F00162 `structures.sample_austenitic_duplex.microstructure_list[1].phases_present[austenite_gamma].grain_size`: score=0.00, judge=unknown, conf=0.00, refs=-
+- F00163 `structures.sample_austenitic_duplex.microstructure_list[1].phases_present[austenite_gamma].morphology`: score=100.00, judge=yes, conf=1.00, refs=b0207
+- F00164 `structures.sample_austenitic_duplex.microstructure_list[1].phases_present[austenite_gamma].phase_name`: score=100.00, judge=yes, conf=1.00, refs=b0207
+- F00165 `structures.sample_austenitic_duplex.microstructure_list[1].phases_present[austenite_gamma].volume_fraction`: score=100.00, judge=yes, conf=1.00, refs=b0089
+- F00166 `structures.sample_austenitic_duplex.microstructure_list[1].phases_present[delta_ferrite].crystal_structure`: score=100.00, judge=yes, conf=1.00, refs=b0082
+- F00167 `structures.sample_austenitic_duplex.microstructure_list[1].phases_present[delta_ferrite].morphology`: score=100.00, judge=yes, conf=1.00, refs=b0283
+- F00168 `structures.sample_austenitic_duplex.microstructure_list[1].phases_present[delta_ferrite].phase_name`: score=100.00, judge=yes, conf=1.00, refs=b0083
+- F00169 `structures.sample_austenitic_duplex.microstructure_list[1].phases_present[delta_ferrite].volume_fraction`: score=36.00, judge=partial, conf=0.60, refs=b0351
+- F00170 `structures.sample_austenitic_duplex.microstructure_list[1].phases_present[kappa_carbide].crystal_structure`: score=100.00, judge=yes, conf=1.00, refs=b0132
+- F00171 `structures.sample_austenitic_duplex.microstructure_list[1].phases_present[kappa_carbide].grain_size`: score=36.00, judge=partial, conf=0.60, refs=b0221,b0346
+- F00172 `structures.sample_austenitic_duplex.microstructure_list[1].phases_present[kappa_carbide].morphology`: score=100.00, judge=yes, conf=1.00, refs=b0224
+- F00173 `structures.sample_austenitic_duplex.microstructure_list[1].phases_present[kappa_carbide].phase_name`: score=100.00, judge=yes, conf=1.00, refs=b0132
+- F00174 `structures.sample_austenitic_duplex.microstructure_list[1].phases_present[kappa_carbide].volume_fraction`: score=100.00, judge=yes, conf=1.00, refs=b0224
+- F00175 `structures.sample_austenitic_duplex.microstructure_list[1].precipitates[kappa_carbide_fe_mn_3alcx].coherency`: score=100.00, judge=yes, conf=1.00, refs=b0213
+- F00176 `structures.sample_austenitic_duplex.microstructure_list[1].precipitates[kappa_carbide_fe_mn_3alcx].distribution`: score=100.00, judge=yes, conf=1.00, refs=b0224
+- F00177 `structures.sample_austenitic_duplex.microstructure_list[1].precipitates[kappa_carbide_fe_mn_3alcx].size.value_with_unit`: score=36.00, judge=partial, conf=0.60, refs=b0221,b0346
+- F00178 `structures.sample_austenitic_duplex.microstructure_list[1].precipitates[kappa_carbide_fe_mn_3alcx].type`: score=100.00, judge=yes, conf=1.00, refs=b0132
+- F00179 `structures.sample_austenitic_duplex.microstructure_list[1].related_sequence`: score=0.00, judge=unknown, conf=0.00, refs=-
+- F00180 `structures.sample_austenitic_duplex.number_of_phases`: score=100.00, judge=yes, conf=1.00, refs=b0093
+- F00181 `structures.sample_austenitic_duplex.overall_structure`: score=100.00, judge=yes, conf=1.00, refs=b0093
+- F00227 `interfaces.sample_austenitic_duplex.interface_notes[0].stress_strain_distribution`: score=100.00, judge=yes, conf=1.00, refs=b0354
+- F00228 `interfaces.sample_austenitic_duplex.phase_evolution`: score=100.00, judge=yes, conf=1.00, refs=b0224,b0209
+- F00229 `interfaces.sample_austenitic_duplex.phases[austenite].coherence`: score=0.00, judge=unknown, conf=0.00, refs=-
+- F00230 `interfaces.sample_austenitic_duplex.phases[austenite].phase_1_name`: score=100.00, judge=yes, conf=1.00, refs=b0207
+- F00231 `interfaces.sample_austenitic_duplex.phases[austenite].phase_2_name`: score=100.00, judge=yes, conf=1.00, refs=b0083
+- F00240 `properties.sample_austenitic_duplex.mechanical.tensile_properties.elongation[0].value_with_unit`: score=100.00, judge=yes, conf=1.00, refs=b0089
+- F00241 `properties.sample_austenitic_duplex.mechanical.tensile_properties.ultimate_tensile_strength[0].value_with_unit`: score=100.00, judge=yes, conf=1.00, refs=b0089
+
+### sample_ferritic
+- F00126 `processing_steps.sample_ferritic.method`: score=95.00, judge=yes, conf=0.95, refs=b0195,b0204
+- F00127 `processing_steps.sample_ferritic.processing_steps_notes`: score=95.00, judge=yes, conf=0.95, refs=b0204
+- F00128 `processing_steps.sample_ferritic.reduction_ratio`: score=90.00, judge=yes, conf=0.90, refs=b0204
+- F00129 `processing_steps.sample_ferritic.sequence`: score=0.00, judge=unknown, conf=0.00, refs=-
+- F00130 `processing_steps.sample_ferritic.temperature`: score=0.00, judge=no, conf=0.00, refs=b0195,b0204
+- F00131 `processing_steps.sample_ferritic.temperature_with_unit`: score=95.00, judge=yes, conf=0.95, refs=b0195,b0204
+- F00132 `processing_steps.sample_ferritic.type`: score=95.00, judge=yes, conf=0.95, refs=b0195,b0204
+- F00190 `structures.sample_ferritic.microstructure_list[2].defects[grain_boundary_kappa_carbides].type`: score=95.00, judge=yes, conf=0.95, refs=b0201
+- F00191 `structures.sample_ferritic.microstructure_list[2].grain_structure.average_grain_size.value_with_unit`: score=95.00, judge=yes, conf=0.95, refs=b0204
+- F00192 `structures.sample_ferritic.microstructure_list[2].grain_structure.texture`: score=90.00, judge=yes, conf=0.90, refs=b0204
+- F00193 `structures.sample_ferritic.microstructure_list[2].phases_present[delta_ferrite].crystal_structure`: score=90.00, judge=yes, conf=0.90, refs=b0061,b0082
+- F00194 `structures.sample_ferritic.microstructure_list[2].phases_present[delta_ferrite].grain_size`: score=95.00, judge=yes, conf=0.95, refs=b0204
+- F00195 `structures.sample_ferritic.microstructure_list[2].phases_present[delta_ferrite].morphology`: score=95.00, judge=yes, conf=0.95, refs=b0201,b0204
+- F00196 `structures.sample_ferritic.microstructure_list[2].phases_present[delta_ferrite].phase_name`: score=100.00, judge=yes, conf=1.00, refs=b0083,b0201
+- F00197 `structures.sample_ferritic.microstructure_list[2].phases_present[delta_ferrite].texture`: score=90.00, judge=yes, conf=0.90, refs=b0204
+- F00198 `structures.sample_ferritic.microstructure_list[2].phases_present[delta_ferrite].volume_fraction`: score=36.00, judge=partial, conf=0.60, refs=b0083
+- F00199 `structures.sample_ferritic.microstructure_list[2].precipitates[kappa_carbide_fe_mn_3alc].coherency`: score=90.00, judge=yes, conf=0.90, refs=b0201
+- F00200 `structures.sample_ferritic.microstructure_list[2].precipitates[kappa_carbide_fe_mn_3alc].distribution`: score=95.00, judge=yes, conf=0.95, refs=b0201
+- F00201 `structures.sample_ferritic.microstructure_list[2].precipitates[kappa_carbide_fe_mn_3alc].size.value`: score=90.00, judge=yes, conf=0.90, refs=b0201
+- F00202 `structures.sample_ferritic.microstructure_list[2].precipitates[kappa_carbide_fe_mn_3alc].type`: score=95.00, judge=yes, conf=0.95, refs=b0132,b0201
+- F00203 `structures.sample_ferritic.microstructure_list[2].related_sequence`: score=0.00, judge=unknown, conf=0.00, refs=-
+- F00204 `structures.sample_ferritic.number_of_phases`: score=30.00, judge=partial, conf=0.50, refs=b0083
+- F00205 `structures.sample_ferritic.overall_structure`: score=95.00, judge=yes, conf=0.95, refs=b0201,b0204
+- F00242 `properties.sample_ferritic.mechanical.tensile_properties.elongation[0].value_with_unit`: score=95.00, judge=yes, conf=0.95, refs=b0089
+- F00243 `properties.sample_ferritic.mechanical.tensile_properties.ultimate_tensile_strength[0].value_with_unit`: score=95.00, judge=yes, conf=0.95, refs=b0089
+- F00244 `properties.sample_ferritic.physical.density.value_with_unit`: score=95.00, judge=yes, conf=0.95, refs=b0062
+
+### sample_ferritic_duplex
+- F00133 `processing_steps.sample_ferritic_duplex.cooling_medium`: score=90.00, judge=yes, conf=0.90, refs=b0195,b0305
+- F00134 `processing_steps.sample_ferritic_duplex.duration`: score=0.00, judge=unknown, conf=0.00, refs=-
+- F00135 `processing_steps.sample_ferritic_duplex.method`: score=100.00, judge=yes, conf=1.00, refs=b0195
+- F00136 `processing_steps.sample_ferritic_duplex.processing_steps_notes`: score=36.00, judge=partial, conf=0.60, refs=b0307,b0310
+- F00137 `processing_steps.sample_ferritic_duplex.reduction_ratio`: score=0.00, judge=unknown, conf=0.00, refs=-
+- F00138 `processing_steps.sample_ferritic_duplex.sequence`: score=0.00, judge=unknown, conf=0.00, refs=-
+- F00139 `processing_steps.sample_ferritic_duplex.temperature`: score=0.00, judge=unknown, conf=0.00, refs=-
+- F00140 `processing_steps.sample_ferritic_duplex.temperature_with_unit`: score=100.00, judge=yes, conf=1.00, refs=b0195
+- F00141 `processing_steps.sample_ferritic_duplex.type`: score=100.00, judge=yes, conf=1.00, refs=b0195
+- F00206 `structures.sample_ferritic_duplex.microstructure_list[1].defects[possible_kappa_at_delta_gamma_interfaces].type`: score=90.00, judge=yes, conf=0.90, refs=b0285
+- F00207 `structures.sample_ferritic_duplex.microstructure_list[1].grain_structure.grain_size_distribution`: score=90.00, judge=yes, conf=0.90, refs=b0026,b0388
+- F00208 `structures.sample_ferritic_duplex.microstructure_list[1].phases_present[austenite_gamma].crystal_structure`: score=100.00, judge=yes, conf=1.00, refs=b0061,b0082
+- F00209 `structures.sample_ferritic_duplex.microstructure_list[1].phases_present[austenite_gamma].morphology`: score=42.00, judge=partial, conf=0.70, refs=b0388
+- F00210 `structures.sample_ferritic_duplex.microstructure_list[1].phases_present[austenite_gamma].phase_name`: score=100.00, judge=yes, conf=1.00, refs=b0082,b0092
+- F00211 `structures.sample_ferritic_duplex.microstructure_list[1].phases_present[austenite_gamma].volume_fraction`: score=90.00, judge=yes, conf=0.90, refs=b0388
+- F00212 `structures.sample_ferritic_duplex.microstructure_list[1].phases_present[delta_ferrite].crystal_structure`: score=100.00, judge=yes, conf=1.00, refs=b0061,b0082
+- F00213 `structures.sample_ferritic_duplex.microstructure_list[1].phases_present[delta_ferrite].grain_size`: score=90.00, judge=yes, conf=0.90, refs=b0388,b0201
+- F00214 `structures.sample_ferritic_duplex.microstructure_list[1].phases_present[delta_ferrite].morphology`: score=90.00, judge=yes, conf=0.90, refs=b0283,b0303
+- F00215 `structures.sample_ferritic_duplex.microstructure_list[1].phases_present[delta_ferrite].phase_name`: score=100.00, judge=yes, conf=1.00, refs=b0082,b0092
+- F00216 `structures.sample_ferritic_duplex.microstructure_list[1].phases_present[delta_ferrite].volume_fraction`: score=100.00, judge=yes, conf=1.00, refs=b0082,b0092
+- F00217 `structures.sample_ferritic_duplex.microstructure_list[1].related_sequence`: score=0.00, judge=unknown, conf=0.00, refs=-
+- F00218 `structures.sample_ferritic_duplex.number_of_phases`: score=0.00, judge=unknown, conf=0.00, refs=-
+- F00219 `structures.sample_ferritic_duplex.overall_structure`: score=90.00, judge=yes, conf=0.90, refs=b0283,b0388
+- F00245 `properties.sample_ferritic_duplex.mechanical.tensile_properties.elongation[0].value_with_unit`: score=90.00, judge=yes, conf=0.90, refs=b0089
+- F00246 `properties.sample_ferritic_duplex.mechanical.tensile_properties.ultimate_tensile_strength[0].value_with_unit`: score=90.00, judge=yes, conf=0.90, refs=b0089

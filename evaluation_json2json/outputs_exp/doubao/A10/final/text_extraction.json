@@ -1,0 +1,685 @@
+{
+  "papers": [
+    {
+      "paper_id": "A10",
+      "doi": null,
+      "title": "Extreme high accuracy prediction and design of Fe-C-Cr-Mn-Si steel using machine learning",
+      "authors": [
+        "Hao Wu",
+        "Jianyuan Zhang",
+        "Jintao Zhang",
+        "Chengjie Ge",
+        "Lu Ren",
+        "Xinkun Suo"
+      ],
+      "publication_year": null,
+      "journal": null,
+      "keywords": [
+        "Fe-C-Cr-Mn-Si steel",
+        "Machine learning",
+        "Conditional generative adversarial networks",
+        "Solid solution strengthening",
+        "Firefly optimization algorithm"
+      ],
+      "research_type": "mixed",
+      "paper_scope": "本研究提出结合机器学习、萤火虫优化算法和条件生成对抗网络的数据驱动模型预测Fe-C-Cr-Mn-Si钢的固溶强化效果，制备3种合金验证模型精度，为该钢种的高准确度设计提供有效方法"
+    }
+  ],
+  "alloys": [
+    {
+      "alloy_id": "alloy_fe_ccrmnsi_01",
+      "paper_id": "A10",
+      "alloy_name": "Fe-C-Cr-Mn-Si steel sample 1",
+      "aliases": [
+        "Sample 1"
+      ],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "C",
+        "Si",
+        "Mn",
+        "Cr",
+        "S",
+        "P"
+      ],
+      "nominal_composition": [
+        {
+          "element": "C",
+          "weight_percent": "0.45",
+          "atomic_percent": null
+        },
+        {
+          "element": "Si",
+          "weight_percent": "0.19",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "1.53",
+          "atomic_percent": null
+        },
+        {
+          "element": "Cr",
+          "weight_percent": "14",
+          "atomic_percent": null
+        },
+        {
+          "element": "S",
+          "weight_percent": "0.01",
+          "atomic_percent": null
+        },
+        {
+          "element": "P",
+          "weight_percent": "0.014",
+          "atomic_percent": null
+        },
+        {
+          "element": "Fe",
+          "weight_percent": "83.806",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "δ_r=0.0542, ΔH_mix=-0.914 kJ/mol"
+    },
+    {
+      "alloy_id": "alloy_fe_ccrmnsi_02",
+      "paper_id": "A10",
+      "alloy_name": "Fe-C-Cr-Mn-Si steel sample 2",
+      "aliases": [
+        "Sample 2"
+      ],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "C",
+        "Si",
+        "Mn",
+        "Cr",
+        "S",
+        "Ni",
+        "P",
+        "V",
+        "W"
+      ],
+      "nominal_composition": [
+        {
+          "element": "C",
+          "weight_percent": "0.53",
+          "atomic_percent": null
+        },
+        {
+          "element": "Si",
+          "weight_percent": "0.4",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "1.9",
+          "atomic_percent": null
+        },
+        {
+          "element": "Cr",
+          "weight_percent": "5.3",
+          "atomic_percent": null
+        },
+        {
+          "element": "S",
+          "weight_percent": "0.01",
+          "atomic_percent": null
+        },
+        {
+          "element": "Ni",
+          "weight_percent": "1.13",
+          "atomic_percent": null
+        },
+        {
+          "element": "P",
+          "weight_percent": "0.013",
+          "atomic_percent": null
+        },
+        {
+          "element": "Fe",
+          "weight_percent": "89.277",
+          "atomic_percent": null
+        },
+        {
+          "element": "V",
+          "weight_percent": "0.25",
+          "atomic_percent": null
+        },
+        {
+          "element": "W",
+          "weight_percent": "1.19",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "δ_r=0.0595, ΔH_mix=-1.213 kJ/mol"
+    },
+    {
+      "alloy_id": "alloy_fe_ccrmnsi_03",
+      "paper_id": "A10",
+      "alloy_name": "Fe-C-Cr-Mn-Si steel sample 3",
+      "aliases": [
+        "Sample 3"
+      ],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "C",
+        "Si",
+        "Mn",
+        "Cr",
+        "Ni",
+        "Mo",
+        "V"
+      ],
+      "nominal_composition": [
+        {
+          "element": "C",
+          "weight_percent": "0.15",
+          "atomic_percent": null
+        },
+        {
+          "element": "Si",
+          "weight_percent": "0.5",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "1.5",
+          "atomic_percent": null
+        },
+        {
+          "element": "Cr",
+          "weight_percent": "5.2",
+          "atomic_percent": null
+        },
+        {
+          "element": "Ni",
+          "weight_percent": "1.2",
+          "atomic_percent": null
+        },
+        {
+          "element": "Fe",
+          "weight_percent": "89.7",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mo",
+          "weight_percent": "1.5",
+          "atomic_percent": null
+        },
+        {
+          "element": "V",
+          "weight_percent": "0.25",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "δ_r=0.0335, ΔH_mix=-0.451 kJ/mol"
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_fe_ccrmnsi_01",
+      "paper_id": "A10",
+      "alloy_id": "alloy_fe_ccrmnsi_01",
+      "description": "采用电弧熔覆工艺制备涂层，基材为ASTM A36钢，熔覆参数：电流440~600A，电压30~32V，熔覆速度24m/h，层间温度380~410℃，送丝速度76.8m/h",
+      "processes_notes": null
+    },
+    {
+      "process_id": "proc_fe_ccrmnsi_02",
+      "paper_id": "A10",
+      "alloy_id": "alloy_fe_ccrmnsi_02",
+      "description": "采用电弧熔覆工艺制备涂层，基材为ASTM A36钢，熔覆参数：电流440~600A，电压30~32V，熔覆速度24m/h，层间温度380~410℃，送丝速度76.8m/h",
+      "processes_notes": null
+    },
+    {
+      "process_id": "proc_fe_ccrmnsi_03",
+      "paper_id": "A10",
+      "alloy_id": "alloy_fe_ccrmnsi_03",
+      "description": "采用电弧熔覆工艺制备涂层，基材为ASTM A36钢，熔覆参数：电流440~600A，电压30~32V，熔覆速度24m/h，层间温度380~410℃，送丝速度76.8m/h",
+      "processes_notes": null
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_fe_ccrmnsi_01",
+      "paper_id": "A10",
+      "alloy_id": "alloy_fe_ccrmnsi_01",
+      "process_id": "proc_fe_ccrmnsi_01"
+    },
+    {
+      "sample_id": "sample_fe_ccrmnsi_02",
+      "paper_id": "A10",
+      "alloy_id": "alloy_fe_ccrmnsi_02",
+      "process_id": "proc_fe_ccrmnsi_02"
+    },
+    {
+      "sample_id": "sample_fe_ccrmnsi_03",
+      "paper_id": "A10",
+      "alloy_id": "alloy_fe_ccrmnsi_03",
+      "process_id": "proc_fe_ccrmnsi_03"
+    }
+  ],
+  "processing_steps": [
+    {
+      "sample_id": "sample_fe_ccrmnsi_01",
+      "paper_id": "A10",
+      "sequence": "1",
+      "type": "thermomechanical_processing",
+      "method": "arc cladding",
+      "temperature": "380~410",
+      "unit": "℃",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "电流440~600A，电压30~32V，熔覆速度24m/h，送丝速度76.8m/h"
+    },
+    {
+      "sample_id": "sample_fe_ccrmnsi_02",
+      "paper_id": "A10",
+      "sequence": "1",
+      "type": "thermomechanical_processing",
+      "method": "arc cladding",
+      "temperature": "380~410",
+      "unit": "℃",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "电流440~600A，电压30~32V，熔覆速度24m/h，送丝速度76.8m/h"
+    },
+    {
+      "sample_id": "sample_fe_ccrmnsi_03",
+      "paper_id": "A10",
+      "sequence": "1",
+      "type": "thermomechanical_processing",
+      "method": "arc cladding",
+      "temperature": "380~410",
+      "unit": "℃",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "电流440~600A，电压30~32V，熔覆速度24m/h，送丝速度76.8m/h"
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_01",
+      "sample_id": "sample_fe_ccrmnsi_01",
+      "overall_structure": "主相为Fe-Cr相，Cr原子随机取代FCC晶格中的Fe原子",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_struct_01",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "Fe-Cr",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "lattice distortion",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": "XRD衍射峰较标准Fe峰右移，存在晶格畸变"
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_02",
+      "sample_id": "sample_fe_ccrmnsi_02",
+      "overall_structure": "主相为Fe-Cr-Ni相",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_struct_02",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "Fe-Cr-Ni",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "lattice distortion",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": "XRD衍射峰较标准Fe峰右移，存在晶格畸变"
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_03",
+      "sample_id": "sample_fe_ccrmnsi_03",
+      "overall_structure": "主相为Fe-Cr-Ni相",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_struct_03",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "Fe-Cr-Ni",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "lattice distortion",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": "XRD衍射峰较标准Fe峰右移，存在晶格畸变"
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "prop_01",
+      "sample_id": "sample_fe_ccrmnsi_01",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": "coating",
+            "value": "515",
+            "scale": "HV",
+            "unit": "HV"
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_02",
+      "sample_id": "sample_fe_ccrmnsi_02",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": "coating",
+            "value": "500",
+            "scale": "HV",
+            "unit": "HV"
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_03",
+      "sample_id": "sample_fe_ccrmnsi_03",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": "coating",
+            "value": "424",
+            "scale": "HV",
+            "unit": "HV"
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_01",
+      "sample_id": null,
+      "microstructure_uuid": null,
+      "technique": "X-ray diffraction (XRD)",
+      "purpose": "分析涂层的相组成",
+      "key_findings": "样品1主相为Fe-Cr相，样品2、3主相为Fe-Cr-Ni相，XRD衍射峰较标准Fe峰右移，存在晶格畸变"
+    },
+    {
+      "characterization_id": "char_02",
+      "sample_id": null,
+      "microstructure_uuid": null,
+      "technique": "Vicker's microhardness test",
+      "purpose": "测量涂层的显微硬度",
+      "key_findings": "三个样品实测硬度分别为515HV、500HV、424HV，与模型预测值的最小误差为1.17%"
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_01",
+      "sample_id": null,
+      "simulation_method": "机器学习结合修正固溶强化理论",
+      "software_used": "Seaborn",
+      "potential_model": null,
+      "validation_against_experiment": "采用117组MatWeb公开数据及3组实验制备样品验证，最小预测误差为1.17%",
+      "analytical_model": [
+        {
+          "model_name": "修正的固溶强化模型",
+          "equation_role": "用于修正SVR模型提升预测精度",
+          "parameters": "Δσ_sss = Z·M·G·δ_Ec·D_Ec, Z=0.0056, M=3.06",
+          "model_note": "引入该模型后SVR模型R²从0.85提升至0.89，RMSE从0.39降至0.31"
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Cr元素对Fe-C-Cr-Mn-Si钢显微硬度的正向影响最大，其次为Ni和Mo",
+    "内聚能差、局部内聚能失配和剪切模量是影响钢显微硬度的关键特征",
+    "SVR模型在9种测试机器学习模型中预测精度最高，原始R²为0.85，RMSE为0.39",
+    "萤火虫优化算法得到的合金最高预测硬度为733.59HV，优于PSO、SA、GWO算法",
+    "使用CGAN将数据集从98个样本扩充至192个样本"
+  ]
+}

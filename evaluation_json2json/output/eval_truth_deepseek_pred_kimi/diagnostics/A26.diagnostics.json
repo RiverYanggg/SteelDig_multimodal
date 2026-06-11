@@ -1,0 +1,1372 @@
+{
+  "paper_id": "A26",
+  "truth_path": "/Users/mac/Desktop/LLM_project/SteelDig_multimodal/evaluation_json2json/outputs_exp/deepseek/A26/final/text_extraction.json",
+  "prediction_path": "/Users/mac/Desktop/LLM_project/SteelDig_multimodal/evaluation_json2json/outputs_exp/kimi/A26/final/text_extraction.json",
+  "prediction_empty": false,
+  "section_diagnostics": {
+    "papers": {
+      "structure_metrics": {
+        "truth_count": 1,
+        "prediction_count": 1,
+        "matched_count": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_anchors": [
+          "papers.A26"
+        ],
+        "unmatched_truth_anchors": [],
+        "unmatched_prediction_anchors": []
+      },
+      "error_summary": {
+        "missing_fact": 0,
+        "extra_fact": 0,
+        "correct": 12,
+        "value_mismatch": 1
+      },
+      "missing_truth_fact_examples": [],
+      "extra_prediction_fact_examples": [],
+      "mismatched_fact_examples": [
+        {
+          "key": "papers.A26.paper_scope",
+          "truth_path": "papers.A26.paper_scope",
+          "prediction_path": "papers.A26.paper_scope",
+          "canonical_object": "A26",
+          "field_path": "paper_scope",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "A novel low alloy ultrahigh strength steel was developed by introducing extremely high-density NiAl clusters to achieve high toughness at a tensile strength of ~1.9 GPa.",
+          "prediction_value": "Development of a novel low alloy ultrahigh strength steel containing extremely high-density coherent NiAl clusters and ε-carbides via dual-precipitation, achieving ~1.9 GPa tensile strength with enhanced toughness, and systematic investigation of precipitation behavior, dislocation regulation, and multi-scale toughening mechanisms.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "a novel low alloy ultrahigh strength steel was developed by introducing extremely high-density nial clusters to achieve high toughness at a tensile strength of ~1.9 gpa.",
+          "prediction_normalized": "development of a novel low alloy ultrahigh strength steel containing extremely high-density coherent nial clusters and ε-carbides via dual-precipitation, achieving ~1.9 gpa tensile strength with enhanced toughness, and systematic investigation of precipitation behavior, dislocation regulation, and multi-scale toughening mechanisms.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "papers:0:papers_a26_paper_scope"
+        }
+      ],
+      "llm_judge_candidate_count": 1,
+      "llm_judge_candidates": [
+        {
+          "key": "papers.A26.paper_scope",
+          "truth_path": "papers.A26.paper_scope",
+          "prediction_path": "papers.A26.paper_scope",
+          "canonical_object": "A26",
+          "field_path": "paper_scope",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "A novel low alloy ultrahigh strength steel was developed by introducing extremely high-density NiAl clusters to achieve high toughness at a tensile strength of ~1.9 GPa.",
+          "prediction_value": "Development of a novel low alloy ultrahigh strength steel containing extremely high-density coherent NiAl clusters and ε-carbides via dual-precipitation, achieving ~1.9 GPa tensile strength with enhanced toughness, and systematic investigation of precipitation behavior, dislocation regulation, and multi-scale toughening mechanisms.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "a novel low alloy ultrahigh strength steel was developed by introducing extremely high-density nial clusters to achieve high toughness at a tensile strength of ~1.9 gpa.",
+          "prediction_normalized": "development of a novel low alloy ultrahigh strength steel containing extremely high-density coherent nial clusters and ε-carbides via dual-precipitation, achieving ~1.9 gpa tensile strength with enhanced toughness, and systematic investigation of precipitation behavior, dislocation regulation, and multi-scale toughening mechanisms.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "papers:0:papers_a26_paper_scope"
+        }
+      ],
+      "match_method_summary": {
+        "normalized_exact": {
+          "matched": 12,
+          "mismatched": 0
+        },
+        "llm_field_judge": {
+          "matched": 0,
+          "mismatched": 1
+        }
+      }
+    },
+    "alloys": {
+      "structure_metrics": {
+        "truth_count": 2,
+        "prediction_count": 2,
+        "matched_count": 2,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "error_summary": {
+        "missing_fact": 1,
+        "extra_fact": 0,
+        "correct": 54,
+        "value_mismatch": 1
+      },
+      "missing_truth_fact_examples": [
+        "alloys.alloy_0al.alloys_notes"
+      ],
+      "extra_prediction_fact_examples": [],
+      "mismatched_fact_examples": [
+        {
+          "key": "alloys.alloy_1_3al.alloys_notes",
+          "truth_path": "alloys.alloy_1_3al.alloys_notes",
+          "prediction_path": "alloys.alloy_1_3al.alloys_notes",
+          "canonical_object": "alloy_1_3al",
+          "field_path": "alloys_notes",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Referred to as 1.3Al steel.",
+          "prediction_value": "Ni and Al concentrations were increased relative to the 0Al steel to ensure sufficient NiAl precipitation.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "referred to as 1.3al steel.",
+          "prediction_normalized": "ni and al concentrations were increased relative to the 0al steel to ensure sufficient nial precipitation.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "alloys:0:alloys_alloy_1_3al_alloys_notes"
+        }
+      ],
+      "llm_judge_candidate_count": 1,
+      "llm_judge_candidates": [
+        {
+          "key": "alloys.alloy_1_3al.alloys_notes",
+          "truth_path": "alloys.alloy_1_3al.alloys_notes",
+          "prediction_path": "alloys.alloy_1_3al.alloys_notes",
+          "canonical_object": "alloy_1_3al",
+          "field_path": "alloys_notes",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Referred to as 1.3Al steel.",
+          "prediction_value": "Ni and Al concentrations were increased relative to the 0Al steel to ensure sufficient NiAl precipitation.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "referred to as 1.3al steel.",
+          "prediction_normalized": "ni and al concentrations were increased relative to the 0al steel to ensure sufficient nial precipitation.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "alloys:0:alloys_alloy_1_3al_alloys_notes"
+        }
+      ],
+      "match_method_summary": {
+        "normalized_exact": {
+          "matched": 54,
+          "mismatched": 0
+        },
+        "llm_field_judge": {
+          "matched": 0,
+          "mismatched": 1
+        }
+      }
+    },
+    "processes": {
+      "structure_metrics": {
+        "truth_count": 4,
+        "prediction_count": 4,
+        "matched_count": 4,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "error_summary": {
+        "missing_fact": 0,
+        "extra_fact": 0,
+        "correct": 4
+      },
+      "missing_truth_fact_examples": [],
+      "extra_prediction_fact_examples": [],
+      "mismatched_fact_examples": [],
+      "llm_judge_candidate_count": 4,
+      "llm_judge_candidates": [
+        {
+          "key": "processes.proc_0al_tempered.description",
+          "truth_path": "processes.proc_0al_tempered.description",
+          "prediction_path": "processes.proc_0al_tempered.description",
+          "canonical_object": "proc_0al_tempered",
+          "field_path": "description",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Solution treatment at 970°C for 1 h, water quenching, then tempering at 180°C for 2 h, water quenching.",
+          "prediction_value": "Tempered condition: solution treatment at 970°C for 1 h and water quenched, then tempered at 180°C for 2 h and water quenched.",
+          "error_type": "correct",
+          "matched": true,
+          "method": "llm_field_judge",
+          "truth_normalized": "solution treatment at 970 c for 1 h, water quenching, then tempering at 180 c for 2 h, water quenching.",
+          "prediction_normalized": "tempered condition: solution treatment at 970 c for 1 h and water quenched, then tempered at 180 c for 2 h and water quenched.",
+          "reason": "LLM judged same-field values as semantically matched.",
+          "score": 1.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "processes:0:processes_proc_0al_tempered_description"
+        },
+        {
+          "key": "processes.proc_0al_wq.description",
+          "truth_path": "processes.proc_0al_wq.description",
+          "prediction_path": "processes.proc_0al_wq.description",
+          "canonical_object": "proc_0al_wq",
+          "field_path": "description",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Solution treatment at 970°C for 1 h followed by water quenching.",
+          "prediction_value": "As-quenched condition: solution treatment at 970°C for 1 h followed by water quenching.",
+          "error_type": "correct",
+          "matched": true,
+          "method": "llm_field_judge",
+          "truth_normalized": "solution treatment at 970 c for 1 h followed by water quenching.",
+          "prediction_normalized": "as-quenched condition: solution treatment at 970 c for 1 h followed by water quenching.",
+          "reason": "LLM judged same-field values as semantically matched.",
+          "score": 1.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "processes:1:processes_proc_0al_wq_description"
+        },
+        {
+          "key": "processes.proc_1_3al_tempered.description",
+          "truth_path": "processes.proc_1_3al_tempered.description",
+          "prediction_path": "processes.proc_1_3al_tempered.description",
+          "canonical_object": "proc_1_3al_tempered",
+          "field_path": "description",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Solution treatment at 970°C for 1 h, water quenching, then tempering at 180°C for 2 h, water quenching.",
+          "prediction_value": "Tempered condition: solution treatment at 970°C for 1 h and water quenched, then tempered at 180°C for 2 h and water quenched.",
+          "error_type": "correct",
+          "matched": true,
+          "method": "llm_field_judge",
+          "truth_normalized": "solution treatment at 970 c for 1 h, water quenching, then tempering at 180 c for 2 h, water quenching.",
+          "prediction_normalized": "tempered condition: solution treatment at 970 c for 1 h and water quenched, then tempered at 180 c for 2 h and water quenched.",
+          "reason": "LLM judged same-field values as semantically matched.",
+          "score": 1.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "processes:2:processes_proc_1_3al_tempered_description"
+        },
+        {
+          "key": "processes.proc_1_3al_wq.description",
+          "truth_path": "processes.proc_1_3al_wq.description",
+          "prediction_path": "processes.proc_1_3al_wq.description",
+          "canonical_object": "proc_1_3al_wq",
+          "field_path": "description",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Solution treatment at 970°C for 1 h followed by water quenching.",
+          "prediction_value": "As-quenched condition: solution treatment at 970°C for 1 h followed by water quenching.",
+          "error_type": "correct",
+          "matched": true,
+          "method": "llm_field_judge",
+          "truth_normalized": "solution treatment at 970 c for 1 h followed by water quenching.",
+          "prediction_normalized": "as-quenched condition: solution treatment at 970 c for 1 h followed by water quenching.",
+          "reason": "LLM judged same-field values as semantically matched.",
+          "score": 1.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "processes:3:processes_proc_1_3al_wq_description"
+        }
+      ],
+      "match_method_summary": {
+        "llm_field_judge": {
+          "matched": 4,
+          "mismatched": 0
+        }
+      }
+    },
+    "samples": {
+      "structure_metrics": {
+        "truth_count": 4,
+        "prediction_count": 4,
+        "matched_count": 4,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "error_summary": {
+        "missing_fact": 0,
+        "extra_fact": 0
+      },
+      "missing_truth_fact_examples": [],
+      "extra_prediction_fact_examples": [],
+      "mismatched_fact_examples": [],
+      "llm_judge_candidate_count": 0,
+      "llm_judge_candidates": [],
+      "match_method_summary": {}
+    },
+    "processing_steps": {
+      "structure_metrics": {
+        "truth_count": 6,
+        "prediction_count": 14,
+        "matched_count": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matched_anchors": [],
+        "unmatched_truth_anchors": [
+          "processing_steps.sample_0al_2h.1.heat_treatment.solution_treatment_and_water_quenching.970",
+          "processing_steps.sample_0al_2h.2.heat_treatment.tempering_and_water_quenching.180",
+          "processing_steps.sample_0al_wq.1.heat_treatment.solution_treatment_and_water_quenching.970",
+          "processing_steps.sample_1_3al_2h.1.heat_treatment.solution_treatment_and_water_quenching.970",
+          "processing_steps.sample_1_3al_2h.2.heat_treatment.tempering_and_water_quenching.180",
+          "processing_steps.sample_1_3al_wq.1.heat_treatment.solution_treatment_and_water_quenching.970"
+        ],
+        "unmatched_prediction_anchors": [
+          "processing_steps.sample_0al_2h.1.melting.vacuum_induction_melting_followed_by_vacuum_arc_remelting_vim_var",
+          "processing_steps.sample_0al_2h.2.thermomechanical_processing.forging",
+          "processing_steps.sample_0al_2h.3.heat_treatment.solution_treatment_and_quenching.970",
+          "processing_steps.sample_0al_2h.4.heat_treatment.tempering_and_quenching.180",
+          "processing_steps.sample_0al_wq.1.melting.vacuum_induction_melting_followed_by_vacuum_arc_remelting_vim_var",
+          "processing_steps.sample_0al_wq.2.thermomechanical_processing.forging",
+          "processing_steps.sample_0al_wq.3.heat_treatment.solution_treatment_and_quenching.970",
+          "processing_steps.sample_1_3al_2h.1.melting.vacuum_induction_melting_followed_by_vacuum_arc_remelting_vim_var",
+          "processing_steps.sample_1_3al_2h.2.thermomechanical_processing.forging",
+          "processing_steps.sample_1_3al_2h.3.heat_treatment.solution_treatment_and_quenching.970",
+          "processing_steps.sample_1_3al_2h.4.heat_treatment.tempering_and_quenching.180",
+          "processing_steps.sample_1_3al_wq.1.melting.vacuum_induction_melting_followed_by_vacuum_arc_remelting_vim_var",
+          "processing_steps.sample_1_3al_wq.2.thermomechanical_processing.forging",
+          "processing_steps.sample_1_3al_wq.3.heat_treatment.solution_treatment_and_quenching.970"
+        ]
+      },
+      "error_summary": {
+        "missing_fact": 0,
+        "extra_fact": 4,
+        "correct": 16,
+        "value_mismatch": 8
+      },
+      "missing_truth_fact_examples": [],
+      "extra_prediction_fact_examples": [
+        "processing_steps.sample_0al_2h.processing_steps_notes",
+        "processing_steps.sample_0al_wq.processing_steps_notes",
+        "processing_steps.sample_1_3al_2h.processing_steps_notes",
+        "processing_steps.sample_1_3al_wq.processing_steps_notes"
+      ],
+      "mismatched_fact_examples": [
+        {
+          "key": "processing_steps.sample_0al_2h.method",
+          "truth_path": "processing_steps.sample_0al_2h.method",
+          "prediction_path": "processing_steps.sample_0al_2h.method",
+          "canonical_object": "sample_0al_2h",
+          "field_path": "method",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "tempering and water quenching",
+          "prediction_value": "tempering and quenching",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "deterministic_mismatch",
+          "truth_normalized": "tempering and water quenching",
+          "prediction_normalized": "tempering and quenching",
+          "reason": "no deterministic matcher accepted the values",
+          "score": 0.0,
+          "needs_llm_judge": false
+        },
+        {
+          "key": "processing_steps.sample_0al_2h.sequence",
+          "truth_path": "processing_steps.sample_0al_2h.sequence",
+          "prediction_path": "processing_steps.sample_0al_2h.sequence",
+          "canonical_object": "sample_0al_2h",
+          "field_path": "sequence",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "2",
+          "prediction_value": "4",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "deterministic_mismatch",
+          "truth_normalized": "2",
+          "prediction_normalized": "4",
+          "reason": "no deterministic matcher accepted the values",
+          "score": 0.0,
+          "needs_llm_judge": false
+        },
+        {
+          "key": "processing_steps.sample_0al_wq.method",
+          "truth_path": "processing_steps.sample_0al_wq.method",
+          "prediction_path": "processing_steps.sample_0al_wq.method",
+          "canonical_object": "sample_0al_wq",
+          "field_path": "method",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "solution treatment and water quenching",
+          "prediction_value": "solution treatment and quenching",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "deterministic_mismatch",
+          "truth_normalized": "solution treatment and water quenching",
+          "prediction_normalized": "solution treatment and quenching",
+          "reason": "no deterministic matcher accepted the values",
+          "score": 0.0,
+          "needs_llm_judge": false
+        },
+        {
+          "key": "processing_steps.sample_0al_wq.sequence",
+          "truth_path": "processing_steps.sample_0al_wq.sequence",
+          "prediction_path": "processing_steps.sample_0al_wq.sequence",
+          "canonical_object": "sample_0al_wq",
+          "field_path": "sequence",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "1",
+          "prediction_value": "3",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "deterministic_mismatch",
+          "truth_normalized": "1",
+          "prediction_normalized": "3",
+          "reason": "no deterministic matcher accepted the values",
+          "score": 0.0,
+          "needs_llm_judge": false
+        },
+        {
+          "key": "processing_steps.sample_1_3al_2h.method",
+          "truth_path": "processing_steps.sample_1_3al_2h.method",
+          "prediction_path": "processing_steps.sample_1_3al_2h.method",
+          "canonical_object": "sample_1_3al_2h",
+          "field_path": "method",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "tempering and water quenching",
+          "prediction_value": "tempering and quenching",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "deterministic_mismatch",
+          "truth_normalized": "tempering and water quenching",
+          "prediction_normalized": "tempering and quenching",
+          "reason": "no deterministic matcher accepted the values",
+          "score": 0.0,
+          "needs_llm_judge": false
+        },
+        {
+          "key": "processing_steps.sample_1_3al_2h.sequence",
+          "truth_path": "processing_steps.sample_1_3al_2h.sequence",
+          "prediction_path": "processing_steps.sample_1_3al_2h.sequence",
+          "canonical_object": "sample_1_3al_2h",
+          "field_path": "sequence",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "2",
+          "prediction_value": "4",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "deterministic_mismatch",
+          "truth_normalized": "2",
+          "prediction_normalized": "4",
+          "reason": "no deterministic matcher accepted the values",
+          "score": 0.0,
+          "needs_llm_judge": false
+        },
+        {
+          "key": "processing_steps.sample_1_3al_wq.method",
+          "truth_path": "processing_steps.sample_1_3al_wq.method",
+          "prediction_path": "processing_steps.sample_1_3al_wq.method",
+          "canonical_object": "sample_1_3al_wq",
+          "field_path": "method",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "solution treatment and water quenching",
+          "prediction_value": "solution treatment and quenching",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "deterministic_mismatch",
+          "truth_normalized": "solution treatment and water quenching",
+          "prediction_normalized": "solution treatment and quenching",
+          "reason": "no deterministic matcher accepted the values",
+          "score": 0.0,
+          "needs_llm_judge": false
+        },
+        {
+          "key": "processing_steps.sample_1_3al_wq.sequence",
+          "truth_path": "processing_steps.sample_1_3al_wq.sequence",
+          "prediction_path": "processing_steps.sample_1_3al_wq.sequence",
+          "canonical_object": "sample_1_3al_wq",
+          "field_path": "sequence",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "1",
+          "prediction_value": "3",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "deterministic_mismatch",
+          "truth_normalized": "1",
+          "prediction_normalized": "3",
+          "reason": "no deterministic matcher accepted the values",
+          "score": 0.0,
+          "needs_llm_judge": false
+        }
+      ],
+      "llm_judge_candidate_count": 0,
+      "llm_judge_candidates": [],
+      "match_method_summary": {
+        "normalized_exact": {
+          "matched": 16,
+          "mismatched": 0
+        },
+        "deterministic_mismatch": {
+          "matched": 0,
+          "mismatched": 8
+        }
+      }
+    },
+    "structures": {
+      "structure_metrics": {
+        "truth_count": 4,
+        "prediction_count": 4,
+        "matched_count": 4,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_anchors": [
+          "structures.sample_0al_2h",
+          "structures.sample_0al_wq",
+          "structures.sample_1_3al_2h",
+          "structures.sample_1_3al_wq"
+        ],
+        "unmatched_truth_anchors": [],
+        "unmatched_prediction_anchors": []
+      },
+      "error_summary": {
+        "missing_fact": 58,
+        "extra_fact": 52,
+        "correct": 2,
+        "value_mismatch": 4
+      },
+      "missing_truth_fact_examples": [
+        "structures.sample_0al_2h.microstructure_counts",
+        "structures.sample_0al_2h.microstructure_list[1].defects[dislocation].dislocation_density",
+        "structures.sample_0al_2h.microstructure_list[1].defects[dislocation].type",
+        "structures.sample_0al_2h.microstructure_list[1].grain_structure.average_grain_size.value_with_unit",
+        "structures.sample_0al_2h.microstructure_list[1].grain_structure.grain_size_distribution",
+        "structures.sample_0al_2h.microstructure_list[1].phases_present[martensite_fe].crystal_structure",
+        "structures.sample_0al_2h.microstructure_list[1].phases_present[martensite_fe].grain_size",
+        "structures.sample_0al_2h.microstructure_list[1].phases_present[martensite_fe].morphology",
+        "structures.sample_0al_2h.microstructure_list[1].phases_present[martensite_fe].phase_name",
+        "structures.sample_0al_2h.microstructure_list[1].phases_present[martensite_fe].volume_fraction",
+        "structures.sample_0al_2h.microstructure_list[1].phases_present[retained_austenite].crystal_structure",
+        "structures.sample_0al_2h.microstructure_list[1].phases_present[retained_austenite].morphology",
+        "structures.sample_0al_2h.microstructure_list[1].phases_present[retained_austenite].phase_name",
+        "structures.sample_0al_2h.microstructure_list[1].phases_present[retained_austenite].volume_fraction",
+        "structures.sample_0al_2h.microstructure_list[1].related_sequence",
+        "structures.sample_0al_2h.microstructure_list[2].precipitates[carbide].distribution",
+        "structures.sample_0al_2h.microstructure_list[2].precipitates[carbide].size.value_with_unit",
+        "structures.sample_0al_2h.microstructure_list[2].precipitates[carbide].type",
+        "structures.sample_0al_2h.microstructure_list[2].related_sequence",
+        "structures.sample_0al_wq.microstructure_counts"
+      ],
+      "extra_prediction_fact_examples": [
+        "structures.sample_0al_2h.microstructure_list[4].defects[dislocations].dislocation_density",
+        "structures.sample_0al_2h.microstructure_list[4].defects[dislocations].type",
+        "structures.sample_0al_2h.microstructure_list[4].grain_structure.average_grain_size.value_with_unit",
+        "structures.sample_0al_2h.microstructure_list[4].phases_present[carbide].crystal_structure",
+        "structures.sample_0al_2h.microstructure_list[4].phases_present[carbide].grain_size",
+        "structures.sample_0al_2h.microstructure_list[4].phases_present[carbide].morphology",
+        "structures.sample_0al_2h.microstructure_list[4].phases_present[carbide].phase_name",
+        "structures.sample_0al_2h.microstructure_list[4].phases_present[fe_martensite].crystal_structure",
+        "structures.sample_0al_2h.microstructure_list[4].phases_present[fe_martensite].morphology",
+        "structures.sample_0al_2h.microstructure_list[4].phases_present[fe_martensite].phase_name",
+        "structures.sample_0al_2h.microstructure_list[4].phases_present[retained_austenite].crystal_structure",
+        "structures.sample_0al_2h.microstructure_list[4].phases_present[retained_austenite].morphology",
+        "structures.sample_0al_2h.microstructure_list[4].phases_present[retained_austenite].phase_name",
+        "structures.sample_0al_2h.microstructure_list[4].phases_present[retained_austenite].volume_fraction",
+        "structures.sample_0al_2h.microstructure_list[4].precipitates[carbide].distribution",
+        "structures.sample_0al_2h.microstructure_list[4].precipitates[carbide].size.value_with_unit",
+        "structures.sample_0al_2h.microstructure_list[4].precipitates[carbide].type",
+        "structures.sample_0al_2h.microstructure_list[4].related_sequence",
+        "structures.sample_0al_wq.microstructure_list[0].defects[dislocations].type",
+        "structures.sample_0al_wq.microstructure_list[0].phases_present[martensite].crystal_structure"
+      ],
+      "mismatched_fact_examples": [
+        {
+          "key": "structures.sample_0al_2h.overall_structure",
+          "truth_path": "structures.sample_0al_2h.overall_structure",
+          "prediction_path": "structures.sample_0al_2h.overall_structure",
+          "canonical_object": "sample_0al_2h",
+          "field_path": "overall_structure",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Tempered martensitic structure with lath martensite, retained austenite films, and ε-carbides.",
+          "prediction_value": "tempered martensite",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "tempered martensitic structure with lath martensite, retained austenite films, and ε-carbides.",
+          "prediction_normalized": "tempered martensite",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "structures:0:structures_sample_0al_2h_overall_structure"
+        },
+        {
+          "key": "structures.sample_0al_wq.overall_structure",
+          "truth_path": "structures.sample_0al_wq.overall_structure",
+          "prediction_path": "structures.sample_0al_wq.overall_structure",
+          "canonical_object": "sample_0al_wq",
+          "field_path": "overall_structure",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Lath martensite (as-quenched).",
+          "prediction_value": "as-quenched martensite",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "lath martensite (as-quenched).",
+          "prediction_normalized": "as-quenched martensite",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "structures:1:structures_sample_0al_wq_overall_structure"
+        },
+        {
+          "key": "structures.sample_1_3al_2h.overall_structure",
+          "truth_path": "structures.sample_1_3al_2h.overall_structure",
+          "prediction_path": "structures.sample_1_3al_2h.overall_structure",
+          "canonical_object": "sample_1_3al_2h",
+          "field_path": "overall_structure",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Tempered martensitic structure with lath martensite, retained austenite films, ε-carbides, and highly dispersed NiAl clusters.",
+          "prediction_value": "tempered martensite",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "tempered martensitic structure with lath martensite, retained austenite films, ε-carbides, and highly dispersed nial clusters.",
+          "prediction_normalized": "tempered martensite",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "structures:2:structures_sample_1_3al_2h_overall_structure"
+        },
+        {
+          "key": "structures.sample_1_3al_wq.overall_structure",
+          "truth_path": "structures.sample_1_3al_wq.overall_structure",
+          "prediction_path": "structures.sample_1_3al_wq.overall_structure",
+          "canonical_object": "sample_1_3al_wq",
+          "field_path": "overall_structure",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Lath martensite (as-quenched).",
+          "prediction_value": "as-quenched martensite",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "lath martensite (as-quenched).",
+          "prediction_normalized": "as-quenched martensite",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "structures:3:structures_sample_1_3al_wq_overall_structure"
+        }
+      ],
+      "llm_judge_candidate_count": 4,
+      "llm_judge_candidates": [
+        {
+          "key": "structures.sample_0al_2h.overall_structure",
+          "truth_path": "structures.sample_0al_2h.overall_structure",
+          "prediction_path": "structures.sample_0al_2h.overall_structure",
+          "canonical_object": "sample_0al_2h",
+          "field_path": "overall_structure",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Tempered martensitic structure with lath martensite, retained austenite films, and ε-carbides.",
+          "prediction_value": "tempered martensite",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "tempered martensitic structure with lath martensite, retained austenite films, and ε-carbides.",
+          "prediction_normalized": "tempered martensite",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "structures:0:structures_sample_0al_2h_overall_structure"
+        },
+        {
+          "key": "structures.sample_0al_wq.overall_structure",
+          "truth_path": "structures.sample_0al_wq.overall_structure",
+          "prediction_path": "structures.sample_0al_wq.overall_structure",
+          "canonical_object": "sample_0al_wq",
+          "field_path": "overall_structure",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Lath martensite (as-quenched).",
+          "prediction_value": "as-quenched martensite",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "lath martensite (as-quenched).",
+          "prediction_normalized": "as-quenched martensite",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "structures:1:structures_sample_0al_wq_overall_structure"
+        },
+        {
+          "key": "structures.sample_1_3al_2h.overall_structure",
+          "truth_path": "structures.sample_1_3al_2h.overall_structure",
+          "prediction_path": "structures.sample_1_3al_2h.overall_structure",
+          "canonical_object": "sample_1_3al_2h",
+          "field_path": "overall_structure",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Tempered martensitic structure with lath martensite, retained austenite films, ε-carbides, and highly dispersed NiAl clusters.",
+          "prediction_value": "tempered martensite",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "tempered martensitic structure with lath martensite, retained austenite films, ε-carbides, and highly dispersed nial clusters.",
+          "prediction_normalized": "tempered martensite",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "structures:2:structures_sample_1_3al_2h_overall_structure"
+        },
+        {
+          "key": "structures.sample_1_3al_wq.overall_structure",
+          "truth_path": "structures.sample_1_3al_wq.overall_structure",
+          "prediction_path": "structures.sample_1_3al_wq.overall_structure",
+          "canonical_object": "sample_1_3al_wq",
+          "field_path": "overall_structure",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Lath martensite (as-quenched).",
+          "prediction_value": "as-quenched martensite",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "lath martensite (as-quenched).",
+          "prediction_normalized": "as-quenched martensite",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "structures:3:structures_sample_1_3al_wq_overall_structure"
+        }
+      ],
+      "match_method_summary": {
+        "normalized_exact": {
+          "matched": 2,
+          "mismatched": 0
+        },
+        "llm_field_judge": {
+          "matched": 0,
+          "mismatched": 4
+        }
+      }
+    },
+    "interfaces": {
+      "structure_metrics": {
+        "truth_count": 1,
+        "prediction_count": 1,
+        "matched_count": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_anchors": [
+          "interfaces.sample_1_3al_2h"
+        ],
+        "unmatched_truth_anchors": [],
+        "unmatched_prediction_anchors": []
+      },
+      "error_summary": {
+        "missing_fact": 6,
+        "extra_fact": 6,
+        "value_mismatch": 2,
+        "correct": 2
+      },
+      "missing_truth_fact_examples": [
+        "interfaces.sample_1_3al_2h.defect_interaction[1].interaction_type",
+        "interfaces.sample_1_3al_2h.defect_interaction[1].quality_description",
+        "interfaces.sample_1_3al_2h.interface_notes[1].slippage_situation",
+        "interfaces.sample_1_3al_2h.phases[b2_nial_cluster].coherence",
+        "interfaces.sample_1_3al_2h.phases[b2_nial_cluster].phase_1_name",
+        "interfaces.sample_1_3al_2h.phases[b2_nial_cluster].phase_2_name"
+      ],
+      "extra_prediction_fact_examples": [
+        "interfaces.sample_1_3al_2h.phases[nial_cluster].coherence",
+        "interfaces.sample_1_3al_2h.phases[nial_cluster].phase_1_name",
+        "interfaces.sample_1_3al_2h.phases[nial_cluster].phase_2_name",
+        "interfaces.sample_1_3al_2h.phases[retained_austenite].coherence",
+        "interfaces.sample_1_3al_2h.phases[retained_austenite].phase_1_name",
+        "interfaces.sample_1_3al_2h.phases[retained_austenite].phase_2_name"
+      ],
+      "mismatched_fact_examples": [
+        {
+          "key": "interfaces.sample_1_3al_2h.defect_interaction[0].interaction_type",
+          "truth_path": "interfaces.sample_1_3al_2h.defect_interaction[0].interaction_type",
+          "prediction_path": "interfaces.sample_1_3al_2h.defect_interaction[0].interaction_type",
+          "canonical_object": "sample_1_3al_2h",
+          "field_path": "defect_interaction[0].interaction_type",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "dislocation shearing by NiAl clusters",
+          "prediction_value": "dislocation-NiAl cluster interaction",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "deterministic_mismatch",
+          "truth_normalized": "dislocation shearing by nial clusters",
+          "prediction_normalized": "dislocation-nial cluster interaction",
+          "reason": "no deterministic matcher accepted the values",
+          "score": 0.0,
+          "needs_llm_judge": false
+        },
+        {
+          "key": "interfaces.sample_1_3al_2h.defect_interaction[0].quality_description",
+          "truth_path": "interfaces.sample_1_3al_2h.defect_interaction[0].quality_description",
+          "prediction_path": "interfaces.sample_1_3al_2h.defect_interaction[0].quality_description",
+          "canonical_object": "sample_1_3al_2h",
+          "field_path": "defect_interaction[0].quality_description",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "NiAl clusters are sheared, promoting uniform dislocation distribution, suppressing pile-ups and local stress concentrations.",
+          "prediction_value": "NiAl clusters promote uniform dislocation distribution, suppress pile-ups at boundaries, delay crack initiation, and increase lattice friction by reducing dislocation mean free path",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "nial clusters are sheared, promoting uniform dislocation distribution, suppressing pile-ups and local stress concentrations.",
+          "prediction_normalized": "nial clusters promote uniform dislocation distribution, suppress pile-ups at boundaries, delay crack initiation, and increase lattice friction by reducing dislocation mean free path",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "interfaces:0:interfaces_sample_1_3al_2h_defect_interaction_0_quality_description"
+        }
+      ],
+      "llm_judge_candidate_count": 3,
+      "llm_judge_candidates": [
+        {
+          "key": "interfaces.sample_1_3al_2h.defect_interaction[0].quality_description",
+          "truth_path": "interfaces.sample_1_3al_2h.defect_interaction[0].quality_description",
+          "prediction_path": "interfaces.sample_1_3al_2h.defect_interaction[0].quality_description",
+          "canonical_object": "sample_1_3al_2h",
+          "field_path": "defect_interaction[0].quality_description",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "NiAl clusters are sheared, promoting uniform dislocation distribution, suppressing pile-ups and local stress concentrations.",
+          "prediction_value": "NiAl clusters promote uniform dislocation distribution, suppress pile-ups at boundaries, delay crack initiation, and increase lattice friction by reducing dislocation mean free path",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "nial clusters are sheared, promoting uniform dislocation distribution, suppressing pile-ups and local stress concentrations.",
+          "prediction_normalized": "nial clusters promote uniform dislocation distribution, suppress pile-ups at boundaries, delay crack initiation, and increase lattice friction by reducing dislocation mean free path",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "interfaces:0:interfaces_sample_1_3al_2h_defect_interaction_0_quality_description"
+        },
+        {
+          "key": "interfaces.sample_1_3al_2h.interface_notes[0].stress_strain_distribution",
+          "truth_path": "interfaces.sample_1_3al_2h.interface_notes[0].stress_strain_distribution",
+          "prediction_path": "interfaces.sample_1_3al_2h.interface_notes[0].stress_strain_distribution",
+          "canonical_object": "sample_1_3al_2h",
+          "field_path": "interface_notes[0].stress_strain_distribution",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Uniform KAM distribution (~1.31°) near fracture surface in 1.3Al steel indicates homogeneous strain, contrasting with inhomogeneous strain in 0Al steel.",
+          "prediction_value": "Uniform KAM distribution in 1.3Al steel (average 1.31° near fracture surface, 0.79° in matrix) versus inhomogeneous distribution in 0Al steel (average 1.16° with localized red/yellow high-strain regions)",
+          "error_type": "correct",
+          "matched": true,
+          "method": "llm_field_judge",
+          "truth_normalized": "uniform kam distribution (~1.31 ) near fracture surface in 1.3al steel indicates homogeneous strain, contrasting with inhomogeneous strain in 0al steel.",
+          "prediction_normalized": "uniform kam distribution in 1.3al steel (average 1.31 near fracture surface, 0.79 in matrix) versus inhomogeneous distribution in 0al steel (average 1.16 with localized red/yellow high-strain regions)",
+          "reason": "LLM judged same-field values as semantically matched.",
+          "score": 1.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "interfaces:1:interfaces_sample_1_3al_2h_interface_notes_0_stress_strain_distribution"
+        },
+        {
+          "key": "interfaces.sample_1_3al_2h.phase_evolution",
+          "truth_path": "interfaces.sample_1_3al_2h.phase_evolution",
+          "prediction_path": "interfaces.sample_1_3al_2h.phase_evolution",
+          "canonical_object": "sample_1_3al_2h",
+          "field_path": "phase_evolution",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "NiAl clusters and ε-carbides nucleate independently during tempering at 180°C; Ni and Al do not compete with C partitioning. A fraction of NiAl clusters nucleates on Si-enriched banded zones, providing additional heterogeneous nucleation sites.",
+          "prediction_value": "During tempering at 180°C, ε-carbides and NiAl clusters nucleate and grow independently with no elemental overlap or competitive partitioning; a small fraction of NiAl clusters interacts with Si and precipitates along Si-Cr-Mo-enriched banded zones, providing heterogeneous nucleation sites.",
+          "error_type": "correct",
+          "matched": true,
+          "method": "llm_field_judge",
+          "truth_normalized": "nial clusters and ε-carbides nucleate independently during tempering at 180 c ; ni and al do not compete with c partitioning. a fraction of nial clusters nucleates on si-enriched banded zones, providing additional heterogeneous nucleation sites.",
+          "prediction_normalized": "during tempering at 180 c , ε-carbides and nial clusters nucleate and grow independently with no elemental overlap or competitive partitioning; a small fraction of nial clusters interacts with si and precipitates along si-cr-mo-enriched banded zones, providing heterogeneous nucleation sites.",
+          "reason": "LLM judged same-field values as semantically matched.",
+          "score": 1.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "interfaces:2:interfaces_sample_1_3al_2h_phase_evolution"
+        }
+      ],
+      "match_method_summary": {
+        "deterministic_mismatch": {
+          "matched": 0,
+          "mismatched": 1
+        },
+        "llm_field_judge": {
+          "matched": 2,
+          "mismatched": 1
+        }
+      }
+    },
+    "properties": {
+      "structure_metrics": {
+        "truth_count": 4,
+        "prediction_count": 4,
+        "matched_count": 4,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_anchors": [
+          "properties.sample_0al_2h",
+          "properties.sample_0al_wq",
+          "properties.sample_1_3al_2h",
+          "properties.sample_1_3al_wq"
+        ],
+        "unmatched_truth_anchors": [],
+        "unmatched_prediction_anchors": []
+      },
+      "error_summary": {
+        "missing_fact": 28,
+        "extra_fact": 0,
+        "correct": 14
+      },
+      "missing_truth_fact_examples": [
+        "properties.sample_0al_2h.mechanical.impact_toughness[0].notch_type",
+        "properties.sample_0al_2h.mechanical.impact_toughness[0].uncertainty",
+        "properties.sample_0al_2h.mechanical.impact_toughness[0].value_with_unit",
+        "properties.sample_0al_2h.mechanical.tensile_properties.elongation[0].uncertainty",
+        "properties.sample_0al_2h.mechanical.tensile_properties.stress_strain_curves",
+        "properties.sample_0al_2h.mechanical.tensile_properties.ultimate_tensile_strength[0].others.uncertainty",
+        "properties.sample_0al_2h.mechanical.tensile_properties.yield_strength[0].others.uncertainty",
+        "properties.sample_0al_wq.mechanical.impact_toughness[0].notch_type",
+        "properties.sample_0al_wq.mechanical.impact_toughness[0].uncertainty",
+        "properties.sample_0al_wq.mechanical.impact_toughness[0].value_with_unit",
+        "properties.sample_0al_wq.mechanical.tensile_properties.elongation[0].uncertainty",
+        "properties.sample_0al_wq.mechanical.tensile_properties.stress_strain_curves",
+        "properties.sample_0al_wq.mechanical.tensile_properties.ultimate_tensile_strength[0].others.uncertainty",
+        "properties.sample_0al_wq.mechanical.tensile_properties.yield_strength[0].others.uncertainty",
+        "properties.sample_1_3al_2h.mechanical.impact_toughness[0].notch_type",
+        "properties.sample_1_3al_2h.mechanical.impact_toughness[0].uncertainty",
+        "properties.sample_1_3al_2h.mechanical.impact_toughness[0].value_with_unit",
+        "properties.sample_1_3al_2h.mechanical.tensile_properties.elongation[0].uncertainty",
+        "properties.sample_1_3al_2h.mechanical.tensile_properties.stress_strain_curves",
+        "properties.sample_1_3al_2h.mechanical.tensile_properties.ultimate_tensile_strength[0].others.uncertainty"
+      ],
+      "extra_prediction_fact_examples": [],
+      "mismatched_fact_examples": [],
+      "llm_judge_candidate_count": 0,
+      "llm_judge_candidates": [],
+      "match_method_summary": {
+        "quantity_with_unit": {
+          "matched": 14,
+          "mismatched": 0
+        }
+      }
+    },
+    "performance": {
+      "structure_metrics": {
+        "truth_count": 1,
+        "prediction_count": 1,
+        "matched_count": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_anchors": [
+          "performance.sample_1_3al_2h"
+        ],
+        "unmatched_truth_anchors": [],
+        "unmatched_prediction_anchors": []
+      },
+      "error_summary": {
+        "missing_fact": 2,
+        "extra_fact": 0,
+        "value_or_unit_mismatch": 2,
+        "value_mismatch": 1,
+        "correct": 1
+      },
+      "missing_truth_fact_examples": [
+        "performance.sample_1_3al_2h.service_conditions.environment",
+        "performance.sample_1_3al_2h.service_conditions.stress_state"
+      ],
+      "extra_prediction_fact_examples": [],
+      "mismatched_fact_examples": [
+        {
+          "key": "performance.sample_1_3al_2h.comparative_performance.benchmark_alloy",
+          "truth_path": "performance.sample_1_3al_2h.comparative_performance.benchmark_alloy",
+          "prediction_path": "performance.sample_1_3al_2h.comparative_performance.benchmark_alloy",
+          "canonical_object": "sample_1_3al_2h",
+          "field_path": "comparative_performance.benchmark_alloy",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "300M",
+          "prediction_value": "0Al steel",
+          "error_type": "value_or_unit_mismatch",
+          "matched": false,
+          "method": "quantity_with_unit",
+          "truth_normalized": "3e+08 um",
+          "prediction_normalized": "0 um",
+          "reason": "compared as length with abs_tol=0.0, rel_tol=0.02",
+          "score": 0.0,
+          "needs_llm_judge": false
+        },
+        {
+          "key": "performance.sample_1_3al_2h.comparative_performance.benchmark_process_id",
+          "truth_path": "performance.sample_1_3al_2h.comparative_performance.benchmark_process_id",
+          "prediction_path": "performance.sample_1_3al_2h.comparative_performance.benchmark_process_id",
+          "canonical_object": "sample_1_3al_2h",
+          "field_path": "comparative_performance.benchmark_process_id",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "proc_0al_tempered",
+          "prediction_value": "proc_0al_2h",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "deterministic_mismatch",
+          "truth_normalized": "proc_0al_tempered",
+          "prediction_normalized": "proc_0al_2h",
+          "reason": "no deterministic matcher accepted the values",
+          "score": 0.0,
+          "needs_llm_judge": false
+        },
+        {
+          "key": "performance.sample_1_3al_2h.comparative_performance.improvement_percentage",
+          "truth_path": "performance.sample_1_3al_2h.comparative_performance.improvement_percentage",
+          "prediction_path": "performance.sample_1_3al_2h.comparative_performance.improvement_percentage",
+          "canonical_object": "sample_1_3al_2h",
+          "field_path": "comparative_performance.improvement_percentage",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "1.3Al,2h shows comparable tensile strength (~1.9 GPa) but significantly higher impact toughness (80 J vs 27.6 J for 300M)",
+          "prediction_value": "~23 % higher impact absorption energy (KU2) and ~10.4 MPa·m^(1/2) higher fracture toughness (KIC) under comparable strength levels",
+          "error_type": "value_or_unit_mismatch",
+          "matched": false,
+          "method": "quantity_with_unit",
+          "truth_normalized": "1.3 %",
+          "prediction_normalized": "23 %",
+          "reason": "compared as percent with abs_tol=0.0, rel_tol=0.02",
+          "score": 0.0,
+          "needs_llm_judge": false
+        }
+      ],
+      "llm_judge_candidate_count": 0,
+      "llm_judge_candidates": [],
+      "match_method_summary": {
+        "quantity_with_unit": {
+          "matched": 0,
+          "mismatched": 2
+        },
+        "deterministic_mismatch": {
+          "matched": 0,
+          "mismatched": 1
+        },
+        "normalized_exact": {
+          "matched": 1,
+          "mismatched": 0
+        }
+      }
+    },
+    "characterization_methods": {
+      "structure_metrics": {
+        "truth_count": 2,
+        "prediction_count": 2,
+        "matched_count": 2,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matched_anchors": [
+          "characterization_methods.sample_0al_2h",
+          "characterization_methods.sample_1_3al_2h"
+        ],
+        "unmatched_truth_anchors": [],
+        "unmatched_prediction_anchors": []
+      },
+      "error_summary": {
+        "missing_fact": 0,
+        "extra_fact": 0,
+        "value_mismatch": 6
+      },
+      "missing_truth_fact_examples": [],
+      "extra_prediction_fact_examples": [],
+      "mismatched_fact_examples": [
+        {
+          "key": "characterization_methods.sample_0al_2h.key_findings",
+          "truth_path": "characterization_methods.sample_0al_2h.key_findings",
+          "prediction_path": "characterization_methods.sample_0al_2h.key_findings",
+          "canonical_object": "sample_0al_2h",
+          "field_path": "key_findings",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "ε-carbides: 100–500 nm length, 3–10 nm width, aligned; retained austenite films at lath boundaries with K–S orientation relationship.",
+          "prediction_value": "Retained austenite content 1.0 % in 0Al steel and 1.8 % in 1.3Al steel; negligible diffraction contributions from carbides assumed",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "ε-carbides: 100-500 nm length, 3-10 nm width, aligned; retained austenite films at lath boundaries with k-s orientation relationship.",
+          "prediction_normalized": "retained austenite content 1.0 % in 0al steel and 1.8 % in 1.3al steel; negligible diffraction contributions from carbides assumed",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "characterization_methods:0:characterization_methods_sample_0al_2h_key_findings"
+        },
+        {
+          "key": "characterization_methods.sample_0al_2h.purpose",
+          "truth_path": "characterization_methods.sample_0al_2h.purpose",
+          "prediction_path": "characterization_methods.sample_0al_2h.purpose",
+          "canonical_object": "sample_0al_2h",
+          "field_path": "purpose",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "High-resolution imaging of martensite laths, retained austenite, and ε-carbides",
+          "prediction_value": "phase analysis and retained austenite quantification",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "high-resolution imaging of martensite laths, retained austenite, and ε-carbides",
+          "prediction_normalized": "phase analysis and retained austenite quantification",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "characterization_methods:1:characterization_methods_sample_0al_2h_purpose"
+        },
+        {
+          "key": "characterization_methods.sample_0al_2h.technique",
+          "truth_path": "characterization_methods.sample_0al_2h.technique",
+          "prediction_path": "characterization_methods.sample_0al_2h.technique",
+          "canonical_object": "sample_0al_2h",
+          "field_path": "technique",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "TEM (JEM-F200)",
+          "prediction_value": "X-ray diffraction (XRD, Rigaku D/Max-2550)",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "deterministic_mismatch",
+          "truth_normalized": "tem (jem-f200)",
+          "prediction_normalized": "x-ray diffraction (xrd, rigaku d/max-2550)",
+          "reason": "no deterministic matcher accepted the values",
+          "score": 0.0,
+          "needs_llm_judge": false
+        },
+        {
+          "key": "characterization_methods.sample_1_3al_2h.key_findings",
+          "truth_path": "characterization_methods.sample_1_3al_2h.key_findings",
+          "prediction_path": "characterization_methods.sample_1_3al_2h.key_findings",
+          "canonical_object": "sample_1_3al_2h",
+          "field_path": "key_findings",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "ε-carbides: C ~8.91 at.%, no Ni/Al enrichment except slight at center; NiAl clusters: Ni+Al ~13 at.%, co-segregation of Si, Cr, Mo in banded zones; Si increases from 4.21 to 11.21 at.% in banded clusters.",
+          "prediction_value": "NiAl cluster number density ~4.88 × 10^24 m^-3, equivalent radius ~0.57 nm; ε-carbide thickness ~2.2 nm, spacing ~10 nm; independent nucleation of ε-carbides and NiAl clusters without elemental overlap; slight Ni/Al enrichment in ε-carbide cores; Si-Cr-Mo co-segregation in banded NiAl clusters with Si rising to 11.21 at.%, Cr to 5.83 at.%, and Mo to 1.35 at.%",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "ε-carbides: c ~8.91 at.%, no ni/al enrichment except slight at center; nial clusters: ni+al ~13 at.%, co-segregation of si, cr, mo in banded zones; si increases from 4.21 to 11.21 at.% in banded clusters.",
+          "prediction_normalized": "nial cluster number density ~4.88 x 10^24 m^-3, equivalent radius ~0.57 nm; ε-carbide thickness ~2.2 nm, spacing ~10 nm; independent nucleation of ε-carbides and nial clusters without elemental overlap; slight ni/al enrichment in ε-carbide cores; si-cr-mo co-segregation in banded nial clusters with si rising to 11.21 at.%, cr to 5.83 at.%, and mo to 1.35 at.%",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "characterization_methods:2:characterization_methods_sample_1_3al_2h_key_findings"
+        },
+        {
+          "key": "characterization_methods.sample_1_3al_2h.purpose",
+          "truth_path": "characterization_methods.sample_1_3al_2h.purpose",
+          "prediction_path": "characterization_methods.sample_1_3al_2h.purpose",
+          "canonical_object": "sample_1_3al_2h",
+          "field_path": "purpose",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Chemical composition and spatial distribution of precipitates",
+          "prediction_value": "sampling regions near fracture surfaces for TEM analysis",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "chemical composition and spatial distribution of precipitates",
+          "prediction_normalized": "sampling regions near fracture surfaces for tem analysis",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "characterization_methods:3:characterization_methods_sample_1_3al_2h_purpose"
+        },
+        {
+          "key": "characterization_methods.sample_1_3al_2h.technique",
+          "truth_path": "characterization_methods.sample_1_3al_2h.technique",
+          "prediction_path": "characterization_methods.sample_1_3al_2h.technique",
+          "canonical_object": "sample_1_3al_2h",
+          "field_path": "technique",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "APT (LEAP 5000XR)",
+          "prediction_value": "focused ion beam (FIB) milling",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "deterministic_mismatch",
+          "truth_normalized": "apt (leap 5000xr)",
+          "prediction_normalized": "focused ion beam (fib) milling",
+          "reason": "no deterministic matcher accepted the values",
+          "score": 0.0,
+          "needs_llm_judge": false
+        }
+      ],
+      "llm_judge_candidate_count": 4,
+      "llm_judge_candidates": [
+        {
+          "key": "characterization_methods.sample_0al_2h.key_findings",
+          "truth_path": "characterization_methods.sample_0al_2h.key_findings",
+          "prediction_path": "characterization_methods.sample_0al_2h.key_findings",
+          "canonical_object": "sample_0al_2h",
+          "field_path": "key_findings",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "ε-carbides: 100–500 nm length, 3–10 nm width, aligned; retained austenite films at lath boundaries with K–S orientation relationship.",
+          "prediction_value": "Retained austenite content 1.0 % in 0Al steel and 1.8 % in 1.3Al steel; negligible diffraction contributions from carbides assumed",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "ε-carbides: 100-500 nm length, 3-10 nm width, aligned; retained austenite films at lath boundaries with k-s orientation relationship.",
+          "prediction_normalized": "retained austenite content 1.0 % in 0al steel and 1.8 % in 1.3al steel; negligible diffraction contributions from carbides assumed",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "characterization_methods:0:characterization_methods_sample_0al_2h_key_findings"
+        },
+        {
+          "key": "characterization_methods.sample_0al_2h.purpose",
+          "truth_path": "characterization_methods.sample_0al_2h.purpose",
+          "prediction_path": "characterization_methods.sample_0al_2h.purpose",
+          "canonical_object": "sample_0al_2h",
+          "field_path": "purpose",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "High-resolution imaging of martensite laths, retained austenite, and ε-carbides",
+          "prediction_value": "phase analysis and retained austenite quantification",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "high-resolution imaging of martensite laths, retained austenite, and ε-carbides",
+          "prediction_normalized": "phase analysis and retained austenite quantification",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "characterization_methods:1:characterization_methods_sample_0al_2h_purpose"
+        },
+        {
+          "key": "characterization_methods.sample_1_3al_2h.key_findings",
+          "truth_path": "characterization_methods.sample_1_3al_2h.key_findings",
+          "prediction_path": "characterization_methods.sample_1_3al_2h.key_findings",
+          "canonical_object": "sample_1_3al_2h",
+          "field_path": "key_findings",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "ε-carbides: C ~8.91 at.%, no Ni/Al enrichment except slight at center; NiAl clusters: Ni+Al ~13 at.%, co-segregation of Si, Cr, Mo in banded zones; Si increases from 4.21 to 11.21 at.% in banded clusters.",
+          "prediction_value": "NiAl cluster number density ~4.88 × 10^24 m^-3, equivalent radius ~0.57 nm; ε-carbide thickness ~2.2 nm, spacing ~10 nm; independent nucleation of ε-carbides and NiAl clusters without elemental overlap; slight Ni/Al enrichment in ε-carbide cores; Si-Cr-Mo co-segregation in banded NiAl clusters with Si rising to 11.21 at.%, Cr to 5.83 at.%, and Mo to 1.35 at.%",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "ε-carbides: c ~8.91 at.%, no ni/al enrichment except slight at center; nial clusters: ni+al ~13 at.%, co-segregation of si, cr, mo in banded zones; si increases from 4.21 to 11.21 at.% in banded clusters.",
+          "prediction_normalized": "nial cluster number density ~4.88 x 10^24 m^-3, equivalent radius ~0.57 nm; ε-carbide thickness ~2.2 nm, spacing ~10 nm; independent nucleation of ε-carbides and nial clusters without elemental overlap; slight ni/al enrichment in ε-carbide cores; si-cr-mo co-segregation in banded nial clusters with si rising to 11.21 at.%, cr to 5.83 at.%, and mo to 1.35 at.%",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "characterization_methods:2:characterization_methods_sample_1_3al_2h_key_findings"
+        },
+        {
+          "key": "characterization_methods.sample_1_3al_2h.purpose",
+          "truth_path": "characterization_methods.sample_1_3al_2h.purpose",
+          "prediction_path": "characterization_methods.sample_1_3al_2h.purpose",
+          "canonical_object": "sample_1_3al_2h",
+          "field_path": "purpose",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Chemical composition and spatial distribution of precipitates",
+          "prediction_value": "sampling regions near fracture surfaces for TEM analysis",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "chemical composition and spatial distribution of precipitates",
+          "prediction_normalized": "sampling regions near fracture surfaces for tem analysis",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "characterization_methods:3:characterization_methods_sample_1_3al_2h_purpose"
+        }
+      ],
+      "match_method_summary": {
+        "llm_field_judge": {
+          "matched": 0,
+          "mismatched": 4
+        },
+        "deterministic_mismatch": {
+          "matched": 0,
+          "mismatched": 2
+        }
+      }
+    },
+    "computational_details": {
+      "structure_metrics": {
+        "truth_count": 0,
+        "prediction_count": 1,
+        "matched_count": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matched_anchors": [],
+        "unmatched_truth_anchors": [],
+        "unmatched_prediction_anchors": [
+          "computational_details.idx_0"
+        ]
+      },
+      "error_summary": {
+        "missing_fact": 0,
+        "extra_fact": 10
+      },
+      "missing_truth_fact_examples": [],
+      "extra_prediction_fact_examples": [
+        "computational_details.idx_0.analytical_model[0].equation_role",
+        "computational_details.idx_0.analytical_model[0].model_name",
+        "computational_details.idx_0.analytical_model[0].model_note",
+        "computational_details.idx_0.analytical_model[0].parameters",
+        "computational_details.idx_0.analytical_model[1].equation_role",
+        "computational_details.idx_0.analytical_model[1].model_name",
+        "computational_details.idx_0.analytical_model[1].model_note",
+        "computational_details.idx_0.analytical_model[1].parameters",
+        "computational_details.idx_0.software_used",
+        "computational_details.idx_0.validation_against_experiment"
+      ],
+      "mismatched_fact_examples": [],
+      "llm_judge_candidate_count": 0,
+      "llm_judge_candidates": [],
+      "match_method_summary": {}
+    },
+    "unmapped_findings": {
+      "structure_metrics": {
+        "truth_count": 0,
+        "prediction_count": 11,
+        "matched_count": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matched_anchors": [],
+        "unmatched_truth_anchors": [],
+        "unmatched_prediction_anchors": [
+          "unmapped_findings.idx_0",
+          "unmapped_findings.idx_1",
+          "unmapped_findings.idx_10",
+          "unmapped_findings.idx_2",
+          "unmapped_findings.idx_3",
+          "unmapped_findings.idx_4",
+          "unmapped_findings.idx_5",
+          "unmapped_findings.idx_6",
+          "unmapped_findings.idx_7",
+          "unmapped_findings.idx_8",
+          "unmapped_findings.idx_9"
+        ]
+      },
+      "error_summary": {
+        "missing_fact": 0,
+        "extra_fact": 11
+      },
+      "missing_truth_fact_examples": [],
+      "extra_prediction_fact_examples": [
+        "unmapped_findings.idx_0.value",
+        "unmapped_findings.idx_1.value",
+        "unmapped_findings.idx_10.value",
+        "unmapped_findings.idx_2.value",
+        "unmapped_findings.idx_3.value",
+        "unmapped_findings.idx_4.value",
+        "unmapped_findings.idx_5.value",
+        "unmapped_findings.idx_6.value",
+        "unmapped_findings.idx_7.value",
+        "unmapped_findings.idx_8.value",
+        "unmapped_findings.idx_9.value"
+      ],
+      "mismatched_fact_examples": [],
+      "llm_judge_candidate_count": 0,
+      "llm_judge_candidates": [],
+      "match_method_summary": {}
+    }
+  }
+}

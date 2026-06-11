@@ -1,0 +1,275 @@
+{
+    "papers": [
+        {
+            "paper_id": "A76",
+            "doi": "10.1002/srin.202400475",
+            "title": "Microstructural Evolution and Mechanical Properties of Nb-Containing Medium-Mn Low-Density Steels",
+            "authors": ["Chen Ma", "Jianlei Zhang", "Fenghui An", "Gang Chen", "Junye Zhou", "Changjiang Song", "Qijie Zhai"],
+            "publication_year": "2024",
+            "journal": "Steel Research International",
+            "keywords": ["medium-Mn low-density steel", "Nb microalloying", "κ-carbide", "precipitation strengthening", "grain refinement", "first-principles calculation"],
+            "research_type": "mixed",
+            "paper_scope": "Investigate the evolution of nano-scale precipitates and mechanical properties of Fe-12Mn-9Al-3Cr-1.4C-0.02/0.04Nb low-density steels, analyze the strengthening mechanisms, and reveal the role of Nb in regulating microstructure and properties for low-density steel alloy design."
+        }
+    ],
+    "alloys": [
+        {
+            "alloy_id": "alloy_fe12mn9al3cr14c002nb",
+            "paper_id": "A76",
+            "alloy_name": "Fe-12Mn-9Al-3Cr-1.4C-0.02Nb low-density steel",
+            "aliases": ["0.02Nb steel"],
+            "base_element": "Fe",
+            "alloying_elements": ["Mn", "Al", "Cr", "C", "Nb"],
+            "nominal_composition": [
+                {"element": "Mn", "weight_percent": "12.80", "atomic_percent": null},
+                {"element": "Al", "weight_percent": "9.01", "atomic_percent": null},
+                {"element": "Cr", "weight_percent": "3.01", "atomic_percent": null},
+                {"element": "C", "weight_percent": "1.39", "atomic_percent": null},
+                {"element": "Nb", "weight_percent": "0.021", "atomic_percent": null},
+                {"element": "Fe", "weight_percent": "Bal.", "atomic_percent": null}
+            ],
+            "alloys_notes": null
+        },
+        {
+            "alloy_id": "alloy_fe12mn9al3cr14c004nb",
+            "paper_id": "A76",
+            "alloy_name": "Fe-12Mn-9Al-3Cr-1.4C-0.04Nb low-density steel",
+            "aliases": ["0.04Nb steel"],
+            "base_element": "Fe",
+            "alloying_elements": ["Mn", "Al", "Cr", "C", "Nb"],
+            "nominal_composition": [
+                {"element": "Mn", "weight_percent": "12.82", "atomic_percent": null},
+                {"element": "Al", "weight_percent": "9.12", "atomic_percent": null},
+                {"element": "Cr", "weight_percent": "2.99", "atomic_percent": null},
+                {"element": "C", "weight_percent": "1.40", "atomic_percent": null},
+                {"element": "Nb", "weight_percent": "0.039", "atomic_percent": null},
+                {"element": "Fe", "weight_percent": "Bal.", "atomic_percent": null}
+            ],
+            "alloys_notes": null
+        }
+    ],
+    "processes": [
+        {
+            "process_id": "proc_nb_01",
+            "paper_id": "A76",
+            "alloy_id": null,
+            "description": "Centrifugal casting under near-rapid solidification, including induction melting in water-cooled copper crucible, re-melting and pouring into rotating copper mold to obtain steel strips",
+            "processes_notes": null
+        },
+        {
+            "process_id": "proc_nb_02",
+            "paper_id": "A76",
+            "alloy_id": null,
+            "description": "Aging treatment in tubular vacuum furnace at 723 K for 3 h",
+            "processes_notes": null
+        },
+        {
+            "process_id": "proc_nb_03",
+            "paper_id": "A76",
+            "alloy_id": null,
+            "description": "Aging treatment in tubular vacuum furnace at 773 K for 3 h",
+            "processes_notes": null
+        },
+        {
+            "process_id": "proc_nb_04",
+            "paper_id": "A76",
+            "alloy_id": null,
+            "description": "Aging treatment in tubular vacuum furnace at 823 K for 3 h",
+            "processes_notes": null
+        }
+    ],
+    "samples": [
+        {"sample_id": "sample_002nb_ascast", "paper_id": "A76", "alloy_id": "alloy_fe12mn9al3cr14c002nb", "process_id": "proc_nb_01"},
+        {"sample_id": "sample_002nb_723k", "paper_id": "A76", "alloy_id": "alloy_fe12mn9al3cr14c002nb", "process_id": "proc_nb_02"},
+        {"sample_id": "sample_002nb_773k", "paper_id": "A76", "alloy_id": "alloy_fe12mn9al3cr14c002nb", "process_id": "proc_nb_03"},
+        {"sample_id": "sample_002nb_823k", "paper_id": "A76", "alloy_id": "alloy_fe12mn9al3cr14c002nb", "process_id": "proc_nb_04"},
+        {"sample_id": "sample_004nb_ascast", "paper_id": "A76", "alloy_id": "alloy_fe12mn9al3cr14c004nb", "process_id": "proc_nb_01"},
+        {"sample_id": "sample_004nb_723k", "paper_id": "A76", "alloy_id": "alloy_fe12mn9al3cr14c004nb", "process_id": "proc_nb_02"},
+        {"sample_id": "sample_004nb_773k", "paper_id": "A76", "alloy_id": "alloy_fe12mn9al3cr14c004nb", "process_id": "proc_nb_03"},
+        {"sample_id": "sample_004nb_823k", "paper_id": "A76", "alloy_id": "alloy_fe12mn9al3cr14c004nb", "process_id": "proc_nb_04"}
+    ],
+    "processing_steps": [
+        {
+            "sample_id": null,
+            "paper_id": "A76",
+            "sequence": "1",
+            "type": "casting",
+            "method": "centrifugal casting under near-rapid solidification",
+            "temperature": null,
+            "unit": null,
+            "duration": null,
+            "cooling_medium": "water-cooled copper mold",
+            "reduction_ratio": null,
+            "processing_steps_notes": "Ingot prepared by induction melting, then re-melted and poured into rotating copper mold to obtain 60×70×2.5 mm steel strips"
+        },
+        {
+            "sample_id": null,
+            "paper_id": "A76",
+            "sequence": "2",
+            "type": "heat_treatment",
+            "method": "vacuum aging",
+            "temperature": "723/773/823",
+            "unit": "K",
+            "duration": "3 h",
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "Performed in tubular vacuum furnace"
+        }
+    ],
+    "structures": [
+        {
+            "structure_id": "struct_nb_all",
+            "sample_id": null,
+            "overall_structure": "Irregular ferrite dispersed randomly in austenite matrix, with nano-scale NbC and κ-carbide precipitates",
+            "number_of_phases": "3",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "micro_001",
+                    "related_sequence": null,
+                    "phases_present": [
+                        {"phase_name": "austenite (γ)", "crystal_structure": "FCC", "volume_fraction": "~82-84 vol%", "morphology": "matrix", "grain_size": null, "texture": null},
+                        {"phase_name": "ferrite (δ)", "crystal_structure": "BCC", "volume_fraction": "~16-18.4 vol%", "morphology": "irregular dispersed particles", "grain_size": null, "texture": null},
+                        {"phase_name": "NbC", "crystal_structure": null, "volume_fraction": "increases with Nb content and aging temperature", "morphology": "submicron white particles", "grain_size": null, "texture": null},
+                        {"phase_name": "κ-carbide", "crystal_structure": null, "volume_fraction": null, "morphology": "nano-scale intragranular precipitates", "grain_size": "smaller in 0.04Nb steel than 0.02Nb steel", "texture": null}
+                    ],
+                    "defects": [
+                        {"type": null, "porosity": null, "inclusions": [], "dislocation_density": "higher in 0.04Nb steel", "lattice_distortion": null}
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {"value": "half of 0.02Nb steel", "unit": null},
+                        "grain_size_distribution": null,
+                        "texture": null
+                    },
+                    "precipitates": [
+                        {
+                            "precipitate_id": "prec_nbc",
+                            "type": "NbC",
+                            "size": {"value": "increases slightly with aging temperature and Nb content", "unit": null},
+                            "distribution": "within austenite matrix",
+                            "coherency": null
+                        },
+                        {
+                            "precipitate_id": "prec_kappa",
+                            "type": "κ-carbide",
+                            "size": {"value": "smaller in 0.04Nb steel", "unit": null},
+                            "distribution": "intragranular, no coarsened intergranular κ-carbide detected after 723-823 K aging",
+                            "coherency": null
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "interfaces": [],
+    "properties": [
+        {
+            "property_set_id": "prop_nb_01",
+            "sample_id": null,
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [
+                        {"direction": null, "value": "~71 higher than 0.02Nb steel", "unit": "MPa", "others": {"uncertainty": null}}
+                    ],
+                    "ultimate_tensile_strength": [{"direction": null, "value": null, "unit": null, "others": {"uncertainty": null}}],
+                    "elongation": [{"direction": null, "value": null, "unit": null}],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [{"direction": null, "distribution": null}],
+                    "strain_hardening_rate": [{"property_id": null, "direction": null, "value": null, "unit": null}]
+                },
+                "hardness": [{"region": null, "value": null, "scale": "Vickers", "unit": null}],
+                "fracture_toughness": {"value": null, "unit": null},
+                "fatigue_properties": {"fatigue_limit": null, "cycles_to_failure": null},
+                "creep_properties": {"steady_state_creep_rate": null, "rupture_life": null}
+            },
+            "physical": {
+                "density": {"value": null, "unit": null},
+                "thermal_properties": {"thermal_conductivity": null, "thermal_expansion_coefficient": null, "specific_heat": null},
+                "electrical_properties": {"electrical_conductivity": null, "resistivity": null},
+                "magnetic_properties": {"magnetic_susceptibility": null, "curie_temperature": null}
+            },
+            "chemical": {
+                "corrosion_resistance": {"test_medium": null, "corrosion_rate": null, "passivation_behavior": null},
+                "oxidation_resistance": {"oxidation_rate_constant": null, "protective_scale": null}
+            },
+            "radiation_properties": {"void_swelling": null, "irradiation_hardening": null, "helium_embrittlement": null}
+        }
+    ],
+    "performance": [],
+    "characterization_methods": [
+        {
+            "characterization_id": "char_xrd",
+            "sample_id": null,
+            "microstructure_uuid": "micro_001",
+            "technique": "X-ray diffraction (XRD)",
+            "purpose": "Phase identification",
+            "key_findings": "All samples consist of ferrite and austenite, phase content shows no significant change after aging at 723-823 K"
+        },
+        {
+            "characterization_id": "char_sem_ebsd",
+            "sample_id": null,
+            "microstructure_uuid": "micro_001",
+            "technique": "Scanning electron microscope (SEM) equipped with electron back scatter diffraction (EBSD)",
+            "purpose": "Microstructure characterization, grain size and phase content measurement",
+            "key_findings": "Ferrite content is 16-18.4 vol%, not affected by aging temperature; Nb addition reduces austenite grain size by ~50%"
+        },
+        {
+            "characterization_id": "char_epma",
+            "sample_id": null,
+            "microstructure_uuid": "micro_001",
+            "technique": "Electron probe microanalysis (EPMA)",
+            "purpose": "Elemental distribution analysis",
+            "key_findings": null
+        },
+        {
+            "characterization_id": "char_tem",
+            "sample_id": null,
+            "microstructure_uuid": "micro_001",
+            "technique": "Transmission electron microscope (TEM)",
+            "purpose": "Nano-scale precipitate characterization",
+            "key_findings": "Submicron white particles in matrix are identified as NbC; κ-carbide size is smaller in 0.04Nb steel"
+        },
+        {
+            "characterization_id": "char_hardness",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "Vickers hardness test",
+            "purpose": "Hardness measurement",
+            "key_findings": null
+        },
+        {
+            "characterization_id": "char_tensile",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "Room temperature tensile test",
+            "purpose": "Mechanical property measurement",
+            "key_findings": "Yield strength of 0.04Nb steel is ~71 MPa higher than 0.02Nb steel, attributed to fine grain strengthening and dislocation strengthening"
+        }
+    ],
+    "computational_details": [
+        {
+            "computation_id": "comp_dft",
+            "sample_id": null,
+            "simulation_method": "Density functional theory (DFT) calculation",
+            "software_used": "Vienna Ab Initio Simulation Package (VASP)",
+            "potential_model": "Projected enhanced wave (PAW) potential, Perdew–Burke–Ernzerhof (PBE) generalized gradient approximation",
+            "validation_against_experiment": null,
+            "analytical_model": [
+                {
+                    "model_name": "Spin-polarized DFT calculation",
+                    "equation_role": "Calculate κ-carbide formation energy",
+                    "parameters": "Kinetic energy cutoff: 500 eV; Gaussian smearing width: 0.05 eV; U value for Fe: 2.59 eV; k-point sampling: 6×6×6 Monkhorst–Pack; vacuum spacing: 15 Å",
+                    "model_note": "Nb addition elevates the formation energy of κ-carbide, impeding its growth and coarsening"
+                }
+            ]
+        }
+    ],
+    "unmapped_findings": [
+        "Figure 1 provides XRD patterns of 0.02Nb and 0.04Nb steels at different aging states, pure text pipeline has no complete image details",
+        "Figure 2 provides SEM micrographs of 0.02Nb and 0.04Nb steels at different aging states, pure text pipeline has no complete image details",
+        "The product of strength and elongation (PSE) of medium-Mn steels can reach up to 80 GPa%",
+        "Adding 1 wt% Al reduces steel density by 1.3-1.5%",
+        "Tensile tests were performed at ambient temperature with strain rate of 2.5×10^-4 s^-1, each sample tested at least 4 times for reproducibility"
+    ]
+}

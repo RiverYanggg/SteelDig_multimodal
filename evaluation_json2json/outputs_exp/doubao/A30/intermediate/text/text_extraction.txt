@@ -1,0 +1,418 @@
+{
+    "papers": [
+        {
+            "paper_id": "A30",
+            "doi": null,
+            "title": "Dynamic recrystallization mechanisms of an Fe–8% Al low density steel under hot rolling conditions",
+            "authors": ["C. Castan", "F. Montheillet", "A. Perlade"],
+            "publication_year": "2012",
+            "journal": "Acta Materialia",
+            "keywords": ["Ferritic steels", "High-temperature deformation", "Dynamic recrystallization", "Recrystallized microstructure", "Recrystallization texture"],
+            "research_type": "experimental",
+            "paper_scope": "研究Fe-8%Al铁素体低密度钢在900-1100℃、0.1-10s⁻¹热变形条件下的动态再结晶机制，明确连续动态再结晶（CDRX）和非连续动态再结晶（DDRX）的激活工艺窗口，提出通过调控再结晶机制减少热轧板材深拉起皱（roping）缺陷的工艺方向"
+        }
+    ],
+    "alloys": [
+        {
+            "alloy_id": "alloy_fe8al",
+            "paper_id": "A30",
+            "alloy_name": "Fe-8%Al low density ferritic steel",
+            "aliases": ["ferritic Fe–8% Al alloy"],
+            "base_element": "Fe",
+            "alloying_elements": ["Al", "Mn", "C", "Ti", "Nb", "V"],
+            "nominal_composition": [
+                {
+                    "element": "Al",
+                    "weight_percent": "8.15",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "Mn",
+                    "weight_percent": "0.1",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "C",
+                    "weight_percent": "0.0086",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "Ti+Nb+V",
+                    "weight_percent": "<0.1",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "Fe",
+                    "weight_percent": "Bal.",
+                    "atomic_percent": null
+                }
+            ],
+            "alloys_notes": "Al含量低于10wt%，为非有序A2体心立方结构，密度较常规钢低约10%"
+        }
+    ],
+    "processes": [
+        {
+            "process_id": "proc_fe8al_01",
+            "paper_id": "A30",
+            "alloy_id": "alloy_fe8al",
+            "description": "三道次热轧，累积真应变1，获得完全再结晶初始组织",
+            "processes_notes": "处理后初始组织为100%再结晶等轴晶，平均晶粒尺寸约800μm，形态各向同性"
+        },
+        {
+            "process_id": "proc_fe8al_02",
+            "paper_id": "A30",
+            "alloy_id": "alloy_fe8al",
+            "description": "高温扭转热模拟试验，温度范围900-1100℃，应变速率范围0.1-10s⁻¹，氩气保护，变形后立即淬火保留高温组织",
+            "processes_notes": "淬火冷却速率约200℃/s，避免发生 post-dynamic 再结晶"
+        }
+    ],
+    "samples": [
+        {
+            "sample_id": "sample_fe8al_01",
+            "paper_id": "A30",
+            "alloy_id": "alloy_fe8al",
+            "process_id": "proc_fe8al_01"
+        },
+        {
+            "sample_id": "sample_fe8al_02",
+            "paper_id": "A30",
+            "alloy_id": "alloy_fe8al",
+            "process_id": "proc_fe8al_02"
+        }
+    ],
+    "processing_steps": [
+        {
+            "sample_id": "sample_fe8al_01",
+            "paper_id": "A30",
+            "sequence": "1",
+            "type": "thermomechanical_processing",
+            "method": "hot rolling",
+            "temperature": null,
+            "unit": null,
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": "1",
+            "processing_steps_notes": "三道次轧制，累积真应变1，处理后获得100%再结晶等轴晶组织"
+        },
+        {
+            "sample_id": "sample_fe8al_02",
+            "paper_id": "A30",
+            "sequence": "1",
+            "type": "mechanical_processing",
+            "method": "hot torsion test",
+            "temperature": "900-1100",
+            "unit": "℃",
+            "duration": null,
+            "cooling_medium": "argon",
+            "reduction_ratio": null,
+            "processing_steps_notes": "氩气氛围保护，应变速率范围0.1-10s⁻¹，变形后0.5s内氩气淬火，冷却速率约200℃/s，避免后续再结晶发生"
+        }
+    ],
+    "structures": [
+        {
+            "structure_id": "struct_01",
+            "sample_id": "sample_fe8al_01",
+            "overall_structure": "100%再结晶等轴铁素体组织，形态上各向同性",
+            "number_of_phases": "1",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "ms_001",
+                    "related_sequence": null,
+                    "phases_present": [
+                        {
+                            "phase_name": "ferrite",
+                            "crystal_structure": "A2 (non-ordered body centered cubic)",
+                            "volume_fraction": "100%",
+                            "morphology": "equiaxed grain",
+                            "grain_size": "800 μm",
+                            "texture": null
+                        }
+                    ],
+                    "defects": [
+                        {
+                            "type": null,
+                            "porosity": null,
+                            "inclusions": [],
+                            "dislocation_density": "low",
+                            "lattice_distortion": null
+                        }
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": "800",
+                            "unit": "μm"
+                        },
+                        "grain_size_distribution": "uniform",
+                        "texture": null
+                    },
+                    "precipitates": []
+                }
+            ]
+        },
+        {
+            "structure_id": "struct_02",
+            "sample_id": "sample_fe8al_02",
+            "overall_structure": "Continuous dynamic recrystallization (CDRX) evolution microstructure",
+            "number_of_phases": "1",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "ms_002",
+                    "related_sequence": "1",
+                    "phases_present": [
+                        {
+                            "phase_name": "ferrite",
+                            "crystal_structure": "A2",
+                            "volume_fraction": "100%",
+                            "morphology": "original grains elongated along shear direction, subgrains formed near grain boundaries, gradually replaced by finer recrystallized grains",
+                            "grain_size": null,
+                            "texture": "strong D2 {-1-12}<111> component at large strain"
+                        }
+                    ],
+                    "defects": [
+                        {
+                            "type": "dislocation, subgrain boundary",
+                            "porosity": null,
+                            "inclusions": [],
+                            "dislocation_density": "increases with strain, rearranged by dynamic recovery",
+                            "lattice_distortion": null
+                        }
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": null,
+                            "unit": null
+                        },
+                        "grain_size_distribution": null,
+                        "texture": "strong D2 {-1-12}<111> orientation"
+                    },
+                    "precipitates": []
+                }
+            ]
+        },
+        {
+            "structure_id": "struct_03",
+            "sample_id": "sample_fe8al_02",
+            "overall_structure": "Discontinuous dynamic recrystallization (DDRX) mixed microstructure",
+            "number_of_phases": "1",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "ms_003",
+                    "related_sequence": "1",
+                    "phases_present": [
+                        {
+                            "phase_name": "ferrite",
+                            "crystal_structure": "A2",
+                            "volume_fraction": "100%",
+                            "morphology": "mixture of fine equiaxed recrystallized grains without substructure and elongated deformed original grains with internal misorientation",
+                            "grain_size": null,
+                            "texture": "weak random orientation"
+                        }
+                    ],
+                    "defects": [
+                        {
+                            "type": "dislocation, high angle grain boundary",
+                            "porosity": null,
+                            "inclusions": [],
+                            "dislocation_density": "high local accumulation in deformed grains, low in recrystallized grains",
+                            "lattice_distortion": null
+                        }
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": null,
+                            "unit": null
+                        },
+                        "grain_size_distribution": null,
+                        "texture": "very weak, almost random"
+                    },
+                    "precipitates": []
+                }
+            ]
+        }
+    ],
+    "interfaces": [
+        {
+            "interface_set_id": "if_01",
+            "sample_id": "sample_fe8al_02",
+            "phases": [
+                {
+                    "interface_id": "if_001",
+                    "microstructure_uuid": "ms_002",
+                    "phase_1_name": "ferrite",
+                    "phase_2_name": "ferrite",
+                    "coherence": "semi-coherent"
+                },
+                {
+                    "interface_id": "if_002",
+                    "microstructure_uuid": "ms_002, ms_003",
+                    "phase_1_name": "ferrite",
+                    "phase_2_name": "ferrite",
+                    "coherence": "incoherent"
+                }
+            ],
+            "defect_interaction": [
+                {
+                    "interaction_id": "int_001",
+                    "microstructure_uuid": "ms_002",
+                    "interaction_type": "dislocation rearrangement forming subgrain boundaries, dislocation absorption by grain boundaries",
+                    "quality_description": "high dynamic recovery efficiency associated with high stacking fault energy"
+                }
+            ],
+            "interface_notes": [
+                {
+                    "stress_strain_distribution": null
+                },
+                {
+                    "slippage_situation": null
+                }
+            ],
+            "phase_evolution": "subgrain boundaries gradually transform into high angle grain boundaries during CDRX; new high angle grain boundaries formed by recrystallized grain nucleation and growth during DDRX"
+        }
+    ],
+    "properties": [
+        {
+            "property_set_id": "prop_01",
+            "sample_id": "sample_fe8al_01",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [],
+                    "ultimate_tensile_strength": [],
+                    "elongation": [],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [],
+                "fracture_toughness": {
+                    "value": null,
+                    "unit": null
+                },
+                "fatigue_properties": {
+                    "fatigue_limit": null,
+                    "cycles_to_failure": null
+                },
+                "creep_properties": {
+                    "steady_state_creep_rate": null,
+                    "rupture_life": null
+                }
+            },
+            "physical": {
+                "density": {
+                    "value": "7",
+                    "unit": "g·cm⁻³"
+                },
+                "thermal_properties": {
+                    "thermal_conductivity": null,
+                    "thermal_expansion_coefficient": null,
+                    "specific_heat": null
+                },
+                "electrical_properties": {
+                    "electrical_conductivity": null,
+                    "resistivity": null
+                },
+                "magnetic_properties": {
+                    "magnetic_susceptibility": null,
+                    "curie_temperature": null
+                }
+            },
+            "chemical": {
+                "corrosion_resistance": {
+                    "test_medium": null,
+                    "corrosion_rate": null,
+                    "passivation_behavior": null
+                },
+                "oxidation_resistance": {
+                    "oxidation_rate_constant": null,
+                    "protective_scale": null
+                }
+            },
+            "radiation_properties": {
+                "void_swelling": null,
+                "irradiation_hardening": null,
+                "helium_embrittlement": null
+            }
+        }
+    ],
+    "performance": [
+        {
+            "performance_id": "perf_01",
+            "sample_id": "sample_fe8al_01",
+            "service_conditions": {
+                "operating_temperature": {
+                    "min": null,
+                    "max": null,
+                    "unit": null
+                },
+                "stress_state": null,
+                "environment": "automotive structural part service environment"
+            },
+            "lifetime_prediction": {
+                "model_used": null,
+                "predicted_lifetime": null,
+                "confidence_interval": null
+            },
+            "comparative_performance": {
+                "benchmark_alloy": "conventional steel",
+                "benchmark_process_id": null,
+                "benchmark_sample_id": null,
+                "improvement_percentage": "10%"
+            }
+        },
+        {
+            "performance_id": "perf_02",
+            "sample_id": "sample_fe8al_02",
+            "service_conditions": {
+                "operating_temperature": {
+                    "min": "900",
+                    "max": "1100",
+                    "unit": "℃"
+                },
+                "stress_state": "hot rolling shear stress",
+                "environment": "hot rolling production line"
+            },
+            "lifetime_prediction": {
+                "model_used": null,
+                "predicted_lifetime": null,
+                "confidence_interval": null
+            },
+            "comparative_performance": {
+                "benchmark_alloy": "Fe-Al alloy with CDRX microstructure",
+                "benchmark_process_id": null,
+                "benchmark_sample_id": null,
+                "improvement_percentage": null
+            }
+        }
+    ],
+    "characterization_methods": [
+        {
+            "characterization_id": "char_01",
+            "sample_id": "sample_fe8al_02",
+            "microstructure_uuid": null,
+            "technique": "hot torsion test",
+            "purpose": "simulate hot rolling deformation conditions, test dynamic recrystallization behavior under different temperature and strain rate",
+            "key_findings": "identified activation windows for CDRX and DDRX mechanisms"
+        },
+        {
+            "characterization_id": "char_02",
+            "sample_id": "sample_fe8al_02",
+            "microstructure_uuid": "ms_002, ms_003",
+            "technique": "electron backscatter diffraction (EBSD)",
+            "purpose": "characterize grain morphology, grain boundary misorientation, texture and recrystallization status after hot deformation",
+            "key_findings": "distinguished low angle subgrain boundaries (2°≤θ<15°) and high angle grain boundaries (θ≥15°), observed recrystallized grain orientation, measured misorientation distribution and texture components"
+        }
+    ],
+    "computational_details": [],
+    "unmapped_findings": [
+        "DDRX activation condition: 900℃ with strain rate ≥10s⁻¹; 1000℃ with strain rate ≥10s⁻¹; 1100℃ with strain rate ≥10s⁻¹",
+        "CDRX activation condition: 900℃ with strain rate ≤1s⁻¹; 1000℃ with strain rate ≤0.5s⁻¹; 1100℃ with strain rate ≤0.1s⁻¹",
+        "DDRX produces randomly oriented recrystallized grains with weak texture, which is beneficial to reduce roping defect during deep drawing",
+        "During CDRX, the fraction of high angle grain boundaries increases with strain, reaching balance with low angle boundaries at large strain",
+        "Misorientation distribution under DDRX is close to MacKenzie random distribution, with peak value near 45°",
+        "The strongest texture component after hot deformation is D2 {-1-12}<111>, reaching maximum intensity at true strain 15",
+        "Geometric dynamic recrystallization (GDRX) occurs simultaneously with CDRX at large strain, featured by elongated and broken original high angle grain boundaries"
+    ]
+}

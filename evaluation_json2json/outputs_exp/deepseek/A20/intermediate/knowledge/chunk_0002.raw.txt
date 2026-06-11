@@ -1,0 +1,137 @@
+{
+  "claims": [
+    {
+      "claim_type": "mechanism",
+      "subject": "SPCE steel dislocations",
+      "claim": "Pile-up of dislocations is considered to occur near grain boundaries, resulting in a higher possibility of movable dislocations near boundaries; thus apparent elastic moduli could differ from the boundary to the centre of a grain.",
+      "values": [],
+      "evidence_text": "As shown in Fig. 3, pile-up of dislocation is considered to occur near to the boundary of grains and thus the movable dislocations have a greater possibility of existence than that for other partitions. As a result, the apparent elastic moduli could differ each other from the boundary to centre of the grain.",
+      "figures": ["Fig. 3"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "characterization",
+      "subject": "nano-indentation equipment",
+      "claim": "The nano-indentation instrument (Triboscope, Hysitron Inc.) mounted on an AFM stage has a force range of 1–10 mN with sensitivity of 100 nN and a displacement range of 5 μm with sensitivity of 0.2 nm.",
+      "values": ["1-10 mN", "100 nN", "5 μm", "0.2 nm"],
+      "evidence_text": "The specification of the equipment is presented in Table 3.",
+      "figures": [],
+      "tables": ["Table 3"],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "characterization",
+      "subject": "spherical indenter tip",
+      "claim": "Using a spherical indenter tip with nominal radius of 50 μm, the nano-indentation load–displacement curve shows an indentation depth as small as several nanometers; at a load of approximately 350 μN the penetration depth is about 10 nm.",
+      "values": ["R=50 μm", "depth ~10 nm", "load ~350 μN"],
+      "evidence_text": "Fig. 8 shows one of the load–displacement curves with a nominal radius of R = 50 μm. The indentation depth was as small as several nanometers as shown in Fig. 8.",
+      "figures": ["Fig. 8"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "spherical indenter tip selection",
+      "claim": "A spherical indenter tip was employed to avoid the effect of plastic deformation from indentation, because indentation with a spherical tip under similar load can deform the sample surface only elastically.",
+      "values": ["spherical tip", "elastic deformation only"],
+      "evidence_text": "To avoid the affect of the plastic deformation due to the indentation, a spherical indenter tip was employed for the indentation test in this study. The indentation of the sample surface with a similar load using a spherical indenter can only deform sample surface elastically.",
+      "figures": [],
+      "tables": [],
+      "confidence": "medium"
+    },
+    {
+      "claim_type": "property",
+      "subject": "SPCE steel grain boundary region",
+      "claim": "Nano-indentation with a spherical tip revealed that the elastic modulus near the grain boundary has a smaller value than that in other regions, with similar distributions but at different levels due to grains being at different orientations.",
+      "values": ["elastic modulus lower near boundary"],
+      "evidence_text": "It was found that the elastic modulus near the boundary has a smaller value than that in the other regions, that have a similar distribution of values, but at a different level due to the grains being at different orientations.",
+      "figures": ["Fig. 9"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "processing",
+      "subject": "SPCE steel surface preparation",
+      "claim": "Before nano-indentation, the specimen surface was etched, a targeted grain boundary was located under a microscope, two indentation marks were made near the boundary using a Vickers hardness test machine, and then CMP treatment was applied.",
+      "values": ["etching solution", "Vickers hardness marks", "CMP treatment"],
+      "evidence_text": "First, the surface of the specimens was treated the same as for the previous experiment by an using etching solution. Measurement of targeted grain boundary was made under the microscope and two indentation marks were made near the boundary using a Vickers hardness test machine. After the location marking, CMP treatment was applied to the surface finish.",
+      "figures": ["Fig. 10", "Fig. 11"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "characterization",
+      "subject": "nano-indentation measurement grid",
+      "claim": "Nano-indentation measurements were performed over a rectangular area with an interval distance of 1 μm in X direction, total 20 points along X, and 3 lines in Y direction (Y=0,1,2), resulting in 60 measurement points.",
+      "values": ["1 μm interval", "20 points X", "3 lines Y", "60 total points"],
+      "evidence_text": "The measurement was performed with an interval distance of 1 μm, and the total measurement points are 20 and 3 in X and Y directions, respectively.",
+      "figures": ["Fig. 11", "Fig. 12"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "property",
+      "subject": "SPCE steel local Young's modulus near grain boundary",
+      "claim": "The Young's modulus measured by nano-indentation near the grain boundary decreased in the region X=5–10 μm, corresponding to the boundary area; the average values were smaller than previous tests due to the real tip radius being much smaller than the nominal value, but this error can be calibrated with standard samples.",
+      "values": ["X=5-10 μm", "modulus decrease", "real radius < nominal", "standard sample calibration"],
+      "evidence_text": "It was shown that the Young’s modulus decrease near to X = 5–10 for the scanning line, which means the boundary area. The average values of the elastic moduli are smaller than those of the previous test, due to the real radius being much smaller than the nominal value: however, this error those of the can be calibrated by using standard samples.",
+      "figures": ["Fig. 12"],
+      "tables": [],
+      "confidence": "high"
+    }
+  ],
+  "context_update": {
+    "summary": "This chunk describes the nano-indentation experimental setup for measuring local elastic modulus. A Triboscope nano-indenter on an AFM stage was used, with force range 1–10 mN and displacement range 5 μm (Table 3). To avoid plastic deformation artifacts, a spherical indenter tip with nominal radius 50 μm was employed, resulting in purely elastic indentation; a representative load–displacement curve showed penetration depth of ~10 nm at 350 μN (Fig. 8). Nano-indentation near grain boundaries on SPCE steel revealed that the elastic modulus is lower near the boundary than in the interior, varying with grain orientation (Fig. 9). Surface preparation involved etching, Vickers marking, and CMP treatment to minimize roughness (Figs. 10,11). Post-CMP measurements over a 20×3 grid (1 μm spacing) confirmed a Young's modulus decrease in the X=5–10 μm boundary zone; average values were lower than earlier tests due to the real tip radius being smaller than nominal, but this offset can be calibrated using standards (Fig. 12). Subsequent analysis may discuss calibration, dislocation mechanisms, and quantitative modulus reduction.",
+    "material_systems": ["SPCE steel"],
+    "sample_aliases": ["SPCE"],
+    "processing_route": [
+      "Etching for grain boundary disclosure",
+      "Vickers hardness marking near targeted grain boundary",
+      "CMP surface treatment",
+      "Nano-indentation with spherical tip (R=50 μm) using Triboscope on AFM",
+      "Measurement grid: X range 0-20 μm, 1 μm interval, Y=0,1,2"
+    ],
+    "key_variables": [
+      "Force range 1-10 mN, sensitivity 100 nN",
+      "Displacement range 5 μm, sensitivity 0.2 nm",
+      "Nominal tip radius 50 μm",
+      "Penetration depth ~nm, ~10 nm at 350 μN",
+      "Measurement points 20×3",
+      "Local Young's modulus near grain boundary: reduced in X=5-10 μm",
+      "Average modulus lower due to real tip radius < nominal; calibration needed"
+    ],
+    "microstructure": [
+      "Dislocation pile-up near grain boundaries",
+      "Movable dislocations more probable near boundaries",
+      "Grain orientation affects modulus level"
+    ],
+    "properties": [
+      "Local elastic modulus near grain boundary is smaller than interior",
+      "Young's modulus decrease at boundary zone X=5-10 μm",
+      "Average modulus values biased low due to tip radius error"
+    ],
+    "mechanisms": [
+      "Pile-up of dislocations leads to spatial variation of elastic modulus within a grain",
+      "Spherical indenter tip avoids plastic deformation so measured modulus reflects pre-existing material state",
+      "Real tip radius < nominal reduces apparent modulus"
+    ],
+    "figures_or_tables": [
+      "Fig. 3",
+      "Fig. 5",
+      "Fig. 6",
+      "Fig. 7",
+      "Fig. 8",
+      "Fig. 9",
+      "Fig. 10",
+      "Fig. 11",
+      "Fig. 12",
+      "Table 3"
+    ],
+    "unresolved_terms": [
+      "Actual tip radius",
+      "Calibration procedure with standard samples",
+      "CMP processing details"
+    ]
+  }
+}

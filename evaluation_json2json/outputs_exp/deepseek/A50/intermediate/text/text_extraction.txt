@@ -1,0 +1,756 @@
+{
+  "papers": [
+    {
+      "paper_id": "A50",
+      "doi": null,
+      "title": "Excellent mechanical properties and underlined deformation twinning mechanism of a low-carbon low-density cryogenic steel",
+      "authors": [
+        "Qingfeng Kang",
+        "Zexi Zhang",
+        "Ziyuan Gao",
+        "Cunyu Wang",
+        "Jianxiong Liang",
+        "Zhengdong Liu",
+        "Yuqing Weng",
+        "Wenquan Cao"
+      ],
+      "publication_year": null,
+      "journal": null,
+      "keywords": [
+        "Low-carbon low-density steel",
+        "Excellent cryogenic toughness",
+        "Deformation twinning",
+        "Short-range ordering",
+        "High stacking fault energy"
+      ],
+      "research_type": "experimental",
+      "paper_scope": "Investigates mechanical properties and deformation twinning mechanism of Fe-35Mn-6Al-0.1C low-density steel at room and cryogenic temperatures, highlighting the roles of short-range ordering and planar slip in promoting twinning despite high stacking fault energy."
+    }
+  ],
+  "alloys": [
+    {
+      "alloy_id": "alloy_fe35mn6al01c",
+      "paper_id": "A50",
+      "alloy_name": "Fe-35Mn-6Al-0.1C low-density steel",
+      "aliases": [
+        "low-carbon low-density steel",
+        "Fe35Mn6Al0.1C",
+        "lightweight steel"
+      ],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Al",
+        "C",
+        "Nb",
+        "V",
+        "Mo",
+        "W"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Mn",
+          "weight_percent": "35.14",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "5.97",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.095",
+          "atomic_percent": null
+        },
+        {
+          "element": "Nb",
+          "weight_percent": "0.11",
+          "atomic_percent": null
+        },
+        {
+          "element": "V",
+          "weight_percent": "0.10",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mo",
+          "weight_percent": "1.24",
+          "atomic_percent": null
+        },
+        {
+          "element": "W",
+          "weight_percent": "0.95",
+          "atomic_percent": null
+        },
+        {
+          "element": "Fe",
+          "weight_percent": "Bal.",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "Measured composition from wet-chemical analysis (specimen). Also contains microalloying elements Nb, V, Mo, W."
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_fe35mn6al01c_01",
+      "paper_id": "A50",
+      "alloy_id": "alloy_fe35mn6al01c",
+      "description": "Homogenized at 1150 °C for 4 h, hot-rolled to rods of 16.5 mm diameter, solution-treated at 1050 °C for 2 h followed by oil quenching.",
+      "processes_notes": null
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_fe35mn6al01c_01",
+      "paper_id": "A50",
+      "alloy_id": "alloy_fe35mn6al01c",
+      "process_id": "proc_fe35mn6al01c_01"
+    }
+  ],
+  "processing_steps": [
+    {
+      "sample_id": "sample_fe35mn6al01c_01",
+      "paper_id": "A50",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "homogenization",
+      "temperature": "1150",
+      "unit": "°C",
+      "duration": "4",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "for as-cast ingot"
+    },
+    {
+      "sample_id": "sample_fe35mn6al01c_01",
+      "paper_id": "A50",
+      "sequence": "2",
+      "type": "mechanical_processing",
+      "method": "hot rolling",
+      "temperature": null,
+      "unit": null,
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "hot-rolled into rods with diameter of 16.5 mm"
+    },
+    {
+      "sample_id": "sample_fe35mn6al01c_01",
+      "paper_id": "A50",
+      "sequence": "3",
+      "type": "heat_treatment",
+      "method": "solution treatment",
+      "temperature": "1050",
+      "unit": "°C",
+      "duration": "2",
+      "cooling_medium": "oil",
+      "reduction_ratio": null,
+      "processing_steps_notes": "oil quenching to obtain equiaxed grain structures"
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_main",
+      "sample_id": "sample_fe35mn6al01c_01",
+      "overall_structure": "Initial austenitic matrix with ~3% ferrite at grain boundaries; after deformation, development of dislocation substructures and deformation twinning, strongly dependent on temperature and strain.",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "init",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "γ austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": "0.97",
+              "morphology": "equiaxed grains with annealing twin boundaries",
+              "grain_size": "10.8",
+              "texture": "weak"
+            },
+            {
+              "phase_name": "α ferrite",
+              "crystal_structure": "BCC",
+              "volume_fraction": "0.03",
+              "morphology": "distributed along austenite grain boundaries",
+              "grain_size": "4.7",
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocation",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "1.6 × 10^13",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "10.8",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": "weak"
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "MC_carbide",
+              "type": "MC carbide",
+              "size": {
+                "value": null,
+                "unit": null
+              },
+              "distribution": "partially dissolved Nb, Mo, W; V fully dissolved; approx. 0.047% Nb, 0.017% Mo, 0.024% W in MC",
+              "coherency": null
+            },
+            {
+              "precipitate_id": "SRO",
+              "type": "L1₂ short-range ordering",
+              "size": null,
+              "distribution": "detected by extremely weak superlattice spots in SAD pattern",
+              "coherency": null
+            }
+          ],
+          "substructure_size": null,
+          "deformation_twins": []
+        },
+        {
+          "uuid": "rt_28",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "γ austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": "0.97",
+              "morphology": "deformed, containing dislocation substructures and twins",
+              "grain_size": null,
+              "texture": "strong <111>//TA"
+            },
+            {
+              "phase_name": "α ferrite",
+              "crystal_structure": "BCC",
+              "volume_fraction": "0.03",
+              "morphology": "along grain boundaries",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocation",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "7.92 × 10^14",
+              "lattice_distortion": null
+            },
+            {
+              "type": "deformation twin",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [],
+          "substructure_size": {
+            "value": "282 ± 56",
+            "unit": "nm",
+            "type": "cell blocks or dislocation cells"
+          },
+          "deformation_twins": [
+            {
+              "type": "primary",
+              "volume_fraction": "low",
+              "location": "along cell block walls",
+              "thickness": null,
+              "notes": "first observed at ~28% strain at RT"
+            }
+          ]
+        },
+        {
+          "uuid": "lnt_10",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "γ austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": "0.97",
+              "morphology": "deformed, early twinning at annealed twin boundaries",
+              "grain_size": null,
+              "texture": "developing <111>//TA"
+            },
+            {
+              "phase_name": "α ferrite",
+              "crystal_structure": "BCC",
+              "volume_fraction": "0.03",
+              "morphology": "along grain boundaries",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocation",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "2.59 × 10^14",
+              "lattice_distortion": null
+            },
+            {
+              "type": "deformation twin",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            },
+            {
+              "type": "stacking faults",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [],
+          "substructure_size": null,
+          "deformation_twins": [
+            {
+              "type": "primary",
+              "volume_fraction": "very low (width ~5 nm)",
+              "location": "nucleated at annealed twin boundaries",
+              "thickness": "5",
+              "notes": "first observed at ~10% strain at LNT, closely related to prior stacking faults"
+            }
+          ]
+        },
+        {
+          "uuid": "lnt_55",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "γ austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": "0.97",
+              "morphology": "heavily deformed, extensive twinning",
+              "grain_size": null,
+              "texture": "strong <111>//TA"
+            },
+            {
+              "phase_name": "α ferrite",
+              "crystal_structure": "BCC",
+              "volume_fraction": "0.03",
+              "morphology": "along grain boundaries",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocation",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "13.32 × 10^14",
+              "lattice_distortion": null
+            },
+            {
+              "type": "deformation twin",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            },
+            {
+              "type": "microband",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [],
+          "substructure_size": null,
+          "deformation_twins": [
+            {
+              "type": "primary and secondary",
+              "volume_fraction": "high",
+              "location": "throughout grains; secondary twins contain more stacking faults",
+              "thickness": null,
+              "notes": "extensive activation of primary and secondary twins at 55% strain"
+            }
+          ]
+        },
+        {
+          "uuid": "impact_lnt",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "γ austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": "0.97",
+              "morphology": "highly deformed impact zone",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "α ferrite",
+              "crystal_structure": "BCC",
+              "volume_fraction": "0.03",
+              "morphology": "around voids, crack initiation sites",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocation",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            },
+            {
+              "type": "deformation twin",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            },
+            {
+              "type": "cracks",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [],
+          "substructure_size": null,
+          "deformation_twins": [
+            {
+              "type": "primary",
+              "volume_fraction": "low",
+              "location": "formed under impact deformation",
+              "thickness": null,
+              "notes": "low temperature promotes twin formation, but twins do not burst as in TWIP steels"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "iface_main",
+      "sample_id": "sample_fe35mn6al01c_01",
+      "phases": [
+        {
+          "interface_id": "iface_ga",
+          "microstructure_uuid": "init",
+          "phase_1_name": "γ austenite",
+          "phase_2_name": "α ferrite",
+          "coherence": null
+        },
+        {
+          "interface_id": "iface_twin",
+          "microstructure_uuid": "rt_28",
+          "phase_1_name": "γ matrix",
+          "phase_2_name": "deformation twin",
+          "coherence": "coherent/semi-coherent"
+        }
+      ],
+      "defect_interaction": [
+        {
+          "interaction_id": "interact_1",
+          "microstructure_uuid": "impact_lnt",
+          "interaction_type": "crack initiation",
+          "quality_description": "γ/α interfaces serve as crack initiation sites during cryogenic impact, contributing to decrease in crack propagation energy."
+        }
+      ],
+      "interface_notes": [
+        {
+          "stress_strain_distribution": "Stress concentration at γ/α interfaces may lead to void nucleation and cracking at LNT."
+        },
+        {
+          "slippage_situation": null
+        }
+      ],
+      "phase_evolution": "Austenite remains stable during deformation at RT and LNT; no martensitic transformation observed."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_main",
+      "sample_id": "sample_fe35mn6al01c_01",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "RT, parallel to rod axis",
+              "value": "251 ± 3",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "3"
+              }
+            },
+            {
+              "direction": "LNT, parallel to rod axis",
+              "value": "497 ± 5",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "5"
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "RT, parallel to rod axis",
+              "value": "580 ± 6",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "6"
+              }
+            },
+            {
+              "direction": "LNT, parallel to rod axis",
+              "value": "945 ± 8",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "8"
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "RT, total",
+              "value": "52.0 ± 0.5",
+              "unit": "%"
+            },
+            {
+              "direction": "LNT, total",
+              "value": "75.5 ± 0.5",
+              "unit": "%"
+            }
+          ],
+          "uniform_elongation": [
+            {
+              "direction": "RT",
+              "value": "38.5 ± 0.5",
+              "unit": "%"
+            },
+            {
+              "direction": "LNT",
+              "value": "56.0 ± 0.5",
+              "unit": "%"
+            }
+          ],
+          "reduction_of_area": [
+            {
+              "direction": "RT",
+              "value": "78 ± 0.5",
+              "unit": "%"
+            },
+            {
+              "direction": "LNT",
+              "value": "80 ± 1",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        },
+        "impact_toughness": [
+          {
+            "temperature": "RT",
+            "value": "331 ± 4",
+            "unit": "J"
+          },
+          {
+            "temperature": "LNT",
+            "value": "254 ± 6",
+            "unit": "J"
+          }
+        ]
+      },
+      "physical": {
+        "density": {
+          "value": "7.18",
+          "unit": "g/cm³"
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_compare",
+      "sample_id": "sample_fe35mn6al01c_01",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": "-196",
+          "max": null,
+          "unit": "°C"
+        },
+        "stress_state": "tensile",
+        "environment": "air"
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy": "9Ni steel",
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "improvement_percentage": "Total elongation ~3 times higher at LNT, lower cost due to simple heat treatment and low-cost alloying"
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_eBSD",
+      "sample_id": "sample_fe35mn6al01c_01",
+      "microstructure_uuid": null,
+      "technique": "Electron Backscattered Diffraction (EBSD)",
+      "purpose": "Phase mapping, texture evolution, KAM (GND density), Schmid factor analysis, orientation dependence of deformation mechanisms",
+      "key_findings": "Initial weak texture, <111>//TA texture develops with strain; twinning preferentially in type II and III grains; GND density measured at various strains."
+    },
+    {
+      "characterization_id": "char_TEM",
+      "sample_id": "sample_fe35mn6al01c_01",
+      "microstructure_uuid": null,
+      "technique": "Transmission Electron Microscopy (TEM)",
+      "purpose": "Dislocation configurations, deformation twinning, stacking faults, SRO characterization, precipitate identification",
+      "key_findings": "Planar slip features, LC locks, HDDWs, Taylor lattices, cell blocks, dislocation cells; twinning at 28% strain RT, 10% LNT; L1₂ SRO detected; MC carbides confirmed."
+    },
+    {
+      "characterization_id": "char_XRD",
+      "sample_id": "sample_fe35mn6al01c_01",
+      "microstructure_uuid": null,
+      "technique": "X-ray Diffraction (XRD)",
+      "purpose": "Phase fraction stability, dislocation density estimation via Williamson-Hall method",
+      "key_findings": "Austenite volume fraction ~97% stable after deformation; dislocation density increases with strain, consistent with EBSD-GND trends."
+    },
+    {
+      "characterization_id": "char_tensile",
+      "sample_id": "sample_fe35mn6al01c_01",
+      "microstructure_uuid": null,
+      "technique": "Tensile testing",
+      "purpose": "Measure mechanical properties at RT and LNT, interrupted tests for microstructure evolution",
+      "key_findings": "YS 251→497 MPa, UTS 580→945 MPa, TEL 52→75.5% from RT to LNT; work hardening stages differ between temperatures."
+    },
+    {
+      "characterization_id": "char_impact",
+      "sample_id": "sample_fe35mn6al01c_01",
+      "microstructure_uuid": null,
+      "technique": "Charpy V-notch impact test (instrumented)",
+      "purpose": "Evaluate impact toughness and separate crack initiation/propagation energy",
+      "key_findings": "331 J at RT, 254 J at LNT; crack initiation energy ~80–100 J constant, crack propagation energy significantly lower at LNT."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_SFE",
+      "sample_id": "sample_fe35mn6al01c_01",
+      "simulation_method": null,
+      "software_used": "Thermal-Calc (TCFE12 database)",
+      "potential_model": null,
+      "validation_against_experiment": "Calculated SFE values consistent with observed twinning tendency despite high SFE; phase diagram matches XRD phase stability.",
+      "analytical_model": [
+        {
+          "model_name": "Stacking fault energy (SFE) calculation",
+          "equation_role": "Calculate SFE of austenite based on thermodynamic Gibbs energy",
+          "parameters": "ρ (molar surface density), ΔG^{γ→ε} from thermodynamic functions and mixing energies, interfacial energy σ; used magnetic contribution model.",
+          "model_note": "SFE = 62.64 mJ/m² at RT, 49.46 mJ/m² at LNT. Calculated according to approach in [52,53]."
+        },
+        {
+          "model_name": "Critical twinning stress (mean-field model)",
+          "equation_role": "Estimate critical stress for deformation twinning",
+          "parameters": "Taylor factor M (2.2 Sachs, 3.06 Taylor, 2.7 CPFE), SFE Γ, shear modulus G=68 GPa, Burgers vector b=0.147 nm, grain size D=10.8 μm",
+          "model_note": "Experimental twinning stress ~723 MPa at RT, ~778 MPa at LNT; Sachs model gives closest prediction at LNT."
+        },
+        {
+          "model_name": "Hall-Petch-type relation for twinning stress",
+          "equation_role": "Alternative estimation of twinning stress",
+          "parameters": "m=0.326 (average Schmid factor), b=0.25 nm, γ=SFE, K=0.350 MPa·m^0.5",
+          "model_note": "Critical twinning stress from HP-type relation: 1096 MPa RT, 934 MPa LNT."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Deformation twinning is observed at RT despite high SFE (62.64 mJ/m²), attributed to stress concentration from planar dislocation substructures and short-range ordering (SRO) effect that may lower effective SFE.",
+    "At LNT, crack initiation energy remains ~80–100 J similar to RT, while crack propagation energy drops from ~251 J at RT to ~156 J at LNT, leading to lower total impact energy (254 J vs 331 J).",
+    "The presence of ~3% ferrite refines austenite grains and enhances toughness, but γ/α interfaces become crack initiation sites at LNT, somewhat reducing crack propagation energy.",
+    "The work hardening at LNT exhibits four stages: A (dislocation accumulation/recovery), B (nearly constant hardening due to twin nucleation at annealed twin boundaries), C (decreasing hardening from dislocation substructure refinement), D (sustained hardening from extensive primary and secondary twinning).",
+    "The density of the steel is 7.18 g/cm³, contributing to lightweight advantage over conventional cryogenic steels.",
+    "Fig.10 compares Charpy impact energy and specific yield strength, showing this steel has higher impact energy than high-carbon lightweight steel and TWIP steel, and superior specific yield strength to 304 stainless steel and low-carbon high-Mn steel."
+  ]
+}

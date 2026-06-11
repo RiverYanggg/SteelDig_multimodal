@@ -1,0 +1,589 @@
+{
+    "papers": [
+        {
+            "paper_id": "A29",
+            "doi": "10.1016/j.actamat.2025.121060",
+            "title": "On the anisotropic deformation behavior of a low-density medium manganese steel",
+            "authors": ["Shuanghong Lei", "Binhan Sun", "Yu Xuan", "Ran Tian", "Yan Ma", "Mohamed Naguib Elkot", "Huijie Cheng", "Ning Yao", "Tiwen Lu", "Jianping Tan", "Zhenbo Zhang", "Xian-Cheng Zhang", "Shan-Tung Tu"],
+            "publication_year": "2025",
+            "journal": "Acta Materialia",
+            "keywords": ["Medium Mn steels", "Lightweight steels", "Transformation-induced plasticity", "Strain partitioning", "Synchrotron high-energy X-ray diffraction"],
+            "research_type": "experimental",
+            "paper_scope": "研究具有带状δ铁素体和超细α+γ聚集相组织的Fe-7.95Mn-0.25C-4.94Al中锰轻质钢沿轧制方向(RD)和横向(TD)的各向异性变形行为，揭示应变分配、应变诱导马氏体相变动力学差异及其机理，为同类合金的成形性能优化设计提供指导"
+        }
+    ],
+    "alloys": [
+        {
+            "alloy_id": "alloy_fe795mn025c494al",
+            "paper_id": "A29",
+            "alloy_name": "low-density medium manganese steel",
+            "aliases": ["medium Mn lightweight steel", "Fe-7.95Mn-0.25C-4.94Al steel"],
+            "base_element": "Fe",
+            "alloying_elements": ["Mn", "C", "Al"],
+            "nominal_composition": [
+                {
+                    "element": "Mn",
+                    "weight_percent": "7.95",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "C",
+                    "weight_percent": "0.25",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "Al",
+                    "weight_percent": "4.94",
+                    "atomic_percent": null
+                }
+            ],
+            "alloys_notes": "质量密度约7.40 g/cm³，较普通钢降低6.2%"
+        }
+    ],
+    "processes": [
+        {
+            "process_id": "proc_fe795mn_01",
+            "paper_id": "A29",
+            "alloy_id": "alloy_fe795mn025c494al",
+            "description": "真空感应熔炼制备铸锭，1100℃均匀化处理，1000℃以上热轧至3mm厚，冷轧至1.5mm厚，850℃临界退火10min后水淬至室温",
+            "processes_notes": "临界退火后获得由带状δ铁素体和超细晶α+γ聚集相组成的目标组织"
+        }
+    ],
+    "samples": [
+        {
+            "sample_id": "sample_fe795mn_rd",
+            "paper_id": "A29",
+            "alloy_id": "alloy_fe795mn025c494al",
+            "process_id": "proc_fe795mn_01"
+        },
+        {
+            "sample_id": "sample_fe795mn_td",
+            "paper_id": "A29",
+            "alloy_id": "alloy_fe795mn025c494al",
+            "process_id": "proc_fe795mn_01"
+        }
+    ],
+    "processing_steps": [
+        {
+            "sample_id": ["sample_fe795mn_rd", "sample_fe795mn_td"],
+            "paper_id": "A29",
+            "sequence": "1",
+            "type": "casting",
+            "method": "vacuum induction melting",
+            "temperature": null,
+            "unit": null,
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "制备实验用合金铸锭"
+        },
+        {
+            "sample_id": ["sample_fe795mn_rd", "sample_fe795mn_td"],
+            "paper_id": "A29",
+            "sequence": "2",
+            "type": "heat_treatment",
+            "method": "homogenization annealing",
+            "temperature": "1100",
+            "unit": "℃",
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "铸锭均匀化处理消除成分偏析"
+        },
+        {
+            "sample_id": ["sample_fe795mn_rd", "sample_fe795mn_td"],
+            "paper_id": "A29",
+            "sequence": "3",
+            "type": "thermomechanical_processing",
+            "method": "hot rolling",
+            "temperature": ">1000",
+            "unit": "℃",
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "热轧至板材厚度约3mm"
+        },
+        {
+            "sample_id": ["sample_fe795mn_rd", "sample_fe795mn_td"],
+            "paper_id": "A29",
+            "sequence": "4",
+            "type": "mechanical_processing",
+            "method": "cold rolling",
+            "temperature": null,
+            "unit": null,
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": "50",
+            "processing_steps_notes": "冷轧至最终厚度约1.5mm"
+        },
+        {
+            "sample_id": ["sample_fe795mn_rd", "sample_fe795mn_td"],
+            "paper_id": "A29",
+            "sequence": "5",
+            "type": "heat_treatment",
+            "method": "intercritical annealing (IA)",
+            "temperature": "850",
+            "unit": "℃",
+            "duration": "10",
+            "cooling_medium": "water",
+            "reduction_ratio": null,
+            "processing_steps_notes": "退火后水淬至室温，获得目标双尺度带状组织"
+        }
+    ],
+    "structures": [
+        {
+            "structure_id": "struct_undeformed",
+            "sample_id": ["sample_fe795mn_rd", "sample_fe795mn_td"],
+            "overall_structure": "带状/层状组织，由沿轧制方向分布的粗晶δ铁素体和超细晶α铁素体+奥氏体(γ+α)聚集相组成",
+            "number_of_phases": "3",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "struct_uuid_01",
+                    "related_sequence": "5",
+                    "phases_present": [
+                        {
+                            "phase_name": "δ-ferrite",
+                            "crystal_structure": "BCC",
+                            "volume_fraction": "25 vol.%",
+                            "morphology": "coarse banded",
+                            "grain_size": "~38 μm",
+                            "texture": "weak rotated cube texture {100}<011>, maximum intensity 2.57"
+                        },
+                        {
+                            "phase_name": "α-ferrite",
+                            "crystal_structure": "BCC",
+                            "volume_fraction": "44 vol.%",
+                            "morphology": "ultrafine grain",
+                            "grain_size": "~2 μm",
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "austenite (γ)",
+                            "crystal_structure": "FCC",
+                            "volume_fraction": "31 vol.%",
+                            "morphology": "ultrafine grain",
+                            "grain_size": "~1.8 μm",
+                            "texture": null
+                        }
+                    ],
+                    "defects": [
+                        {
+                            "type": null,
+                            "porosity": null,
+                            "inclusions": [],
+                            "dislocation_density": "low",
+                            "lattice_distortion": "low"
+                        }
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": null,
+                            "unit": null
+                        },
+                        "grain_size_distribution": "bimodal: coarse δ-ferrite (~38 μm) and ultrafine α+γ (~1-2 μm)",
+                        "texture": null
+                    },
+                    "precipitates": []
+                }
+            ]
+        }
+    ],
+    "interfaces": [
+        {
+            "interface_set_id": "if_set_01",
+            "sample_id": ["sample_fe795mn_rd", "sample_fe795mn_td"],
+            "phases": [
+                {
+                    "interface_id": "if_01",
+                    "microstructure_uuid": "struct_uuid_01",
+                    "phase_1_name": "austenite (γ)",
+                    "phase_2_name": "α-ferrite",
+                    "coherence": "semi-coherent/incoherent"
+                },
+                {
+                    "interface_id": "if_02",
+                    "microstructure_uuid": "struct_uuid_01",
+                    "phase_1_name": "austenite (γ)",
+                    "phase_2_name": "δ-ferrite",
+                    "coherence": "semi-coherent/incoherent"
+                }
+            ],
+            "defect_interaction": [
+                {
+                    "interaction_id": "inter_01",
+                    "microstructure_uuid": "struct_uuid_01",
+                    "interaction_type": "strain-induced α'-martensite nucleation",
+                    "quality_description": "α'-martensite preferentially nucleates at γ/α and γ/δ phase boundaries, attributed to high stress/strain concentration and high geometrically necessary dislocation density at interfaces"
+                }
+            ],
+            "interface_notes": [
+                {
+                    "stress_strain_distribution": "stress concentration exists at phase boundaries, concentration degree depends on loading direction relative to banded structure"
+                },
+                {
+                    "slippage_situation": null
+                }
+            ],
+            "phase_evolution": "austenite transforms to BCC α'-martensite during plastic deformation via strain-induced transformation, transformation kinetics depends on loading direction"
+        }
+    ],
+    "properties": [
+        {
+            "property_set_id": "prop_rd",
+            "sample_id": "sample_fe795mn_rd",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [
+                        {
+                            "direction": "rolling direction (RD)",
+                            "value": null,
+                            "unit": null,
+                            "others": {
+                                "uncertainty": null
+                            }
+                        }
+                    ],
+                    "ultimate_tensile_strength": [
+                        {
+                            "direction": "rolling direction (RD)",
+                            "value": "864",
+                            "unit": "MPa",
+                            "others": {
+                                "uncertainty": "35"
+                            }
+                        }
+                    ],
+                    "elongation": [
+                        {
+                            "direction": "rolling direction (RD)",
+                            "value": "69",
+                            "unit": "%",
+                            "others": null
+                        }
+                    ],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": [
+                        {
+                            "property_id": null,
+                            "direction": "rolling direction (RD)",
+                            "value": "2052",
+                            "unit": "MPa"
+                        }
+                    ]
+                },
+                "hardness": [
+                    {
+                        "region": "UFG γ+α aggregate",
+                        "value": "221",
+                        "scale": "HV",
+                        "unit": "HV",
+                        "others": {
+                            "uncertainty": "3"
+                        }
+                    },
+                    {
+                        "region": "δ-ferrite",
+                        "value": "205",
+                        "scale": "HV",
+                        "unit": "HV",
+                        "others": {
+                            "uncertainty": "1.5"
+                        }
+                    }
+                ],
+                "fracture_toughness": {
+                    "value": null,
+                    "unit": null
+                },
+                "fatigue_properties": {
+                    "fatigue_limit": null,
+                    "cycles_to_failure": null
+                },
+                "creep_properties": {
+                    "steady_state_creep_rate": null,
+                    "rupture_life": null
+                }
+            },
+            "physical": {
+                "density": {
+                    "value": "7.40",
+                    "unit": "g/cm³"
+                },
+                "thermal_properties": {
+                    "thermal_conductivity": null,
+                    "thermal_expansion_coefficient": null,
+                    "specific_heat": null
+                },
+                "electrical_properties": {
+                    "electrical_conductivity": null,
+                    "resistivity": null
+                },
+                "magnetic_properties": {
+                    "magnetic_susceptibility": null,
+                    "curie_temperature": null
+                }
+            },
+            "chemical": {
+                "corrosion_resistance": {
+                    "test_medium": null,
+                    "corrosion_rate": null,
+                    "passivation_behavior": null
+                },
+                "oxidation_resistance": {
+                    "oxidation_rate_constant": null,
+                    "protective_scale": null
+                }
+            },
+            "radiation_properties": {
+                "void_swelling": null,
+                "irradiation_hardening": null,
+                "helium_embrittlement": null
+            }
+        },
+        {
+            "property_set_id": "prop_td",
+            "sample_id": "sample_fe795mn_td",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [
+                        {
+                            "direction": "transverse direction (TD)",
+                            "value": null,
+                            "unit": null,
+                            "others": {
+                                "uncertainty": null
+                            }
+                        }
+                    ],
+                    "ultimate_tensile_strength": [
+                        {
+                            "direction": "transverse direction (TD)",
+                            "value": null,
+                            "unit": "MPa",
+                            "others": {
+                                "uncertainty": "35"
+                            }
+                        }
+                    ],
+                    "elongation": [
+                        {
+                            "direction": "transverse direction (TD)",
+                            "value": null,
+                            "unit": "%",
+                            "others": null
+                        }
+                    ],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": [
+                        {
+                            "property_id": null,
+                            "direction": "transverse direction (TD)",
+                            "value": "1828",
+                            "unit": "MPa"
+                        }
+                    ]
+                },
+                "hardness": [
+                    {
+                        "region": "UFG γ+α aggregate",
+                        "value": "221",
+                        "scale": "HV",
+                        "unit": "HV",
+                        "others": {
+                            "uncertainty": "3"
+                        }
+                    },
+                    {
+                        "region": "δ-ferrite",
+                        "value": "205",
+                        "scale": "HV",
+                        "unit": "HV",
+                        "others": {
+                            "uncertainty": "1.5"
+                        }
+                    }
+                ],
+                "fracture_toughness": {
+                    "value": null,
+                    "unit": null
+                },
+                "fatigue_properties": {
+                    "fatigue_limit": null,
+                    "cycles_to_failure": null
+                },
+                "creep_properties": {
+                    "steady_state_creep_rate": null,
+                    "rupture_life": null
+                }
+            },
+            "physical": {
+                "density": {
+                    "value": "7.40",
+                    "unit": "g/cm³"
+                },
+                "thermal_properties": {
+                    "thermal_conductivity": null,
+                    "thermal_expansion_coefficient": null,
+                    "specific_heat": null
+                },
+                "electrical_properties": {
+                    "electrical_conductivity": null,
+                    "resistivity": null
+                },
+                "magnetic_properties": {
+                    "magnetic_susceptibility": null,
+                    "curie_temperature": null
+                }
+            },
+            "chemical": {
+                "corrosion_resistance": {
+                    "test_medium": null,
+                    "corrosion_rate": null,
+                    "passivation_behavior": null
+                },
+                "oxidation_resistance": {
+                    "oxidation_rate_constant": null,
+                    "protective_scale": null
+                }
+            },
+            "radiation_properties": {
+                "void_swelling": null,
+                "irradiation_hardening": null,
+                "helium_embrittlement": null
+            }
+        }
+    ],
+    "performance": [
+        {
+            "performance_id": "perf_rd",
+            "sample_id": "sample_fe795mn_rd",
+            "service_conditions": {
+                "operating_temperature": {
+                    "min": "25",
+                    "max": "25",
+                    "unit": "℃"
+                },
+                "stress_state": "uniaxial tension",
+                "environment": "air",
+                "strain_rate": "~1×10^-3 s^-1"
+            },
+            "lifetime_prediction": {
+                "model_used": null,
+                "predicted_lifetime": null,
+                "confidence_interval": null
+            },
+            "comparative_performance": {
+                "benchmark_alloy": null,
+                "benchmark_process_id": null,
+                "benchmark_sample_id": "sample_fe795mn_td",
+                "improvement_percentage": "Higher strain hardening rate, tensile strength and ductility than TD sample, attributed to faster strain-induced martensite transformation kinetics"
+            }
+        },
+        {
+            "performance_id": "perf_td",
+            "sample_id": "sample_fe795mn_td",
+            "service_conditions": {
+                "operating_temperature": {
+                    "min": "25",
+                    "max": "25",
+                    "unit": "℃"
+                },
+                "stress_state": "uniaxial tension",
+                "environment": "air",
+                "strain_rate": "~1×10^-3 s^-1"
+            },
+            "lifetime_prediction": {
+                "model_used": null,
+                "predicted_lifetime": null,
+                "confidence_interval": null
+            },
+            "comparative_performance": {
+                "benchmark_alloy": null,
+                "benchmark_process_id": null,
+                "benchmark_sample_id": "sample_fe795mn_rd",
+                "improvement_percentage": "Lower strain hardening rate, tensile strength and ductility than RD sample, due to slower strain-induced martensite transformation kinetics"
+            }
+        }
+    ],
+    "characterization_methods": [
+        {
+            "characterization_id": "char_01",
+            "sample_id": ["sample_fe795mn_rd", "sample_fe795mn_td"],
+            "microstructure_uuid": "struct_uuid_01",
+            "technique": "Electron Backscatter Diffraction (EBSD)",
+            "purpose": "Characterize microstructure, phase composition, grain size, texture and misorientation of undeformed and interrupted tensile samples",
+            "key_findings": "Initial microstructure consists of banded δ-ferrite and ultrafine γ+α aggregates; strain-induced α'-martensite preferentially nucleates at phase boundaries"
+        },
+        {
+            "characterization_id": "char_02",
+            "sample_id": ["sample_fe795mn_rd", "sample_fe795mn_td"],
+            "microstructure_uuid": "struct_uuid_01",
+            "technique": "Transmission Electron Microscopy (TEM)",
+            "purpose": "Observe deformation substructures, dislocations, stacking faults and martensite nucleation behavior",
+            "key_findings": "Stacking faults exist in austenite, dislocation tangles exist in ferrite; α'-martensite nucleates near γ/α and γ/δ phase boundaries"
+        },
+        {
+            "characterization_id": "char_03",
+            "sample_id": ["sample_fe795mn_rd", "sample_fe795mn_td"],
+            "microstructure_uuid": null,
+            "technique": "In-situ synchrotron high-energy X-ray diffraction (HEXRD)",
+            "purpose": "In-situ investigate phase evolution, dislocation density change and lattice strain during tensile loading",
+            "key_findings": "RD sample has faster strain-induced martensite transformation kinetics and higher austenite dislocation density; austenite yields earlier than ferrite in both samples"
+        },
+        {
+            "characterization_id": "char_04",
+            "sample_id": ["sample_fe795mn_rd", "sample_fe795mn_td"],
+            "microstructure_uuid": null,
+            "technique": "High-resolution microscopic Digital Image Correlation (μ-DIC)",
+            "purpose": "Study strain partitioning behavior between different phases",
+            "key_findings": "δ-ferrite and γ+α aggregates have similar strain levels in RD sample; higher strain concentrates in δ-ferrite in TD sample; austenite bears higher strain than α-ferrite in both samples"
+        },
+        {
+            "characterization_id": "char_05",
+            "sample_id": ["sample_fe795mn_rd", "sample_fe795mn_td"],
+            "microstructure_uuid": null,
+            "technique": "Vickers microhardness test",
+            "purpose": "Measure hardness of different microregions",
+            "key_findings": "Hardness of UFG γ+α aggregate is 221±3 HV, hardness of δ-ferrite is 205±1.5 HV"
+        }
+    ],
+    "computational_details": [
+        {
+            "computation_id": "comp_01",
+            "sample_id": ["sample_fe795mn_rd", "sample_fe795mn_td"],
+            "simulation_method": "Thermodynamic calculation",
+            "software_used": "Thermo-Calc",
+            "potential_model": "TCFE9 database",
+            "validation_against_experiment": "Calculated pseudo-binary phase diagram matches experimental observation of δ-ferrite formation in the alloy",
+            "analytical_model": []
+        },
+        {
+            "computation_id": "comp_02",
+            "sample_id": ["sample_fe795mn_rd", "sample_fe795mn_td"],
+            "simulation_method": "Kinetics modeling",
+            "software_used": null,
+            "potential_model": null,
+            "validation_against_experiment": "Model prediction matches experimental martensite fraction data for both RD and TD samples",
+            "analytical_model": [
+                {
+                    "model_name": "Olson-Cohen (OC) model",
+                    "equation_role": "Predict strain-induced martensite fraction as a function of true strain",
+                    "parameters": "α=1.35, β=2, n=2, initial austenite fraction 46.5 vol.%",
+                    "model_note": "Strain of austenite in RD sample is taken as 1.15 times that in TD sample, derived from μ-DIC results"
+                }
+            ]
+        }
+    ],
+    "unmapped_findings": [
+        "Taylor factors of RD and TD samples are 2.83 and 2.78 respectively, indicating similar mechanical response of δ phase under different loading directions",
+        "When loading direction is parallel to the banded structure (RD), deformation follows iso-strain condition; when perpendicular (TD), iso-stress condition dominates, leading to different strain partitioning behavior",
+        "Volume expansion during γ to α' martensite transformation is about 2~4%, which contributes to local plastic strain in γ-α' mixed phase",
+        "At true strain of 0.48, martensite fraction of RD sample is 4 vol.% higher than that of TD sample",
+        "Maximum austenite dislocation density in RD sample is ~1.51×10^14 m^-2, higher than that in TD sample"
+    ]
+}

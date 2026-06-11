@@ -1,0 +1,122 @@
+{
+  "claims": [
+    {
+      "claim_type": "composition",
+      "subject": "dataset construction",
+      "claim": "A foundational dataset comprising 177 data entries was collected from published experimental studies on diverse alloy systems, quantifying contributions of four strengthening mechanisms and corresponding yield strength values.",
+      "values": ["177 entries"],
+      "evidence_text": "the present study establishes a foundational dataset comprising 177 data entries from published experimental studies. This dataset systematically quantifies the contributions of four key strengthening mechanisms (Dislocation strengthening, Grain refinement strengthening, Solid solution strengthening, and Orowan strengthening) alongside corresponding YS values across diverse alloy systems",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "processing",
+      "subject": "data augmentation",
+      "claim": "Gaussian Mixture Model (GMM) data enhancement expanded the original dataset from 177 to 776 groups to address small-sample limitations.",
+      "values": ["177 original groups", "776 expanded groups"],
+      "evidence_text": "GMM data enhancement method was utilized to enhance the original data set, and the original 177 groups were expanded to 776 groups to solve the problem of small samples.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "machine learning model comparison",
+      "claim": "Seven mainstream machine learning models were selected for comparison: Decision Tree (DT), XGBoost, LightGBM, CatBoost, Extremely Randomized Trees (Extra Trees), K-Nearest Neighbors (KNN), and Adaptive Boosting (AdaBoost).",
+      "values": ["7 models", "DT, XGBoost, LightGBM, CatBoost, Extra Trees, KNN, AdaBoost"],
+      "evidence_text": "Seven mainstream machine learning models (Decision Tree (DT), eXtreme Gradient Boosting (XGBoost), Light Gradient Boosting Machine (LightGBM), Categorical Boosting (CatBoost), Extremely Randomized Trees (Extra Trees), K-Nearest Neighbors (KNN), and Adaptive Boosting (AdaBoost)) are selected for comparison.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "characterization",
+      "subject": "model performance evaluation",
+      "claim": "Model performance was compared using the same evaluation metrics RMSE, MAPE, and R², and the Extra Trees model was selected as the best-performing basic model.",
+      "values": ["RMSE", "MAPE", "R²", "Extra Trees"],
+      "evidence_text": "The same evaluation indexes RMSE, MAPE, and R2 are used for model performance comparison so as to select the best performing extra trees model as the basic model.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "processing",
+      "subject": "hyperparameter optimization",
+      "claim": "A genetic algorithm (GA) is applied to globally optimize the hyperparameters of the Extra Trees model to further improve prediction performance.",
+      "values": ["Genetic Algorithm", "GA"],
+      "evidence_text": "The intelligent optimization algorithm is used to optimize its hyper-parameters. ... incorporating a Genetic Algorithm (GA) for global hyperparameter optimization.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "strengthening mechanisms",
+      "claim": "The yield strength of medium-manganese low-density steels is governed by the synergistic effects of four strengthening mechanisms: solid solution strengthening (σ₀), grain refinement strengthening (σ_g), dislocation strengthening (σ_d), and Orowan strengthening (σ_Orowan).",
+      "values": ["solid solution strengthening", "grain refinement strengthening", "dislocation strengthening", "Orowan strengthening"],
+      "evidence_text": "the synergistic effects of multiple strengthening mechanisms govern their mechanical properties. ... the quantitative contributions of four key strengthening mechanisms (Dislocation strengthening, Grain refinement strengthening, Solid solution strengthening, and Orowan strengthening)",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "linear superposition model",
+      "claim": "Classical strengthening theory approximates the combined contribution of distinct strengthening mechanisms to yield strength through a linear superposition model: σ_YS = σ_0 + σ_g + σ_d + σ_Orowan.",
+      "values": ["σ_YS = σ_0 + σ_g + σ_d + σ_Orowan"],
+      "evidence_text": "Classical strengthening theory postulates that under low-strain conditions coupled with microstructural stability, individual contributions from distinct strengthening mechanisms to YS can be approximately characterized through a linear superposition model, mathematically expressed as: σ_YS = σ_0 + σ_g + σ_d + σ_Orowan",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "processing",
+      "subject": "data standardization",
+      "claim": "Z-score standardization is applied to the input features to remove differences in dimensions and numerical ranges, using the formula z_i = (x_i - μ_i) / ε_i.",
+      "values": ["z_i = (x_i - μ_i) / ε_i"],
+      "evidence_text": "z-score standardized method is adopted in this study, and its calculation formula is as follows: z_i = (x_i - μ_i) / ε_i",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "figure_evidence",
+      "subject": "framework flowchart",
+      "claim": "Figure 1 presents the overall yield strength prediction framework flowchart, including model selection, GMM data enhancement, feature filtering of the four strengthening contributions, GA-optimized Extra Trees, and experimental verification.",
+      "values": ["Figure 1", "GA-ET", "data expansion 599", "σ_YS = σ_0 + σ_g + σ_d + σ_Orowan"],
+      "evidence_text": "Fig. 1. Flowchart of the yield strength prediction framework. ... a flowchart with nodes: Model selection, Data enhancement using GMM method, 177 original data training model, Capture features, data expansion 599, Feature filtering, Dislocation strengthening, Fine grain strengthening, Solid solution strengthening, Orovan strengthening, σYS = σ0 + σg + σd + σOrowan, GA-ET, Algorithm optimization, Extra Tree Filing Performance, Experimental verification",
+      "figures": ["Fig. 1"],
+      "tables": [],
+      "confidence": "high"
+    }
+  ],
+  "context_update": {
+    "summary": "The current chunk covers the introduction of the data-driven framework, architecture, and dataset preparation. It reports that a foundational dataset of 177 entries from literature was assembled, quantifying contributions of solid solution, dislocation, grain refinement, and Orowan strengthening with corresponding yield strength values. Gaussian Mixture Model augmentation expanded the data to 776 groups. Seven ML models (DT, XGBoost, LightGBM, CatBoost, Extra Trees, KNN, AdaBoost) were compared using RMSE, MAPE, and R²; Extra Trees was chosen as the best basic model. A genetic algorithm will optimize its hyperparameters. The framework is outlined to predict yield strength from the four strengthening contributions, employing the classical linear superposition equation σ_YS = σ_0 + σ_g + σ_d + σ_Orowan. Data preprocessing includes z-score standardization. Fig. 1 illustrates the full workflow from model selection, GMM augmentation, through GA-ET to experimental verification. This chunk sets the stage for detailed model training, feature importance, and experimental validation in subsequent sections. Future chunks should remember the dataset size (177→776), the four strengthening mechanism features, the baseline Extra Trees model, GA optimization strategy, and the usage of the linear superposition equation as a reference theoretical model.",
+    "material_systems": ["medium-manganese low-density steels", "diverse alloy systems from literature"],
+    "sample_aliases": [],
+    "processing_route": ["GMM data augmentation (177 to 776 groups)", "z-score standardization", "genetic algorithm hyperparameter optimization of Extra Trees"],
+    "key_variables": [
+      "solid solution strengthening (σ_0)",
+      "grain refinement strengthening (σ_g)",
+      "dislocation strengthening (σ_d)",
+      "Orowan strengthening (σ_Orowan)",
+      "yield strength (YS)",
+      "RMSE",
+      "MAPE",
+      "R²",
+      "z-score"
+    ],
+    "microstructure": [],
+    "properties": ["yield strength"],
+    "mechanisms": [
+      "solid solution strengthening",
+      "grain refinement strengthening",
+      "dislocation strengthening",
+      "Orowan strengthening",
+      "linear superposition model"
+    ],
+    "figures_or_tables": ["Fig. 1"],
+    "unresolved_terms": []
+  }
+}

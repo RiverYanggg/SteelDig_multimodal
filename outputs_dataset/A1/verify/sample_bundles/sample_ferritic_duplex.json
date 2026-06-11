@@ -1,0 +1,353 @@
+{
+  "sample_id": "sample_ferritic_duplex",
+  "sample": {
+    "sample_id": "sample_ferritic_duplex",
+    "paper_id": "A1",
+    "alloy_id": "alloy_ferritic_duplex",
+    "process_id": "proc_ferritic_duplex"
+  },
+  "alloy": {
+    "alloy_id": "alloy_ferritic_duplex",
+    "paper_id": "A1",
+    "alloy_name": "Ferrite based duplex low density steel",
+    "aliases": [
+      "ferrite-based duplex Fe-Mn-Al-C"
+    ],
+    "base_element": "Fe",
+    "alloying_elements": [
+      "Al",
+      "Mn",
+      "C"
+    ],
+    "nominal_composition": [
+      {
+        "element": "Fe",
+        "weight_percent": "balance",
+        "atomic_percent": null
+      },
+      {
+        "element": "Al",
+        "weight_percent": "3-7",
+        "atomic_percent": null
+      },
+      {
+        "element": "Mn",
+        "weight_percent": "2-12",
+        "atomic_percent": null
+      },
+      {
+        "element": "C",
+        "weight_percent": "0.05-0.5",
+        "atomic_percent": null
+      }
+    ],
+    "alloys_notes": "Hot-rolled microstructure: gamma + delta-ferrite, with delta-ferrite fraction >50%. Cold rolling and intercritical annealing produce TRIP/TWIP effects."
+  },
+  "process": {
+    "process_id": "proc_ferritic_duplex",
+    "paper_id": "A1",
+    "alloy_id": "alloy_ferritic_duplex",
+    "description": "Hot rolling in (delta+gamma) region, cold rolling, intercritical annealing at 700-900 °C followed by fast cooling or austempering.",
+    "processes_notes": "Austempering used to stabilize austenite. Control of austenite grain size and stability is critical for TRIP/TWIP."
+  },
+  "processing_steps": [
+    {
+      "sample_id": "sample_ferritic_duplex",
+      "paper_id": "A1",
+      "sequence": "1",
+      "type": "thermomechanical_processing",
+      "method": "hot rolling",
+      "temperature": "~900",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Banded microstructure of delta-ferrite and recrystallized austenite."
+    },
+    {
+      "sample_id": "sample_ferritic_duplex",
+      "paper_id": "A1",
+      "sequence": "2",
+      "type": "deformation",
+      "method": "cold rolling",
+      "temperature": "room",
+      "unit": null,
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": "50",
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_ferritic_duplex",
+      "paper_id": "A1",
+      "sequence": "3",
+      "type": "heat_treatment",
+      "method": "intercritical annealing",
+      "temperature": "700-900",
+      "unit": "°C",
+      "duration": "1-30 min",
+      "cooling_medium": "fast cooling / austempering",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Controls volume fraction, grain size and stability of austenite."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_ferritic_duplex",
+      "sample_id": "sample_ferritic_duplex",
+      "overall_structure": "Banded mixture of coarse delta-ferrite and refined austenite (or transformation products)",
+      "number_of_phases": "2-5",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_ferrite_duplex_01",
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "delta-ferrite",
+              "crystal_structure": "BCC",
+              "volume_fraction": ">50%",
+              "morphology": "banded, partially recrystallized",
+              "grain_size": "coarse",
+              "texture": null
+            },
+            {
+              "phase_name": "austenite (gamma)",
+              "crystal_structure": "FCC",
+              "volume_fraction": "10-40%",
+              "morphology": "refined grains in clusters",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "possible kappa at delta/gamma interfaces",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": "bimodal",
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "prop_ferritic_duplex",
+      "sample_id": "sample_ferritic_duplex",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "400-900",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "10-40",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": null,
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "known_issues": [],
+  "evidence_blocks": [
+    {
+      "block_id": "b0001",
+      "text": "# Current state of Fe-Mn-Al-C low density steels",
+      "char_start": 0,
+      "char_end": 48
+    },
+    {
+      "block_id": "b0002",
+      "text": "Shangping Chen a,⇑ , Radhakanta Rana a , Arunansu Haldar b , Ranjit Kumar Ray b",
+      "char_start": 50,
+      "char_end": 129
+    },
+    {
+      "block_id": "b0003",
+      "text": "a Tata Steel, PO Box 10000, 1970CA IJmuiden, The Netherlands",
+      "char_start": 131,
+      "char_end": 191
+    },
+    {
+      "block_id": "b0038",
+      "text": "6. Strengthening mechanisms . . 365",
+      "char_start": 6057,
+      "char_end": 6092
+    },
+    {
+      "block_id": "b0039",
+      "text": "6.1. Ferritic low density steels. . 365\n6.2. Austenitic low density steels . . 366\n6.3. Austenite based duplex low density steels . . 368\n6.4. Ferrite based duplex low density steels. . . 372",
+      "char_start": 6094,
+      "char_end": 6285
+    },
+    {
+      "block_id": "b0040",
+      "text": "7. Tensile properties of Fe-Mn-Al-C alloys . . . 372",
+      "char_start": 6287,
+      "char_end": 6339
+    },
+    {
+      "block_id": "b0091",
+      "text": "Austenitic low density steels contain a higher Mn content, typically between 12 and 30%, Al up to 12% and C between 0.6 and 2.0%. This type of alloys can have a fully equiaxed-austenitic microstructure at hot working temperatures and the austenite is metastable after fast cooling.",
+      "char_start": 25361,
+      "char_end": 25642
+    },
+    {
+      "block_id": "b0092",
+      "text": "Ferrite based duplex low density steels have a microstructure of c + d-ferrite at hot working temperature, with the fraction of the d-ferrite being larger than 50%.1 The stability of the austenite is relatively low because of the lower amounts of alloying elements. Because of the large difference in the C and Mn contents and also the difference in the processing parameters, this family of alloys may represent different and complex transformation behaviours at lower temperatures.",
+      "char_start": 25644,
+      "char_end": 26127
+    },
+    {
+      "block_id": "b0093",
+      "text": "Austenite based duplex low density steels have a microstructure of c + d at hot working temperature with the austenitic phase forming the continuous matrix. The stability of the austenite is quite high because of the higher amounts of alloying elements. The austenite may stabilize to the room temperature, along with j-precipitation forming inside the austenite grains. These steels are also called Triplex steels on the basis of the three constituents commonly found in their microstructure at the final stage: small amounts of d-ferrite, and the intragranular nano-sized j0 -carbides in a matrix of austenite grains [6].",
+      "char_start": 26129,
+      "char_end": 26752
+    },
+    {
+      "block_id": "b0386",
+      "text": "Fig. 24. Composition-dependent SFE map of Fe–Mn–Al–C steels at room temperature presented in 3D [142]. (a) SFE vs. C and Mn at different levels of Al, (b) SFE vs. Al and Mn at different levels of C, (c) SFE vs. deformation mechanisms.",
+      "char_start": 167745,
+      "char_end": 167979
+    },
+    {
+      "block_id": "b0387",
+      "text": "# 6.4. Ferrite based duplex low density steels",
+      "char_start": 167981,
+      "char_end": 168027
+    },
+    {
+      "block_id": "b0388",
+      "text": "Ferrite-based duplex steels possess a bimodal structure consisting of clustered austenite particles (10–40%) in a coarse grained d-ferrite matrix owing to low C (0.1–0.4%), medium Mn (3–9%) and medium Al (3–6%) contents. Here most of the deformation is accommodated by the ferrite, while some refined austenite grains homogeneously distributed in ferrite matrix undergo a deformation-induced martensitic transformation [40–60]. A multi-stage strain hardening behaviour is observed in a duplex Fe-8.5Mn-5.6Al-0.3C steel, annealed at 900 \u0003C for 30 min, containing 40% austenite [51]. In Stage 1, the work hardening is dominated by deformation in the ferrite phase and the austenite grains are deformed by dislocation slip. In Stage 2, deformation twins and a0 -martensite are independently formed inside individual austenite grains. Finally in Stage 3, a number of thick deformation twins form inside the austenite grains. The enhanced tensile properties are ascribed to the simultaneous formation of strain-induced martensite and deformation twins. Deformation twinning having extremely small (about 5 nm) thickness and spacing can be activated [60]. The TRIP effect in these steels is mainly dependent on the crystalline orientation of the metastable austenite and its mechanical stability against the formation of strain-induced martensite. The martensitic transformation preferentially occurs in regions having high resolved shear stresses, i.e. with high Schmid factors. The C, Mn and Al contents are not varied much with annealing conditions, and have little effect on mechanical stability. The austenite grain size also acts as a factor determining the activation of martensitic transformation and twinning [50].",
+      "char_start": 168029,
+      "char_end": 169746
+    },
+    {
+      "block_id": "b0514",
+      "text": "With regard to equilibrium phase diagrams, the addition of Al to steel enlarges the d phase area, widens the temperature range and composition range of the primary d phase and liquid phase area, creates a new phase j. As such the physical metallurgy of $\\mathrm { F e - M n - A l - C }$ is largely different from that of the conventional steels. Literature has established the basic understanding of this alloy system through experiments and from theoretical calculations based on the thermodynamics. The current available databases and softwares could provide reasonable information about the phase constitution in the Fe-Mn-Al-C system but could not give accurate predictions on phase boundaries and temperature range, especially when the Al and Mn contents become higher, although the calculations from the different approaches are similar. A few experimental data show that the c region is extended to the direction of the high Al concentration as Mn is increased. However, the calculations show that the c region expands towards a higher Al concentration with increasing Mn up to 20%, but shrinks with further increasing Mn. There is not sufficient experimental data to validate this prediction. More complete and accurate thermodynamic databases and models are required for developing the phase diagrams for high Mn and high Al steels to provide theoretical background for alloy design and process design.",
+      "char_start": 229557,
+      "char_end": 230968
+    },
+    {
+      "block_id": "b0515",
+      "text": "As evident, the literature has provided sufficient and adequate information on the tensile properties of Fe-Mn-Al-C steels. The austenite based low density steels can be placed in the space provided for the second generation AHSS in the traditional strength vs. elongation ‘‘banana diagram”, very often quite similar to those of Mn TRIP and Mn TWIP steels. The ferrite based duplex low density steels can be located at the upper bound of the first generation AHSS in the ‘‘banana diagram”, while the ferritic Fe-Al steels show behaviours typical of HSLA steels of 400–500 MPa level. Thus, there is no significant gains in the combination of strength and ductility (product of $\\mathrm { U T S } \\times \\mathrm { T E } )$ ) when a high amount of Al is added to steels within the corresponding groups.",
+      "char_start": 230970,
+      "char_end": 231769
+    },
+    {
+      "block_id": "b0516",
+      "text": "It now appears from the available literature that the evolution of microstructure and attainment of mechanical properties in ferrite based Fe-Mn-Al-C alloys is very complex and very much depend on the alloy composition and the processing parameters while austenitic Fe-Mn-Al-C steels have a rather robust response to the minor changes in composition and processing. Austenitic Fe-Mn-Al-C steels can be produced as hot rolled and cold rolled strips by using the conventional production lines for HSLA steels. The final conditions can be solution treated or annealed after cold rolling, or aged. Age hardening is not a necessary step for automotive applications but can be a consequence of overaging regime found in many continuous annealing lines. Ferrite based low density steels can be only produced as cold rolled products. Cold rolling and annealing are required to control their final microstructures.",
+      "char_start": 231771,
+      "char_end": 232676
+    },
+    {
+      "block_id": "b0524",
+      "text": "In austenite based duplex low density steels, a small amount of d-ferrite is present as elongated bands covering many austenite grains in the hot rolled state and transforms to the brittle ordered B2 or $\\mathsf { D O } _ { 3 }$ phase in the final microstructure as a result of the high Al content in the d-ferrite. The ductility and toughness are significantly reduced although the strength is not affected. Some work has shown that the ordered B2 or $\\mathsf { D O } _ { 3 }$ phase can be controlled to form in a smaller size within the austenitic matrix. In this case the B2 or $\\mathsf { D O } _ { 3 }$ phase can be used as a strengthening phase. The formation of such a microstructure and the strengthening mechanism are still not clear.",
+      "char_start": 238808,
+      "char_end": 239550
+    },
+    {
+      "block_id": "b0525",
+      "text": "Ferrite based duplex low density steels have a mixture of $( \\delta + \\gamma )$ microstructure in the hot rolled state but develop a complex mixture of $\\left( { \\delta + \\gamma + \\mathbf { M } + \\mathbf { B } + \\kappa } \\right)$ or some of them after cold rolling and annealing, depending on the alloy composition and the annealing parameters. This type of steels usually shows a bimodal microstructure, consisting of clustered austenite or martensite particles in a coarse-grained d-ferrite matrix and provides many microstructural variants so that plastic deformation of the d-matrix and the TRIP and/or TWIP effect of the austenite can be combined to achieve a super combination of strength and ductility.",
+      "char_start": 239552,
+      "char_end": 240261
+    },
+    {
+      "block_id": "b0526",
+      "text": "As the Fe-Mn-Al-C low density steels are primarily meant for automotive structural applications, properties such as impact toughness, fatigue, formability, weldability, and coatability are important and must be looked into and evaluated.",
+      "char_start": 240263,
+      "char_end": 240500
+    },
+    {
+      "block_id": "b0544",
+      "text": "The lightweight Fe-Mn-Al-C steels are a new type of alloy systems. Due to the addition of high amounts of Al, together with Mn and C, the physical metallurgy, general processing, microstructural evolutions and deformation mechanisms of these steels are largely different from those of the conventional steels.\nAluminium plays the central role in reducing the density of steels; a 1.3% reduction in density is obtained per 1 wt% Al addition. Al also brings a large change in the physical metallurgy and deformation mechanisms of steels. Aluminium is a ferrite stabiliser and introduces a disordered (BCC\\_A2) to ordered (BCC\\_B2) transition when the Al content is higher than 6%. To make phase transformation feasible in the low density steels, the austenite stabilisers Mn and C are needed. Al also brings other two main effects in the solution treated austenitic steels: increasing the SFE, producing SRO or j0 - carbides.\nStrain hardening is a very import strengthening mechanism in the austenitic Fe-Mn-Al-C alloys. Dislocation planar glide is a dominant deformation mechanism in these alloys regardless of the SFE and aging conditions. The existence of the SROs or nano-sized j0 -carbides in the solution treated condition and its interaction with dislocations play an important role on planar glide mode deformation of the high Al austenitic steels. Thus, the high solute elements contribute to the deformation gliding and the high SFE supresses the TWIP effect. New deformation mechanisms such as the microband induced",
+      "char_start": 251876,
+      "char_end": 253400
+    },
+    {
+      "block_id": "b0545",
+      "text": "plasticity (MBIP) and the dynamic slip band refinement (DSBR) and the shear band induced plasticity (SIP) seem to effectively describe the plastic deformation of Fe-Mn-Al-C austenitic steels with a high SFE. Work hardening through TWIP, MBIP, DSBR or SIP mechanisms contributes to the exceptionally high ductility of these alloys, sometimes to the tune of about 100% elongation. The Fe-Mn-Al-C low density alloys can achieve a wide range of tensile properties. The austenite based low density steels can be placed in the space provided for the second generation AHSS in the traditional strength vs. elongation ‘‘banana diagram”, very often quite similar to those of the Mn-TRIP and the Mn-TWIP steels. The ferrite based duplex low density steels can be located at the upper bound of the first generation AHSS in the ‘‘banana diagram”, while the ferritic Fe-Al steels show behaviour typical of HSLA steels of 400–500 MPa level. \u0004 Based on the current understanding of the low density steels, austenite based Fe-Mn-Al-C alloys are the most promising due to their potentials to have superior strain hardening, high energy absorption, and the robust response to minor changes in composition and processing. The toughness of the solution treated austenitic Fe-Mn-Al-C steels is slightly lower than that of Cr-Ni stainless steels but is higher than that of the conventional high strength steels. The dynamic fracture toughness is equivalent to or higher than that of 4130 steels, indicating an improved crashworthiness.",
+      "char_start": 253402,
+      "char_end": 254915
+    },
+    {
+      "block_id": "b0546",
+      "text": "The ferrite based duplex low-density steels is another promising alternative; a bimodal microstructure can be obtained through process control for steels with lower alloying contents, in which the deformation of the ferrite and the TRIP/TWIP effects from the retained austenite can be advantageously used. The corrosion behaviour of the low density steels is not improved compared with the conventional high strength steels. The fatigue behaviour and the formability of Fe-Mn-Al-C steels cannot be commented upon on the basis of limited experimental results. Information on other application properties such as weldability and coatability of these materials are still very much lacking. An important property of concern is the low Young’s modulus of Fe-Mn-Al-C steels, which is close to the level of stainless steels but much lower than that of the conventional high strength steels. The weight saving potential can be balanced to some extent due to loss in the stiffness. The applications of those steels should be in parts where the stiffness is not the limiting factor. Significant further research both in metallurgy front as well as technology front is warranted to realize the application of Fe-Mn-Al-C steels. Further, non-conventional process routes should be also explored to enable the use of the Fe-Mn-Al-C steels in the automotives.",
+      "char_start": 254916,
+      "char_end": 256260
+    }
+  ]
+}

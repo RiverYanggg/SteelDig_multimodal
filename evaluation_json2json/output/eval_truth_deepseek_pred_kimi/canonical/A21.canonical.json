@@ -1,0 +1,292 @@
+{
+  "paper_id": "A21",
+  "canonical_maps": {
+    "truth": {
+      "alloy_fe30mn8al1c": "alloy_fe30mn8al1c",
+      "proc_fe30mn8al1c_01": "proc_fe30mn8al1c_01",
+      "sample_fe30mn8al1c_01": "sample_fe30mn8al1c_01",
+      "a21": "A21"
+    },
+    "prediction": {
+      "alloy_fe30mn8al1c": "alloy_fe30mn8al1c",
+      "proc_fe30mn8al1c_01": "proc_fe30mn8al1c_01",
+      "sample_fe30mn8al1c_01": "sample_fe30mn8al1c_01",
+      "a21": "A21"
+    }
+  },
+  "alignment": {
+    "alloy_matches": [
+      {
+        "pred_alloy_id": "alloy_fe30mn8al1c",
+        "truth_alloy_id": "alloy_fe30mn8al1c",
+        "relation": "same",
+        "confidence": 1.0,
+        "reason": "Both alloys have identical base element, alloying elements, nominal composition, and sample references."
+      }
+    ],
+    "process_matches": [
+      {
+        "pred_process_id": "proc_fe30mn8al1c_01",
+        "truth_process_id": "proc_fe30mn8al1c_01",
+        "relation": "same",
+        "confidence": 1.0,
+        "reason": "Both processes describe the same processing route for the same alloy, with detailed notes confirming identical steps."
+      }
+    ],
+    "sample_matches": [
+      {
+        "pred_sample_id": "sample_fe30mn8al1c_01",
+        "truth_sample_id": "sample_fe30mn8al1c_01",
+        "relation": "same",
+        "confidence": 1.0,
+        "reason": "Both samples share the same alloy and process references, and context text supports same microstructure."
+      }
+    ],
+    "error": null
+  },
+  "flattened_sections": {
+    "papers": {
+      "truth": {
+        "papers.A21.title": "Deciphering the composition-microstructure correlation in low-density FeMnAlC steels with machine learning",
+        "papers.A21.authors[0]": "Peng Tiexu",
+        "papers.A21.authors[1]": "Yu Haoyang",
+        "papers.A21.authors[2]": "Huang Jiaxin",
+        "papers.A21.authors[3]": "Fang Wei",
+        "papers.A21.authors[4]": "Li Cong",
+        "papers.A21.authors[5]": "Yao Zitong",
+        "papers.A21.authors[6]": "Zhang Xin",
+        "papers.A21.authors[7]": "Feng Jianhang",
+        "papers.A21.authors[8]": "Ji Puguang",
+        "papers.A21.authors[9]": "Xia Chaoqun",
+        "papers.A21.authors[10]": "Yu Hui",
+        "papers.A21.authors[11]": "Yin Fuxing",
+        "papers.A21.keywords[0]": "Fe-Mn-Al-C alloy",
+        "papers.A21.keywords[1]": "Compositional design",
+        "papers.A21.keywords[2]": "κ-carbide",
+        "papers.A21.keywords[3]": "Machine-learning",
+        "papers.A21.research_type": "mixed",
+        "papers.A21.paper_scope": "Investigating the composition-microstructure correlation in low-density FeMnAlC steels using machine learning to predict the existence of κ phase, (γ+κ) dual-phase region, single γ region, and κ phase volume fraction, and experimentally validating on Fe-30Mn-8Al-1C."
+      },
+      "prediction": {
+        "papers.A21.title": "Deciphering the composition-microstructure correlation in low-density FeMnAlC steels with machine learning",
+        "papers.A21.authors[0]": "Peng Tiexu",
+        "papers.A21.authors[1]": "Yu Haoyang",
+        "papers.A21.authors[2]": "Huang Jiaxin",
+        "papers.A21.authors[3]": "Fang wei",
+        "papers.A21.authors[4]": "Li Cong",
+        "papers.A21.authors[5]": "Yao Zitong",
+        "papers.A21.authors[6]": "Zhang Xin",
+        "papers.A21.authors[7]": "Feng Jianhang",
+        "papers.A21.authors[8]": "Ji Puguang",
+        "papers.A21.authors[9]": "Xia Chaoqun",
+        "papers.A21.authors[10]": "Yu Hui",
+        "papers.A21.authors[11]": "Yin Fuxing",
+        "papers.A21.keywords[0]": "Fe-Mn-Al-C alloy",
+        "papers.A21.keywords[1]": "Compositional design",
+        "papers.A21.keywords[2]": "κ-carbide",
+        "papers.A21.keywords[3]": "Machine-learning",
+        "papers.A21.research_type": "mixed",
+        "papers.A21.paper_scope": "Establishing composition-microstructure correlation in low-density FeMnAlC steels using machine learning to predict κ-phase existence, (γ+κ) dual-phase region, single γ-phase region, and κ-phase volume fraction, followed by experimental validation on Fe-30Mn-8Al-1C."
+      }
+    },
+    "alloys": {
+      "truth": {
+        "alloys.alloy_fe30mn8al1c.alloy_name": "Fe-30Mn-8Al-1C",
+        "alloys.alloy_fe30mn8al1c.aliases[0]": "Fe-30Mn-8Al-1C",
+        "alloys.alloy_fe30mn8al1c.base_element": "Fe",
+        "alloys.alloy_fe30mn8al1c.alloying_elements[0]": "Mn",
+        "alloys.alloy_fe30mn8al1c.alloying_elements[1]": "Al",
+        "alloys.alloy_fe30mn8al1c.alloying_elements[2]": "C",
+        "alloys.alloy_fe30mn8al1c.nominal_composition[fe].element": "Fe",
+        "alloys.alloy_fe30mn8al1c.nominal_composition[fe].weight_percent": "balance",
+        "alloys.alloy_fe30mn8al1c.nominal_composition[mn].element": "Mn",
+        "alloys.alloy_fe30mn8al1c.nominal_composition[mn].weight_percent": "30",
+        "alloys.alloy_fe30mn8al1c.nominal_composition[al].element": "Al",
+        "alloys.alloy_fe30mn8al1c.nominal_composition[al].weight_percent": "8",
+        "alloys.alloy_fe30mn8al1c.nominal_composition[c].element": "C",
+        "alloys.alloy_fe30mn8al1c.nominal_composition[c].weight_percent": "1",
+        "alloys.alloy_fe30mn8al1c.alloys_notes": "Measured composition: Mn 30.4 wt%, Al 7.9 wt%, C 1.1 wt%, Fe balance."
+      },
+      "prediction": {
+        "alloys.alloy_fe30mn8al1c.alloy_name": "Fe-30Mn-8Al-1C",
+        "alloys.alloy_fe30mn8al1c.base_element": "Fe",
+        "alloys.alloy_fe30mn8al1c.alloying_elements[0]": "Mn",
+        "alloys.alloy_fe30mn8al1c.alloying_elements[1]": "Al",
+        "alloys.alloy_fe30mn8al1c.alloying_elements[2]": "C",
+        "alloys.alloy_fe30mn8al1c.nominal_composition[fe].element": "Fe",
+        "alloys.alloy_fe30mn8al1c.nominal_composition[fe].weight_percent": "balance",
+        "alloys.alloy_fe30mn8al1c.nominal_composition[mn].element": "Mn",
+        "alloys.alloy_fe30mn8al1c.nominal_composition[mn].weight_percent": "30",
+        "alloys.alloy_fe30mn8al1c.nominal_composition[al].element": "Al",
+        "alloys.alloy_fe30mn8al1c.nominal_composition[al].weight_percent": "8",
+        "alloys.alloy_fe30mn8al1c.nominal_composition[c].element": "C",
+        "alloys.alloy_fe30mn8al1c.nominal_composition[c].weight_percent": "1",
+        "alloys.alloy_fe30mn8al1c.alloys_notes": "Measured composition (wt.%): Mn 30.4%, Al 7.9%, C 1.1%, Fe balance."
+      }
+    },
+    "processes": {
+      "truth": {
+        "processes.proc_fe30mn8al1c_01.description": "Induction melting under Ar, homogenized at 1200 °C for 2 h, forged to 60×60 mm billet, homogenized at 1050 °C for 100 min, hot-rolled to 12 mm plate, air-cooled, cold-rolled with 75% thickness reduction, annealed at 1000 °C for 15 min, water-quenched, aged at 550 °C for 2 h."
+      },
+      "prediction": {
+        "processes.proc_fe30mn8al1c_01.description": "Induction melting under Ar atmosphere, homogenization, forging, hot rolling, cold rolling, recrystallization annealing, and aging for Fe-30Mn-8Al-1C steel.",
+        "processes.proc_fe30mn8al1c_01.processes_notes": "As-cast 25 kg ingot; homogenized at 1200°C for 2h and forged to 60mm×60mm; homogenized at 1050°C for 100min; hot-rolled to 12mm plates and air-cooled; cold-rolled with 75% reduction at room temperature; annealed at 1000°C for 15min and water-quenched; aged at 550°C for 2h."
+      }
+    },
+    "samples": {
+      "truth": {},
+      "prediction": {}
+    },
+    "processing_steps": {
+      "truth": {
+        "processing_steps.sample_fe30mn8al1c_01.sequence": "10",
+        "processing_steps.sample_fe30mn8al1c_01.type": "heat_treatment",
+        "processing_steps.sample_fe30mn8al1c_01.method": "Aging",
+        "processing_steps.sample_fe30mn8al1c_01.temperature_with_unit": "550 °C",
+        "processing_steps.sample_fe30mn8al1c_01.duration": "2 h",
+        "processing_steps.sample_fe30mn8al1c_01.processing_steps_notes": "Hot-rolled to 12 mm thick plates, air-cooled to room temperature",
+        "processing_steps.sample_fe30mn8al1c_01.cooling_medium": "Water",
+        "processing_steps.sample_fe30mn8al1c_01.temperature": "room temperature",
+        "processing_steps.sample_fe30mn8al1c_01.reduction_ratio": "75% thickness reduction"
+      },
+      "prediction": {
+        "processing_steps.sample_fe30mn8al1c_01.sequence": "8",
+        "processing_steps.sample_fe30mn8al1c_01.type": "heat_treatment",
+        "processing_steps.sample_fe30mn8al1c_01.method": "aging",
+        "processing_steps.sample_fe30mn8al1c_01.processing_steps_notes": "Recrystallized microstructure achieved; water-quenched to room temperature.",
+        "processing_steps.sample_fe30mn8al1c_01.temperature_with_unit": "550 °C",
+        "processing_steps.sample_fe30mn8al1c_01.duration": "2 h",
+        "processing_steps.sample_fe30mn8al1c_01.cooling_medium": "water",
+        "processing_steps.sample_fe30mn8al1c_01.temperature": "room temperature",
+        "processing_steps.sample_fe30mn8al1c_01.reduction_ratio": "75%"
+      }
+    },
+    "structures": {
+      "truth": {
+        "structures.sample_fe30mn8al1c_01.overall_structure": "Single-phase austenitic (γ) matrix with κ-carbide precipitates",
+        "structures.sample_fe30mn8al1c_01.number_of_phases": "2",
+        "structures.sample_fe30mn8al1c_01.microstructure_list[0].phases_present[austenite].phase_name": "γ (austenite)",
+        "structures.sample_fe30mn8al1c_01.microstructure_list[0].phases_present[austenite].crystal_structure": "FCC",
+        "structures.sample_fe30mn8al1c_01.microstructure_list[0].phases_present[austenite].volume_fraction": "majority",
+        "structures.sample_fe30mn8al1c_01.microstructure_list[0].phases_present[austenite].morphology": "recrystallized equiaxed grains",
+        "structures.sample_fe30mn8al1c_01.microstructure_list[0].phases_present[austenite].grain_size": "17 μm",
+        "structures.sample_fe30mn8al1c_01.microstructure_list[0].grain_structure.average_grain_size.value_with_unit": "17 μm",
+        "structures.sample_fe30mn8al1c_01.microstructure_list[0].precipitates[carbide].type": "κ-carbide",
+        "structures.sample_fe30mn8al1c_01.microstructure_list[0].precipitates[carbide].size.value": "nanoscale",
+        "structures.sample_fe30mn8al1c_01.microstructure_list[0].precipitates[carbide].distribution": "intragranular",
+        "structures.sample_fe30mn8al1c_01.microstructure_list[0].precipitates[carbide].coherency": "coherent"
+      },
+      "prediction": {
+        "structures.sample_fe30mn8al1c_01.overall_structure": "Recrystallized microstructure consisting of single FCC austenite matrix with nanoscale intragranular κ-carbide precipitates.",
+        "structures.sample_fe30mn8al1c_01.number_of_phases": "2",
+        "structures.sample_fe30mn8al1c_01.microstructure_list[8].related_sequence": "8",
+        "structures.sample_fe30mn8al1c_01.microstructure_list[8].phases_present[0].phase_name": "γ",
+        "structures.sample_fe30mn8al1c_01.microstructure_list[8].phases_present[0].crystal_structure": "FCC",
+        "structures.sample_fe30mn8al1c_01.microstructure_list[8].phases_present[0].morphology": "equiaxed austenite matrix",
+        "structures.sample_fe30mn8al1c_01.microstructure_list[8].phases_present[0].grain_size": "17 μm",
+        "structures.sample_fe30mn8al1c_01.microstructure_list[8].phases_present[1].phase_name": "κ",
+        "structures.sample_fe30mn8al1c_01.microstructure_list[8].phases_present[1].morphology": "nanoscale intragranular precipitates",
+        "structures.sample_fe30mn8al1c_01.microstructure_list[8].grain_structure.average_grain_size.value_with_unit": "17 μm",
+        "structures.sample_fe30mn8al1c_01.microstructure_list[8].precipitates[carbide].type": "κ-carbide",
+        "structures.sample_fe30mn8al1c_01.microstructure_list[8].precipitates[carbide].size.value": "nanoscale",
+        "structures.sample_fe30mn8al1c_01.microstructure_list[8].precipitates[carbide].distribution": "intragranular",
+        "structures.sample_fe30mn8al1c_01.microstructure_list[8].precipitates[carbide].coherency": "coherent"
+      }
+    },
+    "interfaces": {
+      "truth": {
+        "interfaces.sample_fe30mn8al1c_01.phases[0].phase_1_name": "γ",
+        "interfaces.sample_fe30mn8al1c_01.phases[0].phase_2_name": "κ",
+        "interfaces.sample_fe30mn8al1c_01.phases[0].coherence": "coherent"
+      },
+      "prediction": {
+        "interfaces.sample_fe30mn8al1c_01.phases[0].phase_1_name": "γ",
+        "interfaces.sample_fe30mn8al1c_01.phases[0].phase_2_name": "κ",
+        "interfaces.sample_fe30mn8al1c_01.phases[0].coherence": "coherent"
+      }
+    },
+    "properties": {
+      "truth": {
+        "properties.sample_fe30mn8al1c_01.mechanical.tensile_properties.yield_strength[0].value_with_unit": "953 MPa",
+        "properties.sample_fe30mn8al1c_01.mechanical.tensile_properties.ultimate_tensile_strength[0].value_with_unit": "1109 MPa",
+        "properties.sample_fe30mn8al1c_01.mechanical.tensile_properties.elongation[0].value_with_unit": "42 %"
+      },
+      "prediction": {
+        "properties.sample_fe30mn8al1c_01.mechanical.tensile_properties.yield_strength[0].value_with_unit": "953 MPa",
+        "properties.sample_fe30mn8al1c_01.mechanical.tensile_properties.ultimate_tensile_strength[0].value_with_unit": "1109 MPa",
+        "properties.sample_fe30mn8al1c_01.mechanical.tensile_properties.elongation[0].value_with_unit": "42 %",
+        "properties.sample_fe30mn8al1c_01.mechanical.tensile_properties.stress_strain_curves": "Engineering stress–strain curve shown in Fig. 9b."
+      }
+    },
+    "performance": {
+      "truth": {},
+      "prediction": {
+        "performance.sample_fe30mn8al1c_01.service_conditions.operating_temperature.min": "500",
+        "performance.sample_fe30mn8al1c_01.service_conditions.operating_temperature.max": "600",
+        "performance.sample_fe30mn8al1c_01.service_conditions.operating_temperature.unit": "°C",
+        "performance.sample_fe30mn8al1c_01.comparative_performance.benchmark_alloy": "conventional steel"
+      }
+    },
+    "characterization_methods": {
+      "truth": {
+        "characterization_methods.sample_fe30mn8al1c_01.technique": "Scanning electron microscopy (SEM)",
+        "characterization_methods.sample_fe30mn8al1c_01.purpose": "Microstructure and compositional analysis",
+        "characterization_methods.sample_fe30mn8al1c_01.key_findings": "Microstructure of recrystallized grains, no secondary phases visible at SEM scale."
+      },
+      "prediction": {
+        "characterization_methods.sample_fe30mn8al1c_01.technique": "Uniaxial tensile test",
+        "characterization_methods.sample_fe30mn8al1c_01.purpose": "Mechanical property evaluation at ambient temperature",
+        "characterization_methods.sample_fe30mn8al1c_01.key_findings": "Yield strength 953 MPa, ultimate tensile strength 1109 MPa, elongation 42%; tested at ambient temperature with nominal strain rate 1×10⁻³ s⁻¹."
+      }
+    },
+    "computational_details": {
+      "truth": {
+        "computational_details.A21.simulation_method": "Machine learning classification and regression, 10-fold cross-validation",
+        "computational_details.A21.software_used": "JMatPro v9.0 for phase equilibrium data generation; Python-based algorithms (KNN, ANN, SVM, RF, CART)",
+        "computational_details.A21.validation_against_experiment": "Fe-30Mn-8Al-1C experimental validation: predicted single-phase austenite with κ precipitates, low density, and high strength matched measurements.",
+        "computational_details.A21.analytical_model[0].model_name": "Random Forest (classification)",
+        "computational_details.A21.analytical_model[0].equation_role": "Prediction of κ phase existence (Y1), (γ+κ) dual-phase region at 500–600 °C (Y2), and single γ region (Y3)",
+        "computational_details.A21.analytical_model[0].parameters": "Cross-validation accuracy: 0.98 (Y1), 0.98 (Y2), 0.96 (Y3). Top descriptors: Al, Mn, VEC.",
+        "computational_details.A21.analytical_model[0].model_note": "Al found most critical for κ phase existence and single γ region.",
+        "computational_details.A21.analytical_model[1].model_name": "Support Vector Machine (regression)",
+        "computational_details.A21.analytical_model[1].equation_role": "Prediction of κ phase volume fraction (Y4)",
+        "computational_details.A21.analytical_model[1].parameters": "Cross-validation RMSE < 1%.",
+        "computational_details.A21.analytical_model[1].model_note": "Descriptor order for regression: ΔSmix, Fe, ΔHmix, C, Mn, Tm, VEC, Al."
+      },
+      "prediction": {
+        "computational_details.idx_0.simulation_method": "Machine learning classification and regression: K-nearest neighbor (KNN), artificial neural network (ANN), classification and regression tree (CART), support vector machine (SVM), and random forest (RF) with 10-fold cross-validation.",
+        "computational_details.idx_0.software_used": "JMatPro v9.0 for phase balance dataset generation.",
+        "computational_details.idx_0.validation_against_experiment": "Predicted characteristics of Fe-30Mn-8Al-1C agreed well with experimental validation: single FCC phase, presence of nanoscale κ precipitates, yield strength 953 MPa, UTS 1109 MPa, and elongation 42%.",
+        "computational_details.idx_0.analytical_model[0].model_name": "Random forest classifier",
+        "computational_details.idx_0.analytical_model[0].equation_role": "Classification of κ-phase existence (Y1), (γ+κ) dual-phase region at 500–600°C (Y2), and single γ-phase region (Y3)",
+        "computational_details.idx_0.analytical_model[0].model_note": "Best classification performance with 10-fold cross-validation accuracy of 0.98 for Y1, 0.98 for Y2, and 0.96 for Y3.",
+        "computational_details.idx_0.analytical_model[1].model_name": "Support vector machine regressor",
+        "computational_details.idx_0.analytical_model[1].equation_role": "Regression of κ-phase volume fraction (Y4)",
+        "computational_details.idx_0.analytical_model[1].model_note": "Best regression performance with 10-fold cross-validation RMSE less than 1%."
+      }
+    },
+    "unmapped_findings": {
+      "truth": {
+        "unmapped_findings.idx_0.value": "When Mn content is 30 wt%, minimum Al content of about 4 wt% is required to guarantee the existence of κ phase.",
+        "unmapped_findings.idx_1.value": "For (γ+κ) duplex region at 500–600 °C, Al content range is 4.5–9.3 wt% and C content range is 0.4–1.1 wt%.",
+        "unmapped_findings.idx_2.value": "Maximum Al content for single austenite zone is 11.6 wt%.",
+        "unmapped_findings.idx_3.value": "From 78,477 possible composition candidates, 1,320 fulfilled phase conditions (κ exists, single γ, (γ+κ) at 500–600 °C); further screening for κ fraction ≥ 10% and density ≤ 7 g/cm³ left 150 candidates.",
+        "unmapped_findings.idx_4.value": "Feature importance analysis: Al has the strongest effect on κ phase presence and single γ region; Mn and Fe most important for (γ+κ) region.",
+        "unmapped_findings.idx_5.value": "The study used six input features: VEC, atomic size difference (δ), enthalpy of mixing (ΔHmix), entropy of mixing (ΔSmix), melting point (Tm), Pauli electronegativity difference (Δχ); δ and Δχ removed due to high correlation.",
+        "unmapped_findings.idx_6.value": "The experimental validation steel (Fe-30Mn-8Al-1C) exhibited yield strength 953 MPa, tensile strength 1109 MPa, elongation 42%.",
+        "unmapped_findings.idx_7.value": "Density constraint during screening was ≤ 7 g/cm³, with final selection targeting ≤ 6.9 g/cm³ and κ fraction ≥ 11%."
+      },
+      "prediction": {
+        "unmapped_findings.idx_0.value": "When the Mn element content is 30 wt%, an estimated minimum Al content of around 4 wt% is required to guarantee the existence of the κ phase.",
+        "unmapped_findings.idx_1.value": "The anticipated content range of Al and C required for the existence of the (γ + κ) duplex region at the aging temperature spans from 4.5 to 9.3 wt% and 0.4 to 1.1 wt%, respectively.",
+        "unmapped_findings.idx_2.value": "A maximum Al content of 11.6 wt% is necessary to ensure the presence of a single austenitic zone.",
+        "unmapped_findings.idx_3.value": "From 78,477 possible candidates, 1,320 candidates passed the phase-structure screening (Y1, Y2, Y3); subsequently, 150 candidates remained after performance filtering with κ fraction ≥ 10% and density ≤ 7 g/cm³.",
+        "unmapped_findings.idx_4.value": "Feature selection using Pearson correlation coefficient eliminated Δχ and δ (correlation > 0.95) to reduce redundancy.",
+        "unmapped_findings.idx_5.value": "Relative importance analysis showed Al played the most significant role in predicting single γ region and κ-phase existence, whereas Mn and Fe were most important for the (γ + κ) region classification.",
+        "unmapped_findings.idx_6.value": "Cooling rate effects: slower cooling rates result in a higher frequency and more even distribution of nanoscale κ phase; water cooling was employed in this experiment.",
+        "unmapped_findings.idx_7.value": "Density screening model suggests the validation component density for Fe-30Mn-8Al-1C is approximately 6.95 g/cm³, though experimental density was not explicitly reported.",
+        "unmapped_findings.idx_8.value": "The κ phase in FeMnAlC austenitic steels is a metastable coherent ordered precipitate; during deformation, κ-carbides are sheared by dislocations on the {111}〈110〉 slip system or bypassed."
+      }
+    }
+  }
+}

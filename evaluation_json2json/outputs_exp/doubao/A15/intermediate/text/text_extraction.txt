@@ -1,0 +1,230 @@
+{
+    "papers": [
+        {
+            "paper_id": "A15",
+            "doi": null,
+            "title": "Microstructure and mechanical properties of a Fe–28Mn–9Al-1.2C-(0, 3, 6, 9)Cr austenitic low-density steel",
+            "authors": ["Yuxiang Liu", "Mingxiang Liu", "Jianlei Zhang", "Wei He", "Zhiping Luo", "Changjiang Song", "Qijie Zhai"],
+            "publication_year": null,
+            "journal": null,
+            "keywords": ["Low-density steel", "Mechanical property", "Near-rapid solidification", "Heat treatment", "Microstructure"],
+            "research_type": "experimental",
+            "paper_scope": "Investigate the effects of Cr addition on microstructure, carbide formation and mechanical properties of Fe–28Mn–9Al-1.2C-xCr (x = 0, 3, 6, 9) strips fabricated under near-rapid solidification condition, and analyze the relationship between processing, microstructure and properties."
+        }
+    ],
+    "alloys": [
+        {
+            "alloy_id": "alloy_fe28mn9al12c_0cr",
+            "paper_id": "A15",
+            "alloy_name": "Fe-28Mn-9Al-1.2C-0Cr",
+            "aliases": ["0Cr"],
+            "base_element": "Fe",
+            "alloying_elements": ["Mn", "Al", "C"],
+            "nominal_composition": [
+                {"element": "Mn", "weight_percent": "26.6", "atomic_percent": null},
+                {"element": "Al", "weight_percent": "9.1", "atomic_percent": null},
+                {"element": "C", "weight_percent": "1.2", "atomic_percent": null},
+                {"element": "Fe", "weight_percent": "Bal.", "atomic_percent": null}
+            ],
+            "alloys_notes": null
+        },
+        {
+            "alloy_id": "alloy_fe28mn9al12c_3cr",
+            "paper_id": "A15",
+            "alloy_name": "Fe-28Mn-9Al-1.2C-3Cr",
+            "aliases": ["3Cr"],
+            "base_element": "Fe",
+            "alloying_elements": ["Mn", "Al", "C", "Cr"],
+            "nominal_composition": [
+                {"element": "Mn", "weight_percent": "27.6", "atomic_percent": null},
+                {"element": "Al", "weight_percent": "8.4", "atomic_percent": null},
+                {"element": "C", "weight_percent": "1.3", "atomic_percent": null},
+                {"element": "Cr", "weight_percent": "2.8", "atomic_percent": null},
+                {"element": "Fe", "weight_percent": "Bal.", "atomic_percent": null}
+            ],
+            "alloys_notes": null
+        },
+        {
+            "alloy_id": "alloy_fe28mn9al12c_6cr",
+            "paper_id": "A15",
+            "alloy_name": "Fe-28Mn-9Al-1.2C-6Cr",
+            "aliases": ["6Cr"],
+            "base_element": "Fe",
+            "alloying_elements": ["Mn", "Al", "C", "Cr"],
+            "nominal_composition": [
+                {"element": "Mn", "weight_percent": "29.1", "atomic_percent": null},
+                {"element": "Al", "weight_percent": "9.9", "atomic_percent": null},
+                {"element": "C", "weight_percent": "1.2", "atomic_percent": null},
+                {"element": "Cr", "weight_percent": "6.8", "atomic_percent": null},
+                {"element": "Fe", "weight_percent": "Bal.", "atomic_percent": null}
+            ],
+            "alloys_notes": null
+        },
+        {
+            "alloy_id": "alloy_fe28mn9al12c_9cr",
+            "paper_id": "A15",
+            "alloy_name": "Fe-28Mn-9Al-1.2C-9Cr",
+            "aliases": ["9Cr"],
+            "base_element": "Fe",
+            "alloying_elements": ["Mn", "Al", "C", "Cr"],
+            "nominal_composition": [
+                {"element": "Mn", "weight_percent": "27.7", "atomic_percent": null},
+                {"element": "Al", "weight_percent": "9.5", "atomic_percent": null},
+                {"element": "C", "weight_percent": "1.3", "atomic_percent": null},
+                {"element": "Cr", "weight_percent": "9.3", "atomic_percent": null},
+                {"element": "Fe", "weight_percent": "Bal.", "atomic_percent": null}
+            ],
+            "alloys_notes": null
+        }
+    ],
+    "processes": [
+        {
+            "process_id": "proc_nrs",
+            "paper_id": "A15",
+            "alloy_id": null,
+            "description": "Near-rapid solidification by centrifugal casting, cooling rate ~5×10^3 K/s, producing strips with thickness 2.5 mm",
+            "processes_notes": "Ar atmosphere, copper mold rotating speed 600 r/min"
+        },
+        {
+            "process_id": "proc_nrs_anneal_550c_5h",
+            "paper_id": "A15",
+            "alloy_id": null,
+            "description": "Near-rapid solidified strips annealed at 550 ℃ for 5 h in vacuum furnace",
+            "processes_notes": null
+        }
+    ],
+    "samples": [
+        {"sample_id": "sample_0cr_as_cast", "paper_id": "A15", "alloy_id": "alloy_fe28mn9al12c_0cr", "process_id": "proc_nrs"},
+        {"sample_id": "sample_0cr_annealed", "paper_id": "A15", "alloy_id": "alloy_fe28mn9al12c_0cr", "process_id": "proc_nrs_anneal_550c_5h"},
+        {"sample_id": "sample_3cr_as_cast", "paper_id": "A15", "alloy_id": "alloy_fe28mn9al12c_3cr", "process_id": "proc_nrs"},
+        {"sample_id": "sample_3cr_annealed", "paper_id": "A15", "alloy_id": "alloy_fe28mn9al12c_3cr", "process_id": "proc_nrs_anneal_550c_5h"},
+        {"sample_id": "sample_6cr_as_cast", "paper_id": "A15", "alloy_id": "alloy_fe28mn9al12c_6cr", "process_id": "proc_nrs"},
+        {"sample_id": "sample_6cr_annealed", "paper_id": "A15", "alloy_id": "alloy_fe28mn9al12c_6cr", "process_id": "proc_nrs_anneal_550c_5h"},
+        {"sample_id": "sample_9cr_as_cast", "paper_id": "A15", "alloy_id": "alloy_fe28mn9al12c_9cr", "process_id": "proc_nrs"},
+        {"sample_id": "sample_9cr_annealed", "paper_id": "A15", "alloy_id": "alloy_fe28mn9al12c_9cr", "process_id": "proc_nrs_anneal_550c_5h"}
+    ],
+    "processing_steps": [
+        {
+            "sample_id": "sample_0cr_as_cast",
+            "paper_id": "A15",
+            "sequence": "1",
+            "type": "solidification_processing",
+            "method": "centrifugal casting near-rapid solidification",
+            "temperature": null,
+            "unit": null,
+            "duration": null,
+            "cooling_medium": "copper mold",
+            "reduction_ratio": null,
+            "processing_steps_notes": "Cooling rate ~5×10^3 K/s, Ar atmosphere, copper mold rotating speed 600 r/min, strip size (60-80) mm × 60 mm × 2.5 mm"
+        },
+        {
+            "sample_id": "sample_0cr_annealed",
+            "paper_id": "A15",
+            "sequence": "1",
+            "type": "solidification_processing",
+            "method": "centrifugal casting near-rapid solidification",
+            "temperature": null,
+            "unit": null,
+            "duration": null,
+            "cooling_medium": "copper mold",
+            "reduction_ratio": null,
+            "processing_steps_notes": "Cooling rate ~5×10^3 K/s, Ar atmosphere, copper mold rotating speed 600 r/min"
+        },
+        {
+            "sample_id": "sample_0cr_annealed",
+            "paper_id": "A15",
+            "sequence": "2",
+            "type": "heat_treatment",
+            "method": "vacuum annealing",
+            "temperature": "550",
+            "unit": "℃",
+            "duration": "5",
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "Annealing duration 5 h, performed in vacuum electric resistance furnace"
+        }
+    ],
+    "structures": [
+        {
+            "structure_id": "struct_0cr_as_cast",
+            "sample_id": "sample_0cr_as_cast",
+            "overall_structure": "Austenite (γ) as matrix, with δ-ferrite uniformly distributed in austenite grains",
+            "number_of_phases": "2",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_001",
+                    "related_sequence": "1",
+                    "phases_present": [
+                        {"phase_name": "austenite (γ)", "crystal_structure": "FCC", "volume_fraction": "89.8 vol%", "morphology": "matrix", "grain_size": null, "texture": null},
+                        {"phase_name": "δ-ferrite", "crystal_structure": "BCC", "volume_fraction": "10.2 vol%", "morphology": "rod-like", "grain_size": null, "texture": null},
+                        {"phase_name": "κ-carbide", "crystal_structure": null, "volume_fraction": "low", "morphology": "nano-scale", "grain_size": "~8 nm", "texture": null}
+                    ],
+                    "defects": [
+                        {"type": "dislocation", "porosity": null, "inclusions": [], "dislocation_density": "low", "lattice_distortion": null}
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {"value": null, "unit": null},
+                        "grain_size_distribution": null,
+                        "texture": null
+                    },
+                    "precipitates": [
+                        {"precipitate_id": "prec_001", "type": "κ-carbide", "size": {"value": "8", "unit": "nm"}, "distribution": "in austenite matrix and phase boundaries", "coherency": null}
+                    ]
+                }
+            ]
+        }
+    ],
+    "interfaces": [],
+    "properties": [
+        {
+            "property_set_id": "prop_0cr_as_cast",
+            "sample_id": "sample_0cr_as_cast",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [{"direction": null, "value": "724", "unit": "MPa", "others": {"uncertainty": "±16"}}],
+                    "ultimate_tensile_strength": [{"direction": null, "value": "924", "unit": "MPa", "others": {"uncertainty": "±24"}}],
+                    "elongation": [{"direction": null, "value": "40.8", "unit": "%", "others": {"uncertainty": "±8"}}],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": [{"property_id": null, "direction": null, "value": "1626", "unit": "MPa"}]
+                },
+                "hardness": [],
+                "fracture_toughness": {"value": null, "unit": null},
+                "fatigue_properties": {"fatigue_limit": null, "cycles_to_failure": null},
+                "creep_properties": {"steady_state_creep_rate": null, "rupture_life": null}
+            },
+            "physical": {
+                "density": {"value": "6.49", "unit": "g/cm³"},
+                "thermal_properties": {"thermal_conductivity": null, "thermal_expansion_coefficient": null, "specific_heat": null},
+                "electrical_properties": {"electrical_conductivity": null, "resistivity": null},
+                "magnetic_properties": {"magnetic_susceptibility": null, "curie_temperature": null}
+            },
+            "chemical": {
+                "corrosion_resistance": {"test_medium": null, "corrosion_rate": null, "passivation_behavior": null},
+                "oxidation_resistance": {"oxidation_rate_constant": null, "protective_scale": null}
+            },
+            "radiation_properties": {"void_swelling": null, "irradiation_hardening": null, "helium_embrittlement": null}
+        }
+    ],
+    "performance": [],
+    "characterization_methods": [
+        {"characterization_id": "char_001", "sample_id": null, "microstructure_uuid": null, "technique": "Inductively Coupled Plasma mass spectrometry (ICP)", "purpose": "Measure actual composition of strips", "key_findings": "Measured compositions match nominal compositions with minor deviation"},
+        {"characterization_id": "char_002", "sample_id": null, "microstructure_uuid": null, "technique": "Electronic Water Displacement Density Analyzer", "purpose": "Measure density of strips", "key_findings": "Density ranges from 6.43 g/cm³ to 6.49 g/cm³, decreasing slightly with increasing Cr content"},
+        {"characterization_id": "char_003", "sample_id": null, "microstructure_uuid": null, "technique": "X-ray diffractometer (XRD)", "purpose": "Identify constituent phases", "key_findings": "All strips consist of austenite and ferrite, austenite is main matrix phase; Cr addition promotes ferrite formation"},
+        {"characterization_id": "char_004", "sample_id": null, "microstructure_uuid": null, "technique": "Optical microscope (OM)", "purpose": "Observe microstructure morphology", "key_findings": "Ferrite uniformly distributed in austenite matrix, morphology changes from rod-like to block-like with increasing Cr content"},
+        {"characterization_id": "char_005", "sample_id": null, "microstructure_uuid": null, "technique": "Transmission electron microscope (TEM)", "purpose": "Observe nano-scale microstructure, precipitates and dislocations", "key_findings": "Cr addition suppresses κ-carbide precipitation, increases dislocation density; Cr23C6 precipitates at grain boundaries in 9Cr strips"},
+        {"characterization_id": "char_006", "sample_id": null, "microstructure_uuid": null, "technique": "Tensile test", "purpose": "Measure mechanical properties", "key_findings": "As-cast yield strength first decreases then increases with Cr addition, total elongation decreases; annealing increases yield strength of all strips, elongation increases for Cr-containing strips but decreases for 0Cr strip"}
+    ],
+    "computational_details": [],
+    "unmapped_findings": [
+        "With increasing Cr content, ferrite volume fraction increases from 10.2 vol% (0Cr) to 19.6 vol% (9Cr), morphology changes from rod-like to block-like",
+        "Cr addition increases strain hardening rate of as-cast strips, average values are 1626 MPa, 2048 MPa, 2266 MPa and 2385 MPa for 0Cr, 3Cr, 6Cr, 9Cr respectively",
+        "DO3 phase precipitates in ferrite of as-cast 6Cr and 9Cr strips, and appears in all strips after annealing",
+        "After annealing at 550℃ for 5h, κ-carbide precipitation increases in 0Cr strip, but is still suppressed in Cr-containing strips",
+        "After tensile fracture, average slip band spacing is ~90 nm (as-cast 0Cr), ~80 nm (as-cast 6Cr), ~190 nm (annealed 0Cr), ~60 nm (annealed 6Cr)",
+        "For 3Cr strips annealed at 550℃, κ-carbides mainly precipitate within the first 1 hour, while dislocation recovery requires longer annealing time",
+        "Initial dislocation density has significant influence on elongation of the steel, besides slip band formation ability during deformation"
+    ]
+}

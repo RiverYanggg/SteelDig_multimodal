@@ -1,0 +1,402 @@
+{
+  "paper_id": "A20",
+  "canonical_maps": {
+    "truth": {
+      "alloy_spce": "alloy_spce",
+      "alloy_spcc": "alloy_spcc",
+      "proc_spcc_ar": "proc_spcc_ar",
+      "proc_spcc_15ps": "proc_spcc_15ps",
+      "proc_spcc_15ps_ht": "proc_spcc_15ps_ht",
+      "proc_spcc_ar_ht": "proc_spcc_ar_ht",
+      "proc_spcc_ann": "proc_spcc_ann",
+      "sample_a": "sample_A",
+      "sample_b": "sample_B",
+      "sample_c": "sample_C",
+      "sample_d": "sample_D",
+      "sample_e": "sample_E",
+      "proc_spce_ar": "proc_spce_ar",
+      "proc_spce_cmp": "proc_spce_cmp",
+      "sample_spce_ar": "sample_spce_ar",
+      "sample_spce_nano": "sample_spce_nano",
+      "a20": "A20"
+    },
+    "prediction": {
+      "alloy_spce": "alloy_spce",
+      "alloy_spcc": "alloy_spcc",
+      "proc_spcc_ar": "proc_spcc_ar",
+      "proc_spcc_ps": "proc_spcc_15ps",
+      "proc_spcc_ps_ht": "proc_spcc_15ps_ht",
+      "proc_spcc_ar_ht": "proc_spcc_ar_ht",
+      "proc_spcc_ann": "proc_spcc_ann",
+      "sample_spcc_a": "sample_A",
+      "sample_spcc_b": "sample_B",
+      "sample_spcc_c": "sample_C",
+      "sample_spcc_d": "sample_D",
+      "sample_spcc_e": "sample_E",
+      "proc_spce_01": "proc_spce_01",
+      "sample_spce_01": "sample_spce_01",
+      "a20": "A20"
+    }
+  },
+  "alignment": {
+    "alloy_matches": [
+      {
+        "pred_alloy_id": "alloy_spce",
+        "truth_alloy_id": "alloy_spce",
+        "relation": "same",
+        "confidence": 1.0,
+        "reason": "Both represent SPCE alloy with base element Fe and no alloying elements."
+      },
+      {
+        "pred_alloy_id": "alloy_spcc",
+        "truth_alloy_id": "alloy_spcc",
+        "relation": "same",
+        "confidence": 1.0,
+        "reason": "Both represent SPCC alloy with base element Fe and no alloying elements."
+      }
+    ],
+    "process_matches": [
+      {
+        "pred_process_id": "proc_spcc_ar",
+        "truth_process_id": "proc_spcc_ar",
+        "relation": "same",
+        "confidence": 1.0,
+        "reason": "Both describe as-received SPCC sheet."
+      },
+      {
+        "pred_process_id": "proc_spcc_ps",
+        "truth_process_id": "proc_spcc_15ps",
+        "relation": "same",
+        "confidence": 1.0,
+        "reason": "Both describe 15% tensile pre‑strain of SPCC."
+      },
+      {
+        "pred_process_id": "proc_spcc_ps_ht",
+        "truth_process_id": "proc_spcc_15ps_ht",
+        "relation": "same",
+        "confidence": 1.0,
+        "reason": "Both describe 15% pre‑strain followed by heat treatment at 373 K for 90 h."
+      },
+      {
+        "pred_process_id": "proc_spcc_ar_ht",
+        "truth_process_id": "proc_spcc_ar_ht",
+        "relation": "same",
+        "confidence": 1.0,
+        "reason": "Both describe as‑received SPCC followed by heat treatment at 373 K for 90 h."
+      },
+      {
+        "pred_process_id": "proc_spcc_ann",
+        "truth_process_id": "proc_spcc_ann",
+        "relation": "same",
+        "confidence": 1.0,
+        "reason": "Both describe annealed SPCC."
+      }
+    ],
+    "sample_matches": [
+      {
+        "pred_sample_id": "sample_spcc_a",
+        "truth_sample_id": "sample_A",
+        "relation": "same",
+        "confidence": 1.0,
+        "reason": "Both correspond to as‑received SPCC (same alloy and process)."
+      },
+      {
+        "pred_sample_id": "sample_spcc_b",
+        "truth_sample_id": "sample_B",
+        "relation": "same",
+        "confidence": 1.0,
+        "reason": "Both correspond to SPCC with 15% tensile pre‑strain."
+      },
+      {
+        "pred_sample_id": "sample_spcc_c",
+        "truth_sample_id": "sample_C",
+        "relation": "same",
+        "confidence": 1.0,
+        "reason": "Both correspond to SPCC with 15% pre‑strain and heat treatment."
+      },
+      {
+        "pred_sample_id": "sample_spcc_d",
+        "truth_sample_id": "sample_D",
+        "relation": "same",
+        "confidence": 1.0,
+        "reason": "Both correspond to as‑received SPCC with heat treatment."
+      },
+      {
+        "pred_sample_id": "sample_spcc_e",
+        "truth_sample_id": "sample_E",
+        "relation": "same",
+        "confidence": 1.0,
+        "reason": "Both correspond to annealed SPCC."
+      }
+    ],
+    "error": null
+  },
+  "flattened_sections": {
+    "papers": {
+      "truth": {
+        "papers.A20.title": "Evaluation of change in material properties due to plastic deformation",
+        "papers.A20.authors[0]": "M. Yang",
+        "papers.A20.authors[1]": "Y. Akiyama",
+        "papers.A20.authors[2]": "T. Sasaki",
+        "papers.A20.publication_year": "2004",
+        "papers.A20.keywords[0]": "Change in elastic modulus",
+        "papers.A20.keywords[1]": "Spring-back",
+        "papers.A20.keywords[2]": "Nano-indentation test",
+        "papers.A20.research_type": "experimental",
+        "papers.A20.paper_scope": "Investigating the decrease of elastic modulus due to plastic deformation and its effect on spring-back, using macroscopic tensile tests and nano-indentation."
+      },
+      "prediction": {
+        "papers.A20.title": "Evaluation of change in material properties due to plastic deformation",
+        "papers.A20.authors[0]": "M. Yang",
+        "papers.A20.authors[1]": "Y. Akiyama",
+        "papers.A20.authors[2]": "T. Sasaki",
+        "papers.A20.publication_year": "2004",
+        "papers.A20.keywords[0]": "Change in elastic modulus",
+        "papers.A20.keywords[1]": "Spring-back",
+        "papers.A20.keywords[2]": "Nano-indentation test",
+        "papers.A20.research_type": "experimental",
+        "papers.A20.paper_scope": "Investigation of the decrease in apparent elastic modulus of sheet metals (SPCE and SPCC) induced by plastic deformation using macroscopic tensile tests and nano-indentation, and evaluation of its influence on spring-back prediction accuracy."
+      }
+    },
+    "alloys": {
+      "truth": {
+        "alloys.alloy_spce.alloy_name": "SPCE",
+        "alloys.alloy_spce.aliases[0]": "SPCE sheet metal",
+        "alloys.alloy_spce.base_element": "Fe",
+        "alloys.alloy_spce.alloys_notes": "Deep drawing cold rolled steel sheet, likely low carbon steel. Exact composition not provided.",
+        "alloys.alloy_spcc.alloy_name": "SPCC",
+        "alloys.alloy_spcc.aliases[0]": "SPCC sheet metal",
+        "alloys.alloy_spcc.base_element": "Fe",
+        "alloys.alloy_spcc.alloys_notes": "General cold rolled steel sheet, likely low carbon steel. Exact composition not provided."
+      },
+      "prediction": {
+        "alloys.alloy_spce.alloy_name": "SPCE",
+        "alloys.alloy_spce.base_element": "Fe",
+        "alloys.alloy_spce.alloys_notes": "SPCE sheet metal used for macroscopic elastic modulus measurement, spring-back simulation, and nano-indentation measurement of grain-level modulus distribution.",
+        "alloys.alloy_spcc.alloy_name": "SPCC",
+        "alloys.alloy_spcc.base_element": "Fe",
+        "alloys.alloy_spcc.alloys_notes": "SPCC sheet with thickness 1.2 mm used for tensile tests to confirm the effect of movable dislocations on elastic modulus."
+      }
+    },
+    "processes": {
+      "truth": {
+        "processes.proc_spce_ar.description": "SPCE cold rolled sheet, as received.",
+        "processes.proc_spcc_ar.description": "SPCC cold rolled sheet, as received.",
+        "processes.proc_spcc_15ps.description": "15% tensile pre-strain at room temperature.",
+        "processes.proc_spcc_15ps_ht.description": "15% pre-strain followed by heat treatment at 373 K for 90 h to recover Cottrell atmosphere.",
+        "processes.proc_spcc_ar_ht.description": "As received followed by heat treatment at 373 K for 90 h.",
+        "processes.proc_spcc_ann.description": "Annealed (condition details not specified, presumably full annealing).",
+        "processes.proc_spce_cmp.description": "SPCE received, surface preparation by etching to reveal grain boundaries and Vickers marking, followed by CMP treatment for surface flattening prior to nano-indentation."
+      },
+      "prediction": {
+        "processes.proc_spce_01.description": "Tensile deformation up to 25% plastic strain; nano-indentation specimens prepared from SPCE with etching and CMP surface finish.",
+        "processes.proc_spce_01.processes_notes": "Spring-back after V-bending was simulated using the measured modulus variation. Nano-indentation used spherical tip on specimens marked by Vickers indenter and chemically polished.",
+        "processes.proc_spcc_ar.description": "As-received SPCC sheet without intentional pre-deformation.",
+        "processes.proc_spcc_15ps.description": "SPCC subjected to 15% tensile pre-strain.",
+        "processes.proc_spcc_15ps_ht.description": "SPCC with 15% pre-strain followed by heat treatment at 373 K for 90 h to recover Cottrell atmosphere.",
+        "processes.proc_spcc_15ps_ht.processes_notes": "Heat treatment condition calculated based on diffusion distance of solute C in Fe matrix.",
+        "processes.proc_spcc_ar_ht.description": "As-received SPCC followed by heat treatment.",
+        "processes.proc_spcc_ar_ht.processes_notes": "Presumed same heat treatment condition (373 K for 90 h) as pre-strained specimen, though not explicitly restated in text.",
+        "processes.proc_spcc_ann.description": "Annealed SPCC specimen.",
+        "processes.proc_spcc_ann.processes_notes": "Specific annealing temperature and time not provided."
+      }
+    },
+    "samples": {
+      "truth": {},
+      "prediction": {}
+    },
+    "processing_steps": {
+      "truth": {
+        "processing_steps.sample_B.sequence": "1",
+        "processing_steps.sample_B.type": "mechanical_processing",
+        "processing_steps.sample_B.method": "tensile pre-straining",
+        "processing_steps.sample_B.reduction_ratio": "15%",
+        "processing_steps.sample_C.sequence": "2",
+        "processing_steps.sample_C.type": "heat_treatment",
+        "processing_steps.sample_C.method": "heat treatment for Cottrell atmosphere recovery",
+        "processing_steps.sample_C.reduction_ratio": "15%",
+        "processing_steps.sample_C.temperature_with_unit": "373 K",
+        "processing_steps.sample_C.duration": "90 h",
+        "processing_steps.sample_C.processing_steps_notes": "Heating at 373 K for 90 h to allow carbon diffusion and recovery of Cottrell atmosphere while keeping dislocations stationary.",
+        "processing_steps.sample_D.temperature_with_unit": "373 K",
+        "processing_steps.sample_D.sequence": "1",
+        "processing_steps.sample_D.type": "heat_treatment",
+        "processing_steps.sample_D.method": "heat treatment for Cottrell atmosphere recovery",
+        "processing_steps.sample_D.duration": "90 h",
+        "processing_steps.sample_D.processing_steps_notes": "Heating as-received SPCC at 373 K for 90 h.",
+        "processing_steps.sample_E.sequence": "1",
+        "processing_steps.sample_E.type": "heat_treatment",
+        "processing_steps.sample_E.method": "annealing",
+        "processing_steps.sample_E.processing_steps_notes": "Annealing treatment, details not specified.",
+        "processing_steps.sample_spce_nano.sequence": "2",
+        "processing_steps.sample_spce_nano.type": "surface_finishing",
+        "processing_steps.sample_spce_nano.method": "CMP (chemical mechanical polishing)",
+        "processing_steps.sample_spce_nano.processing_steps_notes": "CMP treatment applied to remove surface roughness and the ditch at grain boundaries for accurate nano-indentation."
+      },
+      "prediction": {
+        "processing_steps.sample_spce_01.sequence": "1",
+        "processing_steps.sample_spce_01.type": "mechanical_processing",
+        "processing_steps.sample_spce_01.method": "tensile test",
+        "processing_steps.sample_spce_01.reduction_ratio": "up to 25% plastic strain",
+        "processing_steps.sample_spce_01.processing_steps_notes": "Precision tensile test using extensometer and strain gauges. Workpiece loaded to given plastic strain and then unloaded. Elastic modulus measured from initial elastic deformation and unloading curve.",
+        "processing_steps.sample_B.sequence": "1",
+        "processing_steps.sample_B.type": "mechanical_processing",
+        "processing_steps.sample_B.method": "tensile test",
+        "processing_steps.sample_B.reduction_ratio": "15%",
+        "processing_steps.sample_B.processing_steps_notes": "Pre-straining to 15% plastic strain for dislocation mobility study.",
+        "processing_steps.sample_C.sequence": "2",
+        "processing_steps.sample_C.type": "heat_treatment",
+        "processing_steps.sample_C.method": "heat treatment",
+        "processing_steps.sample_C.reduction_ratio": "15%",
+        "processing_steps.sample_C.processing_steps_notes": "Low-temperature heat treatment to recover Cottrell atmosphere by diffusion of C in Fe matrix while keeping dislocations stationary.",
+        "processing_steps.sample_C.temperature_with_unit": "373 K",
+        "processing_steps.sample_C.duration": "90 h",
+        "processing_steps.sample_D.temperature_with_unit": "373 K",
+        "processing_steps.sample_D.sequence": "1",
+        "processing_steps.sample_D.type": "heat_treatment",
+        "processing_steps.sample_D.method": "heat treatment",
+        "processing_steps.sample_D.duration": "90 h",
+        "processing_steps.sample_D.processing_steps_notes": "Heat treatment applied to as-received material; condition inferred from description for pre-strained specimens.",
+        "processing_steps.sample_E.sequence": "1",
+        "processing_steps.sample_E.type": "heat_treatment",
+        "processing_steps.sample_E.method": "annealing",
+        "processing_steps.sample_E.processing_steps_notes": "Annealing treatment; specific parameters not provided."
+      }
+    },
+    "structures": {
+      "truth": {
+        "structures.sample_spce_nano.overall_structure": "Ferritic steel with varying dislocation structure near grain boundaries. Single phase ferrite matrix with dislocation pile-ups at boundaries.",
+        "structures.sample_spce_nano.number_of_phases": "1",
+        "structures.sample_spce_nano.microstructure_list[0].phases_present[ferrite].phase_name": "ferrite",
+        "structures.sample_spce_nano.microstructure_list[0].phases_present[ferrite].crystal_structure": "bcc",
+        "structures.sample_spce_nano.microstructure_list[0].phases_present[ferrite].volume_fraction": "approximately 100%",
+        "structures.sample_spce_nano.microstructure_list[0].phases_present[ferrite].morphology": "equiaxed grains",
+        "structures.sample_spce_nano.microstructure_list[0].defects[dislocation].type": "dislocation"
+      },
+      "prediction": {
+        "structures.sample_spce_01.microstructure_list[0].defects[dislocations].type": "dislocations",
+        "structures.sample_B.microstructure_list[0].defects[dislocations].type": "dislocations"
+      }
+    },
+    "interfaces": {
+      "truth": {
+        "interfaces.sample_spce_nano.phases[ferrite].phase_1_name": "ferrite",
+        "interfaces.sample_spce_nano.phases[ferrite].phase_2_name": "ferrite",
+        "interfaces.sample_spce_nano.phases[ferrite].coherence": "high-angle grain boundary (assumed)",
+        "interfaces.sample_spce_nano.defect_interaction[0].interaction_type": "dislocation pile-up",
+        "interfaces.sample_spce_nano.defect_interaction[0].quality_description": "Dislocations pile up near grain boundaries during plastic deformation; these movable dislocations cause a decrease in apparent elastic modulus, especially near boundaries.",
+        "interfaces.sample_spce_nano.interface_notes[0].stress_strain_distribution": "Nano-indentation measurements show lower elastic modulus near grain boundary compared to grain interior, consistent with dislocation pile-up model."
+      },
+      "prediction": {
+        "interfaces.sample_spce_01.defect_interaction[0].interaction_type": "dislocation pile-up at grain boundary",
+        "interfaces.sample_spce_01.defect_interaction[0].quality_description": "Dislocations released from common sources move along slip surfaces and pile up when stopped by grain boundaries and other obstacles; pile-up causes deformation during unloading and sub-yield loading, decreasing apparent elastic modulus."
+      }
+    },
+    "properties": {
+      "truth": {
+        "properties.sample_A.mechanical.tensile_properties.youngs_modulus": "182 GPa (0-0.05% strain), 173 GPa (whole elastic range)",
+        "properties.sample_B.mechanical.tensile_properties.youngs_modulus": "188 GPa (0-0.05% strain), 162 GPa (whole elastic range)",
+        "properties.sample_C.mechanical.tensile_properties.youngs_modulus": "186 GPa (0-0.05% strain), 162 GPa (whole elastic range)",
+        "properties.sample_D.mechanical.tensile_properties.youngs_modulus": "189 GPa (0-0.05% strain), 189 GPa (whole elastic range)",
+        "properties.sample_E.mechanical.tensile_properties.youngs_modulus": "224 GPa (0-0.05% strain), 206 GPa (whole elastic range)"
+      },
+      "prediction": {
+        "properties.sample_spce_01.mechanical.tensile_properties.youngs_modulus": "Decreases with plastic strain; E/E0 reduced to 72% at 25% true strain (Fig. 1). Initial absolute E0 not stated.",
+        "properties.sample_A.mechanical.tensile_properties.youngs_modulus": "182 GPa (strain 0–0.05%), 173 GPa (whole elastic range) — Table 2",
+        "properties.sample_B.mechanical.tensile_properties.youngs_modulus": "188 GPa (strain 0–0.05%), 162 GPa (whole elastic range) — Table 2",
+        "properties.sample_C.mechanical.tensile_properties.youngs_modulus": "186 GPa (strain 0–0.05%), 162 GPa (whole elastic range) — Table 2",
+        "properties.sample_D.mechanical.tensile_properties.youngs_modulus": "189 GPa (strain 0–0.05%), 189 GPa (whole elastic range) — Table 2",
+        "properties.sample_E.mechanical.tensile_properties.youngs_modulus": "224 GPa (strain 0–0.05%), 206 GPa (whole elastic range) — Table 2"
+      }
+    },
+    "performance": {
+      "truth": {
+        "performance.sample_spce_ar.service_conditions.stress_state": "V-bending",
+        "performance.sample_spce_ar.comparative_performance.benchmark_alloy": "SPCE with constant initial elastic modulus"
+      },
+      "prediction": {}
+    },
+    "characterization_methods": {
+      "truth": {
+        "characterization_methods.sample_spce_ar.technique": "Tensile test with precision extensometer and strain gauges",
+        "characterization_methods.sample_spce_ar.purpose": "Measure change in Young's modulus as a function of plastic strain (up to 25% true strain).",
+        "characterization_methods.sample_spce_ar.key_findings": "Young's modulus decreases with increasing plastic strain; decrease exceeds 20% after 25% plastic strain.",
+        "characterization_methods.sample_A.technique": "Tensile test with load cell and strain gauge",
+        "characterization_methods.sample_A.purpose": "Evaluate elastic modulus of SPCC specimens with various pre-treatment conditions to investigate effect of movable dislocations.",
+        "characterization_methods.sample_A.key_findings": "As-received and pre-strained specimens show strong decrease of elastic modulus with strain even within elastic region; annealed specimen shows nearly constant modulus; heat treatment after pre-strain partially restores modulus.",
+        "characterization_methods.sample_spce_nano.technique": "Vickers hardness indentation (marking)",
+        "characterization_methods.sample_spce_nano.purpose": "Create reference marks for locating grain boundary region during nano-indentation.",
+        "characterization_methods.sample_spce_nano.key_findings": "Elastic modulus near grain boundary is lower than in grain interior, consistent with dislocation pile-up model. Distribution varies with grain orientation."
+      },
+      "prediction": {
+        "characterization_methods.sample_spce_01.technique": "Vickers hardness test marking",
+        "characterization_methods.sample_spce_01.purpose": "Mark locations near grain boundary for nano-indentation alignment after CMP treatment",
+        "characterization_methods.sample_spce_01.key_findings": "Larger outer markers for finding region and smaller inner markers for exact measurement point positioning (Fig. 10).",
+        "characterization_methods.sample_A.technique": "tensile test with load cell and strain gauge",
+        "characterization_methods.sample_A.purpose": "Measure stress-strain curves in elastic region for as-received SPCC to determine elastic modulus",
+        "characterization_methods.sample_A.key_findings": "Elastic modulus approximately 182 GPa at initial stage and 173 GPa over whole elastic range.",
+        "characterization_methods.sample_B.technique": "tensile test with load cell and strain gauge",
+        "characterization_methods.sample_B.purpose": "Measure stress-strain curves for 15% pre-strained SPCC",
+        "characterization_methods.sample_B.key_findings": "Gradient decreases from beginning up to macroscopic yield point; elastic modulus 188 GPa (initial) and 162 GPa (whole range).",
+        "characterization_methods.sample_C.technique": "tensile test with load cell and strain gauge",
+        "characterization_methods.sample_C.purpose": "Evaluate effect of heat treatment on elastic modulus after 15% pre-strain",
+        "characterization_methods.sample_C.key_findings": "After heat treatment (373 K, 90 h), gradient initially decreases then increases toward annealed level; average elastic modulus 186 GPa (initial) and 162 GPa (whole range), larger than pre-strained specimen without heat treatment when considering recovery behavior.",
+        "characterization_methods.sample_D.technique": "tensile test with load cell and strain gauge",
+        "characterization_methods.sample_D.purpose": "Measure elastic modulus of heat-treated as-received SPCC",
+        "characterization_methods.sample_D.key_findings": "Elastic modulus 189 GPa for both initial and whole elastic range, unchanged from as-received initial slope.",
+        "characterization_methods.sample_E.technique": "tensile test with load cell and strain gauge",
+        "characterization_methods.sample_E.purpose": "Measure elastic modulus of annealed SPCC",
+        "characterization_methods.sample_E.key_findings": "Elastic modulus remains almost constant until yielding; 224 GPa (initial) and 206 GPa (whole range)."
+      }
+    },
+    "computational_details": {
+      "truth": {
+        "computational_details.sample_spce_ar.simulation_method": "Finite element method (FEM) for V-bending spring-back prediction",
+        "computational_details.sample_spce_ar.validation_against_experiment": "Spring-back predicted with varied elastic modulus (as measured) agrees better with experiment than prediction using constant initial modulus."
+      },
+      "prediction": {
+        "computational_details.sample_spce_01.simulation_method": "FEM",
+        "computational_details.sample_spce_01.validation_against_experiment": "Experimental spring-back values compared with simulations using constant initial elastic modulus and varied modulus; varied modulus prediction agrees more accurately with experiment.",
+        "computational_details.sample_spce_01.analytical_model[0].model_name": "dislocation pile-up model",
+        "computational_details.sample_spce_01.analytical_model[0].equation_role": "Explain decrease of apparent elastic modulus due to movable dislocations during unloading and sub-yield loading",
+        "computational_details.sample_spce_01.analytical_model[0].model_note": "Pile-up of dislocations at grain boundaries causes deformation during unloading, reducing apparent elastic modulus with increasing plastic strain (Fig. 3).",
+        "computational_details.sample_spce_01.analytical_model[1].model_name": "diffusion distance equation",
+        "computational_details.sample_spce_01.analytical_model[1].equation_role": "Determine heat treatment conditions to recover Cottrell atmosphere",
+        "computational_details.sample_spce_01.analytical_model[1].parameters": "X = (2 D t)^(1/2)",
+        "computational_details.sample_spce_01.analytical_model[1].model_note": "Used to calculate 373 K for 90 h based on diffusion distance of solute C in Fe matrix.",
+        "computational_details.sample_spce_01.analytical_model[2].model_name": "Hertz contact theory",
+        "computational_details.sample_spce_01.analytical_model[2].equation_role": "Relate elastic modulus to indentation depth for spherical indenter",
+        "computational_details.sample_spce_01.analytical_model[2].parameters": "h_e = (9 P^2 / (16 R E_r^2))^(1/3)",
+        "computational_details.sample_spce_01.analytical_model[2].model_note": "Applied to nano-indentation with spherical tip (nominal R = 50 μm) to avoid plastic deformation influence during indentation.",
+        "computational_details.sample_spce_01.analytical_model[3].model_name": "Oliver-Pharr nano-indentation analysis",
+        "computational_details.sample_spce_01.analytical_model[3].equation_role": "Calculate elastic modulus and hardness from load-displacement curve",
+        "computational_details.sample_spce_01.analytical_model[3].parameters": "E_r = (sqrt(pi) / (2 sqrt(A(h_c)))) S; H = P / A(h_c)",
+        "computational_details.sample_spce_01.analytical_model[3].model_note": "Standard nano-indentation equations referenced for Berkovich-type analysis (Eq. 2)."
+      }
+    },
+    "unmapped_findings": {
+      "truth": {
+        "unmapped_findings.idx_0.value": "Fig. 1 and its table: Variation of elastic modulus (δE = E/E0) with true strain for SPCE. At 0.00 strain: 100.0%; 0.02: 92.0%; 0.04: 88.0%; 0.06: 85.0%; 0.08: 82.0%; 0.10: 80.0%; 0.12: 79.0%; 0.14: 78.0%; 0.16: 77.0%; 0.18: 76.0%; 0.20: 75.0%; 0.22: 74.0%; 0.24: 73.0%; 0.26: 72.0%.",
+        "unmapped_findings.idx_1.value": "Fig. 2 and its table: Comparison of experimental spring-back angle (degree) with simulations using constant E and varied E for V-bending. Data: at bend angle 160°, exp. 0.9, const. E 1.0, varied E 1.15; 140°, 1.25, 1.1, 1.3; 120°, 1.25, 1.1, 1.35; 100°, 1.35, 1.15, 1.35; 90°, 1.4, 1.15, 1.35. Conclusion: varied E improves prediction accuracy.",
+        "unmapped_findings.idx_2.value": "Fig. 4a data points extracted: Strain 0.0% stress ~0 MPa for all curves; 0.1% stress ~150 (A), ~200 (B), ~180 (C), ~160 (D), ~170 (E); 0.2% ~200, ~300, ~250, ~220, ~240; 0.3% ~220, ~380, ~360, ~340, ~370 MPa. Fig. 4b: Elastic modulus gradient vs. strain showing rapid decrease from initial ~250 GPa to ~0 GPa at 0.30% strain for some conditions.",
+        "unmapped_findings.idx_3.value": "Equation (1): X = (2 D t)^{1/2} used to estimate carbon diffusion distance for heat treatment design (373 K, 90 h).",
+        "unmapped_findings.idx_4.value": "Equation (2): Reduced modulus Er = (√π/(2√A))S and P/A used in Berkovich nano-indentation analysis.",
+        "unmapped_findings.idx_5.value": "Equation (3): For spherical indenter, he = (9 P^2 / (16 R Er^2))^{1/3} based on Hertz contact theory.",
+        "unmapped_findings.idx_6.value": "Dislocation mechanism: Movable dislocations released from Cottrell atmospheres during plastic deformation pile up at grain boundaries; during unloading they move back, reducing apparent elastic modulus. Heat treatment at 373 K for 90 h partially recovers Cottrell locking, restoring modulus.",
+        "unmapped_findings.idx_7.value": "Density change due to plastic deformation is less than 1% and cannot account for the large modulus decrease observed.",
+        "unmapped_findings.idx_8.value": "CMP treatment was used to flatten surface after etching to avoid the influence of grain boundary ditch on nano-indentation with spherical tip.",
+        "unmapped_findings.idx_9.value": "Nano-indentation results (Fig. 9 scatter data): Position [m] vs. elastic modulus Er [GPa] showing drop near boundary. Approximate values: position ~2 m: 170 GPa; ~3 m: 180; ~4 m: 150; ~5 m: 130; ~6 m: 100; boundary region around 5-10 m, modulus drops to ~40-20 GPa.",
+        "unmapped_findings.idx_10.value": "Fig. 12 scatter data: Young's modulus near grain boundary for three scan lines Y=0,1,2. At X=0 µm: ~280, ~340, ~260 GPa; X=5: ~180, ~220, ~200; X=10: ~120, ~200, ~220; X=15: ~160, ~220, ~180; X=20: ~140, ~200, ~160 GPa. Minimum near X=5-10 µm indicates grain boundary region."
+      },
+      "prediction": {
+        "unmapped_findings.idx_0.value": "Fig. 1 and accompanying table: Relative elastic modulus δE=E/E0 of SPCE decreases with true strain as follows: 0.00→100.0%, 0.02→92.0%, 0.04→88.0%, 0.06→85.0%, 0.08→82.0%, 0.10→80.0%, 0.12→79.0%, 0.14→78.0%, 0.16→77.0%, 0.18→76.0%, 0.20→75.0%, 0.22→74.0%, 0.24→73.0%, 0.26→72.0%.",
+        "unmapped_findings.idx_1.value": "Fig. 2 and accompanying table: V-bending spring-back comparison (values in degrees). At bend angle 160°: experimental 0.9°, simulated constant E 1.0°, simulated varied E 1.15°. At 140°: 1.25 / 1.1 / 1.3. At 120°: 1.25 / 1.1 / 1.35. At 100°: 1.35 / 1.15 / 1.35. At 90°: 1.4 / 1.15 / 1.35. Varied elastic modulus simulation predicts spring-back more accurately than constant modulus.",
+        "unmapped_findings.idx_2.value": "Fig. 4(b) schematic: Gradient of stress-strain curve (representing elastic modulus) for pre-strained specimen decreases continuously from initial loading through the elastic region, unlike annealed specimen where modulus is nearly constant until yielding.",
+        "unmapped_findings.idx_3.value": "Fig. 12 data table (nano-indentation near grain boundary after CMP, SPCE): Position X [μm] vs Er [GPa] for three lines (Y=0,1,2). Y=0: X=0 ~280, X=5 ~180, X=10 ~120, X=15 ~160, X=20 ~140. Y=1: X=0 ~340, X=5 ~220, X=10 ~200, X=15 ~220, X=20 ~200. Y=2: X=0 ~260, X=5 ~200, X=10 ~220, X=15 ~180, X=20 ~160. Modulus decrease confirmed near X=5–10 μm corresponding to grain boundary.",
+        "unmapped_findings.idx_4.value": "Possible mechanisms for elastic modulus decrease after plastic deformation: increase of residual stress, micro cracks, and variation in dislocation structure. Density reduction due to plastic deformation is less than 1% and deemed insufficient to explain the large modulus drop.",
+        "unmapped_findings.idx_5.value": "In mild steel, dislocations are locked by carbon and other solutes via the Cottrell effect before plastic deformation. During deformation, dislocations are released and the Cottrell atmosphere is not recovered at room temperature because the diffusion rate of C in the Fe matrix is very low.",
+        "unmapped_findings.idx_6.value": "Nano-indentation spherical tip nominal radius R = 50 μm; actual radius was found to be much smaller than nominal, affecting absolute modulus values but not the spatial distribution trend."
+      }
+    }
+  }
+}

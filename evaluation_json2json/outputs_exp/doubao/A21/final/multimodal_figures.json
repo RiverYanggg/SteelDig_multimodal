@@ -1,0 +1,126 @@
+[
+  {
+    "paper_id": "A21",
+    "figure_id": "figure_001",
+    "image_paths": [
+      "images/9a0701e917797ff9a780d27deb353a3d55975ed8fcfddc06727df68059a82278.jpg"
+    ],
+    "image_count": 1,
+    "image_type": "chart_schematic",
+    "description": "The displayed image is an irrelevant software interface icon with the text 'Check for updates', which does not correspond to the target research figure of the paper focused on deciphering composition-microstructure correlations in low-density FeMnAlC steels using machine learning. No valid materials science related information, including microstructure characterization results, phase identification data, mechanical property curves, or machine learning model outputs for the Fe-30Mn-8Al-1C steel study system, can be extracted from this image, as it is completely unrelated to the paper's research content.",
+    "confidence": 0.0
+  },
+  {
+    "paper_id": "A21",
+    "figure_id": "figure_002",
+    "image_paths": [
+      "images/b743283140748566d9047649f8a526382a56dd9b4ef3a1a3c7ee137faebd9eca.jpg"
+    ],
+    "image_count": 1,
+    "image_type": "chart_flow",
+    "description": "This figure shows the framework of machine learning-assisted design process for low-density Fe-Mn-Al-C austenitic steels. Possible composition candidates first enter the filtering module integrated with machine learning-based prediction models, and go through 5 sequential judgment steps: checking whether κ carbide exists, whether a single γ austenite region exists, whether (γ+κ) dual-phase region appears at 500-600℃, whether κ phase fraction is high enough, and whether the material has low density. Candidates failing any criterion are filtered out, while qualified candidates are verified via empirical formula, then subjected to experimental tests. After tests, candidates with good properties are confirmed as successful designs, while those with unsatisfactory properties are fed back to optimize the machine learning prediction models. This framework aims to build composition-microstructure correlation for low-density steels to accelerate their development, and its reliability is validated by experimental results of Fe-30Mn-8Al-1C steel in the study.",
+    "confidence": 0.0
+  },
+  {
+    "paper_id": "A21",
+    "figure_id": "figure_003",
+    "image_paths": [
+      "images/84e4730c7a737188435d776f83f834fa8dfc94eb84222a544650212c87098abd.jpg"
+    ],
+    "image_count": 1,
+    "image_type": "chart_plot",
+    "description": "This figure presents a heatmap of the Pearson correlation coefficient matrix for 10 descriptors used for feature selection in machine learning studies of low-density FeMnAlC steels. The 10 evaluated descriptors include elemental contents (Mn, Al, C, Fe), valence electron concentration (VEC), melting temperature (Tm), entropy of mixing (ΔSmix), enthalpy of mixing (ΔHmix), electronegativity difference (Δχ), and atomic size difference (δ). The color scale ranges from -1 (red, strong negative correlation) to 1 (blue, strong positive correlation), with larger circle size and deeper color indicating higher correlation magnitude. Key measured correlations include a 0.98 positive correlation between Δχ and δ, 0.97 correlation between C and Δχ, and 0.98 correlation between C and δ. Features with correlation coefficient greater than 0.95 (Δχ and δ) are eliminated to remove redundant information, improving the robustness of subsequent machine learning models built to predict composition-microstructure correlations including κ-carbide presence and phase fraction in FeMnAlC steels.",
+    "confidence": 0.0
+  },
+  {
+    "paper_id": "A21",
+    "figure_id": "figure_004",
+    "image_paths": [
+      "images/8f8599539d1bb8aa5079eecb54d28b3d9eb9151e63df7981f391459074299d0b.jpg",
+      "images/644b5035ae7a7355ffca10b65d95b106b8cb57e5fadd9aa239f9e775778181d9.jpg",
+      "images/62dad0112d3d88a63d946f525a6efd43c37a20753857c3326d4b3c5f8937b4ec.jpg",
+      "images/4562da76fbc713e748748998de14643baea818049fedf542c2236426fc0154e5.jpg"
+    ],
+    "image_count": 4,
+    "image_type": "chart_plot",
+    "description": "This figure contains four subplots for machine learning algorithm evaluation and descriptor importance analysis for phase classification in low-density FeMnAlC steels. Subplot (a) compares 10-fold cross-validation accuracy of 5 algorithms (KNN, ANN, SVM, RF, CART) for three classification tasks: Y₁ (existence of κ phase), Y₂ (γ+κ dual-phase region at 500–600℃), Y₃ (single γ region). RF achieves the best performance with cross-validation accuracy of 0.98 for Y₁, 0.98 for Y₂, 0.96 for Y₃, while ANN shows unsatisfactory performance for Y₁ and Y₃. Subplots (b), (c) and (d) illustrate mean decrease accuracy when removing each of 8 descriptors (Mn, Al, C, Fe, VEC, Tm, ΔSmix, ΔHmix) for Y₃, Y₂ and Y₁ tasks respectively: Al is the most impactful descriptor for Y₃ and Y₁, Mn and Fe are the most critical for Y₂, while C shows the lowest importance for all tasks. The results verify that RF is the optimal algorithm for phase prediction, and Al dominates κ phase formation and single γ austenite stability.",
+    "confidence": 0.0
+  },
+  {
+    "paper_id": "A21",
+    "figure_id": "figure_005",
+    "image_paths": [
+      "images/e82bbf663f8a0495038f8386ee9484700d4a139bb3b23c07f84b7314d6ff01f0.jpg",
+      "images/a85b009100babdc3e100ca1e309e5340c6ed6a74c201eb7c669cf2b0b3341e14.jpg",
+      "images/40c3bc2f2f424c42b5480fb031641113b748bc8d89cb5f43b9a84e9d45d8788e.jpg"
+    ],
+    "image_count": 3,
+    "image_type": "chart_plot",
+    "description": "This set of charts presents machine learning results for predicting high κ-phase fraction in low-density FeMnAlC steels. Subplot (a) compares cross-validation RMSE of five regression algorithms: KNN, ANN, SVM, RF, and CART. SVM exhibits the best performance with the lowest RMSE (<1%), while CART shows the highest RMSE (~2.4%). Subplot (b) evaluates relative importance of 8 descriptors (Mn, Al, C, Fe, VEC, Tm, ΔSmix, ΔHmix) via RMSE change when removing each descriptor: removing Al leads to the highest RMSE, indicating Al is the most impactful descriptor for κ-phase fraction prediction, while ΔSmix and ΔHmix show the lowest influence. Subplot (c) shows the correlation between predicted and true κ-phase fraction values from 10-fold cross-validation of the optimal model, with a high correlation coefficient R=0.99, verifying excellent prediction accuracy of the constructed ML model for κ-phase fraction.",
+    "confidence": 0.0
+  },
+  {
+    "paper_id": "A21",
+    "figure_id": "figure_006",
+    "image_paths": [
+      "images/d72a3c597ac217bc17e8161721b742d1a565efb52c1fec3b6698c23d26db9e30.jpg"
+    ],
+    "image_count": 1,
+    "image_type": "chart_flow",
+    "description": "This figure illustrates the two-step composition screening and optimization process for Fe-Mn-Al-C austenitic low-density steels. Initially, there are 78,477 total composition candidates in Area A. The first screening step applies phase-related boundary conditions: existence of κ phase, presence of a single γ austenite region, and existence of (γ+κ) dual-phase region at 500-600 °C, which reduces the candidate number to 1320 in Area B. The second screening step applies two additional constraints: κ phase fraction ≥10% and density ≤7 g/cm³, finally leaving 150 qualified candidates in Area C for subsequent research. This flow is part of the machine learning-assisted compositional design framework for low-density FeMnAlC steels, which efficiently narrows down the search space of potential compositions.",
+    "confidence": 0.0
+  },
+  {
+    "paper_id": "A21",
+    "figure_id": "figure_007",
+    "image_paths": [
+      "images/0db319201c5037d20cdd3df05780a264b26dd94d5631ba6f3e1d1c4ab15410ec.jpg",
+      "images/a13b5aba2a9b4fbac15577aa1129d84b8dacb67dfdb19dd5e8aeeb926b3ccee5.jpg",
+      "images/24ed99f215addb6bf11c79d51929848c98281cbb7cfa7fd76b2799f59ac50d15.jpg",
+      "images/e4985f59f6587d45cceeef78477e2dc63fcef22ebe2523916a134c2122e221cd.jpg",
+      "images/acfa3a7dccc1a5b2d3107b0acd784edc4904864d31e63bf2bd279e0f94f7ea94.jpg"
+    ],
+    "image_count": 5,
+    "image_type": "structure_phase_diagram",
+    "description": "This set of diagrams presents the first-step phase screening results for FeMnAlC austenitic low-density steels with fixed Mn content of 30 wt.%, with the horizontal axis representing Al content (2-12 wt.%) and the vertical axis representing C content (0-2.2 wt.%). Red regions indicate the existence of the target phase/phase combination, while blue/black regions represent non-target areas. Subplot (a) shows the component range where κ phase (Y1) exists; (b) displays the γ+κ dual-phase region (Y2) at 500-600 °C; (c) presents the single γ austenite phase region (Y3); (d) illustrates the intersection component space meeting both Y1 and Y3 requirements; (e) shows the optimal component space satisfying all three requirements (Y1, Y2, Y3). The results confirm Al is the dominant factor regulating phase constitution: κ phase precipitates when Al content exceeds ~4-5 wt.%, and the 500-600 °C γ+κ dual-phase region corresponds to 4.5-9.3 wt.% Al and 0.4-1.1 wt.% C. This figure supports machine learning-assisted compositional optimization of FeMnAlC steels to screen candidates meeting multiple phase performance requirements.",
+    "confidence": 0.0
+  },
+  {
+    "paper_id": "A21",
+    "figure_id": "figure_008",
+    "image_paths": [
+      "images/2fe523db0f552b1d7ceb2b46a8e7351d5e4f719df46d438262038e636114eb15.jpg"
+    ],
+    "image_count": 1,
+    "image_type": "chart_plot",
+    "description": "This figure presents the second-step performance and composition screening for low-density FeMnAlC steels, with all subplots using Al content (wt.%) as the x-axis and C content (wt.%) as the y-axis. Subplot (a) is a contour heatmap of κ phase volume fraction, showing κ fraction increases with rising Al and C content, with a screening threshold set as κ fraction ≥ 11.000%. Subplot (b) demonstrates the composition optimization process, marking candidates meeting the κ fraction requirement, candidates meeting the density requirement, final target components, and the selected validation component (Fe-30Mn-8Al-1C). Subplot (c) is a contour heatmap of steel density, showing density decreases with increasing Al content, with a screening threshold set as density ≤ 6.900 g/cm³. This figure supports that dual constraints of high κ phase fraction (to improve alloy strength) and low density can be satisfied via targeted composition optimization, and the experimental validation result matches the prediction, verifying the reliability of the machine learning assisted alloy screening method.",
+    "confidence": 0.0
+  },
+  {
+    "paper_id": "A21",
+    "figure_id": "figure_009",
+    "image_paths": [
+      "images/2706c94665d09ef6d40022234698e0eab26bf7d7077d8d15e3c010413eb1e15b.jpg",
+      "images/90a3fa7c90382aa3188197b7b133186f4fbf362ed050a8b13026b01a240264e5.jpg",
+      "images/01844d571842b06948b017140c1b20698f9b4b328c1b6fe157c8e814ef96872d.jpg",
+      "images/f6d2471fad1f601e89963862d61a37b791a1c0ca11b367c1143481bd15c93a6f.jpg",
+      "images/4ecfb132352684679f7f0d956357cb5ec41b2cdf0c1d750129e7f3b7ddd68908.jpg",
+      "images/2561257f325feb832c8d63266ef0bcfdf041e1adb2d691d3d992b020557a59fa.jpg"
+    ],
+    "image_count": 6,
+    "image_type": "microscopy_tem",
+    "description": "This figure presents experimental characterization results of Fe-30Mn-8Al-1C austenitic low-density steel aged at 550 °C for 2 h. Subfigure (a) is the XRD profile, showing only characteristic diffraction peaks of FCC γ-austenite (γ(111), γ(200), γ(220), γ(311), γ(222)), confirming the single FCC matrix. Subfigures (b) and (c) are EBSD inverse pole figure map and phase map respectively, with a 35 μm scale bar, revealing fully recrystallized microstructure with average grain size of 17 μm and uniform single FCC phase (no BCC phase detected). Subfigures (d) (bright-field) and (e) (dark-field) are TEM micrographs with 100 nm scale bar, showing nanoscale intragranular precipitates. Subfigure (f) is the selected area electron diffraction pattern along [01$\\overline{1}$] zone axis, verifying the existence of FCC matrix and κ-carbide precipitates. The results confirm the (γ+κ) dual-phase structure at 500-600 °C aging temperature, supporting the precipitation strengthening mechanism and validating machine learning predictions.",
+    "confidence": 0.0
+  },
+  {
+    "paper_id": "A21",
+    "figure_id": "figure_010",
+    "image_paths": [
+      "images/0e00e0690a611e342c6a1ecd4eaf34782db5f78a5d7d1b6284a287ff26dfda9c.jpg"
+    ],
+    "image_count": 1,
+    "image_type": "spectroscopy_eds",
+    "description": "This figure characterizes the microstructure, elemental distribution, and tensile mechanical properties of Fe-30Mn-8Al-1C low-density steel processed by 1000 °C/15 min recrystallization annealing followed by 550 °C/2 h aging. Subfigure (a) presents SEM secondary electron (SEI), backscattered electron (COMPO) micrographs (20 μm scale bar) and corresponding EDS elemental mappings of Fe, Mn, Al, and C, showing all four elements are uniformly distributed in the matrix without obvious segregation. Subfigure (b) is the engineering stress-strain curve, exhibiting a yield strength of ~970 MPa, ultimate tensile strength of ~1150 MPa, and total elongation of ~40%, indicating excellent strength-ductility synergy. Subfigure (c) shows an optical micrograph (50 μm scale bar) revealing uniform polygonal recrystallized austenite grains. These results confirm the designed steel has expected homogeneous microstructure and good mechanical performance, matching machine learning predictions for the FeMnAlC system.",
+    "confidence": 0.0
+  }
+]

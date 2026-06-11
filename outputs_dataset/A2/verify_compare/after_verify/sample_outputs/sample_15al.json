@@ -1,0 +1,356 @@
+{
+  "sample_id": "sample_15al",
+  "sample_score": 72.09931506849315,
+  "sample_weight": 29.2,
+  "field_count": 21,
+  "correct_yes_count": 15,
+  "unknown_count": 3,
+  "no_count": 0,
+  "fields": [
+    {
+      "field_id": "F00066",
+      "sample_id": "sample_15al",
+      "section": "processing_steps",
+      "path": "processing_steps.sample_15al.cooling_medium",
+      "value": "copper mould (slow cooling)",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0035"
+      ],
+      "reason": "b0035明确提到drop casting into copper mould，且冷却缓慢，与'copper mould (slow cooling)'一致。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00067",
+      "sample_id": "sample_15al",
+      "section": "processing_steps",
+      "path": "processing_steps.sample_15al.method",
+      "value": "Induction melting and drop casting into copper mould",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0035"
+      ],
+      "reason": "b0035明确描述Induction melting and drop casting into copper mould。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00068",
+      "sample_id": "sample_15al",
+      "section": "processing_steps",
+      "path": "processing_steps.sample_15al.sequence",
+      "value": "1",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "unknown",
+      "evidence_confidence": 0.2,
+      "evidence_refs": [
+        "b0035"
+      ],
+      "reason": "证据描述了一个整体过程，但未明确标注sequence=1是为第一步。",
+      "field_score": 6.0
+    },
+    {
+      "field_id": "F00069",
+      "sample_id": "sample_15al",
+      "section": "processing_steps",
+      "path": "processing_steps.sample_15al.type",
+      "value": "casting",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0035"
+      ],
+      "reason": "b0035明确提到drop casting，属于铸造工艺。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00102",
+      "sample_id": "sample_15al",
+      "section": "structures",
+      "path": "structures.sample_15al.microstructure_list[1].defects[dislocation].dislocation_density",
+      "value": "Moderate, single dislocations arranged in loose cellular distribution with many dipoles and small loops",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "partial",
+      "evidence_confidence": 0.8,
+      "evidence_refs": [
+        "b0039",
+        "b0053"
+      ],
+      "reason": "b0039直接说'single dislocations arranged in a loose cellular distribution'，b0053提到'many dipoles and occasional small loops'，但证据未明确'Moderate'程度。",
+      "field_score": 48.0
+    },
+    {
+      "field_id": "F00103",
+      "sample_id": "sample_15al",
+      "section": "structures",
+      "path": "structures.sample_15al.microstructure_list[1].defects[dislocation].type",
+      "value": "dislocation",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0039",
+        "b0053"
+      ],
+      "reason": "b0039和b0053均描述为single dislocations，类型明确为dislocation。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00104",
+      "sample_id": "sample_15al",
+      "section": "structures",
+      "path": "structures.sample_15al.microstructure_list[1].grain_structure.average_grain_size.value_with_unit",
+      "value": "250 μm",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0035"
+      ],
+      "reason": "b0035明确说grain size of the order of 0.25 mm，等于250 μm。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00105",
+      "sample_id": "sample_15al",
+      "section": "structures",
+      "path": "structures.sample_15al.microstructure_list[1].phases_present[fe_disordered_bcc].crystal_structure",
+      "value": "bcc",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.7,
+      "evidence_refs": [
+        "b0006",
+        "b0053"
+      ],
+      "reason": "b0006提到'disordered bcc solid solution'，b0053提到single dislocations typical of bcc，支持bcc结构。",
+      "field_score": 70.0
+    },
+    {
+      "field_id": "F00106",
+      "sample_id": "sample_15al",
+      "section": "structures",
+      "path": "structures.sample_15al.microstructure_list[1].phases_present[fe_disordered_bcc].morphology",
+      "value": "coarse polygonal grains, ~0.25 mm",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "partial",
+      "evidence_confidence": 0.6,
+      "evidence_refs": [
+        "b0035"
+      ],
+      "reason": "b0035提到coarse grain sizes和0.25 mm，但未明确说'polygonal'，此处为合理推断。",
+      "field_score": 36.0
+    },
+    {
+      "field_id": "F00107",
+      "sample_id": "sample_15al",
+      "section": "structures",
+      "path": "structures.sample_15al.microstructure_list[1].phases_present[fe_disordered_bcc].phase_name",
+      "value": "α-Fe (disordered bcc)",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.9,
+      "evidence_refs": [
+        "b0006",
+        "b0129"
+      ],
+      "reason": "b0006称Fe-Al合金为'disordered bcc solid solution'，b0129明确提到'disordered alloys with 15–20% Al'，对应α-Fe disordered bcc。",
+      "field_score": 90.0
+    },
+    {
+      "field_id": "F00108",
+      "sample_id": "sample_15al",
+      "section": "structures",
+      "path": "structures.sample_15al.microstructure_list[1].phases_present[fe_disordered_bcc].volume_fraction",
+      "value": "1.0",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "unknown",
+      "evidence_confidence": 0.3,
+      "evidence_refs": [
+        "b0035",
+        "b0053"
+      ],
+      "reason": "证据暗示单相组织（如b0035描述铸态粗晶，b0053仅讨论单一种类位错），但未直接给出体积分数。",
+      "field_score": 9.0
+    },
+    {
+      "field_id": "F00109",
+      "sample_id": "sample_15al",
+      "section": "structures",
+      "path": "structures.sample_15al.microstructure_list[1].related_sequence",
+      "value": "1",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "unknown",
+      "evidence_confidence": 0.2,
+      "evidence_refs": [
+        "b0035"
+      ],
+      "reason": "证据未提供微观结构序列编号，sequence=1为默认假定。",
+      "field_score": 6.0
+    },
+    {
+      "field_id": "F00110",
+      "sample_id": "sample_15al",
+      "section": "structures",
+      "path": "structures.sample_15al.number_of_phases",
+      "value": "1",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "partial",
+      "evidence_confidence": 0.6,
+      "evidence_refs": [
+        "b0035",
+        "b0053"
+      ],
+      "reason": "证据描述中未出现第二相，暗示单相，但未明确声明number_of_phases=1。",
+      "field_score": 36.0
+    },
+    {
+      "field_id": "F00111",
+      "sample_id": "sample_15al",
+      "section": "structures",
+      "path": "structures.sample_15al.overall_structure",
+      "value": "As-cast polycrystalline disordered bcc solid solution with dislocation substructure.",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.8,
+      "evidence_refs": [
+        "b0006",
+        "b0035"
+      ],
+      "reason": "b0006提到'disordered bcc solid solution'，b0035描述铸态粗晶，b0039显示位错亚结构，综合支持overall_structure。",
+      "field_score": 80.0
+    },
+    {
+      "field_id": "F00189",
+      "sample_id": "sample_15al",
+      "section": "properties",
+      "path": "properties.sample_15al.mechanical.tensile_properties.strain_hardening_rate[compression_1_1_5_strain].direction",
+      "value": "compression, 1-1.5% strain",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.9,
+      "evidence_refs": [
+        "b0012",
+        "b0040"
+      ],
+      "reason": "b0012明确测量应变硬化在1-1.5%应变范围，b0040提到压缩测试。",
+      "field_score": 90.0
+    },
+    {
+      "field_id": "F00190",
+      "sample_id": "sample_15al",
+      "section": "properties",
+      "path": "properties.sample_15al.mechanical.tensile_properties.strain_hardening_rate[compression_1_1_5_strain].value_with_unit",
+      "value": "500 MPa",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0020"
+      ],
+      "reason": "b0020表中15% Al对应Work Hardening Rate 0.5 GPa = 500 MPa。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00191",
+      "sample_id": "sample_15al",
+      "section": "properties",
+      "path": "properties.sample_15al.mechanical.tensile_properties.yield_strength[compression].direction",
+      "value": "compression",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0040"
+      ],
+      "reason": "b0040明确说压缩轴平行于铸棒方向，测试为压缩。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00192",
+      "sample_id": "sample_15al",
+      "section": "properties",
+      "path": "properties.sample_15al.mechanical.tensile_properties.yield_strength[compression].value_with_unit",
+      "value": "300 MPa",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0016"
+      ],
+      "reason": "b0016表中15% Al对应Yield Stress 300 MPa。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00211",
+      "sample_id": "sample_15al",
+      "section": "characterization_methods",
+      "path": "characterization_methods.sample_15al.key_findings",
+      "value": "Single dislocations arranged in loose cellular distribution, many dipoles and small loops.",
+      "field_weight": 1.0,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.9,
+      "evidence_refs": [
+        "b0039"
+      ],
+      "reason": "b0039图注直接说'Single dislocations arranged in a loose cellular distribution'，且b0053提到dipoles和loops。",
+      "field_score": 90.0
+    },
+    {
+      "field_id": "F00212",
+      "sample_id": "sample_15al",
+      "section": "characterization_methods",
+      "path": "characterization_methods.sample_15al.purpose",
+      "value": "Observation of dislocation structures",
+      "field_weight": 1.0,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.7,
+      "evidence_refs": [
+        "b0029",
+        "b0048"
+      ],
+      "reason": "b0029表明研究目的是通过位错结构解释硬化行为，b0048详细描述TEM观察位错，目的合理。",
+      "field_score": 70.0
+    },
+    {
+      "field_id": "F00213",
+      "sample_id": "sample_15al",
+      "section": "characterization_methods",
+      "path": "characterization_methods.sample_15al.technique",
+      "value": "Transmission electron microscopy (TEM), JEOL 2010, bright field and weak beam imaging",
+      "field_weight": 1.0,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0048"
+      ],
+      "reason": "b0048明确提到使用JEOL 2010显微镜，bright field和weak beam成像模式。",
+      "field_score": 100.0
+    }
+  ]
+}

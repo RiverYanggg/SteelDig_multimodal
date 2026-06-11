@@ -1,0 +1,403 @@
+{
+    "papers": [
+        {
+            "paper_id": "A21",
+            "doi": null,
+            "title": "Deciphering the composition-microstructure correlation in low-density FeMnAlC steels with machine learning",
+            "authors": ["Peng Tiexu", "Yu Haoyang", "Huang Jiaxin", "Fang Wei", "Li Cong", "Yao Zitong", "Zhang Xin", "Feng Jianhang", "Ji Puguang", "Xia Chaoqun", "Yu Hui", "Yin Fuxing"],
+            "publication_year": null,
+            "journal": null,
+            "keywords": ["Fe-Mn-Al-C alloy", "Compositional design", "κ-carbide", "Machine-learning"],
+            "research_type": "mixed",
+            "paper_scope": "Establish the correlation between composition and microstructure of low-density FeMnAlC steel using machine learning algorithms, predict four key characteristics (existence of κ phase, (γ+κ) dual-phase region at 500-600 °C aging temperature, single γ phase region, volume fraction of κ phase), and validate the prediction accuracy with Fe-30Mn-8Al-1C steel experiments."
+        }
+    ],
+    "alloys": [
+        {
+            "alloy_id": "alloy_fe30mn8al1c",
+            "paper_id": "A21",
+            "alloy_name": "Fe-30Mn-8Al-1C low-density steel",
+            "aliases": [],
+            "base_element": "Fe",
+            "alloying_elements": ["Mn", "Al", "C"],
+            "nominal_composition": [
+                {
+                    "element": "Mn",
+                    "weight_percent": "30",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "Al",
+                    "weight_percent": "8",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "C",
+                    "weight_percent": "1",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "Fe",
+                    "weight_percent": "balance",
+                    "atomic_percent": null
+                }
+            ],
+            "alloys_notes": "Measured composition (wt.%): Mn 30.4, Al 7.9, C 1.1, balance Fe; Potential composition space for FeMnAlC system: 10-30 wt% Mn, 2-12 wt% Al, 0.2-2 wt% C."
+        }
+    ],
+    "processes": [
+        {
+            "process_id": "proc_fe30mn8al1c_01",
+            "paper_id": "A21",
+            "alloy_id": "alloy_fe30mn8al1c",
+            "description": "Induction melting under Ar atmosphere, homogenization, forging, secondary homogenization, hot rolling, cold rolling, recrystallization annealing, water quenching, aging at 550 °C for 2 h.",
+            "processes_notes": null
+        }
+    ],
+    "samples": [
+        {
+            "sample_id": "sample_fe30mn8al1c_01",
+            "paper_id": "A21",
+            "alloy_id": "alloy_fe30mn8al1c",
+            "process_id": "proc_fe30mn8al1c_01"
+        }
+    ],
+    "processing_steps": [
+        {
+            "sample_id": "sample_fe30mn8al1c_01",
+            "paper_id": "A21",
+            "sequence": "1",
+            "type": "melting",
+            "method": "induction melting",
+            "temperature": null,
+            "unit": null,
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "Under Ar atmosphere, prepared as-cast 25 kg ingot."
+        },
+        {
+            "sample_id": "sample_fe30mn8al1c_01",
+            "paper_id": "A21",
+            "sequence": "2",
+            "type": "heat_treatment",
+            "method": "homogenization",
+            "temperature": "1200",
+            "unit": "°C",
+            "duration": "2 h",
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": null
+        },
+        {
+            "sample_id": "sample_fe30mn8al1c_01",
+            "paper_id": "A21",
+            "sequence": "3",
+            "type": "thermomechanical_processing",
+            "method": "forging",
+            "temperature": null,
+            "unit": null,
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "Forged into 60 mm × 60 mm cross-sectional billet."
+        },
+        {
+            "sample_id": "sample_fe30mn8al1c_01",
+            "paper_id": "A21",
+            "sequence": "4",
+            "type": "heat_treatment",
+            "method": "homogenization",
+            "temperature": "1050",
+            "unit": "°C",
+            "duration": "100 min",
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": null
+        },
+        {
+            "sample_id": "sample_fe30mn8al1c_01",
+            "paper_id": "A21",
+            "sequence": "5",
+            "type": "thermomechanical_processing",
+            "method": "hot rolling",
+            "temperature": null,
+            "unit": null,
+            "duration": null,
+            "cooling_medium": "air",
+            "reduction_ratio": null,
+            "processing_steps_notes": "Hot rolled to 12 mm thick plates, air cooled to room temperature."
+        },
+        {
+            "sample_id": "sample_fe30mn8al1c_01",
+            "paper_id": "A21",
+            "sequence": "6",
+            "type": "mechanical_processing",
+            "method": "cold rolling",
+            "temperature": null,
+            "unit": null,
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": "75 %",
+            "processing_steps_notes": "Conducted at room temperature."
+        },
+        {
+            "sample_id": "sample_fe30mn8al1c_01",
+            "paper_id": "A21",
+            "sequence": "7",
+            "type": "heat_treatment",
+            "method": "annealing",
+            "temperature": "1000",
+            "unit": "°C",
+            "duration": "15 min",
+            "cooling_medium": "water",
+            "reduction_ratio": null,
+            "processing_steps_notes": "To obtain recrystallized microstructure, quenched to room temperature."
+        },
+        {
+            "sample_id": "sample_fe30mn8al1c_01",
+            "paper_id": "A21",
+            "sequence": "8",
+            "type": "heat_treatment",
+            "method": "aging",
+            "temperature": "550",
+            "unit": "°C",
+            "duration": "2 h",
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": null
+        }
+    ],
+    "structures": [
+        {
+            "structure_id": "struct_01",
+            "sample_id": "sample_fe30mn8al1c_01",
+            "overall_structure": "Single FCC austenite matrix with coherent nanoscale κ-carbide precipitates after aging at 550 °C for 2 h.",
+            "number_of_phases": "2",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_micro_01",
+                    "related_sequence": "8",
+                    "phases_present": [
+                        {
+                            "phase_name": "γ-austenite",
+                            "crystal_structure": "FCC",
+                            "volume_fraction": null,
+                            "morphology": "polygonal recrystallized grain",
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "κ-carbide",
+                            "crystal_structure": "ordered intermetallic",
+                            "volume_fraction": "≥11 %",
+                            "morphology": "nanoscale precipitate",
+                            "grain_size": null,
+                            "texture": null
+                        }
+                    ],
+                    "defects": [
+                        {
+                            "type": null,
+                            "porosity": null,
+                            "inclusions": [],
+                            "dislocation_density": null,
+                            "lattice_distortion": null
+                        }
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": "17",
+                            "unit": "μm"
+                        },
+                        "grain_size_distribution": null,
+                        "texture": null
+                    },
+                    "precipitates": [
+                        {
+                            "precipitate_id": "precip_01",
+                            "type": "κ-carbide",
+                            "size": {
+                                "value": null,
+                                "unit": "nm"
+                            },
+                            "distribution": "intragranular",
+                            "coherency": "coherent"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "interfaces": [],
+    "properties": [
+        {
+            "property_set_id": "prop_01",
+            "sample_id": "sample_fe30mn8al1c_01",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [
+                        {
+                            "direction": null,
+                            "value": "953",
+                            "unit": "MPa",
+                            "others": {
+                                "uncertainty": null
+                            }
+                        }
+                    ],
+                    "ultimate_tensile_strength": [
+                        {
+                            "direction": null,
+                            "value": "1109",
+                            "unit": "MPa",
+                            "others": {
+                                "uncertainty": null
+                            }
+                        }
+                    ],
+                    "elongation": [
+                        {
+                            "direction": null,
+                            "value": "42",
+                            "unit": "%"
+                        }
+                    ],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [],
+                "fracture_toughness": {
+                    "value": null,
+                    "unit": null
+                },
+                "fatigue_properties": {
+                    "fatigue_limit": null,
+                    "cycles_to_failure": null
+                },
+                "creep_properties": {
+                    "steady_state_creep_rate": null,
+                    "rupture_life": null
+                }
+            },
+            "physical": {
+                "density": {
+                    "value": "≤6.9",
+                    "unit": "g/cm³"
+                },
+                "thermal_properties": {
+                    "thermal_conductivity": null,
+                    "thermal_expansion_coefficient": null,
+                    "specific_heat": null
+                },
+                "electrical_properties": {
+                    "electrical_conductivity": null,
+                    "resistivity": null
+                },
+                "magnetic_properties": {
+                    "magnetic_susceptibility": null,
+                    "curie_temperature": null
+                }
+            },
+            "chemical": {
+                "corrosion_resistance": {
+                    "test_medium": null,
+                    "corrosion_rate": null,
+                    "passivation_behavior": null
+                },
+                "oxidation_resistance": {
+                    "oxidation_rate_constant": null,
+                    "protective_scale": null
+                }
+            },
+            "radiation_properties": {
+                "void_swelling": null,
+                "irradiation_hardening": null,
+                "helium_embrittlement": null
+            }
+        }
+    ],
+    "performance": [],
+    "characterization_methods": [
+        {
+            "characterization_id": "char_01",
+            "sample_id": "sample_fe30mn8al1c_01",
+            "microstructure_uuid": "uuid_micro_01",
+            "technique": "X-ray diffraction (XRD)",
+            "purpose": "Phase identification",
+            "key_findings": "Only FCC single phase peaks detected, no other phase peaks observed."
+        },
+        {
+            "characterization_id": "char_02",
+            "sample_id": "sample_fe30mn8al1c_01",
+            "microstructure_uuid": "uuid_micro_01",
+            "technique": "Electron backscatter diffraction (EBSD)",
+            "purpose": "Grain structure and phase analysis",
+            "key_findings": "Recrystallized microstructure, average grain size 17 μm, single FCC phase confirmed."
+        },
+        {
+            "characterization_id": "char_03",
+            "sample_id": "sample_fe30mn8al1c_01",
+            "microstructure_uuid": "uuid_micro_01",
+            "technique": "Transmission electron microscopy (TEM)",
+            "purpose": "Precipitate characterization",
+            "key_findings": "Nanoscale coherent κ-carbide precipitates formed after aging at 550 °C for 2 h, confirmed by selected area electron diffraction."
+        },
+        {
+            "characterization_id": "char_04",
+            "sample_id": "sample_fe30mn8al1c_01",
+            "microstructure_uuid": null,
+            "technique": "Electron probe microanalysis (EPMA)",
+            "purpose": "Element distribution analysis",
+            "key_findings": "Fe, Mn, Al, C elements uniformly distributed in the matrix, no obvious element segregation."
+        },
+        {
+            "characterization_id": "char_05",
+            "sample_id": "sample_fe30mn8al1c_01",
+            "microstructure_uuid": null,
+            "technique": "Uniaxial tensile test",
+            "purpose": "Mechanical property measurement",
+            "key_findings": "Tested at room temperature with strain rate 1×10⁻³ s⁻¹, yield strength 953 MPa, ultimate tensile strength 1109 MPa, elongation 42 %."
+        }
+    ],
+    "computational_details": [
+        {
+            "computation_id": "comp_01",
+            "sample_id": null,
+            "simulation_method": "Machine learning (KNN, ANN, CART, SVM, Random Forest)",
+            "software_used": "JMatPro v9.0",
+            "potential_model": null,
+            "validation_against_experiment": "yes",
+            "analytical_model": [
+                {
+                    "model_name": "Classification models",
+                    "equation_role": "Predict existence of κ phase (Y1), (γ+κ) dual-phase region at 500-600 °C (Y2), single γ phase region (Y3)",
+                    "parameters": ["Mn content", "Al content", "C content", "Fe content", "VEC", "Tm", "ΔSmix", "ΔHmix"],
+                    "model_note": "Random forest algorithm achieved best classification performance, cross-validation accuracy: 0.98 (Y1), 0.98 (Y2), 0.96 (Y3); Al is the most significant feature affecting Y1 and Y3."
+                },
+                {
+                    "model_name": "Regression model",
+                    "equation_role": "Predict volume fraction of κ phase (Y4)",
+                    "parameters": ["Mn content", "Al content", "C content", "Fe content", "VEC", "Tm", "ΔSmix", "ΔHmix"],
+                    "model_note": "SVM algorithm achieved best regression performance, cross-validation RMSE < 1 %."
+                },
+                {
+                    "model_name": "Pearson correlation coefficient filter",
+                    "equation_role": "Descriptor selection to eliminate redundant features",
+                    "parameters": null,
+                    "model_note": "Δχ and δ features were removed for correlation coefficient > 0.95."
+                }
+            ]
+        }
+    ],
+    "unmapped_findings": [
+        "When Mn content is fixed at 30 wt%, minimum Al content of ~4 wt% is required to guarantee existence of κ phase.",
+        "Al and C content range for (γ + κ) duplex region at 500-600 °C aging is 4.5-9.3 wt% Al and 0.4-1.1 wt% C.",
+        "78477 initial composition candidates were screened, 1320 candidates met phase requirements (Y1, Y2, Y3), 150 candidates met κ phase volume fraction ≥10% and density ≤7 g/cm³ requirements.",
+        "Fe-30Mn-8Al-1C steel experimental results are in good agreement with machine learning prediction results, verifying the reliability of the proposed design method.",
+        "The proposed machine learning assisted composition design method is applicable to other metallic material systems."
+    ]
+}

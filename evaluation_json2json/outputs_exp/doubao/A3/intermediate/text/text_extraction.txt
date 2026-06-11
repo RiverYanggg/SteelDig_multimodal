@@ -1,0 +1,489 @@
+{
+    "papers": [
+        {
+            "paper_id": "A3",
+            "doi": null,
+            "title": "Effect of cold rolling and subsequent heat treatment on microstructural evolution and mechanical properties of Fe-Mn-Al-C-(Ni) based austenitic low-density steels",
+            "authors": ["Bidyapati Mishra", "Rajdeep Sarkar", "Vajinder Singh", "Deepak Kumar", "A. Mukhopadhyay", "V. Madhu", "M.J.N.V. Prasad"],
+            "publication_year": null,
+            "journal": null,
+            "keywords": ["Low-density steels", "Austenite", "Cold rolling", "Microstructure", "Tensile properties"],
+            "research_type": "experimental",
+            "paper_scope": "研究3种不同Mn/Ni比的Fe-Mn-Al-C低密度钢经冷轧及后续973~1173K热处理后的组织演变（再结晶、κ-碳化物/B2相析出行为）及力学性能（硬度、拉伸响应），明确Mn/Ni比对两相区加工窗口的调控作用及强韧化机制"
+        }
+    ],
+    "alloys": [
+        {
+            "alloy_id": "alloy_fe28mn9al09c",
+            "paper_id": "A3",
+            "alloy_name": "Fe-28Mn-9Al-0.9C",
+            "aliases": ["28Mn0Ni"],
+            "base_element": "Fe",
+            "alloying_elements": ["Mn", "Al", "C"],
+            "nominal_composition": [
+                {"element": "Mn", "weight_percent": "28.3 ± 0.4", "atomic_percent": null},
+                {"element": "Al", "weight_percent": "9.0 ± 0.05", "atomic_percent": null},
+                {"element": "C", "weight_percent": "0.9 ± 0.01", "atomic_percent": null},
+                {"element": "Ni", "weight_percent": "0", "atomic_percent": null},
+                {"element": "Fe", "weight_percent": "Balance", "atomic_percent": null}
+            ],
+            "alloys_notes": null
+        },
+        {
+            "alloy_id": "alloy_fe28mn9al09c5ni",
+            "paper_id": "A3",
+            "alloy_name": "Fe-28Mn-9Al-0.9C-5Ni",
+            "aliases": ["28Mn5Ni"],
+            "base_element": "Fe",
+            "alloying_elements": ["Mn", "Al", "C", "Ni"],
+            "nominal_composition": [
+                {"element": "Mn", "weight_percent": "28.1 ± 0.4", "atomic_percent": null},
+                {"element": "Al", "weight_percent": "8.6 ± 0.04", "atomic_percent": null},
+                {"element": "C", "weight_percent": "0.9 ± 0.01", "atomic_percent": null},
+                {"element": "Ni", "weight_percent": "4.8 ± 0.04", "atomic_percent": null},
+                {"element": "Fe", "weight_percent": "Balance", "atomic_percent": null}
+            ],
+            "alloys_notes": null
+        },
+        {
+            "alloy_id": "alloy_fe15mn9al09c5ni",
+            "paper_id": "A3",
+            "alloy_name": "Fe-15Mn-9Al-0.9C-5Ni",
+            "aliases": ["15Mn5Ni"],
+            "base_element": "Fe",
+            "alloying_elements": ["Mn", "Al", "C", "Ni"],
+            "nominal_composition": [
+                {"element": "Mn", "weight_percent": "14.7 ± 0.3", "atomic_percent": null},
+                {"element": "Al", "weight_percent": "9.8 ± 0.05", "atomic_percent": null},
+                {"element": "C", "weight_percent": "0.9 ± 0.01", "atomic_percent": null},
+                {"element": "Ni", "weight_percent": "4.1 ± 0.05", "atomic_percent": null},
+                {"element": "Fe", "weight_percent": "Balance", "atomic_percent": null}
+            ],
+            "alloys_notes": null
+        }
+    ],
+    "processes": [
+        {
+            "process_id": "proc_hr",
+            "paper_id": "A3",
+            "alloy_id": null,
+            "description": "30kg真空感应熔炼铸锭1423K均质化2.5h，1323K热轧至13mm厚",
+            "processes_notes": null
+        },
+        {
+            "process_id": "proc_hr_cr",
+            "paper_id": "A3",
+            "alloy_id": null,
+            "description": "热轧板室温冷轧至50%压下量，厚度约6mm",
+            "processes_notes": "15Mn5Ni合金冷轧压下量超过50%时出现开裂，故所有合金统一采用50%冷轧压下量"
+        },
+        {
+            "process_id": "proc_hr_cr_ht",
+            "paper_id": "A3",
+            "alloy_id": null,
+            "description": "冷轧后在873~1273K温度范围内保温1h，随后水淬",
+            "processes_notes": "典型热处理温度为973K、1023K、1173K"
+        }
+    ],
+    "samples": [
+        {"sample_id": "sample_28mn0ni_hr", "paper_id": "A3", "alloy_id": "alloy_fe28mn9al09c", "process_id": "proc_hr"},
+        {"sample_id": "sample_28mn5ni_hr", "paper_id": "A3", "alloy_id": "alloy_fe28mn9al09c5ni", "process_id": "proc_hr"},
+        {"sample_id": "sample_15mn5ni_hr", "paper_id": "A3", "alloy_id": "alloy_fe15mn9al09c5ni", "process_id": "proc_hr"},
+        {"sample_id": "sample_28mn0ni_hr_cr", "paper_id": "A3", "alloy_id": "alloy_fe28mn9al09c", "process_id": "proc_hr_cr"},
+        {"sample_id": "sample_28mn5ni_hr_cr", "paper_id": "A3", "alloy_id": "alloy_fe28mn9al09c5ni", "process_id": "proc_hr_cr"},
+        {"sample_id": "sample_15mn5ni_hr_cr", "paper_id": "A3", "alloy_id": "alloy_fe15mn9al09c5ni", "process_id": "proc_hr_cr"},
+        {"sample_id": "sample_28mn0ni_ht_973", "paper_id": "A3", "alloy_id": "alloy_fe28mn9al09c", "process_id": "proc_hr_cr_ht"},
+        {"sample_id": "sample_28mn0ni_ht_1023", "paper_id": "A3", "alloy_id": "alloy_fe28mn9al09c", "process_id": "proc_hr_cr_ht"},
+        {"sample_id": "sample_28mn0ni_ht_1173", "paper_id": "A3", "alloy_id": "alloy_fe28mn9al09c", "process_id": "proc_hr_cr_ht"},
+        {"sample_id": "sample_28mn5ni_ht_973", "paper_id": "A3", "alloy_id": "alloy_fe28mn9al09c5ni", "process_id": "proc_hr_cr_ht"},
+        {"sample_id": "sample_28mn5ni_ht_1023", "paper_id": "A3", "alloy_id": "alloy_fe28mn9al09c5ni", "process_id": "proc_hr_cr_ht"},
+        {"sample_id": "sample_28mn5ni_ht_1173", "paper_id": "A3", "alloy_id": "alloy_fe28mn9al09c5ni", "process_id": "proc_hr_cr_ht"},
+        {"sample_id": "sample_15mn5ni_ht_973", "paper_id": "A3", "alloy_id": "alloy_fe15mn9al09c5ni", "process_id": "proc_hr_cr_ht"},
+        {"sample_id": "sample_15mn5ni_ht_1023", "paper_id": "A3", "alloy_id": "alloy_fe15mn9al09c5ni", "process_id": "proc_hr_cr_ht"},
+        {"sample_id": "sample_15mn5ni_ht_1173", "paper_id": "A3", "alloy_id": "alloy_fe15mn9al09c5ni", "process_id": "proc_hr_cr_ht"}
+    ],
+    "processing_steps": [
+        {
+            "sample_id": null,
+            "paper_id": "A3",
+            "sequence": "1",
+            "type": "heat_treatment",
+            "method": "homogenization",
+            "temperature": "1423",
+            "unit": "K",
+            "duration": "2.5",
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "对真空感应熔炼的30kg铸锭进行均质化处理"
+        },
+        {
+            "sample_id": null,
+            "paper_id": "A3",
+            "sequence": "2",
+            "type": "thermomechanical_processing",
+            "method": "hot rolling",
+            "temperature": "1323",
+            "unit": "K",
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": "至13mm厚",
+            "processing_steps_notes": null
+        },
+        {
+            "sample_id": null,
+            "paper_id": "A3",
+            "sequence": "3",
+            "type": "mechanical_processing",
+            "method": "cold rolling",
+            "temperature": "room temperature",
+            "unit": null,
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": "50%",
+            "processing_steps_notes": "多道次冷轧至厚度约6mm"
+        },
+        {
+            "sample_id": null,
+            "paper_id": "A3",
+            "sequence": "4",
+            "type": "heat_treatment",
+            "method": "annealing",
+            "temperature": "873-1273",
+            "unit": "K",
+            "duration": "1",
+            "cooling_medium": "water",
+            "reduction_ratio": null,
+            "processing_steps_notes": "保温后水淬至室温"
+        }
+    ],
+    "structures": [
+        {
+            "structure_id": "struct_hr",
+            "sample_id": null,
+            "overall_structure": null,
+            "number_of_phases": null,
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_hr_28mn0ni",
+                    "related_sequence": "2",
+                    "phases_present": [
+                        {"phase_name": "austenite (γ)", "crystal_structure": "FCC", "volume_fraction": "100%", "morphology": "equiaxed grain", "grain_size": "5-7", "texture": "random"}
+                    ],
+                    "defects": [
+                        {"type": "annealing twin", "porosity": null, "inclusions": [], "dislocation_density": null, "lattice_distortion": null}
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {"value": "6", "unit": "μm"},
+                        "grain_size_distribution": "uniform",
+                        "texture": "random"
+                    },
+                    "precipitates": []
+                },
+                {
+                    "uuid": "uuid_hr_28mn5ni",
+                    "related_sequence": "2",
+                    "phases_present": [
+                        {"phase_name": "austenite (γ)", "crystal_structure": "FCC", "volume_fraction": "96%", "morphology": "equiaxed grain", "grain_size": "5-7", "texture": "random"},
+                        {"phase_name": "B2", "crystal_structure": "ordered BCC", "volume_fraction": "4%", "morphology": "elongated stringer, polygonal particle", "grain_size": null, "texture": null}
+                    ],
+                    "defects": [
+                        {"type": "annealing twin", "porosity": null, "inclusions": [], "dislocation_density": null, "lattice_distortion": null}
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {"value": "6", "unit": "μm"},
+                        "grain_size_distribution": "uniform",
+                        "texture": "random"
+                    },
+                    "precipitates": []
+                },
+                {
+                    "uuid": "uuid_hr_15mn5ni",
+                    "related_sequence": "2",
+                    "phases_present": [
+                        {"phase_name": "austenite (γ)", "crystal_structure": "FCC", "volume_fraction": "88%", "morphology": "equiaxed grain", "grain_size": "5-7", "texture": "random"},
+                        {"phase_name": "B2", "crystal_structure": "ordered BCC", "volume_fraction": "12%", "morphology": "elongated stringer, polygonal particle", "grain_size": null, "texture": null}
+                    ],
+                    "defects": [
+                        {"type": "annealing twin", "porosity": null, "inclusions": [], "dislocation_density": null, "lattice_distortion": null}
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {"value": "6", "unit": "μm"},
+                        "grain_size_distribution": "uniform",
+                        "texture": "random"
+                    },
+                    "precipitates": []
+                },
+                {
+                    "uuid": "uuid_cr_all",
+                    "related_sequence": "3",
+                    "phases_present": [],
+                    "defects": [
+                        {"type": "planar slip band", "porosity": null, "inclusions": [], "dislocation_density": "high", "lattice_distortion": null}
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {"value": null, "unit": null},
+                        "grain_size_distribution": "deformed",
+                        "texture": null
+                    },
+                    "precipitates": [
+                        {"precipitate_id": "prec_b2_cr", "type": "B2", "size": {"value": "2", "unit": "μm"}, "distribution": "fragmented stringer", "coherency": null}
+                    ]
+                },
+                {
+                    "uuid": "uuid_ht_973",
+                    "related_sequence": "4",
+                    "phases_present": [],
+                    "defects": [],
+                    "grain_structure": {
+                        "average_grain_size": {"value": "1-2.5", "unit": "μm"},
+                        "grain_size_distribution": null,
+                        "texture": null
+                    },
+                    "precipitates": [
+                        {"precipitate_id": "prec_kappa_973", "type": "κ-carbide", "size": {"value": "10-60", "unit": "nm"}, "distribution": "intergranular, intragranular", "coherency": null},
+                        {"precipitate_id": "prec_b2_intra_973", "type": "B2", "size": {"value": "5-200", "unit": "nm"}, "distribution": "intragranular", "coherency": null},
+                        {"precipitate_id": "prec_b2_inter_973", "type": "B2", "size": {"value": "0.5-1.5", "unit": "μm"}, "distribution": "intergranular", "coherency": null}
+                    ]
+                },
+                {
+                    "uuid": "uuid_ht_1173",
+                    "related_sequence": "4",
+                    "phases_present": [],
+                    "defects": [],
+                    "grain_structure": {
+                        "average_grain_size": {"value": "4-40", "unit": "μm"},
+                        "grain_size_distribution": null,
+                        "texture": null
+                    },
+                    "precipitates": [
+                        {"precipitate_id": "prec_b2_1173", "type": "B2", "size": {"value": null, "unit": null}, "distribution": "intergranular, stringer", "coherency": null}
+                    ]
+                }
+            ]
+        }
+    ],
+    "interfaces": [
+        {
+            "interface_set_id": "if_set_1",
+            "sample_id": null,
+            "phases": [
+                {
+                    "interface_id": "if_gamma_b2",
+                    "microstructure_uuid": null,
+                    "phase_1_name": "austenite (γ)",
+                    "phase_2_name": "B2",
+                    "coherence": null
+                }
+            ],
+            "defect_interaction": [
+                {
+                    "interaction_id": "inter_dislocation_b2",
+                    "microstructure_uuid": null,
+                    "interaction_type": "dislocation-particle pinning",
+                    "quality_description": "B2粒子作为不可剪切相阻碍位错运动"
+                },
+                {
+                    "interaction_id": "inter_dislocation_twin",
+                    "microstructure_uuid": null,
+                    "interaction_type": "dislocation-twin interaction",
+                    "quality_description": "促进应变硬化和塑性提升"
+                }
+            ],
+            "interface_notes": [
+                {"stress_strain_distribution": null},
+                {"slippage_situation": "15Mn5Ni合金低温热处理后裂纹沿γ/B2相界扩展，导致脆性断裂"}
+            ],
+            "phase_evolution": "B2相和κ-碳化物的体积分数随热处理温度升高而降低，973K时析出量最高，1173K时κ-碳化物完全溶解"
+        }
+    ],
+    "properties": [
+        {
+            "property_set_id": "prop_set_hr_cr",
+            "sample_id": null,
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [
+                        {"direction": null, "value": "1350 ± 10", "unit": "MPa", "others": {"uncertainty": "±10"}},
+                        {"direction": null, "value": "1394 ± 5", "unit": "MPa", "others": {"uncertainty": "±5"}},
+                        {"direction": null, "value": "1665 ± 12", "unit": "MPa", "others": {"uncertainty": "±12"}}
+                    ],
+                    "ultimate_tensile_strength": [
+                        {"direction": null, "value": "1500 ± 10", "unit": "MPa", "others": {"uncertainty": "±10"}},
+                        {"direction": null, "value": "1571 ± 5", "unit": "MPa", "others": {"uncertainty": "±5"}},
+                        {"direction": null, "value": "1800 ± 15", "unit": "MPa", "others": {"uncertainty": "±15"}}
+                    ],
+                    "elongation": [
+                        {"direction": null, "value": "10 ± 0.4", "unit": "%"},
+                        {"direction": null, "value": "11 ± 0.4", "unit": "%"},
+                        {"direction": null, "value": "7 ± 0.5", "unit": "%"}
+                    ],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [
+                    {"region": "bulk", "value": "430", "scale": "Vickers", "unit": "VHN"},
+                    {"region": "bulk", "value": "450", "scale": "Vickers", "unit": "VHN"},
+                    {"region": "bulk", "value": "460", "scale": "Vickers", "unit": "VHN"}
+                ],
+                "fracture_toughness": {"value": null, "unit": null},
+                "fatigue_properties": {"fatigue_limit": null, "cycles_to_failure": null},
+                "creep_properties": {"steady_state_creep_rate": null, "rupture_life": null}
+            },
+            "physical": {
+                "density": {"value": null, "unit": null},
+                "thermal_properties": {"thermal_conductivity": null, "thermal_expansion_coefficient": null, "specific_heat": null},
+                "electrical_properties": {"electrical_conductivity": null, "resistivity": null},
+                "magnetic_properties": {"magnetic_susceptibility": null, "curie_temperature": null}
+            },
+            "chemical": {
+                "corrosion_resistance": {"test_medium": null, "corrosion_rate": null, "passivation_behavior": null},
+                "oxidation_resistance": {"oxidation_rate_constant": null, "protective_scale": null}
+            },
+            "radiation_properties": {"void_swelling": null, "irradiation_hardening": null, "helium_embrittlement": null}
+        },
+        {
+            "property_set_id": "prop_set_ht",
+            "sample_id": null,
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [
+                        {"direction": null, "value": "504 ± 5", "unit": "MPa", "others": {"uncertainty": "±5"}},
+                        {"direction": null, "value": "900 ± 4", "unit": "MPa", "others": {"uncertainty": "±4"}},
+                        {"direction": null, "value": "971 ± 5", "unit": "MPa", "others": {"uncertainty": "±5"}}
+                    ],
+                    "ultimate_tensile_strength": [
+                        {"direction": null, "value": "905 ± 8", "unit": "MPa", "others": {"uncertainty": "±8"}},
+                        {"direction": null, "value": "1236 ± 5", "unit": "MPa", "others": {"uncertainty": "±5"}},
+                        {"direction": null, "value": "1303 ± 12", "unit": "MPa", "others": {"uncertainty": "±12"}}
+                    ],
+                    "elongation": [
+                        {"direction": null, "value": "86 ± 2", "unit": "%"},
+                        {"direction": null, "value": "39 ± 1", "unit": "%"},
+                        {"direction": null, "value": "36 ± 1", "unit": "%"}
+                    ],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": [
+                        {"property_id": "n_28mn0ni_1173", "direction": null, "value": "0.50", "unit": null},
+                        {"property_id": "n_ni_alloy_1173", "direction": null, "value": "0.30", "unit": null}
+                    ]
+                },
+                "hardness": [
+                    {"region": "bulk", "value": "240", "scale": "Vickers", "unit": "VHN"},
+                    {"region": "bulk", "value": "330", "scale": "Vickers", "unit": "VHN"},
+                    {"region": "bulk", "value": "340", "scale": "Vickers", "unit": "VHN"}
+                ],
+                "fracture_toughness": {"value": null, "unit": null},
+                "fatigue_properties": {"fatigue_limit": null, "cycles_to_failure": null},
+                "creep_properties": {"steady_state_creep_rate": null, "rupture_life": null}
+            },
+            "physical": {
+                "density": {"value": null, "unit": null},
+                "thermal_properties": {"thermal_conductivity": null, "thermal_expansion_coefficient": null, "specific_heat": null},
+                "electrical_properties": {"electrical_conductivity": null, "resistivity": null},
+                "magnetic_properties": {"magnetic_susceptibility": null, "curie_temperature": null}
+            },
+            "chemical": {
+                "corrosion_resistance": {"test_medium": null, "corrosion_rate": null, "passivation_behavior": null},
+                "oxidation_resistance": {"oxidation_rate_constant": null, "protective_scale": null}
+            },
+            "radiation_properties": {"void_swelling": null, "irradiation_hardening": null, "helium_embrittlement": null}
+        }
+    ],
+    "performance": [
+        {
+            "performance_id": "perf_1",
+            "sample_id": "sample_28mn0ni_ht_1173",
+            "service_conditions": {
+                "operating_temperature": {"min": null, "max": null, "unit": null},
+                "stress_state": null,
+                "environment": null
+            },
+            "lifetime_prediction": {"model_used": null, "predicted_lifetime": null, "confidence_interval": null},
+            "comparative_performance": {
+                "benchmark_alloy": "28Mn5Ni",
+                "benchmark_process_id": "proc_hr_cr_ht",
+                "benchmark_sample_id": "sample_28mn5ni_ht_1173",
+                "improvement_percentage": "伸长率提升120%"
+            }
+        },
+        {
+            "performance_id": "perf_2",
+            "sample_id": "sample_15mn5ni_ht_1173",
+            "service_conditions": {
+                "operating_temperature": {"min": null, "max": null, "unit": null},
+                "stress_state": null,
+                "environment": null
+            },
+            "lifetime_prediction": {"model_used": null, "predicted_lifetime": null, "confidence_interval": null},
+            "comparative_performance": {
+                "benchmark_alloy": "28Mn5Ni",
+                "benchmark_process_id": "proc_hr_cr_ht",
+                "benchmark_sample_id": "sample_28mn5ni_ht_1173",
+                "improvement_percentage": "强度提升约5%，伸长率略降8%"
+            }
+        }
+    ],
+    "characterization_methods": [
+        {
+            "characterization_id": "char_ebsd",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "Orientation Imaging Microscopy (OIM) / EBSD",
+            "purpose": "分析晶粒取向、晶粒尺寸、孪晶分数、再结晶分数、相组成",
+            "key_findings": "B2相显著延缓奥氏体再结晶，再结晶分数随热处理温度升高而增加，Ni含量越高再结晶速率越慢"
+        },
+        {
+            "characterization_id": "char_xrd",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "X-ray Diffraction (XRD)",
+            "purpose": "物相鉴定",
+            "key_findings": "973K热处理后析出κ-碳化物和B2相，1173K时28Mn0Ni合金仅存奥氏体相，15Mn5Ni合金仍有B2相"
+        },
+        {
+            "characterization_id": "char_tem",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "Transmission Electron Microscopy (TEM)",
+            "purpose": "观察纳米级析出相形貌、尺寸、分布及位错亚结构",
+            "key_findings": "973K热处理后存在5-200nm的B2相和10-60nm的κ-碳化物，位错与B2粒子、孪晶相互作用促进应变硬化"
+        },
+        {
+            "characterization_id": "char_hardness",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "Vickers hardness test",
+            "purpose": "测试不同工艺下的 bulk 硬度",
+            "key_findings": "冷轧后硬度均约450VHN，Ni含合金低温热处理硬度更高，硬度随热处理温度升高而降低"
+        },
+        {
+            "characterization_id": "char_tensile",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "Room temperature tensile test",
+            "purpose": "测试屈服强度、抗拉强度、伸长率、应变硬化指数",
+            "key_findings": "28Mn0Ni合金1173K处理后伸长率达86%，Ni含合金强度更高但伸长率较低，15Mn5Ni合金973/1023K处理后呈脆性"
+        },
+        {
+            "characterization_id": "char_fractography",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "SEM fractography",
+            "purpose": "分析断裂机制",
+            "key_findings": "28Mn0Ni和28Mn5Ni合金为韧窝型韧性断裂，15Mn5Ni低温热处理后为沿晶/准解理脆性断裂，裂纹沿γ/B2相界扩展"
+        }
+    ],
+    "computational_details": [],
+    "unmapped_findings": [
+        "15Mn5Ni合金冷轧压下量超过50%时出现开裂，因此所有合金统一采用50%冷轧压下量进行对比",
+        "28Mn0Ni合金的最优加工窗口约为973K，可获得屈服强度~900MPa、伸长率~23%的综合性能",
+        "28Mn5Ni合金因B2相析出延缓再结晶，可在更宽温度范围内调控性能",
+        "15Mn5Ni合金在973K和1023K热处理后伸长率<1%，呈脆性，最优加工窗口约为1173K",
+        "完全再结晶奥氏体的应变硬化机制为平面滑移、动态滑移带细化及位错-孪晶相互作用"
+    ]
+}

@@ -1,0 +1,715 @@
+{
+  "paper_id": "A57",
+  "sections": {
+    "papers": {
+      "candidate_count": 1,
+      "result_count": 1,
+      "error": null,
+      "raw_response": "{\n  \"results\": [\n    {\"id\": \"papers:0:papers_a57_paper_scope\", \"matched\": false}\n  ]\n}",
+      "decisions": {
+        "papers:0:papers_a57_paper_scope": false
+      },
+      "input_candidates": [
+        {
+          "id": "papers:0:papers_a57_paper_scope",
+          "section": "papers",
+          "canonical_object": "A57",
+          "field": "paper_scope",
+          "field_path": "paper_scope",
+          "truth_path": "papers.A57.paper_scope",
+          "prediction_path": "papers.A57.paper_scope",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Investigation of microstructure and mechanical properties of Fe-30Mn-9Al-1C-1V-5Ni duplex lightweight steel with dual-nanoprecipitation (L'12 ordered domains and VC carbides) produced by cold rolling and heat treatment, focusing on strengthening and strain hardening mechanisms.",
+          "prediction_value": "Design and investigation of an Fe-30Mn-9Al-1C-1V-5Ni duplex lightweight steel with austenite-B2 dual-phase microstructure and dual-nanoprecipitation (L'1_2 LRO domains and VC) via simple rolling and heat treatment, achieving ultrahigh strength and ductility, and elucidation of multiple strengthening and strain hardening mechanisms."
+        }
+      ],
+      "candidates": [
+        {
+          "key": "papers.A57.paper_scope",
+          "truth_path": "papers.A57.paper_scope",
+          "prediction_path": "papers.A57.paper_scope",
+          "canonical_object": "A57",
+          "field_path": "paper_scope",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Investigation of microstructure and mechanical properties of Fe-30Mn-9Al-1C-1V-5Ni duplex lightweight steel with dual-nanoprecipitation (L'12 ordered domains and VC carbides) produced by cold rolling and heat treatment, focusing on strengthening and strain hardening mechanisms.",
+          "prediction_value": "Design and investigation of an Fe-30Mn-9Al-1C-1V-5Ni duplex lightweight steel with austenite-B2 dual-phase microstructure and dual-nanoprecipitation (L'1_2 LRO domains and VC) via simple rolling and heat treatment, achieving ultrahigh strength and ductility, and elucidation of multiple strengthening and strain hardening mechanisms.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "investigation of microstructure and mechanical properties of fe-30mn-9al-1c-1v-5ni duplex lightweight steel with dual-nanoprecipitation (l'12 ordered domains and vc carbides) produced by cold rolling and heat treatment, focusing on strengthening and strain hardening mechanisms.",
+          "prediction_normalized": "design and investigation of an fe-30mn-9al-1c-1v-5ni duplex lightweight steel with austenite-b2 dual-phase microstructure and dual-nanoprecipitation (l'1_2 lro domains and vc) via simple rolling and heat treatment, achieving ultrahigh strength and ductility, and elucidation of multiple strengthening and strain hardening mechanisms.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "papers:0:papers_a57_paper_scope"
+        }
+      ]
+    },
+    "alloys": {
+      "candidate_count": 1,
+      "result_count": 1,
+      "error": null,
+      "raw_response": "{\n  \"results\": [\n    {\"id\": \"alloys:0:alloys_alloy_fe30mn9al1c1v5ni_alloys_notes\", \"matched\": true}\n  ]\n}",
+      "decisions": {
+        "alloys:0:alloys_alloy_fe30mn9al1c1v5ni_alloys_notes": true
+      },
+      "input_candidates": [
+        {
+          "id": "alloys:0:alloys_alloy_fe30mn9al1c1v5ni_alloys_notes",
+          "section": "alloys",
+          "canonical_object": "alloy_fe30mn9al1c1v5ni",
+          "field": "alloys_notes",
+          "field_path": "alloys_notes",
+          "truth_path": "alloys.alloy_fe30mn9al1c1v5ni.alloys_notes",
+          "prediction_path": "alloys.alloy_fe30mn9al1c1v5ni.alloys_notes",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Measured composition (wt.%, Table 1): Mn 30.45, Al 9.50, C 1.20, V 1.09, Ni 4.94, P 0.0040, S 0.0044, Fe Bal.",
+          "prediction_value": "Measured compositions (wt.%): Mn 30.45, Al 9.50, C 1.20, V 1.09, Ni 4.94, P 0.0040, S 0.0044, Fe Bal."
+        }
+      ],
+      "candidates": [
+        {
+          "key": "alloys.alloy_fe30mn9al1c1v5ni.alloys_notes",
+          "truth_path": "alloys.alloy_fe30mn9al1c1v5ni.alloys_notes",
+          "prediction_path": "alloys.alloy_fe30mn9al1c1v5ni.alloys_notes",
+          "canonical_object": "alloy_fe30mn9al1c1v5ni",
+          "field_path": "alloys_notes",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Measured composition (wt.%, Table 1): Mn 30.45, Al 9.50, C 1.20, V 1.09, Ni 4.94, P 0.0040, S 0.0044, Fe Bal.",
+          "prediction_value": "Measured compositions (wt.%): Mn 30.45, Al 9.50, C 1.20, V 1.09, Ni 4.94, P 0.0040, S 0.0044, Fe Bal.",
+          "error_type": "correct",
+          "matched": true,
+          "method": "llm_field_judge",
+          "truth_normalized": "measured composition (wt.%, table 1): mn 30.45, al 9.50, c 1.20, v 1.09, ni 4.94, p 0.0040, s 0.0044, fe balance",
+          "prediction_normalized": "measured compositions (wt.%): mn 30.45, al 9.50, c 1.20, v 1.09, ni 4.94, p 0.0040, s 0.0044, fe balance",
+          "reason": "LLM judged same-field values as semantically matched.",
+          "score": 1.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "alloys:0:alloys_alloy_fe30mn9al1c1v5ni_alloys_notes"
+        }
+      ]
+    },
+    "processes": {
+      "candidate_count": 1,
+      "result_count": 1,
+      "error": null,
+      "raw_response": "{\n  \"results\": [\n    {\"id\": \"processes:0:processes_proc_fe30mn9al1c1v5ni_01_description\", \"matched\": false}\n  ]\n}",
+      "decisions": {
+        "processes:0:processes_proc_fe30mn9al1c1v5ni_01_description": false
+      },
+      "input_candidates": [
+        {
+          "id": "processes:0:processes_proc_fe30mn9al1c1v5ni_01_description",
+          "section": "processes",
+          "canonical_object": "proc_fe30mn9al1c1v5ni_01",
+          "field": "description",
+          "field_path": "description",
+          "truth_path": "processes.proc_fe30mn9al1c1v5ni_01.description",
+          "prediction_path": "processes.proc_fe30mn9al1c1v5ni_01.description",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Homogenized at 1050°C for 1 h, hot-rolled to 3 mm (85% reduction), water-quenched, cold-rolled to 1.5 mm (50% total reduction, single pass ≤5%), solution-treated at 900°C for 15 min, water-quenched.",
+          "prediction_value": "Induction melting of 10 kg ingot under high-purity argon, homogenization at 1050°C for 1 h, hot rolling to 3 mm (~85% reduction), water quenching, cold rolling to 1.5 mm (50% total reduction, single-pass ≤5%), solution treatment at 900°C for 15 min, and final water quenching."
+        }
+      ],
+      "candidates": [
+        {
+          "key": "processes.proc_fe30mn9al1c1v5ni_01.description",
+          "truth_path": "processes.proc_fe30mn9al1c1v5ni_01.description",
+          "prediction_path": "processes.proc_fe30mn9al1c1v5ni_01.description",
+          "canonical_object": "proc_fe30mn9al1c1v5ni_01",
+          "field_path": "description",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Homogenized at 1050°C for 1 h, hot-rolled to 3 mm (85% reduction), water-quenched, cold-rolled to 1.5 mm (50% total reduction, single pass ≤5%), solution-treated at 900°C for 15 min, water-quenched.",
+          "prediction_value": "Induction melting of 10 kg ingot under high-purity argon, homogenization at 1050°C for 1 h, hot rolling to 3 mm (~85% reduction), water quenching, cold rolling to 1.5 mm (50% total reduction, single-pass ≤5%), solution treatment at 900°C for 15 min, and final water quenching.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "homogenized at 1050 c for 1 h, hot-rolled to 3 mm (85% reduction), water-quenched, cold-rolled to 1.5 mm (50% total reduction, single pass ≤5%), solution-treated at 900 c for 15 min, water-quenched.",
+          "prediction_normalized": "induction melting of 10 kg ingot under high-purity argon, homogenization at 1050 c for 1 h, hot rolling to 3 mm (~85% reduction), water quenching, cold rolling to 1.5 mm (50% total reduction, single-pass ≤5%), solution treatment at 900 c for 15 min, and final water quenching.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "processes:0:processes_proc_fe30mn9al1c1v5ni_01_description"
+        }
+      ]
+    },
+    "samples": {
+      "candidate_count": 0,
+      "result_count": 0,
+      "error": null,
+      "raw_response": null,
+      "decisions": {},
+      "input_candidates": [],
+      "candidates": []
+    },
+    "processing_steps": {
+      "candidate_count": 1,
+      "result_count": 1,
+      "error": null,
+      "raw_response": "{\n  \"results\": [\n    {\n      \"id\": \"processing_steps:0:processing_steps_sample_fe30mn9al1c1v5ni_01_processing_steps_notes\",\n      \"matched\": false\n    }\n  ]\n}",
+      "decisions": {
+        "processing_steps:0:processing_steps_sample_fe30mn9al1c1v5ni_01_processing_steps_notes": false
+      },
+      "input_candidates": [
+        {
+          "id": "processing_steps:0:processing_steps_sample_fe30mn9al1c1v5ni_01_processing_steps_notes",
+          "section": "processing_steps",
+          "canonical_object": "sample_fe30mn9al1c1v5ni_01",
+          "field": "processing_steps_notes",
+          "field_path": "processing_steps_notes",
+          "truth_path": "processing_steps.sample_fe30mn9al1c1v5ni_01.processing_steps_notes",
+          "prediction_path": "processing_steps.sample_fe30mn9al1c1v5ni_01.processing_steps_notes",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Cold rolled to 1.5 mm final thickness",
+          "prediction_value": "Final quench after solution treatment"
+        }
+      ],
+      "candidates": [
+        {
+          "key": "processing_steps.sample_fe30mn9al1c1v5ni_01.processing_steps_notes",
+          "truth_path": "processing_steps.sample_fe30mn9al1c1v5ni_01.processing_steps_notes",
+          "prediction_path": "processing_steps.sample_fe30mn9al1c1v5ni_01.processing_steps_notes",
+          "canonical_object": "sample_fe30mn9al1c1v5ni_01",
+          "field_path": "processing_steps_notes",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Cold rolled to 1.5 mm final thickness",
+          "prediction_value": "Final quench after solution treatment",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "cold rolled to 1.5 mm final thickness",
+          "prediction_normalized": "final quench after solution treatment",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "processing_steps:0:processing_steps_sample_fe30mn9al1c1v5ni_01_processing_steps_notes"
+        }
+      ]
+    },
+    "structures": {
+      "candidate_count": 1,
+      "result_count": 1,
+      "error": null,
+      "raw_response": "{\n  \"results\": [\n    {\n      \"id\": \"structures:0:structures_sample_fe30mn9al1c1v5ni_01_overall_structure\",\n      \"matched\": true\n    }\n  ]\n}",
+      "decisions": {
+        "structures:0:structures_sample_fe30mn9al1c1v5ni_01_overall_structure": true
+      },
+      "input_candidates": [
+        {
+          "id": "structures:0:structures_sample_fe30mn9al1c1v5ni_01_overall_structure",
+          "section": "structures",
+          "canonical_object": "sample_fe30mn9al1c1v5ni_01",
+          "field": "overall_structure",
+          "field_path": "overall_structure",
+          "truth_path": "structures.sample_fe30mn9al1c1v5ni_01.overall_structure",
+          "prediction_path": "structures.sample_fe30mn9al1c1v5ni_01.overall_structure",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Duplex microstructure of austenite (γ-FCC) and B2 (ordered BCC) phases, with nanoscale L'12 ordered domains (average size 1.0±0.3 nm, volume fraction 11.10%) and VC carbides (average size 19.9±6.2 nm, volume fraction 0.26%) within the austenite.",
+          "prediction_value": "Duplex microstructure comprising austenite and B2 phases with dual-nanoprecipitation of L'1_2 type long-range ordered domains and VC carbides within austenite"
+        }
+      ],
+      "candidates": [
+        {
+          "key": "structures.sample_fe30mn9al1c1v5ni_01.overall_structure",
+          "truth_path": "structures.sample_fe30mn9al1c1v5ni_01.overall_structure",
+          "prediction_path": "structures.sample_fe30mn9al1c1v5ni_01.overall_structure",
+          "canonical_object": "sample_fe30mn9al1c1v5ni_01",
+          "field_path": "overall_structure",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Duplex microstructure of austenite (γ-FCC) and B2 (ordered BCC) phases, with nanoscale L'12 ordered domains (average size 1.0±0.3 nm, volume fraction 11.10%) and VC carbides (average size 19.9±6.2 nm, volume fraction 0.26%) within the austenite.",
+          "prediction_value": "Duplex microstructure comprising austenite and B2 phases with dual-nanoprecipitation of L'1_2 type long-range ordered domains and VC carbides within austenite",
+          "error_type": "correct",
+          "matched": true,
+          "method": "llm_field_judge",
+          "truth_normalized": "duplex microstructure of austenite (γ-fcc) and b2 (ordered bcc) phases, with nanoscale l'12 ordered domains (average size 1.0±0.3 nm, volume fraction 11.10%) and vc carbides (average size 19.9±6.2 nm, volume fraction 0.26%) within the austenite.",
+          "prediction_normalized": "duplex microstructure comprising austenite and b2 phases with dual-nanoprecipitation of l'1_2 type long-range ordered domains and vc carbides within austenite",
+          "reason": "LLM judged same-field values as semantically matched.",
+          "score": 1.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "structures:0:structures_sample_fe30mn9al1c1v5ni_01_overall_structure"
+        }
+      ]
+    },
+    "interfaces": {
+      "candidate_count": 2,
+      "result_count": 2,
+      "error": null,
+      "raw_response": "{\n  \"results\": [\n    {\"id\": \"interfaces:0:interfaces_sample_fe30mn9al1c1v5ni_01_defect_interaction_0_quality_description\", \"matched\": true},\n    {\"id\": \"interfaces:1:interfaces_sample_fe30mn9al1c1v5ni_01_phase_evolution\", \"matched\": false}\n  ]\n}",
+      "decisions": {
+        "interfaces:1:interfaces_sample_fe30mn9al1c1v5ni_01_phase_evolution": false,
+        "interfaces:0:interfaces_sample_fe30mn9al1c1v5ni_01_defect_interaction_0_quality_description": true
+      },
+      "input_candidates": [
+        {
+          "id": "interfaces:0:interfaces_sample_fe30mn9al1c1v5ni_01_defect_interaction_0_quality_description",
+          "section": "interfaces",
+          "canonical_object": "sample_fe30mn9al1c1v5ni_01",
+          "field": "quality_description",
+          "field_path": "defect_interaction[0].quality_description",
+          "truth_path": "interfaces.sample_fe30mn9al1c1v5ni_01.defect_interaction[0].quality_description",
+          "prediction_path": "interfaces.sample_fe30mn9al1c1v5ni_01.defect_interaction[0].quality_description",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "during deformation, GNDs accumulate at interfaces causing HDI strengthening",
+          "prediction_value": "Accumulation of geometrically necessary dislocations at austenite/B2 boundaries generates long-range back stresses in soft regions and forward stresses in hard regions, producing HDI strengthening and work-hardening"
+        },
+        {
+          "id": "interfaces:1:interfaces_sample_fe30mn9al1c1v5ni_01_phase_evolution",
+          "section": "interfaces",
+          "canonical_object": "sample_fe30mn9al1c1v5ni_01",
+          "field": "phase_evolution",
+          "field_path": "phase_evolution",
+          "truth_path": "interfaces.sample_fe30mn9al1c1v5ni_01.phase_evolution",
+          "prediction_path": "interfaces.sample_fe30mn9al1c1v5ni_01.phase_evolution",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "During tensile deformation, dislocations shear the LRO domains reducing their volume fraction; VC precipitates impede dislocation motion; dislocation density increases in both phases and accumulates at phase boundaries, enhancing HDI hardening.",
+          "prediction_value": "During deformation, dislocations shear through L'1_2 LRO domains causing partial destruction and reduced volume fraction; VC particles impede dislocation motion with hindering effect becoming more pronounced at higher strains; dislocation density increases significantly in both austenite and B2 phases with straining"
+        }
+      ],
+      "candidates": [
+        {
+          "key": "interfaces.sample_fe30mn9al1c1v5ni_01.defect_interaction[0].quality_description",
+          "truth_path": "interfaces.sample_fe30mn9al1c1v5ni_01.defect_interaction[0].quality_description",
+          "prediction_path": "interfaces.sample_fe30mn9al1c1v5ni_01.defect_interaction[0].quality_description",
+          "canonical_object": "sample_fe30mn9al1c1v5ni_01",
+          "field_path": "defect_interaction[0].quality_description",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "during deformation, GNDs accumulate at interfaces causing HDI strengthening",
+          "prediction_value": "Accumulation of geometrically necessary dislocations at austenite/B2 boundaries generates long-range back stresses in soft regions and forward stresses in hard regions, producing HDI strengthening and work-hardening",
+          "error_type": "correct",
+          "matched": true,
+          "method": "llm_field_judge",
+          "truth_normalized": "during deformation, gnds accumulate at interfaces causing hdi strengthening",
+          "prediction_normalized": "accumulation of geometrically necessary dislocations at austenite/b2 boundaries generates long-range back stresses in soft regions and forward stresses in hard regions, producing hdi strengthening and work-hardening",
+          "reason": "LLM judged same-field values as semantically matched.",
+          "score": 1.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "interfaces:0:interfaces_sample_fe30mn9al1c1v5ni_01_defect_interaction_0_quality_description"
+        },
+        {
+          "key": "interfaces.sample_fe30mn9al1c1v5ni_01.phase_evolution",
+          "truth_path": "interfaces.sample_fe30mn9al1c1v5ni_01.phase_evolution",
+          "prediction_path": "interfaces.sample_fe30mn9al1c1v5ni_01.phase_evolution",
+          "canonical_object": "sample_fe30mn9al1c1v5ni_01",
+          "field_path": "phase_evolution",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "During tensile deformation, dislocations shear the LRO domains reducing their volume fraction; VC precipitates impede dislocation motion; dislocation density increases in both phases and accumulates at phase boundaries, enhancing HDI hardening.",
+          "prediction_value": "During deformation, dislocations shear through L'1_2 LRO domains causing partial destruction and reduced volume fraction; VC particles impede dislocation motion with hindering effect becoming more pronounced at higher strains; dislocation density increases significantly in both austenite and B2 phases with straining",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "during tensile deformation, dislocations shear the lro domains reducing their volume fraction; vc precipitates impede dislocation motion; dislocation density increases in both phases and accumulates at phase boundaries, enhancing hdi hardening.",
+          "prediction_normalized": "during deformation, dislocations shear through l'1_2 lro domains causing partial destruction and reduced volume fraction; vc particles impede dislocation motion with hindering effect becoming more pronounced at higher strains; dislocation density increases significantly in both austenite and b2 phases with straining",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "interfaces:1:interfaces_sample_fe30mn9al1c1v5ni_01_phase_evolution"
+        }
+      ]
+    },
+    "properties": {
+      "candidate_count": 0,
+      "result_count": 0,
+      "error": null,
+      "raw_response": null,
+      "decisions": {},
+      "input_candidates": [],
+      "candidates": []
+    },
+    "performance": {
+      "candidate_count": 0,
+      "result_count": 0,
+      "error": null,
+      "raw_response": null,
+      "decisions": {},
+      "input_candidates": [],
+      "candidates": []
+    },
+    "characterization_methods": {
+      "candidate_count": 2,
+      "result_count": 2,
+      "error": null,
+      "raw_response": "{\n  \"results\": [\n    {\n      \"id\": \"characterization_methods:0:characterization_methods_sample_fe30mn9al1c1v5ni_01_key_findings\",\n      \"matched\": true\n    },\n    {\n      \"id\": \"characterization_methods:1:characterization_methods_sample_fe30mn9al1c1v5ni_01_purpose\",\n      \"matched\": true\n    }\n  ]\n}",
+      "decisions": {
+        "characterization_methods:0:characterization_methods_sample_fe30mn9al1c1v5ni_01_key_findings": true,
+        "characterization_methods:1:characterization_methods_sample_fe30mn9al1c1v5ni_01_purpose": true
+      },
+      "input_candidates": [
+        {
+          "id": "characterization_methods:0:characterization_methods_sample_fe30mn9al1c1v5ni_01_key_findings",
+          "section": "characterization_methods",
+          "canonical_object": "sample_fe30mn9al1c1v5ni_01",
+          "field": "key_findings",
+          "field_path": "key_findings",
+          "truth_path": "characterization_methods.sample_fe30mn9al1c1v5ni_01.key_findings",
+          "prediction_path": "characterization_methods.sample_fe30mn9al1c1v5ni_01.key_findings",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "HDI stress increases with strain (from ~620 MPa at 1% to ~845 MPa at 10.4%); yield drop Δσ_y and hysteresis loops reflect HDI strengthening; at yielding, HDI stress extrapolated to 597 MPa",
+          "prediction_value": "Hysteresis area and yield drop increase with strain; HDI stress increases progressively from ~620 MPa at 1% true strain to ~845 MPa at 11% true strain; HDI contribution to YS determined as 597 MPa by extrapolation"
+        },
+        {
+          "id": "characterization_methods:1:characterization_methods_sample_fe30mn9al1c1v5ni_01_purpose",
+          "section": "characterization_methods",
+          "canonical_object": "sample_fe30mn9al1c1v5ni_01",
+          "field": "purpose",
+          "field_path": "purpose",
+          "truth_path": "characterization_methods.sample_fe30mn9al1c1v5ni_01.purpose",
+          "prediction_path": "characterization_methods.sample_fe30mn9al1c1v5ni_01.purpose",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Evaluate HDI stress evolution and Bauschinger effect",
+          "prediction_value": "HDI stress evaluation and Bauschinger effect analysis"
+        }
+      ],
+      "candidates": [
+        {
+          "key": "characterization_methods.sample_fe30mn9al1c1v5ni_01.key_findings",
+          "truth_path": "characterization_methods.sample_fe30mn9al1c1v5ni_01.key_findings",
+          "prediction_path": "characterization_methods.sample_fe30mn9al1c1v5ni_01.key_findings",
+          "canonical_object": "sample_fe30mn9al1c1v5ni_01",
+          "field_path": "key_findings",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "HDI stress increases with strain (from ~620 MPa at 1% to ~845 MPa at 10.4%); yield drop Δσ_y and hysteresis loops reflect HDI strengthening; at yielding, HDI stress extrapolated to 597 MPa",
+          "prediction_value": "Hysteresis area and yield drop increase with strain; HDI stress increases progressively from ~620 MPa at 1% true strain to ~845 MPa at 11% true strain; HDI contribution to YS determined as 597 MPa by extrapolation",
+          "error_type": "correct",
+          "matched": true,
+          "method": "llm_field_judge",
+          "truth_normalized": "hdi stress increases with strain (from ~620 mpa at 1% to ~845 mpa at 10.4%); yield drop δσ_y and hysteresis loops reflect hdi strengthening; at yielding, hdi stress extrapolated to 597 mpa",
+          "prediction_normalized": "hysteresis area and yield drop increase with strain; hdi stress increases progressively from ~620 mpa at 1% true strain to ~845 mpa at 11% true strain; hdi contribution to ys determined as 597 mpa by extrapolation",
+          "reason": "LLM judged same-field values as semantically matched.",
+          "score": 1.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "characterization_methods:0:characterization_methods_sample_fe30mn9al1c1v5ni_01_key_findings"
+        },
+        {
+          "key": "characterization_methods.sample_fe30mn9al1c1v5ni_01.purpose",
+          "truth_path": "characterization_methods.sample_fe30mn9al1c1v5ni_01.purpose",
+          "prediction_path": "characterization_methods.sample_fe30mn9al1c1v5ni_01.purpose",
+          "canonical_object": "sample_fe30mn9al1c1v5ni_01",
+          "field_path": "purpose",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Evaluate HDI stress evolution and Bauschinger effect",
+          "prediction_value": "HDI stress evaluation and Bauschinger effect analysis",
+          "error_type": "correct",
+          "matched": true,
+          "method": "llm_field_judge",
+          "truth_normalized": "evaluate hdi stress evolution and bauschinger effect",
+          "prediction_normalized": "hdi stress evaluation and bauschinger effect analysis",
+          "reason": "LLM judged same-field values as semantically matched.",
+          "score": 1.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "characterization_methods:1:characterization_methods_sample_fe30mn9al1c1v5ni_01_purpose"
+        }
+      ]
+    },
+    "computational_details": {
+      "candidate_count": 0,
+      "result_count": 0,
+      "error": null,
+      "raw_response": null,
+      "decisions": {},
+      "input_candidates": [],
+      "candidates": []
+    },
+    "unmapped_findings": {
+      "candidate_count": 8,
+      "result_count": 8,
+      "error": null,
+      "raw_response": "{\n  \"results\": [\n    {\"id\": \"unmapped_findings:0:unmapped_findings_idx_0_value\", \"matched\": false},\n    {\"id\": \"unmapped_findings:1:unmapped_findings_idx_1_value\", \"matched\": false},\n    {\"id\": \"unmapped_findings:2:unmapped_findings_idx_2_value\", \"matched\": false},\n    {\"id\": \"unmapped_findings:3:unmapped_findings_idx_3_value\", \"matched\": false},\n    {\"id\": \"unmapped_findings:4:unmapped_findings_idx_4_value\", \"matched\": true},\n    {\"id\": \"unmapped_findings:5:unmapped_findings_idx_5_value\", \"matched\": false},\n    {\"id\": \"unmapped_findings:6:unmapped_findings_idx_6_value\", \"matched\": false},\n    {\"id\": \"unmapped_findings:7:unmapped_findings_idx_7_value\", \"matched\": false}\n  ]\n}",
+      "decisions": {
+        "unmapped_findings:4:unmapped_findings_idx_4_value": true,
+        "unmapped_findings:7:unmapped_findings_idx_7_value": false,
+        "unmapped_findings:0:unmapped_findings_idx_0_value": false,
+        "unmapped_findings:5:unmapped_findings_idx_5_value": false,
+        "unmapped_findings:2:unmapped_findings_idx_2_value": false,
+        "unmapped_findings:6:unmapped_findings_idx_6_value": false,
+        "unmapped_findings:3:unmapped_findings_idx_3_value": false,
+        "unmapped_findings:1:unmapped_findings_idx_1_value": false
+      },
+      "input_candidates": [
+        {
+          "id": "unmapped_findings:0:unmapped_findings_idx_0_value",
+          "section": "unmapped_findings",
+          "canonical_object": "idx_0",
+          "field": "value",
+          "field_path": "value",
+          "truth_path": "unmapped_findings.idx_0.value",
+          "prediction_path": "unmapped_findings.idx_0.value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "The fracture surface exhibits dimples, indicating a ductile fracture mode (Figure 4a inset).",
+          "prediction_value": "The equilibrium phase diagram calculated by Thermo-Calc 2021b indicates phase fractions at 900°C of approximately 78% austenite, 20% B2, 1% VC, and 0% κ-carbide."
+        },
+        {
+          "id": "unmapped_findings:1:unmapped_findings_idx_1_value",
+          "section": "unmapped_findings",
+          "canonical_object": "idx_1",
+          "field": "value",
+          "field_path": "value",
+          "truth_path": "unmapped_findings.idx_1.value",
+          "prediction_path": "unmapped_findings.idx_1.value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "The work-hardening curve shows three distinct stages: Stage I (0-1% true strain) sharp decrease with rate dropping below zero; Stage II (1-4.3%) rapid increase; Stage III (4.3-12%) gradual decrease but work-hardening rate remains high at 2.7-3.7 GPa.",
+          "prediction_value": "The fracture surface of the tensile specimen is characterized by dimples, indicating a ductile fracture mode."
+        },
+        {
+          "id": "unmapped_findings:2:unmapped_findings_idx_2_value",
+          "section": "unmapped_findings",
+          "canonical_object": "idx_2",
+          "field": "value",
+          "field_path": "value",
+          "truth_path": "unmapped_findings.idx_2.value",
+          "prediction_path": "unmapped_findings.idx_2.value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "LUR tests reveal yield drop Δσ_y and hysteresis loops that enlarge with strain; HDI stress increases progressively from about 620 MPa at 1% strain to about 845 MPa at 10.4% strain.",
+          "prediction_value": "Work-hardening rate behavior exhibits three discernible stages: stage I (0–1%) sharp decrease to below zero; stage II (1–4.3%) rapid increase to a maximum; stage III (>4.3%) gradual decrease while remaining at a relatively high level of 2.7 to 3.7 GPa."
+        },
+        {
+          "id": "unmapped_findings:3:unmapped_findings_idx_3_value",
+          "section": "unmapped_findings",
+          "canonical_object": "idx_3",
+          "field": "value",
+          "field_path": "value",
+          "truth_path": "unmapped_findings.idx_3.value",
+          "prediction_path": "unmapped_findings.idx_3.value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "The measured chemical composition (Table 1) is: Mn 30.45, Al 9.50, C 1.20, V 1.09, Ni 4.94, P 0.0040, S 0.0044, Fe Bal. (wt.%).",
+          "prediction_value": "LUR test detailed evolution: hysteresis area increases from 70 MPa at 1% true strain to 202 MPa at 11% true strain; yield drop Δσy increases from 2 MPa to 23 MPa over the same range."
+        },
+        {
+          "id": "unmapped_findings:4:unmapped_findings_idx_4_value",
+          "section": "unmapped_findings",
+          "canonical_object": "idx_4",
+          "field": "value",
+          "field_path": "value",
+          "truth_path": "unmapped_findings.idx_4.value",
+          "prediction_path": "unmapped_findings.idx_4.value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "GND density evolution from in-situ EBSD: in austenite from 5.36×10^13 to 2.64×10^14 m^-2, in B2 from 1.04×10^14 to 2.51×10^14 m^-2 as strain increases from 0% to 6%.",
+          "prediction_value": "GND density evolution during tensile deformation: austenite increases from 5.36×10^13 m^-2 at 0% strain to 2.64×10^14 m^-2 at 6% strain; B2 increases from 1.04×10^14 m^-2 at 0% strain to 2.51×10^14 m^-2 at 6% strain."
+        },
+        {
+          "id": "unmapped_findings:5:unmapped_findings_idx_5_value",
+          "section": "unmapped_findings",
+          "canonical_object": "idx_5",
+          "field": "value",
+          "field_path": "value",
+          "truth_path": "unmapped_findings.idx_5.value",
+          "prediction_path": "unmapped_findings.idx_5.value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "The volume fraction of LRO domains decreases from 11.10% in the initial state after deformation due to dislocations shearing the ordered domains.",
+          "prediction_value": "During deformation, L'1_2 LRO domains within austenite slip bands are sheared by dislocations, leading to weakened superlattice reflections and reduced volume fraction; conversely, VC particles impede dislocation motion and cause dislocation accumulation around them."
+        },
+        {
+          "id": "unmapped_findings:6:unmapped_findings_idx_6_value",
+          "section": "unmapped_findings",
+          "canonical_object": "idx_6",
+          "field": "value",
+          "field_path": "value",
+          "truth_path": "unmapped_findings.idx_6.value",
+          "prediction_path": "unmapped_findings.idx_6.value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "The steel was produced via a simple processing route (homogenization, hot rolling, cold rolling, solution treatment) without complex thermomechanical treatments.",
+          "prediction_value": "Calculated weighted strengthening contributions summarized in Figure 9: σ_HDI 597 MPa; σ_0,γ f_γ 78 MPa; σ_ss,γ f_γ 182 MPa; σ_dis,γ f_γ 85 MPa; σ_VC f_γ 74 MPa; σ_LRO f_γ 119 MPa; σ_0,B2 f_B2 135 MPa; σ_dis,B2 f_B2 46 MPa."
+        },
+        {
+          "id": "unmapped_findings:7:unmapped_findings_idx_7_value",
+          "section": "unmapped_findings",
+          "canonical_object": "idx_7",
+          "field": "value",
+          "field_path": "value",
+          "truth_path": "unmapped_findings.idx_7.value",
+          "prediction_path": "unmapped_findings.idx_7.value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Schmid factor distributions were employed to explain variations in GND densities among individual austenite and B2 grains.",
+          "prediction_value": "The B2 phase exhibits a higher hardness than ferrite, and the hardness mismatch between austenite and B2 phases is regulated by precipitation behavior within austenite to balance strength-ductility synergy."
+        }
+      ],
+      "candidates": [
+        {
+          "key": "unmapped_findings.idx_0.value",
+          "truth_path": "unmapped_findings.idx_0.value",
+          "prediction_path": "unmapped_findings.idx_0.value",
+          "canonical_object": "idx_0",
+          "field_path": "value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "The fracture surface exhibits dimples, indicating a ductile fracture mode (Figure 4a inset).",
+          "prediction_value": "The equilibrium phase diagram calculated by Thermo-Calc 2021b indicates phase fractions at 900°C of approximately 78% austenite, 20% B2, 1% VC, and 0% κ-carbide.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "the fracture surface exhibits dimples, indicating a ductile fracture mode (figure 4a inset).",
+          "prediction_normalized": "the equilibrium phase diagram calculated by thermo-calc 2021b indicates phase fractions at 900 c of approximately 78% austenite, 20% b2, 1% vc, and 0% κ-carbide.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "unmapped_findings:0:unmapped_findings_idx_0_value"
+        },
+        {
+          "key": "unmapped_findings.idx_1.value",
+          "truth_path": "unmapped_findings.idx_1.value",
+          "prediction_path": "unmapped_findings.idx_1.value",
+          "canonical_object": "idx_1",
+          "field_path": "value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "The work-hardening curve shows three distinct stages: Stage I (0-1% true strain) sharp decrease with rate dropping below zero; Stage II (1-4.3%) rapid increase; Stage III (4.3-12%) gradual decrease but work-hardening rate remains high at 2.7-3.7 GPa.",
+          "prediction_value": "The fracture surface of the tensile specimen is characterized by dimples, indicating a ductile fracture mode.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "the work-hardening curve shows three distinct stages: stage i (0-1% true strain) sharp decrease with rate dropping below zero; stage ii (1-4.3%) rapid increase; stage iii (4.3-12%) gradual decrease but work-hardening rate remains high at 2.7-3.7 gpa.",
+          "prediction_normalized": "the fracture surface of the tensile specimen is characterized by dimples, indicating a ductile fracture mode.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "unmapped_findings:1:unmapped_findings_idx_1_value"
+        },
+        {
+          "key": "unmapped_findings.idx_2.value",
+          "truth_path": "unmapped_findings.idx_2.value",
+          "prediction_path": "unmapped_findings.idx_2.value",
+          "canonical_object": "idx_2",
+          "field_path": "value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "LUR tests reveal yield drop Δσ_y and hysteresis loops that enlarge with strain; HDI stress increases progressively from about 620 MPa at 1% strain to about 845 MPa at 10.4% strain.",
+          "prediction_value": "Work-hardening rate behavior exhibits three discernible stages: stage I (0–1%) sharp decrease to below zero; stage II (1–4.3%) rapid increase to a maximum; stage III (>4.3%) gradual decrease while remaining at a relatively high level of 2.7 to 3.7 GPa.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "lur tests reveal yield drop δσ_y and hysteresis loops that enlarge with strain; hdi stress increases progressively from about 620 mpa at 1% strain to about 845 mpa at 10.4% strain.",
+          "prediction_normalized": "work-hardening rate behavior exhibits three discernible stages: stage i (0-1%) sharp decrease to below zero; stage ii (1-4.3%) rapid increase to a maximum; stage iii (>4.3%) gradual decrease while remaining at a relatively high level of 2.7 to 3.7 gpa.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "unmapped_findings:2:unmapped_findings_idx_2_value"
+        },
+        {
+          "key": "unmapped_findings.idx_3.value",
+          "truth_path": "unmapped_findings.idx_3.value",
+          "prediction_path": "unmapped_findings.idx_3.value",
+          "canonical_object": "idx_3",
+          "field_path": "value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "The measured chemical composition (Table 1) is: Mn 30.45, Al 9.50, C 1.20, V 1.09, Ni 4.94, P 0.0040, S 0.0044, Fe Bal. (wt.%).",
+          "prediction_value": "LUR test detailed evolution: hysteresis area increases from 70 MPa at 1% true strain to 202 MPa at 11% true strain; yield drop Δσy increases from 2 MPa to 23 MPa over the same range.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "the measured chemical composition (table 1) is: mn 30.45, al 9.50, c 1.20, v 1.09, ni 4.94, p 0.0040, s 0.0044, fe balance (wt.%).",
+          "prediction_normalized": "lur test detailed evolution: hysteresis area increases from 70 mpa at 1% true strain to 202 mpa at 11% true strain; yield drop δσy increases from 2 mpa to 23 mpa over the same range.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "unmapped_findings:3:unmapped_findings_idx_3_value"
+        },
+        {
+          "key": "unmapped_findings.idx_4.value",
+          "truth_path": "unmapped_findings.idx_4.value",
+          "prediction_path": "unmapped_findings.idx_4.value",
+          "canonical_object": "idx_4",
+          "field_path": "value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "GND density evolution from in-situ EBSD: in austenite from 5.36×10^13 to 2.64×10^14 m^-2, in B2 from 1.04×10^14 to 2.51×10^14 m^-2 as strain increases from 0% to 6%.",
+          "prediction_value": "GND density evolution during tensile deformation: austenite increases from 5.36×10^13 m^-2 at 0% strain to 2.64×10^14 m^-2 at 6% strain; B2 increases from 1.04×10^14 m^-2 at 0% strain to 2.51×10^14 m^-2 at 6% strain.",
+          "error_type": "correct",
+          "matched": true,
+          "method": "llm_field_judge",
+          "truth_normalized": "gnd density evolution from in-situ ebsd: in austenite from 5.36x10^13 to 2.64x10^14 m^-2, in b2 from 1.04x10^14 to 2.51x10^14 m^-2 as strain increases from 0% to 6%.",
+          "prediction_normalized": "gnd density evolution during tensile deformation: austenite increases from 5.36x10^13 m^-2 at 0% strain to 2.64x10^14 m^-2 at 6% strain; b2 increases from 1.04x10^14 m^-2 at 0% strain to 2.51x10^14 m^-2 at 6% strain.",
+          "reason": "LLM judged same-field values as semantically matched.",
+          "score": 1.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "unmapped_findings:4:unmapped_findings_idx_4_value"
+        },
+        {
+          "key": "unmapped_findings.idx_5.value",
+          "truth_path": "unmapped_findings.idx_5.value",
+          "prediction_path": "unmapped_findings.idx_5.value",
+          "canonical_object": "idx_5",
+          "field_path": "value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "The volume fraction of LRO domains decreases from 11.10% in the initial state after deformation due to dislocations shearing the ordered domains.",
+          "prediction_value": "During deformation, L'1_2 LRO domains within austenite slip bands are sheared by dislocations, leading to weakened superlattice reflections and reduced volume fraction; conversely, VC particles impede dislocation motion and cause dislocation accumulation around them.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "the volume fraction of lro domains decreases from 11.10% in the initial state after deformation due to dislocations shearing the ordered domains.",
+          "prediction_normalized": "during deformation, l'1_2 lro domains within austenite slip bands are sheared by dislocations, leading to weakened superlattice reflections and reduced volume fraction; conversely, vc particles impede dislocation motion and cause dislocation accumulation around them.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "unmapped_findings:5:unmapped_findings_idx_5_value"
+        },
+        {
+          "key": "unmapped_findings.idx_6.value",
+          "truth_path": "unmapped_findings.idx_6.value",
+          "prediction_path": "unmapped_findings.idx_6.value",
+          "canonical_object": "idx_6",
+          "field_path": "value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "The steel was produced via a simple processing route (homogenization, hot rolling, cold rolling, solution treatment) without complex thermomechanical treatments.",
+          "prediction_value": "Calculated weighted strengthening contributions summarized in Figure 9: σ_HDI 597 MPa; σ_0,γ f_γ 78 MPa; σ_ss,γ f_γ 182 MPa; σ_dis,γ f_γ 85 MPa; σ_VC f_γ 74 MPa; σ_LRO f_γ 119 MPa; σ_0,B2 f_B2 135 MPa; σ_dis,B2 f_B2 46 MPa.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "the steel was produced via a simple processing route (homogenization, hot rolling, cold rolling, solution treatment) without complex thermomechanical treatments.",
+          "prediction_normalized": "calculated weighted strengthening contributions summarized in figure 9: σ_hdi 597 mpa; σ_0,γ f_γ 78 mpa; σ_ss,γ f_γ 182 mpa; σ_dis,γ f_γ 85 mpa; σ_vc f_γ 74 mpa; σ_lro f_γ 119 mpa; σ_0,b2 f_b2 135 mpa; σ_dis,b2 f_b2 46 mpa.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "unmapped_findings:6:unmapped_findings_idx_6_value"
+        },
+        {
+          "key": "unmapped_findings.idx_7.value",
+          "truth_path": "unmapped_findings.idx_7.value",
+          "prediction_path": "unmapped_findings.idx_7.value",
+          "canonical_object": "idx_7",
+          "field_path": "value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Schmid factor distributions were employed to explain variations in GND densities among individual austenite and B2 grains.",
+          "prediction_value": "The B2 phase exhibits a higher hardness than ferrite, and the hardness mismatch between austenite and B2 phases is regulated by precipitation behavior within austenite to balance strength-ductility synergy.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "schmid factor distributions were employed to explain variations in gnd densities among individual austenite and b2 grains.",
+          "prediction_normalized": "the b2 phase exhibits a higher hardness than ferrite, and the hardness mismatch between austenite and b2 phases is regulated by precipitation behavior within austenite to balance strength-ductility synergy.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "unmapped_findings:7:unmapped_findings_idx_7_value"
+        }
+      ]
+    }
+  }
+}

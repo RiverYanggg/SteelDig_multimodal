@@ -1,0 +1,1028 @@
+```json
+{
+    "papers": [
+        {
+            "paper_id": "A28",
+            "doi": null,
+            "title": "Temperature dependence of the deformation behavior and mechanical properties of a Fe–Mn–Al–C low-density steel for cryogenic application",
+            "authors": [
+                "Qi Zhang",
+                "Guanghui Chen",
+                "Haijiang Hu",
+                "Wanjie Zheng",
+                "Xiangliang Wan",
+                "Zhengliang Xue",
+                "Guang Xu"
+            ],
+            "publication_year": null,
+            "journal": null,
+            "keywords": [
+                "Austenitic low-density steel",
+                "Stacking fault energy",
+                "Tensile deformation",
+                "Impact toughness",
+                "Deformed microstructure"
+            ],
+            "research_type": "experimental",
+            "paper_scope": "Investigation of the temperature dependence of deformation mechanisms, work hardening behavior, tensile properties, and Charpy impact toughness of Fe-20Mn-6Al-0.6C-0.15Si austenitic low-density steel at -196°C, -77°C and room temperature."
+        }
+    ],
+    "alloys": [
+        {
+            "alloy_id": "alloy_fe20mn6al06c",
+            "paper_id": "A28",
+            "alloy_name": "Fe–20Mn–6Al-0.6C-0.15Si austenitic low-density steel",
+            "aliases": [],
+            "base_element": "Fe",
+            "alloying_elements": [
+                "Mn",
+                "Al",
+                "C",
+                "Si"
+            ],
+            "nominal_composition": [
+                {
+                    "element": "Fe",
+                    "weight_percent": "balance",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "Mn",
+                    "weight_percent": "20",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "Al",
+                    "weight_percent": "6",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "C",
+                    "weight_percent": "0.6",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "Si",
+                    "weight_percent": "0.15",
+                    "atomic_percent": null
+                }
+            ],
+            "alloys_notes": "Estimated density is 7.078 g/cm³ according to Kim et al. equation; measured density is 7.114 g/cm³."
+        }
+    ],
+    "processes": [
+        {
+            "process_id": "proc_fe20mn6al_01",
+            "paper_id": "A28",
+            "alloy_id": "alloy_fe20mn6al06c",
+            "description": "Vacuum induction melting and casting (50 kg ingot), air cooling to room temperature, reheating to 1250°C for 2 h homogenization, forging to 60 mm diameter round bars with starting temperature 1100°C and finishing temperature 950°C, furnace cooling to room temperature.",
+            "processes_notes": "As-forged initial condition used for subsequent cryogenic and room-temperature testing."
+        }
+    ],
+    "samples": [
+        {
+            "sample_id": "sample_fe20mn6al_initial",
+            "paper_id": "A28",
+            "alloy_id": "alloy_fe20mn6al06c",
+            "process_id": "proc_fe20mn6al_01"
+        },
+        {
+            "sample_id": "sample_fe20mn6al_tensile_rt",
+            "paper_id": "A28",
+            "alloy_id": "alloy_fe20mn6al06c",
+            "process_id": "proc_fe20mn6al_01"
+        },
+        {
+            "sample_id": "sample_fe20mn6al_tensile_77",
+            "paper_id": "A28",
+            "alloy_id": "alloy_fe20mn6al06c",
+            "process_id": "proc_fe20mn6al_01"
+        },
+        {
+            "sample_id": "sample_fe20mn6al_tensile_196",
+            "paper_id": "A28",
+            "alloy_id": "alloy_fe20mn6al06c",
+            "process_id": "proc_fe20mn6al_01"
+        },
+        {
+            "sample_id": "sample_fe20mn6al_impact_rt",
+            "paper_id": "A28",
+            "alloy_id": "alloy_fe20mn6al06c",
+            "process_id": "proc_fe20mn6al_01"
+        },
+        {
+            "sample_id": "sample_fe20mn6al_impact_77",
+            "paper_id": "A28",
+            "alloy_id": "alloy_fe20mn6al06c",
+            "process_id": "proc_fe20mn6al_01"
+        },
+        {
+            "sample_id": "sample_fe20mn6al_impact_196",
+            "paper_id": "A28",
+            "alloy_id": "alloy_fe20mn6al06c",
+            "process_id": "proc_fe20mn6al_01"
+        }
+    ],
+    "processing_steps": [
+        {
+            "sample_id": "sample_fe20mn6al_initial",
+            "paper_id": "A28",
+            "sequence": "1",
+            "type": "melting",
+            "method": "vacuum induction melting",
+            "temperature": null,
+            "unit": null,
+            "duration": null,
+            "cooling_medium": "air",
+            "reduction_ratio": null,
+            "processing_steps_notes": "50 kg vacuum induction furnace, melted and cast, then air cooled to room temperature."
+        },
+        {
+            "sample_id": "sample_fe20mn6al_initial",
+            "paper_id": "A28",
+            "sequence": "2",
+            "type": "heat_treatment",
+            "method": "homogenization",
+            "temperature": "1250",
+            "unit": "°C",
+            "duration": "2 h",
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "Reheated and held for homogenization before forging."
+        },
+        {
+            "sample_id": "sample_fe20mn6al_initial",
+            "paper_id": "A28",
+            "sequence": "3",
+            "type": "thermomechanical_processing",
+            "method": "forging",
+            "temperature": "1100 to 950",
+            "unit": "°C",
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "Forged into round bars with diameter of 60 mm. Starting forging temperature 1100°C, finishing forging temperature 950°C."
+        },
+        {
+            "sample_id": "sample_fe20mn6al_initial",
+            "paper_id": "A28",
+            "sequence": "4",
+            "type": "heat_treatment",
+            "method": "furnace cooling",
+            "temperature": null,
+            "unit": null,
+            "duration": null,
+            "cooling_medium": "furnace",
+            "reduction_ratio": null,
+            "processing_steps_notes": "Cooled to room temperature in furnace after forging to obtain as-forged initial microstructure."
+        }
+    ],
+    "structures": [
+        {
+            "structure_id": "str_initial",
+            "sample_id": "sample_fe20mn6al_initial",
+            "overall_structure": "Fully austenitic equiaxed grain structure, no isothermal martensite after holding at -196°C for 30 min",
+            "number_of_phases": "1",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid-str-initial-001",
+                    "related_sequence": null,
+                    "phases_present": [
+                        {
+                            "phase_name": "austenite",
+                            "crystal_structure": "FCC",
+                            "volume_fraction": "100",
+                            "morphology": "equiaxed grains",
+                            "grain_size": null,
+                            "texture": null
+                        }
+                    ],
+                    "defects": [
+                        {
+                            "type": null,
+                            "porosity": null,
+                            "inclusions": [],
+                            "dislocation_density": null,
+                            "lattice_distortion": null
+                        }
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": null,
+                            "unit": null
+                        },
+                        "grain_size_distribution": null,
+                        "texture": null
+                    },
+                    "precipitates": []
+                }
+            ]
+        },
+        {
+            "structure_id": "str_tensile_196",
+            "sample_id": "sample_fe20mn6al_tensile_196",
+            "overall_structure": "Deformed austenite with mechanical twins and high fraction of low-angle grain boundaries due to planar glide",
+            "number_of_phases": "1",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid-str-t196-001",
+                    "related_sequence": null,
+                    "phases_present": [
+                        {
+                            "phase_name": "austenite",
+                            "crystal_structure": "FCC",
+                            "volume_fraction": null,
+                            "morphology": "deformed grains",
+                            "grain_size": null,
+                            "texture": "crystal directions parallel to tensile direction concentrate in {111} and {001}"
+                        },
+                        {
+                            "phase_name": "mechanical twins",
+                            "crystal_structure": null,
+                            "volume_fraction": "small amount",
+                            "morphology": "twinning plane along <112> on {111} plane in grain oriented near <110> zone axis",
+                            "grain_size": null,
+                            "texture": null
+                        }
+                    ],
+                    "defects": [
+                        {
+                            "type": "dislocation planar glide; low-angle grain boundaries",
+                            "porosity": null,
+                            "inclusions": [],
+                            "dislocation_density": "GNDs accumulate at LAGBs indicating severe local deformation",
+                            "lattice_distortion": null
+                        }
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": null,
+                            "unit": null
+                        },
+                        "grain_size_distribution": "LAGBs (2-15°) fraction ~70.2%, HAGBs (>15°) ~29.8%",
+                        "texture": null
+                    },
+                    "precipitates": []
+                }
+            ]
+        },
+        {
+            "structure_id": "str_tensile_77",
+            "sample_id": "sample_fe20mn6al_tensile_77",
+            "overall_structure": "Deformed austenite dominated by microbands and planar glide without mechanical twins",
+            "number_of_phases": "1",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid-str-t077-001",
+                    "related_sequence": null,
+                    "phases_present": [
+                        {
+                            "phase_name": "austenite",
+                            "crystal_structure": "FCC",
+                            "volume_fraction": null,
+                            "morphology": "deformed grains with microbands",
+                            "grain_size": null,
+                            "texture": "crystal directions parallel to tensile direction concentrate in {111} and {001}"
+                        }
+                    ],
+                    "defects": [
+                        {
+                            "type": "dislocation planar glide; microbands oriented along {111} planes; low-angle grain boundaries",
+                            "porosity": null,
+                            "inclusions": [],
+                            "dislocation_density": "GNDs accumulate at LAGBs",
+                            "lattice_distortion": null
+                        }
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": null,
+                            "unit": null
+                        },
+                        "grain_size_distribution": "LAGBs (2-15°) fraction ~63.0%, HAGBs (>15°) ~37.0%",
+                        "texture": null
+                    },
+                    "precipitates": []
+                }
+            ]
+        },
+        {
+            "structure_id": "str_tensile_rt",
+            "sample_id": "sample_fe20mn6al_tensile_rt",
+            "overall_structure": "Deformed austenite with wavy glide tendency and lower low-angle grain boundary fraction",
+            "number_of_phases": "1",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid-str-t025-001",
+                    "related_sequence": null,
+                    "phases_present": [
+                        {
+                            "phase_name": "austenite",
+                            "crystal_structure": "FCC",
+                            "volume_fraction": null,
+                            "morphology": "deformed grains",
+                            "grain_size": null,
+                            "texture": "crystal directions parallel to tensile direction concentrate in {111} and {001}"
+                        }
+                    ],
+                    "defects": [
+                        {
+                            "type": "dislocation glide; low-angle grain boundaries",
+                            "porosity": null,
+                            "inclusions": [],
+                            "dislocation_density": "GNDs accumulate at LAGBs",
+                            "lattice_distortion": null
+                        }
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": null,
+                            "unit": null
+                        },
+                        "grain_size_distribution": "LAGBs (2-15°) fraction ~56.0%, HAGBs (>15°) ~44.0%",
+                        "texture": null
+                    },
+                    "precipitates": []
+                }
+            ]
+        },
+        {
+            "structure_id": "str_impact_196",
+            "sample_id": "sample_fe20mn6al_impact_196",
+            "overall_structure": "Cross-section near fracture showing zigzag primary crack path, transgranular fracture, severe local plastic deformation, and significant local orientation gradient adjacent to primary cracks",
+            "number_of_phases": "1",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid-str-i196-001",
+                    "related_sequence": null,
+                    "phases_present": [
+                        {
+                            "phase_name": "austenite",
+                            "crystal_structure": "FCC",
+                            "volume_fraction": null,
+                            "morphology": "grain interiors with orientation gradient near cracks",
+                            "grain_size": null,
+                            "texture": null
+                        }
+                    ],
+                    "defects": [
+                        {
+                            "type": "primary cracks; transgranular fracture; local orientation gradient",
+                            "porosity": null,
+                            "inclusions": [],
+                            "dislocation_density": "severe plastic deformation near primary cracks within grain interiors",
+                            "lattice_distortion": null
+                        }
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": null,
+                            "unit": null
+                        },
+                        "grain_size_distribution": null,
+                        "texture": null
+                    },
+                    "precipitates": []
+                }
+            ]
+        },
+        {
+            "structure_id": "str_impact_rt",
+            "sample_id": "sample_fe20mn6al_impact_rt",
+            "overall_structure": "Cross-section near fracture showing zigzag primary crack path, transgranular fracture, secondary cracks, and stress redistribution",
+            "number_of_phases": "1",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid-str-i025-001",
+                    "related_sequence": null,
+                    "phases_present": [
+                        {
+                            "phase_name": "austenite",
+                            "crystal_structure": "FCC",
+                            "volume_fraction": null,
+                            "morphology": "grain interiors with orientation gradient near cracks",
+                            "grain_size": null,
+                            "texture": null
+                        }
+                    ],
+                    "defects": [
+                        {
+                            "type": "primary cracks; secondary cracks; transgranular fracture; local orientation gradient",
+                            "porosity": null,
+                            "inclusions": [],
+                            "dislocation_density": "severe plastic deformation near primary cracks; secondary cracks release stress concentration at crack tips",
+                            "lattice_distortion": null
+                        }
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": null,
+                            "unit": null
+                        },
+                        "grain_size_distribution": null,
+                        "texture": null
+                    },
+                    "precipitates": []
+                }
+            ]
+        }
+    ],
+    "interfaces": [],
+    "properties": [
+        {
+            "property_set_id": "prop_initial",
+            "sample_id": "sample_fe20mn6al_initial",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [],
+                    "ultimate_tensile_strength": [],
+                    "elongation": [],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [],
+                "fracture_toughness": {
+                    "value": null,
+                    "unit": null
+                },
+                "fatigue_properties": {
+                    "fatigue_limit": null,
+                    "cycles_to_failure": null
+                },
+                "creep_properties": {
+                    "steady_state_creep_rate": null,
+                    "rupture_life": null
+                }
+            },
+            "physical": {
+                "density": {
+                    "value": "7.114",
+                    "unit": "g/cm³"
+                },
+                "thermal_properties": {
+                    "thermal_conductivity": null,
+                    "thermal_expansion_coefficient": null,
+                    "specific_heat": null
+                },
+                "electrical_properties": {
+                    "electrical_conductivity": null,
+                    "resistivity": null
+                },
+                "magnetic_properties": {
+                    "magnetic_susceptibility": null,
+                    "curie_temperature": null
+                }
+            },
+            "chemical": {
+                "corrosion_resistance": {
+                    "test_medium": null,
+                    "corrosion_rate": null,
+                    "passivation_behavior": null
+                },
+                "oxidation_resistance": {
+                    "oxidation_rate_constant": null,
+                    "protective_scale": null
+                }
+            },
+            "radiation_properties": {
+                "void_swelling": null,
+                "irradiation_hardening": null,
+                "helium_embrittlement": null
+            }
+        },
+        {
+            "property_set_id": "prop_tensile_rt",
+            "sample_id": "sample_fe20mn6al_tensile_rt",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [
+                        {
+                            "direction": null,
+                            "value": "400",
+                            "unit": "MPa",
+                            "others": {
+                                "uncertainty": null
+                            }
+                        }
+                    ],
+                    "ultimate_tensile_strength": [
+                        {
+                            "direction": null,
+                            "value": "800",
+                            "unit": "MPa",
+                            "others": {
+                                "uncertainty": null
+                            }
+                        }
+                    ],
+                    "elongation": [
+                        {
+                            "direction": null,
+                            "value": "32",
+                            "unit": "%"
+                        }
+                    ],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": "Engineering stress-strain curve: stress increases from 0 to ~830 MPa over 0-70% engineering strain; true stress at 0.5 true strain ~1000 MPa; work hardening rate shows continuous decrease with strain.",
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [],
+                "fracture_toughness": {
+                    "value": null,
+                    "unit": null
+                },
+                "fatigue_properties": {
+                    "fatigue_limit": null,
+                    "cycles_to_failure": null
+                },
+                "creep_properties": {
+                    "steady_state_creep_rate": null,
+                    "rupture_life": null
+                }
+            },
+            "physical": {
+                "density": {
+                    "value": null,
+                    "unit": null
+                },
+                "thermal_properties": {
+                    "thermal_conductivity": null,
+                    "thermal_expansion_coefficient": null,
+                    "specific_heat": null
+                },
+                "electrical_properties": {
+                    "electrical_conductivity": null,
+                    "resistivity": null
+                },
+                "magnetic_properties": {
+                    "magnetic_susceptibility": null,
+                    "curie_temperature": null
+                }
+            },
+            "chemical": {
+                "corrosion_resistance": {
+                    "test_medium": null,
+                    "corrosion_rate": null,
+                    "passivation_behavior": null
+                },
+                "oxidation_resistance": {
+                    "oxidation_rate_constant": null,
+                    "protective_scale": null
+                }
+            },
+            "radiation_properties": {
+                "void_swelling": null,
+                "irradiation_hardening": null,
+                "helium_embrittlement": null
+            }
+        },
+        {
+            "property_set_id": "prop_tensile_77",
+            "sample_id": "sample_fe20mn6al_tensile_77",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [
+                        {
+                            "direction": null,
+                            "value": "650",
+                            "unit": "MPa",
+                            "others": {
+                                "uncertainty": null
+                            }
+                        }
+                    ],
+                    "ultimate_tensile_strength": [
+                        {
+                            "direction": null,
+                            "value": "1000",
+                            "unit": "MPa",
+                            "others": {
+                                "uncertainty": null
+                            }
+                        }
+                    ],
+                    "elongation": [
+                        {
+                            "direction": null,
+                            "value": "58",
+                            "unit": "%"
+                        }
+                    ],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": "Engineering stress-strain curve: stress increases from 0 to ~1030 MPa over 0-70% engineering strain; true stress at 0.5 true strain ~1500 MPa; work hardening rate shows near-linear behavior with strain after initial drop.",
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [],
+                "fracture_toughness": {
+                    "value": null,
+                    "unit": null
+                },
+                "fatigue_properties": {
+                    "fatigue_limit": null,
+                    "cycles_to_failure": null
+                },
+                "creep_properties": {
+                    "steady_state_creep_rate": null,
+                    "rupture_life": null
+                }
+            },
+            "physical": {
+                "density": {
+                    "value": null,
+                    "unit": null
+                },
+                "thermal_properties": {
+                    "thermal_conductivity": null,
+                    "thermal_expansion_coefficient": null,
+                    "specific_heat": null
+                },
+                "electrical_properties": {
+                    "electrical_conductivity": null,
+                    "resistivity": null
+                },
+                "magnetic_properties": {
+                    "magnetic_susceptibility": null,
+                    "curie_temperature": null
+                }
+            },
+            "chemical": {
+                "corrosion_resistance": {
+                    "test_medium": null,
+                    "corrosion_rate": null,
+                    "passivation_behavior": null
+                },
+                "oxidation_resistance": {
+                    "oxidation_rate_constant": null,
+                    "protective_scale": null
+                }
+            },
+            "radiation_properties": {
+                "void_swelling": null,
+                "irradiation_hardening": null,
+                "helium_embrittlement": null
+            }
+        },
+        {
+            "property_set_id": "prop_tensile_196",
+            "sample_id": "sample_fe20mn6al_tensile_196",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [
+                        {
+                            "direction": null,
+                            "value": "900",
+                            "unit": "MPa",
+                            "others": {
+                                "uncertainty": null
+                            }
+                        }
+                    ],
+                    "ultimate_tensile_strength": [
+                        {
+                            "direction": null,
+                            "value": "1300",
+                            "unit": "MPa",
+                            "others": {
+                                "uncertainty": null
+                            }
+                        }
+                    ],
+                    "elongation": [
+                        {
+                            "direction": null,
+                            "value": "68",
+                            "unit": "%"
+                        }
+                    ],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": "Engineering stress-strain curve: stress increases from 0 to ~1320 MPa over 0-70% engineering strain; true stress at 0.5 true strain ~2100 MPa; work hardening rate shows near-linear behavior with strain after initial drop.",
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [],
+                "fracture_toughness": {
+                    "value": null,
+                    "unit": null
+                },
+                "fatigue_properties": {
+                    "fatigue_limit": null,
+                    "cycles_to_failure": null
+                },
+                "creep_properties": {
+                    "steady_state_creep_rate": null,
+                    "rupture_life": null
+                }
+            },
+            "physical": {
+                "density": {
+                    "value": null,
+                    "unit": null
+                },
+                "thermal_properties": {
+                    "thermal_conductivity": null,
+                    "thermal_expansion_coefficient": null,
+                    "specific_heat": null
+                },
+                "electrical_properties": {
+                    "electrical_conductivity": null,
+                    "resistivity": null
+                },
+                "magnetic_properties": {
+                    "magnetic_susceptibility": null,
+                    "curie_temperature": null
+                }
+            },
+            "chemical": {
+                "corrosion_resistance": {
+                    "test_medium": null,
+                    "corrosion_rate": null,
+                    "passivation_behavior": null
+                },
+                "oxidation_resistance": {
+                    "oxidation_rate_constant": null,
+                    "protective_scale": null
+                }
+            },
+            "radiation_properties": {
+                "void_swelling": null,
+                "irradiation_hardening": null,
+                "helium_embrittlement": null
+            }
+        }
+    ],
+    "performance": [
+        {
+            "performance_id": "perf_impact_rt",
+            "sample_id": "sample_fe20mn6al_impact_rt",
+            "service_conditions": {
+                "operating_temperature": {
+                    "min": "25",
+                    "max": "25",
+                    "unit": "°C"
+                },
+                "stress_state": "Charpy V-notch impact loading",
+                "environment": "room temperature air"
+            },
+            "lifetime_prediction": {
+                "model_used": null,
+                "predicted_lifetime": null,
+                "confidence_interval": null
+            },
+            "comparative_performance": {
+                "benchmark_alloy": null,
+                "benchmark_process_id": null,
+                "benchmark_sample_id": null,
+                "improvement_percentage": null
+            }
+        },
+        {
+            "performance_id": "perf_impact_77",
+            "sample_id": "sample_fe20mn6al_impact_77",
+            "service_conditions": {
+                "operating_temperature": {
+                    "min": "-77",
+                    "max": "-77",
+                    "unit": "°C"
+                },
+                "stress_state": "Charpy V-notch impact loading",
+                "environment": "dry ice-alcohol mixture"
+            },
+            "lifetime_prediction": {
+                "model_used": null,
+                "predicted_lifetime": null,
+                "confidence_interval": null
+            },
+            "comparative_performance": {
+                "benchmark_alloy": null,
+                "benchmark_process_id": null,
+                "benchmark_sample_id": null,
+                "improvement_percentage": null
+            }
+        },
+        {
+            "performance_id": "perf_impact_196",
+            "sample_id": "sample_fe20mn6al_impact_196",
+            "service_conditions": {
+                "operating_temperature": {
+                    "min": "-196",
+                    "max": "-196",
+                    "unit": "°C"
+                },
+                "stress_state": "Charpy V-notch impact loading",
+                "environment": "liquid nitrogen"
+            },
+            "lifetime_prediction": {
+                "model_used": null,
+                "predicted_lifetime": null,
+                "confidence_interval": null
+            },
+            "comparative_performance": {
+                "benchmark_alloy": null,
+                "benchmark_process_id": null,
+                "benchmark_sample_id": null,
+                "improvement_percentage": null
+            }
+        }
+    ],
+    "characterization_methods": [
+        {
+            "characterization_id": "char_ebsd_initial",
+            "sample_id": "sample_fe20mn6al_initial",
+            "microstructure_uuid": "uuid-str-initial-001",
+            "technique": "EBSD (electron backscatter diffraction)",
+            "purpose": "Analyze initial as-forged microstructure, grain morphology, and phase constitution",
+            "key_findings": "Fully austenitic equiaxed grain structure; inverse pole figure and phase maps confirm single-phase austenite."
+        },
+        {
+            "characterization_id": "char_xrd_initial",
+            "sample_id": "sample_fe20mn6al_initial",
+            "microstructure_uuid": null,
+            "technique": "XRD (X-ray diffraction)",
+            "purpose": "Determine phase constitution of initial steel and after cryogenic holding",
+            "key_findings": "Initial XRD pattern shows austenite peaks γ(111), γ(200), γ(220), γ(311); no martensite formed after holding at -196°C for 30 min."
+        },
+        {
+            "characterization_id": "char_ebsd_tensile_196",
+            "sample_id": "sample_fe20mn6al_tensile_196",
+            "microstructure_uuid": "uuid-str-t196-001",
+            "technique": "EBSD",
+            "purpose": "Analyze deformed microstructure after tensile test at -196°C",
+            "key_findings": "IPF map shows orientation concentration in {111} and {001}; GB map shows LAGBs fraction ~70.2%; GNDs accumulate at LAGBs; mechanical twins marked."
+        },
+        {
+            "characterization_id": "char_ebsd_tensile_77",
+            "sample_id": "sample_fe20mn6al_tensile_77",
+            "microstructure_uuid": "uuid-str-t077-001",
+            "technique": "EBSD",
+            "purpose": "Analyze deformed microstructure after tensile test at -77°C",
+            "key_findings": "LAGBs fraction ~63.0%; orientation concentrates in {111} and {001}; no mechanical twins observed by EBSD."
+        },
+        {
+            "characterization_id": "char_ebsd_tensile_rt",
+            "sample_id": "sample_fe20mn6al_tensile_rt",
+            "microstructure_uuid": "uuid-str-t025-001",
+            "technique": "EBSD",
+            "purpose": "Analyze deformed microstructure after tensile test at room temperature",
+            "key_findings": "LAGBs fraction ~56.0%; orientation concentrates in {111} and {001}; continuous decrease in work hardening corresponding to wavy glide tendency."
+        },
+        {
+            "characterization_id": "char_tem_tensile_196",
+            "sample_id": "sample_fe20mn6al_tensile_196",
+            "microstructure_uuid": "uuid-str-t196-001",
+            "technique": "TEM (transmission electron microscopy)",
+            "purpose": "Confirm deformation mechanisms at -196°C",
+            "key_findings": "Mechanical twins observed along <112> on {111} plane; SAED pattern confirms twinning; dislocations present."
+        },
+        {
+            "characterization_id": "char_tem_tensile_77",
+            "sample_id": "sample_fe20mn6al_tensile_77",
+            "microstructure_uuid": "uuid-str-t077-001",
+            "technique": "TEM",
+            "purpose": "Confirm deformation mechanisms at -77°C",
+            "key_findings": "No mechanical twins; microbands oriented along {111} planes observed; dislocation planar glide features."
+        },
+        {
+            "characterization_id": "char_sem_tensile_fracture",
+            "sample_id": "sample_fe20mn6al_tensile_rt",
+            "microstructure_uuid": null,
+            "technique": "SEM (scanning electron microscopy)",
+            "purpose": "Observe fracture surface after tensile tests",
+            "key_findings": "Fracture surface observed for tensile samples; detailed morphology not explicitly described in provided text."
+        },
+        {
+            "characterization_id": "char_charpy_impact",
+            "sample_id": "sample_fe20mn6al_impact_196",
+            "microstructure_uuid": null,
+            "technique": "Instrumented Charpy impact testing",
+            "purpose": "Measure impact toughness and load-deflection behavior at cryogenic and room temperatures",
+            "key_findings": "Load-deflection curves obtained; total absorbed energy decreases with decreasing temperature; general yield load and maximum load increase as temperature decreases."
+        },
+        {
+            "characterization_id": "char_charpy_impact_77",
+            "sample_id": "sample_fe20mn6al_impact_77",
+            "microstructure_uuid": null,
+            "technique": "Instrumented Charpy impact testing",
+            "purpose": "Measure impact toughness at -77°C",
+            "key_findings": "W_all ~277 J; load-deflection curve shows transition from stable to unstable crack propagation."
+        },
+        {
+            "characterization_id": "char_charpy_impact_rt",
+            "sample_id": "sample_fe20mn6al_impact_rt",
+            "microstructure_uuid": null,
+            "technique": "Instrumented Charpy impact testing",
+            "purpose": "Measure impact toughness at room temperature",
+            "key_findings": "W_all ~327 J; highest total absorbed energy among tested temperatures; secondary cracks observed near fracture."
+        },
+        {
+            "characterization_id": "char_sem_impact_fracture",
+            "sample_id": "sample_fe20mn6al_impact_196",
+            "microstructure_uuid": null,
+            "technique": "SEM and VHX-5000 ultra-depth of field 3D microscope",
+            "purpose": "Observe impact fracture surface morphology",
+            "key_findings": "At -196°C: flatter surface, smaller fracture surface area, almost no fibrous zone, high-density large dimples and tear edges indicating quasi-cleavage tendency. Shear lips present."
+        },
+        {
+            "characterization_id": "char_sem_impact_fracture_77",
+            "sample_id": "sample_fe20mn6al_impact_77",
+            "microstructure_uuid": null,
+            "technique": "SEM and VHX-5000 ultra-depth of field 3D microscope",
+            "purpose": "Observe impact fracture surface morphology at -77°C",
+            "key_findings": "Larger fibrous zone than -196°C, more obvious ductile fracture characteristics in radial zone, shear lips present, compressed fracture surface."
+        },
+        {
+            "characterization_id": "char_sem_impact_fracture_rt",
+            "sample_id": "sample_fe20mn6al_impact_rt",
+            "microstructure_uuid": null,
+            "technique": "SEM and VHX-5000 ultra-depth of field 3D microscope",
+            "purpose": "Observe impact fracture surface morphology at room temperature",
+            "key_findings": "Largest fibrous zone and most obvious ductile fracture characteristics; most severe compression indicating greatest plastic deformation; secondary cracks present near fracture; shear lips present."
+        },
+        {
+            "characterization_id": "char_ebsd_impact_196",
+            "sample_id": "sample_fe20mn6al_impact_196",
+            "microstructure_uuid": "uuid-str-i196-001",
+            "technique": "EBSD",
+            "purpose": "Analyze cross-section microstructure near impact fracture surface at -196°C",
+            "key_findings": "Zigzag primary crack path; transgranular fracture; misorientation difference across crack less than 15°; significant local orientation gradient adjacent to primary cracks."
+        },
+        {
+            "characterization_id": "char_ebsd_impact_rt",
+            "sample_id": "sample_fe20mn6al_impact_rt",
+            "microstructure_uuid": "uuid-str-i025-001",
+            "technique": "EBSD",
+            "purpose": "Analyze cross-section microstructure near impact fracture surface at room temperature",
+            "key_findings": "Zigzag primary crack path; transgranular fracture; secondary cracks present; misorientation analysis confirms transgranular fracture."
+        },
+        {
+            "characterization_id": "char_ion_polish_impact",
+            "sample_id": "sample_fe20mn6al_impact_196",
+            "microstructure_uuid": null,
+            "technique": "Argon ion-beam cross-section polishing",
+            "purpose": "Prepare cross-section samples near impact fracture surface for EBSD",
+            "key_findings": "Samples polished using Gatan/685.C automated argon ion polishing system for subsequent EBSD analysis."
+        }
+    ],
+    "computational_details": [
+        {
+            "computation_id": "comp_thermo_sfe",
+            "sample_id": null,
+            "simulation_method": null,
+            "software_used": null,
+            "potential_model": null,
+            "validation_against_experiment": "Predicted SFE values compared against observed deformation mechanisms: DIMT suppressed at all temperatures; mechanical twins appear only at -196°C where SFE=32 mJ/m²; planar glide dominates at 40-61 mJ/m².",
+            "analytical_model": [
+                {
+                    "model_name": "Density estimation (Kim et al.)",
+                    "equation_role": "Calculate austenite density from composition",
+                    "parameters": "ρ_γ = 8.10 - 0.101(Al%) - 0.41(C%) - 0.0085(Mn%)",
+                    "model_note": "Estimated density 7.078 g/cm³ for Fe-20Mn-6Al-0.6C-0.15Si."
+                },
+                {
+                    "model_name": "Thermodynamic SFE model",
+                    "equation_role": "Calculate stacking fault energy",
+                    "parameters": "SFE = 2ρ_A ΔG^{γ→ε} + 2σ^{γ/ε}; ρ_A = (4/√3)·(1/Nα_γ²); α_γ = 0.36757 nm; σ^{γ/ε} = 15 mJ/m²; ΔG^{γ→ε} from Table 1 thermodynamic parameters",
+                    "model_note": "SFE at -196°C, -77°C and RT estimated as 32, 40 and 61 mJ/m², respectively."
+                },
+                {
+                    "model_name": "Hollomon equation",
+                    "equation_role": "Determine work hardening exponent",
+                    "parameters": "σ = Kε^n; lnσ = lnK + n·lnε; n1 for low strain region, n2 for high strain region",
+                    "model_note": "Work hardening behavior divides into two stages; n1 increases with decreasing temperature."
+                },
+                {
+                    "model_name": "Compliance Changing Rate (CCR)",
+                    "equation_role": "Analyze instrumented Charpy impact crack initiation and propagation",
+                    "parameters": "ΔC/C = (C - C_el)/C_el; C = ds/dF; C_el = s_el/F_el",
+                    "model_note": "Used to determine crack initiation load (F_in), unstable crack growth transition load (F_iu), and rebound compliance reflecting unstable crack growth rate."
+                }
+            ]
+        }
+    ],
+    "unmapped_findings": [
+        "Fig. 2c provides approximate tensile properties plotted against temperature: at -200°C (corresponding to -196°C test) TE=68%, UE=47%, UTS=1300 MPa, YS=900 MPa; at -100°C (corresponding to -77°C test) TE=58%, UE=45%, UTS=1000 MPa, YS=650 MPa; at 0°C (corresponding to RT test) TE=32%, UE=28%, UTS=800 MPa, YS=400 MPa. Fig. 2c also labels fitted linear relations: UTS=813.0-2.36*T and YS=474.6-2.05*T where T is temperature in °C.",
+        "Engineering stress-strain curve approximate values from Fig. 2a: at 25°C, stress rises from 0 to ~830 MPa over 0-70% strain; at -77°C, ~0-1030 MPa; at -196°C, ~0-1320 MPa. True stress-strain and work hardening rate from Fig. 2b: at 0.5 true strain, true stress is ~1000 MPa (25°C), ~1500 MPa (-77°C), ~2100 MPa (-196°C); work hardening rate dσ_true/dε_true decreases from ~2400 to ~2000 with increasing true strain.",
+        "Work hardening exponents from Fig. 8: n1 values 0.174, 0.181, 0.204 and n2=0.362. Since n1 increases with decreasing temperature, 0.204 corresponds to -196°C, 0.181 to -77°C, and 0.174 to RT. n2 represents the high strain region slope.",
+        "Charpy impact absorbed energy (W_all): approximately 327 J at RT, 277 J at -77°C, and 188 J at -196°C (from text). Fig. 5b tabulates energy components: W_initiation ~110 J (-196°C), ~65 J (-77°C), ~55 J (RT); W_stable ~30 J (-196°C), ~180 J (-77°C), ~180 J (RT); W_unstable ~40 J (-196°C), ~50 J (-77°C), ~60 J (RT). However, text states W_initiation values as 112 J (-196°C), 68 J (-77°C), and 57 J (RT), which take precedence. W_collapse values can be inferred from the difference between W_all and the sum of other components.",
+        "Impact load-deflection characteristic values from Fig. 9d approximate curves: maximum load ~32.0 kN at -200°C (approximating -196°C), ~27.0 kN at -100°C (approximating -77°C), ~24.0 kN at 0°C (approximating RT), and ~22.0 kN at 50°C. Ratio F_iu/F_m: 0.95 (-200°C), 0.85 (-100°C), 0.80 (0°C), 0.75 (50°C), indicating faster transition from stable to unstable crack propagation at lower temperatures. General yield load F_gy shows negative temperature dependence consistent with yield strength trend.",
+        "Fracture surface morphology after impact (Fig. 6): at -196°C, smaller fracture surface area due to less compression, almost no fibrous zone, combination of ductile and brittle fracture with high-density large dimples and tear edges suggesting quasi-cleavage cracks, significantly flatter 3D topography. At -77°C and RT, larger fibrous zones, more obvious ductile fracture characteristics in radial zone, more severe plastic deformation (greater compression reducing surface area), and shear lips present on all samples.",
+        "Near-fracture SEM observations (Fig. 11): planar glide features observed in regions near fracture. At -196°C, only few regions experienced planar glide during impact deformation. At -77°C and RT, planar glide becomes more pronounced, which can retard crack propagation and increase toughness.",
+        "Cross-section EBSD near impact fracture (Fig. 10): primary crack propagation paths are zigzag and mostly transgranular at both -196°C and RT. Misorientation analysis along the marked line for grain A shows misorientation difference across the crack less than 15°, confirming both regions were in the same grain before cracking. Secondary cracks are present at RT but absent at -196°C; secondary cracks release stress concentration at primary crack tips and delay fracture.",
+        "TEM observations of tensile deformed microstructure (Fig. 4): at -196°C, mechanical twins formed along <112> on {111} plane in grain near <110> zone axis, confirmed by SAED. At -77°C, no mechanical twins but uniform and dense microbands oriented along {111} planes, typical of planar glide (dynamic slip band refinement).",
+        "Tensile test conditions: strain rate 0.001 s⁻¹ (10⁻³ s⁻¹), cooling media liquid nitrogen (-196°C), dry ice-alcohol mixture (-77°C), and room temperature; specimens with parallel length 32 mm, width 5 mm, thickness 1.5 mm; entire tensile process carried out in cooling medium to avoid frictional heat.",
+        "Impact test conditions: PST752H-4 WANCE impact tester; samples 10 × 10 × 55 mm with 2 mm depth V-notch; tested at -196°C, -77°C and RT. EBSD step size for deformed tensile microstructure was 0.5 μm; for impact cross-section analyses was 0.8 μm. TEM specimens prepared by double-jet thinning using 6% perchloric acid and 94% glacial acetic acid electrolyte.",
+        "XRD analysis of initial steel and after holding at -196°C for 30 min (Fig. 1c) confirms fully austenitic microstructure with peaks at ~45° γ(111), ~50° γ(200), ~70° γ(220), ~85° γ(311), and no isothermal martensite formation, indicating very stable austenite.",
+        "The generalized temperature dependence of tensile elongation for austenitic steels (Fig. 7) indicates three SFE regions: Region I (high SFE, wavy glide, low elongation), Region II (moderate SFE, planar glide with mechanical twins/glide bands, high elongation), Region III (low SFE, DIMT dominant, decreased elongation). The experimental steel operates in Region II, with mechanical twinning appearing at the lower-SFE end (-196°C) and microbands at the higher-SFE end (-77°C, RT).",
+        "The activation energy for slip systems increases with decreasing temperature, making planar glide more difficult to activate during high strain rate impact deformation despite higher glide planarity at low strain rate. This explains the poor cryogenic impact toughness despite good cryogenic tensile elongation."
+    ]
+}
+```

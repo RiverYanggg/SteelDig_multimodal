@@ -1,0 +1,650 @@
+{
+    "papers": [
+        {
+            "paper_id": "A48",
+            "doi": null,
+            "title": "Chemical Composition Optimization for Austenitic Steels of the Fe-Mn-Al-C System",
+            "authors": ["I. Kalashnikov", "O. Acselrad", "A. Shalkevich", "L.C. Pereira"],
+            "publication_year": "2000",
+            "journal": null,
+            "keywords": ["austenitic steels", "FeMnAlC alloys", "mechanical properties"],
+            "research_type": "experimental",
+            "paper_scope": "Aiming at the lack of systematic composition design criteria for Fe-Mn-Al-C austenitic steels, this paper studies the effects of Mn, Al and C contents on microstructure and mechanical properties, and optimizes the composition range to obtain an optimal microstructure without embrittling phases, meeting the combination of tensile strength (UTS > 1100 MPa) and impact toughness (KCU > 50 J/cm²) required for structural applications."
+        }
+    ],
+    "alloys": [
+        {
+            "alloy_id": "alloy_femnalc",
+            "paper_id": "A48",
+            "alloy_name": "Fe-Mn-Al-C system austenitic steel",
+            "aliases": [],
+            "base_element": "Fe",
+            "alloying_elements": ["Mn", "Al", "C"],
+            "nominal_composition": [
+                {
+                    "element": "Mn",
+                    "weight_percent": "24%~34%",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "Al",
+                    "weight_percent": "3%~14%",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "C",
+                    "weight_percent": "0.3%~1.2%",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "Fe",
+                    "weight_percent": "bal",
+                    "atomic_percent": null
+                }
+            ],
+            "alloys_notes": "The optimized industrial composition range is Al: 9%~9.5 wt%, C: 0.9%~0.95 wt%, Mn: 28.5%~30.5 wt%; the composition range for microstructure free of embrittling phases is Al: 6.2%~9.7 wt%, C: 0.7%~1 wt%, Mn: 25%~31 wt%."
+        }
+    ],
+    "processes": [
+        {
+            "process_id": "proc_femnalc_01",
+            "paper_id": "A48",
+            "alloy_id": "alloy_femnalc",
+            "description": "100 kg induction furnace melting, electroslag remelting refining, 1150 °C homogenization for 6~8 h, hot working into rods, 1050 °C water quenching, 550 °C aging for 16 h",
+            "processes_notes": "Hot working at 1150~1170 °C can dissolve δ-ferrite with volume fraction ≤12% in as-cast structure."
+        },
+        {
+            "process_id": "proc_femnalc_02",
+            "paper_id": "A48",
+            "alloy_id": "alloy_femnalc",
+            "description": "Jet spraying atomization in argon atmosphere for rapid solidification, pressing at 1150 °C, quenching from 1100 °C",
+            "processes_notes": "Rapid solidification can suppress segregation, avoiding δ-ferrite formation when Al content is up to 12 wt%."
+        }
+    ],
+    "samples": [
+        {
+            "sample_id": "sample_femnalc_al_gradient",
+            "paper_id": "A48",
+            "alloy_id": "alloy_femnalc",
+            "process_id": "proc_femnalc_01"
+        },
+        {
+            "sample_id": "sample_femnalc_c_gradient",
+            "paper_id": "A48",
+            "alloy_id": "alloy_femnalc",
+            "process_id": "proc_femnalc_01"
+        },
+        {
+            "sample_id": "sample_femnalc_mn_gradient",
+            "paper_id": "A48",
+            "alloy_id": "alloy_femnalc",
+            "process_id": "proc_femnalc_01"
+        },
+        {
+            "sample_id": "sample_femnalc_optimal",
+            "paper_id": "A48",
+            "alloy_id": "alloy_femnalc",
+            "process_id": "proc_femnalc_01"
+        },
+        {
+            "sample_id": "sample_femnalc_rapid_solid",
+            "paper_id": "A48",
+            "alloy_id": "alloy_femnalc",
+            "process_id": "proc_femnalc_02"
+        }
+    ],
+    "processing_steps": [
+        {
+            "sample_id": "sample_femnalc_al_gradient,sample_femnalc_c_gradient,sample_femnalc_mn_gradient,sample_femnalc_optimal",
+            "paper_id": "A48",
+            "sequence": "1",
+            "type": "melting",
+            "method": "induction furnace melting + electroslag remelting",
+            "temperature": null,
+            "unit": null,
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "Total 31 different compositions were prepared."
+        },
+        {
+            "sample_id": "sample_femnalc_al_gradient,sample_femnalc_c_gradient,sample_femnalc_mn_gradient,sample_femnalc_optimal",
+            "paper_id": "A48",
+            "sequence": "2",
+            "type": "heat_treatment",
+            "method": "homogenization annealing",
+            "temperature": "1150",
+            "unit": "℃",
+            "duration": "6~8 h",
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": null
+        },
+        {
+            "sample_id": "sample_femnalc_al_gradient,sample_femnalc_c_gradient,sample_femnalc_mn_gradient,sample_femnalc_optimal",
+            "paper_id": "A48",
+            "sequence": "3",
+            "type": "thermomechanical_processing",
+            "method": "hot rolling",
+            "temperature": "1150~1170",
+            "unit": "℃",
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "Shaped into 12 mm diameter round rods and 14×14 mm square rods."
+        },
+        {
+            "sample_id": "sample_femnalc_al_gradient,sample_femnalc_c_gradient,sample_femnalc_mn_gradient,sample_femnalc_optimal",
+            "paper_id": "A48",
+            "sequence": "4",
+            "type": "heat_treatment",
+            "method": "solution treatment",
+            "temperature": "1050",
+            "unit": "℃",
+            "duration": null,
+            "cooling_medium": "room temperature water",
+            "reduction_ratio": null,
+            "processing_steps_notes": null
+        },
+        {
+            "sample_id": "sample_femnalc_al_gradient,sample_femnalc_c_gradient,sample_femnalc_mn_gradient,sample_femnalc_optimal",
+            "paper_id": "A48",
+            "sequence": "5",
+            "type": "heat_treatment",
+            "method": "aging treatment",
+            "temperature": "550",
+            "unit": "℃",
+            "duration": "16 h",
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": null
+        },
+        {
+            "sample_id": "sample_femnalc_rapid_solid",
+            "paper_id": "A48",
+            "sequence": "1",
+            "type": "solidification_process",
+            "method": "jet spraying atomization",
+            "temperature": null,
+            "unit": null,
+            "duration": null,
+            "cooling_medium": "argon atmosphere",
+            "reduction_ratio": null,
+            "processing_steps_notes": "Spherical particles with diameter < 500 μm obtained at ultra-high cooling rate."
+        },
+        {
+            "sample_id": "sample_femnalc_rapid_solid",
+            "paper_id": "A48",
+            "sequence": "2",
+            "type": "thermomechanical_processing",
+            "method": "hot pressing",
+            "temperature": "1150",
+            "unit": "℃",
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": null
+        },
+        {
+            "sample_id": "sample_femnalc_rapid_solid",
+            "paper_id": "A48",
+            "sequence": "3",
+            "type": "heat_treatment",
+            "method": "solution treatment",
+            "temperature": "1100",
+            "unit": "℃",
+            "duration": null,
+            "cooling_medium": "water",
+            "reduction_ratio": null,
+            "processing_steps_notes": null
+        }
+    ],
+    "structures": [
+        {
+            "structure_id": "struct_femnalc_01",
+            "sample_id": "sample_femnalc_al_gradient,sample_femnalc_c_gradient,sample_femnalc_mn_gradient,sample_femnalc_optimal",
+            "overall_structure": "Fully austenitic structure when composition is within optimized range",
+            "number_of_phases": null,
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_001",
+                    "related_sequence": null,
+                    "phases_present": [
+                        {
+                            "phase_name": "austenite",
+                            "crystal_structure": "FCC",
+                            "volume_fraction": null,
+                            "morphology": "polygonal grain",
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "δ-ferrite",
+                            "crystal_structure": "BCC",
+                            "volume_fraction": null,
+                            "morphology": "segregated at grain boundaries or ingot center",
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "κ-phase",
+                            "crystal_structure": null,
+                            "volume_fraction": null,
+                            "morphology": "intragranular precipitation",
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "β-Mn",
+                            "crystal_structure": null,
+                            "volume_fraction": null,
+                            "morphology": "grain boundary precipitation",
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "carbide",
+                            "crystal_structure": null,
+                            "volume_fraction": null,
+                            "morphology": "grain boundary network",
+                            "grain_size": null,
+                            "texture": null
+                        }
+                    ],
+                    "defects": [
+                        {
+                            "type": "grain boundary carbide network",
+                            "porosity": null,
+                            "inclusions": [],
+                            "dislocation_density": null,
+                            "lattice_distortion": "caused by Al substitutional solid solution"
+                        }
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": null,
+                            "unit": null
+                        },
+                        "grain_size_distribution": null,
+                        "texture": null
+                    },
+                    "precipitates": [
+                        {
+                            "precipitate_id": "prec_001",
+                            "type": "κ-phase",
+                            "size": {
+                                "value": null,
+                                "unit": null
+                            },
+                            "distribution": "homogeneous within matrix when Al > 7 wt%",
+                            "coherency": null
+                        },
+                        {
+                            "precipitate_id": "prec_002",
+                            "type": "carbide",
+                            "size": {
+                                "value": null,
+                                "unit": null
+                            },
+                            "distribution": "grain boundary network when Al < 6.2 wt%",
+                            "coherency": null
+                        },
+                        {
+                            "precipitate_id": "prec_003",
+                            "type": "β-Mn",
+                            "size": {
+                                "value": null,
+                                "unit": null
+                            },
+                            "distribution": "grain boundary when Mn > 32 wt% after long-term aging",
+                            "coherency": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "structure_id": "struct_femnalc_02",
+            "sample_id": "sample_femnalc_rapid_solid",
+            "overall_structure": "No δ-ferrite when Al ≤ 12 wt%",
+            "number_of_phases": null,
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_002",
+                    "related_sequence": null,
+                    "phases_present": [
+                        {
+                            "phase_name": "austenite",
+                            "crystal_structure": "FCC",
+                            "volume_fraction": null,
+                            "morphology": null,
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "δ-ferrite",
+                            "crystal_structure": "BCC",
+                            "volume_fraction": "~10%",
+                            "morphology": null,
+                            "grain_size": null,
+                            "texture": null
+                        }
+                    ],
+                    "defects": [],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": null,
+                            "unit": null
+                        },
+                        "grain_size_distribution": null,
+                        "texture": null
+                    },
+                    "precipitates": []
+                }
+            ]
+        }
+    ],
+    "interfaces": [],
+    "properties": [
+        {
+            "property_set_id": "prop_al_gradient",
+            "sample_id": "sample_femnalc_al_gradient",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [],
+                    "ultimate_tensile_strength": [
+                        {"direction": null, "value": "800", "unit": "MPa", "others": {"uncertainty": "0.85 wt% C"}},
+                        {"direction": null, "value": "850", "unit": "MPa", "others": {"uncertainty": "0.85 wt% C"}},
+                        {"direction": null, "value": "900", "unit": "MPa", "others": {"uncertainty": "0.85 wt% C"}},
+                        {"direction": null, "value": "950", "unit": "MPa", "others": {"uncertainty": "0.85 wt% C"}},
+                        {"direction": null, "value": "1000", "unit": "MPa", "others": {"uncertainty": "0.85 wt% C"}},
+                        {"direction": null, "value": "1050", "unit": "MPa", "others": {"uncertainty": "0.85 wt% C"}},
+                        {"direction": null, "value": "800", "unit": "MPa", "others": {"uncertainty": "0.95 wt% C"}},
+                        {"direction": null, "value": "900", "unit": "MPa", "others": {"uncertainty": "0.95 wt% C"}},
+                        {"direction": null, "value": "1000", "unit": "MPa", "others": {"uncertainty": "0.95 wt% C"}},
+                        {"direction": null, "value": "1100", "unit": "MPa", "others": {"uncertainty": "0.95 wt% C"}},
+                        {"direction": null, "value": "1200", "unit": "MPa", "others": {"uncertainty": "0.95 wt% C"}},
+                        {"direction": null, "value": "1250", "unit": "MPa", "others": {"uncertainty": "0.95 wt% C"}}
+                    ],
+                    "elongation": [
+                        {"direction": null, "value": "45", "unit": "%"}
+                    ],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [],
+                "fracture_toughness": {
+                    "value": null,
+                    "unit": "J/cm²"
+                },
+                "fatigue_properties": {
+                    "fatigue_limit": null,
+                    "cycles_to_failure": null
+                },
+                "creep_properties": {
+                    "steady_state_creep_rate": null,
+                    "rupture_life": null
+                }
+            },
+            "physical": {
+                "density": {"value": null, "unit": null},
+                "thermal_properties": {"thermal_conductivity": null, "thermal_expansion_coefficient": null, "specific_heat": null},
+                "electrical_properties": {"electrical_conductivity": null, "resistivity": null},
+                "magnetic_properties": {"magnetic_susceptibility": null, "curie_temperature": null}
+            },
+            "chemical": {
+                "corrosion_resistance": {"test_medium": null, "corrosion_rate": null, "passivation_behavior": null},
+                "oxidation_resistance": {"oxidation_rate_constant": null, "protective_scale": null}
+            },
+            "radiation_properties": {"void_swelling": null, "irradiation_hardening": null, "helium_embrittlement": null}
+        },
+        {
+            "property_set_id": "prop_c_gradient",
+            "sample_id": "sample_femnalc_c_gradient",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [
+                        {"direction": null, "value": "650", "unit": "MPa", "others": {"uncertainty": "0.3 wt% C"}},
+                        {"direction": null, "value": "750", "unit": "MPa", "others": {"uncertainty": "0.5 wt% C"}},
+                        {"direction": null, "value": "900", "unit": "MPa", "others": {"uncertainty": "0.7 wt% C"}},
+                        {"direction": null, "value": "1050", "unit": "MPa", "others": {"uncertainty": "0.9 wt% C"}},
+                        {"direction": null, "value": "1200", "unit": "MPa", "others": {"uncertainty": "1.1 wt% C"}}
+                    ],
+                    "ultimate_tensile_strength": [
+                        {"direction": null, "value": "850", "unit": "MPa", "others": {"uncertainty": "0.3 wt% C"}},
+                        {"direction": null, "value": "950", "unit": "MPa", "others": {"uncertainty": "0.5 wt% C"}},
+                        {"direction": null, "value": "1100", "unit": "MPa", "others": {"uncertainty": "0.7 wt% C"}},
+                        {"direction": null, "value": "1250", "unit": "MPa", "others": {"uncertainty": "0.9 wt% C"}},
+                        {"direction": null, "value": "1350", "unit": "MPa", "others": {"uncertainty": "1.1 wt% C"}}
+                    ],
+                    "elongation": [
+                        {"direction": null, "value": "25", "unit": "%", "others": {"uncertainty": "0.3 wt% C"}},
+                        {"direction": null, "value": "35", "unit": "%", "others": {"uncertainty": "0.5 wt% C"}},
+                        {"direction": null, "value": "50", "unit": "%", "others": {"uncertainty": "0.7 wt% C"}},
+                        {"direction": null, "value": "45", "unit": "%", "others": {"uncertainty": "0.9 wt% C"}},
+                        {"direction": null, "value": "10", "unit": "%", "others": {"uncertainty": "1.1 wt% C"}}
+                    ],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [],
+                "fracture_toughness": {
+                    "value": null,
+                    "unit": "J/cm²"
+                },
+                "fatigue_properties": {
+                    "fatigue_limit": null,
+                    "cycles_to_failure": null
+                },
+                "creep_properties": {
+                    "steady_state_creep_rate": null,
+                    "rupture_life": null
+                }
+            },
+            "physical": {
+                "density": {"value": null, "unit": null},
+                "thermal_properties": {"thermal_conductivity": null, "thermal_expansion_coefficient": null, "specific_heat": null},
+                "electrical_properties": {"electrical_conductivity": null, "resistivity": null},
+                "magnetic_properties": {"magnetic_susceptibility": null, "curie_temperature": null}
+            },
+            "chemical": {
+                "corrosion_resistance": {"test_medium": null, "corrosion_rate": null, "passivation_behavior": null},
+                "oxidation_resistance": {"oxidation_rate_constant": null, "protective_scale": null}
+            },
+            "radiation_properties": {"void_swelling": null, "irradiation_hardening": null, "helium_embrittlement": null}
+        },
+        {
+            "property_set_id": "prop_mn_gradient",
+            "sample_id": "sample_femnalc_mn_gradient",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [
+                        {"direction": null, "value": "950", "unit": "MPa", "others": {"uncertainty": "24 wt% Mn"}},
+                        {"direction": null, "value": "1000", "unit": "MPa", "others": {"uncertainty": "26 wt% Mn"}},
+                        {"direction": null, "value": "1000", "unit": "MPa", "others": {"uncertainty": "28 wt% Mn"}},
+                        {"direction": null, "value": "980", "unit": "MPa", "others": {"uncertainty": "30 wt% Mn"}},
+                        {"direction": null, "value": "950", "unit": "MPa", "others": {"uncertainty": "32 wt% Mn"}},
+                        {"direction": null, "value": "880", "unit": "MPa", "others": {"uncertainty": "34 wt% Mn"}}
+                    ],
+                    "ultimate_tensile_strength": [
+                        {"direction": null, "value": "1100", "unit": "MPa", "others": {"uncertainty": "24 wt% Mn"}},
+                        {"direction": null, "value": "1200", "unit": "MPa", "others": {"uncertainty": "26 wt% Mn"}},
+                        {"direction": null, "value": "1180", "unit": "MPa", "others": {"uncertainty": "28 wt% Mn"}},
+                        {"direction": null, "value": "1150", "unit": "MPa", "others": {"uncertainty": "30 wt% Mn"}},
+                        {"direction": null, "value": "1100", "unit": "MPa", "others": {"uncertainty": "32 wt% Mn"}},
+                        {"direction": null, "value": "950", "unit": "MPa", "others": {"uncertainty": "34 wt% Mn"}}
+                    ],
+                    "elongation": [
+                        {"direction": null, "value": "50", "unit": "%", "others": {"uncertainty": "24 wt% Mn"}},
+                        {"direction": null, "value": "50", "unit": "%", "others": {"uncertainty": "26 wt% Mn"}},
+                        {"direction": null, "value": "55", "unit": "%", "others": {"uncertainty": "28 wt% Mn"}},
+                        {"direction": null, "value": "60", "unit": "%", "others": {"uncertainty": "30 wt% Mn"}},
+                        {"direction": null, "value": "55", "unit": "%", "others": {"uncertainty": "32 wt% Mn"}},
+                        {"direction": null, "value": "20", "unit": "%", "others": {"uncertainty": "34 wt% Mn"}}
+                    ],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [],
+                "fracture_toughness": {
+                    "value": null,
+                    "unit": "J/cm²"
+                },
+                "fatigue_properties": {
+                    "fatigue_limit": null,
+                    "cycles_to_failure": null
+                },
+                "creep_properties": {
+                    "steady_state_creep_rate": null,
+                    "rupture_life": null
+                }
+            },
+            "physical": {
+                "density": {"value": null, "unit": null},
+                "thermal_properties": {"thermal_conductivity": null, "thermal_expansion_coefficient": null, "specific_heat": null},
+                "electrical_properties": {"electrical_conductivity": null, "resistivity": null},
+                "magnetic_properties": {"magnetic_susceptibility": null, "curie_temperature": null}
+            },
+            "chemical": {
+                "corrosion_resistance": {"test_medium": null, "corrosion_rate": null, "passivation_behavior": null},
+                "oxidation_resistance": {"oxidation_rate_constant": null, "protective_scale": null}
+            },
+            "radiation_properties": {"void_swelling": null, "irradiation_hardening": null, "helium_embrittlement": null}
+        },
+        {
+            "property_set_id": "prop_optimal",
+            "sample_id": "sample_femnalc_optimal",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [],
+                    "ultimate_tensile_strength": [
+                        {"direction": null, "value": ">1100", "unit": "MPa", "others": {"uncertainty": null}}
+                    ],
+                    "elongation": [],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [],
+                "fracture_toughness": {
+                    "value": ">50",
+                    "unit": "J/cm²"
+                },
+                "fatigue_properties": {
+                    "fatigue_limit": null,
+                    "cycles_to_failure": null
+                },
+                "creep_properties": {
+                    "steady_state_creep_rate": null,
+                    "rupture_life": null
+                }
+            },
+            "physical": {
+                "density": {"value": null, "unit": null},
+                "thermal_properties": {"thermal_conductivity": null, "thermal_expansion_coefficient": null, "specific_heat": null},
+                "electrical_properties": {"electrical_conductivity": null, "resistivity": null},
+                "magnetic_properties": {"magnetic_susceptibility": null, "curie_temperature": null}
+            },
+            "chemical": {
+                "corrosion_resistance": {"test_medium": null, "corrosion_rate": null, "passivation_behavior": null},
+                "oxidation_resistance": {"oxidation_rate_constant": null, "protective_scale": null}
+            },
+            "radiation_properties": {"void_swelling": null, "irradiation_hardening": null, "helium_embrittlement": null}
+        }
+    ],
+    "performance": [
+        {
+            "performance_id": "perf_01",
+            "sample_id": "sample_femnalc_optimal",
+            "service_conditions": {
+                "operating_temperature": {
+                    "min": "cryogenic",
+                    "max": "673",
+                    "unit": "K"
+                },
+                "stress_state": null,
+                "environment": null
+            },
+            "lifetime_prediction": {
+                "model_used": null,
+                "predicted_lifetime": null,
+                "confidence_interval": null
+            },
+            "comparative_performance": {
+                "benchmark_alloy": "conventional Fe-Mn-Al-C alloys",
+                "benchmark_process_id": null,
+                "benchmark_sample_id": null,
+                "improvement_percentage": null
+            }
+        }
+    ],
+    "characterization_methods": [
+        {
+            "characterization_id": "char_01",
+            "sample_id": "sample_femnalc_al_gradient,sample_femnalc_c_gradient,sample_femnalc_mn_gradient,sample_femnalc_optimal,sample_femnalc_rapid_solid",
+            "microstructure_uuid": "uuid_001,uuid_002",
+            "technique": "metallographic analysis + X-ray diffraction",
+            "purpose": "measure δ-ferrite content and phase composition",
+            "key_findings": "δ-ferrite appears when Al > 9.5 wt% for conventional melting, Al > 12 wt% for rapid solidification; hot working at 1150~1170 °C can dissolve δ-ferrite with volume fraction ≤12%."
+        },
+        {
+            "characterization_id": "char_02",
+            "sample_id": "sample_femnalc_al_gradient,sample_femnalc_c_gradient,sample_femnalc_mn_gradient,sample_femnalc_optimal",
+            "microstructure_uuid": null,
+            "technique": "room temperature tensile test",
+            "purpose": "measure tensile strength and elongation",
+            "key_findings": "UTS increases with increasing Al and C content, decreases when Mn > 32 wt%."
+        },
+        {
+            "characterization_id": "char_03",
+            "sample_id": "sample_femnalc_al_gradient,sample_femnalc_c_gradient,sample_femnalc_mn_gradient,sample_femnalc_optimal",
+            "microstructure_uuid": null,
+            "technique": "U-notch impact test",
+            "purpose": "measure impact toughness",
+            "key_findings": "Impact toughness decreases significantly when Al > 9 wt%, C > 1 wt% or Mn > 32 wt%."
+        },
+        {
+            "characterization_id": "char_04",
+            "sample_id": "sample_femnalc_c_gradient",
+            "microstructure_uuid": null,
+            "technique": "saturation magnetization measurement",
+            "purpose": "evaluate aging process intensity",
+            "key_findings": "Carbon is the leading element at the initial stage of aging, and the aging degree increases with increasing Al content."
+        }
+    ],
+    "computational_details": [
+        {
+            "computation_id": "comp_01",
+            "sample_id": null,
+            "simulation_method": null,
+            "software_used": null,
+            "potential_model": null,
+            "validation_against_experiment": "consistent with experimental results of 31 compositions",
+            "analytical_model": [
+                {
+                    "model_name": "second-order polynomial fitting model",
+                    "equation_role": "predict the variation of UTS and KCU with alloy composition",
+                    "parameters": "Mn, Al, C contents as independent variables, UTS and KCU as response functions",
+                    "model_note": "Used to optimize the composition range meeting performance requirements."
+                }
+            ]
+        }
+    ],
+    "unmapped_findings": [
+        "The U-notch impact toughness for Al gradient samples (0.85 wt% C) is 10, 180, 180, 160, 120, 10 J/cm² corresponding to Al content of 3, 6, 7, 8, 9, 10 wt% respectively, and 7, 160, 160, 120, 80, 60 J/cm² for 0.95 wt% C.",
+        "The U-notch impact toughness for C gradient samples is 40, 80, 120, 110, 30 J/cm² corresponding to C content of 0.3, 0.5, 0.7, 0.9, 1.1 wt% respectively.",
+        "The U-notch impact toughness for Mn gradient samples is 115, 105, 100, 115, 115, 35 J/cm² corresponding to Mn content of 24, 26, 28, 30, 32, 34 wt% respectively.",
+        "Yield strength increases by 30~40 MPa for every 0.1 wt% increase in C content due to interstitial solid solution strengthening.",
+        "κ-phase precipitates during aging when Al > 6.2 wt%, providing significant hardening effect; grain boundary carbide network forms when Al < 6.2 wt%, severely reducing impact toughness.",
+        "β-Mn precipitates at grain boundaries after long-term aging at 550 °C when Mn > 31~32 wt%, causing severe embrittlement."
+    ]
+}

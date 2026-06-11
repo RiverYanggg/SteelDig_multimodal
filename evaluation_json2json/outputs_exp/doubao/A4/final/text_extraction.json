@@ -1,0 +1,868 @@
+{
+  "papers": [
+    {
+      "paper_id": "A4",
+      "doi": null,
+      "title": "Enhanced mechanical properties of a Fe-Mn-Al-C austenitic low-density steel by increasing hot-rolling reduction",
+      "authors": [
+        "Ziyuan Gao",
+        "Qingfeng Kang",
+        "Xueliang An",
+        "Hui Wang",
+        "Cunyu Wang",
+        "Wenquan Cao"
+      ],
+      "publication_year": null,
+      "journal": null,
+      "keywords": [
+        "Fe-Mn-Al-C",
+        "Low-density steel",
+        "Hot rolling",
+        "Grain refinement",
+        "Dislocation strengthening",
+        "Slip band",
+        "Microband",
+        "Strain-hardening behavior"
+      ],
+      "research_type": "experimental",
+      "paper_scope": "研究不同热轧压下率下Fe-Mn-Al-C奥氏体低密度钢的组织演变和力学性能，系统分析强化机制贡献以及变形亚结构演化与应变硬化行为的关联，提出提高热轧压下率是提升全奥氏体组织低密度钢综合力学性能的有效途径"
+    }
+  ],
+  "alloys": [
+    {
+      "alloy_id": "alloy_fe31mn9al1c",
+      "paper_id": "A4",
+      "alloy_name": "Fe-31Mn-9Al-1C-0.45Nb-0.45Mo-0.45W austenitic low-density steel",
+      "aliases": [],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Al",
+        "C",
+        "Nb",
+        "Mo",
+        "W"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Mn",
+          "weight_percent": "30.9",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "8.7",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.9",
+          "atomic_percent": null
+        },
+        {
+          "element": "Nb",
+          "weight_percent": "0.45",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mo",
+          "weight_percent": "0.45",
+          "atomic_percent": null
+        },
+        {
+          "element": "W",
+          "weight_percent": "0.43",
+          "atomic_percent": null
+        },
+        {
+          "element": "Fe",
+          "weight_percent": "balance",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "钢的实测密度为6.82 g/cm³，相比纯铁密度降低~13%"
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_fe_mn_al_c_01",
+      "paper_id": "A4",
+      "alloy_id": "alloy_fe31mn9al1c",
+      "description": "热轧压下率45%，4道次轧制，热轧后水淬至室温，对应样品HR45",
+      "processes_notes": "钢锭经高频真空感应熔炼后，1150℃热锻为110mm厚坯料，空冷至室温后重新加热至1150℃进行热轧，HR45轧后厚度为60mm"
+    },
+    {
+      "process_id": "proc_fe_mn_al_c_02",
+      "paper_id": "A4",
+      "alloy_id": "alloy_fe31mn9al1c",
+      "description": "热轧压下率68%，6道次轧制，热轧后水淬至室温，对应样品HR68",
+      "processes_notes": "HR68轧后厚度为35mm"
+    },
+    {
+      "process_id": "proc_fe_mn_al_c_03",
+      "paper_id": "A4",
+      "alloy_id": "alloy_fe31mn9al1c",
+      "description": "热轧压下率82%，9道次轧制，热轧后水淬至室温，对应样品HR82",
+      "processes_notes": "HR82轧后厚度为20mm"
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_hr45",
+      "paper_id": "A4",
+      "alloy_id": "alloy_fe31mn9al1c",
+      "process_id": "proc_fe_mn_al_c_01"
+    },
+    {
+      "sample_id": "sample_hr68",
+      "paper_id": "A4",
+      "alloy_id": "alloy_fe31mn9al1c",
+      "process_id": "proc_fe_mn_al_c_02"
+    },
+    {
+      "sample_id": "sample_hr82",
+      "paper_id": "A4",
+      "alloy_id": "alloy_fe31mn9al1c",
+      "process_id": "proc_fe_mn_al_c_03"
+    }
+  ],
+  "processing_steps": [
+    {
+      "sample_id": "sample_hr45",
+      "paper_id": "A4",
+      "sequence": "1",
+      "type": "thermomechanical_processing",
+      "method": "hot forging",
+      "temperature": "1150",
+      "unit": "℃",
+      "duration": null,
+      "cooling_medium": "air",
+      "reduction_ratio": null,
+      "processing_steps_notes": "锻后得到110mm厚坯料"
+    },
+    {
+      "sample_id": "sample_hr45",
+      "paper_id": "A4",
+      "sequence": "2",
+      "type": "heat_treatment",
+      "method": "reheating",
+      "temperature": "1150",
+      "unit": "℃",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "热轧前预热"
+    },
+    {
+      "sample_id": "sample_hr45",
+      "paper_id": "A4",
+      "sequence": "3",
+      "type": "thermomechanical_processing",
+      "method": "hot rolling",
+      "temperature": "1150",
+      "unit": "℃",
+      "duration": null,
+      "cooling_medium": "water",
+      "reduction_ratio": "45%",
+      "processing_steps_notes": "4道次轧制，轧后厚度60mm"
+    },
+    {
+      "sample_id": "sample_hr68",
+      "paper_id": "A4",
+      "sequence": "1",
+      "type": "thermomechanical_processing",
+      "method": "hot forging",
+      "temperature": "1150",
+      "unit": "℃",
+      "duration": null,
+      "cooling_medium": "air",
+      "reduction_ratio": null,
+      "processing_steps_notes": "锻后得到110mm厚坯料"
+    },
+    {
+      "sample_id": "sample_hr68",
+      "paper_id": "A4",
+      "sequence": "2",
+      "type": "heat_treatment",
+      "method": "reheating",
+      "temperature": "1150",
+      "unit": "℃",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "热轧前预热"
+    },
+    {
+      "sample_id": "sample_hr68",
+      "paper_id": "A4",
+      "sequence": "3",
+      "type": "thermomechanical_processing",
+      "method": "hot rolling",
+      "temperature": "1150",
+      "unit": "℃",
+      "duration": null,
+      "cooling_medium": "water",
+      "reduction_ratio": "68%",
+      "processing_steps_notes": "6道次轧制，轧后厚度35mm"
+    },
+    {
+      "sample_id": "sample_hr82",
+      "paper_id": "A4",
+      "sequence": "1",
+      "type": "thermomechanical_processing",
+      "method": "hot forging",
+      "temperature": "1150",
+      "unit": "℃",
+      "duration": null,
+      "cooling_medium": "air",
+      "reduction_ratio": null,
+      "processing_steps_notes": "锻后得到110mm厚坯料"
+    },
+    {
+      "sample_id": "sample_hr82",
+      "paper_id": "A4",
+      "sequence": "2",
+      "type": "heat_treatment",
+      "method": "reheating",
+      "temperature": "1150",
+      "unit": "℃",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "热轧前预热"
+    },
+    {
+      "sample_id": "sample_hr82",
+      "paper_id": "A4",
+      "sequence": "3",
+      "type": "thermomechanical_processing",
+      "method": "hot rolling",
+      "temperature": "1150",
+      "unit": "℃",
+      "duration": null,
+      "cooling_medium": "water",
+      "reduction_ratio": "82%",
+      "processing_steps_notes": "9道次轧制，轧后厚度20mm"
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_hr45",
+      "sample_id": "sample_hr45",
+      "overall_structure": "全FCC奥氏体等轴晶组织，含大量Σ3退火孪晶界",
+      "number_of_phases": "3",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "ms_hr45_01",
+          "related_sequence": "3",
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": "~96%",
+              "morphology": "equiaxed grain",
+              "grain_size": "45.11μm (不含孪晶), 21.82μm (含孪晶)",
+              "texture": null
+            },
+            {
+              "phase_name": "(Nb,Mo,W)C",
+              "crystal_structure": "FCC",
+              "volume_fraction": "~0.193%",
+              "morphology": "micron-sized polygonal, submicron-sized spherical",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "κ-carbide",
+              "crystal_structure": "L'12 ordered",
+              "volume_fraction": "3.5±0.33%",
+              "morphology": "nano-sized spherical",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocation",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "2.71×10^13 m^-2",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "45.11",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "pre_hr45_01",
+              "type": "(Nb,Mo,W)C",
+              "size": {
+                "value": "261±36",
+                "unit": "nm"
+              },
+              "distribution": "沿轧制方向分布在晶界和晶内",
+              "coherency": "incoherent"
+            },
+            {
+              "precipitate_id": "pre_hr45_02",
+              "type": "κ-carbide",
+              "size": {
+                "value": "0.81±0.26",
+                "unit": "nm"
+              },
+              "distribution": "均匀分布在奥氏体晶粒内",
+              "coherency": "coherent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_hr68",
+      "sample_id": "sample_hr68",
+      "overall_structure": "全FCC奥氏体等轴晶组织，含大量Σ3退火孪晶界",
+      "number_of_phases": "3",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "ms_hr68_01",
+          "related_sequence": "3",
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": "~96%",
+              "morphology": "equiaxed grain",
+              "grain_size": "27.02μm (不含孪晶), 11.55μm (含孪晶)",
+              "texture": null
+            },
+            {
+              "phase_name": "(Nb,Mo,W)C",
+              "crystal_structure": "FCC",
+              "volume_fraction": "~0.201%",
+              "morphology": "micron-sized polygonal, submicron-sized spherical",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "κ-carbide",
+              "crystal_structure": "L'12 ordered",
+              "volume_fraction": "3.3±0.52%",
+              "morphology": "nano-sized spherical",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocation",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "7.49×10^13 m^-2",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "27.02",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "pre_hr68_01",
+              "type": "(Nb,Mo,W)C",
+              "size": {
+                "value": "256±42",
+                "unit": "nm"
+              },
+              "distribution": "沿轧制方向分布在晶界和晶内",
+              "coherency": "incoherent"
+            },
+            {
+              "precipitate_id": "pre_hr68_02",
+              "type": "κ-carbide",
+              "size": {
+                "value": "0.78±0.17",
+                "unit": "nm"
+              },
+              "distribution": "均匀分布在奥氏体晶粒内",
+              "coherency": "coherent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_hr82",
+      "sample_id": "sample_hr82",
+      "overall_structure": "全FCC奥氏体等轴晶组织，含大量Σ3退火孪晶界",
+      "number_of_phases": "3",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "ms_hr82_01",
+          "related_sequence": "3",
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": "~96%",
+              "morphology": "equiaxed grain",
+              "grain_size": "18.80μm (不含孪晶), 7.02μm (含孪晶)",
+              "texture": null
+            },
+            {
+              "phase_name": "(Nb,Mo,W)C",
+              "crystal_structure": "FCC",
+              "volume_fraction": "~0.198%",
+              "morphology": "micron-sized polygonal, submicron-sized spherical",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "κ-carbide",
+              "crystal_structure": "L'12 ordered",
+              "volume_fraction": "3.9±0.39%",
+              "morphology": "nano-sized spherical",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocation",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "9.87×10^13 m^-2",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "18.80",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "pre_hr82_01",
+              "type": "(Nb,Mo,W)C",
+              "size": {
+                "value": "259±23",
+                "unit": "nm"
+              },
+              "distribution": "沿轧制方向分布在晶界和晶内",
+              "coherency": "incoherent"
+            },
+            {
+              "precipitate_id": "pre_hr82_02",
+              "type": "κ-carbide",
+              "size": {
+                "value": "0.83±0.23",
+                "unit": "nm"
+              },
+              "distribution": "均匀分布在奥氏体晶粒内",
+              "coherency": "coherent"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "prop_hr45",
+      "sample_id": "sample_hr45",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "rolling direction",
+              "value": "480.0",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "0.0"
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "rolling direction",
+              "value": "861.0",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "11.0"
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "rolling direction",
+              "value": "60.0",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": "133",
+          "unit": "J/m²"
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "6.82",
+          "unit": "g/cm³"
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_hr68",
+      "sample_id": "sample_hr68",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "rolling direction",
+              "value": "577.0",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "0.0"
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "rolling direction",
+              "value": "922.0",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "2.0"
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "rolling direction",
+              "value": "57.0",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": "116",
+          "unit": "J/m²"
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "6.82",
+          "unit": "g/cm³"
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_hr82",
+      "sample_id": "sample_hr82",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "rolling direction",
+              "value": "648.0",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "13.0"
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "rolling direction",
+              "value": "976.0",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "11.0"
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "rolling direction",
+              "value": "50.0",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": "105",
+          "unit": "J/m²"
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "6.82",
+          "unit": "g/cm³"
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_hr82",
+      "sample_id": "sample_hr82",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy": [
+          "austenitic stainless steels",
+          "aging-hardened Fe-Mn-Al-C low-density steel"
+        ],
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "improvement_percentage": "与固溶态奥氏体钢相比，屈服强度显著提升，塑性和韧性相当；与时效硬化低密度钢相比，屈服强度相当，塑性提升~138%，韧性提升~200%"
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_01",
+      "sample_id": null,
+      "microstructure_uuid": null,
+      "technique": "SEM (BSE)",
+      "purpose": "观察第二相粒子的形貌和分布",
+      "key_findings": "(Nb,Mo,W)C粒子有微米级多边形和亚微米级球形两种形貌"
+    },
+    {
+      "characterization_id": "char_02",
+      "sample_id": null,
+      "microstructure_uuid": null,
+      "technique": "EBSD",
+      "purpose": "表征晶粒尺寸、晶界特征、位错密度",
+      "key_findings": "随热轧压下率提升，晶粒显著细化，几何必须位错密度升高"
+    },
+    {
+      "characterization_id": "char_03",
+      "sample_id": null,
+      "microstructure_uuid": null,
+      "technique": "TEM + SAED + EDS",
+      "purpose": "表征纳米析出相、变形亚结构",
+      "key_findings": "水淬过程析出纳米级共格κ-碳化物，变形过程形成平面滑移带和微带"
+    },
+    {
+      "characterization_id": "char_04",
+      "sample_id": null,
+      "microstructure_uuid": null,
+      "technique": "uniaxial tensile test",
+      "purpose": "测试室温拉伸性能和应变硬化行为",
+      "key_findings": "随热轧压下率提升，强度提升，塑性略有下降"
+    },
+    {
+      "characterization_id": "char_05",
+      "sample_id": null,
+      "microstructure_uuid": null,
+      "technique": "Charpy V-notch impact test",
+      "purpose": "测试室温冲击韧性",
+      "key_findings": "随热轧压下率提升，冲击韧性仅轻微下降，维持在100J/m²以上"
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_01",
+      "sample_id": null,
+      "simulation_method": null,
+      "software_used": null,
+      "potential_model": null,
+      "validation_against_experiment": "计算得到的屈服强度与实验值误差小于1%，吻合良好",
+      "analytical_model": [
+        {
+          "model_name": "Hall-Petch model",
+          "equation_role": "计算晶界强化贡献",
+          "parameters": "k_HP=733.43 MPa·μm^1/2, σ0=203.10 MPa",
+          "model_note": "采用含退火孪晶的有效晶粒尺寸计算"
+        },
+        {
+          "model_name": "Taylor hardening law",
+          "equation_role": "计算位错强化贡献",
+          "parameters": "M=3.06, α=0.2, G=68 GPa, b=0.26 nm",
+          "model_note": "采用EBSD测得的几何必须位错密度计算"
+        },
+        {
+          "model_name": "Orowan bypassing model",
+          "equation_role": "计算(Nb,Mo,W)C的析出强化贡献",
+          "parameters": "M=3.06, G=170 GPa, b=0.26 nm",
+          "model_note": "析出相强化贡献小于7MPa，可忽略"
+        },
+        {
+          "model_name": "Anti-phase boundary shearing model",
+          "equation_role": "计算κ-碳化物的析出强化贡献",
+          "parameters": "M=3.06, G=68 GPa, b=0.26 nm, γ_APB=350 mJ/m²",
+          "model_note": "κ-碳化物强化贡献约60MPa，不同压下率样品无明显差异"
+        },
+        {
+          "model_name": "Dynamic slip band refinement model",
+          "equation_role": "解释应变硬化行为和晶粒尺寸的影响",
+          "parameters": null,
+          "model_note": "滑移带间距最小为~50nm，达到后饱和，后续变形由微带承担"
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "热轧压下率从45%提升到82%时，屈服强度提升~170MPa，抗拉强度提升~110MPa，总延伸率仅从60%降至50%，冲击韧性从133J/m²降至105J/m²，获得优异的强塑韧匹配",
+    "实验钢的堆垛层错能为~73mJ/m²，由于κ-碳化物和位错的交互作用产生滑移面软化，变形过程仍以平面滑移为主",
+    "应变硬化行为分为三个阶段：屈服后快速下降（阶段I）、持续上升至峰值（阶段II）、缓慢下降至断裂（阶段III），高应变硬化率维持在~2000MPa",
+    "细晶样品的变形亚结构演化更快，滑移带细化更早饱和，微带更早出现，是塑性轻微下降的主要原因",
+    "所有样品拉伸断口均为典型韧窝断裂，(Nb,Mo,W)C粒子对韧性无明显有害影响"
+  ]
+}

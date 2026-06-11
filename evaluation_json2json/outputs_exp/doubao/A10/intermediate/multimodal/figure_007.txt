@@ -1,0 +1,5 @@
+{
+    "image_type": "chart_plot",
+    "description": "This figure presents feature selection for microhardness prediction of Fe-C-Cr-Mn-Si steel, consisting of three subplots. Subplot (a) shows recursive feature elimination (RFE) voting results using XGBoost, RF and LightGBM algorithms, where dark blue cells (marked as 1) indicate high-importance features, and 9 candidate features are screened out. Subplot (b) is the Pearson correlation coefficient (PCC) heatmap of the 9 selected features, with multiple feature pairs showing absolute PCC values ≥ 0.95, indicating high linear correlation. Subplot (c) is the bar chart of importance ranking for the 9 features, where EI-2nd has the highest importance score (~0.46), followed by ηB, ω, δEI-2nd, DEc, δEc, γ, G, and e/a has the lowest score. Based on these results, low-importance features in high-correlation pairs are removed, and e/a, G, EI-2nd, δEc, DEc are identified as key features for high-accuracy hardness prediction, supporting machine learning model construction for the studied steel system.",
+    "confidence": "high"
+}

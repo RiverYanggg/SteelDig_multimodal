@@ -1,0 +1,186 @@
+{
+  "claims": [
+    {
+      "claim_type": "mechanism",
+      "subject": "AN750, AN800, AN850 samples",
+      "claim": "The dislocation strengthening contributions for AN750, AN800, and AN850 are 263 MPa, 459 MPa, and 414 MPa, respectively, calculated from GND densities (0.61×10^14 m⁻², 0.84×10^14 m⁻², 0.72×10^14 m⁻²) and Taylor factors (3.45, 3.58, 3.53).",
+      "values": [
+        "GND density: 0.61×10^14 m⁻², 0.84×10^14 m⁻², 0.72×10^14 m⁻²",
+        "Taylor factor: 3.45, 3.58, 3.53",
+        "Dislocation strengthening: 263 MPa, 459 MPa, 414 MPa"
+      ],
+      "evidence_text": "The GND densities are 0 . 6 1 × 1 0 ^ { 1 4 } m ^ { - 2 } ,  0 . 8 4 × 1 0 ^ { 1 4 } m ^ { - 2 } and 0 . 7 2 × 1 0 ^ { 1 4 } m ^ { - 2 } ; , respectively, and the Taylor factor numbers are 3.45, 3.58 and 3.53, respectively. Therefore, the dislocation strengthening contributions of AN750, AN800 and AN850 samples are 263 MPa, 459 MPa and 414 MPa, respectively.",
+      "figures": [
+        "Fig. 14"
+      ],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "property",
+      "subject": "AN750 (Fe-0.25C-3Mn-2Al-0.4Si)",
+      "claim": "For AN750, the solid solution strengthening is 220 MPa, grain refinement strengthening is 264 MPa, dislocation strengthening is 263 MPa, Orowan strengthening is 0 MPa, the linear-superposition-calculated yield strength is 747 MPa, and the actual measured yield strength is 709 MPa.",
+      "values": [
+        "σ₀ = 220 MPa",
+        "σ_g = 264 MPa",
+        "σ_d = 263 MPa",
+        "σ_Orowan = 0 MPa",
+        "σ_y (calculated) = 747 MPa",
+        "Actual YS = 709 MPa"
+      ],
+      "evidence_text": "Table 3 Contribution of various strengthening mechanisms to YS of test steel. ... AN750 ... 220 ... 264 ... 263 ... 0 ... 747 ... 709",
+      "figures": [],
+      "tables": [
+        "Table 3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "property",
+      "subject": "AN800 (Fe-0.25C-3Mn-2Al-0.4Si)",
+      "claim": "For AN800, the solid solution strengthening is 220 MPa, grain refinement strengthening is 256 MPa, dislocation strengthening is 459 MPa, Orowan strengthening is 0 MPa, the calculated yield strength is 935 MPa, and the actual measured yield strength is 968 MPa.",
+      "values": [
+        "σ₀ = 220 MPa",
+        "σ_g = 256 MPa",
+        "σ_d = 459 MPa",
+        "σ_Orowan = 0 MPa",
+        "σ_y (calculated) = 935 MPa",
+        "Actual YS = 968 MPa"
+      ],
+      "evidence_text": "AN800 ... 220 ... 256 ... 459 ... 0 ... 935 ... 968",
+      "figures": [],
+      "tables": [
+        "Table 3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "property",
+      "subject": "AN850 (Fe-0.25C-3Mn-2Al-0.4Si)",
+      "claim": "For AN850, the solid solution strengthening is 220 MPa, grain refinement strengthening is 292 MPa, dislocation strengthening is 414 MPa, Orowan strengthening is 0 MPa, the calculated yield strength is 926 MPa, and the actual measured yield strength is 964 MPa.",
+      "values": [
+        "σ₀ = 220 MPa",
+        "σ_g = 292 MPa",
+        "σ_d = 414 MPa",
+        "σ_Orowan = 0 MPa",
+        "σ_y (calculated) = 926 MPa",
+        "Actual YS = 964 MPa"
+      ],
+      "evidence_text": "AN850 ... 220 ... 292 ... 414 ... 0 ... 926 ... 964",
+      "figures": [],
+      "tables": [
+        "Table 3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "comparison",
+      "subject": "Yield strength prediction models",
+      "claim": "The GA-Extra Trees model reduces the absolute prediction difference compared to the unoptimized Extra Trees model by 22 MPa at 750°C, 21 MPa at 800°C, and 17 MPa at 850°C for the Fe-0.25C-3Mn-2Al-0.4Si experimental steel.",
+      "values": [
+        "Extra Trees difference: 34 MPa (750°C), 31 MPa (800°C), 36 MPa (850°C)",
+        "GA-Extra Trees difference: 12 MPa, 10 MPa, 19 MPa",
+        "Reduction: 22 MPa, 21 MPa, 17 MPa"
+      ],
+      "evidence_text": "At 750℃, the difference between the predicted value and the real value was reduced by 22 MPa, at 800℃, the difference was reduced by 21 MPa, and at 850℃, the difference was reduced by 17 MPa",
+      "figures": [
+        "Fig. 15"
+      ],
+      "tables": [
+        "Table 4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "GA-Extra Trees model generalization",
+      "claim": "The GA-Extra Trees yield strength prediction model achieves an average prediction error of 1.84% on six groups of literature data from medium-manganese low-density steels with different compositions, compared to an average error of 1.56% on the experimental validation samples, demonstrating excellent generalization and robustness.",
+      "values": [
+        "Average error on literature data: 1.84%",
+        "Average error on own experiments: 1.56%",
+        "Number of external test groups: 6",
+        "Number of compositions: 2"
+      ],
+      "evidence_text": "After analyzing the prediction results of six groups of test data, it can be concluded that the average error between the predicted value of the model and the measured value is 1.84 %, which has little fluctuation compared with the average error value of 1.56 % verified by the previous actual experiment, indicating that the YS prediction model ... has excellent generalization and robustness",
+      "figures": [
+        "Fig. 16"
+      ],
+      "tables": [
+        "Table 5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "Orowan strengthening contribution in Fe-0.25C-3Mn-2Al-0.4Si steel",
+      "claim": "The Orowan strengthening contribution is 0 MPa for all three annealing conditions (AN750, AN800, AN850) in the prepared Fe-0.25C-3Mn-2Al-0.4Si steel, indicating that Al/Si additions suppress carbide precipitation effectively.",
+      "values": [
+        "σ_Orowan = 0 MPa"
+      ],
+      "evidence_text": "The effect of Orovan strengthening mechanism on the prepared Fe-0.25C-3Mn-2Al-0.4Si test steel was not obvious.",
+      "figures": [],
+      "tables": [
+        "Table 3"
+      ],
+      "confidence": "high"
+    }
+  ],
+  "context_update": {
+    "summary": "Current chunk presents the calculated strengthening mechanism contributions and yield strength prediction results for the Fe-0.25C-3Mn-2Al-0.4Si medium‑manganese low‑density steel after annealing at 750, 800, and 850 °C. Dislocation strengthening contributions were computed from EBSD‑derived GND densities and Taylor factors (Fig. 14): AN750 263 MPa, AN800 459 MPa, AN850 414 MPa. Table 3 summarizes the contributions from solid solution (constant 220 MPa), grain refinement (264/256/292 MPa), dislocation, and Orowan (0 MPa) along with the linear‑superposition calculated YS (747/935/926 MPa) and actual measured YS (709/968/964 MPa). The GA‑optimized Extra Trees model predicted these YS values better than the unoptimized Extra Trees model, reducing the absolute error by 22, 21, and 17 MPa for the three conditions (Table 4, Fig. 15). To further test generalization, literature data (6 groups, 2 compositions) were predicted with an average error of 1.84%, close to the 1.56% obtained on the own experiments, confirming the framework’s robustness (Table 5, Fig. 16). Next chunks should build on these verified experimental and literature predictions and the strengths contributed by each mechanism.",
+    "material_systems": [
+      "Fe-0.25C-3Mn-2Al-0.4Si medium-manganese low-density steel"
+    ],
+    "sample_aliases": [
+      "AN750",
+      "AN800",
+      "AN850"
+    ],
+    "processing_route": [
+      "Hot rolling (1100–880 °C, 90% reduction)",
+      "Cold rolling (60% reduction)",
+      "Annealing at 750/800/850 °C for 30 min",
+      "Tempering at 400 °C"
+    ],
+    "key_variables": [
+      "GND density (0.61/0.84/0.72 ×10^14 m⁻²)",
+      "Taylor factor (3.45/3.58/3.53)",
+      "Dislocation strengthening (263/459/414 MPa)",
+      "Solid solution strengthening (220 MPa)",
+      "Grain refinement strengthening (264/256/292 MPa)",
+      "Orowan strengthening (0 MPa)",
+      "Calculated YS (747/935/926 MPa)",
+      "Actual YS (709/968/964 MPa)",
+      "Extra Trees prediction differences (34/31/36 MPa)",
+      "GA-Extra Trees prediction differences (12/10/19 MPa)",
+      "Average prediction error on own experiments (1.56%)",
+      "Average prediction error on literature data (1.84%)"
+    ],
+    "microstructure": [
+      "SEM morphology shown in Fig. 13 (no quantitative description)",
+      "Dislocation densities from GND (EBSD) statistics",
+      "No carbides → Orowan strengthening zero"
+    ],
+    "properties": [
+      "Actual YS: 709 MPa (AN750), 968 MPa (AN800), 964 MPa (AN850)",
+      "GA-Extra Trees predicted YS: 721, 978, 945 MPa"
+    ],
+    "mechanisms": [
+      "Solid solution strengthening",
+      "Grain refinement strengthening",
+      "Dislocation strengthening",
+      "Orowan strengthening (negligible)",
+      "GA‑optimized Extra Trees model for YS prediction",
+      "Linear superposition of strengthening contributions"
+    ],
+    "figures_or_tables": [
+      "Fig. 13: SEM images of AN750, AN800, AN850",
+      "Fig. 14: GND density and Taylor factor histograms",
+      "Table 3: Strengthening mechanism contributions and actual YS",
+      "Table 4: Extra Trees vs GA‑Extra Trees predicted YS and differences",
+      "Fig. 15: Bar chart of model prediction differences",
+      "Table 5: Literature data validation",
+      "Fig. 16: Response diagram of predicted vs. actual YS for literature data"
+    ],
+    "unresolved_terms": []
+  }
+}

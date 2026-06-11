@@ -1,0 +1,18 @@
+{
+  "dataset_root": "/Users/mac/Desktop/SteelDig/SteelDig_multimodal/outputs_dataset",
+  "schema_path": "/Users/mac/Desktop/SteelDig/SteelDig_multimodal/prompt/json_schema.json",
+  "output_summary_path": "verify_eval_summary.json",
+  "force": false,
+  "workers": 2,
+  "max_evidence_chars": 80000,
+  "append_record_enabled": false,
+  "llm_enabled": true,
+  "llm": {
+    "model": "deepseek-v4-flash",
+    "base_url": "https://api.deepseek.com",
+    "api_key": "sk-9ce501912c184de1ac936fe40d44eaf2",
+    "temperature": 0.0,
+    "verify_ssl": false,
+    "max_retries": 3
+  }
+}

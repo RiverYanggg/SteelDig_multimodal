@@ -1,0 +1,717 @@
+{
+  "papers": [
+    {
+      "paper_id": "A78",
+      "doi": "10.1002/srin.202501163",
+      "title": "Microstructural Modulation through Process Control Leading to Ultrastrong Ductile Fe–10Al–15Mn–0.8C–5Ni wt% Low-Density Steel",
+      "authors": [
+        "Sadhan Ghosh",
+        "Sourav Das"
+      ],
+      "publication_year": "2025",
+      "journal": "Steel Research International",
+      "keywords": [
+        "low-density steel",
+        "Fe-Al-Mn-C-Ni alloy",
+        "B2 intermetallic",
+        "precipitation strengthening",
+        "hot rolling",
+        "cold rolling",
+        "annealing",
+        "automotive lightweight material"
+      ],
+      "research_type": "mixed",
+      "paper_scope": "研究通过热轧、冷轧、退火工艺调控Fe–10Al–15Mn–0.8C–5Ni低密度钢的微观组织，解决B2条带导致的 premature 断裂问题，优化强度-塑性-韧性匹配，开发适用于汽车白车身的高强韧低密度钢"
+    }
+  ],
+  "alloys": [
+    {
+      "alloy_id": "alloy_fe10al15mn08c5ni",
+      "paper_id": "A78",
+      "alloy_name": "Fe–10Al–15Mn–0.8C–5Ni low-density steel",
+      "aliases": [
+        "低密度Fe-Al-Mn-C-Ni奥氏体钢"
+      ],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Al",
+        "Mn",
+        "C",
+        "Ni"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Al",
+          "weight_percent": "10",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "15",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.8",
+          "atomic_percent": null
+        },
+        {
+          "element": "Ni",
+          "weight_percent": "5",
+          "atomic_percent": null
+        },
+        {
+          "element": "Fe",
+          "weight_percent": "bal",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "1 wt% Al添加可使钢密度降低约1.2%，该合金10 wt% Al添加导致凝固铸造过程中产生约27% δ-铁素体；B2相为Fe(Mn,Ni)Al有序金属间化合物，无C固溶"
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_fealloy_01",
+      "paper_id": "A78",
+      "alloy_id": "alloy_fe10al15mn08c5ni",
+      "description": "常规工艺：真空电弧熔炼制备合金，1150℃均质化2h，1050~900℃ 9道次热轧（14mm→3mm），终轧温度900℃空冷，室温冷轧（3mm→2mm），900℃退火5~30min后水淬",
+      "processes_notes": "退火样品按退火时间命名为A5(5min)、A10(10min)、A15(15min)、A30(30min)"
+    },
+    {
+      "process_id": "proc_fealloy_02",
+      "paper_id": "A78",
+      "alloy_id": "alloy_fe10al15mn08c5ni",
+      "description": "改进工艺：10rpm高转速1050~900℃热轧（14mm→2mm），终轧温度900℃空冷，室温冷轧减薄1mm，900℃退火5~30min后水淬",
+      "processes_notes": "退火样品同样按退火时间命名为A5、A15、A30，B2条带相分数从16%降至11%"
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_fealloy_as_cast",
+      "paper_id": "A78",
+      "alloy_id": "alloy_fe10al15mn08c5ni",
+      "process_id": null
+    },
+    {
+      "sample_id": "sample_fealloy_hr",
+      "paper_id": "A78",
+      "alloy_id": "alloy_fe10al15mn08c5ni",
+      "process_id": "proc_fealloy_01"
+    },
+    {
+      "sample_id": "sample_fealloy_cr",
+      "paper_id": "A78",
+      "alloy_id": "alloy_fe10al15mn08c5ni",
+      "process_id": "proc_fealloy_01"
+    },
+    {
+      "sample_id": "sample_fealloy_01_a5",
+      "paper_id": "A78",
+      "alloy_id": "alloy_fe10al15mn08c5ni",
+      "process_id": "proc_fealloy_01"
+    },
+    {
+      "sample_id": "sample_fealloy_01_a10",
+      "paper_id": "A78",
+      "alloy_id": "alloy_fe10al15mn08c5ni",
+      "process_id": "proc_fealloy_01"
+    },
+    {
+      "sample_id": "sample_fealloy_01_a15",
+      "paper_id": "A78",
+      "alloy_id": "alloy_fe10al15mn08c5ni",
+      "process_id": "proc_fealloy_01"
+    },
+    {
+      "sample_id": "sample_fealloy_01_a30",
+      "paper_id": "A78",
+      "alloy_id": "alloy_fe10al15mn08c5ni",
+      "process_id": "proc_fealloy_01"
+    },
+    {
+      "sample_id": "sample_fealloy_02_a5",
+      "paper_id": "A78",
+      "alloy_id": "alloy_fe10al15mn08c5ni",
+      "process_id": "proc_fealloy_02"
+    },
+    {
+      "sample_id": "sample_fealloy_02_a15",
+      "paper_id": "A78",
+      "alloy_id": "alloy_fe10al15mn08c5ni",
+      "process_id": "proc_fealloy_02"
+    },
+    {
+      "sample_id": "sample_fealloy_02_a30",
+      "paper_id": "A78",
+      "alloy_id": "alloy_fe10al15mn08c5ni",
+      "process_id": "proc_fealloy_02"
+    }
+  ],
+  "processing_steps": [
+    {
+      "sample_id": "sample_fealloy_as_cast",
+      "paper_id": "A78",
+      "sequence": "1",
+      "type": "melting",
+      "method": "vacuum arc melting",
+      "temperature": null,
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "1e-5 mbar压力，Ar气氛保护，重熔5~6次保证成分均匀"
+    },
+    {
+      "sample_id": "sample_fealloy_as_cast",
+      "paper_id": "A78",
+      "sequence": "2",
+      "type": "heat_treatment",
+      "method": "homogenization",
+      "temperature": "1150",
+      "unit": "°C",
+      "duration": "2",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "单位h"
+    },
+    {
+      "sample_id": "sample_fealloy_hr",
+      "paper_id": "A78",
+      "sequence": "3",
+      "type": "thermomechanical_processing",
+      "method": "hot rolling",
+      "temperature": "1050~900",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": "air",
+      "reduction_ratio": "78.57",
+      "processing_steps_notes": "9道次，厚度从14mm降至3mm，终轧温度900°C，单位%"
+    },
+    {
+      "sample_id": "sample_fealloy_cr",
+      "paper_id": "A78",
+      "sequence": "4",
+      "type": "mechanical_processing",
+      "method": "cold rolling",
+      "temperature": "25",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": "33.33",
+      "processing_steps_notes": "室温，厚度从3mm降至2mm，单位%"
+    },
+    {
+      "sample_id": "sample_fealloy_01_a5",
+      "paper_id": "A78",
+      "sequence": "5",
+      "type": "heat_treatment",
+      "method": "annealing",
+      "temperature": "900",
+      "unit": "°C",
+      "duration": "5",
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": "单位min，水淬"
+    },
+    {
+      "sample_id": "sample_fealloy_01_a10",
+      "paper_id": "A78",
+      "sequence": "5",
+      "type": "heat_treatment",
+      "method": "annealing",
+      "temperature": "900",
+      "unit": "°C",
+      "duration": "10",
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": "单位min，水淬"
+    },
+    {
+      "sample_id": "sample_fealloy_01_a15",
+      "paper_id": "A78",
+      "sequence": "5",
+      "type": "heat_treatment",
+      "method": "annealing",
+      "temperature": "900",
+      "unit": "°C",
+      "duration": "15",
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": "单位min，水淬"
+    },
+    {
+      "sample_id": "sample_fealloy_01_a30",
+      "paper_id": "A78",
+      "sequence": "5",
+      "type": "heat_treatment",
+      "method": "annealing",
+      "temperature": "900",
+      "unit": "°C",
+      "duration": "30",
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": "单位min，水淬"
+    },
+    {
+      "sample_id": "sample_fealloy_02_a5",
+      "paper_id": "A78",
+      "sequence": "3",
+      "type": "thermomechanical_processing",
+      "method": "high speed hot rolling",
+      "temperature": "1050~900",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": "air",
+      "reduction_ratio": "85.71",
+      "processing_steps_notes": "转速10rpm，厚度从14mm降至2mm，单位%"
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_as_cast",
+      "sample_id": "sample_fealloy_as_cast",
+      "overall_structure": "奥氏体基体+δ-铁素体枝晶",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "ms_uuid_001",
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "γ-austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": "73",
+              "morphology": "matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "δ-ferrite",
+              "crystal_structure": "BCC",
+              "volume_fraction": "27",
+              "morphology": "dendrite",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_hr",
+      "sample_id": "sample_fealloy_hr",
+      "overall_structure": "奥氏体基体+B2条带+剪切带",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "ms_uuid_002",
+          "related_sequence": "3",
+          "phases_present": [
+            {
+              "phase_name": "γ-austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": "81",
+              "morphology": "matrix with shear bands",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "B2 intermetallic",
+              "crystal_structure": "ordered BCC",
+              "volume_fraction": "19",
+              "morphology": "lamellar stringer bands",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "shear band",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "high",
+              "lattice_distortion": "high"
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "prec_001",
+              "type": "IG-B2",
+              "size": {
+                "value": null,
+                "unit": null
+              },
+              "distribution": "nucleated at shear bands",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_annealed",
+      "sample_id": "sample_fealloy_01_a5",
+      "overall_structure": "奥氏体（再结晶+未再结晶）+IG-B2+GB-B2+B2条带",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "ms_uuid_003",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "γ-austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": "~80",
+              "morphology": "pancake unrecrystallized grains + equiaxed recrystallized grains",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "B2 intermetallic",
+              "crystal_structure": "ordered BCC",
+              "volume_fraction": "~20",
+              "morphology": "stringer bands + intragranular needle shape + intergranular coarse particles",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "annealing twin",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "prec_002",
+              "type": "IG-B2 in URE-γ",
+              "size": {
+                "value": "0.2",
+                "unit": "μm"
+              },
+              "distribution": "homogeneous in unrecrystallized γ",
+              "coherency": null
+            },
+            {
+              "precipitate_id": "prec_003",
+              "type": "IG-B2 in RE-γ",
+              "size": {
+                "value": "0.29",
+                "unit": "μm"
+              },
+              "distribution": "sparse in recrystallized γ",
+              "coherency": null
+            },
+            {
+              "precipitate_id": "prec_004",
+              "type": "GB-B2",
+              "size": {
+                "value": null,
+                "unit": "μm"
+              },
+              "distribution": "at γ grain boundaries",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "if_set_001",
+      "sample_id": "sample_fealloy_02_a30",
+      "phases": [
+        {
+          "interface_id": "if_001",
+          "microstructure_uuid": "ms_uuid_003",
+          "phase_1_name": "γ-austenite",
+          "phase_2_name": "B2 intermetallic",
+          "coherence": null
+        },
+        {
+          "interface_id": "if_002",
+          "microstructure_uuid": "ms_uuid_003",
+          "phase_1_name": "B2 grain",
+          "phase_2_name": "B2 grain",
+          "coherence": null
+        }
+      ],
+      "defect_interaction": [
+        {
+          "interaction_id": "inter_001",
+          "microstructure_uuid": "ms_uuid_003",
+          "interaction_type": "dislocation looping around B2 particles",
+          "quality_description": "Orowan strengthening mechanism"
+        },
+        {
+          "interaction_id": "inter_002",
+          "microstructure_uuid": "ms_uuid_003",
+          "interaction_type": "dislocation accumulation at γ/B2 interface",
+          "quality_description": "strain localization at interface"
+        }
+      ],
+      "interface_notes": [
+        {
+          "stress_strain_distribution": "Strain is preferentially localized in softer γ phase, B2 phase bears higher stress"
+        },
+        {
+          "slippage_situation": "Decohesion occurs at B2 grain boundaries under tensile load, leading to microcrack initiation"
+        }
+      ],
+      "phase_evolution": "δ-ferrite transforms to B2 via order-disorder transition at 1125°C, annealing at 900°C promotes intragranular and intergranular B2 precipitation, long-time annealing causes B2 coarsening"
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_set_01",
+      "sample_id": "sample_fealloy_02_a30",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "RD",
+              "value": "1",
+              "unit": "GPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "RD",
+              "value": null,
+              "unit": null,
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "RD",
+              "value": "28",
+              "unit": "%",
+              "others": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": [
+            {
+              "property_id": null,
+              "direction": "RD",
+              "value": "0.19~0.27",
+              "unit": "dimensionless"
+            }
+          ]
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": "1.72",
+          "unit": "kJ/mol (238 J/cm³)"
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": "g/cm³"
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_set_02",
+      "sample_id": "sample_fealloy_01_a30",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": "0.89",
+          "unit": "kJ/mol"
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {},
+      "chemical": {},
+      "radiation_properties": {}
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_001",
+      "sample_id": "sample_fealloy_02_a30",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": "25",
+          "max": "100",
+          "unit": "°C"
+        },
+        "stress_state": "automotive body load",
+        "environment": "atmospheric"
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy": "TRIP steel",
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "improvement_percentage": "~14.7% higher toughness than upper limit of TRIP steel (1.5 kJ/mol)"
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_001",
+      "sample_id": null,
+      "microstructure_uuid": null,
+      "technique": "Optical Microscopy (OM)",
+      "purpose": "Observe macroscopic microstructure, phase distribution",
+      "key_findings": "As-cast sample contains 27% δ-ferrite dendrites, HR transforms δ to lamellar B2 bands"
+    },
+    {
+      "characterization_id": "char_002",
+      "sample_id": null,
+      "microstructure_uuid": "ms_uuid_003",
+      "technique": "Field Emission Scanning Electron Microscopy (FESEM)",
+      "purpose": "Observe fine microstructure, precipitate morphology",
+      "key_findings": "Annealing leads to intragranular (needle-like) and intergranular (coarse) B2 precipitation, B2 stringer bands show bamboo-like recrystallized structure after annealing"
+    },
+    {
+      "characterization_id": "char_003",
+      "sample_id": "sample_fealloy_01_a30",
+      "microstructure_uuid": "ms_uuid_003",
+      "technique": "Transmission Electron Microscopy (TEM) + EDX",
+      "purpose": "Characterize nano-scale microstructure, phase composition",
+      "key_findings": "B2 phase is Fe(Mn,Ni)Al intermetallic, enriched in Al, Ni, Mn, no C dissolution; annealing twins act as heterogeneous nucleation sites for B2"
+    },
+    {
+      "characterization_id": "char_004",
+      "sample_id": null,
+      "microstructure_uuid": null,
+      "technique": "Electron Backscattered Diffraction (EBSD)",
+      "purpose": "Analyze phase orientation, strain distribution, grain boundaries",
+      "key_findings": "Strain is preferentially localized in γ phase, microcracks initiate at B2 grain boundaries"
+    },
+    {
+      "characterization_id": "char_005",
+      "sample_id": null,
+      "microstructure_uuid": null,
+      "technique": "Uniaxial tensile test",
+      "purpose": "Test mechanical properties (strength, ductility, toughness)",
+      "key_findings": "Improved process sample A30 achieves 1 GPa yield strength, 28% elongation, 1.72 kJ/mol toughness"
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_001",
+      "sample_id": null,
+      "simulation_method": "Thermodynamic calculation",
+      "software_used": "Thermo-Calc",
+      "potential_model": "TCFE database",
+      "validation_against_experiment": "Consistent with experimental phase transformation results",
+      "analytical_model": [
+        {
+          "model_name": "Ashby-Orowan precipitation strengthening model",
+          "equation_role": "Calculate strengthening contribution from IG-B2",
+          "parameters": "Shear modulus G=70 GPa, Burgers vector b=0.26 nm, IG-B2 size D=0.2~0.29 μm, volume fraction f=1.1%~2.6%",
+          "model_note": "Total precipitation strengthening from IG-B2 is 66 MPa"
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "B2 intermetallic is non-shearable, which provides higher precipitation strengthening than κ-carbide that is sheared by dislocations",
+    "B2 stringer bands delay recrystallization of γ phase similar to carbide/nitride precipitates",
+    "High-speed hot rolling reduces B2 stringer band fraction from 16% to 11%, allowing more γ phase to absorb plastic strain and delay crack propagation",
+    "The alloy is suitable for automotive body in white application, 10% density reduction can reduce total vehicle mass by ~6%, bringing significant economic and environmental benefits"
+  ]
+}

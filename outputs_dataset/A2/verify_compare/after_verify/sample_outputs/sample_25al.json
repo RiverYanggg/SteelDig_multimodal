@@ -1,0 +1,517 @@
+{
+  "sample_id": "sample_25al",
+  "sample_score": 71.68009478672985,
+  "sample_weight": 42.2,
+  "field_count": 31,
+  "correct_yes_count": 25,
+  "unknown_count": 4,
+  "no_count": 1,
+  "fields": [
+    {
+      "field_id": "F00078",
+      "sample_id": "sample_25al",
+      "section": "processing_steps",
+      "path": "processing_steps.sample_25al.cooling_medium",
+      "value": "copper mould (slow cooling)",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.9,
+      "evidence_refs": [
+        "b0035"
+      ],
+      "reason": "b0035明确提到drop casting into a 25 mm diameter cylindrical copper mould，以及冷却缓慢，因此'copper mould (slow cooling)'被直接支持。",
+      "field_score": 90.0
+    },
+    {
+      "field_id": "F00079",
+      "sample_id": "sample_25al",
+      "section": "processing_steps",
+      "path": "processing_steps.sample_25al.method",
+      "value": "Induction melting and drop casting into copper mould",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0035"
+      ],
+      "reason": "b0035描述为induction melting in an alumina crucible under inert gas and drop casting into a 25 mm diameter cylindrical copper mould，与字段值完全一致。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00080",
+      "sample_id": "sample_25al",
+      "section": "processing_steps",
+      "path": "processing_steps.sample_25al.processing_steps_notes",
+      "value": "Cooling after solidification was sufficiently slow to allow high B2 order and good DO3 order.",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.9,
+      "evidence_refs": [
+        "b0035"
+      ],
+      "reason": "b0035说明冷却速度足够慢，使得高B2有序和良好的DO3有序，与字段notes内容一致。",
+      "field_score": 90.0
+    },
+    {
+      "field_id": "F00081",
+      "sample_id": "sample_25al",
+      "section": "processing_steps",
+      "path": "processing_steps.sample_25al.sequence",
+      "value": "1",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "unknown",
+      "evidence_confidence": 0.3,
+      "evidence_refs": [
+        "b0035"
+      ],
+      "reason": "证据b0035描述了单次铸造过程，但未明确标注sequence编号，因此无法确认是否为1。",
+      "field_score": 9.0
+    },
+    {
+      "field_id": "F00082",
+      "sample_id": "sample_25al",
+      "section": "processing_steps",
+      "path": "processing_steps.sample_25al.type",
+      "value": "casting",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.9,
+      "evidence_refs": [
+        "b0035"
+      ],
+      "reason": "b0035描述的铸造工艺明确支持字段值'casting'。",
+      "field_score": 90.0
+    },
+    {
+      "field_id": "F00122",
+      "sample_id": "sample_25al",
+      "section": "structures",
+      "path": "structures.sample_25al.microstructure_list[1].defects[dislocation_and_apb].dislocation_density",
+      "value": "Single dislocations (1/2<111>), loosely coupled by weak APB faults, many near-screw and edge dipoles, APBI faults observed",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.9,
+      "evidence_refs": [
+        "b0065",
+        "b0066",
+        "b0071"
+      ],
+      "reason": "b0065和b0066描述Fe-25Al变形后出现松散耦合的1/2<111>位错、APB层错、近螺型偶极子等，与字段值逐一吻合。",
+      "field_score": 90.0
+    },
+    {
+      "field_id": "F00123",
+      "sample_id": "sample_25al",
+      "section": "structures",
+      "path": "structures.sample_25al.microstructure_list[1].defects[dislocation_and_apb].type",
+      "value": "dislocation and APB",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.9,
+      "evidence_refs": [
+        "b0065"
+      ],
+      "reason": "b0065明确提到位错和APB缺陷，支持字段类型。",
+      "field_score": 90.0
+    },
+    {
+      "field_id": "F00124",
+      "sample_id": "sample_25al",
+      "section": "structures",
+      "path": "structures.sample_25al.microstructure_list[1].grain_structure.average_grain_size.value_with_unit",
+      "value": "250 μm",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.9,
+      "evidence_refs": [
+        "b0035"
+      ],
+      "reason": "b0035说明晶粒尺寸约为0.25 mm，即250 μm，与字段值一致。",
+      "field_score": 90.0
+    },
+    {
+      "field_id": "F00125",
+      "sample_id": "sample_25al",
+      "section": "structures",
+      "path": "structures.sample_25al.microstructure_list[1].phases_present[fe3al_b2_do3_ordered].crystal_structure",
+      "value": "bcc-based ordered",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.8,
+      "evidence_refs": [
+        "b0035",
+        "b0065"
+      ],
+      "reason": "b0035和b0065提到B2和DO3有序，均为bcc基有序结构，字段值得到支持。",
+      "field_score": 80.0
+    },
+    {
+      "field_id": "F00126",
+      "sample_id": "sample_25al",
+      "section": "structures",
+      "path": "structures.sample_25al.microstructure_list[1].phases_present[fe3al_b2_do3_ordered].morphology",
+      "value": "coarse polygonal grains, ~0.25 mm, with coarse B2 domains and fine DO3 domains",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "partial",
+      "evidence_confidence": 0.7,
+      "evidence_refs": [
+        "b0035",
+        "b0065"
+      ],
+      "reason": "b0035支持晶粒尺寸~0.25 mm，b0065提到粗B2畴和细DO3畴，但'粗大多边形晶粒'中的'多边形'未在证据中明确说明，其他部分正确。",
+      "field_score": 42.0
+    },
+    {
+      "field_id": "F00127",
+      "sample_id": "sample_25al",
+      "section": "structures",
+      "path": "structures.sample_25al.microstructure_list[1].phases_present[fe3al_b2_do3_ordered].phase_name",
+      "value": "Fe3Al (B2+DO3 ordered)",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.9,
+      "evidence_refs": [
+        "b0035",
+        "b0065"
+      ],
+      "reason": "b0035和b0065明确合金存在B2和DO3有序，与Fe3Al(B2+DO3 ordered)一致。",
+      "field_score": 90.0
+    },
+    {
+      "field_id": "F00128",
+      "sample_id": "sample_25al",
+      "section": "structures",
+      "path": "structures.sample_25al.microstructure_list[1].phases_present[fe3al_b2_do3_ordered].volume_fraction",
+      "value": "1.0",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "unknown",
+      "evidence_confidence": 0.3,
+      "evidence_refs": [
+        "b0035"
+      ],
+      "reason": "证据b0035描述合金为单相有序结构，但未给出具体体积分数数值，无法确认精确的1.0。",
+      "field_score": 9.0
+    },
+    {
+      "field_id": "F00129",
+      "sample_id": "sample_25al",
+      "section": "structures",
+      "path": "structures.sample_25al.microstructure_list[1].related_sequence",
+      "value": "1",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "unknown",
+      "evidence_confidence": 0.2,
+      "evidence_refs": [],
+      "reason": "没有证据提及sequence编号，无法判断该值。",
+      "field_score": 6.0
+    },
+    {
+      "field_id": "F00130",
+      "sample_id": "sample_25al",
+      "section": "structures",
+      "path": "structures.sample_25al.number_of_phases",
+      "value": "1",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.6,
+      "evidence_refs": [
+        "b0035"
+      ],
+      "reason": "b0035只描述了单一有序相，没有提及第二相，暗示为单相，间接支持数量为1。",
+      "field_score": 60.0
+    },
+    {
+      "field_id": "F00131",
+      "sample_id": "sample_25al",
+      "section": "structures",
+      "path": "structures.sample_25al.overall_structure",
+      "value": "As-cast polycrystalline B2 ordered matrix with imperfect DO3 order, containing dislocations and APB faults.",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.9,
+      "evidence_refs": [
+        "b0035",
+        "b0065"
+      ],
+      "reason": "b0035支持as-cast、多晶、B2有序和DO3有序；b0065提到不完全DO3有序及位错、APB层错，与字段描述完全吻合。",
+      "field_score": 90.0
+    },
+    {
+      "field_id": "F00162",
+      "sample_id": "sample_25al",
+      "section": "interfaces",
+      "path": "interfaces.sample_25al.defect_interaction[0].interaction_type",
+      "value": "Dislocation trailing APB",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.9,
+      "evidence_refs": [
+        "b0065"
+      ],
+      "reason": "b0065描述位错拖曳APB层错，字段'Dislocation trailing APB'直接对应。",
+      "field_score": 90.0
+    },
+    {
+      "field_id": "F00163",
+      "sample_id": "sample_25al",
+      "section": "interfaces",
+      "path": "interfaces.sample_25al.defect_interaction[0].quality_description",
+      "value": "Single 1/2<111> dislocations trail APBI faults, loosely coupled",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.9,
+      "evidence_refs": [
+        "b0065",
+        "b0071"
+      ],
+      "reason": "b0065和b0071提到松散耦合的单1/2<111>位错拖曳APBI层错，与字段描述一致。",
+      "field_score": 90.0
+    },
+    {
+      "field_id": "F00164",
+      "sample_id": "sample_25al",
+      "section": "interfaces",
+      "path": "interfaces.sample_25al.phase_evolution",
+      "value": "APB faults created by dislocation movement in DO3 ordered material.",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.8,
+      "evidence_refs": [
+        "b0065"
+      ],
+      "reason": "b0065指出位错运动在DO3有序材料中产生APB层错，与字段'phase_evolution'含义一致。",
+      "field_score": 80.0
+    },
+    {
+      "field_id": "F00165",
+      "sample_id": "sample_25al",
+      "section": "interfaces",
+      "path": "interfaces.sample_25al.phases[b2_domain].coherence",
+      "value": "APBI fault",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "no",
+      "evidence_confidence": 0.8,
+      "evidence_refs": [
+        "b0065"
+      ],
+      "reason": "b0065中B2畴之间的界面定义为thermal APB（标记t），而非APBI fault（标记s），字段值'APBI fault'与证据矛盾。",
+      "field_score": 0.0
+    },
+    {
+      "field_id": "F00166",
+      "sample_id": "sample_25al",
+      "section": "interfaces",
+      "path": "interfaces.sample_25al.phases[b2_domain].phase_1_name",
+      "value": "B2 domain",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.9,
+      "evidence_refs": [
+        "b0065"
+      ],
+      "reason": "b0065明确提到粗B2畴（coarse B2 domains），支持字段相名'B2 domain'。",
+      "field_score": 90.0
+    },
+    {
+      "field_id": "F00167",
+      "sample_id": "sample_25al",
+      "section": "interfaces",
+      "path": "interfaces.sample_25al.phases[b2_domain].phase_2_name",
+      "value": "B2 domain",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.8,
+      "evidence_refs": [
+        "b0065"
+      ],
+      "reason": "B2 domain之间的界面，第二个相同样为B2 domain，证据隐含支持。",
+      "field_score": 80.0
+    },
+    {
+      "field_id": "F00168",
+      "sample_id": "sample_25al",
+      "section": "interfaces",
+      "path": "interfaces.sample_25al.phases[do3_domain].coherence",
+      "value": "APBII fault",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "unknown",
+      "evidence_confidence": 0.3,
+      "evidence_refs": [
+        "b0024",
+        "b0065"
+      ],
+      "reason": "证据提到APBII能量数据及DO3畴，但未明确DO3 domain之间的界面类型为APBII fault，无法确认。",
+      "field_score": 9.0
+    },
+    {
+      "field_id": "F00169",
+      "sample_id": "sample_25al",
+      "section": "interfaces",
+      "path": "interfaces.sample_25al.phases[do3_domain].phase_1_name",
+      "value": "DO3 domain",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.9,
+      "evidence_refs": [
+        "b0065"
+      ],
+      "reason": "b0065提到细DO3畴（fine DO3 domains），支持字段相名'DO3 domain'。",
+      "field_score": 90.0
+    },
+    {
+      "field_id": "F00170",
+      "sample_id": "sample_25al",
+      "section": "interfaces",
+      "path": "interfaces.sample_25al.phases[do3_domain].phase_2_name",
+      "value": "DO3 domain",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.8,
+      "evidence_refs": [
+        "b0065"
+      ],
+      "reason": "DO3 domain之间的界面，第二个相同样为DO3 domain，证据隐含支持。",
+      "field_score": 80.0
+    },
+    {
+      "field_id": "F00197",
+      "sample_id": "sample_25al",
+      "section": "properties",
+      "path": "properties.sample_25al.mechanical.tensile_properties.strain_hardening_rate[compression_1_1_5_strain].direction",
+      "value": "compression, 1-1.5% strain",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.8,
+      "evidence_refs": [
+        "b0012",
+        "b0040"
+      ],
+      "reason": "b0012指出加工硬化率在1-1.5%应变范围测量，b0040描述压缩测试，支持方向'compression, 1-1.5% strain'。",
+      "field_score": 80.0
+    },
+    {
+      "field_id": "F00198",
+      "sample_id": "sample_25al",
+      "section": "properties",
+      "path": "properties.sample_25al.mechanical.tensile_properties.strain_hardening_rate[compression_1_1_5_strain].value_with_unit",
+      "value": "7000 MPa",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.9,
+      "evidence_refs": [
+        "b0020"
+      ],
+      "reason": "b0020表格中Al含量25%对应加工硬化率7.0 GPa，即7000 MPa，与字段值一致。",
+      "field_score": 90.0
+    },
+    {
+      "field_id": "F00199",
+      "sample_id": "sample_25al",
+      "section": "properties",
+      "path": "properties.sample_25al.mechanical.tensile_properties.yield_strength[compression].direction",
+      "value": "compression",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.8,
+      "evidence_refs": [
+        "b0040"
+      ],
+      "reason": "b0040描述压缩测试，支持屈服强度方向为'compression'。",
+      "field_score": 80.0
+    },
+    {
+      "field_id": "F00200",
+      "sample_id": "sample_25al",
+      "section": "properties",
+      "path": "properties.sample_25al.mechanical.tensile_properties.yield_strength[compression].value_with_unit",
+      "value": "500 MPa",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.9,
+      "evidence_refs": [
+        "b0016"
+      ],
+      "reason": "b0016表格中Al含量25%对应屈服应力500 MPa，与字段值一致。",
+      "field_score": 90.0
+    },
+    {
+      "field_id": "F00217",
+      "sample_id": "sample_25al",
+      "section": "characterization_methods",
+      "path": "characterization_methods.sample_25al.key_findings",
+      "value": "Loose pairs of single dislocations trailing APB faults, many near-screw dipoles; thermal APBs and DO3 domain contrast observed.",
+      "field_weight": 1.0,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.9,
+      "evidence_refs": [
+        "b0065",
+        "b0066",
+        "b0071"
+      ],
+      "reason": "b0065- b0071详细描述了松散耦合的单1/2<111>位错拖曳APB层错、近螺型偶极子、热APB和DO3畴对比，与字段关键发现一致。",
+      "field_score": 90.0
+    },
+    {
+      "field_id": "F00218",
+      "sample_id": "sample_25al",
+      "section": "characterization_methods",
+      "path": "characterization_methods.sample_25al.purpose",
+      "value": "Observation of APB faults and dislocation pairs",
+      "field_weight": 1.0,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.8,
+      "evidence_refs": [
+        "b0064"
+      ],
+      "reason": "b0064图8描述观察APB层错和位错对，与字段目的'Observation of APB faults and dislocation pairs'相符。",
+      "field_score": 80.0
+    },
+    {
+      "field_id": "F00219",
+      "sample_id": "sample_25al",
+      "section": "characterization_methods",
+      "path": "characterization_methods.sample_25al.technique",
+      "value": "TEM, dark field and weak beam imaging",
+      "field_weight": 1.0,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.9,
+      "evidence_refs": [
+        "b0048",
+        "b0064"
+      ],
+      "reason": "b0048提到利用TEM明场、弱束和暗场成像，b0064图8具体使用暗场和弱束模式，支持字段技术'TEM, dark field and weak beam imaging'。",
+      "field_score": 90.0
+    }
+  ]
+}

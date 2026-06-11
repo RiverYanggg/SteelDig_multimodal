@@ -1,0 +1,641 @@
+{
+    "papers": [
+        {
+            "paper_id": "A52",
+            "doi": null,
+            "title": null,
+            "authors": [],
+            "publication_year": null,
+            "journal": null,
+            "keywords": ["Fe-Mn-Al alloy", "Fermanal", "austenitic alloy", "heat treatment", "microstructure", "mechanical property", "oxidation resistance", "magnetic property"],
+            "research_type": "experimental",
+            "paper_scope": "To determine the optimal compositions of Fe-Mn-Al alloys and the effect of heat treatment on their structure, mechanical and physicochemical properties"
+        }
+    ],
+    "alloys": [
+        {
+            "alloy_id": "alloy_fermanal_fe_mn_al",
+            "paper_id": "A52",
+            "alloy_name": "Fermanal type austenitic alloy",
+            "aliases": ["Fe-Mn-Al alloy"],
+            "base_element": "Fe",
+            "alloying_elements": ["Mn", "Al", "C"],
+            "nominal_composition": [
+                {
+                    "element": "Mn",
+                    "weight_percent": "5-45",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "Al",
+                    "weight_percent": "2-14",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "C",
+                    "weight_percent": "0.05-1.5",
+                    "atomic_percent": null
+                }
+            ],
+            "alloys_notes": "Density is 12-15% lower than pure iron, capable of precipitation hardening, machinability similar to 18/8 stainless steel"
+        },
+        {
+            "alloy_id": "alloy_g30yu9",
+            "paper_id": "A52",
+            "alloy_name": "G30Yu9",
+            "aliases": [],
+            "base_element": "Fe",
+            "alloying_elements": ["Mn", "Al", "C"],
+            "nominal_composition": [],
+            "alloys_notes": null
+        },
+        {
+            "alloy_id": "alloy_26mn10al1c",
+            "paper_id": "A52",
+            "alloy_name": null,
+            "aliases": [],
+            "base_element": "Fe",
+            "alloying_elements": ["Mn", "Al", "C"],
+            "nominal_composition": [
+                {
+                    "element": "Mn",
+                    "weight_percent": "26.1",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "Al",
+                    "weight_percent": "10.2",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "C",
+                    "weight_percent": "1.02",
+                    "atomic_percent": null
+                }
+            ],
+            "alloys_notes": null
+        }
+    ],
+    "processes": [
+        {
+            "process_id": "proc_fermanal_as_cast",
+            "paper_id": "A52",
+            "alloy_id": "alloy_fermanal_fe_mn_al",
+            "description": "Investment casting after induction melting",
+            "processes_notes": "Melted in laboratory induction furnace under He atmosphere (evacuated to 1e-3 mm Hg first) or 30kg commercial furnace"
+        },
+        {
+            "process_id": "proc_fermanal_quench_1150c",
+            "paper_id": "A52",
+            "alloy_id": "alloy_fermanal_fe_mn_al",
+            "description": "Water quenching from 1150°C after holding for 1.5h",
+            "processes_notes": null
+        },
+        {
+            "process_id": "proc_fermanal_quench_aging",
+            "paper_id": "A52",
+            "alloy_id": "alloy_fermanal_fe_mn_al",
+            "description": "Water quenching from 1150°C (1.5h holding) followed by aging at 400/500/550/600/700°C for 30min to 100h",
+            "processes_notes": "Optimal mechanical properties for ~10% Al alloys obtained at aging temperature 475-500°C, 550-575°C aging reduces ductility and strength significantly"
+        },
+        {
+            "process_id": "proc_g30yu9_quench",
+            "paper_id": "A52",
+            "alloy_id": "alloy_g30yu9",
+            "description": "Quenching treatment",
+            "processes_notes": null
+        },
+        {
+            "process_id": "proc_g30yu9_quench_aging_593c",
+            "paper_id": "A52",
+            "alloy_id": "alloy_g30yu9",
+            "description": "Quenching followed by aging at 593°C",
+            "processes_notes": null
+        }
+    ],
+    "samples": [
+        {
+            "sample_id": "sample_fermanal_cast",
+            "paper_id": "A52",
+            "alloy_id": "alloy_fermanal_fe_mn_al",
+            "process_id": "proc_fermanal_as_cast"
+        },
+        {
+            "sample_id": "sample_fermanal_quenched",
+            "paper_id": "A52",
+            "alloy_id": "alloy_fermanal_fe_mn_al",
+            "process_id": "proc_fermanal_quench_1150c"
+        },
+        {
+            "sample_id": "sample_fermanal_q_aging_500c",
+            "paper_id": "A52",
+            "alloy_id": "alloy_fermanal_fe_mn_al",
+            "process_id": "proc_fermanal_quench_aging"
+        },
+        {
+            "sample_id": "sample_fermanal_q_aging_600c",
+            "paper_id": "A52",
+            "alloy_id": "alloy_fermanal_fe_mn_al",
+            "process_id": "proc_fermanal_quench_aging"
+        },
+        {
+            "sample_id": "sample_g30yu9_quenched",
+            "paper_id": "A52",
+            "alloy_id": "alloy_g30yu9",
+            "process_id": "proc_g30yu9_quench"
+        }
+    ],
+    "processing_steps": [
+        {
+            "sample_id": "sample_fermanal_cast",
+            "paper_id": "A52",
+            "sequence": "1",
+            "type": "melting",
+            "method": "induction melting",
+            "temperature": null,
+            "unit": null,
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "He atmosphere after evacuation to 1e-3 mm Hg, or 30kg commercial furnace melting"
+        },
+        {
+            "sample_id": "sample_fermanal_cast",
+            "paper_id": "A52",
+            "sequence": "2",
+            "type": "casting",
+            "method": "investment casting",
+            "temperature": null,
+            "unit": null,
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "Produced samples of 65 mm length, 11 mm diameter"
+        },
+        {
+            "sample_id": "sample_fermanal_quenched",
+            "paper_id": "A52",
+            "sequence": "3",
+            "type": "heat_treatment",
+            "method": "solution treatment + quenching",
+            "temperature": "1150",
+            "unit": "°C",
+            "duration": "1.5",
+            "cooling_medium": "water",
+            "reduction_ratio": null,
+            "processing_steps_notes": null
+        },
+        {
+            "sample_id": "sample_fermanal_q_aging_500c",
+            "paper_id": "A52",
+            "sequence": "4",
+            "type": "heat_treatment",
+            "method": "aging",
+            "temperature": "500",
+            "unit": "°C",
+            "duration": "16",
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "Aging time varies from 30min to 100h per different test requirements"
+        }
+    ],
+    "structures": [
+        {
+            "structure_id": "struct_fermanal_quenched",
+            "sample_id": "sample_fermanal_quenched",
+            "overall_structure": "Single phase or two phase depending on composition and C content",
+            "number_of_phases": null,
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "ms_001",
+                    "related_sequence": "3",
+                    "phases_present": [
+                        {
+                            "phase_name": "γ-solid solution",
+                            "crystal_structure": "FCC (austenite)",
+                            "volume_fraction": null,
+                            "morphology": null,
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "α-solid solution",
+                            "crystal_structure": "BCC (ferrite)",
+                            "volume_fraction": null,
+                            "morphology": null,
+                            "grain_size": null,
+                            "texture": null
+                        }
+                    ],
+                    "defects": [],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": null,
+                            "unit": null
+                        },
+                        "grain_size_distribution": null,
+                        "texture": null
+                    },
+                    "precipitates": []
+                }
+            ],
+            "structure_notes": "For alloys with 30% Mn, 10% Al: single α phase at ~0.05% C, two phase α+γ at 0.25% C, single γ phase at 1% C (α phase decreases with increasing C content)"
+        },
+        {
+            "structure_id": "struct_fermanal_aged_600c",
+            "sample_id": "sample_fermanal_q_aging_600c",
+            "overall_structure": "Multiphase with precipitates",
+            "number_of_phases": null,
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "ms_002",
+                    "related_sequence": "4",
+                    "phases_present": [
+                        {
+                            "phase_name": "γ-solid solution",
+                            "crystal_structure": null,
+                            "volume_fraction": null,
+                            "morphology": "acicular structure sometimes observed around ferrite",
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "α-solid solution",
+                            "crystal_structure": null,
+                            "volume_fraction": null,
+                            "morphology": null,
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "carbide",
+                            "crystal_structure": null,
+                            "volume_fraction": null,
+                            "morphology": "dispersed, precipitated at grain boundaries",
+                            "grain_size": null,
+                            "texture": null
+                        },
+                        {
+                            "phase_name": "Mn-type brittle phase",
+                            "crystal_structure": "lattice similar to Mn",
+                            "volume_fraction": null,
+                            "morphology": "precipitated at austenite grain boundaries, amount increases with Mn concentration",
+                            "grain_size": null,
+                            "texture": null
+                        }
+                    ],
+                    "defects": [],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": null,
+                            "unit": null
+                        },
+                        "grain_size_distribution": null,
+                        "texture": null
+                    },
+                    "precipitates": [
+                        {
+                            "precipitate_id": "prec_001",
+                            "type": "dispersed phase",
+                            "size": {
+                                "value": null,
+                                "unit": null
+                            },
+                            "distribution": "intensely precipitated at 550-600°C, negligible at 400-500°C",
+                            "coherency": null
+                        }
+                    ]
+                }
+            ],
+            "structure_notes": "For 1% C, 10% Al alloys: γ decomposes to α + carbides at ~10% Mn, retained austenite at 15% Mn, increased retained austenite + ferrite + grain boundary carbides at 20% Mn, austenite + grain boundary dispersed precipitates at 25% Mn, brittle grain boundary phase at 30% Mn"
+        }
+    ],
+    "interfaces": [
+        {
+            "interface_set_id": "if_001",
+            "sample_id": "sample_fermanal_q_aging_600c",
+            "phases": [
+                {
+                    "interface_id": "if_ph_001",
+                    "microstructure_uuid": "ms_002",
+                    "phase_1_name": "γ-austenite",
+                    "phase_2_name": "carbide",
+                    "coherence": null
+                },
+                {
+                    "interface_id": "if_ph_002",
+                    "microstructure_uuid": "ms_002",
+                    "phase_1_name": "γ-austenite",
+                    "phase_2_name": "Mn-type brittle phase",
+                    "coherence": null
+                }
+            ],
+            "defect_interaction": [],
+            "interface_notes": [
+                {
+                    "stress_strain_distribution": null
+                },
+                {
+                    "slippage_situation": null
+                }
+            ],
+            "phase_evolution": "γ phase decomposes into α phase and carbides during aging at 600°C for low Mn alloys; dispersed phases precipitate at grain boundaries with increasing aging temperature"
+        }
+    ],
+    "properties": [
+        {
+            "property_set_id": "prop_g30yu9_quench",
+            "sample_id": "sample_g30yu9_quenched",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [
+                        {
+                            "direction": null,
+                            "value": "57",
+                            "unit": "kg/mm²",
+                            "others": {
+                                "uncertainty": null
+                            }
+                        }
+                    ],
+                    "ultimate_tensile_strength": [
+                        {
+                            "direction": null,
+                            "value": "84",
+                            "unit": "kg/mm²",
+                            "others": {
+                                "uncertainty": null
+                            }
+                        }
+                    ],
+                    "elongation": [
+                        {
+                            "direction": null,
+                            "value": "72",
+                            "unit": "%"
+                        }
+                    ],
+                    "reduction_in_area": [
+                        {
+                            "direction": null,
+                            "value": "70",
+                            "unit": "%"
+                        }
+                    ],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [],
+                "fracture_toughness": {
+                    "value": null,
+                    "unit": null
+                },
+                "fatigue_properties": {
+                    "fatigue_limit": null,
+                    "cycles_to_failure": null
+                },
+                "creep_properties": {
+                    "steady_state_creep_rate": null,
+                    "rupture_life": null
+                }
+            },
+            "physical": {
+                "density": {
+                    "value": null,
+                    "unit": null
+                },
+                "thermal_properties": {
+                    "thermal_conductivity": null,
+                    "thermal_expansion_coefficient": null,
+                    "specific_heat": null
+                },
+                "electrical_properties": {
+                    "electrical_conductivity": null,
+                    "resistivity": null
+                },
+                "magnetic_properties": {
+                    "magnetic_susceptibility": null,
+                    "curie_temperature": null,
+                    "permeability": []
+                }
+            },
+            "chemical": {
+                "corrosion_resistance": {
+                    "test_medium": null,
+                    "corrosion_rate": null,
+                    "passivation_behavior": null
+                },
+                "oxidation_resistance": {
+                    "oxidation_rate_constant": null,
+                    "protective_scale": null
+                }
+            },
+            "radiation_properties": {
+                "void_swelling": null,
+                "irradiation_hardening": null,
+                "helium_embrittlement": null
+            }
+        },
+        {
+            "property_set_id": "prop_fermanal_aged",
+            "sample_id": "sample_fermanal_q_aging_500c",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [
+                        {
+                            "direction": null,
+                            "value": "~70",
+                            "unit": "kg/mm²",
+                            "others": {
+                                "uncertainty": null
+                            }
+                        }
+                    ],
+                    "ultimate_tensile_strength": [
+                        {
+                            "direction": null,
+                            "value": "~80",
+                            "unit": "kg/mm²",
+                            "others": {
+                                "uncertainty": null
+                            }
+                        }
+                    ],
+                    "elongation": [
+                        {
+                            "direction": null,
+                            "value": "~20",
+                            "unit": "%"
+                        }
+                    ],
+                    "reduction_in_area": [
+                        {
+                            "direction": null,
+                            "value": "~30",
+                            "unit": "%"
+                        }
+                    ],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [
+                    {
+                        "region": null,
+                        "value": "86-88",
+                        "scale": "HRB",
+                        "unit": null
+                    },
+                    {
+                        "region": null,
+                        "value": "35-37",
+                        "scale": "HRC",
+                        "unit": null
+                    }
+                ],
+                "fracture_toughness": {
+                    "value": null,
+                    "unit": null
+                },
+                "fatigue_properties": {
+                    "fatigue_limit": null,
+                    "cycles_to_failure": null
+                },
+                "creep_properties": {
+                    "steady_state_creep_rate": null,
+                    "rupture_life": null
+                }
+            },
+            "physical": {
+                "density": {
+                    "value": "6.68-7.24",
+                    "unit": "g/cm³"
+                },
+                "thermal_properties": {
+                    "thermal_conductivity": null,
+                    "thermal_expansion_coefficient": null,
+                    "specific_heat": null
+                },
+                "electrical_properties": {
+                    "electrical_conductivity": null,
+                    "resistivity": null
+                },
+                "magnetic_properties": {
+                    "magnetic_susceptibility": null,
+                    "curie_temperature": null,
+                    "permeability": [
+                        {
+                            "condition": "quenched, austenitic structure",
+                            "value": "~1.0",
+                            "unit": "G/Oe"
+                        },
+                        {
+                            "condition": "quenched + aged 20h at 600°C, 0.93C-23.7Mn-8.2Al",
+                            "value": "1.900",
+                            "unit": "G/Oe"
+                        }
+                    ]
+                }
+            },
+            "chemical": {
+                "corrosion_resistance": {
+                    "test_medium": null,
+                    "corrosion_rate": null,
+                    "passivation_behavior": null
+                },
+                "oxidation_resistance": {
+                    "oxidation_rate_constant": "6-12.5",
+                    "protective_scale": "Al-rich oxide scale"
+                }
+            },
+            "radiation_properties": {
+                "void_swelling": null,
+                "irradiation_hardening": null,
+                "helium_embrittlement": null
+            }
+        }
+    ],
+    "performance": [
+        {
+            "performance_id": "perf_001",
+            "sample_id": "sample_fermanal_q_aging_500c",
+            "service_conditions": {
+                "operating_temperature": {
+                    "min": null,
+                    "max": "800",
+                    "unit": "°C"
+                },
+                "stress_state": "heavily loaded",
+                "environment": "air"
+            },
+            "lifetime_prediction": {
+                "model_used": null,
+                "predicted_lifetime": null,
+                "confidence_interval": null
+            },
+            "comparative_performance": {
+                "benchmark_alloy": "1Kh17N2 steel, 20KhM boiler steel",
+                "benchmark_process_id": null,
+                "benchmark_sample_id": null,
+                "improvement_percentage": null,
+                "comparison_note": "Oxidation weight gain after 500h at 700°C: 6-12.5 g/m² for tested alloys vs 6.2 g/m² for 1Kh17N2, 118 g/m² for 20KhM"
+            }
+        }
+    ],
+    "characterization_methods": [
+        {
+            "characterization_id": "char_001",
+            "sample_id": "sample_fermanal_quenched",
+            "microstructure_uuid": "ms_001",
+            "technique": "Optical microscopy",
+            "purpose": "Microstructure observation",
+            "key_findings": "Single γ or α+γ two phase structure after quenching"
+        },
+        {
+            "characterization_id": "char_002",
+            "sample_id": "sample_fermanal_q_aging_600c",
+            "microstructure_uuid": "ms_002",
+            "technique": "X-ray diffraction",
+            "purpose": "Phase identification",
+            "key_findings": "Brittle phase has lattice similar to Mn, carbide and dispersed phase precipitates after aging"
+        },
+        {
+            "characterization_id": "char_003",
+            "sample_id": "sample_fermanal_q_aging_500c",
+            "microstructure_uuid": null,
+            "technique": "Tensile test",
+            "purpose": "Mechanical property measurement",
+            "key_findings": "Strength increases up to 550°C aging, plasticity decreases; strength drops above 550°C due to precipitate coalescence"
+        },
+        {
+            "characterization_id": "char_004",
+            "sample_id": "sample_fermanal_q_aging_500c",
+            "microstructure_uuid": null,
+            "technique": "Hydrostatic suspension method",
+            "purpose": "Density measurement",
+            "key_findings": "Density decreases from 7.24 to 6.68 g/cm³ with Al increasing from 6 to 10 wt%"
+        },
+        {
+            "characterization_id": "char_005",
+            "sample_id": "sample_fermanal_q_aging_500c",
+            "microstructure_uuid": null,
+            "technique": "Oxidation test",
+            "purpose": "Oxidation resistance measurement",
+            "key_findings": "Oxidation resistance mainly depends on Al content, Mn slightly impairs oxidation resistance"
+        }
+    ],
+    "computational_details": [],
+    "unmapped_findings": [
+        "Fermanal type alloys are used abroad in aviation and automotive industries for critical heavily loaded parts (springs, gears, landing gears)",
+        "No data on Fermanal type alloys available in Soviet literature at the time of this work",
+        "Figure 1 shows iron corner of Fe-Mn-Al phase diagram with ~1% C at 1150°C: region 1 is single γ solid solution, region 2 is γ+α two phase",
+        "Figure 3 shows mechanical properties of 27.5Mn-9.1Al-0.92C alloy aged 16h at different temperatures",
+        "Alloys with 12-14% Al have low plasticity and ductility both in as-quenched and aged conditions",
+        "Permeability increase after aging is attributed to precipitation of Fe-Al carbides, amount increases with Al concentration"
+    ]
+}

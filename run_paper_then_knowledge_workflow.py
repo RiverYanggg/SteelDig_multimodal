@@ -14,6 +14,7 @@ from paper_extractor.config import (
 )
 from paper_extractor.knowledge.workflow import run_knowledge_workflow
 from paper_extractor.postprocess import run_post_parse_for_paper
+from paper_extractor.unit_normalization import run_unit_normalization_for_paper
 from paper_extractor.workflow import (
     DEFAULT_IMAGE_TYPE_PROMPT_PATH,
     DEFAULT_TEXT_PROMPT_PATH,
@@ -36,6 +37,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--workers", type=int, default=None, help="Parallel papers count.")
     parser.add_argument("--limit-papers", type=int, default=None, help="0 means no limit.")
     parser.add_argument("--skip-post-parse", action="store_true", help="Skip txt->json post-processing.")
+    parser.add_argument("--skip-unit-normalization", action="store_true", help="Skip canonical unit normalization.")
     parser.add_argument("--skip-multimodal", action="store_true", help="Skip image analysis stage.")
     parser.add_argument("--knowledge-mode", choices=["text", "fused"], default="fused", help="Knowledge mode.")
     parser.add_argument("--knowledge-max-chunk-chars", type=int, default=24000, help="Hard max chars per knowledge chunk.")
@@ -67,13 +69,15 @@ def _paper_stage_status(paper_dir: Path, knowledge_mode: str) -> dict:
     extraction_done = (paper_dir / "intermediate" / "text" / "text_extraction.txt").exists()
     text_json_done = (final_dir / "text_extraction.json").exists()
     multimodal_done = (final_dir / "multimodal_figures.json").exists()
+    unit_normalization_done = (paper_dir / "normalized" / "text_extraction_units.json").exists()
     knowledge_done = (final_dir / "text_knowledge.md").exists() and (final_dir / "text_claims.jsonl").exists()
     post_parse_done = text_json_done and (multimodal_done if knowledge_mode == "fused" else True)
     return {
         "extraction_done": extraction_done,
         "post_parse_done": post_parse_done,
+        "unit_normalization_done": unit_normalization_done,
         "knowledge_done": knowledge_done,
-        "fully_done": extraction_done and post_parse_done and knowledge_done,
+        "fully_done": extraction_done and post_parse_done and unit_normalization_done and knowledge_done,
     }
 
 
@@ -124,6 +128,7 @@ def run_pipeline_for_paper(
     knowledge_max_chunks: int,
     knowledge_min_chunk_chars: int,
     knowledge_mock_model: bool,
+    skip_unit_normalization: bool,
     resume_mode: str,
 ) -> dict:
     paper_id = md_path.stem
@@ -173,6 +178,22 @@ def run_pipeline_for_paper(
     else:
         print(f"[PIPELINE {paper_index}/{paper_total}] [{paper_id}] post_parse skipped by config")
 
+    unit_normalization_result = None
+    if skip_unit_normalization:
+        print(f"[PIPELINE {paper_index}/{paper_total}] [{paper_id}] unit_normalization skipped by config")
+    elif resume_mode == "resume_partial" and stage_status["unit_normalization_done"]:
+        print(f"[PIPELINE {paper_index}/{paper_total}] [{paper_id}] unit_normalization skipped existing")
+    elif (paper_dir / "final" / "text_extraction.json").is_file():
+        unit_normalization_result = run_unit_normalization_for_paper(paper_dir)
+        print(
+            f"[PIPELINE {paper_index}/{paper_total}] [{paper_id}] unit_normalization done "
+            f"converted={unit_normalization_result.converted_count} "
+            f"ambiguous={unit_normalization_result.ambiguous_count}"
+        )
+        stage_status = _paper_stage_status(paper_dir, knowledge_mode=knowledge_mode)
+    else:
+        print(f"[PIPELINE {paper_index}/{paper_total}] [{paper_id}] unit_normalization skipped missing text_extraction.json")
+
     knowledge_result = None
     if resume_mode == "resume_partial" and stage_status["knowledge_done"]:
         print(f"[PIPELINE {paper_index}/{paper_total}] [{paper_id}] knowledge skipped existing")
@@ -195,6 +216,13 @@ def run_pipeline_for_paper(
         "skipped": False,
         "extraction": extraction_result,
         "post_parse": post_parse_summary,
+        "unit_normalization": None if unit_normalization_result is None else {
+            "normalized_path": str(unit_normalization_result.normalized_path),
+            "report_path": str(unit_normalization_result.report_path),
+            "converted_count": unit_normalization_result.converted_count,
+            "ambiguous_count": unit_normalization_result.ambiguous_count,
+            "skipped_count": unit_normalization_result.skipped_count,
+        },
         "knowledge": knowledge_result,
         "stage_status": stage_status,
     }
@@ -249,6 +277,7 @@ def main() -> None:
                 knowledge_max_chunks=args.knowledge_max_chunks,
                 knowledge_min_chunk_chars=args.knowledge_min_chunk_chars,
                 knowledge_mock_model=args.knowledge_mock_model,
+                skip_unit_normalization=args.skip_unit_normalization,
                 resume_mode=args.resume_mode,
             ): (index, md_path)
             for index, md_path in indexed_files

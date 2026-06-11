@@ -1,0 +1,214 @@
+{
+  "claims": [
+    {
+      "claim_type": "characterization",
+      "subject": "coatings",
+      "claim": "The phases of the coatings were analyzed by X-ray diffraction with Cu Kα radiation operated at 40 kV and 40 mA.",
+      "values": [
+        "40 kV",
+        "40 mA",
+        "Cu Kα"
+      ],
+      "evidence_text": "The phases of the coatings were analyzed by X-ray diffraction (SmartLab SE, Rigaku, Japan) with Cu Kα radiation, operated at a working voltage of 40 kV and current of 40 mA.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "characterization",
+      "subject": "coatings",
+      "claim": "The Vickers microhardness of the coatings was measured using a microhardness indenter with a load of 1 kg and holding time of 20 s.",
+      "values": [
+        "1 kg",
+        "20 s"
+      ],
+      "evidence_text": "The Vicker’s microhardness of the coatings was measured using a microhardness indenter (HVS-1000A, Laizhou Huayin Testing Instrument Co., Ltd., China). The load was 1 kg with the holding time of 20 s.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "figure_evidence",
+      "subject": "Cr, Ni, Mo correlation with microhardness",
+      "claim": "Fig. 2 shows that Cr exhibited a positive correlation with microhardness, followed by Ni and Mo, while Mn, V and W had weaker correlations.",
+      "values": [
+        "Cr",
+        "Ni",
+        "Mo",
+        "positive correlation"
+      ],
+      "evidence_text": "Fig. 2 presents the correlation scatter matrix graph, revealing the correlation between the chemical composition and microhardness of the alloy. The diagonal probability density histograms indicated that the Cr element exhibited a positive correlation with the microhardness, followed by Ni, Mo. Whereas, Mn, V and W showed weaker correlations.",
+      "figures": [
+        "Fig. 2"
+      ],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "Cr, Ni, Mo strengthening",
+      "claim": "Cr, Ni and Mo can form solid solution alloys and carbides as strengthening phases, and Ni can reduce the grain size of the alloys.",
+      "values": [],
+      "evidence_text": "Cr, Ni and Mo can form solid solution alloys and carbides as the strengthening phases [33], and Ni can reduce the grain size of the alloys [34].",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "figure_evidence",
+      "subject": "RFE feature importance",
+      "claim": "Recursive feature elimination with RF, LightGBM, and XGBoost identified EI-2nd, ηB, w, δEI-2nd, DEc, δEc, r, G, and e/a as significant features (Fig. 3a).",
+      "values": [
+        "EI-2nd",
+        "ηB",
+        "w",
+        "δEI-2nd",
+        "DEc",
+        "δEc",
+        "r",
+        "G",
+        "e/a"
+      ],
+      "evidence_text": "The recursive feature elimination (RFE) method wrapped the RF, LightGBM and XGBoost algorithm was used to rank the importance of the original features, and the results are shown in Fig. 3a. The dark blue cells in Fig. 3a indicated the significant features (marked by 1). The result shows that EI-2nd, ηB, w, δEI-2nd, DEc, δEc, r, G and e/a presented the highest importance ranking in the RF, LightGBM and XGBoost algorithm.",
+      "figures": [
+        "Fig. 3a"
+      ],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "final key features for microhardness",
+      "claim": "After removing high-correlation pairs (PCC ≥ 0.95), the final key features for microhardness prediction were e/a, G, E, δ, and D_EC (Fig. 3c).",
+      "values": [
+        "e/a",
+        "G",
+        "E",
+        "δ",
+        "D_EC"
+      ],
+      "evidence_text": "The importance scores of the nine features were employed to remove one of the features with the high correlation in the six pairs, shown in Fig. 3c. It is found that η_B, w, δ_EI-2nd and r were removed in the pairs due to the low importance scores. Finally, e/a, G, E, δ and D_EC were found to be the key features for the microhardness.",
+      "figures": [
+        "Fig. 3c"
+      ],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "e/a ratio phase stability",
+      "claim": "e/a ratio affected phase stability: if e/a < 1.65, the alloy tends to form FCC phase; if e/a > 2.05, the alloy tends to form BCC phase.",
+      "values": [
+        "1.65",
+        "2.05"
+      ],
+      "evidence_text": "The e/a ratio affected the phase stability of alloys during the formation of FCC and BCC phases: if e/a < 1.65, the alloy tended to form the FCC phase; if e/a > 2.05, the alloy tended to form the BCC phase [35].",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "shear modulus G role",
+      "claim": "Shear modulus G increases plastic deformation resistance by increasing solute atom–dislocation interaction energy, thereby increasing hardness.",
+      "values": [],
+      "evidence_text": "The shear modulus G was crucial in increasing the plastic deformation resistance by increasing the solute atom-dislocation interaction energy, thereby increasing the hardness [36].",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "E_I-2nd role in solid solution strengthening",
+      "claim": "The second ionization energy E_I-2nd influences solid solution strengthening through electron cloud interaction and charge redistribution between adjacent atoms.",
+      "values": [],
+      "evidence_text": "The second ionization energy E_I-2nd was also an important factor influencing solid solution strengthening involving in the electron cloud interaction and charge redistribution between adjacent atoms [37].",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "cohesive energy mismatch parameters",
+      "claim": "Cohesive energy mismatch parameters δ and D_Ec describe bonding states and bonding strength.",
+      "values": [
+        "δ",
+        "D_Ec"
+      ],
+      "evidence_text": "The cohesive energy mismatch parameters, δ and D_Ec, were utilized to describe the bonding states and bonding strength [38].",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "figure_evidence",
+      "subject": "exhaustive search optimal feature combination",
+      "claim": "Exhaustive search analysis (Fig. 4) showed that the feature combination {δ_Ec, D_Ec, G} yielded the smallest RMSE of 0.257, identifying them as key factors for microhardness prediction.",
+      "values": [
+        "0.257",
+        "{δ_Ec, D_Ec, G}"
+      ],
+      "evidence_text": "Fig. 4 illustrates the result of the exhaustive search analysis, revealing the cross-validation scores as a function of the number of the features. It is found that the minimum RMSE was 0.341, 0.267, 0.257, 0.271, 0.281 for the cross-validation scores with the 1, 2, 3, 4, 5 features, respectively, indicating that 3 features presented the optimal prediction accuracy. Besides, the feature combination {δ_Ec, D_Ec, G} presented the smallest RMSE value (0.257), and was identified as the key factors.",
+      "figures": [
+        "Fig. 4"
+      ],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "cross-validation RMSE for different feature numbers",
+      "claim": "Cross-validation minimum RMSE values for 1, 2, 3, 4, and 5 features were 0.341, 0.267, 0.257, 0.271, and 0.281, respectively, with 3 features giving optimal accuracy.",
+      "values": [
+        "0.341",
+        "0.267",
+        "0.257",
+        "0.271",
+        "0.281"
+      ],
+      "evidence_text": "the minimum RMSE was 0.341, 0.267, 0.257, 0.271, 0.281 for the cross-validation scores with the 1, 2, 3, 4, 5 features, respectively",
+      "figures": [
+        "Fig. 4"
+      ],
+      "tables": [],
+      "confidence": "high"
+    }
+  ],
+  "context_update": {
+    "summary": "This chunk describes characterization methods for the coatings (XRD with Cu Kα at 40 kV/40 mA; Vickers microhardness with 1 kg load, 20 s holding time) and presents early ML modeling results. Element screening reveals positive correlation of Cr, Ni, Mo with microhardness (Fig. 2). RFE with RF, LightGBM, XGBoost identifies nine significant features (Fig. 3a); after removing highly correlated pairs, e/a, G, E, δ, D_EC remain key (Fig. 3c). Exhaustive search yields optimal 3-feature combination {δ_Ec, D_Ec, G} with minimum RMSE 0.257 (Fig. 4). Mechanistic insights cover e/a ratio thresholds for FCC/BCC phase stability, shear modulus role in resisting plastic deformation, second ionization energy effects on solid solution strengthening, and cohesive energy mismatch parameters describing bonding. Table 5 provides SVR hyperparameters. Subsequent chunks will involve further model optimization and experimental validation; remember the final key features and the exhaustive search outcome.",
+    "material_systems": [
+      "Fe-C-Cr-Mn-Si coatings"
+    ],
+    "sample_aliases": [],
+    "processing_route": [
+      "X-ray diffraction with Cu Kα at 40 kV/40 mA",
+      "Vickers microhardness at 1 kg load, 20 s holding time"
+    ],
+    "key_variables": [
+      "microhardness",
+      "elemental correlation (Cr, Ni, Mo)",
+      "features (EI-2nd, ηB, w, δEI-2nd, DEc, δEc, r, G, e/a)",
+      "final key features (e/a, G, E, δ, D_EC)",
+      "cross-validation RMSE"
+    ],
+    "microstructure": [],
+    "properties": [],
+    "mechanisms": [
+      "Cr, Ni, Mo form solid solution alloys and carbides; Ni reduces grain size",
+      "e/a < 1.65 favors FCC, e/a > 2.05 favors BCC",
+      "shear modulus G increases solute atom–dislocation interaction energy",
+      "second ionization energy E_I-2nd involves electron cloud interaction",
+      "cohesive energy mismatch δ and D_Ec describe bonding states"
+    ],
+    "figures_or_tables": [
+      "Fig. 2",
+      "Fig. 3a",
+      "Fig. 3b",
+      "Fig. 3c",
+      "Fig. 4",
+      "Fig. 5",
+      "Table 5"
+    ],
+    "unresolved_terms": []
+  }
+}

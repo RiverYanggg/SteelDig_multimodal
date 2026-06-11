@@ -1,0 +1,510 @@
+{
+  "instruction": "你正在执行材料论文结构化抽取结果的保守校验与修复建议。\n\n你的角色不是重新抽取器，而是“证据驱动的审查员”。你只能基于 sample_bundle.evidence_blocks 中给出的论文证据判断，不能使用外部知识，不能凭常识补事实。\n\n核心原则：\n1. 宁可不修改，也不要提出有风险的修改。\n2. 只有证据明确支持时，才提出 patch。\n3. 不要重写整篇 JSON，不要输出完整 text_extraction.json。\n4. 只检查当前 sample_bundle 对应的 sample 及其关联记录。\n5. 重点关注 sample 归属、alloy/process 绑定、下游 structures/properties/performance/interfaces/processing_steps 是否错挂。\n6. 低置信度问题只写入 issues，不要提出会被应用的 patch。\n\n允许的 patch 操作：\n- replace_field：替换已有记录中的某个字段值。\n- move_record_to_sample：把已有下游记录移动到另一个已存在 sample_id。\n- drop_record：删除明显重复或明显错误的下游记录。禁止删除 papers/alloys/processes/samples。\n- append_record：只有 append_record_enabled=true 时才允许；否则不要使用。\n\npatch 路径格式必须严格遵守：\n- replace_field.path 示例：samples[sample_id=sample_3cu].process_id\n- move_record_to_sample.record_path 示例：properties[property_set_id=prop_12]\n- drop_record.record_path 示例：structures[structure_id=struct_duplicate]\n\n每个 patch 必须包含：\n- op\n- evidence_refs：至少一个 evidence block id，例如 [\"b0017\"]\n- reason：简短中文理由，说明证据如何支持该修改\n- confidence：\"high\"、\"medium\" 或 \"low\"\n\n输出要求：\n只输出 JSON，不要 Markdown，不要解释性前后缀。JSON 顶层格式固定为：\n{\n  \"paper_id\": \"...\",\n  \"sample_id\": \"...\",\n  \"verdict\": \"ok\" 或 \"needs_fix\" 或 \"uncertain\",\n  \"issues\": [\n    {\n      \"issue_type\": \"...\",\n      \"target_path\": \"...\",\n      \"evidence_refs\": [\"b0001\"],\n      \"reason\": \"...\"\n    }\n  ],\n  \"patch_ops\": [\n    {\n      \"op\": \"move_record_to_sample\",\n      \"record_path\": \"properties[property_set_id=prop_12]\",\n      \"to_sample_id\": \"sample_x\",\n      \"evidence_refs\": [\"b0001\"],\n      \"reason\": \"...\",\n      \"confidence\": \"high\"\n    }\n  ],\n  \"confidence\": \"high\" 或 \"medium\" 或 \"low\"\n}\n\n如果证据不足或当前 sample 看起来没有明确错误，返回 verdict=\"ok\" 或 \"uncertain\"，patch_ops=[]。\n",
+  "paper_id": "A1",
+  "sample_bundle": {
+    "sample_id": "sample_austenitic",
+    "sample": {
+      "sample_id": "sample_austenitic",
+      "paper_id": "A1",
+      "alloy_id": "alloy_austenitic",
+      "process_id": "proc_austenitic"
+    },
+    "alloy": {
+      "alloy_id": "alloy_austenitic",
+      "paper_id": "A1",
+      "alloy_name": "Austenitic low density steel",
+      "aliases": [
+        "fully austenitic Fe-Mn-Al-C",
+        "age-hardenable austenitic"
+      ],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Al",
+        "Mn",
+        "C"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Fe",
+          "weight_percent": "balance",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "5-12",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "12-30",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.6-2.0",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "Single-phase gamma after solution treatment; precipitation of kappa'-carbide when Al>7% and C>0.7%. Best properties in Al 7-10%, Mn 15-30%, C 0.7-1.2%."
+    },
+    "process": {
+      "process_id": "proc_austenitic",
+      "paper_id": "A1",
+      "alloy_id": "alloy_austenitic",
+      "description": "Solution treatment at 900-1100 °C in single-phase gamma region, water quenching; optional aging at 450-700 °C for kappa' precipitation hardening, or cold rolling + recrystallization annealing.",
+      "processes_notes": "Age hardening from intragranular kappa'-carbides; overaging leads to grain boundary kappa* and loss of ductility."
+    },
+    "processing_steps": [
+      {
+        "sample_id": "sample_austenitic",
+        "paper_id": "A1",
+        "sequence": "1",
+        "type": "heat_treatment",
+        "method": "solution treatment",
+        "temperature": "900-1100",
+        "unit": "°C",
+        "duration": "30 min - 2 h",
+        "cooling_medium": "water quenching",
+        "reduction_ratio": null,
+        "processing_steps_notes": "Single-phase austenite with SRO or nano kappa' depending on composition."
+      },
+      {
+        "sample_id": "sample_austenitic",
+        "paper_id": "A1",
+        "sequence": "2",
+        "type": "heat_treatment",
+        "method": "aging",
+        "temperature": "450-650",
+        "unit": "°C",
+        "duration": "1-20 h",
+        "cooling_medium": null,
+        "reduction_ratio": null,
+        "processing_steps_notes": "Peak strength achieved by kappa' precipitation; overaging leads to grain boundary products."
+      },
+      {
+        "sample_id": "sample_austenitic",
+        "paper_id": "A1",
+        "sequence": "3",
+        "type": "heat_treatment",
+        "method": "cold rolling + recovery/recrystallization annealing",
+        "temperature": "600-900",
+        "unit": "°C",
+        "duration": "1-5 min",
+        "cooling_medium": null,
+        "reduction_ratio": "50",
+        "processing_steps_notes": "For non-age hardenable grades; grain refinement and ductility restoration."
+      }
+    ],
+    "structures": [
+      {
+        "structure_id": "struct_austenitic",
+        "sample_id": "sample_austenitic",
+        "overall_structure": "Single-phase austenite with varying density of SRO / kappa' precipitates depending on aging",
+        "number_of_phases": "1-2",
+        "microstructure_counts": null,
+        "microstructure_list": [
+          {
+            "uuid": "uuid_austenitic_01",
+            "related_sequence": "1",
+            "phases_present": [
+              {
+                "phase_name": "austenite (gamma)",
+                "crystal_structure": "FCC",
+                "volume_fraction": "matrix",
+                "morphology": "equiaxed grains with twins",
+                "grain_size": "20-80 µm",
+                "texture": null
+              },
+              {
+                "phase_name": "short-range order (SRO) / kappa'-carbide",
+                "crystal_structure": "L1_2 / E2_1",
+                "volume_fraction": "depending on Al and C content",
+                "morphology": "nanoscale domains, cuboidal particles",
+                "grain_size": "<2 nm (SRO) to 10-20 nm (aged)",
+                "texture": null
+              }
+            ],
+            "defects": [],
+            "grain_structure": {
+              "average_grain_size": {
+                "value": "38-80",
+                "unit": "µm"
+              },
+              "grain_size_distribution": null,
+              "texture": null
+            },
+            "precipitates": [
+              {
+                "precipitate_id": "kappa_prime_austenitic",
+                "type": "kappa'-carbide (Fe,Mn)3AlCx",
+                "size": {
+                  "value": "2-20",
+                  "unit": "nm"
+                },
+                "distribution": "uniform intragranular",
+                "coherency": "coherent, cube-on-cube relationship"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "interfaces": [
+      {
+        "interface_set_id": "intf_austenitic_01",
+        "sample_id": "sample_austenitic",
+        "phases": [
+          {
+            "interface_id": "intf_gamma_kappa_aus",
+            "microstructure_uuid": "uuid_austenitic_01",
+            "phase_1_name": "austenite",
+            "phase_2_name": "kappa'-carbide",
+            "coherence": "coherent, cube-on-cube"
+          },
+          {
+            "interface_id": "intf_gamma_alpha",
+            "microstructure_uuid": null,
+            "phase_1_name": "austenite",
+            "phase_2_name": "alpha-ferrite (B2)",
+            "coherence": "initially coherent (K-S OR), loses coherency upon coarsening"
+          }
+        ],
+        "defect_interaction": [
+          {
+            "interaction_id": "id_disl_kappa",
+            "microstructure_uuid": "uuid_austenitic_01",
+            "interaction_type": "dislocation shearing of kappa'",
+            "quality_description": "Shearing of kappa' carbides by dislocations enhances planar slip and reduces work hardening rate."
+          }
+        ],
+        "interface_notes": [
+          {
+            "slippage_situation": "Planar glide dominates; slip bands refine dynamically (DSBR) or form microbands (MBIP) depending on SRO/precipitates."
+          }
+        ],
+        "phase_evolution": "Aging: SRO -> kappa' (L'12) -> kappa (E21); overaging: grain boundary kappa* and b-Mn."
+      }
+    ],
+    "properties": [
+      {
+        "property_set_id": "prop_austenitic",
+        "sample_id": "sample_austenitic",
+        "mechanical": {
+          "tensile_properties": {
+            "yield_strength": [
+              {
+                "direction": null,
+                "value": "400-1000",
+                "unit": "MPa",
+                "others": {
+                  "uncertainty": null
+                }
+              }
+            ],
+            "ultimate_tensile_strength": [
+              {
+                "direction": null,
+                "value": "800-1500",
+                "unit": "MPa",
+                "others": {
+                  "uncertainty": null
+                }
+              }
+            ],
+            "elongation": [
+              {
+                "direction": null,
+                "value": "30-100",
+                "unit": "%"
+              }
+            ],
+            "youngs_modulus": "160-175 GPa for Fe-20Mn-(7-10)Al-(0.7-1.2)C cold rolled and annealed; a 2% reduction per 1% Al addition",
+            "stress_strain_curves": null,
+            "stress_strain_distribution": [],
+            "strain_hardening_rate": []
+          },
+          "hardness": [],
+          "fracture_toughness": {
+            "value": "200",
+            "unit": "J/cm2 (CVN) at RT in solution-treated condition; much reduced after aging"
+          },
+          "fatigue_properties": {
+            "fatigue_limit": null,
+            "cycles_to_failure": null
+          },
+          "creep_properties": {
+            "steady_state_creep_rate": null,
+            "rupture_life": null
+          }
+        },
+        "physical": {
+          "density": {
+            "value": "8.15 - 0.101*Al(wt%) - 0.41*C(wt%) - 0.0085*Mn(wt%)",
+            "unit": "g/cm3"
+          },
+          "thermal_properties": {
+            "thermal_conductivity": null,
+            "thermal_expansion_coefficient": null,
+            "specific_heat": null
+          },
+          "electrical_properties": {
+            "electrical_conductivity": null,
+            "resistivity": null
+          },
+          "magnetic_properties": {
+            "magnetic_susceptibility": null,
+            "curie_temperature": null
+          }
+        },
+        "chemical": {
+          "corrosion_resistance": {
+            "test_medium": "aqueous environments",
+            "corrosion_rate": null,
+            "passivation_behavior": "far inferior to 304 stainless steel, comparable to conventional high strength steels"
+          },
+          "oxidation_resistance": {
+            "oxidation_rate_constant": null,
+            "protective_scale": null
+          }
+        },
+        "radiation_properties": {
+          "void_swelling": null,
+          "irradiation_hardening": null,
+          "helium_embrittlement": null
+        }
+      }
+    ],
+    "performance": [
+      {
+        "performance_id": "perf_austenitic_impact",
+        "sample_id": "sample_austenitic",
+        "service_conditions": {
+          "operating_temperature": {
+            "min": "-100",
+            "max": "25",
+            "unit": "°C"
+          },
+          "stress_state": "dynamic impact",
+          "environment": "air"
+        },
+        "lifetime_prediction": null,
+        "comparative_performance": {
+          "benchmark_alloy": "Cr-Ni stainless steels",
+          "benchmark_process_id": null,
+          "benchmark_sample_id": null,
+          "improvement_percentage": "impact toughness slightly lower than Cr-Ni stainless steels but higher than conventional AHSS"
+        }
+      },
+      {
+        "performance_id": "perf_austenitic_high_strain_rate",
+        "sample_id": "sample_austenitic",
+        "service_conditions": {
+          "operating_temperature": {
+            "min": null,
+            "max": null,
+            "unit": null
+          },
+          "stress_state": "high strain rate compression",
+          "environment": null
+        },
+        "lifetime_prediction": null,
+        "comparative_performance": {
+          "benchmark_alloy": "Mn TWIP steels",
+          "benchmark_process_id": null,
+          "benchmark_sample_id": null,
+          "improvement_percentage": "specific energy absorption ~0.5 J/mm3, similar to Mn TWIP steels and 50% higher than DC04/HSLA steels"
+        }
+      }
+    ],
+    "known_issues": [],
+    "evidence_blocks": [
+      {
+        "block_id": "b0001",
+        "text": "# Current state of Fe-Mn-Al-C low density steels",
+        "char_start": 0,
+        "char_end": 48
+      },
+      {
+        "block_id": "b0002",
+        "text": "Shangping Chen a,⇑ , Radhakanta Rana a , Arunansu Haldar b , Ranjit Kumar Ray b",
+        "char_start": 50,
+        "char_end": 129
+      },
+      {
+        "block_id": "b0003",
+        "text": "a Tata Steel, PO Box 10000, 1970CA IJmuiden, The Netherlands",
+        "char_start": 131,
+        "char_end": 191
+      },
+      {
+        "block_id": "b0038",
+        "text": "6. Strengthening mechanisms . . 365",
+        "char_start": 6057,
+        "char_end": 6092
+      },
+      {
+        "block_id": "b0039",
+        "text": "6.1. Ferritic low density steels. . 365\n6.2. Austenitic low density steels . . 366\n6.3. Austenite based duplex low density steels . . 368\n6.4. Ferrite based duplex low density steels. . . 372",
+        "char_start": 6094,
+        "char_end": 6285
+      },
+      {
+        "block_id": "b0040",
+        "text": "7. Tensile properties of Fe-Mn-Al-C alloys . . . 372",
+        "char_start": 6287,
+        "char_end": 6339
+      },
+      {
+        "block_id": "b0063",
+        "text": "$$\n\\rho_ {\\text { austenitic }} \\left(\\mathrm{g} / \\mathrm{cm} ^ {3}\\right) = 8. 1 5 - 0. 1 0 1 (\\mathrm{wt} \\% \\mathrm{Al}) - 0. 4 1 (\\mathrm{wt} \\% \\mathrm{C}) - 0. 0 0 8 5 (\\mathrm{wt} \\% \\mathrm{Mn}) \\tag {2}\n$$",
+        "char_start": 15606,
+        "char_end": 15821
+      },
+      {
+        "block_id": "b0064",
+        "text": "The effectiveness of Al in density reduction is almost the same in both the ferritic and austenitic alloys, since the coefficients for Al in Eqs. (1) and (2) are nearly identical (0.098 vs 0.101). This indicates a 1.3% reduction in density per 1% Al addition. The addition of C is very effective in density reduction for austenitic low density steels. The effectiveness of C is about four times higher than that of Al.",
+        "char_start": 15823,
+        "char_end": 16241
+      },
+      {
+        "block_id": "b0065",
+        "text": "![](images/3df81f30592035c7555b77bcc1bc0a34c8a8a5688b1882a9d88352ef0d0c10d0.jpg)",
+        "char_start": 16243,
+        "char_end": 16323
+      },
+      {
+        "block_id": "b0090",
+        "text": "a UTS: ultimate tensile strength; TE: total elongation.",
+        "char_start": 25304,
+        "char_end": 25359
+      },
+      {
+        "block_id": "b0091",
+        "text": "Austenitic low density steels contain a higher Mn content, typically between 12 and 30%, Al up to 12% and C between 0.6 and 2.0%. This type of alloys can have a fully equiaxed-austenitic microstructure at hot working temperatures and the austenite is metastable after fast cooling.",
+        "char_start": 25361,
+        "char_end": 25642
+      },
+      {
+        "block_id": "b0092",
+        "text": "Ferrite based duplex low density steels have a microstructure of c + d-ferrite at hot working temperature, with the fraction of the d-ferrite being larger than 50%.1 The stability of the austenite is relatively low because of the lower amounts of alloying elements. Because of the large difference in the C and Mn contents and also the difference in the processing parameters, this family of alloys may represent different and complex transformation behaviours at lower temperatures.",
+        "char_start": 25644,
+        "char_end": 26127
+      },
+      {
+        "block_id": "b0196",
+        "text": "For austenite based low density steels, there are many process variants [71–87], as shown in Fig. 11. For hot rolled products, after hot rolling, the strips can be directly fast cooled to a temperature in the range of $5 0 0 { - } 7 5 0 ^ { \\circ } \\mathrm { C } ,$ , then slow cooled or isothermally held, as indicated by process 1 in Fig. 11. Alternatively, the hot rolled strips can be fast cooled to room temperature, followed by isothermal annealing, as indicated by process 2. The cooling rate after hot rolling should be high enough to avoid the formation of the intergranular j carbides. Coiling temperature and cooling rate during coiling can be aimed at obtaining nanoscale j precipitates but overaging of the j precipitates is to be avoided.",
+        "char_start": 66084,
+        "char_end": 66836
+      },
+      {
+        "block_id": "b0197",
+        "text": "To obtain cold rolled products, for age-hardenable austenitic Fe-Mn-Al-C steels, the cold rolled strips are solution treated in the temperature range of $9 0 0 { - } 1 1 0 0 ^ { \\circ } { \\mathrm { C } }$ in the single austenite phase area, and then quenched in water, oil or other quench media. Subsequent aging treatments can be performed to produce precipitation hardening, as indicated by processes 3, 4 and 5 in Fig. 11. Process 3 has no isothermal holding and processes 4 and 5 are applied to maximize the age hardening effects of the j0 phase precipitation. The common practice for age hardening is to hold isothermally for 5–20 h in the temperature range $5 0 0 { - } 7 0 0 \\ { \\mathrm { ~ ‰ ~ } }$ . For non-age hardenable austenitic Fe-Mn-Al-C steels, after cold rolling, recovery or recrystallization annealing in the temperature range of 600 to $9 0 0 ^ { \\circ } \\mathsf C$ for a short time (1–5 min) can be applied to restore the ductility or to obtain the grain refinement. In this case, the continuous annealing line for producing conventional steel strips can be used [5].",
+        "char_start": 66838,
+        "char_end": 67927
+      },
+      {
+        "block_id": "b0198",
+        "text": "<table><tr><td></td><td>Hot rolled</td><td>Cold rolled + Annealed</td></tr><tr><td>Ferritic (δ) Fe-7Al [41]</td><td><img src=\"images/a86d07228a7860cd201f188c7542bf7548a6d78a94c954448e12114bf97d5966.jpg\"/></td><td><img src=\"images/31054b35429d8b27e91a927c6ef8a71e315fc3c7a9134cfad41aed756e349a78.jpg\"/></td></tr><tr><td>Ferrite based Duplex (δ+γ) Fe-3.5Mn-6Al-0.4C [48-50]</td><td><img src=\"images/eda820107ccbbd8b41e9593ae9bc77b95e369d4c25e16e42897fdc1f883883f0.jpg\"/></td><td><img src=\"images/24ad29db209da37b924556e3aae30e55e02e4606cdb091b19fff963e711b201e.jpg\"/></td></tr><tr><td>Austenite based Duplex (δ+γ) Fe-18Mn-9.6Al-0.65C [65]</td><td><img src=\"images/87f256c20e1fb0817157751b67a8a64cf358089109e1dfe04fa030b300adadb3.jpg\"/></td><td><img src=\"images/b8146b550994c68f6aa5ada2150701fe672c3b581d7c242934ede676a9189057.jpg\"/></td></tr><tr><td>Austenitic (γ) Fe-29Mn-6Al-0.9C [20]</td><td><img src=\"images/68f8cd8cb2daaf6d700a1602ca4d242895c94fba9dc06e6e7e392706e3191873.jpg\"/></td><td><img src=\"images/43bedb75d72cc2b138c47e11444e6409ae57d065842ae39e345bd14dd7fd4525.jpg\"/></td></tr></table>",
+        "char_start": 67929,
+        "char_end": 69025
+      },
+      {
+        "block_id": "b0254",
+        "text": "$$\n0. 0 9 8 (\\mathrm{wt} \\% \\mathrm{Al}) + 0. 2 0 8 (\\mathrm{wt} \\% \\mathrm{C}) = 1 - 0. 0 0 5 4 (\\mathrm{wt} \\% \\mathrm{Mn}) \\tag {3}\n$$",
+        "char_start": 95638,
+        "char_end": 95775
+      },
+      {
+        "block_id": "b0255",
+        "text": "Fig. 16 shows the precipitation of intragranular j0 -carbides as a function of alloy composition [127]. It can be seen that approximately, $A 1 > 7 \\%$ and $C > 0 . 7 \\% ,$ , are necessary to introduce intragranular j0 -carbides in a fully austenitic Fe-Mn-Al-C steel.",
+        "char_start": 95777,
+        "char_end": 96045
+      },
+      {
+        "block_id": "b0256",
+        "text": "The effects of Al and Mn contents on the solvus of both intergranular and intragranular j-carbides were investigated for a composition range of Fe-(21–32)Mn-(2–10)Al-1C steels, as shown in Fig. 17 [128]. The results indicate that the addition of Al raises the solvus of both intergranular and intragranular j-carbides significantly, while the addition of Mn causes only a slight reduction of the solvus.",
+        "char_start": 96047,
+        "char_end": 96450
+      },
+      {
+        "block_id": "b0309",
+        "text": "As j-carbide has an ordered FCC structure, the character of the matrix/j interface will be strongly dependent on the matrix structure, i.e. FCC (c) or BCC (a). In the c phase, the lattice parameter of the j phase is 0.383–0.386 nm and c/j interfaces are coherent (lattice mismatch < 3% [97]), whereas in the a phase, the lattice parameter of the j phase is 0.387– 0.389 nm and ${ \\mathfrak { a } } / { \\kappa }$ interfaces are semicoherent (lattice mismatch 6% [59]). As a consequence, at the same aging conditions (< 100 h at $6 0 0 ^ { \\circ } \\mathrm { C } ) ,$ , j-carbides are present as nanoscale cuboidal precipitates in austenitic Fe-Mn-Al-C steels [77,80,97], whereas in ferritic or duplex steels, these precipitates are thicker and may assume elongated rod type shape [59]. The effect of j-carbides on the deformation behaviour of Fe-Mn-Al-C steels will be different when the matrix of the low density steel is different for the above reason.",
+        "char_start": 117205,
+        "char_end": 118157
+      },
+      {
+        "block_id": "b0310",
+        "text": "As a summary, in the duplex steels, the microstructural constituents are more diverse and the microstructural evolution is more complicated than those in the ferritic or austenitic low density steels. Because of the co-existence of the d phase and the c phase, the difference in recrystallization behaviour between the d and the c phases, the partially reverse transformation of c to a and the element partitioning between the austenite and ferrite during intercritical annealing, many variants of microstructures can be obtained. The final microstructure of duplex steels may comprise of a combination of d, c, a, j, martensite (M) and bainite (B) phases or some of them. The phase constitution, size, volume fraction and the distribution of phases can be controlled by adjusting the annealing thermal parameters in combination with the preceding cold rolling and the austempering that follows. One key aspect is to control the mechanical stability of the austenite through optimizing the steel composition and process.",
+        "char_start": 118159,
+        "char_end": 119179
+      },
+      {
+        "block_id": "b0311",
+        "text": "# 6. Strengthening mechanisms",
+        "char_start": 119181,
+        "char_end": 119210
+      },
+      {
+        "block_id": "b0324",
+        "text": "Work hardening through deformation can also be applied to increase the strength of ferritic Fe-Al steels. The work hardening rate measured over the strain range of 1–1.5% for Fe-Al steels as a function of the Al content is shown in Fig. 21b [38]. The work hardening rate is low for the disordered Fe-Al alloys with less than 7% Al, then it rises to a sharp peak at 16% Al as the formation of the ordered state and falls to a moderate value above 20% Al. The deformation in Fe-Al steels may involve dislocation generation and slip inside the grains. In a Fe-6 Al steel, where the disordered state is obtained, dislocation glide bands have been observed, along with dislocation tangles between them after deformation [37]. In a Fe-8 Al steel, in which $\\mathrm { K } _ { 1 }$ state may be produced, the deformed structure is manifested by short, straight segments of paired dislocations (super dislocations) with narrow mechanical antiphase boundaries at low strains. At high strains, ferrite exhibits dense dislocation bundles and undeformed B2 domains, indicating non-uniform deformation of ferrite [37]. It is suggested that strain hardening of the steel is dominated mainly by shearing of the ordered phases by super dislocations. Morris et al. [38] also observed that dislocation structures after deformation at room temperature show a transition from signal, bowed dislocations for disordered materials to paired superdislocations with a strong tendency to form straight screw segments for highly ordered materials. Deformation twinning occurs only at low temperatures because of insufficient dislocation mobility [37].",
+        "char_start": 122904,
+        "char_end": 124527
+      },
+      {
+        "block_id": "b0325",
+        "text": "# 6.2. Austenitic low density steels",
+        "char_start": 124529,
+        "char_end": 124565
+      },
+      {
+        "block_id": "b0326",
+        "text": "First of all, solid solution hardening plays an important role in the strengthening of Fe-Mn-Al-C steels due to the high amounts of the alloying elements C, Al and Mn present in these steels. Especially, the interstitially dissolved C increases the strength of any Fe-Mn-Al-C alloy substantially. In the solutionized and quenched condition, all the alloying elements Mn, C and Al dissolves in the FCC austenite. The effect of C on the yield strength of austenite in Fe-Mn-Al-C steels has been reported to be 187–300 MPa/wt% C (187 MPa/wt% C in Mn TWIP steels) [70]. The presence of Al in solid solution of austenite slightly increases the yield strength (< 10 MPa/wt% Al) [114,115].",
+        "char_start": 124567,
+        "char_end": 125249
+      },
+      {
+        "block_id": "b0484",
+        "text": "The dynamic fracture toughness of Fe-30Mn-9Al-0.9C-xSi steels, measured from specimens with a sharp crack, is much higher in the solution-treated condition $( 7 1 . 5 \\mathrm { J } / \\mathrm { c m } ^ { 2 } )$ than in age-hardened conditions $( 9 . 5 { - } 3 7 . 5 \\mathrm { J } / \\mathrm { c m } ^ { 2 } )$ [20], which is comparable with that of a cast 4130 steel in quenched and tempered conditions $( 9 . 4 - 1 3 . 6 \\mathrm { J } / \\mathrm { c m } ^ { 2 } )$ . Si and P have been observed to decrease the dynamic fracture toughness of the austenitic lightweight steels [20].",
+        "char_start": 211450,
+        "char_end": 212028
+      },
+      {
+        "block_id": "b0485",
+        "text": "In summary, the available literature indicates that the impact toughness of the austenitic steels in the solution treated and water quenched state is better than that of the conventional AHSS steels but is lower than that of the austenite stainless steels. The impact toughness of austenitic low density steels is greatly reduced in the age hardened conditions and also significantly influenced by the cooling rate after solution treatment. There are not much reports on the toughness of the other types of low density steels.",
+        "char_start": 212030,
+        "char_end": 212556
+      },
+      {
+        "block_id": "b0486",
+        "text": "# 8.2. High strain rate property",
+        "char_start": 212558,
+        "char_end": 212590
+      },
+      {
+        "block_id": "b0526",
+        "text": "As the Fe-Mn-Al-C low density steels are primarily meant for automotive structural applications, properties such as impact toughness, fatigue, formability, weldability, and coatability are important and must be looked into and evaluated.",
+        "char_start": 240263,
+        "char_end": 240500
+      },
+      {
+        "block_id": "b0527",
+        "text": "It is clear from literature that the impact toughness of the austenitic steels in the solution treated and water quenched state is better than that of the conventional AHSS steels but is lower than that of the austenite stainless steels. The impact toughness of austenitic low density steels is greatly reduced in the age hardening conditions and also significantly influenced by the cooling rate after solution treatment. As far as the authors’ knowledge goes, there are practically not much reports on the toughness of the other types of low density steels.",
+        "char_start": 240502,
+        "char_end": 241061
+      },
+      {
+        "block_id": "b0528",
+        "text": "The high strain rate tests documented in literature show that the specific energy absorption of austenite based low density steels is equivalent to that of high Mn TWIP steels and is higher than that of the conventional high strength steels. Again, there is no reports on the other types of low density steels.",
+        "char_start": 241063,
+        "char_end": 241373
+      }
+    ]
+  },
+  "allowed_patch_ops": [
+    "append_record",
+    "drop_record",
+    "move_record_to_sample",
+    "replace_field"
+  ],
+  "append_record_enabled": false
+}

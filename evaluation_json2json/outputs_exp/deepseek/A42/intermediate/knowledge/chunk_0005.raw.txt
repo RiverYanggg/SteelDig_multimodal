@@ -1,0 +1,142 @@
+{
+  "claims": [
+    {
+      "claim_type": "finding",
+      "subject": "Fe-30Mn-9Al-0.8C low-density steel after MAF",
+      "claim": "After five passes of multiaxial forging at 250 °C, the tensile strength increased from 762 to 1548 MPa, while total elongation decreased from 75% to 8%.",
+      "values": ["762 MPa", "1548 MPa", "75%", "8%", "5 passes", "250 °C"],
+      "evidence_text": "After successfully completing five passes of MAF, the tensile strength of the low-density steel increases from 762 to 1548 MPa. However, this enhancement is accompanied by a significant reduction in ductility, declining from 75% to 8%.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "Strengthening contributions during MAF",
+      "claim": "During warm multiaxial forging of Fe-30Mn-9Al-0.8C steel at 250 °C, dislocation strengthening dominates yield strength in early passes (1 to 3), while grain boundary strengthening becomes dominant in later passes (3 to 5).",
+      "values": ["250 °C", "1 to 3 passes", "3 to 5 passes"],
+      "evidence_text": "Both grain refinement and dislocation density contribute to yield strength significantly during MAF of the selected low-density steel at 250 ◦C. Contribution to yield strength from dislocation density dominates over grain refinement during multiaxial forging in early stages (1 to 3 passes). However, the degree of grain boundary strengthening is more than that of dislocation strengthening at later stages (3 to 5 passes).",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "Modified Johnson-Cook model FE validation",
+      "claim": "The finite element model of MAF incorporating the modified Johnson-Cook material model agrees well with experimental measurements of dislocation density distribution, grain size, and yield strength at every pass and can be confidently used for other cold deformation processes.",
+      "values": [],
+      "evidence_text": "The finite element model of MAF incorporating the modified J-C material model agrees well with the experimental prediction of dislocation density distribution, grain size and yield strength at every pass of MAF. Therefore, the proposed modified J-C model may also be confidently used for other cold deformation processes.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "processing",
+      "subject": "Fe-30Mn-9Al-0.8C low-density steel MAF limit",
+      "claim": "The Fe-30Mn-9Al-0.8C low-density steel could be multiaxially deformed up to a maximum equivalent strain of 2.3 at 250 °C.",
+      "values": ["2.3", "250 °C"],
+      "evidence_text": "The selected alloy could be multiaxially deformed up to maximum equivalent strain of 2.3 at 250 ◦C.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "comparison",
+      "subject": "Modified J-C model with FEA vs. measured microstructures",
+      "claim": "The modified J-C model incorporated with finite element analysis showed good agreement with measured dislocation density and grain size values during MAF-1, MAF-3, and MAF-5, providing visual confirmation of progressive dislocation and grain structure evolution with increasing strain.",
+      "values": [],
+      "evidence_text": "the modified J-C model incorporated with FEA shows good agreement with measured dislocation density and grain size values during MAF-1, MAF-3, and MAF-5 and provides visual confirmation of the progressive build-up of dislocations and grains in response to increasing strain levels.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "figure_evidence",
+      "subject": "Fig. 13 yield strength comparison (experimental vs. simulation)",
+      "claim": "Fig. 13 compares experimental and simulated yield strengths; the FE simulation predicts similar strengthening up to 3 passes, but after three passes the predicted values deviate lower than experimental results.",
+      "values": [],
+      "evidence_text": "Fig. 13, shows the comparison of experimental yield strength values to the simulated yield strengths. Initially, up to 3 passes, the finite element simulation predicts similar strengthening to yield value. However, after three passes, the predicted value shows a lower deviation from the experimental results.",
+      "figures": ["Fig. 13"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "Effect of texture on simulated yield strength",
+      "claim": "Texture is not considered in the simulation; as the multiaxially forged material is expected to randomize texture and become more isotropic, the simulated strength is lower than the experimentally measured value.",
+      "values": [],
+      "evidence_text": "In addition, the effect of texture is not considered in the simulation. … As the textured material is multiaxially forged, it is expected that the intensity of texture goes down or changes towards randomisation … Therefore, the simulated strength is lower than the experimentally measured value.",
+      "figures": [],
+      "tables": [],
+      "confidence": "medium"
+    },
+    {
+      "claim_type": "figure_evidence",
+      "subject": "Fig. 14 simulated yield strength map",
+      "claim": "The yield strength of the forged sample depends on depth from the surface, with maximum strength at the centre and decreasing towards the surface, as shown in Fig. 14.",
+      "values": [],
+      "evidence_text": "The simulation study shows that the yield strength of the material depends on depth from the surface of the forged sample (Fig. 14). The strength is maximum at the centre and it decreases towards the surface.",
+      "figures": ["Fig. 14"],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "characterization",
+      "subject": "Microstructure measurement sources",
+      "claim": "Dislocation density was measured from XRD analysis (Fig. 5) and grain size was measured from EBSD analysis (Fig. 8).",
+      "values": [],
+      "evidence_text": "The dislocation density is measured from XRD analysis (Fig. 5) and grain size is measured from the EBSD analysis (Fig. 8).",
+      "figures": ["Fig. 5", "Fig. 8"],
+      "tables": [],
+      "confidence": "high"
+    }
+  ],
+  "context_update": {
+    "summary": "This chunk covers Section 5.4 (Finite element analysis of MAF) and the Conclusions. The FE analysis confirms that the modified Johnson-Cook model agrees well with experimental dislocation density, grain size, and yield strength up to 3 passes, but after 3 passes the simulated yield strength deviates lower than experiments, partly attributed to unaccounted texture effects. The simulated yield strength map (Fig. 14) shows maximum strength at the center decreasing toward the surface. The investigation concludes that MAF of Fe-30Mn-9Al-0.8C steel at 250°C raises tensile strength from 762 to 1548 MPa while ductility drops from 75% to 8%. Strengthening is dominated by dislocation density in early passes (1–3) and by grain boundary strengthening in later passes (3–5). The maximum equivalent strain reached is 2.3. The modified J-C model is validated for cold deformation processes. Key figures are Fig. 13 (yield strength comparison), Fig. 14 (yield strength map), Fig. 5 (XRD dislocation density), and Fig. 8 (EBSD grain size). No further data chunks are expected; future chunks may refer to these conclusions.",
+    "material_systems": [
+      "Fe-30Mn-9Al-0.8C low-density steel (austenitic)"
+    ],
+    "sample_aliases": [
+      "MAF-0",
+      "MAF-1",
+      "MAF-3",
+      "MAF-5"
+    ],
+    "processing_route": [
+      "Warm multiaxial forging at 250 °C",
+      "33% normal strain per pass",
+      "0, 1, 3, 5 passes",
+      "Equivalent strain up to 2.3"
+    ],
+    "key_variables": [
+      "yield strength",
+      "tensile strength",
+      "total elongation",
+      "dislocation density",
+      "grain size",
+      "equivalent strain",
+      "number of MAF passes"
+    ],
+    "microstructure": [
+      "dislocation density measured by XRD (Fig. 5)",
+      "grain size measured by EBSD (Fig. 8)"
+    ],
+    "properties": [
+      "Tensile strength: 762 to 1548 MPa",
+      "Total elongation: 75% to 8%",
+      "Yield strength increases with passes"
+    ],
+    "mechanisms": [
+      "Dislocation strengthening dominant up to 3 passes",
+      "Grain boundary strengthening dominant from 3 to 5 passes",
+      "Texture effects not included in simulation, causing underprediction of strength"
+    ],
+    "figures_or_tables": [
+      "Fig. 13",
+      "Fig. 14",
+      "Fig. 5",
+      "Fig. 8"
+    ],
+    "unresolved_terms": []
+  }
+}

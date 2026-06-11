@@ -1,0 +1,216 @@
+{
+  "claims": [
+    {
+      "claim_type": "mechanism",
+      "subject": "density reduction by Al",
+      "claim": "Aluminum reduces steel density through a combination of its lower atomic mass and its effect in expanding the lattice parameter of iron alloys, but high Al additions lead to ordered phases (B2 and/or D0₃) that limit Al content and cause brittleness.",
+      "values": [],
+      "evidence_text": "This effect results from the combination of the lower atomic mass of aluminum and the effect aluminum has in expanding the lattice parameter of iron alloys. Even though higher additions of aluminum could be desirable for weight reduction, ordered phases will appear at a certain level of aluminum (B2 and/or D0₃). This phenomenon will limit the amount of aluminum because the presence of these ordered phases will render the material brittle.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "density comparison quaternary vs binary Fe-Al",
+      "claim": "Experimental density data in Fig. 1 suggests a slightly lower density of quaternary Fe-0.2C-8.5Mn alloys compared to binary Fe-Al, possibly influenced by Mn or differences in data sources.",
+      "values": [
+        "0.2C-8.5Mn wt.%"
+      ],
+      "evidence_text": "The experimental data (Fig. 1) seems to indicate a slightly lower density of quaternary alloys in comparison to the binary Fe-Al. There is probably an effect of Mn, but in this case the two data come from two different sources, which might also explain the difference.",
+      "figures": [
+        "Figure 1"
+      ],
+      "tables": [],
+      "confidence": "medium"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "Thermo-Calc density calculation",
+      "claim": "Thermo-Calc density calculation for the quaternary Fe-0.2C-8.5Mn-Al system, using the TCFE7 database and phase fractions of austenite and ferrite at room temperature, shows excellent agreement at lower Al contents but deviates at higher Al contents where the κ-phase may be present.",
+      "values": [
+        "TCFE7 database",
+        "0.2C-8.5Mn wt.%"
+      ],
+      "evidence_text": "The Thermo-Calc calculation (Thermo-Calc Software, Inc., McMurray, PA, USA) was performed using the database with the latest assessment by Lindahl and Selleby19 with volume data from the commercial database Thermo-Calc Software TCFE7 Steels/Fe-alloys database version 7. In this calculation, the phase fractions of austenite and ferrite were calculated in the same range of temperatures used for preparing the experimental alloys. The density was then evaluated with these phase fractions at room temperature. Agreement is excellent at the lower aluminum contents, whereas at higher aluminium contents the κ-phase, which is not considered in this calculation, might be present at these temperatures and could explain the difference with the experimental data.",
+      "figures": [
+        "Figure 1"
+      ],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "mechanism",
+      "subject": "Al effect on phase constitution",
+      "claim": "Aluminum is a strong ferrite stabilizer, making binary Fe-Al alloys ferritic, and when added above 6 wt.% to low carbon steels the matrix becomes ferritic; simultaneous addition of C and Mn stabilizes austenite down to low temperatures.",
+      "values": [
+        "Al > 6 wt.%"
+      ],
+      "evidence_text": "Aluminum as a strong ferrite stabilizer makes binary Fe-Al alloys basically ferritic, and when added in sufficient quantities (Al > 6 wt.%) to low carbon steels, the matrix will be ferritic. The simultaneous addition of C and Mn leads to the presence and stabilization of austenite down to low temperatures.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "spinodal decomposition in high-Al steels",
+      "claim": "Aluminum additions bring spinodal decomposition, which has been observed in the quaternary FeMnAlC and ternary FeAlC systems.",
+      "values": [],
+      "evidence_text": "Aluminum additions bring, besides order–disorder transformations, another complex metallurgical phenomenon to steels: spinodal decomposition. This has been observed in the quarternary FeMnAlC system,21,22 but it should also occur in the ternary FeAlC system.",
+      "figures": [],
+      "tables": [],
+      "confidence": "medium"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "κ-phase carbide",
+      "claim": "At high Al levels, cementite is replaced by the ordered carbide κ-phase, which has a perovskite structure (E21) and a composition approximated as (Fe,Mn)₃AlCₓ with incomplete C occupancy.",
+      "values": [
+        "(Fe,Mn)₃AlCₓ"
+      ],
+      "evidence_text": "Another particularity of the addition of high levels of Al is the replacement of cementite by an ordered carbide, the κ-phase. This phase has a perovskite structure, designated as E21 in the Strukturbericht classification, but with an uncompleted occupancy of the C atom. The formula commonly used is the (Fe,Mn)₃AlCₓ even though results from the literature differ from this formula, mainly in the case of the ternary system Fe-Al-C and the relation between Fe and Al.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "early CALPHAD modeling of κ-phase",
+      "claim": "The first CALPHAD modeling of the Fe-Al-C system by Hari Kumar and Raghavan used a fixed average composition of Fe₃AlC₀.₅₆₅ for the κ-phase.",
+      "values": [
+        "Fe₃AlC₀.₅₆₅"
+      ],
+      "evidence_text": "They applied the compound energy formalism24 for the solution phases. Even though they recognized that the κ-phase presents a range of compositions they used an average fixed composition of Fe₃AlC₀.₅₆₅.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "first-principles CALPHAD integration",
+      "claim": "Ohtani et al. introduced first-principles calculations into CALPHAD modeling to compute the formation energy of the κ-phase (Fe₃AlC) and used a model with two substitutional sublattices for ordered bcc phases.",
+      "values": [
+        "Fe₃AlC",
+        "two substitutional sublattices"
+      ],
+      "evidence_text": "Ohtani et al.25 introduced first-principles calculations into CALPHAD modeling to calculate the formation energy of the κ-phase (Fe₃AlC) and proceeded with the CALPHAD approach taking as experimental model the work of Palm and Inden.11 A model with two substitutional sublattices and one interstitial sublattice was used for the description of the ordered phases for the body-centered cubic (bcc) structures and the κ-phase was modeled with another model also with two substitutional sublattices.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "revised κ-phase model",
+      "claim": "Connétable et al. reassessed the Fe-Al-C system with a new CALPHAD description of the κ-phase based on an order–disorder model for the fcc phase with four substitutional sublattices and carbon content restricted to 20 mol.% C.",
+      "values": [
+        "20 mol.% C"
+      ],
+      "evidence_text": "They proposed a new CALPHAD description of the κ-phase based on their order–disorder model for the face-centered cubic (fcc) phase with four substitutional sublattices but restricted the carbon contents to 20 mol.% C.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "Al-Fe-Mn system improvement",
+      "claim": "Lindahl and Selleby improved the Al-Fe-Mn system description using the latest assessments of the Al-Fe and Al-Mn binaries, and the complete system now well reproduces fcc-bcc equilibria in the Fe-rich corner.",
+      "values": [],
+      "evidence_text": "Lindahl and Selleby19 have very recently improved the Al-Fe-Mn system description by using the latest assessments of the Al-Fe and Al-Mn binaries. The complete system, including extensive data on fcc-bcc equilibria in the Fe-rich corner, is now well reproduced.",
+      "figures": [
+        "Figure 2"
+      ],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "comparison",
+      "subject": "isoplethal sections database comparison",
+      "claim": "Isoplethal sections of an Fe-8Mn-0.2C (wt.%) alloy calculated with three different Hallstedt-based databases (Fig. 2) show discrepancies: the first database replaces cementite with M₅C₂ at low temperatures unsupported by experiment, and there is no agreement on the fcc+bcc+κ three-phase domain critical for continuous annealing.",
+      "values": [
+        "Fe-8Mn-0.2C wt.%"
+      ],
+      "evidence_text": "Figure 2 shows a comparison of isoplethal sections calculated with these three databases. In the first database, cementite is replaced at relatively low temperatures by M₅C₂, which is not supported by the experiment. There are differences between the databases regarding the limits of composition of the different phase fields. For instance there is no agreement on the three-phase domain fcc + bcc + κ, which is of primary importance during continuous annealing.",
+      "figures": [
+        "Figure 2"
+      ],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "comparison",
+      "subject": "austenite phase fraction database comparison",
+      "claim": "Austenite phase fractions for the Fe-8Mn-0.2C alloy calculated with the three databases (Fig. 3) show similar results between the first and third versions but are shifted in temperature, and the latest assessment is believed to provide the best results.",
+      "values": [
+        "Fe-8Mn-0.2C wt.%"
+      ],
+      "evidence_text": "Figure 3 shows a comparison of austenite phase fractions using again this three databases. Similar results are observed between the first and the third version but are shifted in temperature. Nevertheless, it is believed that the latest assessment should provide the best results.",
+      "figures": [
+        "Figure 3"
+      ],
+      "tables": [],
+      "confidence": "high"
+    },
+    {
+      "claim_type": "finding",
+      "subject": "experimental validation need",
+      "claim": "Experimental results are needed in phase fields other than those used for optimization to validate the new thermodynamic descriptions for the high-Al Fe-Mn-Al-C system.",
+      "values": [],
+      "evidence_text": "Experimental results are now needed in other phase fields than those used for the optimization to validate these new descriptions.",
+      "figures": [],
+      "tables": [],
+      "confidence": "high"
+    }
+  ],
+  "context_update": {
+    "summary": "This chunk presents the mechanism by which aluminum reduces steel density via lower atomic mass and lattice expansion, but notes that high Al leads to brittle ordered phases (B2 and D0₃). Figure 1 shows density vs. Al content for binary Fe-Al and quaternary Fe-0.2C-8.5Mn alloys; experimental data indicate slightly lower density for the quaternary alloy, and Thermo-Calc calculations using the TCFE7 database agree well at low Al but deviate at high Al where κ-phase may form. Aluminum is highlighted as a strong ferrite stabilizer (>6 wt.% yields ferritic matrix) and as causing spinodal decomposition and replacement of cementite by κ-phase (E21, (Fe,Mn)₃AlCₓ). The remainder of the chunk reviews the development of CALPHAD thermodynamic databases for the Fe-Mn-Al-C system, moving from early fixed-composition κ-phase models (Fe₃AlC₀.₅₆₅) through first-principles integration, order-disorder fcc-based κ-phase models (C restricted to 20 mol.%), to the latest Lindahl and Selleby assessment that improves Al-Fe-Mn description and reproduces fcc-bcc equilibria. Figures 2 and 3 compare isoplethal sections and austenite phase fractions from three database versions for an Fe-8Mn-0.2C alloy, revealing discrepancies in phase fields and temperatures; the latest assessment is considered best but requires experimental validation. The Al-Mn-C system evaluation and κ-phase modeling are identified as still needing improvement.",
+    "material_systems": [
+      "binary Fe-Al",
+      "Fe-0.2C-8.5Mn quaternary alloy",
+      "Fe-Mn-Al-C system",
+      "Fe-8Mn-0.2C alloy",
+      "Fe-Al-C ternary",
+      "FeAlC ternary",
+      "FeMnAlC quaternary",
+      "Al-Fe-Mn system"
+    ],
+    "sample_aliases": [
+      "quaternary 0.2C-8.5Mn alloy",
+      "Fe-8Mn-0.2C alloy"
+    ],
+    "processing_route": [],
+    "key_variables": [
+      "Al content (wt.%)",
+      "density (g/cm³)",
+      "phase fractions (austenite, ferrite)",
+      "database version",
+      "carbon content (mol.% C in κ-phase)"
+    ],
+    "microstructure": [
+      "ordered phases B2, D0₃",
+      "ferrite matrix (Al > 6 wt.%)",
+      "austenite stabilization by C and Mn",
+      "spinodal decomposition",
+      "κ-phase carbide (perovskite E21)"
+    ],
+    "properties": [
+      "density reduction",
+      "embrittlement due to ordered phases"
+    ],
+    "mechanisms": [
+      "Al density reduction via atomic mass and lattice expansion",
+      "ferrite stabilization by Al",
+      "spinodal decomposition",
+      "κ-phase replacing cementite at high Al"
+    ],
+    "figures_or_tables": [
+      "Figure 1",
+      "Figure 2",
+      "Figure 3"
+    ],
+    "unresolved_terms": [
+      "Al-Mn-C system not yet evaluated",
+      "κ-phase model needs improvement",
+      "experimental validation needed for new thermodynamic descriptions"
+    ]
+  }
+}

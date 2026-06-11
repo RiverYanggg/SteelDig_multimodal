@@ -1,0 +1,1347 @@
+```json
+{
+  "papers": [
+    {
+      "paper_id": "A31",
+      "doi": null,
+      "title": "Influence of Al content and precipitation state on the mechanical behavior of austenitic high-Mn low-density steels",
+      "authors": [
+        "I. Gutierrez-Urrutia",
+        "D. Raabe"
+      ],
+      "publication_year": "2012",
+      "journal": "Acta Materialia",
+      "keywords": [
+        "Austenitic steels",
+        "Carbides",
+        "Work hardening",
+        "Dislocation structure",
+        "Electron diffraction"
+      ],
+      "research_type": "experimental",
+      "paper_scope": "Investigation of the effect of Al content and precipitation state on strain hardening mechanisms and mechanical behavior in austenitic high-Mn low-density steels under room-temperature tensile deformation."
+    }
+  ],
+  "alloys": [
+    {
+      "alloy_id": "alloy_2al",
+      "paper_id": "A31",
+      "alloy_name": "Fe-30.5Mn-2.1Al-1.2C",
+      "aliases": [
+        "2Al steel"
+      ],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Al",
+        "C"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Fe",
+          "weight_percent": "balance",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "30.5",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "2.1",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "1.2",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": null
+    },
+    {
+      "alloy_id": "alloy_8al",
+      "paper_id": "A31",
+      "alloy_name": "Fe-30.5Mn-8.0Al-1.2C",
+      "aliases": [
+        "8Al steel"
+      ],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Al",
+        "C"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Fe",
+          "weight_percent": "balance",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "30.5",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "8.0",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "1.2",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": null
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_2al_01",
+      "paper_id": "A31",
+      "alloy_id": "alloy_2al",
+      "description": "Melted and cast to 25 mm round bars, reheated to 1200°C for 30 min, hot-rolled to 75% thickness reduction at 1100°C with water quench, solution-treated at 1100°C for 2 h under Ar with water quench, then short-annealed at 450°C for 1 h.",
+      "processes_notes": null
+    },
+    {
+      "process_id": "proc_2al_02",
+      "paper_id": "A31",
+      "alloy_id": "alloy_2al",
+      "description": "Melted and cast to 25 mm round bars, reheated to 1200°C for 30 min, hot-rolled to 75% thickness reduction at 1100°C with water quench, solution-treated at 1100°C for 2 h under Ar with water quench, then long-annealed at 650°C for 72 h.",
+      "processes_notes": null
+    },
+    {
+      "process_id": "proc_8al_01",
+      "paper_id": "A31",
+      "alloy_id": "alloy_8al",
+      "description": "Melted and cast to 25 mm round bars, reheated to 1200°C for 30 min, hot-rolled to 75% thickness reduction at 1100°C with water quench, solution-treated at 1100°C for 2 h under Ar with water quench, then short-annealed at 450°C for 1 h.",
+      "processes_notes": null
+    },
+    {
+      "process_id": "proc_8al_02",
+      "paper_id": "A31",
+      "alloy_id": "alloy_8al",
+      "description": "Melted and cast to 25 mm round bars, reheated to 1200°C for 30 min, hot-rolled to 75% thickness reduction at 1100°C with water quench, solution-treated at 1100°C for 2 h under Ar with water quench, then long-annealed at 600°C for 24 h.",
+      "processes_notes": null
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_2al_01",
+      "paper_id": "A31",
+      "alloy_id": "alloy_2al",
+      "process_id": "proc_2al_01"
+    },
+    {
+      "sample_id": "sample_2al_02",
+      "paper_id": "A31",
+      "alloy_id": "alloy_2al",
+      "process_id": "proc_2al_02"
+    },
+    {
+      "sample_id": "sample_8al_01",
+      "paper_id": "A31",
+      "alloy_id": "alloy_8al",
+      "process_id": "proc_8al_01"
+    },
+    {
+      "sample_id": "sample_8al_02",
+      "paper_id": "A31",
+      "alloy_id": "alloy_8al",
+      "process_id": "proc_8al_02"
+    }
+  ],
+  "processing_steps": [
+    {
+      "sample_id": "sample_2al_01",
+      "paper_id": "A31",
+      "sequence": "1",
+      "type": "casting",
+      "method": "induction melting and casting",
+      "temperature": null,
+      "unit": null,
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Melted in induction furnace under Ar atmosphere; cast to round bars 25 mm in diameter."
+    },
+    {
+      "sample_id": "sample_2al_01",
+      "paper_id": "A31",
+      "sequence": "2",
+      "type": "heat_treatment",
+      "method": "reheating",
+      "temperature": "1200",
+      "unit": "°C",
+      "duration": "30 min",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_2al_01",
+      "paper_id": "A31",
+      "sequence": "3",
+      "type": "thermomechanical_processing",
+      "method": "hot rolling",
+      "temperature": "1100",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": "water",
+      "reduction_ratio": "75%",
+      "processing_steps_notes": "Hot-rolled to 75% thickness reduction; water quenched after rolling."
+    },
+    {
+      "sample_id": "sample_2al_01",
+      "paper_id": "A31",
+      "sequence": "4",
+      "type": "heat_treatment",
+      "method": "solution treatment",
+      "temperature": "1100",
+      "unit": "°C",
+      "duration": "2 h",
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Under Ar atmosphere; water quenched."
+    },
+    {
+      "sample_id": "sample_2al_01",
+      "paper_id": "A31",
+      "sequence": "5",
+      "type": "heat_treatment",
+      "method": "annealing",
+      "temperature": "450",
+      "unit": "°C",
+      "duration": "1 h",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Short annealing treatment."
+    },
+    {
+      "sample_id": "sample_2al_02",
+      "paper_id": "A31",
+      "sequence": "1",
+      "type": "casting",
+      "method": "induction melting and casting",
+      "temperature": null,
+      "unit": null,
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Melted in induction furnace under Ar atmosphere; cast to round bars 25 mm in diameter."
+    },
+    {
+      "sample_id": "sample_2al_02",
+      "paper_id": "A31",
+      "sequence": "2",
+      "type": "heat_treatment",
+      "method": "reheating",
+      "temperature": "1200",
+      "unit": "°C",
+      "duration": "30 min",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_2al_02",
+      "paper_id": "A31",
+      "sequence": "3",
+      "type": "thermomechanical_processing",
+      "method": "hot rolling",
+      "temperature": "1100",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": "water",
+      "reduction_ratio": "75%",
+      "processing_steps_notes": "Hot-rolled to 75% thickness reduction; water quenched after rolling."
+    },
+    {
+      "sample_id": "sample_2al_02",
+      "paper_id": "A31",
+      "sequence": "4",
+      "type": "heat_treatment",
+      "method": "solution treatment",
+      "temperature": "1100",
+      "unit": "°C",
+      "duration": "2 h",
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Under Ar atmosphere; water quenched."
+    },
+    {
+      "sample_id": "sample_2al_02",
+      "paper_id": "A31",
+      "sequence": "5",
+      "type": "heat_treatment",
+      "method": "annealing",
+      "temperature": "650",
+      "unit": "°C",
+      "duration": "72 h",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Long annealing treatment."
+    },
+    {
+      "sample_id": "sample_8al_01",
+      "paper_id": "A31",
+      "sequence": "1",
+      "type": "casting",
+      "method": "induction melting and casting",
+      "temperature": null,
+      "unit": null,
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Melted in induction furnace under Ar atmosphere; cast to round bars 25 mm in diameter."
+    },
+    {
+      "sample_id": "sample_8al_01",
+      "paper_id": "A31",
+      "sequence": "2",
+      "type": "heat_treatment",
+      "method": "reheating",
+      "temperature": "1200",
+      "unit": "°C",
+      "duration": "30 min",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_8al_01",
+      "paper_id": "A31",
+      "sequence": "3",
+      "type": "thermomechanical_processing",
+      "method": "hot rolling",
+      "temperature": "1100",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": "water",
+      "reduction_ratio": "75%",
+      "processing_steps_notes": "Hot-rolled to 75% thickness reduction; water quenched after rolling."
+    },
+    {
+      "sample_id": "sample_8al_01",
+      "paper_id": "A31",
+      "sequence": "4",
+      "type": "heat_treatment",
+      "method": "solution treatment",
+      "temperature": "1100",
+      "unit": "°C",
+      "duration": "2 h",
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Under Ar atmosphere; water quenched."
+    },
+    {
+      "sample_id": "sample_8al_01",
+      "paper_id": "A31",
+      "sequence": "5",
+      "type": "heat_treatment",
+      "method": "annealing",
+      "temperature": "450",
+      "unit": "°C",
+      "duration": "1 h",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Short annealing treatment."
+    },
+    {
+      "sample_id": "sample_8al_02",
+      "paper_id": "A31",
+      "sequence": "1",
+      "type": "casting",
+      "method": "induction melting and casting",
+      "temperature": null,
+      "unit": null,
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Melted in induction furnace under Ar atmosphere; cast to round bars 25 mm in diameter."
+    },
+    {
+      "sample_id": "sample_8al_02",
+      "paper_id": "A31",
+      "sequence": "2",
+      "type": "heat_treatment",
+      "method": "reheating",
+      "temperature": "1200",
+      "unit": "°C",
+      "duration": "30 min",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_8al_02",
+      "paper_id": "A31",
+      "sequence": "3",
+      "type": "thermomechanical_processing",
+      "method": "hot rolling",
+      "temperature": "1100",
+      "unit": "°C",
+      "duration": null,
+      "cooling_medium": "water",
+      "reduction_ratio": "75%",
+      "processing_steps_notes": "Hot-rolled to 75% thickness reduction; water quenched after rolling."
+    },
+    {
+      "sample_id": "sample_8al_02",
+      "paper_id": "A31",
+      "sequence": "4",
+      "type": "heat_treatment",
+      "method": "solution treatment",
+      "temperature": "1100",
+      "unit": "°C",
+      "duration": "2 h",
+      "cooling_medium": "water",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Under Ar atmosphere; water quenched."
+    },
+    {
+      "sample_id": "sample_8al_02",
+      "paper_id": "A31",
+      "sequence": "5",
+      "type": "heat_treatment",
+      "method": "annealing",
+      "temperature": "600",
+      "unit": "°C",
+      "duration": "24 h",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Long annealing treatment."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_2al_01",
+      "sample_id": "sample_2al_01",
+      "overall_structure": "Solid solution austenite (γ phase). Under tensile deformation, exhibits multiple-stage strain hardening: first stage governed by dislocation substructures (Taylor lattice, dislocation cells, cell blocks); second stage activated by deformation twinning at high stress levels (~950 MPa true stress).",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid-2al-01-1",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": "matrix",
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "deformation twins",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "twin bundles",
+              "grain_size": "twin spacing determined by twinning kinetics",
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocation substructures (Taylor lattice, dislocation cells, cell blocks)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            },
+            {
+              "type": "deformation twins",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_2al_02",
+      "sample_id": "sample_2al_02",
+      "overall_structure": "Grain interior remains essentially solid solution austenite (γ phase); grain boundaries and annealing twin interfaces contain intergranular M3C-type carbides. Under deformation, dislocation cell blocks develop at 0.2 true strain; twin bundles form at intermediate-to-high stress and impinge on carbides, triggering intergranular fracture.",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid-2al-02-1",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": "majority (grain interior)",
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "M3C-type carbide",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "intergranular, about 1 μm wide × 3 μm long",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocation cell blocks",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            },
+            {
+              "type": "deformation twins",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "275 ± 50",
+              "unit": "nm"
+            },
+            "grain_size_distribution": "cell block size at 0.2 true strain",
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt-2al-02-m3c",
+              "type": "intergranular M3C-type carbide",
+              "size": {
+                "value": "about 1 μm × 3 μm",
+                "unit": null
+              },
+              "distribution": "uniform along grain boundaries and annealing twin interfaces",
+              "coherency": "incoherent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_8al_01",
+      "sample_id": "sample_8al_01",
+      "overall_structure": "Austenite matrix with heterogeneous distribution of intragranular nanosized j-carbides. Under deformation, planar dislocation configurations develop (Taylor lattice structures and highly dense dislocation walls, HDDWs, spaced 100–200 nm); j-carbides are crystallographically sheared by dislocations without pinning.",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid-8al-01-1",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": "matrix",
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "j-carbide",
+              "crystal_structure": "L1_0-type",
+              "volume_fraction": null,
+              "morphology": "nanosized precipitates",
+              "grain_size": "2–5 nm",
+              "texture": "cube/cube orientation relationship with austenite matrix"
+            }
+          ],
+          "defects": [
+            {
+              "type": "planar dislocation arrays (Taylor lattice, HDDWs)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt-8al-01-j",
+              "type": "j-carbide (Fe,Mn)3AlC",
+              "size": {
+                "value": "2–5",
+                "unit": "nm"
+              },
+              "distribution": "heterogeneous intragranular",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_8al_02",
+      "sample_id": "sample_8al_02",
+      "overall_structure": "Austenite matrix with uniform distribution of intragranular cuboidal j-carbides and narrow matrix channels (~2–3 nm). Under deformation, planar dislocation substructures develop with dense dislocation arrays spaced 100–300 nm; cuboidal j-carbides are frequently sheared by dislocations.",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid-8al-02-1",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": "matrix",
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "j-carbide",
+              "crystal_structure": "L1_0-type",
+              "volume_fraction": "high",
+              "morphology": "cuboidal",
+              "grain_size": "10 × 20 nm",
+              "texture": "cube/cube orientation relationship with austenite matrix"
+            }
+          ],
+          "defects": [
+            {
+              "type": "planar dislocation arrays",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt-8al-02-j",
+              "type": "j-carbide (Fe,Mn)3AlC",
+              "size": {
+                "value": "10 × 20",
+                "unit": "nm"
+              },
+              "distribution": "uniform intragranular",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "int_2al_02",
+      "sample_id": "sample_2al_02",
+      "phases": [
+        {
+          "interface_id": "int-2al-02-1",
+          "microstructure_uuid": "uuid-2al-02-1",
+          "phase_1_name": "austenite",
+          "phase_2_name": "M3C-type carbide",
+          "coherence": "incoherent"
+        }
+      ],
+      "defect_interaction": [
+        {
+          "interaction_id": "di-2al-02-1",
+          "microstructure_uuid": "uuid-2al-02-1",
+          "interaction_type": "deformation twin impingement on intergranular M3C carbides",
+          "quality_description": "produces local shear stress concentrations at carbide interfaces, enhancing intergranular fracture mode"
+        }
+      ],
+      "interface_notes": [
+        {
+          "stress_strain_distribution": null
+        },
+        {
+          "slippage_situation": null
+        }
+      ],
+      "phase_evolution": "Segregation of solute elements (mainly carbon) to grain boundaries results in precipitation of coarse M3C-type carbides during long annealing; in the grain boundary region the phase evolution is γ → γ0 + intergranular M3C-type carbides."
+    },
+    {
+      "interface_set_id": "int_8al_01",
+      "sample_id": "sample_8al_01",
+      "phases": [
+        {
+          "interface_id": "int-8al-01-1",
+          "microstructure_uuid": "uuid-8al-01-1",
+          "phase_1_name": "austenite",
+          "phase_2_name": "j-carbide",
+          "coherence": null
+        }
+      ],
+      "defect_interaction": [
+        {
+          "interaction_id": "di-8al-01-1",
+          "microstructure_uuid": "uuid-8al-01-1",
+          "interaction_type": "dislocation shearing of nanosized j-carbides",
+          "quality_description": "no dislocation-particle pinning events observed; j-carbides act as weak obstacles and are crystallographically sheared due to their tiny size"
+        }
+      ],
+      "interface_notes": [
+        {
+          "stress_strain_distribution": null
+        },
+        {
+          "slippage_situation": null
+        }
+      ],
+      "phase_evolution": null
+    },
+    {
+      "interface_set_id": "int_8al_02",
+      "sample_id": "sample_8al_02",
+      "phases": [
+        {
+          "interface_id": "int-8al-02-1",
+          "microstructure_uuid": "uuid-8al-02-1",
+          "phase_1_name": "austenite",
+          "phase_2_name": "j-carbide",
+          "coherence": null
+        }
+      ],
+      "defect_interaction": [
+        {
+          "interaction_id": "di-8al-02-1",
+          "microstructure_uuid": "uuid-8al-02-1",
+          "interaction_type": "dislocation shearing of cuboidal j-carbides",
+          "quality_description": "cuboidal j-carbides are frequently sheared by dislocations within dislocation arrays; plasticity is mainly concentrated through the dislocation boundaries of planar substructures"
+        }
+      ],
+      "interface_notes": [
+        {
+          "stress_strain_distribution": null
+        },
+        {
+          "slippage_situation": null
+        }
+      ],
+      "phase_evolution": null
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_2al_01",
+      "sample_id": "sample_2al_01",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "longitudinal",
+              "value": "420",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "longitudinal",
+              "value": "935",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "longitudinal",
+              "value": "75",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": [
+            {
+              "property_id": "shr-2al-01",
+              "direction": null,
+              "value": "about 2.6 GPa at early deformation stage; 5.0 GPa at 400 MPa true stress decreasing to ~1.5 GPa at 1800 MPa true stress",
+              "unit": "GPa"
+            }
+          ]
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_2al_02",
+      "sample_id": "sample_2al_02",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "longitudinal",
+              "value": "400",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "longitudinal",
+              "value": "850",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "longitudinal",
+              "value": "35",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": [
+            {
+              "property_id": "shr-2al-02",
+              "direction": null,
+              "value": "overlaps first hardening regime of short-annealed sample up to ~1 GPa true stress; 5.0 GPa at 400 MPa decreasing to ~2.1 GPa at 1000 MPa",
+              "unit": "GPa"
+            }
+          ]
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_8al_01",
+      "sample_id": "sample_8al_01",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "longitudinal",
+              "value": "540",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "longitudinal",
+              "value": "895",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "longitudinal",
+              "value": "65",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": [
+            {
+              "property_id": "shr-8al-01",
+              "direction": null,
+              "value": "about 2 GPa at early deformation stage; single hardening regime with 5 GPa at 400 MPa dropping to 1 GPa at 1600 MPa",
+              "unit": "GPa"
+            }
+          ]
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_8al_02",
+      "sample_id": "sample_8al_02",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "longitudinal",
+              "value": "990",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "longitudinal",
+              "value": "1180",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "longitudinal",
+              "value": "37",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": [
+            {
+              "property_id": "shr-8al-02",
+              "direction": null,
+              "value": "single hardening regime, lower than short-annealed 8Al; 5 GPa at 600 MPa, maintaining ~2 GPa up to 1200 MPa then dropping to 1 GPa at 1600 MPa",
+              "unit": "GPa"
+            }
+          ]
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_2al_01",
+      "sample_id": "sample_2al_01",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": "20",
+          "max": "20",
+          "unit": "°C"
+        },
+        "stress_state": "uniaxial tension",
+        "environment": "air"
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy": "Fe-30.5Mn-2.1Al-1.2C (2Al steel, long annealed)",
+        "benchmark_process_id": "proc_2al_02",
+        "benchmark_sample_id": "sample_2al_02",
+        "improvement_percentage": "UTS higher by 85 MPa (935 vs 850 MPa); uniform elongation improved from 35% to 75%"
+      }
+    },
+    {
+      "performance_id": "perf_2al_02",
+      "sample_id": "sample_2al_02",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": "20",
+          "max": "20",
+          "unit": "°C"
+        },
+        "stress_state": "uniaxial tension",
+        "environment": "air"
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy": "Fe-30.5Mn-2.1Al-1.2C (2Al steel, short annealed)",
+        "benchmark_process_id": "proc_2al_01",
+        "benchmark_sample_id": "sample_2al_01",
+        "improvement_percentage": null
+      }
+    },
+    {
+      "performance_id": "perf_8al_01",
+      "sample_id": "sample_8al_01",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": "20",
+          "max": "20",
+          "unit": "°C"
+        },
+        "stress_state": "uniaxial tension",
+        "environment": "air"
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy": "Fe-30.5Mn-2.1Al-1.2C (2Al steel, solid solution)",
+        "benchmark_process_id": "proc_2al_01",
+        "benchmark_sample_id": "sample_2al_01",
+        "improvement_percentage": "YS increased from 420 MPa to 540 MPa (about 29% increase) due to sheared nanosized j-carbides"
+      }
+    },
+    {
+      "performance_id": "perf_8al_02",
+      "sample_id": "sample_8al_02",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": "20",
+          "max": "20",
+          "unit": "°C"
+        },
+        "stress_state": "uniaxial tension",
+        "environment": "air"
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy": "Fe-30.5Mn-2.1Al-1.2C (2Al steel, solid solution)",
+        "benchmark_process_id": "proc_2al_01",
+        "benchmark_sample_id": "sample_2al_01",
+        "improvement_percentage": "YS increased from 420 MPa to 990 MPa (about 136% increase); UTS 1180 MPa with UE 37%"
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_001",
+      "sample_id": "sample_2al_01",
+      "microstructure_uuid": null,
+      "technique": "tensile testing",
+      "purpose": "measure mechanical properties and strain hardening behavior at room temperature",
+      "key_findings": "YS 420 MPa, UTS 935 MPa, uniform elongation 75%; multiple-stage strain hardening with slope variation at ~15% strain."
+    },
+    {
+      "characterization_id": "char_002",
+      "sample_id": "sample_2al_02",
+      "microstructure_uuid": null,
+      "technique": "tensile testing",
+      "purpose": "measure mechanical properties and strain hardening behavior at room temperature",
+      "key_findings": "YS 400 MPa, UTS 850 MPa, uniform elongation 35%; single hardening regime overlapping the first stage of the short-annealed sample up to ~1 GPa true stress."
+    },
+    {
+      "characterization_id": "char_003",
+      "sample_id": "sample_8al_01",
+      "microstructure_uuid": null,
+      "technique": "tensile testing",
+      "purpose": "measure mechanical properties and strain hardening behavior at room temperature",
+      "key_findings": "YS 540 MPa, UTS 895 MPa, uniform elongation 65%; single hardening regime with lower hardening capacity than 2Al steels."
+    },
+    {
+      "characterization_id": "char_004",
+      "sample_id": "sample_8al_02",
+      "microstructure_uuid": null,
+      "technique": "tensile testing",
+      "purpose": "measure mechanical properties and strain hardening behavior at room temperature",
+      "key_findings": "YS 990 MPa, UTS 1180 MPa, uniform elongation 37%; high strength–ductility combination."
+    },
+    {
+      "characterization_id": "char_005",
+      "sample_id": "sample_2al_01",
+      "microstructure_uuid": "uuid-2al-01-1",
+      "technique": "ECCI (Electron Channeling Contrast Imaging)",
+      "purpose": "characterize deformation microstructures (dislocations, twins) at different strain levels under controlled diffraction conditions",
+      "key_findings": "Dislocation substructures (Taylor lattice, cells, cell blocks) at early stage; deformation twin bundles at high stress (~950 MPa true stress)."
+    },
+    {
+      "characterization_id": "char_006",
+      "sample_id": "sample_2al_02",
+      "microstructure_uuid": "uuid-2al-02-1",
+      "technique": "ECCI",
+      "purpose": "characterize deformation microstructures, carbide distribution and fracture mode",
+      "key_findings": "Dislocation cell blocks ~275 ± 50 nm at 0.2 true strain; intergranular M3C carbides ~1 μm × 3 μm along grain boundaries; twin–carbide interactions leading to intergranular fracture."
+    },
+    {
+      "characterization_id": "char_007",
+      "sample_id": "sample_8al_01",
+      "microstructure_uuid": "uuid-8al-01-1",
+      "technique": "ECCI",
+      "purpose": "characterize planar dislocation configurations",
+      "key_findings": "Taylor lattice structures and highly dense dislocation walls (HDDWs) spaced 100–200 nm at 0.3 true strain; characteristic of pronounced planar slip."
+    },
+    {
+      "characterization_id": "char_008",
+      "sample_id": "sample_8al_01",
+      "microstructure_uuid": "uuid-8al-01-1",
+      "technique": "TEM (Transmission Electron Microscopy)",
+      "purpose": "analyze precipitation state, particle size and diffraction patterns",
+      "key_findings": "Heterogeneous intragranular nanosized j-carbides 2–5 nm with L1_0 structure and cube/cube orientation relationship with austenite matrix; no dislocation–particle pinning observed."
+    },
+    {
+      "characterization_id": "char_009",
+      "sample_id": "sample_8al_02",
+      "microstructure_uuid": "uuid-8al-02-1",
+      "technique": "ECCI",
+      "purpose": "characterize deformation microstructures",
+      "key_findings": "Planar dislocation substructures with dense dislocation arrays spaced 100–300 nm at 0.15 true strain."
+    },
+    {
+      "characterization_id": "char_010",
+      "sample_id": "sample_8al_02",
+      "microstructure_uuid": "uuid-8al-02-1",
+      "technique": "TEM dark-field imaging",
+      "purpose": "analyze precipitation state and particle–dislocation interactions",
+      "key_findings": "Uniform intragranular cuboidal j-carbides 10 × 20 nm with narrow matrix channels ~2–3 nm; frequent shearing of cuboidal j-carbides by dislocations."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_001",
+      "sample_id": "sample_2al_01",
+      "simulation_method": null,
+      "software_used": null,
+      "potential_model": null,
+      "validation_against_experiment": null,
+      "analytical_model": [
+        {
+          "model_name": "Dislocation substructure strengthening (Eq. 1)",
+          "equation_role": "contribution of dislocation substructure to flow stress in the first hardening stage",
+          "parameters": "G (shear modulus), K (constant), b (Burgers vector magnitude), M (Taylor factor), D (substructure size)",
+          "model_note": "Δσ = G M K b / D; high carbon content promotes formation of dislocation substructures by influencing cross-slip."
+        },
+        {
+          "model_name": "Twinning-induced plasticity hardening (Eq. 2)",
+          "equation_role": "contribution of deformation twinning to hardening in the second hardening stage",
+          "parameters": "K_H-P (constant), λ_twin (average twin spacing)",
+          "model_note": "Δσ_twinning = K_H-P / (λ_twin)^1/2; twin spacing is the key microstructural parameter determined by twinning kinetics."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Figure 1 provides engineering stress–strain curves for annealed 2Al and 8Al steels; the caption includes a table of data points, but the actual curve shapes and pixel-level image data are unavailable in the text pipeline.",
+    "Figure 2 shows strain hardening rate versus true stress for annealed 2Al steels; a data table is present in the caption text, but the plot image is not available.",
+    "Figure 4 shows strain hardening rate versus true stress for annealed 8Al steels; a data table is present in the caption text, but the plot image is not available.",
+    "Microscopic images in Figures 3 and 5 (ECCI and TEM micrographs) contain only scale-bar information and qualitative descriptions in the caption; pixel-level microstructural details are unavailable.",
+    "For the long-annealed 2Al steel, the estimated twinning stress is ~670–750 MPa based on stacking fault energy γ = 60 mJ/m², b = 0.25 nm, and Taylor factor 2.8–3.2.",
+    "The short-annealed 2Al steel develops planar dislocation configurations at low stresses due to the high carbon content influencing dislocation cross-slip; these transform into wavy dislocation structures (cells and cell blocks) at high true stress (~950 MPa), whereas in the short-annealed 8Al alloy planar dislocation substructures remain stable up to ~1.1 GPa because of shearable j-carbides."
+  ]
+}
+```

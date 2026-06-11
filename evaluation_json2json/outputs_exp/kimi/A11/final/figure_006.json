@@ -1,0 +1,11 @@
+{
+  "paper_id": "A11",
+  "figure_id": "figure_006",
+  "image_paths": [
+    "images/d3ac1d47505d0ff1727c000201e1458b83233f647145498f47ee067a3a9f72c7.jpg"
+  ],
+  "image_count": 1,
+  "image_type": "chart_flow",
+  "description": "Fig. 5 presents a comprehensive flowchart of the proposed 3D cellular automaton (CA) model based on inhomogeneous dislocation density for simulating multi-stage dynamic recrystallization (DRX) in low-alloy steel under varying deformation conditions. The framework is initialized with inputs including load conditions (temperatures, strain rates, start/end strains for both stages), initial microstructure descriptors (grain orientation, grain size, dislocation density), and model parameters calibrated from a constitutive model (initial work-hardening rate, saturation stress, DRX activation energy, and others). At each step n, the algorithm checks whether total strain exceeds the first-stage strain εI to update the stress-softening coefficient ks and varying saturation stress via constitutive calibration. It then computes average dislocation density evolution, followed by inhomogeneous dislocation accumulation, strain increments associated with dislocation slipping, and local dislocation density updates. Once the critical dislocation density ρc is reached, inhomogeneous nucleation occurs based on specific rate equations, grain-boundary migrations are calculated, and all cellular state variables are updated. The loop terminates at the end strain and outputs grain orientation distribution and dislocation density distribution. This workflow establishes the computational backbone for quantifying transient DRX microstructure evolution under multi-stage thermomechanical loading.",
+  "confidence": 0.0
+}

@@ -1,0 +1,44 @@
+{
+  "paper_id": "A10",
+  "title": "Extreme high accuracy prediction and design of Fe-C-Cr-Mn-Si steel using machine learning",
+  "abstract_summary": "This study develops a data-driven model combining machine learning (ML), firefly optimization algorithm (FA), and conditional generative adversarial networks (CGANs) to predict solid solution strengthening theory for Fe-C-Cr-Mn-Si steel. Support vector regression (SVR) achieved the highest microhardness prediction accuracy, with R² improving from 0.85 to 0.89 and RMSE decreasing from 0.39 to 0.31 after introducing a modified solid solution strengthening theory. Three alloys were fabricated by cladding for experimental validation, yielding a minimum prediction error of 1.17%. The approach accelerates the design of Fe-C-Cr-Mn-Si steel with extreme high accuracy.",
+  "research_objective": "To develop an alternate approach combining machine learning, firefly optimization, and CGANs to rapidly and accurately predict the solid solution strengthening theory and microhardness of Fe-C-Cr-Mn-Si steel, overcoming the limitations of time-consuming and costly experimental determination.",
+  "material_systems": [
+    "Fe-C-Cr-Mn-Si alloy steel",
+    "Fe-Cr phase",
+    "Fe-Cr-Ni phase"
+  ],
+  "main_process_variables": [
+    "Chemical composition (C, Si, Mn, Cr, S, Ni, P, Fe, Mo, V, W mass percentages)",
+    "CGAN synthetic data generation",
+    "Firefly optimization algorithm (FA)",
+    "Particle swarm optimization (PSO)",
+    "Grey wolf optimization algorithm (GWO)",
+    "Simulated annealing (SA)",
+    "Modified solid solution strengthening theory (difference in cohesive energy, local cohesive energy mismatch, shear modulus)",
+    "SVR model training",
+    "Cladding for sample preparation",
+    "XRD characterization",
+    "Microhardness testing",
+    "Atomic radius difference (lattice distortion)"
+  ],
+  "sample_aliases": [
+    "Sample 1: Fe-C-Cr-Mn-Si alloy with no Ni, no Mo, no V, no W",
+    "Sample 2: Fe-C-Cr-Mn-Si alloy with Ni, V, W",
+    "Sample 3: Fe-C-Cr-Mn-Si alloy with Ni, Mo, V"
+  ],
+  "expected_information_axis": [
+    "composition",
+    "processing (cladding)",
+    "microstructure (XRD phases, lattice distortion)",
+    "property (microhardness)",
+    "mechanism (solid solution strengthening, cohesive energy, shear modulus)",
+    "figure_evidence"
+  ],
+  "key_sections": [
+    "1. Introduction: literature review on ML for steel prediction and solid solution strengthening theory, research gap",
+    "2. Materials and methodology: 2.1 Construction of the ML model (2.1.1 Data collection and pre-processing; 2.1.2 Feature engineering; 2.1.3 Algorithm selection and optimization); 2.2 Inverse design; 2.3 Coating preparation and characterization",
+    "3. Results and discussion: 3.1 ML algorithm modeling (3.1.1 Screening results of elements; 3.1.2 Screening results of features; 3.1.3 Screening results of models; 3.1.4 Model optimization by solid solution strengthening theory; 3.1.5 Screening results of inverse design); 3.2 Experimental verification",
+    "4. Conclusions: summary of key findings (Cr impact, modified theory, prediction accuracy, experimental validation)"
+  ]
+}

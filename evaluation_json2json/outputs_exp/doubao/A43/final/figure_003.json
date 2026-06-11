@@ -1,0 +1,11 @@
+{
+  "paper_id": "A43",
+  "figure_id": "figure_003",
+  "image_paths": [
+    "images/a74d2ee60fc0b2bfc9af312c9d49e73cd6d71349f8d67e19dc2dfa2dc6b61c04.jpg"
+  ],
+  "image_count": 1,
+  "image_type": "chart_flow",
+  "description": "This figure illustrates the Gaussian Mixture Model (GMM) based data augmentation workflow developed to address the small-sample overfitting issue for machine learning based yield strength prediction of medium-manganese low-density steels. The workflow is divided into three parts: first, the original dataset contains 177 entries, with inputs including multiple strengthening mechanism descriptors such as solid solution strengthening σ₀, grain refinement strengthening σ_g, dislocation strengthening σ_d, and Orowan strengthening σ_Orowan. Second, in the training stage, the optimal number of Gaussian components is determined via the Bayesian Information Criterion (BIC). Third, in the result stage, the Expectation-Maximization (EM) algorithm is applied to iteratively estimate the mean, covariance, and weight of each Gaussian component; new samples are generated and denoised, then combined with the raw dataset to form an expanded dataset of 776 entries, which improves the generalization performance of subsequent yield strength prediction models.",
+  "confidence": 0.0
+}

@@ -1,0 +1,641 @@
+{
+    "papers": [
+        {
+            "paper_id": "A20",
+            "doi": null,
+            "title": "Evaluation of change in material properties due to plastic deformation",
+            "authors": ["M. Yang", "Y. Akiyama", "T. Sasaki"],
+            "publication_year": "2004",
+            "journal": null,
+            "keywords": ["Change in elastic modulus", "Spring-back", "Nano-indentation test"],
+            "research_type": "mixed",
+            "paper_scope": "研究塑性变形对弹性模量等材料性能变化的影响，结合宏观精密拉伸试验、V弯曲试验与微观纳米压痕试验，揭示弹性模量降低的微观机制，验证弹性模量变化对板料冲压回弹的影响，为提高回弹FEM模拟精度提供实验依据"
+        }
+    ],
+    "alloys": [
+        {
+            "alloy_id": "alloy_spcc_spce",
+            "paper_id": "A20",
+            "alloy_name": "SPCC/SPCE低碳钢板",
+            "aliases": ["SPCE sheet metal", "SPCC sheet"],
+            "base_element": "Fe",
+            "alloying_elements": ["C"],
+            "nominal_composition": [
+                {
+                    "element": "C",
+                    "weight_percent": null,
+                    "atomic_percent": null
+                }
+            ],
+            "alloys_notes": "钢板厚度为1.2 mm"
+        }
+    ],
+    "processes": [
+        {
+            "process_id": "proc_spc_01",
+            "paper_id": "A20",
+            "alloy_id": "alloy_spcc_spce",
+            "description": "As received state（试样A）",
+            "processes_notes": null
+        },
+        {
+            "process_id": "proc_spc_02",
+            "paper_id": "A20",
+            "alloy_id": "alloy_spcc_spce",
+            "description": "施加15%预应变（试样B）",
+            "processes_notes": null
+        },
+        {
+            "process_id": "proc_spc_03",
+            "paper_id": "A20",
+            "alloy_id": "alloy_spcc_spce",
+            "description": "15%预应变后经373K保温90h热处理（试样C）",
+            "processes_notes": "热处理仅恢复Cottrell气团，保持位错静止"
+        },
+        {
+            "process_id": "proc_spc_04",
+            "paper_id": "A20",
+            "alloy_id": "alloy_spcc_spce",
+            "description": "收货状态直接热处理（试样D）",
+            "processes_notes": null
+        },
+        {
+            "process_id": "proc_spc_05",
+            "paper_id": "A20",
+            "alloy_id": "alloy_spcc_spce",
+            "description": "退火状态（试样E）",
+            "processes_notes": null
+        }
+    ],
+    "samples": [
+        {
+            "sample_id": "sample_spc_01",
+            "paper_id": "A20",
+            "alloy_id": "alloy_spcc_spce",
+            "process_id": "proc_spc_01"
+        },
+        {
+            "sample_id": "sample_spc_02",
+            "paper_id": "A20",
+            "alloy_id": "alloy_spcc_spce",
+            "process_id": "proc_spc_02"
+        },
+        {
+            "sample_id": "sample_spc_03",
+            "paper_id": "A20",
+            "alloy_id": "alloy_spcc_spce",
+            "process_id": "proc_spc_03"
+        },
+        {
+            "sample_id": "sample_spc_04",
+            "paper_id": "A20",
+            "alloy_id": "alloy_spcc_spce",
+            "process_id": "proc_spc_04"
+        },
+        {
+            "sample_id": "sample_spc_05",
+            "paper_id": "A20",
+            "alloy_id": "alloy_spcc_spce",
+            "process_id": "proc_spc_05"
+        }
+    ],
+    "processing_steps": [
+        {
+            "sample_id": "sample_spc_02",
+            "paper_id": "A20",
+            "sequence": "1",
+            "type": "mechanical_processing",
+            "method": "tensile pre-strain",
+            "temperature": null,
+            "unit": null,
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "施加15%的预塑性应变"
+        },
+        {
+            "sample_id": "sample_spc_03",
+            "paper_id": "A20",
+            "sequence": "1",
+            "type": "mechanical_processing",
+            "method": "tensile pre-strain",
+            "temperature": null,
+            "unit": null,
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "施加15%的预塑性应变"
+        },
+        {
+            "sample_id": "sample_spc_03",
+            "paper_id": "A20",
+            "sequence": "2",
+            "type": "heat_treatment",
+            "method": "low temperature aging",
+            "temperature": "373",
+            "unit": "K",
+            "duration": "90 h",
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "通过C扩散恢复Cottrell气团，约束可动位错"
+        }
+    ],
+    "structures": [
+        {
+            "structure_id": "struct_spc_02",
+            "sample_id": "sample_spc_02",
+            "overall_structure": "塑性变形后晶界附近存在位错塞积，可动位错密度升高，伴随残余应力与微裂纹产生",
+            "number_of_phases": null,
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_001",
+                    "related_sequence": "1",
+                    "phases_present": [],
+                    "defects": [
+                        {
+                            "type": "dislocation pile-up, residual stress, micro cracks",
+                            "porosity": null,
+                            "inclusions": [],
+                            "dislocation_density": "higher than as-received state",
+                            "lattice_distortion": null
+                        }
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": null,
+                            "unit": null
+                        },
+                        "grain_size_distribution": null,
+                        "texture": null
+                    },
+                    "precipitates": []
+                },
+                {
+                    "uuid": "uuid_002",
+                    "related_sequence": null,
+                    "phases_present": [],
+                    "defects": [
+                        {
+                            "type": "dislocation pile-up near grain boundary",
+                            "porosity": null,
+                            "inclusions": [],
+                            "dislocation_density": "higher than grain interior",
+                            "lattice_distortion": null
+                        }
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": null,
+                            "unit": null
+                        },
+                        "grain_size_distribution": null,
+                        "texture": null
+                    },
+                    "precipitates": []
+                }
+            ]
+        }
+    ],
+    "interfaces": [
+        {
+            "interface_set_id": "interf_001",
+            "sample_id": "sample_spc_02",
+            "phases": [
+                {
+                    "interface_id": "interf_001_01",
+                    "microstructure_uuid": "uuid_002",
+                    "phase_1_name": "grain interior",
+                    "phase_2_name": "grain boundary",
+                    "coherence": null
+                }
+            ],
+            "defect_interaction": [
+                {
+                    "interaction_id": "interact_001",
+                    "microstructure_uuid": "uuid_002",
+                    "interaction_type": "dislocation pile-up at grain boundary",
+                    "quality_description": "位错在晶界处受阻碍塞积，卸载时可反向移动，导致表观弹性模量降低"
+                }
+            ],
+            "interface_notes": [
+                {
+                    "stress_strain_distribution": null
+                },
+                {
+                    "slippage_situation": null
+                }
+            ],
+            "phase_evolution": null
+        }
+    ],
+    "properties": [
+        {
+            "property_set_id": "prop_01",
+            "sample_id": "sample_spc_01",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [],
+                    "ultimate_tensile_strength": [],
+                    "elongation": [],
+                    "youngs_modulus": "0-0.05%应变区: 182 GPa, 全弹性区: 173 GPa",
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [],
+                "fracture_toughness": {
+                    "value": null,
+                    "unit": null
+                },
+                "fatigue_properties": {
+                    "fatigue_limit": null,
+                    "cycles_to_failure": null
+                },
+                "creep_properties": {
+                    "steady_state_creep_rate": null,
+                    "rupture_life": null
+                }
+            },
+            "physical": {
+                "density": {
+                    "value": null,
+                    "unit": null
+                },
+                "thermal_properties": {
+                    "thermal_conductivity": null,
+                    "thermal_expansion_coefficient": null,
+                    "specific_heat": null
+                },
+                "electrical_properties": {
+                    "electrical_conductivity": null,
+                    "resistivity": null
+                },
+                "magnetic_properties": {
+                    "magnetic_susceptibility": null,
+                    "curie_temperature": null
+                }
+            },
+            "chemical": {
+                "corrosion_resistance": {
+                    "test_medium": null,
+                    "corrosion_rate": null,
+                    "passivation_behavior": null
+                },
+                "oxidation_resistance": {
+                    "oxidation_rate_constant": null,
+                    "protective_scale": null
+                }
+            },
+            "radiation_properties": {
+                "void_swelling": null,
+                "irradiation_hardening": null,
+                "helium_embrittlement": null
+            }
+        },
+        {
+            "property_set_id": "prop_02",
+            "sample_id": "sample_spc_02",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [],
+                    "ultimate_tensile_strength": [],
+                    "elongation": [],
+                    "youngs_modulus": "0-0.05%应变区: 188 GPa, 全弹性区: 162 GPa",
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [],
+                "fracture_toughness": {
+                    "value": null,
+                    "unit": null
+                },
+                "fatigue_properties": {
+                    "fatigue_limit": null,
+                    "cycles_to_failure": null
+                },
+                "creep_properties": {
+                    "steady_state_creep_rate": null,
+                    "rupture_life": null
+                }
+            },
+            "physical": {
+                "density": {
+                    "value": null,
+                    "unit": null
+                },
+                "thermal_properties": {
+                    "thermal_conductivity": null,
+                    "thermal_expansion_coefficient": null,
+                    "specific_heat": null
+                },
+                "electrical_properties": {
+                    "electrical_conductivity": null,
+                    "resistivity": null
+                },
+                "magnetic_properties": {
+                    "magnetic_susceptibility": null,
+                    "curie_temperature": null
+                }
+            },
+            "chemical": {
+                "corrosion_resistance": {
+                    "test_medium": null,
+                    "corrosion_rate": null,
+                    "passivation_behavior": null
+                },
+                "oxidation_resistance": {
+                    "oxidation_rate_constant": null,
+                    "protective_scale": null
+                }
+            },
+            "radiation_properties": {
+                "void_swelling": null,
+                "irradiation_hardening": null,
+                "helium_embrittlement": null
+            }
+        },
+        {
+            "property_set_id": "prop_03",
+            "sample_id": "sample_spc_03",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [],
+                    "ultimate_tensile_strength": [],
+                    "elongation": [],
+                    "youngs_modulus": "0-0.05%应变区: 186 GPa, 全弹性区: 162 GPa",
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [],
+                "fracture_toughness": {
+                    "value": null,
+                    "unit": null
+                },
+                "fatigue_properties": {
+                    "fatigue_limit": null,
+                    "cycles_to_failure": null
+                },
+                "creep_properties": {
+                    "steady_state_creep_rate": null,
+                    "rupture_life": null
+                }
+            },
+            "physical": {
+                "density": {
+                    "value": null,
+                    "unit": null
+                },
+                "thermal_properties": {
+                    "thermal_conductivity": null,
+                    "thermal_expansion_coefficient": null,
+                    "specific_heat": null
+                },
+                "electrical_properties": {
+                    "electrical_conductivity": null,
+                    "resistivity": null
+                },
+                "magnetic_properties": {
+                    "magnetic_susceptibility": null,
+                    "curie_temperature": null
+                }
+            },
+            "chemical": {
+                "corrosion_resistance": {
+                    "test_medium": null,
+                    "corrosion_rate": null,
+                    "passivation_behavior": null
+                },
+                "oxidation_resistance": {
+                    "oxidation_rate_constant": null,
+                    "protective_scale": null
+                }
+            },
+            "radiation_properties": {
+                "void_swelling": null,
+                "irradiation_hardening": null,
+                "helium_embrittlement": null
+            }
+        },
+        {
+            "property_set_id": "prop_04",
+            "sample_id": "sample_spc_04",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [],
+                    "ultimate_tensile_strength": [],
+                    "elongation": [],
+                    "youngs_modulus": "0-0.05%应变区: 189 GPa, 全弹性区: 189 GPa",
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [],
+                "fracture_toughness": {
+                    "value": null,
+                    "unit": null
+                },
+                "fatigue_properties": {
+                    "fatigue_limit": null,
+                    "cycles_to_failure": null
+                },
+                "creep_properties": {
+                    "steady_state_creep_rate": null,
+                    "rupture_life": null
+                }
+            },
+            "physical": {
+                "density": {
+                    "value": null,
+                    "unit": null
+                },
+                "thermal_properties": {
+                    "thermal_conductivity": null,
+                    "thermal_expansion_coefficient": null,
+                    "specific_heat": null
+                },
+                "electrical_properties": {
+                    "electrical_conductivity": null,
+                    "resistivity": null
+                },
+                "magnetic_properties": {
+                    "magnetic_susceptibility": null,
+                    "curie_temperature": null
+                }
+            },
+            "chemical": {
+                "corrosion_resistance": {
+                    "test_medium": null,
+                    "corrosion_rate": null,
+                    "passivation_behavior": null
+                },
+                "oxidation_resistance": {
+                    "oxidation_rate_constant": null,
+                    "protective_scale": null
+                }
+            },
+            "radiation_properties": {
+                "void_swelling": null,
+                "irradiation_hardening": null,
+                "helium_embrittlement": null
+            }
+        },
+        {
+            "property_set_id": "prop_05",
+            "sample_id": "sample_spc_05",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [],
+                    "ultimate_tensile_strength": [],
+                    "elongation": [],
+                    "youngs_modulus": "0-0.05%应变区: 224 GPa, 全弹性区: 206 GPa",
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [],
+                "fracture_toughness": {
+                    "value": null,
+                    "unit": null
+                },
+                "fatigue_properties": {
+                    "fatigue_limit": null,
+                    "cycles_to_failure": null
+                },
+                "creep_properties": {
+                    "steady_state_creep_rate": null,
+                    "rupture_life": null
+                }
+            },
+            "physical": {
+                "density": {
+                    "value": null,
+                    "unit": null
+                },
+                "thermal_properties": {
+                    "thermal_conductivity": null,
+                    "thermal_expansion_coefficient": null,
+                    "specific_heat": null
+                },
+                "electrical_properties": {
+                    "electrical_conductivity": null,
+                    "resistivity": null
+                },
+                "magnetic_properties": {
+                    "magnetic_susceptibility": null,
+                    "curie_temperature": null
+                }
+            },
+            "chemical": {
+                "corrosion_resistance": {
+                    "test_medium": null,
+                    "corrosion_rate": null,
+                    "passivation_behavior": null
+                },
+                "oxidation_resistance": {
+                    "oxidation_rate_constant": null,
+                    "protective_scale": null
+                }
+            },
+            "radiation_properties": {
+                "void_swelling": null,
+                "irradiation_hardening": null,
+                "helium_embrittlement": null
+            }
+        }
+    ],
+    "performance": [
+        {
+            "performance_id": "perf_01",
+            "sample_id": "sample_spc_01",
+            "service_conditions": {
+                "operating_temperature": {
+                    "min": null,
+                    "max": null,
+                    "unit": null
+                },
+                "stress_state": null,
+                "environment": null
+            },
+            "lifetime_prediction": {
+                "model_used": null,
+                "predicted_lifetime": null,
+                "confidence_interval": null
+            },
+            "comparative_performance": {
+                "benchmark_alloy": null,
+                "benchmark_process_id": null,
+                "benchmark_sample_id": null,
+                "improvement_percentage": "采用随塑性应变变化的弹性模量进行FEM模拟，V弯曲回弹预测精度显著高于采用恒定初始弹性模量的模拟"
+            }
+        }
+    ],
+    "characterization_methods": [
+        {
+            "characterization_id": "char_01",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "Precision tensile test with self-developed extensometer and strain gages",
+            "purpose": "测量不同塑性应变下的弹性模量变化",
+            "key_findings": "弹性模量随塑性应变升高而降低，25%塑性应变后相对初始值降低超过20%"
+        },
+        {
+            "characterization_id": "char_02",
+            "sample_id": null,
+            "microstructure_uuid": "uuid_002",
+            "technique": "Nano-indentation test with spherical indenter tip, combined with AFM",
+            "purpose": "测量晶粒内部到晶界的微观弹性模量分布",
+            "key_findings": "晶界附近的弹性模量显著低于晶粒内部，且位错塞积是导致该现象的主要原因"
+        },
+        {
+            "characterization_id": "char_03",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "V-bending test",
+            "purpose": "验证弹性模量变化对板料回弹的影响",
+            "key_findings": "考虑弹性模量随塑性应变的变化可显著提高回弹FEM模拟的精度"
+        }
+    ],
+    "computational_details": [
+        {
+            "computation_id": "comp_01",
+            "sample_id": null,
+            "simulation_method": "FEM simulation for V-bending spring-back prediction",
+            "software_used": null,
+            "potential_model": null,
+            "validation_against_experiment": "与V弯曲试验的回弹实测值对比，变弹性模量模拟结果与实验值吻合度更高",
+            "analytical_model": []
+        },
+        {
+            "computation_id": "comp_02",
+            "sample_id": null,
+            "simulation_method": null,
+            "software_used": null,
+            "potential_model": null,
+            "validation_against_experiment": null,
+            "analytical_model": [
+                {
+                    "model_name": "Carbon diffusion equation",
+                    "equation_role": "计算373K下C在Fe基体中的扩散距离，确定热处理工艺参数",
+                    "parameters": ["D: diffusion coefficient of C in Fe matrix", "t: holding time", "x: average diffusion distance"],
+                    "model_note": "x = (2 D t)^(1/2)"
+                },
+                {
+                    "model_name": "Hertz contact theory",
+                    "equation_role": "计算球形压痕下的复合弹性模量",
+                    "parameters": ["h_e: elastic indentation depth", "P: indentation load", "R: radius of indenter tip", "E_r: compound elastic modulus"],
+                    "model_note": "h_e = (9 P² / (16 R E_r²))^(1/3)"
+                }
+            ]
+        }
+    ],
+    "unmapped_findings": [
+        "弹性模量相对初始值的比例δE随真应变变化：0.00时100.0%，0.02时92.0%，0.04时88.0%，0.06时85.0%，0.08时82.0%，0.10时80.0%，0.12时79.0%，0.14时78.0%，0.16时77.0%，0.18时76.0%，0.20时75.0%，0.22时74.0%，0.24时73.0%，0.26时72.0%",
+        "纳米压痕设备参数：力范围1-10 mN，灵敏度100 nN；位移范围5 μm，灵敏度0.2 nm",
+        "塑性变形导致的密度降低小于1%，对弹性模量降低的贡献可忽略",
+        "室温下C在Fe基体中扩散速率极低，Cottrell气团在塑性变形后无法自行恢复",
+        "纳米压痕测试前采用CMP处理消除表面粗糙度与晶界腐蚀沟槽的影响"
+    ]
+}

@@ -1,0 +1,637 @@
+{
+  "paper_id": "A4",
+  "source_path": "/Users/mac/Desktop/SteelDig/SteelDig_multimodal/outputs_dataset/A4/final/text_extraction.json",
+  "target_unit_policy": {
+    "temperature": "°C",
+    "duration": "h",
+    "stress": "MPa",
+    "length": "μm",
+    "percent": "%",
+    "hardness": "HV",
+    "density": "g/cm^3",
+    "mass_gain": "mg/cm^2",
+    "energy_density": "mJ/m^2",
+    "fracture_toughness": "MPa·m^0.5",
+    "rate": "s^-1"
+  },
+  "summary": {
+    "converted_count": 17,
+    "unchanged_count": 16,
+    "skipped_count": 3,
+    "ambiguous_count": 13
+  },
+  "changes": [
+    {
+      "path": "$.processing_steps[0]",
+      "quantity_kind": "temperature",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": {
+        "unit": "°C",
+        "temperature": "1150"
+      },
+      "normalized": {
+        "unit": "°C",
+        "temperature": "1150"
+      }
+    },
+    {
+      "path": "$.processing_steps[1]",
+      "quantity_kind": "temperature",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": {
+        "unit": "°C",
+        "temperature": "1150"
+      },
+      "normalized": {
+        "unit": "°C",
+        "temperature": "1150"
+      }
+    },
+    {
+      "path": "$.processing_steps[2]",
+      "quantity_kind": "temperature",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": {
+        "unit": "°C",
+        "temperature": "1150"
+      },
+      "normalized": {
+        "unit": "°C",
+        "temperature": "1150"
+      }
+    },
+    {
+      "path": "$.processing_steps[2].reduction_ratio",
+      "quantity_kind": "percent",
+      "status": "converted",
+      "reason": "normalized percent to %",
+      "original": "45%",
+      "normalized": "45 %"
+    },
+    {
+      "path": "$.processing_steps[4]",
+      "quantity_kind": "temperature",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": {
+        "unit": "°C",
+        "temperature": "1150"
+      },
+      "normalized": {
+        "unit": "°C",
+        "temperature": "1150"
+      }
+    },
+    {
+      "path": "$.processing_steps[5]",
+      "quantity_kind": "temperature",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": {
+        "unit": "°C",
+        "temperature": "1150"
+      },
+      "normalized": {
+        "unit": "°C",
+        "temperature": "1150"
+      }
+    },
+    {
+      "path": "$.processing_steps[6]",
+      "quantity_kind": "temperature",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": {
+        "unit": "°C",
+        "temperature": "1150"
+      },
+      "normalized": {
+        "unit": "°C",
+        "temperature": "1150"
+      }
+    },
+    {
+      "path": "$.processing_steps[6].reduction_ratio",
+      "quantity_kind": "percent",
+      "status": "converted",
+      "reason": "normalized percent to %",
+      "original": "68%",
+      "normalized": "68 %"
+    },
+    {
+      "path": "$.processing_steps[8]",
+      "quantity_kind": "temperature",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": {
+        "unit": "°C",
+        "temperature": "1150"
+      },
+      "normalized": {
+        "unit": "°C",
+        "temperature": "1150"
+      }
+    },
+    {
+      "path": "$.processing_steps[9]",
+      "quantity_kind": "temperature",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": {
+        "unit": "°C",
+        "temperature": "1150"
+      },
+      "normalized": {
+        "unit": "°C",
+        "temperature": "1150"
+      }
+    },
+    {
+      "path": "$.processing_steps[10]",
+      "quantity_kind": "temperature",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": {
+        "unit": "°C",
+        "temperature": "1150"
+      },
+      "normalized": {
+        "unit": "°C",
+        "temperature": "1150"
+      }
+    },
+    {
+      "path": "$.processing_steps[10].reduction_ratio",
+      "quantity_kind": "percent",
+      "status": "converted",
+      "reason": "normalized percent to %",
+      "original": "82%",
+      "normalized": "82 %"
+    },
+    {
+      "path": "$.structures[0].microstructure_list[0].grain_structure.average_grain_size",
+      "quantity_kind": "length",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": {
+        "unit": "μm",
+        "value": "21.82"
+      },
+      "normalized": {
+        "unit": "μm",
+        "value": "21.82"
+      }
+    },
+    {
+      "path": "$.structures[0].microstructure_list[0].precipitates[0].size.value",
+      "quantity_kind": null,
+      "status": "ambiguous",
+      "reason": "cannot parse numeric value",
+      "original": {
+        "value": "0.81 ± 0.26",
+        "unit": "nm"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.structures[0].microstructure_list[0].precipitates[1].size",
+      "quantity_kind": "length",
+      "status": "skipped",
+      "reason": "unsupported conversion nm (submicron); μm (micron) -> μm",
+      "original": {
+        "unit": "nm (submicron); μm (micron)",
+        "value": "submicron: 261 ± 36; micron-sized: 1–25"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.structures[1].microstructure_list[0].grain_structure.average_grain_size",
+      "quantity_kind": "length",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": {
+        "unit": "μm",
+        "value": "11.55"
+      },
+      "normalized": {
+        "unit": "μm",
+        "value": "11.55"
+      }
+    },
+    {
+      "path": "$.structures[1].microstructure_list[0].precipitates[0].size.value",
+      "quantity_kind": null,
+      "status": "ambiguous",
+      "reason": "cannot parse numeric value",
+      "original": {
+        "value": "0.78 ± 0.17",
+        "unit": "nm"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.structures[1].microstructure_list[0].precipitates[1].size",
+      "quantity_kind": "length",
+      "status": "skipped",
+      "reason": "unsupported conversion nm (submicron); μm (micron) -> μm",
+      "original": {
+        "unit": "nm (submicron); μm (micron)",
+        "value": "submicron: 256 ± 42; micron-sized: 1–25"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.structures[2].microstructure_list[0].grain_structure.average_grain_size",
+      "quantity_kind": "length",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": {
+        "unit": "μm",
+        "value": "7.02"
+      },
+      "normalized": {
+        "unit": "μm",
+        "value": "7.02"
+      }
+    },
+    {
+      "path": "$.structures[2].microstructure_list[0].precipitates[0].size.value",
+      "quantity_kind": null,
+      "status": "ambiguous",
+      "reason": "cannot parse numeric value",
+      "original": {
+        "value": "0.83 ± 0.23",
+        "unit": "nm"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.structures[2].microstructure_list[0].precipitates[1].size",
+      "quantity_kind": "length",
+      "status": "skipped",
+      "reason": "unsupported conversion nm (submicron); μm (micron) -> μm",
+      "original": {
+        "unit": "nm (submicron); μm (micron)",
+        "value": "submicron: 259 ± 23; micron-sized: 1–25"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.properties[0].mechanical.tensile_properties.yield_strength[0]",
+      "quantity_kind": "stress",
+      "status": "converted",
+      "reason": "normalized stress to MPa",
+      "original": {
+        "unit": "MPa",
+        "value": "480.0"
+      },
+      "normalized": {
+        "unit": "MPa",
+        "value": "480"
+      }
+    },
+    {
+      "path": "$.properties[0].mechanical.tensile_properties.ultimate_tensile_strength[0]",
+      "quantity_kind": "stress",
+      "status": "converted",
+      "reason": "normalized stress to MPa",
+      "original": {
+        "unit": "MPa",
+        "value": "861.0"
+      },
+      "normalized": {
+        "unit": "MPa",
+        "value": "861"
+      }
+    },
+    {
+      "path": "$.properties[0].mechanical.tensile_properties.elongation[0]",
+      "quantity_kind": "percent",
+      "status": "converted",
+      "reason": "normalized percent to %",
+      "original": {
+        "unit": "%",
+        "value": "52.0"
+      },
+      "normalized": {
+        "unit": "%",
+        "value": "52"
+      }
+    },
+    {
+      "path": "$.properties[0].mechanical.tensile_properties.elongation[1]",
+      "quantity_kind": "percent",
+      "status": "converted",
+      "reason": "normalized percent to %",
+      "original": {
+        "unit": "%",
+        "value": "60.0"
+      },
+      "normalized": {
+        "unit": "%",
+        "value": "60"
+      }
+    },
+    {
+      "path": "$.properties[0].mechanical.tensile_properties.strain_hardening_rate[0].value",
+      "quantity_kind": null,
+      "status": "ambiguous",
+      "reason": "cannot parse numeric value",
+      "original": {
+        "value": "~2000",
+        "unit": "MPa"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.properties[0].mechanical.reduction_of_area[0]",
+      "quantity_kind": "percent",
+      "status": "converted",
+      "reason": "normalized percent to %",
+      "original": {
+        "unit": "%",
+        "value": "63.0"
+      },
+      "normalized": {
+        "unit": "%",
+        "value": "63"
+      }
+    },
+    {
+      "path": "$.properties[0].mechanical.impact_toughness",
+      "quantity_kind": null,
+      "status": "ambiguous",
+      "reason": "cannot infer quantity kind",
+      "original": null,
+      "normalized": null
+    },
+    {
+      "path": "$.properties[0].physical.density",
+      "quantity_kind": "density",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": {
+        "unit": "g/cm^3",
+        "value": "6.82"
+      },
+      "normalized": {
+        "unit": "g/cm^3",
+        "value": "6.82"
+      }
+    },
+    {
+      "path": "$.properties[0].physical.stacking_fault_energy.value",
+      "quantity_kind": null,
+      "status": "ambiguous",
+      "reason": "cannot parse numeric value",
+      "original": {
+        "value": "~73",
+        "unit": "mJ/m^2"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.properties[1].mechanical.tensile_properties.yield_strength[0]",
+      "quantity_kind": "stress",
+      "status": "converted",
+      "reason": "normalized stress to MPa",
+      "original": {
+        "unit": "MPa",
+        "value": "577.0"
+      },
+      "normalized": {
+        "unit": "MPa",
+        "value": "577"
+      }
+    },
+    {
+      "path": "$.properties[1].mechanical.tensile_properties.ultimate_tensile_strength[0]",
+      "quantity_kind": "stress",
+      "status": "converted",
+      "reason": "normalized stress to MPa",
+      "original": {
+        "unit": "MPa",
+        "value": "922.0"
+      },
+      "normalized": {
+        "unit": "MPa",
+        "value": "922"
+      }
+    },
+    {
+      "path": "$.properties[1].mechanical.tensile_properties.elongation[0]",
+      "quantity_kind": "percent",
+      "status": "converted",
+      "reason": "normalized percent to %",
+      "original": {
+        "unit": "%",
+        "value": "47.0"
+      },
+      "normalized": {
+        "unit": "%",
+        "value": "47"
+      }
+    },
+    {
+      "path": "$.properties[1].mechanical.tensile_properties.elongation[1]",
+      "quantity_kind": "percent",
+      "status": "converted",
+      "reason": "normalized percent to %",
+      "original": {
+        "unit": "%",
+        "value": "57.0"
+      },
+      "normalized": {
+        "unit": "%",
+        "value": "57"
+      }
+    },
+    {
+      "path": "$.properties[1].mechanical.tensile_properties.strain_hardening_rate[0].value",
+      "quantity_kind": null,
+      "status": "ambiguous",
+      "reason": "cannot parse numeric value",
+      "original": {
+        "value": "~2000",
+        "unit": "MPa"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.properties[1].mechanical.reduction_of_area[0]",
+      "quantity_kind": "percent",
+      "status": "converted",
+      "reason": "normalized percent to %",
+      "original": {
+        "unit": "%",
+        "value": "63.0"
+      },
+      "normalized": {
+        "unit": "%",
+        "value": "63"
+      }
+    },
+    {
+      "path": "$.properties[1].mechanical.impact_toughness",
+      "quantity_kind": null,
+      "status": "ambiguous",
+      "reason": "cannot infer quantity kind",
+      "original": null,
+      "normalized": null
+    },
+    {
+      "path": "$.properties[1].physical.density",
+      "quantity_kind": "density",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": {
+        "unit": "g/cm^3",
+        "value": "6.82"
+      },
+      "normalized": {
+        "unit": "g/cm^3",
+        "value": "6.82"
+      }
+    },
+    {
+      "path": "$.properties[1].physical.stacking_fault_energy.value",
+      "quantity_kind": null,
+      "status": "ambiguous",
+      "reason": "cannot parse numeric value",
+      "original": {
+        "value": "~73",
+        "unit": "mJ/m^2"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.properties[2].mechanical.tensile_properties.yield_strength[0]",
+      "quantity_kind": "stress",
+      "status": "converted",
+      "reason": "normalized stress to MPa",
+      "original": {
+        "unit": "MPa",
+        "value": "648.0"
+      },
+      "normalized": {
+        "unit": "MPa",
+        "value": "648"
+      }
+    },
+    {
+      "path": "$.properties[2].mechanical.tensile_properties.ultimate_tensile_strength[0]",
+      "quantity_kind": "stress",
+      "status": "converted",
+      "reason": "normalized stress to MPa",
+      "original": {
+        "unit": "MPa",
+        "value": "976.0"
+      },
+      "normalized": {
+        "unit": "MPa",
+        "value": "976"
+      }
+    },
+    {
+      "path": "$.properties[2].mechanical.tensile_properties.elongation[0]",
+      "quantity_kind": "percent",
+      "status": "converted",
+      "reason": "normalized percent to %",
+      "original": {
+        "unit": "%",
+        "value": "39.0"
+      },
+      "normalized": {
+        "unit": "%",
+        "value": "39"
+      }
+    },
+    {
+      "path": "$.properties[2].mechanical.tensile_properties.elongation[1]",
+      "quantity_kind": "percent",
+      "status": "converted",
+      "reason": "normalized percent to %",
+      "original": {
+        "unit": "%",
+        "value": "50.0"
+      },
+      "normalized": {
+        "unit": "%",
+        "value": "50"
+      }
+    },
+    {
+      "path": "$.properties[2].mechanical.tensile_properties.strain_hardening_rate[0].value",
+      "quantity_kind": null,
+      "status": "ambiguous",
+      "reason": "cannot parse numeric value",
+      "original": {
+        "value": "~2000",
+        "unit": "MPa"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.properties[2].mechanical.reduction_of_area[0]",
+      "quantity_kind": "percent",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": {
+        "unit": "%",
+        "value": "61.5"
+      },
+      "normalized": {
+        "unit": "%",
+        "value": "61.5"
+      }
+    },
+    {
+      "path": "$.properties[2].mechanical.impact_toughness",
+      "quantity_kind": null,
+      "status": "ambiguous",
+      "reason": "cannot infer quantity kind",
+      "original": null,
+      "normalized": null
+    },
+    {
+      "path": "$.properties[2].physical.density",
+      "quantity_kind": "density",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": {
+        "unit": "g/cm^3",
+        "value": "6.82"
+      },
+      "normalized": {
+        "unit": "g/cm^3",
+        "value": "6.82"
+      }
+    },
+    {
+      "path": "$.properties[2].physical.stacking_fault_energy.value",
+      "quantity_kind": null,
+      "status": "ambiguous",
+      "reason": "cannot parse numeric value",
+      "original": {
+        "value": "~73",
+        "unit": "mJ/m^2"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.performance[0].service_conditions.operating_temperature",
+      "quantity_kind": null,
+      "status": "ambiguous",
+      "reason": "unit is empty",
+      "original": {
+        "unit": null,
+        "min": "room temperature",
+        "max": "room temperature"
+      },
+      "normalized": null
+    }
+  ]
+}

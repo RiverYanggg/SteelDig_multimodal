@@ -1,0 +1,644 @@
+{
+  "paper_id": "A44",
+  "sections": {
+    "papers": {
+      "candidate_count": 1,
+      "result_count": 1,
+      "error": null,
+      "raw_response": "{\n  \"results\": [\n    {\"id\": \"papers:0:papers_a44_paper_scope\", \"matched\": false}\n  ]\n}",
+      "decisions": {
+        "papers:0:papers_a44_paper_scope": false
+      },
+      "input_candidates": [
+        {
+          "id": "papers:0:papers_a44_paper_scope",
+          "section": "papers",
+          "canonical_object": "A44",
+          "field": "paper_scope",
+          "field_path": "paper_scope",
+          "truth_path": "papers.A44.paper_scope",
+          "prediction_path": "papers.A44.paper_scope",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Investigate the role of B2 ordered Fe(Ni)Al intermetallic phase on microstructure and deformation behaviour of three hot-rolled austenitic low-density steels (Fe-Mn-Al-C based).",
+          "prediction_value": "Investigate the microstructure and deformation behaviour of austenitic Fe-Mn-Al-C-based low-density steels, focusing on the role of the B2 ordered Fe(Ni)Al intermetallic phase in Ni-free and Ni-containing hot-rolled alloys."
+        }
+      ],
+      "candidates": [
+        {
+          "key": "papers.A44.paper_scope",
+          "truth_path": "papers.A44.paper_scope",
+          "prediction_path": "papers.A44.paper_scope",
+          "canonical_object": "A44",
+          "field_path": "paper_scope",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Investigate the role of B2 ordered Fe(Ni)Al intermetallic phase on microstructure and deformation behaviour of three hot-rolled austenitic low-density steels (Fe-Mn-Al-C based).",
+          "prediction_value": "Investigate the microstructure and deformation behaviour of austenitic Fe-Mn-Al-C-based low-density steels, focusing on the role of the B2 ordered Fe(Ni)Al intermetallic phase in Ni-free and Ni-containing hot-rolled alloys.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "investigate the role of b2 ordered fe(ni)al intermetallic phase on microstructure and deformation behaviour of three hot-rolled austenitic low-density steels (fe-mn-al-c based).",
+          "prediction_normalized": "investigate the microstructure and deformation behaviour of austenitic fe-mn-al-c-based low-density steels, focusing on the role of the b2 ordered fe(ni)al intermetallic phase in ni-free and ni-containing hot-rolled alloys.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "papers:0:papers_a44_paper_scope"
+        }
+      ]
+    },
+    "alloys": {
+      "candidate_count": 0,
+      "result_count": 0,
+      "error": null,
+      "raw_response": null,
+      "decisions": {},
+      "input_candidates": [],
+      "candidates": []
+    },
+    "processes": {
+      "candidate_count": 3,
+      "result_count": 3,
+      "error": null,
+      "raw_response": "{\n  \"results\": [\n    {\"id\": \"processes:0:processes_proc_15mn9al5ni09c_01_description\", \"matched\": true},\n    {\"id\": \"processes:1:processes_proc_28mn9al09c_01_description\", \"matched\": true},\n    {\"id\": \"processes:2:processes_proc_28mn9al5ni09c_01_description\", \"matched\": true}\n  ]\n}",
+      "decisions": {
+        "processes:2:processes_proc_28mn9al5ni09c_01_description": true,
+        "processes:0:processes_proc_15mn9al5ni09c_01_description": true,
+        "processes:1:processes_proc_28mn9al09c_01_description": true
+      },
+      "input_candidates": [
+        {
+          "id": "processes:0:processes_proc_15mn9al5ni09c_01_description",
+          "section": "processes",
+          "canonical_object": "proc_15mn9al5ni09c_01",
+          "field": "description",
+          "field_path": "description",
+          "truth_path": "processes.proc_15mn9al5ni09c_01.description",
+          "prediction_path": "processes.proc_15mn9al5ni09c_01.description",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Hot-rolled condition (as-received)",
+          "prediction_value": "Hot-rolled condition"
+        },
+        {
+          "id": "processes:1:processes_proc_28mn9al09c_01_description",
+          "section": "processes",
+          "canonical_object": "proc_28mn9al09c_01",
+          "field": "description",
+          "field_path": "description",
+          "truth_path": "processes.proc_28mn9al09c_01.description",
+          "prediction_path": "processes.proc_28mn9al09c_01.description",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Hot-rolled condition (as-received)",
+          "prediction_value": "Hot-rolled condition"
+        },
+        {
+          "id": "processes:2:processes_proc_28mn9al5ni09c_01_description",
+          "section": "processes",
+          "canonical_object": "proc_28mn9al5ni09c_01",
+          "field": "description",
+          "field_path": "description",
+          "truth_path": "processes.proc_28mn9al5ni09c_01.description",
+          "prediction_path": "processes.proc_28mn9al5ni09c_01.description",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Hot-rolled condition (as-received)",
+          "prediction_value": "Hot-rolled condition"
+        }
+      ],
+      "candidates": [
+        {
+          "key": "processes.proc_15mn9al5ni09c_01.description",
+          "truth_path": "processes.proc_15mn9al5ni09c_01.description",
+          "prediction_path": "processes.proc_15mn9al5ni09c_01.description",
+          "canonical_object": "proc_15mn9al5ni09c_01",
+          "field_path": "description",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Hot-rolled condition (as-received)",
+          "prediction_value": "Hot-rolled condition",
+          "error_type": "correct",
+          "matched": true,
+          "method": "llm_field_judge",
+          "truth_normalized": "hot-rolled condition (as-received)",
+          "prediction_normalized": "hot-rolled condition",
+          "reason": "LLM judged same-field values as semantically matched.",
+          "score": 1.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "processes:0:processes_proc_15mn9al5ni09c_01_description"
+        },
+        {
+          "key": "processes.proc_28mn9al09c_01.description",
+          "truth_path": "processes.proc_28mn9al09c_01.description",
+          "prediction_path": "processes.proc_28mn9al09c_01.description",
+          "canonical_object": "proc_28mn9al09c_01",
+          "field_path": "description",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Hot-rolled condition (as-received)",
+          "prediction_value": "Hot-rolled condition",
+          "error_type": "correct",
+          "matched": true,
+          "method": "llm_field_judge",
+          "truth_normalized": "hot-rolled condition (as-received)",
+          "prediction_normalized": "hot-rolled condition",
+          "reason": "LLM judged same-field values as semantically matched.",
+          "score": 1.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "processes:1:processes_proc_28mn9al09c_01_description"
+        },
+        {
+          "key": "processes.proc_28mn9al5ni09c_01.description",
+          "truth_path": "processes.proc_28mn9al5ni09c_01.description",
+          "prediction_path": "processes.proc_28mn9al5ni09c_01.description",
+          "canonical_object": "proc_28mn9al5ni09c_01",
+          "field_path": "description",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Hot-rolled condition (as-received)",
+          "prediction_value": "Hot-rolled condition",
+          "error_type": "correct",
+          "matched": true,
+          "method": "llm_field_judge",
+          "truth_normalized": "hot-rolled condition (as-received)",
+          "prediction_normalized": "hot-rolled condition",
+          "reason": "LLM judged same-field values as semantically matched.",
+          "score": 1.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "processes:2:processes_proc_28mn9al5ni09c_01_description"
+        }
+      ]
+    },
+    "samples": {
+      "candidate_count": 0,
+      "result_count": 0,
+      "error": null,
+      "raw_response": null,
+      "decisions": {},
+      "input_candidates": [],
+      "candidates": []
+    },
+    "processing_steps": {
+      "candidate_count": 3,
+      "result_count": 3,
+      "error": null,
+      "raw_response": "{\n  \"results\": [\n    {\n      \"id\": \"processing_steps:0:processing_steps_sample_15mn9al5ni09c_processing_steps_notes\",\n      \"matched\": true\n    },\n    {\n      \"id\": \"processing_steps:1:processing_steps_sample_28mn9al09c_processing_steps_notes\",\n      \"matched\": true\n    },\n    {\n      \"id\": \"processing_steps:2:processing_steps_sample_28mn9al5ni09c_processing_steps_notes\",\n      \"matched\": true\n    }\n  ]\n}",
+      "decisions": {
+        "processing_steps:1:processing_steps_sample_28mn9al09c_processing_steps_notes": true,
+        "processing_steps:0:processing_steps_sample_15mn9al5ni09c_processing_steps_notes": true,
+        "processing_steps:2:processing_steps_sample_28mn9al5ni09c_processing_steps_notes": true
+      },
+      "input_candidates": [
+        {
+          "id": "processing_steps:0:processing_steps_sample_15mn9al5ni09c_processing_steps_notes",
+          "section": "processing_steps",
+          "canonical_object": "sample_15mn9al5ni09c",
+          "field": "processing_steps_notes",
+          "field_path": "processing_steps_notes",
+          "truth_path": "processing_steps.sample_15mn9al5ni09c.processing_steps_notes",
+          "prediction_path": "processing_steps.sample_15mn9al5ni09c.processing_steps_notes",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "As-received hot-rolled condition; no specific parameters provided.",
+          "prediction_value": "Alloy studied in hot-rolled condition; specific rolling parameters were not provided in the available text."
+        },
+        {
+          "id": "processing_steps:1:processing_steps_sample_28mn9al09c_processing_steps_notes",
+          "section": "processing_steps",
+          "canonical_object": "sample_28mn9al09c",
+          "field": "processing_steps_notes",
+          "field_path": "processing_steps_notes",
+          "truth_path": "processing_steps.sample_28mn9al09c.processing_steps_notes",
+          "prediction_path": "processing_steps.sample_28mn9al09c.processing_steps_notes",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "As-received hot-rolled condition; no specific parameters provided.",
+          "prediction_value": "Alloy studied in hot-rolled condition; specific rolling parameters were not provided in the available text."
+        },
+        {
+          "id": "processing_steps:2:processing_steps_sample_28mn9al5ni09c_processing_steps_notes",
+          "section": "processing_steps",
+          "canonical_object": "sample_28mn9al5ni09c",
+          "field": "processing_steps_notes",
+          "field_path": "processing_steps_notes",
+          "truth_path": "processing_steps.sample_28mn9al5ni09c.processing_steps_notes",
+          "prediction_path": "processing_steps.sample_28mn9al5ni09c.processing_steps_notes",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "As-received hot-rolled condition; no specific parameters provided.",
+          "prediction_value": "Alloy studied in hot-rolled condition; specific rolling parameters were not provided in the available text."
+        }
+      ],
+      "candidates": [
+        {
+          "key": "processing_steps.sample_15mn9al5ni09c.processing_steps_notes",
+          "truth_path": "processing_steps.sample_15mn9al5ni09c.processing_steps_notes",
+          "prediction_path": "processing_steps.sample_15mn9al5ni09c.processing_steps_notes",
+          "canonical_object": "sample_15mn9al5ni09c",
+          "field_path": "processing_steps_notes",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "As-received hot-rolled condition; no specific parameters provided.",
+          "prediction_value": "Alloy studied in hot-rolled condition; specific rolling parameters were not provided in the available text.",
+          "error_type": "correct",
+          "matched": true,
+          "method": "llm_field_judge",
+          "truth_normalized": "as-received hot-rolled condition; no specific parameters provided.",
+          "prediction_normalized": "alloy studied in hot-rolled condition; specific rolling parameters were not provided in the available text.",
+          "reason": "LLM judged same-field values as semantically matched.",
+          "score": 1.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "processing_steps:0:processing_steps_sample_15mn9al5ni09c_processing_steps_notes"
+        },
+        {
+          "key": "processing_steps.sample_28mn9al09c.processing_steps_notes",
+          "truth_path": "processing_steps.sample_28mn9al09c.processing_steps_notes",
+          "prediction_path": "processing_steps.sample_28mn9al09c.processing_steps_notes",
+          "canonical_object": "sample_28mn9al09c",
+          "field_path": "processing_steps_notes",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "As-received hot-rolled condition; no specific parameters provided.",
+          "prediction_value": "Alloy studied in hot-rolled condition; specific rolling parameters were not provided in the available text.",
+          "error_type": "correct",
+          "matched": true,
+          "method": "llm_field_judge",
+          "truth_normalized": "as-received hot-rolled condition; no specific parameters provided.",
+          "prediction_normalized": "alloy studied in hot-rolled condition; specific rolling parameters were not provided in the available text.",
+          "reason": "LLM judged same-field values as semantically matched.",
+          "score": 1.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "processing_steps:1:processing_steps_sample_28mn9al09c_processing_steps_notes"
+        },
+        {
+          "key": "processing_steps.sample_28mn9al5ni09c.processing_steps_notes",
+          "truth_path": "processing_steps.sample_28mn9al5ni09c.processing_steps_notes",
+          "prediction_path": "processing_steps.sample_28mn9al5ni09c.processing_steps_notes",
+          "canonical_object": "sample_28mn9al5ni09c",
+          "field_path": "processing_steps_notes",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "As-received hot-rolled condition; no specific parameters provided.",
+          "prediction_value": "Alloy studied in hot-rolled condition; specific rolling parameters were not provided in the available text.",
+          "error_type": "correct",
+          "matched": true,
+          "method": "llm_field_judge",
+          "truth_normalized": "as-received hot-rolled condition; no specific parameters provided.",
+          "prediction_normalized": "alloy studied in hot-rolled condition; specific rolling parameters were not provided in the available text.",
+          "reason": "LLM judged same-field values as semantically matched.",
+          "score": 1.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "processing_steps:2:processing_steps_sample_28mn9al5ni09c_processing_steps_notes"
+        }
+      ]
+    },
+    "structures": {
+      "candidate_count": 2,
+      "result_count": 2,
+      "error": null,
+      "raw_response": "{\n  \"results\": [\n    {\"id\": \"structures:0:structures_sample_15mn9al5ni09c_overall_structure\", \"matched\": true},\n    {\"id\": \"structures:1:structures_sample_28mn9al09c_overall_structure\", \"matched\": true}\n  ]\n}",
+      "decisions": {
+        "structures:0:structures_sample_15mn9al5ni09c_overall_structure": true,
+        "structures:1:structures_sample_28mn9al09c_overall_structure": true
+      },
+      "input_candidates": [
+        {
+          "id": "structures:0:structures_sample_15mn9al5ni09c_overall_structure",
+          "section": "structures",
+          "canonical_object": "sample_15mn9al5ni09c",
+          "field": "overall_structure",
+          "field_path": "overall_structure",
+          "truth_path": "structures.sample_15mn9al5ni09c.overall_structure",
+          "prediction_path": "structures.sample_15mn9al5ni09c.overall_structure",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Austenitic (γ) matrix with coarser κ-carbides and B2 intermetallic phase exhibiting bamboo‑like stringer and polygonal particle morphology.",
+          "prediction_value": "γ-matrix with coarser κ-carbides and B2 intermetallic phase in bamboo-like stringer and polygonal particle morphology"
+        },
+        {
+          "id": "structures:1:structures_sample_28mn9al09c_overall_structure",
+          "section": "structures",
+          "canonical_object": "sample_28mn9al09c",
+          "field": "overall_structure",
+          "field_path": "overall_structure",
+          "truth_path": "structures.sample_28mn9al09c.overall_structure",
+          "prediction_path": "structures.sample_28mn9al09c.overall_structure",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Austenitic (γ) matrix with fine κ-carbides (L12 ordered (FeMn)3AlC).",
+          "prediction_value": "γ-matrix with fine κ-carbides"
+        }
+      ],
+      "candidates": [
+        {
+          "key": "structures.sample_15mn9al5ni09c.overall_structure",
+          "truth_path": "structures.sample_15mn9al5ni09c.overall_structure",
+          "prediction_path": "structures.sample_15mn9al5ni09c.overall_structure",
+          "canonical_object": "sample_15mn9al5ni09c",
+          "field_path": "overall_structure",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Austenitic (γ) matrix with coarser κ-carbides and B2 intermetallic phase exhibiting bamboo‑like stringer and polygonal particle morphology.",
+          "prediction_value": "γ-matrix with coarser κ-carbides and B2 intermetallic phase in bamboo-like stringer and polygonal particle morphology",
+          "error_type": "correct",
+          "matched": true,
+          "method": "llm_field_judge",
+          "truth_normalized": "austenitic (γ) matrix with coarser κ-carbides and b2 intermetallic phase exhibiting bamboo‐like stringer and polygonal particle morphology.",
+          "prediction_normalized": "γ-matrix with coarser κ-carbides and b2 intermetallic phase in bamboo-like stringer and polygonal particle morphology",
+          "reason": "LLM judged same-field values as semantically matched.",
+          "score": 1.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "structures:0:structures_sample_15mn9al5ni09c_overall_structure"
+        },
+        {
+          "key": "structures.sample_28mn9al09c.overall_structure",
+          "truth_path": "structures.sample_28mn9al09c.overall_structure",
+          "prediction_path": "structures.sample_28mn9al09c.overall_structure",
+          "canonical_object": "sample_28mn9al09c",
+          "field_path": "overall_structure",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Austenitic (γ) matrix with fine κ-carbides (L12 ordered (FeMn)3AlC).",
+          "prediction_value": "γ-matrix with fine κ-carbides",
+          "error_type": "correct",
+          "matched": true,
+          "method": "llm_field_judge",
+          "truth_normalized": "austenitic (γ) matrix with fine κ-carbides (l12 ordered (femn)3alc).",
+          "prediction_normalized": "γ-matrix with fine κ-carbides",
+          "reason": "LLM judged same-field values as semantically matched.",
+          "score": 1.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "structures:1:structures_sample_28mn9al09c_overall_structure"
+        }
+      ]
+    },
+    "interfaces": {
+      "candidate_count": 1,
+      "result_count": 1,
+      "error": null,
+      "raw_response": "{\n  \"results\": [\n    {\n      \"id\": \"interfaces:0:interfaces_sample_15mn9al5ni09c_defect_interaction_0_quality_description\",\n      \"matched\": true\n    }\n  ]\n}",
+      "decisions": {
+        "interfaces:0:interfaces_sample_15mn9al5ni09c_defect_interaction_0_quality_description": true
+      },
+      "input_candidates": [
+        {
+          "id": "interfaces:0:interfaces_sample_15mn9al5ni09c_defect_interaction_0_quality_description",
+          "section": "interfaces",
+          "canonical_object": "sample_15mn9al5ni09c",
+          "field": "quality_description",
+          "field_path": "defect_interaction[0].quality_description",
+          "truth_path": "interfaces.sample_15mn9al5ni09c.defect_interaction[0].quality_description",
+          "prediction_path": "interfaces.sample_15mn9al5ni09c.defect_interaction[0].quality_description",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "B2 particles crack under non-favourable OR due to strain accumulation, controlling ductility.",
+          "prediction_value": "non-favourable orientation relationship controlled ductility by strain accumulation and B2-cracking"
+        }
+      ],
+      "candidates": [
+        {
+          "key": "interfaces.sample_15mn9al5ni09c.defect_interaction[0].quality_description",
+          "truth_path": "interfaces.sample_15mn9al5ni09c.defect_interaction[0].quality_description",
+          "prediction_path": "interfaces.sample_15mn9al5ni09c.defect_interaction[0].quality_description",
+          "canonical_object": "sample_15mn9al5ni09c",
+          "field_path": "defect_interaction[0].quality_description",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "B2 particles crack under non-favourable OR due to strain accumulation, controlling ductility.",
+          "prediction_value": "non-favourable orientation relationship controlled ductility by strain accumulation and B2-cracking",
+          "error_type": "correct",
+          "matched": true,
+          "method": "llm_field_judge",
+          "truth_normalized": "b2 particles crack under non-favourable or due to strain accumulation, controlling ductility.",
+          "prediction_normalized": "non-favourable orientation relationship controlled ductility by strain accumulation and b2-cracking",
+          "reason": "LLM judged same-field values as semantically matched.",
+          "score": 1.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "interfaces:0:interfaces_sample_15mn9al5ni09c_defect_interaction_0_quality_description"
+        }
+      ]
+    },
+    "properties": {
+      "candidate_count": 0,
+      "result_count": 0,
+      "error": null,
+      "raw_response": null,
+      "decisions": {},
+      "input_candidates": [],
+      "candidates": []
+    },
+    "performance": {
+      "candidate_count": 0,
+      "result_count": 0,
+      "error": null,
+      "raw_response": null,
+      "decisions": {},
+      "input_candidates": [],
+      "candidates": []
+    },
+    "characterization_methods": {
+      "candidate_count": 2,
+      "result_count": 2,
+      "error": null,
+      "raw_response": "{\n  \"results\": [\n    {\n      \"id\": \"characterization_methods:0:characterization_methods_sample_15mn9al5ni09c_key_findings\",\n      \"matched\": false\n    },\n    {\n      \"id\": \"characterization_methods:1:characterization_methods_sample_15mn9al5ni09c_purpose\",\n      \"matched\": false\n    }\n  ]\n}",
+      "decisions": {
+        "characterization_methods:1:characterization_methods_sample_15mn9al5ni09c_purpose": false,
+        "characterization_methods:0:characterization_methods_sample_15mn9al5ni09c_key_findings": false
+      },
+      "input_candidates": [
+        {
+          "id": "characterization_methods:0:characterization_methods_sample_15mn9al5ni09c_key_findings",
+          "section": "characterization_methods",
+          "canonical_object": "sample_15mn9al5ni09c",
+          "field": "key_findings",
+          "field_path": "key_findings",
+          "truth_path": "characterization_methods.sample_15mn9al5ni09c.key_findings",
+          "prediction_path": "characterization_methods.sample_15mn9al5ni09c.key_findings",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Strain hardening behaviour differences elucidated based on dislocation substructure evolution.",
+          "prediction_value": "hardness of the γ-matrix and B2 phase were similar; B2 grains exhibited distinct pop-in events indicating incipient plasticity; γ-matrix and B2 co-deform near yield"
+        },
+        {
+          "id": "characterization_methods:1:characterization_methods_sample_15mn9al5ni09c_purpose",
+          "section": "characterization_methods",
+          "canonical_object": "sample_15mn9al5ni09c",
+          "field": "purpose",
+          "field_path": "purpose",
+          "truth_path": "characterization_methods.sample_15mn9al5ni09c.purpose",
+          "prediction_path": "characterization_methods.sample_15mn9al5ni09c.purpose",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Examine dislocation substructure evolution to elucidate strain hardening differences",
+          "prediction_value": "evaluate hardness and deformation behaviour of γ-matrix and B2 phase"
+        }
+      ],
+      "candidates": [
+        {
+          "key": "characterization_methods.sample_15mn9al5ni09c.key_findings",
+          "truth_path": "characterization_methods.sample_15mn9al5ni09c.key_findings",
+          "prediction_path": "characterization_methods.sample_15mn9al5ni09c.key_findings",
+          "canonical_object": "sample_15mn9al5ni09c",
+          "field_path": "key_findings",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Strain hardening behaviour differences elucidated based on dislocation substructure evolution.",
+          "prediction_value": "hardness of the γ-matrix and B2 phase were similar; B2 grains exhibited distinct pop-in events indicating incipient plasticity; γ-matrix and B2 co-deform near yield",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "strain hardening behaviour differences elucidated based on dislocation substructure evolution.",
+          "prediction_normalized": "hardness of the γ-matrix and b2 phase were similar; b2 grains exhibited distinct pop-in events indicating incipient plasticity; γ-matrix and b2 co-deform near yield",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "characterization_methods:0:characterization_methods_sample_15mn9al5ni09c_key_findings"
+        },
+        {
+          "key": "characterization_methods.sample_15mn9al5ni09c.purpose",
+          "truth_path": "characterization_methods.sample_15mn9al5ni09c.purpose",
+          "prediction_path": "characterization_methods.sample_15mn9al5ni09c.purpose",
+          "canonical_object": "sample_15mn9al5ni09c",
+          "field_path": "purpose",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "Examine dislocation substructure evolution to elucidate strain hardening differences",
+          "prediction_value": "evaluate hardness and deformation behaviour of γ-matrix and B2 phase",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "examine dislocation substructure evolution to elucidate strain hardening differences",
+          "prediction_normalized": "evaluate hardness and deformation behaviour of γ-matrix and b2 phase",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "characterization_methods:1:characterization_methods_sample_15mn9al5ni09c_purpose"
+        }
+      ]
+    },
+    "computational_details": {
+      "candidate_count": 0,
+      "result_count": 0,
+      "error": null,
+      "raw_response": null,
+      "decisions": {},
+      "input_candidates": [],
+      "candidates": []
+    },
+    "unmapped_findings": {
+      "candidate_count": 3,
+      "result_count": 3,
+      "error": null,
+      "raw_response": "{\n  \"results\": [\n    {\"id\": \"unmapped_findings:0:unmapped_findings_idx_0_value\", \"matched\": false},\n    {\"id\": \"unmapped_findings:1:unmapped_findings_idx_1_value\", \"matched\": false},\n    {\"id\": \"unmapped_findings:2:unmapped_findings_idx_2_value\", \"matched\": false}\n  ]\n}",
+      "decisions": {
+        "unmapped_findings:0:unmapped_findings_idx_0_value": false,
+        "unmapped_findings:2:unmapped_findings_idx_2_value": false,
+        "unmapped_findings:1:unmapped_findings_idx_1_value": false
+      },
+      "input_candidates": [
+        {
+          "id": "unmapped_findings:0:unmapped_findings_idx_0_value",
+          "section": "unmapped_findings",
+          "canonical_object": "idx_0",
+          "field": "value",
+          "field_path": "value",
+          "truth_path": "unmapped_findings.idx_0.value",
+          "prediction_path": "unmapped_findings.idx_0.value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "The three hot‑rolled austenitic low‑density steels investigated are Fe-28Mn-9Al-0.9C (Ni‑free), Fe-28Mn-9Al-5Ni-0.9C, and Fe-15Mn-9Al-5Ni-0.9C.",
+          "prediction_value": "B2-containing alloy exhibited higher strength with reduced tensile ductility than the B2-free alloy; quantitative values and specific sample pairing were not detailed in the provided text."
+        },
+        {
+          "id": "unmapped_findings:1:unmapped_findings_idx_1_value",
+          "section": "unmapped_findings",
+          "canonical_object": "idx_1",
+          "field": "value",
+          "field_path": "value",
+          "truth_path": "unmapped_findings.idx_1.value",
+          "prediction_path": "unmapped_findings.idx_1.value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "In the Ni‑free alloy, microstructure consists of γ‑matrix with fine κ‑carbides.",
+          "prediction_value": "Microstructure of the Fe-28Mn-9Al-5Ni-0.9C alloy was not explicitly described in the provided text excerpt."
+        },
+        {
+          "id": "unmapped_findings:2:unmapped_findings_idx_2_value",
+          "section": "unmapped_findings",
+          "canonical_object": "idx_2",
+          "field": "value",
+          "field_path": "value",
+          "truth_path": "unmapped_findings.idx_2.value",
+          "prediction_path": "unmapped_findings.idx_2.value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "In the Ni‑containing low‑Mn alloy (Fe-15Mn-9Al-5Ni-0.9C), coarser κ‑carbides and B2 phase are present; B2 appears as bamboo‑like stringers and polygonal particles in the γ‑matrix.",
+          "prediction_value": "The provided text excerpt is truncated and does not include figure captions, tables, or explicit quantitative mechanical property values such as yield strength, ultimate tensile strength, elongation, or hardness numbers."
+        }
+      ],
+      "candidates": [
+        {
+          "key": "unmapped_findings.idx_0.value",
+          "truth_path": "unmapped_findings.idx_0.value",
+          "prediction_path": "unmapped_findings.idx_0.value",
+          "canonical_object": "idx_0",
+          "field_path": "value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "The three hot‑rolled austenitic low‑density steels investigated are Fe-28Mn-9Al-0.9C (Ni‑free), Fe-28Mn-9Al-5Ni-0.9C, and Fe-15Mn-9Al-5Ni-0.9C.",
+          "prediction_value": "B2-containing alloy exhibited higher strength with reduced tensile ductility than the B2-free alloy; quantitative values and specific sample pairing were not detailed in the provided text.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "the three hot‐rolled austenitic low‐density steels investigated are fe-28mn-9al-0.9c (ni‐free), fe-28mn-9al-5ni-0.9c, and fe-15mn-9al-5ni-0.9c.",
+          "prediction_normalized": "b2-containing alloy exhibited higher strength with reduced tensile ductility than the b2-free alloy; quantitative values and specific sample pairing were not detailed in the provided text.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "unmapped_findings:0:unmapped_findings_idx_0_value"
+        },
+        {
+          "key": "unmapped_findings.idx_1.value",
+          "truth_path": "unmapped_findings.idx_1.value",
+          "prediction_path": "unmapped_findings.idx_1.value",
+          "canonical_object": "idx_1",
+          "field_path": "value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "In the Ni‑free alloy, microstructure consists of γ‑matrix with fine κ‑carbides.",
+          "prediction_value": "Microstructure of the Fe-28Mn-9Al-5Ni-0.9C alloy was not explicitly described in the provided text excerpt.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "in the ni‐free alloy, microstructure consists of γ‐matrix with fine κ‐carbides.",
+          "prediction_normalized": "microstructure of the fe-28mn-9al-5ni-0.9c alloy was not explicitly described in the provided text excerpt.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "unmapped_findings:1:unmapped_findings_idx_1_value"
+        },
+        {
+          "key": "unmapped_findings.idx_2.value",
+          "truth_path": "unmapped_findings.idx_2.value",
+          "prediction_path": "unmapped_findings.idx_2.value",
+          "canonical_object": "idx_2",
+          "field_path": "value",
+          "same_sample": true,
+          "same_path": true,
+          "truth_value": "In the Ni‑containing low‑Mn alloy (Fe-15Mn-9Al-5Ni-0.9C), coarser κ‑carbides and B2 phase are present; B2 appears as bamboo‑like stringers and polygonal particles in the γ‑matrix.",
+          "prediction_value": "The provided text excerpt is truncated and does not include figure captions, tables, or explicit quantitative mechanical property values such as yield strength, ultimate tensile strength, elongation, or hardness numbers.",
+          "error_type": "value_mismatch",
+          "matched": false,
+          "method": "llm_field_judge",
+          "truth_normalized": "in the ni‐containing low‐mn alloy (fe-15mn-9al-5ni-0.9c), coarser κ‐carbides and b2 phase are present; b2 appears as bamboo‐like stringers and polygonal particles in the γ‐matrix.",
+          "prediction_normalized": "the provided text excerpt is truncated and does not include figure captions, tables, or explicit quantitative mechanical property values such as yield strength, ultimate tensile strength, elongation, or hardness numbers.",
+          "reason": "LLM judged same-field values as not semantically matched.",
+          "score": 0.0,
+          "needs_llm_judge": false,
+          "llm_input_id": "unmapped_findings:2:unmapped_findings_idx_2_value"
+        }
+      ]
+    }
+  }
+}

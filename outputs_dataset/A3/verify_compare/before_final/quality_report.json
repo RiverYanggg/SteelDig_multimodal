@@ -1,0 +1,4410 @@
+{
+  "paper_id": "A3",
+  "target_kind": "final_original",
+  "target_path": "/Users/mac/Desktop/SteelDig/SteelDig_multimodal/outputs_dataset/A3/final/text_extraction.json",
+  "paper_score": 92.80602520750077,
+  "score_formula": {
+    "correctness_mapping": {
+      "yes": 1.0,
+      "partial": 0.6,
+      "unknown": 0.3,
+      "no": 0.0
+    },
+    "field_score": "correctness_score * evidence_confidence * 100",
+    "sample_score": "sum(field_score * field_weight) / sum(field_weight)",
+    "paper_score": "sum(sample_score * sample_weight) / sum(sample_weight)",
+    "sample_weight": "sum(field_weight for fields in this sample group)",
+    "gate_rule": "if structure gate fails, paper_score = 0",
+    "field_weight_rules": {
+      "structures/properties/performance": 1.5,
+      "samples/processing_steps/interfaces": 1.3,
+      "papers/unmapped_findings": 0.7,
+      "default": 1.0
+    }
+  },
+  "field_count": 262,
+  "sample_count": 13,
+  "gate": {
+    "ok": true,
+    "issue_count": 0,
+    "error_count": 0,
+    "warning_count": 0,
+    "issues": []
+  },
+  "llm_used": true,
+  "llm_error_count": 0,
+  "sample_reports": [
+    {
+      "sample_id": "paper_level",
+      "sample_score": 97.32551020408162,
+      "sample_weight": 98.0,
+      "field_count": 104,
+      "correct_yes_count": 99,
+      "unknown_count": 1,
+      "no_count": 0,
+      "fields": [
+        {
+          "field_id": "F00001",
+          "sample_id": "paper_level",
+          "section": "papers",
+          "path": "papers.A3.authors[0]",
+          "value": "Bidyapati Mishra",
+          "field_weight": 0.7,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0003"
+          ],
+          "reason": "作者列表中第一个为Bidyapati Mishra，与证据b0003一致。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00002",
+          "sample_id": "paper_level",
+          "section": "papers",
+          "path": "papers.A3.authors[1]",
+          "value": "Rajdeep Sarkar",
+          "field_weight": 0.7,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0003"
+          ],
+          "reason": "作者列表中第二个为Rajdeep Sarkar，与证据b0003一致。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00003",
+          "sample_id": "paper_level",
+          "section": "papers",
+          "path": "papers.A3.authors[2]",
+          "value": "Vajinder Singh",
+          "field_weight": 0.7,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0003"
+          ],
+          "reason": "作者列表中第三个为Vajinder Singh，与证据b0003一致。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00004",
+          "sample_id": "paper_level",
+          "section": "papers",
+          "path": "papers.A3.authors[3]",
+          "value": "Deepak Kumar",
+          "field_weight": 0.7,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0003"
+          ],
+          "reason": "作者列表中第四个为Deepak Kumar，与证据b0003一致。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00005",
+          "sample_id": "paper_level",
+          "section": "papers",
+          "path": "papers.A3.authors[4]",
+          "value": "A. Mukhopadhyay",
+          "field_weight": 0.7,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0003"
+          ],
+          "reason": "作者列表中第五个为A. Mukhopadhyay，与证据b0003一致。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00006",
+          "sample_id": "paper_level",
+          "section": "papers",
+          "path": "papers.A3.authors[5]",
+          "value": "V. Madhu",
+          "field_weight": 0.7,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0003"
+          ],
+          "reason": "作者列表中第六个为V. Madhu，与证据b0003一致。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00007",
+          "sample_id": "paper_level",
+          "section": "papers",
+          "path": "papers.A3.authors[6]",
+          "value": "M.J.N.V. Prasad",
+          "field_weight": 0.7,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0003"
+          ],
+          "reason": "作者列表中第七个为M.J.N.V. Prasad，与证据b0003一致。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00008",
+          "sample_id": "paper_level",
+          "section": "papers",
+          "path": "papers.A3.keywords[0]",
+          "value": "Low-density steels",
+          "field_weight": 0.7,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0007"
+          ],
+          "reason": "关键词列表中第一个为Low-density steels，与证据b0007一致。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00009",
+          "sample_id": "paper_level",
+          "section": "papers",
+          "path": "papers.A3.keywords[1]",
+          "value": "Austenite",
+          "field_weight": 0.7,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0008"
+          ],
+          "reason": "关键词列表中第二个为Austenite，与证据b0008一致。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00010",
+          "sample_id": "paper_level",
+          "section": "papers",
+          "path": "papers.A3.keywords[2]",
+          "value": "Cold rolling",
+          "field_weight": 0.7,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0009"
+          ],
+          "reason": "关键词列表中第三个为Cold rolling，与证据b0009一致。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00011",
+          "sample_id": "paper_level",
+          "section": "papers",
+          "path": "papers.A3.keywords[3]",
+          "value": "Microstructure",
+          "field_weight": 0.7,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0010"
+          ],
+          "reason": "关键词列表中第四个为Microstructure，与证据b0010一致。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00012",
+          "sample_id": "paper_level",
+          "section": "papers",
+          "path": "papers.A3.keywords[4]",
+          "value": "Tensile properties",
+          "field_weight": 0.7,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0011"
+          ],
+          "reason": "关键词列表中第五个为Tensile properties，与证据b0011一致。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00013",
+          "sample_id": "paper_level",
+          "section": "papers",
+          "path": "papers.A3.paper_scope",
+          "value": "Investigate the effects of alloy composition, cold rolling and heat treatment temperature on concurrent precipitation of κ-carbide/B2 particles, recrystallization, and mechanical properties in Fe-Mn-Al-C-(Ni) austenitic low-density steels.",
+          "field_weight": 0.7,
+          "candidate_evidence_refs": [],
+          "is_correct": "partial",
+          "evidence_confidence": 0.8,
+          "evidence_refs": [
+            "b0013"
+          ],
+          "reason": "摘要b0013支持主要研究目的，但字段值省略了温度范围(973-1173 K)，表达略有偏差。",
+          "field_score": 48.0
+        },
+        {
+          "field_id": "F00014",
+          "sample_id": "paper_level",
+          "section": "papers",
+          "path": "papers.A3.research_type",
+          "value": "experimental",
+          "field_weight": 0.7,
+          "candidate_evidence_refs": [],
+          "is_correct": "unknown",
+          "evidence_confidence": 0.3,
+          "evidence_refs": [
+            "b0013"
+          ],
+          "reason": "论文描述实验过程，但未明确声明研究类型为'experimental'。",
+          "field_score": 9.0
+        },
+        {
+          "field_id": "F00015",
+          "sample_id": "paper_level",
+          "section": "papers",
+          "path": "papers.A3.title",
+          "value": "Effect of cold rolling and subsequent heat treatment on microstructural evolution and mechanical properties of Fe-Mn-Al-C-(Ni) based austenitic low-density steels",
+          "field_weight": 0.7,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0001"
+          ],
+          "reason": "标题与证据b0001完全一致。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00016",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_15mn5ni.aliases[0]",
+          "value": "15Mn5Ni",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0018"
+          ],
+          "reason": "别名15Mn5Ni在b0018中明确提及。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00017",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_15mn5ni.aliases[1]",
+          "value": "Fe-15Mn-9Al-0.9C-5Ni",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "partial",
+          "evidence_confidence": 0.9,
+          "evidence_refs": [
+            "b0018"
+          ],
+          "reason": "别名Fe-15Mn-9Al-0.9C-5Ni与b0018标称一致，但表1实际成分有微小差异(Al 9.8, Ni 4.1)。",
+          "field_score": 54.0
+        },
+        {
+          "field_id": "F00018",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_15mn5ni.alloy_name",
+          "value": "15Mn5Ni",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0018"
+          ],
+          "reason": "合金名称15Mn5Ni在b0018中明确提及。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00019",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_15mn5ni.alloying_elements[0]",
+          "value": "Mn",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0023"
+          ],
+          "reason": "合金元素Mn在表1中明确列出。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00020",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_15mn5ni.alloying_elements[1]",
+          "value": "Al",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0023"
+          ],
+          "reason": "合金元素Al在表1中明确列出。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00021",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_15mn5ni.alloying_elements[2]",
+          "value": "C",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0023"
+          ],
+          "reason": "合金元素C在表1中明确列出。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00022",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_15mn5ni.alloying_elements[3]",
+          "value": "Ni",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0023"
+          ],
+          "reason": "合金元素Ni在表1中明确列出。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00023",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_15mn5ni.alloys_notes",
+          "value": "Nickel-containing low-density steel with lower Mn.",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "partial",
+          "evidence_confidence": 0.7,
+          "evidence_refs": [
+            "b0018",
+            "b0023"
+          ],
+          "reason": "笔记内容可从合金成分及描述推断，但无直接明确陈述。",
+          "field_score": 42.0
+        },
+        {
+          "field_id": "F00024",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_15mn5ni.base_element",
+          "value": "Fe",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0023"
+          ],
+          "reason": "基体元素Fe在表1中为Balance。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00025",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_15mn5ni.nominal_composition[al].element",
+          "value": "Al",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0023"
+          ],
+          "reason": "表1中15Mn5Ni的Al元素。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00026",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_15mn5ni.nominal_composition[al].weight_percent",
+          "value": "9.8 ± 0.05",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0023"
+          ],
+          "reason": "表1中15Mn5Ni的Al含量9.8 ± 0.05。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00027",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_15mn5ni.nominal_composition[c].element",
+          "value": "C",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0023"
+          ],
+          "reason": "表1中15Mn5Ni的C元素。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00028",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_15mn5ni.nominal_composition[c].weight_percent",
+          "value": "0.9 ± 0.01",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0023"
+          ],
+          "reason": "表1中15Mn5Ni的C含量0.9 ± 0.01。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00029",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_15mn5ni.nominal_composition[fe].element",
+          "value": "Fe",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0023"
+          ],
+          "reason": "表1中15Mn5Ni的Fe元素。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00030",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_15mn5ni.nominal_composition[fe].weight_percent",
+          "value": "Balance",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0023"
+          ],
+          "reason": "表1中15Mn5Ni的Fe含量为Balance。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00031",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_15mn5ni.nominal_composition[mn].element",
+          "value": "Mn",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0023"
+          ],
+          "reason": "表1中15Mn5Ni的Mn元素。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00032",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_15mn5ni.nominal_composition[mn].weight_percent",
+          "value": "14.7 ± 0.3",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0023"
+          ],
+          "reason": "表1中15Mn5Ni的Mn含量14.7 ± 0.3。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00033",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_15mn5ni.nominal_composition[ni].element",
+          "value": "Ni",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0023"
+          ],
+          "reason": "表1中15Mn5Ni的Ni元素。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00034",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_15mn5ni.nominal_composition[ni].weight_percent",
+          "value": "4.1 ± 0.05",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0023"
+          ],
+          "reason": "表1中15Mn5Ni的Ni含量4.1 ± 0.05。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00035",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_28mn0ni.aliases[0]",
+          "value": "28Mn0Ni",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0018"
+          ],
+          "reason": "别名28Mn0Ni在b0018中明确提及。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00036",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_28mn0ni.aliases[1]",
+          "value": "Fe-28Mn-9Al-0.9C",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0018"
+          ],
+          "reason": "别名Fe-28Mn-9Al-0.9C与b0018一致。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00037",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_28mn0ni.alloy_name",
+          "value": "28Mn0Ni",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0018"
+          ],
+          "reason": "合金名称28Mn0Ni在b0018中明确提及。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00038",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_28mn0ni.alloying_elements[0]",
+          "value": "Mn",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0023"
+          ],
+          "reason": "合金元素Mn在表1中明确列出。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00039",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_28mn0ni.alloying_elements[1]",
+          "value": "Al",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0023"
+          ],
+          "reason": "合金元素Al在表1中明确列出。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00040",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_28mn0ni.alloying_elements[2]",
+          "value": "C",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0023"
+          ],
+          "reason": "合金元素C在表1中明确列出。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00041",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_28mn0ni.alloys_notes",
+          "value": "Nickel-free low-density steel.",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0018"
+          ],
+          "reason": "笔记指Ni-free，b0018明确提到Ni-free LDS。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00042",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_28mn0ni.base_element",
+          "value": "Fe",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0023"
+          ],
+          "reason": "基体元素Fe在表1中为Balance。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00043",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_28mn0ni.nominal_composition[al].element",
+          "value": "Al",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0023"
+          ],
+          "reason": "表1中28Mn0Ni的Al元素。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00044",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_28mn0ni.nominal_composition[al].weight_percent",
+          "value": "9.0 ± 0.05",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0023"
+          ],
+          "reason": "表1中28Mn0Ni的Al含量9.0 ± 0.05。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00045",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_28mn0ni.nominal_composition[c].element",
+          "value": "C",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0023"
+          ],
+          "reason": "表1中28Mn0Ni的C元素。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00046",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_28mn0ni.nominal_composition[c].weight_percent",
+          "value": "0.9 ± 0.01",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0023"
+          ],
+          "reason": "表1中28Mn0Ni的C含量0.9 ± 0.01。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00047",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_28mn0ni.nominal_composition[fe].element",
+          "value": "Fe",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0023"
+          ],
+          "reason": "表1中28Mn0Ni的Fe元素。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00048",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_28mn0ni.nominal_composition[fe].weight_percent",
+          "value": "Balance",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0023"
+          ],
+          "reason": "表1中28Mn0Ni的Fe含量为Balance。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00049",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_28mn0ni.nominal_composition[mn].element",
+          "value": "Mn",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0023"
+          ],
+          "reason": "表1中28Mn0Ni的Mn元素。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00050",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_28mn0ni.nominal_composition[mn].weight_percent",
+          "value": "28.3 ± 0.4",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0023"
+          ],
+          "reason": "表1中28Mn0Ni的Mn含量28.3 ± 0.4。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00051",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_28mn5ni.aliases[0]",
+          "value": "28Mn5Ni",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0018"
+          ],
+          "reason": "别名28Mn5Ni在b0018中明确提及。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00052",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_28mn5ni.aliases[1]",
+          "value": "Fe-28Mn-9Al-0.9C-5Ni",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0018"
+          ],
+          "reason": "别名Fe-28Mn-9Al-0.9C-5Ni与b0018一致。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00053",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_28mn5ni.alloy_name",
+          "value": "28Mn5Ni",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0018"
+          ],
+          "reason": "合金名称28Mn5Ni在b0018中明确提及。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00054",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_28mn5ni.alloying_elements[0]",
+          "value": "Mn",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0023"
+          ],
+          "reason": "合金元素Mn在表1中明确列出。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00055",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_28mn5ni.alloying_elements[1]",
+          "value": "Al",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0023"
+          ],
+          "reason": "合金元素Al在表1中明确列出。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00056",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_28mn5ni.alloying_elements[2]",
+          "value": "C",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0023"
+          ],
+          "reason": "合金元素C在表1中明确列出。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00057",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_28mn5ni.alloying_elements[3]",
+          "value": "Ni",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0023"
+          ],
+          "reason": "合金元素Ni在表1中明确列出。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00058",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_28mn5ni.alloys_notes",
+          "value": "Nickel-containing low-density steel with high Mn.",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "partial",
+          "evidence_confidence": 0.7,
+          "evidence_refs": [
+            "b0018",
+            "b0023"
+          ],
+          "reason": "笔记可从成分推断，但无直接明确陈述。",
+          "field_score": 42.0
+        },
+        {
+          "field_id": "F00059",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_28mn5ni.base_element",
+          "value": "Fe",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0023"
+          ],
+          "reason": "基体元素Fe在表1中为Balance。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00060",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_28mn5ni.nominal_composition[al].element",
+          "value": "Al",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0023"
+          ],
+          "reason": "表1中28Mn5Ni的Al元素。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00061",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_28mn5ni.nominal_composition[al].weight_percent",
+          "value": "8.6 ± 0.04",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0023"
+          ],
+          "reason": "表1中28Mn5Ni的Al含量8.6 ± 0.04。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00062",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_28mn5ni.nominal_composition[c].element",
+          "value": "C",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0023"
+          ],
+          "reason": "表1中28Mn5Ni的C元素。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00063",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_28mn5ni.nominal_composition[c].weight_percent",
+          "value": "0.9 ± 0.01",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0023"
+          ],
+          "reason": "表1中28Mn5Ni的C含量0.9 ± 0.01。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00064",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_28mn5ni.nominal_composition[fe].element",
+          "value": "Fe",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0023"
+          ],
+          "reason": "表1中28Mn5Ni的Fe元素。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00065",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_28mn5ni.nominal_composition[fe].weight_percent",
+          "value": "Balance",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0023"
+          ],
+          "reason": "表1中28Mn5Ni的Fe含量为Balance。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00066",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_28mn5ni.nominal_composition[mn].element",
+          "value": "Mn",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0023"
+          ],
+          "reason": "表1中28Mn5Ni的Mn元素。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00067",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_28mn5ni.nominal_composition[mn].weight_percent",
+          "value": "28.1 ± 0.4",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0023"
+          ],
+          "reason": "表1中28Mn5Ni的Mn含量28.1 ± 0.4。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00068",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_28mn5ni.nominal_composition[ni].element",
+          "value": "Ni",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0023"
+          ],
+          "reason": "表1中28Mn5Ni的Ni元素。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00069",
+          "sample_id": "paper_level",
+          "section": "alloys",
+          "path": "alloys.alloy_28mn5ni.nominal_composition[ni].weight_percent",
+          "value": "4.8 ± 0.04",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0023"
+          ],
+          "reason": "表1中28Mn5Ni的Ni含量4.8 ± 0.04。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00070",
+          "sample_id": "paper_level",
+          "section": "processes",
+          "path": "processes.proc_15mn5ni_hr.description",
+          "value": "Homogenized at 1423 K for 2.5 h and hot rolled at 1323 K.",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0021"
+          ],
+          "reason": "热加工描述与b0021一致。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00071",
+          "sample_id": "paper_level",
+          "section": "processes",
+          "path": "processes.proc_15mn5ni_hr.processes_notes",
+          "value": "Referred as HR condition. Contains B2 stringers.",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0021",
+            "b0032"
+          ],
+          "reason": "HR condition和B2 stringers在b0021和b0032中提及。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00072",
+          "sample_id": "paper_level",
+          "section": "processes",
+          "path": "processes.proc_15mn5ni_hr_cr.description",
+          "value": "Homogenized at 1423 K for 2.5 h, hot rolled at 1323 K, then cold rolled to ~50% reduction in thickness at room temperature.",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0021"
+          ],
+          "reason": "冷轧50%描述与b0021一致。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00073",
+          "sample_id": "paper_level",
+          "section": "processes",
+          "path": "processes.proc_15mn5ni_hr_cr.processes_notes",
+          "value": "Referred as HR+CR condition. Experienced cracking beyond 50% reduction.",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0021"
+          ],
+          "reason": "超过50%开裂在b0021中明确提及。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00074",
+          "sample_id": "paper_level",
+          "section": "processes",
+          "path": "processes.proc_15mn5ni_hr_cr_1023.description",
+          "value": "Homogenized at 1423 K for 2.5 h, hot rolled at 1323 K, cold rolled 50%, then heat treated at 1023 K for 1 h followed by water quenching.",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0021"
+          ],
+          "reason": "1023 K热处理包含在b0021的温度范围内，且在结果部分有明确提及。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00075",
+          "sample_id": "paper_level",
+          "section": "processes",
+          "path": "processes.proc_15mn5ni_hr_cr_1073.description",
+          "value": "Homogenized at 1423 K for 2.5 h, hot rolled at 1323 K, cold rolled 50%, then heat treated at 1073 K for 1 h followed by water quenching.",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0021"
+          ],
+          "reason": "1073 K热处理包含在b0021的温度范围内。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00076",
+          "sample_id": "paper_level",
+          "section": "processes",
+          "path": "processes.proc_15mn5ni_hr_cr_1173.description",
+          "value": "Homogenized at 1423 K for 2.5 h, hot rolled at 1323 K, cold rolled 50%, then heat treated at 1173 K for 1 h followed by water quenching.",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0021"
+          ],
+          "reason": "1173 K热处理包含在b0021的温度范围内。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00077",
+          "sample_id": "paper_level",
+          "section": "processes",
+          "path": "processes.proc_15mn5ni_hr_cr_1273.description",
+          "value": "Homogenized at 1423 K for 2.5 h, hot rolled at 1323 K, cold rolled 50%, then heat treated at 1273 K for 1 h followed by water quenching.",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0021"
+          ],
+          "reason": "1273 K热处理包含在b0021的温度范围内。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00078",
+          "sample_id": "paper_level",
+          "section": "processes",
+          "path": "processes.proc_15mn5ni_hr_cr_873.description",
+          "value": "Homogenized at 1423 K for 2.5 h, hot rolled at 1323 K, cold rolled 50%, then heat treated at 873 K for 1 h followed by water quenching.",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0021"
+          ],
+          "reason": "873 K热处理包含在b0021的温度范围内。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00079",
+          "sample_id": "paper_level",
+          "section": "processes",
+          "path": "processes.proc_15mn5ni_hr_cr_973.description",
+          "value": "Homogenized at 1423 K for 2.5 h, hot rolled at 1323 K, cold rolled 50%, then heat treated at 973 K for 1 h followed by water quenching.",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0021"
+          ],
+          "reason": "973 K热处理包含在b0021的温度范围内。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00080",
+          "sample_id": "paper_level",
+          "section": "processes",
+          "path": "processes.proc_28mn0ni_hr.description",
+          "value": "Homogenized at 1423 K for 2.5 h and hot rolled at 1323 K.",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0021"
+          ],
+          "reason": "热加工描述与b0021一致，同样适用于28Mn0Ni。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00081",
+          "sample_id": "paper_level",
+          "section": "processes",
+          "path": "processes.proc_28mn0ni_hr.processes_notes",
+          "value": "Referred as HR condition.",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0021"
+          ],
+          "reason": "HR condition在b0021中定义。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00082",
+          "sample_id": "paper_level",
+          "section": "processes",
+          "path": "processes.proc_28mn0ni_hr_cr.description",
+          "value": "Homogenized at 1423 K for 2.5 h, hot rolled at 1323 K, then cold rolled to ~50% reduction in thickness at room temperature.",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0021"
+          ],
+          "reason": "冷轧50%描述与b0021一致。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00083",
+          "sample_id": "paper_level",
+          "section": "processes",
+          "path": "processes.proc_28mn0ni_hr_cr.processes_notes",
+          "value": "Referred as HR+CR condition.",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0021"
+          ],
+          "reason": "HR+CR condition在b0021中定义。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00084",
+          "sample_id": "paper_level",
+          "section": "processes",
+          "path": "processes.proc_28mn0ni_hr_cr_1023.description",
+          "value": "Homogenized at 1423 K for 2.5 h, hot rolled at 1323 K, cold rolled 50%, then heat treated at 1023 K for 1 h followed by water quenching.",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0021"
+          ],
+          "reason": "1023 K热处理包含在b0021的温度范围内。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00085",
+          "sample_id": "paper_level",
+          "section": "processes",
+          "path": "processes.proc_28mn0ni_hr_cr_1073.description",
+          "value": "Homogenized at 1423 K for 2.5 h, hot rolled at 1323 K, cold rolled 50%, then heat treated at 1073 K for 1 h followed by water quenching.",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0021"
+          ],
+          "reason": "1073 K热处理包含在b0021的温度范围内。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00086",
+          "sample_id": "paper_level",
+          "section": "processes",
+          "path": "processes.proc_28mn0ni_hr_cr_1173.description",
+          "value": "Homogenized at 1423 K for 2.5 h, hot rolled at 1323 K, cold rolled 50%, then heat treated at 1173 K for 1 h followed by water quenching.",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0021"
+          ],
+          "reason": "1173 K热处理包含在b0021的温度范围内。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00087",
+          "sample_id": "paper_level",
+          "section": "processes",
+          "path": "processes.proc_28mn0ni_hr_cr_1273.description",
+          "value": "Homogenized at 1423 K for 2.5 h, hot rolled at 1323 K, cold rolled 50%, then heat treated at 1273 K for 1 h followed by water quenching.",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0021"
+          ],
+          "reason": "1273 K热处理包含在b0021的温度范围内。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00088",
+          "sample_id": "paper_level",
+          "section": "processes",
+          "path": "processes.proc_28mn0ni_hr_cr_873.description",
+          "value": "Homogenized at 1423 K for 2.5 h, hot rolled at 1323 K, cold rolled 50%, then heat treated at 873 K for 1 h followed by water quenching.",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0021"
+          ],
+          "reason": "873 K热处理包含在b0021的温度范围内。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00089",
+          "sample_id": "paper_level",
+          "section": "processes",
+          "path": "processes.proc_28mn0ni_hr_cr_973.description",
+          "value": "Homogenized at 1423 K for 2.5 h, hot rolled at 1323 K, cold rolled 50%, then heat treated at 973 K for 1 h followed by water quenching.",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0021"
+          ],
+          "reason": "973 K热处理包含在b0021的温度范围内。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00090",
+          "sample_id": "paper_level",
+          "section": "processes",
+          "path": "processes.proc_28mn5ni_hr.description",
+          "value": "Homogenized at 1423 K for 2.5 h and hot rolled at 1323 K.",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0021"
+          ],
+          "reason": "热加工描述与b0021一致，同样适用于28Mn5Ni。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00091",
+          "sample_id": "paper_level",
+          "section": "processes",
+          "path": "processes.proc_28mn5ni_hr.processes_notes",
+          "value": "Referred as HR condition.",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0021"
+          ],
+          "reason": "HR condition在b0021中定义。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00092",
+          "sample_id": "paper_level",
+          "section": "processes",
+          "path": "processes.proc_28mn5ni_hr_cr.description",
+          "value": "Homogenized at 1423 K for 2.5 h, hot rolled at 1323 K, then cold rolled to ~50% reduction in thickness at room temperature.",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0021"
+          ],
+          "reason": "冷轧50%描述与b0021一致。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00093",
+          "sample_id": "paper_level",
+          "section": "processes",
+          "path": "processes.proc_28mn5ni_hr_cr.processes_notes",
+          "value": "Referred as HR+CR condition.",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0021"
+          ],
+          "reason": "HR+CR condition在b0021中定义。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00094",
+          "sample_id": "paper_level",
+          "section": "processes",
+          "path": "processes.proc_28mn5ni_hr_cr_1023.description",
+          "value": "Homogenized at 1423 K for 2.5 h, hot rolled at 1323 K, cold rolled 50%, then heat treated at 1023 K for 1 h followed by water quenching.",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0021"
+          ],
+          "reason": "1023 K热处理包含在b0021的温度范围内。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00095",
+          "sample_id": "paper_level",
+          "section": "processes",
+          "path": "processes.proc_28mn5ni_hr_cr_1073.description",
+          "value": "Homogenized at 1423 K for 2.5 h, hot rolled at 1323 K, cold rolled 50%, then heat treated at 1073 K for 1 h followed by water quenching.",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0021"
+          ],
+          "reason": "1073 K热处理包含在b0021的温度范围内。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00096",
+          "sample_id": "paper_level",
+          "section": "processes",
+          "path": "processes.proc_28mn5ni_hr_cr_1173.description",
+          "value": "Homogenized at 1423 K for 2.5 h, hot rolled at 1323 K, cold rolled 50%, then heat treated at 1173 K for 1 h followed by water quenching.",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0021"
+          ],
+          "reason": "1173 K热处理包含在b0021的温度范围内。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00097",
+          "sample_id": "paper_level",
+          "section": "processes",
+          "path": "processes.proc_28mn5ni_hr_cr_1273.description",
+          "value": "Homogenized at 1423 K for 2.5 h, hot rolled at 1323 K, cold rolled 50%, then heat treated at 1273 K for 1 h followed by water quenching.",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0021"
+          ],
+          "reason": "1273 K热处理包含在b0021的温度范围内。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00098",
+          "sample_id": "paper_level",
+          "section": "processes",
+          "path": "processes.proc_28mn5ni_hr_cr_873.description",
+          "value": "Homogenized at 1423 K for 2.5 h, hot rolled at 1323 K, cold rolled 50%, then heat treated at 873 K for 1 h followed by water quenching.",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0021"
+          ],
+          "reason": "873 K热处理包含在b0021的温度范围内。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00099",
+          "sample_id": "paper_level",
+          "section": "processes",
+          "path": "processes.proc_28mn5ni_hr_cr_973.description",
+          "value": "Homogenized at 1423 K for 2.5 h, hot rolled at 1323 K, cold rolled 50%, then heat treated at 973 K for 1 h followed by water quenching.",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0021"
+          ],
+          "reason": "973 K热处理包含在b0021的温度范围内。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00258",
+          "sample_id": "paper_level",
+          "section": "unmapped_findings",
+          "path": "unmapped_findings.idx_0.value",
+          "value": "All three alloys attained similar hardness (~450 VHN) and strength levels after 50% cold reduction, despite different initial hardness.",
+          "field_weight": 0.7,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0073",
+            "b0093"
+          ],
+          "reason": "b0073和b0093明确指出三种合金在50%冷轧后硬度相近约450 VHN，强度水平相似。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00259",
+          "sample_id": "paper_level",
+          "section": "unmapped_findings",
+          "path": "unmapped_findings.idx_1.value",
+          "value": "B2 stringers in 15Mn5Ni underwent shearing and fragmentation during cold rolling, indicating load sharing by the ordered intermetallic phase.",
+          "field_weight": 0.7,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0033",
+            "b0034"
+          ],
+          "reason": "b0033和b0034描述了B2 stringer的剪切、碎裂及承载。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00260",
+          "sample_id": "paper_level",
+          "section": "unmapped_findings",
+          "path": "unmapped_findings.idx_2.value",
+          "value": "15Mn5Ni alloy exhibited brittle behavior with <1% elongation when heat treated at 973 K and 1023 K, due to high volume fraction of B2 and κ-carbides along grain boundaries.",
+          "field_weight": 0.7,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0115",
+            "b0142"
+          ],
+          "reason": "b0115指出15Mn5Ni在973K和1023K热处理后脆断、延伸率<1%；b0142解释原因为晶界B2和κ-carbides。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00261",
+          "sample_id": "paper_level",
+          "section": "unmapped_findings",
+          "path": "unmapped_findings.idx_3.value",
+          "value": "In Ni-free LDS, processing temperature window around 973 K is critical to achieve strength-ductility balance; slight increase to 1023 K drastically reduces strength.",
+          "field_weight": 0.7,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0166"
+          ],
+          "reason": "b0166明确指出Ni-free LDS的加工窗口在973K附近，升高50K至1023K导致强度显著下降。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00262",
+          "sample_id": "paper_level",
+          "section": "unmapped_findings",
+          "path": "unmapped_findings.idx_4.value",
+          "value": "Dislocation-twin interaction and dynamic slip band refinement were identified as dominant strain hardening mechanisms in fully recrystallized alloys.",
+          "field_weight": 0.7,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0151",
+            "b0169"
+          ],
+          "reason": "b0151和b0169指出位错-孪晶交互作用和动态滑移带细化是完全再结晶合金的主要应变硬化机制。",
+          "field_score": 100.0
+        }
+      ]
+    },
+    {
+      "sample_id": "sample_28mn0ni_hr",
+      "sample_score": 98.33333333333333,
+      "sample_weight": 7.800000000000001,
+      "field_count": 6,
+      "correct_yes_count": 6,
+      "unknown_count": 0,
+      "no_count": 0,
+      "fields": [
+        {
+          "field_id": "F00100",
+          "sample_id": "sample_28mn0ni_hr",
+          "section": "processing_steps",
+          "path": "processing_steps.sample_28mn0ni_hr.duration",
+          "value": "2.5 h",
+          "field_weight": 1.3,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0021"
+          ],
+          "reason": "证据中明确提到homogenized at 1423 K for 2.5 h，与字段值2.5 h完全一致。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00101",
+          "sample_id": "sample_28mn0ni_hr",
+          "section": "processing_steps",
+          "path": "processing_steps.sample_28mn0ni_hr.method",
+          "value": "hot rolling at 1323 K",
+          "field_weight": 1.3,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0021"
+          ],
+          "reason": "证据中写明hot rolled at 1323 K，与字段值hot rolling at 1323 K一致。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00102",
+          "sample_id": "sample_28mn0ni_hr",
+          "section": "processing_steps",
+          "path": "processing_steps.sample_28mn0ni_hr.processing_steps_notes",
+          "value": "Final thickness ~13 mm.",
+          "field_weight": 1.3,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0021"
+          ],
+          "reason": "证据显示final thickness of hot rolled plate was about 13 mm，与字段值Final thickness ~13 mm一致。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00103",
+          "sample_id": "sample_28mn0ni_hr",
+          "section": "processing_steps",
+          "path": "processing_steps.sample_28mn0ni_hr.sequence",
+          "value": "2",
+          "field_weight": 1.3,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 0.9,
+          "evidence_refs": [
+            "b0021"
+          ],
+          "reason": "证据描述先homogenized然后hot rolled，表明hot rolling为第二步，与字段值2相符。",
+          "field_score": 90.0
+        },
+        {
+          "field_id": "F00104",
+          "sample_id": "sample_28mn0ni_hr",
+          "section": "processing_steps",
+          "path": "processing_steps.sample_28mn0ni_hr.temperature_with_unit",
+          "value": "1323 K",
+          "field_weight": 1.3,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0021"
+          ],
+          "reason": "证据中明确hot rolled at 1323 K，与字段值1323 K一致。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00105",
+          "sample_id": "sample_28mn0ni_hr",
+          "section": "processing_steps",
+          "path": "processing_steps.sample_28mn0ni_hr.type",
+          "value": "hot_rolling",
+          "field_weight": 1.3,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0021"
+          ],
+          "reason": "证据明确为hot rolled，字段类型hot_rolling与之对应。",
+          "field_score": 100.0
+        }
+      ]
+    },
+    {
+      "sample_id": "sample_28mn0ni_hr_cr",
+      "sample_score": 78.58715596330275,
+      "sample_weight": 43.6,
+      "field_count": 31,
+      "correct_yes_count": 22,
+      "unknown_count": 2,
+      "no_count": 1,
+      "fields": [
+        {
+          "field_id": "F00106",
+          "sample_id": "sample_28mn0ni_hr_cr",
+          "section": "processing_steps",
+          "path": "processing_steps.sample_28mn0ni_hr_cr.duration",
+          "value": "2.5 h",
+          "field_weight": 1.3,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0021"
+          ],
+          "reason": "证据明确说 homogenized at 1423 K for 2.5 h，持续时间2.5 h直接对应。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00107",
+          "sample_id": "sample_28mn0ni_hr_cr",
+          "section": "processing_steps",
+          "path": "processing_steps.sample_28mn0ni_hr_cr.method",
+          "value": "multiple pass cold rolling at room temperature",
+          "field_weight": 1.3,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0021",
+            "b0013"
+          ],
+          "reason": "证据明确 cold rolled to 50% reduction by several passes, 且在室温进行，multiple pass 和 room temperature 均被支持。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00108",
+          "sample_id": "sample_28mn0ni_hr_cr",
+          "section": "processing_steps",
+          "path": "processing_steps.sample_28mn0ni_hr_cr.processing_steps_notes",
+          "value": "Reduction from ~13 mm to ~6 mm.",
+          "field_weight": 1.3,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0021"
+          ],
+          "reason": "证据显示热轧后~13 mm，冷轧至~6 mm，减少量吻合。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00109",
+          "sample_id": "sample_28mn0ni_hr_cr",
+          "section": "processing_steps",
+          "path": "processing_steps.sample_28mn0ni_hr_cr.reduction_ratio",
+          "value": "50",
+          "field_weight": 1.3,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0021",
+            "b0013"
+          ],
+          "reason": "证据明确 cold rolled to ~50% reduction。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00110",
+          "sample_id": "sample_28mn0ni_hr_cr",
+          "section": "processing_steps",
+          "path": "processing_steps.sample_28mn0ni_hr_cr.sequence",
+          "value": "3",
+          "field_weight": 1.3,
+          "candidate_evidence_refs": [],
+          "is_correct": "unknown",
+          "evidence_confidence": 0.0,
+          "evidence_refs": [],
+          "reason": "证据中没有出现sequence数字3，无法判断。",
+          "field_score": 0.0
+        },
+        {
+          "field_id": "F00111",
+          "sample_id": "sample_28mn0ni_hr_cr",
+          "section": "processing_steps",
+          "path": "processing_steps.sample_28mn0ni_hr_cr.temperature_with_unit",
+          "value": "room temperature K",
+          "field_weight": 1.3,
+          "candidate_evidence_refs": [],
+          "is_correct": "partial",
+          "evidence_confidence": 0.8,
+          "evidence_refs": [
+            "b0013"
+          ],
+          "reason": "证据支持室温冷轧，但未以开尔文表示，字段值'room temperature K'不准确。",
+          "field_score": 48.0
+        },
+        {
+          "field_id": "F00112",
+          "sample_id": "sample_28mn0ni_hr_cr",
+          "section": "processing_steps",
+          "path": "processing_steps.sample_28mn0ni_hr_cr.type",
+          "value": "cold_rolling",
+          "field_weight": 1.3,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0021",
+            "b0013"
+          ],
+          "reason": "证据明确 cold rolling，类型正确。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00120",
+          "sample_id": "sample_28mn0ni_hr_cr",
+          "section": "structures",
+          "path": "structures.sample_28mn0ni_hr_cr.microstructure_list[3].defects[planar_slip_bands].dislocation_density",
+          "value": "high (cold rolled)",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "partial",
+          "evidence_confidence": 0.6,
+          "evidence_refs": [
+            "b0033",
+            "b0073"
+          ],
+          "reason": "证据支持存在位错密度高，但未明确写'high (cold rolled)'，推断合理但非直接。",
+          "field_score": 36.0
+        },
+        {
+          "field_id": "F00121",
+          "sample_id": "sample_28mn0ni_hr_cr",
+          "section": "structures",
+          "path": "structures.sample_28mn0ni_hr_cr.microstructure_list[3].defects[planar_slip_bands].type",
+          "value": "planar slip bands",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0033"
+          ],
+          "reason": "证据明确描述平面滑移带，类型一致。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00122",
+          "sample_id": "sample_28mn0ni_hr_cr",
+          "section": "structures",
+          "path": "structures.sample_28mn0ni_hr_cr.microstructure_list[3].grain_structure.average_grain_size.value_with_unit",
+          "value": "5-7 μm",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "partial",
+          "evidence_confidence": 0.6,
+          "evidence_refs": [
+            "b0032"
+          ],
+          "reason": "证据中5-7 μm对应HR条件而非HR+CR，字段值可能不适用于冷轧后状态。",
+          "field_score": 36.0
+        },
+        {
+          "field_id": "F00123",
+          "sample_id": "sample_28mn0ni_hr_cr",
+          "section": "structures",
+          "path": "structures.sample_28mn0ni_hr_cr.microstructure_list[3].grain_structure.texture",
+          "value": "nearly random",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "partial",
+          "evidence_confidence": 0.6,
+          "evidence_refs": [
+            "b0032"
+          ],
+          "reason": "证据中nearly random texture对应HR条件，冷轧后织构可能改变，字段值不完全匹配。",
+          "field_score": 36.0
+        },
+        {
+          "field_id": "F00124",
+          "sample_id": "sample_28mn0ni_hr_cr",
+          "section": "structures",
+          "path": "structures.sample_28mn0ni_hr_cr.microstructure_list[3].phases_present[austenite].crystal_structure",
+          "value": "FCC",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0015",
+            "b0033"
+          ],
+          "reason": "证据明确奥氏体为FCC结构。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00125",
+          "sample_id": "sample_28mn0ni_hr_cr",
+          "section": "structures",
+          "path": "structures.sample_28mn0ni_hr_cr.microstructure_list[3].phases_present[austenite].grain_size",
+          "value": "~5-7 μm (similar to HR)",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "partial",
+          "evidence_confidence": 0.6,
+          "evidence_refs": [
+            "b0032"
+          ],
+          "reason": "证据中~5-7 μm为HR条件的晶粒尺寸，冷轧后尺寸未必相似，字段标注'similar to HR'缺乏直接证据。",
+          "field_score": 36.0
+        },
+        {
+          "field_id": "F00126",
+          "sample_id": "sample_28mn0ni_hr_cr",
+          "section": "structures",
+          "path": "structures.sample_28mn0ni_hr_cr.microstructure_list[3].phases_present[austenite].morphology",
+          "value": "deformed grains with parallel planar slip bands",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0033"
+          ],
+          "reason": "证据描述变形晶粒内平行滑移带，形态一致。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00127",
+          "sample_id": "sample_28mn0ni_hr_cr",
+          "section": "structures",
+          "path": "structures.sample_28mn0ni_hr_cr.microstructure_list[3].phases_present[austenite].phase_name",
+          "value": "γ (austenite)",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0015",
+            "b0033"
+          ],
+          "reason": "证据中明确相为γ austenite。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00128",
+          "sample_id": "sample_28mn0ni_hr_cr",
+          "section": "structures",
+          "path": "structures.sample_28mn0ni_hr_cr.microstructure_list[3].phases_present[austenite].texture",
+          "value": "nearly random",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "no",
+          "evidence_confidence": 0.3,
+          "evidence_refs": [
+            "b0032"
+          ],
+          "reason": "证据中nearly random织构仅用于HR条件，冷轧后织构应变化，字段值矛盾。",
+          "field_score": 0.0
+        },
+        {
+          "field_id": "F00129",
+          "sample_id": "sample_28mn0ni_hr_cr",
+          "section": "structures",
+          "path": "structures.sample_28mn0ni_hr_cr.microstructure_list[3].phases_present[austenite].volume_fraction",
+          "value": "1.0",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0033"
+          ],
+          "reason": "证据明确28Mn0Ni为单相奥氏体，体积分数为1.0。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00130",
+          "sample_id": "sample_28mn0ni_hr_cr",
+          "section": "structures",
+          "path": "structures.sample_28mn0ni_hr_cr.microstructure_list[3].related_sequence",
+          "value": "3",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "unknown",
+          "evidence_confidence": 0.0,
+          "evidence_refs": [],
+          "reason": "证据中无相关sequence信息。",
+          "field_score": 0.0
+        },
+        {
+          "field_id": "F00131",
+          "sample_id": "sample_28mn0ni_hr_cr",
+          "section": "structures",
+          "path": "structures.sample_28mn0ni_hr_cr.number_of_phases",
+          "value": "1",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0033"
+          ],
+          "reason": "证据支持单相奥氏体，相数为1。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00132",
+          "sample_id": "sample_28mn0ni_hr_cr",
+          "section": "structures",
+          "path": "structures.sample_28mn0ni_hr_cr.overall_structure",
+          "value": "Single-phase deformed austenite with planar slip bands; no deformation twinning or martensite.",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0033"
+          ],
+          "reason": "证据明确单相变形奥氏体、平面滑移、无变形孪晶和马氏体。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00187",
+          "sample_id": "sample_28mn0ni_hr_cr",
+          "section": "properties",
+          "path": "properties.sample_28mn0ni_hr_cr.mechanical.hardness[bulk].region",
+          "value": "bulk",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0028"
+          ],
+          "reason": "证据明确 bulk hardness 测量。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00188",
+          "sample_id": "sample_28mn0ni_hr_cr",
+          "section": "properties",
+          "path": "properties.sample_28mn0ni_hr_cr.mechanical.hardness[bulk].scale",
+          "value": "Vickers",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0028"
+          ],
+          "reason": "证据使用 Vickers 硬度计。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00189",
+          "sample_id": "sample_28mn0ni_hr_cr",
+          "section": "properties",
+          "path": "properties.sample_28mn0ni_hr_cr.mechanical.hardness[bulk].value_with_unit",
+          "value": "430 VHN",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0118"
+          ],
+          "reason": "证据表格中28Mn0Ni在50%冷轧时硬度为430 VHN，数值一致。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00190",
+          "sample_id": "sample_28mn0ni_hr_cr",
+          "section": "properties",
+          "path": "properties.sample_28mn0ni_hr_cr.mechanical.tensile_properties.elongation[0].value_with_unit",
+          "value": "10 ± 0.4 %",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "证据表格显示TE=10±0.4%。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00191",
+          "sample_id": "sample_28mn0ni_hr_cr",
+          "section": "properties",
+          "path": "properties.sample_28mn0ni_hr_cr.mechanical.tensile_properties.ultimate_tensile_strength[0].others.uncertainty",
+          "value": "10",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "证据表格显示UTS=1500±10 MPa，不确定度10。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00192",
+          "sample_id": "sample_28mn0ni_hr_cr",
+          "section": "properties",
+          "path": "properties.sample_28mn0ni_hr_cr.mechanical.tensile_properties.ultimate_tensile_strength[0].value_with_unit",
+          "value": "1500 ± 10 MPa",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "证据表格显示UTS=1500±10 MPa。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00193",
+          "sample_id": "sample_28mn0ni_hr_cr",
+          "section": "properties",
+          "path": "properties.sample_28mn0ni_hr_cr.mechanical.tensile_properties.yield_strength[0].others.uncertainty",
+          "value": "10",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "证据表格显示YS=1350±10 MPa，不确定度10。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00194",
+          "sample_id": "sample_28mn0ni_hr_cr",
+          "section": "properties",
+          "path": "properties.sample_28mn0ni_hr_cr.mechanical.tensile_properties.yield_strength[0].value_with_unit",
+          "value": "1350 ± 10 MPa",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "证据表格显示YS=1350±10 MPa。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00252",
+          "sample_id": "sample_28mn0ni_hr_cr",
+          "section": "characterization_methods",
+          "path": "characterization_methods.sample_28mn0ni_hr_cr.key_findings",
+          "value": "Hardness increased to ~430 VHN after 50% cold reduction.",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "partial",
+          "evidence_confidence": 0.8,
+          "evidence_refs": [
+            "b0073",
+            "b0118"
+          ],
+          "reason": "证据表明硬度~450 VHN（文本）或430 VHN（表格），字段值430 VHN与表格一致但与文字描述略有偏差。",
+          "field_score": 48.0
+        },
+        {
+          "field_id": "F00253",
+          "sample_id": "sample_28mn0ni_hr_cr",
+          "section": "characterization_methods",
+          "path": "characterization_methods.sample_28mn0ni_hr_cr.purpose",
+          "value": "Measure bulk hardness (30 kg load)",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0028"
+          ],
+          "reason": "证据明确测量 bulk hardness 使用30 kg载荷。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00254",
+          "sample_id": "sample_28mn0ni_hr_cr",
+          "section": "characterization_methods",
+          "path": "characterization_methods.sample_28mn0ni_hr_cr.technique",
+          "value": "Vickers hardness tester",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0028"
+          ],
+          "reason": "证据明确使用 Vickers 硬度计。",
+          "field_score": 100.0
+        }
+      ]
+    },
+    {
+      "sample_id": "sample_28mn0ni_hr_cr_973",
+      "sample_score": 86.77531206657422,
+      "sample_weight": 72.1,
+      "field_count": 50,
+      "correct_yes_count": 43,
+      "unknown_count": 3,
+      "no_count": 0,
+      "fields": [
+        {
+          "field_id": "F00113",
+          "sample_id": "sample_28mn0ni_hr_cr_973",
+          "section": "processing_steps",
+          "path": "processing_steps.sample_28mn0ni_hr_cr_973.cooling_medium",
+          "value": "water quenching",
+          "field_weight": 1.3,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0021"
+          ],
+          "reason": "过程描述明确包含‘followed by water quenching’",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00114",
+          "sample_id": "sample_28mn0ni_hr_cr_973",
+          "section": "processing_steps",
+          "path": "processing_steps.sample_28mn0ni_hr_cr_973.duration",
+          "value": "1 h",
+          "field_weight": 1.3,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0021"
+          ],
+          "reason": "过程描述明确‘heat treated … for 1 h’",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00115",
+          "sample_id": "sample_28mn0ni_hr_cr_973",
+          "section": "processing_steps",
+          "path": "processing_steps.sample_28mn0ni_hr_cr_973.method",
+          "value": "heat treatment at 973 K for 1 h",
+          "field_weight": 1.3,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 0.8,
+          "evidence_refs": [
+            "b0021",
+            "b0050"
+          ],
+          "reason": "b0021给出热处理范围，b0050明确28Mn0Ni在973K发生部分再结晶",
+          "field_score": 80.0
+        },
+        {
+          "field_id": "F00116",
+          "sample_id": "sample_28mn0ni_hr_cr_973",
+          "section": "processing_steps",
+          "path": "processing_steps.sample_28mn0ni_hr_cr_973.reduction_ratio",
+          "value": "50",
+          "field_weight": 1.3,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0021"
+          ],
+          "reason": "b0021明确‘cold rolled to ~50% reduction’",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00117",
+          "sample_id": "sample_28mn0ni_hr_cr_973",
+          "section": "processing_steps",
+          "path": "processing_steps.sample_28mn0ni_hr_cr_973.sequence",
+          "value": "4",
+          "field_weight": 1.3,
+          "candidate_evidence_refs": [],
+          "is_correct": "unknown",
+          "evidence_confidence": 0.0,
+          "evidence_refs": [],
+          "reason": "证据中未明确给出步骤顺序编号，无法判断sequence=4",
+          "field_score": 0.0
+        },
+        {
+          "field_id": "F00118",
+          "sample_id": "sample_28mn0ni_hr_cr_973",
+          "section": "processing_steps",
+          "path": "processing_steps.sample_28mn0ni_hr_cr_973.temperature_with_unit",
+          "value": "973 K",
+          "field_weight": 1.3,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 0.9,
+          "evidence_refs": [
+            "b0021",
+            "b0050"
+          ],
+          "reason": "b0050明确28Mn0Ni在973K处理",
+          "field_score": 90.0
+        },
+        {
+          "field_id": "F00119",
+          "sample_id": "sample_28mn0ni_hr_cr_973",
+          "section": "processing_steps",
+          "path": "processing_steps.sample_28mn0ni_hr_cr_973.type",
+          "value": "heat_treatment",
+          "field_weight": 1.3,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0021"
+          ],
+          "reason": "过程描述为‘heat treated’，类型为heat_treatment",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00133",
+          "sample_id": "sample_28mn0ni_hr_cr_973",
+          "section": "structures",
+          "path": "structures.sample_28mn0ni_hr_cr_973.microstructure_counts",
+          "value": "Recrystallization fraction: 0.4; twin fraction: 0.1; B2 fraction: 0.05",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0058",
+            "b0064",
+            "b0067"
+          ],
+          "reason": "图5数据表直接给出28Mn0Ni在973K的再结晶分数0.4、孪晶分数0.1、B2分数0.05",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00134",
+          "sample_id": "sample_28mn0ni_hr_cr_973",
+          "section": "structures",
+          "path": "structures.sample_28mn0ni_hr_cr_973.microstructure_list[4].grain_structure.average_grain_size.value_with_unit",
+          "value": "2.5 μm",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0061"
+          ],
+          "reason": "图5b数据表显示28Mn0Ni在973K再结晶晶粒尺寸为2.5 μm",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00135",
+          "sample_id": "sample_28mn0ni_hr_cr_973",
+          "section": "structures",
+          "path": "structures.sample_28mn0ni_hr_cr_973.microstructure_list[4].phases_present[b2_intergranular].crystal_structure",
+          "value": "ordered BCC (B2)",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "unknown",
+          "evidence_confidence": 0.1,
+          "evidence_refs": [
+            "b0037"
+          ],
+          "reason": "证据提到B2相但未直接说明其晶体结构为ordered BCC",
+          "field_score": 3.0
+        },
+        {
+          "field_id": "F00136",
+          "sample_id": "sample_28mn0ni_hr_cr_973",
+          "section": "structures",
+          "path": "structures.sample_28mn0ni_hr_cr_973.microstructure_list[4].phases_present[b2_intergranular].grain_size",
+          "value": "0.5-1.5 μm",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0037"
+          ],
+          "reason": "b0037明确‘coarser intergranular B2 (size: 0.5–1.5 μm)’",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00137",
+          "sample_id": "sample_28mn0ni_hr_cr_973",
+          "section": "structures",
+          "path": "structures.sample_28mn0ni_hr_cr_973.microstructure_list[4].phases_present[b2_intergranular].morphology",
+          "value": "intergranular particles",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0037"
+          ],
+          "reason": "b0037描述为‘intergranular B2’",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00138",
+          "sample_id": "sample_28mn0ni_hr_cr_973",
+          "section": "structures",
+          "path": "structures.sample_28mn0ni_hr_cr_973.microstructure_list[4].phases_present[b2_intergranular].phase_name",
+          "value": "B2 (intergranular)",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0037"
+          ],
+          "reason": "证据中多次出现‘intergranular B2’",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00139",
+          "sample_id": "sample_28mn0ni_hr_cr_973",
+          "section": "structures",
+          "path": "structures.sample_28mn0ni_hr_cr_973.microstructure_list[4].phases_present[b2_intergranular].volume_fraction",
+          "value": "0.05",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0067"
+          ],
+          "reason": "b0067显示28Mn0Ni在973K B2分数为0.05",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00140",
+          "sample_id": "sample_28mn0ni_hr_cr_973",
+          "section": "structures",
+          "path": "structures.sample_28mn0ni_hr_cr_973.microstructure_list[4].phases_present[carbide_coarser].morphology",
+          "value": "coarser precipitates in deformed austenite",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0069"
+          ],
+          "reason": "b0069描述‘deformed austenite region contained inhomogeneous and relatively coarse κ-carbides’",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00141",
+          "sample_id": "sample_28mn0ni_hr_cr_973",
+          "section": "structures",
+          "path": "structures.sample_28mn0ni_hr_cr_973.microstructure_list[4].phases_present[carbide_coarser].phase_name",
+          "value": "κ-carbide (coarser)",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0069"
+          ],
+          "reason": "b0069区分了‘coarser κ-carbides’",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00142",
+          "sample_id": "sample_28mn0ni_hr_cr_973",
+          "section": "structures",
+          "path": "structures.sample_28mn0ni_hr_cr_973.microstructure_list[4].phases_present[carbide_coarser].volume_fraction",
+          "value": "inhomogeneous",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0069"
+          ],
+          "reason": "b0069明确‘inhomogeneous … κ-carbides’",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00143",
+          "sample_id": "sample_28mn0ni_hr_cr_973",
+          "section": "structures",
+          "path": "structures.sample_28mn0ni_hr_cr_973.microstructure_list[4].phases_present[carbide_intragranular].morphology",
+          "value": "fine intragranular precipitates",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0069"
+          ],
+          "reason": "b0069描述‘fine uniformly distributed intragranular κ-carbides’",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00144",
+          "sample_id": "sample_28mn0ni_hr_cr_973",
+          "section": "structures",
+          "path": "structures.sample_28mn0ni_hr_cr_973.microstructure_list[4].phases_present[carbide_intragranular].phase_name",
+          "value": "κ-carbide (intragranular)",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0069"
+          ],
+          "reason": "b0069提及intragranular κ-carbides",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00145",
+          "sample_id": "sample_28mn0ni_hr_cr_973",
+          "section": "structures",
+          "path": "structures.sample_28mn0ni_hr_cr_973.microstructure_list[4].phases_present[carbide_intragranular].volume_fraction",
+          "value": "fine uniformly distributed",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0069"
+          ],
+          "reason": "b0069描述为‘fine uniformly distributed’",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00146",
+          "sample_id": "sample_28mn0ni_hr_cr_973",
+          "section": "structures",
+          "path": "structures.sample_28mn0ni_hr_cr_973.microstructure_list[4].phases_present[deformed].crystal_structure",
+          "value": "FCC",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 0.8,
+          "evidence_refs": [
+            "b0033",
+            "b0036"
+          ],
+          "reason": "证据中γ相为FCC结构，deformed γ也是γ相",
+          "field_score": 80.0
+        },
+        {
+          "field_id": "F00147",
+          "sample_id": "sample_28mn0ni_hr_cr_973",
+          "section": "structures",
+          "path": "structures.sample_28mn0ni_hr_cr_973.microstructure_list[4].phases_present[deformed].morphology",
+          "value": "unrecrystallized deformed grains",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "partial",
+          "evidence_confidence": 0.5,
+          "evidence_refs": [
+            "b0050"
+          ],
+          "reason": "证据表明存在未再结晶变形晶粒，但未明确描述形态为‘unrecrystallized deformed grains’",
+          "field_score": 30.0
+        },
+        {
+          "field_id": "F00148",
+          "sample_id": "sample_28mn0ni_hr_cr_973",
+          "section": "structures",
+          "path": "structures.sample_28mn0ni_hr_cr_973.microstructure_list[4].phases_present[deformed].phase_name",
+          "value": "deformed γ",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 0.9,
+          "evidence_refs": [
+            "b0069"
+          ],
+          "reason": "证据中多次出现‘deformed austenite’，即deformed γ",
+          "field_score": 90.0
+        },
+        {
+          "field_id": "F00149",
+          "sample_id": "sample_28mn0ni_hr_cr_973",
+          "section": "structures",
+          "path": "structures.sample_28mn0ni_hr_cr_973.microstructure_list[4].phases_present[deformed].volume_fraction",
+          "value": "0.6",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "partial",
+          "evidence_confidence": 0.8,
+          "evidence_refs": [
+            "b0058"
+          ],
+          "reason": "再结晶分数0.4，推断变形分数0.6，但证据未直接给出该数值",
+          "field_score": 48.0
+        },
+        {
+          "field_id": "F00150",
+          "sample_id": "sample_28mn0ni_hr_cr_973",
+          "section": "structures",
+          "path": "structures.sample_28mn0ni_hr_cr_973.microstructure_list[4].phases_present[recrystallized].crystal_structure",
+          "value": "FCC",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 0.8,
+          "evidence_refs": [
+            "b0033",
+            "b0036"
+          ],
+          "reason": "再结晶γ与γ相相同，为FCC结构",
+          "field_score": 80.0
+        },
+        {
+          "field_id": "F00151",
+          "sample_id": "sample_28mn0ni_hr_cr_973",
+          "section": "structures",
+          "path": "structures.sample_28mn0ni_hr_cr_973.microstructure_list[4].phases_present[recrystallized].grain_size",
+          "value": "2.5 μm",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0061"
+          ],
+          "reason": "图5b显示28Mn0Ni在973K再结晶晶粒尺寸2.5 μm",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00152",
+          "sample_id": "sample_28mn0ni_hr_cr_973",
+          "section": "structures",
+          "path": "structures.sample_28mn0ni_hr_cr_973.microstructure_list[4].phases_present[recrystallized].morphology",
+          "value": "equiaxed grains with annealing twins",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "partial",
+          "evidence_confidence": 0.6,
+          "evidence_refs": [
+            "b0037",
+            "b0050"
+          ],
+          "reason": "证据提到再结晶晶粒伴随退火孪晶，但未明确描述为等轴晶",
+          "field_score": 36.0
+        },
+        {
+          "field_id": "F00153",
+          "sample_id": "sample_28mn0ni_hr_cr_973",
+          "section": "structures",
+          "path": "structures.sample_28mn0ni_hr_cr_973.microstructure_list[4].phases_present[recrystallized].phase_name",
+          "value": "recrystallized γ",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 0.9,
+          "evidence_refs": [
+            "b0050",
+            "b0058"
+          ],
+          "reason": "证据明确提到再结晶γ",
+          "field_score": 90.0
+        },
+        {
+          "field_id": "F00154",
+          "sample_id": "sample_28mn0ni_hr_cr_973",
+          "section": "structures",
+          "path": "structures.sample_28mn0ni_hr_cr_973.microstructure_list[4].phases_present[recrystallized].volume_fraction",
+          "value": "0.4",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0058"
+          ],
+          "reason": "b0058显示再结晶分数0.4",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00155",
+          "sample_id": "sample_28mn0ni_hr_cr_973",
+          "section": "structures",
+          "path": "structures.sample_28mn0ni_hr_cr_973.microstructure_list[4].precipitates[b2].distribution",
+          "value": "along grain boundaries",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 0.9,
+          "evidence_refs": [
+            "b0037",
+            "b0069"
+          ],
+          "reason": "b0037描述intergranular B2，b0069明确‘intergranular B2’沿晶界分布",
+          "field_score": 90.0
+        },
+        {
+          "field_id": "F00156",
+          "sample_id": "sample_28mn0ni_hr_cr_973",
+          "section": "structures",
+          "path": "structures.sample_28mn0ni_hr_cr_973.microstructure_list[4].precipitates[b2].size.value_with_unit",
+          "value": "0.5-1.5 μm",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0037"
+          ],
+          "reason": "b0037给出尺寸0.5-1.5 μm",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00157",
+          "sample_id": "sample_28mn0ni_hr_cr_973",
+          "section": "structures",
+          "path": "structures.sample_28mn0ni_hr_cr_973.microstructure_list[4].precipitates[b2].type",
+          "value": "B2",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0037"
+          ],
+          "reason": "证据中明确为B2相",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00158",
+          "sample_id": "sample_28mn0ni_hr_cr_973",
+          "section": "structures",
+          "path": "structures.sample_28mn0ni_hr_cr_973.microstructure_list[4].precipitates[carbide].distribution",
+          "value": "coarser and inhomogeneous in deformed regions",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0069"
+          ],
+          "reason": "b0069描述‘inhomogeneous and relatively coarse κ-carbides in deformed austenite regions’",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00159",
+          "sample_id": "sample_28mn0ni_hr_cr_973",
+          "section": "structures",
+          "path": "structures.sample_28mn0ni_hr_cr_973.microstructure_list[4].precipitates[carbide].size.value_with_unit",
+          "value": "10-60 nm",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0069"
+          ],
+          "reason": "b0069明确κ-carbide尺寸10-60 nm",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00160",
+          "sample_id": "sample_28mn0ni_hr_cr_973",
+          "section": "structures",
+          "path": "structures.sample_28mn0ni_hr_cr_973.microstructure_list[4].precipitates[carbide].type",
+          "value": "κ-carbide",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0069"
+          ],
+          "reason": "证据中明确为κ-carbide",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00161",
+          "sample_id": "sample_28mn0ni_hr_cr_973",
+          "section": "structures",
+          "path": "structures.sample_28mn0ni_hr_cr_973.microstructure_list[4].related_sequence",
+          "value": "4",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "unknown",
+          "evidence_confidence": 0.0,
+          "evidence_refs": [],
+          "reason": "证据中未提供顺序编号信息",
+          "field_score": 0.0
+        },
+        {
+          "field_id": "F00162",
+          "sample_id": "sample_28mn0ni_hr_cr_973",
+          "section": "structures",
+          "path": "structures.sample_28mn0ni_hr_cr_973.number_of_phases",
+          "value": "3",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "partial",
+          "evidence_confidence": 0.5,
+          "evidence_refs": [
+            "b0036",
+            "b0050",
+            "b0069"
+          ],
+          "reason": "证据显示存在γ、B2、κ-carbide三相，但未明确计数为3",
+          "field_score": 30.0
+        },
+        {
+          "field_id": "F00163",
+          "sample_id": "sample_28mn0ni_hr_cr_973",
+          "section": "structures",
+          "path": "structures.sample_28mn0ni_hr_cr_973.overall_structure",
+          "value": "Partially recrystallized austenite (recrystallization fraction ~0.4) with nm-sized κ-carbides and intergranular B2.",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0050",
+            "b0058",
+            "b0067",
+            "b0069"
+          ],
+          "reason": "证据综合支持部分再结晶(0.4)、纳米κ-carbide和晶间B2的描述",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00210",
+          "sample_id": "sample_28mn0ni_hr_cr_973",
+          "section": "properties",
+          "path": "properties.sample_28mn0ni_hr_cr_973.mechanical.hardness[bulk].region",
+          "value": "bulk",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0028"
+          ],
+          "reason": "b0028明确‘bulk hardness was measured’",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00211",
+          "sample_id": "sample_28mn0ni_hr_cr_973",
+          "section": "properties",
+          "path": "properties.sample_28mn0ni_hr_cr_973.mechanical.hardness[bulk].scale",
+          "value": "Vickers",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0028"
+          ],
+          "reason": "b0028明确‘Vickers hardness tester’",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00212",
+          "sample_id": "sample_28mn0ni_hr_cr_973",
+          "section": "properties",
+          "path": "properties.sample_28mn0ni_hr_cr_973.mechanical.hardness[bulk].value_with_unit",
+          "value": "340 VHN",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0121"
+          ],
+          "reason": "b0121显示28Mn0Ni在973K硬度340 VHN",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00213",
+          "sample_id": "sample_28mn0ni_hr_cr_973",
+          "section": "properties",
+          "path": "properties.sample_28mn0ni_hr_cr_973.mechanical.tensile_properties.elongation[0].value_with_unit",
+          "value": "23 ± 0.5 %",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "b0138显示28Mn0Ni 973K伸长率23±0.5%",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00214",
+          "sample_id": "sample_28mn0ni_hr_cr_973",
+          "section": "properties",
+          "path": "properties.sample_28mn0ni_hr_cr_973.mechanical.tensile_properties.strain_hardening_rate[0].value_with_unit",
+          "value": "0.16 dimensionless",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "b0138显示n=0.16",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00215",
+          "sample_id": "sample_28mn0ni_hr_cr_973",
+          "section": "properties",
+          "path": "properties.sample_28mn0ni_hr_cr_973.mechanical.tensile_properties.ultimate_tensile_strength[0].others.uncertainty",
+          "value": "10",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "b0138显示UTS=1162±10 MPa",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00216",
+          "sample_id": "sample_28mn0ni_hr_cr_973",
+          "section": "properties",
+          "path": "properties.sample_28mn0ni_hr_cr_973.mechanical.tensile_properties.ultimate_tensile_strength[0].value_with_unit",
+          "value": "1162 ± 10 MPa",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "b0138直接给出UTS数值",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00217",
+          "sample_id": "sample_28mn0ni_hr_cr_973",
+          "section": "properties",
+          "path": "properties.sample_28mn0ni_hr_cr_973.mechanical.tensile_properties.yield_strength[0].others.uncertainty",
+          "value": "6",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "b0138显示YS=884±6 MPa",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00218",
+          "sample_id": "sample_28mn0ni_hr_cr_973",
+          "section": "properties",
+          "path": "properties.sample_28mn0ni_hr_cr_973.mechanical.tensile_properties.yield_strength[0].value_with_unit",
+          "value": "884 ± 6 MPa",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "b0138直接给出YS数值",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00255",
+          "sample_id": "sample_28mn0ni_hr_cr_973",
+          "section": "characterization_methods",
+          "path": "characterization_methods.sample_28mn0ni_hr_cr_973.key_findings",
+          "value": "YS 884 MPa, UTS 1162 MPa, elongation 23%.",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "b0138汇总了该样品的拉伸性能",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00256",
+          "sample_id": "sample_28mn0ni_hr_cr_973",
+          "section": "characterization_methods",
+          "path": "characterization_methods.sample_28mn0ni_hr_cr_973.purpose",
+          "value": "Evaluate tensile properties at room temperature",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0028"
+          ],
+          "reason": "b0028说明拉伸测试在室温进行",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00257",
+          "sample_id": "sample_28mn0ni_hr_cr_973",
+          "section": "characterization_methods",
+          "path": "characterization_methods.sample_28mn0ni_hr_cr_973.technique",
+          "value": "Tensile testing (ASTM E8M)",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0028"
+          ],
+          "reason": "b0028明确按ASTM E8M标准测试",
+          "field_score": 100.0
+        }
+      ]
+    },
+    {
+      "sample_id": "sample_15mn5ni_hr_cr_1023",
+      "sample_score": 89.07407407407406,
+      "sample_weight": 10.8,
+      "field_count": 9,
+      "correct_yes_count": 9,
+      "unknown_count": 0,
+      "no_count": 0,
+      "fields": [
+        {
+          "field_id": "F00164",
+          "sample_id": "sample_15mn5ni_hr_cr_1023",
+          "section": "interfaces",
+          "path": "interfaces.sample_15mn5ni_hr_cr_1023.defect_interaction[0].interaction_type",
+          "value": "crack_propagation",
+          "field_weight": 1.3,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 0.9,
+          "evidence_refs": [
+            "b0142"
+          ],
+          "reason": "b0142明确描述裂纹沿γ/B2相界扩展，属于crack_propagation类型。",
+          "field_score": 90.0
+        },
+        {
+          "field_id": "F00165",
+          "sample_id": "sample_15mn5ni_hr_cr_1023",
+          "section": "interfaces",
+          "path": "interfaces.sample_15mn5ni_hr_cr_1023.defect_interaction[0].quality_description",
+          "value": "Crack propagates along γ/B2 interphase boundaries, leading to quasi-cleavage fracture.",
+          "field_weight": 1.3,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 0.9,
+          "evidence_refs": [
+            "b0142"
+          ],
+          "reason": "b0142明确说明15Mn5Ni合金在1023K热处理后表现为准解理断裂，裂纹沿γ/B2相界扩展。",
+          "field_score": 90.0
+        },
+        {
+          "field_id": "F00166",
+          "sample_id": "sample_15mn5ni_hr_cr_1023",
+          "section": "interfaces",
+          "path": "interfaces.sample_15mn5ni_hr_cr_1023.interface_notes[0].stress_strain_distribution",
+          "value": "Intergranular cracks observed; cracking initiated at phase boundaries due to large volume fraction of B2 and κ-carbides.",
+          "field_weight": 1.3,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 0.9,
+          "evidence_refs": [
+            "b0142",
+            "b0167"
+          ],
+          "reason": "b0142观察到沿晶裂纹，b0167指出是由于大量B2和κ碳化物沿晶界析出导致。",
+          "field_score": 90.0
+        },
+        {
+          "field_id": "F00167",
+          "sample_id": "sample_15mn5ni_hr_cr_1023",
+          "section": "interfaces",
+          "path": "interfaces.sample_15mn5ni_hr_cr_1023.phase_evolution",
+          "value": "At 1023 K, high fraction of B2 and κ-carbides at grain boundaries promotes brittle intergranular fracture.",
+          "field_weight": 1.3,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 0.9,
+          "evidence_refs": [
+            "b0142",
+            "b0167"
+          ],
+          "reason": "b0142和b0167共同支持1023K下B2和κ碳化物沿晶界析出促进脆性沿晶断裂。",
+          "field_score": 90.0
+        },
+        {
+          "field_id": "F00168",
+          "sample_id": "sample_15mn5ni_hr_cr_1023",
+          "section": "interfaces",
+          "path": "interfaces.sample_15mn5ni_hr_cr_1023.phases[austenite].phase_1_name",
+          "value": "γ (austenite)",
+          "field_weight": 1.3,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 0.9,
+          "evidence_refs": [
+            "b0142"
+          ],
+          "reason": "b0142多次提及γ相，并说明其为基体相。",
+          "field_score": 90.0
+        },
+        {
+          "field_id": "F00169",
+          "sample_id": "sample_15mn5ni_hr_cr_1023",
+          "section": "interfaces",
+          "path": "interfaces.sample_15mn5ni_hr_cr_1023.phases[austenite].phase_2_name",
+          "value": "B2",
+          "field_weight": 1.3,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 0.9,
+          "evidence_refs": [
+            "b0142"
+          ],
+          "reason": "b0142明确提到γ/B2相界，B2相存在且为重要第二相。",
+          "field_score": 90.0
+        },
+        {
+          "field_id": "F00249",
+          "sample_id": "sample_15mn5ni_hr_cr_1023",
+          "section": "characterization_methods",
+          "path": "characterization_methods.sample_15mn5ni_hr_cr_1023.key_findings",
+          "value": "Quasi-cleavage fracture with intergranular cracks along γ/B2 interfaces; microcracks present.",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 0.9,
+          "evidence_refs": [
+            "b0142"
+          ],
+          "reason": "b0142描述15Mn5Ni合金呈现准解理断裂、沿晶裂纹及微裂纹，与字段一致。",
+          "field_score": 90.0
+        },
+        {
+          "field_id": "F00250",
+          "sample_id": "sample_15mn5ni_hr_cr_1023",
+          "section": "characterization_methods",
+          "path": "characterization_methods.sample_15mn5ni_hr_cr_1023.purpose",
+          "value": "Fracture surface analysis",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 0.8,
+          "evidence_refs": [
+            "b0026",
+            "b0142"
+          ],
+          "reason": "b0026说明进行了断口分析，b0142具体描述了该样本的断口形貌，目的为断裂表面分析。",
+          "field_score": 80.0
+        },
+        {
+          "field_id": "F00251",
+          "sample_id": "sample_15mn5ni_hr_cr_1023",
+          "section": "characterization_methods",
+          "path": "characterization_methods.sample_15mn5ni_hr_cr_1023.technique",
+          "value": "SEM fractography",
+          "field_weight": 1.0,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 0.9,
+          "evidence_refs": [
+            "b0026",
+            "b0150"
+          ],
+          "reason": "b0026提到使用SEM进行断口分析，b0150图标题明确为SEM-fractographs。",
+          "field_score": 90.0
+        }
+      ]
+    },
+    {
+      "sample_id": "sample_15mn5ni_hr_cr",
+      "sample_score": 100.0,
+      "sample_weight": 12.0,
+      "field_count": 8,
+      "correct_yes_count": 8,
+      "unknown_count": 0,
+      "no_count": 0,
+      "fields": [
+        {
+          "field_id": "F00170",
+          "sample_id": "sample_15mn5ni_hr_cr",
+          "section": "properties",
+          "path": "properties.sample_15mn5ni_hr_cr.mechanical.hardness[bulk].region",
+          "value": "bulk",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0028",
+            "b0118"
+          ],
+          "reason": "证据b0028明确提及‘bulk hardness’，b0118表格给出15Mn5Ni在50%冷轧后硬度为460 VHN，支持region=bulk。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00171",
+          "sample_id": "sample_15mn5ni_hr_cr",
+          "section": "properties",
+          "path": "properties.sample_15mn5ni_hr_cr.mechanical.hardness[bulk].scale",
+          "value": "Vickers",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0028"
+          ],
+          "reason": "证据b0028明确使用Vickers硬度计，支持scale=Vickers。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00172",
+          "sample_id": "sample_15mn5ni_hr_cr",
+          "section": "properties",
+          "path": "properties.sample_15mn5ni_hr_cr.mechanical.hardness[bulk].value_with_unit",
+          "value": "460 VHN",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0118"
+          ],
+          "reason": "b0118表格中15Mn5Ni在50%冷轧下硬度值为460 VHN，与字段值完全一致。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00173",
+          "sample_id": "sample_15mn5ni_hr_cr",
+          "section": "properties",
+          "path": "properties.sample_15mn5ni_hr_cr.mechanical.tensile_properties.elongation[0].value_with_unit",
+          "value": "7 ± 0.5 %",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "b0138表格中15Mn5Ni在HR+CR条件下TE=7±0.5%，与字段值一致。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00174",
+          "sample_id": "sample_15mn5ni_hr_cr",
+          "section": "properties",
+          "path": "properties.sample_15mn5ni_hr_cr.mechanical.tensile_properties.ultimate_tensile_strength[0].others.uncertainty",
+          "value": "15",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "b0138表格中15Mn5Ni在HR+CR条件下UTS=1800±15 MPa，不确定性15，与字段一致。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00175",
+          "sample_id": "sample_15mn5ni_hr_cr",
+          "section": "properties",
+          "path": "properties.sample_15mn5ni_hr_cr.mechanical.tensile_properties.ultimate_tensile_strength[0].value_with_unit",
+          "value": "1800 ± 15 MPa",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "b0138表格中15Mn5Ni在HR+CR条件下UTS=1800±15 MPa，与字段值完全一致。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00176",
+          "sample_id": "sample_15mn5ni_hr_cr",
+          "section": "properties",
+          "path": "properties.sample_15mn5ni_hr_cr.mechanical.tensile_properties.yield_strength[0].others.uncertainty",
+          "value": "12",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "b0138表格中15Mn5Ni在HR+CR条件下YS=1665±12 MPa，不确定性12，与字段一致。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00177",
+          "sample_id": "sample_15mn5ni_hr_cr",
+          "section": "properties",
+          "path": "properties.sample_15mn5ni_hr_cr.mechanical.tensile_properties.yield_strength[0].value_with_unit",
+          "value": "1665 ± 12 MPa",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "b0138表格中15Mn5Ni在HR+CR条件下YS=1665±12 MPa，与字段值完全一致。",
+          "field_score": 100.0
+        }
+      ]
+    },
+    {
+      "sample_id": "sample_15mn5ni_hr_cr_1173",
+      "sample_score": 100.0,
+      "sample_weight": 13.5,
+      "field_count": 9,
+      "correct_yes_count": 9,
+      "unknown_count": 0,
+      "no_count": 0,
+      "fields": [
+        {
+          "field_id": "F00178",
+          "sample_id": "sample_15mn5ni_hr_cr_1173",
+          "section": "properties",
+          "path": "properties.sample_15mn5ni_hr_cr_1173.mechanical.hardness[bulk].region",
+          "value": "bulk",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0028"
+          ],
+          "reason": "证据明确说明使用Vickers硬度计测量'bulk hardness'，region字段值为'bulk'完全对应。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00179",
+          "sample_id": "sample_15mn5ni_hr_cr_1173",
+          "section": "properties",
+          "path": "properties.sample_15mn5ni_hr_cr_1173.mechanical.hardness[bulk].scale",
+          "value": "Vickers",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0028"
+          ],
+          "reason": "证据明确使用Vickers硬度计，scale值为'Vickers'直接匹配。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00180",
+          "sample_id": "sample_15mn5ni_hr_cr_1173",
+          "section": "properties",
+          "path": "properties.sample_15mn5ni_hr_cr_1173.mechanical.hardness[bulk].value_with_unit",
+          "value": "340 VHN",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0121"
+          ],
+          "reason": "b0121表中15Mn5Ni在1173K的硬度值明确为340 VHN，与字段值完全一致。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00181",
+          "sample_id": "sample_15mn5ni_hr_cr_1173",
+          "section": "properties",
+          "path": "properties.sample_15mn5ni_hr_cr_1173.mechanical.tensile_properties.elongation[0].value_with_unit",
+          "value": "36 ± 1 %",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "b0138表3中15Mn5Ni在HR+CR+1173K条件下的总延伸率为36 ± 1%，与字段值直接对应。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00182",
+          "sample_id": "sample_15mn5ni_hr_cr_1173",
+          "section": "properties",
+          "path": "properties.sample_15mn5ni_hr_cr_1173.mechanical.tensile_properties.strain_hardening_rate[0].value_with_unit",
+          "value": "0.30 dimensionless",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "b0138表3中15Mn5Ni在1173K的应变硬化指数n=0.30，字段值0.30 dimensionless完全匹配。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00183",
+          "sample_id": "sample_15mn5ni_hr_cr_1173",
+          "section": "properties",
+          "path": "properties.sample_15mn5ni_hr_cr_1173.mechanical.tensile_properties.ultimate_tensile_strength[0].others.uncertainty",
+          "value": "12",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "b0138表3中15Mn5Ni在HR+CR+1173K的抗拉强度为1303 ± 12 MPa，不确定性12直接来自该值。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00184",
+          "sample_id": "sample_15mn5ni_hr_cr_1173",
+          "section": "properties",
+          "path": "properties.sample_15mn5ni_hr_cr_1173.mechanical.tensile_properties.ultimate_tensile_strength[0].value_with_unit",
+          "value": "1303 ± 12 MPa",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "b0138表3中15Mn5Ni在HR+CR+1173K的抗拉强度明确为1303 ± 12 MPa。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00185",
+          "sample_id": "sample_15mn5ni_hr_cr_1173",
+          "section": "properties",
+          "path": "properties.sample_15mn5ni_hr_cr_1173.mechanical.tensile_properties.yield_strength[0].others.uncertainty",
+          "value": "5",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "b0138表3中15Mn5Ni在HR+CR+1173K的屈服强度为971 ± 5 MPa，不确定性5直接来自该值。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00186",
+          "sample_id": "sample_15mn5ni_hr_cr_1173",
+          "section": "properties",
+          "path": "properties.sample_15mn5ni_hr_cr_1173.mechanical.tensile_properties.yield_strength[0].value_with_unit",
+          "value": "971 ± 5 MPa",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "b0138表3中15Mn5Ni在HR+CR+1173K的屈服强度明确为971 ± 5 MPa。",
+          "field_score": 100.0
+        }
+      ]
+    },
+    {
+      "sample_id": "sample_28mn0ni_hr_cr_1023",
+      "sample_score": 100.0,
+      "sample_weight": 9.0,
+      "field_count": 6,
+      "correct_yes_count": 6,
+      "unknown_count": 0,
+      "no_count": 0,
+      "fields": [
+        {
+          "field_id": "F00195",
+          "sample_id": "sample_28mn0ni_hr_cr_1023",
+          "section": "properties",
+          "path": "properties.sample_28mn0ni_hr_cr_1023.mechanical.tensile_properties.elongation[0].value_with_unit",
+          "value": "36 ± 2 %",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "Table 3中明确列出28Mn0Ni合金在HR+CR+1023K条件下总延伸率为36±2%",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00196",
+          "sample_id": "sample_28mn0ni_hr_cr_1023",
+          "section": "properties",
+          "path": "properties.sample_28mn0ni_hr_cr_1023.mechanical.tensile_properties.strain_hardening_rate[0].value_with_unit",
+          "value": "0.30 dimensionless",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "Table 3中明确列出28Mn0Ni合金在HR+CR+1023K条件下应变硬化指数n=0.30",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00197",
+          "sample_id": "sample_28mn0ni_hr_cr_1023",
+          "section": "properties",
+          "path": "properties.sample_28mn0ni_hr_cr_1023.mechanical.tensile_properties.ultimate_tensile_strength[0].others.uncertainty",
+          "value": "5",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "Table 3中明确列出28Mn0Ni合金在HR+CR+1023K条件下抗拉强度不确定度为±5 MPa",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00198",
+          "sample_id": "sample_28mn0ni_hr_cr_1023",
+          "section": "properties",
+          "path": "properties.sample_28mn0ni_hr_cr_1023.mechanical.tensile_properties.ultimate_tensile_strength[0].value_with_unit",
+          "value": "1051 ± 5 MPa",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "Table 3中明确列出28Mn0Ni合金在HR+CR+1023K条件下抗拉强度为1051±5 MPa",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00199",
+          "sample_id": "sample_28mn0ni_hr_cr_1023",
+          "section": "properties",
+          "path": "properties.sample_28mn0ni_hr_cr_1023.mechanical.tensile_properties.yield_strength[0].others.uncertainty",
+          "value": "2",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "Table 3中明确列出28Mn0Ni合金在HR+CR+1023K条件下屈服强度不确定度为±2 MPa",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00200",
+          "sample_id": "sample_28mn0ni_hr_cr_1023",
+          "section": "properties",
+          "path": "properties.sample_28mn0ni_hr_cr_1023.mechanical.tensile_properties.yield_strength[0].value_with_unit",
+          "value": "732 ± 2 MPa",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "Table 3中明确列出28Mn0Ni合金在HR+CR+1023K条件下屈服强度为732±2 MPa",
+          "field_score": 100.0
+        }
+      ]
+    },
+    {
+      "sample_id": "sample_28mn0ni_hr_cr_1173",
+      "sample_score": 100.0,
+      "sample_weight": 13.5,
+      "field_count": 9,
+      "correct_yes_count": 9,
+      "unknown_count": 0,
+      "no_count": 0,
+      "fields": [
+        {
+          "field_id": "F00201",
+          "sample_id": "sample_28mn0ni_hr_cr_1173",
+          "section": "properties",
+          "path": "properties.sample_28mn0ni_hr_cr_1173.mechanical.hardness[bulk].region",
+          "value": "bulk",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0028"
+          ],
+          "reason": "论文明确说明bulk hardness测量",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00202",
+          "sample_id": "sample_28mn0ni_hr_cr_1173",
+          "section": "properties",
+          "path": "properties.sample_28mn0ni_hr_cr_1173.mechanical.hardness[bulk].scale",
+          "value": "Vickers",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0028",
+            "b0121"
+          ],
+          "reason": "论文使用AFFRI Vickers硬度计，硬度值单位为VHN",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00203",
+          "sample_id": "sample_28mn0ni_hr_cr_1173",
+          "section": "properties",
+          "path": "properties.sample_28mn0ni_hr_cr_1173.mechanical.hardness[bulk].value_with_unit",
+          "value": "240 VHN",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0121"
+          ],
+          "reason": "图8b数据表中28Mn0Ni在1173K硬度为240 VHN",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00204",
+          "sample_id": "sample_28mn0ni_hr_cr_1173",
+          "section": "properties",
+          "path": "properties.sample_28mn0ni_hr_cr_1173.mechanical.tensile_properties.elongation[0].value_with_unit",
+          "value": "86 ± 2 %",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "表3中28Mn0Ni在HR+CR+1173K条件下总延伸率为86±2%",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00205",
+          "sample_id": "sample_28mn0ni_hr_cr_1173",
+          "section": "properties",
+          "path": "properties.sample_28mn0ni_hr_cr_1173.mechanical.tensile_properties.strain_hardening_rate[0].value_with_unit",
+          "value": "0.50 dimensionless",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "表3中应变硬化指数n=0.50，对应值0.50 dimensionless",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00206",
+          "sample_id": "sample_28mn0ni_hr_cr_1173",
+          "section": "properties",
+          "path": "properties.sample_28mn0ni_hr_cr_1173.mechanical.tensile_properties.ultimate_tensile_strength[0].others.uncertainty",
+          "value": "8",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "表3中UTS为905±8 MPa，不确定度为8",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00207",
+          "sample_id": "sample_28mn0ni_hr_cr_1173",
+          "section": "properties",
+          "path": "properties.sample_28mn0ni_hr_cr_1173.mechanical.tensile_properties.ultimate_tensile_strength[0].value_with_unit",
+          "value": "905 ± 8 MPa",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "表3中28Mn0Ni在HR+CR+1173K条件下UTS为905±8 MPa",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00208",
+          "sample_id": "sample_28mn0ni_hr_cr_1173",
+          "section": "properties",
+          "path": "properties.sample_28mn0ni_hr_cr_1173.mechanical.tensile_properties.yield_strength[0].others.uncertainty",
+          "value": "5",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "表3中YS为504±5 MPa，不确定度为5",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00209",
+          "sample_id": "sample_28mn0ni_hr_cr_1173",
+          "section": "properties",
+          "path": "properties.sample_28mn0ni_hr_cr_1173.mechanical.tensile_properties.yield_strength[0].value_with_unit",
+          "value": "504 ± 5 MPa",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "表3中28Mn0Ni在HR+CR+1173K条件下YS为504±5 MPa",
+          "field_score": 100.0
+        }
+      ]
+    },
+    {
+      "sample_id": "sample_28mn5ni_hr_cr",
+      "sample_score": 100.0,
+      "sample_weight": 12.0,
+      "field_count": 8,
+      "correct_yes_count": 8,
+      "unknown_count": 0,
+      "no_count": 0,
+      "fields": [
+        {
+          "field_id": "F00219",
+          "sample_id": "sample_28mn5ni_hr_cr",
+          "section": "properties",
+          "path": "properties.sample_28mn5ni_hr_cr.mechanical.hardness[bulk].region",
+          "value": "bulk",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0028"
+          ],
+          "reason": "论文明确指出硬度为体硬度测量（Bulk hardness）。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00220",
+          "sample_id": "sample_28mn5ni_hr_cr",
+          "section": "properties",
+          "path": "properties.sample_28mn5ni_hr_cr.mechanical.hardness[bulk].scale",
+          "value": "Vickers",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0028"
+          ],
+          "reason": "论文使用维氏硬度计测量硬度。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00221",
+          "sample_id": "sample_28mn5ni_hr_cr",
+          "section": "properties",
+          "path": "properties.sample_28mn5ni_hr_cr.mechanical.hardness[bulk].value_with_unit",
+          "value": "450 VHN",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0073",
+            "b0118"
+          ],
+          "reason": "论文明确给出28Mn5Ni合金在50%冷轧后硬度为450 VHN。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00222",
+          "sample_id": "sample_28mn5ni_hr_cr",
+          "section": "properties",
+          "path": "properties.sample_28mn5ni_hr_cr.mechanical.tensile_properties.elongation[0].value_with_unit",
+          "value": "11 ± 0.4 %",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "论文表3中28Mn5Ni在HR+CR条件下总延伸率为11±0.4%。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00223",
+          "sample_id": "sample_28mn5ni_hr_cr",
+          "section": "properties",
+          "path": "properties.sample_28mn5ni_hr_cr.mechanical.tensile_properties.ultimate_tensile_strength[0].others.uncertainty",
+          "value": "5",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "论文表3中28Mn5Ni在HR+CR条件下抗拉强度为1571±5 MPa，不确定度为5。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00224",
+          "sample_id": "sample_28mn5ni_hr_cr",
+          "section": "properties",
+          "path": "properties.sample_28mn5ni_hr_cr.mechanical.tensile_properties.ultimate_tensile_strength[0].value_with_unit",
+          "value": "1571 ± 5 MPa",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "论文表3中28Mn5Ni在HR+CR条件下抗拉强度为1571±5 MPa。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00225",
+          "sample_id": "sample_28mn5ni_hr_cr",
+          "section": "properties",
+          "path": "properties.sample_28mn5ni_hr_cr.mechanical.tensile_properties.yield_strength[0].others.uncertainty",
+          "value": "5",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "论文表3中28Mn5Ni在HR+CR条件下屈服强度为1394±5 MPa，不确定度为5。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00226",
+          "sample_id": "sample_28mn5ni_hr_cr",
+          "section": "properties",
+          "path": "properties.sample_28mn5ni_hr_cr.mechanical.tensile_properties.yield_strength[0].value_with_unit",
+          "value": "1394 ± 5 MPa",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "论文表3中28Mn5Ni在HR+CR条件下屈服强度为1394±5 MPa。",
+          "field_score": 100.0
+        }
+      ]
+    },
+    {
+      "sample_id": "sample_28mn5ni_hr_cr_1023",
+      "sample_score": 100.0,
+      "sample_weight": 7.5,
+      "field_count": 5,
+      "correct_yes_count": 5,
+      "unknown_count": 0,
+      "no_count": 0,
+      "fields": [
+        {
+          "field_id": "F00227",
+          "sample_id": "sample_28mn5ni_hr_cr_1023",
+          "section": "properties",
+          "path": "properties.sample_28mn5ni_hr_cr_1023.mechanical.tensile_properties.elongation[0].value_with_unit",
+          "value": "17 ± 1 %",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "Table 3中28Mn5Ni在HR+CR+1023K条件下的TE为17±1%，与字段值完全匹配",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00228",
+          "sample_id": "sample_28mn5ni_hr_cr_1023",
+          "section": "properties",
+          "path": "properties.sample_28mn5ni_hr_cr_1023.mechanical.tensile_properties.ultimate_tensile_strength[0].others.uncertainty",
+          "value": "2",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "Table 3中28Mn5Ni在HR+CR+1023K条件下的UTS为1537±2 MPa，不确定度2直接对应",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00229",
+          "sample_id": "sample_28mn5ni_hr_cr_1023",
+          "section": "properties",
+          "path": "properties.sample_28mn5ni_hr_cr_1023.mechanical.tensile_properties.ultimate_tensile_strength[0].value_with_unit",
+          "value": "1537 ± 2 MPa",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "Table 3中28Mn5Ni在HR+CR+1023K条件下的UTS为1537±2 MPa，与字段值完全匹配",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00230",
+          "sample_id": "sample_28mn5ni_hr_cr_1023",
+          "section": "properties",
+          "path": "properties.sample_28mn5ni_hr_cr_1023.mechanical.tensile_properties.yield_strength[0].others.uncertainty",
+          "value": "2",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "Table 3中28Mn5Ni在HR+CR+1023K条件下的YS为1289±2 MPa，不确定度2直接对应",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00231",
+          "sample_id": "sample_28mn5ni_hr_cr_1023",
+          "section": "properties",
+          "path": "properties.sample_28mn5ni_hr_cr_1023.mechanical.tensile_properties.yield_strength[0].value_with_unit",
+          "value": "1289 ± 2 MPa",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "Table 3中28Mn5Ni在HR+CR+1023K条件下的YS为1289±2 MPa，与字段值完全匹配",
+          "field_score": 100.0
+        }
+      ]
+    },
+    {
+      "sample_id": "sample_28mn5ni_hr_cr_1173",
+      "sample_score": 100.0,
+      "sample_weight": 13.5,
+      "field_count": 9,
+      "correct_yes_count": 9,
+      "unknown_count": 0,
+      "no_count": 0,
+      "fields": [
+        {
+          "field_id": "F00232",
+          "sample_id": "sample_28mn5ni_hr_cr_1173",
+          "section": "properties",
+          "path": "properties.sample_28mn5ni_hr_cr_1173.mechanical.hardness[bulk].region",
+          "value": "bulk",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0028"
+          ],
+          "reason": "文献明确说明测量的是bulk hardness（b0028），与字段值一致。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00233",
+          "sample_id": "sample_28mn5ni_hr_cr_1173",
+          "section": "properties",
+          "path": "properties.sample_28mn5ni_hr_cr_1173.mechanical.hardness[bulk].scale",
+          "value": "Vickers",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0028"
+          ],
+          "reason": "b0028指出使用Vickers硬度计，与字段scale值相符。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00234",
+          "sample_id": "sample_28mn5ni_hr_cr_1173",
+          "section": "properties",
+          "path": "properties.sample_28mn5ni_hr_cr_1173.mechanical.hardness[bulk].value_with_unit",
+          "value": "330 VHN",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0121"
+          ],
+          "reason": "b0121表格中28Mn5Ni在1173K下的硬度为330 VHN，完全匹配。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00235",
+          "sample_id": "sample_28mn5ni_hr_cr_1173",
+          "section": "properties",
+          "path": "properties.sample_28mn5ni_hr_cr_1173.mechanical.tensile_properties.elongation[0].value_with_unit",
+          "value": "39 ± 1 %",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "b0138表格中28Mn5Ni在1173K下的总延伸率为39±1%，与字段值一致。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00236",
+          "sample_id": "sample_28mn5ni_hr_cr_1173",
+          "section": "properties",
+          "path": "properties.sample_28mn5ni_hr_cr_1173.mechanical.tensile_properties.strain_hardening_rate[0].value_with_unit",
+          "value": "0.30 dimensionless",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "b0138表格中28Mn5Ni在1173K下的应变硬化指数n=0.30，字段值为0.30 dimensionless，相符。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00237",
+          "sample_id": "sample_28mn5ni_hr_cr_1173",
+          "section": "properties",
+          "path": "properties.sample_28mn5ni_hr_cr_1173.mechanical.tensile_properties.ultimate_tensile_strength[0].others.uncertainty",
+          "value": "5",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "b0138表格中28Mn5Ni在1173K下的UTS为1236±5 MPa，不确定度5，与字段匹配。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00238",
+          "sample_id": "sample_28mn5ni_hr_cr_1173",
+          "section": "properties",
+          "path": "properties.sample_28mn5ni_hr_cr_1173.mechanical.tensile_properties.ultimate_tensile_strength[0].value_with_unit",
+          "value": "1236 ± 5 MPa",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "b0138表格中28Mn5Ni在1173K下的UTS为1236±5 MPa，与字段值完全一致。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00239",
+          "sample_id": "sample_28mn5ni_hr_cr_1173",
+          "section": "properties",
+          "path": "properties.sample_28mn5ni_hr_cr_1173.mechanical.tensile_properties.yield_strength[0].others.uncertainty",
+          "value": "4",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "b0138表格中28Mn5Ni在1173K下的YS为900±4 MPa，不确定度4，与字段匹配。",
+          "field_score": 100.0
+        },
+        {
+          "field_id": "F00240",
+          "sample_id": "sample_28mn5ni_hr_cr_1173",
+          "section": "properties",
+          "path": "properties.sample_28mn5ni_hr_cr_1173.mechanical.tensile_properties.yield_strength[0].value_with_unit",
+          "value": "900 ± 4 MPa",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 1.0,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "b0138表格中28Mn5Ni在1173K下的YS为900±4 MPa，与字段值完全一致。",
+          "field_score": 100.0
+        }
+      ]
+    },
+    {
+      "sample_id": "sample_28mn5ni_hr_cr_973",
+      "sample_score": 95.0,
+      "sample_weight": 12.0,
+      "field_count": 8,
+      "correct_yes_count": 8,
+      "unknown_count": 0,
+      "no_count": 0,
+      "fields": [
+        {
+          "field_id": "F00241",
+          "sample_id": "sample_28mn5ni_hr_cr_973",
+          "section": "properties",
+          "path": "properties.sample_28mn5ni_hr_cr_973.mechanical.hardness[bulk].region",
+          "value": "bulk",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 0.95,
+          "evidence_refs": [
+            "b0028",
+            "b0121"
+          ],
+          "reason": "证据b0028明确说明硬度测试为bulk，b0121给出该样品硬度值450 VHN，支持region为bulk。",
+          "field_score": 95.0
+        },
+        {
+          "field_id": "F00242",
+          "sample_id": "sample_28mn5ni_hr_cr_973",
+          "section": "properties",
+          "path": "properties.sample_28mn5ni_hr_cr_973.mechanical.hardness[bulk].scale",
+          "value": "Vickers",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 0.95,
+          "evidence_refs": [
+            "b0028",
+            "b0121"
+          ],
+          "reason": "证据b0028明确使用Vickers硬度计，b0121中硬度单位为VHN，对应scale为Vickers。",
+          "field_score": 95.0
+        },
+        {
+          "field_id": "F00243",
+          "sample_id": "sample_28mn5ni_hr_cr_973",
+          "section": "properties",
+          "path": "properties.sample_28mn5ni_hr_cr_973.mechanical.hardness[bulk].value_with_unit",
+          "value": "450 VHN",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 0.95,
+          "evidence_refs": [
+            "b0121"
+          ],
+          "reason": "b0121表格中28Mn5Ni在973K时硬度为450 VHN，与字段值完全一致。",
+          "field_score": 95.0
+        },
+        {
+          "field_id": "F00244",
+          "sample_id": "sample_28mn5ni_hr_cr_973",
+          "section": "properties",
+          "path": "properties.sample_28mn5ni_hr_cr_973.mechanical.tensile_properties.elongation[0].value_with_unit",
+          "value": "5 ± 1 %",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 0.95,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "b0138表格中28Mn5Ni在HR+CR+973K下TE为5±1%，与字段值匹配。",
+          "field_score": 95.0
+        },
+        {
+          "field_id": "F00245",
+          "sample_id": "sample_28mn5ni_hr_cr_973",
+          "section": "properties",
+          "path": "properties.sample_28mn5ni_hr_cr_973.mechanical.tensile_properties.ultimate_tensile_strength[0].others.uncertainty",
+          "value": "10",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 0.95,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "b0138表格中UTS为1645±10 MPa，不确定性10与字段值一致。",
+          "field_score": 95.0
+        },
+        {
+          "field_id": "F00246",
+          "sample_id": "sample_28mn5ni_hr_cr_973",
+          "section": "properties",
+          "path": "properties.sample_28mn5ni_hr_cr_973.mechanical.tensile_properties.ultimate_tensile_strength[0].value_with_unit",
+          "value": "1645 ± 10 MPa",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 0.95,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "b0138表格中UTS为1645±10 MPa，与字段值完全一致。",
+          "field_score": 95.0
+        },
+        {
+          "field_id": "F00247",
+          "sample_id": "sample_28mn5ni_hr_cr_973",
+          "section": "properties",
+          "path": "properties.sample_28mn5ni_hr_cr_973.mechanical.tensile_properties.yield_strength[0].others.uncertainty",
+          "value": "15",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 0.95,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "b0138表格中YS为1450±15 MPa，不确定性15与字段值一致。",
+          "field_score": 95.0
+        },
+        {
+          "field_id": "F00248",
+          "sample_id": "sample_28mn5ni_hr_cr_973",
+          "section": "properties",
+          "path": "properties.sample_28mn5ni_hr_cr_973.mechanical.tensile_properties.yield_strength[0].value_with_unit",
+          "value": "1450 ± 15 MPa",
+          "field_weight": 1.5,
+          "candidate_evidence_refs": [],
+          "is_correct": "yes",
+          "evidence_confidence": 0.95,
+          "evidence_refs": [
+            "b0138"
+          ],
+          "reason": "b0138表格中YS为1450±15 MPa，与字段值完全一致。",
+          "field_score": 95.0
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "avg_sample_score": 92.80602520750077,
+    "field_count": 262,
+    "yes_count": 241,
+    "partial_count": 14,
+    "unknown_count": 6,
+    "no_count": 1
+  }
+}

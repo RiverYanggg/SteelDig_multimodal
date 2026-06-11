@@ -1,0 +1,1063 @@
+{
+  "sample_id": "sample_hr82",
+  "sample_score": 82.10407725321889,
+  "sample_weight": 93.2,
+  "field_count": 65,
+  "correct_yes_count": 52,
+  "unknown_count": 6,
+  "no_count": 0,
+  "fields": [
+    {
+      "field_id": "F00059",
+      "sample_id": "sample_hr82",
+      "section": "processing_steps",
+      "path": "processing_steps.sample_hr82.cooling_medium",
+      "value": "water",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0024"
+      ],
+      "reason": "证据明确说明水淬至室温，冷却介质为水。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00060",
+      "sample_id": "sample_hr82",
+      "section": "processing_steps",
+      "path": "processing_steps.sample_hr82.method",
+      "value": "Water quenching",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0024"
+      ],
+      "reason": "证据明确说明水淬处理。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00061",
+      "sample_id": "sample_hr82",
+      "section": "processing_steps",
+      "path": "processing_steps.sample_hr82.processing_steps_notes",
+      "value": "9 passes; final thickness 20 mm",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0024"
+      ],
+      "reason": "证据明确说明9道次，最终厚度20 mm。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00062",
+      "sample_id": "sample_hr82",
+      "section": "processing_steps",
+      "path": "processing_steps.sample_hr82.reduction_ratio",
+      "value": "82%",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0024"
+      ],
+      "reason": "证据明确说明压下量82%。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00063",
+      "sample_id": "sample_hr82",
+      "section": "processing_steps",
+      "path": "processing_steps.sample_hr82.sequence",
+      "value": "3",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "unknown",
+      "evidence_confidence": 0.0,
+      "evidence_refs": [],
+      "reason": "证据中未提及步骤序号，无法判断。",
+      "field_score": 0.0
+    },
+    {
+      "field_id": "F00064",
+      "sample_id": "sample_hr82",
+      "section": "processing_steps",
+      "path": "processing_steps.sample_hr82.temperature_with_unit",
+      "value": "1150 °C",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0024"
+      ],
+      "reason": "证据明确说明加热温度1150°C。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00065",
+      "sample_id": "sample_hr82",
+      "section": "processing_steps",
+      "path": "processing_steps.sample_hr82.type",
+      "value": "cooling",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0024"
+      ],
+      "reason": "水淬属于冷却步骤。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00106",
+      "sample_id": "sample_hr82",
+      "section": "structures",
+      "path": "structures.sample_hr82.microstructure_counts",
+      "value": "Austenite matrix >96%, κ-carbide ~3.9%, (Nb,Mo,W)C ~0.198% (volume fractions)",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "partial",
+      "evidence_confidence": 0.7,
+      "evidence_refs": [
+        "b0068",
+        "b0089"
+      ],
+      "reason": "证据给出了κ-carbide和(Nb,Mo,W)C的体积分数，但未直接给出奥氏体>96%，可从总和推断。",
+      "field_score": 42.0
+    },
+    {
+      "field_id": "F00107",
+      "sample_id": "sample_hr82",
+      "section": "structures",
+      "path": "structures.sample_hr82.microstructure_list[3].defects[dislocation].dislocation_density",
+      "value": "9.87 × 10^13 m^-2",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0066"
+      ],
+      "reason": "证据明确给出HR82的位错密度9.87×10^13 m^-2。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00108",
+      "sample_id": "sample_hr82",
+      "section": "structures",
+      "path": "structures.sample_hr82.microstructure_list[3].defects[dislocation].type",
+      "value": "dislocation",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.9,
+      "evidence_refs": [
+        "b0066"
+      ],
+      "reason": "字段类型为位错，与位错密度描述一致。",
+      "field_score": 90.0
+    },
+    {
+      "field_id": "F00109",
+      "sample_id": "sample_hr82",
+      "section": "structures",
+      "path": "structures.sample_hr82.microstructure_list[3].grain_structure.average_grain_size.value_with_unit",
+      "value": "7.02 μm",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0035"
+      ],
+      "reason": "证据明确给出有效晶粒尺寸7.02 μm。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00110",
+      "sample_id": "sample_hr82",
+      "section": "structures",
+      "path": "structures.sample_hr82.microstructure_list[3].grain_structure.grain_size_distribution",
+      "value": "Mean grain size excluding twins: 18.80 μm; effective grain size including twin boundaries: 7.02 μm; Σ3 twin boundary fraction: 52%",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0035"
+      ],
+      "reason": "证据完全匹配：排除孪晶18.80 μm，包含孪晶7.02 μm，Σ3比例52%。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00111",
+      "sample_id": "sample_hr82",
+      "section": "structures",
+      "path": "structures.sample_hr82.microstructure_list[3].phases_present[austenite].crystal_structure",
+      "value": "FCC",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0035"
+      ],
+      "reason": "证据说明奥氏体为FCC结构。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00112",
+      "sample_id": "sample_hr82",
+      "section": "structures",
+      "path": "structures.sample_hr82.microstructure_list[3].phases_present[austenite].morphology",
+      "value": "Equiaxed grains with annealing twins",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0035"
+      ],
+      "reason": "证据提到等轴晶和退火孪晶。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00113",
+      "sample_id": "sample_hr82",
+      "section": "structures",
+      "path": "structures.sample_hr82.microstructure_list[3].phases_present[austenite].phase_name",
+      "value": "Austenite (γ)",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.9,
+      "evidence_refs": [
+        "b0035"
+      ],
+      "reason": "证据称为austenite，未显式写γ，但等价。",
+      "field_score": 90.0
+    },
+    {
+      "field_id": "F00114",
+      "sample_id": "sample_hr82",
+      "section": "structures",
+      "path": "structures.sample_hr82.microstructure_list[3].phases_present[austenite].volume_fraction",
+      "value": ">96%",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "partial",
+      "evidence_confidence": 0.7,
+      "evidence_refs": [
+        "b0068",
+        "b0089"
+      ],
+      "reason": "证据间接支持奥氏体>96%，但未直接给出数值。",
+      "field_score": 42.0
+    },
+    {
+      "field_id": "F00115",
+      "sample_id": "sample_hr82",
+      "section": "structures",
+      "path": "structures.sample_hr82.microstructure_list[3].precipitates[carbide_fe_mn_3alc_x_l_12].coherency",
+      "value": "coherent",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "unknown",
+      "evidence_confidence": 0.3,
+      "evidence_refs": [
+        "b0192"
+      ],
+      "reason": "证据表明位错可剪切κ-carbide，暗示共格，但未明确说明。",
+      "field_score": 9.0
+    },
+    {
+      "field_id": "F00116",
+      "sample_id": "sample_hr82",
+      "section": "structures",
+      "path": "structures.sample_hr82.microstructure_list[3].precipitates[carbide_fe_mn_3alc_x_l_12].distribution",
+      "value": "Homogeneously distributed within austenite matrix",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0089"
+      ],
+      "reason": "证据明确说κ-carbides均匀分布在奥氏体晶内。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00117",
+      "sample_id": "sample_hr82",
+      "section": "structures",
+      "path": "structures.sample_hr82.microstructure_list[3].precipitates[carbide_fe_mn_3alc_x_l_12].size.value_with_unit",
+      "value": "0.83 ± 0.23 nm",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0089"
+      ],
+      "reason": "证据明确给出尺寸0.83±0.23 nm。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00118",
+      "sample_id": "sample_hr82",
+      "section": "structures",
+      "path": "structures.sample_hr82.microstructure_list[3].precipitates[carbide_fe_mn_3alc_x_l_12].type",
+      "value": "κ-carbide ((Fe,Mn)3AlC_x, L'12)",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0089"
+      ],
+      "reason": "证据确定为(Fe,Mn)3AlC_x κ-carbide，L'12结构。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00119",
+      "sample_id": "sample_hr82",
+      "section": "structures",
+      "path": "structures.sample_hr82.microstructure_list[3].precipitates[nb_mo_w_c_mc_type_carbide_fcc].coherency",
+      "value": "incoherent",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "partial",
+      "evidence_confidence": 0.6,
+      "evidence_refs": [
+        "b0192"
+      ],
+      "reason": "证据通过Orowan绕过机制暗示非共格，但无直接说明。",
+      "field_score": 36.0
+    },
+    {
+      "field_id": "F00120",
+      "sample_id": "sample_hr82",
+      "section": "structures",
+      "path": "structures.sample_hr82.microstructure_list[3].precipitates[nb_mo_w_c_mc_type_carbide_fcc].distribution",
+      "value": "Submicron particles homogeneously distributed; micron-sized particles along rolling direction at grain boundaries and interior",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0067",
+        "b0068"
+      ],
+      "reason": "证据明确描述亚微米均匀分布，微米级沿轧向分布。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00121",
+      "sample_id": "sample_hr82",
+      "section": "structures",
+      "path": "structures.sample_hr82.microstructure_list[3].precipitates[nb_mo_w_c_mc_type_carbide_fcc].size.value_with_unit",
+      "value": "submicron: 259 ± 23; micron-sized: 1–25 nm (submicron); μm (micron)",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "partial",
+      "evidence_confidence": 0.6,
+      "evidence_refs": [
+        "b0068"
+      ],
+      "reason": "证据中亚微米尺寸259±23 nm，微米级1-25 μm，但字段值中写为nm，单位有误。",
+      "field_score": 36.0
+    },
+    {
+      "field_id": "F00122",
+      "sample_id": "sample_hr82",
+      "section": "structures",
+      "path": "structures.sample_hr82.microstructure_list[3].precipitates[nb_mo_w_c_mc_type_carbide_fcc].type",
+      "value": "(Nb,Mo,W)C (MC-type carbide, FCC)",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0068",
+        "b0088"
+      ],
+      "reason": "证据确定为(Nb,Mo,W)C，MC型碳化物，FCC。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00123",
+      "sample_id": "sample_hr82",
+      "section": "structures",
+      "path": "structures.sample_hr82.microstructure_list[3].related_sequence",
+      "value": "3",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "unknown",
+      "evidence_confidence": 0.0,
+      "evidence_refs": [],
+      "reason": "证据未提及与处理步骤序列的关联。",
+      "field_score": 0.0
+    },
+    {
+      "field_id": "F00124",
+      "sample_id": "sample_hr82",
+      "section": "structures",
+      "path": "structures.sample_hr82.number_of_phases",
+      "value": "3",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.9,
+      "evidence_refs": [
+        "b0035",
+        "b0068",
+        "b0089"
+      ],
+      "reason": "证据表明存在奥氏体、κ-carbide和(Nb,Mo,W)C三种相。",
+      "field_score": 90.0
+    },
+    {
+      "field_id": "F00125",
+      "sample_id": "sample_hr82",
+      "section": "structures",
+      "path": "structures.sample_hr82.overall_structure",
+      "value": "Equiaxed fully austenitic microstructure with annealing twins, containing nano-sized κ-carbides and (Nb,Mo,W)C particles.",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.9,
+      "evidence_refs": [
+        "b0035",
+        "b0067",
+        "b0089"
+      ],
+      "reason": "证据描述为等轴全奥氏体组织，含退火孪晶、纳米κ-碳化物和(Nb,Mo,W)C颗粒。",
+      "field_score": 90.0
+    },
+    {
+      "field_id": "F00141",
+      "sample_id": "sample_hr82",
+      "section": "interfaces",
+      "path": "interfaces.sample_hr82.defect_interaction[0].interaction_type",
+      "value": "shearing",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0192"
+      ],
+      "reason": "证据明确说位错剪切κ-carbide。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00142",
+      "sample_id": "sample_hr82",
+      "section": "interfaces",
+      "path": "interfaces.sample_hr82.defect_interaction[0].quality_description",
+      "value": "Dislocations shear coherent κ-carbides, creating anti-phase boundaries and causing glide plane softening.",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.9,
+      "evidence_refs": [
+        "b0192",
+        "b0209"
+      ],
+      "reason": "证据提到剪切产生反相畴界和滑移面软化，描述一致。",
+      "field_score": 90.0
+    },
+    {
+      "field_id": "F00143",
+      "sample_id": "sample_hr82",
+      "section": "interfaces",
+      "path": "interfaces.sample_hr82.defect_interaction[1].interaction_type",
+      "value": "Orowan bypass",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0192"
+      ],
+      "reason": "证据明确说位错通过Orowan绕过(Nb,Mo,W)C。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00144",
+      "sample_id": "sample_hr82",
+      "section": "interfaces",
+      "path": "interfaces.sample_hr82.defect_interaction[1].quality_description",
+      "value": "Dislocations bypass incoherent (Nb,Mo,W)C particles via Orowan mechanism.",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "partial",
+      "evidence_confidence": 0.6,
+      "evidence_refs": [
+        "b0192"
+      ],
+      "reason": "证据支持Orowan机制，但未明确说非共格。",
+      "field_score": 36.0
+    },
+    {
+      "field_id": "F00145",
+      "sample_id": "sample_hr82",
+      "section": "interfaces",
+      "path": "interfaces.sample_hr82.phases[austenite].coherence",
+      "value": "incoherent",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "unknown",
+      "evidence_confidence": 0.2,
+      "evidence_refs": [],
+      "reason": "证据未讨论奥氏体与(Nb,Mo,W)C的相干性。",
+      "field_score": 6.0
+    },
+    {
+      "field_id": "F00146",
+      "sample_id": "sample_hr82",
+      "section": "interfaces",
+      "path": "interfaces.sample_hr82.phases[austenite].phase_1_name",
+      "value": "Austenite",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0035"
+      ],
+      "reason": "证据明确有奥氏体相。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00147",
+      "sample_id": "sample_hr82",
+      "section": "interfaces",
+      "path": "interfaces.sample_hr82.phases[austenite].phase_2_name",
+      "value": "(Nb,Mo,W)C",
+      "field_weight": 1.3,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0068"
+      ],
+      "reason": "证据明确有(Nb,Mo,W)C相。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00193",
+      "sample_id": "sample_hr82",
+      "section": "properties",
+      "path": "properties.sample_hr82.mechanical.impact_toughness.test_method",
+      "value": "Charpy V-notch",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0092"
+      ],
+      "reason": "证据明确说明夏比V型缺口冲击试验。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00194",
+      "sample_id": "sample_hr82",
+      "section": "properties",
+      "path": "properties.sample_hr82.mechanical.impact_toughness.uncertainty",
+      "value": "1.2",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0092"
+      ],
+      "reason": "证据给出冲击功105±1.2 J/m^2，不确定度1.2。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00195",
+      "sample_id": "sample_hr82",
+      "section": "properties",
+      "path": "properties.sample_hr82.mechanical.impact_toughness.value_with_unit",
+      "value": "105 J/m^2",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0092"
+      ],
+      "reason": "证据明确给出冲击功105 J/m^2。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00196",
+      "sample_id": "sample_hr82",
+      "section": "properties",
+      "path": "properties.sample_hr82.mechanical.reduction_of_area[rd].direction",
+      "value": "RD",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "unknown",
+      "evidence_confidence": 0.2,
+      "evidence_refs": [
+        "b0091"
+      ],
+      "reason": "证据给出断面收缩率但未明确方向，推测为RD，但无直接陈述。",
+      "field_score": 6.0
+    },
+    {
+      "field_id": "F00197",
+      "sample_id": "sample_hr82",
+      "section": "properties",
+      "path": "properties.sample_hr82.mechanical.reduction_of_area[rd].others.uncertainty",
+      "value": "0.3",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0157"
+      ],
+      "reason": "表1明确给出HR82的RA为61.5±0.3%。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00198",
+      "sample_id": "sample_hr82",
+      "section": "properties",
+      "path": "properties.sample_hr82.mechanical.reduction_of_area[rd].value_with_unit",
+      "value": "61.5 %",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0157"
+      ],
+      "reason": "表1明确给出61.5%。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00199",
+      "sample_id": "sample_hr82",
+      "section": "properties",
+      "path": "properties.sample_hr82.mechanical.tensile_properties.elongation[rd_total].direction",
+      "value": "RD (total)",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.9,
+      "evidence_refs": [
+        "b0091",
+        "b0157"
+      ],
+      "reason": "证据给出总延伸率50.0%，方向为RD。",
+      "field_score": 90.0
+    },
+    {
+      "field_id": "F00200",
+      "sample_id": "sample_hr82",
+      "section": "properties",
+      "path": "properties.sample_hr82.mechanical.tensile_properties.elongation[rd_total].others.uncertainty",
+      "value": "1.0",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0157"
+      ],
+      "reason": "表1明确总延伸率50.0±1.0%，不确定度1.0。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00201",
+      "sample_id": "sample_hr82",
+      "section": "properties",
+      "path": "properties.sample_hr82.mechanical.tensile_properties.elongation[rd_total].value_with_unit",
+      "value": "50.0 %",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0157"
+      ],
+      "reason": "表1明确50.0%。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00202",
+      "sample_id": "sample_hr82",
+      "section": "properties",
+      "path": "properties.sample_hr82.mechanical.tensile_properties.elongation[rd_uniform].direction",
+      "value": "RD (uniform)",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.9,
+      "evidence_refs": [
+        "b0091",
+        "b0157"
+      ],
+      "reason": "证据给出均匀延伸率39.0%，方向为RD。",
+      "field_score": 90.0
+    },
+    {
+      "field_id": "F00203",
+      "sample_id": "sample_hr82",
+      "section": "properties",
+      "path": "properties.sample_hr82.mechanical.tensile_properties.elongation[rd_uniform].others.uncertainty",
+      "value": "0.8",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0157"
+      ],
+      "reason": "表1明确均匀延伸率39.0±0.8%，不确定度0.8。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00204",
+      "sample_id": "sample_hr82",
+      "section": "properties",
+      "path": "properties.sample_hr82.mechanical.tensile_properties.elongation[rd_uniform].value_with_unit",
+      "value": "39.0 %",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0157"
+      ],
+      "reason": "表1明确39.0%。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00205",
+      "sample_id": "sample_hr82",
+      "section": "properties",
+      "path": "properties.sample_hr82.mechanical.tensile_properties.strain_hardening_rate[rd].direction",
+      "value": "RD",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "unknown",
+      "evidence_confidence": 0.2,
+      "evidence_refs": [
+        "b0207"
+      ],
+      "reason": "证据给出加工硬化率~2000 MPa，但未明确方向为RD，推测但无直接证据。",
+      "field_score": 6.0
+    },
+    {
+      "field_id": "F00206",
+      "sample_id": "sample_hr82",
+      "section": "properties",
+      "path": "properties.sample_hr82.mechanical.tensile_properties.strain_hardening_rate[rd].value_with_unit",
+      "value": "~2000 MPa",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.9,
+      "evidence_refs": [
+        "b0207"
+      ],
+      "reason": "证据明确说加工硬化率保持在~2000 MPa。",
+      "field_score": 90.0
+    },
+    {
+      "field_id": "F00207",
+      "sample_id": "sample_hr82",
+      "section": "properties",
+      "path": "properties.sample_hr82.mechanical.tensile_properties.ultimate_tensile_strength[rd].direction",
+      "value": "RD",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.9,
+      "evidence_refs": [
+        "b0091",
+        "b0157"
+      ],
+      "reason": "证据给出抗拉强度976.0 MPa，方向为RD。",
+      "field_score": 90.0
+    },
+    {
+      "field_id": "F00208",
+      "sample_id": "sample_hr82",
+      "section": "properties",
+      "path": "properties.sample_hr82.mechanical.tensile_properties.ultimate_tensile_strength[rd].others.uncertainty",
+      "value": "11.0",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0157"
+      ],
+      "reason": "表1明确976.0±11.0，不确定度11.0。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00209",
+      "sample_id": "sample_hr82",
+      "section": "properties",
+      "path": "properties.sample_hr82.mechanical.tensile_properties.ultimate_tensile_strength[rd].value_with_unit",
+      "value": "976.0 MPa",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0157"
+      ],
+      "reason": "表1明确976.0 MPa。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00210",
+      "sample_id": "sample_hr82",
+      "section": "properties",
+      "path": "properties.sample_hr82.mechanical.tensile_properties.yield_strength[rd].direction",
+      "value": "RD",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.9,
+      "evidence_refs": [
+        "b0091",
+        "b0157"
+      ],
+      "reason": "证据给出屈服强度648.0 MPa，方向为RD。",
+      "field_score": 90.0
+    },
+    {
+      "field_id": "F00211",
+      "sample_id": "sample_hr82",
+      "section": "properties",
+      "path": "properties.sample_hr82.mechanical.tensile_properties.yield_strength[rd].others.uncertainty",
+      "value": "13.0",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0157"
+      ],
+      "reason": "表1明确648.0±13.0，不确定度13.0。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00212",
+      "sample_id": "sample_hr82",
+      "section": "properties",
+      "path": "properties.sample_hr82.mechanical.tensile_properties.yield_strength[rd].value_with_unit",
+      "value": "648.0 MPa",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0157"
+      ],
+      "reason": "表1明确648.0 MPa。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00213",
+      "sample_id": "sample_hr82",
+      "section": "properties",
+      "path": "properties.sample_hr82.physical.density.value_with_unit",
+      "value": "6.82 g/cm^3",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0024"
+      ],
+      "reason": "证据明确密度6.82 g/cm^3。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00214",
+      "sample_id": "sample_hr82",
+      "section": "properties",
+      "path": "properties.sample_hr82.physical.stacking_fault_energy.value_with_unit",
+      "value": "~73 mJ/m^2",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0207"
+      ],
+      "reason": "证据明确堆垛层错能~73 mJ/m^2。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00215",
+      "sample_id": "sample_hr82",
+      "section": "performance",
+      "path": "performance.sample_hr82.comparative_performance.benchmark_alloy",
+      "value": "Solution-treated austenitic stainless steels (SUS347J1TB, Nickel-free ASS, Super ASS) and Fe-Mn-Al-C alloys (Fe-28Mn-9Al-0.8C, Fe-30Mn-9Al-0.4-1.2C etc.)",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "partial",
+      "evidence_confidence": 0.7,
+      "evidence_refs": [
+        "b0094",
+        "b0183"
+      ],
+      "reason": "证据提及多种奥氏体钢和Fe-Mn-Al-C合金，但字段列表不完全匹配证据中的具体合金。",
+      "field_score": 42.0
+    },
+    {
+      "field_id": "F00216",
+      "sample_id": "sample_hr82",
+      "section": "performance",
+      "path": "performance.sample_hr82.comparative_performance.improvement_percentage",
+      "value": "YS of HR82 comparable to aging-hardened steels (~650 MPa) but with significantly higher ductility (50% vs. 21%) and toughness (105 J/m^2 vs. 35 J/m^2); markedly higher YS than solution-treated ASS with similar ductility and toughness.",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.9,
+      "evidence_refs": [
+        "b0094"
+      ],
+      "reason": "证据明确说明与时效硬化钢比较的强度和塑性韧性数据，字段描述一致。",
+      "field_score": 90.0
+    },
+    {
+      "field_id": "F00217",
+      "sample_id": "sample_hr82",
+      "section": "performance",
+      "path": "performance.sample_hr82.service_conditions.environment",
+      "value": "air",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "partial",
+      "evidence_confidence": 0.3,
+      "evidence_refs": [
+        "b0029"
+      ],
+      "reason": "证据表明测试在室温进行，但未明确环境为空气，常识可接受。",
+      "field_score": 18.0
+    },
+    {
+      "field_id": "F00218",
+      "sample_id": "sample_hr82",
+      "section": "performance",
+      "path": "performance.sample_hr82.service_conditions.operating_temperature.max",
+      "value": "room temperature",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0029",
+        "b0092"
+      ],
+      "reason": "证据明确室温测试。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00219",
+      "sample_id": "sample_hr82",
+      "section": "performance",
+      "path": "performance.sample_hr82.service_conditions.operating_temperature.min",
+      "value": "room temperature",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0029",
+        "b0092"
+      ],
+      "reason": "证据明确室温测试。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00220",
+      "sample_id": "sample_hr82",
+      "section": "performance",
+      "path": "performance.sample_hr82.service_conditions.stress_state",
+      "value": "tensile and impact",
+      "field_weight": 1.5,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.9,
+      "evidence_refs": [
+        "b0029",
+        "b0092"
+      ],
+      "reason": "证据包含拉伸和冲击测试，应力状态对应。",
+      "field_score": 90.0
+    },
+    {
+      "field_id": "F00227",
+      "sample_id": "sample_hr82",
+      "section": "characterization_methods",
+      "path": "characterization_methods.sample_hr82.key_findings",
+      "value": "CVN impact energy 105±1.2 J/m^2.",
+      "field_weight": 1.0,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0092"
+      ],
+      "reason": "证据明确夏比冲击功105±1.2 J/m^2。",
+      "field_score": 100.0
+    },
+    {
+      "field_id": "F00228",
+      "sample_id": "sample_hr82",
+      "section": "characterization_methods",
+      "path": "characterization_methods.sample_hr82.purpose",
+      "value": "Measure impact toughness",
+      "field_weight": 1.0,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 0.9,
+      "evidence_refs": [
+        "b0029",
+        "b0092"
+      ],
+      "reason": "证据表明进行冲击韧度测量。",
+      "field_score": 90.0
+    },
+    {
+      "field_id": "F00229",
+      "sample_id": "sample_hr82",
+      "section": "characterization_methods",
+      "path": "characterization_methods.sample_hr82.technique",
+      "value": "Charpy V-notch impact test (room temperature)",
+      "field_weight": 1.0,
+      "candidate_evidence_refs": [],
+      "is_correct": "yes",
+      "evidence_confidence": 1.0,
+      "evidence_refs": [
+        "b0092"
+      ],
+      "reason": "证据明确为夏比V型缺口冲击试验，室温。",
+      "field_score": 100.0
+    }
+  ]
+}

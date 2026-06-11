@@ -1,0 +1,565 @@
+{
+    "papers": [
+        {
+            "paper_id": "A45",
+            "doi": "10.1016/j.mtla.2025.102360",
+            "title": "Phase transformation and austenite stability during thermomechanical processing of high (~5%) Al added low-density medium Mn steel",
+            "authors": ["Mukesh Kumar Yadav", "Deepak Kumar", "Navanit Kumar", "Tapas Kumar Bandyopadhyay"],
+            "publication_year": "2025",
+            "journal": null,
+            "keywords": ["Al added medium Mn steel", "Delta ferrite", "Austenite stability", "Phase transformation", "Stacking fault energy"],
+            "research_type": "mixed",
+            "paper_scope": "Develop high Al (~5 wt.%) added low-density medium Mn steel, investigate phase transformation behavior, austenite stability, microstructure evolution during thermomechanical processing and intercritical annealing, and correlate with mechanical properties."
+        }
+    ],
+    "alloys": [
+        {
+            "alloy_id": "alloy_fe8mn5al02c",
+            "paper_id": "A45",
+            "alloy_name": "Fe-7.79Mn-4.88Al-0.84Si-0.2C low-density medium Mn steel",
+            "aliases": ["high Al added medium Mn steel"],
+            "base_element": "Fe",
+            "alloying_elements": ["Mn", "Al", "Si", "C", "P", "S"],
+            "nominal_composition": [
+                {"element": "Fe", "weight_percent": "Bal.", "atomic_percent": null},
+                {"element": "Mn", "weight_percent": "7.79", "atomic_percent": null},
+                {"element": "Al", "weight_percent": "4.88", "atomic_percent": null},
+                {"element": "Si", "weight_percent": "0.84", "atomic_percent": null},
+                {"element": "C", "weight_percent": "0.2", "atomic_percent": null},
+                {"element": "P", "weight_percent": "0.03", "atomic_percent": null},
+                {"element": "S", "weight_percent": "0.03", "atomic_percent": null}
+            ],
+            "alloys_notes": "Density is 6.91455 g/cc, ~11.35% lower than conventional steel due to high Al and Si addition."
+        }
+    ],
+    "processes": [
+        {
+            "process_id": "proc_fe8mn5al02c_01",
+            "paper_id": "A45",
+            "alloy_id": "alloy_fe8mn5al02c",
+            "description": "Conventional melting casting route in open-air induction furnace",
+            "processes_notes": null
+        },
+        {
+            "process_id": "proc_fe8mn5al02c_02",
+            "paper_id": "A45",
+            "alloy_id": "alloy_fe8mn5al02c",
+            "description": "Homogenization at 1100 °C for 2 hr, hot forged to 50% thickness reduction in 1050-800 °C, air cooled to room temperature",
+            "processes_notes": null
+        },
+        {
+            "process_id": "proc_fe8mn5al02c_03",
+            "paper_id": "A45",
+            "alloy_id": "alloy_fe8mn5al02c",
+            "description": "Hot forged samples soaked at 1100 °C for 2 hr, hot rolled in 1050-800 °C with two passes (50% reduction per pass, reheated at 1100 °C for 5 min between passes), water quenched to room temperature from finish rolling temperature, surface machined 1 mm depth on both sides",
+            "processes_notes": null
+        },
+        {
+            "process_id": "proc_fe8mn5al02c_04",
+            "paper_id": "A45",
+            "alloy_id": "alloy_fe8mn5al02c",
+            "description": "Hot rolled quenched sample intercritically annealed at 750 °C for 5 min, air cooled to room temperature",
+            "processes_notes": null
+        },
+        {
+            "process_id": "proc_fe8mn5al02c_05",
+            "paper_id": "A45",
+            "alloy_id": "alloy_fe8mn5al02c",
+            "description": "Hot rolled quenched sample intercritically annealed at 750 °C for 30 min, air cooled to room temperature",
+            "processes_notes": null
+        },
+        {
+            "process_id": "proc_fe8mn5al02c_06",
+            "paper_id": "A45",
+            "alloy_id": "alloy_fe8mn5al02c",
+            "description": "Hot rolled quenched sample intercritically annealed at 750 °C for 60 min, air cooled to room temperature",
+            "processes_notes": "Selected due to optimum austenite stability and enhanced TRIP effect"
+        },
+        {
+            "process_id": "proc_fe8mn5al02c_07",
+            "paper_id": "A45",
+            "alloy_id": "alloy_fe8mn5al02c",
+            "description": "Hot rolled quenched sample intercritically annealed at 750 °C for 120 min, air cooled to room temperature",
+            "processes_notes": null
+        },
+        {
+            "process_id": "proc_fe8mn5al02c_08",
+            "paper_id": "A45",
+            "alloy_id": "alloy_fe8mn5al02c",
+            "description": "Hot rolled quenched sample intercritically annealed at 750 °C for 180 min, air cooled to room temperature",
+            "processes_notes": null
+        }
+    ],
+    "samples": [
+        {"sample_id": "sample_fe8mn5al02c_cast", "paper_id": "A45", "alloy_id": "alloy_fe8mn5al02c", "process_id": "proc_fe8mn5al02c_01"},
+        {"sample_id": "sample_fe8mn5al02c_forged", "paper_id": "A45", "alloy_id": "alloy_fe8mn5al02c", "process_id": "proc_fe8mn5al02c_02"},
+        {"sample_id": "sample_fe8mn5al02c_hrq", "paper_id": "A45", "alloy_id": "alloy_fe8mn5al02c", "process_id": "proc_fe8mn5al02c_03"},
+        {"sample_id": "sample_fe8mn5al02c_ia5", "paper_id": "A45", "alloy_id": "alloy_fe8mn5al02c", "process_id": "proc_fe8mn5al02c_04"},
+        {"sample_id": "sample_fe8mn5al02c_ia30", "paper_id": "A45", "alloy_id": "alloy_fe8mn5al02c", "process_id": "proc_fe8mn5al02c_05"},
+        {"sample_id": "sample_fe8mn5al02c_ia60", "paper_id": "A45", "alloy_id": "alloy_fe8mn5al02c", "process_id": "proc_fe8mn5al02c_06"},
+        {"sample_id": "sample_fe8mn5al02c_ia120", "paper_id": "A45", "alloy_id": "alloy_fe8mn5al02c", "process_id": "proc_fe8mn5al02c_07"},
+        {"sample_id": "sample_fe8mn5al02c_ia180", "paper_id": "A45", "alloy_id": "alloy_fe8mn5al02c", "process_id": "proc_fe8mn5al02c_08"}
+    ],
+    "processing_steps": [
+        {
+            "sample_id": "sample_fe8mn5al02c_cast",
+            "paper_id": "A45",
+            "sequence": "1",
+            "type": "casting",
+            "method": "open-air induction furnace melting casting",
+            "temperature": null,
+            "unit": null,
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": null
+        },
+        {
+            "sample_id": "sample_fe8mn5al02c_forged",
+            "paper_id": "A45",
+            "sequence": "1",
+            "type": "heat_treatment",
+            "method": "homogenization",
+            "temperature": "1100",
+            "unit": "°C",
+            "duration": "2",
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "unit of duration is hr"
+        },
+        {
+            "sample_id": "sample_fe8mn5al02c_forged",
+            "paper_id": "A45",
+            "sequence": "2",
+            "type": "thermomechanical_processing",
+            "method": "hot forging",
+            "temperature": "1050-800",
+            "unit": "°C",
+            "duration": null,
+            "cooling_medium": "air",
+            "reduction_ratio": "50",
+            "processing_steps_notes": "reduction ratio unit is %"
+        },
+        {
+            "sample_id": "sample_fe8mn5al02c_hrq",
+            "paper_id": "A45",
+            "sequence": "1",
+            "type": "heat_treatment",
+            "method": "soaking",
+            "temperature": "1100",
+            "unit": "°C",
+            "duration": "2",
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "unit of duration is hr"
+        },
+        {
+            "sample_id": "sample_fe8mn5al02c_hrq",
+            "paper_id": "A45",
+            "sequence": "2",
+            "type": "thermomechanical_processing",
+            "method": "hot rolling pass 1",
+            "temperature": "1050-800",
+            "unit": "°C",
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": "50",
+            "processing_steps_notes": "reduction ratio unit is %"
+        },
+        {
+            "sample_id": "sample_fe8mn5al02c_hrq",
+            "paper_id": "A45",
+            "sequence": "3",
+            "type": "heat_treatment",
+            "method": "reheating between passes",
+            "temperature": "1100",
+            "unit": "°C",
+            "duration": "5",
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "unit of duration is min"
+        },
+        {
+            "sample_id": "sample_fe8mn5al02c_hrq",
+            "paper_id": "A45",
+            "sequence": "4",
+            "type": "thermomechanical_processing",
+            "method": "hot rolling pass 2",
+            "temperature": "1050-800",
+            "unit": "°C",
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": "50",
+            "processing_steps_notes": "reduction ratio unit is %"
+        },
+        {
+            "sample_id": "sample_fe8mn5al02c_hrq",
+            "paper_id": "A45",
+            "sequence": "5",
+            "type": "cooling",
+            "method": "water quenching",
+            "temperature": "800",
+            "unit": "°C",
+            "duration": null,
+            "cooling_medium": "water",
+            "reduction_ratio": null,
+            "processing_steps_notes": "quenched from finish rolling temperature"
+        },
+        {
+            "sample_id": "sample_fe8mn5al02c_hrq",
+            "paper_id": "A45",
+            "sequence": "6",
+            "type": "mechanical_processing",
+            "method": "surface machining",
+            "temperature": null,
+            "unit": null,
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "machined 1 mm depth on both sides to remove oxide layer"
+        },
+        {
+            "sample_id": "sample_fe8mn5al02c_ia5",
+            "paper_id": "A45",
+            "sequence": "1",
+            "type": "heat_treatment",
+            "method": "intercritical annealing",
+            "temperature": "750",
+            "unit": "°C",
+            "duration": "5",
+            "cooling_medium": "air",
+            "reduction_ratio": null,
+            "processing_steps_notes": "unit of duration is min"
+        },
+        {
+            "sample_id": "sample_fe8mn5al02c_ia30",
+            "paper_id": "A45",
+            "sequence": "1",
+            "type": "heat_treatment",
+            "method": "intercritical annealing",
+            "temperature": "750",
+            "unit": "°C",
+            "duration": "30",
+            "cooling_medium": "air",
+            "reduction_ratio": null,
+            "processing_steps_notes": "unit of duration is min"
+        },
+        {
+            "sample_id": "sample_fe8mn5al02c_ia60",
+            "paper_id": "A45",
+            "sequence": "1",
+            "type": "heat_treatment",
+            "method": "intercritical annealing",
+            "temperature": "750",
+            "unit": "°C",
+            "duration": "60",
+            "cooling_medium": "air",
+            "reduction_ratio": null,
+            "processing_steps_notes": "unit of duration is min"
+        },
+        {
+            "sample_id": "sample_fe8mn5al02c_ia120",
+            "paper_id": "A45",
+            "sequence": "1",
+            "type": "heat_treatment",
+            "method": "intercritical annealing",
+            "temperature": "750",
+            "unit": "°C",
+            "duration": "120",
+            "cooling_medium": "air",
+            "reduction_ratio": null,
+            "processing_steps_notes": "unit of duration is min"
+        },
+        {
+            "sample_id": "sample_fe8mn5al02c_ia180",
+            "paper_id": "A45",
+            "sequence": "1",
+            "type": "heat_treatment",
+            "method": "intercritical annealing",
+            "temperature": "750",
+            "unit": "°C",
+            "duration": "180",
+            "cooling_medium": "air",
+            "reduction_ratio": null,
+            "processing_steps_notes": "unit of duration is min"
+        }
+    ],
+    "structures": [
+        {
+            "structure_id": "struct_001",
+            "sample_id": "sample_fe8mn5al02c_cast",
+            "overall_structure": "Dual-phase of delta ferrite and austenite, austenite has dendritic morphology",
+            "number_of_phases": "2",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_001",
+                    "related_sequence": null,
+                    "phases_present": [
+                        {"phase_name": "delta ferrite", "crystal_structure": "BCC", "volume_fraction": "~74", "morphology": "matrix", "grain_size": null, "texture": null},
+                        {"phase_name": "austenite", "crystal_structure": "FCC", "volume_fraction": "~26", "morphology": "dendritic", "grain_size": null, "texture": null}
+                    ],
+                    "defects": [{"type": null, "porosity": null, "inclusions": [], "dislocation_density": null, "lattice_distortion": null}],
+                    "grain_structure": {"average_grain_size": {"value": null, "unit": null}, "grain_size_distribution": null, "texture": null},
+                    "precipitates": []
+                }
+            ]
+        },
+        {
+            "structure_id": "struct_002",
+            "sample_id": "sample_fe8mn5al02c_forged",
+            "overall_structure": "Dual-phase of delta ferrite and austenite, partial dendritic structure remains",
+            "number_of_phases": "2",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_002",
+                    "related_sequence": "2",
+                    "phases_present": [
+                        {"phase_name": "delta ferrite", "crystal_structure": "BCC", "volume_fraction": "~71", "morphology": "matrix", "grain_size": null, "texture": null},
+                        {"phase_name": "austenite", "crystal_structure": "FCC", "volume_fraction": "~29", "morphology": "partially elongated, residual dendritic", "grain_size": null, "texture": null}
+                    ],
+                    "defects": [{"type": null, "porosity": null, "inclusions": [], "dislocation_density": null, "lattice_distortion": null}],
+                    "grain_structure": {"average_grain_size": {"value": null, "unit": null}, "grain_size_distribution": null, "texture": null},
+                    "precipitates": []
+                }
+            ]
+        },
+        {
+            "structure_id": "struct_003",
+            "sample_id": "sample_fe8mn5al02c_hrq",
+            "overall_structure": "Delta ferrite matrix with untransformed austenite and lenticular martensite",
+            "number_of_phases": "3",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_003",
+                    "related_sequence": "5",
+                    "phases_present": [
+                        {"phase_name": "delta ferrite", "crystal_structure": "BCC", "volume_fraction": null, "morphology": "matrix", "grain_size": null, "texture": "elongated along rolling direction"},
+                        {"phase_name": "untransformed austenite", "crystal_structure": "FCC", "volume_fraction": "~19", "morphology": "elongated", "grain_size": null, "texture": "elongated along rolling direction"},
+                        {"phase_name": "martensite", "crystal_structure": "BCT", "volume_fraction": null, "morphology": "lenticular", "grain_size": null, "texture": null}
+                    ],
+                    "defects": [{"type": null, "porosity": null, "inclusions": [], "dislocation_density": null, "lattice_distortion": null}],
+                    "grain_structure": {"average_grain_size": {"value": null, "unit": null}, "grain_size_distribution": null, "texture": null},
+                    "precipitates": []
+                }
+            ]
+        },
+        {
+            "structure_id": "struct_004",
+            "sample_id": "sample_fe8mn5al02c_ia5",
+            "overall_structure": "Delta ferrite, untransformed austenite, intercritical ferrite and needle-shaped reverted austenite",
+            "number_of_phases": "4",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_004",
+                    "related_sequence": "1",
+                    "phases_present": [
+                        {"phase_name": "delta ferrite", "crystal_structure": "BCC", "volume_fraction": null, "morphology": "stable matrix", "grain_size": null, "texture": null},
+                        {"phase_name": "untransformed austenite", "crystal_structure": "FCC", "volume_fraction": null, "morphology": null, "grain_size": null, "texture": null},
+                        {"phase_name": "intercritical ferrite", "crystal_structure": "BCC", "volume_fraction": null, "morphology": null, "grain_size": null, "texture": null},
+                        {"phase_name": "reverted austenite", "crystal_structure": "FCC", "volume_fraction": "~27", "morphology": "needle-shaped", "grain_size": null, "texture": null}
+                    ],
+                    "defects": [{"type": null, "porosity": null, "inclusions": [], "dislocation_density": "reduced compared to HRQ", "lattice_distortion": null}],
+                    "grain_structure": {"average_grain_size": {"value": null, "unit": null}, "grain_size_distribution": null, "texture": null},
+                    "precipitates": []
+                }
+            ]
+        },
+        {
+            "structure_id": "struct_006",
+            "sample_id": "sample_fe8mn5al02c_ia60",
+            "overall_structure": "Delta ferrite, untransformed austenite, intercritical ferrite, needle-shaped and globular reverted austenite",
+            "number_of_phases": "4",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_006",
+                    "related_sequence": "1",
+                    "phases_present": [
+                        {"phase_name": "delta ferrite", "crystal_structure": "BCC", "volume_fraction": null, "morphology": "stable matrix", "grain_size": null, "texture": null},
+                        {"phase_name": "untransformed austenite", "crystal_structure": "FCC", "volume_fraction": null, "morphology": null, "grain_size": null, "texture": null},
+                        {"phase_name": "intercritical ferrite", "crystal_structure": "BCC", "volume_fraction": null, "morphology": null, "grain_size": null, "texture": null},
+                        {"phase_name": "reverted austenite", "crystal_structure": "FCC", "volume_fraction": "~35", "morphology": "needle + globular", "grain_size": null, "texture": null}
+                    ],
+                    "defects": [{"type": null, "porosity": null, "inclusions": [], "dislocation_density": null, "lattice_distortion": null}],
+                    "grain_structure": {"average_grain_size": {"value": null, "unit": null}, "grain_size_distribution": null, "texture": null},
+                    "precipitates": [
+                        {"precipitate_id": "prec_001", "type": "reverted austenite (needle)", "size": {"value": "1.42±0.16 (length), 0.345±0.40 (width)", "unit": "µm"}, "distribution": null, "coherency": null},
+                        {"precipitate_id": "prec_002", "type": "reverted austenite (globular)", "size": {"value": "0.0185±0.010", "unit": "µm"}, "distribution": null, "coherency": null}
+                    ]
+                }
+            ]
+        }
+    ],
+    "interfaces": [
+        {
+            "interface_set_id": "ifs_001",
+            "sample_id": "sample_fe8mn5al02c_ia60",
+            "phases": [
+                {"interface_id": "if_001", "microstructure_uuid": "uuid_006", "phase_1_name": "intercritical ferrite", "phase_2_name": "reverted austenite", "coherence": null}
+            ],
+            "defect_interaction": [],
+            "interface_notes": [
+                {"stress_strain_distribution": null},
+                {"slippage_situation": null},
+                {"interface_element_partition": "Mn and C enriched, Fe and Al depleted at interface"}
+            ],
+            "phase_evolution": "Continuous elemental partitioning of C and Mn from reverted austenite to adjacent untransformed austenite during annealing, leading to dissolution of reverted austenite into intercritical ferrite with increasing annealing time"
+        }
+    ],
+    "properties": [
+        {
+            "property_set_id": "prop_hrq",
+            "sample_id": "sample_fe8mn5al02c_hrq",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [{"direction": "rolling direction", "value": "486±6", "unit": "MPa", "others": {"uncertainty": "±6"}}],
+                    "ultimate_tensile_strength": [{"direction": "rolling direction", "value": "674±20", "unit": "MPa", "others": {"uncertainty": "±20"}}],
+                    "elongation": [{"direction": "rolling direction", "value": "1.5±0.5", "unit": "%"}],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [
+                    {"region": "delta ferrite", "value": "4439±206", "scale": "nano hardness", "unit": "MPa"},
+                    {"region": "untransformed austenite", "value": "4080±360", "scale": "nano hardness", "unit": "MPa"},
+                    {"region": "martensite", "value": "8897±550", "scale": "nano hardness", "unit": "MPa"}
+                ],
+                "fracture_toughness": {"value": null, "unit": null},
+                "fatigue_properties": {"fatigue_limit": null, "cycles_to_failure": null},
+                "creep_properties": {"steady_state_creep_rate": null, "rupture_life": null}
+            },
+            "physical": {
+                "density": {"value": "6.91455", "unit": "g/cc"},
+                "thermal_properties": {"thermal_conductivity": null, "thermal_expansion_coefficient": null, "specific_heat": null},
+                "electrical_properties": {"electrical_conductivity": null, "resistivity": null},
+                "magnetic_properties": {"magnetic_susceptibility": null, "curie_temperature": "~350"}
+            },
+            "chemical": {"corrosion_resistance": {"test_medium": null, "corrosion_rate": null, "passivation_behavior": null}, "oxidation_resistance": {"oxidation_rate_constant": null, "protective_scale": null}},
+            "radiation_properties": {"void_swelling": null, "irradiation_hardening": null, "helium_embrittlement": null}
+        },
+        {
+            "property_set_id": "prop_ia60",
+            "sample_id": "sample_fe8mn5al02c_ia60",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [{"direction": "rolling direction", "value": "465±10", "unit": "MPa", "others": {"uncertainty": "±10"}}],
+                    "ultimate_tensile_strength": [{"direction": "rolling direction", "value": "658.45±6", "unit": "MPa", "others": {"uncertainty": "±6"}}],
+                    "elongation": [{"direction": "rolling direction", "value": "12±0.95", "unit": "%"}],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": [{"property_id": "shr_001", "direction": "rolling direction", "value": "1000-2000", "unit": "MPa"}]
+                },
+                "hardness": [
+                    {"region": "delta ferrite", "value": "4150±200", "scale": "nano hardness", "unit": "MPa"},
+                    {"region": "untransformed austenite", "value": "4196±324", "scale": "nano hardness", "unit": "MPa"},
+                    {"region": "reverted austenite", "value": "3478±334", "scale": "nano hardness", "unit": "MPa"}
+                ],
+                "fracture_toughness": {"value": null, "unit": null},
+                "fatigue_properties": {"fatigue_limit": null, "cycles_to_failure": null},
+                "creep_properties": {"steady_state_creep_rate": null, "rupture_life": null}
+            },
+            "physical": {
+                "density": {"value": "6.91455", "unit": "g/cc"},
+                "thermal_properties": {"thermal_conductivity": null, "thermal_expansion_coefficient": null, "specific_heat": null},
+                "electrical_properties": {"electrical_conductivity": null, "resistivity": null},
+                "magnetic_properties": {"magnetic_susceptibility": null, "curie_temperature": null}
+            },
+            "chemical": {"corrosion_resistance": {"test_medium": null, "corrosion_rate": null, "passivation_behavior": null}, "oxidation_resistance": {"oxidation_rate_constant": null, "protective_scale": null}},
+            "radiation_properties": {"void_swelling": null, "irradiation_hardening": null, "helium_embrittlement": null}
+        }
+    ],
+    "performance": [
+        {
+            "performance_id": "perf_001",
+            "sample_id": "sample_fe8mn5al02c_ia60",
+            "service_conditions": {"operating_temperature": {"min": null, "max": null, "unit": null}, "stress_state": null, "environment": null},
+            "lifetime_prediction": {"model_used": null, "predicted_lifetime": null, "confidence_interval": null},
+            "comparative_performance": {
+                "benchmark_alloy": "same alloy HRQ sample",
+                "benchmark_process_id": "proc_fe8mn5al02c_03",
+                "benchmark_sample_id": "sample_fe8mn5al02c_hrq",
+                "improvement_percentage": "~682% for PSE, ~700% for elongation"
+            }
+        }
+    ],
+    "characterization_methods": [
+        {
+            "characterization_id": "char_001",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "XRF and OES",
+            "purpose": "Measure final chemical composition of developed steel",
+            "key_findings": "Composition matches nominal design: Fe-7.79Mn-4.88Al-0.84Si-0.2C"
+        },
+        {
+            "characterization_id": "char_002",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "XRD (Bruker D8 advanced, Co-Kα target)",
+            "purpose": "Identify phase composition, measure austenite volume fraction",
+            "key_findings": "Cast and forged samples contain delta ferrite + austenite; HRQ samples contain martensite; austenite volume fraction decreases with increasing annealing time after 5 min"
+        },
+        {
+            "characterization_id": "char_003",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "Optical microscopy, FEG-SEM, EBSD",
+            "purpose": "Observe microstructure morphology, phase distribution",
+            "key_findings": "Reverted austenite morphology changes from needle to globular with increasing annealing time; delta ferrite remains stable during all processing steps"
+        },
+        {
+            "characterization_id": "char_004",
+            "sample_id": "sample_fe8mn5al02c_ia60",
+            "microstructure_uuid": "uuid_006",
+            "technique": "HRTEM, APT",
+            "purpose": "Analyze nano-scale microstructure and elemental partitioning",
+            "key_findings": "No κ-carbide precipitates observed; Mn and C enriched at intercritical ferrite/reverted austenite interface"
+        },
+        {
+            "characterization_id": "char_005",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "Nanoindentation, tensile test",
+            "purpose": "Evaluate mechanical properties",
+            "key_findings": "IA60 sample exhibits optimum combination of strength and ductility (UTS 658.45±6 MPa, elongation 12±0.95%) due to enhanced TRIP effect"
+        }
+    ],
+    "computational_details": [
+        {
+            "computation_id": "comp_001",
+            "sample_id": null,
+            "simulation_method": "Thermodynamic equilibrium calculation",
+            "software_used": "Thermo-Calc (TCFE9 database)",
+            "potential_model": null,
+            "validation_against_experiment": "Dilatometry test confirms no significant phase transformation during heating/cooling due to high delta ferrite content",
+            "analytical_model": [
+                {
+                    "model_name": "Equilibrium phase fraction calculation",
+                    "equation_role": "Predict phase fraction and critical temperatures",
+                    "parameters": null,
+                    "model_note": "Dual-phase (delta ferrite + austenite) region is 650-1350 °C, intercritical annealing temperature 750 °C selected accordingly"
+                },
+                {
+                    "model_name": "Olson and Cohen SFE calculation model",
+                    "equation_role": "Calculate stacking fault energy of austenite",
+                    "parameters": null,
+                    "model_note": "Initial theoretical SFE is ~35 mJ/m²; SFE of reverted austenite in IA60 sample is ~27 mJ/m² due to elemental partitioning"
+                }
+            ]
+        }
+    ],
+    "unmapped_findings": [
+        "Martensite start temperature is ~350 °C, supporting austenite to martensite transformation during water quenching after hot rolling",
+        "Austenite mechanical stability parameter K: HRQ sample ~3.26, IA5 sample ~1.93, IA30 sample ~1.10, IA60 sample ~1.92, lower K means higher austenite stability",
+        "Austenite transformation ratio during tensile test: IA60 sample has highest ratio ~20%, leading to strongest TRIP effect",
+        "Product of strength and elongation (PSE) of IA60 sample is 7.9 GPa%, which is the highest among all processed samples",
+        "No TWIP effect observed in the alloy, deformation mechanism is dominated by TRIP effect despite high initial SFE",
+        "Fracture mode: HRQ sample shows brittle cleavage fracture, annealed samples show quasi-cleavage fracture with partial dimples from reverted austenite deformation"
+    ]
+}

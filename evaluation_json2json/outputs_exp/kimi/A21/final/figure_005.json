@@ -1,0 +1,13 @@
+{
+  "paper_id": "A21",
+  "figure_id": "figure_005",
+  "image_paths": [
+    "images/e82bbf663f8a0495038f8386ee9484700d4a139bb3b23c07f84b7314d6ff01f0.jpg",
+    "images/a85b009100babdc3e100ca1e309e5340c6ed6a74c201eb7c669cf2b0b3341e14.jpg",
+    "images/40c3bc2f2f424c42b5480fb031641113b748bc8d89cb5f43b9a84e9d45d8788e.jpg"
+  ],
+  "image_count": 3,
+  "image_type": "chart_plot",
+  "description": "Figure 4 presents machine-learning regression results for predicting the high κ-phase fraction in low-density FeMnAlC steels. Panel (a) compares five regression algorithms—KNN, ANN, SVM, RF, and CART—via 10-fold cross-validation RMSE (%). SVM exhibits the lowest RMSE (caption states <1 %), outperforming ANN (~1.2 %), KNN (~1.3 %), RF (~1.7 %), and CART (~2.4 %), establishing SVM as the optimal regressor for this dataset. Panel (b) assesses the relative importance of eight descriptors (Mn, Al, C, Fe, VEC, Tm, ΔSmix, ΔHmix) by measuring the increase in cross-validation RMSE upon removal of each individual descriptor. Removal of Al produces the largest RMSE rise (to ~1.25 %), followed by VEC (~1.15 %), indicating that Al is the most influential compositional factor for predicting κ-phase fraction, whereas removing Mn, C, Fe, Tm, ΔSmix, or ΔHmix results in comparatively minor perturbations around ~1.0–1.05 %. Panel (c) displays the predicted versus true κ-phase fraction from the SVM model under 10-fold cross-validation, with data points tightly clustered along the parity line and a correlation coefficient R = 0.99. Collectively, the figure demonstrates that an SVM regressor achieves high-precision prediction of κ-carbide volume fraction in FeMnAlC alloys, with Al content identified as the dominant descriptor.",
+  "confidence": 0.0
+}

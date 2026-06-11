@@ -1,0 +1,490 @@
+{
+  "paper_id": "A1",
+  "source_path": "/Users/mac/Desktop/SteelDig/SteelDig_multimodal/outputs_dataset/A1/final/text_extraction.json",
+  "target_unit_policy": {
+    "temperature": "°C",
+    "duration": "h",
+    "stress": "MPa",
+    "length": "μm",
+    "percent": "%",
+    "hardness": "HV",
+    "density": "g/cm^3",
+    "mass_gain": "mg/cm^2",
+    "energy_density": "mJ/m^2",
+    "fracture_toughness": "MPa·m^0.5",
+    "rate": "s^-1"
+  },
+  "summary": {
+    "converted_count": 7,
+    "unchanged_count": 21,
+    "skipped_count": 4,
+    "ambiguous_count": 6
+  },
+  "changes": [
+    {
+      "path": "$.processing_steps[1]",
+      "quantity_kind": "temperature",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": {
+        "unit": "°C",
+        "temperature": "900-1100"
+      },
+      "normalized": {
+        "unit": "°C",
+        "temperature": "900-1100"
+      }
+    },
+    {
+      "path": "$.processing_steps[2]",
+      "quantity_kind": null,
+      "status": "ambiguous",
+      "reason": "cannot infer quantity kind",
+      "original": null,
+      "normalized": null
+    },
+    {
+      "path": "$.processing_steps[3]",
+      "quantity_kind": "temperature",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": {
+        "unit": "°C",
+        "temperature": "700-950"
+      },
+      "normalized": {
+        "unit": "°C",
+        "temperature": "700-950"
+      }
+    },
+    {
+      "path": "$.processing_steps[4].temperature",
+      "quantity_kind": null,
+      "status": "ambiguous",
+      "reason": "cannot parse numeric value",
+      "original": {
+        "value": "~900",
+        "unit": "°C"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.processing_steps[5]",
+      "quantity_kind": null,
+      "status": "ambiguous",
+      "reason": "cannot infer quantity kind",
+      "original": null,
+      "normalized": null
+    },
+    {
+      "path": "$.processing_steps[6]",
+      "quantity_kind": "temperature",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": {
+        "unit": "°C",
+        "temperature": "700-900"
+      },
+      "normalized": {
+        "unit": "°C",
+        "temperature": "700-900"
+      }
+    },
+    {
+      "path": "$.processing_steps[6].duration",
+      "quantity_kind": "duration",
+      "status": "converted",
+      "reason": "normalized duration to h",
+      "original": "1-30 min",
+      "normalized": "0.0166666666667-0.5 h"
+    },
+    {
+      "path": "$.processing_steps[7]",
+      "quantity_kind": "temperature",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": {
+        "unit": "°C",
+        "temperature": "900-1100"
+      },
+      "normalized": {
+        "unit": "°C",
+        "temperature": "900-1100"
+      }
+    },
+    {
+      "path": "$.processing_steps[7].duration",
+      "quantity_kind": "duration",
+      "status": "skipped",
+      "reason": "unsupported conversion min - 2 h -> h",
+      "original": "25 min - 2 h",
+      "normalized": null
+    },
+    {
+      "path": "$.processing_steps[8]",
+      "quantity_kind": "temperature",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": {
+        "unit": "°C",
+        "temperature": "450-700"
+      },
+      "normalized": {
+        "unit": "°C",
+        "temperature": "450-700"
+      }
+    },
+    {
+      "path": "$.processing_steps[8].duration",
+      "quantity_kind": "duration",
+      "status": "skipped",
+      "reason": "unsupported conversion min - 24 h -> h",
+      "original": "5 min - 24 h",
+      "normalized": null
+    },
+    {
+      "path": "$.processing_steps[9]",
+      "quantity_kind": "temperature",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": {
+        "unit": "°C",
+        "temperature": "900-1100"
+      },
+      "normalized": {
+        "unit": "°C",
+        "temperature": "900-1100"
+      }
+    },
+    {
+      "path": "$.processing_steps[9].duration",
+      "quantity_kind": "duration",
+      "status": "skipped",
+      "reason": "unsupported conversion min - 2 h -> h",
+      "original": "30 min - 2 h",
+      "normalized": null
+    },
+    {
+      "path": "$.processing_steps[10]",
+      "quantity_kind": "temperature",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": {
+        "unit": "°C",
+        "temperature": "450-650"
+      },
+      "normalized": {
+        "unit": "°C",
+        "temperature": "450-650"
+      }
+    },
+    {
+      "path": "$.processing_steps[10].duration",
+      "quantity_kind": "duration",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": "1-20 h",
+      "normalized": "1-20 h"
+    },
+    {
+      "path": "$.processing_steps[11]",
+      "quantity_kind": "temperature",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": {
+        "unit": "°C",
+        "temperature": "600-900"
+      },
+      "normalized": {
+        "unit": "°C",
+        "temperature": "600-900"
+      }
+    },
+    {
+      "path": "$.processing_steps[11].duration",
+      "quantity_kind": "duration",
+      "status": "converted",
+      "reason": "normalized duration to h",
+      "original": "1-5 min",
+      "normalized": "0.0166666666667-0.0833333333333 h"
+    },
+    {
+      "path": "$.processing_steps[12]",
+      "quantity_kind": "temperature",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": {
+        "unit": "°C",
+        "temperature": "1100"
+      },
+      "normalized": {
+        "unit": "°C",
+        "temperature": "1100"
+      }
+    },
+    {
+      "path": "$.processing_steps[12].duration",
+      "quantity_kind": "duration",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": "2 h",
+      "normalized": "2 h"
+    },
+    {
+      "path": "$.structures[0].microstructure_list[0].grain_structure.average_grain_size",
+      "quantity_kind": "length",
+      "status": "converted",
+      "reason": "normalized length to μm",
+      "original": {
+        "unit": "µm",
+        "value": "40-90"
+      },
+      "normalized": {
+        "unit": "μm",
+        "value": "40-90"
+      }
+    },
+    {
+      "path": "$.structures[0].microstructure_list[0].precipitates[0].size",
+      "quantity_kind": null,
+      "status": "ambiguous",
+      "reason": "unit is empty",
+      "original": {
+        "unit": null,
+        "value": "coarse"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.structures[2].microstructure_list[0].grain_structure.average_grain_size",
+      "quantity_kind": "length",
+      "status": "converted",
+      "reason": "normalized length to μm",
+      "original": {
+        "unit": "µm",
+        "value": "40-60"
+      },
+      "normalized": {
+        "unit": "μm",
+        "value": "40-60"
+      }
+    },
+    {
+      "path": "$.structures[2].microstructure_list[0].precipitates[0].size",
+      "quantity_kind": "length",
+      "status": "converted",
+      "reason": "normalized length to μm",
+      "original": {
+        "unit": "nm",
+        "value": "2-30"
+      },
+      "normalized": {
+        "unit": "μm",
+        "value": "0.002-0.03"
+      }
+    },
+    {
+      "path": "$.structures[3].microstructure_list[0].grain_structure.average_grain_size",
+      "quantity_kind": "length",
+      "status": "converted",
+      "reason": "normalized length to μm",
+      "original": {
+        "unit": "µm",
+        "value": "38-80"
+      },
+      "normalized": {
+        "unit": "μm",
+        "value": "38-80"
+      }
+    },
+    {
+      "path": "$.structures[3].microstructure_list[0].precipitates[0].size",
+      "quantity_kind": "length",
+      "status": "converted",
+      "reason": "normalized length to μm",
+      "original": {
+        "unit": "nm",
+        "value": "2-20"
+      },
+      "normalized": {
+        "unit": "μm",
+        "value": "0.002-0.02"
+      }
+    },
+    {
+      "path": "$.properties[0].mechanical.tensile_properties.ultimate_tensile_strength[0]",
+      "quantity_kind": "stress",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": {
+        "unit": "MPa",
+        "value": "200-600"
+      },
+      "normalized": {
+        "unit": "MPa",
+        "value": "200-600"
+      }
+    },
+    {
+      "path": "$.properties[0].mechanical.tensile_properties.elongation[0]",
+      "quantity_kind": "percent",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": {
+        "unit": "%",
+        "value": "10-40"
+      },
+      "normalized": {
+        "unit": "%",
+        "value": "10-40"
+      }
+    },
+    {
+      "path": "$.properties[0].physical.density.value",
+      "quantity_kind": null,
+      "status": "ambiguous",
+      "reason": "cannot parse numeric value",
+      "original": {
+        "value": "7.87 - 0.098*Al(wt%)",
+        "unit": "g/cm3"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.properties[1].mechanical.tensile_properties.ultimate_tensile_strength[0]",
+      "quantity_kind": "stress",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": {
+        "unit": "MPa",
+        "value": "400-900"
+      },
+      "normalized": {
+        "unit": "MPa",
+        "value": "400-900"
+      }
+    },
+    {
+      "path": "$.properties[1].mechanical.tensile_properties.elongation[0]",
+      "quantity_kind": "percent",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": {
+        "unit": "%",
+        "value": "10-40"
+      },
+      "normalized": {
+        "unit": "%",
+        "value": "10-40"
+      }
+    },
+    {
+      "path": "$.properties[2].mechanical.tensile_properties.ultimate_tensile_strength[0]",
+      "quantity_kind": "stress",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": {
+        "unit": "MPa",
+        "value": "800-1300"
+      },
+      "normalized": {
+        "unit": "MPa",
+        "value": "800-1300"
+      }
+    },
+    {
+      "path": "$.properties[2].mechanical.tensile_properties.elongation[0]",
+      "quantity_kind": "percent",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": {
+        "unit": "%",
+        "value": "10-40"
+      },
+      "normalized": {
+        "unit": "%",
+        "value": "10-40"
+      }
+    },
+    {
+      "path": "$.properties[3].mechanical.tensile_properties.yield_strength[0]",
+      "quantity_kind": "stress",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": {
+        "unit": "MPa",
+        "value": "400-1000"
+      },
+      "normalized": {
+        "unit": "MPa",
+        "value": "400-1000"
+      }
+    },
+    {
+      "path": "$.properties[3].mechanical.tensile_properties.ultimate_tensile_strength[0]",
+      "quantity_kind": "stress",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": {
+        "unit": "MPa",
+        "value": "800-1500"
+      },
+      "normalized": {
+        "unit": "MPa",
+        "value": "800-1500"
+      }
+    },
+    {
+      "path": "$.properties[3].mechanical.tensile_properties.elongation[0]",
+      "quantity_kind": "percent",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": {
+        "unit": "%",
+        "value": "30-100"
+      },
+      "normalized": {
+        "unit": "%",
+        "value": "30-100"
+      }
+    },
+    {
+      "path": "$.properties[3].mechanical.fracture_toughness",
+      "quantity_kind": "fracture_toughness",
+      "status": "skipped",
+      "reason": "unsupported conversion J/cm2 (CVN) at RT in solution-treated condition; much reduced after aging -> MPa·m^0.5",
+      "original": {
+        "unit": "J/cm2 (CVN) at RT in solution-treated condition; much reduced after aging",
+        "value": "200"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.properties[3].physical.density.value",
+      "quantity_kind": null,
+      "status": "ambiguous",
+      "reason": "cannot parse numeric value",
+      "original": {
+        "value": "8.15 - 0.101*Al(wt%) - 0.41*C(wt%) - 0.0085*Mn(wt%)",
+        "unit": "g/cm3"
+      },
+      "normalized": null
+    },
+    {
+      "path": "$.performance[0].service_conditions.operating_temperature",
+      "quantity_kind": "temperature",
+      "status": "unchanged",
+      "reason": "already canonical",
+      "original": {
+        "unit": "°C",
+        "min": "-100",
+        "max": "25"
+      },
+      "normalized": {
+        "unit": "°C",
+        "min": "-100",
+        "max": "25"
+      }
+    }
+  ]
+}

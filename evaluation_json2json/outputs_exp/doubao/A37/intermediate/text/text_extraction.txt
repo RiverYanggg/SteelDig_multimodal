@@ -1,0 +1,518 @@
+{
+    "papers": [
+        {
+            "paper_id": "A37",
+            "doi": null,
+            "title": "Hydrogen-enhanced microbanding in an austenitic FeMnAlC low-density steel: Effect on hydrogen embrittlement resistance",
+            "authors": ["Ivan Gutierrez-Urrutia", "Yuhei Ogawa", "Akinobu Shibata"],
+            "publication_year": null,
+            "journal": null,
+            "keywords": ["FeMnAlC low-density steels", "Hydrogen embrittlement", "Strain localization", "Microbands", "Deformation bands", "Electron channeling contrast imaging"],
+            "research_type": "experimental",
+            "paper_scope": "研究101质量ppm氢含量对奥氏体Fe30Mn6.5Al0.3C（wt.%）低密度钢室温变形组织和力学行为的影响，揭示氢致微带形成机制及其对氢脆抗性的作用规律"
+        }
+    ],
+    "alloys": [
+        {
+            "alloy_id": "alloy_fe30mn6.5al0.3c",
+            "paper_id": "A37",
+            "alloy_name": "Fe30Mn6.5Al0.3C low-density steel",
+            "aliases": [],
+            "base_element": "Fe",
+            "alloying_elements": ["Mn", "Al", "C"],
+            "nominal_composition": [
+                {
+                    "element": "Fe",
+                    "weight_percent": "balance",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "Mn",
+                    "weight_percent": "30",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "Al",
+                    "weight_percent": "6.5",
+                    "atomic_percent": null
+                },
+                {
+                    "element": "C",
+                    "weight_percent": "0.3",
+                    "atomic_percent": null
+                }
+            ],
+            "alloys_notes": "完全奥氏体组织，无κ碳化物析出，层错能为64±10 mJ/m²，密度较普通钢降低约8.5%"
+        }
+    ],
+    "processes": [
+        {
+            "process_id": "proc_fe30mn_01",
+            "paper_id": "A37",
+            "alloy_id": "alloy_fe30mn6.5al0.3c",
+            "description": "退火态未充氢试样，平均晶粒尺寸175μm，氢含量<5质量ppm",
+            "processes_notes": null
+        },
+        {
+            "process_id": "proc_fe30mn_02",
+            "paper_id": "A37",
+            "alloy_id": "alloy_fe30mn6.5al0.3c",
+            "description": "高压气态氢充氢试样，氢含量101质量ppm，充氢后氢分布均匀",
+            "processes_notes": "拉伸测试过程中氢含量基本保持恒定"
+        }
+    ],
+    "samples": [
+        {
+            "sample_id": "sample_fe30mn_01",
+            "paper_id": "A37",
+            "alloy_id": "alloy_fe30mn6.5al0.3c",
+            "process_id": "proc_fe30mn_01"
+        },
+        {
+            "sample_id": "sample_fe30mn_02",
+            "paper_id": "A37",
+            "alloy_id": "alloy_fe30mn6.5al0.3c",
+            "process_id": "proc_fe30mn_02"
+        }
+    ],
+    "processing_steps": [
+        {
+            "sample_id": "sample_fe30mn_01",
+            "paper_id": "A37",
+            "sequence": "1",
+            "type": "heat_treatment",
+            "method": "退火",
+            "temperature": null,
+            "unit": null,
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "退火后获得完全奥氏体组织，平均晶粒尺寸175μm，室温下组织稳定"
+        },
+        {
+            "sample_id": "sample_fe30mn_01",
+            "paper_id": "A37",
+            "sequence": "2",
+            "type": "mechanical_processing",
+            "method": "单轴拉伸测试",
+            "temperature": "295",
+            "unit": "K",
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "初始应变速率5.0×10^-5 s^-1，实验室空气环境，试样沿轧制方向加工"
+        },
+        {
+            "sample_id": "sample_fe30mn_02",
+            "paper_id": "A37",
+            "sequence": "1",
+            "type": "heat_treatment",
+            "method": "高压气态氢充氢",
+            "temperature": "543",
+            "unit": "K",
+            "duration": "200 h",
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "氢气压力100MPa，充氢后试样标距段氢分布均匀，总氢含量101质量ppm"
+        },
+        {
+            "sample_id": "sample_fe30mn_02",
+            "paper_id": "A37",
+            "sequence": "2",
+            "type": "mechanical_processing",
+            "method": "单轴拉伸测试",
+            "temperature": "295",
+            "unit": "K",
+            "duration": null,
+            "cooling_medium": null,
+            "reduction_ratio": null,
+            "processing_steps_notes": "初始应变速率5.0×10^-5 s^-1，实验室空气环境，试样沿轧制方向加工"
+        }
+    ],
+    "structures": [
+        {
+            "structure_id": "struct_01",
+            "sample_id": "sample_fe30mn_01",
+            "overall_structure": "完全奥氏体单相组织，变形后位错结构按晶粒取向分为三类：Type1（几何必要边界+偶然位错边界构成的胞块结构）、Type2（位错胞结构）、Type3（位错胞+致密位错墙+微带复合结构），位错胞平均尺寸220~236nm",
+            "number_of_phases": "1",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_01",
+                    "related_sequence": "2",
+                    "phases_present": [
+                        {
+                            "phase_name": "奥氏体",
+                            "crystal_structure": "fcc",
+                            "volume_fraction": "100%",
+                            "morphology": "等轴晶",
+                            "grain_size": "175",
+                            "texture": null
+                        }
+                    ],
+                    "defects": [
+                        {
+                            "type": "位错、几何必要边界（GNB）、偶然位错边界（IDB）",
+                            "porosity": null,
+                            "inclusions": [],
+                            "dislocation_density": null,
+                            "lattice_distortion": null
+                        }
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": "175",
+                            "unit": "μm"
+                        },
+                        "grain_size_distribution": null,
+                        "texture": null
+                    },
+                    "precipitates": []
+                }
+            ]
+        },
+        {
+            "structure_id": "struct_02",
+            "sample_id": "sample_fe30mn_02",
+            "overall_structure": "完全奥氏体单相组织，氢促进变形带（DB）和微带（MB）形成，位错胞尺寸细化约10%，GNB平均错配角增加约1°，IDB平均错配角增加约0.25°",
+            "number_of_phases": "1",
+            "microstructure_counts": null,
+            "microstructure_list": [
+                {
+                    "uuid": "uuid_02",
+                    "related_sequence": "2",
+                    "phases_present": [
+                        {
+                            "phase_name": "奥氏体",
+                            "crystal_structure": "fcc",
+                            "volume_fraction": "100%",
+                            "morphology": "等轴晶",
+                            "grain_size": "175",
+                            "texture": null
+                        }
+                    ],
+                    "defects": [
+                        {
+                            "type": "位错、变形带、微带、几何必要边界、偶然位错边界",
+                            "porosity": null,
+                            "inclusions": [],
+                            "dislocation_density": "1~3×10^14 m^-2",
+                            "lattice_distortion": null
+                        }
+                    ],
+                    "grain_structure": {
+                        "average_grain_size": {
+                            "value": "175",
+                            "unit": "μm"
+                        },
+                        "grain_size_distribution": null,
+                        "texture": null
+                    },
+                    "precipitates": []
+                }
+            ]
+        }
+    ],
+    "interfaces": [
+        {
+            "interface_set_id": "iface_01",
+            "sample_id": "sample_fe30mn_02",
+            "phases": [
+                {
+                    "interface_id": "iface_01_01",
+                    "microstructure_uuid": "uuid_02",
+                    "phase_1_name": "奥氏体基体",
+                    "phase_2_name": "微带",
+                    "coherence": null
+                }
+            ],
+            "defect_interaction": [
+                {
+                    "interaction_id": "inter_01",
+                    "microstructure_uuid": "uuid_02",
+                    "interaction_type": "氢促进微带沿GNB形核",
+                    "quality_description": "微带边界错配角为2~8°，显著高于未充氢样品的2~3°"
+                }
+            ],
+            "interface_notes": [
+                {
+                    "stress_strain_distribution": null
+                },
+                {
+                    "slippage_situation": "微带沿{111}滑移面形成，产生局部剪切变形"
+                }
+            ],
+            "phase_evolution": null
+        }
+    ],
+    "properties": [
+        {
+            "property_set_id": "prop_01",
+            "sample_id": "sample_fe30mn_01",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [
+                        {
+                            "direction": "轧制方向",
+                            "value": "275",
+                            "unit": "MPa",
+                            "others": {
+                                "uncertainty": "±10"
+                            }
+                        }
+                    ],
+                    "ultimate_tensile_strength": [
+                        {
+                            "direction": "轧制方向",
+                            "value": "580",
+                            "unit": "MPa",
+                            "others": {
+                                "uncertainty": "±5"
+                            }
+                        }
+                    ],
+                    "elongation": [
+                        {
+                            "direction": "均匀延伸率",
+                            "value": "0.43",
+                            "unit": ""
+                        },
+                        {
+                            "direction": "断裂延伸率",
+                            "value": "0.51",
+                            "unit": ""
+                        }
+                    ],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [],
+                "fracture_toughness": {
+                    "value": null,
+                    "unit": null
+                },
+                "fatigue_properties": {
+                    "fatigue_limit": null,
+                    "cycles_to_failure": null
+                },
+                "creep_properties": {
+                    "steady_state_creep_rate": null,
+                    "rupture_life": null
+                }
+            },
+            "physical": {
+                "density": {
+                    "value": null,
+                    "unit": null
+                },
+                "thermal_properties": {
+                    "thermal_conductivity": null,
+                    "thermal_expansion_coefficient": null,
+                    "specific_heat": null
+                },
+                "electrical_properties": {
+                    "electrical_conductivity": null,
+                    "resistivity": null
+                },
+                "magnetic_properties": {
+                    "magnetic_susceptibility": null,
+                    "curie_temperature": null
+                }
+            },
+            "chemical": {
+                "corrosion_resistance": {
+                    "test_medium": null,
+                    "corrosion_rate": null,
+                    "passivation_behavior": null
+                },
+                "oxidation_resistance": {
+                    "oxidation_rate_constant": null,
+                    "protective_scale": null
+                }
+            },
+            "radiation_properties": {
+                "void_swelling": null,
+                "irradiation_hardening": null,
+                "helium_embrittlement": null
+            }
+        },
+        {
+            "property_set_id": "prop_02",
+            "sample_id": "sample_fe30mn_02",
+            "mechanical": {
+                "tensile_properties": {
+                    "yield_strength": [
+                        {
+                            "direction": "轧制方向",
+                            "value": "302",
+                            "unit": "MPa",
+                            "others": {
+                                "uncertainty": "±10"
+                            }
+                        }
+                    ],
+                    "ultimate_tensile_strength": [
+                        {
+                            "direction": "轧制方向",
+                            "value": "595",
+                            "unit": "MPa",
+                            "others": {
+                                "uncertainty": "±10"
+                            }
+                        }
+                    ],
+                    "elongation": [
+                        {
+                            "direction": "均匀延伸率",
+                            "value": "0.46",
+                            "unit": ""
+                        },
+                        {
+                            "direction": "断裂延伸率",
+                            "value": "0.55",
+                            "unit": ""
+                        }
+                    ],
+                    "youngs_modulus": null,
+                    "stress_strain_curves": null,
+                    "stress_strain_distribution": [],
+                    "strain_hardening_rate": []
+                },
+                "hardness": [],
+                "fracture_toughness": {
+                    "value": null,
+                    "unit": null
+                },
+                "fatigue_properties": {
+                    "fatigue_limit": null,
+                    "cycles_to_failure": null
+                },
+                "creep_properties": {
+                    "steady_state_creep_rate": null,
+                    "rupture_life": null
+                }
+            },
+            "physical": {
+                "density": {
+                    "value": null,
+                    "unit": null
+                },
+                "thermal_properties": {
+                    "thermal_conductivity": null,
+                    "thermal_expansion_coefficient": null,
+                    "specific_heat": null
+                },
+                "electrical_properties": {
+                    "electrical_conductivity": null,
+                    "resistivity": null
+                },
+                "magnetic_properties": {
+                    "magnetic_susceptibility": null,
+                    "curie_temperature": null
+                }
+            },
+            "chemical": {
+                "corrosion_resistance": {
+                    "test_medium": null,
+                    "corrosion_rate": null,
+                    "passivation_behavior": null
+                },
+                "oxidation_resistance": {
+                    "oxidation_rate_constant": null,
+                    "protective_scale": null
+                }
+            },
+            "radiation_properties": {
+                "void_swelling": null,
+                "irradiation_hardening": null,
+                "helium_embrittlement": null
+            }
+        }
+    ],
+    "performance": [
+        {
+            "performance_id": "perf_01",
+            "sample_id": "sample_fe30mn_02",
+            "service_conditions": {
+                "operating_temperature": {
+                    "min": "295",
+                    "max": "295",
+                    "unit": "K"
+                },
+                "stress_state": "单轴拉伸",
+                "environment": "实验室空气"
+            },
+            "lifetime_prediction": {
+                "model_used": null,
+                "predicted_lifetime": null,
+                "confidence_interval": null
+            },
+            "comparative_performance": {
+                "benchmark_alloy": "310S不锈钢、CoCrFeMnNi高熵合金、CoNiV中熵合金",
+                "benchmark_process_id": null,
+                "benchmark_sample_id": null,
+                "improvement_percentage": "屈服强度提升约10%，断裂延伸率提升约8%，氢脆抗性达到高抗氢脆fcc合金水平"
+            }
+        }
+    ],
+    "characterization_methods": [
+        {
+            "characterization_id": "char_01",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "电子通道衬度成像（ECCI）",
+            "purpose": "表征位错结构、微带、变形带的形貌与分布",
+            "key_findings": "氢促进微带和变形带形成，位错胞尺寸细化约10%"
+        },
+        {
+            "characterization_id": "char_02",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "电子背散射衍射（EBSD）",
+            "purpose": "分析晶粒取向、边界错配角、取向差分布",
+            "key_findings": "氢显著增加几何必要边界（GNB）的错配角，促进大角度GNB形成"
+        },
+        {
+            "characterization_id": "char_03",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "扫描透射电子显微镜（STEM）",
+            "purpose": "观察位错组态、微带精细结构",
+            "key_findings": "微带由成对位错片构成，试验钢中无κ碳化物析出，变形带内存在位错交滑移现象"
+        },
+        {
+            "characterization_id": "char_04",
+            "sample_id": "sample_fe30mn_02",
+            "microstructure_uuid": null,
+            "technique": "热脱附分析（TDA）",
+            "purpose": "测量试样氢含量",
+            "key_findings": "充氢试样总氢含量为101质量ppm，未充氢试样氢含量<5质量ppm"
+        },
+        {
+            "characterization_id": "char_05",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "单轴拉伸测试",
+            "purpose": "测定室温力学性能",
+            "key_findings": "氢使钢的屈服强度、均匀延伸率、断裂延伸率均提升，无氢脆现象"
+        },
+        {
+            "characterization_id": "char_06",
+            "sample_id": null,
+            "microstructure_uuid": null,
+            "technique": "扫描电镜断口分析",
+            "purpose": "观察断裂行为与断裂机制",
+            "key_findings": "两种试样均为完全韧窝断裂，未充氢试样韧窝尺寸2~8μm，充氢试样韧窝尺寸细化为1.5~3μm"
+        }
+    ],
+    "computational_details": [],
+    "unmapped_findings": [
+        "提出氢增强变形带化（HEDB）和氢增强微带化（HEMB）两种新的氢致变形机制",
+        "微带形核包含GNB辅助形核和变形带辅助形核两种机制",
+        "HEMB可促进变形带内应力松弛，存储几何必要位错，缓解氢致应变局部化带来的损伤，提升钢的应变硬化能力",
+        "试验钢氢脆指数IHE为-0.045，属于高抗氢脆范畴（IHE<0），抗氢脆性能与高抗氢脆fcc合金相当",
+        "氢对几何必要边界的影响显著大于偶然位错边界，GNB平均错配角增加约1°，IDB平均错配角仅增加约0.25°"
+    ]
+}

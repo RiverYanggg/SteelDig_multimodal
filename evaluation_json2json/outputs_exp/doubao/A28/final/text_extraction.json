@@ -1,0 +1,946 @@
+{
+  "papers": [
+    {
+      "paper_id": "A28",
+      "doi": null,
+      "title": "Temperature dependence of the deformation behavior and mechanical properties of a Fe–Mn–Al–C low-density steel for cryogenic application",
+      "authors": [
+        "Qi Zhang",
+        "Guanghui Chen",
+        "Haijiang Hu",
+        "Wanjie Zheng",
+        "Xiangliang Wan",
+        "Zhengliang Xue",
+        "Guang Xu"
+      ],
+      "publication_year": null,
+      "journal": null,
+      "keywords": [
+        "Austenitic low-density steel",
+        "Stacking fault energy",
+        "Tensile deformation",
+        "Impact toughness",
+        "Deformed microstructure"
+      ],
+      "research_type": "experimental",
+      "paper_scope": "研究Fe–20Mn–6Al-0.6C-0.15Si奥氏体低密度钢在-196℃、-77℃和室温下的拉伸、冲击变形行为、力学性能及微观组织演变规律，揭示温度对其变形机制和强韧性的影响机制，为该钢的低温应用提供理论支撑"
+    }
+  ],
+  "alloys": [
+    {
+      "alloy_id": "alloy_fe20mn6al06c015si",
+      "paper_id": "A28",
+      "alloy_name": "Fe–20Mn–6Al-0.6C-0.15Si austenitic low-density steel",
+      "aliases": [],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Al",
+        "C",
+        "Si"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Mn",
+          "weight_percent": "20",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "6",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.6",
+          "atomic_percent": null
+        },
+        {
+          "element": "Si",
+          "weight_percent": "0.15",
+          "atomic_percent": null
+        },
+        {
+          "element": "Fe",
+          "weight_percent": "balance",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "估算密度为7.078 g/cm³，实测密度为7.114 g/cm³；室温堆叠层错能（SFE）约61 mJ/m²，-77℃约40 mJ/m²，-196℃约32 mJ/m²"
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_fe20mn6al_01",
+      "paper_id": "A28",
+      "alloy_id": "alloy_fe20mn6al06c015si",
+      "description": "50kg真空感应炉熔炼浇铸，1250℃保温2h均质化，1100~950℃锻造为φ60mm圆棒，炉冷至室温",
+      "processes_notes": null
+    },
+    {
+      "process_id": "proc_fe20mn6al_02",
+      "paper_id": "A28",
+      "alloy_id": "alloy_fe20mn6al06c015si",
+      "description": "室温拉伸试验，应变速率1e-3 s-1，试样尺寸为平行段长32mm、宽5mm、厚1.5mm",
+      "processes_notes": null
+    },
+    {
+      "process_id": "proc_fe20mn6al_03",
+      "paper_id": "A28",
+      "alloy_id": "alloy_fe20mn6al06c015si",
+      "description": "-77℃拉伸试验，冷却介质为干冰-酒精混合液，应变速率1e-3 s-1",
+      "processes_notes": null
+    },
+    {
+      "process_id": "proc_fe20mn6al_04",
+      "paper_id": "A28",
+      "alloy_id": "alloy_fe20mn6al06c015si",
+      "description": "-196℃拉伸试验，冷却介质为液氮，应变速率1e-3 s-1",
+      "processes_notes": null
+    },
+    {
+      "process_id": "proc_fe20mn6al_05",
+      "paper_id": "A28",
+      "alloy_id": "alloy_fe20mn6al06c015si",
+      "description": "室温夏比V型缺口冲击试验，试样尺寸10×10×55mm，缺口深度2mm",
+      "processes_notes": null
+    },
+    {
+      "process_id": "proc_fe20mn6al_06",
+      "paper_id": "A28",
+      "alloy_id": "alloy_fe20mn6al06c015si",
+      "description": "-77℃夏比V型缺口冲击试验，冷却介质为干冰-酒精混合液",
+      "processes_notes": null
+    },
+    {
+      "process_id": "proc_fe20mn6al_07",
+      "paper_id": "A28",
+      "alloy_id": "alloy_fe20mn6al06c015si",
+      "description": "-196℃夏比V型缺口冲击试验，冷却介质为液氮",
+      "processes_notes": null
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_fe20mn6al_initial",
+      "paper_id": "A28",
+      "alloy_id": "alloy_fe20mn6al06c015si",
+      "process_id": "proc_fe20mn6al_01"
+    },
+    {
+      "sample_id": "sample_fe20mn6al_rt_tensile",
+      "paper_id": "A28",
+      "alloy_id": "alloy_fe20mn6al06c015si",
+      "process_id": "proc_fe20mn6al_02"
+    },
+    {
+      "sample_id": "sample_fe20mn6al_neg77_tensile",
+      "paper_id": "A28",
+      "alloy_id": "alloy_fe20mn6al06c015si",
+      "process_id": "proc_fe20mn6al_03"
+    },
+    {
+      "sample_id": "sample_fe20mn6al_neg196_tensile",
+      "paper_id": "A28",
+      "alloy_id": "alloy_fe20mn6al06c015si",
+      "process_id": "proc_fe20mn6al_04"
+    },
+    {
+      "sample_id": "sample_fe20mn6al_rt_impact",
+      "paper_id": "A28",
+      "alloy_id": "alloy_fe20mn6al06c015si",
+      "process_id": "proc_fe20mn6al_05"
+    },
+    {
+      "sample_id": "sample_fe20mn6al_neg77_impact",
+      "paper_id": "A28",
+      "alloy_id": "alloy_fe20mn6al06c015si",
+      "process_id": "proc_fe20mn6al_06"
+    },
+    {
+      "sample_id": "sample_fe20mn6al_neg196_impact",
+      "paper_id": "A28",
+      "alloy_id": "alloy_fe20mn6al06c015si",
+      "process_id": "proc_fe20mn6al_07"
+    }
+  ],
+  "processing_steps": [
+    {
+      "sample_id": "sample_fe20mn6al_initial",
+      "paper_id": "A28",
+      "sequence": "1",
+      "type": "casting",
+      "method": "真空感应熔炼浇铸",
+      "temperature": null,
+      "unit": null,
+      "duration": null,
+      "cooling_medium": "空气",
+      "reduction_ratio": null,
+      "processing_steps_notes": "熔炼设备为50kg真空感应炉"
+    },
+    {
+      "sample_id": "sample_fe20mn6al_initial",
+      "paper_id": "A28",
+      "sequence": "2",
+      "type": "heat_treatment",
+      "method": "均质化热处理",
+      "temperature": "1250",
+      "unit": "℃",
+      "duration": "2h",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "sample_id": "sample_fe20mn6al_initial",
+      "paper_id": "A28",
+      "sequence": "3",
+      "type": "thermomechanical_processing",
+      "method": "锻造",
+      "temperature": null,
+      "unit": "℃",
+      "duration": null,
+      "cooling_medium": "炉",
+      "reduction_ratio": null,
+      "processing_steps_notes": "始锻温度1100℃，终锻温度950℃，锻后为φ60mm圆棒"
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_initial",
+      "sample_id": "sample_fe20mn6al_initial",
+      "overall_structure": "完全奥氏体等轴晶组织",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_001",
+          "related_sequence": "3",
+          "phases_present": [
+            {
+              "phase_name": "γ奥氏体",
+              "crystal_structure": "FCC",
+              "volume_fraction": "100%",
+              "morphology": "等轴晶",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_neg196_tensile",
+      "sample_id": "sample_fe20mn6al_neg196_tensile",
+      "overall_structure": "变形奥氏体组织，含少量机械孪晶",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_002",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "γ奥氏体",
+              "crystal_structure": "FCC",
+              "volume_fraction": "100%",
+              "morphology": "变形晶粒",
+              "grain_size": null,
+              "texture": "{111}、{001}取向集中"
+            }
+          ],
+          "defects": [
+            {
+              "type": "mechanical twins",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            },
+            {
+              "type": "low angle grain boundaries (LAGBs)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_neg77_tensile",
+      "sample_id": "sample_fe20mn6al_neg77_tensile",
+      "overall_structure": "变形奥氏体组织，含大量微带",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_003",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "γ奥氏体",
+              "crystal_structure": "FCC",
+              "volume_fraction": "100%",
+              "morphology": "变形晶粒",
+              "grain_size": null,
+              "texture": "{111}、{001}取向集中"
+            }
+          ],
+          "defects": [
+            {
+              "type": "microbands",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            },
+            {
+              "type": "LAGBs",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_rt_tensile",
+      "sample_id": "sample_fe20mn6al_rt_tensile",
+      "overall_structure": "变形奥氏体组织，位错缠结为主",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "uuid_004",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "γ奥氏体",
+              "crystal_structure": "FCC",
+              "volume_fraction": "100%",
+              "morphology": "变形晶粒",
+              "grain_size": null,
+              "texture": "{111}、{001}取向集中"
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocation entanglement",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            },
+            {
+              "type": "LAGBs",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "prop_rt_tensile",
+      "sample_id": "sample_fe20mn6al_rt_tensile",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "400",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "800",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "32",
+              "unit": "%"
+            },
+            {
+              "direction": null,
+              "value": "28",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "7.114",
+          "unit": "g/cm³"
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_neg77_tensile",
+      "sample_id": "sample_fe20mn6al_neg77_tensile",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "650",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "1000",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "58",
+              "unit": "%"
+            },
+            {
+              "direction": null,
+              "value": "45",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_neg196_tensile",
+      "sample_id": "sample_fe20mn6al_neg196_tensile",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "900",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "1300",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": null
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "68",
+              "unit": "%"
+            },
+            {
+              "direction": null,
+              "value": "47",
+              "unit": "%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_rt_impact",
+      "sample_id": "sample_fe20mn6al_rt_impact",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": "327",
+          "unit": "J"
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_neg77_impact",
+      "sample_id": "sample_fe20mn6al_neg77_impact",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": "277",
+          "unit": "J"
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_neg196_impact",
+      "sample_id": "sample_fe20mn6al_neg196_impact",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": "188",
+          "unit": "J"
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "test_medium": null,
+          "corrosion_rate": null,
+          "passivation_behavior": null
+        },
+        "oxidation_resistance": {
+          "oxidation_rate_constant": null,
+          "protective_scale": null
+        }
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_001",
+      "sample_id": null,
+      "service_conditions": {
+        "operating_temperature": {
+          "min": "-196",
+          "max": "25",
+          "unit": "℃"
+        },
+        "stress_state": null,
+        "environment": "低温、室温大气环境"
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy": null,
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_001",
+      "sample_id": "sample_fe20mn6al_initial",
+      "microstructure_uuid": "uuid_001",
+      "technique": "EBSD",
+      "purpose": "初始组织形貌、晶界、取向分析",
+      "key_findings": "初始组织为完全奥氏体等轴晶"
+    },
+    {
+      "characterization_id": "char_002",
+      "sample_id": "sample_fe20mn6al_initial",
+      "microstructure_uuid": "uuid_001",
+      "technique": "XRD",
+      "purpose": "物相分析",
+      "key_findings": "初始态及-196℃保温30min后均仅含γ奥氏体相，无等温马氏体生成"
+    },
+    {
+      "characterization_id": "char_003",
+      "sample_id": null,
+      "microstructure_uuid": null,
+      "technique": "SEM",
+      "purpose": "断口形貌、变形组织观察",
+      "key_findings": "低温冲击断口为准解理+韧窝混合特征，室温为完全韧窝特征"
+    },
+    {
+      "characterization_id": "char_004",
+      "sample_id": null,
+      "microstructure_uuid": null,
+      "technique": "TEM",
+      "purpose": "精细变形组织观察",
+      "key_findings": "-196℃拉伸变形后存在机械孪晶，-77℃变形后存在{111}面取向的微带"
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_001",
+      "sample_id": null,
+      "simulation_method": "热力学计算",
+      "software_used": null,
+      "potential_model": null,
+      "validation_against_experiment": "计算得到的SFE与实验观察到的变形机制匹配良好",
+      "analytical_model": [
+        {
+          "model_name": "堆叠层错能计算模型",
+          "equation_role": "计算不同温度下的SFE",
+          "parameters": "γ/ε界面能取15 mJ/m²，奥氏体晶格参数0.36757 nm",
+          "model_note": "室温SFE为61 mJ/m²，-77℃为40 mJ/m²，-196℃为32 mJ/m²"
+        },
+        {
+          "model_name": "Hollomon公式",
+          "equation_role": "计算加工硬化指数",
+          "parameters": null,
+          "model_note": "加工硬化行为分为两个阶段，低温下加工硬化指数更高"
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "拉伸变形温度降低时，LAGB分数升高：-196℃为70.2%，-77℃为63.0%，室温为56.0%",
+    "屈服强度和抗拉强度随温度降低线性升高，拟合公式为UTS=813.0-2.36*T，YS=474.6-2.05*T（T单位为℃）",
+    "夏比冲击裂纹萌生能随温度降低升高：室温为57 J，-77℃为68 J，-196℃为112 J；裂纹扩展能随温度降低显著下降，导致整体冲击吸收能降低",
+    "室温冲击试样近断口区域存在二次裂纹，可释放应力集中，延缓断裂，提升韧性",
+    "高应变速率冲击变形下，低温下平面滑移激活困难，仅少量区域发生平面滑移，导致裂纹扩展阻力低"
+  ]
+}

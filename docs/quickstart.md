@@ -37,7 +37,8 @@ python3 run_paper_then_knowledge_workflow.py \
 
 1. 主抽取
 2. post-parse
-3. knowledge
+3. unit normalization
+4. knowledge
 
 并且不同论文之间并行。
 
@@ -88,6 +89,7 @@ workflow_runs/<paper_id>/
 最重要的文件：
 
 - `final/text_extraction.json`
+- `normalized/text_extraction_units.json`
 - `final/multimodal_figures.json`
 - `final/text_claims.jsonl`
 - `final/text_knowledge.md`

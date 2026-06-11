@@ -1,0 +1,537 @@
+{
+  "papers": [
+    {
+      "paper_id": "A37",
+      "doi": null,
+      "title": "Hydrogen-enhanced microbanding in an austenitic FeMnAlC low-density steel: Effect on hydrogen embrittlement resistance",
+      "authors": [
+        "Ivan Gutierrez-Urrutia",
+        "Yuhei Ogawa",
+        "Akinobu Shibata"
+      ],
+      "publication_year": null,
+      "journal": null,
+      "keywords": [
+        "FeMnAlC low-density steels",
+        "Hydrogen embrittlement",
+        "Strain localization",
+        "Microbands",
+        "Deformation bands",
+        "Electron channeling contrast imaging"
+      ],
+      "research_type": "experimental",
+      "paper_scope": "Investigation of the effect of 101 mass ppm hydrogen on the room temperature deformation structure and mechanical behavior of an austenitic Fe30Mn6.5Al0.3C (wt.%) low-density steel, focusing on hydrogen-enhanced deformation banding (HEDB) and hydrogen-enhanced microbanding (HEMB) mechanisms and their role in high hydrogen embrittlement resistance."
+    }
+  ],
+  "alloys": [
+    {
+      "alloy_id": "alloy_fe30mn6.5al0.3c",
+      "paper_id": "A37",
+      "alloy_name": "Fe30Mn6.5Al0.3C low-density steel",
+      "aliases": [
+        "Fe30Mn6.5Al0.3C (wt.%)",
+        "Fe-30Mn-6.5Al-0.3C"
+      ],
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Al",
+        "C"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Fe",
+          "weight_percent": "63.2",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "30",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "6.5",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.3",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": null
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_annealed",
+      "paper_id": "A37",
+      "alloy_id": "alloy_fe30mn6.5al0.3c",
+      "description": "Annealed to fully austenitic structure with average grain size 175 μm, free of κ-carbides.",
+      "processes_notes": null
+    },
+    {
+      "process_id": "proc_h_charged",
+      "paper_id": "A37",
+      "alloy_id": "alloy_fe30mn6.5al0.3c",
+      "description": "Annealed and then hydrogen-charged in 100 MPa H2 gas at 543 K for 200 h, resulting in a uniform hydrogen content of 101 mass ppm.",
+      "processes_notes": null
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_uncharged",
+      "paper_id": "A37",
+      "alloy_id": "alloy_fe30mn6.5al0.3c",
+      "process_id": "proc_annealed"
+    },
+    {
+      "sample_id": "sample_h_charged",
+      "paper_id": "A37",
+      "alloy_id": "alloy_fe30mn6.5al0.3c",
+      "process_id": "proc_h_charged"
+    }
+  ],
+  "processing_steps": [
+    {
+      "sample_id": "sample_uncharged",
+      "paper_id": "A37",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "annealing",
+      "temperature": null,
+      "unit": null,
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Details of annealing process in reference [17]; fully austenitic, grain size 175 μm."
+    },
+    {
+      "sample_id": "sample_uncharged",
+      "paper_id": "A37",
+      "sequence": "2",
+      "type": "mechanical_processing",
+      "method": "machining",
+      "temperature": null,
+      "unit": null,
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Cylindrical specimens machined along rolling direction, 6 mm diameter, 30 mm gage length."
+    },
+    {
+      "sample_id": "sample_uncharged",
+      "paper_id": "A37",
+      "sequence": "3",
+      "type": "mechanical_processing",
+      "method": "polishing",
+      "temperature": null,
+      "unit": null,
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Mirror-finished with 1 μm diamond suspension."
+    },
+    {
+      "sample_id": "sample_uncharged",
+      "paper_id": "A37",
+      "sequence": "4",
+      "type": "tensile_testing",
+      "method": "tensile test",
+      "temperature": "295",
+      "unit": "K",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Initial strain rate 5.0e-5 s^-1, laboratory air. Tested to fracture; end of uniform deformation at ε=0.4."
+    },
+    {
+      "sample_id": "sample_h_charged",
+      "paper_id": "A37",
+      "sequence": "1",
+      "type": "heat_treatment",
+      "method": "annealing",
+      "temperature": null,
+      "unit": null,
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Same annealing as uncharged sample (details in [17])."
+    },
+    {
+      "sample_id": "sample_h_charged",
+      "paper_id": "A37",
+      "sequence": "2",
+      "type": "mechanical_processing",
+      "method": "machining",
+      "temperature": null,
+      "unit": null,
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Cylindrical specimens along rolling direction, 6 mm diameter, 30 mm gage length."
+    },
+    {
+      "sample_id": "sample_h_charged",
+      "paper_id": "A37",
+      "sequence": "3",
+      "type": "mechanical_processing",
+      "method": "polishing",
+      "temperature": null,
+      "unit": null,
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Mirror-finished with 1 μm diamond suspension."
+    },
+    {
+      "sample_id": "sample_h_charged",
+      "paper_id": "A37",
+      "sequence": "4",
+      "type": "hydrogen_charging",
+      "method": "gaseous hydrogen charging",
+      "temperature": "543",
+      "unit": "K",
+      "duration": "200 h",
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "100 MPa H2 gas, autoclave. Uniform hydrogen content of 101 mass ppm measured by TDA after tensile tests."
+    },
+    {
+      "sample_id": "sample_h_charged",
+      "paper_id": "A37",
+      "sequence": "5",
+      "type": "tensile_testing",
+      "method": "tensile test",
+      "temperature": "295",
+      "unit": "K",
+      "duration": null,
+      "cooling_medium": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Initial strain rate 5.0e-5 s^-1, laboratory air. Tested to fracture; end of uniform deformation at ε=0.4."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_uncharged",
+      "sample_id": "sample_uncharged",
+      "overall_structure": "Fully austenitic (fcc) with average grain size 175 μm. After tensile deformation to ε=0.4, dislocation structures consist of cell blocks (Type 1a,1b), dislocation cells (Type 2), and a mixture of cells, dense dislocation walls, and microbands (Type 3) depending on grain orientation relative to tensile axis.",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "ms_uncharged_1",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "fcc",
+              "volume_fraction": "100",
+              "morphology": "equiaxed grains",
+              "grain_size": "175 μm",
+              "texture": "tensile texture with <001>//TA, <111>//TA, and [112]-[101]//TA components"
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocation structures",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "175",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": "tensile deformation texture"
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_h_charged",
+      "sample_id": "sample_h_charged",
+      "overall_structure": "Fully austenitic (fcc) with average grain size 175 μm. After tensile deformation to ε=0.4 with 101 mass ppm H, dislocation structures exhibit hydrogen-enhanced deformation banding (HEDB) and hydrogen-enhanced microbanding (HEMB). Cell blocks show increased GNB misorientation and localized microbands along GNBs. Type 2 regions develop macroscopic kink bands (10-30 μm thick) and refined dislocation cells. Type 3 regions show extensive dense dislocation walls, microbands, and submicron deformation bands. No ordered κ-carbides detected.",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "uuid": "ms_h_charged_1",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "fcc",
+              "volume_fraction": "100",
+              "morphology": "equiaxed grains",
+              "grain_size": "175 μm",
+              "texture": "tensile texture with <001>//TA, <111>//TA, and [112]-[101]//TA components"
+            }
+          ],
+          "defects": [
+            {
+              "type": "hydrogen-modified dislocation structures (HEDB, HEMB)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "175",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": "tensile deformation texture"
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "prop_uncharged",
+      "sample_id": "sample_uncharged",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "RD",
+              "value": "275",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "10"
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "RD",
+              "value": "580",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "5"
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "uniform",
+              "value": "0.43",
+              "unit": "strain"
+            },
+            {
+              "direction": "total",
+              "value": "0.51",
+              "unit": "strain"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Fig. 2",
+          "stress_strain_distribution": null,
+          "strain_hardening_rate": null
+        },
+        "hardness": [],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": {
+        "density": null,
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": null
+    },
+    {
+      "property_set_id": "prop_h_charged",
+      "sample_id": "sample_h_charged",
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "RD",
+              "value": "302",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "10"
+              }
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "RD",
+              "value": "595",
+              "unit": "MPa",
+              "others": {
+                "uncertainty": "10"
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "uniform",
+              "value": "0.46",
+              "unit": "strain"
+            },
+            {
+              "direction": "total",
+              "value": "0.55",
+              "unit": "strain"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Fig. 2",
+          "stress_strain_distribution": null,
+          "strain_hardening_rate": null
+        },
+        "hardness": [],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": {
+        "density": null,
+        "thermal_properties": {
+          "thermal_conductivity": null,
+          "thermal_expansion_coefficient": null,
+          "specific_heat": null
+        },
+        "electrical_properties": {
+          "electrical_conductivity": null,
+          "resistivity": null
+        },
+        "magnetic_properties": {
+          "magnetic_susceptibility": null,
+          "curie_temperature": null
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": null
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_ecci_uncharged",
+      "sample_id": "sample_uncharged",
+      "microstructure_uuid": "ms_uncharged_1",
+      "technique": "ECCI (electron channeling contrast imaging)",
+      "purpose": "Characterize dislocation structures in deformed grains",
+      "key_findings": "Revealed Type 1a/1b cell blocks, Type 2 dislocation cells, Type 3 mixed cells/microbands/dense dislocation walls. Quantitative analysis of boundary misorientations."
+    },
+    {
+      "characterization_id": "char_ebsd_uncharged",
+      "sample_id": "sample_uncharged",
+      "microstructure_uuid": "ms_uncharged_1",
+      "technique": "EBSD (electron backscatter diffraction)",
+      "purpose": "Grain orientation, texture analysis, and KAM mapping for GNB/IDB misorientation",
+      "key_findings": "Identified grain orientation types and misorientation distributions (Fig. 7). Misorientation thresholds for GNB vs IDB."
+    },
+    {
+      "characterization_id": "char_stem_uncharged",
+      "sample_id": "sample_uncharged",
+      "microstructure_uuid": "ms_uncharged_1",
+      "technique": "STEM (scanning transmission electron microscopy)",
+      "purpose": "High-resolution imaging of dislocation configurations and confirmation of phase constitution",
+      "key_findings": "No extra diffraction spots from κ-carbides observed; validated dislocation structure in uncharged condition."
+    },
+    {
+      "characterization_id": "char_ecci_charged",
+      "sample_id": "sample_h_charged",
+      "microstructure_uuid": "ms_h_charged_1",
+      "technique": "ECCI",
+      "purpose": "Characterize hydrogen-induced changes in dislocation structures",
+      "key_findings": "Observed HEDB (macroscopic kink bands, submicron DBs) and HEMB (microbands along GNBs and in grain interior). Quantitative analysis of hydrogen effect on cell size and boundary misorientation."
+    },
+    {
+      "characterization_id": "char_ebsd_charged",
+      "sample_id": "sample_h_charged",
+      "microstructure_uuid": "ms_h_charged_1",
+      "technique": "EBSD",
+      "purpose": "Grain orientation, KAM mapping for hydrogen-charged sample",
+      "key_findings": "Showed hydrogen increases GNB misorientation (θ_GNB^H) and promotes larger population of θ>2°; refined dislocation cell size."
+    },
+    {
+      "characterization_id": "char_stem_charged",
+      "sample_id": "sample_h_charged",
+      "microstructure_uuid": "ms_h_charged_1",
+      "technique": "STEM",
+      "purpose": "High-resolution analysis of deformation bands, microbands, and dislocation interactions in hydrogen-charged sample",
+      "key_findings": "Confirmed absence of κ-carbides; revealed massive glide of secondary dislocations, cross-slip activity, dissolved DDW segments, and Lomer-Cottrell locks within deformation bands. Microband formation evidenced as paired dislocation sheets."
+    },
+    {
+      "characterization_id": "char_tda",
+      "sample_id": "sample_h_charged",
+      "microstructure_uuid": null,
+      "technique": "TDA (thermal desorption analysis) / gas chromatography",
+      "purpose": "Measure hydrogen content after tensile testing",
+      "key_findings": "Total hydrogen concentration 101 mass ppm, single peak corresponding to lattice diffusion (Fig. 1). Uncharged sample <5 mass ppm."
+    },
+    {
+      "characterization_id": "char_sem_fract",
+      "sample_id": "sample_uncharged",
+      "microstructure_uuid": null,
+      "technique": "SEM fractography",
+      "purpose": "Analyze fracture surfaces",
+      "key_findings": "Fully ductile fracture with dimples; heterogeneous dimple size (2-8 μm)."
+    },
+    {
+      "characterization_id": "char_sem_fract_charged",
+      "sample_id": "sample_h_charged",
+      "microstructure_uuid": null,
+      "technique": "SEM fractography",
+      "purpose": "Analyze fracture surfaces of hydrogen-charged sample",
+      "key_findings": "Fully ductile fracture with finer dimples (1.5-3.0 μm); attributed to void sheets from hydrogen-enhanced strain localization."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "Hydrogen desorption curve (Fig. 1) shows a single peak, maximum desorption rate 0.58 mass ppm/min at 700 K.",
+    "Table 1: Uncharged sample: True fracture stress (TFS) = 825 ± 15 MPa, Uniform elongation (UEL) = 0.43 ± 0.01, Elongation-to-failure (ETF) = 0.51 ± 0.01. Hydrogen-charged sample: TFS = 845 ± 15 MPa, UEL = 0.46 ± 0.02, ETF = 0.55 ± 0.01.",
+    "Strain-hardening stages A-D observed in both samples; hydrogen does not introduce new hardening stage but increases strain-hardening rate at early stages (Fig. 2b).",
+    "Hydrogen increases yield stress by ~27 MPa (10% increase) and flow stress by 14-25 MPa; ductility increases (UEL from 0.43 to 0.46, ETF from 0.51 to 0.55).",
+    "Type 1a CB in uncharged: primary GNB system, GNB misorientation distribution; hydrogen shifts GNB distribution to higher angles, increasing average θ_GNB^H by ~1° and extending distribution up to 7-8°. IDB misorientation increase ~0.25° (Fig. 7).",
+    "Type 1b CB: hydrogen increases GNB1 and GNB2 misorientations similarly, population of high-angle boundaries enhanced.",
+    "GNB misorientations <2° correspond to dense dislocation walls (DDWs) with thickness ~90 nm; >2° associated with microbands (MBs) of thickness 150-200 nm, length 1.5-4 μm (Fig. 8).",
+    "Hydrogen refines average dislocation cell size in Type 2 structures from 220 ± 10 nm to 192 ± 10 nm (Fig. 11).",
+    "Type 3: hydrogen promotes dense dislocation walls, deformation bands, and microbands; cell size refined from 236 ± 10 nm to 212 ± 10 nm; cell boundary misorientation only slightly affected (0.87° to 0.90°) (Fig. 16).",
+    "Macroscopic kink bands (10-30 μm thick) in grains near <001>//TA; submicron DBs (0.5-1 μm) in grains near <111>//TA; DBs produce shear offsets up to 100 nm in hydrogen-charged sample.",
+    "STEM reveals high density of screw and mixed dislocations (~1-3 x 10^14 m^-2) inside DBs; cross-slip and double-cross slip of screw dislocations observed; Lomer-Cottrell locks formed.",
+    "The steel exhibits high HE resistance comparable to 310S, CoCrFeMnNi HEA, and CoNiV MEA; IHE index defined as 1 - ε_f^H/ε_f, present work IHE = -0.045 (indicating improved ductility in hydrogen) (Fig. 19, Table 2).",
+    "Comparison table (Table 2) lists HE susceptibility and fracture mechanisms of various fcc alloys; present steel shows small dimple fracture, no intergranular or quasi-cleavage.",
+    "SFE of the steel at 293 K is 64 ± 10 mJ/m^2; absence of κ-carbides confirmed by STEM diffraction.",
+    "Hydrogen-enhanced deformation banding (HEDB) attributed to enhanced slip band intersections and possible solute drag effects; hydrogen-enhanced microbanding (HEMB) arises from GNB-assisted and DB-assisted MB nucleation, promoting plastic relaxation and GND storage, thus mitigating damage.",
+    "Figure 1: TDA curve shows hydrogen desorption rate vs temperature from 300 K to 1000 K; peak desorption at ~700 K.",
+    "Figure 3: Inverse pole figures showing grain orientations evaluated; uncharged sample 14 grains, hydrogen-charged 13 grains.",
+    "Figure 6: Combined ECCI/EBSD analysis of IDB misorientations in Type 1a CB; IDB misorientation values: IDB1 1.0°, IDB2 0.85°, IDB3 0.5°, IDB4 0.7°, IDB5 0.6°.",
+    "Figure 17: SEM fractographs show ductile dimples; uncharged sample dimplet size 2-8 μm, hydrogen-charged 1.5-3 μm."
+  ]
+}
