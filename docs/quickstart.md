@@ -1,13 +1,12 @@
 # Quickstart
 
-这份文档只讲最短路径，不讲实现细节。
-
----
+这份文档只讲最短路径。完整命令说明见 [commands.md](commands.md)，配置说明见 [configuration.md](configuration.md)。
 
 ## 1. 安装
 
 ```bash
-pip install -r requirements.txt
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements.txt
 ```
 
 确保本地模型服务已经启动，并且 `config/workflow.json` 中的：
@@ -17,16 +16,21 @@ pip install -r requirements.txt
 
 能正确访问。
 
----
+如果还没有本地配置：
+
+```bash
+cp config/workflow.example.json config/workflow.json
+```
 
 ## 2. 最推荐的运行方式
 
 如果你希望一批论文按“每篇论文内部顺序正确、不同论文之间并行”的方式处理，直接运行：
 
 ```bash
-python3 run_paper_then_knowledge_workflow.py \
+python3 steeldig.py pipeline -- \
   --config config/workflow.json \
   --input dataset \
+  --output-root outputs_dataset \
   --recursive \
   --workers 4 \
   --resume-mode resume_partial \
@@ -42,14 +46,13 @@ python3 run_paper_then_knowledge_workflow.py \
 
 并且不同论文之间并行。
 
----
-
 ## 3. 如果只想跑主抽取
 
 ```bash
-python3 run_paper_workflow.py \
+python3 steeldig.py extract -- \
   --config config/workflow.json \
   --input dataset \
+  --output-root outputs_dataset \
   --recursive \
   --workers 4
 ```
@@ -57,33 +60,56 @@ python3 run_paper_workflow.py \
 如果已经跑过一部分，想自动跳过已完成论文：
 
 ```bash
-python3 run_paper_workflow.py \
+python3 steeldig.py extract -- \
   --config config/workflow.json \
   --input dataset \
+  --output-root outputs_dataset \
   --recursive \
   --workers 4 \
   --skip-existing
 ```
 
----
-
 ## 4. 如果只想对已有结果补跑 knowledge
 
 ```bash
-python3 run_knowledge_workflow.py \
+python3 steeldig.py knowledge -- \
   --config config/workflow.json \
-  --run-dir workflow_runs/10.1002_srin.202200207 \
+  --run-dir outputs_dataset/10.1002_srin.202200207 \
   --mode fused
 ```
 
----
+## 5. 如果只想补跑单位统一
 
-## 5. 输出看哪里
+```bash
+python3 steeldig.py units -- \
+  --dataset-root outputs_dataset \
+  --workers 4
+```
+
+单位统一最适合放在 `final/text_extraction.json` 之后、`verify` 之前。
+
+## 6. 如果要跑 verify 和 verify_eval
+
+```bash
+python3 steeldig.py verify -- \
+  --dataset-root outputs_dataset \
+  --workers 4 \
+  --force
+```
+
+```bash
+python3 steeldig.py verify-eval -- \
+  --dataset-root outputs_dataset \
+  --workers 4 \
+  --force
+```
+
+## 7. 输出看哪里
 
 每篇论文输出目录：
 
 ```text
-workflow_runs/<paper_id>/
+outputs_dataset/<paper_id>/
 ```
 
 最重要的文件：
@@ -99,9 +125,7 @@ workflow_runs/<paper_id>/
 - `logs/*.jsonl`
 - `intermediate/**/*.txt`
 
----
-
-## 6. 最常见错误
+## 8. 最常见错误
 
 ### 依赖没装
 
@@ -114,7 +138,7 @@ ModuleNotFoundError: No module named 'httpx'
 重新执行：
 
 ```bash
-pip install -r requirements.txt
+.venv/bin/python -m pip install -r requirements.txt
 ```
 
 ### 文件名冲突
@@ -139,6 +163,7 @@ pip install -r requirements.txt
 
 - extraction 是否已存在
 - post-parse 是否已存在
+- unit normalization 是否已存在
 - knowledge 是否已存在
 
 然后只补跑缺失阶段。

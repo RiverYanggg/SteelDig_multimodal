@@ -14,6 +14,10 @@ venv/
 .env.*
 *.env
 config/workflow.json
+config/eval_config.json
+config/eval_config_llm.json
+config/verify_config.json
+config/field_rules.json
 config/*.local.json
 config/*secret*.json
 config/*private*.json
@@ -25,11 +29,17 @@ config/*private*.json
 
 ## Project runtime outputs
 workflow_runs/
+outputs_dataset/
 
 ## Datasets and extracted artifacts
 dataset/
 data/
+input/raw/
+input/examples/
 outputs/
 artifacts/
+evaluation/output/
+evaluation_json2json/output/
+evaluation_json2json/outputs_exp/
 *.log
 *.jsonl

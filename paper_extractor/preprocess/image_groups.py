@@ -16,6 +16,22 @@ FIGURE_NO_RE = re.compile(
 FIGURE_REF_RE = re.compile(r"\b(?:Figure|Fig(?:ure)?)\s*\.?\s*(\d+)(?:[a-zA-Z\u0370-\u03FF]+)?", re.IGNORECASE)
 
 
+def _caption_candidate_line(line: str) -> str:
+    text = line.strip()
+    text = re.sub(r"^#{1,6}\s+", "", text).strip()
+    text = re.sub(r"^\*\*(.*?)\*\*", r"\1", text).strip()
+    return text
+
+
+def starts_figure_caption_line(line: str) -> bool:
+    return bool(FIGURE_CAPTION_RE.match(_caption_candidate_line(line)))
+
+
+def figure_number_from_caption(caption: str) -> str | None:
+    match = FIGURE_NO_RE.search(_caption_candidate_line(caption))
+    return match.group(1) if match else None
+
+
 def split_sentences(text: str) -> List[str]:
     parts = re.split(r"(?<=[\.\!\?])\s+", text.strip())
     return [p.strip() for p in parts if p.strip()]
@@ -125,7 +141,7 @@ def collect_multiline_caption(lines: List[str], start_idx: int) -> str:
             return True
         return False
 
-    chunks = [lines[start_idx].strip()]
+    chunks = [_caption_candidate_line(lines[start_idx])]
     i = start_idx + 1
     blank_run = 0
     while i < len(lines):
@@ -189,11 +205,6 @@ def parse_markdown_text(markdown_text: str) -> List[Dict]:
             idx += 1
             continue
 
-        h = HEADING_RE.match(line)
-        if h:
-            idx += 1
-            continue
-
         if line.startswith("<details>"):
             idx = skip_details_block(lines, idx) + 1
             continue
@@ -204,10 +215,9 @@ def parse_markdown_text(markdown_text: str) -> List[Dict]:
             idx = end_idx + 1
             continue
 
-        if pending_images and FIGURE_CAPTION_RE.match(line):
+        if pending_images and starts_figure_caption_line(line):
             caption = collect_multiline_caption(lines, idx)
-            no_match = FIGURE_NO_RE.search(caption)
-            fig_no = no_match.group(1) if no_match else None
+            fig_no = figure_number_from_caption(caption)
             ref_sents = figure_refs.get(fig_no, []) if fig_no else []
 
             results.append(
@@ -220,6 +230,11 @@ def parse_markdown_text(markdown_text: str) -> List[Dict]:
                 }
             )
             pending_images = []
+            idx += 1
+            continue
+
+        h = HEADING_RE.match(line)
+        if h:
             idx += 1
             continue
 

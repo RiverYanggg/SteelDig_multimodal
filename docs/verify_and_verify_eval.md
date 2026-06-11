@@ -2,6 +2,15 @@
 
 本文档说明 `verify` 和 `verify_eval` 两个后处理模块的设计、运行方式、输入输出、LLM 请求次数、评分公式和回溯方法。
 
+推荐优先使用统一入口：
+
+```bash
+python3 steeldig.py verify -- --dataset-root outputs_dataset
+python3 steeldig.py verify-eval -- --dataset-root outputs_dataset
+```
+
+下文保留的 `python3 run_*.py` 命令仍然可用，主要用于兼容旧流程。
+
 这两个模块位于项目根目录下，和 `evaluation_json2json` 同级：
 
 ```text
@@ -91,7 +100,7 @@ config/verify_config.json
 
 ```json
 {
-  "dataset_root": "/Users/mac/Desktop/SteelDig/SteelDig_multimodal/outputs_dataset",
+  "dataset_root": "../outputs_dataset",
   "force": false,
   "workers": 2,
   "append_record_enabled": false,
@@ -761,7 +770,7 @@ python3 run_verify_eval.py --paper-ids A1 --force
 进入项目根目录：
 
 ```bash
-cd /Users/mac/Desktop/SteelDig/SteelDig_multimodal
+cd SteelDig_multimodal
 ```
 
 运行单篇 verify：

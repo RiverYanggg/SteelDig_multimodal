@@ -2,6 +2,14 @@
 
 本文档说明单位统一模块的定位、运行时机、输入输出，以及它和 `verify` / `verify_eval` 的关系。
 
+推荐优先使用统一入口：
+
+```bash
+python3 steeldig.py units -- --dataset-root outputs_dataset
+```
+
+下文保留的 `python3 run_*.py` 命令仍然可用，主要用于兼容旧流程。
+
 ---
 
 ## 1. 模块定位

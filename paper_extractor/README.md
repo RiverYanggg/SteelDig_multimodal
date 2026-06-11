@@ -81,7 +81,7 @@ paper_extractor/
 
 详细说明见：
 
-- [preprocess/README.md](/Users/mac/Desktop/LLM_project/SteelDig_multimodal/paper_extractor/preprocess/README.md)
+- [preprocess/README.md](preprocess/README.md)
 
 ### `knowledge/`
 
@@ -89,7 +89,7 @@ paper_extractor/
 
 详细说明见：
 
-- [knowledge/README.md](/Users/mac/Desktop/LLM_project/SteelDig_multimodal/paper_extractor/knowledge/README.md)
+- [knowledge/README.md](knowledge/README.md)
 
 ---
 
@@ -97,8 +97,8 @@ paper_extractor/
 
 核心函数：
 
-- [paper_extractor/workflow.py](/Users/mac/Desktop/LLM_project/SteelDig_multimodal/paper_extractor/workflow.py:107) `run_one_paper`
-- [paper_extractor/workflow.py](/Users/mac/Desktop/LLM_project/SteelDig_multimodal/paper_extractor/workflow.py:312) `run_workflow`
+- [workflow.py](workflow.py) `run_one_paper`
+- [workflow.py](workflow.py) `run_workflow`
 
 单篇论文数据流：
 
@@ -159,10 +159,10 @@ paper_extractor/
 
 建议先读：
 
-1. [config.py](/Users/mac/Desktop/LLM_project/SteelDig_multimodal/paper_extractor/config.py:1)
-2. [workflow.py](/Users/mac/Desktop/LLM_project/SteelDig_multimodal/paper_extractor/workflow.py:1)
-3. [postprocess.py](/Users/mac/Desktop/LLM_project/SteelDig_multimodal/paper_extractor/postprocess.py:1)
-4. [knowledge/workflow.py](/Users/mac/Desktop/LLM_project/SteelDig_multimodal/paper_extractor/knowledge/workflow.py:1)
+1. [config.py](config.py)
+2. [workflow.py](workflow.py)
+3. [postprocess.py](postprocess.py)
+4. [knowledge/workflow.py](knowledge/workflow.py)
 
 然后再下钻：
 

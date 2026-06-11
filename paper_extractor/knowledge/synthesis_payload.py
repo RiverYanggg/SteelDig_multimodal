@@ -81,7 +81,7 @@ def _select_claims(claims: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         if bucket_counts[bucket] >= limit:
             continue
         bucket_counts[bucket] += 1
-        kept.append(_strip_private_fields(item))
+        kept.append(item)
     return kept
 
 
@@ -139,7 +139,7 @@ def _group_claims(claims: List[Dict[str, Any]]) -> Dict[str, List[Dict[str, Any]
         bucket = claim.get("topic")
         if bucket not in grouped:
             continue
-        grouped[bucket].append(claim)
+        grouped[bucket].append(_strip_private_fields(claim))
     return {bucket: grouped[bucket] for bucket in CORE_BUCKET_ORDER if grouped[bucket]}
 
 
@@ -164,6 +164,10 @@ def _trim_visual_evidence(items: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
 
 
 def _bucket_for_claim(claim_type: str, subject: str, claim_text: str) -> str | None:
+    claim_type_text = claim_type.lower()
+    for bucket, keywords in CLAIM_TYPE_BUCKET_KEYWORDS.items():
+        if any(keyword in claim_type_text for keyword in keywords):
+            return bucket
     text = " ".join([claim_type, subject, claim_text]).lower()
     for bucket, keywords in CLAIM_TYPE_BUCKET_KEYWORDS.items():
         if any(keyword in text for keyword in keywords):

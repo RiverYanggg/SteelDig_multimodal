@@ -33,8 +33,9 @@ def load_verify_settings(path: str | Path) -> VerifySettings:
 
 
 def verify_settings_from_dict(data: dict[str, Any], *, base_dir: Path) -> VerifySettings:
+    default_dataset_root = base_dir.parent / "outputs_dataset"
     dataset_root = _resolve_path(
-        str(data.get("dataset_root", "/Users/mac/Desktop/SteelDig/SteelDig_multimodal/outputs_dataset")),
+        str(data.get("dataset_root", default_dataset_root)),
         base_dir,
     )
     schema_path = _resolve_path(str(data.get("schema_path", "../prompt/json_schema.json")), base_dir)

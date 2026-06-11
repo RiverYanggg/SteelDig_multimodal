@@ -82,7 +82,7 @@ Figure 分组解析逻辑。
 
 ## 3. Figure 分组怎么做
 
-核心逻辑在 [image_groups.py](/Users/mac/Desktop/LLM_project/SteelDig_multimodal/paper_extractor/preprocess/image_groups.py:1)。
+核心逻辑在 [image_groups.py](image_groups.py)。
 
 大致规则：
 
